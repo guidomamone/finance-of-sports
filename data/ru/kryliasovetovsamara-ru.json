@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "kryliasovetovsamara-ru",
@@ -83,12 +83,19 @@
       "adjustments": {
         "extra_rows": [{"label":"Проценты к уплате (2330)","amount":-31.57},{"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-1.663}],
         "no_breakdown": [
-          {"line":"Выручка (2110)","side":"ingreso","amount":241.394,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Выручка (2110)",
+            "side": "ingreso",
+            "amount": 241.394,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "net_sales"
+          },
           {
             "line": "Себестоимость продаж (2120)",
             "side": "gasto",
             "amount": 1508.704,
-            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {
@@ -127,12 +134,19 @@
       "adjustments": {
         "extra_rows": [{"label":"Проценты к уплате (2330)","amount":-4.662},{"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-146.543}],
         "no_breakdown": [
-          {"line":"Выручка (2110)","side":"ingreso","amount":686.891,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Выручка (2110)",
+            "side": "ingreso",
+            "amount": 686.891,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "net_sales"
+          },
           {
             "line": "Себестоимость продаж (2120)",
             "side": "gasto",
             "amount": 1993.276,
-            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {
@@ -171,12 +185,19 @@
       "adjustments": {
         "extra_rows": [{"label":"Проценты к уплате (2330)","amount":-4.498},{"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-67.217}],
         "no_breakdown": [
-          {"line":"Выручка (2110)","side":"ingreso","amount":902.657,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Выручка (2110)",
+            "side": "ingreso",
+            "amount": 902.657,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "net_sales"
+          },
           {
             "line": "Себестоимость продаж (2120)",
             "side": "gasto",
             "amount": 2387.252,
-            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {
@@ -216,12 +237,19 @@
       "adjustments": {
         "extra_rows": [{"label":"Проценты к уплате (2330)","amount":-4.343},{"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-54.197}],
         "no_breakdown": [
-          {"line":"Выручка (2110)","side":"ingreso","amount":809.104,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Выручка (2110)",
+            "side": "ingreso",
+            "amount": 809.104,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "net_sales"
+          },
           {
             "line": "Себестоимость продаж (2120)",
             "side": "gasto",
             "amount": 2216.984,
-            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {
@@ -261,12 +289,19 @@
       "adjustments": {
         "extra_rows": [{"label":"Проценты к уплате (2330)","amount":-138.797}],
         "no_breakdown": [
-          {"line":"Выручка (2110)","side":"ingreso","amount":818.188,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Выручка (2110)",
+            "side": "ingreso",
+            "amount": 818.188,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "net_sales"
+          },
           {
             "line": "Себестоимость продаж (2120)",
             "side": "gasto",
             "amount": 2444.921,
-            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "akhmatgrozny-ru",
@@ -87,7 +87,8 @@
             "line": "Расходы на целевые мероприятия (6310, форма 6)",
             "side": "gasto",
             "amount": 598.534,
-            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "other"
           }
         ],
         "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true}}
@@ -124,7 +125,8 @@
             "line": "Расходы на целевые мероприятия (6310, форма 6)",
             "side": "gasto",
             "amount": 332.718,
-            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "other"
           }
         ],
         "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true}}
@@ -161,7 +163,8 @@
             "line": "Расходы на целевые мероприятия (6310, форма 6)",
             "side": "gasto",
             "amount": 1180.272,
-            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "other"
           }
         ],
         "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true}}
@@ -206,7 +209,8 @@
             "line": "Расходы на целевые мероприятия (6310, форма 6)",
             "side": "gasto",
             "amount": 2349.463,
-            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "other"
           }
         ],
         "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true}}

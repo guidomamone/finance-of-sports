@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "atromitos-gr",
@@ -107,12 +107,13 @@
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":4.214679,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":4.214679,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 4.938658,
-            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2015-16.md: Κόστος πωλήσεων 4.938.658 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2015-16.md: Κόστος πωλήσεων 4.938.658 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'.",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {
@@ -166,7 +167,8 @@
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 5.233558,
-            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'.",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -214,7 +216,8 @@
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 5.065443,
-            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2020-06-30.md: Κόστος πωλήσεων 5.065.443 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2020-06-30.md: Κόστος πωλήσεων 5.065.443 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'.",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -268,7 +271,8 @@
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 5.66824,
-            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'.",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -322,7 +326,8 @@
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 6.766095,
-            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_FS_2022-06-30.md: Κόστος πωλήσεων 6.766.094,58 (visto en 2023 L243 como comparativo; estado de resultados por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_FS_2022-06-30.md: Κόστος πωλήσεων 6.766.094,58 (visto en 2023 L243 como comparativo; estado de resultados por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'.",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -373,7 +378,8 @@
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 6.612663,
-            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'.",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -417,7 +423,8 @@
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 6.619201,
-            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'.",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -445,12 +452,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-1.021063},{"label":"Φόροι εισοδήματος","amount":0}],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":6.283402,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":6.283402,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 6.312663,
-            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'."
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2021-06-30.md: Κόστος πωλήσεων 5.668.240 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría 'Fútbol profesional (sin desglosar por la fuente)'.",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "fcvolendam-nl",
@@ -43,7 +43,7 @@
       "official_totals": {"revenue":10.714978,"expenses":11.514362,"net_result":-0.82772},
       "adjustments": {
         "extra_rows": [{"label":"Financiële baten en lasten","amount":-0.028337},{"label":"Belastingen","amount":0}],
-        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":10.714978,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":10.714978,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "paysandu-br",
@@ -92,7 +92,7 @@
       "official_totals": {"revenue":21.976408,"expenses":23.813025,"net_result":-2.015915},
       "adjustments": {
         "extra_rows": [{"label":"Receitas financeiras","amount":0.000095},{"label":"Despesas financeiras","amount":-0.179393}],
-        "no_breakdown": [{"line":"Futebol Profissional","side":"revenue","amount":10.868442,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Futebol Profissional","side":"revenue","amount":10.868442,"reason":"el documento no desglosa este renglón","kind":"other"}]
       }
     },
     {
@@ -139,7 +139,7 @@
       "official_totals": {"revenue":45.072926,"expenses":46.849398,"net_result":-2.537173},
       "adjustments": {
         "extra_rows": [{"label":"Receitas financeiras","amount":0.009504},{"label":"Despesas financeiras","amount":-0.770205}],
-        "no_breakdown": [{"line":"Futebol Profissional","side":"revenue","amount":20.164819,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Futebol Profissional","side":"revenue","amount":20.164819,"reason":"el documento no desglosa este renglón","kind":"other"}]
       }
     },
     {
@@ -181,7 +181,7 @@
       "official_totals": {"revenue":64.496592,"expenses":67.281372,"net_result":-3.885733},
       "adjustments": {
         "extra_rows": [{"label":"Receitas financeiras","amount":-0.054695},{"label":"Despesas financeiras","amount":-1.046259}],
-        "no_breakdown": [{"line":"Futebol Profissional","side":"revenue","amount":36.24425,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Futebol Profissional","side":"revenue","amount":36.24425,"reason":"el documento no desglosa este renglón","kind":"other"}]
       }
     },
     {
@@ -228,7 +228,7 @@
           {"label":"DESPESAS FINANCEIRAS","amount":1.478759},
           {"label":"Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)","amount":-2.919267}
         ],
-        "no_breakdown": [{"line":"FUTEBOL PROFISSIONAL","side":"revenue","amount":46.737042,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"FUTEBOL PROFISSIONAL","side":"revenue","amount":46.737042,"reason":"el documento no desglosa este renglón","kind":"other"}]
       }
     }
   ],

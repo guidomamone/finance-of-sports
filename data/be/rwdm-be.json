@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "rwdm-be",
@@ -100,7 +100,9 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.003862,"tax":0,"gross_debt":null,"cash":0.050076},
       "official_totals": {"revenue":0.890922,"expenses":0.890467,"net_result":-0.003407},
-      "adjustments": {"no_breakdown":[{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.890922,"reason":"el documento no desglosa este renglón"}]}
+      "adjustments": {
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.890922,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+      }
     },
     {
       "fiscal_year": 2021,
@@ -141,7 +143,7 @@
       "official_totals": {"revenue":1.547882,"expenses":1.799297,"net_result":-0.396247},
       "adjustments": {
         "extra_rows": [{"label":"Recurrente financiële kosten","amount":-0.004664},{"label":"Belastingen op het resultaat (+)/(-)","amount":-0.001894}],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.547882,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.547882,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     },
     {
@@ -181,7 +183,7 @@
       "official_totals": {"revenue":1.08213,"expenses":2.812687,"net_result":-1.743454},
       "adjustments": {
         "extra_rows": [{"label":"Recurrente financiële opbrengsten","amount":0.000762},{"label":"Recurrente financiële kosten","amount":-0.01366}],
-        "no_breakdown": [{"line":"Brutomarge","side":"revenue","amount":1.08213,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Brutomarge","side":"revenue","amount":1.08213,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     },
     {
@@ -226,7 +228,7 @@
           {"label":"Recurrente financiële kosten","amount":-0.182901},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.002772}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.628714,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.628714,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     },
     {
@@ -265,7 +267,7 @@
           {"label":"Recurrente financiële kosten","amount":-0.784232},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.011516}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":3.962984,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":3.962984,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     },
     {
@@ -355,7 +357,7 @@
           {"label":"Niet-recurrente financiële kosten","amount":-0.055},
           {"label":"Belastingen","amount":-0.57858}
         ],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":4.269374,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":4.269374,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     }
   ],

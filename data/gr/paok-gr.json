@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "paok-gr",
@@ -202,7 +202,7 @@
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.197534},
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
-        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":33.922723,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":33.922723,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
@@ -254,8 +254,14 @@
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών","side":"revenue","amount":17.768593,"reason":"el documento no desglosa este renglón"},
-          {"line":"Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος","side":"expense","amount":43.188601,"reason":"el documento no desglosa este renglón"}
+          {"line":"Κύκλος εργασιών","side":"revenue","amount":17.768593,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος",
+            "side": "expense",
+            "amount": 43.188601,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "other"
+          }
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
@@ -349,7 +355,7 @@
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.127417},
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
-        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":38.661362,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":38.661362,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
@@ -435,7 +441,7 @@
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.213481},
           {"label":"Φόροι εισοδήματος","amount":null}
         ],
-        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":32.627236,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Κύκλος εργασιών","side":"revenue","amount":32.627236,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},

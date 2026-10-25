@@ -17,7 +17,7 @@ const denderBeExpenseLinesByYear = {
 };
 
 const denderBeFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"dender-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.623547,"tax":-0.213846,"grossDebt":21.68247,"cash":0.044976,"officialTotalRevenue":9.162346,"officialTotalExpenses":13.241115,"officialPAT":-4.953248},
+  2025: {"currency":"EUR","sourceId":"dender-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.623547,"tax":-0.213846,"grossDebt":21.68247,"cash":0.044976,"officialTotalRevenue":9.162346,"officialTotalExpenses":13.241115,"officialPAT":-4.953248,"sinDesglose":[{"renglon":"Omzet","lado":"revenue","importe":7.116234,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
 };
 
 const denderBePresupuestoOverlayByYear = {};

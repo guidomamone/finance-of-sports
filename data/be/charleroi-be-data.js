@@ -22,7 +22,7 @@ const charleroiBeExpenseLinesByYear = {
 };
 
 const charleroiBeFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"charleroi-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.28882,"tax":-0.113122,"grossDebt":10.64103,"cash":0.898948,"officialTotalRevenue":29.804782,"officialTotalExpenses":33.564753,"officialPAT":-3.50253},
+  2025: {"currency":"EUR","sourceId":"charleroi-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.28882,"tax":-0.113122,"grossDebt":10.64103,"cash":0.898948,"officialTotalRevenue":29.804782,"officialTotalExpenses":33.564753,"officialPAT":-3.50253,"sinDesglose":[{"renglon":"Chiffre d'affaires","lado":"revenue","importe":24.786109,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
 };
 
 const charleroiBePresupuestoOverlayByYear = {};

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "oficrete-gr",
@@ -108,12 +108,13 @@
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.527893,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.527893,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 1.577619,
-            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -146,12 +147,13 @@
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":1.399917,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":1.399917,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 4.84361,
-            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -184,12 +186,13 @@
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":1.835448,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":1.835448,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 5.125907,
-            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -222,12 +225,13 @@
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":2.692727,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":2.692727,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 5.629152,
-            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -260,12 +264,13 @@
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":5.064441,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":5.064441,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 7.325795,
-            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -294,12 +299,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.020562},{"label":"Φόροι εισοδήματος","amount":0}],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":4.726105,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":4.726105,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 7.782646,
-            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -332,12 +338,13 @@
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":4.019073,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":4.019073,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 7.852901,
-            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -366,12 +373,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.016748},{"label":"Φόροι εισοδήματος","amount":0}],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":5.33344,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":5.33344,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 8.199058,
-            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump"
+            "reason": "OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump",
+            "kind": "cost_of_sales"
           }
         ]
       }

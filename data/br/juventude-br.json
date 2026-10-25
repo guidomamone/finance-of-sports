@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "juventude-br",
@@ -75,7 +75,18 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.70489589,"tax":0,"gross_debt":0.73381295,"cash":0.02633058},
-      "official_totals": {"revenue":32.38344847,"expenses":33.40529292,"net_result":-2.72674034}
+      "official_totals": {"revenue":32.38344847,"expenses":33.40529292,"net_result":-2.72674034},
+      "adjustments": {
+        "no_breakdown": [
+          {
+            "line": "Remuneração, Benefícios, Encargos e amortização de direitos e de custos de formação",
+            "side": "expense",
+            "amount": 22.551936,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "other"
+          }
+        ]
+      }
     },
     {
       "fiscal_year": 2021,
@@ -134,7 +145,8 @@
             "line": "Remuneração, Benefícios, Encargos, Intermediação, Contratação, Empréstimos e Outros",
             "side": "expense",
             "amount": 33.655777,
-            "reason": "el documento no desglosa este renglón"
+            "reason": "el documento no desglosa este renglón",
+            "kind": "other"
           }
         ]
       }

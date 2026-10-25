@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "bathrugby-gb",
@@ -106,9 +106,15 @@
           {"label":"Tax on loss","amount":-0.230837}
         ],
         "no_breakdown": [
-          {"line":"Turnover","side":"revenue","amount":11.597938,"reason":"el documento no desglosa este renglón"},
-          {"line":"Administrative expenses","side":"expense","amount":4.418764,"reason":"el documento no desglosa este renglón"},
-          {"line":"Cost of sales (sin el costo de personal)","side":"expense","amount":2.188725,"reason":"el documento no desglosa este renglón"}
+          {"line":"Turnover","side":"revenue","amount":11.597938,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {"line":"Administrative expenses","side":"expense","amount":4.418764,"reason":"el documento no desglosa este renglón","kind":"other"},
+          {
+            "line": "Cost of sales (sin el costo de personal)",
+            "side": "expense",
+            "amount": 2.188725,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
+          }
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_rugby_operations","possible":true,"by":"precedente"},
@@ -169,8 +175,14 @@
           {"label":"Tax on loss","amount":0.387584}
         ],
         "no_breakdown": [
-          {"line":"Administrative expenses","side":"expense","amount":4.660895,"reason":"el documento no desglosa este renglón"},
-          {"line":"Cost of sales (sin el costo de personal)","side":"expense","amount":3.440133,"reason":"el documento no desglosa este renglón"}
+          {"line":"Administrative expenses","side":"expense","amount":4.660895,"reason":"el documento no desglosa este renglón","kind":"other"},
+          {
+            "line": "Cost of sales (sin el costo de personal)",
+            "side": "expense",
+            "amount": 3.440133,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
+          }
         ]
       }
     },
@@ -224,8 +236,14 @@
           {"label":"Tax on loss","amount":1.167663}
         ],
         "no_breakdown": [
-          {"line":"Administrative expenses","side":"expense","amount":6.064013,"reason":"el documento no desglosa este renglón"},
-          {"line":"Cost of sales (sin el costo de personal)","side":"expense","amount":3.61945,"reason":"el documento no desglosa este renglón"}
+          {"line":"Administrative expenses","side":"expense","amount":6.064013,"reason":"el documento no desglosa este renglón","kind":"other"},
+          {
+            "line": "Cost of sales (sin el costo de personal)",
+            "side": "expense",
+            "amount": 3.61945,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
+          }
         ]
       }
     },
@@ -264,8 +282,8 @@
           {"label":"Tax on loss","amount":1.310091}
         ],
         "no_breakdown": [
-          {"line":"Cost of sales","side":"expense","amount":19.500753,"reason":"el documento no desglosa este renglón"},
-          {"line":"Administrative expenses","side":"expense","amount":6.283057,"reason":"el documento no desglosa este renglón"}
+          {"line":"Cost of sales","side":"expense","amount":19.500753,"reason":"el documento no desglosa este renglón","kind":"cost_of_sales"},
+          {"line":"Administrative expenses","side":"expense","amount":6.283057,"reason":"el documento no desglosa este renglón","kind":"other"}
         ]
       }
     },
@@ -317,8 +335,14 @@
           {"label":"Tax on loss","amount":0.250554}
         ],
         "no_breakdown": [
-          {"line":"Administrative expenses","side":"expense","amount":6.251494,"reason":"el documento no desglosa este renglón"},
-          {"line":"Cost of sales (sin el costo de personal)","side":"expense","amount":5.431641,"reason":"el documento no desglosa este renglón"}
+          {"line":"Administrative expenses","side":"expense","amount":6.251494,"reason":"el documento no desglosa este renglón","kind":"other"},
+          {
+            "line": "Cost of sales (sin el costo de personal)",
+            "side": "expense",
+            "amount": 5.431641,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
+          }
         ]
       }
     }

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "liersesk-be",
@@ -95,7 +95,9 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.000027,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":0,"expenses":0.003851,"net_result":-0.003878},
-      "adjustments": {"no_breakdown":[{"line":"Brutomarge (+)/(-)","side":"expense","amount":0.001372,"reason":"Claude 2026-10-19 (subagente Sonnet, revisado)"}]}
+      "adjustments": {
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"expense","amount":0.001372,"reason":"Claude 2026-10-19 (subagente Sonnet, revisado)","kind":"gross_margin"}]
+      }
     },
     {
       "fiscal_year": 2020,
@@ -118,7 +120,7 @@
           {"label":"Recurrente financiële kosten","amount":-0.05442},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.008184}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"expense","amount":0.001475,"reason":"Claude 2026-10-19 (subagente Sonnet, revisado)"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"expense","amount":0.001475,"reason":"Claude 2026-10-19 (subagente Sonnet, revisado)","kind":"gross_margin"}]
       }
     },
     {
@@ -142,7 +144,7 @@
           {"label":"Recurrente financiële kosten","amount":-0.00003},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.004467}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"expense","amount":0.001436,"reason":"Claude 2026-10-19 (subagente Sonnet, revisado)"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"expense","amount":0.001436,"reason":"Claude 2026-10-19 (subagente Sonnet, revisado)","kind":"gross_margin"}]
       }
     },
     {
@@ -184,7 +186,7 @@
       "official_totals": {"revenue":1.673036,"expenses":2.100819,"net_result":-0.557017},
       "adjustments": {
         "extra_rows": [{"label":"Recurrente financiële opbrengsten","amount":0.003435},{"label":"Recurrente financiële kosten","amount":-0.006715}],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.673036,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.673036,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     },
     {
@@ -230,7 +232,7 @@
           {"label":"Recurrente financiële kosten","amount":-0.011165},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.002794}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.555937,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.555937,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     },
     {
@@ -269,7 +271,7 @@
           {"label":"Recurrente financiële kosten","amount":-0.017305},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.010092}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.895671,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.895671,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     },
     {
@@ -308,7 +310,7 @@
           {"label":"Recurrente financiële kosten","amount":-0.033924},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.014803}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.706155,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.706155,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     }
   ],

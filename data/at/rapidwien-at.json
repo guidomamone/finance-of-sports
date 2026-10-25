@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "rapidwien-at",
@@ -1097,7 +1097,7 @@
           {"label":"Zinsen und ähnliche Aufwendungen","amount":-1.165897},
           {"label":"Steuern vom Einkommen","amount":-0.529837}
         ],
-        "no_breakdown": [{"line":"Umsatzerlöse","side":"revenue","amount":42.627915,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Umsatzerlöse","side":"revenue","amount":42.627915,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
@@ -1164,7 +1164,7 @@
           {"label":"Zinsen und ähnliche Aufwendungen","amount":-1.546952},
           {"label":"Steuern vom Einkommen","amount":0.192648}
         ],
-        "no_breakdown": [{"line":"Umsatzerlöse","side":"revenue","amount":41.436186,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Umsatzerlöse","side":"revenue","amount":41.436186,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
@@ -1237,7 +1237,7 @@
           {"label":"Zinsen und ähnliche Aufwendungen","amount":-1.588717},
           {"label":"Steuern vom Einkommen","amount":-0.038465}
         ],
-        "no_breakdown": [{"line":"Umsatzerlöse","side":"revenue","amount":58.395122,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Umsatzerlöse","side":"revenue","amount":58.395122,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},

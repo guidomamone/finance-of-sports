@@ -14,7 +14,7 @@ const randersDkExpenseLinesByYear = {
 };
 
 const randersDkFiscalYearMeta = {
-  2023: {"currency":"DKK","sourceId":"randers-dk-aarsrapport-2022-23","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2023-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":2.568178,"tax":0.054931,"grossDebt":2.062693,"cash":11.464548,"officialTotalRevenue":61.744974,"officialTotalExpenses":62.173346,"officialPAT":2.194737},
+  2023: {"currency":"DKK","sourceId":"randers-dk-aarsrapport-2022-23","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2023-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":2.568178,"tax":0.054931,"grossDebt":2.062693,"cash":11.464548,"officialTotalRevenue":61.744974,"officialTotalExpenses":62.173346,"officialPAT":2.194737,"sinDesglose":[{"renglon":"Bruttofortjeneste (ingresos netos de costos operativos externos — el balance usa la exención §32 de la Årsregnskabsloven, sin desglose de Nettoomsætning disponible)","lado":"revenue","importe":61.744974,"motivo":"el documento no desglosa este renglón","tipo":"gross_margin"}]},
 };
 
 const randersDkPresupuestoOverlayByYear = {};

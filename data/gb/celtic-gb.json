@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "celtic-gb",
@@ -336,7 +336,8 @@
             "line": "Revenue",
             "side": "revenue",
             "amount": 143.597,
-            "reason": "Claude 2026-10-20: el estado trae un solo renglón Revenue; el desglose por categoría (nota 4, pág. 74 del visor) lo evalúa el reintento; si el desglose entra, este total no se suma aparte"
+            "reason": "Claude 2026-10-20: el estado trae un solo renglón Revenue; el desglose por categoría (nota 4, pág. 74 del visor) lo evalúa el reintento; si el desglose entra, este total no se suma aparte",
+            "kind": "net_sales"
           }
         ],
         "included_in": {

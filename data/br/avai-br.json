@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "avai-br",
@@ -150,7 +150,8 @@
             "line": "Custos Futebol Profissional",
             "side": "expense",
             "amount": 37.345703,
-            "reason": "Claude 2026-10-09: total de costos del fútbol profesional del estado"
+            "reason": "Claude 2026-10-09: total de costos del fútbol profesional del estado",
+            "kind": "other"
           }
         ],
         "included_in": {
@@ -276,7 +277,7 @@
       "official_totals": {"revenue":91.954,"expenses":88.85,"net_result":2.396},
       "adjustments": {
         "extra_rows": [{"label":"Receitas financeiras","amount":0.118},{"label":"Despesas financeiras","amount":-0.827}],
-        "no_breakdown": [{"line":"Receita líquida das atividades","side":"revenue","amount":91.954,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Receita líquida das atividades","side":"revenue","amount":91.954,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "member_dues": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},

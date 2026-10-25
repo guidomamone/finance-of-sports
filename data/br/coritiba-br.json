@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "coritiba-br",
@@ -476,7 +476,8 @@
             "line": "Futebol",
             "side": "expense",
             "amount": 89.80156,
-            "reason": "Claude 2026-10-19 (subagente Sonnet, media): La nota 21 abre por naturaleza (pessoal 59,4M, direito de imagem 27,5M, jogos 6,6M...) solo el total combinado profesional+base; no dice cuanto de cada naturaleza es de profesional. Repartirlo seria inventar. Por eso el bolsón lump_football_operations_expense es la salida fiel para esta fila y la base (17,4M) queda aparte. Atencion: es una decision de estructura; si Guido prefi [Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.md L226 (DRE: 'Futebol (89.801.560)]"
+            "reason": "Claude 2026-10-19 (subagente Sonnet, media): La nota 21 abre por naturaleza (pessoal 59,4M, direito de imagem 27,5M, jogos 6,6M...) solo el total combinado profesional+base; no dice cuanto de cada naturaleza es de profesional. Repartirlo seria inventar. Por eso el bolsón lump_football_operations_expense es la salida fiel para esta fila y la base (17,4M) queda aparte. Atencion: es una decision de estructura; si Guido prefi [Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.md L226 (DRE: 'Futebol (89.801.560)]",
+            "kind": "other"
           }
         ],
         "included_in": {

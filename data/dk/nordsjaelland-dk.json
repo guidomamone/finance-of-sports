@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "nordsjaelland-dk",
@@ -75,7 +75,18 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.576407,"tax":-31.778343,"gross_debt":20.625,"cash":16.943338},
-      "official_totals": {"revenue":366.004057,"expenses":220.17121,"net_result":111.478097}
+      "official_totals": {"revenue":366.004057,"expenses":220.17121,"net_result":111.478097},
+      "adjustments": {
+        "no_breakdown": [
+          {
+            "line": "Bruttofortjeneste (ingresos netos de costos operativos externos — el balance usa la exención §32 de la Årsregnskabsloven, sin desglose de Nettoomsætning disponible)",
+            "side": "revenue",
+            "amount": 366.004057,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "gross_margin"
+          }
+        ]
+      }
     },
     {
       "fiscal_year": 2025,
@@ -135,7 +146,9 @@
           {"label":"Øvrige finansielle omkostninger Other financial costs","amount":-11.506538},
           {"label":"Skat af årets resultat Tax on net profit or loss for the year","amount":-65.011162}
         ],
-        "no_breakdown": [{"line":"Bruttofortjeneste Gross profit","side":"revenue","amount":460.800148,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [
+          {"line":"Bruttofortjeneste Gross profit","side":"revenue","amount":460.800148,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}
+        ]
       }
     }
   ],

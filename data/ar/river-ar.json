@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "river-ar",
@@ -136,7 +136,16 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":109.215392,"tax":0,"gross_debt":1540.592415,"cash":135.932512},
       "official_totals": {"revenue":9065.549461,"expenses":8917.836473,"net_result":256.92838},
       "adjustments": {
-        "extra_rows": [{"label":"Resultados financieros y por tenencia (incl. RECPAM)","amount":226.920637},{"label":"Otros egresos (Nota 2.1)","amount":-117.705245}]
+        "extra_rows": [{"label":"Resultados financieros y por tenencia (incl. RECPAM)","amount":226.920637},{"label":"Otros egresos (Nota 2.1)","amount":-117.705245}],
+        "no_breakdown": [
+          {
+            "line": "Fútbol profesional — resto (sin desglosar por la fuente)",
+            "side": "expense",
+            "amount": 3955.164136,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "other"
+          }
+        ]
       }
     },
     {
@@ -238,7 +247,16 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1543.098828,"tax":0,"gross_debt":27487.059205,"cash":70.900528},
       "official_totals": {"revenue":207077.217738,"expenses":149674.797729,"net_result":58945.518837},
       "adjustments": {
-        "extra_rows": [{"label":"Resultados financieros y por tenencia (incl. RECPAM)","amount":7264.060326},{"label":"Otros egresos (Nota 2.k)","amount":-5720.961498}]
+        "extra_rows": [{"label":"Resultados financieros y por tenencia (incl. RECPAM)","amount":7264.060326},{"label":"Otros egresos (Nota 2.k)","amount":-5720.961498}],
+        "no_breakdown": [
+          {
+            "line": "Fútbol profesional — resto (sin desglosar por la fuente)",
+            "side": "expense",
+            "amount": 65946.176101,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "other"
+          }
+        ]
       }
     }
   ],

@@ -25,7 +25,7 @@ const zultewaregemBeExpenseLinesByYear = {
 };
 
 const zultewaregemBeFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"zultewaregem-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-3.388994,"tax":0.020358,"grossDebt":29.448037,"cash":0.629659,"officialTotalRevenue":18.493189,"officialTotalExpenses":19.281098,"officialPAT":-4.243593},
+  2025: {"currency":"EUR","sourceId":"zultewaregem-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-3.388994,"tax":0.020358,"grossDebt":29.448037,"cash":0.629659,"officialTotalRevenue":18.493189,"officialTotalExpenses":19.281098,"officialPAT":-4.243593,"sinDesglose":[{"renglon":"Omzet","lado":"revenue","importe":13.087991,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
 };
 
 const zultewaregemBePresupuestoOverlayByYear = {};

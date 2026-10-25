@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-24",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "sonderjyske-dk",
@@ -103,7 +103,18 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.522751,"tax":0,"gross_debt":14.080333,"cash":0.014547},
-      "official_totals": {"revenue":21.464987,"expenses":52.925004,"net_result":-31.982769}
+      "official_totals": {"revenue":21.464987,"expenses":52.925004,"net_result":-31.982769},
+      "adjustments": {
+        "no_breakdown": [
+          {
+            "line": "Bruttofortjeneste, resto (nettoomsætning, vareforbrug, andre driftsindtægter og eksterne omkostninger sammendraget, § 32 ÅRL — NO es revenue bruto)",
+            "side": "revenue",
+            "amount": 5.153565,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "gross_margin"
+          }
+        ]
+      }
     },
     {
       "fiscal_year": 2023,
@@ -151,7 +162,7 @@
           {"label":"Øvrige finansielle omkostninger","amount":-0.821324},
           {"label":"Skat af årets resultat","amount":4.132991}
         ],
-        "no_breakdown": [{"line":"Bruttofortjeneste/Bruttotab","side":"revenue","amount":41.600084,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Bruttofortjeneste/Bruttotab","side":"revenue","amount":41.600084,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     },
     {
@@ -200,7 +211,7 @@
           {"label":"Øvrige finansielle omkostninger","amount":-0.857081},
           {"label":"Skat af årets resultat","amount":1.746248}
         ],
-        "no_breakdown": [{"line":"Bruttofortjeneste/Bruttotab","side":"revenue","amount":37.431315,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Bruttofortjeneste/Bruttotab","side":"revenue","amount":37.431315,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     },
     {
@@ -258,7 +269,7 @@
           {"label":"Finansielle omkostninger","amount":-0.947044},
           {"label":"Skat af årets resultat","amount":3.762243}
         ],
-        "no_breakdown": [{"line":"Nettoomsætning","side":"revenue","amount":66.288538,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Nettoomsætning","side":"revenue","amount":66.288538,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     }
   ],

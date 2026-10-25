@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "anderlecht-be",
@@ -83,7 +83,8 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.309869,"tax":-0.23214,"gross_debt":57.066235,"cash":1.516035},
-      "official_totals": {"revenue":111.008609,"expenses":109.158006,"net_result":0.109593}
+      "official_totals": {"revenue":111.008609,"expenses":109.158006,"net_result":0.109593},
+      "adjustments": {"no_breakdown":[{"line":"Omzet","side":"revenue","amount":91.304983,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]}
     }
   ],
   "budget_overlay": {},

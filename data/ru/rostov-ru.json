@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "rostov-ru",
@@ -84,7 +84,15 @@
           {"label":"Проценты к уплате (2330)","amount":-78.937},
           {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":24.745}
         ],
-        "no_breakdown": [{"line":"Выручка (2110)","side":"ingreso","amount":1852.908,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"}],
+        "no_breakdown": [
+          {
+            "line": "Выручка (2110)",
+            "side": "ingreso",
+            "amount": 1852.908,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "net_sales"
+          }
+        ],
         "included_in": {
           "broadcasting": {"in":"lump_football_operations","possible":true},
           "matchday_competition": {"in":"lump_football_operations","possible":true},
@@ -121,7 +129,15 @@
           {"label":"Проценты к уплате (2330)","amount":-129.607},
           {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-41.431}
         ],
-        "no_breakdown": [{"line":"Выручка (2110)","side":"ingreso","amount":1668.897,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"}],
+        "no_breakdown": [
+          {
+            "line": "Выручка (2110)",
+            "side": "ingreso",
+            "amount": 1668.897,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "net_sales"
+          }
+        ],
         "included_in": {
           "broadcasting": {"in":"lump_football_operations","possible":true},
           "matchday_competition": {"in":"lump_football_operations","possible":true},
@@ -158,7 +174,15 @@
           {"label":"Проценты к уплате (2330)","amount":-87.869},
           {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-113.096}
         ],
-        "no_breakdown": [{"line":"Выручка (2110)","side":"ingreso","amount":2525.414,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"}],
+        "no_breakdown": [
+          {
+            "line": "Выручка (2110)",
+            "side": "ingreso",
+            "amount": 2525.414,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "net_sales"
+          }
+        ],
         "included_in": {
           "broadcasting": {"in":"lump_football_operations","possible":true},
           "matchday_competition": {"in":"lump_football_operations","possible":true},
@@ -195,7 +219,15 @@
           {"label":"Проценты к уплате (2330)","amount":-88.417},
           {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":42.982}
         ],
-        "no_breakdown": [{"line":"Выручка (2110)","side":"ingreso","amount":2571.435,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"}],
+        "no_breakdown": [
+          {
+            "line": "Выручка (2110)",
+            "side": "ingreso",
+            "amount": 2571.435,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "net_sales"
+          }
+        ],
         "included_in": {
           "broadcasting": {"in":"lump_football_operations","possible":true},
           "matchday_competition": {"in":"lump_football_operations","possible":true},
@@ -237,12 +269,19 @@
           {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-490.947}
         ],
         "no_breakdown": [
-          {"line":"Выручка (2110)","side":"ingreso","amount":2798.413,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Выручка (2110)",
+            "side": "ingreso",
+            "amount": 2798.413,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "net_sales"
+          },
           {
             "line": "Себестоимость продаж (2120)",
             "side": "gasto",
             "amount": 2150.474,
-            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {

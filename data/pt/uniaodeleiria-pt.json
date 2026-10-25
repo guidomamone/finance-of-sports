@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "uniaodeleiria-pt",
@@ -90,7 +90,8 @@
             "line": "Prestação de serviços",
             "side": "revenue",
             "amount": 0.555973,
-            "reason": "Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense."
+            "reason": "Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.",
+            "kind": "net_sales"
           }
         ]
       }
@@ -162,7 +163,8 @@
             "line": "Prestação de serviços",
             "side": "revenue",
             "amount": 1.546109,
-            "reason": "Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense."
+            "reason": "Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.",
+            "kind": "net_sales"
           }
         ],
         "included_in": {"matchday_competition":"lump_football_operations","stadium_other":"lump_football_operations","season_tickets":"lump_football_operations"}

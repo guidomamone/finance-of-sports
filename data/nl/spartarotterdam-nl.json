@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "spartarotterdam-nl",
@@ -73,7 +73,7 @@
           {"label":"Aandeel in resultaat van deelnemingen","amount":0.206622},
           {"label":"Belastingen","amount":0.938225}
         ],
-        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":18.058718,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":18.058718,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     }
   ],

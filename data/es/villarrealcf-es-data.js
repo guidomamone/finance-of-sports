@@ -19,7 +19,7 @@ const villarrealcfEsExpenseLinesByYear = {
 };
 
 const villarrealcfEsFiscalYearMeta = {
-  2024: {"currency":"EUR","sourceId":"villarrealcf-es-estados-financieros-2023-24","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-06-30","profitOnPlayerSales":26.425834,"assetSales":0,"netInterest":-0.945099,"tax":1.895827,"grossDebt":116.355224,"cash":47.616789,"officialTotalRevenue":128.285896,"officialTotalExpenses":169.783696,"officialPAT":-14.121238},
+  2024: {"currency":"EUR","sourceId":"villarrealcf-es-estados-financieros-2023-24","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2024-06-30","profitOnPlayerSales":26.425834,"assetSales":0,"netInterest":-0.945099,"tax":1.895827,"grossDebt":116.355224,"cash":47.616789,"officialTotalRevenue":128.285896,"officialTotalExpenses":169.783696,"officialPAT":-14.121238,"sinDesglose":[{"renglon":"Importe neto de la cifra de negocios (ventas, sin desglosar por concepto)","lado":"revenue","importe":119.721562,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
 };
 
 const villarrealcfEsPasesData = [];

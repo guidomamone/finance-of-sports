@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "visselkobe-jp",
@@ -47,7 +47,18 @@
       ],
       "expenses": [],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":8711,"expenses":null,"net_result":null}
+      "official_totals": {"revenue":8711,"expenses":null,"net_result":null},
+      "adjustments": {
+        "no_breakdown": [
+          {
+            "line": "Otros ingresos (物販, distribución J.League, transferencias, academia, equipo femenino y otros — el documento NO los desglosa por club, solo a nivel de división)",
+            "side": "revenue",
+            "amount": 4245,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "other"
+          }
+        ]
+      }
     }
   ],
   "budget_overlay": {},

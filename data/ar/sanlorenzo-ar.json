@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "sanlorenzo-ar",
@@ -113,6 +113,7 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-18.071405,"tax":0,"gross_debt":187.458841,"cash":3.57428},
       "official_totals": {"revenue":72.806956,"expenses":96.381038,"net_result":-41.645487},
       "adjustments": {
+        "no_breakdown": [{"line":"Fútbol","side":"expense","amount":57.973938,"reason":"el documento no desglosa este renglón","kind":"other"}],
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
@@ -370,6 +371,10 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":25.108904,"tax":0,"gross_debt":156.616408,"cash":0.331774},
       "official_totals": {"revenue":272.221732,"expenses":220.701762,"net_result":76.628874},
       "adjustments": {
+        "no_breakdown": [
+          {"line":"Fútbol","side":"revenue","amount":124.988019,"reason":"el documento no desglosa este renglón","kind":"other"},
+          {"line":"Fútbol (gasto)","side":"expense","amount":136.115811,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},

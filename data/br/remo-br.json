@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "remo-br",
@@ -106,13 +106,15 @@
             "line": "Receita De Atividades Esportivas",
             "side": "revenue",
             "amount": 17.903353,
-            "reason": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose"
+            "reason": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose",
+            "kind": "net_sales"
           },
           {
             "line": "(-) Despesas Operacionais (sin Resultado Financeiro)",
             "side": "expense",
             "amount": 20.686217,
-            "reason": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose"
+            "reason": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose",
+            "kind": "other"
           }
         ],
         "included_in": {
@@ -174,13 +176,15 @@
             "line": "Receita De Atividades Esportivas",
             "side": "revenue",
             "amount": 12.351668,
-            "reason": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose"
+            "reason": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose",
+            "kind": "net_sales"
           },
           {
             "line": "Custos das Atividades Esportivas",
             "side": "expense",
             "amount": 7.54864,
-            "reason": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose"
+            "reason": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {
@@ -423,8 +427,20 @@
       "official_totals": {"revenue":33.831604,"expenses":34.822632,"net_result":-1.440736},
       "adjustments": {
         "no_breakdown": [
-          {"line":"Receita Operacional Bruta","side":"revenue","amount":33.831604,"reason":"Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose"},
-          {"line":"Despesas Operacionais","side":"expense","amount":16.404081,"reason":"Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose"}
+          {
+            "line": "Receita Operacional Bruta",
+            "side": "revenue",
+            "amount": 33.831604,
+            "reason": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose",
+            "kind": "net_sales"
+          },
+          {
+            "line": "Despesas Operacionais",
+            "side": "expense",
+            "amount": 16.404081,
+            "reason": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose",
+            "kind": "other"
+          }
         ],
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true},
@@ -466,8 +482,20 @@
       "adjustments": {
         "extra_rows": [{"label":"Receitas Financeiras","amount":0.026177},{"label":"Despesas Financeiras","amount":-0.908404}],
         "no_breakdown": [
-          {"line":"Receita Operacional Bruta","side":"revenue","amount":38.291717,"reason":"Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose"},
-          {"line":"Despesas Operacionais","side":"expense","amount":30.628045,"reason":"Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose"}
+          {
+            "line": "Receita Operacional Bruta",
+            "side": "revenue",
+            "amount": 38.291717,
+            "reason": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose",
+            "kind": "net_sales"
+          },
+          {
+            "line": "Despesas Operacionais",
+            "side": "expense",
+            "amount": 30.628045,
+            "reason": "Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose",
+            "kind": "other"
+          }
         ],
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true},
@@ -529,8 +557,14 @@
       "adjustments": {
         "extra_rows": [{"label":"Receitas financeiras","amount":1.719635},{"label":"Despesas financeiras","amount":-2.853232}],
         "no_breakdown": [
-          {"line":"Receitas de futebol","side":"revenue","amount":40.616014,"reason":"el documento no desglosa este renglón"},
-          {"line":"(-) Custos das atividades esportivas","side":"expense","amount":41.884585,"reason":"el documento no desglosa este renglón"}
+          {"line":"Receitas de futebol","side":"revenue","amount":40.616014,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "(-) Custos das atividades esportivas",
+            "side": "expense",
+            "amount": 41.884585,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
+          }
         ],
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "amazonas-br",
@@ -61,7 +61,13 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.01401904,"tax":0,"gross_debt":0.9230075,"cash":0.12759833},
-      "official_totals": {"revenue":36.0557646,"expenses":39.42349092,"net_result":-3.38174536}
+      "official_totals": {"revenue":36.0557646,"expenses":39.42349092,"net_result":-3.38174536},
+      "adjustments": {
+        "no_breakdown": [
+          {"line":"Receita de Atividades Esportivas","side":"revenue","amount":36.055765,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {"line":"Custo das atividades Esportivas","side":"expense","amount":33.0658,"reason":"el documento no desglosa este renglón","kind":"cost_of_sales"}
+        ]
+      }
     }
   ],
   "budget_overlay": {},

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "kifisia-gr",
@@ -80,7 +80,7 @@
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.000738},
           {"label":"Φόροι εισοδήματος","amount":-0.000917}
         ],
-        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.396935,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.396935,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
@@ -149,7 +149,7 @@
       "official_totals": {"revenue":4.830808,"expenses":4.024961,"net_result":0.791242},
       "adjustments": {
         "extra_rows": [{"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.000949},{"label":"Φόροι εισοδήματος","amount":-0.013655}],
-        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":3.012039,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":3.012039,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},

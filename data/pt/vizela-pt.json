@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "vizela-pt",
@@ -84,7 +84,7 @@
       "official_totals": {"revenue":5.802367,"expenses":8.223657,"net_result":-2.429918},
       "adjustments": {
         "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.000004},{"label":"Impostos Sobre o Rendimento Período","amount":-0.008623}],
-        "no_breakdown": [{"line":"Vendas e Serviços Prestados","side":"revenue","amount":5.112926,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Vendas e Serviços Prestados","side":"revenue","amount":5.112926,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "member_dues": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},

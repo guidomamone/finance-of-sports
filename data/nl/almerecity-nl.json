@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "almerecity-nl",
@@ -50,7 +50,7 @@
           {"label":"Rentelasten en soortgelijke kosten","amount":-0.141762},
           {"label":"Vennootschapsbelasting","amount":0.00285}
         ],
-        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":15.391477,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":15.391477,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     }
   ],

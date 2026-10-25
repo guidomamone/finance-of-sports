@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "viborg-dk",
@@ -108,7 +108,18 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":1.514793,"tax":-6.420082,"gross_debt":29.385639,"cash":30.026932},
-      "official_totals": {"revenue":132.695911,"expenses":105.026691,"net_result":22.763931}
+      "official_totals": {"revenue":132.695911,"expenses":105.026691,"net_result":22.763931},
+      "adjustments": {
+        "no_breakdown": [
+          {
+            "line": "Nettoomsætning (recaudación de entradas, TV y comercial combinados, sin desglose numérico en la fuente)",
+            "side": "revenue",
+            "amount": 75.989957,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "net_sales"
+          }
+        ]
+      }
     },
     {
       "fiscal_year": 2025,
@@ -187,7 +198,7 @@
           {"label":"Andre finansielle omkostninger Financial expenses","amount":-0.160522},
           {"label":"Skat af årets resultat Tax on profit or loss for the year","amount":2.693035}
         ],
-        "no_breakdown": [{"line":"Nettoomsætning Revenue","side":"revenue","amount":79.32982,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Nettoomsætning Revenue","side":"revenue","amount":79.32982,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     }
   ],

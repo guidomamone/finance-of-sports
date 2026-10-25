@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "hellasverona-it",
@@ -314,7 +314,7 @@
           {"label":"b) Imposte differite","amount":-1.103845},
           {"label":"c) Imposte anticipate","amount":0.614845}
         ],
-        "no_breakdown": [{"line":"Costi per attività sportiva prima squadra","side":"expense","amount":0.765,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Costi per attività sportiva prima squadra","side":"expense","amount":0.765,"reason":"el documento no desglosa este renglón","kind":"other"}]
       }
     },
     {

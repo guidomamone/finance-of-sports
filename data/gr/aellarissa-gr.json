@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "aellarissa-gr",
@@ -120,8 +120,14 @@
       "adjustments": {
         "extra_rows": [{"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.002402},{"label":"Φόροι εισοδήματος","amount":0}],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.596069,"reason":"el documento no desglosa este renglón"},
-          {"line":"Κόστος πωλήσεων","side":"expense","amount":0.726277,"reason":"Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)"}
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.596069,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 0.726277,
+            "reason": "Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)",
+            "kind": "cost_of_sales"
+          }
         ],
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
@@ -154,8 +160,14 @@
       "adjustments": {
         "extra_rows": [{"label":"(-) Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.006264},{"label":"(-) Φόροι εισοδήματος","amount":0}],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":1.881042,"reason":"el documento no desglosa este renglón"},
-          {"line":"(-) Κόστος πωλήσεων","side":"expense","amount":1.477726,"reason":"Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)"}
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":1.881042,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "(-) Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 1.477726,
+            "reason": "Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)",
+            "kind": "cost_of_sales"
+          }
         ],
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
@@ -187,8 +199,14 @@
       "official_totals": {"revenue":3.40008,"expenses":2.658101,"net_result":0.730033},
       "adjustments": {
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":2.710883,"reason":"el documento no desglosa este renglón"},
-          {"line":"(-) Κόστος πωλήσεων","side":"expense","amount":1.541699,"reason":"Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)"}
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":2.710883,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "(-) Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 1.541699,
+            "reason": "Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)",
+            "kind": "cost_of_sales"
+          }
         ],
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
@@ -230,7 +248,15 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.014291,"tax":0,"gross_debt":0,"cash":0.307579},
       "official_totals": {"revenue":3.086962,"expenses":3.534819,"net_result":-0.483748},
       "adjustments": {
-        "no_breakdown": [{"line":"Πωλήσεις υπηρεσιών","side":"revenue","amount":2.319316,"reason":"Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)"}]
+        "no_breakdown": [
+          {
+            "line": "Πωλήσεις υπηρεσιών",
+            "side": "revenue",
+            "amount": 2.319316,
+            "reason": "Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)",
+            "kind": "net_sales"
+          }
+        ]
       }
     },
     {
@@ -266,7 +292,15 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.005732,"tax":0,"gross_debt":0.015,"cash":0.208989},
       "official_totals": {"revenue":2.793526,"expenses":3.284055,"net_result":-0.525172},
       "adjustments": {
-        "no_breakdown": [{"line":"Πωλήσεις υπηρεσιών","side":"revenue","amount":2.168926,"reason":"Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)"}]
+        "no_breakdown": [
+          {
+            "line": "Πωλήσεις υπηρεσιών",
+            "side": "revenue",
+            "amount": 2.168926,
+            "reason": "Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)",
+            "kind": "net_sales"
+          }
+        ]
       }
     },
     {
@@ -301,7 +335,15 @@
           {"label":"(-) Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.025344},
           {"label":"(-) Φόροι εισοδήματος","amount":0}
         ],
-        "no_breakdown": [{"line":"Πωλήσεις υπηρεσιών","side":"revenue","amount":2.067665,"reason":"Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)"}]
+        "no_breakdown": [
+          {
+            "line": "Πωλήσεις υπηρεσιών",
+            "side": "revenue",
+            "amount": 2.067665,
+            "reason": "Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)",
+            "kind": "net_sales"
+          }
+        ]
       }
     },
     {
@@ -342,7 +384,7 @@
           {"label":"(-) Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.005422},
           {"label":"(-) Φόροι εισοδήματος","amount":-0.003088}
         ],
-        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":2.068146,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":2.068146,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     },
     {
@@ -384,7 +426,7 @@
           {"label":"(-) Φόροι εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.963953,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.963953,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {"line":"(-) Κόστος πωλήσεων","side":"expense","amount":1.587768,"reason":"Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)"}
         ]
       }
@@ -416,7 +458,7 @@
       "official_totals": {"revenue":1.21248,"expenses":1.936681,"net_result":-2.363346},
       "adjustments": {
         "extra_rows": [{"label":"(+) Πιστωτικοί τόκοι και συναφή έσοδα","amount":0.000002},{"label":"(-) Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.007043}],
-        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.418981,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.418981,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     },
     {
@@ -456,7 +498,7 @@
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.016097},
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
-        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":2.300317,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":2.300317,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     }
   ],

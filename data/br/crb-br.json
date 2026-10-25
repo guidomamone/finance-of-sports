@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "crb-br",
@@ -98,12 +98,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Receitas financeiras","amount":0.013621},{"label":"Despesas financeiras","amount":-0.241499}],
         "no_breakdown": [
-          {"line":"Receita operacional líquida","side":"revenue","amount":14.902901,"reason":"el documento no desglosa este renglón"},
+          {"line":"Receita operacional líquida","side":"revenue","amount":14.902901,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Custo das atividades sociais e esportivas",
             "side": "expense",
             "amount": 2.969625,
-            "reason": "Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes"
+            "reason": "Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -142,12 +143,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Receitas financeiras","amount":0.050497},{"label":"Despesas financeiras","amount":-0.022655}],
         "no_breakdown": [
-          {"line":"Receita operacional líquida","side":"revenue","amount":23.41935,"reason":"el documento no desglosa este renglón"},
+          {"line":"Receita operacional líquida","side":"revenue","amount":23.41935,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Custo das atividades sociais e esportivas",
             "side": "expense",
             "amount": 6.628417,
-            "reason": "Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes"
+            "reason": "Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -186,12 +188,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Receitas financeiras","amount":0.147148},{"label":"Despesas financeiras","amount":-0.017574}],
         "no_breakdown": [
-          {"line":"Receita operacional líquida","side":"revenue","amount":28.583332,"reason":"el documento no desglosa este renglón"},
+          {"line":"Receita operacional líquida","side":"revenue","amount":28.583332,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Custo das atividades sociais e esportivas",
             "side": "expense",
             "amount": 6.974826,
-            "reason": "Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes"
+            "reason": "Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -230,12 +233,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Receitas financeiras","amount":0.131346},{"label":"Despesas financeiras","amount":-0.384163}],
         "no_breakdown": [
-          {"line":"Receita operacional líquida","side":"revenue","amount":45.563569,"reason":"el documento no desglosa este renglón"},
+          {"line":"Receita operacional líquida","side":"revenue","amount":45.563569,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Custo das atividades sociais e esportivas",
             "side": "expense",
             "amount": 8.358054,
-            "reason": "Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes"
+            "reason": "Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -274,12 +278,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Receitas financeiras","amount":0.165118},{"label":"Despesas financeiras","amount":-0.025012}],
         "no_breakdown": [
-          {"line":"Receita operacional líquida","side":"revenue","amount":60.144551,"reason":"el documento no desglosa este renglón"},
+          {"line":"Receita operacional líquida","side":"revenue","amount":60.144551,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Custo das atividades sociais e esportivas",
             "side": "expense",
             "amount": 16.557833,
-            "reason": "Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes"
+            "reason": "Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -318,12 +323,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Receitas financeiras","amount":null},{"label":"Despesas financeiras","amount":-0.080129}],
         "no_breakdown": [
-          {"line":"Receita operacional líquida","side":"revenue","amount":47.471422,"reason":"el documento no desglosa este renglón"},
+          {"line":"Receita operacional líquida","side":"revenue","amount":47.471422,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Custo das atividades sociais e esportivas",
             "side": "expense",
             "amount": 43.365002,
-            "reason": "Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes"
+            "reason": "Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes",
+            "kind": "cost_of_sales"
           }
         ]
       }

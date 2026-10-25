@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "panetolikos-gr",
@@ -108,12 +108,13 @@
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.712062,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.712062,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 3.807846,
-            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) \"Κόστος πωλήσεων | -6.274.036,89\". Nota de personal: L1079-1086, \"Σύνολο\" 1.959.575,41]"
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) \"Κόστος πωλήσεων | -6.274.036,89\". Nota de personal: L1079-1086, \"Σύνολο\" 1.959.575,41]",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {
@@ -152,12 +153,13 @@
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.377138,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.377138,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 3.850553,
-            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) \"Κόστος πωλήσεων | -6.274.036,89\". Nota de personal: L1079-1086, \"Σύνολο\" 1.959.575,41]"
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) \"Κόστος πωλήσεων | -6.274.036,89\". Nota de personal: L1079-1086, \"Σύνολο\" 1.959.575,41]",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {
@@ -196,12 +198,13 @@
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":1.111543,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":1.111543,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 4.428104,
-            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) \"Κόστος πωλήσεων | -6.274.036,89\". Nota de personal: L1079-1086, \"Σύνολο\" 1.959.575,41]"
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) \"Κόστος πωλήσεων | -6.274.036,89\". Nota de personal: L1079-1086, \"Σύνολο\" 1.959.575,41]",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {
@@ -252,9 +255,16 @@
             "line": "Αγορές τρίτων χωρών",
             "side": "revenue",
             "amount": 0.004192,
-            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Es el resto del Κύκλος εργασιών (604.192 = 600.000 + 4.192), clasificado por el documento como prestación de servicios sin más detalle y sin entradas (covid); no hay forma de saber qué servicio es. Queda como fútbol sin desglosar, igual que el Κύκλος εργασιών de 2020 y 2022 (lump_football_operations). Importe chico (4 mil euros). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2021-06-30.md L1471 (pág. 35) \"Αγορές τρίτων χωρών | 4.192,00 | 6.880,00\"; L1465 \"Παροχή υπηρεσιών Σύνολο | 604.192,00\"; L1475 \"στην τρέχουσα χρήση δεν εκδόθηκαν εισιτήρια λόγω covid\"]"
+            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Es el resto del Κύκλος εργασιών (604.192 = 600.000 + 4.192), clasificado por el documento como prestación de servicios sin más detalle y sin entradas (covid); no hay forma de saber qué servicio es. Queda como fútbol sin desglosar, igual que el Κύκλος εργασιών de 2020 y 2022 (lump_football_operations). Importe chico (4 mil euros). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2021-06-30.md L1471 (pág. 35) \"Αγορές τρίτων χωρών | 4.192,00 | 6.880,00\"; L1465 \"Παροχή υπηρεσιών Σύνολο | 604.192,00\"; L1475 \"στην τρέχουσα χρήση δεν εκδόθηκαν εισιτήρια λόγω covid\"]",
+            "kind": "other"
           },
-          {"line":"Κόστος πωλήσεων (sin el costo de personal)","side":"expense","amount":3.210043,"reason":"el documento no desglosa este renglón"}
+          {
+            "line": "Κόστος πωλήσεων (sin el costo de personal)",
+            "side": "expense",
+            "amount": 3.210043,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
+          }
         ],
         "included_in": {
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
@@ -298,8 +308,14 @@
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.224781,"reason":"el documento no desglosa este renglón"},
-          {"line":"Κόστος πωλήσεων (sin el costo de personal)","side":"expense","amount":3.614795,"reason":"el documento no desglosa este renglón"}
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.224781,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Κόστος πωλήσεων (sin el costo de personal)",
+            "side": "expense",
+            "amount": 3.614795,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
+          }
         ],
         "included_in": {
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
@@ -354,7 +370,15 @@
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.012176},
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
-        "no_breakdown": [{"line":"Κόστος πωλήσεων (sin el costo de personal)","side":"expense","amount":5.090619,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [
+          {
+            "line": "Κόστος πωλήσεων (sin el costo de personal)",
+            "side": "expense",
+            "amount": 5.090619,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
+          }
+        ],
         "included_in": {"broadcasting":{"in":"other_income","possible":true}}
       }
     },
@@ -402,7 +426,15 @@
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.017109},
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
-        "no_breakdown": [{"line":"Κόστος πωλήσεων (sin el costo de personal)","side":"expense","amount":4.869717,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [
+          {
+            "line": "Κόστος πωλήσεων (sin el costo de personal)",
+            "side": "expense",
+            "amount": 4.869717,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
+          }
+        ],
         "included_in": {"broadcasting":{"in":"other_income","possible":true}}
       }
     },
@@ -449,7 +481,15 @@
           {"label":"Χρεωστικοί τόκοι και συναφή έξοδα","amount":-0.014629},
           {"label":"Φόροι εισοδήματος","amount":0}
         ],
-        "no_breakdown": [{"line":"Κόστος πωλήσεων (sin el costo de personal)","side":"expense","amount":4.314462,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [
+          {
+            "line": "Κόστος πωλήσεων (sin el costo de personal)",
+            "side": "expense",
+            "amount": 4.314462,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
+          }
+        ],
         "included_in": {"broadcasting":{"in":"other_income","possible":true}}
       }
     }

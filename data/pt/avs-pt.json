@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "avs-pt",
@@ -106,7 +106,8 @@
             "line": "Atividades Operacionais",
             "side": "revenue",
             "amount": 0.373011,
-            "reason": "Claude 2026-10-16 (subagente Sonnet): nota 17 de rédito, prestação de serviços sin desglose (actividades operacionales) [relatorio-contas-2020-21.md L1093]"
+            "reason": "Claude 2026-10-16 (subagente Sonnet): nota 17 de rédito, prestação de serviços sin desglose (actividades operacionales) [relatorio-contas-2020-21.md L1093]",
+            "kind": "other"
           }
         ]
       }
@@ -169,7 +170,8 @@
             "line": "Atividades Operacionais",
             "side": "revenue",
             "amount": 1.173315,
-            "reason": "Claude 2026-10-16 (subagente Sonnet): nota 17 de rédito, prestação de serviços sin desglose (actividades operacionales) [relatorio-contas-2020-21.md L1093]"
+            "reason": "Claude 2026-10-16 (subagente Sonnet): nota 17 de rédito, prestação de serviços sin desglose (actividades operacionales) [relatorio-contas-2020-21.md L1093]",
+            "kind": "other"
           }
         ]
       }

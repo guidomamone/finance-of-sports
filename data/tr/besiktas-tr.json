@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "besiktas-tr",
@@ -601,7 +601,8 @@
             "line": "Satılan hizmet maliyeti(-)",
             "side": "expense",
             "amount": 74.045684,
-            "reason": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2009.md L1432 'Satilan hizmet maliyeti(-)' 74.045.684 es la UNICA linea de costo de servicios de la nota 28 y no hay desglose en ningun lado del doc 2009 (el estado de resultados L233 solo trae Satislarin Maliyeti 85.159.178 = 9.134.433 + 74.045.684 + 1.979.061). Incluye sueldos, amortizacion de pases, partidos, etc. mezclados -> bolson sin desglosar. No es subtotal duplicado ("
+            "reason": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): 2009.md L1432 'Satilan hizmet maliyeti(-)' 74.045.684 es la UNICA linea de costo de servicios de la nota 28 y no hay desglose en ningun lado del doc 2009 (el estado de resultados L233 solo trae Satislarin Maliyeti 85.159.178 = 9.134.433 + 74.045.684 + 1.979.061). Incluye sueldos, amortizacion de pases, partidos, etc. mezclados -> bolson sin desglosar. No es subtotal duplicado (",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {

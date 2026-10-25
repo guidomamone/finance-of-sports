@@ -16,7 +16,7 @@ const sccambuurNlExpenseLinesByYear = {
 };
 
 const sccambuurNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"sccambuur-nl-jaarverslag-sc-cambuur-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.531,"tax":-0.068,"grossDebt":null,"cash":null,"officialTotalRevenue":10.619,"officialTotalExpenses":13.615,"officialPAT":-3.595,"extraRows":[{"label":"Financiële baten","value":0.011},{"label":"Financiële lasten","value":-0.542},{"label":"Belastingen","value":-0.068}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":10.544,"motivo":"el documento no desglosa este renglón"}]},
+  2025: {"currency":"EUR","sourceId":"sccambuur-nl-jaarverslag-sc-cambuur-2024-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.531,"tax":-0.068,"grossDebt":null,"cash":null,"officialTotalRevenue":10.619,"officialTotalExpenses":13.615,"officialPAT":-3.595,"extraRows":[{"label":"Financiële baten","value":0.011},{"label":"Financiële lasten","value":-0.542},{"label":"Belastingen","value":-0.068}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":10.544,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
 };
 
 const sccambuurNlPresupuestoOverlayByYear = {};

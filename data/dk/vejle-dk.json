@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "vejle-dk",
@@ -83,7 +83,18 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.456,"tax":0.31,"gross_debt":24.128,"cash":4.548},
-      "official_totals": {"revenue":47.596,"expenses":52.027,"net_result":-3.665}
+      "official_totals": {"revenue":47.596,"expenses":52.027,"net_result":-3.665},
+      "adjustments": {
+        "no_breakdown": [
+          {
+            "line": "Bruttofortjeneste (ingresos netos de costos operativos externos — el balance usa explícitamente la exención §32 de la Årsregnskabsloven, sin desglose de Nettoomsætning disponible)",
+            "side": "revenue",
+            "amount": 47.596,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "gross_margin"
+          }
+        ]
+      }
     },
     {
       "fiscal_year": 2025,
@@ -125,7 +136,7 @@
           {"label":"Finansielle omkostninger","amount":-0.258},
           {"label":"Skat af årets resultat","amount":0.34}
         ],
-        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":53.447,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Bruttofortjeneste","side":"revenue","amount":53.447,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     }
   ],

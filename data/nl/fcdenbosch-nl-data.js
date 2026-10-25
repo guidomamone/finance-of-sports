@@ -15,7 +15,7 @@ const fcdenboschNlExpenseLinesByYear = {
 };
 
 const fcdenboschNlFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"fcdenbosch-nl-wf-2024-2025-c4a5aec0","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.057953,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":5.539656,"officialTotalExpenses":6.875757,"officialPAT":-1.394054,"extraRows":[{"label":"Financië le baten en lasten","value":-0.057953},{"label":"Belastingen","value":null}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":5.133797,"motivo":"el documento no desglosa este renglón"}]},
+  2025: {"currency":"EUR","sourceId":"fcdenbosch-nl-wf-2024-2025-c4a5aec0","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.057953,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":5.539656,"officialTotalExpenses":6.875757,"officialPAT":-1.394054,"extraRows":[{"label":"Financië le baten en lasten","value":-0.057953},{"label":"Belastingen","value":null}],"sinDesglose":[{"renglon":"Netto-omzet","lado":"revenue","importe":5.133797,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
 };
 
 const fcdenboschNlPresupuestoOverlayByYear = {};

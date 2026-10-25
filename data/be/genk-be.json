@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "genk-be",
@@ -81,7 +81,8 @@
         {"label":"Niet-recurrente bedrijfskosten","category":"exceptional","subcategory":"exceptional_items","amount":-0.231,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.439869,"tax":-0.199845,"gross_debt":34.505065,"cash":3.500316},
-      "official_totals": {"revenue":102.953926,"expenses":91.915829,"net_result":9.167383}
+      "official_totals": {"revenue":102.953926,"expenses":91.915829,"net_result":9.167383},
+      "adjustments": {"no_breakdown":[{"line":"Omzet","side":"revenue","amount":33.51509,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]}
     }
   ],
   "budget_overlay": {},

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "beerschot-be",
@@ -149,7 +149,7 @@
           {"label":"Kosten van schulden","amount":-0.002634},
           {"label":"Andere financiële kosten","amount":-0.003596}
         ],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":5.85353,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":5.85353,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
@@ -614,7 +614,7 @@
           {"label":"Andere financiële kosten","amount":-0.039289},
           {"label":"Belastingen","amount":-0.231384}
         ],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":6.146056,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":6.146056,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "levadiakos-gr",
@@ -100,8 +100,14 @@
           {"label":"Φόρος εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.076361,"reason":"el documento no desglosa este renglón"},
-          {"line":"Κόστος πωλήσεων","side":"expense","amount":2.256353,"reason":"Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump"}
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.076361,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 2.256353,
+            "reason": "Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump",
+            "kind": "cost_of_sales"
+          }
         ]
       }
     },
@@ -133,8 +139,14 @@
           {"label":"Φόρος εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.015806,"reason":"el documento no desglosa este renglón"},
-          {"line":"Κόστος πωλήσεων","side":"expense","amount":1.155648,"reason":"Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump"}
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.015806,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 1.155648,
+            "reason": "Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump",
+            "kind": "cost_of_sales"
+          }
         ]
       }
     },
@@ -166,8 +178,14 @@
           {"label":"Φόρος εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.003081,"reason":"el documento no desglosa este renglón"},
-          {"line":"Κόστος πωλήσεων","side":"expense","amount":0.772825,"reason":"Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump"}
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.003081,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 0.772825,
+            "reason": "Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump",
+            "kind": "cost_of_sales"
+          }
         ]
       }
     },
@@ -199,12 +217,13 @@
           {"label":"Φόρος εισοδήματος","amount":0}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.036775,"reason":"el documento no desglosa este renglón"},
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.036775,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Κόστος πωλήσεων",
             "side": "expense",
             "amount": 1.354066,
-            "reason": "Levadiakos 2022: Κόστος πωλήσεων 1.354.066,29 sin nota que lo abra -> lump (igual que AEL)"
+            "reason": "Levadiakos 2022: Κόστος πωλήσεων 1.354.066,29 sin nota que lo abra -> lump (igual que AEL)",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -237,8 +256,14 @@
           {"label":"Φόρος εισοδήματος","amount":-0.017175}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.253444,"reason":"el documento no desglosa este renglón"},
-          {"line":"Κόστος πωλήσεων","side":"expense","amount":3.042119,"reason":"Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump"}
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.253444,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 3.042119,
+            "reason": "Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump",
+            "kind": "cost_of_sales"
+          }
         ]
       }
     },
@@ -270,8 +295,14 @@
           {"label":"Φόρος εισοδήματος","amount":-0.029306}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.729301,"reason":"el documento no desglosa este renglón"},
-          {"line":"Κόστος πωλήσεων","side":"expense","amount":2.303645,"reason":"Levadiakos 2024: Κόστος πωλήσεων 2.303.644,63 sin desglose -> lump"}
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":0.729301,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 2.303645,
+            "reason": "Levadiakos 2024: Κόστος πωλήσεων 2.303.644,63 sin desglose -> lump",
+            "kind": "cost_of_sales"
+          }
         ]
       }
     },
@@ -303,8 +334,14 @@
           {"label":"Φόρος εισοδήματος","amount":-0.092852}
         ],
         "no_breakdown": [
-          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":2.97816,"reason":"el documento no desglosa este renglón"},
-          {"line":"Κόστος πωλήσεων","side":"expense","amount":4.664283,"reason":"Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump"}
+          {"line":"Κύκλος εργασιών (καθαρός)","side":"revenue","amount":2.97816,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Κόστος πωλήσεων",
+            "side": "expense",
+            "amount": 4.664283,
+            "reason": "Levadiakos 2025: Κόστος πωλήσεων 4.664.283,37 sin desglose -> lump",
+            "kind": "cost_of_sales"
+          }
         ]
       }
     }

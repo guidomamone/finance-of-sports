@@ -19,7 +19,7 @@ const gentBeExpenseLinesByYear = {
 };
 
 const gentBeFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"gent-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.673941,"tax":-0.118355,"grossDebt":70.411806,"cash":9.057614,"officialTotalRevenue":81.159667,"officialTotalExpenses":77.832372,"officialPAT":1.895863},
+  2025: {"currency":"EUR","sourceId":"gent-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.673941,"tax":-0.118355,"grossDebt":70.411806,"cash":9.057614,"officialTotalRevenue":81.159667,"officialTotalExpenses":77.832372,"officialPAT":1.895863,"sinDesglose":[{"renglon":"Omzet (ticketing, sponsoring en publiciteit)","lado":"revenue","importe":37.503463,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
 };
 
 const gentBePresupuestoOverlayByYear = {};

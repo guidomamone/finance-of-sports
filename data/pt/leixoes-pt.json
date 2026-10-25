@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "leixoes-pt",
@@ -134,7 +134,7 @@
           {"label":"Juros e gastos similares suportados","amount":-0.133532},
           {"label":"Impostos sobre o rendimento do período","amount":-0.056302}
         ],
-        "no_breakdown": [{"line":"Prestação de Serviços","side":"revenue","amount":0.785473,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Prestação de Serviços","side":"revenue","amount":0.785473,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     },
     {
@@ -233,7 +233,7 @@
           {"label":"Juros e gastos similares suportados","amount":-0.128943},
           {"label":"Impostos sobre o rendimento do período","amount":-0.014054}
         ],
-        "no_breakdown": [{"line":"Prestação de Serviços","side":"revenue","amount":1.001111,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Prestação de Serviços","side":"revenue","amount":1.001111,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     },
     {
@@ -338,7 +338,8 @@
             "line": "Prestação de Serviços",
             "side": "revenue",
             "amount": 0.776457,
-            "reason": "precedente del país: 1 clubes (Oliveirense), nota:vendas e servicos prestados · Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense."
+            "reason": "precedente del país: 1 clubes (Oliveirense), nota:vendas e servicos prestados · Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.",
+            "kind": "net_sales"
           }
         ]
       }

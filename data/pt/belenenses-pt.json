@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "belenenses-pt",
@@ -119,7 +119,7 @@
       "official_totals": {"revenue":1.288499,"expenses":1.678994,"net_result":-0.390504},
       "adjustments": {
         "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.00001},{"label":"Imposto sobre o rendimento do período","amount":null}],
-        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":1.288499,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":1.288499,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     },
     {
@@ -229,7 +229,7 @@
       "official_totals": {"revenue":0.758823,"expenses":1.190468,"net_result":-0.451035},
       "adjustments": {
         "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.000046},{"label":"Imposto sobre o rendimento do período","amount":-0.019344}],
-        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.536756,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.536756,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     }
   ],

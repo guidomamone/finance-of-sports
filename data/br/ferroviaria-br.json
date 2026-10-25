@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "ferroviaria-br",
@@ -175,12 +175,19 @@
       "official_totals": {"revenue":1.58152,"expenses":1.642833,"net_result":-0.074235},
       "adjustments": {
         "no_breakdown": [
-          {"line":"Receitas de atividades desportivas profissionais","side":"revenue","amount":0.576146,"reason":"el documento no desglosa este renglón"},
+          {
+            "line": "Receitas de atividades desportivas profissionais",
+            "side": "revenue",
+            "amount": 0.576146,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "net_sales"
+          },
           {
             "line": "Serviços do departamento de esportes profissional",
             "side": "expense",
             "amount": 1.196469,
-            "reason": "Claude 2026-10-09: Custo dos Serviços Prestados del departamento profesional: bolsón del costo del fútbol sin desglose (L164)"
+            "reason": "Claude 2026-10-09: Custo dos Serviços Prestados del departamento profesional: bolsón del costo del fútbol sin desglose (L164)",
+            "kind": "other"
           }
         ],
         "included_in": {
@@ -242,7 +249,8 @@
             "line": "Com atividade esportiva - Profissional",
             "side": "expense",
             "amount": 1.834031,
-            "reason": "Claude 2026-10-09: bolsón del costo del fútbol sin desglose"
+            "reason": "Claude 2026-10-09: bolsón del costo del fútbol sin desglose",
+            "kind": "other"
           }
         ],
         "included_in": {"match_organisation_expense":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}}
@@ -1136,8 +1144,20 @@
           {"label":"(-) Contribuição Social (deducido: antes de impuestos − resultado final, por ajuste manual)","amount":-0.16735}
         ],
         "no_breakdown": [
-          {"line":"Receitas Brutas","side":"revenue","amount":8.67695,"reason":"Claude 2026-10-09: renglón de primer nivel sin desglose en el documento"},
-          {"line":"(-) Custos","side":"expense","amount":7.802237,"reason":"Claude 2026-10-09: renglón de primer nivel sin desglose en el documento"}
+          {
+            "line": "Receitas Brutas",
+            "side": "revenue",
+            "amount": 8.67695,
+            "reason": "Claude 2026-10-09: renglón de primer nivel sin desglose en el documento",
+            "kind": "net_sales"
+          },
+          {
+            "line": "(-) Custos",
+            "side": "expense",
+            "amount": 7.802237,
+            "reason": "Claude 2026-10-09: renglón de primer nivel sin desglose en el documento",
+            "kind": "other"
+          }
         ],
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true},
@@ -1599,7 +1619,7 @@
           {"label":"Despesas financeiras","amount":-0.567014},
           {"label":"Imposto de renda e contribuição social","amount":null}
         ],
-        "no_breakdown": [{"line":"(-) Custos operacionais","side":"expense","amount":17.372222,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"(-) Custos operacionais","side":"expense","amount":17.372222,"reason":"el documento no desglosa este renglón","kind":"other"}],
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
@@ -1728,7 +1748,8 @@
             "line": "CUSTOS",
             "side": "expense",
             "amount": 23.267062,
-            "reason": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete"
+            "reason": "Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete",
+            "kind": "other"
           }
         ],
         "included_in": {
@@ -1789,7 +1810,8 @@
             "line": "(-) Custos operacionais",
             "side": "expense",
             "amount": 27.035536,
-            "reason": "Claude 2026-10-09: '(-) Custos operacionais' es el costo de la actividad futbolística de la SAF sin desglose en el estado; la categoría 'sin desglosar' es la que corresponde (la nota lo abre, pero sin reintento pago)"
+            "reason": "Claude 2026-10-09: '(-) Custos operacionais' es el costo de la actividad futbolística de la SAF sin desglose en el estado; la categoría 'sin desglosar' es la que corresponde (la nota lo abre, pero sin reintento pago)",
+            "kind": "other"
           }
         ],
         "included_in": {

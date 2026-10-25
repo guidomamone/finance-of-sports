@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "rbleipzig-de",
@@ -118,7 +118,18 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.450822,"tax":-2.021001,"gross_debt":99.905,"cash":4.104803},
-      "official_totals": {"revenue":346.510706,"expenses":338.266827,"net_result":4.772057}
+      "official_totals": {"revenue":346.510706,"expenses":338.266827,"net_result":4.772057},
+      "adjustments": {
+        "no_breakdown": [
+          {
+            "line": "Umsatzerlöse aus Spielbetrieb (incluye sponsoring, matchday y TV sin desglosar más, ver Anhang 4.1)",
+            "side": "revenue",
+            "amount": 255.395,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "net_sales"
+          }
+        ]
+      }
     },
     {
       "fiscal_year": 2023,
@@ -199,7 +210,18 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.031322,"tax":-1.021199,"gross_debt":111.731,"cash":0.765425},
-      "official_totals": {"revenue":394.761484,"expenses":385.366929,"net_result":5.342034}
+      "official_totals": {"revenue":394.761484,"expenses":385.366929,"net_result":5.342034},
+      "adjustments": {
+        "no_breakdown": [
+          {
+            "line": "Umsatzerlöse aus Spielbetrieb (incluye sponsoring, matchday y TV sin desglosar más, ver Anhang 4.1)",
+            "side": "revenue",
+            "amount": 313.227,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "net_sales"
+          }
+        ]
+      }
     },
     {
       "fiscal_year": 2024,
@@ -275,7 +297,18 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-4.109,"tax":-3.726,"gross_debt":153.717,"cash":0.783},
-      "official_totals": {"revenue":466.668,"expenses":454.143,"net_result":4.69}
+      "official_totals": {"revenue":466.668,"expenses":454.143,"net_result":4.69},
+      "adjustments": {
+        "no_breakdown": [
+          {
+            "line": "Umsatzerlöse aus Spielbetrieb (incluye sponsoring, matchday y TV sin desglosar más, ver Anhang 4.1)",
+            "side": "revenue",
+            "amount": 249.693,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "net_sales"
+          }
+        ]
+      }
     },
     {
       "fiscal_year": 2025,
@@ -351,7 +384,18 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.929727,"tax":-5.019911,"gross_debt":162.104,"cash":0.714562},
-      "official_totals": {"revenue":460.704357,"expenses":451.15378,"net_result":1.600939}
+      "official_totals": {"revenue":460.704357,"expenses":451.15378,"net_result":1.600939},
+      "adjustments": {
+        "no_breakdown": [
+          {
+            "line": "Umsatzerlöse aus Spielbetrieb (incluye sponsoring, matchday y TV sin desglosar más, ver Anhang 4.1)",
+            "side": "revenue",
+            "amount": 356.602,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "net_sales"
+          }
+        ]
+      }
     }
   ],
   "budget_overlay": {},

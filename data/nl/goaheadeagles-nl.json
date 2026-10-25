@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "goaheadeagles-nl",
@@ -275,7 +275,7 @@
           {"label":"Rentelasten en soortgelijke kosten","amount":-0.130986},
           {"label":"Belastingen","amount":-0.536128}
         ],
-        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":10.042936,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":10.042936,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
@@ -316,7 +316,7 @@
       "official_totals": {"revenue":11.871193,"expenses":10.585333,"net_result":0.884883},
       "adjustments": {
         "extra_rows": [{"label":"Rentelasten en soortgelijke kosten","amount":-0.124738},{"label":"Belastingen","amount":-0.276239}],
-        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":12.460577,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":12.460577,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
@@ -367,7 +367,7 @@
           {"label":"Rentelasten en soortgelijke kosten","amount":-0.170433},
           {"label":"Belastingen","amount":-0.083811}
         ],
-        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":13.976372,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":13.976372,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},

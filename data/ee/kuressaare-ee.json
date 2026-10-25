@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "kuressaare-ee",
@@ -460,7 +460,9 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0.000001,"tax":0,"gross_debt":0.0227,"cash":0.000208},
       "official_totals": {"revenue":0.326495,"expenses":0.416539,"net_result":-0.090043},
-      "adjustments": {"no_breakdown":[{"line":"Tulu kaupade ja teenuste müügist","side":"revenue","amount":0.014145,"reason":"el documento no desglosa este renglón"}]}
+      "adjustments": {
+        "no_breakdown": [{"line":"Tulu kaupade ja teenuste müügist","side":"revenue","amount":0.014145,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+      }
     },
     {
       "fiscal_year": 2024,

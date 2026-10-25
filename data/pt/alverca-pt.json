@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "alverca-pt",
@@ -84,7 +84,7 @@
       "official_totals": {"revenue":0.1523,"expenses":2.550781,"net_result":-2.416477},
       "adjustments": {
         "extra_rows": [{"label":"Gastos de financiamento (líquidos)","amount":-0.011537},{"label":"Imposto sobre o rendimento do período","amount":-0.006458}],
-        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.09357,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.09357,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     },
     {
@@ -138,7 +138,7 @@
       "official_totals": {"revenue":0.827308,"expenses":4.076494,"net_result":-3.257014},
       "adjustments": {
         "extra_rows": [{"label":"Juros e gastos similares suportados","amount":-0.000029},{"label":"Imposto sobre o rendimento do período","amount":-0.007798}],
-        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.063878,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.063878,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     },
     {
@@ -191,7 +191,7 @@
       "official_totals": {"revenue":0.754874,"expenses":3.975531,"net_result":-3.230497},
       "adjustments": {
         "extra_rows": [{"label":"Juros e gastos similares suportados","amount":0},{"label":"Imposto sobre o rendimento do período","amount":-0.00983}],
-        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.069051,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.069051,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     },
     {
@@ -297,7 +297,7 @@
       "official_totals": {"revenue":2.060033,"expenses":8.1202,"net_result":-6.079177},
       "adjustments": {
         "extra_rows": [{"label":"Juros e gastos similares suportados","amount":0},{"label":"Imposto sobre o rendimento do período","amount":-0.006919}],
-        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.637398,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.637398,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     }
   ],

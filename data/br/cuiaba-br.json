@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "cuiaba-br",
@@ -132,7 +132,7 @@
           {"label":"Receitas financeiras","amount":0.056178},
           {"label":"Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)","amount":0.091488}
         ],
-        "no_breakdown": [{"line":"Custo com Futebol Profissional","side":"expense","amount":98.846512,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Custo com Futebol Profissional","side":"expense","amount":98.846512,"reason":"el documento no desglosa este renglón","kind":"other"}],
         "included_in": {
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}

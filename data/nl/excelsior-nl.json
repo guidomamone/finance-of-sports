@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "excelsior-nl",
@@ -48,7 +48,7 @@
           {"label":"resultaat deelneming","amount":0.109017},
           {"label":"belastingen","amount":0.409864}
         ],
-        "no_breakdown": [{"line":"netto-omzet","side":"revenue","amount":10.082985,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"netto-omzet","side":"revenue","amount":10.082985,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     }
   ],

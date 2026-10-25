@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "lommelsk-be",
@@ -109,7 +109,9 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":0.139346},
       "official_totals": {"revenue":0.891255,"expenses":1.519198,"net_result":-0.628125},
-      "adjustments": {"no_breakdown":[{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.891255,"reason":"el documento no desglosa este renglón"}]}
+      "adjustments": {
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.891255,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
+      }
     },
     {
       "fiscal_year": 2019,
@@ -147,7 +149,7 @@
           {"label":"Recurrente financiële kosten","amount":-0.000727},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.00274}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.392528,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.392528,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     },
     {
@@ -194,7 +196,7 @@
           {"label":"Recurrente financiële kosten","amount":-0.042013},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":0.00274}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.929507,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":0.929507,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     },
     {
@@ -233,7 +235,7 @@
           {"label":"Recurrente financiële kosten","amount":-0.04943},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.01192}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.26023,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":2.26023,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     },
     {
@@ -272,7 +274,7 @@
           {"label":"Recurrente financiële kosten","amount":-0.086783},
           {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.041745}
         ],
-        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.906439,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":1.906439,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     },
     {
@@ -311,7 +313,7 @@
           {"label":"Recurrente financiële kosten","amount":-0.037141},
           {"label":"Belastingen op het resultaat","amount":-0.109625}
         ],
-        "no_breakdown": [{"line":"Brutomarge","side":"revenue","amount":1.253901,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Brutomarge","side":"revenue","amount":1.253901,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}]
       }
     },
     {
@@ -398,7 +400,7 @@
           {"label":"Andere financiële kosten","amount":-0.053861},
           {"label":"Belastingen","amount":-0.103242}
         ],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":3.605166,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":3.605166,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     },
     {
@@ -493,7 +495,7 @@
           {"label":"Belastingen","amount":-0.022238},
           {"label":"Regularisering van belastingen en terugneming van voorzieningen voor belastingen","amount":0}
         ],
-        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":3.689259,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Omzet","side":"revenue","amount":3.689259,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
       }
     }
   ],

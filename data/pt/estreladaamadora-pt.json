@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "estreladaamadora-pt",
@@ -148,7 +148,9 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-0.01341,"gross_debt":0,"cash":0.005976},
       "official_totals": {"revenue":1.58963,"expenses":2.02632,"net_result":-0.450101},
-      "adjustments": {"no_breakdown":[{"line":"Vendas e serviços prestados","side":"revenue","amount":0.976145,"reason":"el documento no desglosa este renglón"}]}
+      "adjustments": {
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":0.976145,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+      }
     },
     {
       "fiscal_year": 2023,
@@ -190,7 +192,9 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-0.006943,"gross_debt":null,"cash":0.007356},
       "official_totals": {"revenue":1.886476,"expenses":4.785272,"net_result":-2.905739},
-      "adjustments": {"no_breakdown":[{"line":"Vendas e serviços prestados","side":"revenue","amount":1.07693,"reason":"el documento no desglosa este renglón"}]}
+      "adjustments": {
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":1.07693,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]
+      }
     }
   ],
   "budget_overlay": {},

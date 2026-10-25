@@ -14,7 +14,7 @@ const yokohamafmarinosJpExpenseLinesByYear = {
 };
 
 const yokohamafmarinosJpFiscalYearMeta = {
-  2025: {"currency":"JPY","sourceId":"yokohamafmarinos-jp-jleague-doc-2025","reportType":"official_balance_sheet","gestionId":"temporada2025","fxRef":"JPY@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":7751,"officialTotalExpenses":null,"officialPAT":null},
+  2025: {"currency":"JPY","sourceId":"yokohamafmarinos-jp-jleague-doc-2025","reportType":"official_balance_sheet","gestionId":"temporada2025","fxRef":"JPY@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":7751,"officialTotalExpenses":null,"officialPAT":null,"sinDesglose":[{"renglon":"Otros ingresos (物販, distribución J.League, transferencias, academia, equipo femenino y otros — el documento NO los desglosa por club, solo a nivel de división)","lado":"revenue","importe":3350,"motivo":"el documento no desglosa este renglón","tipo":"other"}]},
 };
 
 const yokohamafmarinosJpPresupuestoOverlayByYear = {};

@@ -22,6 +22,8 @@
       // meses del ejercicio si no son 12 (un tramo corto de transición cargado como año, Admin/CONVENCIONES-DATOS.md); sin el campo, null = 12.
       // Uno de menos de 12 no entra al ranking por año (tools/generate-rankings.js) ni a las variaciones interanuales.
       periodMonths: m.periodMonths || null,
+      // las líneas que el documento junta en una sola (la pantalla marca «s/d» y explica el caso: js/finanzas-render.js, marcaSD)
+      sinDesglose: m.sinDesglose || null,
     };
   }
   // Un tramo corto de transición: un ejercicio de menos de 12 meses cargado como año. Sus flujos (ingresos, gastos, resultado) no se comparan

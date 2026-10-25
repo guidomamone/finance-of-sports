@@ -25,7 +25,7 @@ const standardliegeBeExpenseLinesByYear = {
 };
 
 const standardliegeBeFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"standardliege-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2.834691,"tax":-0.146296,"grossDebt":23.461701,"cash":0.311835,"officialTotalRevenue":44.568803,"officialTotalExpenses":55.902521,"officialPAT":-13.342433},
+  2025: {"currency":"EUR","sourceId":"standardliege-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2.834691,"tax":-0.146296,"grossDebt":23.461701,"cash":0.311835,"officialTotalRevenue":44.568803,"officialTotalExpenses":55.902521,"officialPAT":-13.342433,"sinDesglose":[{"renglon":"Chiffre d'affaires","lado":"revenue","importe":20.453554,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
 };
 
 const standardliegeBePresupuestoOverlayByYear = {};

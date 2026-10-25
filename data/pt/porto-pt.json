@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "porto-pt",
@@ -1123,7 +1123,7 @@
           {"label":"Resultados relativos a investimentos","amount":-0.056368},
           {"label":"Imposto sobre o rendimento do período","amount":-1.284922}
         ],
-        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":152.41446,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Vendas e serviços prestados","side":"revenue","amount":152.41446,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},

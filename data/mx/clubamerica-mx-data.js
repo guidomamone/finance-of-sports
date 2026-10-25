@@ -12,7 +12,7 @@ const clubamericaMxExpenseLinesByYear = {
 };
 
 const clubamericaMxFiscalYearMeta = {
-  2025: {"currency":"MXN","sourceId":"clubamerica-mx-ollamani-2025","reportType":"official_balance_sheet","gestionId":"ollamani","fx":17.9528,"fxSource":"document_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":2795.643,"officialTotalExpenses":2751.732,"officialPAT":null},
+  2025: {"currency":"MXN","sourceId":"clubamerica-mx-ollamani-2025","reportType":"official_balance_sheet","gestionId":"ollamani","fx":17.9528,"fxSource":"document_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":2795.643,"officialTotalExpenses":2751.732,"officialPAT":null,"sinDesglose":[{"renglon":"Ingresos del Segmento de Fútbol (incluye Estadio Banorte; Ollamani no desglosa Club América por separado, ver comentario de cabecera de este archivo)","lado":"revenue","importe":2795.643,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Costos y gastos del Segmento de Fútbol (cifra IMPLÍCITA: Ingresos del segmento menos Utilidad operativa del segmento antes de D&A informada por Ollamani; el documento no desglosa costos por rubro a nivel segmento)","lado":"expense","importe":2751.732,"motivo":"el documento no desglosa este renglón","tipo":"other"}]},
 };
 
 const clubamericaMxPresupuestoOverlayByYear = {};

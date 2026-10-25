@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "vilanova-br",
@@ -145,12 +145,13 @@
       "official_totals": {"revenue":6.116236,"expenses":6.488968,"net_result":-0.376919},
       "adjustments": {
         "no_breakdown": [
-          {"line":"Receitas Atividades Esportivas","side":"revenue","amount":1.965462,"reason":"el documento no desglosa este renglón"},
+          {"line":"Receitas Atividades Esportivas","side":"revenue","amount":1.965462,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Despesas Depto Esportes",
             "side": "expense",
             "amount": 3.268187,
-            "reason": "Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense"
+            "reason": "Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense",
+            "kind": "other"
           }
         ],
         "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}}
@@ -210,12 +211,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Receitas Financeiras","amount":0.038324},{"label":"Despesas Financeiras","amount":-0.005029}],
         "no_breakdown": [
-          {"line":"Receitas Atividades Esportivas","side":"revenue","amount":2.338518,"reason":"el documento no desglosa este renglón"},
+          {"line":"Receitas Atividades Esportivas","side":"revenue","amount":2.338518,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Despesas Depto Esportes",
             "side": "expense",
             "amount": 3.649581,
-            "reason": "Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense"
+            "reason": "Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense",
+            "kind": "other"
           }
         ],
         "included_in": {
@@ -276,12 +278,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Receitas Financeiras","amount":0.030509},{"label":"Despesas Financeiras","amount":-0.033202}],
         "no_breakdown": [
-          {"line":"Receitas Atividades Esportivas","side":"revenue","amount":2.220891,"reason":"el documento no desglosa este renglón"},
+          {"line":"Receitas Atividades Esportivas","side":"revenue","amount":2.220891,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Despesas Depto Esportes",
             "side": "expense",
             "amount": 4.783521,
-            "reason": "Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense"
+            "reason": "Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense",
+            "kind": "other"
           }
         ],
         "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}}
@@ -345,12 +348,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Receitas Financeiras","amount":0.00202},{"label":"Despesas Financeiras","amount":-0.067298}],
         "no_breakdown": [
-          {"line":"Receitas Atividades Esportivas","side":"revenue","amount":3.342234,"reason":"el documento no desglosa este renglón"},
+          {"line":"Receitas Atividades Esportivas","side":"revenue","amount":3.342234,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Despesas Depto Esportes",
             "side": "expense",
             "amount": 31.235464,
-            "reason": "Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense"
+            "reason": "Claude 2026-10-09: Despesas Depto Esportes es el costo del departamento de fútbol sin desglose en el estado (renglón único): lump_football_operations_expense",
+            "kind": "other"
           }
         ],
         "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true,"by":"precedente"}}

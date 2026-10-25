@@ -52,7 +52,7 @@ const osasunaEsExpenseLinesByYear = {
 };
 
 const osasunaEsFiscalYearMeta = {
-  2022: {"currency":"EUR","sourceId":"osasuna-es-auditoria-2021-22","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2022-06-30","profitOnPlayerSales":-2.422339,"assetSales":0,"netInterest":-1.584758,"tax":1.998652,"grossDebt":45.839328,"cash":6.029247,"officialTotalRevenue":70.058872,"officialTotalExpenses":69.103486,"officialPAT":-1.05306},
+  2022: {"currency":"EUR","sourceId":"osasuna-es-auditoria-2021-22","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2022-06-30","profitOnPlayerSales":-2.422339,"assetSales":0,"netInterest":-1.584758,"tax":1.998652,"grossDebt":45.839328,"cash":6.029247,"officialTotalRevenue":70.058872,"officialTotalExpenses":69.103486,"officialPAT":-1.05306,"sinDesglose":[{"renglon":"Seguridad Social y otras cargas sociales (sin desglosar por área)","lado":"expense","importe":1.509496,"motivo":"el documento no desglosa este renglón","tipo":"other"}]},
   2024: {"currency":"EUR","sourceId":"osasuna-es-auditoria-2023-24","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-06-30","profitOnPlayerSales":5.101991,"assetSales":0,"netInterest":-1.676497,"tax":0.958945,"grossDebt":50.186677,"cash":3.067461,"officialTotalRevenue":76.443297,"officialTotalExpenses":78.022048,"officialPAT":2.805688},
 };
 

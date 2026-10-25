@@ -20,7 +20,7 @@ const mechelenBeExpenseLinesByYear = {
 };
 
 const mechelenBeFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"mechelen-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.440798,"tax":-0.358728,"grossDebt":27.9558,"cash":3.134613,"officialTotalRevenue":33.486431,"officialTotalExpenses":34.440862,"officialPAT":-2.753957},
+  2025: {"currency":"EUR","sourceId":"mechelen-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1.440798,"tax":-0.358728,"grossDebt":27.9558,"cash":3.134613,"officialTotalRevenue":33.486431,"officialTotalExpenses":34.440862,"officialPAT":-2.753957,"sinDesglose":[{"renglon":"Omzet","lado":"revenue","importe":20.890688,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
 };
 
 const mechelenBePresupuestoOverlayByYear = {};

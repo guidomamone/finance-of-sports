@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "novorizontino-br",
@@ -230,7 +230,8 @@
             "line": "DESPESAS OPERACIONAIS",
             "side": "expense",
             "amount": 0.641612,
-            "reason": "Claude 2026-10-21: DESPESAS OPERACIONAIS (641.611,65) es el gasto operativo del club sin desglose en el estado (.md L95-97): fútbol sin desglosar, como los otros años de Novorizontino sin detalle"
+            "reason": "Claude 2026-10-21: DESPESAS OPERACIONAIS (641.611,65) es el gasto operativo del club sin desglose en el estado (.md L95-97): fútbol sin desglosar, como los otros años de Novorizontino sin detalle",
+            "kind": "other"
           }
         ]
       }
@@ -1763,7 +1764,8 @@
             "line": "RENDAS DE JOGOS, PATROCÍNIOS, LOCAÇÕES E OUTRAS RECEITAS OPERACIONAIS",
             "side": "revenue",
             "amount": 8.019563,
-            "reason": "el documento no desglosa este renglón"
+            "reason": "el documento no desglosa este renglón",
+            "kind": "net_sales"
           }
         ]
       }

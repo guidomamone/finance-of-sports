@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "rbbragantino-br",
@@ -78,7 +78,8 @@
         {"label":"Despesas gerais e administrativas","category":"admin_general","subcategory":"admin_general_expense","amount":-7.559,"disclosure":"summary"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.002,"tax":0,"gross_debt":0.564,"cash":4.256},
-      "official_totals": {"revenue":39.171,"expenses":37.025,"net_result":0.144}
+      "official_totals": {"revenue":39.171,"expenses":37.025,"net_result":0.144},
+      "adjustments": {"no_breakdown":[{"line":"Receita Líquida","side":"revenue","amount":39.171,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]}
     },
     {
       "fiscal_year": 2024,
@@ -112,7 +113,8 @@
         {"label":"Despesas gerais e administrativas","category":"admin_general","subcategory":"admin_general_expense","amount":-38.253,"disclosure":"summary"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":9.094,"tax":-14.384,"gross_debt":0,"cash":29.015},
-      "official_totals": {"revenue":506.216,"expenses":469.925,"net_result":31.001}
+      "official_totals": {"revenue":506.216,"expenses":469.925,"net_result":31.001},
+      "adjustments": {"no_breakdown":[{"line":"Receita Líquida","side":"revenue","amount":425.224,"reason":"el documento no desglosa este renglón","kind":"net_sales"}]}
     },
     {
       "fiscal_year": 2025,

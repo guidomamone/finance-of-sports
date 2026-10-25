@@ -22,7 +22,7 @@ const sinttruidenBeExpenseLinesByYear = {
 };
 
 const sinttruidenBeFiscalYearMeta = {
-  2025: {"currency":"EUR","sourceId":"sinttruiden-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.481145,"tax":-0.873978,"grossDebt":24.290111,"cash":3.805795,"officialTotalRevenue":36.179589,"officialTotalExpenses":28.904823,"officialPAT":3.619642},
+  2025: {"currency":"EUR","sourceId":"sinttruiden-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.481145,"tax":-0.873978,"grossDebt":24.290111,"cash":3.805795,"officialTotalRevenue":36.179589,"officialTotalExpenses":28.904823,"officialPAT":3.619642,"sinDesglose":[{"renglon":"Omzet","lado":"revenue","importe":20.175525,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}]},
 };
 
 const sinttruidenBePresupuestoOverlayByYear = {};

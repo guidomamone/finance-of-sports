@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "alianzalima-pe",
@@ -427,6 +427,10 @@
       "official_totals": {"revenue":89.052777,"expenses":75.511252,"net_result":12.338958},
       "adjustments": {
         "extra_rows": [{"label":"Gastos financieros, neto","amount":-1.095609},{"label":"Diferencia de cambio, neta","amount":-0.106958}],
+        "no_breakdown": [
+          {"line":"Otros ingresos deportivos","side":"revenue","amount":27.284537,"reason":"el documento no desglosa este renglón","kind":"other"},
+          {"line":"Costos deportivos","side":"expense","amount":60.792598,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
         "included_in": {
           "member_dues": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
@@ -497,6 +501,10 @@
       "official_totals": {"revenue":108.214198,"expenses":100.961185,"net_result":5.738622},
       "adjustments": {
         "extra_rows": [{"label":"Ingresos y gastos financieros, neto","amount":-0.687669},{"label":"Diferencia de cambio, neta","amount":-0.826722}],
+        "no_breakdown": [
+          {"line":"Otros ingresos","side":"revenue","amount":37.861997,"reason":"el documento no desglosa este renglón","kind":"other"},
+          {"line":"Costos deportivos","side":"expense","amount":80.506543,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
         "included_in": {
           "member_dues": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
@@ -567,6 +575,10 @@
       "official_totals": {"revenue":120.465726,"expenses":119.800515,"net_result":-1.364622},
       "adjustments": {
         "extra_rows": [{"label":"Ingresos y gastos financieros, neto","amount":-1.810517},{"label":"Diferencia de cambio, neta","amount":-0.219316}],
+        "no_breakdown": [
+          {"line":"Otros ingresos","side":"revenue","amount":57.179317,"reason":"el documento no desglosa este renglón","kind":"other"},
+          {"line":"Costos deportivos","side":"expense","amount":92.697274,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
         "included_in": {
           "member_dues": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},

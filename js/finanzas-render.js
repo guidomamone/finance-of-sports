@@ -115,7 +115,7 @@
     // `unknown` (bolsón sin desglosar con plata adentro) e `incluidoEn` (el documento junta esta fila con otra): ver bucketize() en
     // js/finanzas-calc.js. Valor y % se pintan "—"; con incluidoEn la celda dice "Dentro de otro rubro" y el rubro va en el
     // bocadillo (js/info-tip.js).
-    const celdaValor = (row, val) => row && row.incluidoEn ? `<span class="pl-incluido" tabindex="0" data-info-tip="${window.FINANZAS_DENTRO_TIP(row.incluidoEn, row.incluidoPosible).replace(/&/g,'&amp;').replace(/"/g,'&quot;')}">${row.incluidoPosible ? t('finanzas.posibleDentroOtro', 'Posiblemente dentro de otro rubro') : t('finanzas.dentroOtro', 'Dentro de otro rubro')}</span>` : row && row.unknown ? '—' : fmtDisplay(val);
+    const celdaValor = (row, val, esActual) => row && row.incluidoEn ? `<span class="pl-incluido" tabindex="0" data-info-tip="${window.FINANZAS_DENTRO_TIP(row.incluidoEn, row.incluidoPosible).replace(/&/g,'&amp;').replace(/"/g,'&quot;')}">${row.incluidoPosible ? t('finanzas.posibleDentroOtro', 'Posiblemente dentro de otro rubro') : t('finanzas.dentroOtro', 'Dentro de otro rubro')}</span>` : row && row.unknown ? (esActual ? marcaSD(meta, /-gas$/.test(groupPrefix) ? 'expense' : 'revenue') : '—') : fmtDisplay(val);
     const celdaPct = (row, val, tot) => row && (row.unknown || row.incluidoEn) ? '—' : fmtPctOfTotal(val, tot);
     // El total se calcula ANTES de armar las filas: cada fila necesita el total cerrado para su %.
     const total = curList.reduce((s,c) => s + nativeDisplayVal(c.value, meta, targetCurrency), 0);
@@ -132,7 +132,7 @@
         const itemsHtml = renderBreakdownRows(c.items, rowId, 0, meta, targetCurrency, total);
         return `<tr class="pl-clickable" onclick="toggleRevenueBreakdown('${rowId}', this)">
           <td><span class="pl-arrow">&#9656;</span>${tLabelH(c.label)}</td>
-          <td>${celdaValor(c, curVal)}</td>
+          <td>${celdaValor(c, curVal, true)}</td>
           ${pctCell}
           <td>${prevVal !== null ? celdaValor(prevRow, prevVal) : '—'}</td>
           ${prevPctCell}
@@ -140,7 +140,7 @@
       }
       return `<tr${c.unknown || c.incluidoEn ? ' class="pl-nodato"' : ''}>
         <td>${tLabelH(c.label)}</td>
-        <td>${celdaValor(c, curVal)}</td>
+        <td>${celdaValor(c, curVal, true)}</td>
         ${pctCell}
         <td>${prevVal !== null ? celdaValor(prevRow, prevVal) : '—'}</td>
         ${prevPctCell}
@@ -220,6 +220,7 @@
       '<tr class="pl-spacer"><td colspan="5"></td></tr>' + resultRow;
     // Totales YA en la moneda mostrada, para que los KPIs de arriba usen EXACTAMENTE los mismos números que la tabla (Ingresos +
     // Gastos + Int. = Resultado neto en los dos lugares).
+    renderNotasClub(clubId, [year]);
     return { ingresosTotal: ing.total, gastosTotal: sinGastos ? undefined : gas.total, resultado, extraTotal: sinGastos ? undefined : extraTotal };
   }
 
@@ -862,6 +863,65 @@
     const g = (window.GLOSAS_ETIQUETAS || {})[label];
     const idioma = window.I18N && window.I18N.current;
     return g && idioma && g[idioma] ? g[idioma] : null;
+  }
+  // ---- s/d: una celda que el documento no abre (NO es un cero) ----
+  // `meta.sinDesglose` (fiscalYearMeta del año) lista las líneas que el documento junta en una sola: {renglon, lado, importe, motivo, tipo}.
+  // `lado` viene con cuatro grafías en los datos viejos (revenue/ingreso, expense/gasto): se normaliza acá.
+  const ladoSD = l => /^(revenue|ingreso)$/.test(l) ? 'revenue' : 'expense';
+  function sinDesgloseDe(meta, lado){
+    return ((meta && meta.sinDesglose) || []).find(e => ladoSD(e.lado) === lado) || null;
+  }
+  // El rótulo de la línea en el idioma del visitante y sin el paréntesis o la aclaración que lo sigue: en una frase alcanza el nombre.
+  const RAYAS = String.fromCharCode(8212, 8211);
+  const rotuloCorto = s => (glosaDe(s) || s).replace(new RegExp('\\s*[(' + RAYAS + '].*$'), '').trim() || s;
+  function textoSD(meta, lado){
+    const e = sinDesgloseDe(meta, lado);
+    if(!e) return t('pl.sd.tip.gen', 'Sin desglose: el documento de este ejercicio no abre este renglón. No es cero.');
+    const r = rotuloCorto(e.renglon);
+    if(lado === 'expense') return t('pl.sd.tip.exp', 'Sin desglose: este ejercicio el documento informa los gastos en una sola línea («{r}»), sin abrirlos. No es cero.').replace('{r}', r);
+    return e.tipo === 'gross_margin'
+      ? t('pl.sd.tip.margin', 'Sin desglose: este ejercicio el documento informa solo «{r}» (un margen bruto), no los ingresos por separado. No es cero.').replace('{r}', r)
+      : t('pl.sd.tip.one', 'Sin desglose: este ejercicio el documento informa los ingresos en una sola línea («{r}»), sin abrirlos por fuente. No es cero.').replace('{r}', r);
+  }
+  // El asterisco lleva a «Notas sobre este club» sin tocar la URL (un ancla común volvía a la portada) y la resalta un momento.
+  document.addEventListener('click', ev => {
+    const a = ev.target.closest && ev.target.closest('.pl-sd-n a');
+    if(!a) return;
+    ev.preventDefault(); ev.stopPropagation();
+    const box = document.getElementById('finNotasClub');
+    if(!box || box.hidden) return;
+    box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    box.classList.add('pl-notas-flash'); setTimeout(() => box.classList.remove('pl-notas-flash'), 1800);
+  });
+  // La marca de la celda: «s/d» con su bocadillo (js/info-tip.js: hover en escritorio, toque en el celular) y un asterisco que lleva a «Notas sobre este club».
+  function marcaSD(meta, lado){
+    const e = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+    return `<span class="pl-sd" tabindex="0" data-info-tip="${e(textoSD(meta, lado))}">${e(t('pl.sd', 's/d'))}</span><sup class="pl-sd-n"><a href="#finNotasClub" role="button" aria-label="${e(t('pl.notas.title', 'Notas sobre este club'))}">*</a></sup>`;
+  }
+  // «Notas sobre este club»: una nota por ejercicio mostrado que tiene líneas sin desglosar, armada con los datos del año (sinDesglose) y las plantillas del idioma.
+  function renderNotasClub(clubId, years){
+    const box = document.getElementById('finNotasClub');
+    if(!box) return;
+    const lab = y => (typeof esEjercicioCalendario === 'function' && esEjercicioCalendario(clubId, y)) ? String(y) : (y - 1) + '/' + String(y).slice(2);
+    const items = [];
+    (years || []).slice().sort().forEach(y => {
+      const meta = yearMetaFor(clubId, y);
+      ['revenue', 'expense'].forEach(lado => {
+        const e = sinDesgloseDe(meta, lado); if(!e) return;
+        const r = rotuloCorto(e.renglon);
+        const imp = fmtAmountPlain(nativeDisplayVal(e.importe, meta, currentCurrency), currentCurrency);
+        const clave = lado === 'expense' ? 'exp' : (e.tipo === 'gross_margin' ? 'margin' : e.tipo === 'net_sales' ? 'sales' : 'other');
+        const es = {
+          margin: 'El documento informa solo «{r}» ({i}): un margen bruto que ya descuenta costos, no la facturación. Los ingresos de este ejercicio no son comparables con los de los ejercicios que muestran ingresos y gastos por separado, y las categorías figuran como s/d.',
+          sales: 'El documento informa solo el total de ventas («{r}», {i}), sin abrirlo por fuente de ingreso. El total sí se puede comparar con otros ejercicios; las categorías figuran como s/d.',
+          other: 'El documento informa los ingresos en una sola línea («{r}», {i}), sin abrirlos por fuente. Las categorías figuran como s/d.',
+          exp: 'El documento informa los gastos en una sola línea («{r}», {i}), sin abrirlos. Las categorías de gasto figuran como s/d.'
+        }[clave];
+        items.push(`<li><b>${lab(y)}.</b> ${t('pl.notas.' + clave, es).replace('{r}', r).replace('{i}', imp)}</li>`);
+      });
+    });
+    box.hidden = !items.length;
+    box.innerHTML = items.length ? `<h3>${t('pl.notas.title', 'Notas sobre este club')}</h3><ul>${items.join('')}</ul><p class="pl-notas-leyenda"><span class="pl-sd">${t('pl.sd', 's/d')}</span> ${t('pl.notas.leyenda', 'sin desglose: el documento no abre este ingreso o gasto; no es cero.')} <span class="pl-notas-cero">—</span> ${t('pl.notas.cero', 'cero real o sin dato.')}</p>` : '';
   }
   // Para una celda de la tabla: la glosa con el original a mano (title y subrayado punteado). Sin glosa, igual que tLabel.
   function tLabelH(label){

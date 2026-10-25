@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "portimonense-pt",
@@ -185,7 +185,8 @@
             "line": "Prestações de Serviços",
             "side": "revenue",
             "amount": 4.387657,
-            "reason": "Claude 2026-10-16 (revisado): el renglón se reemplaza por bilheteira, publicidade y TV con ajustes 'fila' (cuadro de gestión, cierra exacto)."
+            "reason": "Claude 2026-10-16 (revisado): el renglón se reemplaza por bilheteira, publicidade y TV con ajustes 'fila' (cuadro de gestión, cierra exacto).",
+            "kind": "net_sales"
           }
         ]
       }
@@ -324,7 +325,8 @@
             "line": "Prestações de Serviços",
             "side": "revenue",
             "amount": 4.442864,
-            "reason": "Claude 2026-10-16 (revisado): el renglón se reemplaza por bilheteira, publicidade y TV con ajustes 'fila' (cuadro de gestión, cierra exacto)."
+            "reason": "Claude 2026-10-16 (revisado): el renglón se reemplaza por bilheteira, publicidade y TV con ajustes 'fila' (cuadro de gestión, cierra exacto).",
+            "kind": "net_sales"
           }
         ]
       }
@@ -471,7 +473,8 @@
             "line": "Prestações de Serviços",
             "side": "revenue",
             "amount": 4.94831,
-            "reason": "Claude 2026-10-16 (revisado): el renglón se reemplaza por bilheteira, publicidade y TV con ajustes 'fila' (cuadro de gestión, cierra exacto)."
+            "reason": "Claude 2026-10-16 (revisado): el renglón se reemplaza por bilheteira, publicidade y TV con ajustes 'fila' (cuadro de gestión, cierra exacto).",
+            "kind": "net_sales"
           }
         ]
       }

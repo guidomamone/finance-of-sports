@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "goias-br",
@@ -1267,7 +1267,7 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.401072,"tax":0,"gross_debt":null,"cash":10.433197},
       "official_totals": {"revenue":90.846836,"expenses":85.64047,"net_result":2.801865},
       "adjustments": {
-        "no_breakdown": [{"line":"RECEITA LÍQUIDA","side":"revenue","amount":90.846836,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"RECEITA LÍQUIDA","side":"revenue","amount":90.846836,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
@@ -1380,7 +1380,7 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":6.248292,"tax":0,"gross_debt":null,"cash":0.05095},
       "official_totals": {"revenue":85.971659,"expenses":91.492245,"net_result":-3.098919},
       "adjustments": {
-        "no_breakdown": [{"line":"RECEITA LÍQUIDA","side":"revenue","amount":85.971659,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"RECEITA LÍQUIDA","side":"revenue","amount":85.971659,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
@@ -1845,7 +1845,8 @@
             "line": "Serviços de terceiros",
             "side": "expense",
             "amount": 7.501287,
-            "reason": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)"
+            "reason": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+            "kind": "other"
           }
         ]
       }
@@ -2015,7 +2016,8 @@
             "line": "Serviços de terceiros",
             "side": "expense",
             "amount": 8.114569,
-            "reason": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)"
+            "reason": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+            "kind": "other"
           }
         ]
       }
@@ -2153,7 +2155,8 @@
             "line": "Serviços de terceiros (b)",
             "side": "expense",
             "amount": 12.827914,
-            "reason": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)"
+            "reason": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+            "kind": "other"
           }
         ]
       }

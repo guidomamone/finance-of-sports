@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "asterastripolis-gr",
@@ -225,7 +225,8 @@
             "line": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
             "side": "expense",
             "amount": 3.147828,
-            "reason": "el documento no desglosa este renglón"
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -320,7 +321,8 @@
             "line": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
             "side": "expense",
             "amount": 3.448209,
-            "reason": "el documento no desglosa este renglón"
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -417,7 +419,8 @@
             "line": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
             "side": "expense",
             "amount": 3.959304,
-            "reason": "el documento no desglosa este renglón"
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -513,7 +516,8 @@
             "line": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
             "side": "expense",
             "amount": 5.016123,
-            "reason": "el documento no desglosa este renglón"
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -604,7 +608,8 @@
             "line": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
             "side": "expense",
             "amount": 4.804987,
-            "reason": "el documento no desglosa este renglón"
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
           }
         ]
       }
@@ -693,7 +698,8 @@
             "line": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
             "side": "expense",
             "amount": 6.879827,
-            "reason": "el documento no desglosa este renglón"
+            "reason": "el documento no desglosa este renglón",
+            "kind": "cost_of_sales"
           }
         ]
       }

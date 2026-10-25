@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "fredrikstad-no",
@@ -146,7 +146,8 @@
             "line": "Utgifter Sport",
             "side": "expense",
             "amount": 21.156689,
-            "reason": "Claude 2026-10-19: b4 L355-377 de fli-2012.md; gatelag = fútbol callejero/acción social; Utgifter Sport = gastos del deporte sin desglose"
+            "reason": "Claude 2026-10-19: b4 L355-377 de fli-2012.md; gatelag = fútbol callejero/acción social; Utgifter Sport = gastos del deporte sin desglose",
+            "kind": "other"
           }
         ],
         "included_in": {
@@ -185,9 +186,10 @@
             "line": "Salgsinntekt",
             "side": "revenue",
             "amount": 14.289455,
-            "reason": "Claude 2026-10-19: mismo criterio que el FLI 2024 ya cargado (Annen driftsinntekt -> lump_football_operations)"
+            "reason": "Claude 2026-10-19: mismo criterio que el FLI 2024 ya cargado (Annen driftsinntekt -> lump_football_operations)",
+            "kind": "net_sales"
           },
-          {"line":"Annen driftsinntekt","side":"revenue","amount":1.291506,"reason":"el documento no desglosa este renglón"}
+          {"line":"Annen driftsinntekt","side":"revenue","amount":1.291506,"reason":"el documento no desglosa este renglón","kind":"other"}
         ]
       }
     },
@@ -221,9 +223,10 @@
             "line": "Salgsinntekt",
             "side": "revenue",
             "amount": 28.816918,
-            "reason": "Claude 2026-10-19: mismo criterio que el FLI 2024 ya cargado (Annen driftsinntekt -> lump_football_operations)"
+            "reason": "Claude 2026-10-19: mismo criterio que el FLI 2024 ya cargado (Annen driftsinntekt -> lump_football_operations)",
+            "kind": "net_sales"
           },
-          {"line":"Annen driftsinntekt","side":"revenue","amount":1.547231,"reason":"el documento no desglosa este renglón"}
+          {"line":"Annen driftsinntekt","side":"revenue","amount":1.547231,"reason":"el documento no desglosa este renglón","kind":"other"}
         ]
       }
     },
@@ -257,9 +260,10 @@
             "line": "Salgsinntekt",
             "side": "revenue",
             "amount": 28.043511,
-            "reason": "Claude 2026-10-19: mismo criterio que el FLI 2024 ya cargado (Annen driftsinntekt -> lump_football_operations)"
+            "reason": "Claude 2026-10-19: mismo criterio que el FLI 2024 ya cargado (Annen driftsinntekt -> lump_football_operations)",
+            "kind": "net_sales"
           },
-          {"line":"Annen driftsinntekt","side":"revenue","amount":4.134031,"reason":"el documento no desglosa este renglón"}
+          {"line":"Annen driftsinntekt","side":"revenue","amount":4.134031,"reason":"el documento no desglosa este renglón","kind":"other"}
         ]
       }
     },
@@ -282,7 +286,7 @@
       "official_totals": {"revenue":33.801587,"expenses":33.812973,"net_result":0.020569},
       "adjustments": {
         "extra_rows": [{"label":"Annen finansinntekt","amount":0.042386},{"label":"Annen finanskostnad","amount":-0.010431}],
-        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":33.801587,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":33.801587,"reason":"el documento no desglosa este renglón","kind":"other"}]
       }
     },
     {
@@ -307,7 +311,7 @@
       "official_totals": {"revenue":28.452409,"expenses":28.493927,"net_result":-0.032063},
       "adjustments": {
         "extra_rows": [{"label":"Annen finansinntekt","amount":0.039931},{"label":"Annen finanskostnad","amount":-0.030475}],
-        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":28.452409,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":28.452409,"reason":"el documento no desglosa este renglón","kind":"other"}]
       }
     },
     {
@@ -332,7 +336,7 @@
       "official_totals": {"revenue":22.903598,"expenses":22.905462,"net_result":-1.148565},
       "adjustments": {
         "extra_rows": [{"label":"Annen finansinntekt","amount":0.09345},{"label":"Annen finanskostnad","amount":-1.24015}],
-        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":22.903598,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":22.903598,"reason":"el documento no desglosa este renglón","kind":"other"}]
       }
     },
     {
@@ -354,7 +358,7 @@
       "official_totals": {"revenue":92.725486,"expenses":89.871657,"net_result":2.766504},
       "adjustments": {
         "extra_rows": [{"label":"Annen finansinntekt","amount":0.223302},{"label":"Annen finanskostnad","amount":-0.310627}],
-        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":92.725486,"reason":"el documento no desglosa este renglón"}],
+        "no_breakdown": [{"line":"Annen driftsinntekt","side":"revenue","amount":92.725486,"reason":"el documento no desglosa este renglón","kind":"other"}],
         "included_in": {
           "member_dues": "lump_football_operations",
           "broadcasting": {"in":"lump_football_operations","possible":true},

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "torreense-pt",
@@ -154,7 +154,8 @@
             "line": "Vendas e serviços prestados",
             "side": "revenue",
             "amount": 0.057377,
-            "reason": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense)."
+            "reason": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
+            "kind": "net_sales"
           }
         ]
       }
@@ -256,7 +257,8 @@
             "line": "Vendas e serviços prestados",
             "side": "revenue",
             "amount": 0.796703,
-            "reason": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense)."
+            "reason": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
+            "kind": "net_sales"
           }
         ]
       }
@@ -390,7 +392,8 @@
             "line": "Vendas e serviços prestados",
             "side": "revenue",
             "amount": 4.77215,
-            "reason": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense)."
+            "reason": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
+            "kind": "net_sales"
           }
         ]
       }

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "helmondsport-nl",
@@ -45,12 +45,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Financiële baten en lasten","amount":-0.079618},{"label":"Belastingen","amount":null}],
         "no_breakdown": [
-          {"line":"Omzet","side":"revenue","amount":5.135616,"reason":"el documento no desglosa este renglón"},
+          {"line":"Omzet","side":"revenue","amount":5.135616,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Overige kosten",
             "side": "expense",
             "amount": 7.426289,
-            "reason": "Claude 2026-10-18 (subagente Sonnet): 'Overige kosten' 7.426.289 NO es un 'otros gastos' comun: el estado reducido de la KvK (Omzet, Afschrijvingen, Overige kosten) lo usa para TODOS los costos operativos salvo la depreciacion (5.135.616 - 56.242 - 7.426.289 = -2.346.915), o sea que incluye sueldos del plantel, staff, estadio y administracion, sin desglose. Dejarlo en other_expenses haria desaparecer los sueldos del club (wagesToTurnover en 0). Corresponde el bolsón lump_football_operations_expense (monto real que la fuente no separa; no se inventa un desglose). Alternativa si Guido prefiere no usar el bolsón: other_expenses, pero con el rawLabel 'Overige kosten' igual. Es una decision de criterio (la regla pide consultarlo a Guido cuando el documento no permite categorizar como Boca). Entidad: Stichting Helmond Sport. [Overige kosten € 7.426.289 (L31); Omzet € 5.135.616 (L29); Bedrijfsr"
+            "reason": "Claude 2026-10-18 (subagente Sonnet): 'Overige kosten' 7.426.289 NO es un 'otros gastos' comun: el estado reducido de la KvK (Omzet, Afschrijvingen, Overige kosten) lo usa para TODOS los costos operativos salvo la depreciacion (5.135.616 - 56.242 - 7.426.289 = -2.346.915), o sea que incluye sueldos del plantel, staff, estadio y administracion, sin desglose. Dejarlo en other_expenses haria desaparecer los sueldos del club (wagesToTurnover en 0). Corresponde el bolsón lump_football_operations_expense (monto real que la fuente no separa; no se inventa un desglose). Alternativa si Guido prefiere no usar el bolsón: other_expenses, pero con el rawLabel 'Overige kosten' igual. Es una decision de criterio (la regla pide consultarlo a Guido cuando el documento no permite categorizar como Boca). Entidad: Stichting Helmond Sport. [Overige kosten € 7.426.289 (L31); Omzet € 5.135.616 (L29); Bedrijfsr",
+            "kind": "other"
           }
         ]
       }

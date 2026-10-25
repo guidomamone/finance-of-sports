@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "clubamerica-mx",
@@ -53,7 +53,25 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":2795.643,"expenses":2751.732,"net_result":null}
+      "official_totals": {"revenue":2795.643,"expenses":2751.732,"net_result":null},
+      "adjustments": {
+        "no_breakdown": [
+          {
+            "line": "Ingresos del Segmento de Fútbol (incluye Estadio Banorte; Ollamani no desglosa Club América por separado, ver comentario de cabecera de este archivo)",
+            "side": "revenue",
+            "amount": 2795.643,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "net_sales"
+          },
+          {
+            "line": "Costos y gastos del Segmento de Fútbol (cifra IMPLÍCITA: Ingresos del segmento menos Utilidad operativa del segmento antes de D&A informada por Ollamani; el documento no desglosa costos por rubro a nivel segmento)",
+            "side": "expense",
+            "amount": 2751.732,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "other"
+          }
+        ]
+      }
     }
   ],
   "budget_overlay": {},

@@ -978,6 +978,15 @@
                   },
                   "reason": {
                     "type": "string"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "gross_margin",
+                      "net_sales",
+                      "cost_of_sales",
+                      "other"
+                    ]
                   }
                 },
                 "required": [

@@ -187,9 +187,12 @@ const FIN_MULTI_PL = (function(){
         }
         const row = rowsDe(d, c.src);
         if(c.src === 'main' && key === 'gastos' && d.sinGastos){ h += `<td${cls(c)}>—</td>`; return; }
+        // un ejercicio cuyo documento junta ese lado en una sola línea (sinDesglose): lo que otros años abren acá es «s/d», no un rubro ausente
+        const lSD = key === 'gastos' ? 'expense' : 'revenue';
+        if(!row && c.src === 'main' && sinDesgloseDe(d.meta, lSD)){ h += `<td${cls(c)}>${marcaSD(d.meta, lSD)}</td>`; return; }
         if(!row){ h += `<td${cls(c)} title="${esc(t('pl.multi.noRow', 'Este rubro no aparece en el documento de este ejercicio'))}">—</td>`; return; }
         if(row.incluidoEn){ h += `<td${cls(c)}><span class="pl-incluido" tabindex="0" data-info-tip="${esc(window.FINANZAS_DENTRO_TIP(row.incluidoEn, row.incluidoPosible))}">—</span></td>`; return; }
-        if(row.unknown){ h += `<td${cls(c)}>—</td>`; return; }
+        if(row.unknown){ h += `<td${cls(c)}>${c.src === 'main' ? marcaSD(d.meta, lSD) : '—'}</td>`; return; }
         const v = val(d, c.src, row.value);
         h += `<td${cls(c)}>${pct ? fmtPct(comoPct(v, totalDe(d, c.src, totK))) : fmtDisplay(v)}</td>`;
       });
@@ -283,6 +286,7 @@ const FIN_MULTI_PL = (function(){
     const tabla = document.getElementById(tableId);
     tabla.querySelector('thead').innerHTML = filaGest + head;
     tabla.querySelector('tbody').innerHTML = ingHtml + sp + gasHtml + (extraHtml ? sp + extraHtml : '') + sp + res;
+    renderNotasClub(clubId, years);
 
     // Abrir / cerrar un rubro
     tabla.querySelectorAll('tr.pl-row-open').forEach(tr => {
@@ -291,7 +295,7 @@ const FIN_MULTI_PL = (function(){
         estado.abiertos.has(id) ? estado.abiertos.delete(id) : estado.abiertos.add(id);
         render(estado.club, estado.years, estado.tableId);
       };
-      tr.addEventListener('click', e => { if(!e.target.closest('.pl-incluido')) toggle(); });
+      tr.addEventListener('click', e => { if(!e.target.closest('.pl-incluido, .pl-sd, .pl-sd-n')) toggle(); });
       tr.addEventListener('keydown', e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); toggle(); } });
     });
     // Gráficos de los rubros abiertos

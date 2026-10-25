@@ -38,8 +38,8 @@ const stuttgartDeExpenseLinesByYear = {
 };
 
 const stuttgartDeFiscalYearMeta = {
-  2023: {"currency":"EUR","sourceId":"stuttgart-de-konzernabschluss-2023","reportType":"official_balance_sheet","gestionId":"wehrle","fxRef":"EUR@2023-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-6.290382,"tax":-0.480418,"grossDebt":125.909849,"cash":9.153243,"officialTotalRevenue":217.622653,"officialTotalExpenses":210.074841,"officialPAT":0.777012},
-  2024: {"currency":"EUR","sourceId":"stuttgart-de-konzernabschluss-2024","reportType":"official_balance_sheet","gestionId":"wehrle","fxRef":"EUR@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-3.910318,"tax":-2.490705,"grossDebt":140.706446,"cash":10.438385,"officialTotalRevenue":299.815224,"officialTotalExpenses":277.88135,"officialPAT":15.532851},
+  2023: {"currency":"EUR","sourceId":"stuttgart-de-konzernabschluss-2023","reportType":"official_balance_sheet","gestionId":"wehrle","fxRef":"EUR@2023-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-6.290382,"tax":-0.480418,"grossDebt":125.909849,"cash":9.153243,"officialTotalRevenue":217.622653,"officialTotalExpenses":210.074841,"officialPAT":0.777012,"sinDesglose":[{"renglon":"Handel und Sonstiges","lado":"revenue","importe":81.077,"motivo":"el documento no desglosa este renglón","tipo":"other"}]},
+  2024: {"currency":"EUR","sourceId":"stuttgart-de-konzernabschluss-2024","reportType":"official_balance_sheet","gestionId":"wehrle","fxRef":"EUR@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-3.910318,"tax":-2.490705,"grossDebt":140.706446,"cash":10.438385,"officialTotalRevenue":299.815224,"officialTotalExpenses":277.88135,"officialPAT":15.532851,"sinDesglose":[{"renglon":"Handel und Sonstiges","lado":"revenue","importe":109.498,"motivo":"el documento no desglosa este renglón","tipo":"other"}]},
 };
 
 const stuttgartDePresupuestoOverlayByYear = {};

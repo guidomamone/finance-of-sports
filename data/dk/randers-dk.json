@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-21",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "randers-dk",
@@ -67,7 +67,18 @@
         }
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2.568178,"tax":0.054931,"gross_debt":2.062693,"cash":11.464548},
-      "official_totals": {"revenue":61.744974,"expenses":62.173346,"net_result":2.194737}
+      "official_totals": {"revenue":61.744974,"expenses":62.173346,"net_result":2.194737},
+      "adjustments": {
+        "no_breakdown": [
+          {
+            "line": "Bruttofortjeneste (ingresos netos de costos operativos externos — el balance usa la exención §32 de la Årsregnskabsloven, sin desglose de Nettoomsætning disponible)",
+            "side": "revenue",
+            "amount": 61.744974,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "gross_margin"
+          }
+        ]
+      }
     }
   ],
   "budget_overlay": {},

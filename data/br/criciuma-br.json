@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "criciuma-br",
@@ -185,12 +185,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Receitas financeiras – nota 15","amount":0.074328},{"label":"Despesas financeiras – nota 15","amount":-1.430379}],
         "no_breakdown": [
-          {"line":"Futebol","side":"revenue","amount":13.684738,"reason":"el documento no desglosa este renglón"},
+          {"line":"Futebol","side":"revenue","amount":13.684738,"reason":"el documento no desglosa este renglón","kind":"other"},
           {
             "line": "Departamento profissional",
             "side": "expense",
             "amount": 15.56887,
-            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
+            "kind": "other"
           }
         ],
         "included_in": {
@@ -262,12 +263,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Receitas financeiras – nota 16","amount":0.048876},{"label":"Despesas financeiras – nota 16","amount":-1.405748}],
         "no_breakdown": [
-          {"line":"Futebol","side":"revenue","amount":31.284433,"reason":"el documento no desglosa este renglón"},
+          {"line":"Futebol","side":"revenue","amount":31.284433,"reason":"el documento no desglosa este renglón","kind":"other"},
           {
             "line": "Departamento profissional",
             "side": "expense",
             "amount": 28.077497,
-            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
+            "kind": "other"
           }
         ],
         "included_in": {
@@ -343,7 +345,8 @@
             "line": "Departamento profissional",
             "side": "expense",
             "amount": 32.953552,
-            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
+            "kind": "other"
           }
         ]
       }
@@ -415,7 +418,8 @@
             "line": "Departamento Futebol Profissional",
             "side": "expense",
             "amount": 18.289053,
-            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
+            "kind": "other"
           }
         ]
       }
@@ -488,7 +492,8 @@
             "line": "Departamento Profissional",
             "side": "expense",
             "amount": 15.124972,
-            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
+            "kind": "other"
           }
         ]
       }
@@ -561,7 +566,8 @@
             "line": "Departamento Profissional",
             "side": "expense",
             "amount": 14.332058,
-            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
+            "kind": "other"
           }
         ]
       }
@@ -615,7 +621,8 @@
             "line": "Departamento Futebol Profissional",
             "side": "expense",
             "amount": 12.83884,
-            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
+            "kind": "other"
           }
         ]
       }
@@ -665,7 +672,8 @@
             "line": "Departamento Futebol Profissional",
             "side": "expense",
             "amount": 16.888461,
-            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
+            "kind": "other"
           }
         ]
       }
@@ -715,7 +723,8 @@
             "line": "Departamento Futebol Profissional",
             "side": "expense",
             "amount": 7.582374,
-            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
+            "kind": "other"
           }
         ]
       }
@@ -779,7 +788,8 @@
             "line": "Departamento Futebol Profissional",
             "side": "expense",
             "amount": 11.524382,
-            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
+            "kind": "other"
           }
         ]
       }
@@ -827,12 +837,13 @@
       "adjustments": {
         "extra_rows": [{"label":"Despesas Financeiras","amount":-1.251577},{"label":"Receitas Financeiras","amount":0.044576}],
         "no_breakdown": [
-          {"line":"RECEITA OPERACIONAL BRUTA","side":"revenue","amount":27.268558,"reason":"el documento no desglosa este renglón"},
+          {"line":"RECEITA OPERACIONAL BRUTA","side":"revenue","amount":27.268558,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {
             "line": "Departamento Futebol Profissional",
             "side": "expense",
             "amount": 15.977814,
-            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
+            "kind": "other"
           }
         ],
         "included_in": {
@@ -904,7 +915,8 @@
             "line": "Departamento Futebol Profissional",
             "side": "expense",
             "amount": 31.244024,
-            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
+            "kind": "other"
           }
         ]
       }
@@ -970,7 +982,8 @@
             "line": "Departamento Futebol Profissional",
             "side": "expense",
             "amount": 77.261712,
-            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
+            "kind": "other"
           }
         ]
       }
@@ -1035,7 +1048,8 @@
             "line": "Departamento Futebol Profissional",
             "side": "expense",
             "amount": 64.178298,
-            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza"
+            "reason": "Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; 'Departamento (Futebol) Profissional' es el gasto del fútbol profesional sin desglose por naturaleza",
+            "kind": "other"
           }
         ]
       }

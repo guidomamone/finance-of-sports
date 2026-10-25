@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "dynamomakhachkala-ru",
@@ -101,7 +101,8 @@
             "line": "Расходы на целевые мероприятия (6310, форма 6)",
             "side": "gasto",
             "amount": 5.368,
-            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "other"
           }
         ],
         "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true}}
@@ -155,7 +156,8 @@
             "line": "Расходы на целевые мероприятия (6310, форма 6)",
             "side": "gasto",
             "amount": 19.335,
-            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "other"
           }
         ],
         "included_in": {"wages_squad":{"in":"lump_football_operations_expense","possible":true}}
@@ -218,13 +220,26 @@
       "adjustments": {
         "extra_rows": [{"label":"Проценты к получению (2320)","amount":0.355},{"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-0.655}],
         "no_breakdown": [
-          {"line":"Выручка (2110)","side":"ingreso","amount":86.821,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
-          {"line":"Себестоимость продаж (2120)","side":"gasto","amount":1.751,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Выручка (2110)",
+            "side": "ingreso",
+            "amount": 86.821,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "net_sales"
+          },
+          {
+            "line": "Себестоимость продаж (2120)",
+            "side": "gasto",
+            "amount": 1.751,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "cost_of_sales"
+          },
           {
             "line": "Расходы на целевые мероприятия (6310, форма 6)",
             "side": "gasto",
             "amount": 379.566,
-            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "other"
           }
         ],
         "included_in": {
@@ -307,13 +322,26 @@
           {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-72.037}
         ],
         "no_breakdown": [
-          {"line":"Выручка (2110)","side":"ingreso","amount":401.924,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
-          {"line":"Себестоимость продаж (2120)","side":"gasto","amount":60.103,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Выручка (2110)",
+            "side": "ingreso",
+            "amount": 401.924,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "net_sales"
+          },
+          {
+            "line": "Себестоимость продаж (2120)",
+            "side": "gasto",
+            "amount": 60.103,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "cost_of_sales"
+          },
           {
             "line": "Расходы на целевые мероприятия (6310, форма 6)",
             "side": "gasto",
             "amount": 1127.11,
-            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "other"
           }
         ],
         "included_in": {
@@ -405,13 +433,26 @@
           {"label":"Налог на прибыль и прочее (2300 − 2400)","amount":-193.079}
         ],
         "no_breakdown": [
-          {"line":"Выручка (2110)","side":"ingreso","amount":787.097,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
-          {"line":"Себестоимость продаж (2120)","side":"gasto","amount":123.419,"reason":"el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"},
+          {
+            "line": "Выручка (2110)",
+            "side": "ingreso",
+            "amount": 787.097,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "net_sales"
+          },
+          {
+            "line": "Себестоимость продаж (2120)",
+            "side": "gasto",
+            "amount": 123.419,
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "cost_of_sales"
+          },
           {
             "line": "Расходы на целевые мероприятия (6310, форма 6)",
             "side": "gasto",
             "amount": 1328.363,
-            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)"
+            "reason": "el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)",
+            "kind": "other"
           }
         ],
         "included_in": {

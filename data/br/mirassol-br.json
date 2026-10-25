@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-20",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "mirassol-br",
@@ -47,7 +47,19 @@
         {"label":"Despesas operacionais","category":"admin_general","subcategory":"admin_general_expense","amount":-19.090093,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":0,"cash":11.583747},
-      "official_totals": {"revenue":59.339448,"expenses":55.195834,"net_result":4.143614}
+      "official_totals": {"revenue":59.339448,"expenses":55.195834,"net_result":4.143614},
+      "adjustments": {
+        "no_breakdown": [
+          {
+            "line": "Receita do exercício (bruta, operacional — sem desagregação na fonte)",
+            "side": "revenue",
+            "amount": 59.339448,
+            "reason": "el documento no desglosa este renglón",
+            "kind": "net_sales"
+          },
+          {"line":"Custos","side":"expense","amount":36.105741,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ]
+      }
     }
   ],
   "budget_overlay": {},

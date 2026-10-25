@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "arsenal-gb",
@@ -126,13 +126,15 @@
             "line": "Turnover of the Group including its share of joint ventures",
             "side": "revenue",
             "amount": 372.362,
-            "reason": "el documento no desglosa este renglón"
+            "reason": "el documento no desglosa este renglón",
+            "kind": "net_sales"
           },
           {
             "line": "Share of turnover of joint venture",
             "side": "revenue",
             "amount": 0.455,
-            "reason": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (Operating expenses y pérdidas menores en other_expenses/exceptional_items; derechos de TV en broadcasting)"
+            "reason": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (Operating expenses y pérdidas menores en other_expenses/exceptional_items; derechos de TV en broadcasting)",
+            "kind": "net_sales"
           }
         ],
         "included_in": {
@@ -219,13 +221,15 @@
             "line": "Turnover of the Group including its share of joint ventures",
             "side": "revenue",
             "amount": 467.155,
-            "reason": "el documento no desglosa este renglón"
+            "reason": "el documento no desglosa este renglón",
+            "kind": "net_sales"
           },
           {
             "line": "Share of turnover of joint venture",
             "side": "revenue",
             "amount": 0.47,
-            "reason": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (Operating expenses y pérdidas menores en other_expenses/exceptional_items; derechos de TV en broadcasting)"
+            "reason": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (Operating expenses y pérdidas menores en other_expenses/exceptional_items; derechos de TV en broadcasting)",
+            "kind": "net_sales"
           }
         ],
         "included_in": {

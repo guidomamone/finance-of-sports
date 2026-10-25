@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "chapecoense-br",
@@ -266,7 +266,7 @@
       "official_totals": {"revenue":75.245,"expenses":100.752,"net_result":-50.756},
       "adjustments": {
         "extra_rows": [{"label":"Receitas Financeiras","amount":0.392},{"label":"Despesas Financeiras","amount":-4.41},{"label":"IR e CSLL","amount":-0.013}],
-        "no_breakdown": [{"line":"Custos","side":"expense","amount":0.244,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Custos","side":"expense","amount":0.244,"reason":"el documento no desglosa este renglón","kind":"other"}]
       }
     },
     {
@@ -482,7 +482,7 @@
       "official_totals": {"revenue":36.714,"expenses":35.404,"net_result":6.134},
       "adjustments": {
         "extra_rows": [{"label":"Receitas Financeiras","amount":6.491},{"label":"Despesas Financeiras","amount":-1.667}],
-        "no_breakdown": [{"line":"Custos","side":"expense","amount":0.18,"reason":"el documento no desglosa este renglón"}]
+        "no_breakdown": [{"line":"Custos","side":"expense","amount":0.18,"reason":"el documento no desglosa este renglón","kind":"other"}]
       }
     }
   ],

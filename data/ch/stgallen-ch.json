@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-23",
+  "exported_at": "2026-10-25",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "stgallen-ch",
@@ -110,13 +110,15 @@
             "line": "Erträge brutto",
             "side": "revenue",
             "amount": 28.001,
-            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations"
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations",
+            "kind": "other"
           },
           {
             "line": "Direkte Kosten",
             "side": "expense",
             "amount": 8.165,
-            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos"
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {
@@ -170,13 +172,15 @@
             "line": "Erträge brutto",
             "side": "revenue",
             "amount": 29.863,
-            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations"
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations",
+            "kind": "other"
           },
           {
             "line": "Direkte Kosten",
             "side": "expense",
             "amount": 8.201,
-            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos"
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {
@@ -318,13 +322,15 @@
             "line": "Erträge brutto",
             "side": "revenue",
             "amount": 31.998,
-            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations"
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations",
+            "kind": "other"
           },
           {
             "line": "Direkte Kosten",
             "side": "expense",
             "amount": 8.912,
-            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos"
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {
@@ -377,13 +383,15 @@
             "line": "Erträge brutto",
             "side": "revenue",
             "amount": 37.47,
-            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations"
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations",
+            "kind": "other"
           },
           {
             "line": "Direkte Kosten",
             "side": "expense",
             "amount": 11.154,
-            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos"
+            "reason": "Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos",
+            "kind": "cost_of_sales"
           }
         ],
         "included_in": {
