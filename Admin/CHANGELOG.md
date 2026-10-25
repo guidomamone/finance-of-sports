@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1103 — «Notas sobre este club»: una nota por año, el mismo texto en un solo punto aunque los años no sean consecutivos, y los textos de Guido [454 · fredrikstad-no]
+- Los ingresos y los gastos de un mismo ejercicio salen en una sola nota; los ejercicios con el mismo texto se juntan en un punto sin importar si son consecutivos («2016 a 2018 y 2024»), así un año nuevo con el mismo caso se suma solo. Textos nuevos (Guido): ventas totales («El documento informa una categoría como ingresos pero no lo abre por rubro…») y gastos sin el rótulo; un renglón de un año con más de una línea de ingreso (un departamento, una división) usa el texto de «parte».
+- Fredrikstad 2016 a 2018 y 2024: «Annen driftsinntekt» es igual a «Sum inntekter», o sea el ingreso total: pasa a ventas totales y se aprende para los años que vengan; 2013 a 2015 sigue como una parte del ingreso.
+- Medición: no aplica (sin tools del pipeline); comprobado en pantalla con Argentinos Juniors (una nota por año) y Fredrikstad (un solo punto para 2016 a 2018 y 2024).
+
 ## Versión 1102 — cargar-ejercicio.mjs, jev-tipo-linea.mjs: Jev contesta primero el rótulo desconocido de una línea única de ingresos [455 · cargar-ejercicio.mjs, jev-tipo-linea.mjs]
 - Un rótulo de línea única que ninguna regla ni respuesta anterior reconoce se le pregunta a Jev (3 respuestas solo con el rótulo; centavos de API, aprobado por Guido). Si las 3 coinciden con confianza de 0,8 o más, el tipo (margen bruto, ventas u otra) se aprende en `tipos-sin-desglose.jsonl` y no se vuelve a preguntar; si no, va a la cola como antes. Gasto en `Admin/registros/api/jev.jsonl`.
 - Calibrado con rótulos de los tres tipos: los claros dan 0,85 o más; los ambiguos («Fútbol profesional», «Annen driftsinntekt») y uno inventado, 0,4 a 0,79, y van a la cola. Probado de punta a punta cambiando un rótulo de un documento y revirtiendo.
