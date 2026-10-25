@@ -244,6 +244,50 @@ _antes de Kim Nielsen (data/gestiones/dk.js):_
 Cierre 30/6. Kim Nielsen firma como formand todos los informes 2012 a 2024; inicio real no documentado.
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Dinamarca/Viborg FF/aarsrapport-2020-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/Viborg FF/aarsrapport-2020-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Nettoomsætning | pág. 12, precedente |
+| 2 | Andre driftsindtægter | pág. 12, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vareforbrug | pág. 12, precedente |
+| 2 | Andre eksterne omkostninger | pág. 12, precedente |
+| 3 | Lønninger | pág. 17, precedente |
+| 4 | Pensioner | pág. 17, precedente |
+| 5 | Andre omkostninger til social sikring | pág. 17, precedente |
+| 6 | Andre personaleomkostninger | pág. 17, precedente |
+| 7 | Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — derechos de jugadores (según dos notas) | pág. ?, precedente |
+| 8 | Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — resto: bienes de uso y licencias (según dos notas) | pág. 12, precedente |
+
+### Meta
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, partir-amortizacion 2026-10-25): fila = 1.241.223,00. partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.678.483,00, L374) = jugadores 1.241.223,00 + resto 437.260,00, según dos notas: L545 (jugadores) y L570 (bienes de uso)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, partir-amortizacion 2026-10-25): fila = 437.260,00. partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.678.483,00, L374) = jugadores 1.241.223,00 + resto 437.260,00, según dos notas: L545 (jugadores) y L570 (bienes de uso)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, partir-amortizacion 2026-10-25): categoria = player_amortisation. partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.678.483,00, L374) = jugadores 1.241.223,00 + resto 437.260,00, según dos notas: L545 (jugadores) y L570 (bienes de uso)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, partir-amortizacion 2026-10-25): categoria = depreciation. partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.678.483,00, L374) = jugadores 1.241.223,00 + resto 437.260,00, según dos notas: L545 (jugadores) y L570 (bienes de uso)
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): dk-1division, verificado contra roster cacheado de "2019–20 Danish 1st Division" (tools/club-league-reference/dk.json), coincidencia exacta "Viborg FF".
+```
+
 ## Fuentes
 
 ### viborg-aarsrapport-2024
@@ -260,4 +304,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### viborg-dk-aarsrapport-2020-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Dinamarca/Viborg FF/aarsrapport-2020-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

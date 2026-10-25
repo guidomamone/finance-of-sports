@@ -39,6 +39,9 @@ window.RANKINGS["dk-1division"] = {
     margen: [["fredericia-dk",1.806,null]],
     wiki: {"t":"2019–20 Danish 1st Division","lang":"en","at":"2026-10-18","n":12},
     clubs: [
+      { id:"viborg-dk", revenue:4.718, reportType:"official_balance_sheet",
+        sourceId:"viborg-dk-aarsrapport-2020-06-30",
+        mix:[["Venta de Jugadores",0.568],["Fútbol profesional (sin desglosar por la fuente)",4.15]] },
     ],
   },
   2019: {

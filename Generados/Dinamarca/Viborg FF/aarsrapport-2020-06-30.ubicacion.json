@@ -1,0 +1,175 @@
+{
+ "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2020-06-30.pdf",
+ "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2020-06-30.md",
+ "mdSha1": "4248b703d8dd24bc0fbf088a660139153869666c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T18:52:40.392Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    40,
+    48
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 11,
+   "lineas": [
+    346,
+    350
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 12,
+   "lineas": [
+    365,
+    381
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    396,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    432,
+    447
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    464,
+    478
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    506,
+    510
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 17,
+   "lineas": [
+    523,
+    524
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 17,
+   "lineas": [
+    528,
+    534
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    538,
+    548
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 18,
+   "lineas": [
+    563,
+    573
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 18,
+   "lineas": [
+    577,
+    584
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    600,
+    605
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    611,
+    614
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 19,
+   "lineas": [
+    620,
+    624
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    641,
+    645
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 24,
+   "lineas": [
+    781,
+    786
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b9"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de la Resultatopgørelse: '2019/20 DKK | 2018/19 DKK' (importes en coronas, sin indicación de miles)",
+ "moneda": "DKK",
+ "columna_ejercicio": "2019/20 DKK",
+ "columna_anterior": "2018/19 DKK",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Særlige poster' (nota 2, b7), que solo indica en qué renglón del estado se reconocieron la compensación salarial y los costos de test COVID-19?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "La nota 2 (b7) señala partidas especiales ya incluidas en renglones del estado, como Andre driftsindtægter y gastos; no abre un renglón en categorías.",
+   "bloques": [
+    "b7"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Solo hay estados de Viborg F.F. Prof. Fodbold A/S (individual). b3 es la Resultatopgørelse. b9 es la nota 3 Personaleomkostninger, que desglosa los gastos de personal; los salarios (Lønninger) están en su encabezado. b7 (Særlige poster) no se elige. El resto son balance, patrimonio, activos fijos, capital y deudas."
+}

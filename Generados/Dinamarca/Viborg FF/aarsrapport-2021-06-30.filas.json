@@ -1,0 +1,259 @@
+{
+ "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
+ "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.md",
+ "mdSha1": "3b2f459f8d72147ecb6ff025c2947fe57bb771fb",
+ "ubicacionSha1": "9367fa82ca931d16c7ea03d8657780507ada9618",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T18:53:20.024Z",
+ "ubicacion": {
+  "estado": [
+   "b9"
+  ],
+  "notas_ingresos": [
+   "b16"
+  ],
+  "notas_gastos": [
+   "b18"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columnas '2020/21 DKK' (L551)"
+  },
+  {
+   "bloque": "b16",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columnas '2020/21 DKK' (L762)"
+  },
+  {
+   "bloque": "b18",
+   "escala": "no se sabe",
+   "evidencia": "El cuadro de la nota 3 no imprime escala (L787-L792); los importes coinciden con el estado en DKK"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b9",
+   "linea": 553,
+   "etiqueta": "Nettoomsætning",
+   "actual": "25.046.243",
+   "anterior": "27.614.932",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 554,
+   "etiqueta": "Andre driftsindtægter",
+   "actual": "13.362.420",
+   "anterior": "3.786.225",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 555,
+   "etiqueta": "Vareforbrug",
+   "actual": "-10.281.021",
+   "anterior": "-9.132.752",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 556,
+   "etiqueta": "Andre eksterne omkostninger",
+   "actual": "-2.986.439",
+   "anterior": "-1.638.674",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 557,
+   "etiqueta": "Bruttofortjeneste",
+   "actual": "25.141.203",
+   "anterior": "20.629.731",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 558,
+   "etiqueta": "Personaleomkostninger",
+   "actual": "-20.346.947",
+   "anterior": "-18.619.377",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 559,
+   "etiqueta": "Resultat før af- og nedskrivninger",
+   "actual": "4.794.256",
+   "anterior": "2.010.354",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 560,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver",
+   "actual": "-1.573.257",
+   "anterior": "-1.678.483",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 561,
+   "etiqueta": "Andre driftsomkostninger",
+   "actual": "-56.000",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 562,
+   "etiqueta": "Resultat før finansielle poster",
+   "actual": "3.164.999",
+   "anterior": "331.871",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 563,
+   "etiqueta": "Finansielle indtægter",
+   "actual": "436",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 564,
+   "etiqueta": "Finansielle omkostninger",
+   "actual": "-43.650",
+   "anterior": "-87.924",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 565,
+   "etiqueta": "Resultat før skat",
+   "actual": "3.121.785",
+   "anterior": "243.947",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 566,
+   "etiqueta": "Skat af årets resultat",
+   "actual": "-2.036.000",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 567,
+   "etiqueta": "Årets resultat",
+   "actual": "1.085.785",
+   "anterior": "243.947",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 787,
+   "etiqueta": "Lønninger",
+   "actual": "17.373.091",
+   "anterior": "15.671.913",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b18",
+   "linea": 789,
+   "etiqueta": "Pensioner",
+   "actual": "1.368.779",
+   "anterior": "1.256.586",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b18",
+   "linea": 790,
+   "etiqueta": "Andre omkostninger til social sikring",
+   "actual": "150.208",
+   "anterior": "150.907",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b18",
+   "linea": 791,
+   "etiqueta": "Andre personaleomkostninger",
+   "actual": "1.454.869",
+   "anterior": "1.539.971",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "bloque": "b18",
+   "linea": 792,
+   "etiqueta": "I alt",
+   "actual": "20.346.947",
+   "anterior": "18.619.377",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 567,
+  "actual": "1.085.785",
+  "anterior": "243.947"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de 'Særlige poster' (L762-L769), por ser partidas especiales ya incluidas en distintos renglones del estado y no un desglose completo de ninguno?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El cuadro L764-L769 mezcla partidas incluidas en Nettoomsætning, Andre driftsindtægter, Vareforbrug y Andre eksterne omkostninger; cargarlo como detalle duplicaría o desglosaría parcialmente.",
+   "bloques": [
+    "b16"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado en DKK unidades. No se imprimen totales de ingresos ni de gastos. La fila L793 (número medio de empleados) no es importe y se omitió. El cuadro de partidas especiales de b16 se dejó afuera (ver duda)."
+}

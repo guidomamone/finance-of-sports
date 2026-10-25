@@ -1,0 +1,40 @@
+{
+ "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
+ "generado": "2026-10-25T18:53:48.737Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "el .categorias.json NO está al día con su .rubros.json / .jev.json (huellas, tools/huellas.mjs): hay que volver a correr la etapa 5"
+  },
+  {
+   "etapa": "alta:cierre",
+   "motivo": "El nombre del archivo dice cierre 2021-06-30, pero el contenido cierra en el mes 9. ¿Cuál es el cierre de este ejercicio?"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "el documento cierra 2021-09-30 (ejercicio desde el 10-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2021-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "cierreDe": "nombre del archivo (fin de mes, y el año aparece en el texto)",
+  "anual": "temporada"
+ },
+ "clubId": "viborg-dk",
+ "year": 2021,
+ "cortadoEn": "filas"
+}

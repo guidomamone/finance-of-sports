@@ -1,0 +1,232 @@
+{
+ "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
+ "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.md",
+ "generado": "2026-10-25T18:53:20.567Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "cola",
+ "clubId": "viborg-dk",
+ "year": 2021,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
+   "campo": "fila",
+   "valor": "1.243.140,00",
+   "linea": null,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — derechos de jugadores (según dos notas)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 560,
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.573.257,00, L560) = jugadores 1.243.140,00 + resto 330.117,00, según dos notas: L832 (jugadores) y L846 (bienes de uso)",
+   "evidencia": "L832 (jugadores) y L846 (bienes de uso)",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-25"
+  },
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
+   "campo": "fila",
+   "valor": "330.117,00",
+   "linea": 560,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — resto: bienes de uso y licencias (según dos notas)",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.573.257,00, L560) = jugadores 1.243.140,00 + resto 330.117,00, según dos notas: L832 (jugadores) y L846 (bienes de uso)",
+   "evidencia": "L832 (jugadores) y L846 (bienes de uso)",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-25"
+  },
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — derechos de jugadores (según dos notas)",
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.573.257,00, L560) = jugadores 1.243.140,00 + resto 330.117,00, según dos notas: L832 (jugadores) y L846 (bienes de uso)",
+   "evidencia": "L832 (jugadores) y L846 (bienes de uso)",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-25"
+  },
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — resto: bienes de uso y licencias (según dos notas)",
+   "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.573.257,00, L560) = jugadores 1.243.140,00 + resto 330.117,00, según dos notas: L832 (jugadores) y L846 (bienes de uso)",
+   "evidencia": "L832 (jugadores) y L846 (bienes de uso)",
+   "autor": "partir-amortizacion",
+   "fecha": "2026-10-25"
+  }
+ ],
+ "cola": [
+  "2377996",
+  "861426b"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 8.881784197001252e-15
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2020: 31.401157 en aarsrapport-2020-06-30.pdf y 31.401157 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "ajuste manual: fila \"Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — derechos de jugadores (según dos notas)\" (gasto) 1.243.140,00, en lugar de la fila de L560 (2026-10-25, partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.573.257,00, L560) = jugadores 1.243.140,00 + resto 330.117,00, según dos notas: L832 (jugadores) y L846 (bienes de uso))",
+  "ajuste manual: fila \"Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — resto: bienes de uso y licencias (según dos notas)\" (gasto) 330.117,00 (2026-10-25, partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.573.257,00, L560) = jugadores 1.243.140,00 + resto 330.117,00, según dos notas: L832 (jugadores) y L846 (bienes de uso))"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 38.408663,
+  "gastos": 35.243664,
+  "financiero": -0.043214,
+  "impuesto": -2.036,
+  "resultadoImpreso": 1.085785,
+  "resultadoParaCargar": 1.085785,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Nettoomsætning",
+   "lado": "ingreso",
+   "M": 25.046243,
+   "pagina": 17,
+   "linea": 553,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andre driftsindtægter",
+   "lado": "ingreso",
+   "M": 13.36242,
+   "pagina": 17,
+   "linea": 554,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Vareforbrug",
+   "lado": "gasto",
+   "M": 10.281021,
+   "pagina": 17,
+   "linea": 555,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andre eksterne omkostninger",
+   "lado": "gasto",
+   "M": 2.986439,
+   "pagina": 17,
+   "linea": 556,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger",
+   "lado": "gasto",
+   "M": 17.373091,
+   "pagina": 24,
+   "linea": 787,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Pensioner",
+   "lado": "gasto",
+   "M": 1.368779,
+   "pagina": 24,
+   "linea": 789,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Andre omkostninger til social sikring",
+   "lado": "gasto",
+   "M": 0.150208,
+   "pagina": 24,
+   "linea": 790,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Andre personaleomkostninger",
+   "lado": "gasto",
+   "M": 1.454869,
+   "pagina": 24,
+   "linea": 791,
+   "origen": "nota que desglosa \"Personaleomkostninger\""
+  },
+  {
+   "etiqueta": "Andre driftsomkostninger",
+   "lado": "gasto",
+   "M": 0.056,
+   "pagina": 17,
+   "linea": 561,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — derechos de jugadores (según dos notas)",
+   "lado": "gasto",
+   "M": 1.24314,
+   "pagina": null,
+   "linea": null,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — resto: bienes de uso y licencias (según dos notas)",
+   "lado": "gasto",
+   "M": 0.330117,
+   "pagina": 17,
+   "linea": 560,
+   "origen": "ajuste manual"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finansielle indtægter",
+   "M": 0.000436,
+   "linea": 563
+  },
+  {
+   "etiqueta": "Finansielle omkostninger",
+   "M": -0.04365,
+   "linea": 564
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Skat af årets resultat",
+   "M": -2.036,
+   "linea": 566
+  }
+ ]
+}

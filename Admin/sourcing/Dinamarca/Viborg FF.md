@@ -32,3 +32,5 @@ Ninguna.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.pdf` (sourceId `viborg-dk-2025-rsrapport-viborg-f-f-prof-fodbold-as`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2025 desde `Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.pdf` (sourceId `viborg-dk-2025-rsrapport-viborg-f-f-prof-fodbold-as`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2020 desde `Clubes/Dinamarca/Viborg FF/aarsrapport-2020-06-30.pdf` (sourceId `viborg-dk-aarsrapport-2020-06-30`).

@@ -29,10 +29,66 @@
       "reliability": "primary",
       "url": "http://regnskaber.virk.dk/31737038/amNsb3VkczovLzAzLzA2LzRlL2UyLzM2L2RjYzEtNDdkNy1hZDgyLTU4YWQ3ZTZjNjA0Nw.xhtml",
       "document": "Clubes/Dinamarca/Viborg FF/2025-rsrapport-Viborg-F-F--Prof--Fodbold-AS.pdf"
+    },
+    {
+      "id": "viborg-dk-aarsrapport-2020-06-30",
+      "club_id": "viborg-dk",
+      "title": "Viborg F.F. Prof. Fodbold A/S — aarsrapport-2020-06-30 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Dinamarca/Viborg FF/aarsrapport-2020-06-30.pdf"
     }
   ],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "DKK",
+      "source_id": "viborg-dk-aarsrapport-2020-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2020-06-30"},
+      "revenue": [
+        {"label":"Nettoomsætning","category":"undisclosed","subcategory":"lump_football_operations","amount":27.622438,"disclosure":"aggregated"},
+        {"label":"Andre driftsindtægter","category":"player_transfers","subcategory":"player_sales","amount":3.778719,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Vareforbrug","category":"other_operating_expenses","subcategory":"other_expenses","amount":-9.132752,"disclosure":"aggregated"},
+        {"label":"Andre eksterne omkostninger","category":"admin_general","subcategory":"admin_general_expense","amount":-1.638674,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-15.671913,"disclosure":"aggregated"},
+        {"label":"Pensioner","category":"first_team_staff","subcategory":"wages_squad","amount":-1.256586,"disclosure":"aggregated"},
+        {
+          "label": "Andre omkostninger til social sikring",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.150907,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andre personaleomkostninger","category":"first_team_staff","subcategory":"wages_squad","amount":-1.539971,"disclosure":"aggregated"},
+        {
+          "label": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — derechos de jugadores (según dos notas)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1.241223,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — resto: bienes de uso y licencias (según dos notas)",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.43726,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.087924,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":31.401157,"expenses":31.069286,"net_result":0.243947},
+      "adjustments": {
+        "extra_rows": [{"label":"Finansielle indtægter","amount":0},{"label":"Finansielle omkostninger","amount":-0.087924}],
+        "no_breakdown": [{"line":"Nettoomsætning","side":"revenue","amount":27.622438,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
+      }
+    },
     {
       "fiscal_year": 2024,
       "period_end": "2024-06-30",
