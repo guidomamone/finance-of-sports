@@ -1,320 +1,289 @@
 {
-  "md": "Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
-  "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf",
-  "club": "oncecaldas-co",
-  "year": 2018,
-  "generatedAt": "2026-10-25T18:45:50.651Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "INGRESOS OPERATIVOS:",
-      "lado": "revenue",
-      "page": 17,
-      "section": "estado",
-      "values": [
-        21438.202
-      ],
-      "glosa": "INGRESOS OPERATIVOS:"
-    },
-    {
-      "label": "INGRESOS NO OPERACIONALES :",
-      "lado": "revenue",
-      "page": 20,
-      "section": "estado",
-      "values": [
-        3165.062
-      ],
-      "glosa": "INGRESOS NO OPERACIONALES :"
-    },
-    {
-      "label": "COSTO DE VENTAS",
-      "lado": "expense",
-      "page": 18,
-      "section": "estado",
-      "values": [
-        508.765
-      ],
-      "glosa": "COSTO DE VENTAS"
-    },
-    {
-      "label": "GASTOS DE PERSONAL",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
-      "values": [
-        678.948
-      ],
-      "glosa": "GASTOS DE PERSONAL"
-    },
-    {
-      "label": "HONORARIOS",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
-      "values": [
-        39.776
-      ],
-      "glosa": "HONORARIOS"
-    },
-    {
-      "label": "ARRENDAMIENTOS",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
-      "values": [
-        16.413
-      ],
-      "glosa": "ARRENDAMIENTOS"
-    },
-    {
-      "label": "SERVICIOS",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
-      "values": [
-        32.827
-      ],
-      "glosa": "SERVICIOS"
-    },
-    {
-      "label": "GASTOS LEGALES",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
-      "values": [
-        2.208
-      ],
-      "glosa": "GASTOS LEGALES"
-    },
-    {
-      "label": "MANTENIMIENTO Y REPARACIONES",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
-      "values": [
-        0.33
-      ],
-      "glosa": "MANTENIMIENTO Y REPARACIONES"
-    },
-    {
-      "label": "ADECUACION E INSTALACION",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
-      "values": [
-        0.035
-      ],
-      "glosa": "ADECUACION E INSTALACION"
-    },
-    {
-      "label": "GASTOS DE VIAJE",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
-      "values": [
-        22.06
-      ],
-      "glosa": "GASTOS DE VIAJE"
-    },
-    {
-      "label": "DEPRECIACIONES",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
-      "values": [
-        1.164
-      ],
-      "glosa": "DEPRECIACIONES"
-    },
-    {
-      "label": "DIVERSOS",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
-      "values": [
-        14.584
-      ],
-      "glosa": "DIVERSOS"
-    },
-    {
-      "label": "GASTOS DE PERSONAL",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
-      "values": [
-        6866.963
-      ],
-      "glosa": "GASTOS DE PERSONAL"
-    },
-    {
-      "label": "HONORARIOS",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
-      "values": [
-        49.825
-      ],
-      "glosa": "HONORARIOS"
-    },
-    {
-      "label": "IMPUESTOS",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
-      "values": [
-        492.496
-      ],
-      "glosa": "IMPUESTOS"
-    },
-    {
-      "label": "ARRENDAMIENTOS",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
-      "values": [
-        605.806
-      ],
-      "glosa": "ARRENDAMIENTOS"
-    },
-    {
-      "label": "CONTRIBUCIONES Y AFILIACIONES",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
-      "values": [
-        2.321
-      ],
-      "glosa": "CONTRIBUCIONES Y AFILIACIONES"
-    },
-    {
-      "label": "SEGUROS",
-      "lado": "expense",
-      "page": 18,
-      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
-      "values": [
-        7.143
-      ],
-      "glosa": "SEGUROS"
-    },
-    {
-      "label": "SERVICIOS",
-      "lado": "expense",
-      "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
-      "values": [
-        191.179
-      ],
-      "glosa": "SERVICIOS"
-    },
-    {
-      "label": "GASTOS LEGALES",
-      "lado": "expense",
-      "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
-      "values": [
-        0.514
-      ],
-      "glosa": "GASTOS LEGALES"
-    },
-    {
-      "label": "MANTENIMIENTO Y REPARACIONES",
-      "lado": "expense",
-      "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
-      "values": [
-        66.63
-      ],
-      "glosa": "MANTENIMIENTO Y REPARACIONES"
-    },
-    {
-      "label": "ADECUACION E INSTALACION",
-      "lado": "expense",
-      "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
-      "values": [
-        0.976
-      ],
-      "glosa": "ADECUACION E INSTALACION"
-    },
-    {
-      "label": "GASTOS DE VIAJE",
-      "lado": "expense",
-      "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
-      "values": [
-        454.227
-      ],
-      "glosa": "GASTOS DE VIAJE"
-    },
-    {
-      "label": "DEPRECIACIONES",
-      "lado": "expense",
-      "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
-      "values": [
-        86.994
-      ],
-      "glosa": "DEPRECIACIONES"
-    },
-    {
-      "label": "DERECHOS DEPORTIVOS",
-      "lado": "expense",
-      "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
-      "values": [
-        3649.049
-      ],
-      "glosa": "DERECHOS DEPORTIVOS"
-    },
-    {
-      "label": "DIVERSOS",
-      "lado": "expense",
-      "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
-      "values": [
-        1075.825
-      ],
-      "glosa": "DIVERSOS"
-    },
-    {
-      "label": "PROVISIONES",
-      "lado": "expense",
-      "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
-      "values": [
-        26.242
-      ],
-      "glosa": "PROVISIONES"
-    },
-    {
-      "label": "GASTOS FINANCIEROS",
-      "lado": "expense",
-      "page": 20,
-      "section": "nota que desglosa \"GASTOS NO OPERACIONALES:\"",
-      "values": [
-        820.054
-      ],
-      "glosa": "GASTOS FINANCIEROS"
-    },
-    {
-      "label": "GASTOS EXTRAORDINARIOS",
-      "lado": "expense",
-      "page": 20,
-      "section": "nota que desglosa \"GASTOS NO OPERACIONALES:\"",
-      "values": [
-        713.284
-      ],
-      "glosa": "GASTOS EXTRAORDINARIOS"
-    },
-    {
-      "label": "GASTOS DIVERSOS",
-      "lado": "expense",
-      "page": 20,
-      "section": "nota que desglosa \"GASTOS NO OPERACIONALES:\"",
-      "values": [
-        190.484
-      ],
-      "glosa": "GASTOS DIVERSOS"
-    }
-  ]
+ "md": "Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
+ "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf",
+ "club": "oncecaldas-co",
+ "year": 2018,
+ "generatedAt": "2026-10-25T18:59:18.481Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "INGRESOS OPERATIVOS:",
+   "lado": "revenue",
+   "page": 17,
+   "section": "estado",
+   "values": [
+    21438.202
+   ]
+  },
+  {
+   "label": "INGRESOS NO OPERACIONALES :",
+   "lado": "revenue",
+   "page": 20,
+   "section": "estado",
+   "values": [
+    3165.062
+   ]
+  },
+  {
+   "label": "COSTO DE VENTAS",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "values": [
+    508.765
+   ]
+  },
+  {
+   "label": "GASTOS DE PERSONAL",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
+   "values": [
+    678.948
+   ]
+  },
+  {
+   "label": "HONORARIOS",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
+   "values": [
+    39.776
+   ]
+  },
+  {
+   "label": "ARRENDAMIENTOS",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
+   "values": [
+    16.413
+   ]
+  },
+  {
+   "label": "SERVICIOS",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
+   "values": [
+    32.827
+   ]
+  },
+  {
+   "label": "GASTOS LEGALES",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
+   "values": [
+    2.208
+   ]
+  },
+  {
+   "label": "MANTENIMIENTO Y REPARACIONES",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
+   "values": [
+    0.33
+   ]
+  },
+  {
+   "label": "ADECUACION E INSTALACION",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
+   "values": [
+    0.035
+   ]
+  },
+  {
+   "label": "GASTOS DE VIAJE",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
+   "values": [
+    22.06
+   ]
+  },
+  {
+   "label": "DEPRECIACIONES",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
+   "values": [
+    1.164
+   ]
+  },
+  {
+   "label": "DIVERSOS",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
+   "values": [
+    14.584
+   ]
+  },
+  {
+   "label": "HONORARIOS",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "values": [
+    49.825
+   ]
+  },
+  {
+   "label": "IMPUESTOS",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "values": [
+    492.496
+   ]
+  },
+  {
+   "label": "ARRENDAMIENTOS",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "values": [
+    605.806
+   ]
+  },
+  {
+   "label": "CONTRIBUCIONES Y AFILIACIONES",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "values": [
+    2.321
+   ]
+  },
+  {
+   "label": "SEGUROS",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "values": [
+    7.143
+   ]
+  },
+  {
+   "label": "SERVICIOS",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "values": [
+    191.179
+   ]
+  },
+  {
+   "label": "GASTOS LEGALES",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "values": [
+    0.514
+   ]
+  },
+  {
+   "label": "MANTENIMIENTO Y REPARACIONES",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "values": [
+    66.63
+   ]
+  },
+  {
+   "label": "ADECUACION E INSTALACION",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "values": [
+    0.976
+   ]
+  },
+  {
+   "label": "GASTOS DE VIAJE",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "values": [
+    454.227
+   ]
+  },
+  {
+   "label": "DEPRECIACIONES",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "values": [
+    86.994
+   ]
+  },
+  {
+   "label": "DERECHOS DEPORTIVOS",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "values": [
+    3649.049
+   ]
+  },
+  {
+   "label": "DIVERSOS",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "values": [
+    1075.825
+   ]
+  },
+  {
+   "label": "PROVISIONES",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "values": [
+    26.242
+   ]
+  },
+  {
+   "label": "GASTOS FINANCIEROS",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"GASTOS NO OPERACIONALES:\"",
+   "values": [
+    820.054
+   ]
+  },
+  {
+   "label": "GASTOS EXTRAORDINARIOS",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"GASTOS NO OPERACIONALES:\"",
+   "values": [
+    713.284
+   ]
+  },
+  {
+   "label": "GASTOS DIVERSOS",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"GASTOS NO OPERACIONALES:\"",
+   "values": [
+    190.484
+   ]
+  },
+  {
+   "label": "GASTOS DE PERSONAL (gastos de ventas)",
+   "lado": "expense",
+   "page": null,
+   "section": "ajuste manual",
+   "values": [
+    6866.963
+   ]
+  }
+ ]
 }

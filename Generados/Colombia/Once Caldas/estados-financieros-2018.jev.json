@@ -1,8 +1,26 @@
 {
  "md": "Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
- "generatedAt": "2026-10-25T18:45:58.659Z",
- "rubrosHuella": "25378e481338d6f22b58f4b1a3f7d043a1e323ff",
+ "generatedAt": "2026-10-25T18:59:19.160Z",
+ "rubrosHuella": "1dba4f1c75bbfe6a0bee7ab7b1b36d3817e15bbe",
  "rubros": [
+  {
+   "label": "INGRESOS OPERATIVOS:",
+   "lado": "revenue",
+   "page": 17,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "INGRESOS NO OPERACIONALES :",
+   "lado": "revenue",
+   "page": 20,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
   {
    "label": "COSTO DE VENTAS",
    "lado": "expense",
@@ -16,7 +34,7 @@
    "label": "GASTOS DE PERSONAL",
    "lado": "expense",
    "page": 18,
-   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
    "choice": "wages_squad",
    "confidence": 0.72,
    "desdeCache": true
@@ -175,50 +193,27 @@
    "desdeCache": true
   },
   {
-   "label": "INGRESOS OPERATIVOS:",
-   "lado": "revenue",
-   "page": 17,
-   "section": "estado",
-   "choice": "lump_football_operations",
-   "confidence": 0.99,
+   "label": "GASTOS DE PERSONAL (gastos de ventas)",
+   "lado": "expense",
+   "page": null,
+   "section": "ajuste manual",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
    "top3": [
     [
-     "lump_football_operations",
-     0.99
+     "admin_general_expense",
+     0.76
     ],
     [
-     "other_income",
-     0.01
+     "wages_squad",
+     0.2
     ],
     [
-     "member_dues",
-     0
+     "other_expenses",
+     0.03
     ]
    ],
-   "tokens": 1113
-  },
-  {
-   "label": "INGRESOS NO OPERACIONALES :",
-   "lado": "revenue",
-   "page": 20,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 0.98,
-   "top3": [
-    [
-     "other_income",
-     0.98
-    ],
-    [
-     "lump_football_operations",
-     0.02
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1115
+   "tokens": 1033
   }
  ]
 }

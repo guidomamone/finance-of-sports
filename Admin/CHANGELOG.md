@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1107 — Rijeka 2023, Once Caldas 2018 y Viborg FF 2019 y 2020 por el pipeline; los años de margen sin estimado se resuelven solos [455]
+- Rijeka 2023 (euros; el informe reexpresa 2022 en euros: 69.154 M HRK / 7,5345 = 9.178 M EUR) y Once Caldas 2018 (sin estado de resultados: sale de las notas 20, 24, 25 y 26 y cierra con el impuesto diferido NIIF como fila de impuesto y la nómina de «gastos de ventas» como sueldos del plantel, `ajustes.mjs`) cargados. `contexto-manual.json` tenía a Once Caldas dos veces: la clave repetida pisaba la entrada nueva; se juntaron.
+- Prueba con Viborg FF 2019 y 2020 (dos ejercicios reales de la 1ª División danesa, lista 2018-19 bajada): Fredericia 2022 a 2024 pasó de sin estimado a estimado sin tocar nada más (el modelo pide 2 clubes reales en la liga o en su nivel); los años de margen sin estimado bajaron de 15 a 5 en la sesión. El resto espera ejercicios reales de la Superliga y de la 1ª 2024.
+- Medición: no aplica (datos, sin tools de código).
+
 ## Versión 1106 — segunda-fuente-liga.mjs, audit.js, audit-chequeos-2.js: tablas amateur de RSSSF y aviso por una liga que el sitio no tiene [455 · segunda-fuente-liga.mjs, audit.js]
 - `segunda-fuente-liga.mjs` lee también las filas de posición sin el punto («1  Club   30 22 5 3 71 69- 20», las amateurs belgas de RSSSF), con PJ, G, E, P, puntos y goles para no cortar un nombre que empieza con número.
 - `audit.js` suma `liga-no-catalogada-sin-registro` y `liga-por-abrir` (3 club-años de la misma liga que el sitio no tiene: abrirla con `catalogo-liga.mjs`), leyendo `Admin/registros/ligas-no-catalogadas.jsonl` (documentado en `Admin/PIPELINE.md`). Comentarios sin fecha en `alta-club-analisis.mjs` y `estimar.mjs`.

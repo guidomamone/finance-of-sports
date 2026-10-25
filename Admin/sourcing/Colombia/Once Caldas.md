@@ -46,3 +46,9 @@
 Estados financieros en disco ahora: 10 ejercicios (2016-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2018 desde `Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf` (sourceId `oncecaldas-co-estados-financieros-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2018 desde `Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf` (sourceId `oncecaldas-co-estados-financieros-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2018 desde `Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf` (sourceId `oncecaldas-co-estados-financieros-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2018 desde `Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf` (sourceId `oncecaldas-co-estados-financieros-2018`).

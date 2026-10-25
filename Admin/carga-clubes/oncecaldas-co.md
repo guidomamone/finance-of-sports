@@ -447,42 +447,38 @@ Generados/Colombia/Once Caldas/estados-financieros-2018.categorias.json (escaló
 | 9 | GASTOS DE VIAJE | pág. 18, Jev 1 |
 | 10 | DEPRECIACIONES | pág. 18, Jev 1 |
 | 11 | DIVERSOS | pág. 18, precedente |
-| 12 | GASTOS DE PERSONAL | pág. 18, Claude 0.85 |
-| 13 | HONORARIOS | pág. 18, Claude 0.85 |
-| 14 | IMPUESTOS | pág. 18, Jev 0.98 |
-| 15 | ARRENDAMIENTOS | pág. 18, Claude 0.8 |
-| 16 | CONTRIBUCIONES Y AFILIACIONES | pág. 18, Jev 0.96 |
-| 17 | SEGUROS | pág. 18, Claude 0.85 |
-| 18 | SERVICIOS | pág. 19, Jev 0.91 |
-| 19 | GASTOS LEGALES | pág. 19, Jev 0.99 |
-| 20 | MANTENIMIENTO Y REPARACIONES | pág. 19, Claude 0.8 |
-| 21 | ADECUACION E INSTALACION | pág. 19, ? 0.75 |
-| 22 | GASTOS DE VIAJE | pág. 19, Jev 1 |
-| 23 | DEPRECIACIONES | pág. 19, Jev 1 |
-| 24 | DERECHOS DEPORTIVOS | pág. 19, Jev 0.98 |
-| 25 | DIVERSOS | pág. 19, precedente |
-| 26 | PROVISIONES | pág. 19, ? 0.7 |
-| 27 | GASTOS FINANCIEROS | pág. 20, Jev 0.95 |
-| 28 | GASTOS EXTRAORDINARIOS | pág. 20, Jev 1 |
-| 29 | GASTOS DIVERSOS | pág. 20, Jev 0.97 |
+| 12 | HONORARIOS | pág. 18, Claude 0.85 |
+| 13 | IMPUESTOS | pág. 18, Jev 0.98 |
+| 14 | ARRENDAMIENTOS | pág. 18, Claude 0.8 |
+| 15 | CONTRIBUCIONES Y AFILIACIONES | pág. 18, Jev 0.96 |
+| 16 | SEGUROS | pág. 18, Claude 0.85 |
+| 17 | SERVICIOS | pág. 19, Jev 0.91 |
+| 18 | GASTOS LEGALES | pág. 19, Jev 0.99 |
+| 19 | MANTENIMIENTO Y REPARACIONES | pág. 19, Claude 0.8 |
+| 20 | ADECUACION E INSTALACION | pág. 19, ? 0.75 |
+| 21 | GASTOS DE VIAJE | pág. 19, Jev 1 |
+| 22 | DEPRECIACIONES | pág. 19, Jev 1 |
+| 23 | DERECHOS DEPORTIVOS | pág. 19, Jev 0.98 |
+| 24 | DIVERSOS | pág. 19, precedente |
+| 25 | PROVISIONES | pág. 19, ? 0.7 |
+| 26 | GASTOS FINANCIEROS | pág. 20, Jev 0.95 |
+| 27 | GASTOS EXTRAORDINARIOS | pág. 20, Jev 1 |
+| 28 | GASTOS DIVERSOS | pág. 20, Jev 0.97 |
+| 29 | GASTOS DE PERSONAL (gastos de ventas) | pág. ?, precedente |
 
 ### Meta
 
 ```text
 2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-25): perimetro = individual. El club carga individual (2022 a 2025); el .md de 2018 solo menciona los consolidados de pasada. Claude 2026-10-25 (sesion), prueba del 455
 2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-25): fila = 1744.104. Linea 702 del .md: impuesto diferido NIIF 1.744.104 (miles de pesos), impreso debajo de la tabla de gastos no operacionales y fuera de su total; sin esta fila el resultado no cierra con la utilidad impresa del patrimonio (24.603.263 - 16.617.122 - 895.818 - 1.744.104 = 5.346.219 contra 5.346.221)
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-25): fila = 6866.963. Linea 620 del .md: el GASTOS DE PERSONAL de la nota de gastos de ventas (6.866.963 miles) es la nomina de la actividad deportiva del club (el de administracion, 678.948, va aparte); se rotula distinto para categorizarlos distinto, como en Fortaleza 2023
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-25): categoria = wages_squad. Nomina de la actividad deportiva en los gastos de ventas; la respuesta de la cola (188e0fe) dice que los salarios del plantel estan en esa linea y no hay cuadro que los abra
 tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```
 
 ```text
 tools/dentro-de-otro.mjs (2026-10-25): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2023, 2024, 2025)
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-25): co-primeraA, verificado contra roster cacheado de "2018 Categoría Primera A season" (tools/club-league-reference/co.json), coincidencia exacta "Once Caldas".
 ```
 
 ## Fuentes

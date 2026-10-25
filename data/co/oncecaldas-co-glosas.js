@@ -27,6 +27,7 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Federación Nacional de Fútbol Colombiano":{"en":"Colombian National Football Federation"},
 "Fondo equipos no clasificados":{"en":"Fund for non-qualified teams"},
 "GASTOS DE PERSONAL":{"en":"Personnel expenses"},
+"GASTOS DE PERSONAL (gastos de ventas)":{"en":"Personnel expenses (selling expenses)"},
 "GASTOS DE VIAJE":{"en":"Travel expenses"},
 "GASTOS DIVERSOS":{"en":"Miscellaneous expenses"},
 "GASTOS EXTRAORDINARIOS":{"en":"Extraordinary expenses"},
