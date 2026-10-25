@@ -1,19 +1,12 @@
 {
  "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
- "generado": "2026-10-25T18:56:18.553Z",
- "frena": [
-  {
-   "etapa": "alta:cierre",
-   "motivo": "El nombre del archivo dice cierre 2021-06-30, pero el contenido cierra en el mes 9. ¿Cuál es el cierre de este ejercicio?"
-  }
- ],
- "avisos": [
-  "el documento cierra 2021-09-30 (ejercicio desde el 10-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?"
- ],
+ "generado": "2026-10-25T20:36:18.709Z",
+ "frena": [],
+ "avisos": [],
  "ejercicio": {
   "clubId": "viborg-dk",
   "year": 2021,
-  "cierre": "2021-09-30",
+  "cierre": "2021-06-30",
   "perimetro": "individual",
   "revenueLines": [
    {
@@ -131,7 +124,7 @@
   ],
   "fiscalYearMeta": {
    "currency": "DKK",
-   "fxRef": "DKK@2021-09-30",
+   "fxRef": "DKK@2021-06-30",
    "sourceId": "viborg-dk-aarsrapport-2021-06-30",
    "reportType": "official_balance_sheet",
    "gestionId": null,
@@ -185,10 +178,9 @@
   "tipo": "anual",
   "meses": 12,
   "cierre": "2021-06-30",
-  "evidencia": null,
-  "confianza": "media",
-  "cierreDe": "nombre del archivo (fin de mes, y el año aparece en el texto)",
-  "anual": "temporada"
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-25): El informe dice «regnskabsåret 01.07.20 - 30.06.21» (líneas 12, 69, 106 y 178 del .md); el 30 de septiembre de 2021 es la fecha en que se firmó, no el cierre"
  },
  "clubId": "viborg-dk",
  "year": 2021,
@@ -244,6 +236,18 @@
    "motivo": "partir-amortizacion.mjs (REGLA de la línea de depreciación y amortización junta): «Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver» (1.573.257,00, L560) = jugadores 1.243.140,00 + resto 330.117,00, según dos notas: L832 (jugadores) y L846 (bienes de uso)",
    "evidencia": "L832 (jugadores) y L846 (bienes de uso)",
    "autor": "partir-amortizacion",
+   "fecha": "2026-10-25"
+  },
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
+   "campo": "cierre",
+   "valor": "2021-06-30",
+   "linea": null,
+   "motivo": "El informe dice «regnskabsåret 01.07.20 - 30.06.21» (líneas 12, 69, 106 y 178 del .md); el 30 de septiembre de 2021 es la fecha en que se firmó, no el cierre",
+   "evidencia": ".md L12 y L69",
+   "causa": "lectura-del-documento",
+   "autor": "Claude",
    "fecha": "2026-10-25"
   }
  ],
@@ -492,27 +496,21 @@
    "M": 35.243664
   }
  },
- "fxCloseNuevo": {
-  "key": "DKK@2021-09-30",
-  "fx": 6.422,
-  "source": "market_close",
-  "label": "Tipo oficial de Danmarks Nationalbank al 2021-09-30"
- },
  "liga": {
-  "valor": "dk-superliga",
-  "fuente": "roster cacheado de \"2021–22 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia exacta \"Viborg FF\"",
+  "valor": "dk-1division",
+  "fuente": "roster cacheado de \"2020–21 Danish 1st Division\" (tools/club-league-reference/dk.json), coincidencia exacta \"Viborg FF\"",
   "estado": "ok"
  },
  "procedencia": {
   "anio": {
    "valor": 2021,
-   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-25): El informe dice «regnskabsåret 01.07.20 - 30.06.21» (líneas 12, 69, 106 y 178 del .md); el 30 de septiembre de 2021 es la fecha en que se firmó, no el cierre",
    "estado": "ok"
   },
   "cierre": {
-   "valor": "2021-09-30",
-   "fuente": "año del ejercicio + mes de cierre (contenido del .md (2 de 2 fechas de fin de mes caen en el mes 9))",
-   "estado": "pregunta"
+   "valor": "2021-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-25): El informe dice «regnskabsåret 01.07.20 - 30.06.21» (líneas 12, 69, 106 y 178 del .md); el 30 de septiembre de 2021 es la fecha en que se firmó, no el cierre)",
+   "estado": "ok"
   },
   "reportType": {
    "valor": "official_balance_sheet",
@@ -530,8 +528,8 @@
    "estado": "ok"
   },
   "fxRef": {
-   "valor": "DKK@2021-09-30",
-   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 6.422. --escribir agrega 'DKK@2021-09-30' a FX_CLOSE",
+   "valor": "DKK@2021-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene DKK@2021-06-30 = 6.2573 (Cierre BCE al 30/6/2021, cruzando DKK/EUR (7,4362) × EUR/USD (1,1884) (1 DKK ≈ 0,1598 USD))",
    "estado": "ok"
   },
   "sourceId": {
@@ -540,15 +538,15 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": "dk-superliga",
-   "fuente": "roster cacheado de \"2021–22 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia exacta \"Viborg FF\"",
+   "valor": "dk-1division",
+   "fuente": "roster cacheado de \"2020–21 Danish 1st Division\" (tools/club-league-reference/dk.json), coincidencia exacta \"Viborg FF\"",
    "estado": "ok"
   }
  },
  "ancla": null,
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 2,
   "lineasGasto": 9,
   "metaFilas": 3,

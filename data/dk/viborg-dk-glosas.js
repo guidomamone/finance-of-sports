@@ -12,6 +12,7 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Andre driftsindtægter":{"es":"Otros ingresos de explotación","en":"Other operating income"},
 "Andre driftsindtægter (resultado neto de transferencias — ingresos de transfer menos costos de transfer — más ganancia/pérdida neta por venta de activos fijos; venta de Anton Gaaei, Elias Achouri, Alassana Jatta, Jacob Friis, entre otros)":{"es":"Otros ingresos de explotación","en":"Other operating income"},
 "Andre driftsindtægter Other operating income":{"es":"Otros ingresos de explotación","en":"Other operating income"},
+"Andre driftsomkostninger":{"es":"Otros gastos de explotación","en":"Other operating expenses"},
 "Andre driftsomkostninger (sin monto propio identificable para separar de other_expenses)":{"es":"Otros gastos de explotación","en":"Other operating expenses"},
 "Andre driftsomkostninger Other operating expenses":{"es":"Otros gastos de explotación","en":"Other operating expenses"},
 "Andre eksterne omkostninger":{"es":"Otros gastos corrientes de explotación","en":"Other external expenses"},

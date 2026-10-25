@@ -36,3 +36,5 @@ Ninguna.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2020 desde `Clubes/Dinamarca/Viborg FF/aarsrapport-2020-06-30.pdf` (sourceId `viborg-dk-aarsrapport-2020-06-30`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2019 desde `Clubes/Dinamarca/Viborg FF/aarsrapport-2019-06-30.pdf` (sourceId `viborg-dk-aarsrapport-2019-06-30`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2021 desde `Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf` (sourceId `viborg-dk-aarsrapport-2021-06-30`).

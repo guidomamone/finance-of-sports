@@ -56,6 +56,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'viborg-dk': {
     2019: {"estadio":"Energi Viborg Arena","capacidad":9566,"sponsor":"Andelskassen","marca":"Nike","temporada":"2018–19 Danish 1st Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374472594"},
     2020: {"estadio":"Energi Viborg Arena","capacidad":9566,"sponsor":"Andelskassen","marca":"Nike","temporada":"2019–20 Danish 1st Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1328192521"},
+    2021: {"estadio":"Energi Viborg Arena","capacidad":9566,"sponsor":"Andelskassen","marca":"Nike","temporada":"2020–21 Danish 1st Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1302640591"},
     2024: {"estadio":"Energi Viborg Arena","capacidad":9566,"sponsor":"Peter Larsen Kaffe, SkilteCentret","marca":"Capelli Sport","temporada":"2023–24 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377453087"},
     2025: {"estadio":"Energi Viborg Arena","capacidad":10000,"sponsor":"Peter Larsen Kaffe","marca":"Capelli Sport","temporada":"2024–25 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371243611"},
   },

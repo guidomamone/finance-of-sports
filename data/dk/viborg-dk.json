@@ -45,6 +45,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Dinamarca/Viborg FF/aarsrapport-2019-06-30.pdf"
+    },
+    {
+      "id": "viborg-dk-aarsrapport-2021-06-30",
+      "club_id": "viborg-dk",
+      "title": "Viborg F.F. Prof. Fodbold A/S — aarsrapport-2021-06-30 (ejercicio 2021)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf"
     }
   ],
   "members": null,
@@ -146,6 +154,59 @@
       "adjustments": {
         "extra_rows": [{"label":"Finansielle indtægter","amount":0},{"label":"Finansielle omkostninger","amount":-0.087924}],
         "no_breakdown": [{"line":"Nettoomsætning","side":"revenue","amount":27.622438,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2021,
+      "period_end": "2021-06-30",
+      "currency": "DKK",
+      "source_id": "viborg-dk-aarsrapport-2021-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2021-06-30"},
+      "revenue": [
+        {"label":"Nettoomsætning","category":"undisclosed","subcategory":"lump_football_operations","amount":25.046243,"disclosure":"aggregated"},
+        {"label":"Andre driftsindtægter","category":"player_transfers","subcategory":"player_sales","amount":13.36242,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Vareforbrug","category":"other_operating_expenses","subcategory":"other_expenses","amount":-10.281021,"disclosure":"aggregated"},
+        {"label":"Andre eksterne omkostninger","category":"admin_general","subcategory":"admin_general_expense","amount":-2.986439,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-17.373091,"disclosure":"aggregated"},
+        {"label":"Pensioner","category":"first_team_staff","subcategory":"wages_squad","amount":-1.368779,"disclosure":"aggregated"},
+        {
+          "label": "Andre omkostninger til social sikring",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -0.150208,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andre personaleomkostninger","category":"first_team_staff","subcategory":"wages_squad","amount":-1.454869,"disclosure":"aggregated"},
+        {"label":"Andre driftsomkostninger","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.056,"disclosure":"aggregated"},
+        {
+          "label": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — derechos de jugadores (según dos notas)",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -1.24314,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Af- og nedskrivninger af immaterielle og materielle anlægs- aktiver — resto: bienes de uso y licencias (según dos notas)",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.330117,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.043214,"tax":-2.036,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":38.408663,"expenses":35.243664,"net_result":1.085785},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Finansielle indtægter","amount":0.000436},
+          {"label":"Finansielle omkostninger","amount":-0.04365},
+          {"label":"Skat af årets resultat","amount":-2.036}
+        ],
+        "no_breakdown": [{"line":"Nettoomsætning","side":"revenue","amount":25.046243,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "revenue_basis": "full"
       }
     },
