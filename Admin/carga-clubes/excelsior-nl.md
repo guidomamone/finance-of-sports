@@ -79,6 +79,43 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-19): nl-eredivisie, verificado contra roster cacheado de "2023–24 Eredivisie" (tools/club-league-reference/nl.json), coincidencia exacta "Excelsior".
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2018-2019.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Países Bajos/Excelsior/Excelsior-Jaarverslag-2018-2019.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | netto-omzet | pág. 5, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | lonen en salarissen | pág. 5, precedente |
+| 2 | sociale lasten | pág. 5, precedente |
+| 3 | pensioenen | pág. 5, precedente |
+| 4 | afschrijving vaste activa | pág. 5, precedente |
+| 5 | overige bedrijfskosten | pág. 5, precedente |
+
+### Meta
+
+```text
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2019-06-30. Revisión del alta (Claude, 2026-10-09): Geconsolideerde balans per 30 juni 2019
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): nl-eredivisie, verificado contra roster cacheado de "2018–19 Eredivisie" (tools/club-league-reference/nl.json), coincidencia exacta "Excelsior".
+```
+
 ## Fuentes
 
 ### excelsior-nl-jaarverslag-2023-2024
@@ -87,4 +124,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2023-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### excelsior-nl-jaarverslag-2018-2019
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2018-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

@@ -123,6 +123,9 @@ window.RANKINGS["nl-eredivisie"] = {
     leagueSize: 18,
     wiki: {"t":"2018–19 Eredivisie","lang":"en","at":"2026-10-19","n":18},
     clubs: [
+      { id:"excelsior-nl", revenue:8.898, reportType:"official_balance_sheet",
+        sourceId:"excelsior-nl-jaarverslag-2018-2019",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",8.898]] },
       { id:"fcemmen-nl", revenue:8.698, reportType:"official_balance_sheet",
         sourceId:"fcemmen-nl-f-04-fce-jaarverslag-2018-2019-incl-jaarcijfers-def",
         mix:[["Comercial / Sponsors",4.084],["Estadio",2.017],["Televisión",2.012],["Premios por competencias",0.37],["Subsidios y donaciones",0.064],["Otros ingresos",0.151]] },

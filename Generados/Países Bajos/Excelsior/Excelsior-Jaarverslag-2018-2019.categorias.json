@@ -1,0 +1,90 @@
+{
+ "md": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2018-2019.md",
+ "club": "excelsior-nl",
+ "year": 2019,
+ "generatedAt": "2026-10-25T05:31:07.933Z",
+ "rubrosHuella": "ca7bd044d90313ce440c6cbbe4fc0d43aba26bf7",
+ "jevHuella": "5ebb4ab3942f0b6b83fe6d139a1e3e2c635c951a",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "netto-omzet",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Importe neto de la cifra de negocios",
+   "page": 5,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "lonen en salarissen",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Sueldos y salarios",
+   "page": 5,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "sociale lasten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Cargas sociales",
+   "page": 5,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "pensioenen",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Pensiones",
+   "page": 5,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "afschrijving vaste activa",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortización del inmovilizado",
+   "page": 5,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
+   "confianza": 1
+  },
+  {
+   "label": "overige bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 5,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  }
+ ]
+}

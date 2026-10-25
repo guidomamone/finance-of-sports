@@ -1,0 +1,70 @@
+{
+  "md": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2018-2019.md",
+  "pdf": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2018-2019.pdf",
+  "club": "excelsior-nl",
+  "year": 2019,
+  "generatedAt": "2026-10-25T05:29:54.747Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "netto-omzet",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        7.819403
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "lonen en salarissen",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        3.864794
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "sociale lasten",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.406311
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "pensioenen",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.073518
+      ],
+      "glosa": "Pensiones"
+    },
+    {
+      "label": "afschrijving vaste activa",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.491478
+      ],
+      "glosa": "Amortización del inmovilizado"
+    },
+    {
+      "label": "overige bedrijfskosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        2.816981
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

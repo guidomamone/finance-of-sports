@@ -20,10 +20,42 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2023-2024.pdf"
+    },
+    {
+      "id": "excelsior-nl-jaarverslag-2018-2019",
+      "club_id": "excelsior-nl",
+      "title": "Stichting Betaald Voetbal Excelsior — Excelsior-Jaarverslag-2018-2019 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2018-2019.pdf"
     }
   ],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-06-30",
+      "currency": "EUR",
+      "source_id": "excelsior-nl-jaarverslag-2018-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2019-06-30"},
+      "revenue": [{"label":"netto-omzet","category":"undisclosed","subcategory":"lump_football_operations","amount":7.819403,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"lonen en salarissen","category":"first_team_staff","subcategory":"wages_squad","amount":-3.864794,"disclosure":"aggregated"},
+        {"label":"sociale lasten","category":"first_team_staff","subcategory":"wages_squad","amount":-0.406311,"disclosure":"aggregated"},
+        {"label":"pensioenen","category":"first_team_staff","subcategory":"wages_squad","amount":-0.073518,"disclosure":"aggregated"},
+        {"label":"afschrijving vaste activa","category":"depreciation","subcategory":"depreciation","amount":-0.491478,"disclosure":"aggregated"},
+        {"label":"overige bedrijfskosten","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2.816981,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.047474,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":7.819403,"expenses":7.653082,"net_result":0.118847},
+      "adjustments": {
+        "extra_rows": [{"label":"financiële baten en lasten","amount":-0.047474},{"label":"belastingen","amount":0}],
+        "no_breakdown": [{"line":"netto-omzet","side":"revenue","amount":7.819403,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "sales_total"
+      }
+    },
     {
       "fiscal_year": 2024,
       "period_end": "2024-06-30",
