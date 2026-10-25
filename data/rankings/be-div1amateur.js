@@ -68,6 +68,9 @@ window.RANKINGS["be-div1amateur"] = {
     leagueSize: 16,
     wiki: {"t":"2016–17 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
+      { id:"dender-be", revenue:1.217, reportType:"official_balance_sheet",
+        sourceId:"dender-be-jaarrekening-2017-06-30-individual-correction",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.388],["Otros ingresos",0.829]] },
       { id:"patroeisden-be", revenue:0.565, reportType:"official_balance_sheet",
         sourceId:"patroeisden-be-jaarrekening-2017-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.548],["Otros ingresos",0.017]] },

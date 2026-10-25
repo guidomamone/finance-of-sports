@@ -19,10 +19,54 @@
       "title": "Jaarrekening FCV Dender EH VZW voor het boekjaar van 01-07-2024 tot 30-06-2025",
       "type": "official_balance_sheet",
       "reliability": "primary"
+    },
+    {
+      "id": "dender-be-jaarrekening-2017-06-30-individual-correction",
+      "club_id": "dender-be",
+      "title": "Football Club Verbroedering Dender EH VZW — jaarrekening-2017-06-30-individual-correction (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/Dender EH/jaarrekening-2017-06-30-individual-correction.pdf"
     }
   ],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-06-30",
+      "currency": "EUR",
+      "source_id": "dender-be-jaarrekening-2017-06-30-individual-correction",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2017-06-30"},
+      "revenue": [
+        {"label":"Bedrijfsopbrengsten","category":"undisclosed","subcategory":"lump_football_operations","amount":0.339587,"disclosure":"aggregated"},
+        {"label":"Uitzonderlijke opbrengsten","category":"other_revenue","subcategory":"other_income","amount":0.72669,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.230627,
+          "disclosure": "aggregated"
+        },
+        {"label":"620","category":"first_team_staff","subcategory":"wages_squad","amount":-0.461799,"disclosure":"aggregated"},
+        {"label":"621","category":"first_team_staff","subcategory":"wages_squad","amount":-0.074188,"disclosure":"aggregated"},
+        {"label":"623","category":"first_team_staff","subcategory":"wages_squad","amount":-0.026402,"disclosure":"aggregated"},
+        {"label":"Andere bedrijfskosten","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.027102,"disclosure":"aggregated"},
+        {"label":"Uitzonderlijke kosten","category":"exceptional","subcategory":"exceptional_items","amount":-0.066989,"disclosure":"aggregated"},
+        {"label":"Afschrijvingen materiële vaste activa","category":"depreciation","subcategory":"depreciation","amount":-0.143032,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.034388,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":1.066277,"expenses":0.96315,"net_result":0.001749},
+      "adjustments": {
+        "extra_rows": [{"label":"Financiële opbrengsten","amount":0.000195},{"label":"Financiële kosten","amount":-0.034583}],
+        "no_breakdown": [{"line":"Bedrijfsopbrengsten","side":"revenue","amount":0.339587,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full",
+        "revenue_derivation": {"method":"margin_plus_costs","sources":["dender-be-jaarrekening-2017-06-30-individual-correction"]}
+      }
+    },
     {
       "fiscal_year": 2025,
       "period_end": "2025-06-30",

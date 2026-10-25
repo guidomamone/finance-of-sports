@@ -31,3 +31,5 @@ antes de que el club llegara a primera), `Clubes/Bélgica/Dender EH/`:
 Nombre confirmado en la API para los 15 depósitos.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2017 desde `Clubes/Bélgica/Dender EH/jaarrekening-2017-06-30-individual-correction.pdf` (sourceId `dender-be-jaarrekening-2017-06-30-individual-correction`).

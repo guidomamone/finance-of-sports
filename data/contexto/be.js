@@ -28,7 +28,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Jan Breydel Stadium","capacidad":29042,"sponsor":"Unibet","marca":"Castore","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
   'dender-be': {
-    2017: {"temporada":"2016–17 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353492624"},
+    2017: {"estadio":"Florent Beeckmanstadion (Van Roystadion)","capacidad":6429,"sponsor":"sin sponsor","marca":"Jartazi","temporada":"2016–17 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353492624","fuenteManual":"estadio y capacidad: https://en.wikipedia.org/w/index.php?title=F.C.V._Dender_E.H.&oldid=1353430954 (la página da el estadio actual, 6.429; https://en.wikipedia.org/wiki/Van_Roystadion: el mismo estadio abierto en 1997 como Florent Beeckman Stadion); marca y sin sponsor de camiseta 2009-2019: Football Kit Archive https://www.footballkitarchive.com/fcv-dender-eh-kits-t9285/ (base de aficionados, una sola fuente; leída por el resumen de la búsqueda, la página dio 403)","manual":["estadio","capacidad","sponsor","marca"]},
     2019: {"temporada":"2018–19 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354170241"},
     2025: {"estadio":"Van Roystadion","capacidad":6429,"sponsor":"Star Casino, Valckenier","marca":"Jako","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },

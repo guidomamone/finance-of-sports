@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2017-06-30-individual-correction.pdf",
- "generado": "2026-10-25T04:55:28.654Z",
+ "generado": "2026-10-25T05:23:25.835Z",
  "frena": [],
  "avisos": [
   "gastos: ningún total impreso igual a la suma de las líneas (-0.96315); queda la suma, verificada por el resultado del ejercicio"
@@ -134,6 +134,12 @@
     }
    ],
    "baseIngreso": "full",
+   "derivacionIngreso": {
+    "method": "margin_plus_costs",
+    "sources": [
+     "dender-be-jaarrekening-2017-06-30-individual-correction"
+    ]
+   },
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 1.066277,

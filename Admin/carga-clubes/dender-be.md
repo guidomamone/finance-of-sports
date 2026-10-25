@@ -129,6 +129,45 @@ Sitorus: dueño (Wikipedia). El 30/1/2018 entró el grupo indonesio (Belinda Sia
 Sitorus figura en el consejo desde el 3/6/2019. La fecha de compra se toma del cambio de consejo (aproximada).
 ```
 
+## 2017
+
+### Ingresos
+
+```text
+2017: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Bélgica/Dender EH/jaarrekening-2017-06-30-individual-correction.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Dender EH/jaarrekening-2017-06-30-individual-correction.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bedrijfsopbrengsten | pág. 6, Claude 0.8 |
+| 2 | Uitzonderlijke opbrengsten | pág. 6, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen | pág. 6, Jev 0.97 |
+| 2 | 620 | pág. 13, Jev 0.96 |
+| 3 | 621 | pág. 13, Jev 0.97 |
+| 4 | 623 | pág. 13, Jev 0.99 |
+| 5 | Andere bedrijfskosten | pág. 6, Claude 0.93 |
+| 6 | Uitzonderlijke kosten | pág. 6, Jev 1 |
+| 7 | Afschrijvingen materiële vaste activa | pág. 6, Jev 1 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): be-div1amateur, verificado contra roster cacheado de "2016–17 Belgian First Amateur Division" (tools/club-league-reference/be.json), coincidencia exacta "Dender EH".
+```
+
 ## Fuentes
 
 ### dender-be-jaarrekening-2025
@@ -137,4 +176,12 @@ _note (data/):_
 
 ```text
 Cuentas de la VZW (asociación sin fines de lucro) individual, NO consolidadas con NV Dender Foot (sociedad comercial hermana que, per nota de la propia jaarrekening, absorberá parte de la actividad desde el ejercicio 2025-26). Esquema estatutario ABREVIADO (VKT-VZW): no desglosa Omzet por categoría de ingreso, a diferencia del esquema completo de otros clubes belgas cargados. PDF con capa de texto nativa. Transcripción completa en Clubes/Bélgica/Dender EH/jaarrekening-2025-06-30-individual.md.
+```
+
+### dender-be-jaarrekening-2017-06-30-individual-correction
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Bélgica/Dender EH/jaarrekening-2017-06-30-individual-correction.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
