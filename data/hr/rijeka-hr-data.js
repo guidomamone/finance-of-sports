@@ -12,6 +12,19 @@ const rijekaHrRevenueLinesByYear = {
     {"rawLabel":"Prihodi od članarina","normalizedCategory":"member_dues","amountNative":0.592,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ostali nespomenuti prihodi","normalizedCategory":"other_income","amountNative":1.465,"disclosureLevel":"aggregated"},
   ],
+  2023: [
+    {"rawLabel":"Dobit od prodaje igrača","normalizedCategory":"player_sales","amountNative":6.531,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Prihodi od sponzorstava","normalizedCategory":"sponsorship_commercial","amountNative":1.396,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Prihodi od prodaje ulaznica","normalizedCategory":"matchday_competition","amountNative":1.469,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Prihodi od TV prava","normalizedCategory":"broadcasting","amountNative":0.763,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Prihodi od prodaje ekonomskih prava igrača","normalizedCategory":"player_sales","amountNative":0.03,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Najam poslovnog prostora","normalizedCategory":"other_income","amountNative":0.279,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Ostali prihodi od prodaje","normalizedCategory":"sponsorship_commercial","amountNative":0.767,"disclosureLevel":"aggregated"},
+    {"rawLabel":"UEFA nagrade i solidarne uplate","normalizedCategory":"competition_bonus","amountNative":1.441,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Donacije u zemlji","normalizedCategory":"grants_donations","amountNative":1.847,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Prihodi od članarina","normalizedCategory":"member_dues","amountNative":0.196,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Ostali nespomenuti prihodi","normalizedCategory":"other_income","amountNative":0.501,"disclosureLevel":"aggregated"},
+  ],
   2024: [
     {"rawLabel":"Prihodi od ulaznica — Nacionalna natjecanja + UEFA klupska natjecanja + ostalo nerazvrstano","normalizedCategory":"matchday_competition","amountNative":0.275748,"disclosureLevel":"detailed","items":[["Nacionalna natjecanja",0.048809],["UEFA klupska natjecanja",0.216591],["Ostali nerazvrstani prihodi od ulaznica",0.010348]]},
     {"rawLabel":"Prihodi od ulaznica - Godišnje ulaznice","normalizedCategory":"season_tickets","amountNative":0.993248,"disclosureLevel":"detailed"},
@@ -69,6 +82,35 @@ const rijekaHrExpenseLinesByYear = {
     {"rawLabel":"Vrijednosno usklađenje potraživanja","normalizedCategory":"other_expenses","amountNative":-1.725,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ostali poslovni rashodi","normalizedCategory":"other_expenses","amountNative":-1.071,"disclosureLevel":"aggregated"},
   ],
+  2023: [
+    {"rawLabel":"Sportska oprema","normalizedCategory":"other_expenses","amountNative":-0.354,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Roba za ambulantu","normalizedCategory":"other_expenses","amountNative":-0.068,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Utrošene sirovine i materijal","normalizedCategory":"other_expenses","amountNative":-0.022,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Ostalo","normalizedCategory":"other_expenses","amountNative":-0.183,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Troškovi prodane robe","normalizedCategory":"other_expenses","amountNative":-0.167,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Naknade igračima i trenerima","normalizedCategory":"wages_squad","amountNative":-7.527,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Najam","normalizedCategory":"admin_general_expense","amountNative":-0.047,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Intelektualne usluge","normalizedCategory":"admin_general_expense","amountNative":-0.791,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Trošak održavanja utakmica","normalizedCategory":"match_organisation_expense","amountNative":-0.858,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Vanjske usluge","normalizedCategory":"admin_general_expense","amountNative":-0.338,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Pripreme igrača","normalizedCategory":"match_organisation_expense","amountNative":-0.248,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Marketinški troškovi","normalizedCategory":"admin_general_expense","amountNative":-0.073,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Prijevozne usluge","normalizedCategory":"match_organisation_expense","amountNative":-0.017,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Ostale usluge","normalizedCategory":"other_expenses","amountNative":-1.74,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Neto plaće i nadnice","normalizedCategory":"admin_general_expense","amountNative":-0.297,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Troškovi poreza i doprinosa iz plaća","normalizedCategory":"admin_general_expense","amountNative":-0.114,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Doprinosi na plaće","normalizedCategory":"admin_general_expense","amountNative":-0.067,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Nematerijalne imovine","normalizedCategory":"player_amortisation","amountNative":-0.697,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Materijalne imovine","normalizedCategory":"depreciation","amountNative":-0.008,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Naknade za transfere igrača","normalizedCategory":"other_expenses","amountNative":-1.026,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Reprezentacija","normalizedCategory":"admin_general_expense","amountNative":-0.291,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Naknade i kazne savezima","normalizedCategory":"other_expenses","amountNative":-0.19,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Porezi i doprinosi koji ne ovise o rezultatu","normalizedCategory":"admin_general_expense","amountNative":-0.019,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Dnevnice i putni troškovi","normalizedCategory":"match_organisation_expense","amountNative":-0.004,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Ostalo","normalizedCategory":"other_expenses","amountNative":-0.264,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Vrijednosno usklađenje potraživanja","normalizedCategory":"other_expenses","amountNative":-0.25,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Ostali poslovni rashodi","normalizedCategory":"other_expenses","amountNative":-0.272,"disclosureLevel":"aggregated"},
+  ],
   2024: [
     {"rawLabel":"Troškovi prodaje/materijala","normalizedCategory":"other_expenses","amountNative":-1.093209,"disclosureLevel":"detailed"},
     {"rawLabel":"Troškovi primanja igrača + Troškovi primanja stručnog stožera","normalizedCategory":"wages_squad","amountNative":-8.284259,"disclosureLevel":"detailed","items":[["Troškovi primanja igrača",-6.224869],["Troškovi primanja stručnog stožera",-2.05939]]},
@@ -112,6 +154,7 @@ const rijekaHrExpenseLinesByYear = {
 
 const rijekaHrFiscalYearMeta = {
   2022: {"currency":"HRK","sourceId":"rijeka-hr-financijsko-izvjesce-2022","reportType":"official_balance_sheet","gestionId":null,"fxRef":"HRK@2022-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.286,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":69.154,"officialTotalExpenses":107.642,"officialPAT":-38.202,"extraRows":[{"label":"Financijski prihodi","value":1.527},{"label":"Financijski rashodi","value":-1.241},{"label":"Porez na dobit","value":null}],"baseIngreso":"full"},
+  2023: {"currency":"EUR","sourceId":"rijeka-hr-financijsko-izvjesce-2023","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2023-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.078,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":15.22,"officialTotalExpenses":15.932,"officialPAT":-0.79,"extraRows":[{"label":"Financijski prihodi","value":0.182},{"label":"Financijski rashodi","value":-0.26},{"label":"Porez na dobit","value":null}],"baseIngreso":"full"},
   2024: {"currency":"EUR","sourceId":"rijeka-hr-financijsko-izvjesce-2024-kombinirani","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"EUR@2024-12-31","profitOnPlayerSales":10.092795,"assetSales":0,"netInterest":-0.790187,"tax":0,"grossDebt":14.092288,"cash":1.691323,"officialTotalRevenue":8.37028,"officialTotalExpenses":17.630494,"officialPAT":0.042394,"baseIngreso":"full"},
   2025: {"currency":"EUR","sourceId":"rijeka-hr-financijsko-izvjesce-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.241,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":26.317,"officialTotalExpenses":22.94,"officialPAT":3.136,"extraRows":[{"label":"Financijski prihodi","value":0.357},{"label":"Financijski rashodi","value":-0.598},{"label":"Porez na dobit","value":null}],"baseIngreso":"full"},
 };
@@ -130,7 +173,7 @@ window.CLUB_GENERIC_DATA["rijeka-hr"] = {
   presupuestoOverlayByYear: rijekaHrPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"rijeka-hr-financijsko-izvjesce-2024-kombinirani":{"id":"rijeka-hr-financijsko-izvjesce-2024-kombinirani","clubId":"rijeka-hr","title":"Revidirani godišnji kombinirani financijski izvještaji za posebne namjene za 2024. godinu (HNK Rijeka s.d.d. i Stadion Kantrida d.o.o.)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Rijeka/financijsko-izvjesce-2024-kombinirani.pdf"},"rijeka-hr-financijsko-izvjesce-2025":{"id":"rijeka-hr-financijsko-izvjesce-2025","clubId":"rijeka-hr","title":"Hrvatski nogometni klub Rijeka s.d.d. — financijsko-izvjesce-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.pdf"},"rijeka-hr-financijsko-izvjesce-2022":{"id":"rijeka-hr-financijsko-izvjesce-2022","clubId":"rijeka-hr","title":"Hrvatski nogometni klub Rijeka s.d.d. — financijsko-izvjesce-2022 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Rijeka/financijsko-izvjesce-2022.pdf"}});
+Object.assign(sources, {"rijeka-hr-financijsko-izvjesce-2024-kombinirani":{"id":"rijeka-hr-financijsko-izvjesce-2024-kombinirani","clubId":"rijeka-hr","title":"Revidirani godišnji kombinirani financijski izvještaji za posebne namjene za 2024. godinu (HNK Rijeka s.d.d. i Stadion Kantrida d.o.o.)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Rijeka/financijsko-izvjesce-2024-kombinirani.pdf"},"rijeka-hr-financijsko-izvjesce-2025":{"id":"rijeka-hr-financijsko-izvjesce-2025","clubId":"rijeka-hr","title":"Hrvatski nogometni klub Rijeka s.d.d. — financijsko-izvjesce-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.pdf"},"rijeka-hr-financijsko-izvjesce-2022":{"id":"rijeka-hr-financijsko-izvjesce-2022","clubId":"rijeka-hr","title":"Hrvatski nogometni klub Rijeka s.d.d. — financijsko-izvjesce-2022 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Rijeka/financijsko-izvjesce-2022.pdf"},"rijeka-hr-financijsko-izvjesce-2023":{"id":"rijeka-hr-financijsko-izvjesce-2023","clubId":"rijeka-hr","title":"Hrvatski nogometni klub Rijeka s.d.d. — financijsko-izvjesce-2023 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Croacia/Rijeka/financijsko-izvjesce-2023.pdf"}});
 
 gestionesByClub["rijeka-hr"] = {"actual":{"nombre":"Gestión actual","firstYear":2024,"lastYear":2024}};
 

@@ -653,9 +653,10 @@ GENERADO por `node tools/faltantes-liga.mjs` (calculado: 2026-10-25): no editar 
 - Chungju Hummel — sin-buscar: 2016 (kr-kleague2)
 - Goyang Zaicro — sin-buscar: 2016 (kr-kleague2)
 
-## Croacia (1 clubes, 2 club-años)
+## Croacia (2 clubes, 3 club-años)
 
 - Šibenik — sin-buscar: 2025 (hr-hnl), 2023 (hr-hnl)
+- Rudeš — sin-buscar: 2024 (hr-hnl)
 
 ## Dinamarca (17 clubes, 27 club-años)
 

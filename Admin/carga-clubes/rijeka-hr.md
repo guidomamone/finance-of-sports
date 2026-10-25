@@ -229,6 +229,73 @@ Damir Mišković (2012-03-20 a hoy): Wikipedia en inglés: asumió como chairman
 Duda: El desde 2012-03-20 es la fecha en que se hizo cargo del club (Wikipedia); el mandato formal de la Uprava actual figura desde 2020-11-27 en el informe del club. Si el sitio prefiere la fecha societaria, usar 2020-11-27.
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Croacia/Rijeka/financijsko-izvjesce-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Croacia/Rijeka/financijsko-izvjesce-2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Dobit od prodaje igrača | pág. 24, precedente |
+| 2 | Prihodi od sponzorstava | pág. 24, precedente |
+| 3 | Prihodi od prodaje ulaznica | pág. 24, precedente |
+| 4 | Prihodi od TV prava | pág. 24, precedente |
+| 5 | Prihodi od prodaje ekonomskih prava igrača | pág. 24, precedente |
+| 6 | Najam poslovnog prostora | pág. 24, precedente |
+| 7 | Ostali prihodi od prodaje | pág. 24, precedente |
+| 8 | UEFA nagrade i solidarne uplate | pág. 24, precedente |
+| 9 | Donacije u zemlji | pág. 24, precedente |
+| 10 | Prihodi od članarina | pág. 24, precedente |
+| 11 | Ostali nespomenuti prihodi | pág. 24, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sportska oprema | pág. 25, precedente |
+| 2 | Roba za ambulantu | pág. 25, precedente |
+| 3 | Utrošene sirovine i materijal | pág. 25, precedente |
+| 4 | Ostalo | pág. 25, precedente |
+| 5 | Troškovi prodane robe | pág. 25, precedente |
+| 6 | Naknade igračima i trenerima | pág. 25, precedente |
+| 7 | Najam | pág. 25, precedente |
+| 8 | Intelektualne usluge | pág. 25, precedente |
+| 9 | Trošak održavanja utakmica | pág. 25, precedente |
+| 10 | Vanjske usluge | pág. 25, precedente |
+| 11 | Pripreme igrača | pág. 25, precedente |
+| 12 | Marketinški troškovi | pág. 25, precedente |
+| 13 | Prijevozne usluge | pág. 25, precedente |
+| 14 | Ostale usluge | pág. 25, precedente |
+| 15 | Neto plaće i nadnice | pág. 25, precedente |
+| 16 | Troškovi poreza i doprinosa iz plaća | pág. 25, precedente |
+| 17 | Doprinosi na plaće | pág. 25, precedente |
+| 18 | Nematerijalne imovine | pág. 26, precedente |
+| 19 | Materijalne imovine | pág. 26, precedente |
+| 20 | Naknade za transfere igrača | pág. 26, precedente |
+| 21 | Reprezentacija | pág. 26, precedente |
+| 22 | Naknade i kazne savezima | pág. 26, precedente |
+| 23 | Porezi i doprinosi koji ne ovise o rezultatu | pág. 26, precedente |
+| 24 | Dnevnice i putni troškovi | pág. 26, precedente |
+| 25 | Ostalo | pág. 26, precedente |
+| 26 | Vrijednosno usklađenje potraživanja | pág. 10, precedente |
+| 27 | Ostali poslovni rashodi | pág. 10, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): hr-hnl, verificado contra roster cacheado de "2023–24 Croatian Football League" (tools/club-league-reference/hr.json), coincidencia exacta "Rijeka".
+```
+
 ## 2022
 
 ### Ingresos
@@ -320,4 +387,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Croacia/Rijeka/financijsko-izvjesce-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### rijeka-hr-financijsko-izvjesce-2023
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Croacia/Rijeka/financijsko-izvjesce-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

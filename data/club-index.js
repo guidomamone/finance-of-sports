@@ -255,7 +255,7 @@ window.CLUB_INDEX = {
   "realmadrid-es": {"n":"Real Madrid","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "realoviedo-es": {"n":"Real Oviedo","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "remo-br": {"n":"Remo","c":"BR","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
-  "rijeka-hr": {"n":"Rijeka","c":"HR","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
+  "rijeka-hr": {"n":"Rijeka","c":"HR","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "rioave-pt": {"n":"Rio Ave","c":"PT","q":"full","y":9,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"]]},
   "river-ar": {"n":"River Plate","c":"AR","q":"mixed","y":2,"last":2024,"yrs":[[2024,"unofficial_mirror"],[2021,"official_balance_sheet"]]},
   "rodajc-nl": {"n":"Roda JC","c":"NL","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},

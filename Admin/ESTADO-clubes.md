@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 331 clubes, 1358 ejercicios, 24 países.
+TOTAL: 331 clubes, 1359 ejercicios, 24 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -265,7 +265,7 @@ HR (8)
   Hajduk Split   2 ejercicios (2024 a 2025), balance, EUR
   Istra 1961     1 ejercicio (2025), balance, EUR
   Osijek         1 ejercicio (2025), balance, EUR
-  Rijeka         3 ejercicios (2022, 2024, 2025), balance, HRK/EUR
+  Rijeka         4 ejercicios (2022 a 2025), balance, HRK/EUR
   Slaven Belupo  1 ejercicio (2025), balance, EUR
   Varaždin       1 ejercicio (2025), balance, EUR
 

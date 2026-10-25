@@ -32,7 +32,8 @@ window.RANKINGS["hr-hnl"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 10,
+    wiki: {"t":"2023–24 Croatian Football League","lang":"en","at":"2026-10-25","n":10},
     clubs: [
       { id:"dinamozagreb-hr", revenue:59.799, reportType:"official_balance_sheet",
         sourceId:"dinamozagreb-hr-financijsko-izvjesce-2024",
@@ -43,6 +44,15 @@ window.RANKINGS["hr-hnl"] = {
       { id:"rijeka-hr", revenue:8.695, reportType:"official_balance_sheet",
         sourceId:"rijeka-hr-financijsko-izvjesce-2024-kombinirani",
         mix:[["Cuotas Sociales",0.422],["Comercial / Sponsors",2.102],["Estadio",1.938],["Televisión",1.261],["Premios por competencias",2.105],["Otros ingresos",0.866]] },
+    ],
+  },
+  2023: {
+    leagueSize: 10,
+    wiki: {"t":"2022–23 Croatian Football League","lang":"en","at":"2026-10-25","n":10},
+    clubs: [
+      { id:"rijeka-hr", revenue:16.818, reportType:"official_balance_sheet",
+        sourceId:"rijeka-hr-financijsko-izvjesce-2023",
+        mix:[["Cuotas Sociales",0.217],["Comercial / Sponsors",2.39],["Estadio",1.623],["Televisión",0.843],["Premios por competencias",1.592],["Venta de Jugadores",7.25],["Subsidios y donaciones",2.041],["Otros ingresos",0.862]] },
     ],
   },
   2022: {

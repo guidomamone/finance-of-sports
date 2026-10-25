@@ -22,6 +22,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'rijeka-hr': {
     2022: {"estadio":"Rujevica","capacidad":8191,"sponsor":"Sava Osiguranje","marca":"Joma","temporada":"2022–23 Croatian Football League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378494269"},
+    2023: {"estadio":"Rujevica","capacidad":8191,"sponsor":"Favbet","marca":"Joma","temporada":"2023–24 Croatian Football League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1366330161"},
     2024: {"estadio":"Rujevica","capacidad":8191,"sponsor":"Favbet","marca":"Joma","temporada":"2024–25 Croatian Football League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378033710"},
     2025: {"estadio":"Rujevica","capacidad":8191,"sponsor":"Favbet","marca":"Joma","temporada":"2025–26 Croatian Football League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191288"},
   },
