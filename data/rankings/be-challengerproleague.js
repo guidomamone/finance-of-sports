@@ -7,6 +7,9 @@ window.RANKINGS["be-challengerproleague"] = {
     margen: [["liersesk-be",3.172,null],["patroeisden-be",2.16,null]],
     wiki: {"t":"2024–25 Challenger Pro League","lang":"en","at":"2026-10-19","n":16},
     clubs: [
+      { id:"zultewaregem-be", revenue:21.675, reportType:"official_balance_sheet",
+        sourceId:"zultewaregem-be-jaarrekening-2025",
+        mix:[["Subsidios y donaciones",2.11],["Fútbol profesional (sin desglosar por la fuente)",15.34],["Otros ingresos",4.225]] },
       { id:"rwdm-be", revenue:17.785, reportType:"official_balance_sheet",
         sourceId:"rwdm-be-jaarrekening-2025-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.004],["Otros ingresos",12.781]] },

@@ -274,7 +274,7 @@ window.I18N.strings.en = {
   "cmp.row.libertadores": "Best result in the Libertadores",
   "pl.sd": "n/d",
   "pl.sd.tip.gen": "Not broken down: this year's document does not split this item. It is not zero.",
-  "pl.sd.tip.exp": "Not broken down: this year the document reports expenses in a single line (\"{r}\"), without splitting them. It is not zero.",
+  "pl.sd.tip.exp": "Not broken down: this year the document reports expenses in a single line, without splitting them. It is not zero.",
   "pl.sd.tip.margin": "Not broken down: this year the document reports only \"{r}\" (a gross margin), not revenue by source. It is not zero.",
   "pl.sd.tip.one": "Not broken down: this year the document reports revenue in a single line (\"{r}\"), without splitting it by source. It is not zero.",
   "pl.notas.title": "Notes on this club",

@@ -878,7 +878,7 @@
     const e = sinDesgloseDe(meta, lado);
     if(!e) return t('pl.sd.tip.gen', 'Sin desglose: el documento de este ejercicio no abre este renglón. No es cero.');
     const r = rotuloCorto(e.renglon);
-    if(lado === 'expense') return t('pl.sd.tip.exp', 'Sin desglose: este ejercicio el documento informa los gastos en una sola línea («{r}»), sin abrirlos. No es cero.').replace('{r}', r);
+    if(lado === 'expense') return t('pl.sd.tip.exp', 'Sin desglose: este ejercicio el documento informa los gastos en una sola línea, sin abrirlos. No es cero.');
     return e.tipo === 'gross_margin'
       ? t('pl.sd.tip.margin', 'Sin desglose: este ejercicio el documento informa solo «{r}» (un margen bruto), no los ingresos por separado. No es cero.').replace('{r}', r)
       : t('pl.sd.tip.one', 'Sin desglose: este ejercicio el documento informa los ingresos en una sola línea («{r}»), sin abrirlos por fuente. No es cero.').replace('{r}', r);

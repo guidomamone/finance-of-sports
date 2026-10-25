@@ -14,7 +14,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'sinttruiden-be':   { 2025: 'be-proleague' },
   'cerclebrugge-be':  { 2025: 'be-proleague', 2019: 'be-proleague' },
   'dender-be':        { 2025: 'be-proleague', 2017: 'be-div1amateur', 2019: 'be-div1amateur', 2023: 'be-challengerproleague', 2020: 'be-div1amateur', 2022: 'be-div1amateur', 2024: 'be-challengerproleague' },
-  'zultewaregem-be':  { 2025: 'liga-no-catalogada' },
+  'zultewaregem-be':  { 2025: 'be-challengerproleague' },
   'liersesk-be': { 2025: 'be-challengerproleague', 2022: 'be-challengerproleague', 2023: 'be-challengerproleague', 2024: 'be-challengerproleague', 2020: null, 2021: null, 2019: null },
   'lokerentemse-be': { 2025: 'be-challengerproleague', 2024: 'be-div1amateur', 2023: 'be-div2amateur', 2022: 'be-div2amateur', 2021: 'be-div2amateur' },
   'lommelsk-be': { 2025: 'be-challengerproleague', 2018: 'be-div1amateur', 2019: 'be-challengerproleague', 2020: 'be-challengerproleague', 2021: 'be-challengerproleague', 2022: 'be-challengerproleague', 2023: 'be-challengerproleague', 2024: 'be-challengerproleague' },
@@ -22,6 +22,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'patroeisden-be': { 2013: null, 2014: 'be-div1amateur', 2015: 'be-challengerproleague', 2025: 'be-challengerproleague', 2016: 'be-challengerproleague', 2017: 'be-div1amateur', 2018: 'be-div1amateur', 2019: 'be-div2amateur', 2020: 'be-div1amateur', 2024: 'be-challengerproleague', 2021: 'be-div1amateur', 2023: 'be-div1amateur', 2022: 'be-div1amateur' },
   'rwdm-be': { 2025: 'be-challengerproleague', 2020: 'be-div1amateur', 2021: 'be-challengerproleague', 2022: 'be-challengerproleague', 2023: 'be-challengerproleague', 2024: 'be-proleague' },
   'beerschot-be': { 2025: 'be-proleague', 2019: 'be-challengerproleague', 2021: 'be-proleague', 2022: 'be-proleague', 2024: 'be-challengerproleague', 2020: 'be-challengerproleague', 2023: 'be-challengerproleague' },
-  'raallalouviere-be': { 2025: 'be-challengerproleague', 2018: 'liga-no-catalogada', 2019: 'be-div2amateur', 2020: 'be-div2amateur', 2021: 'be-div2amateur', 2022: 'be-div2amateur', 2023: 'be-div1amateur', 2024: 'be-div1amateur' },
+  'raallalouviere-be': { 2025: 'be-challengerproleague', 2018: 'be-div3amateur', 2019: 'be-div2amateur', 2020: 'be-div2amateur', 2021: 'be-div2amateur', 2022: 'be-div2amateur', 2023: 'be-div1amateur', 2024: 'be-div1amateur' },
   'liersekempenzonen-be': { 2018: 'be-div1amateur', 2019: 'be-div1amateur', 2020: 'be-div1amateur', 2021: 'be-challengerproleague' },
 });

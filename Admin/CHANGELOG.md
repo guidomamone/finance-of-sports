@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1105 — RAAL 2018 y Zulte Waregem 2025 con liga, el bocadillo de gastos sin rótulo, la tabla RSSSF de la 1ª Amateur con la tool [454 · 455]
+- RAAL 2018 estaba en `liga-no-catalogada` pero la 3ª Amateur belga ya existe en el catálogo: pasa a `be-div3amateur` (lista de 64 equipos de Wikipedia, 2017–18). Zulte Waregem 2025 pasa a `be-challengerproleague` (alias «S.V. Zulte Waregem»; una fuente: la tabla de RSSSF de 2024-25 trae 15 equipos y la de Wikipedia 16).
+- Dynamo Makhachkala 2021 sigue en `liga-no-catalogada` y su liga (la Segunda Liga rusa) queda anotada en `Admin/registros/ligas-no-catalogadas.jsonl`. Las tablas RSSSF de la 1ª Amateur 2018 y 2020 pasan a guardarse con `segunda-fuente-liga.mjs`, no a mano.
+- El bocadillo de «s/d» de los gastos queda sin rótulo, como la nota (español e inglés). Medición: no aplica a estos datos; las tools de la sesión van en su propia entrada.
+
 ## Versión 1104 — los 5 años de margen bruto sin liga y Panetolikos 2021 [455 · 454 · panetolikos-gr]
 - Liga asignada con dos fuentes (Wikipedia en inglés y RSSSF, ésta anotada en `be.json`): Lommel 2018, RWDM 2020 y Lierse Kempenzonen 2018 (era Oosterzonen, mismo club) en la 1ª División Amateur; Vejle 2022 en la 1ª División danesa. RAAL 2018 jugó en la tercera amateur, que el sitio no tiene: `liga-no-catalogada`. Alias nuevos («Oosterzonen», «Vejle Boldklub», «Vejle BK»). Años de margen sin estimado: 15 a 9 (los que quedan no tienen un club real en su liga-año).
 - Panetolikos 2021: el rótulo de la línea era una fila geográfica («Αγορές τρίτων χωρών», glosada «Compras de terceros países»); pasa a «Κύκλος εργασιών (καθαρός), resto sin desglosar (sin la venta de un jugador)»; los 600.000 € de venta de jugador y el total no cambian.
