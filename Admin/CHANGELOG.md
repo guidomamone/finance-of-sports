@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1092 — Patro Eisden 2019/20: el ingreso se reconstruye con margen bruto + compras y servicios [455 · patroeisden-be]
+- El documento corregido imprime el margen bruto (277.991), compras y servicios (423.072) y las ventas (568.892): el ingreso es 701.063 EUR, y el sitio mostraba solo el margen. Ahora: «Omzet» 0,569 M (sin abrir por fuente) más 0,132 M de lo que la Brutomarge trae implícito, y 0,423 M de compras y servicios en los gastos; el resultado (-0,708 M) no cambia.
+- Marcado `revenue_basis: full` y `revenue_derivation` (12 reconstruidos); `audit.js` P0 0, P1 0 y comparado en pantalla (0,8 M USD en 2019/20).
+- Medición: no aplica (un dato de un club; sin tools del pipeline).
+
 ## Versión 1091 — los 1340 ejercicios con su base de ingreso (revenue_basis) y los 11 reconstruidos marcados [455]
 - `fos ingreso-base --escribir` sobre los 331 clubes: 1258 `full`, 32 `sales_total`, 46 `gross_margin`; 11 con `revenue_derivation` (Patro Eisden, Lokeren-Temse, Dender). Los 4 años sin meta (Lierse SK 2019-2021, Patro Eisden 2021) no se pueden marcar.
 - Probado: datos, fuentes y totales idénticos antes y después en los 331 clubes (sin contar los dos campos); `generar-data --check` en verde; `data/schema/club-v2.json` regenerado. `Admin/mediciones/455-...md` corregido (46 de margen, 11 reconstruidos; ancla de SønderjyskE 2024).

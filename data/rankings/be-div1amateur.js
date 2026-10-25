@@ -41,9 +41,9 @@ window.RANKINGS["be-div1amateur"] = {
       { id:"liersekempenzonen-be", revenue:0.895, reportType:"official_balance_sheet",
         sourceId:"liersekempenzonen-be-jaarrekening-2020-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.895]] },
-      { id:"patroeisden-be", revenue:0.311, reportType:"official_balance_sheet",
+      { id:"patroeisden-be", revenue:0.785, reportType:"official_balance_sheet",
         sourceId:"patroeisden-be-jaarrekening-2020-06-30-individual-correction",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.311]] },
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.637],["Otros ingresos",0.148]] },
     ],
   },
   2019: {
