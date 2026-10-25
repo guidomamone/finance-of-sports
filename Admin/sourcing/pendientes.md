@@ -340,7 +340,7 @@ GENERADO por `node tools/faltantes-liga.mjs` (calculado: 2026-10-25): no editar 
 - Santa Rita — sin-buscar: 2018 (br-serieD)
 - Sparta — sin-buscar: 2018 (br-serieD)
 
-## Bélgica (175 clubes, 680 club-años)
+## Bélgica (174 clubes, 679 club-años)
 
 - Belisia — sin-buscar: 2025 (be-div1amateur), 2022 (be-div2amateur)
 - Beveren — sin-buscar: 2025 (be-challengerproleague), 2024 (be-challengerproleague), 2023 (be-challengerproleague)
@@ -410,7 +410,6 @@ GENERADO por `node tools/faltantes-liga.mjs` (calculado: 2026-10-25): no editar 
 - Châtelet — sin-buscar: 2019 (be-div1amateur), 2018 (be-div1amateur), 2017 (be-div2amateur)
 - Turnhout — sin-buscar: 2019 (be-div2amateur), 2015 (be-div1amateur), 2014 (be-div1amateur)
 - Walhain — sin-buscar: 2019 (be-div2amateur), 2017 (be-div2amateur), 2016 (be-div1amateur)
-- Oosterzonen — sin-buscar: 2018 (be-div1amateur)
 - Acrenoise — sin-buscar: 2017 (be-div2amateur), 2016 (be-div1amateur)
 - Berchem Sport — sin-buscar: 2017 (be-div2amateur), 2016 (be-div1amateur), 2015 (be-div1amateur), 2014 (be-div1amateur)
 - Bornem — sin-buscar: 2017 (be-div2amateur), 2016 (be-div1amateur), 2015 (be-div1amateur), 2014 (be-div1amateur)

@@ -19,8 +19,8 @@ window.RANKINGS["dk-1division"] = {
   },
   2022: {
     leagueSize: 12,
-    sinDato: ["fredericia-dk"],
-    margen: [["fredericia-dk",1.653,null]],
+    sinDato: ["fredericia-dk","vejle-dk"],
+    margen: [["fredericia-dk",1.653,null],["vejle-dk",5.962,null]],
     wiki: {"t":"2021–22 Danish 1st Division","lang":"en","at":"2026-10-25","n":12},
     clubs: [
     ],

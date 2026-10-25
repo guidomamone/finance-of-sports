@@ -228,7 +228,7 @@
       "fx": {"ref":"EUR@2021-06-30"},
       "revenue": [
         {"label":"Ευρωπαϊκή αγορά","category":"player_transfers","subcategory":"player_sales","amount":0.6,"disclosure":"aggregated"},
-        {"label":"Αγορές τρίτων χωρών","category":"undisclosed","subcategory":"lump_football_operations","amount":0.004192,"disclosure":"aggregated"},
+        {"label":"Κύκλος εργασιών (καθαρός), resto sin desglosar (sin la venta de un jugador)","category":"undisclosed","subcategory":"lump_football_operations","amount":0.004192,"disclosure":"aggregated"},
         {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":3.839185,"disclosure":"aggregated"},
         {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.036941,"disclosure":"aggregated"}
       ],
@@ -255,10 +255,10 @@
         ],
         "no_breakdown": [
           {
-            "line": "Αγορές τρίτων χωρών",
+            "line": "Κύκλος εργασιών (καθαρός), resto sin desglosar (sin la venta de un jugador)",
             "side": "revenue",
             "amount": 0.004192,
-            "reason": "Claude 2026-10-14 (subagente Sonnet, seguridad media): Es el resto del Κύκλος εργασιών (604.192 = 600.000 + 4.192), clasificado por el documento como prestación de servicios sin más detalle y sin entradas (covid); no hay forma de saber qué servicio es. Queda como fútbol sin desglosar, igual que el Κύκλος εργασιών de 2020 y 2022 (lump_football_operations). Importe chico (4 mil euros). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2021-06-30.md L1471 (pág. 35) \"Αγορές τρίτων χωρών | 4.192,00 | 6.880,00\"; L1465 \"Παροχή υπηρεσιών Σύνολο | 604.192,00\"; L1475 \"στην τρέχουσα χρήση δεν εκδόθηκαν εισιτήρια λόγω covid\"]",
+            "reason": "Claude 2026-10-25 (sesion): el rótulo del documento «Αγορές τρίτων χωρών» (mercados de terceros países) es una fila de la tabla por zona geográfica de la nota 35, no un ingreso; la línea se rotula como lo que es. Claude 2026-10-14 (subagente Sonnet, seguridad media): Es el resto del Κύκλος εργασιών (604.192 = 600.000 + 4.192), clasificado por el documento como prestación de servicios sin más detalle y sin entradas (covid); no hay forma de saber qué servicio es. Queda como fútbol sin desglosar, igual que el Κύκλος εργασιών de 2020 y 2022 (lump_football_operations). Importe chico (4 mil euros). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2021-06-30.md L1471 (pág. 35) \"Αγορές τρίτων χωρών | 4.192,00 | 6.880,00\"; L1465 \"Παροχή υπηρεσιών Σύνολο | 604.192,00\"; L1475 \"στην τρέχουσα χρήση δεν εκδόθηκαν εισιτήρια λόγω covid\"]",
             "kind": "other"
           },
           {

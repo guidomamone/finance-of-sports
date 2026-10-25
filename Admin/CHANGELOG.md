@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1104 — los 5 años de margen bruto sin liga y Panetolikos 2021 [455 · 454 · panetolikos-gr]
+- Liga asignada con dos fuentes (Wikipedia en inglés y RSSSF, ésta anotada en `be.json`): Lommel 2018, RWDM 2020 y Lierse Kempenzonen 2018 (era Oosterzonen, mismo club) en la 1ª División Amateur; Vejle 2022 en la 1ª División danesa. RAAL 2018 jugó en la tercera amateur, que el sitio no tiene: `liga-no-catalogada`. Alias nuevos («Oosterzonen», «Vejle Boldklub», «Vejle BK»). Años de margen sin estimado: 15 a 9 (los que quedan no tienen un club real en su liga-año).
+- Panetolikos 2021: el rótulo de la línea era una fila geográfica («Αγορές τρίτων χωρών», glosada «Compras de terceros países»); pasa a «Κύκλος εργασιών (καθαρός), resto sin desglosar (sin la venta de un jugador)»; los 600.000 € de venta de jugador y el total no cambian.
+- `audit-ignore.json`: la aceptación de las filas en null ya no depende del número («24 de 13»); `audit-acciones.json` suma 5 códigos. Medición: no aplica (datos y registros; sin tools de código).
+
 ## Versión 1103 — «Notas sobre este club»: una nota por año, el mismo texto en un solo punto aunque los años no sean consecutivos, y los textos de Guido [454 · fredrikstad-no]
 - Los ingresos y los gastos de un mismo ejercicio salen en una sola nota; los ejercicios con el mismo texto se juntan en un punto sin importar si son consecutivos («2016 a 2018 y 2024»), así un año nuevo con el mismo caso se suma solo. Textos nuevos (Guido): ventas totales («El documento informa una categoría como ingresos pero no lo abre por rubro…») y gastos sin el rótulo; un renglón de un año con más de una línea de ingreso (un departamento, una división) usa el texto de «parte».
 - Fredrikstad 2016 a 2018 y 2024: «Annen driftsinntekt» es igual a «Sum inntekter», o sea el ingreso total: pasa a ventas totales y se aprende para los años que vengan; 2013 a 2015 sigue como una parte del ingreso.

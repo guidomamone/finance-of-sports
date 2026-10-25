@@ -32,8 +32,8 @@ window.RANKINGS["be-div1amateur"] = {
   },
   2020: {
     leagueSize: 16,
-    sinDato: ["liersekempenzonen-be"],
-    margen: [["liersekempenzonen-be",0.895,null]],
+    sinDato: ["liersekempenzonen-be","rwdm-be"],
+    margen: [["liersekempenzonen-be",0.895,null],["rwdm-be",0.998,null]],
     wiki: {"t":"2019–20 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"patroeisden-be", revenue:0.785, reportType:"official_balance_sheet",
@@ -57,6 +57,8 @@ window.RANKINGS["be-div1amateur"] = {
   },
   2018: {
     leagueSize: 16,
+    sinDato: ["liersekempenzonen-be","lommelsk-be"],
+    margen: [["liersekempenzonen-be",0.486,null],["lommelsk-be",1.039,null]],
     wiki: {"t":"2017–18 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"patroeisden-be", revenue:0.367, reportType:"official_balance_sheet",
