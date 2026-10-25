@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1086 — medir-pipeline.mjs: cada nivel corre solo su tramo; fos progreso [medir-pipeline.mjs, progreso-medicion.mjs]
+
+- Las listas chico, mediano y completo están anidadas y cada nivel corría la suya entera: 126 + 548 + 1004 = 1678 documentos en vez de 1004. Ahora cada nivel corre los documentos que no estaban en uno menor (126, 422, 456): el corte temprano en el chico sigue y el total baja 40 %. Un medidor que no usa lista corre y se compara una sola vez, en el primer nivel.
+- `medir-pipeline.mjs` escribe `Admin/mediciones/pipeline/_progreso.json` en cada paso y `node tools/fos.mjs progreso` dice el porcentaje, qué corre y cuánto falta. La medición se lanza sin `| tail`: su salida se ve en vivo.
+- Medición: no es del pipeline; `probar-medir-pipeline.mjs` ok y una medición real de `cargar-ejercicio.mjs` contra el commit anterior (126 + 422 + 456 documentos, idéntica, 10 min 52 s).
+
 ## Versión 1085 — marca s/d y notas sobre el club (base de 447, 454 y 452) [447 · 454 · 452 · bfo-rusia.mjs, cargar-ejercicio.mjs, cargar-escribir.mjs, json-datos.mjs, tipo-sin-desglose.js]
 
 - Las celdas que el documento no abre se ven `s/d` (inglés `n/d`) con bocadillo y asterisco a «Notas sobre este club», armado por ejercicio con plantillas es/en desde `sinDesglose`. `no_breakdown` suma `kind` (opcional; schema, `json-datos.mjs`, paquete exportable) y `fos sin-desglose-tipo` lo completó en 136 clubes (76 líneas agregadas, 494 tipos). `cargar-ejercicio.mjs` y `bfo-rusia.mjs` lo escriben al cargar; `cargar-escribir.mjs` ya no lo descarta. Los puntos 447, 454 y 452 siguen abiertos (Guido los cierra).

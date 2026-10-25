@@ -63,6 +63,17 @@ const gitOk = (...a) => { try { return git(...a); } catch { return null; } };
 const sha1 = (s) => createHash('sha1').update(s).digest('hex');
 const huellaArchivo = (rel) => (existsSync(resolve(ROOT, rel)) ? git('hash-object', rel).trim() : null);
 const leerLista = (nivel) => readFileSync(resolve(ROOT, T.lotes[nivel]), 'utf8').split('\n').map((l) => l.trim().normalize('NFC')).filter((l) => l && !l.startsWith('#'));
+// Las listas están anidadas (chico dentro de mediano dentro de completo): correr cada nivel entero repetía los mismos documentos (126 + 548 + 1004 en vez de 1004).
+// Cada nivel corre solo su TRAMO: los documentos de su lista que no estaban en ningún nivel menor. Se conserva el corte temprano (el chico va primero) y el total es el del completo.
+const tramos = {};
+function tramoDe(nivel) {
+  if (tramos[nivel]) return tramos[nivel];
+  const previos = new Set(NIVELES.slice(0, NIVELES.indexOf(nivel)).flatMap((n) => leerLista(n)));
+  const docs = leerLista(nivel).filter((d) => !previos.has(d));
+  const dir = join(BASE_DIR, '_tramos'); mkdirSync(dir, { recursive: true });
+  const f = join(dir, `${nivel}.txt`); writeFileSync(f, docs.join('\n') + '\n');
+  return (tramos[nivel] = { ruta: f.slice(ROOT.length + 1), n: docs.length });
+}
 
 // ---- --restaurar -----------------------------------------------------------
 function restaurar() {
@@ -215,7 +226,7 @@ process.on('exit', volver);
 const instaladasHuella = () => sha1(readdirSync(resolve(ROOT, 'tools'), { withFileTypes: true }).filter((e) => e.isFile()).map((e) => `${e.name}:${huellaArchivo(`tools/${e.name}`)}`).join(','));
 function correr(m, nivel) {
   const med = T.medidores[m];
-  const lista = med.usaLista ? T.lotes[nivel] : null;
+  const lista = med.usaLista ? tramoDe(nivel).ruta : null; // solo el tramo de este nivel (ver tramoDe)
   const clave = sha1(JSON.stringify([m, med.correr, lista && sha1(readFileSync(resolve(ROOT, lista), 'utf8')), instaladasHuella(), git('rev-parse', 'HEAD').trim()])).slice(0, 12);
   const dir = join(BASE_DIR, clave); const salida = join(dir, 'salida');
   if (existsSync(join(dir, 'listo'))) return { dir, salida, reutilizado: true };
@@ -301,22 +312,43 @@ const RESUMIDORES = {
   },
 };
 
+// ---- progreso: Admin/mediciones/pipeline/_progreso.json, lo que lee `node tools/fos.mjs progreso` -------------
+// Cada paso es un medidor, antes o después, en un tramo; pesa lo que su tramo (documentos) y un medidor que no usa lista pesa como 150 documentos. El porcentaje y el tiempo que falta salen de ahí.
+const PROGRESO = join(BASE_DIR, '_progreso.json');
+const inicioMedicion = Date.now();
+let pesoHecho = 0; let pesoTotal = 0; const pasoActual = {};
+const pesoDe = (m, nivel) => (T.medidores[m].usaLista ? tramoDe(nivel).n : 150);
+const pasosDe = (nivelesPlan) => nivelesPlan.flatMap((nivel, k) => medidores.filter((m) => k === 0 || T.medidores[m].usaLista).map((m) => ({ nivel, m })));
+const planificar = (nivelesPlan) => { pesoTotal = pasosDe(nivelesPlan).reduce((s, p) => s + 2 * pesoDe(p.m, p.nivel), 0); };
+function anotarProgreso(estado = 'midiendo') {
+  const seg = Math.round((Date.now() - inicioMedicion) / 1000); const pct = pesoTotal ? Math.min(100, Math.round((100 * pesoHecho) / pesoTotal)) : 0;
+  const faltan = pesoHecho > 0 ? Math.round((seg * (pesoTotal - pesoHecho)) / pesoHecho) : null;
+  try { writeFileSync(PROGRESO, JSON.stringify({ pid: process.pid, estado, desde: new Date(inicioMedicion).toISOString(), segundos: seg, porcentaje: pct, segundosQueFaltan: faltan, ...pasoActual, tools: nombres })); } catch { /* el progreso no frena la medición */ }
+}
+process.on('exit', () => { if (pasoActual.estado !== 'terminado') { pasoActual.estado = pasoActual.cortado ? 'cortado' : 'terminado'; anotarProgreso(pasoActual.estado); } });
+
 // ---- niveles ---------------------------------------------------------------
 const explicacion = flag('--explicacion');
 const registroMedidores = [];
 const niveles = ['chico', ...NIVELES.slice(1, NIVELES.indexOf(nivelFinal) + 1)];
+planificar(niveles);
 let nivelUsado = 'chico'; let difTotal = 0; let cortado = false; let autoN = 0; let resumenes = []; let vaciosN = 0;
 for (let k = 0; k < niveles.length; k++) {
-  const nivel = niveles[k]; nivelUsado = nivel; difTotal = 0; autoN = 0; vaciosN = 0; resumenes = []; registroMedidores.length = 0;
-  console.log(`\n== Lote ${nivel} (${leerLista(nivel).length} documentos) ==`);
+  const nivel = niveles[k]; nivelUsado = nivel;
+  let difNivel = 0; let autoNivel = 0; // lo de ESTE nivel (para cortar y escalar); los totales acumulan los tramos
+  console.log(`\n== Lote ${nivel}${hayLista ? `: ${tramoDe(nivel).n} documentos${tramoDe(nivel).n < leerLista(nivel).length ? ` nuevos (la lista tiene ${leerLista(nivel).length}; los demás ya corrieron en el nivel anterior)` : ''}` : ''} ==`);
   for (const m of medidores) {
-    // un medidor que no usa la lista (todo el sitio) da la misma clave en cada nivel: se reutiliza
-    instalarBase(); const antes = correr(m, nivel); volver();
-    const despues = correr(m, nivel);
+    // un medidor que no usa la lista (todo el sitio) da la misma clave en cada nivel: se corre y se compara una sola vez, en el primero
+    if (k > 0 && !T.medidores[m].usaLista) continue;
+    if (T.medidores[m].usaLista && tramoDe(nivel).n === 0) continue; // un nivel que no suma documentos no corre nada
+    const idx = pasosDe(niveles).findIndex((p) => p.nivel === nivel && p.m === m) + 1; const w = pesoDe(m, nivel);
+    Object.assign(pasoActual, { nivel, nivelNumero: k + 1, nivelesTotal: niveles.length, medidor: m, medidorNumero: idx, pasosTotal: pasosDe(niveles).length, documentosDelTramo: hayLista && T.medidores[m].usaLista ? tramoDe(nivel).n : null });
+    pasoActual.fase = 'antes'; anotarProgreso(); instalarBase(); const antes = correr(m, nivel); volver(); pesoHecho += w;
+    pasoActual.fase = 'después'; anotarProgreso(); const despues = correr(m, nivel); pesoHecho += w; anotarProgreso();
     const { n, lineas, textos } = comparar(m, antes, despues);
     const res = n && T.medidores[m].resumir && RESUMIDORES[T.medidores[m].resumir] ? RESUMIDORES[T.medidores[m].resumir](lineas, textos || []) : null;
     // con resumen, solo lo que pide atención cuenta como diferencia sin explicar; el resto queda explicado por el resumen
-    if (res && res.atencion === 0) { autoN += n; resumenes.push(`${m}: ${res.lineas.join(' · ')}`); } else difTotal += n;
+    if (res && res.atencion === 0) { autoN += n; autoNivel += n; resumenes.push(`${m}: ${res.lineas.join(' · ')}`); } else { difTotal += n; difNivel += n; }
     writeFileSync(join(despues.dir, `diferencias-${nivel}.txt`), lineas.join('\n'));
     const vacio = !n && sinContenido(antes) && sinContenido(despues); if (vacio) vaciosN++;
     console.log(`  ${m}: ${n ? `${n} diferencia(s)` : vacio ? 'VACÍO: no imprimió nada ni antes ni después, no midió nada' : 'idéntico'}${antes.reutilizado ? ' (antes reutilizado)' : ''}`);
@@ -324,8 +356,8 @@ for (let k = 0; k < niveles.length; k++) {
     else if (n) console.log(lineas.slice(0, 25).map((l) => '     ' + l).join('\n'));
     registroMedidores.push({ medidor: m, nivel, diferencias: n, ...(vacio ? { vacio: true } : {}), antes: antes.dir.slice(ROOT.length + 1), despues: despues.dir.slice(ROOT.length + 1), resumen: res ? res.lineas.slice(0, 15) : lineas.filter(Boolean).slice(0, 15) });
   }
-  if (nivel === 'chico' && (difTotal || vaciosN) && !explicacion) { console.log(difTotal ? '\nEl lote chico ya muestra diferencias: explicalas (--explicacion "…") o arreglá el cambio antes de seguir con lotes más grandes.' : '\nHay medidores vacíos: no midieron nada. Arreglá el medidor (qué mira, con qué argumentos) o, si de verdad no hay nada que medir, --explicacion "por qué".'); cortado = true; break; }
-  if (nivel === 'mediano' && (difTotal || autoN) && !niveles.includes('completo')) { niveles.push('completo'); nivelFinal = 'completo'; console.log('El mediano mostró diferencias: escala al completo.'); }
+  if (nivel === 'chico' && (difTotal || vaciosN) && !explicacion) { pasoActual.cortado = true; console.log(difTotal ?'\nEl lote chico ya muestra diferencias: explicalas (--explicacion "…") o arreglá el cambio antes de seguir con lotes más grandes.' : '\nHay medidores vacíos: no midieron nada. Arreglá el medidor (qué mira, con qué argumentos) o, si de verdad no hay nada que medir, --explicacion "por qué".'); cortado = true; break; }
+  if (nivel === 'mediano' && (difNivel || autoNivel) && !niveles.includes('completo')) { niveles.push('completo'); nivelFinal = 'completo'; planificar(niveles); console.log('El mediano mostró diferencias: escala al completo.'); }
 }
 const textoExplicacion = explicacion || (autoN && !difTotal ? `Explicadas por el resumen del medidor: ${resumenes.join(' | ')}` : null);
 // un medidor vacío cuenta como una diferencia que pide razón escrita: sin --explicacion el resultado es «vacío» (el hook no lo acepta), con ella «N diferencias, todas explicadas»
