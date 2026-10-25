@@ -100,4 +100,14 @@ window.RANKINGS["co-primeraA"] = {
         mix:[["Comercial / Sponsors",0.719],["Estadio",0.625],["Televisión",1.626],["Premios por competencias",0.468],["Venta de Jugadores",0.488],["Otros ingresos",0.054]] },
     ],
   },
+  2018: {
+    leagueSize: 20,
+    wiki: {"t":"2018 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
+    clubs: [
+      { id:"oncecaldas-co", revenue:7.571, reportType:"official_balance_sheet",
+        sourceId:"oncecaldas-co-estados-financieros-2018",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",6.597],["Otros ingresos",0.974]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
+    ],
+  },
 };

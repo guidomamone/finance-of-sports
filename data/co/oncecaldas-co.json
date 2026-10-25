@@ -44,11 +44,85 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Once Caldas/estados-financieros-2025.pdf"
+    },
+    {
+      "id": "oncecaldas-co-estados-financieros-2018",
+      "club_id": "oncecaldas-co",
+      "title": "Once Caldas S.A. En Reorganización — estados-financieros-2018 (ejercicio 2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2022,"last_year":2025}],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-12-31",
+      "currency": "COP",
+      "source_id": "oncecaldas-co-estados-financieros-2018",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2018-12-31"},
+      "revenue": [
+        {"label":"INGRESOS OPERATIVOS:","category":"undisclosed","subcategory":"lump_football_operations","amount":21438.202,"disclosure":"aggregated"},
+        {"label":"INGRESOS NO OPERACIONALES :","category":"other_revenue","subcategory":"other_income","amount":3165.062,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"COSTO DE VENTAS","category":"other_operating_expenses","subcategory":"other_expenses","amount":-508.765,"disclosure":"aggregated"},
+        {"label":"GASTOS DE PERSONAL","category":"admin_general","subcategory":"admin_general_expense","amount":-678.948,"disclosure":"aggregated"},
+        {"label":"HONORARIOS","category":"admin_general","subcategory":"admin_general_expense","amount":-39.776,"disclosure":"aggregated"},
+        {"label":"ARRENDAMIENTOS","category":"admin_general","subcategory":"admin_general_expense","amount":-16.413,"disclosure":"aggregated"},
+        {"label":"SERVICIOS","category":"admin_general","subcategory":"admin_general_expense","amount":-32.827,"disclosure":"aggregated"},
+        {"label":"GASTOS LEGALES","category":"admin_general","subcategory":"admin_general_expense","amount":-2.208,"disclosure":"aggregated"},
+        {"label":"MANTENIMIENTO Y REPARACIONES","category":"admin_general","subcategory":"admin_general_expense","amount":-0.33,"disclosure":"aggregated"},
+        {"label":"ADECUACION E INSTALACION","category":"admin_general","subcategory":"admin_general_expense","amount":-0.035,"disclosure":"aggregated"},
+        {"label":"GASTOS DE VIAJE","category":"match_operations","subcategory":"match_organisation_expense","amount":-22.06,"disclosure":"aggregated"},
+        {"label":"DEPRECIACIONES","category":"depreciation","subcategory":"depreciation","amount":-1.164,"disclosure":"aggregated"},
+        {"label":"DIVERSOS","category":"admin_general","subcategory":"admin_general_expense","amount":-14.584,"disclosure":"aggregated"},
+        {"label":"GASTOS DE PERSONAL","category":"admin_general","subcategory":"admin_general_expense","amount":-6866.963,"disclosure":"aggregated"},
+        {"label":"HONORARIOS","category":"admin_general","subcategory":"admin_general_expense","amount":-49.825,"disclosure":"aggregated"},
+        {"label":"IMPUESTOS","category":"admin_general","subcategory":"admin_general_expense","amount":-492.496,"disclosure":"aggregated"},
+        {"label":"ARRENDAMIENTOS","category":"admin_general","subcategory":"admin_general_expense","amount":-605.806,"disclosure":"aggregated"},
+        {"label":"CONTRIBUCIONES Y AFILIACIONES","category":"admin_general","subcategory":"admin_general_expense","amount":-2.321,"disclosure":"aggregated"},
+        {"label":"SEGUROS","category":"admin_general","subcategory":"admin_general_expense","amount":-7.143,"disclosure":"aggregated"},
+        {"label":"SERVICIOS","category":"admin_general","subcategory":"admin_general_expense","amount":-191.179,"disclosure":"aggregated"},
+        {"label":"GASTOS LEGALES","category":"admin_general","subcategory":"admin_general_expense","amount":-0.514,"disclosure":"aggregated"},
+        {"label":"MANTENIMIENTO Y REPARACIONES","category":"admin_general","subcategory":"admin_general_expense","amount":-66.63,"disclosure":"aggregated"},
+        {"label":"ADECUACION E INSTALACION","category":"admin_general","subcategory":"admin_general_expense","amount":-0.976,"disclosure":"aggregated"},
+        {"label":"GASTOS DE VIAJE","category":"match_operations","subcategory":"match_organisation_expense","amount":-454.227,"disclosure":"aggregated"},
+        {"label":"DEPRECIACIONES","category":"depreciation","subcategory":"depreciation","amount":-86.994,"disclosure":"aggregated"},
+        {
+          "label": "DERECHOS DEPORTIVOS",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -3649.049,
+          "disclosure": "aggregated"
+        },
+        {"label":"DIVERSOS","category":"admin_general","subcategory":"admin_general_expense","amount":-1075.825,"disclosure":"aggregated"},
+        {"label":"PROVISIONES","category":"other_operating_expenses","subcategory":"other_expenses","amount":-26.242,"disclosure":"aggregated"},
+        {"label":"GASTOS FINANCIEROS","category":"admin_general","subcategory":"admin_general_expense","amount":-820.054,"disclosure":"aggregated"},
+        {"label":"GASTOS EXTRAORDINARIOS","category":"exceptional","subcategory":"exceptional_items","amount":-713.284,"disclosure":"aggregated"},
+        {"label":"GASTOS DIVERSOS","category":"other_operating_expenses","subcategory":"other_expenses","amount":-190.484,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-2639.922,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":24603.264,"expenses":15903.838,"net_result":5346.221},
+      "adjustments": {
+        "extra_rows": [{"label":"IMPUESTO DE RENTQ Y COMPLEMENTARIO","amount":-895.818},{"label":"IMTPO DIFERIDO NIIF","amount":-1744.104}],
+        "no_breakdown": [{"line":"INGRESOS OPERATIVOS:","side":"revenue","amount":21438.202,"reason":"el documento no desglosa este renglón","kind":"other"}],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        },
+        "revenue_basis": "full"
+      }
+    },
     {
       "fiscal_year": 2022,
       "period_end": "2022-12-31",

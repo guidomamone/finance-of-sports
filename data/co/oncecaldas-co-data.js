@@ -1,5 +1,9 @@
 // GENERADO desde data/co/oncecaldas-co.json por tools/generar-data.mjs: no editar a mano (se edita el JSON).
 const oncecaldasCoRevenueLinesByYear = {
+  2018: [
+    {"rawLabel":"INGRESOS OPERATIVOS:","normalizedCategory":"lump_football_operations","amountNative":21438.202,"disclosureLevel":"aggregated"},
+    {"rawLabel":"INGRESOS NO OPERACIONALES :","normalizedCategory":"other_income","amountNative":3165.062,"disclosureLevel":"aggregated"},
+  ],
   2022: [
     {"rawLabel":"Taquilla - Partidos oficiales","normalizedCategory":"matchday_competition","amountNative":2569.934,"disclosureLevel":"detailed"},
     {"rawLabel":"Taquilla - Venta de abonos","normalizedCategory":"season_tickets","amountNative":1824.074,"disclosureLevel":"detailed"},
@@ -59,6 +63,37 @@ const oncecaldasCoRevenueLinesByYear = {
 };
 
 const oncecaldasCoExpenseLinesByYear = {
+  2018: [
+    {"rawLabel":"COSTO DE VENTAS","normalizedCategory":"other_expenses","amountNative":-508.765,"disclosureLevel":"aggregated"},
+    {"rawLabel":"GASTOS DE PERSONAL","normalizedCategory":"admin_general_expense","amountNative":-678.948,"disclosureLevel":"aggregated"},
+    {"rawLabel":"HONORARIOS","normalizedCategory":"admin_general_expense","amountNative":-39.776,"disclosureLevel":"aggregated"},
+    {"rawLabel":"ARRENDAMIENTOS","normalizedCategory":"admin_general_expense","amountNative":-16.413,"disclosureLevel":"aggregated"},
+    {"rawLabel":"SERVICIOS","normalizedCategory":"admin_general_expense","amountNative":-32.827,"disclosureLevel":"aggregated"},
+    {"rawLabel":"GASTOS LEGALES","normalizedCategory":"admin_general_expense","amountNative":-2.208,"disclosureLevel":"aggregated"},
+    {"rawLabel":"MANTENIMIENTO Y REPARACIONES","normalizedCategory":"admin_general_expense","amountNative":-0.33,"disclosureLevel":"aggregated"},
+    {"rawLabel":"ADECUACION E INSTALACION","normalizedCategory":"admin_general_expense","amountNative":-0.035,"disclosureLevel":"aggregated"},
+    {"rawLabel":"GASTOS DE VIAJE","normalizedCategory":"match_organisation_expense","amountNative":-22.06,"disclosureLevel":"aggregated"},
+    {"rawLabel":"DEPRECIACIONES","normalizedCategory":"depreciation","amountNative":-1.164,"disclosureLevel":"aggregated"},
+    {"rawLabel":"DIVERSOS","normalizedCategory":"admin_general_expense","amountNative":-14.584,"disclosureLevel":"aggregated"},
+    {"rawLabel":"GASTOS DE PERSONAL","normalizedCategory":"admin_general_expense","amountNative":-6866.963,"disclosureLevel":"aggregated"},
+    {"rawLabel":"HONORARIOS","normalizedCategory":"admin_general_expense","amountNative":-49.825,"disclosureLevel":"aggregated"},
+    {"rawLabel":"IMPUESTOS","normalizedCategory":"admin_general_expense","amountNative":-492.496,"disclosureLevel":"aggregated"},
+    {"rawLabel":"ARRENDAMIENTOS","normalizedCategory":"admin_general_expense","amountNative":-605.806,"disclosureLevel":"aggregated"},
+    {"rawLabel":"CONTRIBUCIONES Y AFILIACIONES","normalizedCategory":"admin_general_expense","amountNative":-2.321,"disclosureLevel":"aggregated"},
+    {"rawLabel":"SEGUROS","normalizedCategory":"admin_general_expense","amountNative":-7.143,"disclosureLevel":"aggregated"},
+    {"rawLabel":"SERVICIOS","normalizedCategory":"admin_general_expense","amountNative":-191.179,"disclosureLevel":"aggregated"},
+    {"rawLabel":"GASTOS LEGALES","normalizedCategory":"admin_general_expense","amountNative":-0.514,"disclosureLevel":"aggregated"},
+    {"rawLabel":"MANTENIMIENTO Y REPARACIONES","normalizedCategory":"admin_general_expense","amountNative":-66.63,"disclosureLevel":"aggregated"},
+    {"rawLabel":"ADECUACION E INSTALACION","normalizedCategory":"admin_general_expense","amountNative":-0.976,"disclosureLevel":"aggregated"},
+    {"rawLabel":"GASTOS DE VIAJE","normalizedCategory":"match_organisation_expense","amountNative":-454.227,"disclosureLevel":"aggregated"},
+    {"rawLabel":"DEPRECIACIONES","normalizedCategory":"depreciation","amountNative":-86.994,"disclosureLevel":"aggregated"},
+    {"rawLabel":"DERECHOS DEPORTIVOS","normalizedCategory":"player_amortisation","amountNative":-3649.049,"disclosureLevel":"aggregated"},
+    {"rawLabel":"DIVERSOS","normalizedCategory":"admin_general_expense","amountNative":-1075.825,"disclosureLevel":"aggregated"},
+    {"rawLabel":"PROVISIONES","normalizedCategory":"other_expenses","amountNative":-26.242,"disclosureLevel":"aggregated"},
+    {"rawLabel":"GASTOS FINANCIEROS","normalizedCategory":"admin_general_expense","amountNative":-820.054,"disclosureLevel":"aggregated"},
+    {"rawLabel":"GASTOS EXTRAORDINARIOS","normalizedCategory":"exceptional_items","amountNative":-713.284,"disclosureLevel":"aggregated"},
+    {"rawLabel":"GASTOS DIVERSOS","normalizedCategory":"other_expenses","amountNative":-190.484,"disclosureLevel":"aggregated"},
+  ],
   2022: [
     {"rawLabel":"Costo de Ventas: Venta de artículos deportivos-miscelaneos","normalizedCategory":"other_expenses","amountNative":-384.189,"disclosureLevel":"detailed"},
     {"rawLabel":"Gastos de Ventas: Gastos de personal (plantel)","normalizedCategory":"wages_squad","amountNative":-8022.052,"disclosureLevel":"detailed"},
@@ -111,6 +146,7 @@ const oncecaldasCoExpenseLinesByYear = {
 };
 
 const oncecaldasCoFiscalYearMeta = {
+  2018: {"currency":"COP","sourceId":"oncecaldas-co-estados-financieros-2018","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2018-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":-2639.922,"grossDebt":null,"cash":null,"officialTotalRevenue":24603.264,"officialTotalExpenses":15903.838,"officialPAT":5346.221,"extraRows":[{"label":"IMPUESTO DE RENTQ Y COMPLEMENTARIO","value":-895.818},{"label":"IMTPO DIFERIDO NIIF","value":-1744.104}],"sinDesglose":[{"renglon":"INGRESOS OPERATIVOS:","lado":"revenue","importe":21438.202,"motivo":"el documento no desglosa este renglón","tipo":"other"}],"incluidoEn":{"sponsorship_commercial":{"en":"lump_football_operations","posible":true,"por":"precedente"},"matchday_competition":{"en":"lump_football_operations","posible":true,"por":"precedente"},"season_tickets":{"en":"lump_football_operations","posible":true,"por":"precedente"},"stadium_other":{"en":"lump_football_operations","posible":true,"por":"precedente"},"broadcasting":{"en":"lump_football_operations","posible":true,"por":"precedente"},"competition_bonus":{"en":"lump_football_operations","posible":true,"por":"precedente"},"player_sales":{"en":"lump_football_operations","posible":true,"por":"precedente"}},"baseIngreso":"full"},
   2022: {"currency":"COP","sourceId":"oncecaldas-co-estados-financieros-2022","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2022-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":4709.201,"tax":-4068.219,"grossDebt":137.188,"cash":1265.57,"officialTotalRevenue":59311.026,"officialTotalExpenses":32979.043,"officialPAT":26972.965,"baseIngreso":"full"},
   2023: {"currency":"COP","sourceId":"oncecaldas-co-estados-financieros-2023","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2023-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-5206.297,"tax":-991.681,"grossDebt":0,"cash":7063.322,"officialTotalRevenue":25860.809,"officialTotalExpenses":20950.362,"officialPAT":-1287.531,"baseIngreso":"full"},
   2024: {"currency":"COP","sourceId":"oncecaldas-co-estados-financieros-2024","reportType":"official_balance_sheet","gestionId":"actual","fx":4409.15,"fxSource":"document_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":1539.774,"tax":-2403.687,"grossDebt":337.5,"cash":4580.663,"officialTotalRevenue":26971.04,"officialTotalExpenses":21994.867,"officialPAT":4112.26,"baseIngreso":"full"},
@@ -131,7 +167,7 @@ window.CLUB_GENERIC_DATA["oncecaldas-co"] = {
   presupuestoOverlayByYear: oncecaldasCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"oncecaldas-co-estados-financieros-2023":{"id":"oncecaldas-co-estados-financieros-2023","clubId":"oncecaldas-co","title":"Estados Financieros (Notas) e Informe del Revisor Fiscal, al 31 de diciembre de 2023 y 2022","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Once Caldas/estados-financieros-2023.pdf"},"oncecaldas-co-estados-financieros-2022":{"id":"oncecaldas-co-estados-financieros-2022","clubId":"oncecaldas-co","title":"Estados Financieros (Notas) e Informe del Revisor Fiscal, al 31 de diciembre de 2022 y 2021","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Once Caldas/estados-financieros-2022.pdf"},"oncecaldas-co-estados-financieros-2024":{"id":"oncecaldas-co-estados-financieros-2024","clubId":"oncecaldas-co","title":"Estados Financieros (Notas) e Informe del Revisor Fiscal, al 31 de diciembre de 2024 y 2023","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Once Caldas/estados-financieros-2024.pdf"},"oncecaldas-co-estados-financieros-2025":{"id":"oncecaldas-co-estados-financieros-2025","clubId":"oncecaldas-co","title":"Estados Financieros (Notas) e Informe del Revisor Fiscal, al 31 de diciembre de 2025 y 2024","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Once Caldas/estados-financieros-2025.pdf"}});
+Object.assign(sources, {"oncecaldas-co-estados-financieros-2023":{"id":"oncecaldas-co-estados-financieros-2023","clubId":"oncecaldas-co","title":"Estados Financieros (Notas) e Informe del Revisor Fiscal, al 31 de diciembre de 2023 y 2022","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Once Caldas/estados-financieros-2023.pdf"},"oncecaldas-co-estados-financieros-2022":{"id":"oncecaldas-co-estados-financieros-2022","clubId":"oncecaldas-co","title":"Estados Financieros (Notas) e Informe del Revisor Fiscal, al 31 de diciembre de 2022 y 2021","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Once Caldas/estados-financieros-2022.pdf"},"oncecaldas-co-estados-financieros-2024":{"id":"oncecaldas-co-estados-financieros-2024","clubId":"oncecaldas-co","title":"Estados Financieros (Notas) e Informe del Revisor Fiscal, al 31 de diciembre de 2024 y 2023","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Once Caldas/estados-financieros-2024.pdf"},"oncecaldas-co-estados-financieros-2025":{"id":"oncecaldas-co-estados-financieros-2025","clubId":"oncecaldas-co","title":"Estados Financieros (Notas) e Informe del Revisor Fiscal, al 31 de diciembre de 2025 y 2024","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Once Caldas/estados-financieros-2025.pdf"},"oncecaldas-co-estados-financieros-2018":{"id":"oncecaldas-co-estados-financieros-2018","clubId":"oncecaldas-co","title":"Once Caldas S.A. En Reorganización — estados-financieros-2018 (ejercicio 2018)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf"}});
 
 gestionesByClub["oncecaldas-co"] = {"actual":{"nombre":"Gestión actual","firstYear":2022,"lastYear":2025}};
 

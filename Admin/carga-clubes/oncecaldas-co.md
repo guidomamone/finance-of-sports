@@ -418,6 +418,73 @@ Daniel Jaramillo Vélez (2024-10-01 a hoy): Reemplazó a Tulio Mario Castrillón
 Duda: Fecha exacta (día) de la asunción de Daniel Jaramillo en octubre de 2024: ninguna nota de prensa la da. Pregunta para el club: ¿en qué fecha tomó posesión como presidente y representante legal?
 ```
 
+## 2018
+
+### Ingresos
+
+```text
+2018: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Colombia/Once Caldas/estados-financieros-2018.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Once Caldas/estados-financieros-2018.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | INGRESOS OPERATIVOS: | pág. 17, Jev 0.99 |
+| 2 | INGRESOS NO OPERACIONALES : | pág. 20, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | COSTO DE VENTAS | pág. 18, Claude 0.8 |
+| 2 | GASTOS DE PERSONAL | pág. 18, Claude 0.85 |
+| 3 | HONORARIOS | pág. 18, Claude 0.85 |
+| 4 | ARRENDAMIENTOS | pág. 18, Claude 0.8 |
+| 5 | SERVICIOS | pág. 18, Jev 0.91 |
+| 6 | GASTOS LEGALES | pág. 18, Jev 0.99 |
+| 7 | MANTENIMIENTO Y REPARACIONES | pág. 18, Claude 0.8 |
+| 8 | ADECUACION E INSTALACION | pág. 18, ? 0.75 |
+| 9 | GASTOS DE VIAJE | pág. 18, Jev 1 |
+| 10 | DEPRECIACIONES | pág. 18, Jev 1 |
+| 11 | DIVERSOS | pág. 18, precedente |
+| 12 | GASTOS DE PERSONAL | pág. 18, Claude 0.85 |
+| 13 | HONORARIOS | pág. 18, Claude 0.85 |
+| 14 | IMPUESTOS | pág. 18, Jev 0.98 |
+| 15 | ARRENDAMIENTOS | pág. 18, Claude 0.8 |
+| 16 | CONTRIBUCIONES Y AFILIACIONES | pág. 18, Jev 0.96 |
+| 17 | SEGUROS | pág. 18, Claude 0.85 |
+| 18 | SERVICIOS | pág. 19, Jev 0.91 |
+| 19 | GASTOS LEGALES | pág. 19, Jev 0.99 |
+| 20 | MANTENIMIENTO Y REPARACIONES | pág. 19, Claude 0.8 |
+| 21 | ADECUACION E INSTALACION | pág. 19, ? 0.75 |
+| 22 | GASTOS DE VIAJE | pág. 19, Jev 1 |
+| 23 | DEPRECIACIONES | pág. 19, Jev 1 |
+| 24 | DERECHOS DEPORTIVOS | pág. 19, Jev 0.98 |
+| 25 | DIVERSOS | pág. 19, precedente |
+| 26 | PROVISIONES | pág. 19, ? 0.7 |
+| 27 | GASTOS FINANCIEROS | pág. 20, Jev 0.95 |
+| 28 | GASTOS EXTRAORDINARIOS | pág. 20, Jev 1 |
+| 29 | GASTOS DIVERSOS | pág. 20, Jev 0.97 |
+
+### Meta
+
+```text
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-25): perimetro = individual. El club carga individual (2022 a 2025); el .md de 2018 solo menciona los consolidados de pasada. Claude 2026-10-25 (sesion), prueba del 455
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-25): fila = 1744.104. Linea 702 del .md: impuesto diferido NIIF 1.744.104 (miles de pesos), impreso debajo de la tabla de gastos no operacionales y fuera de su total; sin esta fila el resultado no cierra con la utilidad impresa del patrimonio (24.603.263 - 16.617.122 - 895.818 - 1.744.104 = 5.346.219 contra 5.346.221)
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-25): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2023, 2024, 2025)
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): co-primeraA, verificado contra roster cacheado de "2018 Categoría Primera A season" (tools/club-league-reference/co.json), coincidencia exacta "Once Caldas".
+```
+
 ## Fuentes
 
 ### oncecaldas-co-estados-financieros-2023
@@ -450,6 +517,14 @@ _note (data/):_
 
 ```text
 Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 890.801.447-5). El PDF trae las notas completas a los estados financieros (34 páginas, texto real) pero NO el Estado de Situación Financiera/Estado de Resultado Integral primario como tabla aparte — el resultado del ejercicio ($9.138,546 M COP) se confirma triple: tabla de indicadores de negocio en marcha (Nota 2), narrativa del Informe del Revisor Fiscal, y la vista SIIS. La compañía sigue en proceso de reorganización empresarial (Superintendencia de Sociedades, desde agosto de 2012), aunque el ejercicio 2025 dio utilidad. Transcripción completa en Clubes/Colombia/Once Caldas/estados-financieros-2025.md.
+```
+
+### oncecaldas-co-estados-financieros-2018
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Colombia/Once Caldas/estados-financieros-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

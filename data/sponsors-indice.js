@@ -2114,6 +2114,7 @@ window.SPONSORS_INDICE = [
   ["s","S",["c"]],
   ["sa","SA",["c"]],
   ["sabor-a-malaga","Sabor a Málaga",["c"]],
+  ["saeta","Saeta",["m"]],
   ["safiport","Safiport",["c"]],
   ["sagevan","Sagevan",["c"]],
   ["saiko","Saiko",["c"]],
