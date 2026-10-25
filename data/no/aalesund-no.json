@@ -28,6 +28,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf"
+    },
+    {
+      "id": "aalesund-no-aarsregnskap-aalesund-fotball-as-2024",
+      "club_id": "aalesund-no",
+      "title": "Ålesund Fotball AS — aarsregnskap-aalesund-fotball-as-2024 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.pdf"
     }
   ],
   "members": null,
@@ -71,6 +79,57 @@
           }
         ],
         "revenue_basis": "sales_total"
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-02-29",
+      "currency": "NOK",
+      "source_id": "aalesund-no-aarsregnskap-aalesund-fotball-as-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"NOK@2024-02-29"},
+      "revenue": [
+        {"label":"Salgsinntekter","category":"undisclosed","subcategory":"lump_football_operations","amount":58.461725,"disclosure":"aggregated"},
+        {"label":"Andre driftsinntekter","category":"other_revenue","subcategory":"other_income","amount":3.667334,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Varekostnad","category":"other_operating_expenses","subcategory":"other_expenses","amount":-5.103577,"disclosure":"aggregated"},
+        {"label":"Lønninger","category":"first_team_staff","subcategory":"wages_squad","amount":-5.87314,"disclosure":"aggregated"},
+        {"label":"Arbeidsgiveravgift","category":"first_team_staff","subcategory":"wages_squad","amount":-0.990694,"disclosure":"aggregated"},
+        {"label":"Pensjonskostnader","category":"first_team_staff","subcategory":"wages_squad","amount":-0.164773,"disclosure":"aggregated"},
+        {"label":"Andre ytelser","category":"first_team_staff","subcategory":"wages_squad","amount":-0.510002,"disclosure":"aggregated"},
+        {
+          "label": "Avskrivning varige driftsmidler og immatrielle eiendeler",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -4.478254,
+          "disclosure": "aggregated"
+        },
+        {"label":"Annen driftskostnad","category":"other_operating_expenses","subcategory":"other_expenses","amount":-49.163715,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":4.809395,"tax":-0.199261,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":62.129059,"expenses":66.284155,"net_result":0.455038},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Inntekt på investering i datterselskap","amount":0},
+          {"label":"Renteinntekt fra foretak i samme konsern","amount":0.45},
+          {"label":"Annen renteinntekt","amount":0.171575},
+          {"label":"Annen finansinntekt","amount":5.185079},
+          {"label":"Nedskrivning av andre finansielle omløpsmidler","amount":-0.96949},
+          {"label":"Annen rentekostnad","amount":-0.027769},
+          {"label":"Skattekostnad på ordinært resultat","amount":-0.199261}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Salgsinntekter",
+            "side": "revenue",
+            "amount": 58.461725,
+            "reason": "Claude 2026-10-18 (subagente Sonnet): Salgsinntekt es un unico renglon sin desglose en ninguna parte del documento (Note 3 repite 69 990 515 sin abrir; Note 2 solo da la transferencia de la cooperacion con el FLI, 27 578 215). Lump_football_operations es el caso correcto. Televisión y Estadio dan 0 por esto: estan incluidos en Salgsinntekter, no se puede abrir. [Salgsinntekter 69 990 515 (L302); Overførsel iht. avtale 27 578 215 (L296)]",
+            "kind": "net_sales"
+          }
+        ],
+        "revenue_basis": "full"
       }
     },
     {

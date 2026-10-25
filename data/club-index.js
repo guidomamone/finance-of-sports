@@ -1,7 +1,7 @@
 // GENERADO por tools/generate-club-index.js: no editar a mano (los campos, en la cabecera del generador).
 
 window.CLUB_INDEX = {
-  "aalesund-no": {"n":"Aalesund","c":"NO","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
+  "aalesund-no": {"n":"Aalesund","c":"NO","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2018,"official_balance_sheet"]],"ci":{"2024":"02-29"}},
   "academica-pt": {"n":"Académica","c":"PT","q":"full","y":3,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "academicoviseu-pt": {"n":"Academico Viseu","c":"PT","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "acmilan-it": {"n":"AC Milan","c":"IT","q":"full","y":14,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2013,"official_balance_sheet"],[2012,"official_balance_sheet"],[2011,"official_balance_sheet"],[2010,"official_balance_sheet"],[2009,"official_balance_sheet"],[2008,"official_balance_sheet"]],"ci":{"2008":"12-31","2009":"12-31","2010":"12-31","2011":"12-31","2012":"12-31","2013":"12-31"}},

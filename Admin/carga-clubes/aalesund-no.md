@@ -83,6 +83,43 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-19): no-1divisjon, verificado contra roster cacheado de "2025 Norwegian First Division" (tools/club-league-reference/no.json), coincidencia exacta "Aalesund".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Salgsinntekter | pág. 8, precedente |
+| 2 | Andre driftsinntekter | pág. 8, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Varekostnad | pág. 8, precedente |
+| 2 | Lønninger | pág. 13, precedente |
+| 3 | Arbeidsgiveravgift | pág. 13, precedente |
+| 4 | Pensjonskostnader | pág. 13, precedente |
+| 5 | Andre ytelser | pág. 13, precedente |
+| 6 | Avskrivning varige driftsmidler og immatrielle eiendeler | pág. 8, precedente |
+| 7 | Annen driftskostnad | pág. 8, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-18): perimetro = individual. perimetro-senales.mjs: el ejercicio 2024-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 16 ejercicio(s) con un solo perímetro (individual); 34 documento(s) mirados
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-25): fila = -969.490. gasto financiero impreso bajo Sum finanskostnader (997.259): resta del financiero; con él y Annen rentekostnad el neto es 4.809.395 y cierra con el resultado 455.038
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-25): fila = -27.769. gasto financiero impreso bajo Sum finanskostnader (997.259): resta del financiero; cierra con el resultado 455.038
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-25): anio = 2024. el período del documento es 01.01.2024 a 31.12.2024 (L43); las fechas de 2025 son la del depósito (28.02.2025 y 08.07.2025)
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
 ## 2018
 
 ### Ingresos
@@ -138,4 +175,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### aalesund-no-aarsregnskap-aalesund-fotball-as-2024
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

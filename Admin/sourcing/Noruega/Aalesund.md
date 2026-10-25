@@ -34,3 +34,5 @@ Todos ejercicio calendario. Escaneos sin capa de texto.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf` (sourceId `aalesund-no-aarsregnskap-aalesund-fotball-as-2025`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2018 desde `Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf` (sourceId `aalesund-no-aarsregnskap-aalesund-fotball-as-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2024 desde `Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.pdf` (sourceId `aalesund-no-aarsregnskap-aalesund-fotball-as-2024`).

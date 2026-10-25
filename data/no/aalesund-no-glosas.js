@@ -9,6 +9,7 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Arbeidsgiveravgift":{"es":"Cotización patronal a la seguridad social","en":"Employer's social security contributions"},
 "Avskrivning varige driftsmidler":{"es":"Depreciación del inmovilizado material","en":"Depreciation of tangible fixed assets"},
 "Avskrivning varige driftsmidler og immaterielle eiendeler":{"es":"Amortización de inmovilizado material e inmaterial","en":"Depreciation of tangible and intangible fixed assets"},
+"Avskrivning varige driftsmidler og immatrielle eiendeler":{"es":"Depreciación y amortización de inmovilizado material e inmaterial","en":"Depreciation and amortization of tangible and intangible assets"},
 "Driftsinntekter":{"es":"Ingresos de explotación","en":"Operating revenue"},
 "Inntekt på investering i datterselskap":{"es":"Ingresos de inversiones en filiales","en":"Income from investments in subsidiaries"},
 "Lønninger":{"es":"Sueldos y salarios","en":"Wages and salaries"},
