@@ -280,7 +280,7 @@ export const VOCABULARIO = {
     de: ['zinsertrage', 'zinsen und ahnliche ertrage', 'finanzertrage', 'finanzertrag'], fr: ['produits financiers'],
     it: ['proventi finanziari', 'interessi attivi'], nl: ['financiele baten', 'rentebaten', 'financiele opbrengsten'],
     // noruego en singular: cubre el plural ("finansinntekt" está dentro de "finansinntekter"); ver FIN_GASTO.
-    da: ['finansielle indtaegter', 'renteindtaegter'], no: ['finansinntekt', 'renteinntekt', 'finansielle inntekter'],
+    da: ['finansielle indtaegter', 'renteindtaegter'], no: ['finansinntekt', 'renteinntekt', 'finansielle inntekter', 'inntekt pa investering'],
     sv: ['finansiella intakter', 'ranteintakter'], hr: ['financijski prihodi', 'prihodi od kamata'], cs: ['financni vynosy', 'vynosove uroky'],
     pl: ['przychody finansowe'], tr: ['finansman gelirleri', 'finansal gelirler', 'faiz gelirleri'],
     el: ['πιστωτικοι τοκοι', 'χρηματοοικονομικα εσοδα', 'εσοδα τοκων'], ru: ['проценты к получению', 'финансовые доходы'], ja: ['受取利息', '金融収益'],
@@ -298,7 +298,7 @@ export const VOCABULARIO = {
     // finanskostnad", "Annen rentekostnad", "Rentekostnad". Con el plural solo, no se reconocían y se sumaban como ingreso financiero. El
     // singular cubre el plural. Casos: Viking AS 2025 L296 y Fredrikstad FLI 2018 L545 cierran exacto sin ajustes; Vålerenga AS 2025 L123,
     // Aalesund AS 2025 L593-594 y Sarpsborg 08 FLI 2025 L1383-1384 dejan de dar "no cierra".
-    da: ['finansielle omkostninger', 'renteudgifter'], no: ['finanskostnad', 'rentekostnad', 'finansielle kostnader'],
+    da: ['finansielle omkostninger', 'renteudgifter'], no: ['finanskostnad', 'rentekostnad', 'finansielle kostnader', 'nedskrivning av finansielle'],
     sv: ['finansiella kostnader', 'rantekostnader'], hr: ['financijski rashodi', 'rashodi od kamata'], cs: ['financni naklady', 'nakladove uroky'],
     pl: ['koszty finansowe'], tr: ['finansman giderleri', 'finansal giderler', 'faiz giderleri'],
     el: ['χρεωστικοι τοκοι', 'χρηματοοικονομικα εξοδα', 'εξοδα τοκων'], ru: ['проценты к уплате', 'финансовые расходы'], ja: ['支払利息', '金融費用'],

@@ -111,7 +111,14 @@ export function faseLecturas(ctx) {
       }
     }
   }
-  const resFinal = F.resultado && !resEsAntes ? (parseNumber(F.resultado.actual) ?? NaN) * mult(estado[0]?.bloque) : ctx.resCerca ? ctx.resCerca.M : null;
+  // El importe de `F.resultado` lo escribió la IA de extraer y puede no ser el de su línea (tomó la cifra de otra tabla); la FILA de esa misma línea sí viene validada contra el PDF: si las dos difieren, vale la fila.
+  const resExtraido = F.resultado ? (parseNumber(F.resultado.actual) ?? NaN) * mult(estado[0]?.bloque) : null;
+  const resDeFila = filaDeRes && isFinite(filaDeRes.M) ? filaDeRes.M : null;
+  // Solo vale la fila si el importe extraído no es el de NINGUNA fila de resultado del estado (si otra fila de resultado lo trae, el importe es de esa y no está inventado).
+  const resEnEstado = estado.some((f) => f.tipo === 'resultado' && isFinite(f.M) && Math.abs(f.M - resExtraido) < 1e-6);
+  // y solo si la diferencia es de verdad otra cifra (más de 1 %): una diferencia de redondeo entre dos tablas del mismo documento no es un importe inventado.
+  const resFila = resDeFila != null && !resEnEstado && Math.abs(resDeFila - resExtraido) > 0.01 * Math.abs(resDeFila);
+  const resFinal = F.resultado && !resEsAntes ? (resFila ? resDeFila : resExtraido) : ctx.resCerca ? ctx.resCerca.M : null;
   const filaAntes = estado.find((f) => f.tipo === 'resultado' && ANTES_RE.test(f.etiqueta) && isFinite(f.M));
   const gastosNeg = (() => { const g = estado.filter((f) => f.lado === 'gasto' && f.tipo === 'renglon' && isFinite(f.M) && f.M); return g.length ? g.filter((f) => f.M < 0).length >= g.length / 2 : true; })();
   const otros = estado.filter((f) => f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f.M) && f.M && !repiteResultado(estado, f, 'M'));
@@ -241,6 +248,9 @@ export function faseEvaluar(ctx) {
         // "Erträge netto" 45.057 (L261) = "Erträge brutto" (abierto en su nota) + "Ertragsminderungen"; "Ausserordentlicher Ertrag" queda afuera.
         const partes = (!arr.some((f) => f.etiqueta === filaTotal.etiqueta) && partesSubRep.get(filaTotal.linea)) || [filaTotal.etiqueta];
         const deEsa = arr.filter((f) => partes.some((p) => f.etiqueta === p || String(f.origen || '').startsWith(`nota que desglosa "${p}"`)));
+        // El total impreso y su único renglón son la MISMA cifra («Driftsinntekter» 41.591.465 y «Sum driftsinntekter» 41.591.465): las otras líneas del lado ya suman el total, o sea son sus
+        // componentes y no un ingreso aparte. Se saca la fila del total y queda el renglón; contar las dos duplicaba el lado.
+        if (deEsa.length && deEsa.every((f) => f.tipo === 'total') && arr.length === deEsa.length + 1 && cerca(sm - suma(deEsa), total)) { ch.push({ nombre: `total de ${nombre}`, ok: true, detalle: `"${filaTotal.etiqueta}" ${r6(total)} cierra con los renglones del lado (${arr.length - deEsa.length} línea(s)): la fila del total no se suma aparte` }); return arr.filter((f) => !deEsa.includes(f)); }
         if (deEsa.length && cerca(suma(deEsa), total)) { ch.push({ nombre: `total de ${nombre}`, ok: true, detalle: `"${filaTotal.etiqueta}" ${r6(total)} cierra; además se suman ${arr.length - deEsa.length} línea(s) fuera de ese total (${r6(sm - total)})` }); return arr; }
       }
       // (cambio C, aprobado por Guido; desde la lectura 2) el total impreso puede ser el TOTAL DE UNA NOTA que

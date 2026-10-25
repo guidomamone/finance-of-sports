@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1110 — verificar-lecturas.mjs, vocabulario-datos.mjs: el total y su único renglón no se suman dos veces, vale la fila del resultado si el resumen de la IA trae otra cifra, y el vocabulario noruego del financiero [456 · verificar-lecturas.mjs, vocabulario-datos.mjs]
+- `verificar-lecturas.mjs`: si el total impreso y su único renglón son la misma cifra («Driftsinntekter» y «Sum driftsinntekter»), la fila del total no se suma aparte (Aalesund 2018 daba 83,18 M de ingresos en vez de 41,59 M). Si el importe del resumen `resultado` de la IA no es el de ninguna fila de resultado del estado y difiere más de 1 % de la fila de su propia línea, vale la fila (Bolton 2024-25 traía la remuneración del personal de otra tabla como resultado).
+- `vocabulario-datos.mjs` (noruego): «Inntekt på investering…» suma y «Nedskrivning av finansielle…» resta en el financiero por rótulo: Aalesund 2018 cierra con el resultado impreso (1,20 M).
+- Medición: 2 diferencias, todas explicadas (Bolton y Aalesund; lote completo idéntico). Una primera versión rompía Sarpsborg 2008 (8 renglones con redondeo) y se acotó a un solo renglón.
+
 ## Versión 1109 — audit-chequeos-6.js: los chequeos de ligas no catalogadas, claves repetidas y estimados repetidos salen de audit-chequeos-2.js (pasó los 40 KB) [audit-chequeos-2.js, audit.js]
 - Sin cambio de lógica: tres funciones a un módulo nuevo y `audit.js` las importa de ahí. Comentarios sin fecha en `cierre-propuestas.mjs` y `produccion.mjs`. Las entradas de las Versiones 1090 y 1096 se acortan (pasaban de 1.500 caracteres).
 - Viborg FF 2021 cargado con el cierre del 30/06 por ajuste; Fredericia 2018 y Rapid Wien 2013 a 2023 con liga (`ligas-sin-verificar.mjs`; Fredericia confirmado también por la Wikipedia en danés).

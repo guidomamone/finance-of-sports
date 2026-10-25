@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf",
  "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md",
- "generado": "2026-10-25T20:57:37.629Z",
+ "generado": "2026-10-25T21:34:58.544Z",
  "scriptHuella": "f1d4dee41de6",
  "estado": "cola",
  "clubId": "aalesund-no",
@@ -55,8 +55,7 @@
  "notas": [
   "la nota de \"Driftsinntekter\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "duda de localizar que no afecta la carga: b1 (pág. 2, formato formulario Brønnøysund) y b3 (pág. 6, estado del informe) parecen el mismo resultatregnskap de Ålesund Fotball AS.",
-  "duda de extraer que no afecta la carga: Ningún bloque imprime la escala; los importes con todos los dígitos sugieren unidades.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Ningún bloque imprime la escala; los importes con todos los dígitos sugieren unidades."
  ],
  "reintentar": null,
  "reintentado": false,
