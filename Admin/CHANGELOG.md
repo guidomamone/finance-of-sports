@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1100 — alta-club-analisis.mjs, alta-club.mjs, cargar-inicio.mjs, cargar-escribir.mjs, audit.js, audit-chequeos-2.js: moneda legado sin preguntar, Wikipedia local en la compuerta y chequeo de estimados repetidos [455 · alta-club-analisis.mjs, cargar-inicio.mjs, cargar-escribir.mjs, audit.js]
+- Un ejercicio anterior al cambio de moneda cuyo documento habla sobre todo en la moneda vieja se carga en ella (kunas, liras…), con su tipo de cambio a USD del cierre y sin preguntar ni frenar (decisión de Guido); `HRK` entra a `CURRENCY_META` con su paridad fija al euro. La compuerta de estadio y sponsor de `cargar` usa también la Wikipedia del idioma del club (`--local`); regla en `Admin/PIPELINE.md`.
+- `audit.js` suma `estimado-repetido` (P1): un club con dos estimaciones en la misma liga-año, aunque la tool misma lo repita. Dato nuevo: lista de Tottenham 2019 corregida a mano; listas de la 1ª División danesa 2018 y 2021 a 2025.
+- Medición: 4 diferencias, todas explicadas (completo: idéntico); la mediana solo cambia Rijeka 2022, que deja de frenar por la moneda y carga en kunas.
+
 ## Versión 1099 — estimar.mjs, fetch-club-league-reference.mjs: un ejercicio estima en una sola temporada; una lista de Wikipedia corregida a mano no se pisa [455 · estimar.mjs, fetch-club-league-reference.mjs]
 - `estimar.mjs`: un club del sitio se estima solo en la temporada que le da la regla de lo real (la categoría al cierre del ejercicio, `faltantes-liga.mjs`). Chile 2013 caía en dos temporadas que se pisan por el cambio de calendario (la de 2013 y la de 2013–14) y Colo-Colo y Universidad de Chile salían dos veces, con +68 % y +115 % la segunda.
 - `fetch-club-league-reference.mjs`: una lista con `manualFix` no se vuelve a escribir sin `--forzar`. Tottenham 2019 (lista de Wikipedia con «Tottenham» dos veces: 21 equipos para 20) corregida a mano y marcada.

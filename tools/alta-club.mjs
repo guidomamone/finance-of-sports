@@ -152,7 +152,7 @@ export function analizar(docArg, sitio, ov = {}) {
   const { nombreArchivo, cierreTxt, nIntermedio, esIntermedio, hermanos, cierresClub, fuentePatronPais, mesCierre, anio, estadoAnio, fuenteAnio, preguntaAnio, cierre, fiscalYearStart, estadoCierre, preguntaCierre, fuenteCierre } = cierreYAnio({ abs, r, md, mdPath, paisCarpeta, clubCarpeta, pais, sitio, ov });
 
   // ---------------------------------------------------------------- moneda del ejercicio
-  let { moneda, estadoMoneda, fuenteMoneda, preguntaMoneda } = monedaDelEjercicio({ r, pais, paisCarpeta, anio, mdNorm });
+  let { moneda, estadoMoneda, fuenteMoneda, preguntaMoneda, legado } = monedaDelEjercicio({ r, pais, paisCarpeta, anio, mdNorm });
 
   // ---------------------------------------------------------------- deporte
   const { nFutbol, otros, deporte, fuenteDeporteClaude } = deporteDelTexto({ mdNorm, clubCarpeta, ov });
@@ -179,7 +179,7 @@ export function analizar(docArg, sitio, ov = {}) {
   // anterior a la entrada del euro y el valor del ajuste es la moneda legado del país. Caso: Lazio 1998-99, 1999-00 y 2000-01 en liras.
   { const aMon = r.pdf ? ajusteDe(r.pdf, 'moneda') : null;
     if (aMon && pais && pais.legado && anio && anio < pais.legado.desde && aMon.valor === pais.legado.codigo && estadoMoneda === 'pregunta') { moneda = aMon.valor; estadoMoneda = 'ok'; preguntaMoneda = null; fuenteMoneda = `ajuste manual (Admin/registros/ajustes-manuales.jsonl, ${aMon.autor} ${aMon.fecha}): ${aMon.motivo}`; } }
-  E.push(campo('currency', moneda, fuenteMoneda, estadoMoneda, preguntaMoneda ? { pregunta: preguntaMoneda } : {}));
+  E.push(campo('currency', moneda, fuenteMoneda, estadoMoneda, { ...(preguntaMoneda ? { pregunta: preguntaMoneda } : {}), ...(legado ? { legado: true } : {}) }));
 
   // Tipo de cambio
   const fxCampos = proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ov.fx, r.pdf ? ajusteDe(r.pdf, 'fx') : null);

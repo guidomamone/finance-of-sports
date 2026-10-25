@@ -200,7 +200,7 @@ export function faseClubYAnio(ctx) {
     if (fys !== club.fiscalYearStart) P.avisos.push(`el documento cierra ${alta.ejercicio.cierre} (ejercicio desde el ${fys}) y data/clubs.js dice fiscalYearStart ${club.fiscalYearStart}: ¿cambió el cierre del club?`);
   }
   const moneda = campo('currency').valor;
-  if (moneda && club.reportingCurrency && moneda !== club.reportingCurrency && ajusteDe(pdf, 'moneda')?.valor !== moneda) frena('moneda', `el ejercicio saldría en ${moneda} y el club reporta en ${club.reportingCurrency}`);
+  if (moneda && club.reportingCurrency && moneda !== club.reportingCurrency && ajusteDe(pdf, 'moneda')?.valor !== moneda && !campo('currency').legado) frena('moneda', `el ejercicio saldría en ${moneda} y el club reporta en ${club.reportingCurrency}`);
   const prevMonedas = new Set(Object.values(cd.fiscalYearMeta || {}).map((m) => m.currency).filter(Boolean));
   if (moneda && prevMonedas.size && !prevMonedas.has(moneda)) P.avisos.push(`los años cargados del club están en ${[...prevMonedas].join('/')} y este en ${moneda}`);
   return { clubId, club, cd, ladoDeCat, CEROS, alta, campo, year, perimetro, ajPer, moneda };

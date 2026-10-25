@@ -121,13 +121,16 @@ export function cierreYAnio({ abs, r, md, mdPath, paisCarpeta, clubCarpeta, pais
 // Moneda del ejercicio: la del país, o la pregunta si el documento dice otra o es anterior al cambio de moneda.
 export function monedaDelEjercicio({ r, pais, paisCarpeta, anio, mdNorm }) {
   let moneda = pais ? pais.moneda : null;
-  let estadoMoneda = 'ok'; let fuenteMoneda = pais ? `moneda de curso legal de ${paisCarpeta} (${pais.referencia ? 'tabla de referencia ISO, tools/paises-referencia.json' : 'tabla PAISES de alta-club.mjs'})` : null; let preguntaMoneda = null;
+  let legado = false; let estadoMoneda = 'ok'; let fuenteMoneda = pais ? `moneda de curso legal de ${paisCarpeta} (${pais.referencia ? 'tabla de referencia ISO, tools/paises-referencia.json' : 'tabla PAISES de alta-club.mjs'})` : null; let preguntaMoneda = null;
   if (!pais) { estadoMoneda = 'pregunta'; preguntaMoneda = `País "${paisCarpeta}" sin entrada en la tabla PAISES de tools/alta-club.mjs: ¿qué ISO2 y qué moneda?`; }
   else if (pais.preguntaMoneda) { estadoMoneda = 'pregunta'; preguntaMoneda = pais.preguntaMoneda; }
   else if (pais.legado && anio && anio < pais.legado.desde) {
     const nLeg = pais.legado.tokens.reduce((s, t) => s + contar(mdNorm, new RegExp(`(?<![a-z])${t.replace(/\./g, '\\.')}(?![a-z])`, 'g')), 0);
     const nAct = menciones(mdNorm, pais.moneda);
     if (nAct >= 5 && nAct > 3 * nLeg) { fuenteMoneda += `; ejercicio ${anio} anterior a ${pais.legado.desde}, pero el documento ya habla en ${pais.moneda} (${nAct} menciones contra ${nLeg} de ${pais.legado.codigo})`; }
+    // DECISIÓN DE GUIDO (2026-10-25): un ejercicio anterior al cambio de moneda, cuyo documento habla sobre todo en la moneda vieja, se carga en ella (el sitio la
+    // convierte a USD con el tipo de cambio de su cierre y muestra USD por defecto); no se convierte a la moneda nueva ni se pregunta.
+    else if (nLeg >= 5 && nLeg > nAct) { moneda = pais.legado.codigo; legado = true; fuenteMoneda = `moneda legado de ${paisCarpeta}: ejercicio ${anio} anterior a ${pais.legado.desde} y el documento habla en ${pais.legado.codigo} (${nLeg} menciones contra ${nAct} de ${pais.moneda}); se carga en ${pais.legado.codigo} con su tipo de cambio a USD del cierre (decisión de Guido)`; }
     else { estadoMoneda = 'pregunta'; moneda = pais.legado.codigo; preguntaMoneda = `El ejercicio ${anio} es anterior a ${pais.legado.desde}: el documento puede estar en ${pais.legado.codigo} (${nLeg} menciones de la moneda vieja, ${nAct} de ${pais.moneda}). El sitio no tiene ninguna moneda "legado" cargada: ¿se carga en ${pais.legado.codigo} (con su fx a USD de ese cierre) o se convierte a ${pais.moneda} a la paridad fija?`; }
   } else if (moneda && moneda !== 'USD') {
     const nPropia = menciones(mdNorm, moneda);
@@ -135,7 +138,7 @@ export function monedaDelEjercicio({ r, pais, paisCarpeta, anio, mdNorm }) {
     if (nPropia === 0 && otras[0] && otras[0][1] >= 10) { estadoMoneda = 'pregunta'; preguntaMoneda = `El documento no nombra nunca ${moneda} y nombra ${otras[0][0]} ${otras[0][1]} veces: ¿en qué moneda está?`; }
     else if (nPropia === 0) r.avisos.push(`El documento no nombra la moneda (${moneda}) en ningún lado reconocible: se asume la del país.`);
   }
-  return { moneda, estadoMoneda, fuenteMoneda, preguntaMoneda };
+  return { moneda, estadoMoneda, fuenteMoneda, preguntaMoneda, legado };
 }
 
 // Deporte según cuántas veces nombra el .md cada uno.

@@ -545,4 +545,23 @@ function checkGenerados() {
 }
 
 
-module.exports = { checkLigasPorEjercicio, checkDeployInterno, checkIndexFileRoto, checkSponsorBusqueda, checkComentariosPublicados, checkParrafoNetlifyDuplicado, checkRutasMuertas, checkComentarioHistoricoEnTools, checkCabeceraLargaEnTools, checkToolGrande, checkHistoriaEnDocs, checkParrafosRepetidos, checkRayaLarga, checkGenerados };
+// UN CLUB-AÑO, UNA ESTIMACIÓN: data/estimados/<liga>.js no repite un club en el mismo año de una liga. Es independiente de estimar.mjs: si la tool misma repite (una lista con el nombre
+// dos veces, dos temporadas que caen en el mismo ejercicio), su --check regenera igual y no lo ve. P1: Ligas mostraría al club dos veces y la liga sumaría de más.
+function checkEstimadoRepetido() {
+  const dir = path.join(ROOT, 'data', 'estimados');
+  if (!fs.existsSync(dir)) return;
+  const repetidos = [];
+  for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.js'))) {
+    for (const ln of fs.readFileSync(path.join(dir, f), 'utf8').split('\n')) {
+      const m = ln.match(/^\s*(\d{4}):\s*(\[.*\]),?\s*$/);
+      if (!m) continue;
+      let filas; try { filas = JSON.parse(m[2]); } catch { continue; }
+      const vistos = new Map();
+      for (const r of filas) { const k = r.id || r.n; vistos.set(k, (vistos.get(k) || 0) + 1); }
+      for (const [k, n] of vistos) if (n > 1) repetidos.push(`${f.replace(/\.js$/, '')} ${m[1]} ${k} (${n} veces)`);
+    }
+  }
+  if (repetidos.length) add('P1', 'estimado-repetido', `un club con más de una estimación en la misma liga-año: ${repetidos.slice(0, 8).join('; ')}${repetidos.length > 8 ? ` y ${repetidos.length - 8} más` : ''}`);
+}
+
+module.exports = { checkEstimadoRepetido, checkLigasPorEjercicio, checkDeployInterno, checkIndexFileRoto, checkSponsorBusqueda, checkComentariosPublicados, checkParrafoNetlifyDuplicado, checkRutasMuertas, checkComentarioHistoricoEnTools, checkCabeceraLargaEnTools, checkToolGrande, checkHistoriaEnDocs, checkParrafosRepetidos, checkRayaLarga, checkGenerados };

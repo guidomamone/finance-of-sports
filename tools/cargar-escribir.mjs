@@ -122,7 +122,7 @@ export { snapshot, revertir, runNode };
 export function compuertaContexto(P) {
   const E = P.ejercicio; const meta = E?.fiscalYearMeta || {};
   const cierre = meta.cierre || String(meta.fxRef || '').split('@')[1] || null;
-  const args = ['--escribir', '--club', E.clubId, '--anio', String(E.year)];
+  const args = ['--escribir', '--local', '--club', E.clubId, '--anio', String(E.year)]; // --local: la Wikipedia del país también (regla de Guido, Admin/PIPELINE.md, «Datos públicos de un club»)
   if (P.liga?.valor) args.push('--liga', P.liga.valor);
   if (cierre && /^\d{4}-\d{2}-\d{2}$/.test(cierre)) args.push('--cierre', cierre.slice(5));
   try { execFileSync('node', [resolve(ROOT, 'tools', 'estadio-sponsor.mjs'), ...args], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }); return true; }
