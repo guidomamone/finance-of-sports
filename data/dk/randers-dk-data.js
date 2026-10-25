@@ -1,5 +1,12 @@
 // GENERADO desde data/dk/randers-dk.json por tools/generar-data.mjs: no editar a mano (se edita el JSON).
 const randersDkRevenueLinesByYear = {
+  2017: [
+    {"rawLabel":"Sponsorindtægter","normalizedCategory":"sponsorship_commercial","amountNative":29.350146,"disclosureLevel":"aggregated"},
+    {"rawLabel":"TV-indtægter","normalizedCategory":"broadcasting","amountNative":19.083597,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Entré og kampindtægter","normalizedCategory":"matchday_competition","amountNative":5.964431,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Øvrige indtægter","normalizedCategory":"other_income","amountNative":11.092966,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Resultat af kapitalandele i tilknyttede virksomheder","normalizedCategory":"other_income","amountNative":2.167513,"disclosureLevel":"aggregated"},
+  ],
   2022: [
     {"rawLabel":"Bruttofortjeneste","normalizedCategory":"lump_football_operations","amountNative":99.145894,"disclosureLevel":"aggregated"},
     {"rawLabel":"Resultat af kapitalandele i tilknyttede virksomheder","normalizedCategory":"other_income","amountNative":0.36619,"disclosureLevel":"aggregated"},
@@ -10,6 +17,19 @@ const randersDkRevenueLinesByYear = {
 };
 
 const randersDkExpenseLinesByYear = {
+  2017: [
+    {"rawLabel":"Sponsorudgifter","normalizedCategory":"admin_general_expense","amountNative":-5.583897,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Kampafvikling","normalizedCategory":"match_organisation_expense","amountNative":-8.77269,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Sportslige udgifter i øvrigt","normalizedCategory":"other_expenses","amountNative":-3.864448,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Talentudvikling","normalizedCategory":"youth_other_sports_expense","amountNative":-3.435689,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Transferudgifter og leje af spillere","normalizedCategory":"other_expenses","amountNative":-0.478185,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Løn- og personaleomkostninger","normalizedCategory":"wages_squad","amountNative":-28.641254,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Øvrige udgifter","normalizedCategory":"other_expenses","amountNative":-0.137186,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Udgifter Lounge og Skybokse","normalizedCategory":"admin_general_expense","amountNative":-3.813358,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Løn- og personaleomkostninger, administration","normalizedCategory":"admin_general_expense","amountNative":-8.232858,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Administrationsomkostninger","normalizedCategory":"admin_general_expense","amountNative":-2.482747,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Afskrivninger, anlægsaktiver","normalizedCategory":"player_amortisation","amountNative":-5.665981,"disclosureLevel":"aggregated"},
+  ],
   2022: [
     {"rawLabel":"Løn og gager","normalizedCategory":"wages_squad","amountNative":-49.487947,"disclosureLevel":"aggregated"},
     {"rawLabel":"Pensioner","normalizedCategory":"wages_squad","amountNative":-3.22065,"disclosureLevel":"aggregated"},
@@ -24,6 +44,7 @@ const randersDkExpenseLinesByYear = {
 };
 
 const randersDkFiscalYearMeta = {
+  2017: {"currency":"DKK","sourceId":"randers-dk-aarsrapport-2017-06-30","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2017-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.723619,"tax":1.333114,"grossDebt":null,"cash":null,"officialTotalRevenue":67.658653,"officialTotalExpenses":71.108293,"officialPAT":-2.840145,"extraRows":[{"label":"Finansielle indtægter","value":0.186003},{"label":"Finansielle omkostninger","value":-0.909622},{"label":"Skat af årets resultat","value":1.333114}],"baseIngreso":"full"},
   2022: {"currency":"DKK","sourceId":"randers-dk-aarsrapport-2022-06-30","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2022-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.343263,"tax":-7.89678,"grossDebt":null,"cash":null,"officialTotalRevenue":99.512084,"officialTotalExpenses":63.108115,"officialPAT":28.163925,"extraRows":[{"label":"Finansielle indtægter","value":0.021147},{"label":"Finansielle omkostninger","value":-0.36441},{"label":"Skat af årets resultat","value":-7.89678}],"sinDesglose":[{"renglon":"Bruttofortjeneste","lado":"revenue","importe":99.145894,"motivo":"el documento no desglosa este renglón","tipo":"gross_margin"}],"baseIngreso":"gross_margin"},
   2023: {"currency":"DKK","sourceId":"randers-dk-aarsrapport-2022-23","reportType":"official_balance_sheet","gestionId":null,"fxRef":"DKK@2023-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":2.568178,"tax":0.054931,"grossDebt":2.062693,"cash":11.464548,"officialTotalRevenue":61.744974,"officialTotalExpenses":62.173346,"officialPAT":2.194737,"sinDesglose":[{"renglon":"Bruttofortjeneste (ingresos netos de costos operativos externos — el balance usa la exención §32 de la Årsregnskabsloven, sin desglose de Nettoomsætning disponible)","lado":"revenue","importe":61.744974,"motivo":"el documento no desglosa este renglón","tipo":"gross_margin"}],"baseIngreso":"gross_margin"},
 };
@@ -42,6 +63,6 @@ window.CLUB_GENERIC_DATA["randers-dk"] = {
   presupuestoOverlayByYear: randersDkPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"randers-dk-aarsrapport-2022-23":{"id":"randers-dk-aarsrapport-2022-23","clubId":"randers-dk","title":"Randers FC A/S — Årsrapport 1. juli 2022 - 30. juni 2023","type":"official_balance_sheet","reliability":"primary","url":"http://regnskaber.virk.dk/61804938/amNsb3VkczovLzAzLzVmL2ZlL2JkLzA0L2Q2MmMtNGQwNi1iNzAwLTgyYTQ5YjEzNWRiOQ.pdf"},"randers-dk-aarsrapport-2022-06-30":{"id":"randers-dk-aarsrapport-2022-06-30","clubId":"randers-dk","title":"Randers FC A/S — aarsrapport-2022-06-30 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.pdf"}});
+Object.assign(sources, {"randers-dk-aarsrapport-2022-23":{"id":"randers-dk-aarsrapport-2022-23","clubId":"randers-dk","title":"Randers FC A/S — Årsrapport 1. juli 2022 - 30. juni 2023","type":"official_balance_sheet","reliability":"primary","url":"http://regnskaber.virk.dk/61804938/amNsb3VkczovLzAzLzVmL2ZlL2JkLzA0L2Q2MmMtNGQwNi1iNzAwLTgyYTQ5YjEzNWRiOQ.pdf"},"randers-dk-aarsrapport-2022-06-30":{"id":"randers-dk-aarsrapport-2022-06-30","clubId":"randers-dk","title":"Randers FC A/S — aarsrapport-2022-06-30 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.pdf"},"randers-dk-aarsrapport-2017-06-30":{"id":"randers-dk-aarsrapport-2017-06-30","clubId":"randers-dk","title":"Randers FC A/S — aarsrapport-2017-06-30 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.pdf"}});
 
 memberCountByClub["randers-dk"] = null;

@@ -20,6 +20,8 @@ const CURRENCY_META = {
   ITL: { scale: 1000, unitSuffix: 'mil M', euroFijo: 1936.27 },   // Italia (lira, hasta 2001)
   // Escudo portugués (hasta 2001): ~200-220 PTE por USD y documentos en miles de escudos (Sporting 1999-2000): scale:1000 como la lira.
   PTE: { scale: 1000, unitSuffix: 'mil M', euroFijo: 200.482 },   // Portugal (escudo, hasta 2001)
+  // Kuna croata (hasta 2022): ~7 HRK por USD, así que "millones" lee bien. euroFijo: paridad irrevocable de la entrada al euro (Reglamento UE 2022/1208).
+  HRK: { scale: 1, unitSuffix: 'M', euroFijo: 7.5345 },   // Croacia (kuna, hasta 2022)
   RUB: { scale: 1, unitSuffix: 'M' }, // Rusia
   NOK: { scale: 1, unitSuffix: 'M' },
   CHF: { scale: 1, unitSuffix: 'M' },
@@ -271,6 +273,7 @@ const FX_CLOSE = {
   'DKK@2023-09-30': { fx: 7.039, source: 'market_close', label: 'Tipo oficial de Danmarks Nationalbank, última rueda hábil antes del cierre (2023-09-29, 2023-09-30 no es día hábil)' },
   'DKK@2025-09-30': { fx: 6.358, source: 'market_close', label: 'Tipo oficial de Danmarks Nationalbank al 2025-09-30' },
   'DKK@2018-12-31': { fx: 6.5194, source: 'market_close', label: 'Tipo oficial de Danmarks Nationalbank, última rueda hábil antes del cierre (2018-12-28, 2018-12-31 no es día hábil)' },
+  'DKK@2017-06-30': { fx: 6.5165, source: 'market_close', label: 'Tipo oficial de Danmarks Nationalbank al 2017-06-30' },
 };
 
 // fxMetaFor(meta): el tipo de cambio de un ejercicio (o de un overlay) como {fx, source, label, ref}. Es el ÚNICO lugar que resuelve

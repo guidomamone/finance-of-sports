@@ -197,6 +197,51 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/cargar.mjs (2026-10-25): dk-superliga, verificado contra NO EXACTA, confirmar en la página del club: roster cacheado de "2021–22 Danish Superliga" (tools/club-league-reference/dk.json), coincidencia única por palabras "Randers" = "Randers FC" (si es el mismo club, agregarlo a alias.json).
 ```
 
+## 2017
+
+### Ingresos
+
+```text
+2017: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/Randers FC/aarsrapport-2017-06-30.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sponsorindtægter | pág. 11, Jev 1 |
+| 2 | TV-indtægter | pág. 11, Jev 1 |
+| 3 | Entré og kampindtægter | pág. 11, Jev 0.99 |
+| 4 | Øvrige indtægter | pág. 11, Jev 0.99 |
+| 5 | Resultat af kapitalandele i tilknyttede virksomheder | pág. 11, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sponsorudgifter | pág. 11, precedente |
+| 2 | Kampafvikling | pág. 11, Jev 1 |
+| 3 | Sportslige udgifter i øvrigt | pág. 11, Jev 0.94 |
+| 4 | Talentudvikling | pág. 11, precedente |
+| 5 | Transferudgifter og leje af spillere | pág. 11, Jev 0.97 |
+| 6 | Løn- og personaleomkostninger | pág. 11, precedente |
+| 7 | Øvrige udgifter | pág. 11, Jev 1 |
+| 8 | Udgifter Lounge og Skybokse | pág. 11, precedente |
+| 9 | Løn- og personaleomkostninger, administration | pág. 11, Jev 0.99 |
+| 10 | Administrationsomkostninger | pág. 11, Jev 1 |
+| 11 | Afskrivninger, anlægsaktiver | pág. 11, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): dk-superliga, verificado contra roster cacheado de "2016–17 Danish Superliga" (tools/club-league-reference/dk.json), coincidencia exacta "Randers FC".
+```
+
 ## Fuentes
 
 ### randers-dk-aarsrapport-2022-23
@@ -213,4 +258,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### randers-dk-aarsrapport-2017-06-30
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

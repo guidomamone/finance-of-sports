@@ -33,6 +33,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Right to Dream Park","capacidad":9900,"sponsor":"DHL","marca":"Nike","temporada":"2025–26 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191588"},
   },
   'randers-dk': {
+    2017: {"estadio":"BioNutria Park Randers","capacidad":12000,"sponsor":"Verdo","marca":"Puma","temporada":"2016–17 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377823411"},
     2022: {"estadio":"BioNutria Park Randers","capacidad":12000,"sponsor":"Verdo A/S","marca":"Puma","temporada":"2021–22 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1379231192"},
     2023: {"estadio":"Cepheus Park Randers","capacidad":12000,"sponsor":"Verdo A/S","marca":"Puma","temporada":"2022–23 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376808618"},
   },

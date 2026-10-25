@@ -87,4 +87,13 @@ window.RANKINGS["dk-superliga"] = {
         mix:[["Venta de Jugadores",24.695],["Fútbol profesional (sin desglosar por la fuente)",16.455]] },
     ],
   },
+  2017: {
+    leagueSize: 14,
+    wiki: {"t":"2016–17 Danish Superliga","lang":"en","at":"2026-10-25","n":14},
+    clubs: [
+      { id:"randers-dk", revenue:10.383, reportType:"official_balance_sheet",
+        sourceId:"randers-dk-aarsrapport-2017-06-30",
+        mix:[["Comercial / Sponsors",4.504],["Estadio",0.915],["Televisión",2.929],["Otros ingresos",2.035]] },
+    ],
+  },
 };

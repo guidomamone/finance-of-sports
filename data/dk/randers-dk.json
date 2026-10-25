@@ -28,10 +28,93 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.pdf"
+    },
+    {
+      "id": "randers-dk-aarsrapport-2017-06-30",
+      "club_id": "randers-dk",
+      "title": "Randers FC A/S — aarsrapport-2017-06-30 (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.pdf"
     }
   ],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-06-30",
+      "currency": "DKK",
+      "source_id": "randers-dk-aarsrapport-2017-06-30",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"DKK@2017-06-30"},
+      "revenue": [
+        {"label":"Sponsorindtægter","category":"commercial","subcategory":"sponsorship_commercial","amount":29.350146,"disclosure":"aggregated"},
+        {"label":"TV-indtægter","category":"media_rights","subcategory":"broadcasting","amount":19.083597,"disclosure":"aggregated"},
+        {"label":"Entré og kampindtægter","category":"matchday","subcategory":"matchday_competition","amount":5.964431,"disclosure":"aggregated"},
+        {"label":"Øvrige indtægter","category":"other_revenue","subcategory":"other_income","amount":11.092966,"disclosure":"aggregated"},
+        {
+          "label": "Resultat af kapitalandele i tilknyttede virksomheder",
+          "category": "other_revenue",
+          "subcategory": "other_income",
+          "amount": 2.167513,
+          "disclosure": "aggregated"
+        }
+      ],
+      "expenses": [
+        {"label":"Sponsorudgifter","category":"admin_general","subcategory":"admin_general_expense","amount":-5.583897,"disclosure":"aggregated"},
+        {"label":"Kampafvikling","category":"match_operations","subcategory":"match_organisation_expense","amount":-8.77269,"disclosure":"aggregated"},
+        {
+          "label": "Sportslige udgifter i øvrigt",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -3.864448,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Talentudvikling",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_other_sports_expense",
+          "amount": -3.435689,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Transferudgifter og leje af spillere",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.478185,
+          "disclosure": "aggregated"
+        },
+        {"label":"Løn- og personaleomkostninger","category":"first_team_staff","subcategory":"wages_squad","amount":-28.641254,"disclosure":"aggregated"},
+        {"label":"Øvrige udgifter","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.137186,"disclosure":"aggregated"},
+        {"label":"Udgifter Lounge og Skybokse","category":"admin_general","subcategory":"admin_general_expense","amount":-3.813358,"disclosure":"aggregated"},
+        {
+          "label": "Løn- og personaleomkostninger, administration",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -8.232858,
+          "disclosure": "aggregated"
+        },
+        {"label":"Administrationsomkostninger","category":"admin_general","subcategory":"admin_general_expense","amount":-2.482747,"disclosure":"aggregated"},
+        {
+          "label": "Afskrivninger, anlægsaktiver",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -5.665981,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.723619,"tax":1.333114,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":67.658653,"expenses":71.108293,"net_result":-2.840145},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Finansielle indtægter","amount":0.186003},
+          {"label":"Finansielle omkostninger","amount":-0.909622},
+          {"label":"Skat af årets resultat","amount":1.333114}
+        ],
+        "revenue_basis": "full"
+      }
+    },
     {
       "fiscal_year": 2022,
       "period_end": "2022-06-30",

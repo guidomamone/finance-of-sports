@@ -1,16 +1,220 @@
 {
  "pdf": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.pdf",
- "generado": "2026-10-25T16:44:56.953Z",
- "frena": [
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-25T16:59:53.304Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-25: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 3 ejercicio(s) con un solo perímetro (individual); 11 documento(s) mirados)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "randers-dk",
+  "year": 2017,
+  "cierre": "2017-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Sponsorindtægter",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 29.350146,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "TV-indtægter",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 19.083597,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Entré og kampindtægter",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 5.964431,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Øvrige indtægter",
+    "normalizedCategory": "other_income",
+    "amountNative": 11.092966,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Resultat af kapitalandele i tilknyttede virksomheder",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.167513,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Sponsorudgifter",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -5.583897,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Kampafvikling",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -8.77269,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sportslige udgifter i øvrigt",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -3.864448,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 0.94,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Talentudvikling",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -3.435689,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Transferudgifter og leje af spillere",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.478185,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Løn- og personaleomkostninger",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -28.641254,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Øvrige udgifter",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.137186,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Udgifter Lounge og Skybokse",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.813358,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Løn- og personaleomkostninger, administration",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -8.232858,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Administrationsomkostninger",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.482747,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afskrivninger, anlægsaktiver",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -5.665981,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "DKK",
+   "fxRef": "DKK@2017-06-30",
+   "sourceId": "randers-dk-aarsrapport-2017-06-30",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.723619,
+   "tax": 1.333114,
+   "extraRows": [
+    {
+     "label": "Finansielle indtægter",
+     "value": 0.186003
+    },
+    {
+     "label": "Finansielle omkostninger",
+     "value": -0.909622
+    },
+    {
+     "label": "Skat af årets resultat",
+     "value": 1.333114
+    }
+   ],
+   "baseIngreso": "full",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 67.658653,
+   "officialTotalExpenses": 71.108293,
+   "officialPAT": -2.840145
+  },
+  "source": {
+   "id": "randers-dk-aarsrapport-2017-06-30",
+   "clubId": "randers-dk",
+   "title": "Randers FC A/S — aarsrapport-2017-06-30 (ejercicio 2017)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.md",
  "reemplaza": false,
  "periodo": {
@@ -26,5 +230,387 @@
  },
  "clubId": "randers-dk",
  "year": 2017,
- "cortadoEn": "filas"
+ "ajustes": null,
+ "seleccion": {
+  "filas": 19,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Sponsorindtægter",
+   "page": 11,
+   "native": 29.350146,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 29.350146,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 29.350146
+  },
+  {
+   "label": "TV-indtægter",
+   "page": 11,
+   "native": 19.083597,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 19.083597,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 19.083597
+  },
+  {
+   "label": "Entré og kampindtægter",
+   "page": 11,
+   "native": 5.964431,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 5.964431,
+   "cat": "matchday_competition",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.964431
+  },
+  {
+   "label": "Øvrige indtægter",
+   "page": 11,
+   "native": 11.092966,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 11.092966,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 11.092966
+  },
+  {
+   "label": "Resultat af kapitalandele i tilknyttede virksomheder",
+   "page": 11,
+   "native": 2.167513,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))",
+   "signoFijo": 2.167513,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.167513
+  },
+  {
+   "label": "Sponsorudgifter",
+   "page": 11,
+   "native": 5.583897,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 5.583897,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-25 (sesion): Sponsorudgifter = costo de atender a los sponsors: comercial, va a admin_general_expense (que incluye gastos comerciales)",
+   "destino": "expense",
+   "amountNative": -5.583897
+  },
+  {
+   "label": "Kampafvikling",
+   "page": 11,
+   "native": 8.77269,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 8.77269,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -8.77269
+  },
+  {
+   "label": "Sportslige udgifter i øvrigt",
+   "page": 11,
+   "native": 3.864448,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.864448,
+   "cat": "other_expenses",
+   "conf": 0.94,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.864448
+  },
+  {
+   "label": "Talentudvikling",
+   "page": 11,
+   "native": 3.435689,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.435689,
+   "cat": "youth_other_sports_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-25 (sesion): Talentudvikling = desarrollo de talentos (cantera): youth_other_sports_expense",
+   "destino": "expense",
+   "amountNative": -3.435689
+  },
+  {
+   "label": "Transferudgifter og leje af spillere",
+   "page": 11,
+   "native": 0.478185,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.478185,
+   "cat": "other_expenses",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.478185
+  },
+  {
+   "label": "Løn- og personaleomkostninger",
+   "page": 11,
+   "native": 28.641254,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 28.641254,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -28.641254
+  },
+  {
+   "label": "Øvrige udgifter",
+   "page": 11,
+   "native": 0.137186,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.137186,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.137186
+  },
+  {
+   "label": "Udgifter Lounge og Skybokse",
+   "page": 11,
+   "native": 3.813358,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.813358,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-25 (sesion): costos de lounges y palcos (hospitalidad comercial): admin_general_expense",
+   "destino": "expense",
+   "amountNative": -3.813358
+  },
+  {
+   "label": "Løn- og personaleomkostninger, administration",
+   "page": 11,
+   "native": 8.232858,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 8.232858,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -8.232858
+  },
+  {
+   "label": "Administrationsomkostninger",
+   "page": 11,
+   "native": 2.482747,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.482747,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.482747
+  },
+  {
+   "label": "Afskrivninger, anlægsaktiver",
+   "page": 11,
+   "native": 5.665981,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 5.665981,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Randers 2022 L359 y L385-390: «Afskrivninger, anlaegsaktiver» (8.373.053) junta Kontraktrettigheder (jugadores, 11,2 M) y activos materiales (4,0 M) y las notas no la abren con una suma que cierre (partir-amortizacion.mjs): entera a player_amortisation por la REGLA de linea junta. Claude 2026-10-25 (sesion)",
+   "destino": "expense",
+   "amountNative": -5.665981
+  },
+  {
+   "label": "Finansielle indtægter",
+   "page": null,
+   "native": 0.186003,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Finansielle omkostninger",
+   "page": null,
+   "native": -0.909622,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Skat af årets resultat",
+   "page": null,
+   "native": 1.333114,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))": "gastos con signo",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 67.658653,
+  "expSum": -71.108293,
+  "officialTotalRevenue": 67.658653,
+  "officialTotalExpenses": 71.108293,
+  "officialPAT": -2.840145,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -2.840145,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 67.658653
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 71.108293
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "DKK@2017-06-30",
+  "fx": 6.5165,
+  "source": "market_close",
+  "label": "Tipo oficial de Danmarks Nationalbank al 2017-06-30"
+ },
+ "liga": {
+  "valor": "dk-superliga",
+  "fuente": "roster cacheado de \"2016–17 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia exacta \"Randers FC\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2017,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2017-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2017-06-30) y contenido del .md (11 de 11 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-25)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "DKK",
+   "fuente": "moneda de curso legal de Dinamarca (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "DKK@2017-06-30",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 6.5165. --escribir agrega 'DKK@2017-06-30' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "randers-dk-aarsrapport-2017-06-30",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "dk-superliga",
+   "fuente": "roster cacheado de \"2016–17 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia exacta \"Randers FC\"",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 5,
+  "lineasGasto": 11,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }
