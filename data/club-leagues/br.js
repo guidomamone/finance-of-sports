@@ -34,7 +34,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'juventude-br': { 2020: 'br-serieB', 2021: 'br-serieA' },
   'botafogosp-br': { 2024: 'br-serieB', 2025: 'br-serieB' },
   'goias-br': { 2025: 'br-serieB', 2021: 'br-serieB', 2022: 'br-serieA', 2023: 'br-serieA', 2024: 'br-serieB', 2017: 'br-serieB', 2008: 'br-serieA', 2009: 'br-serieA', 2010: 'br-serieA', 2011: 'br-serieB', 2012: 'br-serieB', 2013: 'br-serieA', 2015: 'br-serieA', 2014: 'br-serieA', 2016: 'br-serieB', 2018: 'br-serieB', 2019: 'br-serieA', 2020: 'br-serieA' },
-  'novorizontino-br': { 2024: 'br-serieB', 2019: 'br-serieD', 2020: 'br-serieD', 2021: 'br-serieC', 2023: 'br-serieB', 2018: 'br-serieD', 2025: 'br-serieB', 2010: null, 2012: null, 2022: 'br-serieB', 2017: 'br-paulistaA1', 2016: 'br-paulistaA1', 2014: 'br-paulistaA3', 2013: 'br-paulistaA3', 2015: 'br-paulistaA2' },
+  'novorizontino-br': { 2024: 'br-serieB', 2019: 'br-serieD', 2020: 'br-serieD', 2021: 'br-serieC', 2023: 'br-serieB', 2018: 'br-serieD', 2025: 'br-serieB', 2010: 'liga-no-catalogada', 2012: 'liga-no-catalogada', 2022: 'br-serieB', 2017: 'br-paulistaA1', 2016: 'br-paulistaA1', 2014: 'br-paulistaA3', 2013: 'br-paulistaA3', 2015: 'br-paulistaA2' },
   'criciuma-br': { 2012: 'br-serieB', 2013: 'br-serieA', 2019: 'br-serieB', 2020: 'br-serieC', 2021: 'br-serieC', 2023: 'br-serieB', 2024: 'br-serieA', 2025: 'br-serieB', 2022: 'br-serieB', 2014: 'br-serieA', 2015: 'br-serieB', 2017: 'br-serieB', 2018: 'br-serieB', 2016: 'br-serieB' },
   'crb-br': { 2020: 'br-serieB', 2021: 'br-serieB', 2024: 'br-serieB', 2025: 'br-serieB', 2022: 'br-serieB', 2023: 'br-serieB' },
   'avai-br': { 2021: 'br-serieB', 2025: 'br-serieB', 2022: 'br-serieA', 2023: 'br-serieB', 2024: 'br-serieB' },

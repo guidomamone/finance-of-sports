@@ -103,6 +103,15 @@ window.RANKINGS["at-bundesliga"] = {
         mix:[["Comercial / Sponsors",10.946],["Estadio",6.163],["Televisión",4.461],["Venta de Jugadores",2.009],["Otros ingresos",4.267]] },
     ],
   },
+  2014: {
+    leagueSize: 10,
+    wiki: {"t":"2013–14 Austrian Football Bundesliga","lang":"en","at":"2026-10-25","n":10},
+    clubs: [
+      { id:"rapidwien-at", revenue:37.759, reportType:"official_balance_sheet",
+        sourceId:"rapidwien-at-geschaeftsbericht-2013-14",
+        mix:[["Comercial / Sponsors",12.467],["Estadio",9.922],["Televisión",5.862],["Venta de Jugadores",7.136],["Otros ingresos",2.371]] },
+    ],
+  },
   2013: {
     leagueSize: 10,
     wiki: {"t":"2012–13 Austrian Football Bundesliga","lang":"en","at":"2026-10-25","n":10},

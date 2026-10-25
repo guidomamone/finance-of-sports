@@ -37,6 +37,60 @@
           }
         ]
       },
+      "2014": {
+        "wikipediaPage": "2013–14 Austrian Football Bundesliga",
+        "lang": "en",
+        "section": "Stadia and locations",
+        "fetchedAt": "2026-10-25T21:59:35.084Z",
+        "clubs": [
+          "Admira",
+          "Austria Vienna",
+          "Grödig",
+          "Rapid Wien",
+          "Red Bull Salzburg",
+          "SV Ried",
+          "Sturm Graz",
+          "Wacker Innsbruck",
+          "SC Wiener Neustadt",
+          "Wolfsberger AC"
+        ],
+        "posiciones": [
+          "Red Bull Salzburg",
+          "Rapid Wien",
+          "Grödig",
+          "Austria Wien",
+          "Sturm Graz",
+          "Ried",
+          "Wolfsberger AC",
+          "Wiener Neustadt",
+          "Admira Wacker Mödling",
+          "Wacker Innsbruck"
+        ],
+        "fuentes": [
+          {
+            "tipo": "wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2013%E2%80%9314_Austrian_Football_Bundesliga"
+          },
+          {
+            "tipo": "rsssf",
+            "url": "https://www.rsssf.org/tableso/oost2014.html",
+            "tabla": "Bundesliga",
+            "fetchedAt": "2026-10-25T22:00:48.510Z",
+            "equipos": [
+              "RB Salzburg",
+              "SK Rapid Wien",
+              "SV Grödig",
+              "FK Austria Wien",
+              "SK Sturm Graz",
+              "SV Ried",
+              "Wolfsberger AC",
+              "SC Wiener Neustadt",
+              "FC Admira Wacker Mödling",
+              "FC Wacker Innsbruck"
+            ]
+          }
+        ]
+      },
       "2015": {
         "wikipediaPage": "2014–15 Austrian Football Bundesliga",
         "lang": "en",

@@ -699,6 +699,10 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-20): null, SIN VERIFICAR (no hay ninguna liga-temporada de at 2014 cacheada).
 ```
 
+```text
+tools/ligas-sin-verificar.mjs (2026-10-25): at-bundesliga, verificado contra la lista de equipos de "2013–14 Austrian Football Bundesliga" (Wikipedia; tools/club-league-reference/at.json, at-bundesliga 2014). Antes: sin fila.
+```
+
 ## 2013
 
 ### Ingresos
