@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1089 — inventario de ingresos con margen bruto y punto 455 (estimado de Ligas y detección en el pipeline) [455 · 447]
+- `Admin/mediciones/455-ingresos-con-margen-bruto.md`: 53 de 1340 ejercicios en 14 clubes (solo Bélgica y Dinamarca cargados), peso por liga-año, la identidad del margen belga (ingreso = margen + compras + servicios, verificada al euro) y qué se recupera sin estimar (Lommel 2022/23, RWDM 2023/24, Patro Eisden 2020); el margen no sirve de proxy (razón 2 a 18).
+- Casuísticas revisadas: Fredrikstad «Annen driftsinntekt» es el ingreso total; «Receita Operacional Bruta» de Remo no tiene deducciones; el resto sin hallazgos.
+- `Admin/TODO.md`: punto 455 con la propuesta aprobada (estimado solo en Ligas, formato de estimados existente, dato real lo pisa) y los cambios de pipeline.
+- Medición: no aplica (documentos y TODO; sin tools).
+
 ## Versión 1088 — «Notas sobre este club»: sin montos, años consecutivos juntos, nota del margen bruto y del renglón parcial [447 · 454]
 - `js/finanzas-render.js` (`renderNotasClub`): las notas ya no llevan el importe (la tabla lo muestra) y los ejercicios consecutivos con la misma nota se juntan en un punto («2019/20 a 2022/23»; en inglés «to»).
 - Texto nuevo del margen bruto: no sabemos cuántos ingresos generó el club, solo la diferencia con parte de sus costos; no comparar con años que abren los ingresos. Caso nuevo `salesPart` (el renglón sin abrir es una parte de los ingresos del año): se dice que figura como s/d y que el resto está abierto, sin afirmar que el total es comparable (antes lo decía en más de 200 ejercicios).
