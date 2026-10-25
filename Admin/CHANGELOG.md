@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1081 — 444 cerrado: ningún documento de un club con algo cargado frena por falta de cierre [444]
+
+- Estado final: los documentos anuales sin cierre en el registro pasaron de 675 a 302; de los de clubes con algo cargado (175), 44 los deducen los vecinos, 102 los confirmó la cola (`cierre-por-pais`), 29 ya tienen el año cargado y 0 frenan (el P3 `cierre-sin-fecha` lo cuenta). Los otros 127 son de clubes todavía sin cargar (Francia 43, Corea del Sur 14, Turquía 10, Chequia 9, Japón 8, Ucrania 8…): su fecha se resuelve al darlos de alta (vecinos, `cierre-propuestas --escribir` para los países con cierre por defecto, o un ajuste `cierre` leído del documento), y si un club entra con un cierre que `periodo.mjs` no lee (Corea del Sur: «AAAA년 MM월 DD일 까지») se mejora ahí, midiendo.
+- Verificado a mano (444): fos cierre-sin-fecha da 0 que frenan; 13 ajustes cierre leídos del documento, 163 preguntas de cola contestadas, 25 descartados; el P3 cierre-sin-fecha cuenta los de clubes cargados (0 hoy)
+- Medición: solo documentos y registros; ver las entradas 1079 y 1080.
+
 ## Versión 1080 — auditoria.mjs: un informe del auditor descartado como fuente de carga sigue siendo fuente de la auditoría [auditoria.mjs]
 
 - Guido: cada club deja su informe del auditor. Pero `auditoria.mjs` sacaba de sus fuentes todo lo que está en `documentos-descartados.txt`, y ahí hay unos 300 dictámenes (226 «dictamen del revisor fiscal», el resto «informe del auditor…»): descartar un dictamen suelto lo dejaba sin con qué citar la línea del club-año. Ahora un descartado cuyo motivo empieza por dictamen o informe del auditor/revisor no se excluye de la auditoría. Hoy no cambia ningún resultado (`--pendientes` 359 antes y después, `--check` al día): evita que pase cuando se cargue el balance de uno de esos años.
