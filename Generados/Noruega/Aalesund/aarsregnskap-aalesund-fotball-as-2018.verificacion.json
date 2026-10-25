@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf",
  "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.md",
- "generado": "2026-10-25T05:40:39.336Z",
+ "generado": "2026-10-25T20:57:37.629Z",
  "scriptHuella": "f1d4dee41de6",
  "estado": "cola",
  "clubId": "aalesund-no",
@@ -25,17 +25,13 @@
   }
  ],
  "cola": [
-  "8a13a4d",
-  "062e8d6",
-  "d324525",
-  "d029f70",
   "33a73c3"
  ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "\"Sum driftsinntekter\" 41.591465 cierra; además se suman 1 línea(s) fuera de ese total (41.591465)"
+   "detalle": "\"Sum driftsinntekter\" 41.591465 cierra con los renglones del lado (1 línea(s)): la fila del total no se suma aparte"
   },
   {
    "nombre": "total de gastos",
@@ -46,9 +42,9 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 83.18293 - gastos 41.479064 ± financiero 2.412778 ± impuesto 0 no da el impreso 1.201748",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 9.999999981413765e-7
   },
   {
    "nombre": "año anterior cargado",
@@ -59,20 +55,21 @@
  "notas": [
   "la nota de \"Driftsinntekter\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "duda de localizar que no afecta la carga: b1 (pág. 2, formato formulario Brønnøysund) y b3 (pág. 6, estado del informe) parecen el mismo resultatregnskap de Ålesund Fotball AS.",
-  "duda de extraer que no afecta la carga: Ningún bloque imprime la escala; los importes con todos los dígitos sugieren unidades."
+  "duda de extraer que no afecta la carga: Ningún bloque imprime la escala; los importes con todos los dígitos sugieren unidades.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 83.18293,
+  "ingresos": 41.591465,
   "gastos": 41.479064,
   "financiero": 2.412778,
   "impuesto": 0,
   "resultadoImpreso": 1.201748,
   "resultadoParaCargar": 1.201748,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero por rótulo"
  },
  "lineas": [
   {
@@ -81,14 +78,6 @@
    "M": 41.591465,
    "pagina": 6,
    "linea": 344,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Sum driftsinntekter",
-   "lado": "ingreso",
-   "M": 41.591465,
-   "pagina": 6,
-   "linea": 345,
    "origen": "estado"
   },
   {
@@ -149,7 +138,7 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
+  "financiero": "rótulo",
   "impuesto": 1
  },
  "financiero": [
@@ -170,12 +159,12 @@
   },
   {
    "etiqueta": "Nedskrivning av finansielle anleggsmidler",
-   "M": 0.54583,
+   "M": -0.54583,
    "linea": 356
   },
   {
    "etiqueta": "Annen rentekostnad",
-   "M": 0.115885,
+   "M": -0.115885,
    "linea": 357
   },
   {
@@ -184,5 +173,31 @@
    "linea": 358
   }
  ],
- "impuesto": []
+ "impuesto": [],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "pendiente",
+  "clave": "e7b9ea0db99b767ebb57395ffee4863cef9f775c",
+  "rango": [
+   341,
+   368
+  ],
+  "lineasCargadas": [
+   344,
+   346,
+   822,
+   823,
+   824,
+   825,
+   348,
+   349,
+   352,
+   353,
+   354,
+   356,
+   357,
+   358
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 341 a 368 del .md):\nL342: |   | Note | 2018 | 2017  |\nL343: | --- | --- | --- | --- |\nL344: |  Driftsinntekter | 12,16 | 41 591 465 | 56 664 817  |\nL345: |  **Sum driftsinntekter** |  | **41 591 465** | **56 664 817**  |\nL346: |  Varekostnad |  | 3 189 119 | 4 468 910  |\nL347: |  Lønnskostnad | 10,13 | 7 197 700 | 7 573 112  |\nL348: |  Avskrivning varige driftsmidler | 1,2 | 1 445 907 | 1 022 093  |\nL349: |  Annen driftskostnad | 13-15 | 29 646 338 | 45 275 303  |\nL350: |  **Sum driftskostnad** |  | **41 479 064** | **58 339 419**  |\nL351: |  **Driftsresultat** |  | **112 400** | **-1 674 602**  |\nL352: |  Inntekt på investering i datterselskap | 3 | 221 485 | 126 895  |\nL353: |  Annen renteinntekt |  | 604 107 | 619 872  |\nL354: |  Annen finansinntekt |  | 925 471 | 55 756  |\nL355: |  **Sum finansinntekter** |  | **1 751 063** | **802 523**  |\nL356: |  Nedskrivning av finansielle anleggsmidler | 17 | 545 830 | 550 801  |\nL357: |  Annen rentekostnad |  | 115 885 | 123 813  |\nL358: |  Annen finanskostnad |  | 0 | 68 656  |\nL359: |  **Sum finanskostnader** |  | **661 715** | **743 270**  |\nL360: |  **Sum netto finansposter** |  | **1 089 348** | **59 253**  |\nL361: |  **Ordinært resultat før skattekostnad** |  | **1 201 748** | **-1 615 349**  |\nL362: |  **Ordinært resultat** |  | **1 201 748** | **-1 615 349**  |\nL363: |  **Årsresultat** | **11,19** | **1 201 748** | **-1 615 349**  |\nL364: |  Overført til udekket tap | 8 | 1 201 748 | -1 615 349  |\nL365: |  **Sum disponert** |  | **1 201 748** | **-1 615 349**  |\nL367: Ålesund Fotball AS Org.nr. 970976787\n\nLO QUE SE CARGA:\n- ingreso · \"Driftsinntekter\" · 41.591465 · L344\n- gasto · \"Varekostnad\" · 3.189119 · L346\n- gasto · \"Lønninger\" · 5.690818 · L822 (de una nota)\n- gasto · \"Arbeidsgiveravgift\" · 0.843734 · L823 (de una nota)\n- gasto · \"Pensjonskostnader\" · 0.095287 · L824 (de una nota)\n- gasto · \"Andre ytelser\" · 0.567861 · L825 (de una nota)\n- gasto · \"Avskrivning varige driftsmidler\" · 1.445907 · L348\n- gasto · \"Annen driftskostnad\" · 29.646338 · L349\n- financiero · \"Inntekt på investering i datterselskap\" · 0.221485 · L352\n- financiero · \"Annen renteinntekt\" · 0.604107 · L353\n- financiero · \"Annen finansinntekt\" · 0.925471 · L354\n- financiero · \"Nedskrivning av finansielle anleggsmidler\" · -0.54583 · L356\n- financiero · \"Annen rentekostnad\" · -0.115885 · L357\n- financiero · \"Annen finanskostnad\" · 0 · L358"
+ }
 }

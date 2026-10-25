@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Inglaterra/Morecambe/morecambe-medium-accounts-2024-25-ixbrl.pdf",
  "md": "Clubes/Inglaterra/Morecambe/morecambe-medium-accounts-2024-25-ixbrl.md",
- "generado": "2026-10-21T18:23:18.466Z",
- "scriptHuella": "ffd3f13bb18c",
- "estado": "cola",
+ "generado": "2026-10-25T20:58:41.367Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -13,11 +13,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "0b6cb97",
-  "143026b",
-  "4b7e80d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -33,31 +29,38 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 5.0763 - gastos 0.000914 ± financiero 0.00078 ± impuesto 0.062666 no da el impreso -0.000001",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 8.881784197001252e-16
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)"
   }
  ],
  "notas": [
-  "duda de localizar que no afecta la carga: b18 repite el total de turnover en una sola fila geográfica y no abre ninguna categoría."
+  "duda de localizar que no afecta la carga: b18 repite el total de turnover en una sola fila geográfica y no abre ninguna categoría.",
+  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en morecambe-medium-accounts-2024-25-ixbrl.pdf",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 5.0763,
-  "gastos": 0.000914,
-  "financiero": 0.00078,
+  "gastos": 5.800961,
+  "financiero": -0.361455,
   "impuesto": 0.062666,
-  "resultadoImpreso": -0.000001,
-  "resultadoParaCargar": -0.000001,
+  "resultadoImpreso": -1.02345,
+  "resultadoParaCargar": -1.02345,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -111,7 +114,7 @@
   {
    "etiqueta": "Cost of sales",
    "lado": "gasto",
-   "M": 0.000005,
+   "M": 4.892287,
    "pagina": 11,
    "linea": 249,
    "origen": "estado"
@@ -119,7 +122,7 @@
   {
    "etiqueta": "Administrative expenses",
    "lado": "gasto",
-   "M": 0.000909,
+   "M": 0.908674,
    "pagina": 11,
    "linea": 251,
    "origen": "estado"
@@ -145,7 +148,7 @@
   },
   {
    "etiqueta": "Interest payable and similar charges",
-   "M": -0.000363,
+   "M": -0.362598,
    "linea": 255
   }
  ],

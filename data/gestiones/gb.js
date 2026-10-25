@@ -95,4 +95,102 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Peter Lawwell', corto:'Lawwell', cargo:'Chairman', desde:'2023-01-01', hasta:'2025-12-31',
       fuente:'https://www.investegate.co.uk/announcement/rns/celtic--ccp/board-change/2773711', confirmada:true },
   ],
+  'bathrugby-gb': [
+    { nombre:'Bruce Craig', corto:'Craig', cargo:'Chairman', desde:'2010-04-14', hasta:'2021-12-31',
+      fuente:'https://www.rugbypass.com/news/bath-owner-bruce-craig-steps-aside-as-chairman-for-ed-griffiths/', confirmada:true },
+    { nombre:'Edward Griffiths', corto:'Griffiths', cargo:'Chairman', desde:'2022-01-01', hasta:'2022-05-25',
+      fuente:'https://uk.sports.yahoo.com/news/ed-griffiths-leaves-role-bath-145407245.html', confirmada:true },
+    { nombre:'Bruce Craig', corto:'Craig', cargo:'Dueño', desde:'2022-05-25', hasta:null,
+      fuente:'https://www.rugbypass.com/news/bath-rugby-turnover-breaks-20m-but-losses-increase/', confirmada:true },
+  ],
+  'barnsley-gb': [
+    { nombre:'Neerav Parekh', corto:'Parekh', cargo:'Chairman', desde:'2022-05-01', hasta:null,
+      fuente:'https://en.wikipedia.org/wiki/2024%E2%80%9325_Barnsley_F.C._season', confirmada:true },
+  ],
+  'carlisleunited-gb': [
+    { nombre:'Tom Piatak', corto:'Piatak', cargo:'Chairman', desde:'2023-11-22', hasta:null,
+      fuente:'https://www.cumberland.gov.uk/news/2024/new-training-facility-carlisle-united-football-club-confirmed', confirmada:true },
+  ],
+  'shrewsburytown-gb': [
+    { nombre:'Roland Wycherley', corto:'Wycherley', cargo:'Chairman', desde:'1996-07-08', hasta:null,
+      fuente:'https://www.shrewsburytown.com/news/2021/july/roland-wycherley-mbe-celebrates-25-years-as-salop-chairman/', confirmada:true },
+  ],
+  'afcwimbledon-gb': [
+    { nombre:'Mick Buckley', corto:'Buckley', cargo:'Chairman', desde:'2022-01-01', hasta:null,
+      fuente:'https://thedonstrust.org/2025/04/28/statement-afc-wimbledon-club-board-chair-appointment/', confirmada:true },
+  ],
+  'burtonalbion-gb': [
+    { nombre:'Ole Jakob Strandhagen', corto:'Strandhagen', cargo:'Chairman', desde:'2024-05-31', hasta:null,
+      fuente:'https://www.beswicks.com/beswicks-legal-advises-on-purchase-of-burton-albion-football-club/', confirmada:true },
+  ],
+  'exetercity-gb': [
+    { nombre:'Nick Hawker', corto:'Hawker', cargo:'Chairman', desde:'2021-12-01', hasta:null,
+      fuente:'https://www.exetercityfc.co.uk/news/2021/december/club-chair', confirmada:true },
+  ],
+  'gillingham-gb': [
+    { nombre:'Brad Galinson', corto:'Galinson', cargo:'Chairman', desde:'2022-12-23', hasta:null,
+      fuente:'https://en.wikipedia.org/wiki/2024%E2%80%9325_Gillingham_F.C._season', confirmada:true },
+  ],
+  'lincolncity-gb': [
+    { nombre:'Clive Nates', corto:'Nates', cargo:'Chairman', desde:'2018-06-06', hasta:'2026-02-04',
+      fuente:'https://www.weareimps.com/news/2018/june/180606-chairman-announcement', confirmada:true },
+  ],
+  'wiganathletic-gb': [
+    { nombre:'Ben Goodburn', corto:'Goodburn', cargo:'Chairman', desde:'2023-08-01', hasta:null,
+      fuente:'https://www.wigantoday.net/sport/football/new-wigan-athletic-owner-sends-warning-shot-to-rest-of-league-one-4252815', confirmada:true },
+  ],
+  'chesterfield-gb': [
+    { nombre:'Mike Goodwin', corto:'Goodwin', cargo:'Chairman', desde:'2020-08-06', hasta:'2025-08-08',
+      fuente:'https://www.hellorayo.co.uk/hits-radio/south-yorkshire/news/chairman-changes-chesterfield-fc', confirmada:true },
+  ],
+  'boltonwanderers-gb': [
+    { nombre:'Sharon Brittan', corto:'Brittan', cargo:'Chairman', desde:'2019-08-28', hasta:null,
+      fuente:'https://www.bwfc.co.uk/club/company-details', confirmada:true },
+  ],
+  'crewealexandra-gb': [
+    { nombre:'Charles Grant', corto:'Grant', cargo:'Chairman', desde:'2021-08-27', hasta:null,
+      fuente:'https://crewe.nub.news/news/local-sport/crewe-alex-charles-grant-appointed-new-club-chairman', confirmada:true },
+  ],
+  'northamptontown-gb': [
+    { nombre:'Kelvin Thomas', corto:'Thomas', cargo:'Chairman', desde:'2015-11-23', hasta:null,
+      fuente:'https://itv.com/news/anglia/update/2015-11-23/breaking-cobblers-deal-is-done', confirmada:true },
+  ],
+  'blackpool-gb': [
+    { nombre:'Simon Sadler', corto:'Sadler', cargo:'Dueño', desde:'2019-06-13', hasta:null,
+      fuente:'https://en.wikipedia.org/wiki/Simon_Sadler_(businessman)', confirmada:true },
+  ],
+  'bristolrovers-gb': [
+    { nombre:'Hussain AlSaeed', corto:'AlSaeed', cargo:'Chairman', desde:'2023-08-03', hasta:null,
+      fuente:'https://www.hellorayo.co.uk/greatest-hits/bristol/news/bristol-rovers-announce-new-ownership-structure', confirmada:true },
+  ],
+  'cambridgeunited-gb': [
+    { nombre:'Shaun Grady', corto:'Grady', cargo:'Chairman', desde:'2017-12-17', hasta:'2026-07-27',
+      fuente:'https://www.cambridgeunited.com/news/godric-smith-appointed-chair-cambridge-united-mike-davey-appointed-foundation-chair', confirmada:true },
+  ],
+  'oxfordunited-gb': [
+    { nombre:'Grant Ferguson', corto:'Ferguson', cargo:'Chairman', desde:'2022-09-27', hasta:'2026-05-06',
+      fuente:'https://www.oufc.co.uk/news/2022/september/club-statement-board-changes/', confirmada:true },
+  ],
+  'peterboroughunited-gb': [
+    { nombre:'Darragh MacAnthony', corto:'MacAnthony', cargo:'Chairman', desde:'2006-09-18', hasta:null,
+      fuente:'https://find-and-update.company-information.service.gov.uk/company/00290803/officers', confirmada:true },
+  ],
+  'plymouthargyle-gb': [
+    { nombre:'Simon Hallett', corto:'Hallett', cargo:'Chairman', desde:'2018-11-01', hasta:null,
+      fuente:'https://www.pafc.co.uk/news/2018/november/chairman-in-town', confirmada:true },
+  ],
+  'reading-gb': [
+    { nombre:'Dai Yongge', corto:'Dai', cargo:'Dueño', desde:'2017-05-01', hasta:'2025-05-14',
+      fuente:'https://en.wikipedia.org/wiki/Dai_Yongge', confirmada:true },
+    { nombre:'Rob Couhig', corto:'Couhig', cargo:'Chairman', desde:'2025-05-14', hasta:null,
+      fuente:'https://www.thestadiumbusiness.com/2025/05/15/redwood-completes-acquisition-of-reading-scl-stadium/', confirmada:true },
+  ],
+  'rotherhamunited-gb': [
+    { nombre:'Tony Stewart', corto:'Stewart', cargo:'Chairman', desde:'2008-07-01', hasta:null,
+      fuente:'https://en.wikipedia.org/wiki/Rotherham_United_F.C.', confirmada:true },
+  ],
+  'tranmererovers-gb': [
+    { nombre:'Mark Palios', corto:'Palios', cargo:'Chairman', desde:'2014-08-11', hasta:null,
+      fuente:'https://en.wikipedia.org/wiki/Mark_Palios', confirmada:true },
+  ],
 });
