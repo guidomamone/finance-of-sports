@@ -205,6 +205,8 @@ export function escribir(P) {
       ...(M.extraRows ? { extraRows: M.extraRows.map((x) => ({ label: x.label, value: r6(x.value ?? null) })) } : {}),
       ...(M.incluidoEn ? { incluidoEn: M.incluidoEn } : {}),
       ...(M.sinDesglose ? { sinDesglose: M.sinDesglose.map((x) => ({ renglon: x.renglon, lado: x.lado, importe: r6(x.importe), motivo: x.motivo, ...(x.tipo ? { tipo: x.tipo } : {}) })) } : {}),
+      // la base del ingreso del año y, si el documento no lo imprime y se reconstruyó, su derivación (tools/ingreso-derivado.js; punto 455): sin esto el año queda sin marca y audit.js frena
+      ...(M.baseIngreso ? { baseIngreso: M.baseIngreso } : {}), ...(M.derivacionIngreso ? { derivacionIngreso: M.derivacionIngreso } : {}),
       grossDebt: r6(M.grossDebt ?? null), cash: r6(M.cash ?? null), ...(M.staffCost != null ? { staffCost: r6(M.staffCost) } : {}),
       officialTotalRevenue: r6(M.officialTotalRevenue ?? null), officialTotalExpenses: r6(M.officialTotalExpenses ?? null), officialPAT: r6(M.officialPAT ?? null),
     };

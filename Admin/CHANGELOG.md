@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1094 — cargar-escribir.mjs, nbb.mjs, ingreso-derivado.js, audit-chequeos-3.js: la escritura persiste la marca de ingreso, el reconstruido lleva su rótulo y el margen reconstruible frena [455 · cargar-escribir.mjs, cargar-ejercicio.mjs, nbb.mjs, ingreso-derivado.js, ingreso-base.mjs, audit-chequeos-3.js, prueba-escribir.mjs]
+- `cargar-escribir.mjs`: el escritor copiaba una lista fija de campos y descartaba `baseIngreso`/`derivacionIngreso`: un año cargado por el pipeline quedaba sin marca (lo atrapó `prueba-escribir.mjs` al subir `ingreso-sin-base` a P1; ahora muestra el detalle del revert). `nbb.mjs`: la hoja reconstruida 70/74 lleva su rótulo (antes «Brutomarge», el de la fila a la que apunta).
+- `ingreso-derivado.js`: la identidad margen + compras y servicios se reconoce también por línea (un año con extraordinarios aparte, Patro Eisden 2015 y 2017, Dender 2017); `ingreso-base.mjs` agrega la derivación a un año ya marcado.
+- `audit-chequeos-3.js`: `ingreso-sin-base` y `margen-reconstruible` (un año de margen cuyo documento imprime 60/61) son P1.
+- Medición: 8 diferencias, todas explicadas (lote completo): la prueba de escritura pasa con las tools nuevas y falla con las commiteadas (su chequeo marcaba a Patro Eisden 2015 y 2017); cargar idéntico. La rama nueva de nbb no está en los lotes de prueba.
+
 ## Versión 1093 — cargar-ejercicio.mjs, nbb.mjs, tipo-sin-desglose.js, ingreso-derivado.js, audit-chequeos-3.js: la carga marca el ingreso (revenue_basis, revenue_derivation) y reconstruye el belga con margen + compras y servicios [455 · cargar-ejercicio.mjs, nbb.mjs, tipo-sin-desglose.js, ingreso-derivado.js, ingreso-base.mjs, audit-chequeos-3.js]
 - `cargar-ejercicio.mjs`: cada año cargado lleva `baseIngreso` (completo, ventas totales o margen bruto) y `derivacionIngreso` si se reconstruyó; un año de margen sin reconstrucción posible avisa. La regla es una sola, `baseDeIngreso` de `ingreso-derivado.js`, compartida con `fos ingreso-base`.
 - `nbb.mjs`: con 9900 y 60/61 impresos y un residuo negativo (las partes de ingreso impresas no cuadran) el ingreso es una línea, 70/74 = 9900 + 60/61, en vez del margen; no cambia ningún año cargado salvo Patro Eisden 2020 (ya corregido en el dato); 4 columnas de 302 documentos belgas usan la rama.

@@ -37,10 +37,13 @@ function margenYCostos(rutaPdf) {
   return r;
 }
 
-// ¿El ingreso cargado `total` (millones) es exactamente margen + costos del documento? true / false, o null si el documento no imprime ambos.
-function cierraConDocumento(rutaPdf, total) {
-  const d = margenYCostos(rutaPdf); if (!d || total == null) return null;
-  return Math.abs(total - (d.margen + d.costos) / 1e6) <= TOL;
+// ¿El ingreso cargado es exactamente margen + costos del documento? Lo es el `total` (millones) o, si el año suma también ingresos extraordinarios (código 76) que la
+// identidad no incluye, UNA de las líneas (`importes`). true / false, o null si el documento no imprime ambos.
+function cierraConDocumento(rutaPdf, total, importes = []) {
+  const d = margenYCostos(rutaPdf); if (!d) return null;
+  const objetivo = (d.margen + d.costos) / 1e6;
+  if (total == null && !importes.length) return null;
+  return (total != null && Math.abs(total - objetivo) <= TOL) || importes.some((v) => v != null && Math.abs(v - objetivo) <= TOL);
 }
 
 // Qué son los ingresos cargados de un ejercicio (`revenue_basis`) y, si el documento no los imprime y se reconstruyeron, cómo (`revenue_derivation`). Lo usan
@@ -50,7 +53,7 @@ function cierraConDocumento(rutaPdf, total) {
 function baseDeIngreso({ lineas, sinDesglose, documento, totalRevenue, sourceId }) {
   if (!lineas || !lineas.length) return null;
   const sd = (sinDesglose || []).find((e) => /^(revenue|ingreso)$/.test(e.lado));
-  const reconstruido = (documento && cierraConDocumento(documento, totalRevenue) === true) || lineas.some((l) => RENGLON_IMPLICITO.test(l.rawLabel || ''));
+  const reconstruido = (documento && cierraConDocumento(documento, totalRevenue, lineas.map((l) => l.amountNative)) === true) || lineas.some((l) => RENGLON_IMPLICITO.test(l.rawLabel || ''));
   if (reconstruido) return { base: lineas.length === 1 ? 'sales_total' : 'full', derivacion: { method: 'margin_plus_costs', sources: [sourceId] } };
   if (sd && sd.tipo === 'gross_margin') return { base: 'gross_margin' };
   if (lineas.length === 1 && /^lump_/.test(lineas[0].normalizedCategory || '')) return { base: 'sales_total' };

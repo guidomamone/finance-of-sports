@@ -41,7 +41,8 @@ function completar(c, aplicar) {
     if (b.derivacion) r.derivadas.push(y);
     if (b.base === 'gross_margin') r.margen.push(y);
     const meta = c.datos.fiscalYearMeta[y];
-    if (meta.baseIngreso) { r.yaEstaba++; continue; }
+    // un año ya marcado se deja, salvo que ahora se reconozca reconstruido y no lleve su derivación (la regla de ingreso-derivado.js se afina con los casos)
+    if (meta.baseIngreso) { r.yaEstaba++; if (aplicar && b.derivacion && !meta.derivacionIngreso) meta.derivacionIngreso = b.derivacion; continue; }
     if (aplicar) { meta.baseIngreso = b.base; if (b.derivacion) meta.derivacionIngreso = b.derivacion; }
   }
   return r;

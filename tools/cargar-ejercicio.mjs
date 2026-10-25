@@ -205,7 +205,7 @@ export function faseEjercicio(ctx) {
   // QUÉ SON LOS INGRESOS DEL AÑO (`baseIngreso`: completo, ventas totales o margen bruto) y, si el documento no los imprime y se reconstruyeron con margen + compras y
   // servicios, `derivacionIngreso` (tools/ingreso-derivado.js, la misma regla que `fos ingreso-base`). Un año de margen bruto sin reconstrucción posible avisa: el ingreso
   // real no se conoce y Ligas lo trata como hueco (punto 455).
-  const bi = baseDeIngreso({ lineas: rev.map((f) => ({ rawLabel: f.label, normalizedCategory: f.cat })), sinDesglose, documento: pdf, totalRevenue: T.officialTotalRevenue, sourceId });
+  const bi = baseDeIngreso({ lineas: rev.map((f) => ({ rawLabel: f.label, normalizedCategory: f.cat, amountNative: f.amountNative })), sinDesglose, documento: pdf, totalRevenue: T.officialTotalRevenue, sourceId });
   if (bi && bi.base === 'gross_margin') P.avisos.push('ingresos: el documento imprime solo el margen bruto (ya neto de costos), no los ingresos; se marca gross_margin. Si el documento imprime también compras y servicios (60, 61 o 60/61), el ingreso se reconstruye como margen + compras y servicios');
   P.ejercicio = {
     clubId, year, cierre: alta.ejercicio.cierre, perimetro,

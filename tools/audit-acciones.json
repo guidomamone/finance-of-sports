@@ -155,6 +155,11 @@
   "quien": "sesion",
   "donde": "punto 455 (Admin/mediciones/455-ingresos-con-margen-bruto.md)"
  },
+ "margen-reconstruible": {
+  "hacer": "Un año marcado gross_margin tiene un documento que imprime margen bruto y compras y servicios: el ingreso es margen + compras y servicios (tools/ingreso-derivado.js). Recargarlo con node tools/cargar.mjs \"<pdf>\" --reemplazar --escribir (el lector NBB lo reconstruye) y correr node tools/fos.mjs ingreso-base --escribir.",
+  "quien": "sesion",
+  "donde": "punto 455 (Admin/mediciones/455-ingresos-con-margen-bruto.md)"
+ },
  "ingreso-reconstruido-no-cierra": {
   "hacer": "Un ejercicio con revenue_derivation ya no es margen bruto + compras y servicios de su documento (se recargó y perdió la reconstrucción). Volver a cargarlo reconstruido (tools/ingreso-derivado.js dice cómo cierra) o, si el documento cambió, sacar revenue_derivation y marcarlo gross_margin con su motivo.",
   "quien": "sesion",

@@ -34,7 +34,7 @@ try {
   execFileSync('node', [join(W, 'tools/generar-data.mjs')], { cwd: W, encoding: 'utf8' });
   const r = spawnSync('node', [join(W, 'tools/cargar.mjs'), PDF, '--desde-verificacion', '--escribir'], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28 });
   const salida = r.stdout + r.stderr; const rev = salida.match(/REVERTIDO[^\n]*/);
-  if (r.status !== 0 || rev) throw new Error(rev ? rev[0] : `cargar.mjs salió con ${r.status}: ${salida.trim().split('\n').slice(-3).join(' | ')}`);
+  if (r.status !== 0 || rev) throw new Error(rev ? salida.slice(salida.indexOf(rev[0])).split('\n').slice(0, 12).join(' | ') :`cargar.mjs salió con ${r.status}: ${salida.trim().split('\n').slice(-3).join(' | ')}`);
   const fuentes = JSON.parse(readFileSync(jf, 'utf8')).sources || []; const fuente = fuentes.find((s) => s.id === ID_FUENTE);
   if (!fuente) throw new Error(`la carga no creó la fuente ${ID_FUENTE} (fuentes: ${fuentes.map((s) => s.id).join(', ')}; exit ${r.status}; salida: ${JSON.stringify(salida.slice(0, 600))})`);
   if (fuente.public_note !== 'Informe oficial en formato XHTML (iXBRL)') throw new Error(`la fuente nueva no trae la nota XHTML (public_note: ${fuente.public_note})`);

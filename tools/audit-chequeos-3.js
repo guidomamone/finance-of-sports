@@ -405,24 +405,27 @@ function checkCambioDeFormatoSinNota(api) {
 }
 
 // Los ejercicios con `revenue_derivation` no imprimen sus ingresos: se reconstruyeron como margen bruto + compras y servicios del propio documento (tools/ingreso-derivado.js).
-// P1 si uno ya no cierra (se recargó y perdió la reconstrucción: el visitante vería el margen como si fuera ingreso). P2 si un ejercicio con ingresos no tiene
-// `revenue_basis` (cargar-ejercicio.mjs lo escribe al cargar; fos ingreso-base lo completa en lo ya cargado). Punto 455.
+// P1 si uno ya no cierra, o si un año de margen bruto tiene un documento que imprime también compras y servicios (se debió reconstruir: se recargó y perdió la
+// reconstrucción, y el visitante vería el margen como si fuera ingreso). P1 si un ejercicio con ingresos no tiene `revenue_basis` (cargar-ejercicio.mjs lo escribe al
+// cargar; fos ingreso-base lo completa en lo ya cargado: un año sin la marca es una carga que no pasó por la tool). Punto 455.
 function checkIngresoBase(api) {
-  const { cierraConDocumento, RENGLON_IMPLICITO } = require('./ingreso-derivado.js');
-  const noCierra = [], sinBase = [];
+  const { cierraConDocumento, margenYCostos, RENGLON_IMPLICITO } = require('./ingreso-derivado.js');
+  const noCierra = [], sinBase = [], reconstruible = [];
   for (const [clubId, g] of Object.entries(api.generic)) {
     for (const [y, m] of Object.entries(g.fiscalYearMeta || {})) {
       const lineas = (g.revenueLinesByYear || {})[y] || [];
       if (!lineas.length) continue;
       if (!m.baseIngreso) sinBase.push(`${clubId} ${y}`);
+      if (m.baseIngreso === 'gross_margin' && margenYCostos((api.sources[m.sourceId] || {}).documento)) reconstruible.push(`${clubId} ${y}`);
       if (!m.derivacionIngreso) continue;
       const s = api.sources[m.sourceId] || {};
       const porRotulo = lineas.some((l) => RENGLON_IMPLICITO.test(l.rawLabel || ''));
-      if (!porRotulo && !(s.documento && cierraConDocumento(s.documento, m.officialTotalRevenue) === true)) noCierra.push(`${clubId} ${y}`);
+      if (!porRotulo && !(s.documento && cierraConDocumento(s.documento, m.officialTotalRevenue, lineas.map((l) => l.amountNative)) === true)) noCierra.push(`${clubId} ${y}`);
     }
   }
   if (noCierra.length) add('P1', 'ingreso-reconstruido-no-cierra', `${noCierra.length} ejercicio(s) con revenue_derivation cuyo ingreso ya no es margen bruto + compras y servicios del documento: ${noCierra.slice(0, 6).join(', ')}${noCierra.length > 6 ? ', …' : ''}. Se recargó y perdió la reconstrucción (Admin/mediciones/455-ingresos-con-margen-bruto.md)`);
-  if (sinBase.length) add('P2', 'ingreso-sin-base', `${sinBase.length} ejercicio(s) con ingresos y sin revenue_basis: ${sinBase.slice(0, 6).join(', ')}${sinBase.length > 6 ? ', …' : ''}. node tools/fos.mjs ingreso-base --escribir`);
+  if (reconstruible.length) add('P1', 'margen-reconstruible', `${reconstruible.length} ejercicio(s) marcados como margen bruto cuyo documento imprime también compras y servicios (60/61): el ingreso se reconstruye como margen + compras y servicios: ${reconstruible.slice(0, 6).join(', ')}${reconstruible.length > 6 ? ', …' : ''}. Recargar el año con node tools/cargar.mjs "<pdf>" --reemplazar --escribir`);
+  if (sinBase.length) add('P1', 'ingreso-sin-base', `${sinBase.length} ejercicio(s) con ingresos y sin revenue_basis: ${sinBase.slice(0, 6).join(', ')}${sinBase.length > 6 ? ', …' : ''}. node tools/fos.mjs ingreso-base --escribir`);
 }
 
 function checkFuentesPublicas(api) {

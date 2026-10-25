@@ -224,11 +224,14 @@ export function filasNBB(F, md, { partir630: partir = true } = {}) {
   const otras = (F.filas || []).filter((f) => !(est.has(f.bloque) && !f.detalla_a));
   // rótulo: el de la fila que extrajo la IA en esa línea (así las notas que dicen abrirla la encuentran); si no, el del .md
   const deLinea = new Map((F.filas || []).filter((f) => est.has(f.bloque) && !f.detalla_a).map((f) => [Number(f.linea), f.etiqueta]));
-  const clave = (h) => `${h.codigo}|${h.residuo ? 'r' : ''}`;
+  // una hoja calculada (el residuo implícito de la Brutomarge, o el ingreso reconstruido 70/74 = 9900 + 60/61) apunta a la línea de OTRO código: su rótulo es el
+  // suyo, no el de la fila que la IA extrajo en esa línea (la Brutomarge), y no tiene importe propio en el año anterior.
+  const calculada = (h) => h.residuo || h.reconstruido;
+  const clave = (h) => `${h.codigo}|${calculada(h) ? 'r' : ''}`;
   const ant = new Map(N.anterior.hojas.map((h) => [clave(h), h]));
   const nuevas = N.actual.hojas.map((h) => {
     const a = ant.get(clave(h));
-    return { bloque: 'nbb', linea: h.linea, etiqueta: h.residuo ? h.etiqueta : (deLinea.get(h.linea) || h.etiqueta), actual: fmt(h.valor), anterior: a ? fmt(a.lado === h.lado ? a.valor : -a.valor) : (N.filas[h.codigo]?.anterior != null && !h.residuo ? '0' : null), tipo: 'renglon', lado: h.lado, detalla_a: null, codigoNBB: h.codigo };
+    return { bloque: 'nbb', linea: h.linea, etiqueta: calculada(h) ? h.etiqueta : (deLinea.get(h.linea) || h.etiqueta), actual: fmt(h.valor), anterior: a ? fmt(a.lado === h.lado ? a.valor : -a.valor) : (N.filas[h.codigo]?.anterior != null && !calculada(h) ? '0' : null), tipo: 'renglon', lado: h.lado, detalla_a: null, codigoNBB: h.codigo };
   });
   // Una hoja que solo tiene importe en la columna del año anterior NO entra: sería una fila en 0 que la categorización no conoce (RAAL La
   // Louvière 2024-25, 635/8 y 649). El chequeo del año vecino compara por los códigos impresos (verificar.mjs, escalón "códigos NBB").
