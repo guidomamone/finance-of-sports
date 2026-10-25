@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
+ "clave": "74da4af3e4e51094e7abf892f2a00e685b0647af",
+ "generado": "2026-10-25T18:46:43.641Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo cargado cuadra: 21438.202 + 3165.062 − 508.765 − 808.345 (administración, por partidas) − 13576.188 (ventas, por partidas) − 1723.822 (no operacionales, por partidas) − 895.818 − 1744.104 = 5346.222, frente a 5346.221 impreso (diferencia de redondeo). Ingresos operativos (L545) y no operacionales (L688) se cargan como totales de nota que reemplazan sus renglones, sin cargar también sus partes. Los gastos se abren por partida, sin cargar sus totales (L599, L619, L696). El impuesto diferido (L702) figura en la nota de gastos no operacionales pero fuera de su total, y es necesario para llegar al resultado."
+ }
+}

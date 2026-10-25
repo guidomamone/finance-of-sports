@@ -2,9 +2,9 @@
  "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf",
  "md": "Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
  "mdSha1": "ca23d3856a3fccdffb2b2f552016911a05c47ade",
- "ubicacionSha1": "9f52126a1e5243940c77d1ba1666465ce5ffcd66",
+ "ubicacionSha1": "5a6d3ae0a5c5593c0027ce7c107db7222dad8e27",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-25T16:47:15.017Z",
+ "generado": "2026-10-25T18:45:50.277Z",
  "ubicacion": {
   "estado": [
    "b39",
@@ -25,74 +25,64 @@
   {
    "bloque": "b39",
    "escala": "no se sabe",
-   "evidencia": "No se imprime la escala en el bloque"
+   "evidencia": "No se imprime la escala en el bloque; cifras con comas como separador de miles."
   },
   {
    "bloque": "b41",
    "escala": "no se sabe",
-   "evidencia": "No se imprime la escala"
+   "evidencia": "No se imprime la escala."
   },
   {
    "bloque": "b43",
    "escala": "no se sabe",
-   "evidencia": "No se imprime la escala"
+   "evidencia": "No se imprime la escala."
   },
   {
    "bloque": "b45",
    "escala": "no se sabe",
-   "evidencia": "No se imprime la escala"
+   "evidencia": "No se imprime la escala."
   },
   {
    "bloque": "b46",
    "escala": "no se sabe",
-   "evidencia": "No se imprime la escala"
+   "evidencia": "No se imprime la escala."
   },
   {
    "bloque": "b48",
    "escala": "no se sabe",
-   "evidencia": "No se imprime la escala"
+   "evidencia": "No se imprime la escala."
   },
   {
    "bloque": "b49",
    "escala": "no se sabe",
-   "evidencia": "No se imprime la escala"
+   "evidencia": "No se imprime la escala."
   },
   {
    "bloque": "b51",
    "escala": "no se sabe",
-   "evidencia": "No se imprime la escala"
+   "evidencia": "No se imprime la escala."
   },
   {
    "bloque": "b52",
    "escala": "no se sabe",
-   "evidencia": "No se imprime la escala"
+   "evidencia": "No se imprime la escala."
   },
   {
    "bloque": "b37",
    "escala": "miles",
-   "evidencia": "L517 capital de 15 millones de acciones a $1000 = 15,000,000 en L521 (miles de pesos)"
+   "evidencia": "L517/L521: capital de 15 millones de acciones a $1000 = 15.000.000.000, impreso 15,000,000 (miles de pesos)."
   }
  ],
  "filas": [
   {
    "bloque": "b39",
    "linea": 545,
-   "etiqueta": "INGRESOS OPERATIVOS",
+   "etiqueta": "INGRESOS OPERATIVOS:",
    "actual": "21,438,202",
    "anterior": "16,672,414",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": null
-  },
-  {
-   "bloque": "b39",
-   "linea": 546,
-   "etiqueta": "TAQUILLA-VENTA DE BOLETERIA",
-   "actual": "4,238,680",
-   "anterior": "2,007,540",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
   },
   {
    "bloque": "b39",
@@ -102,7 +92,7 @@
    "anterior": "1,059,138",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "TAQUILLA-VENTA DE BOLETERIA"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -112,7 +102,7 @@
    "anterior": "830",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "TAQUILLA-VENTA DE BOLETERIA"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -122,7 +112,7 @@
    "anterior": "936,996",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "TAQUILLA-VENTA DE BOLETERIA"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -132,7 +122,7 @@
    "anterior": "7,665,080",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -142,7 +132,7 @@
    "anterior": "137,100",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -152,17 +142,7 @@
    "anterior": "250,000",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
-  },
-  {
-   "bloque": "b39",
-   "linea": 554,
-   "etiqueta": "PUBLICIDAD Y PROPAGANDA",
-   "actual": "602,568",
-   "anterior": "288,353",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -172,17 +152,7 @@
    "anterior": "288,353",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "PUBLICIDAD Y PROPAGANDA"
-  },
-  {
-   "bloque": "b39",
-   "linea": 556,
-   "etiqueta": "DIMAYOR",
-   "actual": "4,999,450",
-   "anterior": "4,479,937",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -192,7 +162,7 @@
    "anterior": "1,047,670",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "DIMAYOR"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -202,7 +172,7 @@
    "anterior": "743,223",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "DIMAYOR"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -212,7 +182,7 @@
    "anterior": "1,826,265",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "DIMAYOR"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -222,7 +192,7 @@
    "anterior": "154,500",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "DIMAYOR"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -232,7 +202,7 @@
    "anterior": "139,678",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "DIMAYOR"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -242,7 +212,7 @@
    "anterior": "501,151",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "DIMAYOR"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -252,7 +222,7 @@
    "anterior": "67,450",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "DIMAYOR"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -262,7 +232,7 @@
    "anterior": null,
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "DIMAYOR"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -272,7 +242,7 @@
    "anterior": null,
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "DIMAYOR"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -282,7 +252,7 @@
    "anterior": "58,800",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -292,7 +262,7 @@
    "anterior": "1,856,120",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -302,17 +272,7 @@
    "anterior": "406,011",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
-  },
-  {
-   "bloque": "b39",
-   "linea": 569,
-   "etiqueta": "ACTIVIDADES CONEXAS",
-   "actual": "16,929",
-   "anterior": "225,591",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -322,7 +282,7 @@
    "anterior": "19,037",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "ACTIVIDADES CONEXAS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -332,7 +292,7 @@
    "anterior": "10,042",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "ACTIVIDADES CONEXAS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -342,7 +302,7 @@
    "anterior": "50",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "ACTIVIDADES CONEXAS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -352,7 +312,7 @@
    "anterior": "196,462",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "ACTIVIDADES CONEXAS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -362,7 +322,7 @@
    "anterior": "-614",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -372,7 +332,7 @@
    "anterior": "-25,210",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -382,7 +342,7 @@
    "anterior": "-27,500",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -392,7 +352,7 @@
    "anterior": "-456,750",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -402,7 +362,7 @@
    "anterior": "-50,000",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b39",
@@ -412,7 +372,7 @@
    "anterior": "-142,045",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "INGRESOS OPERATIVOS"
+   "detalla_a": "INGRESOS OPERATIVOS:"
   },
   {
    "bloque": "b41",
@@ -447,7 +407,7 @@
   {
    "bloque": "b43",
    "linea": 599,
-   "etiqueta": "GASTOS DE ADMINISTRACION",
+   "etiqueta": "GASTOS DE ADMINISTRACION:",
    "actual": "808,345",
    "anterior": "943,140",
    "tipo": "renglon",
@@ -462,7 +422,7 @@
    "anterior": "754,574",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE ADMINISTRACION"
+   "detalla_a": "GASTOS DE ADMINISTRACION:"
   },
   {
    "bloque": "b43",
@@ -472,7 +432,7 @@
    "anterior": "64,422",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE ADMINISTRACION"
+   "detalla_a": "GASTOS DE ADMINISTRACION:"
   },
   {
    "bloque": "b43",
@@ -482,7 +442,7 @@
    "anterior": "0",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE ADMINISTRACION"
+   "detalla_a": "GASTOS DE ADMINISTRACION:"
   },
   {
    "bloque": "b43",
@@ -492,7 +452,7 @@
    "anterior": "10,814",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE ADMINISTRACION"
+   "detalla_a": "GASTOS DE ADMINISTRACION:"
   },
   {
    "bloque": "b43",
@@ -502,7 +462,7 @@
    "anterior": "0",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE ADMINISTRACION"
+   "detalla_a": "GASTOS DE ADMINISTRACION:"
   },
   {
    "bloque": "b43",
@@ -512,7 +472,7 @@
    "anterior": "44,885",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE ADMINISTRACION"
+   "detalla_a": "GASTOS DE ADMINISTRACION:"
   },
   {
    "bloque": "b43",
@@ -522,7 +482,7 @@
    "anterior": "2,286",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE ADMINISTRACION"
+   "detalla_a": "GASTOS DE ADMINISTRACION:"
   },
   {
    "bloque": "b43",
@@ -532,7 +492,7 @@
    "anterior": "873",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE ADMINISTRACION"
+   "detalla_a": "GASTOS DE ADMINISTRACION:"
   },
   {
    "bloque": "b43",
@@ -542,7 +502,7 @@
    "anterior": "0",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE ADMINISTRACION"
+   "detalla_a": "GASTOS DE ADMINISTRACION:"
   },
   {
    "bloque": "b43",
@@ -552,7 +512,7 @@
    "anterior": "30,524",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE ADMINISTRACION"
+   "detalla_a": "GASTOS DE ADMINISTRACION:"
   },
   {
    "bloque": "b43",
@@ -562,7 +522,7 @@
    "anterior": "2,806",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE ADMINISTRACION"
+   "detalla_a": "GASTOS DE ADMINISTRACION:"
   },
   {
    "bloque": "b43",
@@ -572,12 +532,12 @@
    "anterior": "31,955",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE ADMINISTRACION"
+   "detalla_a": "GASTOS DE ADMINISTRACION:"
   },
   {
    "bloque": "b45",
    "linea": 619,
-   "etiqueta": "GASTOS DE VENTAS",
+   "etiqueta": "GASTOS DE VENTAS:",
    "actual": "13,576,188",
    "anterior": "13,931,288",
    "tipo": "renglon",
@@ -592,7 +552,7 @@
    "anterior": "7,168,507",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE VENTAS"
+   "detalla_a": "GASTOS DE VENTAS:"
   },
   {
    "bloque": "b45",
@@ -602,7 +562,7 @@
    "anterior": "163,339",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE VENTAS"
+   "detalla_a": "GASTOS DE VENTAS:"
   },
   {
    "bloque": "b45",
@@ -612,7 +572,7 @@
    "anterior": "319,124",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE VENTAS"
+   "detalla_a": "GASTOS DE VENTAS:"
   },
   {
    "bloque": "b45",
@@ -622,7 +582,7 @@
    "anterior": "536,150",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE VENTAS"
+   "detalla_a": "GASTOS DE VENTAS:"
   },
   {
    "bloque": "b45",
@@ -632,7 +592,7 @@
    "anterior": "3,586",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE VENTAS"
+   "detalla_a": "GASTOS DE VENTAS:"
   },
   {
    "bloque": "b45",
@@ -642,7 +602,7 @@
    "anterior": "50,605",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE VENTAS"
+   "detalla_a": "GASTOS DE VENTAS:"
   },
   {
    "bloque": "b46",
@@ -652,7 +612,7 @@
    "anterior": "173,314",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE VENTAS"
+   "detalla_a": "GASTOS DE VENTAS:"
   },
   {
    "bloque": "b46",
@@ -662,7 +622,7 @@
    "anterior": "1,852",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE VENTAS"
+   "detalla_a": "GASTOS DE VENTAS:"
   },
   {
    "bloque": "b46",
@@ -672,7 +632,7 @@
    "anterior": "68,112",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE VENTAS"
+   "detalla_a": "GASTOS DE VENTAS:"
   },
   {
    "bloque": "b46",
@@ -682,7 +642,7 @@
    "anterior": "3,953",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE VENTAS"
+   "detalla_a": "GASTOS DE VENTAS:"
   },
   {
    "bloque": "b46",
@@ -692,7 +652,7 @@
    "anterior": "363,668",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE VENTAS"
+   "detalla_a": "GASTOS DE VENTAS:"
   },
   {
    "bloque": "b46",
@@ -702,7 +662,7 @@
    "anterior": "90,713",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE VENTAS"
+   "detalla_a": "GASTOS DE VENTAS:"
   },
   {
    "bloque": "b46",
@@ -712,7 +672,7 @@
    "anterior": "4,163,162",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE VENTAS"
+   "detalla_a": "GASTOS DE VENTAS:"
   },
   {
    "bloque": "b46",
@@ -722,7 +682,7 @@
    "anterior": "792,562",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE VENTAS"
+   "detalla_a": "GASTOS DE VENTAS:"
   },
   {
    "bloque": "b46",
@@ -732,27 +692,147 @@
    "anterior": "32,639",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS DE VENTAS"
+   "detalla_a": "GASTOS DE VENTAS:"
   },
   {
-   "bloque": "b48",
+   "bloque": "b46",
+   "linea": 641,
+   "etiqueta": "COMISIONES",
+   "actual": "1,353",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 642,
+   "etiqueta": "GASTOS DE REPRESENTACION Y RELACIONES",
+   "actual": "384",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 643,
+   "etiqueta": "ELEMENTOS DE ASEO Y CAFETERIA",
+   "actual": "7,164",
+   "anterior": "4,490",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 644,
+   "etiqueta": "UTILES PAPELERIA Y FOTOCOPIAS",
+   "actual": "1,810",
+   "anterior": "1,572",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 645,
+   "etiqueta": "COMBUSTIBLES Y LUBRICANTES",
+   "actual": "4,918",
+   "anterior": "13,787",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 646,
+   "etiqueta": "EMBASES Y EMPAQUES",
+   "actual": "0",
+   "anterior": "239",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 647,
+   "etiqueta": "TAXIS Y BUSES",
+   "actual": "3,196",
+   "anterior": "2,829",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 648,
+   "etiqueta": "CASINO Y RESTAURANTE",
+   "actual": "3,045",
+   "anterior": "7,062",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 649,
+   "etiqueta": "PARQUEADEROS",
+   "actual": "159",
+   "anterior": "252",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 650,
+   "etiqueta": "LOGISTICA PREPARAC EVENTOS DEP",
+   "actual": "520,980",
+   "anterior": "344,773",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 651,
+   "etiqueta": "OTROS",
+   "actual": "526,985",
+   "anterior": "411,547",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 652,
+   "etiqueta": "IVA X DIVERSOS",
+   "actual": "18",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b46",
+   "linea": 653,
+   "etiqueta": "IVA AL CONSUMO",
+   "actual": "5,517",
+   "anterior": "5,991",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "DIVERSOS"
+  },
+  {
+   "bloque": "b49",
    "linea": 688,
-   "etiqueta": "INGRESOS NO OPERACIONALES",
+   "etiqueta": "INGRESOS NO OPERACIONALES :",
    "actual": "3,165,062",
    "anterior": "988,046",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": null
-  },
-  {
-   "bloque": "b48",
-   "linea": 661,
-   "etiqueta": "FINANCIEROS",
-   "actual": "1,106,432",
-   "anterior": "56,982",
-   "tipo": "renglon",
-   "lado": "financiero",
-   "detalla_a": "INGRESOS NO OPERACIONALES"
   },
   {
    "bloque": "b48",
@@ -762,7 +842,7 @@
    "anterior": "12,977",
    "tipo": "renglon",
    "lado": "financiero",
-   "detalla_a": "FINANCIEROS"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b48",
@@ -772,7 +852,7 @@
    "anterior": "40,923",
    "tipo": "renglon",
    "lado": "financiero",
-   "detalla_a": "FINANCIEROS"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b48",
@@ -782,17 +862,7 @@
    "anterior": "3,082",
    "tipo": "renglon",
    "lado": "financiero",
-   "detalla_a": "FINANCIEROS"
-  },
-  {
-   "bloque": "b48",
-   "linea": 665,
-   "etiqueta": "UTILIDAD VTA PROPIEDAD PLANTA Y EQUIPO",
-   "actual": "0",
-   "anterior": "26,875",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": "INGRESOS NO OPERACIONALES"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b48",
@@ -802,17 +872,7 @@
    "anterior": "26,875",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "UTILIDAD VTA PROPIEDAD PLANTA Y EQUIPO"
-  },
-  {
-   "bloque": "b48",
-   "linea": 667,
-   "etiqueta": "RECUPERACIONES",
-   "actual": "1,357,782",
-   "anterior": "212,029",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": "INGRESOS NO OPERACIONALES"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b48",
@@ -822,7 +882,7 @@
    "anterior": "54",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "RECUPERACIONES"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b48",
@@ -832,7 +892,7 @@
    "anterior": "19,869",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "RECUPERACIONES"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b48",
@@ -842,7 +902,7 @@
    "anterior": "103,949",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "RECUPERACIONES"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b48",
@@ -852,7 +912,7 @@
    "anterior": "12,427",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "RECUPERACIONES"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b48",
@@ -862,17 +922,7 @@
    "anterior": "42,527",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "RECUPERACIONES"
-  },
-  {
-   "bloque": "b48",
-   "linea": 673,
-   "etiqueta": "INDEMNIZACIONES",
-   "actual": "11,916",
-   "anterior": "57,945",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": "INGRESOS NO OPERACIONALES"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b49",
@@ -882,27 +932,17 @@
    "anterior": "57,945",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "INDEMNIZACIONES"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b49",
-   "linea": 680,
+   "linea": 681,
    "etiqueta": "INGRESOS DE EJERCICIOS ANTERIORES",
    "actual": "90",
    "anterior": "2,828",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "INGRESOS NO OPERACIONALES"
-  },
-  {
-   "bloque": "b49",
-   "linea": 682,
-   "etiqueta": "DIVERSOS",
-   "actual": "688,841",
-   "anterior": "631,387",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": "INGRESOS NO OPERACIONALES"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b49",
@@ -912,7 +952,7 @@
    "anterior": "8,184",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "DIVERSOS"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b49",
@@ -922,7 +962,7 @@
    "anterior": "604,187",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "DIVERSOS"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b49",
@@ -932,7 +972,7 @@
    "anterior": "0",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "DIVERSOS"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b49",
@@ -942,7 +982,7 @@
    "anterior": "19,000",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "DIVERSOS"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b49",
@@ -952,12 +992,12 @@
    "anterior": "16",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "DIVERSOS"
+   "detalla_a": "INGRESOS NO OPERACIONALES :"
   },
   {
    "bloque": "b51",
    "linea": 696,
-   "etiqueta": "GASTOS NO OPERACIONALES",
+   "etiqueta": "GASTOS NO OPERACIONALES:",
    "actual": "1,723,822",
    "anterior": "2,430,280",
    "tipo": "renglon",
@@ -972,7 +1012,7 @@
    "anterior": "485,927",
    "tipo": "renglon",
    "lado": "financiero",
-   "detalla_a": "GASTOS NO OPERACIONALES"
+   "detalla_a": "GASTOS NO OPERACIONALES:"
   },
   {
    "bloque": "b51",
@@ -982,7 +1022,7 @@
    "anterior": "0",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS NO OPERACIONALES"
+   "detalla_a": "GASTOS NO OPERACIONALES:"
   },
   {
    "bloque": "b51",
@@ -992,7 +1032,7 @@
    "anterior": "1,942,153",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS NO OPERACIONALES"
+   "detalla_a": "GASTOS NO OPERACIONALES:"
   },
   {
    "bloque": "b51",
@@ -1002,7 +1042,7 @@
    "anterior": "2,200",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "GASTOS NO OPERACIONALES"
+   "detalla_a": "GASTOS NO OPERACIONALES:"
   },
   {
    "bloque": "b52",
@@ -1044,22 +1084,11 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el desglose 'DIVERSOS : Registramos los siguientes conceptos' (L640-L653), cuyo total 1,075,528 no coincide con DIVERSOS 1,075,825 de L638?",
+   "pregunta": "¿Se deja afuera de la carga la fila 'IMTPO DIFERIDO NIIF' 1,744,104 (L702), que está fuera del total de Gastos no operacionales?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "DIVERSOS",
-   "texto": "El subdetalle de L640 imprime 1,075,528 frente a 1,075,825 en L638 (diferencia mayor al redondeo).",
-   "bloques": [
-    "b46"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se deja afuera la fila 'IMTPO DIFERIDO NIIF' 1,744,104 (L702), que está fuera del total de GASTOS NO OPERACIONALES?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "GASTOS NO OPERACIONALES",
-   "texto": "L702 aparece debajo de la tabla sin integrar el total de L696 y sin año anterior; no se sabe dónde va.",
+   "renglon": "GASTOS NO OPERACIONALES:",
+   "texto": "L702 aparece después del total y no suma en 1,723,822; no está claro si es gasto adicional.",
    "bloques": [
     "b51",
     "b52"
@@ -1067,11 +1096,34 @@
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se confirma que los importes están en miles de pesos?",
+   "pregunta": "¿Se cargan las filas de la Nota 20 sin usar los encabezados en negrita como subtotales (ej. PARTICIPACIONES NACIONALES y PATROCINIO, que no tienen detalle y se cargaron como renglones)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "INGRESOS OPERATIVOS:",
+   "texto": "L546-L579: los encabezados en negrita son subtotales, salvo L566 y L567 que no tienen detalle.",
+   "bloques": [
+    "b39"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se confirma que en el documento no existe una fila 'Salarios del plantel' y que el gasto de personal se carga como 'GASTOS DE PERSONAL' (L620, 6,866,963)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "GASTOS DE VENTAS:",
+   "texto": "No hay renglón 'Salarios del plantel'; el más próximo es GASTOS DE PERSONAL en gastos de ventas (L620) y administración (L600).",
+   "bloques": [
+    "b45",
+    "b43"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se acepta que las cifras están en miles de pesos para todas las notas?",
    "propuesta": "sí",
    "tema": "escala",
    "renglon": "",
-   "texto": "Ningún bloque imprime la escala; se infiere miles por el capital de L521.",
+   "texto": "Solo la nota de patrimonio (L521) permite inferir miles; las demás no lo indican.",
    "bloques": [
     "b39",
     "b41",
@@ -1081,10 +1133,11 @@
     "b48",
     "b49",
     "b51",
-    "b52"
+    "b52",
+    "b37"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "Los títulos de las notas se usaron como etiquetas del estado (encabezado del total o título de la tabla). El resultado del ejercicio se toma de la nota de patrimonio (L534). Los totales de L545 y L688 se usaron como renglones del estado; no hay total general de ingresos ni de gastos impreso."
+ "observaciones": "Estado armado con totales de notas 20-26; resultado del ejercicio tomado de la nota de patrimonio (L534). El detalle de DIVERSOS de gastos de ventas (L640, 1,075,528) difiere levemente del renglón 1,075,825 (L638); se cargó su detalle con detalla_a DIVERSOS. La suma de notas cuadra con 5,346,221."
 }

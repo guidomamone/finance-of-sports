@@ -3,108 +3,28 @@
   "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf",
   "club": "oncecaldas-co",
   "year": 2018,
-  "generatedAt": "2026-10-25T16:47:15.497Z",
+  "generatedAt": "2026-10-25T18:45:50.651Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
-      "label": "INGRESOS OPERATIVOS",
+      "label": "INGRESOS OPERATIVOS:",
       "lado": "revenue",
       "page": 17,
       "section": "estado",
       "values": [
-        21.438202
+        21438.202
       ],
-      "glosa": "INGRESOS OPERATIVOS"
+      "glosa": "INGRESOS OPERATIVOS:"
     },
     {
-      "label": "INTERESES",
-      "lado": "revenue",
-      "page": 19,
-      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"FINANCIEROS\"",
-      "values": [
-        0.010768
-      ],
-      "glosa": "INTERESES"
-    },
-    {
-      "label": "DIFERENCIA EN CAMBIO",
-      "lado": "revenue",
-      "page": 19,
-      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"FINANCIEROS\"",
-      "values": [
-        1.094307
-      ],
-      "glosa": "DIFERENCIA EN CAMBIO"
-    },
-    {
-      "label": "DESC COMERCIALES CONDICIONADOS",
-      "lado": "revenue",
-      "page": 19,
-      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"FINANCIEROS\"",
-      "values": [
-        0.001357
-      ],
-      "glosa": "DESC COMERCIALES CONDICIONADOS"
-    },
-    {
-      "label": "RECUPERACIONES",
-      "lado": "revenue",
-      "page": 19,
-      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\"",
-      "values": [
-        1.357782
-      ],
-      "glosa": "RECUPERACIONES"
-    },
-    {
-      "label": "INDEMNIZACIONES",
-      "lado": "revenue",
-      "page": 19,
-      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\"",
-      "values": [
-        0.011916
-      ],
-      "glosa": "INDEMNIZACIONES"
-    },
-    {
-      "label": "INGRESOS DE EJERCICIOS ANTERIORES",
+      "label": "INGRESOS NO OPERACIONALES :",
       "lado": "revenue",
       "page": 20,
-      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\"",
+      "section": "estado",
       "values": [
-        0.00009
+        3165.062
       ],
-      "glosa": "INGRESOS DE EJERCICIOS ANTERIORES"
-    },
-    {
-      "label": "APROVECHAMIENTOS",
-      "lado": "revenue",
-      "page": 20,
-      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"DIVERSOS\"",
-      "values": [
-        0.011886
-      ],
-      "glosa": "APROVECHAMIENTOS"
-    },
-    {
-      "label": "SUBVENCIONES",
-      "lado": "revenue",
-      "page": 20,
-      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"DIVERSOS\"",
-      "values": [
-        0.676945
-      ],
-      "glosa": "SUBVENCIONES"
-    },
-    {
-      "label": "AJUSTE AL PESO",
-      "lado": "revenue",
-      "page": 20,
-      "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"DIVERSOS\"",
-      "values": [
-        0.00001
-      ],
-      "glosa": "AJUSTE AL PESO"
+      "glosa": "INGRESOS NO OPERACIONALES :"
     },
     {
       "label": "COSTO DE VENTAS",
@@ -112,7 +32,7 @@
       "page": 18,
       "section": "estado",
       "values": [
-        0.508765
+        508.765
       ],
       "glosa": "COSTO DE VENTAS"
     },
@@ -120,9 +40,9 @@
       "label": "GASTOS DE PERSONAL",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
       "values": [
-        0.678948
+        678.948
       ],
       "glosa": "GASTOS DE PERSONAL"
     },
@@ -130,9 +50,9 @@
       "label": "HONORARIOS",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
       "values": [
-        0.039776
+        39.776
       ],
       "glosa": "HONORARIOS"
     },
@@ -140,9 +60,9 @@
       "label": "ARRENDAMIENTOS",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
       "values": [
-        0.016413
+        16.413
       ],
       "glosa": "ARRENDAMIENTOS"
     },
@@ -150,9 +70,9 @@
       "label": "SERVICIOS",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
       "values": [
-        0.032827
+        32.827
       ],
       "glosa": "SERVICIOS"
     },
@@ -160,9 +80,9 @@
       "label": "GASTOS LEGALES",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
       "values": [
-        0.002208
+        2.208
       ],
       "glosa": "GASTOS LEGALES"
     },
@@ -170,9 +90,9 @@
       "label": "MANTENIMIENTO Y REPARACIONES",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
       "values": [
-        0.00033
+        0.33
       ],
       "glosa": "MANTENIMIENTO Y REPARACIONES"
     },
@@ -180,9 +100,9 @@
       "label": "ADECUACION E INSTALACION",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
       "values": [
-        0.000035
+        0.035
       ],
       "glosa": "ADECUACION E INSTALACION"
     },
@@ -190,9 +110,9 @@
       "label": "GASTOS DE VIAJE",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
       "values": [
-        0.02206
+        22.06
       ],
       "glosa": "GASTOS DE VIAJE"
     },
@@ -200,9 +120,9 @@
       "label": "DEPRECIACIONES",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
       "values": [
-        0.001164
+        1.164
       ],
       "glosa": "DEPRECIACIONES"
     },
@@ -210,9 +130,9 @@
       "label": "DIVERSOS",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION\"",
+      "section": "nota que desglosa \"GASTOS DE ADMINISTRACION:\"",
       "values": [
-        0.014584
+        14.584
       ],
       "glosa": "DIVERSOS"
     },
@@ -220,9 +140,9 @@
       "label": "GASTOS DE PERSONAL",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
       "values": [
-        6.866963
+        6866.963
       ],
       "glosa": "GASTOS DE PERSONAL"
     },
@@ -230,9 +150,9 @@
       "label": "HONORARIOS",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
       "values": [
-        0.049825
+        49.825
       ],
       "glosa": "HONORARIOS"
     },
@@ -240,9 +160,9 @@
       "label": "IMPUESTOS",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
       "values": [
-        0.492496
+        492.496
       ],
       "glosa": "IMPUESTOS"
     },
@@ -250,9 +170,9 @@
       "label": "ARRENDAMIENTOS",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
       "values": [
-        0.605806
+        605.806
       ],
       "glosa": "ARRENDAMIENTOS"
     },
@@ -260,9 +180,9 @@
       "label": "CONTRIBUCIONES Y AFILIACIONES",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
       "values": [
-        0.002321
+        2.321
       ],
       "glosa": "CONTRIBUCIONES Y AFILIACIONES"
     },
@@ -270,9 +190,9 @@
       "label": "SEGUROS",
       "lado": "expense",
       "page": 18,
-      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
       "values": [
-        0.007143
+        7.143
       ],
       "glosa": "SEGUROS"
     },
@@ -280,9 +200,9 @@
       "label": "SERVICIOS",
       "lado": "expense",
       "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
       "values": [
-        0.191179
+        191.179
       ],
       "glosa": "SERVICIOS"
     },
@@ -290,9 +210,9 @@
       "label": "GASTOS LEGALES",
       "lado": "expense",
       "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
       "values": [
-        0.000514
+        0.514
       ],
       "glosa": "GASTOS LEGALES"
     },
@@ -300,9 +220,9 @@
       "label": "MANTENIMIENTO Y REPARACIONES",
       "lado": "expense",
       "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
       "values": [
-        0.06663
+        66.63
       ],
       "glosa": "MANTENIMIENTO Y REPARACIONES"
     },
@@ -310,9 +230,9 @@
       "label": "ADECUACION E INSTALACION",
       "lado": "expense",
       "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
       "values": [
-        0.000976
+        0.976
       ],
       "glosa": "ADECUACION E INSTALACION"
     },
@@ -320,9 +240,9 @@
       "label": "GASTOS DE VIAJE",
       "lado": "expense",
       "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
       "values": [
-        0.454227
+        454.227
       ],
       "glosa": "GASTOS DE VIAJE"
     },
@@ -330,9 +250,9 @@
       "label": "DEPRECIACIONES",
       "lado": "expense",
       "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
       "values": [
-        0.086994
+        86.994
       ],
       "glosa": "DEPRECIACIONES"
     },
@@ -340,9 +260,9 @@
       "label": "DERECHOS DEPORTIVOS",
       "lado": "expense",
       "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
       "values": [
-        3.649049
+        3649.049
       ],
       "glosa": "DERECHOS DEPORTIVOS"
     },
@@ -350,9 +270,9 @@
       "label": "DIVERSOS",
       "lado": "expense",
       "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
       "values": [
-        1.075825
+        1075.825
       ],
       "glosa": "DIVERSOS"
     },
@@ -360,9 +280,9 @@
       "label": "PROVISIONES",
       "lado": "expense",
       "page": 19,
-      "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+      "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
       "values": [
-        0.026242
+        26.242
       ],
       "glosa": "PROVISIONES"
     },
@@ -370,9 +290,9 @@
       "label": "GASTOS FINANCIEROS",
       "lado": "expense",
       "page": 20,
-      "section": "nota que desglosa \"GASTOS NO OPERACIONALES\"",
+      "section": "nota que desglosa \"GASTOS NO OPERACIONALES:\"",
       "values": [
-        0.820054
+        820.054
       ],
       "glosa": "GASTOS FINANCIEROS"
     },
@@ -380,9 +300,9 @@
       "label": "GASTOS EXTRAORDINARIOS",
       "lado": "expense",
       "page": 20,
-      "section": "nota que desglosa \"GASTOS NO OPERACIONALES\"",
+      "section": "nota que desglosa \"GASTOS NO OPERACIONALES:\"",
       "values": [
-        0.713284
+        713.284
       ],
       "glosa": "GASTOS EXTRAORDINARIOS"
     },
@@ -390,9 +310,9 @@
       "label": "GASTOS DIVERSOS",
       "lado": "expense",
       "page": 20,
-      "section": "nota que desglosa \"GASTOS NO OPERACIONALES\"",
+      "section": "nota que desglosa \"GASTOS NO OPERACIONALES:\"",
       "values": [
-        0.190484
+        190.484
       ],
       "glosa": "GASTOS DIVERSOS"
     }

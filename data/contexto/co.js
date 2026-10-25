@@ -54,6 +54,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Nemesio Camacho El Campín","capacidad":39512,"sponsor":"Cerveza Andina","marca":"Adidas","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
   'oncecaldas-co': {
+    2018: {"estadio":"Palogrande","capacidad":28678,"temporada":"2018 Categoría Primera A season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692380"},
     2022: {"estadio":"Palogrande","capacidad":28678,"sponsor":"Aguardiente Cristal","temporada":"2022 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376520069","fuenteManual":"https://www.tintiando.com/2021/12/21/ilc-reitera-su-compromiso-con-la-region-y-sera-principal-patrocinador-del-once-caldas-en-2022/","manual":["sponsor"]},
     2023: {"estadio":"Palogrande","capacidad":28678,"sponsor":"Colanta, BetPlay, Wakate","marca":"Hillside","temporada":"2023 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377160814"},
     2024: {"estadio":"Palogrande","capacidad":31611,"sponsor":"Colanta, BetPlay, Wakate","marca":"Boman","temporada":"2024 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692752"},

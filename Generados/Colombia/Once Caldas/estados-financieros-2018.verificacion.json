@@ -1,13 +1,13 @@
 {
  "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf",
  "md": "Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
- "generado": "2026-10-25T17:15:54.164Z",
+ "generado": "2026-10-25T18:48:08.820Z",
  "scriptHuella": "f1d4dee41de6",
- "estado": "cola",
+ "estado": "ok",
  "clubId": "oncecaldas-co",
  "year": 2018,
  "escala": {
-  "valor": "no se sabe",
+  "valor": "miles",
   "escalon": 0,
   "factor": 1,
   "de": null
@@ -23,16 +23,24 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-25"
+  },
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf",
+   "campo": "fila",
+   "valor": "1744.104",
+   "linea": 702,
+   "etiqueta": "IMTPO DIFERIDO NIIF",
+   "lado": "impuesto",
+   "reemplaza": null,
+   "motivo": "Linea 702 del .md: impuesto diferido NIIF 1.744.104 (miles de pesos), impreso debajo de la tabla de gastos no operacionales y fuera de su total; sin esta fila el resultado no cierra con la utilidad impresa del patrimonio (24.603.263 - 16.617.122 - 895.818 - 1.744.104 = 5.346.219 contra 5.346.221)",
+   "evidencia": "pág. 20 del visor, .md L702 y L519-535 (patrimonio)",
+   "causa": "lectura-del-documento",
+   "autor": "Claude",
+   "fecha": "2026-10-25"
   }
  ],
- "cola": [
-  "b5d8694",
-  "65d6da1",
-  "08dbf17",
-  "10fea0c",
-  "e764f33",
-  "d3cdca3"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -46,155 +54,81 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 24.603263 - gastos 16.617122 ± financiero 0 ± impuesto 0.895818 no da el impreso 5.346221",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 0.0010000000011132215
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
  "notas": [
-  "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
-  "la nota de \"INGRESOS OPERATIVOS\" no suma el renglón (23.709353 contra 21.438202, sumando sus renglones): quedó el renglón del estado",
-  "el desglose de \"RECUPERACIONES\" (5 filas) no suma la fila: quedó la fila",
+  "la nota de \"INGRESOS OPERATIVOS:\" no suma el renglón (23672.944 contra 21438.202, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"INGRESOS NO OPERACIONALES :\" no suma el renglón (3154.711 contra 3165.062, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"COSTO DE VENTAS\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "el desglose de \"DIVERSOS\" (5 filas) no suma la fila: quedó la fila",
-  "duda de localizar que no afecta la carga: b39 termina en devoluciones (DEV PATROCINADOR) sin total visible en el índice.",
-  "duda de extraer que no afecta la carga: Ningún bloque imprime la escala; se infiere miles por el capital de L521."
+  "el desglose de \"DIVERSOS\" (13 filas) no suma la fila: quedó la fila",
+  "ajuste manual: fila \"IMTPO DIFERIDO NIIF\" (impuesto) 1744.104 (2026-10-25, Linea 702 del .md: impuesto diferido NIIF 1.744.104 (miles de pesos), impreso debajo de la tabla de gastos no operacionales y fuera de su total; sin esta fila el resultado no cierra con la utilidad impresa del patrimonio (24.603.263 - 16.617.122 - 895.818 - 1.744.104 = 5.346.219 contra 5.346.221))",
+  "duda de extraer que no afecta la carga: L546-L579: los encabezados en negrita son subtotales, salvo L566 y L567 que no tienen detalle.",
+  "duda de extraer que no afecta la carga: No hay renglón 'Salarios del plantel'; el más próximo es GASTOS DE PERSONAL en gastos de ventas (L620) y administración (L600).",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en estados-financieros-2018.pdf"
  ],
- "reintentar": [
-  {
-   "renglon": "INGRESOS OPERATIVOS",
-   "suma": 23.709353,
-   "objetivo": 21.438202
-  },
-  {
-   "renglon": "RECUPERACIONES",
-   "suma": 1.347432,
-   "objetivo": 1.357782
-  },
-  {
-   "renglon": "DIVERSOS",
-   "suma": 0.688841,
-   "objetivo": 0.014584
-  }
- ],
- "reintentado": false,
+ "reintentar": null,
+ "reintentado": true,
  "faltasDesglose": [
   {
-   "renglon": "INGRESOS OPERATIVOS",
-   "suma": 23.709353,
-   "objetivo": 21.438202
+   "renglon": "INGRESOS OPERATIVOS:",
+   "suma": 23672.944,
+   "objetivo": 21438.202
   },
   {
-   "renglon": "RECUPERACIONES",
-   "suma": 1.347432,
-   "objetivo": 1.357782
+   "renglon": "INGRESOS NO OPERACIONALES :",
+   "suma": 3154.711,
+   "objetivo": 3165.062
   },
   {
    "renglon": "DIVERSOS",
-   "suma": 0.688841,
-   "objetivo": 0.014584
+   "suma": 1075.529,
+   "objetivo": 14.584
   }
  ],
  "totales": {
-  "ingresos": 24.603263,
-  "gastos": 16.617122,
+  "ingresos": 24603.264,
+  "gastos": 16617.122,
   "financiero": 0,
-  "impuesto": 0.895818,
-  "resultadoImpreso": 5.346221,
-  "resultadoParaCargar": 5.346221,
+  "impuesto": 2639.922,
+  "resultadoImpreso": 5346.221,
+  "resultadoParaCargar": 5346.221,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero e impuesto invertidos"
  },
  "lineas": [
   {
-   "etiqueta": "INGRESOS OPERATIVOS",
+   "etiqueta": "INGRESOS OPERATIVOS:",
    "lado": "ingreso",
-   "M": 21.438202,
+   "M": 21438.202,
    "pagina": 17,
    "linea": 545,
    "origen": "estado"
   },
   {
-   "etiqueta": "INTERESES",
+   "etiqueta": "INGRESOS NO OPERACIONALES :",
    "lado": "ingreso",
-   "M": 0.010768,
-   "pagina": 19,
-   "linea": 662,
-   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"FINANCIEROS\""
-  },
-  {
-   "etiqueta": "DIFERENCIA EN CAMBIO",
-   "lado": "ingreso",
-   "M": 1.094307,
-   "pagina": 19,
-   "linea": 663,
-   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"FINANCIEROS\""
-  },
-  {
-   "etiqueta": "DESC COMERCIALES CONDICIONADOS",
-   "lado": "ingreso",
-   "M": 0.001357,
-   "pagina": 19,
-   "linea": 664,
-   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"FINANCIEROS\""
-  },
-  {
-   "etiqueta": "RECUPERACIONES",
-   "lado": "ingreso",
-   "M": 1.357782,
-   "pagina": 19,
-   "linea": 667,
-   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\""
-  },
-  {
-   "etiqueta": "INDEMNIZACIONES",
-   "lado": "ingreso",
-   "M": 0.011916,
-   "pagina": 19,
-   "linea": 673,
-   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\""
-  },
-  {
-   "etiqueta": "INGRESOS DE EJERCICIOS ANTERIORES",
-   "lado": "ingreso",
-   "M": 0.00009,
+   "M": 3165.062,
    "pagina": 20,
-   "linea": 680,
-   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\""
-  },
-  {
-   "etiqueta": "APROVECHAMIENTOS",
-   "lado": "ingreso",
-   "M": 0.011886,
-   "pagina": 20,
-   "linea": 683,
-   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"DIVERSOS\""
-  },
-  {
-   "etiqueta": "SUBVENCIONES",
-   "lado": "ingreso",
-   "M": 0.676945,
-   "pagina": 20,
-   "linea": 684,
-   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"DIVERSOS\""
-  },
-  {
-   "etiqueta": "AJUSTE AL PESO",
-   "lado": "ingreso",
-   "M": 0.00001,
-   "pagina": 20,
-   "linea": 687,
-   "origen": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"DIVERSOS\""
+   "linea": 688,
+   "origen": "estado"
   },
   {
    "etiqueta": "COSTO DE VENTAS",
    "lado": "gasto",
-   "M": 0.508765,
+   "M": 508.765,
    "pagina": 18,
    "linea": 591,
    "origen": "estado"
@@ -202,238 +136,288 @@
   {
    "etiqueta": "GASTOS DE PERSONAL",
    "lado": "gasto",
-   "M": 0.678948,
+   "M": 678.948,
    "pagina": 18,
    "linea": 600,
-   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION:\""
   },
   {
    "etiqueta": "HONORARIOS",
    "lado": "gasto",
-   "M": 0.039776,
+   "M": 39.776,
    "pagina": 18,
    "linea": 601,
-   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION:\""
   },
   {
    "etiqueta": "ARRENDAMIENTOS",
    "lado": "gasto",
-   "M": 0.016413,
+   "M": 16.413,
    "pagina": 18,
    "linea": 603,
-   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION:\""
   },
   {
    "etiqueta": "SERVICIOS",
    "lado": "gasto",
-   "M": 0.032827,
+   "M": 32.827,
    "pagina": 18,
    "linea": 605,
-   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION:\""
   },
   {
    "etiqueta": "GASTOS LEGALES",
    "lado": "gasto",
-   "M": 0.002208,
+   "M": 2.208,
    "pagina": 18,
    "linea": 606,
-   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION:\""
   },
   {
    "etiqueta": "MANTENIMIENTO Y REPARACIONES",
    "lado": "gasto",
-   "M": 0.00033,
+   "M": 0.33,
    "pagina": 18,
    "linea": 607,
-   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION:\""
   },
   {
    "etiqueta": "ADECUACION E INSTALACION",
    "lado": "gasto",
-   "M": 0.000035,
+   "M": 0.035,
    "pagina": 18,
    "linea": 608,
-   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION:\""
   },
   {
    "etiqueta": "GASTOS DE VIAJE",
    "lado": "gasto",
-   "M": 0.02206,
+   "M": 22.06,
    "pagina": 18,
    "linea": 609,
-   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION:\""
   },
   {
    "etiqueta": "DEPRECIACIONES",
    "lado": "gasto",
-   "M": 0.001164,
+   "M": 1.164,
    "pagina": 18,
    "linea": 610,
-   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION:\""
   },
   {
    "etiqueta": "DIVERSOS",
    "lado": "gasto",
-   "M": 0.014584,
+   "M": 14.584,
    "pagina": 18,
    "linea": 611,
-   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION\""
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACION:\""
   },
   {
    "etiqueta": "GASTOS DE PERSONAL",
    "lado": "gasto",
-   "M": 6.866963,
+   "M": 6866.963,
    "pagina": 18,
    "linea": 620,
-   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+   "origen": "nota que desglosa \"GASTOS DE VENTAS:\""
   },
   {
    "etiqueta": "HONORARIOS",
    "lado": "gasto",
-   "M": 0.049825,
+   "M": 49.825,
    "pagina": 18,
    "linea": 621,
-   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+   "origen": "nota que desglosa \"GASTOS DE VENTAS:\""
   },
   {
    "etiqueta": "IMPUESTOS",
    "lado": "gasto",
-   "M": 0.492496,
+   "M": 492.496,
    "pagina": 18,
    "linea": 622,
-   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+   "origen": "nota que desglosa \"GASTOS DE VENTAS:\""
   },
   {
    "etiqueta": "ARRENDAMIENTOS",
    "lado": "gasto",
-   "M": 0.605806,
+   "M": 605.806,
    "pagina": 18,
    "linea": 623,
-   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+   "origen": "nota que desglosa \"GASTOS DE VENTAS:\""
   },
   {
    "etiqueta": "CONTRIBUCIONES Y AFILIACIONES",
    "lado": "gasto",
-   "M": 0.002321,
+   "M": 2.321,
    "pagina": 18,
    "linea": 624,
-   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+   "origen": "nota que desglosa \"GASTOS DE VENTAS:\""
   },
   {
    "etiqueta": "SEGUROS",
    "lado": "gasto",
-   "M": 0.007143,
+   "M": 7.143,
    "pagina": 18,
    "linea": 625,
-   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+   "origen": "nota que desglosa \"GASTOS DE VENTAS:\""
   },
   {
    "etiqueta": "SERVICIOS",
    "lado": "gasto",
-   "M": 0.191179,
+   "M": 191.179,
    "pagina": 19,
    "linea": 631,
-   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+   "origen": "nota que desglosa \"GASTOS DE VENTAS:\""
   },
   {
    "etiqueta": "GASTOS LEGALES",
    "lado": "gasto",
-   "M": 0.000514,
+   "M": 0.514,
    "pagina": 19,
    "linea": 632,
-   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+   "origen": "nota que desglosa \"GASTOS DE VENTAS:\""
   },
   {
    "etiqueta": "MANTENIMIENTO Y REPARACIONES",
    "lado": "gasto",
-   "M": 0.06663,
+   "M": 66.63,
    "pagina": 19,
    "linea": 633,
-   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+   "origen": "nota que desglosa \"GASTOS DE VENTAS:\""
   },
   {
    "etiqueta": "ADECUACION E INSTALACION",
    "lado": "gasto",
-   "M": 0.000976,
+   "M": 0.976,
    "pagina": 19,
    "linea": 634,
-   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+   "origen": "nota que desglosa \"GASTOS DE VENTAS:\""
   },
   {
    "etiqueta": "GASTOS DE VIAJE",
    "lado": "gasto",
-   "M": 0.454227,
+   "M": 454.227,
    "pagina": 19,
    "linea": 635,
-   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+   "origen": "nota que desglosa \"GASTOS DE VENTAS:\""
   },
   {
    "etiqueta": "DEPRECIACIONES",
    "lado": "gasto",
-   "M": 0.086994,
+   "M": 86.994,
    "pagina": 19,
    "linea": 636,
-   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+   "origen": "nota que desglosa \"GASTOS DE VENTAS:\""
   },
   {
    "etiqueta": "DERECHOS DEPORTIVOS",
    "lado": "gasto",
-   "M": 3.649049,
+   "M": 3649.049,
    "pagina": 19,
    "linea": 637,
-   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+   "origen": "nota que desglosa \"GASTOS DE VENTAS:\""
   },
   {
    "etiqueta": "DIVERSOS",
    "lado": "gasto",
-   "M": 1.075825,
+   "M": 1075.825,
    "pagina": 19,
    "linea": 638,
-   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+   "origen": "nota que desglosa \"GASTOS DE VENTAS:\""
   },
   {
    "etiqueta": "PROVISIONES",
    "lado": "gasto",
-   "M": 0.026242,
+   "M": 26.242,
    "pagina": 19,
    "linea": 639,
-   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+   "origen": "nota que desglosa \"GASTOS DE VENTAS:\""
   },
   {
    "etiqueta": "GASTOS FINANCIEROS",
    "lado": "gasto",
-   "M": 0.820054,
+   "M": 820.054,
    "pagina": 20,
    "linea": 697,
-   "origen": "nota que desglosa \"GASTOS NO OPERACIONALES\""
+   "origen": "nota que desglosa \"GASTOS NO OPERACIONALES:\""
   },
   {
    "etiqueta": "GASTOS EXTRAORDINARIOS",
    "lado": "gasto",
-   "M": 0.713284,
+   "M": 713.284,
    "pagina": 20,
    "linea": 699,
-   "origen": "nota que desglosa \"GASTOS NO OPERACIONALES\""
+   "origen": "nota que desglosa \"GASTOS NO OPERACIONALES:\""
   },
   {
    "etiqueta": "GASTOS DIVERSOS",
    "lado": "gasto",
-   "M": 0.190484,
+   "M": 190.484,
    "pagina": 20,
    "linea": 700,
-   "origen": "nota que desglosa \"GASTOS NO OPERACIONALES\""
+   "origen": "nota que desglosa \"GASTOS NO OPERACIONALES:\""
   }
  ],
  "signosCarga": {
-  "financiero": 1,
-  "impuesto": 1
+  "financiero": -1,
+  "impuesto": -1
  },
  "financiero": [],
  "impuesto": [
   {
    "etiqueta": "IMPUESTO DE RENTQ Y COMPLEMENTARIO",
-   "M": 0.895818,
+   "M": -895.818,
    "linea": 706
+  },
+  {
+   "etiqueta": "IMTPO DIFERIDO NIIF",
+   "M": -1744.104,
+   "linea": 702
   }
- ]
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "74da4af3e4e51094e7abf892f2a00e685b0647af",
+  "rango": [
+   531,
+   709
+  ],
+  "lineasCargadas": [
+   545,
+   688,
+   591,
+   600,
+   601,
+   603,
+   605,
+   606,
+   607,
+   608,
+   609,
+   610,
+   611,
+   620,
+   621,
+   622,
+   623,
+   624,
+   625,
+   631,
+   632,
+   633,
+   634,
+   635,
+   636,
+   637,
+   638,
+   639,
+   697,
+   699,
+   700,
+   706,
+   702
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 531 a 709 del .md):\nL531: | **RESULTADO DE EJERCICIOS ANTERIORES** | | |\nL532: | Pérdidas acumuladas | -25,264,280 | -26,053,556 |\nL533: | **TOTAL RESULTADO DE EJERCICIOS ANTERIORES** | **-25,264,280** | **-26,053,556** |\nL534: | **UTILIDAD O PERDIDA DEL EJERCICIO** | **5,346,221** | **789,275** |\nL535: | **TOTAL PATRIMONIO** | **-4,622,435** | **-11,573,690** |\nL537: --- pág. 17 ---\nL539: | | |\nL540: | :--- | :--- |\nL541: | **NOTA 20** | **INGRESOS OPERATIVOS:** A la fecha se han facturado los ingresos de la actividad normal de la sociedad, como son: las taquillas, contratos publicitarios, ingresos por televisión, ventas de artículos deportivos, y el ingreso más representativo en cada año, es de la venta de derechos deportivos, que corresponden a los jugadores Oscar Estupiñan, para el año 2017 y en el año 2.018 al jugador Luis Sinisterra. |\nL543: | CUENTA | Diciembre 31 de 2018 | Diciembre 31 de 2017 |\nL544: | :--- | :---: | :---: |\nL545: | **INGRESOS OPERATIVOS** | **21,438,202** | **16,672,414** |\nL546: | **TAQUILLA-VENTA DE BOLETERIA** | **4,238,680** | **2,007,540** |\nL547: | PARTIDOS OFICIALES | 1,076,086 | 1,059,138 |\nL548: | BOLETERIA COPA LIBERTADORES | | |\nL549: | BOLETERIA COPA COLOMBIA | 1,970,844 | 830 |\nL550: | VENTA DE ABONOS | 1,130,317 | 936,996 |\nL551: | **VENTA DERECHOS DTIVOS-JUGADORE** | **7,817,700** | **7,665,080** |\nL552: | INGRESOS POR SOLIDARIDAD | 61,629 | 137,100 |\nL553: | PRESTAMO DERECHOS DTIVOS-JUGAD | 0 | 250,000 |\nL554: | **PUBLICIDAD Y PROPAGANDA** | **602,568** | **288,353** |\nL555: | VALLAS PUBLICITARIAS | 602,568 | 288,353 |\nL556: | **DIMAYOR** | **4,999,450** | **4,479,937** |\nL557: | PARTICIPACIONES DIMAYOR | 450,000 | 1,047,670 |\nL558: | DERECHOS TV ABIERTA 161231 | 763,384 | 743,223 |\nL559: | DERECHOS TV CERRADA 161231 | 1,477,935 | 1,826,265 |\nL560: | DERECHOS TV INTERNACIONA 161210 | 155,736 | 154,500 |\nL561: | FONDO EQUIPOS X NO CLASI 161130 | 0 | 139,678 |\nL562: | TELEVISION VARIABLE 160506 | 885,166 | 501,151 |\nL563: | PARTICIPACION TRANSPORTE 161130 | 38,206 | 67,450 |\nL564: | PARTICIPACION HOSPEDAJE | 1,229,022 | |\nL565: | FEDERACION COLOMBIANA DE FUTBO | 25,025 | |\nL566: | **PARTICIPACIONES NACIONALES -INTERNACIONALES** | **942,045** | **58,800** |\nL567: | **PATROCINIO** | **3,225,751** | **1,856,120** |\nL568: | VTA DE ARTICULOS DTIVOS-MISCEL | 656,513 | 406,011 |\nL569: | **ACTIVIDADES CONEXAS** | **16,929** | **225,591** |\nL570: | CONCESIONES PUESTOS DE VTAS | 0 | 19,037 |\nL571: | VENTAS | 0 | 10,042 |\nL572: | ARRENDAMIENTO CABINAS | 16,929 | 50 |\nL573: | ARRENDAMIENTO ESPACIO PUBLICIT | 0 | 196,462 |\nL574: | DEVOLUCION VTAS ALMACEN | -7,958 | -614 |\nL575: | DEVOLUCIONES EN VENTAS | 0 | -25,210 |\nL576: | DEVOL PUBLICIDAD-ARREND | -1,140,130 | -27,500 |\nL577: | DEV VTA DERECHOS DTIVOS | 0 | -456,750 |\nL578: | DEV PRESTAMOS DEREC DTI | 0 | -50,000 |\nL579: | DEV PATROCINADOR | 0 | -142,045 |\nL581: | CUENTA | Diciembre 31 de 2018 | Diciembre 31 de 2017 |\nL582: | :--- | :---: | :---: |\nL584: --- pág. 18 ---\nL586: | | CUENTA | Diciembre 31 de 2018 | Diciembre 31 de 2017 |\nL587: | :--- | :--- | :---: | :---: |\nL588: | **NOTA 21** | **COSTO DE VENTAS** | | |\nL589: | | Venta de artículos deportivos-misceláneos | 508,765 | 384,092 |\nL590: | | De derechos deportivos: Costo de los derechos de Oscar Estupiñan | 0 | 889,200 |\nL591: | | **TOTAL COSTO DE VENTA** | **508,765** | **1,273,292** |\nL593: | | |\nL594: | :--- | :--- |\nL595: | **NOTA 22** | **GASTOS DE ADMINISTRACION:** La desagregación de los gastos de administración presentados en el estado de resultados, para los periodos contables terminados en los periodos de mayo de 2.018 y diciembre de 2.017, son los siguientes: |\nL597: | CUENTA | Diciembre 31 de 2018 | Diciembre 31 de 2017 |\nL598: | :--- | :---: | :---: |\nL599: | **TOTAL GASTOS OPERACIONALES DE ADMINISTRACION** | **808,345** | **943,140** |\nL600: | GASTOS DE PERSONAL | 678,948 | 754,574 |\nL601: | HONORARIOS | 39,776 | 64,422 |\nL602: | IMPUESTOS | 0 | 0 |\nL603: | ARRENDAMIENTOS | 16,413 | 10,814 |\nL604: | SEGUROS | 0 | 0 |\nL605: | SERVICIOS | 32,827 | 44,885 |\nL606: | GASTOS LEGALES | 2,208 | 2,286 |\nL607: | MANTENIMIENTO Y REPARACIONES | 330 | 873 |\nL608: | ADECUACION E INSTALACION | 35 | 0 |\nL609: | GASTOS DE VIAJE | 22,060 | 30,524 |\nL610: | DEPRECIACIONES | 1,164 | 2,806 |\nL611: | DIVERSOS | 14,584 | 31,955 |\nL613: | | |\nL614: | :--- | :--- |\nL615: | **NOTA 23** | **GASTOS DE VENTAS:** Representa todas las erogaciones inherentes y con relación de causalidad al objeto de la Empresa; En la cuenta de derechos deportivos, se registran los valores relacionados con las negociaciones de los jugadores, como son las comisiones, los préstamos de los derechos deportivos, los gastos de viaje en que se incurren para la negociación de los mismos, las amortizaciones de los préstamos y compras de los derechos deportivos, etc.;<br>Estos gastos están discriminados de la siguiente forma: |\nL617: | GASTOS DE VENTAS | Diciembre 31 de 2018 | Diciembre 31 de 2017 |\nL618: | :--- | :---: | :---: |\nL619: | **TOTAL GASTOS DE VENTAS** | **13,576,188** | **13,931,288** |\nL620: | GASTOS DE PERSONAL | 6,866,963 | 7,168,507 |\nL621: | HONORARIOS | 49,825 | 163,339 |\nL622: | IMPUESTOS | 492,496 | 319,124 |\nL623: | ARRENDAMIENTOS | 605,806 | 536,150 |\nL624: | CONTRIBUCIONES Y AFILIACIONES | 2,321 | 3,586 |\nL625: | SEGUROS | 7,143 | 50,605 |\nL627: --- pág. 19 ---\nL629: | GASTOS DE VENTAS (Continuación) | Diciembre 31 de 2018 | Diciembre 31 de 2017 |\nL630: | :--- | :---: | :---: |\nL631: | SERVICIOS | 191,179 | 173,314 |\nL632: | GASTOS LEGALES | 514 | 1,852 |\nL633: | MANTENIMIENTO Y REPARACIONES | 66,630 | 68,112 |\nL634: | ADECUACION E INSTALACION | 976 | 3,953 |\nL635: | GASTOS DE VIAJE | 454,227 | 363,668 |\nL636: | DEPRECIACIONES | 86,994 | 90,713 |\nL637: | DERECHOS DEPORTIVOS | 3,649,049 | 4,163,162 |\nL638: | DIVERSOS | 1,075,825 | 792,562 |\nL639: | PROVISIONES | 26,242 | 32,639 |\nL640: | **DIVERSOS : Registramos los siguientes conceptos** | **1,075,528** | **792,542** |\nL641: | COMISIONES | 1,353 | 0 |\nL642: | GASTOS DE REPRESENTACION Y RELACIONES | 384 | 0 |\nL643: | ELEMENTOS DE ASEO Y CAFETERIA | 7,164 | 4,490 |\nL644: | UTILES PAPELERIA Y FOTOCOPIAS | 1,810 | 1,572 |\nL645: | COMBUSTIBLES Y LUBRICANTES | 4,918 | 13,787 |\nL646: | EMBASES Y EMPAQUES | 0 | 239 |\nL647: | TAXIS Y BUSES | 3,196 | 2,829 |\nL648: | CASINO Y RESTAURANTE | 3,045 | 7,062 |\nL649: | PARQUEADEROS | 159 | 252 |\nL650: | LOGISTICA PREPARAC EVENTOS DEP | 520,980 | 344,773 |\nL651: | OTROS | 526,985 | 411,547 |\nL652: | IVA X DIVERSOS | 18 | 0 |\nL653: | IVA AL CONSUMO | 5,517 | 5,991 |\nL655: | | |\nL656: | :--- | :--- |\nL657: | **NOTA 24** | **INGRESOS NO OPERACIONALES :**Dentro de la ejecución de operaciones diferentes a las directamente relacionadas con el objeto social del Once Caldas, se han efectuado el reconocimiento de los siguientes ingresos, clasificados como no operacionales, tanto para el año 2.018 como para el año 2.017, las diferencias más significativas son la diferencia en cambio, ya que se ajustan todas las operaciones en una moneda diferente al peso colombiano, como son la cxc que se tiene con los clubes a los que se le vendieron los derechos deportivos de dos jugadores, adicional las cuentas que hay por pagar de estas mismas transferencias; vemos además una diferencia representativa en las recuperaciones, relacionada con las demandas que se reversaron |\nL659: | INGRESOS NO OPERACIONALES | Diciembre 31 de 2018 | Diciembre 31 de 2017 |\nL660: | :--- | :---: | :---: |\nL661: | **FINANCIEROS** | **1,106,432** | **56,982** |\nL662: | INTERESES | 10,768 | 12,977 |\nL663: | DIFERENCIA EN CAMBIO | 1,094,307 | 40,923 |\nL664: | DESC COMERCIALES CONDICIONADOS | 1,357 | 3,082 |\nL665: | **UTILIDAD VTA PROPIEDAD PLANTA Y EQUIPO** | **0** | **26,875** |\nL666: | FLOTA Y EQUIPO DE TRANSPORTE | 0 | 26,875 |\nL667: | **RECUPERACIONES** | **1,357,782** | **212,029** |\nL668: | DEUDAS MALAS | 0 | 54 |\nL669: | REINTE DE OTROS COSTOS Y GASTO | 4,861 | 19,869 |\nL670: | RECUPERACION PROVISIONES | 217,867 | 103,949 |\nL671: | REINTEGROS NIIF | 930,534 | 12,427 |\nL672: | REINTEGRO DE GTOS ANOS ANTERIO | 194,170 | 42,527 |\nL673: | **INDEMNIZACIONES** | **11,916** | **57,945** |\nL675: --- pág. 20 ---\nL677: | INGRESOS NO OPERACIONALES (Continuación) | Diciembre 31 de 2018 | Diciembre 31 de 2017 |\nL678: | :--- | :---: | :---: |\nL679: | POR INCAPACIDADES DEL ISS | 11,916 | 57,945 |\nL680: | **INGRESOS DE EJERCICIOS ANTERIORES** | **90** | **2,828** |\nL681: | INGRESOS DE EJERCICIOS ANTERIORES | 90 | 2,828 |\nL682: | **DIVERSOS** | **688,841** | **631,387** |\nL683: | APROVECHAMIENTOS | 11,886 | 8,184 |\nL684: | SUBVENCIONES | 676,945 | 604,187 |\nL685: | REGALIAS | 0 | 0 |\nL686: | PREMIOS-GANANCIA OCASIONAL | 0 | 19,000 |\nL687: | AJUSTE AL PESO | 10 | 16 |\nL688: | **TOTAL INGRESOS NO OPERACIONALES** | **3,165,062** | **988,046** |\nL690: | | |\nL691: | :--- | :--- |\nL692: | **NOTA 25** | **GASTOS NO OPERACIONALES:** Son los gastos diferentes a los ordinarios ya mencionados anteriormente, donde la cifra más representativa tiene que ver con la reversión del impuesto diferido |\nL694: | GASTOS NO OPERACIONALES | Diciembre 31 de 2018 | Diciembre 31 de 2017 |\nL695: | :--- | :---: | :---: |\nL696: | **GASTOS NO OPERACIONALES** | **1,723,822** | **2,430,280** |\nL697: | GASTOS FINANCIEROS | 820,054 | 485,927 |\nL698: | PERDIDA-VTA RETIRO DE BIENES | 0 | 0 |\nL699: | GASTOS EXTRAORDINARIOS | 713,284 | 1,942,153 |\nL700: | GASTOS DIVERSOS | 190,484 | 2,200 |\nL701: | | | |\nL702: | IMTPO DIFERIDO NIIF | 1,744,104 | |\nL704: | | CUENTA | Diciembre 31 de 2018 | Diciembre 31 de 2017 |\nL705: | :--- | :--- | :---: | :---: |\nL706: | **NOTA 26** | **IMPUESTO DE RENTQ Y COMPLEMENTARIO** | **895,818** | **37,289** |\nL707: | | IMPUESTO DE RENTA Y COMPLEMENTARIOS | 895,818 | 37,289 |\nL709: | | |\n\nLO QUE SE CARGA:\n- ingreso · \"INGRESOS OPERATIVOS:\" · 21438.202 · L545\n- ingreso · \"INGRESOS NO OPERACIONALES :\" · 3165.062 · L688\n- gasto · \"COSTO DE VENTAS\" · 508.765 · L591\n- gasto · \"GASTOS DE PERSONAL\" · 678.948 · L600\n- gasto · \"HONORARIOS\" · 39.776 · L601\n- gasto · \"ARRENDAMIENTOS\" · 16.413 · L603\n- gasto · \"SERVICIOS\" · 32.827 · L605\n- gasto · \"GASTOS LEGALES\" · 2.208 · L606\n- gasto · \"MANTENIMIENTO Y REPARACIONES\" · 0.33 · L607\n- gasto · \"ADECUACION E INSTALACION\" · 0.035 · L608\n- gasto · \"GASTOS DE VIAJE\" · 22.06 · L609\n- gasto · \"DEPRECIACIONES\" · 1.164 · L610\n- gasto · \"DIVERSOS\" · 14.584 · L611\n- gasto · \"GASTOS DE PERSONAL\" · 6866.963 · L620\n- gasto · \"HONORARIOS\" · 49.825 · L621\n- gasto · \"IMPUESTOS\" · 492.496 · L622\n- gasto · \"ARRENDAMIENTOS\" · 605.806 · L623\n- gasto · \"CONTRIBUCIONES Y AFILIACIONES\" · 2.321 · L624\n- gasto · \"SEGUROS\" · 7.143 · L625\n- gasto · \"SERVICIOS\" · 191.179 · L631\n- gasto · \"GASTOS LEGALES\" · 0.514 · L632\n- gasto · \"MANTENIMIENTO Y REPARACIONES\" · 66.63 · L633\n- gasto · \"ADECUACION E INSTALACION\" · 0.976 · L634\n- gasto · \"GASTOS DE VIAJE\" · 454.227 · L635\n- gasto · \"DEPRECIACIONES\" · 86.994 · L636\n- gasto · \"DERECHOS DEPORTIVOS\" · 3649.049 · L637\n- gasto · \"DIVERSOS\" · 1075.825 · L638\n- gasto · \"PROVISIONES\" · 26.242 · L639\n- gasto · \"GASTOS FINANCIEROS\" · 820.054 · L697\n- gasto · \"GASTOS EXTRAORDINARIOS\" · 713.284 · L699\n- gasto · \"GASTOS DIVERSOS\" · 190.484 · L700\n- impuesto · \"IMPUESTO DE RENTQ Y COMPLEMENTARIO\" · -895.818 · L706\n- impuesto · \"IMTPO DIFERIDO NIIF\" · -1744.104 · L702"
+ }
 }

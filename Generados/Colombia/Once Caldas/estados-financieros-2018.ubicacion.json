@@ -3,8 +3,9 @@
  "md": "Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
  "mdSha1": "ca23d3856a3fccdffb2b2f552016911a05c47ade",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-25T16:46:08.422Z",
+ "generado": "2026-10-25T18:44:38.493Z",
  "perimetroClub": "individual",
+ "indiceAmpliado": 2,
  "intentoNotasComoEstado": true,
  "estadoDesdeNotas": true,
  "bloques": {
@@ -456,8 +457,8 @@
  ],
  "notas_ingresos": [],
  "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "No se ve frase de escala en los bloques; importes como 508,765 sugieren miles de pesos pero no está impreso en lo visto.",
+ "escala": "miles",
+ "escala_evidencia": "No hay frase explícita; capital autorizado de 15 millones de acciones a $1000 se imprime 15,000,000, lo que indica miles de pesos.",
  "moneda": "COP",
  "columna_ejercicio": "Diciembre 31 de 2018",
  "columna_anterior": "Diciembre 31 de 2017",
@@ -465,39 +466,28 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Los importes de las notas (ej. Total costo de venta 508,765) están expresados en miles de pesos colombianos?",
-   "propuesta": "sí",
-   "tema": "escala",
-   "renglon": "TOTAL COSTO DE VENTA",
-   "texto": "No se ve en el índice ninguna frase 'en miles de pesos'; la nota de deudores menciona 'solo han abonado 25 millones', compatible con miles.",
-   "bloques": [
-    "b41",
-    "b5"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se toma la fila 'UTILIDAD O PERDIDA DEL EJERCICIO' del cuadro de patrimonio (b37) como resultado del ejercicio 2018?",
+   "pregunta": "¿Se usa 'UTILIDAD O PERDIDA DEL EJERCICIO' 5,346,221 de la composición del patrimonio (b37) como resultado del ejercicio impreso?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "UTILIDAD O PERDIDA DEL EJERCICIO",
-   "texto": "No hay estado de resultados; el único resultado impreso visible está en la composición del patrimonio (b37).",
+   "texto": "El documento no trae estado de resultados; el único resultado impreso está en la nota de patrimonio.",
    "bloques": [
     "b37"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿El bloque b39 (ingresos operativos, 35 filas) incluye el total de ingresos operacionales y las devoluciones como un solo renglón del estado?",
+   "pregunta": "¿Los salarios del plantel están incluidos en 'GASTOS DE PERSONAL' de gastos de ventas (b45) y no hay cuadro que los abra?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "INGRESOS OPERATIVOS",
-   "texto": "b39 termina en devoluciones (DEV PATROCINADOR) sin total visible en el índice.",
+   "renglon": "GASTOS DE PERSONAL",
+   "texto": "No aparece un desglose de gastos de personal en el índice.",
    "bloques": [
-    "b39"
+    "b45",
+    "b43"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "El documento no trae estado de resultados; solo notas de la entidad Once Caldas S.A. En Reorganización (individual). Se usan como estado las notas de ingresos operativos (b39), costo de ventas (b41, nota 21), gastos de administración (b43), gastos de ventas (b45-b46), ingresos no operacionales (b48-b49), gastos no operacionales (b51), impuesto de renta (b52, nota 26) y el resultado del ejercicio impreso en la composición del patrimonio (b37)."
+ "observaciones": "Documento solo con notas de Once Caldas S.A. (individual), en miles de COP. Se eligen notas de ingresos operativos (b39), costo de ventas (b41), gastos de administración (b43), gastos de ventas (b45-b46), ingresos no operacionales (b48-b49), gastos no operacionales (b51), impuesto de renta (b52) y el resultado del ejercicio impreso en patrimonio (b37)."
 }

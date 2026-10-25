@@ -97,18 +97,20 @@ Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf
 Clubes/Suiza/Basel/geschaeftsbericht-2017.pdf
 Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2023.pdf
 # === AUTOMÁTICO: casos raros (un ajuste manual, un freno o una respuesta de la cola que no fue «aceptar»; el más viejo y el más nuevo de cada clase; no se edita) ===
+# clase: ajuste:fila
+Clubes/Italia/Lazio/Lazio-bilancio-2000-01.pdf
 # clase: ajuste:perimetro
 Clubes/Italia/Lazio/Lazio-bilancio-1998-99.pdf
 Clubes/Portugal/Benfica/relatorio-contas-2025-26.pdf
 # clase: cola:cargar|categoria|corregir
 Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf
 Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.pdf
+# clase: cola:cargar|tipo-linea|corregir
+Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf
 # clase: cola:verificar|duda-de-extraer|corregir
 Clubes/Italia/Lazio/Lazio-bilancio-1999-00.pdf
 # clase: ajuste:categoria
 Clubes/Portugal/Sporting CP/relatorio-contas-1999.pdf
-# clase: ajuste:fila
-Clubes/Italia/Lazio/Lazio-bilancio-2000-01.pdf
 # clase: cola:verificar|duda-de-localizar|corregir
 Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf
 Clubes/Brasil/Ponte Preta/balanco-2024-2025.pdf
@@ -163,7 +165,5 @@ Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf
 # clase: freno:alta:fx / fx: documento declara varios tipos de cambio a USD (saldos por moneda en las notas)
 Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.pdf
 Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2008.pdf
-# clase: freno:compensación intragrupo (Entschädigung von/an Event AG) no se elimina en 2018-19 ni 2019-20 aunque el perímetro es consolidado (298 ai solo la saca si el importe repite año y año anterior)
-Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.pdf
 # === AUTOMÁTICO: ranura de la semana 2026-S43 (la familia Portugal · pdf; rota cada semana; no se edita) ===
 Clubes/Portugal/Benfica/relatorio-contas-2011-12.pdf

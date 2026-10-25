@@ -1,192 +1,8 @@
 {
  "md": "Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
- "generatedAt": "2026-10-25T16:47:25.398Z",
- "rubrosHuella": "6636428fc08f20c61e9bdc32ec972ef52d3533d0",
+ "generatedAt": "2026-10-25T18:45:58.659Z",
+ "rubrosHuella": "25378e481338d6f22b58f4b1a3f7d043a1e323ff",
  "rubros": [
-  {
-   "label": "INTERESES",
-   "lado": "revenue",
-   "page": 19,
-   "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"FINANCIEROS\"",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1055
-  },
-  {
-   "label": "RECUPERACIONES",
-   "lado": "revenue",
-   "page": 19,
-   "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\"",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1236
-  },
-  {
-   "label": "INGRESOS DE EJERCICIOS ANTERIORES",
-   "lado": "revenue",
-   "page": 20,
-   "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\"",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1129
-  },
-  {
-   "label": "INDEMNIZACIONES",
-   "lado": "revenue",
-   "page": 19,
-   "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\"",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1257
-  },
-  {
-   "label": "DESC COMERCIALES CONDICIONADOS",
-   "lado": "revenue",
-   "page": 19,
-   "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"FINANCIEROS\"",
-   "choice": "other_income",
-   "confidence": 0.79,
-   "top3": [
-    [
-     "other_income",
-     0.8
-    ],
-    [
-     "sponsorship_commercial",
-     0.2
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1066
-  },
-  {
-   "label": "INGRESOS OPERATIVOS",
-   "lado": "revenue",
-   "page": 17,
-   "section": "estado",
-   "choice": "lump_football_operations",
-   "confidence": 0.64,
-   "top3": [
-    [
-     "lump_football_operations",
-     0.66
-    ],
-    [
-     "other_income",
-     0.31
-    ],
-    [
-     "matchday_competition",
-     0.02
-    ]
-   ],
-   "tokens": 1110
-  },
-  {
-   "label": "DIFERENCIA EN CAMBIO",
-   "lado": "revenue",
-   "page": 19,
-   "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"FINANCIEROS\"",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1174
-  },
-  {
-   "label": "SUBVENCIONES",
-   "lado": "revenue",
-   "page": 20,
-   "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"DIVERSOS\"",
-   "choice": "grants_donations",
-   "confidence": 0.9,
-   "top3": [
-    [
-     "grants_donations",
-     0.91
-    ],
-    [
-     "other_income",
-     0.09
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1195
-  },
   {
    "label": "COSTO DE VENTAS",
    "lado": "expense",
@@ -194,481 +10,215 @@
    "section": "estado",
    "choice": "other_expenses",
    "confidence": 0.81,
-   "top3": [
-    [
-     "other_expenses",
-     0.83
-    ],
-    [
-     "lump_football_operations_expense",
-     0.14
-    ],
-    [
-     "player_amortisation",
-     0.02
-    ]
-   ],
-   "tokens": 1004
-  },
-  {
-   "label": "AJUSTE AL PESO",
-   "lado": "revenue",
-   "page": 20,
-   "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"DIVERSOS\"",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1092
-  },
-  {
-   "label": "ARRENDAMIENTOS",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
-   "choice": "match_organisation_expense",
-   "confidence": 0.52,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.56
-    ],
-    [
-     "admin_general_expense",
-     0.41
-    ],
-    [
-     "other_expenses",
-     0.03
-    ]
-   ],
-   "tokens": 1149
-  },
-  {
-   "label": "HONORARIOS",
-   "lado": "expense",
-   "page": 18,
-   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
-   "choice": "admin_general_expense",
-   "confidence": 0.71,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.73
-    ],
-    [
-     "other_expenses",
-     0.13
-    ],
-    [
-     "match_organisation_expense",
-     0.12
-    ]
-   ],
-   "tokens": 1012
-  },
-  {
-   "label": "SERVICIOS",
-   "lado": "expense",
-   "page": 19,
-   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
-   "choice": "admin_general_expense",
-   "confidence": 0.91,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.92
-    ],
-    [
-     "other_expenses",
-     0.05
-    ],
-    [
-     "match_organisation_expense",
-     0.02
-    ]
-   ],
-   "tokens": 1014
-  },
-  {
-   "label": "APROVECHAMIENTOS",
-   "lado": "revenue",
-   "page": 20,
-   "section": "nota que desglosa \"INGRESOS NO OPERACIONALES\" > desglose de \"DIVERSOS\"",
-   "choice": "other_income",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "other_income",
-     0.99
-    ],
-    [
-     "competition_bonus",
-     0.01
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1122
+   "desdeCache": true
   },
   {
    "label": "GASTOS DE PERSONAL",
    "lado": "expense",
    "page": 18,
-   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
    "choice": "wages_squad",
    "confidence": 0.72,
-   "top3": [
-    [
-     "wages_squad",
-     0.74
-    ],
-    [
-     "admin_general_expense",
-     0.12
-    ],
-    [
-     "other_expenses",
-     0.12
-    ]
-   ],
-   "tokens": 1019
+   "desdeCache": true
+  },
+  {
+   "label": "HONORARIOS",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "ARRENDAMIENTOS",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "SERVICIOS",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
   },
   {
    "label": "GASTOS LEGALES",
    "lado": "expense",
    "page": 19,
-   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
    "choice": "admin_general_expense",
    "confidence": 0.99,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.99
-    ],
-    [
-     "other_expenses",
-     0.01
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1022
+   "desdeCache": true
   },
   {
    "label": "MANTENIMIENTO Y REPARACIONES",
    "lado": "expense",
    "page": 19,
-   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
    "choice": "admin_general_expense",
    "confidence": 0.89,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.9
-    ],
-    [
-     "other_expenses",
-     0.08
-    ],
-    [
-     "match_organisation_expense",
-     0.01
-    ]
-   ],
-   "tokens": 1043
+   "desdeCache": true
   },
   {
    "label": "ADECUACION E INSTALACION",
    "lado": "expense",
    "page": 19,
-   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
    "choice": "match_organisation_expense",
    "confidence": 0.72,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.74
-    ],
-    [
-     "admin_general_expense",
-     0.23
-    ],
-    [
-     "other_expenses",
-     0.03
-    ]
-   ],
-   "tokens": 1216
+   "desdeCache": true
   },
   {
    "label": "GASTOS DE VIAJE",
    "lado": "expense",
    "page": 19,
-   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
    "choice": "match_organisation_expense",
    "confidence": 1,
-   "top3": [
-    [
-     "match_organisation_expense",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1024
-  },
-  {
-   "label": "DIVERSOS",
-   "lado": "expense",
-   "page": 19,
-   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
-   "choice": "other_expenses",
-   "confidence": 0.8,
-   "top3": [
-    [
-     "other_expenses",
-     0.82
-    ],
-    [
-     "admin_general_expense",
-     0.14
-    ],
-    [
-     "match_organisation_expense",
-     0.02
-    ]
-   ],
-   "tokens": 1007
+   "desdeCache": true
   },
   {
    "label": "DEPRECIACIONES",
    "lado": "expense",
    "page": 19,
-   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
    "choice": "depreciation",
    "confidence": 1,
-   "top3": [
-    [
-     "depreciation",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1021
+   "desdeCache": true
+  },
+  {
+   "label": "DIVERSOS",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "desdeCache": true
   },
   {
    "label": "IMPUESTOS",
    "lado": "expense",
    "page": 18,
-   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
    "choice": "admin_general_expense",
    "confidence": 0.98,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.98
-    ],
-    [
-     "other_expenses",
-     0.02
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1012
+   "desdeCache": true
   },
   {
    "label": "CONTRIBUCIONES Y AFILIACIONES",
    "lado": "expense",
    "page": 18,
-   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
    "choice": "admin_general_expense",
    "confidence": 0.96,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.96
-    ],
-    [
-     "match_organisation_expense",
-     0.03
-    ],
-    [
-     "other_expenses",
-     0.01
-    ]
-   ],
-   "tokens": 1067
+   "desdeCache": true
   },
   {
    "label": "SEGUROS",
    "lado": "expense",
    "page": 18,
-   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
    "choice": "other_expenses",
    "confidence": 0.57,
-   "top3": [
-    [
-     "other_expenses",
-     0.61
-    ],
-    [
-     "admin_general_expense",
-     0.31
-    ],
-    [
-     "match_organisation_expense",
-     0.05
-    ]
-   ],
-   "tokens": 994
+   "desdeCache": true
   },
   {
    "label": "DERECHOS DEPORTIVOS",
    "lado": "expense",
    "page": 19,
-   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
    "choice": "player_amortisation",
    "confidence": 0.98,
-   "top3": [
-    [
-     "player_amortisation",
-     0.98
-    ],
-    [
-     "other_expenses",
-     0.02
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1082
+   "desdeCache": true
   },
   {
    "label": "PROVISIONES",
    "lado": "expense",
    "page": 19,
-   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "section": "nota que desglosa \"GASTOS DE VENTAS:\"",
    "choice": "other_expenses",
    "confidence": 0.44,
-   "top3": [
-    [
-     "other_expenses",
-     0.49
-    ],
-    [
-     "other_amortisation",
-     0.43
-    ],
-    [
-     "exceptional_items",
-     0.03
-    ]
-   ],
-   "tokens": 1050
+   "desdeCache": true
   },
   {
    "label": "GASTOS FINANCIEROS",
    "lado": "expense",
    "page": 20,
-   "section": "nota que desglosa \"GASTOS NO OPERACIONALES\"",
+   "section": "nota que desglosa \"GASTOS NO OPERACIONALES:\"",
    "choice": "admin_general_expense",
    "confidence": 0.95,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.95
-    ],
-    [
-     "other_expenses",
-     0.05
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1028
+   "desdeCache": true
   },
   {
    "label": "GASTOS EXTRAORDINARIOS",
    "lado": "expense",
    "page": 20,
-   "section": "nota que desglosa \"GASTOS NO OPERACIONALES\"",
+   "section": "nota que desglosa \"GASTOS NO OPERACIONALES:\"",
    "choice": "exceptional_items",
    "confidence": 1,
-   "top3": [
-    [
-     "exceptional_items",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1033
+   "desdeCache": true
   },
   {
    "label": "GASTOS DIVERSOS",
    "lado": "expense",
    "page": 20,
-   "section": "nota que desglosa \"GASTOS NO OPERACIONALES\"",
+   "section": "nota que desglosa \"GASTOS NO OPERACIONALES:\"",
    "choice": "other_expenses",
    "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "INGRESOS OPERATIVOS:",
+   "lado": "revenue",
+   "page": 17,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
    "top3": [
     [
-     "other_expenses",
-     0.97
+     "lump_football_operations",
+     0.99
     ],
     [
-     "admin_general_expense",
-     0.03
+     "other_income",
+     0.01
     ],
     [
-     "wages_squad",
+     "member_dues",
      0
     ]
    ],
-   "tokens": 1038
+   "tokens": 1113
+  },
+  {
+   "label": "INGRESOS NO OPERACIONALES :",
+   "lado": "revenue",
+   "page": 20,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1115
   }
  ]
 }

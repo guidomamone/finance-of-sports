@@ -1,7 +1,16 @@
 {
  "pdf": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2023.pdf",
- "generado": "2026-10-25T18:42:47.691Z",
- "frena": [],
+ "generado": "2026-10-25T18:44:21.327Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "rijeka-hr ya tiene el ejercicio 2023 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['rijeka-hr-financijsko-izvjesce-2023'] ya existe"
+  }
+ ],
  "avisos": [],
  "ejercicio": {
   "clubId": "rijeka-hr",
@@ -1115,8 +1124,8 @@
  },
  "liga": {
   "valor": "hr-hnl",
-  "fuente": "roster cacheado de \"2023–24 Croatian Football League\" (tools/club-league-reference/hr.json), coincidencia exacta \"Rijeka\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1156,14 +1165,14 @@
   },
   "liga": {
    "valor": "hr-hnl",
-   "fuente": "roster cacheado de \"2023–24 Croatian Football League\" (tools/club-league-reference/hr.json), coincidencia exacta \"Rijeka\"",
+   "fuente": "data/club-leagues/hr.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "ancla": null,
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 11,
   "lineasGasto": 27,
   "metaFilas": 3,
