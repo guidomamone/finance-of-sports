@@ -7,8 +7,16 @@ const esLump = (l) => (l.normalizedCategory ?? l.subcategory) === LUMP;
 // previas, nuevas: las líneas de ingresos del año anterior cargado y del año por cargar. Devuelve 'resumido-a-completo', 'completo-a-resumido' o null.
 function cambioDeFormato(previas, nuevas) {
   const resumido = (ls) => ls.length === 1 && esLump(ls[0]);
-  if (resumido(previas) && nuevas.length > 1) return 'resumido-a-completo';
-  if (resumido(nuevas) && previas.length > 1) return 'completo-a-resumido';
+  // «Completo» no es tener una línea más: con una línea que lleva casi todo (el resto, menos del 10 % de la suma) el año sigue siendo, en la
+  // práctica, una sola cifra (ej.: operativos más un «ingresos extraordinarios» chico) y su aparición no cambia lo que el lector ve.
+  const completo = (ls) => {
+    if (ls.length < 2) return false;
+    const m = ls.map((l) => Math.abs(l.amountNative ?? l.amount ?? 0));
+    const suma = m.reduce((a, b) => a + b, 0);
+    return suma > 0 && (suma - Math.max(...m)) / suma >= 0.1;
+  };
+  if (resumido(previas) && completo(nuevas)) return 'resumido-a-completo';
+  if (resumido(nuevas) && completo(previas)) return 'completo-a-resumido';
   return null;
 }
 

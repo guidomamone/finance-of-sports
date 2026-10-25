@@ -158,6 +158,7 @@
   "cierre-propuestas.mjs": "orden: abre en la cola una pregunta por documento anual sin cierre, con el cierre del país como propuesta (ensayo por defecto; --escribir)",
   "progreso-medicion.mjs": "orden: lee Admin/mediciones/pipeline/_progreso.json y dice cuánto falta de la medición que corre",
  "sin-desglose-tipo.mjs": "orden: completa fiscalYearMeta.sinDesglose (la línea y su tipo) de los años ya cargados; ensayo por defecto, --escribir",
+ "ingreso-base.mjs": "orden: marca en cada año ya cargado revenue_basis y revenue_derivation (punto 455); ensayo por defecto, --escribir",
  "calibrar-cola.mjs": "orden: el acierto de las respuestas de la cola por seguridad, con una segunda revisión (solo lee la cola; escribe calibracion-cola.jsonl)",
  "probar-cierre.mjs": "prueba: cierre-propuestas.mjs y cierre-sin-fecha.mjs sobre una cola de juguete",
   "cierre-sin-fecha.mjs": "orden: los anuales sin fecha de cierre en el registro y cuáles frenan una carga (solo lee el registro)",

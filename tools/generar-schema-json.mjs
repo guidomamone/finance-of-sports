@@ -80,6 +80,8 @@ const schema = {
         extra_rows: { type: 'array', items: objeto({ label: texto, amount: numONull }, ['label', 'amount']) }, // amount null = la fuente no lo informa (103 filas)
         no_breakdown: { type: 'array', items: objeto({ line: texto, side: texto, amount: num, reason: texto, kind: { type: 'string', enum: ['gross_margin', 'net_sales', 'cost_of_sales', 'other'] } }, ['line', 'side', 'amount', 'reason']) },
         included_in: { type: 'object', additionalProperties: { oneOf: [texto, objeto({ in: texto, possible: { type: 'boolean' }, by: texto }, ['in'])] } },
+        revenue_basis: { type: 'string', enum: ['full', 'sales_total', 'gross_margin'] },
+        revenue_derivation: objeto({ method: { type: 'string', enum: ['margin_plus_costs'] }, sources: { type: 'array', items: texto } }, ['method']),
       }),
     }, ['fiscal_year', 'period_end']),
     overlay: objeto({ currency: { $ref: '#/$defs/moneda' }, fx: { $ref: '#/$defs/fx' }, source_id: texto, revenue: { type: 'array', items: { $ref: '#/$defs/linea_ingreso' } }, expenses: { type: 'array', items: { $ref: '#/$defs/linea_gasto' } } }),

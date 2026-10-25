@@ -46,7 +46,11 @@ const FINANCIERO = { profitOnPlayerSales: 'profit_on_player_sales', assetSales: 
 const TOTALES = { officialTotalRevenue: 'revenue', officialTotalExpenses: 'expenses', officialPAT: 'net_result' };
 const FX = { fxRef: 'ref', fx: 'rate', fxSource: 'source' };
 const META_DIRECTA = { currency: 'currency', sourceId: 'source_id', reportType: 'report_type', gestionId: 'management_id' };
-const META_ADJ = { extraRows: 'extra_rows', sinDesglose: 'no_breakdown', incluidoEn: 'included_in' };
+// `baseIngreso` (JSON `revenue_basis`, opcional): qué son los ingresos cargados del ejercicio (BASES_INGRESO). `derivacionIngreso` (`revenue_derivation`, opcional):
+// el ejercicio NO imprime sus ingresos y se reconstruyeron con una identidad del documento ({method, sources?}; METODOS_DERIVACION). Admin/mediciones/455-ingresos-con-margen-bruto.md.
+const META_ADJ = { extraRows: 'extra_rows', sinDesglose: 'no_breakdown', incluidoEn: 'included_in', baseIngreso: 'revenue_basis', derivacionIngreso: 'revenue_derivation' };
+export const BASES_INGRESO = ['full', 'sales_total', 'gross_margin'];
+export const METODOS_DERIVACION = ['margin_plus_costs'];
 const OVERLAY = { currency: 'currency', sourceId: 'source_id', revenueLines: 'revenue', expenseLines: 'expenses' };
 // Lo editorial de pocos clubes (extras del JSON): el nombre del bloque y de cada clave pasa a inglés; los textos quedan en español.
 const EXTRAS = { presupuestoSupuestosByYear: 'budget_assumptions', presupuestoFinancieroByYear: 'budget_financial', presupuestoInversionesByYear: 'budget_investments', finanzasYears: 'finance_years', finanzasGestiones: 'finance_managements' };
@@ -174,6 +178,8 @@ export function aJson(c, { exportadoEn = new Date().toISOString().slice(0, 10), 
       if (has(m, 'extraRows')) adj.extra_rows = m.extraRows.map((r, i) => mapear(r, { label: 'label', value: 'amount' }, `${id} ${y} extraRows[${i}]`));
       if (has(m, 'sinDesglose')) adj.no_breakdown = m.sinDesglose.map((r, i) => mapear(r, SIN_DESGLOSE, `${id} ${y} sinDesglose[${i}]`));
       if (has(m, 'incluidoEn')) adj.included_in = Object.fromEntries(Object.entries(m.incluidoEn).map(([cat, v]) => [cat, v !== null && typeof v === 'object' ? mapear(v, INCLUIDO, `${id} ${y} incluidoEn.${cat}`) : v]));
+      if (has(m, 'baseIngreso')) adj.revenue_basis = m.baseIngreso;
+      if (has(m, 'derivacionIngreso')) adj.revenue_derivation = m.derivacionIngreso;
       if (Object.keys(adj).length) o.adjustments = adj;
     }
     return o;
@@ -220,6 +226,8 @@ export function deJson(j) {
       if (a.extra_rows) m.extraRows = a.extra_rows.map((r) => ({ label: r.label, value: r.amount }));
       if (a.no_breakdown) m.sinDesglose = a.no_breakdown.map((r) => Object.fromEntries(Object.entries(r).map(([k, v]) => [inv(SIN_DESGLOSE)[k], v])));
       if (a.included_in) m.incluidoEn = Object.fromEntries(Object.entries(a.included_in).map(([cat, v]) => [cat, v !== null && typeof v === 'object' ? Object.fromEntries(Object.entries(v).map(([k, x]) => [inv(INCLUIDO)[k], x])) : v]));
+      if (has(a, 'revenue_basis')) m.baseIngreso = a.revenue_basis;
+      if (has(a, 'revenue_derivation')) m.derivacionIngreso = a.revenue_derivation;
     }
     d.fiscalYearMeta[y.fiscal_year] = m;
   }
@@ -319,6 +327,8 @@ export function validar(j, { categorias = null, externos = null } = {}) {
       const a = y.adjustments;
       if (has(a, 'extra_rows')) (Array.isArray(a.extra_rows) ? a.extra_rows : (err(`${r}.adjustments.extra_rows`, 'tiene que ser una lista'), [])).forEach((x, i) => { const rr = `${r}.adjustments.extra_rows[${i}]`; if (claves(x, ['label', 'amount'], rr, ['label', 'amount'])) { if (typeof x.label !== 'string') err(rr, 'label tiene que ser un texto'); if (x.amount !== null && !ES_NUM(x.amount)) err(rr, 'amount número o null'); } });
       if (has(a, 'no_breakdown')) (Array.isArray(a.no_breakdown) ? a.no_breakdown : (err(`${r}.adjustments.no_breakdown`, 'tiene que ser una lista'), [])).forEach((x, i) => { const rr = `${r}.adjustments.no_breakdown[${i}]`; if (claves(x, Object.values(SIN_DESGLOSE), rr, ['line', 'side', 'amount', 'reason'])) { if (has(x, 'kind') && !TIPOS_SIN_DESGLOSE.includes(x.kind)) err(rr, `kind tiene que ser uno de ${TIPOS_SIN_DESGLOSE.join(', ')}`); for (const k of ['line', 'side', 'reason']) if (typeof x[k] !== 'string') err(rr, `${k} tiene que ser un texto`); if (!ES_NUM(x.amount)) err(rr, 'amount tiene que ser un número finito'); } });
+      if (has(a, 'revenue_basis') && !BASES_INGRESO.includes(a.revenue_basis)) err(`${r}.adjustments.revenue_basis`, `tiene que ser uno de ${BASES_INGRESO.join(', ')}`);
+      if (has(a, 'revenue_derivation')) { const rr = `${r}.adjustments.revenue_derivation`; const dv = a.revenue_derivation; if (claves(dv, ['method', 'sources'], rr, ['method'])) { if (!METODOS_DERIVACION.includes(dv.method)) err(rr, `method tiene que ser uno de ${METODOS_DERIVACION.join(', ')}`); if (has(dv, 'sources') && !(Array.isArray(dv.sources) && dv.sources.every((s) => typeof s === 'string'))) err(rr, 'sources tiene que ser una lista de textos'); if (a.revenue_basis === 'gross_margin') err(rr, 'un ejercicio reconstruido no puede ser de margen bruto: su ingreso es el reconstruido'); } }
       if (has(a, 'included_in') && claves(a.included_in, Object.keys(a.included_in), `${r}.adjustments.included_in`)) for (const [cat, v] of Object.entries(a.included_in)) { const rr = `${r}.adjustments.included_in.${cat}`; if (typeof v === 'string') continue; if (claves(v, Object.values(INCLUIDO), rr, ['in'])) { if (typeof v.in !== 'string') err(rr, 'in tiene que ser un texto'); if (has(v, 'possible') && typeof v.possible !== 'boolean') err(rr, 'possible tiene que ser true o false'); if (has(v, 'by') && typeof v.by !== 'string') err(rr, 'by tiene que ser un texto'); } }
     }
   });

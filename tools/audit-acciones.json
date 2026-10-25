@@ -150,6 +150,16 @@
   "quien": "sesion",
   "donde": "punto 444"
  },
+ "ingreso-sin-base": {
+  "hacer": "Correr node tools/fos.mjs ingreso-base (ensayo) y luego --escribir: marca cada ejercicio con revenue_basis y, si el documento se reconstruye con margen + compras y servicios, con revenue_derivation. Si el año es nuevo, cargar-ejercicio.mjs debería haberlo escrito: ese es el bug.",
+  "quien": "sesion",
+  "donde": "punto 455 (Admin/mediciones/455-ingresos-con-margen-bruto.md)"
+ },
+ "ingreso-reconstruido-no-cierra": {
+  "hacer": "Un ejercicio con revenue_derivation ya no es margen bruto + compras y servicios de su documento (se recargó y perdió la reconstrucción). Volver a cargarlo reconstruido (tools/ingreso-derivado.js dice cómo cierra) o, si el documento cambió, sacar revenue_derivation y marcarlo gross_margin con su motivo.",
+  "quien": "sesion",
+  "donde": "punto 455 (Admin/mediciones/455-ingresos-con-margen-bruto.md)"
+ },
  "cambio-de-formato-sin-nota": {
   "hacer": "Por cada año listado: mirar los ingresos del año y del anterior en el documento; si el club de verdad cambió de balance resumido a completo (o al revés), node tools/fuente.mjs <clubId> <sourceId> --nota \"…\" --escribir con el texto que sugiere el aviso de cargar.mjs (tools/cambio-formato.js, textoSugerido). Si el salto no es de formato (un ingreso sin desglosar por otro motivo), se silencia el año con su motivo.",
   "quien": "sesion",

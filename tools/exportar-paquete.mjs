@@ -48,6 +48,8 @@ const diccionario = [
   ...Object.entries(C.TOTALES).map(([a, b]) => D(`years[].official_totals.${b}`, 'number|null', { revenue: 'Total de ingresos impreso en el documento.', expenses: 'Total de gastos impreso en el documento.', net_result: 'Resultado del ejercicio impreso en el documento.' }[b], a)),
   D('years[].adjustments.extra_rows[]', 'object', 'Filas que el documento imprime y no entran en las líneas: {label, amount|null}.', 'extraRows'),
   D('years[].adjustments.no_breakdown[]', 'object', 'Renglones que el documento no abre, con el motivo: {line, side, amount, reason, kind?}; kind (opcional) dice qué es la línea: gross_margin (margen bruto, ya neto de costos), net_sales (ventas totales), cost_of_sales o other.', 'sinDesglose'),
+  D('years[].adjustments.revenue_basis', 'string', 'Opcional. Qué son los ingresos del ejercicio: full (abiertos por línea), sales_total (una sola línea que es todo el ingreso) o gross_margin (el documento imprime solo el margen bruto, ya neto de costos: no es el ingreso).', 'baseIngreso'),
+  D('years[].adjustments.revenue_derivation', 'object', 'Opcional. El documento no imprime los ingresos de este ejercicio y se reconstruyeron con una identidad del propio documento: {method: margin_plus_costs (margen bruto + compras y servicios), sources?}.', 'derivacionIngreso'),
   D('years[].adjustments.included_in', 'object', 'Categorías cuyo importe va incluido en otra, por categoría: texto o {in, possible, by}.', 'incluidoEn'),
   D('budget_overlay.<año>', 'object', 'Presupuesto del año (cuando existe), con el mismo esquema de líneas.', 'presupuestoOverlayByYear'),
 ];

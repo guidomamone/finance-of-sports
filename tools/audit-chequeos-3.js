@@ -395,10 +395,34 @@ function checkCambioDeFormatoSinNota(api) {
       const ant = anioAnterior(por, y); if (ant == null) continue;
       const cambio = cambioDeFormato(por[ant], por[y]); if (!cambio) continue;
       const s = api.sources[(g.fiscalYearMeta?.[y] || {}).sourceId] || {};
-      if (!s.publicNote) sin.push(`${clubId} ${y}`);
+      // El año resumido ya lleva la nota que la pantalla arma sola (`sinDesglose` de ingresos, «Notas sobre este club»): el lector la ve.
+      const lump = cambio === 'resumido-a-completo' ? ant : y;
+      const notaAuto = (g.fiscalYearMeta?.[lump]?.sinDesglose || []).some((d) => d.lado === 'revenue');
+      if (!s.publicNote && !notaAuto) sin.push(`${clubId} ${y}`);
     }
   }
   if (sin.length) add('P3', 'cambio-de-formato-sin-nota', `${sin.length} año(s) con cambio de formato del balance (resumido a completo o al revés) y sin publicNote en su fuente: ${sin.slice(0, 6).join(', ')}${sin.length > 6 ? ', …' : ''}. Agregá la nota con node tools/fuente.mjs <clubId> <sourceId> --nota "…" --escribir`);
+}
+
+// Los ejercicios con `revenue_derivation` no imprimen sus ingresos: se reconstruyeron como margen bruto + compras y servicios del propio documento (tools/ingreso-derivado.js).
+// P1 si uno ya no cierra (se recargó y perdió la reconstrucción: el visitante vería el margen como si fuera ingreso). P3 si un ejercicio con ingresos no tiene
+// `revenue_basis` (fos ingreso-base lo completa; cargar-ejercicio.mjs debe escribirlo al cargar). Punto 455.
+function checkIngresoBase(api) {
+  const { cierraConDocumento, RENGLON_IMPLICITO } = require('./ingreso-derivado.js');
+  const noCierra = [], sinBase = [];
+  for (const [clubId, g] of Object.entries(api.generic)) {
+    for (const [y, m] of Object.entries(g.fiscalYearMeta || {})) {
+      const lineas = (g.revenueLinesByYear || {})[y] || [];
+      if (!lineas.length) continue;
+      if (!m.baseIngreso) sinBase.push(`${clubId} ${y}`);
+      if (!m.derivacionIngreso) continue;
+      const s = api.sources[m.sourceId] || {};
+      const porRotulo = lineas.some((l) => RENGLON_IMPLICITO.test(l.rawLabel || ''));
+      if (!porRotulo && !(s.documento && cierraConDocumento(s.documento, m.officialTotalRevenue) === true)) noCierra.push(`${clubId} ${y}`);
+    }
+  }
+  if (noCierra.length) add('P1', 'ingreso-reconstruido-no-cierra', `${noCierra.length} ejercicio(s) con revenue_derivation cuyo ingreso ya no es margen bruto + compras y servicios del documento: ${noCierra.slice(0, 6).join(', ')}${noCierra.length > 6 ? ', …' : ''}. Se recargó y perdió la reconstrucción (Admin/mediciones/455-ingresos-con-margen-bruto.md)`);
+  if (sinBase.length) add('P3', 'ingreso-sin-base', `${sinBase.length} ejercicio(s) con ingresos y sin revenue_basis: ${sinBase.slice(0, 6).join(', ')}${sinBase.length > 6 ? ', …' : ''}. node tools/fos.mjs ingreso-base --escribir`);
 }
 
 function checkFuentesPublicas(api) {
@@ -446,4 +470,4 @@ function checkFuentesPublicas(api) {
 }
 
 
-module.exports = { checkCorreccionesSinMotivo, checkRankings, checkClubIds, checkReferenciaAClub, checkColisionSourcing, checkCarpetasClubes, checkArchivoNoEsLoQueDice, checkFuentesPublicas, checkCambioDeFormatoSinNota };
+module.exports = { checkIngresoBase, checkCorreccionesSinMotivo, checkRankings, checkClubIds, checkReferenciaAClub, checkColisionSourcing, checkCarpetasClubes, checkArchivoNoEsLoQueDice, checkFuentesPublicas, checkCambioDeFormatoSinNota };

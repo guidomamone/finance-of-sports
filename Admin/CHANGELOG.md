@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1090 — cambio-formato.js, audit-chequeos-3.js, json-datos.mjs, ingreso-derivado.js, ingreso-base.mjs: señal de cambio de formato más precisa y marca del ingreso por año (revenue_basis, revenue_derivation) [455 · 447 · cambio-formato.js, audit-chequeos-3.js, audit.js, json-datos.mjs, ingreso-derivado.js, ingreso-base.mjs]
+- `cambio-formato.js`: un año con una línea extra que pesa menos del 10 % no cuenta como «completo» (23 a 15 avisos); `audit-chequeos-3.js`: `cambio-de-formato-sin-nota` da por cubierto un año resumido que ya lleva la nota automática de `sinDesglose`.
+- `json-datos.mjs` (+ esquema, paquete): campos opcionales `adjustments.revenue_basis` (`full`, `sales_total`, `gross_margin`) y `revenue_derivation` (`margin_plus_costs`: margen bruto + compras y servicios del documento); `ingreso-derivado.js` es la identidad, `ingreso-base.mjs` (`fos ingreso-base`) la escribe en los ejercicios ya cargados sin tocar importes (probado idéntico en los 331 clubes).
+- `audit.js`: `ingreso-reconstruido-no-cierra` (P1: un reconstruido que ya no cierra con su documento) e `ingreso-sin-base` (P3).
+- Medición: 3 diferencias, todas explicadas (lote completo): se va `cambio-de-formato-sin-nota`; aparecen `ingreso-sin-base` (la marca se escribe en el commit de datos siguiente) y `todo-cumplido` del 447 (no se cierra sin autorización); cargar, escribir, caja-deuda y alta idénticos.
+
 ## Versión 1089 — inventario de ingresos con margen bruto y punto 455 (estimado de Ligas y detección en el pipeline) [455 · 447]
 - `Admin/mediciones/455-ingresos-con-margen-bruto.md`: 53 de 1340 ejercicios en 14 clubes (solo Bélgica y Dinamarca cargados), peso por liga-año, la identidad del margen belga (ingreso = margen + compras + servicios, verificada al euro) y qué se recupera sin estimar (Lommel 2022/23, RWDM 2023/24, Patro Eisden 2020); el margen no sirve de proxy (razón 2 a 18).
 - Casuísticas revisadas: Fredrikstad «Annen driftsinntekt» es el ingreso total; «Receita Operacional Bruta» de Remo no tiene deducciones; el resto sin hallazgos.
