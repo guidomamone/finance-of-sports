@@ -6,6 +6,9 @@ const westerloBeRevenueLinesByYear = {
   2016: [
     {"rawLabel":"Brutomarge (+)/(-)","normalizedCategory":"lump_football_operations","amountNative":4.663896,"disclosureLevel":"aggregated"},
   ],
+  2017: [
+    {"rawLabel":"Brutomarge (+)/(-)","normalizedCategory":"lump_football_operations","amountNative":5.974291,"disclosureLevel":"aggregated"},
+  ],
   2025: [
     {"rawLabel":"Omzet","normalizedCategory":"lump_football_operations","amountNative":14.373418,"disclosureLevel":"aggregated"},
     {"rawLabel":"Andere bedrijfsopbrengsten","normalizedCategory":"other_income","amountNative":16.309398,"disclosureLevel":"aggregated"},
@@ -30,6 +33,14 @@ const westerloBeExpenseLinesByYear = {
     {"rawLabel":"Andere bedrijfskosten","normalizedCategory":"other_expenses","amountNative":-0.030065,"disclosureLevel":"aggregated"},
     {"rawLabel":"Uitzonderlijke kosten","normalizedCategory":"exceptional_items","amountNative":-0.031157,"disclosureLevel":"aggregated"},
   ],
+  2017: [
+    {"rawLabel":"Bezoldigingen, sociale lasten en pensioenen (+)/(-)","normalizedCategory":"wages_squad","amountNative":-5.167829,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa","normalizedCategory":"depreciation","amountNative":-0.948592,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)","normalizedCategory":"other_expenses","amountNative":-0.03,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)","normalizedCategory":"exceptional_items","amountNative":0.058883,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Andere bedrijfskosten","normalizedCategory":"other_expenses","amountNative":-0.008094,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Niet-recurrente bedrijfskosten","normalizedCategory":"player_impairment","amountNative":-0.022947,"disclosureLevel":"aggregated"},
+  ],
   2025: [
     {"rawLabel":"Handelsgoederen, grond- en hulpstoffen","normalizedCategory":"other_expenses","amountNative":-3.49556,"disclosureLevel":"aggregated"},
     {"rawLabel":"Diensten en diverse goederen","normalizedCategory":"other_expenses","amountNative":-12.257662,"disclosureLevel":"aggregated"},
@@ -47,6 +58,7 @@ const westerloBeExpenseLinesByYear = {
 const westerloBeFiscalYearMeta = {
   2015: {"currency":"EUR","sourceId":"westerlo-be-jaarrekening-2015-06-30-individual","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2015-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.003796,"tax":-0.068497,"grossDebt":null,"cash":null,"officialTotalRevenue":4.882931,"officialTotalExpenses":4.590476,"officialPAT":0.125859,"extraRows":[{"label":"Financiële opbrengsten","value":-0.000001},{"label":"Financiële kosten","value":-0.003795},{"label":"Belastingen op het resultaat (+)/(-)","value":-0.068497}],"sinDesglose":[{"renglon":"Brutomarge (+)/(-)","lado":"revenue","importe":4.882931,"motivo":"el documento no desglosa este renglón","tipo":"gross_margin"}],"baseIngreso":"gross_margin"},
   2016: {"currency":"EUR","sourceId":"westerlo-be-jaarrekening-2016-06-30-individual","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2016-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.001273,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":4.663896,"officialTotalExpenses":5.804539,"officialPAT":-1.201257,"extraRows":[{"label":"Financiële opbrengsten","value":-0.000002},{"label":"Financiële kosten","value":-0.001271},{"label":"Belastingen op het resultaat (+)/(-)","value":null}],"sinDesglose":[{"renglon":"Brutomarge (+)/(-)","lado":"revenue","importe":4.663896,"motivo":"el documento no desglosa este renglón","tipo":"gross_margin"}],"baseIngreso":"gross_margin"},
+  2017: {"currency":"EUR","sourceId":"westerlo-be-jaarrekening-2017-06-30-individual","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2017-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.006566,"tax":-0.010612,"grossDebt":null,"cash":null,"officialTotalRevenue":5.974291,"officialTotalExpenses":6.177462,"officialPAT":-0.161468,"extraRows":[{"label":"Recurrente financiële opbrengsten","value":0.00002},{"label":"Recurrente financiële kosten","value":-0.006586},{"label":"Belastingen op het resultaat (+)/(-)","value":-0.010612}],"sinDesglose":[{"renglon":"Brutomarge (+)/(-)","lado":"revenue","importe":5.974291,"motivo":"el documento no desglosa este renglón","tipo":"gross_margin"}],"baseIngreso":"gross_margin"},
   2025: {"currency":"EUR","sourceId":"westerlo-be-jaarrekening-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"EUR@2025-06-30","profitOnPlayerSales":0,"assetSales":0,"netInterest":-0.087489,"tax":-0.283163,"grossDebt":39.407332,"cash":0.13509,"officialTotalRevenue":30.729382,"officialTotalExpenses":42.126477,"officialPAT":-11.767747,"sinDesglose":[{"renglon":"Omzet","lado":"revenue","importe":14.373418,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
 };
 
@@ -64,6 +76,6 @@ window.CLUB_GENERIC_DATA["westerlo-be"] = {
   presupuestoOverlayByYear: westerloBePresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"westerlo-be-jaarrekening-2025":{"id":"westerlo-be-jaarrekening-2025","clubId":"westerlo-be","title":"Jaarrekening van KVC Westerlo BV voor het boekjaar van 1/7/2024 tot 30/6/2025","type":"official_balance_sheet","reliability":"primary"},"westerlo-be-jaarrekening-2015-06-30-individual":{"id":"westerlo-be-jaarrekening-2015-06-30-individual","clubId":"westerlo-be","title":"KVC Westerlo BV — jaarrekening-2015-06-30-individual (ejercicio 2015)","type":"official_balance_sheet","reliability":"primary","publicNote":"Ejercicio de transición por cambio de fecha de cierre: del 01/01/2014 al 30/06/2015 (18 meses).","documento":"Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.pdf"},"westerlo-be-jaarrekening-2016-06-30-individual":{"id":"westerlo-be-jaarrekening-2016-06-30-individual","clubId":"westerlo-be","title":"KVC Westerlo BV — jaarrekening-2016-06-30-individual (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Bélgica/Westerlo/jaarrekening-2016-06-30-individual.pdf"}});
+Object.assign(sources, {"westerlo-be-jaarrekening-2025":{"id":"westerlo-be-jaarrekening-2025","clubId":"westerlo-be","title":"Jaarrekening van KVC Westerlo BV voor het boekjaar van 1/7/2024 tot 30/6/2025","type":"official_balance_sheet","reliability":"primary"},"westerlo-be-jaarrekening-2015-06-30-individual":{"id":"westerlo-be-jaarrekening-2015-06-30-individual","clubId":"westerlo-be","title":"KVC Westerlo BV — jaarrekening-2015-06-30-individual (ejercicio 2015)","type":"official_balance_sheet","reliability":"primary","publicNote":"Ejercicio de transición por cambio de fecha de cierre: del 01/01/2014 al 30/06/2015 (18 meses).","documento":"Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.pdf"},"westerlo-be-jaarrekening-2016-06-30-individual":{"id":"westerlo-be-jaarrekening-2016-06-30-individual","clubId":"westerlo-be","title":"KVC Westerlo BV — jaarrekening-2016-06-30-individual (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Bélgica/Westerlo/jaarrekening-2016-06-30-individual.pdf"},"westerlo-be-jaarrekening-2017-06-30-individual":{"id":"westerlo-be-jaarrekening-2017-06-30-individual","clubId":"westerlo-be","title":"KVC Westerlo BV — jaarrekening-2017-06-30-individual (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Bélgica/Westerlo/jaarrekening-2017-06-30-individual.pdf"}});
 
 memberCountByClub["westerlo-be"] = null;

@@ -1,0 +1,103 @@
+{
+ "md": "Clubes/Bélgica/Westerlo/jaarrekening-2017-06-30-individual.md",
+ "club": "westerlo-be",
+ "year": 2017,
+ "generatedAt": "2026-10-25T16:53:40.911Z",
+ "rubrosHuella": "304a219c19314527d0b530e6d07bd17c386ac9cc",
+ "jevHuella": "cac24ccc507a516e7517a09924221f5dc57fd50f",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Brutomarge (+)/(-)",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Margen bruto (+)/(-)",
+   "page": 6,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)",
+   "page": 6,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones y pérdidas por deterioro de gastos de constitución, inmovilizado intangible y material",
+   "page": 6,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
+   "confianza": 1
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Pérdidas por deterioro de existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)",
+   "page": 6,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "section": "estado (lectura 4: signo impreso, resta en su lado)",
+   "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)",
+   "page": 6,
+   "pendiente": false,
+   "ya": "exceptional_items",
+   "escalon": 0,
+   "precedenteDe": "sitio:familia",
+   "categoria": "exceptional_items",
+   "confianza": 1
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 6,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de explotación no recurrentes",
+   "page": 6,
+   "pendiente": false,
+   "ya": "player_impairment",
+   "escalon": 0,
+   "precedenteDe": "sitio:familia",
+   "categoria": "player_impairment",
+   "confianza": 1
+  }
+ ]
+}

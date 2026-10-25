@@ -36,6 +36,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Bélgica/Westerlo/jaarrekening-2016-06-30-individual.pdf"
+    },
+    {
+      "id": "westerlo-be-jaarrekening-2017-06-30-individual",
+      "club_id": "westerlo-be",
+      "title": "KVC Westerlo BV — jaarrekening-2017-06-30-individual (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/Westerlo/jaarrekening-2017-06-30-individual.pdf"
     }
   ],
   "members": null,
@@ -143,6 +151,65 @@
           {"label":"Belastingen op het resultaat (+)/(-)","amount":null}
         ],
         "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":4.663896,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
+      }
+    },
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-06-30",
+      "currency": "EUR",
+      "source_id": "westerlo-be-jaarrekening-2017-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2017-06-30"},
+      "revenue": [{"label":"Brutomarge (+)/(-)","category":"undisclosed","subcategory":"lump_football_operations","amount":5.974291,"disclosure":"aggregated"}],
+      "expenses": [
+        {
+          "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -5.167829,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.948592,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.03,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": 0.058883,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.008094,"disclosure":"aggregated"},
+        {
+          "label": "Niet-recurrente bedrijfskosten",
+          "category": "player_registrations_impairment",
+          "subcategory": "player_impairment",
+          "amount": -0.022947,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.006566,"tax":-0.010612,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":5.974291,"expenses":6.177462,"net_result":-0.161468},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.00002},
+          {"label":"Recurrente financiële kosten","amount":-0.006586},
+          {"label":"Belastingen op het resultaat (+)/(-)","amount":-0.010612}
+        ],
+        "no_breakdown": [{"line":"Brutomarge (+)/(-)","side":"revenue","amount":5.974291,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
         "revenue_basis": "gross_margin"
       }
     },

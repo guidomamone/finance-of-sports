@@ -102,6 +102,14 @@ window.RANKINGS["be-proleague"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",8.411],["Otros ingresos",14.949]] },
     ],
   },
+  2017: {
+    leagueSize: 16,
+    sinDato: ["westerlo-be"],
+    margen: [["westerlo-be",6.818,null]],
+    wiki: {"t":"2016–17 Belgian Pro League","lang":"en","at":"2026-10-19","n":16},
+    clubs: [
+    ],
+  },
   2016: {
     leagueSize: 16,
     sinDato: ["westerlo-be"],

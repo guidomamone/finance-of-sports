@@ -129,6 +129,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'westerlo-be': {
     2015: {"estadio":"Het Kuipje","capacidad":7982,"sponsor":"Soudal","marca":"Saller","temporada":"2014–15 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1369175963"},
     2016: {"estadio":"Het Kuipje","capacidad":8035,"sponsor":"Soudal","marca":"Saller","temporada":"2015–16 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371302114"},
+    2017: {"estadio":"Het Kuipje","capacidad":8035,"sponsor":"Soudal","marca":"Saller","temporada":"2016–17 Belgian First Division A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374899869"},
     2025: {"estadio":"Het Kuipje","capacidad":8035,"sponsor":"Soudal","marca":"Nike","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
 });

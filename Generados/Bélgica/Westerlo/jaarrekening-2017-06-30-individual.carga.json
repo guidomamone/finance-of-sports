@@ -1,22 +1,140 @@
 {
  "pdf": "Clubes/Bélgica/Westerlo/jaarrekening-2017-06-30-individual.pdf",
- "generado": "2026-10-25T16:44:56.372Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
+ "generado": "2026-10-25T16:53:41.293Z",
+ "frena": [],
+ "avisos": [
+  "gastos: ningún total impreso igual a la suma de las líneas (-6.177462); queda la suma, verificada por el resultado del ejercicio",
+  "ingresos: el documento imprime solo el margen bruto (ya neto de costos), no los ingresos; se marca gross_margin. Si el documento imprime también compras y servicios (60, 61 o 60/61), el ingreso se reconstruye como margen + compras y servicios"
  ],
- "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "westerlo-be",
+  "year": 2017,
+  "cierre": "2017-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Brutomarge (+)/(-)",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 5.974291,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -5.167829,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.948592,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.03,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": 0.058883,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere bedrijfskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.008094,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Niet-recurrente bedrijfskosten",
+    "normalizedCategory": "player_impairment",
+    "amountNative": -0.022947,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2017-06-30",
+   "sourceId": "westerlo-be-jaarrekening-2017-06-30-individual",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.006566,
+   "tax": -0.010612,
+   "extraRows": [
+    {
+     "label": "Recurrente financiële opbrengsten",
+     "value": 0.00002
+    },
+    {
+     "label": "Recurrente financiële kosten",
+     "value": -0.006586
+    },
+    {
+     "label": "Belastingen op het resultaat (+)/(-)",
+     "value": -0.010612
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Brutomarge (+)/(-)",
+     "lado": "revenue",
+     "importe": 5.974291,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "gross_margin"
+    }
+   ],
+   "baseIngreso": "gross_margin",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 5.974291,
+   "officialTotalExpenses": 6.177462,
+   "officialPAT": -0.161468
+  },
+  "source": {
+   "id": "westerlo-be-jaarrekening-2017-06-30-individual",
+   "clubId": "westerlo-be",
+   "title": "KVC Westerlo BV — jaarrekening-2017-06-30-individual (ejercicio 2017)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Bélgica/Westerlo/jaarrekening-2017-06-30-individual.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Bélgica/Westerlo/jaarrekening-2017-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Bélgica/Westerlo/jaarrekening-2017-06-30-individual.md",
  "reemplaza": false,
  "periodo": {
@@ -34,5 +152,244 @@
  },
  "clubId": "westerlo-be",
  "year": 2017,
- "cortadoEn": "filas"
+ "ajustes": null,
+ "seleccion": {
+  "filas": 10,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Brutomarge (+)/(-)",
+   "page": 6,
+   "native": 5.974291,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.974291,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.974291
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "page": 6,
+   "native": 5.167829,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.167829,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.167829
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "page": 6,
+   "native": 0.948592,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.948592,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.948592
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "page": 6,
+   "native": 0.03,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.03,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.03
+  },
+  {
+   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "page": 6,
+   "native": 0.058883,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 4: signo impreso, resta en su lado))",
+   "signoFijo": -0.058883,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0.058883
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "page": 6,
+   "native": 0.008094,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.008094,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.008094
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "page": 6,
+   "native": 0.022947,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.022947,
+   "cat": "player_impairment",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.022947
+  },
+  {
+   "label": "Recurrente financiële opbrengsten",
+   "page": null,
+   "native": 0.00002,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Recurrente financiële kosten",
+   "page": null,
+   "native": -0.006586,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Belastingen op het resultaat (+)/(-)",
+   "page": null,
+   "native": -0.010612,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 5.974291,
+  "expSum": -6.177462,
+  "officialTotalRevenue": 5.974291,
+  "officialTotalExpenses": 6.177462,
+  "officialPAT": -0.161468,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.161468,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 5.974291
+  }
+ },
+ "liga": {
+  "valor": "be-proleague",
+  "fuente": "roster cacheado de \"2016–17 Belgian Pro League\" (tools/club-league-reference/be.json), coincidencia exacta \"Westerlo\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2017,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2017-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2017-06-30) y contenido del .md (7 de 8 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el nombre del archivo dice que son los estados individuales (\"jaarrekening-2017-06-30-individual.pdf\"), y no hay un consolidado del mismo ejercicio en la carpeta",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2017-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2017-06-30 = 0.876271 (Tipo de referencia del Banco Central Europeo al 2017-06-30)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "westerlo-be-jaarrekening-2017-06-30-individual",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "be-proleague",
+   "fuente": "roster cacheado de \"2016–17 Belgian Pro League\" (tools/club-league-reference/be.json), coincidencia exacta \"Westerlo\"",
+   "estado": "ok"
+  }
+ },
+ "ancla": {
+  "club": "westerlo-be",
+  "anio": 2016,
+  "ingreso": 4.663896,
+  "moneda": "EUR",
+  "fuente": "Clubes/Bélgica/Westerlo/jaarrekening-2017-06-30-individual.pdf: columna del ejercicio anterior del estado de resultados",
+  "nota": "el informe del año anterior imprime solo el margen bruto; este trae el ingreso completo de ese ejercicio"
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 6,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }
