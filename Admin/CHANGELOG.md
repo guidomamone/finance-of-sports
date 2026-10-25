@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1109 — audit-chequeos-6.js: los chequeos de ligas no catalogadas, claves repetidas y estimados repetidos salen de audit-chequeos-2.js (pasó los 40 KB) [audit-chequeos-2.js, audit.js]
+- Sin cambio de lógica: tres funciones a un módulo nuevo y `audit.js` las importa de ahí. Comentarios sin fecha en `cierre-propuestas.mjs` y `produccion.mjs`. Las entradas de las Versiones 1090 y 1096 se acortan (pasaban de 1.500 caracteres).
+- Viborg FF 2021 cargado con el cierre del 30/06 por ajuste; Fredericia 2018 y Rapid Wien 2013 a 2023 con liga (`ligas-sin-verificar.mjs`; Fredericia confirmado también por la Wikipedia en danés).
+- Medición: 1 diferencia, explicada (lote completo: idéntico).
+
 ## Versión 1108 — tipo-sin-desglose.js, audit.js, audit-chequeos-2.js: la puntuación final no cambia un rótulo aprendido y claves repetidas en los JSON de configuración [tipo-sin-desglose.js, audit.js]
 - `tipo-sin-desglose.js`: la tabla de rótulos aprendidos ignora la puntuación final («Ingresos operativos:» = «Ingresos operativos»), que había vuelto a mandar a la cola un rótulo ya contestado (Once Caldas 2018).
 - `audit.js` suma `json-clave-duplicada` (P2): una clave repetida en un mismo objeto de un `.json` de `tools/` o de `tools/club-league-reference/` (JSON.parse se queda con la última). Primer hallazgo real: `tools/contexto-manual.json` tenía a Fredericia dos veces y la entrada de 2017 no valía; se juntaron. Contexto y sponsors regenerados.
@@ -84,9 +89,8 @@ que dice `ESTADO.md` era verdad ese día.
 
 ## Versión 1096 — generate-rankings.js, estimar.mjs, faltantes-liga.mjs, generate-club-index.js: Ligas estima los años de margen bruto y un ingreso real de un informe posterior lo pisa [455 · 447 · generate-rankings.js, estimar.mjs, faltantes-liga.mjs, generate-club-index.js]
 - Un ejercicio de margen bruto (`revenue_basis: gross_margin`, `gm` en `data/club-index.js`) sale del ranking, la composición y la mediana de la liga (`margen` en `data/rankings/`) y `faltantes-liga` ya no lo da por cubierto: `estimar.mjs` lo estima (interpolación entre sus años completos o modelo de club nuevo, margen positivo como piso, rango medido); un ingreso real de un informe posterior (`Admin/registros/ingresos-ancla.jsonl`: Lommel 2022/23, RWDM 2023/24, SønderjyskE 2023/24) lo pisa. Finanzas no cambia.
-- Error del modelo medido con `estimar --medir`: por club 51 % antes, 50 % ahora (39 filas menos de entrenamiento); en Bélgica y Dinamarca cambian los estimados que estaban envenenados por márgenes chicos; fuera de ellos 6.757 estimados con mediana de cambio 0,9 % y dos de Chile 2013 por el reajuste global (+68 % y +115 %).
+- Error del modelo medido con `estimar --medir`: por club 51 % antes, 50 % ahora (39 filas menos de entrenamiento); en Bélgica y Dinamarca cambian los estimados que estaban envenenados por márgenes chicos; fuera de ellos 6.757 estimados con mediana de cambio 0,9 % (los dos saltos de Chile 2013 eran una fila repetida: Versión 1099).
 - `js/liga.js` y `data/lang/en.js`: «(informe siguiente)» para el dato real, dos notas nuevas (margen bruto e informe siguiente), el club de margen sin estimado va a «sin ingreso calculable» y una liga-año sin ningún club real no muestra el total en cero; `Admin/PANTALLA.md` al día.
-- Verificado a mano (447): cambio-de-formato-sin-nota da 0 (audit.js P0 0 P1 0): la señal ignora una línea extra de menos del 10 % y reconoce la nota automática de sinDesglose; se miraron Goiás 2019-2021, Lommel (margen bruto 2019/20-2022/23, notas agrupadas), Bayern 2024 y Remo, y los 15 casos restantes quedaron cubiertos por las notas por ejercicio (Versión 1088); el margen bruto sigue en el 455
 - Medición: 4 diferencias, todas explicadas (medidor de auditoría); se verificó a mano comparando los estimados antes y después y la pantalla de Ligas en español, inglés y 375 px.
 
 ## Versión 1095 — audit-chequeos-1.js: la banda de escala no cuenta los ejercicios de margen bruto [455 · audit-chequeos-1.js]
@@ -119,7 +123,6 @@ que dice `ESTADO.md` era verdad ese día.
 - `cambio-formato.js`: un año con una línea extra que pesa menos del 10 % no cuenta como «completo» (23 a 15 avisos); `audit-chequeos-3.js`: `cambio-de-formato-sin-nota` da por cubierto un año resumido que ya lleva la nota automática de `sinDesglose`.
 - `json-datos.mjs` (+ esquema, paquete): campos opcionales `adjustments.revenue_basis` (`full`, `sales_total`, `gross_margin`) y `revenue_derivation` (`margin_plus_costs`: margen bruto + compras y servicios del documento); `ingreso-derivado.js` es la identidad, `ingreso-base.mjs` (`fos ingreso-base`) la escribe en los ejercicios ya cargados sin tocar importes (probado idéntico en los 331 clubes).
 - `audit.js`: `ingreso-reconstruido-no-cierra` (P1: un reconstruido que ya no cierra con su documento) e `ingreso-sin-base` (P3).
-- Verificado a mano (447): cambio-de-formato-sin-nota da 0 (audit.js P0 0 P1 0): la señal ignora una línea extra de menos del 10 % y reconoce la nota automática de sinDesglose; se miraron Goiás 2019-2021, Lommel (margen bruto 2019/20-2022/23, notas agrupadas), Bayern 2024 y Remo, y los 15 casos restantes quedaron cubiertos por las notas por ejercicio (Versión 1088); el margen bruto sigue en el 455
 - Medición: 3 diferencias, todas explicadas (lote completo): se va `cambio-de-formato-sin-nota`; aparecen `ingreso-sin-base` (la marca se escribe en el commit de datos siguiente) y `todo-cumplido` del 447 (no se cierra sin autorización); cargar, escribir, caja-deuda y alta idénticos.
 
 ## Versión 1089 — inventario de ingresos con margen bruto y punto 455 (estimado de Ligas y detección en el pipeline) [455 · 447]

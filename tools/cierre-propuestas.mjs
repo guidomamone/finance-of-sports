@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/cierre-propuestas.mjs — `fos cierre-propuestas`: abre en la cola una pregunta por cada documento anual sin fecha de cierre, con el cierre del país como propuesta
 //
-// POR QUÉ. Votación del 2026-10-24 (444, opción C, 2 a 1): para un documento anual sin fecha de cierre que los vecinos del club no deducen (cierre-vecinos.mjs), el cierre por defecto del
+// POR QUÉ. Votación (opción C, 2 a 1): para un documento anual sin fecha de cierre que los vecinos del club no deducen (cierre-vecinos.mjs), el cierre por defecto del
 // país (tools/cierre-por-defecto.json: los países donde domina el mismo día y mes en 98 % o más de los anuales con cierre) NO se asume: se propone en una pregunta de cola
 // (motivo `cierre-por-pais`) que un revisor confirma mirando el documento. cargar-inicio.mjs toma la respuesta: `aceptar` = la propuesta, `corregir --valor AAAA-MM-DD` = esa fecha.
 //

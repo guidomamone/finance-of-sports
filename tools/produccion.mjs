@@ -2,7 +2,7 @@
 // ============================================================================
 // tools/produccion.mjs — `fos produccion`: ¿lo que está publicado en financeofsports.com es lo que hay en main?
 //
-// POR QUÉ. El 2026-10-24 se vio que producción seguía en el deploy del 20/10 (ASSET_V 1534) cuando main estaba en 1762: Netlify se quedó sin créditos del ciclo y no hubo ninguna
+// POR QUÉ. Una vez producción siguió en un deploy viejo (ASSET_V 1534) cuando main estaba en 1762: Netlify se quedó sin créditos del ciclo y no hubo ninguna
 // alarma. Esta tool lee el ASSET_V de la home publicada y lo compara con el de index.html; sale con 1 si difieren. Gratis: un GET a la home pública.
 //
 // USO: node tools/produccion.mjs        dice los dos ASSET_V y cuántas versiones de atraso lleva producción (exit 1 si hay atraso)
