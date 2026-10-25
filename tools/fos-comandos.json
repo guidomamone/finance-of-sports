@@ -4,6 +4,7 @@
   { "cmd": "todo", "script": "todo.mjs", "que": "lista el TODO, un punto, --verificar, --cerrar, --nuevo", "cuando": "al empezar y al cerrar una tarea" },
   { "cmd": "estado", "script": "estado.mjs", "que": "tablero del inventario: dónde está cada PDF y qué le falta", "cuando": "para saber qué cargar" },
   { "cmd": "modo", "script": "modo.mjs", "que": "dice o cambia el modo de trabajo (una sesión / varias)", "cuando": "si Guido cambia de modo" },
+  { "cmd": "informe-en-pdf", "script": "informe-en-pdf.mjs", "que": "¿el PDF trae el informe del auditor que falta en su .md? (pdftotext, gratis)", "cuando": "antes de pagar una re-transcripción por un `falta_transcripcion`" },
   { "cmd": "indice-md", "script": "indice-md.mjs", "que": "índice de los .md y huérfanos", "cuando": "al crear, mover o borrar un .md" },
   { "cmd": "indefinidos", "script": "indefinidos.mjs", "que": "los nombres que se usan y nadie definió en tools/ (eslint, solo no-undef); necesita cd tools && npm install", "cuando": "después de partir o mover código de una tool, y antes de commitear una rama que ningún ensayo recorre (--escribir, --ejecutar)" },
   { "cmd": "lote-nuevo", "script": "lote-nuevo.mjs", "que": "crea la próxima lista Admin/lotes/lote-N.txt con su encabezado (--numero: solo el número libre)", "cuando": "al armar una lista de lote nueva, en vez de elegir el número a ojo" },

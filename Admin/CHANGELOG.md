@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1114 — `fos informe-en-pdf`: ¿el PDF trae el informe del auditor que falta en su .md? [informe-en-pdf.mjs, fos-comandos.json]
+- Mira gratis, con `pdftotext`, si el PDF menciona el informe del auditor más veces que su transcripción, y detecta el escaneado. De los 34 `falta_transcripcion` que podían ser de transcripción, en 32 el PDF no trae más: re-transcribir con Mistral no ayuda; los otros dos (Sarpsborg 2021 y Telstar 2025) son escaneos.
+- Medición: no es una tool del pipeline (no escribe nada ni llama a ninguna API).
+
 ## Versión 1113 — El card «en otra liga» ya no compara un margen bruto como ingreso [457 · liga.js, principal.js]
 - Un ejercicio de margen bruto compara su estimado (etiqueta «Estimado», con el rango del 80 %) o el ingreso del informe siguiente (etiqueta «Informe siguiente»); sin ninguno el card queda en gris («Sin ingresos») y pasa solo a comparado cuando `estimar.mjs` genera el estimado. «Ver el ranking completo» lo muestra con el estimado. Mockup 148 aprobado (español e inglés sin mezclar).
 - Verificado en escritorio y 375 px, en español e inglés, con Lierse SK 2025 (estimado), Vejle 2025 (gris) y RWDM 2024 (informe siguiente); sin errores de consola propios.

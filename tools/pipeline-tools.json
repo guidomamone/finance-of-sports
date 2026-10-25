@@ -132,6 +132,7 @@
  "_no_pipeline": "Tools de primer nivel declaradas de afuera del pipeline, con el motivo. Una tool de la tabla no puede importar una de estas (clasificar-tools.mjs lo avisa). tools/hooks, tools/archivo y las carpetas de datos no se clasifican.",
  "no_pipeline": {
   "archivar.mjs": "orden: archiva un documento cerrado",
+  "informe-en-pdf.mjs": "consulta: lee un PDF con pdftotext y cuenta menciones del informe del auditor; no escribe nada ni llama a una API",
   "partir-fases.mjs": "orden: parte una función enorme de una tool en fases con un ctx (el corte lo mide el pipeline)",
   "lexico-js.mjs": "orden: lo usa partir-fases.mjs; recorre el código de una función (llaves, strings, regex)",
   "hallazgo.mjs": "orden: escribe un hallazgo en HALLAZGOS-pipeline.md en su formato (412)",
