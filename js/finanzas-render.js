@@ -903,22 +903,36 @@
     const box = document.getElementById('finNotasClub');
     if(!box) return;
     const lab = y => (typeof esEjercicioCalendario === 'function' && esEjercicioCalendario(clubId, y)) ? String(y) : (y - 1) + '/' + String(y).slice(2);
-    const items = [];
+    // Sin montos: la tabla ya muestra la cifra, y sin ellos los ejercicios consecutivos con la misma nota se juntan en un solo punto («2019/20 a 2022/23»).
+    const lineasIngreso = y => (((window.CLUB_GENERIC_DATA || {})[clubId] || {}).revenueLinesByYear || {})[y] || [];
+    const filas = [];
     (years || []).slice().sort().forEach(y => {
       const meta = yearMetaFor(clubId, y);
       ['revenue', 'expense'].forEach(lado => {
         const e = sinDesgloseDe(meta, lado); if(!e) return;
         const r = rotuloCorto(e.renglon);
-        const imp = fmtAmountPlain(nativeDisplayVal(e.importe, meta, currentCurrency), currentCurrency);
-        const clave = lado === 'expense' ? 'exp' : (e.tipo === 'gross_margin' ? 'margin' : e.tipo === 'net_sales' ? 'sales' : 'other');
+        // «sales»: la línea es todo el ingreso del año; «salesPart»: el año tiene otras líneas de ingreso y esta es solo una parte
+        const clave = lado === 'expense' ? 'exp' : (e.tipo === 'gross_margin' ? 'margin' : e.tipo === 'net_sales' ? (lineasIngreso(y).length > 1 ? 'salesPart' : 'sales') : 'other');
         const es = {
-          margin: 'El documento informa solo «{r}» ({i}): un margen bruto que ya descuenta costos, no la facturación. Los ingresos de este ejercicio no son comparables con los de los ejercicios que muestran ingresos y gastos por separado, y las categorías figuran como s/d.',
-          sales: 'El documento informa solo el total de ventas («{r}», {i}), sin abrirlo por fuente de ingreso. El total sí se puede comparar con otros ejercicios; las categorías figuran como s/d.',
-          other: 'El documento informa los ingresos en una sola línea («{r}», {i}), sin abrirlos por fuente. Las categorías figuran como s/d.',
-          exp: 'El documento informa los gastos en una sola línea («{r}», {i}), sin abrirlos. Las categorías de gasto figuran como s/d.'
+          margin: 'El documento informa solo «{r}», así que no sabemos cuántos ingresos generó el club: solo la diferencia entre sus ingresos y parte de sus costos. Los ingresos que se muestran acá no son comparables con los de los años que abren los ingresos. Las categorías figuran como s/d.',
+          sales: 'El documento informa solo el total de ventas («{r}»), sin abrirlo por fuente de ingreso. El total sí se puede comparar con otros ejercicios; las categorías figuran como s/d.',
+          salesPart: '«{r}» no se abre por fuente de ingreso y figura como s/d. El resto de los ingresos del ejercicio está abierto en las otras líneas.',
+          other: 'El documento informa los ingresos en una sola línea («{r}»), sin abrirlos por fuente. Las categorías figuran como s/d.',
+          exp: 'El documento informa los gastos en una sola línea («{r}»), sin abrirlos. Las categorías de gasto figuran como s/d.'
         }[clave];
-        items.push(`<li><b>${lab(y)}.</b> ${t('pl.notas.' + clave, es).replace('{r}', r).replace('{i}', imp)}</li>`);
+        filas.push({ y: Number(y), texto: t('pl.notas.' + clave, es).replace('{r}', r) });
       });
+    });
+    const items = [];
+    const usadas = new Set();
+    filas.forEach((f, i) => {
+      if(usadas.has(i)) return;
+      let fin = f.y; usadas.add(i);
+      for(let j = i + 1; j < filas.length; j++){
+        if(!usadas.has(j) && filas[j].texto === f.texto && filas[j].y === fin + 1){ usadas.add(j); fin = filas[j].y; }
+      }
+      const rango = fin === f.y ? lab(f.y) : lab(f.y) + t('pl.notas.hasta', ' a ') + lab(fin);
+      items.push(`<li><b>${rango}.</b> ${f.texto}</li>`);
     });
     box.hidden = !items.length;
     box.innerHTML = items.length ? `<h3>${t('pl.notas.title', 'Notas sobre este club')}</h3><ul>${items.join('')}</ul><p class="pl-notas-leyenda"><span class="pl-sd">${t('pl.sd', 's/d')}</span> ${t('pl.notas.leyenda', 'sin desglose: el documento no abre este ingreso o gasto; no es cero.')} <span class="pl-notas-cero">—</span> ${t('pl.notas.cero', 'cero real o sin dato.')}</p>` : '';

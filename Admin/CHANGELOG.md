@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1088 — «Notas sobre este club»: sin montos, años consecutivos juntos, nota del margen bruto y del renglón parcial [447 · 454]
+- `js/finanzas-render.js` (`renderNotasClub`): las notas ya no llevan el importe (la tabla lo muestra) y los ejercicios consecutivos con la misma nota se juntan en un punto («2019/20 a 2022/23»; en inglés «to»).
+- Texto nuevo del margen bruto: no sabemos cuántos ingresos generó el club, solo la diferencia con parte de sus costos; no comparar con años que abren los ingresos. Caso nuevo `salesPart` (el renglón sin abrir es una parte de los ingresos del año): se dice que figura como s/d y que el resto está abierto, sin afirmar que el total es comparable (antes lo decía en más de 200 ejercicios).
+- `data/lang/en.js`: `pl.notas.margin`, `.sales`, `.salesPart`, `.other`, `.exp`, `.hasta`. ASSET_V 1772.
+- Medición: no aplica (sin tools del pipeline); verificado en Lommel (es/en, escritorio y 375 px, sin scroll horizontal) y `audit.js` P0 0, P1 0.
+
 ## Versión 1087 — se saca del sitio el texto interno de Resultados; estado de 447, 454 y 452 en el TODO [447 · 454 · 452]
 
 - `index.html` y `en.js`: «Fuentes: Wikipedia…» ya no dice «buscada y verificada en agosto de 2026. A cruzar contra el sitio oficial de cada club antes de publicar» (nota interna que el visitante veía). Los puntos 447, 454 y 452 siguen abiertos (Guido los cierra); cada uno lleva en su cuerpo lo hecho y lo que queda.
