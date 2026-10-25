@@ -1,20 +1,50 @@
 {
- "md": "Clubes/Bélgica/Dender EH/jaarrekening-2023-06-30-individual.md",
- "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2023-06-30-individual.pdf",
- "club": "dender-be",
- "year": 2023,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T21:55:01.628Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": false,
- "seleccion": {
-  "ok": false,
-  "motivo": "no se pudo ubicar la columna del ejercicio"
- },
- "ladoConocido": 0,
- "rubros": []
+  "md": "Clubes/Bélgica/Dender EH/jaarrekening-2023-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2023-06-30-individual.pdf",
+  "club": "dender-be",
+  "year": 2023,
+  "generatedAt": "2026-10-25T05:29:54.343Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Brutomarge",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.08355
+      ],
+      "glosa": "Margen bruto"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        2.242191
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.191736
+      ],
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.02679
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
 }

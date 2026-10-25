@@ -1,0 +1,253 @@
+{
+ "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2023-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2023-06-30-individual.md",
+ "mdSha1": "3d027d85330e0162b7536960e979a00eb10a7939",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T05:26:37.074Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    4
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    240,
+    266
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    272,
+    273
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    275,
+    315
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    325,
+    354
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    360,
+    361
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 6,
+   "lineas": [
+    377,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 7,
+   "lineas": [
+    390,
+    391
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 7,
+   "lineas": [
+    429,
+    443
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 8,
+   "lineas": [
+    449,
+    450
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 8,
+   "lineas": [
+    508,
+    529
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 9,
+   "lineas": [
+    535,
+    536
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 9,
+   "lineas": [
+    592,
+    616
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 10,
+   "lineas": [
+    622,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 10,
+   "lineas": [
+    685,
+    711
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 11,
+   "lineas": [
+    717,
+    718
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 11,
+   "lineas": [
+    746,
+    755
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 12,
+   "lineas": [
+    761,
+    762
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 12,
+   "lineas": [
+    782,
+    788
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 12,
+   "lineas": [
+    796,
+    799
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 12,
+   "lineas": [
+    805,
+    807
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 13,
+   "lineas": [
+    829,
+    833
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 13,
+   "lineas": [
+    881,
+    901
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 14,
+   "lineas": [
+    907,
+    908
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 14,
+   "lineas": [
+    920,
+    923
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 14,
+   "lineas": [
+    948,
+    961
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 16,
+   "lineas": [
+    1029,
+    1030
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra la frase de escala; las cuentas anuales belgas (modelo VKT-VZW) se presentan normalmente en euros.",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de la resultatenrekening (b5) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No se ve en el índice la indicación de escala del estado; el modelo belga VKT suele ir en euros.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Modelo abreviado VKT-VZW de la VZW; estado de resultados en b5 (pág. 5). b17 es una tabla de la sección de resultados financieros con solo el código 9087 (número medio de empleados, 24,8 y 20,4), no desglosa ingresos ni gastos. b22/b23/b26 son datos de personal (empleados, horas, formación), b7 es la afectación del resultado, b2/b4 son el balance y b9/b11/b13 son cuadros de inmovilizado: no se eligen."
+}

@@ -1,0 +1,315 @@
+{
+ "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2023-06-30-individual.pdf",
+ "generado": "2026-10-25T05:40:41.238Z",
+ "frena": [],
+ "avisos": [
+  "ingresos: el documento imprime solo el margen bruto (ya neto de costos), no los ingresos; se marca gross_margin. Si el documento imprime también compras y servicios (60, 61 o 60/61), el ingreso se reconstruye como margen + compras y servicios"
+ ],
+ "ejercicio": {
+  "clubId": "dender-be",
+  "year": 2023,
+  "cierre": "2023-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Brutomarge",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 0.08355,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Bezoldigingen, sociale lasten en pensioenen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -2.242191,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.191736,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere bedrijfskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.02679,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2023-06-30",
+   "sourceId": "dender-be-jaarrekening-2023-06-30-individual",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.28194,
+   "tax": -0.000362,
+   "extraRows": [
+    {
+     "label": "Recurrente financiële opbrengsten",
+     "value": 0.000009
+    },
+    {
+     "label": "Recurrente financiële kosten",
+     "value": -0.281949
+    },
+    {
+     "label": "Belastingen op het resultaat",
+     "value": -0.000362
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Brutomarge",
+     "lado": "revenue",
+     "importe": 0.08355,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "gross_margin"
+    }
+   ],
+   "baseIngreso": "gross_margin",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 0.08355,
+   "officialTotalExpenses": 2.460717,
+   "officialPAT": -2.659468
+  },
+  "source": {
+   "id": "dender-be-jaarrekening-2023-06-30-individual",
+   "clubId": "dender-be",
+   "title": "Football Club Verbroedering Dender EH VZW — jaarrekening-2023-06-30-individual (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Bélgica/Dender EH/jaarrekening-2023-06-30-individual.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Bélgica/Dender EH/jaarrekening-2023-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2023-06-30-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "inicio": "2022-07-01",
+  "cierre": "2023-06-30",
+  "cierreDe": "período del formulario (to-do 298 f)",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "met betrekking tot het boekjaar dat de periode dekt van 01-07-2022 tot 30-06-2023"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "dender-be",
+ "year": 2023,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 7,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Brutomarge",
+   "page": 5,
+   "native": 0.08355,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.08355,
+   "cat": "lump_football_operations",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.08355
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen",
+   "page": 5,
+   "native": 2.242191,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.242191,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.242191
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "page": 5,
+   "native": 0.191736,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.191736,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.191736
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "page": 5,
+   "native": 0.02679,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.02679,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.02679
+  },
+  {
+   "label": "Recurrente financiële opbrengsten",
+   "page": null,
+   "native": 0.000009,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Recurrente financiële kosten",
+   "page": null,
+   "native": -0.281949,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Belastingen op het resultaat",
+   "page": null,
+   "native": -0.000362,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 0.08355,
+  "expSum": -2.460717,
+  "officialTotalRevenue": 0.08355,
+  "officialTotalExpenses": 2.460717,
+  "officialPAT": -2.659468,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -2.659468,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 0.08355
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 2.460717
+  }
+ },
+ "liga": {
+  "valor": "be-challengerproleague",
+  "fuente": "roster cacheado de \"2022–23 Challenger Pro League\" (tools/club-league-reference/be.json), coincidencia exacta \"Dender EH\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2023-06-30) y contenido del .md (2 de 3 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el nombre del archivo dice que son los estados individuales (\"jaarrekening-2023-06-30-individual.pdf\"), y no hay un consolidado del mismo ejercicio en la carpeta",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2023-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2023-06-30 = 0.9203 (Cierre BCE al 30/6/2023 (1 EUR = 1,0866 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "dender-be-jaarrekening-2023-06-30-individual",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "be-challengerproleague",
+   "fuente": "roster cacheado de \"2022–23 Challenger Pro League\" (tools/club-league-reference/be.json), coincidencia exacta \"Dender EH\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 3,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

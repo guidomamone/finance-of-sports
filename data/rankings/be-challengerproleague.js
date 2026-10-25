@@ -60,6 +60,9 @@ window.RANKINGS["be-challengerproleague"] = {
       { id:"lommelsk-be", revenue:1.362, reportType:"official_balance_sheet",
         sourceId:"lommelsk-be-jaarrekening-2023-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.362]] },
+      { id:"dender-be", revenue:0.091, reportType:"official_balance_sheet",
+        sourceId:"dender-be-jaarrekening-2023-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.091]] },
     ],
   },
   2022: {
