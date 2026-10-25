@@ -45,6 +45,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Sydbank Park","capacidad":10100,"sponsor":"Sydjysk Sparekasse, Davidsen","marca":"Hummel","temporada":"2025–26 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191588"},
   },
   'vejle-dk': {
+    2022: {"estadio":"Vejle Stadion","capacidad":10418,"sponsor":"Arbejdernes Landsbank","marca":"Hummel","temporada":"2022–23 Danish 1st Division","fuente":"https://en.wikipedia.org/w/index.php?title=2022%E2%80%9323_Danish_1st_Division&oldid=1337961190","fuenteManual":"https://en.wikipedia.org/w/index.php?title=2022%E2%80%9323_Danish_1st_Division&oldid=1337961190","manual":["estadio","capacidad","sponsor","marca","temporada"]},
     2024: {"estadio":"Vejle Stadion","capacidad":11060,"sponsor":"Arbejdernes Landsbank","marca":"Adidas","temporada":"2024–25 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371243611"},
     2025: {"estadio":"Vejle Stadion","capacidad":11060,"sponsor":"Arbejdernes Landsbank","marca":"Adidas","temporada":"2025–26 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191588"},
   },

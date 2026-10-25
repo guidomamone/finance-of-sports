@@ -309,7 +309,7 @@ window.CLUB_INDEX = {
   "valerenga-no": {"n":"Vålerenga","c":"NO","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "varazdin-hr": {"n":"Varaždin","c":"HR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "vascodagama-br": {"n":"Vasco da Gama","c":"BR","q":"full","y":1,"last":2023,"yrs":[[2023,"official_balance_sheet"]]},
-  "vejle-dk": {"n":"Vejle","c":"DK","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
+  "vejle-dk": {"n":"Vejle","c":"DK","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "velez-ar": {"n":"Vélez Sarsfield","c":"AR","q":"full","y":11,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"],[2015,"official_balance_sheet"]]},
   "viborg-dk": {"n":"Viborg FF","c":"DK","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "viking-no": {"n":"Viking","c":"NO","q":"full","y":9,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"]]},

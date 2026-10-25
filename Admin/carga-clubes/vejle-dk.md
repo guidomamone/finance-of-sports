@@ -203,6 +203,41 @@ _antes de Gert Eg (data/gestiones/dk.js):_
 Sin cubrir 2012 y 2013 (los informes no marcan quien es formand). Ver tambien nota en el reporte: prensa cita a Tage Pedersen como chairman de Vejle Boldklub desde 2022.
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Dinamarca/Vejle/aarsrapport-2022-12-31.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/Vejle/aarsrapport-2022-12-31.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bruttofortjeneste | pág. 11, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Lønninger | pág. 20, precedente |
+| 2 | Pensioner | pág. 20, precedente |
+| 3 | Andre omkostninger til social sikring | pág. 20, precedente |
+| 4 | Af- og nedskrivninger af immaterielle og materielle anlægsaktiver | pág. 11, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2022 (dk-superliga): puede haber jugado otra división).
+```
+
 ## Fuentes
 
 ### vejle-dk-aarsrapport-2024
@@ -219,4 +254,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-21) desde la transcripción Clubes/Dinamarca/Vejle/aarsrapport-2025-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### vejle-dk-aarsrapport-2022-12-31
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Dinamarca/Vejle/aarsrapport-2022-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

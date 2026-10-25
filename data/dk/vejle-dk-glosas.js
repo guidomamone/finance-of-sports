@@ -1,4 +1,5 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Af- og nedskrivninger af immaterielle og materielle anlægsaktiver":{"es":"Amortizaciones y deterioro de activos intangibles y materiales no corrientes","en":"Amortization, depreciation and impairment of intangible and tangible fixed assets"},
 "Amortización derechos de jugadores":{"es":"Amortización derechos de jugadores","en":"Amortisation of player registrations"},
 "Andre anlæg, driftsmateriel og inventar":{"es":"Otras instalaciones, mobiliario y enseres","en":"Fixtures, fittings, tools and other equipment"},
 "Andre driftsomkostninger":{"es":"Otros gastos de explotación","en":"Other operating expenses"},
