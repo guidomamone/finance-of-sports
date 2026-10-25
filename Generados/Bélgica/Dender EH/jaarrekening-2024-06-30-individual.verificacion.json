@@ -1,0 +1,135 @@
+{
+ "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2024-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2024-06-30-individual.md",
+ "generado": "2026-10-25T17:18:28.383Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "dender-be",
+ "year": 2024,
+ "escala": {
+  "valor": "no se sabe",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.0000010000000010279564
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 0.08355; el sitio tiene 0.08355"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 0.08355 en jaarrekening-2023-06-30-individual.pdf y 0.08355 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L267-L290, esquema abreviado); cierran exacto todos sus totales impresos",
+  "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2023-06-30-individual.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2023-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.276883,
+  "gastos": 5.364625,
+  "financiero": -0.649114,
+  "impuesto": -0.01043,
+  "resultadoImpreso": -5.747287,
+  "resultadoParaCargar": -5.747287,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Brutomarge",
+   "lado": "ingreso",
+   "M": 0.276883,
+   "pagina": 5,
+   "linea": 267,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen",
+   "lado": "gasto",
+   "M": 5.049947,
+   "pagina": 5,
+   "linea": 272,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.260698,
+   "pagina": 5,
+   "linea": 273,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.053271,
+   "pagina": 5,
+   "linea": 276,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.000709,
+   "pagina": 5,
+   "linea": 278,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "M": 0.000075,
+   "linea": 281
+  },
+  {
+   "etiqueta": "Recurrente financiële kosten",
+   "M": -0.649189,
+   "linea": 284
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat",
+   "M": -0.01043,
+   "linea": 289
+  }
+ ]
+}

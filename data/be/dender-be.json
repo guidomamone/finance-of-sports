@@ -59,6 +59,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.pdf"
+    },
+    {
+      "id": "dender-be-jaarrekening-2024-06-30-individual",
+      "club_id": "dender-be",
+      "title": "Football Club Verbroedering Dender EH VZW — jaarrekening-2024-06-30-individual (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Bélgica/Dender EH/jaarrekening-2024-06-30-individual.pdf"
     }
   ],
   "members": null,
@@ -258,6 +266,45 @@
           {"label":"Belastingen op het resultaat","amount":-0.000362}
         ],
         "no_breakdown": [{"line":"Brutomarge","side":"revenue","amount":0.08355,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
+        "revenue_basis": "gross_margin"
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-06-30",
+      "currency": "EUR",
+      "source_id": "dender-be-jaarrekening-2024-06-30-individual",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2024-06-30"},
+      "revenue": [{"label":"Brutomarge","category":"undisclosed","subcategory":"lump_football_operations","amount":0.276883,"disclosure":"aggregated"}],
+      "expenses": [
+        {
+          "label": "Bezoldigingen, sociale lasten en pensioenen",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -5.049947,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+          "category": "depreciation",
+          "subcategory": "depreciation",
+          "amount": -0.260698,
+          "disclosure": "aggregated"
+        },
+        {"label":"Andere bedrijfskosten","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.053271,"disclosure":"aggregated"},
+        {"label":"Niet-recurrente bedrijfskosten","category":"exceptional","subcategory":"exceptional_items","amount":-0.000709,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.649114,"tax":-0.01043,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":0.276883,"expenses":5.364625,"net_result":-5.747287},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Recurrente financiële opbrengsten","amount":0.000075},
+          {"label":"Recurrente financiële kosten","amount":-0.649189},
+          {"label":"Belastingen op het resultaat","amount":-0.01043}
+        ],
+        "no_breakdown": [{"line":"Brutomarge","side":"revenue","amount":0.276883,"reason":"el documento no desglosa este renglón","kind":"gross_margin"}],
         "revenue_basis": "gross_margin"
       }
     },

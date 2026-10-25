@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Bélgica/Dender EH/jaarrekening-2024-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2024-06-30-individual.pdf",
+  "club": "dender-be",
+  "year": 2024,
+  "generatedAt": "2026-10-25T17:17:54.985Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Brutomarge",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.276883
+      ],
+      "glosa": "Margen bruto"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        5.049947
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.260698
+      ],
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.053271
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfskosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.000709
+      ],
+      "glosa": "Gastos de explotación no recurrentes"
+    }
+  ]
+}

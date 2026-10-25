@@ -1,0 +1,66 @@
+{
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2024-06-30-individual.md",
+ "generatedAt": "2026-10-25T17:18:29.480Z",
+ "rubrosHuella": "1304f2336cd7f284560c4fec5fcca3a646587f76",
+ "rubros": [
+  {
+   "label": "Brutomarge",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "exceptional_items",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1049
+  }
+ ]
+}

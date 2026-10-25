@@ -1,0 +1,245 @@
+{
+ "pdf": "Clubes/Bélgica/Dender EH/jaarrekening-2024-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2024-06-30-individual.md",
+ "mdSha1": "983a1ad75e9e5e51b3590df375cce0039db15e92",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T17:17:39.404Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    4
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    178,
+    205
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    211,
+    212
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    214,
+    254
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    264,
+    293
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    299,
+    300
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 6,
+   "lineas": [
+    316,
+    323
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 7,
+   "lineas": [
+    329,
+    330
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 7,
+   "lineas": [
+    368,
+    382
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 8,
+   "lineas": [
+    388,
+    389
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 8,
+   "lineas": [
+    441,
+    462
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 9,
+   "lineas": [
+    468,
+    469
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 9,
+   "lineas": [
+    525,
+    549
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 10,
+   "lineas": [
+    555,
+    556
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 10,
+   "lineas": [
+    618,
+    644
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 11,
+   "lineas": [
+    650,
+    651
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 11,
+   "lineas": [
+    679,
+    688
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 12,
+   "lineas": [
+    694,
+    695
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 12,
+   "lineas": [
+    715,
+    721
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 12,
+   "lineas": [
+    727,
+    730
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 12,
+   "lineas": [
+    736,
+    738
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 13,
+   "lineas": [
+    758,
+    762
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 13,
+   "lineas": [
+    795,
+    815
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 14,
+   "lineas": [
+    821,
+    822
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 14,
+   "lineas": [
+    834,
+    837
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 14,
+   "lineas": [
+    862,
+    875
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra indicación de escala; las cuentas anuales belgas (NBB, modelo VKT-VZW) se presentan normalmente en euros (unidades).",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de la resultatenrekening (b5) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No se ve en el índice la frase de moneda/escala; el modelo NBB normalmente presenta las cifras en EUR.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Modelo abreviado VKT-VZW de la VZW (cuentas individuales). Estado de resultados en b5 (pág. 5), empieza en Brutomarge. b2/b4 son balance, b7 es resultatverwerking, b9/b11/b13 son activo fijo, b17 son códigos de resultados financieros sin desglose relevante y b22-b26 son el sociaal balans (empleados), por lo que no se eligen."
+}

@@ -23,8 +23,8 @@ window.RANKINGS["be-challengerproleague"] = {
   },
   2024: {
     leagueSize: 16,
-    sinDato: ["liersesk-be","patroeisden-be"],
-    margen: [["liersesk-be",3.101,null],["patroeisden-be",3.287,null]],
+    sinDato: ["dender-be","liersesk-be","patroeisden-be"],
+    margen: [["dender-be",0.297,null],["liersesk-be",3.101,null],["patroeisden-be",3.287,null]],
     wiki: {"t":"2023–24 Challenger Pro League","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"lommelsk-be", revenue:26.418, reportType:"official_balance_sheet",

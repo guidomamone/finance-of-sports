@@ -1,0 +1,77 @@
+{
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2024-06-30-individual.md",
+ "club": "dender-be",
+ "year": 2024,
+ "generatedAt": "2026-10-25T17:18:30.090Z",
+ "rubrosHuella": "1304f2336cd7f284560c4fec5fcca3a646587f76",
+ "jevHuella": "f9dde3e1587369c7174401fb53fe258c57967953",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Brutomarge",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Margen bruto",
+   "page": 5,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Remuneraciones, cargas sociales y pensiones",
+   "page": 5,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones y correcciones de valor sobre gastos de constitución, inmovilizado intangible y material",
+   "page": 5,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
+   "confianza": 1
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 5,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de explotación no recurrentes",
+   "page": 5,
+   "pendiente": false,
+   "ya": "exceptional_items",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "exceptional_items",
+   "confianza": 1
+  }
+ ]
+}
