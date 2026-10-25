@@ -54,14 +54,13 @@ window.RANKINGS["be-proleague"] = {
   },
   2024: {
     leagueSize: 16,
+    sinDato: ["rwdm-be"],
+    margen: [["rwdm-be",4.244,13.391]],
     wiki: {"t":"2023–24 Belgian Pro League","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"ohleuven-be", revenue:33.693, reportType:"official_balance_sheet",
         sourceId:"ohleuven-be-jaarrekening-2024-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",26.507],["Otros ingresos",7.185]] },
-      { id:"rwdm-be", revenue:4.244, reportType:"official_balance_sheet",
-        sourceId:"rwdm-be-jaarrekening-2024-06-30-individual",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",4.244]] },
     ],
   },
   2023: {
@@ -105,20 +104,18 @@ window.RANKINGS["be-proleague"] = {
   },
   2016: {
     leagueSize: 16,
+    sinDato: ["westerlo-be"],
+    margen: [["westerlo-be",5.178,null]],
     wiki: {"t":"2015–16 Belgian Pro League","lang":"en","at":"2026-10-19","n":16},
     clubs: [
-      { id:"westerlo-be", revenue:5.178, reportType:"official_balance_sheet",
-        sourceId:"westerlo-be-jaarrekening-2016-06-30-individual",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.178]] },
     ],
   },
   2015: {
     leagueSize: 16,
+    sinDato: ["westerlo-be"],
+    margen: [["westerlo-be",5.464,null]],
     wiki: {"t":"2014–15 Belgian Pro League","lang":"en","at":"2026-10-19","n":16},
     clubs: [
-      { id:"westerlo-be", revenue:5.464, reportType:"official_balance_sheet",
-        sourceId:"westerlo-be-jaarrekening-2015-06-30-individual",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.464]] },
     ],
   },
 };

@@ -50,6 +50,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   reales, y todo club de la lista de una liga sin balance ese año (club nuevo: regresión sin historia, error alto; los países de `PAISES_SIN_ESTIMAR`, hoy Estonia, no se estiman). Se
   muestran en Ligas dentro de la tabla de ingresos con "(estimado)*", rango y error; el total de la liga los suma solo cuando más de la
   mitad tiene balance real, y la composición y el simulador usan solo lo real. Arriba de la tabla, "La liga en total, por categoría".
+  Un ejercicio de margen bruto (`revenue_basis: gross_margin`: el documento imprime solo el margen, no los ingresos) cuenta como año que falta: sale del ranking real y se estima, con el margen
+  positivo como piso; un ingreso real de un informe posterior (`Admin/registros/ingresos-ancla.jsonl`) lo pisa y se muestra como «(informe siguiente)». Qué hay y qué falta: `Admin/mediciones/455-ingresos-con-margen-bruto.md`.
 - Registro público de correcciones: `correcciones.html` y un bloque en Finanzas, generados del historial de git (`tools/generar-correcciones.mjs`,
   dato abierto en `data/correcciones/`). El motivo sale del trailer `Corrige:` de cada commit (regla en `Admin/CONVENCIONES.md`).
 - Ligas: una lista con filtros de deporte, región e informes, agrupada por país, deporte o nivel, sin conteos de lo cargado ni plata (Guido); Escocia es un país aparte de Inglaterra (`nationOf()` en `data/leagues.js`).

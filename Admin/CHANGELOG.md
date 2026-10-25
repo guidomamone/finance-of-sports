@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1096 — generate-rankings.js, estimar.mjs, faltantes-liga.mjs, generate-club-index.js: Ligas estima los años de margen bruto y un ingreso real de un informe posterior lo pisa [455 · 447 · generate-rankings.js, estimar.mjs, faltantes-liga.mjs, generate-club-index.js]
+- Un ejercicio de margen bruto (`revenue_basis: gross_margin`, `gm` en `data/club-index.js`) sale del ranking, la composición y la mediana de la liga (`margen` en `data/rankings/`) y `faltantes-liga` ya no lo da por cubierto: `estimar.mjs` lo estima (interpolación entre sus años completos o modelo de club nuevo, margen positivo como piso, rango medido); un ingreso real de un informe posterior (`Admin/registros/ingresos-ancla.jsonl`: Lommel 2022/23, RWDM 2023/24, SønderjyskE 2023/24) lo pisa. Finanzas no cambia.
+- Error del modelo medido con `estimar --medir`: por club 51 % antes, 50 % ahora (39 filas menos de entrenamiento); en Bélgica y Dinamarca cambian los estimados que estaban envenenados por márgenes chicos; fuera de ellos 6.757 estimados con mediana de cambio 0,9 % y dos de Chile 2013 por el reajuste global (+68 % y +115 %).
+- `js/liga.js` y `data/lang/en.js`: «(informe siguiente)» para el dato real, dos notas nuevas (margen bruto e informe siguiente), el club de margen sin estimado va a «sin ingreso calculable» y una liga-año sin ningún club real no muestra el total en cero; `Admin/PANTALLA.md` al día.
+- Verificado a mano (447): cambio-de-formato-sin-nota da 0 (audit.js P0 0 P1 0): la señal ignora una línea extra de menos del 10 % y reconoce la nota automática de sinDesglose; se miraron Goiás 2019-2021, Lommel (margen bruto 2019/20-2022/23, notas agrupadas), Bayern 2024 y Remo, y los 15 casos restantes quedaron cubiertos por las notas por ejercicio (Versión 1088); el margen bruto sigue en el 455
+- Medición: 4 diferencias, todas explicadas (medidor de auditoría); se verificó a mano comparando los estimados antes y después y la pantalla de Ligas en español, inglés y 375 px.
+
 ## Versión 1095 — audit-chequeos-1.js: la banda de escala no cuenta los ejercicios de margen bruto [455 · audit-chequeos-1.js]
 - `escala-implausible` (P0) marcaba como error de escala un año de margen bruto (`revenue_basis: gross_margin`) de cifra chica por naturaleza (un margen de 0,09 M USD en un club que factura unos 100 veces más), y revertía su carga; ahora ese año no entra a la banda. Lo encontró la carga de prueba de un año belga con margen sin año vecino parecido.
 - Medición: 5 diferencias, todas explicadas (medidor de auditoría, lote chico): se va `escala-implausible` para ese año con los datos de HEAD; el resto de la auditoría idéntico.
@@ -50,6 +57,7 @@ que dice `ESTADO.md` era verdad ese día.
 - `cambio-formato.js`: un año con una línea extra que pesa menos del 10 % no cuenta como «completo» (23 a 15 avisos); `audit-chequeos-3.js`: `cambio-de-formato-sin-nota` da por cubierto un año resumido que ya lleva la nota automática de `sinDesglose`.
 - `json-datos.mjs` (+ esquema, paquete): campos opcionales `adjustments.revenue_basis` (`full`, `sales_total`, `gross_margin`) y `revenue_derivation` (`margin_plus_costs`: margen bruto + compras y servicios del documento); `ingreso-derivado.js` es la identidad, `ingreso-base.mjs` (`fos ingreso-base`) la escribe en los ejercicios ya cargados sin tocar importes (probado idéntico en los 331 clubes).
 - `audit.js`: `ingreso-reconstruido-no-cierra` (P1: un reconstruido que ya no cierra con su documento) e `ingreso-sin-base` (P3).
+- Verificado a mano (447): cambio-de-formato-sin-nota da 0 (audit.js P0 0 P1 0): la señal ignora una línea extra de menos del 10 % y reconoce la nota automática de sinDesglose; se miraron Goiás 2019-2021, Lommel (margen bruto 2019/20-2022/23, notas agrupadas), Bayern 2024 y Remo, y los 15 casos restantes quedaron cubiertos por las notas por ejercicio (Versión 1088); el margen bruto sigue en el 455
 - Medición: 3 diferencias, todas explicadas (lote completo): se va `cambio-de-formato-sin-nota`; aparecen `ingreso-sin-base` (la marca se escribe en el commit de datos siguiente) y `todo-cumplido` del 447 (no se cierra sin autorización); cargar, escribir, caja-deuda y alta idénticos.
 
 ## Versión 1089 — inventario de ingresos con margen bruto y punto 455 (estimado de Ligas y detección en el pipeline) [455 · 447]

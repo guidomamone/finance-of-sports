@@ -250,6 +250,10 @@ function buildClubIndex({ clubs, sources, generic, clubQuality }) {
     const ci = {};
     for (const y of years) { const c = cierreEjercicio(meta[y], clubs[id], y); if (c !== cierreDelClub(clubs[id], y)) ci[y] = c.slice(5); }
     if (Object.keys(ci).length) idx[id].ci = ci;
+    // `gm`: los ejercicios cuyo documento imprime solo el margen bruto (`revenue_basis: gross_margin`): su cifra no es un ingreso, así que para Ligas el club no tiene el dato
+    // de ese año (no entra al ranking y recibe un estimado: tools/estimar.mjs). Solo las excepciones, como `ci`.
+    const gm = years.filter((y) => meta[y].baseIngreso === 'gross_margin');
+    if (gm.length) idx[id].gm = gm;
   }
   const filas = Object.keys(idx).map(id => `  ${JSON.stringify(id)}: ${JSON.stringify(idx[id])},`);
   return `// GENERADO por tools/generate-club-index.js: no editar a mano (los campos, en la cabecera del generador).

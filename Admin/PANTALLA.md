@@ -468,9 +468,12 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   sino `s/d` con su bocadillo y un asterisco que lleva a «Notas sobre este club» (debajo de la tabla; sin cambiar la URL, js/finanzas-render.js,
   `marcaSD`, `renderNotasClub`). Sale de `fiscalYearMeta.sinDesglose` (JSON: `adjustments.no_breakdown`: `{line, side, amount, reason, kind}`): la línea única que el
   documento trae en vez del desglose, con su tipo (`gross_margin`, `net_sales`, `cost_of_sales`, `other`; `tools/tipo-sin-desglose.js`, por el rótulo). Las filas
-  `unknown` del Formato simplificado y las que otros años abren y este año no (Formato del club, vista multi-año) llevan la marca. La nota se arma por ejercicio
-  con plantillas del idioma, con el rótulo de la línea en el idioma del visitante (glosa) y su importe; no se escribe a mano. `incluidoEn` tiene prioridad.
-  `cargar-ejercicio.mjs` anota la línea y su tipo al cargar un año; `fos sin-desglose-tipo` completa los años viejos.
+  `unknown` del Formato simplificado y las que otros años abren y este año no (Formato del club, vista multi-año) llevan la marca. La nota se arma sola
+  con plantillas del idioma y el rótulo de la línea en el idioma del visitante (glosa), sin importes (la tabla los muestra); los ejercicios consecutivos con la misma nota
+  van en un solo punto («2019/20 a 2022/23»). Cinco casos: `margin` (el documento imprime solo el margen bruto: no se sabe el ingreso y no se compara con años abiertos),
+  `sales` (la línea es todo el ingreso: el total sí se compara), `salesPart` (el año tiene otras líneas de ingreso: esa no se abre por fuente y el resto está abierto),
+  `other` y `exp`. No se escribe a mano. `incluidoEn` tiene prioridad. `cargar-ejercicio.mjs` anota la línea y su tipo al cargar un año; `fos sin-desglose-tipo` completa los años viejos.
+  Qué son los ingresos de un año (completo, ventas totales o margen bruto) lo dice `revenue_basis`, que escribe la carga (`fos ingreso-base` lo completa).
 - "DENTRO DE OTRO RUBRO" (textos de Guido): una fila con `incluidoEn` dice solo "Dentro de otro rubro" / "Posiblemente
   dentro de otro rubro" (en la celda no entra el nombre del rubro: ocupaba seis renglones) y el rubro va en el bocadillo:
   "Está incluido en X: la fuente lo reporta junto con ese rubro." / "Sospecho que está dentro de X: no es un cero, pero la fuente no lo

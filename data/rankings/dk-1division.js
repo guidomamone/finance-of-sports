@@ -3,46 +3,38 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["dk-1division"] = {
   2024: {
     leagueSize: null,
+    sinDato: ["fredericia-dk"],
+    margen: [["fredericia-dk",2.122,null]],
     clubs: [
-      { id:"fredericia-dk", revenue:2.122, reportType:"official_balance_sheet",
-        sourceId:"fredericia-dk-aarsrapport-2024-12-31",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.122]] },
     ],
   },
   2023: {
     leagueSize: null,
+    sinDato: ["fredericia-dk","sonderjyske-dk"],
+    margen: [["fredericia-dk",1.497,null],["sonderjyske-dk",5.91,null]],
     clubs: [
-      { id:"sonderjyske-dk", revenue:5.91, reportType:"official_balance_sheet",
-        sourceId:"sonderjyske-dk-aarsrapport-2022-2023-09-30-transicion",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.91]] },
-      { id:"fredericia-dk", revenue:1.497, reportType:"official_balance_sheet",
-        sourceId:"fredericia-dk-aarsrapport-2023-12-31",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.497]] },
     ],
   },
   2022: {
     leagueSize: null,
+    sinDato: ["fredericia-dk"],
+    margen: [["fredericia-dk",1.653,null]],
     clubs: [
-      { id:"fredericia-dk", revenue:1.653, reportType:"official_balance_sheet",
-        sourceId:"fredericia-dk-aarsrapport-2022-12-31",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.653]] },
     ],
   },
   2021: {
     leagueSize: null,
+    sinDato: ["fredericia-dk"],
+    margen: [["fredericia-dk",1.636,null]],
     clubs: [
-      { id:"fredericia-dk", revenue:1.636, reportType:"official_balance_sheet",
-        sourceId:"fredericia-dk-aarsrapport-2021-12-31",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.636]] },
     ],
   },
   2020: {
     leagueSize: 12,
+    sinDato: ["fredericia-dk"],
+    margen: [["fredericia-dk",1.806,null]],
     wiki: {"t":"2019–20 Danish 1st Division","lang":"en","at":"2026-10-18","n":12},
     clubs: [
-      { id:"fredericia-dk", revenue:1.806, reportType:"official_balance_sheet",
-        sourceId:"fredericia-dk-aarsrapport-2020-12-31",
-        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.806]] },
     ],
   },
   2019: {

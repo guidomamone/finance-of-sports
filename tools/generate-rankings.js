@@ -34,6 +34,17 @@ const ROOT = path.resolve(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'data/rankings');
 const REF_DIR = path.join(ROOT, 'tools/club-league-reference');
 
+// LOS INGRESOS REALES QUE UN INFORME POSTERIOR TRAE PARA UN AÑO DE MARGEN BRUTO (Admin/registros/ingresos-ancla.jsonl: una línea por club-año, con el importe en millones de la
+// moneda del club y de dónde sale). No reescriben el año publicado (sigue siendo de margen bruto); solo alimentan el estimado de Ligas (tools/estimar.mjs): un dato real lo pisa.
+let ANCLAS = null;
+function anclas() {
+  if (ANCLAS) return ANCLAS;
+  ANCLAS = new Map();
+  const f = path.join(ROOT, 'Admin/registros/ingresos-ancla.jsonl');
+  if (fs.existsSync(f)) for (const l of fs.readFileSync(f, 'utf8').split('\n').filter(Boolean)) { const a = JSON.parse(l); ANCLAS.set(`${a.club}|${a.anio}`, a); }
+  return ANCLAS;
+}
+
 // La lista de equipos de cada liga-año, de Wikipedia: `<iso2>.json` → leagues[liga][año] = { wikipediaPage, lang, fetchedAt, clubs }.
 let WIKI = null;
 function wikiDe(leagueId, year) {
@@ -112,10 +123,19 @@ function rankingDe(api, leagueId, year) {
   const ids = api.clubsOfLeagueYear(leagueId, year);
   const filas = [];
   const sinDato = [];
+  const margen = [];
 
   for (const id of ids) {
     const c = api.computeYearGeneric(id, year);
     const meta = api.yearMetaFor(id, year);
+    // Un año cuyo documento imprime solo el margen bruto (`revenue_basis: gross_margin`) NO es un ingreso: no entra al ranking ni a la composición ni a la mediana de la liga.
+    // Va aparte, [club, margen en USD, ingreso real en USD si un informe posterior lo trae o null], y tools/estimar.mjs le da un estimado (el margen positivo es su piso).
+    if (c && meta && c.meta && c.meta.baseIngreso === 'gross_margin') {
+      const a = anclas().get(`${id}|${year}`);
+      margen.push([id, r3(api.toDisplayValue(c.revenue, meta, 'USD')), a ? r3(api.toDisplayValue(a.ingreso, meta, 'USD')) : null]);
+      sinDato.push(id);
+      continue;
+    }
     // Un club sin ejercicio calculable, o con ingreso 0, NO entra al ranking con
     // una barra en cero: queda contado aparte. Es la misma regla que ya usa
     // Comparar ("un club sin el dato no suma cero: queda afuera y se cuenta
@@ -191,7 +211,7 @@ function rankingDe(api, leagueId, year) {
     });
   }
 
-  if (!filas.length) return null;
+  if (!filas.length && !margen.length) return null;
   // Descendente: el 1 del ranking primero. Desempate por id, para que el archivo
   // generado sea estable entre corridas (dos clubes con el mismo ingreso no
   // pueden alternar de lugar y ensuciar un diff).
@@ -207,6 +227,7 @@ function rankingDe(api, leagueId, year) {
     clubs: filas,
   };
   if (sinDato.length) out.sinDato = sinDato.sort();
+  if (margen.length) out.margen = margen.sort((a, b) => a[0].localeCompare(b[0]));
   const wiki = wikiDe(leagueId, year);
   if (wiki) out.wiki = wiki;
   if (out.leagueSize == null && wiki) out.leagueSize = wiki.n;
@@ -227,6 +248,7 @@ function archivoDe(api, leagueId, porAnio) {
     L.push(`  ${y}: {`);
     L.push(`    leagueSize: ${r.leagueSize == null ? 'null' : r.leagueSize},`);
     if (r.sinDato) L.push(`    sinDato: ${JSON.stringify(r.sinDato)},`);
+    if (r.margen) L.push(`    margen: ${JSON.stringify(r.margen)},`);
     if (r.wiki) L.push(`    wiki: ${JSON.stringify(r.wiki)},`);
     L.push('    clubs: [');
     r.clubs.forEach(f => {

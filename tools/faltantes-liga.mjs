@@ -73,7 +73,8 @@ function listas() {
 const require_ = (await import('node:module')).createRequire(import.meta.url);
 function clubsJs() { const s = { window: {} }; s.window.window = s.window; const ctx = vm.createContext(s); vm.runInContext(readFileSync(resolve(ROOT, 'data', 'clubs.js'), 'utf8'), ctx); return vm.runInContext('clubs', ctx); }
 export const { temporada } = require_('./temporada.js'); // la misma función que usa audit.js (ejercicio-sin-rastro)
-const cubre = (CI, CLUBS, id, anio, partida) => (CI[id]?.yrs || []).some(([y]) => temporada(CLUBS[id], y, partida, CI[id].ci?.[y]) === anio);
+// Un ejercicio de margen bruto (`gm` del índice) no cubre: el club no tiene el ingreso de ese año (tools/estimar.mjs le da un estimado).
+const cubre = (CI, CLUBS, id, anio, partida) => (CI[id]?.yrs || []).some(([y]) => !(CI[id].gm || []).includes(y) && temporada(CLUBS[id], y, partida, CI[id].ci?.[y]) === anio);
 const alias = () => { const p = resolve(REF, 'alias.json'); return existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : {}; };
 const lineasArchivo = (p) => (existsSync(p) ? readFileSync(p, 'utf8').split('\n').filter((l) => l.trim() && !l.startsWith('#')).map((l) => l.split(' # ')[0].trim()) : []);
 

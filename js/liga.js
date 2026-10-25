@@ -118,7 +118,7 @@ window.LIGA_VIEW = (function(){
   // Filas estimadas del (liga, ejercicio): mismas claves que una fila real más `estimado`, y `n` cuando el club no está en el sitio.
   function filasEstimadas(leagueId, year){
     return (((window.ESTIMADOS || {})[leagueId] || {})[year] || []).map(function(e){
-      return { id:e.id || null, n:e.n || null, revenue:e.revenue, lo:e.lo, hi:e.hi, error:e.error, estimado:true };
+      return { id:e.id || null, n:e.n || null, revenue:e.revenue, lo:e.lo, hi:e.hi, error:e.error, estimado:true, margen:!!e.margen, ancla:e.caso === 'ancla' };
     });
   }
   // El total suma los estimados solo cuando más de la mitad de la liga de ese año tiene balance real. El tamaño es el
@@ -313,7 +313,8 @@ window.LIGA_VIEW = (function(){
     var cuentasLiga = window.FIN_AUDITORIA && FIN_AUDITORIA.cardLiga ? FIN_AUDITORIA.cardLiga(st.league, st.year) : null;
     if(cuentasLiga) wrap.appendChild(cuentasLiga);
     var filasSim = st.simulados.map(function(s){ return s.fila; });
-    wrap.appendChild(consolidado(r, filasSim));
+    // Una liga-año sin ningún club con ingreso real (todos los cargados publican solo el margen bruto) no tiene un total por categoría: la tarjeta diría «0 de N clubes, US$ 0 M».
+    if(r.clubs.length) wrap.appendChild(consolidado(r, filasSim));
     var grilla = el('div', 'lg-grilla');
     grilla.appendChild(rankingCard(r, filasSim));
     var der = el('div', 'lg-col');
@@ -921,7 +922,7 @@ window.LIGA_VIEW = (function(){
       b.appendChild(dot);
       b.appendChild(el('span', 'vid-nom-t', f.id ? nombreDe(f.id) : f.n));
       // Fuera del nombre: un nombre largo se recorta con "…", y la marca de estimado no se puede recortar nunca.
-      if(f.estimado) b.appendChild(el('span', 'lg-est-tag', t('liga.est.tag', '(estimado)') + '*'));
+      if(f.estimado) b.appendChild(el('span', 'lg-est-tag', (f.ancla ? t('liga.est.tagAncla', '(informe siguiente)') : t('liga.est.tag', '(estimado)')) + '*'));
       if(f.id) b.addEventListener('click', function(){ irAlClub(f.id); });
       nom.appendChild(b);
       // Sin el documento debajo de cada club (está en su ficha y en Fuentes): en la fila queda demasiado texto junto. Un club simulado
@@ -936,8 +937,9 @@ window.LIGA_VIEW = (function(){
       lleno.style.width = max > 0 ? Math.max(2, Math.round(f.revenue / max * 100)) + '%' : '0';
       barra.appendChild(lleno);
       li.appendChild(barra);
-      var val = el('span', 'vid-val', (f.estimado ? '≈ ' : '') + fmtCard(f.revenue));
-      if(f.estimado) val.title = t('liga.est.range', 'Entre') + ' ' + fmtCard(f.lo) + ' ' + t('liga.est.and', 'y') + ' ' + fmtCard(f.hi)
+      var val = el('span', 'vid-val', (f.estimado && !f.ancla ? '≈ ' : '') + fmtCard(f.revenue));
+      if(f.ancla) val.title = t('liga.est.ancla', 'Ingreso real de este ejercicio, tomado del informe del año siguiente (el de este año imprime solo el margen bruto).');
+      else if(f.estimado) val.title = t('liga.est.range', 'Entre') + ' ' + fmtCard(f.lo) + ' ' + t('liga.est.and', 'y') + ' ' + fmtCard(f.hi)
         + ' ' + t('liga.est.range2', '(8 de cada 10 veces)') + ' · ' + t('liga.est.error', 'error típico') + ' ' + f.error + '%';
       li.appendChild(val);
       ol.appendChild(li);
@@ -951,14 +953,23 @@ window.LIGA_VIEW = (function(){
       pie.appendChild(el('span', null, t('liga.est.total', 'Total de la liga') + ' (' + r.clubs.length + ' '
         + t('liga.est.withBal', 'con balance') + ' + ' + est.length + ' ' + (est.length === 1 ? t('liga.est.one', 'estimado') : t('liga.est.many', 'estimados')) + '*)'));
       pie.appendChild(el('strong', 'lg-total', '≈ ' + fmtCard(totalDe(r) + totEst) + '*'));
-    } else {
+    } else if(r.clubs.length){
       pie.appendChild(el('span', null, t('liga.total', 'Total de los') + ' ' + r.clubs.length + ' ' + t('liga.totalLoaded', 'cargados')));
       pie.appendChild(el('strong', 'lg-total', fmtCard(totalDe(r))));
     }
-    card.appendChild(pie);
+    if(pie.childNodes.length) card.appendChild(pie);
     if(est.length){
       card.appendChild(el('p', 'lg-est-nota', '* ' + t('liga.est.note',
         'Estimado: el club no tiene balance de este ejercicio en el sitio. El número es una cuenta nuestra, con sus otros años o, si no los hay, con la liga y su puesto en la tabla; no es un dato del club. El total suma estimados solo cuando más de la mitad de la liga tiene balance real.')));
+      // Un club que ese año publicó solo su margen bruto sí tiene balance en el sitio, pero no un ingreso: su ficha lo dice y acá se estima.
+      if(est.some(function(f){ return f.margen && !f.ancla; })){
+        card.appendChild(el('p', 'lg-est-nota', '* ' + t('liga.est.noteMargen',
+          'En algunos clubes ese ejercicio el documento publica solo el margen bruto (ventas menos costos), no los ingresos: el número es una cuenta nuestra y nunca es menor que ese margen.')));
+      }
+      if(est.some(function(f){ return f.ancla; })){
+        card.appendChild(el('p', 'lg-est-nota', '* ' + t('liga.est.noteAncla',
+          '«Informe siguiente»: el documento de ese ejercicio publica solo el margen bruto, y el del año siguiente trae el ingreso real en su columna anterior; es ese dato.')));
+      }
     }
     return card;
   }
@@ -1113,10 +1124,13 @@ window.LIGA_VIEW = (function(){
         + t('liga.cv.missing2', 'de los') + ' ' + r.leagueSize + ' '
         + t('liga.cv.missing3', 'clubes de esa temporada: el total de la tabla es el de los cargados, no el de la liga.'));
     }
-    if(r.sinDato && r.sinDato.length){
-      out.push(nClubes(r.sinDato.length) + ' ' + t('liga.cv.nodata',
+    // Un club con el año de margen bruto va a sinDato y, si la tabla le da un estimado, no se repite acá.
+    var estId = {}; filasEstimadas(st.league, st.year).forEach(function(e){ if(e.id) estId[e.id] = true; });
+    var sinDato = (r.sinDato || []).filter(function(id){ return !estId[id]; });
+    if(sinDato.length){
+      out.push(nClubes(sinDato.length) + ' ' + t('liga.cv.nodata',
         'de esa temporada tienen ejercicio cargado pero sin ingreso calculable, y quedan afuera de la tabla:')
-        + ' ' + r.sinDato.map(nombreDe).join(', ') + '.');
+        + ' ' + sinDato.map(nombreDe).join(', ') + '.');
     }
 
     var presu = r.clubs.filter(function(f){ return f.reportType === 'official_budget'; });

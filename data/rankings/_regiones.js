@@ -4,9 +4,9 @@ window.RANKINGS_INDICE = {
   "ar-primerab": [2021,1,17],
   "ar-primeranacional": [2023,2,34],
   "at-bundesliga": [2025,1,12],
-  "be-challengerproleague": [2025,6,16],
-  "be-div1amateur": [2024,2,18],
-  "be-div2amateur": [2022,2,48],
+  "be-challengerproleague": [2025,4,16],
+  "be-div1amateur": [2017,2,16],
+  "be-div2amateur": [2023,1,18],
   "be-proleague": [2025,15,16],
   "br-paulistaA1": [2017,2,16],
   "br-paulistaA2": [2015,2,20],
@@ -22,8 +22,8 @@ window.RANKINGS_INDICE = {
   "cy-seconddivision": [2024,1,16],
   "de-2bundesliga": [2025,2,18],
   "de-bundesliga": [2024,10,18],
-  "dk-1division": [2023,2,null],
-  "dk-superliga": [2025,7,12],
+  "dk-1division": [2019,1,null],
+  "dk-superliga": [2025,4,12],
   "ee-esiliiga": [2024,1,10],
   "ee-meistriliiga": [2025,9,10],
   "es-laliga": [2025,14,20],
@@ -57,7 +57,7 @@ window.RANKINGS_INDICE = {
   "tr-superlig": [2023,1,19],
 };
 window.RANKINGS_REGION = {
-  mundo: { year:2025, total:276, clubs:[
+  mundo: { year:2025, total:271, clubs:[
     { id:"realmadrid-es", league:"es-laliga", revenue:1388.522 },
     { id:"fcbarcelona-es", league:"es-laliga", revenue:1167.798 },
     { id:"bayernmunich-de", league:"de-bundesliga", revenue:1085.912 },

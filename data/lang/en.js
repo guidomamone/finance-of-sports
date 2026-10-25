@@ -633,6 +633,10 @@ window.I18N.strings.en = {
   "liga.est.withBal": "with accounts",
   "liga.est.one": "estimate",
   "liga.est.many": "estimates",
+  "liga.est.tagAncla": "(next report)",
+  "liga.est.ancla": "Actual revenue for this year, taken from the following year's report (this year's report shows only the gross margin).",
+  "liga.est.noteMargen": "For some clubs the document for that year reports only the gross margin (sales minus costs), not revenue: the figure is our own calculation and is never lower than that margin.",
+  "liga.est.noteAncla": "\"Next report\": the document for that year reports only the gross margin, and the following year's report gives actual revenue in its prior-year column; that is the figure shown.",
   "liga.est.note": "Estimate: the club's accounts for this year are not on the site. The figure is our own calculation, from its other years or, when there are none, from the league and its table position; it is not club data. The total includes estimates only when more than half of the league has real accounts.",
   "liga.cv.missingEst": "clubs in that season: they appear in the table with an estimated revenue (*).",
   // La página de un sponsor o una marca

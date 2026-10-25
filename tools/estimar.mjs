@@ -60,9 +60,16 @@ function posicion(id, liga, anio, S = null) {
 }
 const CON_POS = !process.argv.includes('--sin-posicion');
 const DETALLE = process.argv.includes('--detalle') || process.argv.includes('--detalle-clubes');
+let RANK = {};
+// El margen bruto de un club-año que generate-rankings.js sacó del ranking: { margen, ancla } en USD nominales, o null.
+function margenDe(liga, anio, id) {
+  const e = (((RANK[liga] || {})[anio] || {}).margen || []).find((x) => x[0] === id);
+  return e ? { margen: e[1], ancla: e[2] } : null;
+}
 function datos() {
   const c = { window: {} };
   for (const f of readdirSync(resolve(ROOT, 'data', 'rankings'))) vm.runInNewContext(readFileSync(resolve(ROOT, 'data', 'rankings', f), 'utf8'), c);
+  RANK = c.window.RANKINGS;
   vm.runInNewContext(readFileSync(resolve(ROOT, 'data', 'deflactores.js'), 'utf8'), c);
   vm.runInNewContext(readFileSync(resolve(ROOT, 'data', 'leagues.js'), 'utf8').replace(/^const /gm, 'var '), c);
   const D = c.window.DEFLACTORES.USD.valores; const ultimo = Math.max(...Object.keys(D).map(Number));
@@ -207,7 +214,17 @@ function estimaciones() {
       const enSitio = !!(f.id && CLUBS[f.id]);
       const mes = enSitio ? Number((CLUBS[f.id].fiscalYearStart || '07-01').slice(0, 2)) : 7; const cierreMes = mes === 1 ? 12 : mes - 1;
       const anio = partida && cierreMes >= 9 ? +S - 1 : +S; // la temporada que termina en S -> el ejercicio (inverso de faltantes-liga)
-      if (enSitio && (CI[f.id]?.yrs || []).some(([y]) => y === anio)) continue; // lo real gana
+      if (enSitio && (CI[f.id]?.yrs || []).some(([y]) => y === anio) && !(CI[f.id].gm || []).includes(anio)) continue; // lo real gana (un año de margen bruto no es real: se estima)
+      // Un año de margen bruto (`gm` del índice; generate-rankings.js lo saca del ranking real): [margen en USD, ingreso real en USD si un informe posterior lo trae]. El real pisa
+      // al estimado; el margen positivo es su piso (el ingreso nunca es menor).
+      const mg = enSitio ? margenDe(liga, anio, f.id) : null;
+      const conMargen = (row) => {
+        if (!mg) return row;
+        if (mg.ancla != null) return { ...row, revenue: mg.ancla, lo: mg.ancla, hi: mg.ancla, caso: 'ancla', error: 0, de: [], margen: true };
+        if (mg.margen > 0) { const rev = Math.max(row.revenue, mg.margen); return { ...row, revenue: rev, lo: Math.max(row.lo, mg.margen), hi: Math.max(row.hi, rev), margen: true }; }
+        return { ...row, margen: true };
+      };
+      if (mg && mg.ancla != null) { ((out[liga] ??= {})[anio] ??= []).push(conMargen({ id: f.id, revenue: mg.ancla, lo: mg.ancla, hi: mg.ancla })); continue; }
       const nom = (x) => r3(Math.exp(x) * D[Math.min(anio, ultimo)] / D[ultimo]);
       const tier = Math.min(3, lc.window.LEAGUES[liga]?.tier || 1);
       const propios = enSitio ? (ix.porClub.get(f.id) || []) : [];
@@ -217,7 +234,7 @@ function estimaciones() {
         const m = M(ix, t, vacio); if (m == null) continue;
         const q = CON_POS ? posicion(t.id, liga, anio, +S) : null;
         const p = predecir(nuevo.w, vector(m, null, null, tier, q)); const b = nuevo.banda;
-        ((out[liga] ??= {})[anio] ??= []).push({ ...(enSitio ? { id: f.id } : { n: f.n }), revenue: nom(p), lo: nom(p + b.lo), hi: nom(p + b.hi), caso: 'nuevo', error: b.error, de: [] });
+        ((out[liga] ??= {})[anio] ??= []).push(conMargen({ ...(enSitio ? { id: f.id } : { n: f.n }), revenue: nom(p), lo: nom(p + b.lo), hi: nom(p + b.hi), caso: 'nuevo', error: b.error, de: [] }));
         continue;
       }
       const t = { id: f.id, liga, anio, pais: liga.slice(0, 2), tier };
@@ -225,7 +242,7 @@ function estimaciones() {
       const antes = propios.filter((o) => o.anio < anio).sort((a, b) => b.anio - a.anio)[0], despues = propios.filter((o) => o.anio > anio).sort((a, b) => a.anio - b.anio)[0];
       const caso = antes && despues ? 'entre' : 'afuera'; const b = banda[caso];
       // `de`: los ejercicios reales de los que sale (para el "por qué" en pantalla)
-      ((out[liga] ??= {})[anio] ??= []).push({ id: f.id, revenue: nom(p), lo: nom(p + b.lo), hi: nom(p + b.hi), caso, error: b.error, de: [antes?.anio, despues?.anio].filter(Boolean) });
+      ((out[liga] ??= {})[anio] ??= []).push(conMargen({ id: f.id, revenue: nom(p), lo: nom(p + b.lo), hi: nom(p + b.hi), caso, error: b.error, de: [antes?.anio, despues?.anio].filter(Boolean) }));
     }
   }
   return { out, CI, banda: { ...banda, nuevo: nuevo.banda } };
@@ -260,7 +277,7 @@ if (import.meta.url === `file://${process.argv[1]}` && !process.argv.includes('-
     if (!existsSync(DIR_EST)) { console.log('estimar: data/estimados/ no existe (no se publican estimaciones): nada que chequear'); process.exit(0); }
     // un estimado al lado de un año real es el error que este archivo existe para evitar
     const chocan = [];
-    for (const f of readdirSync(DIR_EST)) { const c = { window: {} }; vm.runInNewContext(readFileSync(resolve(DIR_EST, f), 'utf8'), c); for (const [, ys] of Object.entries(c.window.ESTIMADOS || {})) for (const [y, l] of Object.entries(ys)) for (const e of l) if ((CI[e.id]?.yrs || []).some(([a]) => a === +y)) chocan.push(`${e.id} ${y}`); }
+    for (const f of readdirSync(DIR_EST)) { const c = { window: {} }; vm.runInNewContext(readFileSync(resolve(DIR_EST, f), 'utf8'), c); for (const [, ys] of Object.entries(c.window.ESTIMADOS || {})) for (const [y, l] of Object.entries(ys)) for (const e of l) if ((CI[e.id]?.yrs || []).some(([a]) => a === +y) && !(CI[e.id].gm || []).includes(+y)) chocan.push(`${e.id} ${y}`); }
     const viejos = Object.entries(files).filter(([f, t]) => !existsSync(resolve(DIR_EST, f)) || readFileSync(resolve(DIR_EST, f), 'utf8') !== t).map(([f]) => f);
     const sobran = readdirSync(DIR_EST).filter((f) => !files[f]);
     if (chocan.length || viejos.length || sobran.length) { console.log(`estimar: ${chocan.length ? `ESTIMADO JUNTO A UN AÑO REAL (${chocan.join(', ')}); ` : ''}${viejos.length + sobran.length} archivos viejos: node tools/estimar.mjs --escribir`); process.exit(1); }
