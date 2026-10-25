@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1111 — Excelsior 2020 cargado (hueco ejercicio-sin-rastro) y calibración de la cola: ocho segundas revisiones de cierre-por-pais alta [excelsior-nl]
+- Excelsior 2020 (lote 153, US$ 0,06): frenaba por «Resultaat deelneming» (−43.569, debajo del impuesto); ajuste manual al financiero como en 2024 y cierra con el resultado impreso (659.739 EUR). Roster de la 2019–20 Eerste Divisie en la caché (clave 2020) y liga del año.
+- Calibración de la cola: 8 respuestas de cierre-por-pais alta vueltas a mirar por un Sonnet que no veía la original, 8 coinciden; la celda pasa de 13 a 21 medidas de 131.
+- Medición: sin cambio de tools.
+
 ## Versión 1110 — verificar-lecturas.mjs, vocabulario-datos.mjs: el total y su único renglón no se suman dos veces, vale la fila del resultado si el resumen de la IA trae otra cifra, y el vocabulario noruego del financiero [456 · verificar-lecturas.mjs, vocabulario-datos.mjs]
 - `verificar-lecturas.mjs`: si el total impreso y su único renglón son la misma cifra («Driftsinntekter» y «Sum driftsinntekter»), la fila del total no se suma aparte (Aalesund 2018 daba 83,18 M de ingresos en vez de 41,59 M). Si el importe del resumen `resultado` de la IA no es el de ninguna fila de resultado del estado y difiere más de 1 % de la fila de su propia línea, vale la fila (Bolton 2024-25 traía la remuneración del personal de otra tabla como resultado).
 - `vocabulario-datos.mjs` (noruego): «Inntekt på investering…» suma y «Nedskrivning av finansielle…» resta en el financiero por rótulo: Aalesund 2018 cierra con el resultado impreso (1,20 M).
