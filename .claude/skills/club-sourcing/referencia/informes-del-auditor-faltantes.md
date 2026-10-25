@@ -55,7 +55,7 @@ Dos tipos: **el PDF no lo trae** (hay que conseguir otro documento) y **el .md n
 
 ## Noruega
 
-- `sarpsborg08-no` — el .md no lo trae: 2021
+- `sarpsborg08-no` — el PDF no lo trae: 2021
 
 ## Países Bajos
 
@@ -65,7 +65,7 @@ Dos tipos: **el PDF no lo trae** (hay que conseguir otro documento) y **el .md n
 - `goaheadeagles-nl` — el PDF no lo trae: 2025
 - `sccambuur-nl` — el .md no lo trae: 2025
 - `spartarotterdam-nl` — el .md no lo trae: 2024
-- `telstar-nl` — el .md no lo trae: 2025
+- `telstar-nl` — el PDF no lo trae: 2025
 
 ## Portugal
 
