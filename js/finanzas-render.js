@@ -211,7 +211,7 @@
     // Resultado neto de la columna Presupuesto = sus propios ingresos + gastos, sin extraTotal: el overlay no tiene extraRows, sus
     // líneas extraordinarias ya están dentro de revenueLines/expenseLines.
     const resultadoOverlay = overlayReport ? (ing.totalPrev + gas.totalPrev) : null;
-    const resultRow = `<tr class="pl-bold pl-highlight"><td>${curReport.resultLabel || 'Resultado neto'}</td><td>${resultado === null ? t('stat.nodata','Sin dato') : fmtDisplay(resultado)}</td><td>—</td>` +
+    const resultRow = `<tr class="pl-bold pl-highlight"><td>${tLabel(curReport.resultLabel || 'Resultado neto')}</td><td>${resultado === null ? t('stat.nodata','Sin dato') : fmtDisplay(resultado)}</td><td>—</td>` +
       `<td>${resultadoOverlay !== null ? fmtDisplay(resultadoOverlay) : '—'}</td><td>—</td></tr>`;
 
     document.querySelector('#'+containerId+' tbody').innerHTML =
@@ -670,10 +670,18 @@
     </div>`;
   }
 
+  const CAVEAT_KEYS = {
+    'El documento no declara un tipo de cambio y no se consiguió uno de su fecha de cierre: el valor en dólares usa una referencia redonda y sirve solo para dar orden de magnitud.': 'caveat.fxPlaceholder',
+    'El tipo de cambio usado para pasar a dólares es aproximado: no se consiguió la cotización exacta de la fecha de cierre.': 'caveat.fxApprox',
+    'Falta verificar de dónde salió el tipo de cambio usado para pasar a dólares.': 'caveat.fxUnknown',
+    'El documento no publica el resultado del ejercicio, así que esa cifra no se puede verificar contra un total impreso.': 'caveat.noPAT',
+    'No informa deuda ni caja.': 'caveat.noDebtCash'
+  };
   function salvedadesDe(src, metas){
     const partes = [];
     if(src.publicNote) partes.push(src.publicNote);
-    partes.push(...sourceCaveats(src, metas));
+    // Las salvedades salen de data/sources-view.js en castellano (también las usa la página de fuentes); acá se traducen por su texto.
+    partes.push(...sourceCaveats(src, metas).map(c => CAVEAT_KEYS[c] ? t(CAVEAT_KEYS[c], c) : c));
     return partes.join(' ');
   }
 
@@ -820,7 +828,7 @@
       ['Mejor resultado en Libertadores', rA.mejorResultadoLibertadores, rB.mejorResultadoLibertadores, 'text'],
     ];
     document.querySelector('#compareTable tbody').innerHTML = rows.map(r => {
-      const [label, va, vb, type] = r;
+      const [labelEs, va, vb, type] = r; const label = tLabel(labelEs);
       const isMoney = type === 'money' || type === 'money-inv';
       const fa = va == null ? '—' : isMoney ? fmtAmount(va, 'USD') : va;
       const fb = vb == null ? '—' : isMoney ? fmtAmount(vb, 'USD') : vb;

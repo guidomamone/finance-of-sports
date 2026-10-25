@@ -24,7 +24,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsTeam","name":"Juventus","sport":"Soccer","url":"https://financeofsports.com/club/juventus-it","location":{"@type":"Country","name":"Italia"},"memberOf":{"@type":"SportsOrganization","name":"Serie A de Italia"}}</script>
 <style>#pagina-estatica{max-width:900px;margin:24px auto;padding:0 16px;font:16px/1.5 system-ui,sans-serif}#pagina-estatica table{border-collapse:collapse;width:100%}#pagina-estatica th,#pagina-estatica td{border-bottom:1px solid #8884;padding:6px 8px;text-align:left}#pagina-estatica td.n,#pagina-estatica th.n{text-align:right}.js #pagina-estatica{display:none}</style>
 <script>window.FOS_RUTA = {"tab":"finanzas","club":"juventus-it"}; document.documentElement.classList.add('js');</script>
-<link rel="stylesheet" href="css/styles.css?v=1768">
+<link rel="stylesheet" href="css/styles.css?v=1769">
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3deae274c6f346eab1a19f78e41ac035"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -378,7 +378,7 @@
       <div class="table-scroll">
       <table id="finanzasPLTable">
         <colgroup><col><col style="width:100px"><col style="width:100px"><col style="width:100px"><col style="width:100px"></colgroup>
-        <thead><tr><th data-i18n="th.line">Rubro</th><th id="finanzasPLTableCurLabel">Actual</th><th>% del<br>total</th><th id="finanzasPLTablePrevLabel">Anterior</th><th>% del<br>total</th></tr></thead>
+        <thead><tr><th data-i18n="th.line">Rubro</th><th id="finanzasPLTableCurLabel">Actual</th><th data-i18n-html="th.pctTotal">% del<br>total</th><th id="finanzasPLTablePrevLabel">Anterior</th><th data-i18n-html="th.pctTotal">% del<br>total</th></tr></thead>
         <tbody></tbody>
       </table>
       <!-- En la vista multi-año y más de un ejercicio elegido, esta tabla reemplaza a la de arriba: una columna por ejercicio. La llena
@@ -454,11 +454,11 @@
       <p class="subtitle" data-i18n="finanzas.charts.sub">Los mismos números de arriba, pero en gráfico: para ver de un vistazo cómo evolucionaron ingresos y gastos a través de los ejercicios, y de qué rubros vive el club.</p>
       <div class="charts-grid">
         <div>
-          <div class="chart-caption">Ingresos vs. gastos, últimos ejercicios</div>
+          <div class="chart-caption" data-i18n="chart.revExp">Ingresos vs. gastos, últimos ejercicios</div>
           <div class="chart-wrap"><span class="chart-axis-dollar">$</span><canvas id="trendChart"></canvas></div>
         </div>
         <div>
-          <div class="chart-caption">Composición de ingresos del ejercicio seleccionado</div>
+          <div class="chart-caption" data-i18n="chart.revMix">Composición de ingresos del ejercicio seleccionado</div>
           <div class="chart-wrap"><canvas id="breakdownChart"></canvas></div>
         </div>
       </div>
@@ -522,7 +522,7 @@
           </table></div>
         </details>
         <table class="mini-table" style="margin-top:10px;"><colgroup><col><col style="width:130px"></colgroup>
-          <tr class="total-row"><td>DIFERENCIA (Ingresos − Gastos de organización)</td><td class="amount">10.529.312.000</td></tr>
+          <tr class="total-row"><td data-i18n="torneo.diff">DIFERENCIA (Ingresos − Gastos de organización)</td><td class="amount">10.529.312.000</td></tr>
         </table>
         <p class="source-note">No incluye sueldos ni primas del plantel: el presupuesto no desglosa esos costos por torneo (son una única cifra para todo el plantel, sin importar en qué competencia jugó cada partido), así que la "Diferencia" de acá NO es el resultado económico real de disputar esta copa, solo compara los ingresos de la competencia contra el costo de organizar sus partidos (seguridad, viajes, concentración, premios por avance de ronda, AFA, etc.).</p>
       </div>
@@ -568,7 +568,7 @@
           </table></div>
         </details>
         <table class="mini-table" style="margin-top:10px;"><colgroup><col><col style="width:130px"></colgroup>
-          <tr class="total-row"><td>DIFERENCIA (Ingresos − Gastos de organización)</td><td class="amount neg-num">(1.939.207.000)</td></tr>
+          <tr class="total-row"><td data-i18n="torneo.diff">DIFERENCIA (Ingresos − Gastos de organización)</td><td class="amount neg-num">(1.939.207.000)</td></tr>
         </table>
         <p class="source-note">No incluye sueldos ni primas del plantel: el presupuesto no desglosa esos costos por torneo (son una única cifra para todo el plantel, sin importar en qué competencia jugó cada partido), así que la "Diferencia" de acá NO es el resultado económico real de disputar este torneo, solo compara los ingresos de la competencia contra el costo de organizar sus partidos (seguridad, viajes, concentración, premios grupales, AFA, etc.). Que dé negativa acá no significa que el club "pierde plata" jugando la Liga: la Liga también paga, indirectamente, gran parte de los sueldos del plantel, que no están en esta cuenta.</p>
       </div>
@@ -591,7 +591,7 @@
           <tr class="subtotal-row"><td data-i18n="torneo.total.gastos">TOTAL GASTOS DE ORGANIZACIÓN</td><td class="amount">170.200.000</td></tr>
         </table>
         <table class="mini-table" style="margin-top:10px;"><colgroup><col><col style="width:130px"></colgroup>
-          <tr class="total-row"><td>DIFERENCIA (Ingresos − Gastos de organización)</td><td class="amount">170.217.000</td></tr>
+          <tr class="total-row"><td data-i18n="torneo.diff">DIFERENCIA (Ingresos − Gastos de organización)</td><td class="amount">170.217.000</td></tr>
         </table>
         <p class="source-note">No incluye sueldos ni primas del plantel: el presupuesto no desglosa esos costos por torneo (son una única cifra para todo el plantel, sin importar en qué competencia jugó cada partido), así que la "Diferencia" de acá NO es el resultado económico real de disputar esta copa, solo compara los ingresos de la competencia contra el costo de organizar sus partidos.</p>
       </div>
@@ -636,10 +636,10 @@
   <!-- RESULTADOS DEPORTIVOS -->
   <section id="resultados">
     <h1 data-i18n="resultados.title">Resultados Deportivos</h1>
-    <p class="subtitle">Complemento al análisis financiero. Es contexto, no el eje del sitio. Cada título queda contado en la gestión del presidente que estaba en funciones el día que se ganó, no en la de quien empezó el torneo, por eso a veces un título "cruza" el cambio de gestión.</p>
+    <p class="subtitle" data-i18n="res.sub">Complemento al análisis financiero. Es contexto, no el eje del sitio. Cada título queda contado en la gestión del presidente que estaba en funciones el día que se ganó, no en la de quien empezó el torneo, por eso a veces un título "cruza" el cambio de gestión.</p>
 
     <div class="controls">
-      <label>Gestión:</label>
+      <label data-i18n="label.board">Gestión:</label>
       <select id="resultadosGestionSelect">
         <option value="riquelme">Riquelme (2023-actual)</option>
         <option value="ameal">Ameal (2019-2023)</option>
@@ -652,11 +652,11 @@
     <div class="card">
       <h2 data-i18n="resultados.table.title">Títulos y competencias por año</h2>
       <table id="resultadosTable">
-        <thead><tr><th>Año</th><th data-i18n="th.competition">Competencia</th><th data-i18n="th.result">Resultado</th><th data-i18n="th.board">Gestión</th></tr></thead>
+        <thead><tr><th data-i18n="th.year">Año</th><th data-i18n="th.competition">Competencia</th><th data-i18n="th.result">Resultado</th><th data-i18n="th.board">Gestión</th></tr></thead>
         <tbody></tbody>
       </table>
-      <p class="source-note">Solo se listan títulos ganados.</p>
-      <p class="source-note">Fuentes: Wikipedia (anexos de presidentes de cada club), cobertura de Infobae, La Nación y ESPN sobre cada gestión, buscada y verificada en agosto de 2026. A cruzar contra el sitio oficial de cada club antes de publicar.</p>
+      <p class="source-note" data-i18n="res.note1">Solo se listan títulos ganados.</p>
+      <p class="source-note" data-i18n="res.src">Fuentes: Wikipedia (anexos de presidentes de cada club), cobertura de Infobae, La Nación y ESPN sobre cada gestión, buscada y verificada en agosto de 2026. A cruzar contra el sitio oficial de cada club antes de publicar.</p>
     </div>
   </section>
 
@@ -682,10 +682,10 @@
 
     <div class="card">
       <table class="compare-table" id="compareTable">
-        <thead><tr><th>Indicador</th><th id="compAHead">Gestión A</th><th id="compBHead">Gestión B</th></tr></thead>
+        <thead><tr><th data-i18n="th.indicator">Indicador</th><th id="compAHead">Gestión A</th><th id="compBHead">Gestión B</th></tr></thead>
         <tbody></tbody>
       </table>
-      <p class="source-note">Financieros: último ejercicio de cada gestión. Deportivos: acumulado de la gestión. Datos placeholder.</p>
+      <p class="source-note" data-i18n="cmp.note">Financieros: último ejercicio de cada gestión. Deportivos: acumulado de la gestión. Datos placeholder.</p>
     </div>
   </section>
 
@@ -761,10 +761,10 @@
       <input type="email" id="cfEmail">
       <label>Tipo</label>
       <select id="cfTipo">
-        <option>Duda</option>
-        <option>Sugerencia</option>
-        <option>Dato / corrección</option>
-        <option>Otro</option>
+        <option value="Duda" data-i18n="fb.tipo.duda">Duda</option>
+        <option value="Sugerencia" data-i18n="fb.tipo.sugerencia">Sugerencia</option>
+        <option value="Dato / corrección" data-i18n="fb.tipo.dato">Dato / corrección</option>
+        <option value="Otro" data-i18n="fb.tipo.otro">Otro</option>
       </select>
       <label data-i18n="modal.message">Mensaje</label>
       <textarea id="cfMensaje" rows="4" required></textarea>
@@ -791,56 +791,56 @@
 <!-- ASSET_V: versión de los assets propios, para invalidar el cache del navegador en cada deploy (si no, un visitante se queda
      con un js/*.js viejo mientras el HTML es nuevo). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o `data/`. Lo leen
      también los cargadores dinámicos (loadClubData, I18N.load, loadRanking). -->
-<script>window.ASSET_V = '1768';</script>
-<script src="data/lang/langs.js?v=1768"></script>
-<script src="js/i18n.js?v=1768"></script>
-<script src="data/clubs.js?v=1768"></script>
+<script>window.ASSET_V = '1769';</script>
+<script src="data/lang/langs.js?v=1769"></script>
+<script src="js/i18n.js?v=1769"></script>
+<script src="data/clubs.js?v=1769"></script>
 <!-- data/club-aliases.js: los ids viejos de club (sin país) y a cuál apuntan hoy, para que un link o una búsqueda guardada con el id viejo siga abriendo. -->
-<script src="data/club-aliases.js?v=1768"></script>
+<script src="data/club-aliases.js?v=1769"></script>
 <!-- data/club-index.js: el índice liviano de TODOS los clubes (nombre, país, calidad del dato, ejercicios), GENERADO por
      tools/generate-club-index.js. Lo que hay que mostrar de un club ANTES de entrar a él vive adentro de data/<país>/<club>-data.js, que
      no se carga hasta que el visitante lo elige. -->
-<script src="data/club-index.js?v=1768"></script>
+<script src="data/club-index.js?v=1769"></script>
 <!-- data/leagues.js: el CATÁLOGO de la taxonomía del selector (deportes, regiones, países, ligas). NO tiene membresía: qué club
      jugó en qué liga es (club, ejercicio) y vive en data/club-leagues.js. Ver la cabecera de data/leagues.js ("no existe ninguna
      arista club → liga sin año"). -->
-<script src="data/leagues.js?v=1768"></script>
-<script src="data/club-leagues.js?v=1768"></script>
-<script src="data/category-map.js?v=1768"></script>
-<script src="data/site-labels.js?v=1768"></script>
-<script src="data/glosas-indice.js?v=1768"></script>
-<script src="data/currency-map.js?v=1768"></script>
-<script src="data/sources-view.js?v=1768"></script>
+<script src="data/leagues.js?v=1769"></script>
+<script src="data/club-leagues.js?v=1769"></script>
+<script src="data/category-map.js?v=1769"></script>
+<script src="data/site-labels.js?v=1769"></script>
+<script src="data/glosas-indice.js?v=1769"></script>
+<script src="data/currency-map.js?v=1769"></script>
+<script src="data/sources-view.js?v=1769"></script>
 <!-- Ningún data file de club se carga acá: el sitio abre en la portada sin club, y CUALQUIER club entra por loadClubData() cuando
      el visitante lo elige. -->
-<script src="js/info-tip.js?v=1768"></script>
-<script src="data/deflactores.js?v=1768"></script>
-<script src="js/finanzas-calc.js?v=1768"></script>
-<script src="js/finanzas-render.js?v=1768"></script>
-<script src="js/finanzas-anios.js?v=1768"></script>
-<script src="js/finanzas-multi.js?v=1768"></script>
+<script src="js/info-tip.js?v=1769"></script>
+<script src="data/deflactores.js?v=1769"></script>
+<script src="js/finanzas-calc.js?v=1769"></script>
+<script src="js/finanzas-render.js?v=1769"></script>
+<script src="js/finanzas-anios.js?v=1769"></script>
+<script src="js/finanzas-multi.js?v=1769"></script>
 <!-- Estructura del club: el índice de grupos multiclub (chico, lo usa también el buscador) y la tarjeta de Finanzas. -->
-<script src="data/entidades/_grupos.js?v=1768"></script>
-<script src="js/finanzas-estructura.js?v=1768"></script>
-<script src="js/grupo.js?v=1768"></script>
+<script src="data/entidades/_grupos.js?v=1769"></script>
+<script src="js/finanzas-estructura.js?v=1769"></script>
+<script src="js/grupo.js?v=1769"></script>
 <!-- Quién auditó cada balance: qué países tienen dato (chico) y la tarjeta de Finanzas, que baja el país al elegir un club. -->
-<script src="data/auditoria/_paises.js?v=1768"></script>
-<script src="data/auditoria/_ligas.js?v=1768"></script>
-<script src="js/auditoria.js?v=1768"></script>
-<script src="js/correcciones.js?v=1768"></script>
-<script src="js/citar.js?v=1768"></script>
-<script src="js/contexto.js?v=1768"></script>
-<script src="js/sponsor.js?v=1768"></script>
+<script src="data/auditoria/_paises.js?v=1769"></script>
+<script src="data/auditoria/_ligas.js?v=1769"></script>
+<script src="js/auditoria.js?v=1769"></script>
+<script src="js/correcciones.js?v=1769"></script>
+<script src="js/citar.js?v=1769"></script>
+<script src="js/contexto.js?v=1769"></script>
+<script src="js/sponsor.js?v=1769"></script>
 <!-- js/selector.js: el selector de club. Se alimenta solo de clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja todos
      los clubes sin bajar un solo data/<país>/<club>-data.js. -->
-<script src="js/selector.js?v=1768"></script>
-<script src="data/destacados.js?v=1768"></script>
-<script src="data/informes.js?v=1768"></script>
-<script src="js/liga.js?v=1768"></script>
+<script src="js/selector.js?v=1769"></script>
+<script src="data/destacados.js?v=1769"></script>
+<script src="data/informes.js?v=1769"></script>
+<script src="js/liga.js?v=1769"></script>
 <!-- js/cuenta.js: login con Google vía Supabase + guardado automático de búsquedas. No sabe cómo se renderiza el resto del sitio:
      recibe `reopen` por CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
-<script src="js/cuenta.js?v=1768"></script>
-<script src="js/principal.js?v=1768"></script>
+<script src="js/cuenta.js?v=1769"></script>
+<script src="js/principal.js?v=1769"></script>
 
 </body>
 </html>
