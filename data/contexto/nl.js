@@ -22,6 +22,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'excelsior-nl': {
     2019: {"estadio":"Van Donge & De Roo Stadion","capacidad":4500,"sponsor":"DSW Zorgverzekeraar","marca":"Quick","temporada":"2018–19 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354348195"},
+    2020: {"estadio":"Van Donge & De Roo Stadion","capacidad":4500,"sponsor":"DSW Zorgverzekeraar","marca":"Quick","temporada":"2019–20 Eerste Divisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1324708347"},
     2024: {"estadio":"Van Donge & De Roo Stadion","capacidad":4500,"sponsor":"DSW Zorgverzekeraar","marca":"Quick","temporada":"2023–24 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377460717"},
   },
   'fcdenbosch-nl': {

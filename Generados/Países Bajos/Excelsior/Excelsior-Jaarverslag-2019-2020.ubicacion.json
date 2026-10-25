@@ -1,0 +1,57 @@
+{
+ "pdf": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2019-2020.pdf",
+ "md": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2019-2020.md",
+ "mdSha1": "86234a3475d18edac4f4a72d470f9b798275f727",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T21:49:03.592Z",
+ "perimetroClub": "consolidado",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    91,
+    108
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    121,
+    140
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    157,
+    173
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    190,
+    213
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(Bedragen in €)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2019/2020",
+ "columna_anterior": "2018/2019",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El estado de resultados consolidado de Stichting Betaald Voetbal Excelsior está en b3 (2.2 Geconsolideerde winst-en-verliesrekening). b1 y b2 son el balance y b4 es el flujo de efectivo, por eso no se eligen. El documento no trae notas que desglosen ingresos ni gastos."
+}

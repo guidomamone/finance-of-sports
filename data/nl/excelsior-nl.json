@@ -28,6 +28,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2018-2019.pdf"
+    },
+    {
+      "id": "excelsior-nl-jaarverslag-2019-2020",
+      "club_id": "excelsior-nl",
+      "title": "Stichting Betaald Voetbal Excelsior — Excelsior-Jaarverslag-2019-2020 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2019-2020.pdf"
     }
   ],
   "members": null,
@@ -53,6 +61,30 @@
       "adjustments": {
         "extra_rows": [{"label":"financiële baten en lasten","amount":-0.047474},{"label":"belastingen","amount":0}],
         "no_breakdown": [{"line":"netto-omzet","side":"revenue","amount":7.819403,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "sales_total"
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-06-30",
+      "currency": "EUR",
+      "source_id": "excelsior-nl-jaarverslag-2019-2020",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"EUR@2020-06-30"},
+      "revenue": [{"label":"Netto-omzet","category":"undisclosed","subcategory":"lump_football_operations","amount":6.359107,"disclosure":"aggregated"}],
+      "expenses": [
+        {"label":"Lonen en salarissen","category":"first_team_staff","subcategory":"wages_squad","amount":-2.534578,"disclosure":"aggregated"},
+        {"label":"Sociale lasten","category":"first_team_staff","subcategory":"wages_squad","amount":-0.40344,"disclosure":"aggregated"},
+        {"label":"Pensioenen","category":"first_team_staff","subcategory":"wages_squad","amount":-0.080244,"disclosure":"aggregated"},
+        {"label":"Afschrijving vaste activa","category":"depreciation","subcategory":"depreciation","amount":-0.357495,"disclosure":"aggregated"},
+        {"label":"Overige bedrijfskosten","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2.249105,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-0.074506,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":6.359107,"expenses":5.624862,"net_result":0.659739},
+      "adjustments": {
+        "extra_rows": [{"label":"Financiële baten en lasten","amount":-0.030937},{"label":"Resultaat deelneming","amount":-0.043569},{"label":"Belastingen","amount":0}],
+        "no_breakdown": [{"line":"Netto-omzet","side":"revenue","amount":6.359107,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "revenue_basis": "sales_total"
       }
     },

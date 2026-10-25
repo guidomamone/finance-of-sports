@@ -1,0 +1,390 @@
+{
+ "pdf": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2019-2020.pdf",
+ "generado": "2026-10-25T21:52:29.868Z",
+ "frena": [],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-09: Revisión del alta (Claude, 2026-10-09): el documento solo trae la balans y la W&V geconsolideerde)"
+ ],
+ "ejercicio": {
+  "clubId": "excelsior-nl",
+  "year": 2020,
+  "cierre": "2020-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Netto-omzet",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 6.359107,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Lonen en salarissen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -2.534578,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sociale lasten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.40344,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensioenen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.080244,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijving vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.357495,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige bedrijfskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -2.249105,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2020-06-30",
+   "sourceId": "excelsior-nl-jaarverslag-2019-2020",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.074506,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Financiële baten en lasten",
+     "value": -0.030937
+    },
+    {
+     "label": "Resultaat deelneming",
+     "value": -0.043569
+    },
+    {
+     "label": "Belastingen",
+     "value": 0
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Netto-omzet",
+     "lado": "revenue",
+     "importe": 6.359107,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "net_sales"
+    }
+   ],
+   "baseIngreso": "sales_total",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 6.359107,
+   "officialTotalExpenses": 5.624862,
+   "officialPAT": 0.659739
+  },
+  "source": {
+   "id": "excelsior-nl-jaarverslag-2019-2020",
+   "clubId": "excelsior-nl",
+   "title": "Stichting Betaald Voetbal Excelsior — Excelsior-Jaarverslag-2019-2020 (ejercicio 2020)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2019-2020.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2019-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2019-2020.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2020-06-30",
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-09): Revisión del alta (Claude, 2026-10-09): Geconsolideerde balans per 30 juni 2020"
+ },
+ "clubId": "excelsior-nl",
+ "year": 2020,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2019-2020.pdf",
+   "campo": "cierre",
+   "valor": "2020-06-30",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): Geconsolideerde balans per 30 juni 2020",
+   "evidencia": "Excelsior-Jaarverslag-2019-2020.pdf (balans/W&V geconsolideerde 2020)",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2019-2020.pdf",
+   "campo": "fila",
+   "valor": "-43.569",
+   "linea": 172,
+   "etiqueta": "Resultaat deelneming",
+   "lado": "financiero",
+   "reemplaza": "Resultaat deelneming",
+   "motivo": "resultado de participadas (pérdida), impreso debajo del impuesto: va al financiero como en Excelsior 2024 y Sparta; con él cierra el 659.739 impreso",
+   "evidencia": ".md L172",
+   "causa": "precedente-del-club",
+   "autor": "Claude",
+   "fecha": "2026-10-25"
+  }
+ ],
+ "seleccion": {
+  "filas": 9,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Netto-omzet",
+   "page": 5,
+   "native": 6.359107,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.359107,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6.359107
+  },
+  {
+   "label": "Lonen en salarissen",
+   "page": 5,
+   "native": 2.534578,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.534578,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.534578
+  },
+  {
+   "label": "Sociale lasten",
+   "page": 5,
+   "native": 0.40344,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.40344,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.40344
+  },
+  {
+   "label": "Pensioenen",
+   "page": 5,
+   "native": 0.080244,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.080244,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.080244
+  },
+  {
+   "label": "Afschrijving vaste activa",
+   "page": 5,
+   "native": 0.357495,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.357495,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.357495
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "page": 5,
+   "native": 2.249105,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.249105,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.249105
+  },
+  {
+   "label": "Financiële baten en lasten",
+   "page": null,
+   "native": -0.030937,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Resultaat deelneming",
+   "page": null,
+   "native": -0.043569,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": "netInterest",
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "conf": 1,
+   "escalon": 0,
+   "notaGuido": "Claude 2026-10-20 (triage de la Auditora, Admin/registros/triage-cola-2026-10-20.md): resultaat deelneming va al resultado financiero (como Randers y Vejle)",
+   "destino": "netInterest"
+  },
+  {
+   "label": "Belastingen",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 6.359107,
+  "expSum": -5.624862,
+  "officialTotalRevenue": 6.359107,
+  "officialTotalExpenses": 5.624862,
+  "officialPAT": 0.659739,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.659739,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 6.359107
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 5.624862
+  }
+ },
+ "liga": {
+  "valor": "nl-eerstedivisie",
+  "fuente": "NO EXACTA, confirmar en la página del club: roster cacheado de \"2019–20 Eerste Divisie\" (tools/club-league-reference/nl.json), coincidencia única por palabras \"Excelsior Rotterdam\" = \"Excelsior\" (si es el mismo club, agregarlo a alias.json)",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2020,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): Geconsolideerde balans per 30 juni 2020",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2020-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): Geconsolideerde balans per 30 juni 2020)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-09)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Países Bajos (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2020-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2020-06-30 = 0.893 (Cierre BCE al 30/6/2020 (1 EUR = 1,1198 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "excelsior-nl-jaarverslag-2019-2020",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "nl-eerstedivisie",
+   "fuente": "NO EXACTA, confirmar en la página del club: roster cacheado de \"2019–20 Eerste Divisie\" (tools/club-league-reference/nl.json), coincidencia única por palabras \"Excelsior Rotterdam\" = \"Excelsior\" (si es el mismo club, agregarlo a alias.json)",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 5,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

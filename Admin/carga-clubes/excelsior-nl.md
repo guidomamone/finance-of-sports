@@ -79,6 +79,44 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-19): nl-eredivisie, verificado contra roster cacheado de "2023–24 Eredivisie" (tools/club-league-reference/nl.json), coincidencia exacta "Excelsior".
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-25) desde Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2019-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Países Bajos/Excelsior/Excelsior-Jaarverslag-2019-2020.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Netto-omzet | pág. 5, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Lonen en salarissen | pág. 5, precedente |
+| 2 | Sociale lasten | pág. 5, precedente |
+| 3 | Pensioenen | pág. 5, precedente |
+| 4 | Afschrijving vaste activa | pág. 5, precedente |
+| 5 | Overige bedrijfskosten | pág. 5, precedente |
+
+### Meta
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2020-06-30. Revisión del alta (Claude, 2026-10-09): Geconsolideerde balans per 30 juni 2020
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-25): fila = -43.569. resultado de participadas (pérdida), impreso debajo del impuesto: va al financiero como en Excelsior 2024 y Sparta; con él cierra el 659.739 impreso
+tools/cargar.mjs (2026-10-25). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-25): nl-eerstedivisie, verificado contra NO EXACTA, confirmar en la página del club: roster cacheado de "2019–20 Eerste Divisie" (tools/club-league-reference/nl.json), coincidencia única por palabras "Excelsior Rotterdam" = "Excelsior" (si es el mismo club, agregarlo a alias.json).
+```
+
 ## 2019
 
 ### Ingresos
@@ -132,4 +170,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2018-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### excelsior-nl-jaarverslag-2019-2020
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-25) desde la transcripción Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2019-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

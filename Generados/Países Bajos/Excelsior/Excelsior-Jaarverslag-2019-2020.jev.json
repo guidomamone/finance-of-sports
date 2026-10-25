@@ -1,0 +1,61 @@
+{
+ "md": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2019-2020.md",
+ "generatedAt": "2026-10-25T21:49:54.541Z",
+ "rubrosHuella": "f4e66d07be81ed2f69fc7f1e52ccbb7beb5f29fe",
+ "rubros": [
+  {
+   "label": "Netto-omzet",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Lonen en salarissen",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Sociale lasten",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Pensioenen",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Afschrijving vaste activa",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "desdeCache": true
+  }
+ ]
+}

@@ -55,4 +55,13 @@ window.RANKINGS["nl-eerstedivisie"] = {
         mix:[["Comercial / Sponsors",2.684],["Estadio",1.254],["Televisión",0.846],["Premios por competencias",0.137],["Venta de Jugadores",1.783],["Subsidios y donaciones",0.316],["Otros ingresos",0.095]] },
     ],
   },
+  2020: {
+    leagueSize: 20,
+    wiki: {"t":"2019–20 Eerste Divisie","lang":"en","at":"2026-10-25","n":20},
+    clubs: [
+      { id:"excelsior-nl", revenue:7.121, reportType:"official_balance_sheet",
+        sourceId:"excelsior-nl-jaarverslag-2019-2020",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",7.121]] },
+    ],
+  },
 };

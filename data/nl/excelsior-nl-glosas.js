@@ -1,4 +1,13 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Afschrijving vaste activa":{"es":"Amortización del inmovilizado","en":"Depreciation of fixed assets"},
+"Belastingen":{"es":"Impuestos","en":"Taxes"},
+"Financiële baten en lasten":{"es":"Resultado financiero","en":"Financial income and expenses"},
+"Lonen en salarissen":{"es":"Sueldos y salarios","en":"Wages and salaries"},
+"Netto-omzet":{"es":"Ingresos netos","en":"Net revenue"},
+"Overige bedrijfskosten":{"es":"Otros gastos operativos","en":"Other operating expenses"},
+"Pensioenen":{"es":"Pensiones","en":"Pensions"},
+"Resultaat deelneming":{"es":"Resultado de participaciones","en":"Result from participating interests"},
+"Sociale lasten":{"es":"Cargas sociales","en":"Social security costs"},
 "afschrijving vaste activa":{"es":"Amortización del inmovilizado","en":"Depreciation of fixed assets"},
 "belastingen":{"es":"Impuestos","en":"Taxes"},
 "financiële baten en lasten":{"es":"Resultado financiero","en":"Net financial income and expenses"},

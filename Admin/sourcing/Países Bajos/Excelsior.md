@@ -22,3 +22,5 @@ Color de marca: null — ambiguo, sin desempate (criterio de Guido: elegir y con
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2024 desde `Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2023-2024.pdf` (sourceId `excelsior-nl-jaarverslag-2023-2024`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2019 desde `Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2018-2019.pdf` (sourceId `excelsior-nl-jaarverslag-2018-2019`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2020 desde `Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2019-2020.pdf` (sourceId `excelsior-nl-jaarverslag-2019-2020`).
