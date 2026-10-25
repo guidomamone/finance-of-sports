@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1097 — estimar.mjs: tope de error por país y caso, automático [455 · estimar.mjs]
+- `ERROR_MAXIMO` = 60 % (decisión de Guido): un estimado no se publica si el error mediano medido de su país y su caso (club nuevo, entre dos reales, antes o después; con menos de 8 club-años medidos vale el error global del caso) lo pasa. Se recalcula en cada `--escribir` y `--check` (la auditoría, `estimados-desfasado`). Regla escrita en `Admin/CONVENCIONES-DATOS.md`.
+- Efecto: 1.528 estimados de club nuevo dejan de publicarse (Portugal 781, Colombia 512, Grecia 233, Croacia 2); Bélgica, Dinamarca y los de club con otros años siguen.
+- Medición: 5 diferencias, todas explicadas (medidor de auditoría); el error global del modelo no cambia.
+
 ## Versión 1096 — generate-rankings.js, estimar.mjs, faltantes-liga.mjs, generate-club-index.js: Ligas estima los años de margen bruto y un ingreso real de un informe posterior lo pisa [455 · 447 · generate-rankings.js, estimar.mjs, faltantes-liga.mjs, generate-club-index.js]
 - Un ejercicio de margen bruto (`revenue_basis: gross_margin`, `gm` en `data/club-index.js`) sale del ranking, la composición y la mediana de la liga (`margen` en `data/rankings/`) y `faltantes-liga` ya no lo da por cubierto: `estimar.mjs` lo estima (interpolación entre sus años completos o modelo de club nuevo, margen positivo como piso, rango medido); un ingreso real de un informe posterior (`Admin/registros/ingresos-ancla.jsonl`: Lommel 2022/23, RWDM 2023/24, SønderjyskE 2023/24) lo pisa. Finanzas no cambia.
 - Error del modelo medido con `estimar --medir`: por club 51 % antes, 50 % ahora (39 filas menos de entrenamiento); en Bélgica y Dinamarca cambian los estimados que estaban envenenados por márgenes chicos; fuera de ellos 6.757 estimados con mediana de cambio 0,9 % y dos de Chile 2013 por el reajuste global (+68 % y +115 %).

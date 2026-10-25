@@ -43,6 +43,11 @@ const ROOT = resolve(import.meta.dirname, '..');
 // (ni club nuevo ni año que falta); sus años reales siguen entrando al ajuste del resto. Es el único lugar donde se declara: sacar el país de acá
 // y correr `node tools/estimar.mjs --escribir` lo vuelve a prender. Volver a medir cuando entren más años (`--medir --detalle`).
 const PAISES_SIN_ESTIMAR = new Set(['ee']);
+// TOPE DE ERROR (decisión de Guido, 2026-10-25): un estimado no se publica si el error mediano medido de su país y su caso (club nuevo, entre dos reales, antes o después) pasa de ERROR_MAXIMO por ciento.
+// Es automático: se recalcula en cada `--escribir` y `--check`, y `--check` falla si un archivo publicado no es lo que sale con la regla. MIN_N_PAIS: club-años medidos mínimos en el país
+// para usar su propio error; con menos vale el error global del caso. Para subir o bajar el tope se cambia solo esta constante y se corre `node tools/estimar.mjs --escribir`.
+const ERROR_MAXIMO = 60;
+const MIN_N_PAIS = 8;
 
 // q: posición final normalizada (0 = campeón, 1 = último) del club en esa liga-año, de las tablas de Wikipedia que une faltantes-liga.mjs.
 // El año de rankings es el del ejercicio; la tabla es de la temporada (un cierre entre septiembre y diciembre en liga partida -> la
@@ -197,15 +202,21 @@ function estimaciones() {
   // INTERPOLACIÓN SIMPLE (decisión de Guido: la regresión empata con ella, 22% contra 22%, y esta se explica en una línea).
   // Su error y su rango salen de los años reales: cada club-año real a 2 años o menos de otro, interpolado SIN él (validación por año),
   // separado en "entre dos reales" y "antes o después" (en ese caso, el año real más cercano).
-  const errs = { entre: [], afuera: [] };
+  const errs = { entre: [], afuera: [] }; const errsPais = {};
   for (const r of rows) {
     const otros = (ix.porClub.get(r.id) || []).filter((o) => o !== r); if (!otros.length) continue;
     if (Math.min(...otros.map((o) => Math.abs(o.anio - r.anio))) > 2) continue;
     const i = I(ix, r, new Set([r])); if (i == null) continue;
-    errs[otros.some((o) => o.anio < r.anio) && otros.some((o) => o.anio > r.anio) ? 'entre' : 'afuera'].push(r.y - i);
+    const caso = otros.some((o) => o.anio < r.anio) && otros.some((o) => o.anio > r.anio) ? 'entre' : 'afuera';
+    errs[caso].push(r.y - i); ((errsPais[r.pais] ??= { entre: [], afuera: [] })[caso]).push(r.y - i);
   }
   const banda = Object.fromEntries(Object.entries(errs).map(([k, e]) => [k, { lo: cuantil(e, 0.1), hi: cuantil(e, 0.9), error: Math.round(mediana(e.map((x) => Math.abs(Math.exp(-x) - 1))) * 100), n: e.length }]));
   const nuevo = modeloNuevo(rows, ix);
+  // TOPE DE ERROR (ERROR_MAXIMO): un estimado de un país y un caso (club nuevo, o con otros años: entre dos reales o antes o después) NO se publica si el error mediano medido
+  // de ESE país en ESE caso lo pasa. Con menos de MIN_N_PAIS club-años medidos en el país, vale el error global del caso. Se recalcula solo en cada corrida de --escribir y --check.
+  const errorDe = (e) => Math.round(mediana(e.map((x) => Math.abs(Math.exp(-x) - 1))) * 100);
+  const errorPais = (pais, caso) => { const e = caso === 'nuevo' ? nuevo.errsPais[pais] : (errsPais[pais] || {})[caso]; return e && e.length >= MIN_N_PAIS ? errorDe(e) : (caso === 'nuevo' ? nuevo.banda : banda[caso]).error; };
+  const ocultos = {}; const pasaTope = (pais, caso) => { const ok = errorPais(pais, caso) <= ERROR_MAXIMO; if (!ok) { const k = `${pais} ${caso} (${errorPais(pais, caso)}%)`; ocultos[k] = (ocultos[k] || 0) + 1; } return ok; };
   const out = {}; const r3 = (v) => Math.round(v * 1000) / 1000;
   for (const [liga, ys] of Object.entries(g.window.LEAGUE_GAPS || {})) for (const [S, v] of Object.entries(ys)) {
     if (v.reciente || PAISES_SIN_ESTIMAR.has(liga.slice(0, 2))) continue;
@@ -233,6 +244,7 @@ function estimaciones() {
         const t = { id: enSitio ? f.id : '#' + f.n, liga, anio, pais: liga.slice(0, 2), tier };
         const m = M(ix, t, vacio); if (m == null) continue;
         const q = CON_POS ? posicion(t.id, liga, anio, +S) : null;
+        if (!pasaTope(liga.slice(0, 2), 'nuevo')) continue;
         const p = predecir(nuevo.w, vector(m, null, null, tier, q)); const b = nuevo.banda;
         ((out[liga] ??= {})[anio] ??= []).push(conMargen({ ...(enSitio ? { id: f.id } : { n: f.n }), revenue: nom(p), lo: nom(p + b.lo), hi: nom(p + b.hi), caso: 'nuevo', error: b.error, de: [] }));
         continue;
@@ -241,24 +253,25 @@ function estimaciones() {
       const p = I(ix, t, vacio); if (p == null) continue;
       const antes = propios.filter((o) => o.anio < anio).sort((a, b) => b.anio - a.anio)[0], despues = propios.filter((o) => o.anio > anio).sort((a, b) => a.anio - b.anio)[0];
       const caso = antes && despues ? 'entre' : 'afuera'; const b = banda[caso];
+      if (!pasaTope(liga.slice(0, 2), caso)) continue;
       // `de`: los ejercicios reales de los que sale (para el "por qué" en pantalla)
       ((out[liga] ??= {})[anio] ??= []).push(conMargen({ id: f.id, revenue: nom(p), lo: nom(p + b.lo), hi: nom(p + b.hi), caso, error: b.error, de: [antes?.anio, despues?.anio].filter(Boolean) }));
     }
   }
-  return { out, CI, banda: { ...banda, nuevo: nuevo.banda } };
+  return { out, CI, ocultos, banda: { ...banda, nuevo: nuevo.banda } };
 }
 // La regresión sin historia (club nuevo), ajustada con todos los club-años reales. Su error y su rango del 80% salen de una validación
 // por club en 10 grupos (cada grupo de clubes ENTEROS afuera, variables recalculadas sin ellos): lo mismo que mide --medir por club
 // (uno por vez), en 10 ajustes en vez de uno por club, para que --check siga siendo rápido.
 function modeloNuevo(rows, ix) {
   const filas = (fuera) => { const X = [], Y = []; for (const o of rows) { if (fuera.has(o.id)) continue; const m = M(ix, o, fuera); if (m == null) continue; X.push(vector(m, null, null, o.tier, o.q)); Y.push(o.y); } return { X, Y }; };
-  const ids = [...new Set(rows.map((r) => r.id))].sort(); const errs = [];
+  const ids = [...new Set(rows.map((r) => r.id))].sort(); const errs = []; const errsPais = {};
   for (let k = 0; k < 10; k++) {
     const fuera = new Set(ids.filter((_, i) => i % 10 === k)); const { X, Y } = filas(fuera); const w = ajustar(X, Y);
-    for (const t of rows) { if (!fuera.has(t.id)) continue; const m = M(ix, t, fuera); if (m == null) continue; errs.push(t.y - predecir(w, vector(m, null, null, t.tier, t.q))); }
+    for (const t of rows) { if (!fuera.has(t.id)) continue; const m = M(ix, t, fuera); if (m == null) continue; const e = t.y - predecir(w, vector(m, null, null, t.tier, t.q)); errs.push(e); (errsPais[t.pais] ??= []).push(e); }
   }
   const { X, Y } = filas(new Set());
-  return { w: ajustar(X, Y), banda: { lo: cuantil(errs, 0.1), hi: cuantil(errs, 0.9), error: Math.round(mediana(errs.map((x) => Math.abs(Math.exp(-x) - 1))) * 100), n: errs.length } };
+  return { w: ajustar(X, Y), errsPais, banda: { lo: cuantil(errs, 0.1), hi: cuantil(errs, 0.9), error: Math.round(mediana(errs.map((x) => Math.abs(Math.exp(-x) - 1))) * 100), n: errs.length } };
 }
 function archivosEstimados(out) {
   const files = {};
@@ -270,7 +283,8 @@ function archivosEstimados(out) {
 }
 
 if (import.meta.url === `file://${process.argv[1]}` && !process.argv.includes('--medir')) {
-  const { out, CI, banda } = estimaciones(); const files = archivosEstimados(out);
+  const { out, CI, banda, ocultos } = estimaciones(); const files = archivosEstimados(out);
+  if (!process.argv.includes('--check') && Object.keys(ocultos).length) console.log(`tope de error de ${ERROR_MAXIMO}%: no se publican ${Object.values(ocultos).reduce((a, b) => a + b, 0)} estimados (${Object.entries(ocultos).map(([k, v]) => `${k}: ${v}`).join(' · ')})`);
   if (!process.argv.includes("--check")) console.log(`estimados medidos con los años reales: ${Object.entries(banda).map(([k, b]) => `${{ entre: "entre dos reales", afuera: "antes o después", nuevo: "club nuevo (regresión)" }[k]} error mediano ${b.error}% (n ${b.n}, rango del 80% x${Math.exp(b.lo).toFixed(2)} a x${Math.exp(b.hi).toFixed(2)})`).join(" · ")}`);
   const n = Object.values(out).reduce((s, ys) => s + Object.values(ys).reduce((t, l) => t + l.length, 0), 0);
   if (process.argv.includes('--check')) {
