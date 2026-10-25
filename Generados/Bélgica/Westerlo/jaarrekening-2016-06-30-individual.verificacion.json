@@ -1,0 +1,143 @@
+{
+ "pdf": "Clubes/Bélgica/Westerlo/jaarrekening-2016-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Westerlo/jaarrekening-2016-06-30-individual.md",
+ "generado": "2026-10-25T04:51:39.047Z",
+ "scriptHuella": "fe1c6b155a4c",
+ "estado": "ok",
+ "clubId": "westerlo-be",
+ "year": 2016,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 0.0000030000000001972893
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2015 de este documento suma ingresos 4.882931; el sitio tiene 4.882931"
+  },
+  {
+   "nombre": "documento del año 2015",
+   "ok": true,
+   "detalle": "ingresos de 2015: 4.882931 en jaarrekening-2015-06-30-individual.pdf y 4.882931 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b16 parece contener información complementaria de resultados financieros (disconto, voorzieningen), no un desglose de ingresos o gastos operativos.",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2015-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 4.663896,
+  "gastos": 5.863883,
+  "financiero": 0.001273,
+  "impuesto": 0,
+  "resultadoImpreso": -1.201257,
+  "resultadoParaCargar": -1.201257,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "M": 4.663896,
+   "pagina": 6,
+   "linea": 255,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "gasto",
+   "M": 5.154488,
+   "pagina": 6,
+   "linea": 258,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.619986,
+   "pagina": 6,
+   "linea": 259,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 6,
+   "linea": 260,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.028187,
+   "pagina": 6,
+   "linea": 261,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.030065,
+   "pagina": 6,
+   "linea": 262,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Uitzonderlijke kosten",
+   "lado": "gasto",
+   "M": 0.031157,
+   "pagina": 6,
+   "linea": 269,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financiële opbrengsten",
+   "M": -0.000002,
+   "linea": 265
+  },
+  {
+   "etiqueta": "Financiële kosten",
+   "M": -0.001271,
+   "linea": 266
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "M": null,
+   "linea": 273
+  }
+ ]
+}

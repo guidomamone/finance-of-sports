@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-24';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-25';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["br-paulistaA1"] = {
   2016: {"size":20,"cargados":2,"faltan":[{"n":"Água Santa","e":"sin-buscar"},{"n":"Audax","e":"sin-buscar"},{"n":"Botafogo-SP","id":"botafogosp-br","e":"buscado"},{"n":"Capivariano","e":"sin-buscar"},{"n":"Corinthians","id":"corinthians-br","e":"buscado"},{"n":"Ituano","id":"ituano-br","e":"en-mano"},{"n":"Linense","e":"sin-buscar"},{"n":"Mogi Mirim","e":"sin-buscar"},{"n":"Oeste","e":"sin-buscar"},{"n":"Palmeiras","id":"palmeiras-br","e":"buscado"},{"n":"Ponte Preta","id":"pontepreta-br","e":"buscado"},{"n":"Red Bull Brasil","e":"sin-buscar"},{"n":"Rio Claro","e":"sin-buscar"},{"n":"Santos","id":"santos-br","e":"buscado"},{"n":"São Bento","e":"sin-buscar"},{"n":"São Bernardo","e":"sin-buscar"},{"n":"São Paulo","id":"saopaulo-br","e":"buscado"},{"n":"XV de Piracicaba","e":"sin-buscar"}]},

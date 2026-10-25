@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-24';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-25';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["de-2bundesliga"] = {
   2024: {"size":18,"cargados":1,"faltan":[{"n":"Eintracht Braunschweig","e":"buscado"},{"n":"Hertha BSC","e":"buscado"},{"n":"Fortuna Düsseldorf","e":"sin-buscar"},{"n":"SV Elversberg","e":"buscado"},{"n":"Greuther Fürth","e":"sin-buscar"},{"n":"Hannover 96","e":"sin-buscar"},{"n":"1. FC Kaiserslautern","e":"sin-buscar"},{"n":"Karlsruher SC","e":"sin-buscar"},{"n":"Holstein Kiel","e":"sin-buscar"},{"n":"1. FC Magdeburg","e":"sin-buscar"},{"n":"1. FC Nürnberg","e":"sin-buscar"},{"n":"VfL Osnabrück","e":"sin-buscar"},{"n":"SC Paderborn","e":"sin-buscar"},{"n":"Hansa Rostock","e":"sin-buscar"},{"n":"Schalke 04","e":"en-mano"},{"n":"FC St. Pauli","e":"buscado"},{"n":"Wehen Wiesbaden","e":"sin-buscar"}]},

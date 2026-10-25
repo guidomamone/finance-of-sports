@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-24';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-25';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["gb-leaguetwo"] = {
   2023: {"size":24,"cargados":0,"faltan":[{"n":"AFC Wimbledon","id":"afcwimbledon-gb","e":"en-mano"},{"n":"Barrow","e":"sin-buscar"},{"n":"Bradford City","e":"en-mano"},{"n":"Carlisle United","id":"carlisleunited-gb","e":"en-mano"},{"n":"Colchester United","e":"en-mano"},{"n":"Crawley Town","e":"en-mano"},{"n":"Crewe Alexandra","e":"en-mano"},{"n":"Doncaster Rovers","e":"en-mano"},{"n":"Gillingham","id":"gillingham-gb","e":"en-mano"},{"n":"Grimsby Town","e":"en-mano"},{"n":"Harrogate Town","e":"buscado"},{"n":"Hartlepool United","e":"en-mano"},{"n":"Leyton Orient","e":"en-mano"},{"n":"Mansfield Town","e":"en-mano"},{"n":"Newport County","e":"en-mano"},{"n":"Northampton Town","e":"en-mano"},{"n":"Rochdale","e":"en-mano"},{"n":"Salford City","e":"en-mano"},{"n":"Stevenage","e":"en-mano"},{"n":"Stockport County","e":"en-mano"},{"n":"Sutton United","e":"en-mano"},{"n":"Swindon Town","e":"en-mano"},{"n":"Tranmere Rovers","e":"en-mano"},{"n":"Walsall","e":"en-mano"}]},

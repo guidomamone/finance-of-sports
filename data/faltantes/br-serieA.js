@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-24';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-25';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["br-serieA"] = {
   2008: {"size":20,"cargados":1,"faltan":[{"n":"Atlético Mineiro","id":"atleticomineiro-br","e":"buscado"},{"n":"Atlético Paranaense","id":"athleticoparanaense-br","e":"buscado"},{"n":"Botafogo","id":"botafogo-br","e":"buscado"},{"n":"Coritiba","id":"coritiba-br","e":"buscado"},{"n":"Cruzeiro","id":"cruzeiro-br","e":"buscado"},{"n":"Figueirense","e":"buscado"},{"n":"Flamengo","id":"flamengo-br","e":"buscado"},{"n":"Fluminense","id":"fluminense-br","e":"buscado"},{"n":"Grêmio","id":"gremio-br","e":"buscado"},{"n":"Internacional","id":"internacional-br","e":"en-mano"},{"n":"Ipatinga","e":"sin-buscar"},{"n":"Náutico","e":"sin-buscar"},{"n":"Palmeiras","id":"palmeiras-br","e":"buscado"},{"n":"Portuguesa","e":"sin-buscar"},{"n":"Santos","id":"santos-br","e":"buscado"},{"n":"São Paulo","id":"saopaulo-br","e":"buscado"},{"n":"Sport","id":"sportrecife-br","e":"buscado"},{"n":"Vasco","id":"vascodagama-br","e":"buscado"},{"n":"Vitória","id":"vitoria-br","e":"buscado"}]},

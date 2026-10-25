@@ -32,3 +32,5 @@ turnover contra la VZW homónima para descartarla.
 - Último chequeo: 2026-09-17.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2015 desde `Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.pdf` (sourceId `westerlo-be-jaarrekening-2015-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2016 desde `Clubes/Bélgica/Westerlo/jaarrekening-2016-06-30-individual.pdf` (sourceId `westerlo-be-jaarrekening-2016-06-30-individual`).

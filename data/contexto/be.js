@@ -28,6 +28,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Jan Breydel Stadium","capacidad":29042,"sponsor":"Unibet","marca":"Castore","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
   'dender-be': {
+    2017: {"temporada":"2016–17 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353492624"},
+    2019: {"temporada":"2018–19 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354170241"},
     2025: {"estadio":"Van Roystadion","capacidad":6429,"sponsor":"Star Casino, Valckenier","marca":"Jako","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
   'genk-be': {
@@ -123,6 +125,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'westerlo-be': {
     2015: {"estadio":"Het Kuipje","capacidad":7982,"sponsor":"Soudal","marca":"Saller","temporada":"2014–15 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1369175963"},
+    2016: {"estadio":"Het Kuipje","capacidad":8035,"sponsor":"Soudal","marca":"Saller","temporada":"2015–16 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371302114"},
     2025: {"estadio":"Het Kuipje","capacidad":8035,"sponsor":"Soudal","marca":"Nike","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
 });

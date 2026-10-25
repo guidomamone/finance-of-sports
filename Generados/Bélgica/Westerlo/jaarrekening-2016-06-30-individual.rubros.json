@@ -1,43 +1,80 @@
 {
- "md": "Clubes/Bélgica/Westerlo/jaarrekening-2016-06-30-individual.md",
- "pdf": "Clubes/Bélgica/Westerlo/jaarrekening-2016-06-30-individual.pdf",
- "club": "westerlo-be",
- "year": 2016,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T21:56:06.629Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": false,
-  "motivo": "no se pudo ubicar la columna del ejercicio"
- },
- "ladoConocido": 2,
- "rubros": [
-  {
-   "label": "VOORZIENINGEN EN UITGESTELDE BELASTINGEN",
-   "lado": "expense",
-   "page": 5,
-   "section": "Beschikbare reserves 133 / Overgedragen winst (verlies) (+)/(-) 14 -1.087.930 113.326 / Kapitaalsubsidies 15 / Voorschot aan de vennoten op de verdeling van het / netto-actief 19",
-   "values": [
-    "36.185",
-    "55.053"
-   ],
-   "columns": null
-  },
-  {
-   "label": "Voorzieningen voor risico's en kosten 5.4 | 160/5",
-   "lado": "expense",
-   "page": 5,
-   "section": "Beschikbare reserves 133 / Overgedragen winst (verlies) (+)/(-) 14 -1.087.930 113.326 / Kapitaalsubsidies 15 / Voorschot aan de vennoten op de verdeling van het / netto-actief 19",
-   "values": [
-    "36.185",
-    "55.053"
-   ],
-   "columns": null
-  }
- ]
+  "md": "Clubes/Bélgica/Westerlo/jaarrekening-2016-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Westerlo/jaarrekening-2016-06-30-individual.pdf",
+  "club": "westerlo-be",
+  "year": 2016,
+  "generatedAt": "2026-10-25T04:49:07.561Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Brutomarge (+)/(-)",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        4.663896
+      ],
+      "glosa": "Margen bruto (+)/(-)"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        5.154488
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.619986
+      ],
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado inmaterial y material"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Correcciones de valor de existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.028187
+      ],
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.030065
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Uitzonderlijke kosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.031157
+      ],
+      "glosa": "Gastos excepcionales"
+    }
+  ]
 }

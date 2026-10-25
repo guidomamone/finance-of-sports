@@ -1,0 +1,206 @@
+{
+ "pdf": "Clubes/Bélgica/Westerlo/jaarrekening-2016-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Westerlo/jaarrekening-2016-06-30-individual.md",
+ "mdSha1": "3681f580d1e3966c4c4a8adb808eb9ab332dc96b",
+ "ubicacionSha1": "4781668205ff3a6083be41eaa4e5773c1c7af8c2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-25T04:48:46.955Z",
+ "ubicacion": {
+  "estado": [
+   "b5"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b5",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala; en las cuentas anuales belgas (BNB) los importes suelen expresarse en euros (unidades), pero no está impreso en este bloque."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b5",
+   "linea": 255,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "actual": "4.663.896",
+   "anterior": "4.882.931",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 258,
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "actual": "5.154.488",
+   "anterior": "4.221.367",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 259,
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "actual": "619.986",
+   "anterior": "375.183",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 260,
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "actual": "",
+   "anterior": "-19.506",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 261,
+   "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-)",
+   "actual": "28.187",
+   "anterior": "41.553",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 262,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "30.065",
+   "anterior": "13.432",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 264,
+   "etiqueta": "Bedrijfswinst (Bedrijfsverlies) (+)/(-)",
+   "actual": "-1.168.830",
+   "anterior": "250.901",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 265,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "2",
+   "anterior": "1",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 266,
+   "etiqueta": "Financiële kosten",
+   "actual": "1.271",
+   "anterior": "3.795",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 267,
+   "etiqueta": "Winst (Verlies) uit de gewone bedrijfsuitoefening vóór belasting (+)/(-)",
+   "actual": "-1.170.099",
+   "anterior": "247.108",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 269,
+   "etiqueta": "Uitzonderlijke kosten",
+   "actual": "31.157",
+   "anterior": "52.751",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 270,
+   "etiqueta": "Winst (Verlies) van het boekjaar vóór belasting (+)/(-)",
+   "actual": "-1.201.257",
+   "anterior": "194.356",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 273,
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "actual": "",
+   "anterior": "68.497",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 274,
+   "etiqueta": "Winst (Verlies) van het boekjaar (+)/(-)",
+   "actual": "-1.201.257",
+   "anterior": "125.859",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 277,
+   "etiqueta": "Te bestemmen winst (verlies) van het boekjaar (+)/(-)",
+   "actual": "-1.201.257",
+   "anterior": "125.859",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 274,
+  "actual": "-1.201.257",
+  "anterior": "125.859"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de b5 como euros en unidades?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b5 (L250-L277) no imprime la escala; el esquema BNB abreviado suele estar en euros.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Brutomarge (+)/(-)' (L255, 4.663.896) como único ingreso operativo, dado que Omzet (L256) y compras (L257) vienen vacíos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Brutomarge (+)/(-)",
+   "texto": "El esquema abreviado presenta solo el margen bruto neto (ventas menos compras y servicios) sin desglosar ingresos.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Esquema abreviado belga: no hay total de ingresos ni de gastos impresos. Filas con importe vacío en el ejercicio (L260, L273) se incluyen con actual vacío porque tienen importe en el año anterior. No hay notas de ingresos ni gastos."
+}
