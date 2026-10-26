@@ -52,10 +52,83 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2025.pdf"
+    },
+    {
+      "id": "atleticobucaramanga-co-siis-estado-2016",
+      "club_id": "atleticobucaramanga-co",
+      "title": "Club Atlético Bucaramanga S.A. — siis-estado-2016 (ejercicio 2016)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2016.pdf"
     }
   ],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2016,
+      "period_end": "2016-12-31",
+      "currency": "COP",
+      "source_id": "atleticobucaramanga-co-siis-estado-2016",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2016-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 7315.028,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":151.236,"disclosure":"aggregated"},
+        {"label":"Otras ganancias (pérdidas)","category":"other_revenue","subcategory":"other_income","amount":51.021,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-6556.76,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":0,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-224.546,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-268.418,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-38.983,"tax":-201.076,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":7517.285,"expenses":7049.724,"net_result":227.502},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":0},
+          {"label":"Costos financieros","amount":-38.983},
+          {"label":"Ingreso (gasto) por impuestos","amount":-201.076}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Ingresos de actividades ordinarias",
+            "side": "revenue",
+            "amount": 7315.028,
+            "reason": "Línea única de ingresos sin abrir: lump_football_operations (regla de Colombia, 463, 2026-10-26)",
+            "kind": "net_sales"
+          },
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 6556.76,
+            "reason": "El costo de ventas es el 97 % de los gastos y el estado de 2019 repite el de 2018 como Gastos de ventas: es la actividad deportiva (regla de Colombia en CONVENCIONES-DATOS.md)",
+            "kind": "cost_of_sales"
+          },
+          {"line":"Gastos de ventas","side":"expense","amount":0,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        },
+        "revenue_basis": "full"
+      }
+    },
     {
       "fiscal_year": 2019,
       "period_end": "2019-12-31",

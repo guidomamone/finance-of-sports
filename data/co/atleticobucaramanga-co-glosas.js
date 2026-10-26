@@ -88,6 +88,7 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Multas sanciones y litigios":{"en":"Fines, penalties and litigation"},
 "Multas sanciones y litigios (b)":{"en":"Fines, penalties and litigation (b)"},
 "No deducibles":{"en":"Non-deductible expenses"},
+"Otras ganancias (pérdidas)":{"en":"Other gains (losses)"},
 "Otros":{"en":"Other"},
 "Otros Auxilios":{"en":"Other allowances"},
 "Otros Auxilios Dimayor":{"en":"Other Dimayor allowances"},

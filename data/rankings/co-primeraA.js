@@ -213,6 +213,10 @@ window.RANKINGS["co-primeraA"] = {
       { id:"laequidad-co", revenue:5.145, reportType:"official_balance_sheet",
         sourceId:"laequidad-co-siis-estado-2016",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.074],["Otros ingresos",0.071]] },
+      { id:"atleticobucaramanga-co", revenue:2.505, reportType:"official_balance_sheet",
+        sourceId:"atleticobucaramanga-co-siis-estado-2016",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.438],["Otros ingresos",0.067]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
 };

@@ -755,6 +755,7 @@ window.SPONSORS_INDICE = [
   ["delverde","Delverde",["c"]],
   ["demir-insaat","Demir İnşaat",["c"]],
   ["demix","Demix",["m"]],
+  ["deporte-total","Deporte Total",["m"]],
   ["desktop","DESKTOP",["c"]],
   ["desportreino","Desportreino",["m"]],
   ["destil","DESTIL",["c"]],

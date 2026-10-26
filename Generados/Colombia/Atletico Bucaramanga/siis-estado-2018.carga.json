@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2018.pdf",
- "generado": "2026-10-26T06:14:11.772Z",
+ "generado": "2026-10-26T06:30:38.273Z",
  "frena": [],
  "avisos": [],
  "ejercicio": {
@@ -33,13 +33,13 @@
   "expenseLines": [
    {
     "rawLabel": "Costo de ventas",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "lump_football_operations_expense",
     "amountNative": -8044.67,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.85,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos de ventas",
@@ -103,6 +103,13 @@
      "importe": 11466.093,
      "motivo": "Línea única de ingresos sin abrir: lump_football_operations (regla de Colombia, 463, 2026-10-26)",
      "tipo": "net_sales"
+    },
+    {
+     "renglon": "Costo de ventas",
+     "lado": "expense",
+     "importe": 8044.67,
+     "motivo": "El costo de ventas es el 97 % de los gastos y el estado de 2019 repite el de 2018 como Gastos de ventas: es la actividad deportiva (regla de Colombia en CONVENCIONES-DATOS.md)",
+     "tipo": "cost_of_sales"
     },
     {
      "renglon": "Gastos de ventas",
@@ -198,11 +205,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 8044.67,
-   "cat": "other_expenses",
-   "conf": 0.85,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "El costo de ventas es el 97 % de los gastos y el estado de 2019 repite el de 2018 como Gastos de ventas: es la actividad deportiva (regla de Colombia en CONVENCIONES-DATOS.md)",
    "destino": "expense",
    "amountNative": -8044.67
   },
