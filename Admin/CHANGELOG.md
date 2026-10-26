@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1123 — La segunda fuente de una liga puede ser la Wikipedia local, y cuatro silencios menos [418 · segunda-fuente-wikipedia-local.mjs]
+- `fos liga-segunda-fuente-local`: busca la página de la misma temporada en el idioma del país por los enlaces entre idiomas, une los equipos de las dos Wikipedias por su identificador de Wikidata (el griego o el cirílico no se pueden comparar por letras) y guarda la lista con tipo `wikipedia-local`; el auditor la cuenta como cualquier segunda fuente. Con ella: Aellarissa 2025 (19 de 20), Felgueiras 2023, FC Utrecht 2025, Lierse SK 2019 a 2021 y Molde 2011; Patro Eisden 2013 con dos páginas de nl.wikipedia.
+- `clubLeagueCoverage` no cuenta los años futuros (Boca y Racing 2027, presupuestos). `fos color-rugby`: colores candidatos de un club de rugby desde teamcolorcodes (Bath Rugby, #005BAA). Se quitaron 4 silencios de `audit-ignore.json` (las dos `liga-una-fuente`, `liga-sin-verificar` y el color de Bath Rugby).
+- Medición: `segunda-fuente-wikipedia-local.mjs`, medidores contexto y audit, lote chico: una diferencia explicada (la tool nueva sin clasificar). Patrón GENERAL. Sin revisión independiente de la Auditora.
+
 ## Versión 1122 — Prevención de las ganancias en inmovilizado mal categorizadas [414 · audit.js, recategorizar-linea.mjs, votacion-contar.mjs]
 - Aviso P3 nuevo `ganancia-inmovilizado-sin-mirar`: una línea de «Otros ingresos» con rótulo de ganancia de activos y el 5 % o más de los ingresos pide mirar el documento (la misma cifra) y moverla o anotarla con `fos recategorizar-linea` (`--a player_sales`, `--a asset_sales` o `--mirada`). Cada recategorización deja la respuesta de la cola para que una recarga no la deshaga.
 - Corrige: Sporting 2005 (de 99,8 M a 34,8 M de ingresos) y Chelsea 2023 (de 682,5 M a 605,9 M) pasan la venta de una participación a `assetSales`, con su fila «Venta de activos»; el resultado neto no cambia. `votacion-contar --escribir` guarda los votos completos en `Admin/mediciones/votos/`.
