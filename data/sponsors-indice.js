@@ -2598,6 +2598,7 @@ window.SPONSORS_INDICE = [
   ["united-telecom","United Telecom",["c"]],
   ["unive","Univé",["c"]],
   ["universal-orlando-resort","Universal Orlando Resort",["c"]],
+  ["universidad-de-boyaca","Universidad de Boyacá",["c"]],
   ["universidad-de-concepcion","Universidad de Concepción",["c"]],
   ["universidad-sek","Universidad SEK",["c"]],
   ["universidad-vicente-rocafuerte","Universidad Vicente Rocafuerte",["c"]],

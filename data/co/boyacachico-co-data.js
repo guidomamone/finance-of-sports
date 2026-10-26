@@ -1,5 +1,9 @@
 // GENERADO desde data/co/boyacachico-co.json por tools/generar-data.mjs: no editar a mano (se edita el JSON).
 const boyacachicoCoRevenueLinesByYear = {
+  2016: [
+    {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":4840.198,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":47.927,"disclosureLevel":"aggregated"},
+  ],
   2024: [
     {"rawLabel":"Taquilla Venta Boletería Masculina","normalizedCategory":"matchday_competition","amountNative":460.3087,"disclosureLevel":"detailed"},
     {"rawLabel":"Taquilla Venta Boletería Femenina","normalizedCategory":"matchday_competition","amountNative":0,"disclosureLevel":"detailed"},
@@ -42,6 +46,12 @@ const boyacachicoCoRevenueLinesByYear = {
 };
 
 const boyacachicoCoExpenseLinesByYear = {
+  2016: [
+    {"rawLabel":"Costo de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":0,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de ventas","normalizedCategory":"admin_general_expense","amountNative":-3862.382,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-825.51,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":0,"disclosureLevel":"aggregated"},
+  ],
   2024: [
     {"rawLabel":"Costos Nóminas Jugadores Masculinos","normalizedCategory":"wages_squad","amountNative":-4303.480269,"disclosureLevel":"detailed"},
     {"rawLabel":"Gastos de Administración (personal, honorarios, arrendamientos, seguros, servicios, legales, mantenimiento, diversos)","normalizedCategory":"admin_general_expense","amountNative":-2056.497355,"disclosureLevel":"detailed","items":[["Gastos de personal",1169.847444],["Diversos",558.297251],["Honorarios",202.789588],["Gastos legales",98.860419],["Arrendamientos",5.82114],["Seguros",2.044611],["Servicios",17.949902],["Mantenimiento y reparaciones",0.887]]},
@@ -105,6 +115,7 @@ const boyacachicoCoExpenseLinesByYear = {
 };
 
 const boyacachicoCoFiscalYearMeta = {
+  2016: {"currency":"COP","sourceId":"boyacachico-co-siis-estado-2016","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2016-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":-71.479,"grossDebt":null,"cash":null,"officialTotalRevenue":4888.125,"officialTotalExpenses":4687.892,"officialPAT":128.754,"extraRows":[{"label":"Ingresos financieros","value":0},{"label":"Costos financieros","value":0},{"label":"Ingreso (gasto) por impuestos","value":-71.479}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":4840.198,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Costo de ventas","lado":"expense","importe":0,"motivo":"Costo de ventas es 73% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)","tipo":"cost_of_sales"}],"incluidoEn":{"sponsorship_commercial":{"en":"lump_football_operations","posible":true,"por":"precedente"},"matchday_competition":{"en":"lump_football_operations","posible":true,"por":"precedente"},"season_tickets":{"en":"lump_football_operations","posible":true,"por":"precedente"},"stadium_other":{"en":"lump_football_operations","posible":true,"por":"precedente"},"broadcasting":{"en":"lump_football_operations","posible":true,"por":"precedente"}},"baseIngreso":"full"},
   2024: {"currency":"COP","sourceId":"boyacachico-co-estados-financieros-2024","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-257.027005,"tax":-381.268512,"grossDebt":666.527066,"cash":441.174314,"officialTotalRevenue":8264.587487,"officialTotalExpenses":6918.221877,"officialPAT":708.070093,"baseIngreso":"full"},
   2025: {"currency":"COP","sourceId":"boyacachico-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-83.859833,"tax":-205.56515,"grossDebt":null,"cash":null,"officialTotalRevenue":9305.853883,"officialTotalExpenses":8634.665049,"officialPAT":381.763851,"extraRows":[{"label":"Gasto por impuesto a las ganancias","value":-205.56515},{"label":"Intereses","value":-83.859833}],"baseIngreso":"full"},
 };
@@ -123,7 +134,7 @@ window.CLUB_GENERIC_DATA["boyacachico-co"] = {
   presupuestoOverlayByYear: boyacachicoCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"boyacachico-co-estados-financieros-2024":{"id":"boyacachico-co-estados-financieros-2024","clubId":"boyacachico-co","title":"Estados Financieros (Notas), al 31 de diciembre de 2024 y 2023","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Boyaca Chico/estados-financieros-2024.pdf"},"boyacachico-co-estados-financieros-2025":{"id":"boyacachico-co-estados-financieros-2025","clubId":"boyacachico-co","title":"Deportivo Boyacá Chicó Futbol Club S.A. — estados-financieros-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Boyaca Chico/estados-financieros-2025.pdf"}});
+Object.assign(sources, {"boyacachico-co-estados-financieros-2024":{"id":"boyacachico-co-estados-financieros-2024","clubId":"boyacachico-co","title":"Estados Financieros (Notas), al 31 de diciembre de 2024 y 2023","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Boyaca Chico/estados-financieros-2024.pdf"},"boyacachico-co-estados-financieros-2025":{"id":"boyacachico-co-estados-financieros-2025","clubId":"boyacachico-co","title":"Deportivo Boyacá Chicó Futbol Club S.A. — estados-financieros-2025 (ejercicio 2025)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Boyaca Chico/estados-financieros-2025.pdf"},"boyacachico-co-siis-estado-2016":{"id":"boyacachico-co-siis-estado-2016","clubId":"boyacachico-co","title":"Deportivo Boyacá Chicó Futbol Club S.A. — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Boyaca Chico/siis-estado-2016.pdf"}});
 
 gestionesByClub["boyacachico-co"] = {"actual":{"nombre":"Gestión actual","firstYear":2024,"lastYear":2024}};
 

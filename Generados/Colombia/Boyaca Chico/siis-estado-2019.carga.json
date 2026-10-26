@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Boyaca Chico/siis-estado-2019.pdf",
- "generado": "2026-10-26T21:57:43.690Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Partidos y Actividades Deportivas\" -> match_organisation_expense 0.75; \"Honorarios y Arriendos\" -> admin_general_expense 0.55"
-  }
- ],
+ "generado": "2026-10-26T21:58:58.570Z",
+ "frena": [],
  "avisos": [
   "categorías en 0 en un documento con filas armadas a mano (el reintento con IA no puede cambiarlas; se carga así): Estadio"
  ],
@@ -140,13 +135,13 @@
    },
    {
     "rawLabel": "Partidos y Actividades Deportivas",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "lump_football_operations_expense",
     "amountNative": -3862.046686,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Honorarios y Arriendos",
@@ -154,9 +149,9 @@
     "amountNative": -346.613432,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos de administración",
@@ -189,6 +184,15 @@
    "assetSales": 0,
    "netInterest": 0,
    "tax": -172.726,
+   "sinDesglose": [
+    {
+     "renglon": "Partidos y Actividades Deportivas",
+     "lado": "expense",
+     "importe": 3862.046686,
+     "motivo": "Fila de la nota de Costo de ventas que no separa nómina, partidos ni viajes: 'Partidos y Actividades Deportivas' es la actividad deportiva sin desglosar (61% de los gastos). Espejo del ingreso 'Actividades Deportivas' de Fortaleza CEIF, que va a lump_football_operations por decisión de Guido (2026-10-02); regla de Colombia, Costo de ventas = actividad deportiva (CONVENCIONES-DATOS.md).",
+     "tipo": "other"
+    }
+   ],
    "baseIngreso": "full",
    "grossDebt": null,
    "cash": null,
@@ -424,12 +428,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
    "signoFijo": 3862.046686,
-   "cat": "match_organisation_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Fila de la nota de Costo de ventas que no separa nómina, partidos ni viajes: 'Partidos y Actividades Deportivas' es la actividad deportiva sin desglosar (61% de los gastos). Espejo del ingreso 'Actividades Deportivas' de Fortaleza CEIF, que va a lump_football_operations por decisión de Guido (2026-10-02); regla de Colombia, Costo de ventas = actividad deportiva (CONVENCIONES-DATOS.md).",
    "destino": "expense",
    "amountNative": -3862.046686
   },
@@ -441,11 +445,11 @@
    "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
    "signoFijo": 346.613432,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Honorarios y arrendamientos son admin_general_expense en la nota de Costo de ventas y en la de Gastos de ventas (regla de Colombia, filas de una nota de gastos, CONVENCIONES-DATOS.md).",
    "destino": "expense",
    "amountNative": -346.613432
   },
@@ -578,8 +582,8 @@
  },
  "ancla": null,
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 11,
   "lineasGasto": 5,
   "metaFilas": 1,

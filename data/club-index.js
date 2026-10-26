@@ -61,7 +61,7 @@ window.CLUB_INDEX = {
   "botafogo-br": {"n":"Botafogo","c":"BR","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "botafogosp-br": {"n":"Botafogo-SP","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "bournemouth-gb": {"n":"AFC Bournemouth","c":"GB","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
-  "boyacachico-co": {"n":"Boyacá Chicó","c":"CO","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
+  "boyacachico-co": {"n":"Boyacá Chicó","c":"CO","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2016,"official_balance_sheet"]]},
   "braga-pt": {"n":"Braga","c":"PT","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2020,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"]]},
   "brentford-gb": {"n":"Brentford","c":"GB","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "brighton-gb": {"n":"Brighton","c":"GB","q":"full","y":6,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"]]},
