@@ -38,3 +38,5 @@ Estados financieros en disco ahora: 8 ejercicios (2016, 2019-2025), cada uno con
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2025 desde `Clubes/Colombia/Boyaca Chico/estados-financieros-2025.pdf` (sourceId `boyacachico-co-estados-financieros-2025`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2016 desde `Clubes/Colombia/Boyaca Chico/siis-estado-2016.pdf` (sourceId `boyacachico-co-siis-estado-2016`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2017 desde `Clubes/Colombia/Boyaca Chico/siis-estado-2017.pdf` (sourceId `boyacachico-co-siis-estado-2017`).
