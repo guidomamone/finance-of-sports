@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1174 — Regla de Colombia: las filas de una nota de Costo de ventas [463 · boyacachico-co]
+- La regla de las notas de gastos suma el caso que abrió dos preguntas en Boyacá Chicó 2019: una fila de la nota de «Costo de ventas» que nombra la actividad deportiva sin separar nómina, partidos ni viajes («Partidos y Actividades Deportivas») va a `lump_football_operations_expense` (espejo del ingreso «Actividades Deportivas» de Fortaleza CEIF, tabla aprobada por Guido el 2026-10-02) y «Honorarios y Arriendos» a administración. Con su frase para el categorizador y dos ejemplos registrados (`reglas-categoria --escribir`).
+- Medición: ninguna tool cambió; es texto de criterio que Guido lee en el diff.
+
 ## Versión 1173 — club-siis: sponsor débil a Football Kit Archive, cola a la vista antes de cargar y brief con las ligas [463, 467 · club-siis.mjs, sponsor-fka.mjs]
 - `club-siis` lista, en el estado de cada club y al final de `--avanzar`, los sponsors débiles o sin dato (`tools/sponsor-fka.mjs`) como paso fijo: verificarlos en Football Kit Archive con Claude in Chrome y anotarlos con `sponsor-fka --registrar` (Admin/registros/sponsor-fka.jsonl). Probado: FKA da la verificación anti-bots en el navegador interno y 403 a las tools; en el Chrome de Guido abre la ficha del equipo (proveedores por año visibles) pero tapa el resto con «Unlock more content / View a short ad»: sin ver el anuncio, que es de Guido, el sponsor de cada temporada no se lee. El punto 467 del TODO se cierra: el paso vive en el script.
 - `--avanzar --ejecutar --cargar`, si la cola frena la carga, imprime cada pregunta con su propuesta y el comando para contestar y volver a correr (la categorización ya está hecha); el brief del subagente de estadio y sponsor trae la liga de cada año, la fecha y «clave existente: agregá solo los años que faltan».
