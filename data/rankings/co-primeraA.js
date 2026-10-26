@@ -84,12 +84,14 @@ window.RANKINGS["co-primeraA"] = {
   },
   2022: {
     leagueSize: 20,
-    sinDato: ["deportestolima-co"],
     wiki: {"t":"2022 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"oncecaldas-co", revenue:12.33, reportType:"official_balance_sheet",
         sourceId:"oncecaldas-co-estados-financieros-2022",
         mix:[["Comercial / Sponsors",0.805],["Estadio",0.913],["Televisión",1.186],["Premios por competencias",0.091],["Venta de Jugadores",9.291],["Otros ingresos",0.045]] },
+      { id:"deportestolima-co", revenue:9.545, reportType:"official_balance_sheet",
+        sourceId:"deportestolima-co-siis-estado-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",8.609],["Otros ingresos",0.936]] },
     ],
   },
   2021: {
