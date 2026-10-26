@@ -140,6 +140,26 @@ nombre). Ver el archivo de cada uno. La regla que salió de ahí:
   ahora se convirtió a S.A.), y la sociedad del DIM figura "en liquidación" mientras opera una
   **corporación**. Ninguna de las dos figuras está en el perímetro de Supersociedades.
 
+**SIIS SÍ da el estado de resultados primario por rubro (2026-10-26).** El portal tiene una pantalla «Informe Integral»
+(`/resultadointegral`) que sale de otro índice abierto, `siis_resultadointegral`, con el mismo formato de consulta que `siis_empresas`:
+
+```
+POST https://siis.ia.supersociedades.gov.co/siis_backend/api/v1/qr/siis_resultadointegral/_search?size=50
+{"query":{"match":{"resultado.NIT":"890700863"}},"sort":[{"resultado.fechaCorte":"asc"}]}
+```
+
+Cada hit trae `resultado.registros`, en miles de pesos con el año anterior al lado (`corte` y `corteAnterior`): `ingresosActividadesOrdinarias`,
+`costoVentas`, `gananciaBruta`, `gastosVentas`, `gastosAdministracion`, `otrosIngresos`, `otrosGastos`, `otrasGananciasPerdidas`, `ingresosFinancieros`,
+`costosFinancieros`, `gananciaPerdidaAntesImpuestos`, `ingresoGastoXImpuestos` y `gananciaPerdida`. Es el estado que el club cargó en el formulario, y los
+PDF de «NOTAS EF» no lo traen. Probado con Deportes Tolima, La Equidad, Talento Dorado (Águilas Doradas) y Atlético Bucaramanga: los cuatro tienen 2016 a 2025.
+Tolima 2025: ingresos 49.330.876, costo de ventas 2.774.438 (la nota de costos que faltaba en las notas), resultado 359.205 (igual que `utilidades` de
+`siis_empresas`); 2024, suma interna exacta: 45.544.864 − 2.632.780 − 5.166.142 − 37.305.416 + 1.973.190 − 1.006.202 + 227.675 − 720.859 = 914.330.
+Ojo: desde 2024 (formulario de NIIF plenas) los rubros «gastos de ventas» y «gastos de administración» cambian de lugar en algunos clubes (Tolima 2024: ventas
+5,2 mil millones y administración 37,3; en 2023 era al revés), así que la comparación entre años se hace con el total de gastos, no con esos dos rubros.
+El campo `margen` de `siis_empresas` es la ganancia bruta sobre ingresos (da exacto el costo de ventas de este índice). Pero el costo de ventas NO explica solo la
+diferencia entre las notas de Tolima y el resultado de SIIS (diferencia contra costo de ventas, en millones: 2023 945 contra 1.660; 2024 2.406 contra 2.633; 2025 2.826
+contra 2.774): para cargar con las notas hay que conciliar las demás partidas (otros ingresos y gastos, impuestos) contra este estado, rubro por rubro.
+
 ## Estado de la Primera A y candidatos que quedan (2026-09-22)
 
 Con la sesión 2026-09-22 quedan cubiertos **17 de los 20 clubes de la Categoría Primera A 2025**.

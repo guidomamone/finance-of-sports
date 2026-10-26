@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1127 — SIIS tiene el estado de resultados primario por rubro (Colombia) [257 · 462 · deportestolima-co]
+- Se encontró en el portal de SIIS el índice `siis_resultadointegral`: ingresos, costo de ventas, gastos, otros ingresos y gastos, impuestos y resultado de 2016 a 2025 para Tolima, La Equidad, Talento Dorado y Bucaramanga. Cómo consultarlo quedó en `Admin/sourcing/Colombia/_notas-generales.md`.
+- Tolima: el estado de SIIS suma exacto (2024 y 2025) y su resultado coincide con `utilidades`; el costo de ventas no explica solo la diferencia con las notas (2023 y 2024), así que hay que conciliar rubro por rubro. Los puntos 257 y 462 lo cuentan y quedan a la espera de la decisión de Guido sobre cómo entra una fuente que no es un PDF.
+- Medición: no cambió ninguna tool ni dato cargado.
+
 ## Versión 1126 — Cierra el punto 417 y se reordena el TODO [417]
 - 417 (niveles P0 a P4 del auditor) cerrado: la skill y `audit.js` dicen lo mismo, `--leyenda` existe, P1 es «frena el commit», y los contrastes externos quedaron decididos: no se comparan los clubes contra los informes de UEFA ni de Deloitte; lo que queda de esa idea es la página de blog (punto 460). Orden del TODO: 257, 461, 462 y 401 arriba.
 
