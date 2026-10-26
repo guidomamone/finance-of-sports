@@ -12,9 +12,53 @@
     "sport": "football",
     "taxonomy": "football-1"
   },
-  "sources": [],
+  "sources": [
+    {
+      "id": "leonesfc-co-siis-estado-2016",
+      "club_id": "leonesfc-co",
+      "title": "Leones Fútbol Club S.A. — siis-estado-2016 (ejercicio 2016)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Leones FC/siis-estado-2016.pdf"
+    }
+  ],
   "members": null,
-  "years": [],
+  "years": [
+    {
+      "fiscal_year": 2016,
+      "period_end": "2016-12-31",
+      "currency": "COP",
+      "source_id": "leonesfc-co-siis-estado-2016",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2016-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 3552.748,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":21.516,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3.502,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-357.23,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-3107.352,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.416,"tax":-25.941,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":3574.264,"expenses":3468.084,"net_result":77.823},
+      "adjustments": {
+        "extra_rows": [{"label":"Costos financieros","amount":-2.416},{"label":"Ingreso (gasto) por impuestos","amount":-25.941}],
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":3552.748,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {"line":"Gastos de ventas","side":"expense","amount":357.23,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
+        "revenue_basis": "full"
+      }
+    }
+  ],
   "budget_overlay": {},
   "squad_transfers": [],
   "results": {},

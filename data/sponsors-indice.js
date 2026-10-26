@@ -1775,6 +1775,7 @@ window.SPONSORS_INDICE = [
   ["novaverde","Novaverde",["c"]],
   ["novibet","Novibet",["c"]],
   ["novo","Novo",["m"]],
+  ["novo-sport","Novo Sport",["m"]],
   ["novoline","Novoline",["c"]],
   ["nspcc","NSPCC",["c"]],
   ["nuelmos","Nuelmos",["c"]],

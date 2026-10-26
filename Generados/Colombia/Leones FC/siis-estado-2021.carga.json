@@ -1,22 +1,130 @@
 {
  "pdf": "Clubes/Colombia/Leones FC/siis-estado-2021.pdf",
- "generado": "2026-10-26T18:39:53.299Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-26T18:43:38.923Z",
+ "frena": [],
  "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "leonesfc-co",
+  "year": 2021,
+  "cierre": "2021-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Ingresos de actividades ordinarias",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 3801.793,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros ingresos",
+    "normalizedCategory": "other_income",
+    "amountNative": 1490.228,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Costo de ventas",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos de ventas",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -4425.966,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos de administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -672.823,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros gastos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -185.956,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "COP",
+   "fxRef": "COP@2021-12-31",
+   "sourceId": "leonesfc-co-siis-estado-2021",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0,
+   "tax": -2.256,
+   "extraRows": [
+    {
+     "label": "Costos financieros",
+     "value": 0
+    },
+    {
+     "label": "Ingreso (gasto) por impuestos",
+     "value": -2.256
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Ingresos de actividades ordinarias",
+     "lado": "revenue",
+     "importe": 3801.793,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "net_sales"
+    },
+    {
+     "renglon": "Gastos de ventas",
+     "lado": "expense",
+     "importe": 4425.966,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "other"
+    }
+   ],
+   "baseIngreso": "full",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 5292.021,
+   "officialTotalExpenses": 5284.745,
+   "officialPAT": 5.02
+  },
+  "source": {
+   "id": "leonesfc-co-siis-estado-2021",
+   "clubId": "leonesfc-co",
+   "title": "Leones Fútbol Club S.A. — siis-estado-2021 (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Colombia/Leones FC/siis-estado-2021.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Leones FC/siis-estado-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Colombia/Leones FC/siis-estado-2021.md",
  "reemplaza": false,
  "periodo": {
@@ -29,5 +137,227 @@
  },
  "clubId": "leonesfc-co",
  "year": 2021,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Leones FC/siis-estado-2021.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2021.md L11-L24",
+   "autor": "Claude",
+   "fecha": "2026-10-26"
+  }
+ ],
+ "seleccion": {
+  "filas": 8,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "native": 3801.793,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3801.793,
+   "cat": "lump_football_operations",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3801.793
+  },
+  {
+   "label": "Otros ingresos",
+   "page": 1,
+   "native": 1490.228,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1490.228,
+   "cat": "other_income",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1490.228
+  },
+  {
+   "label": "Costo de ventas",
+   "page": 1,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_expenses",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Gastos de ventas",
+   "page": 1,
+   "native": 4425.966,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4425.966,
+   "cat": "lump_football_operations_expense",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4425.966
+  },
+  {
+   "label": "Gastos de administración",
+   "page": 1,
+   "native": 672.823,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 672.823,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -672.823
+  },
+  {
+   "label": "Otros gastos",
+   "page": 1,
+   "native": 185.956,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 185.956,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -185.956
+  },
+  {
+   "label": "Costos financieros",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Ingreso (gasto) por impuestos",
+   "page": null,
+   "native": -2.256,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 5292.021,
+  "expSum": -5284.745,
+  "officialTotalRevenue": 5292.021,
+  "officialTotalExpenses": 5284.745,
+  "officialPAT": 5.02,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 5.02,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 5292.021
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 5284.745
+  }
+ },
+ "liga": {
+  "valor": "co-primeraB",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-12-31",
+   "fuente": "año del ejercicio + mes de cierre (patrón del país: los 20 clubes de CO ya cargados arrancan el 01-01 (el documento no trae fechas de cierre legibles))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "COP",
+   "fuente": "moneda de curso legal de Colombia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "COP@2021-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene COP@2021-12-31 = 3981.16 (TRM oficial (Banco de la República / Superfinanciera de Colombia) al 2021-12-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "leonesfc-co-siis-estado-2021",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "co-primeraB",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 2,
+  "lineasGasto": 4,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
 }
