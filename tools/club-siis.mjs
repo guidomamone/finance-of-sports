@@ -146,11 +146,16 @@ if (A.includes('--avanzar')) {
     if (!lista) { const salida = execFileSync('node', [join(ROOT, 'tools', 'lote-nuevo.mjs'), `${club} SIIS`], { cwd: ROOT, encoding: 'utf8' }); lista = (salida.match(/Admin\/lotes\/[\w.-]+\.txt/) || [])[0]; const { appendFileSync } = await import('node:fs'); appendFileSync(join(ROOT, lista), sinCargar.map((a) => `${marca}${a}.pdf`).join('\n') + '\n'); console.log(`\nLista creada: ${lista}`); } else console.log(`\nLista: ${lista}`);
     run(['tools/inventario-transcripciones.mjs', '--solo', `Clubes/${cfg.pais}/${club}`]);
     const faltaJuicio = []; const f2 = estadoDe(club); const g = !!s.c.clubId && new RegExp(`'${s.c.clubId}'\\s*:`).test(readFileSync(join(ROOT, `data/gestiones/${iso}.js`), 'utf8'));
-    if (f2.filas.some((f) => !f.liga)) faltaJuicio.push('liga de cada año'); if (f2.filas.some((f) => !f.ctx && !f.cargado)) faltaJuicio.push('estadio y sponsor (subagente)'); if (!g) faltaJuicio.push('gestiones (subagente)'); if (f2.cola.length) faltaJuicio.push(`${f2.cola.length} preguntas de la cola`);
+    if (f2.filas.some((f) => !f.liga)) faltaJuicio.push('liga de cada año'); if (f2.filas.some((f) => !f.ctx && !f.cargado)) faltaJuicio.push('estadio y sponsor (subagente)'); if (!g) faltaJuicio.push('gestiones (subagente)'); const colaVigente = f2.cola.filter((p) => !(g && p.motivo === 'gestion')); // con la gestión ya cargada, las preguntas de gestión viejas no frenan: la corrida de carga las cierra como obsoletas
+    if (colaVigente.length) faltaJuicio.push(`${colaVigente.length} preguntas de la cola`);
     const lote = ['tools/lote.mjs', '--lista', lista, '--ejecutar'];
     if (!EJECUTAR) console.log(`\nNo se gastó API. El lote de categorización (unos US$ 0,03 por documento): node ${lote.join(' ')}   (--avanzar --ejecutar lo corre)`);
     else if (CARGAR && faltaJuicio.length) { console.log(`\nNo se carga: falta ${faltaJuicio.join(', ')}. Corre el lote sin --cargar.`); run(lote); }
     else if (CARGAR) { run([...lote, '--cargar']); run(['tools/publicar.mjs']); } else run(lote);
+  }
+  // las preguntas de gestión que quedaron de antes de cargar la gestión del club ya no tienen objeto: se contestan solas (la gestión está en data/gestiones y la corrida de carga la tomó)
+  if (s.c.clubId && new RegExp(`'${s.c.clubId}'\\s*:`).test(readFileSync(join(ROOT, `data/gestiones/${iso}.js`), 'utf8'))) {
+    for (const p of estadoDe(club).cola.filter((x) => x.motivo === 'gestion')) run(['tools/cola.mjs', '--responder', p.id, 'aceptar', '--nota', 'La gestión del club ya está cargada en data/gestiones/co.js; la pregunta es de antes de cargarla.', '--evidencia', 'ninguna', '--seguridad', 'alta', '--causa', 'regla-escrita']);
   }
   console.log('\n=== lo que falta ==='); process.stdout.write(execFileSync('node', [join(ROOT, 'tools/club-siis.mjs'), club], { cwd: ROOT, encoding: 'utf8' }));
   process.exit(0);
