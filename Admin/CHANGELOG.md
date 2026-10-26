@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1168 — Fortaleza CEIF 2016 desde SIIS [463 · fortalezaceif-co]
+- Con esto Fortaleza CEIF tiene sus 10 años (2016 a 2025). Liga Primera A de 2016 (ascendió de la B en 2015 y descendió al cerrar 2016), estadio Metropolitano de Techo y sponsor «Seguros del Estado» de Wikipedia (fuente única, débil); en SIIS el club imprime Costo de ventas y Gastos de ventas en 0 y todos los gastos en administración, así que `sin-salarios` queda silenciado con la cita. Sin dictamen del revisor fiscal de 2016 a 2019.
+- Medición: no cambió ninguna tool; el año por el pipeline medido, con el camino `club-siis --avanzar --ejecutar --cargar` en unos 3 minutos y la cola sin preguntas.
+
 ## Versión 1167 — fos siis-adicionales: los documentos adicionales de SIIS por club-año [465 · siis-adicionales.mjs]
 - Un GET por año a `documentos-adicionales` con el radicado de los `siis-estado-AAAA.json` ya bajados (si el del resultado integral dice «None», el de empresas o balance: Tolima 2021 y 2022) y lista trámite y radicado contra lo que hay en la carpeta. Sin descargas. Muestra lo que antes se rehacía en el scratchpad: Tolima 2022 y 2025 traen dictámenes, certificaciones y notas por duplicado.
 - Verificado a mano (465): Cada pendiente hecho con su commit y entrada de CHANGELOG (Versiones 1158 a 1167) o descartado con motivo en este TODO; mediciones de publicar, cargar-ejercicio y auditoria idénticas; audit.js P0 0 y P1 0.
