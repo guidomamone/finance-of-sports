@@ -176,10 +176,14 @@ function scanHtml(src) {
   return { code: out, comments };
 }
 
+// Una auditoría pide el mismo archivo a varios chequeos (comentarios de las tools, su cabecera, su historia): se escanea una vez por contenido y por corrida.
+const escaneados = new Map();
 function scan(rel, src) {
-  if (rel.endsWith('.html')) return scanHtml(src);
-  if (rel.endsWith('.css')) return scanCss(src);
-  return scanJs(src);
+  const clave = rel + ':' + require('crypto').createHash('sha1').update(src).digest('hex');
+  if (escaneados.has(clave)) return escaneados.get(clave);
+  const r = rel.endsWith('.html') ? scanHtml(src) : rel.endsWith('.css') ? scanCss(src) : scanJs(src);
+  escaneados.set(clave, r);
+  return r;
 }
 
 function normalizar(code) {
@@ -187,9 +191,25 @@ function normalizar(code) {
 }
 
 // Comentarios de un archivo, con su número de línea (para audit.js).
+// Lo que más tarda de la auditoría es escanear los ~340 data/<país>/<club>-data.js generados, que solo llevan la cabecera «GENERADO desde …»: de cada contenido de data/ con pocos comentarios se recuerdan en un
+// archivo de la carpeta temporal (solo es caché: sin él se escanea todo igual). Se descarta si cambia este archivo (el escáner).
+const huellaDe = (s) => require('crypto').createHash('sha1').update(s).digest('hex');
+const CACHE_COMENTARIOS = path.join(require('os').tmpdir(), 'fos-comentarios-data.json');
+let cacheComentarios = null;
+function leerCacheComentarios() {
+  if (cacheComentarios) return cacheComentarios;
+  const version = huellaDe(fs.readFileSync(__filename, 'utf8'));
+  try { const c = JSON.parse(fs.readFileSync(CACHE_COMENTARIOS, 'utf8')); if (c.version === version) return (cacheComentarios = { version, porHuella: new Map(Object.entries(c.porHuella)), nuevos: 0 }); } catch (e) { /* sin caché */ }
+  return (cacheComentarios = { version, porHuella: new Map(), nuevos: 0 });
+}
+process.on('exit', () => { if (cacheComentarios && cacheComentarios.nuevos) { try { fs.writeFileSync(CACHE_COMENTARIOS, JSON.stringify({ version: cacheComentarios.version, porHuella: Object.fromEntries(cacheComentarios.porHuella) })); } catch (e) { /* caché opcional */ } } });
 function comentarios(rel, src) {
+  const cache = rel.startsWith('data/') ? leerCacheComentarios() : null; const h = cache ? huellaDe(src) : null;
+  if (cache && cache.porHuella.has(h)) return cache.porHuella.get(h);
   const { comments } = scan(rel, src);
-  return comments.map(c => ({ text: c.text, line: src.slice(0, c.pos).split('\n').length }));
+  const r = comments.map(c => ({ text: c.text, line: src.slice(0, c.pos).split('\n').length }));
+  if (cache && r.length <= 3) { cache.porHuella.set(h, r); cache.nuevos++; }
+  return r;
 }
 
 function publicados() {

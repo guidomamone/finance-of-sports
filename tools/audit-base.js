@@ -70,4 +70,30 @@ function mdsDeSkills() {
 // (Bath Rugby), el mismo `node tools/audit.js` lo audita con la misma exigencia.
 const MUESTRAS = [];
 
-module.exports = { fs, path, archivosData, idDeArchivo, rutaData, execFileSync, vm, execSync, ROOT, ARGS, JSON_OUT, QUIET, IGNORE_FILE, IGNORADOS, findings, silenciados, reglasUsadas, add, REPORT_TYPES_REALES, clubYears, ref, sum, mdsDeSkills, MUESTRAS };
+// Varios chequeos corren `node tools/X --check`, independientes entre sí y de solo lectura: execJuntos(cmd, todos) lanza TODOS los de `todos` a la vez la primera vez (cada uno deja su salida y su código en archivos
+// de una carpeta temporal) y espera con un sueño corto (la auditoría es síncrona): tarda lo del más lento y no la suma de los ~20. Devuelve la salida o tira un error con status, stdout y stderr, como execSync.
+const lanzados = new Map();
+function execJuntos(cmd, todos) {
+  if (!lanzados.size) {
+    const dir = fs.mkdtempSync(path.join(require('os').tmpdir(), 'fos-audit-'));
+    todos.forEach((c, i) => {
+      const base = path.join(dir, String(i));
+      require('child_process').spawn('sh', ['-c', `${c} > "${base}.out" 2> "${base}.err"; echo $? > "${base}.st"`], { cwd: ROOT, stdio: 'ignore', detached: true }).unref();
+      lanzados.set(c, base);
+    });
+    lanzados.set('\0carpeta', dir);
+  }
+  const base = lanzados.get(cmd);
+  if (!base) return execSync(cmd, { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] });
+  const dormir = new Int32Array(new SharedArrayBuffer(4)); const t0 = Date.now();
+  while (!fs.existsSync(base + '.st')) {
+    if (Date.now() - t0 > 180000) throw Object.assign(new Error('el chequeo no terminó en 3 minutos'), { status: 124, stdout: '', stderr: 'timeout' });
+    Atomics.wait(dormir, 0, 0, 20);
+  }
+  const status = Number(fs.readFileSync(base + '.st', 'utf8').trim()); const stdout = fs.readFileSync(base + '.out'); const stderr = fs.readFileSync(base + '.err');
+  if (status === 0) return stdout;
+  throw Object.assign(new Error(`${cmd} terminó con ${status}`), { status, stdout, stderr });
+}
+function limpiarJuntos() { const dir = lanzados.get('\0carpeta'); if (dir) fs.rmSync(dir, { recursive: true, force: true }); lanzados.clear(); }
+
+module.exports = { fs, path, archivosData, idDeArchivo, rutaData, execFileSync, vm, execSync, execJuntos, limpiarJuntos, ROOT, ARGS, JSON_OUT, QUIET, IGNORE_FILE, IGNORADOS, findings, silenciados, reglasUsadas, add, REPORT_TYPES_REALES, clubYears, ref, sum, mdsDeSkills, MUESTRAS };

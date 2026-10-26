@@ -1,6 +1,6 @@
 // tools/audit-chequeos-2.js — checkLigasPorEjercicio, checkDeployInterno, checkIndexFileRoto, checkSponsorBusqueda, checkComentariosPublicados, checkParrafoNetlifyDuplicado, checkRutasMuertas, checkComentarioHistoricoEnTools, checkCabeceraLargaEnTools, checkToolGrande, checkHistoriaEnDocs, checkParrafosRepetidos, checkRayaLarga, checkGenerados. Mudados de tools/audit.js sin cambiar una línea; lo compartido (add, ROOT, fs, path…) está en tools/audit-base.js.
 
-const { REPORT_TYPES_REALES, ROOT, add, clubYears, execFileSync, execSync, fs, mdsDeSkills, path, ref } = require('./audit-base.js');
+const { REPORT_TYPES_REALES, ROOT, add, clubYears, execFileSync, execJuntos, execSync, fs, limpiarJuntos, mdsDeSkills, path, ref } = require('./audit-base.js');
 
 function checkLigasPorEjercicio(api) {
   const cob = api.clubLeagueCoverage ? api.clubLeagueCoverage() : null;
@@ -500,11 +500,17 @@ const GENERADORES = [
   ['validar-esquema-json.mjs',  'el JSON de algún club (no valida contra data/schema/club-v2.json)', 'json-no-valida'],
   ['generar-correcciones.mjs',  'data/correcciones/ (el registro público de correcciones, to-do 247)', 'correcciones-desfasado'],
 ];
+// Los `--check` de esta función son independientes y solo leen: execJuntos (audit-base.js) los lanza todos a la vez; mismo resultado y mismos mensajes que correrlos de a uno.
 function checkGenerados() {
+  const todos = [...GENERADORES.filter(g => fs.existsSync(path.join(ROOT, 'tools', g[0]))).map(g => `node tools/${g[0]} --check`), 'node tools/clasificar-tools.mjs --check', 'node tools/lotes-prueba.mjs --check',
+    'node tools/indice-md.mjs --check', 'node tools/changelog.mjs check', 'node tools/cargas-manuales.mjs check', 'node tools/hallazgo.mjs check'];
+  try { checkGeneradosEn(todos); } finally { limpiarJuntos(); }
+}
+function checkGeneradosEn(todos) {
   for (const [script, que, code] of GENERADORES) {
     if (!fs.existsSync(path.join(ROOT, 'tools', script))) continue;
     try {
-      execSync(`node tools/${script} --check`, { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] });
+      execJuntos(`node tools/${script} --check`, todos);
     } catch (e) {
       const detalle = String(e.stderr || e.stdout || '').trim().replace(/\s*\n\s*/g, ' ').slice(0, 220);
       // faltantes-liga.mjs --check (Auditora 5): 2 = las entradas no cambiaron pero se calculó hace más de 30 días; 3 = solo faltan en este worktree los enlaces a PDF (corré preparar). Ninguno de los dos
@@ -522,25 +528,25 @@ function checkGenerados() {
   } catch { /* sin generadores.mjs: otro chequeo lo dice */ }
   // cada .js y .mjs de tools/ está clasificado respecto del pipeline: una tool nueva sin clasificar se commitea sin medir
   if (fs.existsSync(path.join(ROOT, 'tools/clasificar-tools.mjs'))) {
-    try { execSync('node tools/clasificar-tools.mjs --check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
+    try { execJuntos('node tools/clasificar-tools.mjs --check', todos); }
     catch (e) { add('P1', 'tool-sin-clasificar', String(e.stderr || e.stdout || '').trim().replace(/\s*\n\s*/g, ' ').slice(0, 300)); }
   }
   // los lotes de prueba: una familia cargada sin documentos en la mediana, o un club cuyo último año con verificación no está en ella, y una medición no lo vería
   if (fs.existsSync(path.join(ROOT, 'tools/lotes-prueba.mjs'))) {
-    try { execSync('node tools/lotes-prueba.mjs --check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
+    try { execJuntos('node tools/lotes-prueba.mjs --check', todos); }
     catch (e) { add('P2', 'lote-prueba-desfasado', `los lotes de prueba no cubren lo cargado: ${String(e.stderr || e.stdout || '').trim().replace(/\s*\n\s*/g, ' ').slice(0, 260)}`); }
   }
   // el índice de documentos (Admin/INDICE-md.md) no frena un commit: P3
-  try { execSync('node tools/indice-md.mjs --check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
+  try { execJuntos('node tools/indice-md.mjs --check', todos); }
   catch (e) { add('P3', 'indice-md-desfasado', 'Admin/INDICE-md.md quedó desactualizado (se creó, movió o borró un .md). Corré: node tools/indice-md.mjs'); }
   // el CHANGELOG: una entrada de más de 1.500 caracteres o el archivo de más de 120 KB (tools/changelog.mjs check; P3)
-  try { execSync('node tools/changelog.mjs check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
+  try { execJuntos('node tools/changelog.mjs check', todos); }
   catch (e) { for (const l of String(e.stdout || '').split('\n').filter(Boolean)) { const m = l.match(/^(changelog-[a-z-]+): (.*)$/); if (m) add('P3', m[1], m[2]); } }
   // un año cargado a mano (sin tools/cargar.mjs) con documento y sin ajuste, freno ni respuesta de la cola no entra a los lotes de prueba (tools/cargas-manuales.mjs; P3, solo los nuevos)
-  try { execSync('node tools/cargas-manuales.mjs check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
+  try { execJuntos('node tools/cargas-manuales.mjs check', todos); }
   catch (e) { const m = String(e.stdout || '').match(/^(carga-manual-[a-z-]+): (.*)$/m); if (m) add('P3', m[1], m[2]); }
   // los hallazgos nuevos de HALLAZGOS-pipeline.md van con sus etiquetas (tools/hallazgo.mjs check; P3)
-  try { execSync('node tools/hallazgo.mjs check', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }); }
+  try { execJuntos('node tools/hallazgo.mjs check', todos); }
   catch (e) { const m = String(e.stdout || '').match(/^(hallazgo-[a-z-]+): (.*)$/m); if (m) add('P3', m[1], m[2]); }
 }
 
