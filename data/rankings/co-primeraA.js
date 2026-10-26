@@ -132,6 +132,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"laequidad-co", revenue:5.894, reportType:"official_balance_sheet",
         sourceId:"laequidad-co-siis-estado-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.475],["Otros ingresos",0.419]] },
+      { id:"aguilasdoradas-co", revenue:2.726, reportType:"official_balance_sheet",
+        sourceId:"aguilasdoradas-co-siis-estado-2021",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.527],["Otros ingresos",0.199]] },
     ],
   },
   2020: {
