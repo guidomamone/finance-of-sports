@@ -175,9 +175,12 @@ if (args.includes('--extractos')) {
   const solo = flag('--solo') ? new Set(flag('--solo').split(',')) : null;
   const lista = pendientes.filter(p => p.mds.length && (!solo || solo.has(`${p.id}:${p.y}`))).slice(0, Number(flag('--max')) || Infinity);
   mkdirSync(GEN, { recursive: true });
-  for (const p of lista) writeFileSync(join(GEN, `${p.id}-${p.y}.txt`), `${p.id} ${p.y} (${clubs[p.id]?.name || p.id})\n\n${extracto(p.mds)}\n`);
+  const sinFirma = [];
+  for (const p of lista) { const ex = extracto(p.mds); if (!/^\d+: /m.test(ex)) sinFirma.push(`${p.id}:${p.y}`); writeFileSync(join(GEN, `${p.id}-${p.y}.txt`), `${p.id} ${p.y} (${clubs[p.id]?.name || p.id})\n\n${ex}\n`); }
   writeFileSync(join(GEN, '_lista.txt'), lista.map(p => `${p.id}:${p.y}\tGenerados/auditoria/${p.id}-${p.y}.txt`).join('\n') + '\n');
   console.log(`${lista.length} extractos en Generados/auditoria/ (lista: Generados/auditoria/_lista.txt).`);
+  // un .md sin informe del auditor ni firma: el subagente tienta citar el de OTRO ejercicio (el dictamen del año siguiente trae el comparativo) y la cita se rechaza («es del ejercicio X, no del Y»); se avisa antes de la corrida
+  if (sinFirma.length) console.log(`Sin frases de un informe del auditor en ningún .md (${sinFirma.length}): ${sinFirma.join(', ')}. Su línea no puede citar el .md de otro ejercicio (chequearCita lo rechaza): sin_informe si el documento no trae informe, o falta_transcripcion si falta la transcripción.`);
   process.exit(0);
 }
 

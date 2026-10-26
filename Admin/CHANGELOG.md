@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1162 — auditoria.mjs --extractos avisa los club-años sin informe del auditor [465 · auditoria.mjs]
+- Al escribir los extractos, lista los club-años cuyos `.md` no traen ninguna frase de un informe del auditor y dice qué hacer (`sin_informe` o `falta_transcripcion`): citar el `.md` de otro ejercicio se rechaza («es del ejercicio X, no del Y») recién al final de la corrida.
+- Sin pendientes hoy, el aviso no se pudo ver disparar; se revisó solo el código.
+- Medición: `auditoria.mjs` (lote completo, medidores cargar y audit) idéntico; veredicto GENERAL (681 documentos de 131 clubes).
+
 ## Versión 1161 — cargar-ejercicio.mjs: la pregunta de gestión no se repite con otro detalle [465 · cargar-ejercicio.mjs]
 - Causa: contestada la pregunta genérica del club (`aceptar`) con la gestión todavía sin cubrir el año, la corrida siguiente abría otra con detalle `club:año` para el mismo documento (Medellín 2018 a 2023, 6 preguntas). Ahora, si ese documento ya tiene una pregunta de gestión contestada `aceptar`, no se vuelve a abrir; una gestión que cubre el año cierra la duda sola y un año de otro documento abre la suya.
 - Las 6 abiertas de Medellín siguen en la cola hasta que `cerrarObsoletos` las cierre en una corrida de carga de esos documentos (no verificado).
