@@ -205,4 +205,4 @@ El inventario (`tools/inventario-transcripciones.mjs`) marca como `duplicado` el
 
 ## Pendiente de sourcing (cierre de la rama onboarding)
 
-- Deportes Tolima: `dictamen-revisor-fiscal-2025.pdf` es idéntico al de 2024; falta el de 2025 (2026-10-17).
+- Dictámenes del revisor fiscal de los cuatro clubes de solo notas (2026-10-26, `documentos-adicionales` de cada radicado). Deportes Tolima 2024 y 2025 resueltos: el archivo «2025» era el de 2024 (se renombró el `.md`; el PDF duplicado quedó como `dictamen-revisor-fiscal-2024-copia-rotulada-2025.pdf`) y el de 2025 (21 ene 2026, radicado 2026-01-331674) se bajó y transcribió; el segundo dictamen que SIIS lista para 2025 (2026-01-333192) es el de 2024 de nuevo. HUECOS REALES, SIIS no los tiene (los clubes de Grupo 2 depositan solo certificación y notas): La Equidad 2016 y 2019 (2018 sin documentos, 404), Águilas Doradas 2016 y 2018, Atlético Bucaramanga 2017 y 2018; Bucaramanga 2021 no tiene registro en SIIS. Se piden al club solo si Guido lo pide.
