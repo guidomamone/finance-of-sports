@@ -121,6 +121,37 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-20): co-primeraA, verificado contra roster cacheado de "2023 Liga DIMAYOR" (tools/club-league-reference/co.json), coincidencia única por palabras "Alianza Petrolera" = "Alianza FC".
 ```
 
+## 2016
+
+### Ingresos
+
+```text
+2016: cargado por tools/cargar.mjs (2026-10-26) desde Clubes/Colombia/Alianza FC/siis-estado-2016.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Alianza FC/siis-estado-2016.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ingresos de actividades ordinarias | pág. 1, Jev 0.97 |
+| 2 | Otros ingresos | pág. 1, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costo de ventas | pág. 1, Claude 0.88 |
+| 2 | Gastos de ventas | pág. 1, precedente |
+| 3 | Gastos de administración | pág. 1, Jev 1 |
+| 4 | Otros gastos | pág. 1, Jev 1 |
+
+### Meta
+
+```text
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
 ## Fuentes
 
 ### alianzafc-co-estados-financieros-2023
@@ -129,4 +160,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Colombia/Alianza FC/estados-financieros-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### alianzafc-co-siis-estado-2016
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Alianza FC/siis-estado-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

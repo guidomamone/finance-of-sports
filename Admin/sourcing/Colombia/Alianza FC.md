@@ -32,3 +32,5 @@ Estados financieros en disco ahora: 8 ejercicios (2016, 2019-2025), cada uno con
 Color de marca: null — colores azul, blanco y rojo (infobox es.wikipedia 'Alianza Valledupar'); camiseta local 2024-25 azul y 2026 roja, escudo azul/rojo/blanco; tricolor sin predominio y la sucesión de colores cambió con el traslado a Valledupar en 2024 (Alianza Petrolera tenía otros), verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2023 desde `Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf` (sourceId `alianzafc-co-estados-financieros-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2016 desde `Clubes/Colombia/Alianza FC/siis-estado-2016.pdf` (sourceId `alianzafc-co-siis-estado-2016`).
