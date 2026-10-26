@@ -2786,6 +2786,7 @@ window.SPONSORS_INDICE = [
   ["xximo","XXImo",["c"]],
   ["y-lport","Yılport",["c"]],
   ["y3k","Y3K",["c"]],
+  ["yajuego-yoga-land-gatorade","Yajuego - Yoga Land - Gatorade",["c"]],
   ["yale-lift-truck-technologies","Yale Lift Truck Technologies",["c"]],
   ["yamaha","Yamaha",["c"]],
   ["yandex","Yandex",["c"]],
