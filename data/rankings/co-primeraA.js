@@ -3,7 +3,6 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraA"] = {
   2025: {
     leagueSize: 20,
-    sinDato: ["aguilasdoradas-co"],
     wiki: {"t":"2025 Liga DIMAYOR","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:52.403, reportType:"official_balance_sheet",
@@ -46,6 +45,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"fortalezaceif-co", revenue:6.348, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2025",
         mix:[["Comercial / Sponsors",1.163],["Estadio",1.144],["Televisión",0.416],["Premios por competencias",0.215],["Venta de Jugadores",3.079],["Otros ingresos",0.33]] },
+      { id:"aguilasdoradas-co", revenue:5.959, reportType:"official_balance_sheet",
+        sourceId:"aguilasdoradas-co-siis-estado-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.626],["Otros ingresos",0.333]] },
       { id:"llaneros-co", revenue:3.156, reportType:"official_balance_sheet",
         sourceId:"llaneros-co-estados-financieros-2025",
         mix:[["Comercial / Sponsors",1.701],["Estadio",0.486],["Televisión",0.681],["Premios por competencias",0.256],["Venta de Jugadores",0.032],["Otros ingresos",0]] },
