@@ -60,6 +60,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Once Caldas/siis-estado-2016.pdf"
+    },
+    {
+      "id": "oncecaldas-co-siis-estado-2017",
+      "club_id": "oncecaldas-co",
+      "title": "Once Caldas S.A. En Reorganización — siis-estado-2017 (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Once Caldas/siis-estado-2017.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2022,"last_year":2025}],
@@ -106,6 +114,60 @@
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":17789.038,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {"line":"Gastos de ventas","side":"expense","amount":14523.514,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "player_impairment": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        },
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-12-31",
+      "currency": "COP",
+      "source_id": "oncecaldas-co-siis-estado-2017",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2017-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 16672.414,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":988.046,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1273.292,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-13931.288,"disclosure":"aggregated"},
+        {"label":"GASTOS DE PERSONAL","category":"admin_general","subcategory":"admin_general_expense","amount":-754.574,"disclosure":"aggregated"},
+        {"label":"HONORARIOS","category":"admin_general","subcategory":"admin_general_expense","amount":-64.422,"disclosure":"aggregated"},
+        {"label":"ARRENDAMIENTOS","category":"admin_general","subcategory":"admin_general_expense","amount":-10.814,"disclosure":"aggregated"},
+        {"label":"SERVICIOS","category":"admin_general","subcategory":"admin_general_expense","amount":-44.885,"disclosure":"aggregated"},
+        {"label":"GASTOS LEGALES","category":"admin_general","subcategory":"admin_general_expense","amount":-2.286,"disclosure":"aggregated"},
+        {"label":"MANTENIMIENTO Y REPARACIONES","category":"admin_general","subcategory":"admin_general_expense","amount":-0.873,"disclosure":"aggregated"},
+        {"label":"GASTOS DE VIAJE","category":"match_operations","subcategory":"match_organisation_expense","amount":-30.524,"disclosure":"aggregated"},
+        {"label":"DEPRECIACIONES","category":"depreciation","subcategory":"depreciation","amount":-2.806,"disclosure":"aggregated"},
+        {"label":"DIVERSOS","category":"admin_general","subcategory":"admin_general_expense","amount":-31.955,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2430.28,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":1706.815,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":17660.46,"expenses":18577.999,"net_result":789.275},
+      "adjustments": {
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":16672.414,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {"line":"Gastos de ventas","side":"expense","amount":13931.288,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},

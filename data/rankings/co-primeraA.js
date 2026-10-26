@@ -243,12 +243,15 @@ window.RANKINGS["co-primeraA"] = {
   },
   2017: {
     leagueSize: 20,
-    sinDato: ["oncecaldas-co"],
     wiki: {"t":"2017 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:15.531, reportType:"official_balance_sheet",
         sourceId:"independientemedellin-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",15.123],["Otros ingresos",0.408]] },
+      { id:"oncecaldas-co", revenue:5.918, reportType:"official_balance_sheet",
+        sourceId:"oncecaldas-co-siis-estado-2017",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.587],["Otros ingresos",0.331]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"laequidad-co", revenue:5.901, reportType:"official_balance_sheet",
         sourceId:"laequidad-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.767],["Otros ingresos",0.134]],
