@@ -9,6 +9,8 @@
 //   node tools/club-siis.mjs "<Club>"                       estado por año, lo que falta en orden, comandos y subagentes
 //   node tools/club-siis.mjs "<Club>" --rehacer-anio AAAA   la cadena para rehacer un año YA publicado (el lote lo saltea a propósito); los datos solo se escriben con las tools medidas
 //   node tools/club-siis.mjs "<Club>" --crear-lista         además crea la lista de lote (Admin/lotes/lote-NN.txt) con los siis-estado-AAAA.pdf que todavía no están cargados
+//   node tools/club-siis.mjs "<Club>" --evaluar            ¿vale la pena? CARGAR / REVISAR / DESCARTAR con el motivo (solo lee). Solo se descarta la sociedad sin actividad (ingresos 0 todos los años); la liga no descarta (se cargan amateurs); ingresos chicos (< 500 M al año) se revisan
+//   node tools/club-siis.mjs "<Club>" --avanzar [--ejecutar [--cargar]]   corre los pasos mecánicos en orden (estados de SIIS, alta, dictámenes, «Costo de ventas» > 50 %, lista, inventario) y para en lo que pide juicio; --ejecutar corre el lote (API, ~US$ 0,03 por documento); --cargar además carga y publica si no falta nada de juicio
 //   node tools/club-siis.mjs "<Club>" --brief <estadio-sponsor|gestiones|auditor>   el brief de ese subagente con el club y los años ya completos (plantilla: Admin/briefs-subagentes-siis.md)
 // LOS SUBAGENTES VAN JUNTOS: estadio-sponsor y gestiones son independientes entre sí y del lote (escriben cada uno un archivo suyo): se lanzan a la vez, en UN solo mensaje con varias llamadas a Agent, apenas están el alta y los estados. El lote
 // puede correr en ensayo mientras tanto; su `--cargar` exige `data/` limpio, así que espera a que terminen y se commitee lo suyo. El del auditor va después de la carga.
@@ -77,6 +79,77 @@ if (flag('--brief')) {
   if (i < 0) { console.error(`Sin plantilla «${k}» en Admin/briefs-subagentes-siis.md`); process.exit(1); }
   const resto = plantilla.slice(i).split('\n').slice(1).join('\n'); const cuerpo = resto.split(/\n## BRIEF /)[0].trim();
   console.log(cuerpo.replaceAll('{{CLUB}}', club).replaceAll('{{CLUBID}}', c.clubId || '<clubId>').replaceAll('{{SOCIEDAD}}', sociedad).replaceAll('{{CARPETA}}', `Clubes/${cfg.pais}/${club}`).replaceAll('{{ANIOS}}', b.anios.join(', ')));
+  process.exit(0);
+}
+
+// ---- ¿vale la pena? (--evaluar y el primer paso de --avanzar): solo lee Admin/sourcing/<País>/siis-resumen.json y los siis-estado-AAAA.md que ya haya; sin red.
+// Criterio (Guido, 2026-10-26): NO se descarta por no estar en una liga profesional (se cargan clubes amateurs, como los de Bélgica); solo una sociedad sin actividad (ingresos 0 en todos los años).
+const UMBRAL_CHICO = 500000; // miles de pesos por año = 500 M: por debajo en todos los años, el club se revisa antes de cargar
+const miles = (n) => `${Math.round(n / 1000).toLocaleString('es-AR')} M`;
+function evaluar() {
+  const r = resumen?.nits?.[c.nit]?.anios || {}; const anios = Object.entries(r).filter(([, d]) => d.estado).map(([a, d]) => ({ a, ing: d.ingresos || 0, ut: d.utilidades || 0 })).sort((x, y) => x.a - y.a);
+  const motivos = []; let veredicto = 'CARGAR';
+  const max = Math.max(0, ...anios.map((x) => x.ing)); const sinIng = anios.filter((x) => !x.ing).map((x) => x.a);
+  if (!anios.length) { veredicto = 'DESCARTAR'; motivos.push('SIIS no tiene estado de resultados de ningún año'); }
+  else if (!max) { veredicto = 'DESCARTAR'; motivos.push('ingresos 0 en todos los años: sociedad sin actividad (Real Sincelejo 2017)'); }
+  else if (max < UMBRAL_CHICO) { veredicto = 'REVISAR'; motivos.push(`ingresos chicos todos los años (el máximo, ${miles(max)}; el umbral, ${miles(UMBRAL_CHICO)}): ¿es un club o una sociedad con otra actividad? Si es de otro deporte, punto 464`); }
+  if (sinIng.length && max) motivos.push(`años con ingresos 0 (${sinIng.join(', ')}): se cargan igual, mirar si es inactividad`);
+  let ligas = []; try { ligas = [...execFileSync('node', [join(ROOT, 'tools/lookup-club-league.js'), club, '--pais', 'CO'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).matchAll(/^(co-\w+) (\d{4}):/gm)].map((x) => `${x[2]} ${x[1]}`); } catch { /* sin caché */ }
+  const pesos = filas.filter((f) => f.siis).map((f) => ({ a: f.a, ...pesoCosto(f.a) })).filter((p) => p.pct);
+  return { anios, veredicto, motivos, ligas, pesos };
+}
+function pesoCosto(a) { // peso de «Costo de ventas» en los gastos del año, del siis-estado-AAAA.md ya bajado
+  const md = join(e.dir, `siis-estado-${a}.md`); if (!existsSync(md)) return {};
+  const n = (s) => Number(s.trim().replace(/\./g, '').replace('(', '-').replace(')', '')); const v = {};
+  for (const l of readFileSync(md, 'utf8').split('\n')) { const x = l.match(/^\| (Costo de ventas|Gastos de ventas|Gastos de administración|Otros gastos) \| ([^|]+) \|/); if (x) v[x[1]] = n(x[2]); }
+  const tot = Object.values(v).reduce((s, y) => s + y, 0); return tot && v['Costo de ventas'] != null ? { pct: Math.round(100 * v['Costo de ventas'] / tot) } : {};
+}
+if (A.includes('--evaluar')) {
+  const ev = evaluar();
+  console.log(`${club} · NIT ${c.nit} · ${ev.veredicto}\n`);
+  console.log('año   ingresos        resultado'); for (const x of ev.anios) console.log(`${x.a}  ${miles(x.ing).padStart(10)}  ${miles(x.ut).padStart(10)}${x.ing ? '' : '   ← sin ingresos'}`);
+  ev.motivos.forEach((t) => console.log(`\n· ${t}`));
+  console.log(`\nLiga (rosters cacheados de Wikipedia, solo informativo; no descarta): ${ev.ligas.length ? ev.ligas.join(' · ') : 'ninguna encontrada: se carga igual con la liga en null (P3 liga-sin-verificar) o se confirma a mano si es amateur'}`);
+  if (ev.pesos.length) { console.log(`\nPeso de «Costo de ventas» en los gastos: ${ev.pesos.map((p) => `${p.a} ${p.pct} %`).join(' · ')}`); const g = ev.pesos.filter((p) => p.pct > 50); if (g.length) console.log(`  >50 % en ${g.map((p) => p.a).join(', ')}: es la actividad deportiva y va a lump_football_operations_expense (regla de Colombia, CONVENCIONES-DATOS.md; --avanzar lo corrige solo con cola.mjs --corregir-categoria)`); }
+  else console.log('\n(el peso de «Costo de ventas» aparece cuando están bajados los estados: --avanzar los baja)');
+  process.exit(0);
+}
+
+// ---- --avanzar: corre en orden los pasos MECÁNICOS (sin juicio) y para en el primero que lo necesita; después imprime lo que falta.
+// Sin --ejecutar no gasta API (el lote de categorización, ~US$ 0,03 por documento, se imprime y no se corre); con --ejecutar lo corre; con --cargar además carga y publica, solo si no falta nada de juicio.
+// Lo que queda a mano: el nombre legal y el color de marca tras el alta, la liga de cada año, los subagentes (estadio y sponsor, gestiones, auditor), la cola y el commit de cada paso.
+if (A.includes('--avanzar')) {
+  const EJECUTAR = A.includes('--ejecutar'), CARGAR = A.includes('--cargar');
+  const ev = evaluar(); console.log(`=== --avanzar ${club} · ${ev.veredicto} ===`);
+  if (ev.veredicto === 'DESCARTAR') { console.log(`${ev.motivos.join('; ')}. No se avanza (node tools/club-siis.mjs ${q} --evaluar).`); process.exit(0); }
+  if (ev.veredicto === 'REVISAR') console.log(`REVISAR: ${ev.motivos[0]}\n(se sigue; si no es un club, frená acá)`);
+  const run = (args) => { console.log(`\n$ node ${args.join(' ')}`); try { const out = execFileSync('node', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1e8, stdio: ['ignore', 'pipe', 'pipe'] }); console.log(out.trim().split('\n').slice(-6).join('\n')); return out; } catch (err) { console.log(`${String(err.stdout || '').trim().split('\n').slice(-8).join('\n')}\n${String(err.stderr || '').trim()}`); console.log(`\nSE FRENÓ en: node ${args.join(' ')}`); process.exit(1); } };
+  let s = estadoDe(club);
+  if (s.filas.some((f) => !f.siis)) { run(['tools/siis-estado.mjs', '--club', club, '--todos', '--escribir']); s = estadoDe(club); }
+  if (!s.c.clubId) {
+    const ultimo = s.filas.filter((f) => f.siis).map((f) => f.a).pop();
+    const out = run(['tools/alta-club.mjs', `Clubes/${cfg.pais}/${club}/siis-estado-${ultimo}.pdf`, '--escribir']); const id = (out.match(/data\/co\/([\w-]+)\.json/) || [])[1];
+    if (!id) { console.log('No pude leer el clubId del alta: sumalo a tools/siis-clubes.json a mano.'); process.exit(1); }
+    const { writeFileSync } = await import('node:fs'); const ruta = join(ROOT, 'tools/siis-clubes.json'); const t = readFileSync(ruta, 'utf8');
+    const t2 = t.replace(new RegExp(`("${club.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}":\\s*\\{[^}]*?)(\\s*\\})`), `$1, "clubId": "${id}"$2`); if (t2 === t) { console.log(`No pude sumar el clubId ${id} a siis-clubes.json: hacelo a mano.`); process.exit(1); }
+    writeFileSync(ruta, t2); console.log(`clubId ${id} sumado a tools/siis-clubes.json.\nA MANO, ahora: el nombre legal («${(readFileSync(join(s.dir, `siis-estado-${ultimo}.md`), 'utf8').match(/^# (.+?) — NIT/m) || [, club])[1]}») y el color de marca en data/clubs.js; commitear el alta (git add data index.html club fuentes liga …) antes del lote con --cargar.`); s.c.clubId = id;
+  }
+  if (readdirSync(s.dir).some((x) => /^dictamen-revisor-fiscal-\d{4}\.pdf$/.test(x) && !existsSync(join(s.dir, x.replace(/\.pdf$/, '.md'))))) run(['tools/dictamenes-md.mjs', club, '--escribir']);
+  for (const p of evaluar().pesos.filter((p) => p.pct > 50 && !s.filas.find((f) => f.a === p.a)?.cargado)) run(['tools/cola.mjs', '--corregir-categoria', `Clubes/${cfg.pais}/${club}/siis-estado-${p.a}.pdf`, 'Costo de ventas', 'lump_football_operations_expense', '--nota', `Costo de ventas es ${p.pct}% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)`]);
+  const sinCargar = s.filas.filter((f) => f.siis && !f.cargado).map((f) => f.a);
+  if (sinCargar.length) {
+    const { readdirSync: ls } = await import('node:fs'); const listas = ls(join(ROOT, 'Admin/lotes')).filter((x) => /^lote-\d+\.txt$/.test(x)).sort(); const marca = `Clubes/${cfg.pais}/${club}/siis-estado-`;
+    let lista = listas.reverse().find((x) => readFileSync(join(ROOT, 'Admin/lotes', x), 'utf8').includes(marca)); lista = lista && `Admin/lotes/${lista}`;
+    if (!lista) { const salida = execFileSync('node', [join(ROOT, 'tools', 'lote-nuevo.mjs'), `${club} SIIS`], { cwd: ROOT, encoding: 'utf8' }); lista = (salida.match(/Admin\/lotes\/[\w.-]+\.txt/) || [])[0]; const { appendFileSync } = await import('node:fs'); appendFileSync(join(ROOT, lista), sinCargar.map((a) => `${marca}${a}.pdf`).join('\n') + '\n'); console.log(`\nLista creada: ${lista}`); } else console.log(`\nLista: ${lista}`);
+    run(['tools/inventario-transcripciones.mjs', '--solo', `Clubes/${cfg.pais}/${club}`]);
+    const faltaJuicio = []; const f2 = estadoDe(club); const g = !!s.c.clubId && new RegExp(`'${s.c.clubId}'\\s*:`).test(readFileSync(join(ROOT, `data/gestiones/${iso}.js`), 'utf8'));
+    if (f2.filas.some((f) => !f.liga)) faltaJuicio.push('liga de cada año'); if (f2.filas.some((f) => !f.ctx && !f.cargado)) faltaJuicio.push('estadio y sponsor (subagente)'); if (!g) faltaJuicio.push('gestiones (subagente)'); if (f2.cola.length) faltaJuicio.push(`${f2.cola.length} preguntas de la cola`);
+    const lote = ['tools/lote.mjs', '--lista', lista, '--ejecutar'];
+    if (!EJECUTAR) console.log(`\nNo se gastó API. El lote de categorización (unos US$ 0,03 por documento): node ${lote.join(' ')}   (--avanzar --ejecutar lo corre)`);
+    else if (CARGAR && faltaJuicio.length) { console.log(`\nNo se carga: falta ${faltaJuicio.join(', ')}. Corre el lote sin --cargar.`); run(lote); }
+    else if (CARGAR) { run([...lote, '--cargar']); run(['tools/publicar.mjs']); } else run(lote);
+  }
+  console.log('\n=== lo que falta ==='); process.stdout.write(execFileSync('node', [join(ROOT, 'tools/club-siis.mjs'), club], { cwd: ROOT, encoding: 'utf8' }));
   process.exit(0);
 }
 
