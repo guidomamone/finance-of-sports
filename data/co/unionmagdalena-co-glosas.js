@@ -6,6 +6,7 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Arriendos":{"en":"Rentals"},
 "Auxilios Dimayor":{"en":"Dimayor grants"},
 "Contribuciones y Afiliaciones":{"en":"Contributions and memberships"},
+"Costo de ventas":{"en":"Cost of sales"},
 "Costos de Venta":{"en":"Cost of sales"},
 "Costos financieros":{"en":"Finance costs"},
 "Depreciaciones y Amortizaciones (combinado, sin desglosar en el documento)":{"en":"Depreciation and amortization (combined, not broken down in the document)"},
