@@ -1,0 +1,16 @@
+{
+  "opcion": "A",
+  "criterios": {
+    "1": { "valor": "no aplica", "cita": { "ref": "Clubes/Colombia/Deportes Tolima/siis-estado-2025.md:14", "texto": "| Gastos de ventas | 39.666.000 | 37.305.416 |", "mismo_hecho": true } },
+    "2": { "valor": "a favor", "cita": { "ref": "Admin/registros/ajustes-manuales.jsonl:3250", "texto": "es la nomina de la actividad deportiva del club", "mismo_hecho": true } },
+    "3": { "valor": "en contra", "cita": { "ref": "data/co/boyacachico-co.json:301", "texto": "\"label\":\"Gastos de ventas\",\"category\":\"admin_general\"", "mismo_hecho": true } },
+    "4": { "valor": "no aplica", "cita": { "ref": "Admin/CONVENCIONES-DATOS.md:681", "texto": "Gastos de ventas", "mismo_hecho": false } },
+    "5": { "valor": "a favor", "cita": { "ref": "Admin/CONVENCIONES-DATOS.md:681", "texto": "un rubro que el documento no abre (por ejemplo «Gastos de ventas») no se parte ni se manda a personal", "mismo_hecho": true } },
+    "6": { "valor": "no aplica", "cita": { "ref": "Clubes/Colombia/Deportes Tolima/siis-estado-2025.md:14", "texto": "| Gastos de ventas | 39.666.000 | 37.305.416 |", "mismo_hecho": true } },
+    "7": { "valor": "a favor", "cita": { "ref": "Admin/CONVENCIONES-DATOS.md:120", "texto": "sin desglosar por la fuente", "mismo_hecho": true } },
+    "8": { "valor": "no aplica", "cita": { "ref": "Clubes/Colombia/Deportes Tolima/siis-estado-2025.md:14", "texto": "| Gastos de ventas | 39.666.000 | 37.305.416 |", "mismo_hecho": true } },
+    "9": { "valor": "en contra", "cita": { "ref": "data/co/atlnacional-co.json:130", "texto": "\"label\": \"Gastos de ventas (servicios, impuestos asumidos", "mismo_hecho": false } }
+  },
+  "anios_que_cambian": [],
+  "no_abri": ["Admin/carga-clubes/deportestolima-co.md", "data/co/deportestolima-co.json", "Admin/sourcing/Colombia/Deportes Tolima.md (lo abri por grep: no hay texto de «gastos de ventas», «nomina» ni «derechos deportivos»; el caso lo afirma sin que yo lo pudiera verificar)", "Admin/registros/auditoria-proceso.jsonl (grep sin resultados)"]
+}

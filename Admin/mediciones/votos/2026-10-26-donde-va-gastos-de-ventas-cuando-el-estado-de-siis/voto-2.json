@@ -1,0 +1,15 @@
+{ "opcion": "A",
+  "criterios": {
+    "1": { "valor": "no aplica", "cita": { "ref": "data/co/deportestolima-co.json", "texto": "sin ejercicios cargados todavia (22 lineas, sin anios)", "mismo_hecho": false } },
+    "2": { "valor": "a favor", "cita": { "ref": "data/co/oncecaldas-co.json:108", "texto": "\"label\": \"GASTOS DE PERSONAL (gastos de ventas)\",", "mismo_hecho": true } },
+    "3": { "valor": "en contra", "cita": { "ref": "data/co/boyacachico-co.json:301", "texto": "{\"label\":\"Gastos de ventas\",\"category\":\"admin_general\",\"subcategory\":\"admin_general_expense\",\"amount\":0", "mismo_hecho": false } },
+    "4": { "valor": "no aplica", "cita": { "ref": "", "texto": "", "mismo_hecho": false } },
+    "5": { "valor": "a favor", "cita": { "ref": "Clubes/Colombia/Deportes Tolima/estados-financieros-2025.md:1447", "texto": "En este rubro se detallan los gastos que realiza el club concerniente a jugadores, cuerpo técnico, Gastos encuentros deportivos etc.", "mismo_hecho": true } },
+    "6": { "valor": "no aplica", "cita": { "ref": "", "texto": "", "mismo_hecho": false } },
+    "7": { "valor": "a favor", "cita": { "ref": "Clubes/Colombia/Deportes Tolima/estados-financieros-2025.md:1453", "texto": "gastos de Personal | $ 13,512,051", "mismo_hecho": true } },
+    "8": { "valor": "no aplica", "cita": { "ref": "", "texto": "", "mismo_hecho": false } },
+    "9": { "valor": "a favor", "cita": { "ref": "data/co/oncecaldas-co.json:108", "texto": "\"label\": \"GASTOS DE PERSONAL (gastos de ventas)\",", "mismo_hecho": true } }
+  },
+  "anios_que_cambian": [],
+  "no_abri": ["Admin/carga-clubes/deportestolima-co.md", "Admin/registros/auditoria-proceso.jsonl (grep sin resultados sobre el hecho)", "Admin/sourcing/Colombia/Deportes Tolima.md (grep sin mencion de gastos de ventas)"]
+}
