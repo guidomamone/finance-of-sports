@@ -163,6 +163,9 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"oncecaldas-co-estados-financieros-2018",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.597],["Otros ingresos",0.974]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"laequidad-co", revenue:5.308, reportType:"official_balance_sheet",
+        sourceId:"laequidad-co-siis-estado-2018",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.207],["Otros ingresos",0.101]] },
     ],
   },
   2017: {
