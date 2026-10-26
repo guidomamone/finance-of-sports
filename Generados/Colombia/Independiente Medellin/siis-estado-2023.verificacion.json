@@ -1,0 +1,149 @@
+{
+ "pdf": "Clubes/Colombia/Independiente Medellin/siis-estado-2023.pdf",
+ "md": "Clubes/Colombia/Independiente Medellin/siis-estado-2023.md",
+ "generado": "2026-10-26T16:29:52.205Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "independientemedellin-co",
+ "year": 2023,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Independiente Medellin/siis-estado-2023.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2023.md L11-L24",
+   "autor": "Claude",
+   "fecha": "2026-10-26"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 5.4569682106375694e-12
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2023: 90910.796 en este documento y 90910.796 en siis-estado-2024.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 62477.857 en siis-estado-2022.pdf y 62477.857 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 90910.796,
+  "gastos": 73204.874,
+  "financiero": 7661.892,
+  "impuesto": 1643.47,
+  "resultadoImpreso": 10454.75,
+  "resultadoParaCargar": 10454.75,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "lado": "ingreso",
+   "M": 90136.99,
+   "pagina": 1,
+   "linea": 11,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros ingresos",
+   "lado": "ingreso",
+   "M": 773.806,
+   "pagina": 1,
+   "linea": 16,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Costo de ventas",
+   "lado": "gasto",
+   "M": 65714.706,
+   "pagina": 1,
+   "linea": 12,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de ventas",
+   "lado": "gasto",
+   "M": 2745.765,
+   "pagina": 1,
+   "linea": 14,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de administración",
+   "lado": "gasto",
+   "M": 3667.601,
+   "pagina": 1,
+   "linea": 15,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros gastos",
+   "lado": "gasto",
+   "M": 1076.802,
+   "pagina": 1,
+   "linea": 17,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Ingresos financieros",
+   "M": 1027.095,
+   "linea": 19
+  },
+  {
+   "etiqueta": "Costos financieros",
+   "M": -6634.797,
+   "linea": 20
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "M": -1643.47,
+   "linea": 22
+  }
+ ]
+}

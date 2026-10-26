@@ -1,0 +1,100 @@
+{
+  "md": "Clubes/Colombia/Independiente Medellin/siis-estado-2019.md",
+  "pdf": "Clubes/Colombia/Independiente Medellin/siis-estado-2019.pdf",
+  "club": "independientemedellin-co",
+  "year": 2019,
+  "generatedAt": "2026-10-26T16:25:50.528Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        30927.387
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        458.137
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        36659.123
+      ],
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1984.743
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2017.634
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        757.487
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Deterioro de valor de ganancias y reversión de pérdidas por deterioro de valor (pérdidas por deterioro de valor) determinado de acuerdo con la NIIF 9",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        59.553
+      ],
+      "glosa": "Deterioro de valor de ganancias y reversión de pérdidas por deterioro de valor (pérdidas por deterioro de valor) determinado de acuerdo con la NIIF 9"
+    },
+    {
+      "label": "Otras ganancias (pérdidas)",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+      "values": [
+        25.333
+      ],
+      "glosa": "Otras ganancias (pérdidas)"
+    },
+    {
+      "label": "Ganancias (pérdidas) que surgen de la baja en cuentas de activos financieros medidos al costo amortizado",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+      "values": [
+        317.048
+      ],
+      "glosa": "Ganancias (pérdidas) que surgen de la baja en cuentas de activos financieros medidos al costo amortizado"
+    }
+  ]
+}

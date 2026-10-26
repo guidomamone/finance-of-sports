@@ -1,0 +1,100 @@
+{
+  "md": "Clubes/Colombia/Independiente Medellin/siis-estado-2020.md",
+  "pdf": "Clubes/Colombia/Independiente Medellin/siis-estado-2020.pdf",
+  "club": "independientemedellin-co",
+  "year": 2020,
+  "generatedAt": "2026-10-26T16:25:50.558Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        32405.213
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1549.724
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Otras ganancias (pérdidas)",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        96.153
+      ],
+      "glosa": "Otras ganancias (pérdidas)"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        26799.565
+      ],
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1114.341
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1394.901
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        469.737
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Deterioro de valor de ganancias y reversión de pérdidas por deterioro de valor (pérdidas por deterioro de valor) determinado de acuerdo con la NIIF 9",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        174.747
+      ],
+      "glosa": "Deterioro de valor de ganancias y reversión de pérdidas por deterioro de valor (pérdidas por deterioro de valor) determinado de acuerdo con la NIIF 9"
+    },
+    {
+      "label": "Ganancias (pérdidas) que surgen de la baja en cuentas de activos financieros medidos al costo amortizado",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+      "values": [
+        272.373
+      ],
+      "glosa": "Ganancias (pérdidas) que surgen de la baja en cuentas de activos financieros medidos al costo amortizado"
+    }
+  ]
+}

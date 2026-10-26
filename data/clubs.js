@@ -337,6 +337,7 @@ const clubs = {
   'deportestolima-co': { id:'deportestolima-co', name:'Club Deportes Tolima S.A.', displayName:'Deportes Tolima', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
   'laequidad-co': { id:'laequidad-co', name:'IDBDC Albinegro S.A.', displayName:'La Equidad', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
   'aguilasdoradas-co': { id:'aguilasdoradas-co', name:'Talento Dorado S.A.', displayName:'Aguilas Doradas', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
+  'independientemedellin-co': { id:'independientemedellin-co', name:'El Equipo del Pueblo S.A.', displayName:'Independiente Medellín', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#E91B29' },
 };
 
 // Source: de dónde sale cada número; `reliability` es lo que distingue dato oficial, de prensa o placeholder.

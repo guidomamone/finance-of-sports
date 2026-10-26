@@ -1,0 +1,173 @@
+{
+ "pdf": "Clubes/Colombia/Independiente Medellin/siis-estado-2017.pdf",
+ "md": "Clubes/Colombia/Independiente Medellin/siis-estado-2017.md",
+ "generado": "2026-10-26T16:29:52.016Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "independientemedellin-co",
+ "year": 2017,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Independiente Medellin/siis-estado-2017.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2017.md L11-L26",
+   "autor": "Claude",
+   "fecha": "2026-10-26"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 6.366462912410498e-12
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2018",
+   "ok": true,
+   "detalle": "ingresos de 2017: 46343.961 en este documento y 46343.961 en siis-estado-2018.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2016",
+   "ok": true,
+   "detalle": "ingresos de 2016: 49242.869 en siis-estado-2016.pdf y 49242.869 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
+  "la lectura base no cerraba; cerró con la lectura 4"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 46343.961,
+  "gastos": 46777.039,
+  "financiero": 4453.662,
+  "impuesto": 0,
+  "resultadoImpreso": -4388.414,
+  "resultadoParaCargar": -4388.414,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "lado": "ingreso",
+   "M": 45125.595,
+   "pagina": 1,
+   "linea": 11,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros ingresos",
+   "lado": "ingreso",
+   "M": 1218.366,
+   "pagina": 1,
+   "linea": 16,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Costo de ventas",
+   "lado": "gasto",
+   "M": 40478.922,
+   "pagina": 1,
+   "linea": 12,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de ventas",
+   "lado": "gasto",
+   "M": 2465.794,
+   "pagina": 1,
+   "linea": 14,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de administración",
+   "lado": "gasto",
+   "M": 2262.037,
+   "pagina": 1,
+   "linea": 15,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros gastos",
+   "lado": "gasto",
+   "M": 1470.712,
+   "pagina": 1,
+   "linea": 17,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Deterioro de valor de ganancias y reversión de pérdidas por deterioro de valor (pérdidas por deterioro de valor) determinado de acuerdo con la NIIF 9",
+   "lado": "gasto",
+   "M": -109.845,
+   "pagina": 1,
+   "linea": 18,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "Ganancias (pérdidas) que surgen de la baja en cuentas de activos financieros medidos al costo amortizado",
+   "lado": "gasto",
+   "M": 209.419,
+   "pagina": 1,
+   "linea": 19,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Ingresos financieros",
+   "M": 249.163,
+   "linea": 21
+  },
+  {
+   "etiqueta": "Costos financieros",
+   "M": -4204.499,
+   "linea": 22
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "M": 0,
+   "linea": 24
+  }
+ ]
+}

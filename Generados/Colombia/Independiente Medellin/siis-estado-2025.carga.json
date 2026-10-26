@@ -1,0 +1,378 @@
+{
+ "pdf": "Clubes/Colombia/Independiente Medellin/siis-estado-2025.pdf",
+ "generado": "2026-10-26T16:29:54.959Z",
+ "frena": [],
+ "avisos": [],
+ "ejercicio": {
+  "clubId": "independientemedellin-co",
+  "year": 2025,
+  "cierre": "2025-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Ingresos de actividades ordinarias",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 79401.476,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros ingresos",
+    "normalizedCategory": "other_income",
+    "amountNative": 895.718,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Costo de ventas",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -82706.27,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos de ventas",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -2054.748,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.82,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos de administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -4632.902,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros gastos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -4520.095,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "COP",
+   "fxRef": "COP@2025-12-31",
+   "sourceId": "independientemedellin-co-siis-estado-2025",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -5679.693,
+   "tax": 43.433,
+   "extraRows": [
+    {
+     "label": "Ingresos financieros",
+     "value": 927.684
+    },
+    {
+     "label": "Costos financieros",
+     "value": -6607.377
+    },
+    {
+     "label": "Ingreso (gasto) por impuestos",
+     "value": 43.433
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Ingresos de actividades ordinarias",
+     "lado": "revenue",
+     "importe": 79401.476,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "net_sales"
+    },
+    {
+     "renglon": "Gastos de ventas",
+     "lado": "expense",
+     "importe": 2054.748,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "other"
+    }
+   ],
+   "baseIngreso": "full",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 80297.194,
+   "officialTotalExpenses": 93914.015,
+   "officialPAT": -19253.081
+  },
+  "source": {
+   "id": "independientemedellin-co-siis-estado-2025",
+   "clubId": "independientemedellin-co",
+   "title": "El Equipo del Pueblo S.A. — siis-estado-2025 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Colombia/Independiente Medellin/siis-estado-2025.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Independiente Medellin/siis-estado-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Colombia/Independiente Medellin/siis-estado-2025.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "independientemedellin-co",
+ "year": 2025,
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Independiente Medellin/siis-estado-2025.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2025.md L11-L24",
+   "autor": "Claude",
+   "fecha": "2026-10-26"
+  }
+ ],
+ "seleccion": {
+  "filas": 9,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "native": 79401.476,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 79401.476,
+   "cat": "lump_football_operations",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 79401.476
+  },
+  {
+   "label": "Otros ingresos",
+   "page": 1,
+   "native": 895.718,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 895.718,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 895.718
+  },
+  {
+   "label": "Costo de ventas",
+   "page": 1,
+   "native": 82706.27,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 82706.27,
+   "cat": "other_expenses",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -82706.27
+  },
+  {
+   "label": "Gastos de ventas",
+   "page": 1,
+   "native": 2054.748,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2054.748,
+   "cat": "lump_football_operations_expense",
+   "conf": 0.82,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2054.748
+  },
+  {
+   "label": "Gastos de administración",
+   "page": 1,
+   "native": 4632.902,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4632.902,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4632.902
+  },
+  {
+   "label": "Otros gastos",
+   "page": 1,
+   "native": 4520.095,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4520.095,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4520.095
+  },
+  {
+   "label": "Ingresos financieros",
+   "page": null,
+   "native": 927.684,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Costos financieros",
+   "page": null,
+   "native": -6607.377,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Ingreso (gasto) por impuestos",
+   "page": null,
+   "native": 43.433,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 80297.194,
+  "expSum": -93914.015,
+  "officialTotalRevenue": 80297.194,
+  "officialTotalExpenses": 93914.015,
+  "officialPAT": -19253.081,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -19253.081,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 80297.194
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 93914.015
+  }
+ },
+ "liga": {
+  "valor": "co-primeraA",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-12-31",
+   "fuente": "año del ejercicio + mes de cierre (patrón del país: los 19 clubes de CO ya cargados arrancan el 01-01 (el documento no trae fechas de cierre legibles))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "COP",
+   "fuente": "moneda de curso legal de Colombia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "COP@2025-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene COP@2025-12-31 = 3757.08 (TRM oficial (Superintendencia Financiera de Colombia) al 31/12/2025)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "independientemedellin-co-siis-estado-2025",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "co-primeraA",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 2,
+  "lineasGasto": 4,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

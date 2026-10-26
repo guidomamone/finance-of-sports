@@ -1,0 +1,61 @@
+{
+ "md": "Clubes/Colombia/Independiente Medellin/siis-estado-2024.md",
+ "generatedAt": "2026-10-26T16:26:45.124Z",
+ "rubrosHuella": "aa9d40c243bc12459cab29d4d2d6dd8d100356cc",
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

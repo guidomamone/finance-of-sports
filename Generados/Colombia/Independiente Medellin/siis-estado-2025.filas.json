@@ -1,0 +1,174 @@
+{
+ "pdf": "Clubes/Colombia/Independiente Medellin/siis-estado-2025.pdf",
+ "md": "Clubes/Colombia/Independiente Medellin/siis-estado-2025.md",
+ "mdSha1": "94733dc1d7a7cb253f230c2b433212ebe32e3abf",
+ "ubicacionSha1": "96a2916b7f5a7d0128aafa0d9b1ad2e02502218e",
+ "modelo": "a mano (Claude Code, sesión 2026-10-26)",
+ "generado": "2026-10-26T16:15:43.731Z",
+ "salida": "a mano",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "miles",
+   "evidencia": "L1: Cifras en miles de pesos colombianos"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 11,
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "actual": "79.401.476",
+   "anterior": "78.644.117",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 12,
+   "etiqueta": "Costo de ventas",
+   "actual": "82.706.270",
+   "anterior": "66.242.840",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "Ganancia bruta",
+   "actual": "(3.304.794)",
+   "anterior": "12.401.277",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Gastos de ventas",
+   "actual": "2.054.748",
+   "anterior": "2.665.465",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Gastos de administración",
+   "actual": "4.632.902",
+   "anterior": "3.427.996",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Otros ingresos",
+   "actual": "895.718",
+   "anterior": "1.529.614",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Otros gastos",
+   "actual": "4.520.095",
+   "anterior": "2.327.331",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "Ganancia (pérdida) por actividades de operación",
+   "actual": "(13.616.821)",
+   "anterior": "5.510.099",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Ingresos financieros",
+   "actual": "927.684",
+   "anterior": "1.956.046",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Costos financieros",
+   "actual": "6.607.377",
+   "anterior": "4.008.670",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Ganancia (pérdida), antes de impuestos",
+   "actual": "(19.296.514)",
+   "anterior": "3.457.475",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 22,
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "actual": "(43.433)",
+   "anterior": "1.948.475",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "Ganancia (pérdida) procedente de operaciones continuadas",
+   "actual": "(19.253.081)",
+   "anterior": "1.509.000",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 24,
+   "etiqueta": "Ganancia (pérdida)",
+   "actual": "(19.253.081)",
+   "anterior": "1.509.000",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 24,
+  "actual": "(19.253.081)",
+  "anterior": "1.509.000"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+}

@@ -1,0 +1,380 @@
+{
+ "pdf": "Clubes/Colombia/Independiente Medellin/siis-estado-2022.pdf",
+ "generado": "2026-10-26T16:29:54.732Z",
+ "frena": [],
+ "avisos": [
+  "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-12-31); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "independientemedellin-co",
+  "year": 2022,
+  "cierre": "2022-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Ingresos de actividades ordinarias",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 61703.128,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros ingresos",
+    "normalizedCategory": "other_income",
+    "amountNative": 774.729,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Costo de ventas",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -47892.53,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos de ventas",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -2010.921,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.82,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos de administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2721.766,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros gastos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1690.784,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "COP",
+   "fxRef": "COP@2022-12-31",
+   "sourceId": "independientemedellin-co-siis-estado-2022",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -3282.912,
+   "tax": 418.395,
+   "extraRows": [
+    {
+     "label": "Ingresos financieros",
+     "value": 853.126
+    },
+    {
+     "label": "Costos financieros",
+     "value": -4136.038
+    },
+    {
+     "label": "Ingreso (gasto) por impuestos",
+     "value": 418.395
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Ingresos de actividades ordinarias",
+     "lado": "revenue",
+     "importe": 61703.128,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "net_sales"
+    },
+    {
+     "renglon": "Gastos de ventas",
+     "lado": "expense",
+     "importe": 2010.921,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "other"
+    }
+   ],
+   "baseIngreso": "full",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 62477.857,
+   "officialTotalExpenses": 54316.001,
+   "officialPAT": 5297.339
+  },
+  "source": {
+   "id": "independientemedellin-co-siis-estado-2022",
+   "clubId": "independientemedellin-co",
+   "title": "El Equipo del Pueblo S.A. — siis-estado-2022 (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Colombia/Independiente Medellin/siis-estado-2022.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Independiente Medellin/siis-estado-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Colombia/Independiente Medellin/siis-estado-2022.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "independientemedellin-co",
+ "year": 2022,
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Independiente Medellin/siis-estado-2022.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2022.md L11-L24",
+   "autor": "Claude",
+   "fecha": "2026-10-26"
+  }
+ ],
+ "seleccion": {
+  "filas": 9,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "native": 61703.128,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 61703.128,
+   "cat": "lump_football_operations",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 61703.128
+  },
+  {
+   "label": "Otros ingresos",
+   "page": 1,
+   "native": 774.729,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 774.729,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 774.729
+  },
+  {
+   "label": "Costo de ventas",
+   "page": 1,
+   "native": 47892.53,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 47892.53,
+   "cat": "other_expenses",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -47892.53
+  },
+  {
+   "label": "Gastos de ventas",
+   "page": 1,
+   "native": 2010.921,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2010.921,
+   "cat": "lump_football_operations_expense",
+   "conf": 0.82,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2010.921
+  },
+  {
+   "label": "Gastos de administración",
+   "page": 1,
+   "native": 2721.766,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2721.766,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2721.766
+  },
+  {
+   "label": "Otros gastos",
+   "page": 1,
+   "native": 1690.784,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1690.784,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1690.784
+  },
+  {
+   "label": "Ingresos financieros",
+   "page": null,
+   "native": 853.126,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Costos financieros",
+   "page": null,
+   "native": -4136.038,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Ingreso (gasto) por impuestos",
+   "page": null,
+   "native": 418.395,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 62477.857,
+  "expSum": -54316.001,
+  "officialTotalRevenue": 62477.857,
+  "officialTotalExpenses": 54316.001,
+  "officialPAT": 5297.339,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 5297.339,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 62477.857
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 54316.001
+  }
+ },
+ "liga": {
+  "valor": "co-primeraA",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-12-31",
+   "fuente": "año del ejercicio + mes de cierre (patrón del país: los 19 clubes de CO ya cargados arrancan el 01-01 (el documento no trae fechas de cierre legibles))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "COP",
+   "fuente": "moneda de curso legal de Colombia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "COP@2022-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene COP@2022-12-31 = 4810.2 (TRM oficial (Banco de la República / Superfinanciera de Colombia) al 31/12/2022)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "independientemedellin-co-siis-estado-2022",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "co-primeraA",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 2,
+  "lineasGasto": 4,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "md": "Clubes/Colombia/Independiente Medellin/siis-estado-2018.md",
+ "generatedAt": "2026-10-26T16:26:44.896Z",
+ "rubrosHuella": "37cf7efed14f8eb42a1e7b24fa23a7d743ed0ac5",
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Deterioro de valor de ganancias y reversión de pérdidas por deterioro de valor (pérdidas por deterioro de valor) determinado de acuerdo con la NIIF 9",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Ganancias (pérdidas) que surgen de la baja en cuentas de activos financieros medidos al costo amortizado",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "desdeCache": true
+  }
+ ]
+}

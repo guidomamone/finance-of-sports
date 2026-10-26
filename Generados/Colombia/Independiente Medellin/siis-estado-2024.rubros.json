@@ -1,0 +1,70 @@
+{
+  "md": "Clubes/Colombia/Independiente Medellin/siis-estado-2024.md",
+  "pdf": "Clubes/Colombia/Independiente Medellin/siis-estado-2024.pdf",
+  "club": "independientemedellin-co",
+  "year": 2024,
+  "generatedAt": "2026-10-26T16:25:50.677Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        78644.117
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1529.614
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        66242.84
+      ],
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2665.465
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3427.996
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2327.331
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

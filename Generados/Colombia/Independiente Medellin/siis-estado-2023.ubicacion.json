@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Colombia/Independiente Medellin/siis-estado-2023.pdf",
+ "md": "Clubes/Colombia/Independiente Medellin/siis-estado-2023.md",
+ "mdSha1": "f6f5490ea752edf6504d2078161f5c7e99b9775a",
+ "modelo": "a mano (Claude Code, sesión 2026-10-26)",
+ "generado": "2026-10-26T16:15:42.087Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    24
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
+ "moneda": "COP",
+ "columna_ejercicio": "2023",
+ "columna_anterior": "2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+}

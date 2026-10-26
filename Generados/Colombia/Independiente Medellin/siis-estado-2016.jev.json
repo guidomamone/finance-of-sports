@@ -1,0 +1,191 @@
+{
+ "md": "Clubes/Colombia/Independiente Medellin/siis-estado-2016.md",
+ "generatedAt": "2026-10-26T16:26:44.895Z",
+ "rubrosHuella": "ac6e2de95f5e728b766b1021acd71da472401614",
+ "rubros": [
+  {
+   "label": "Ganancias (pérdidas) que surgen de la baja en cuentas de activos financieros medidos al costo amortizado",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "exceptional_items",
+     0.17
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1109
+  },
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1146
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "player_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.48
+    ],
+    [
+     "admin_general_expense",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Deterioro de valor de ganancias y reversión de pérdidas por deterioro de valor (pérdidas por deterioro de valor) determinado de acuerdo con la NIIF 9",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_expenses",
+     0.65
+    ],
+    [
+     "player_impairment",
+     0.33
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1132
+  }
+ ]
+}
