@@ -20,6 +20,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1177 — fos club-datos [468 · club-datos.mjs]
+- `node tools/fos.mjs club-datos <clubId> <año> [gastos|ingresos|todo]` imprime las líneas de un año de un club (etiqueta, subcategoría, importe) con el total por subcategoría y los totales oficiales; reemplaza los scripts sueltos del scratchpad que se armaban para mirar un año cargado.
+- Medición: no es del pipeline (no pide medición).
+
+## Versión 1176 — El punto 463 del TODO, compacto, y el 468 con los arreglos que salieron de cargar clubes de SIIS [463, 468]
+- Lo hecho del 463 (la tool, el chequeo, el criterio y los clubes cargados) pasó entero a `Admin/Archive/TODO-463-siis-hecho.md`; el 463 queda con los clubes que faltan y lo pendiente de lo ya cargado, y se pausa. Nuevo punto 468 con los arreglos que Guido aprobó (el categorizador contra la regla de Colombia primero), a razón de dos por turno.
+- Medición: solo documentos; ninguna tool cambió.
+
 ## Versión 1175 — Alianza FC 2016 a 2022, 2024 y 2025 desde SIIS [463 · alianzafc-co]
 - Con esto Alianza FC (antes Alianza Petrolera) tiene sus 10 años. Las ligas las escribió `club-siis --avanzar` buscando también por los alias (`Alianza Petrolera` y `Alianza` en `alias.json`; antes no encontraba nada). Estadio Daniel Villa Zapata; sponsor `sin-fuente` de 2016 a 2022 (nadie lo nombra), marca de 2016 y 2022 de una sola base de aficionados. Líneas del auditor de 2020 a 2025 (2020 con salvedades; 2021 y 2022 dicen «introducir una salvedad» en el texto pero no en la opinión: dejadas sin salvedades, a revisar). Faltan los dictámenes de 2016 a 2019.
 - Corrección en 2019: «Gastos de personal (Gastos de ventas)», 2.569 M de pesos, estaba como administración y va a sueldos del plantel (regla de Colombia); `Corrige:`. Silencios `sin-salarios` de 2017 y 2018 (SIIS pone todos los gastos en administración).

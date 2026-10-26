@@ -5,7 +5,7 @@
 Lo escribe `node tools/indice-md.mjs --escribir`; no se edita a mano. Cada fila: ruta · KB · qué es · cuándo se lee · cuántos documentos o tools lo citan (←) · a qué otros documentos vivos manda (→).
 Huérfano = nadie lo cita; sin marca = no declara qué es ni cuándo se lee (primera línea `<!-- md: qué es | leer: cuándo -->`).
 
-Carpetas que se cuentan sin listar: `Admin/mediciones` 97, `Admin/Archive` 370, `Admin/carga-clubes` 336, `Admin/sourcing` 1573, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 134, `Admin/lotes` 99.
+Carpetas que se cuentan sin listar: `Admin/mediciones` 97, `Admin/Archive` 371, `Admin/carga-clubes` 336, `Admin/sourcing` 1573, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 134, `Admin/lotes` 99.
 
 ## CLAUDE.md y Admin
 
@@ -24,7 +24,7 @@ Carpetas que se cuentan sin listar: `Admin/mediciones` 97, `Admin/Archive` 370, 
 - `Admin/PANTALLA.md` · ~90 KB · reglas de pantalla y código del sitio · **leer:** al tocar js/, index.html o css; la sección de la pantalla · ←18 · →CONVENCIONES.md, ESTADO.md, club-data-mapping/referencia/formato-simplificado.md, club-or-year-onboarding/club-nuevo.md, producto-y-pantalla-finance-of-sports/referencia/marca.md, producto-y-pantalla-finance-of-sports/referencia/navegador-de-preview.md
 - `Admin/PIPELINE.md` · ~150 KB · el pipeline etapa por etapa y las decisiones de Guido · **leer:** solo la etapa que se toca · ←45 · →CLAUDE.md, BRIEF-REVISOR-COLA.md, CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, briefs-subagentes-siis.md
 - `Admin/PLANTILLA-SESION.md` · <5 KB · las reglas fijas con las que se arranca una sesión de trabajo (comandos de Bash, medir y commitear): lo que antes se pegaba en cada prompt · **leer:** al empezar una sesión de trabajo y cuando el hook rechaza un comando · ←2 · →CLAUDE.md
-- `Admin/TODO.md` · ~60 KB · qué falta hacer, un punto por título y por prioridad · **leer:** con node tools/todo.mjs; nunca entero · ←33 · →CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, ESTADO-clubes.md, ESTADO.md, HALLAZGOS-pipeline.md, PIPELINE.md
+- `Admin/TODO.md` · ~50 KB · qué falta hacer, un punto por título y por prioridad · **leer:** con node tools/todo.mjs; nunca entero · ←33 · →CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, ESTADO-clubes.md, ESTADO.md, HALLAZGOS-pipeline.md, PIPELINE.md
 - `Admin/briefs-subagentes-siis.md` · ~5 KB · los briefs de los subagentes (Sonnet) de un club colombiano de SIIS, con {{marcadores}} que `club-siis.mjs` completa · **leer:** no se lee a mano: `club-siis.mjs --brief` imprime cada brief listo para pegar en el Agent · ←2 · →ARQUITECTURA.md, club-sourcing/referencia/liga-y-sponsor.md
 - `Admin/dudas-por-club.md` · ~120 KB · preguntas que solo el club puede contestar · **leer:** al escribirle a un club o al agregar una duda · ←35 · →TODO.md, transcripcion-subagentes/README.md, club-data-mapping/SKILL.md, club-data-mapping/referencia/casos-por-pais-y-formato.md, club-data-mapping/referencia/formato-simplificado.md
 - `Admin/finance-of-sports-project.md` · ~510 KB · diario narrativo: el porqué de las decisiones viejas · **leer:** solo por grep de una palabra, nunca de corrido · ←11 · →CLAUDE.md, CONVENCIONES.md, ESTADO.md, dudas-por-club.md, transcripcion-subagentes/README.md, club-data-mapping/SKILL.md
