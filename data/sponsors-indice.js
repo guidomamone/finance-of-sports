@@ -1732,6 +1732,7 @@ window.SPONSORS_INDICE = [
   ["new-balance","New Balance",["m"]],
   ["new-holland","New Holland",["c"]],
   ["new-magic-jeans","New Magic Jeans",["c"]],
+  ["new-victory","New Victory",["m"]],
   ["newfoundland-and-labrador","Newfoundland and Labrador",["c"]],
   ["nexo","NEXO",["c"]],
   ["nexperia","Nexperia",["c"]],
