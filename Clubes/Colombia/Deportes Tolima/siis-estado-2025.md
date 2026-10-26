@@ -32,8 +32,8 @@ Estado de resultados integral y estado de situación financiera al 2025-12-31 (P
 | Cuentas comerciales por cobrar y otras cuentas por cobrar corrientes | 15.635.658 | 15.344.638 |
 | Inventarios corrientes | 662.955 | 164.339 |
 | Activos por impuestos corrientes, corriente | 1.292.748 | 2.021.536 |
-| Activos biológicos corrientes |  | 601.818 |
-| Activos no corrientes o grupos de activos para su disposición clasificados como mantenidos para la venta o como mantenidos para distribuir a los propietarios |  | 0 |
+| Activos biológicos corrientes | 0 | 601.818 |
+| Activos no corrientes o grupos de activos para su disposición clasificados como mantenidos para la venta o como mantenidos para distribuir a los propietarios | 0 | 0 |
 | Total activos corrientes | 26.911.910 | 23.226.821 |
 
 ### Activos no corrientes
@@ -43,7 +43,7 @@ Estado de resultados integral y estado de situación financiera al 2025-12-31 (P
 | Propiedades, planta y equipo | 10.318.117 | 10.298.376 |
 | Activos intangibles distintos de la plusvalía | 12.590.429 | 11.191.084 |
 | Activos por impuestos diferidos | 877.155 | 877.155 |
-| Otros activos no financieros no corrientes | 1.154.538 |  |
+| Otros activos no financieros no corrientes | 1.154.538 | 0 |
 | Total activos no corrientes | 24.940.239 | 22.366.615 |
 
 ### Total activos
@@ -71,8 +71,8 @@ Estado de resultados integral y estado de situación financiera al 2025-12-31 (P
 | Otras provisiones no corrientes | 275.000 | 215.000 |
 | Total provisiones no corrientes | 275.000 | 215.000 |
 | Pasivo por impuestos diferidos | 250.477 | 199.146 |
-| Otros pasivos financieros no corrientes | 5.607.320 |  |
-| Otros pasivos no financieros no corrientes |  | 10.841 |
+| Otros pasivos financieros no corrientes | 5.607.320 | 0 |
+| Otros pasivos no financieros no corrientes | 0 | 10.841 |
 | Total pasivos no corrientes | 6.132.797 | 424.987 |
 
 ### Total pasivos
