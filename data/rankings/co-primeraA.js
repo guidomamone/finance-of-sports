@@ -256,7 +256,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2018: {
     leagueSize: 20,
-    sinDato: ["alianzafc-co"],
     wiki: {"t":"2018 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:12.493, reportType:"official_balance_sheet",
@@ -276,6 +275,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"atleticobucaramanga-co", revenue:3.656, reportType:"official_balance_sheet",
         sourceId:"atleticobucaramanga-co-siis-estado-2018",
         mix:[["Comercial / Sponsors",0.488],["Estadio",1.091],["Televisión",1.016],["Otros ingresos",1.061]] },
+      { id:"alianzafc-co", revenue:2.83, reportType:"official_balance_sheet",
+        sourceId:"alianzafc-co-siis-estado-2018",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.186],["Otros ingresos",0.644]] },
       { id:"boyacachico-co", revenue:2.788, reportType:"official_balance_sheet",
         sourceId:"boyacachico-co-siis-estado-2018",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.777],["Otros ingresos",0.01]],
