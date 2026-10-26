@@ -68,6 +68,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Independiente Medellin/siis-estado-2022.pdf"
+    },
+    {
+      "id": "independientemedellin-co-siis-estado-2023",
+      "club_id": "independientemedellin-co",
+      "title": "El Equipo del Pueblo S.A. — siis-estado-2023 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Independiente Medellin/siis-estado-2023.pdf"
     }
   ],
   "members": null,
@@ -420,6 +428,45 @@
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":61703.128,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {"line":"Gastos de ventas","side":"expense","amount":2010.921,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "COP",
+      "source_id": "independientemedellin-co-siis-estado-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2023-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 90136.99,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":773.806,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-65714.706,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-2745.765,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-3667.601,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1076.802,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5607.702,"tax":-1643.47,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":90910.796,"expenses":73204.874,"net_result":10454.75},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":1027.095},
+          {"label":"Costos financieros","amount":-6634.797},
+          {"label":"Ingreso (gasto) por impuestos","amount":-1643.47}
+        ],
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":90136.99,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {"line":"Gastos de ventas","side":"expense","amount":2745.765,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "revenue_basis": "full"
       }

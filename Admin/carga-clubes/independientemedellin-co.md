@@ -49,6 +49,37 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 alta-club.mjs (2026-10-26): co-primeraA, verificado contra roster cacheado de "2025 Liga DIMAYOR" (tools/club-league-reference/co.json), coincidencia exacta "Independiente Medellín".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-26) desde Clubes/Colombia/Independiente Medellin/siis-estado-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Independiente Medellin/siis-estado-2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ingresos de actividades ordinarias | pág. 1, Jev 0.98 |
+| 2 | Otros ingresos | pág. 1, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costo de ventas | pág. 1, Claude 0.8 |
+| 2 | Gastos de ventas | pág. 1, Claude 0.82 |
+| 3 | Gastos de administración | pág. 1, Jev 1 |
+| 4 | Otros gastos | pág. 1, Jev 1 |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
 ## 2022
 
 ### Ingresos
@@ -337,4 +368,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Independiente Medellin/siis-estado-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### independientemedellin-co-siis-estado-2023
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Independiente Medellin/siis-estado-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
