@@ -139,7 +139,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2022: {
     leagueSize: 20,
-    sinDato: ["alianzafc-co"],
     wiki: {"t":"2022 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:12.989, reportType:"official_balance_sheet",
@@ -157,6 +156,10 @@ window.RANKINGS["co-primeraA"] = {
       { id:"aguilasdoradas-co", revenue:3.126, reportType:"official_balance_sheet",
         sourceId:"aguilasdoradas-co-siis-estado-2022",
         mix:[["Comercial / Sponsors",0.47],["Estadio",0.172],["Televisión",1.179],["Premios por competencias",0.091],["Venta de Jugadores",1.014],["Otros ingresos",0.2]] },
+      { id:"alianzafc-co", revenue:2.925, reportType:"official_balance_sheet",
+        sourceId:"alianzafc-co-siis-estado-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.717],["Otros ingresos",0.207]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Subsidios y donaciones","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"atleticobucaramanga-co", revenue:2.663, reportType:"official_balance_sheet",
         sourceId:"atleticobucaramanga-co-siis-estado-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.545],["Otros ingresos",0.118]],

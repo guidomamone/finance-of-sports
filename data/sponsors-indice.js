@@ -1919,6 +1919,7 @@ window.SPONSORS_INDICE = [
   ["pilsen-del-sur","Pilsen del Sur",["c"]],
   ["pilsener","Pilsener",["c"]],
   ["pin-go","Pin-Go",["m"]],
+  ["pin-go-sport","Pin-Go Sport",["m"]],
   ["pin-up-casino","Pin-Up Casino",["c"]],
   ["pingo-doce","Pingo Doce",["c"]],
   ["pinturas-cykron","Pinturas Cykron",["c"]],

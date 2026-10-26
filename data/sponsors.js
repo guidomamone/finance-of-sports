@@ -1923,6 +1923,7 @@ window.SPONSORS = {
     "pilsen-del-sur": {"n":"Pilsen del Sur","roles":["c"],"e":[["cl-primera",2022,"Colo-Colo","colocolo-cl","c"],["cl-primera",2021,"Colo-Colo","colocolo-cl","c"]]},
     "pilsener": {"n":"Pilsener","roles":["c"],"e":[["ec-seriea",2022,"Barcelona",null,"c"]]},
     "pin-go": {"n":"Pin-Go","roles":["m"],"e":[["co-primeraA",2026,"Alianza","alianzafc-co","m"],["co-primeraA",2025,"Alianza","alianzafc-co","m"],["co-primeraA",2024,"Alianza","alianzafc-co","m"],["co-primeraA",2023,"Alianza FC","alianzafc-co","m","https://en.wikipedia.org/wiki/2023_Categor%C3%ADa_Primera_A_season (tablas de estadios y de camisetas, Alianza Petrolera)"]]},
+    "pin-go-sport": {"n":"Pin-Go Sport","roles":["m"],"e":[["co-primeraA",2022,"Alianza FC","alianzafc-co","m","marca: Pin-Go Sport 2022-24 según https://casacaslucholass.com/clubs/colombia/alianza-petrolera/ (base de aficionados, una sola fuente; no dice el mes de inicio)"]]},
     "pin-up-casino": {"n":"Pin-Up Casino","roles":["c"],"e":[["cl-primera",2025,"Deportes Limache",null,"c"]]},
     "pingo-doce": {"n":"Pingo Doce","roles":["c"],"e":[["pt-primeiraliga",2000,"Farense",null,"c"]]},
     "pinturas-cykron": {"n":"Pinturas Cykron","roles":["c"],"e":[["pe-liga1",2024,"Los Chankas",null,"c"]]},

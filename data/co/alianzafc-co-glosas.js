@@ -22,6 +22,7 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Federación Colombiana de Futbol (Otros ingresos)":{"en":"Colombian Football Federation (Other income)"},
 "Federación Colombiana de Fútbol":{"en":"Colombian Football Federation"},
 "Financieros":{"en":"Financial expenses"},
+"Ganancia (pérdida) procedente de operaciones discontinuadas":{"en":"Profit (loss) from discontinued operations"},
 "Gasto impuesto de renta y cree":{"en":"Income tax and CREE expense"},
 "Gastos Legales":{"en":"Legal expenses"},
 "Gastos de Viaje":{"en":"Travel expenses"},
