@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1171 — Boyacá Chicó 2016 a 2023 desde SIIS [463 · boyacachico-co]
+- Con esto Boyacá Chicó tiene sus 10 años. La liga de cada año la escribió `club-siis --avanzar` desde el roster de Wikipedia (coincidencia exacta; primera vez que corre con un club). Estadio La Independencia (capacidad actual, 20.630, débil para 2016 y 2017); marca Geus; sponsor: Universidad de Boyacá 2016 (débil), «sin sponsor» 2023 (una sola fuente) y `sin-fuente` de 2017 a 2022. Líneas del auditor de 2020 a 2023 (2023 con salvedades por las instrucciones de la Superintendencia); faltan los dictámenes de 2016 a 2019.
+- Cola de 2019: «Partidos y Actividades Deportivas» (61 % de los gastos, nota de Costo de ventas) a `lump_football_operations_expense` por el espejo del ingreso «Actividades Deportivas» de Fortaleza, y «Honorarios y Arriendos» a administración por la regla escrita.
+- Medición: no cambió ninguna tool; la carga corrió en segundo plano (dos corridas) y la cola quedó sin preguntas.
+
 ## Versión 1170 — cola.mjs --historial y club-siis --avanzar con la liga y los comandos de commit [463, 465 · cola.mjs, cola-historial.mjs, club-siis.mjs]
 - `node tools/cola.mjs --historial <texto> [motivo]` imprime la historia de un club (cada caso y cada respuesta, en orden) llamando a `cola-historial.mjs`, que entra a la tabla del pipeline. `cola.mjs` quedó en 40.930 bytes (límite 40.960): comentarios viejos con historia achicados.
 - `club-siis --avanzar` escribe en `data/club-leagues/co.js` la liga de los años donde el roster de Wikipedia da el nombre exacto (sin probar todavía con un club nuevo) y al final imprime los tres comandos de commit, uno por llamada.

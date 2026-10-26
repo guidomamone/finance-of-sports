@@ -241,6 +241,54 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "boyacachico-co": {
+  "2020": {
+   "auditor": {
+    "nombre": "Oscar German Aranguren Aranguren",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Boyaca Chico/dictamen-revisor-fiscal-2020.md",
+    "linea": 63
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Oscar German Aranguren Aranguren",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Boyaca Chico/dictamen-revisor-fiscal-2021.md",
+    "linea": 69
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Oscar German Aranguren Aranguren",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Boyaca Chico/dictamen-revisor-fiscal-2022.md",
+    "linea": 69
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Oscar German Aranguren Aranguren",
+    "tipo": "persona"
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Boyaca Chico/dictamen-revisor-fiscal-2023.md",
+    "linea": 15
+   }
+  },
   "2024": {
    "auditor": {
     "nombre": "Oscar German Aranguren Aranguren",
