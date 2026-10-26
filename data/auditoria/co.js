@@ -376,6 +376,30 @@ Object.assign(window.CLUB_AUDITORIA, {
     "md": "Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2023.md",
     "linea": 32
    }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Iván Arturo Novella Rivera",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2024.md",
+    "linea": 35
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Iván Arturo Novella Rivera",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2025.md",
+    "linea": 35
+   }
   }
  },
  "deportivopereira-co": {
