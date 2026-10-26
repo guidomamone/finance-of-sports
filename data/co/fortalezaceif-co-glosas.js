@@ -206,6 +206,7 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "IVA DESCONTABLE":{"en":"Deductible VAT"},
 "IVA descontable por $ 119.791":{"en":"Deductible VAT of $119,791"},
 "Implementos Deportivos":{"en":"Sports equipment"},
+"Impuesto (beneficio por impuesto diferido; el resultado del ejercicio impreso es −208,773, por ajuste manual)":{"en":"Tax (deferred tax benefit; the printed net result for the year is −208,773, due to manual adjustment)"},
 "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)":{"en":"Income tax (derived: pre-tax result − net result, by manual adjustment)"},
 "Impuesto Al Consumo":{"en":"Consumption tax"},
 "Impuesto Boleteria":{"en":"Ticket tax"},

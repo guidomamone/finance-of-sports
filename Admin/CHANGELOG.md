@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1138 — Fortaleza 2021: el resultado del ejercicio incluye el beneficio de impuesto diferido (lo encontró el control de SIIS) [463 · fortalezaceif-co]
+- Fortaleza CEIF 2021 estaba cargada con resultado −647,3 M de pesos (antes de impuestos); el documento imprime «Resultados del ejercicio (208.773)» porque suma un beneficio de impuesto diferido de 438,5 M, y SIIS y el documento de 2022 dicen lo mismo. Corregido en `data/co/fortalezaceif-co.json` (impuesto +438,544; resultado −208,773) con el ajuste manual `resultado-final` en `ajustes-manuales.jsonl`, y publicado.
+- Medición: `audit.js` sin `siis-control` (de 1 a 0), P0 0 y P1 0 después de `publicar.mjs`; ninguna tool cambió.
+
 ## Versión 1137 — SIIS: la tool toma el perímetro propio del club; Santa Fe 2019 y 2025 no eran contradicciones de SIIS [463 · siis-estado.mjs]
 - `siis-estado.mjs` elige por el id del documento el estado propio del club («individuales» o «separados») y el consolidado solo si no hay otro o si `tools/siis-clubes.json` pide `perimetro: consolidado`; el inventario y el `perimetro` de las filas salen de esa elección. Antes elegía uno cualquiera cuando un club presentaba los dos (Santa Fe) y comparaba perímetros distintos: 2019 y 2025 salían como contradicción. Los 380 club-años de los 38 clubes cierran ahora; Santa Fe ya no tiene años frenados.
 - Decisión registrada con `decision.mjs` (`auditoria-proceso.jsonl` y punto 463); regla en `Admin/CONVENCIONES-DATOS.md`. En `audit.js` queda un solo `siis-control`: Fortaleza 2021.

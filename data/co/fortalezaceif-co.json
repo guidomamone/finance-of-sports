@@ -735,9 +735,9 @@
         {"label":"Ajuste al peso","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.412,"disclosure":"aggregated"},
         {"label":"Intereses de mora","category":"other_operating_expenses","subcategory":"other_expenses","amount":-18.438,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-54.012,"tax":0,"gross_debt":295.846,"cash":20.036},
-      "official_totals": {"revenue":3595.986,"expenses":4189.291,"net_result":-647.319},
-      "adjustments": {"revenue_basis":"full"}
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-54.012,"tax":438.544,"gross_debt":295.846,"cash":20.036},
+      "official_totals": {"revenue":3595.986,"expenses":4189.291,"net_result":-208.773},
+      "adjustments": {"revenue_basis":"full","extra_rows":[{"label":"Impuesto (beneficio por impuesto diferido; el resultado del ejercicio impreso es −208,773, por ajuste manual)","amount":438.544}]}
     },
     {
       "fiscal_year": 2022,
