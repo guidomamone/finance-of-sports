@@ -143,12 +143,14 @@ window.RANKINGS["co-primeraA"] = {
   },
   2021: {
     leagueSize: 21,
-    sinDato: ["independientemedellin-co"],
     wiki: {"t":"2021 Liga DIMAYOR","lang":"en","at":"2026-10-02","n":21},
     clubs: [
       { id:"deportestolima-co", revenue:10.548, reportType:"official_balance_sheet",
         sourceId:"deportestolima-co-siis-estado-2021",
         mix:[["Comercial / Sponsors",1.531],["Estadio",1.486],["Televisión",1.449],["Premios por competencias",1.04],["Venta de Jugadores",4.312],["Otros ingresos",0.73]] },
+      { id:"independientemedellin-co", revenue:6.661, reportType:"official_balance_sheet",
+        sourceId:"independientemedellin-co-siis-estado-2021",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",6.388],["Otros ingresos",0.274]] },
       { id:"laequidad-co", revenue:5.894, reportType:"official_balance_sheet",
         sourceId:"laequidad-co-siis-estado-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.475],["Otros ingresos",0.419]],

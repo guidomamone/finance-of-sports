@@ -51,3 +51,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2019 desde `Clubes/Colombia/Independiente Medellin/siis-estado-2019.pdf` (sourceId `independientemedellin-co-siis-estado-2019`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2020 desde `Clubes/Colombia/Independiente Medellin/siis-estado-2020.pdf` (sourceId `independientemedellin-co-siis-estado-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2021 desde `Clubes/Colombia/Independiente Medellin/siis-estado-2021.pdf` (sourceId `independientemedellin-co-siis-estado-2021`).
