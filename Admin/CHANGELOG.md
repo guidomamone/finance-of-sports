@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1160 — fos perfil-audit: el tiempo de cada chequeo de audit.js [465 · audit-perfil.mjs]
+- `node tools/fos.mjs perfil-audit [N]` corre `audit.js` con `--cpu-prof` en una carpeta temporal y lista los N chequeos más lentos con lo que llaman adentro (antes se armaba a mano con un script del scratchpad). No toca `audit.js`: ningún chequeo ni mensaje cambia; los tres más pesados (5 de 11 s) no se aceleran.
+- Medición: `audit-perfil.mjs` no es del pipeline (no pide medición); sus tiempos coinciden con el perfil manual de la sesión anterior.
+
 ## Versión 1159 — publicar.mjs avisa que el commit va en otra llamada de Bash [465 · publicar.mjs, medir-pipeline.mjs]
 - Al terminar, `publicar.mjs` imprime que `git commit` va en OTRA llamada: el hook de commit audita antes de ejecutar el comando entero y los dos juntos fallan por `asset-v-sin-subir`. El ensayo de `medir-pipeline` ya no sugiere escalar al completo cuando los medidores no usan lista.
 - Medición: `publicar.mjs` (medidores audit y escribir, lote chico) idéntico; veredicto GENERAL.
