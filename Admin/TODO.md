@@ -64,6 +64,10 @@ Terminado cuando: existen la tool y el chequeo permanente, el criterio está en 
 Verificar: existe tools/siis-estado.mjs
 Verificar: existe data/co/deportestolima-co.json
 
+Aplicación (decidido 2026-10-26, registro en Admin/registros/auditoria-proceso.jsonl):
+(1) Perímetro propio del club por defecto (tools/siis-estado.mjs, rangoPerimetro); override perimetro en tools/siis-clubes.json
+(2) Santa Fe 2019 y 2025 ya no están frenados: bajarlos en el grupo 3
+
 ### 2. 401 · (Pipeline): una prueba que escribe de verdad en cada tool que escribe, porque un ensayo no pasa por los imports que se rompen
 
 La partición de `cargar.mjs` (375) dejó sin re-exportar `snapshot`, `revertir` y `runNode`: `publicar`, `caja-deuda --escribir`, `costo-personal`, `dentro-de-otro`, `worktree` y `gestiones-tanda` fallaron un día entero sin que `medir pipeline` lo viera, porque sus medidores corren en ensayo y el import dinámico solo se evalúa al escribir. Hoy hay un chequeo estático (`fos imports`, P1 `import-sin-export`) que atrapa ESA clase, pero no otras (una ruta rota, un argumento que cambió, un archivo que la tool partida ya no escribe). `node tools/prueba-escribir.mjs` ya escribe de verdad un año con fuente nueva en un worktree descartable (solo `cargar.mjs`).
