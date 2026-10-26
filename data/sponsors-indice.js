@@ -1314,6 +1314,7 @@ window.SPONSORS_INDICE = [
   ["iziplay","iZiPlay",["c"]],
   ["j-j-ugland","J. J. Ugland",["c"]],
   ["j-jensen-a","J. Jensen A",["c"]],
+  ["jabon-super-riel","Jabón Super Riel",["c"]],
   ["jake-bugg","Jake Bugg",["c"]],
   ["jako","Jako",["m"]],
   ["jalisco-es-mexico","Jalisco Es México",["c"]],

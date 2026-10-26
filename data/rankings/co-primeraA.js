@@ -92,6 +92,15 @@ window.RANKINGS["co-primeraA"] = {
         mix:[["Comercial / Sponsors",0.805],["Estadio",0.913],["Televisión",1.186],["Premios por competencias",0.091],["Venta de Jugadores",9.291],["Otros ingresos",0.045]] },
     ],
   },
+  2021: {
+    leagueSize: 21,
+    wiki: {"t":"2021 Liga DIMAYOR","lang":"en","at":"2026-10-02","n":21},
+    clubs: [
+      { id:"deportestolima-co", revenue:10.548, reportType:"official_balance_sheet",
+        sourceId:"deportestolima-co-siis-estado-2021",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",9.833],["Otros ingresos",0.716]] },
+    ],
+  },
   2020: {
     leagueSize: 20,
     wiki: {"t":"2020 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
