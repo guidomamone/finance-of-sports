@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1172 — Unión Magdalena 2016, 2017 y 2019 a 2024 desde SIIS [463 · unionmagdalena-co]
+- Con esto Unión Magdalena tiene sus 10 años. Ligas escritas por `club-siis --avanzar` desde el roster de Wikipedia; «Gastos de ventas» sin abrir fue a fútbol profesional sin desglosar solo (la corrección nueva de `--avanzar`); dictámenes de 2022 y 2023 por OCR (US$ 0,08). Estadio Federico Serrano Soto en 2016 (8.000, una sola ficha); sponsor de 2016 y 2022 `sin-fuente` (Wplay 2022 sin confirmar). Líneas del auditor de 2022 a 2024, sin salvedades; faltan los dictámenes de 2016 a 2021.
+- Por primera vez el lote de categorización corrió antes y sin `--cargar`: la cola quedó vacía y la carga salió de una vez.
+- Medición: no cambió ninguna tool; la carga corrió en segundo plano (~16 min por corrida).
+
 ## Versión 1171 — Boyacá Chicó 2016 a 2023 desde SIIS [463 · boyacachico-co]
 - Con esto Boyacá Chicó tiene sus 10 años. La liga de cada año la escribió `club-siis --avanzar` desde el roster de Wikipedia (coincidencia exacta; primera vez que corre con un club). Estadio La Independencia (capacidad actual, 20.630, débil para 2016 y 2017); marca Geus; sponsor: Universidad de Boyacá 2016 (débil), «sin sponsor» 2023 (una sola fuente) y `sin-fuente` de 2017 a 2022. Líneas del auditor de 2020 a 2023 (2023 con salvedades por las instrucciones de la Superintendencia); faltan los dictámenes de 2016 a 2019.
 - Cola de 2019: «Partidos y Actividades Deportivas» (61 % de los gastos, nota de Costo de ventas) a `lump_football_operations_expense` por el espejo del ingreso «Actividades Deportivas» de Fortaleza, y «Honorarios y Arriendos» a administración por la regla escrita.

@@ -1037,6 +1037,42 @@ Object.assign(window.CLUB_AUDITORIA, {
    "continuidad": false,
    "fuente": null
   },
+  "2022": {
+   "auditor": {
+    "nombre": "Alvarez Perez Asesores S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Union Magdalena/dictamen-revisor-fiscal-2022.md",
+    "linea": 29
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Luis Manuel Molina Ibáñez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Union Magdalena/dictamen-revisor-fiscal-2023.md",
+    "linea": 31
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Luis Manuel Molina Ibáñez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Union Magdalena/dictamen-revisor-fiscal-2024.md",
+    "linea": 31
+   }
+  },
   "2025": {
    "auditor": null,
    "dictamen": "sin_informe",
