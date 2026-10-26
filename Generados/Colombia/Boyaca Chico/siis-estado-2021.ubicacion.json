@@ -1,0 +1,61 @@
+{
+ "pdf": "Clubes/Colombia/Boyaca Chico/siis-estado-2021.pdf",
+ "md": "Clubes/Colombia/Boyaca Chico/siis-estado-2021.md",
+ "mdSha1": "7355c13def242dcc597f850f147860ca7fab8e50",
+ "modelo": "a mano (Claude Code, sesión 2026-10-26)",
+ "generado": "2026-10-26T21:52:15.008Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    21
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 1,
+   "lineas": [
+    110,
+    115
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 1,
+   "lineas": [
+    99,
+    104
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 1,
+   "lineas": [
+    121,
+    127
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b11"
+ ],
+ "notas_gastos": [
+  "b10",
+  "b12"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
+ "moneda": "COP",
+ "columna_ejercicio": "2021",
+ "columna_anterior": "2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
+}

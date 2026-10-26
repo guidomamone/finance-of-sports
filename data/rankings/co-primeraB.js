@@ -33,6 +33,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2022: {
     leagueSize: 16,
+    sinDato: ["boyacachico-co"],
     wiki: {"t":"2022 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"leonesfc-co", revenue:1.199, reportType:"official_balance_sheet",
@@ -69,6 +70,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2019: {
     leagueSize: 17,
+    sinDato: ["boyacachico-co"],
     wiki: {"t":"2019 Categoría Primera B season","lang":"en","at":"2026-09-30","n":17},
     clubs: [
       { id:"leonesfc-co", revenue:2.014, reportType:"official_balance_sheet",
@@ -94,6 +96,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2017: {
     leagueSize: 16,
+    sinDato: ["boyacachico-co"],
     wiki: {"t":"2017 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"leonesfc-co", revenue:1.848, reportType:"official_balance_sheet",

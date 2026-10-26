@@ -1,0 +1,291 @@
+{
+ "pdf": "Clubes/Colombia/Boyaca Chico/siis-estado-2021.pdf",
+ "estado": [
+  "b1"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
+ "moneda": "COP",
+ "columna_ejercicio": "2021",
+ "columna_anterior": "2020",
+ "perimetro": "individual",
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "miles",
+   "evidencia": "L1: Cifras en miles de pesos colombianos"
+  },
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "L97: Cifras de esta tabla en pesos colombianos"
+  },
+  {
+   "bloque": "b11",
+   "escala": "unidades",
+   "evidencia": "L108: Cifras de esta tabla en pesos colombianos"
+  },
+  {
+   "bloque": "b12",
+   "escala": "unidades",
+   "evidencia": "L119: Cifras de esta tabla en pesos colombianos"
+  }
+ ],
+ "notas_ingresos": [
+  "b11"
+ ],
+ "notas_gastos": [
+  "b10",
+  "b12"
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 11,
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "actual": "5.643.756",
+   "anterior": "4.139.568",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 12,
+   "etiqueta": "Costo de ventas",
+   "actual": "4.220.732",
+   "anterior": "2.809.781",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "Ganancia bruta",
+   "actual": "1.423.024",
+   "anterior": "1.329.787",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Gastos de administración",
+   "actual": "773.681",
+   "anterior": "769.431",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Otros ingresos",
+   "actual": "89.667",
+   "anterior": "65.003",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Otros gastos",
+   "actual": "177.361",
+   "anterior": "256.255",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Ganancia (pérdida) por actividades de operación",
+   "actual": "561.649",
+   "anterior": "369.104",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "Ganancia (pérdida), antes de impuestos",
+   "actual": "561.649",
+   "anterior": "369.104",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "actual": "213.837",
+   "anterior": "171.276",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Ganancia (pérdida) procedente de operaciones continuadas",
+   "actual": "347.812",
+   "anterior": "197.828",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Ganancia (pérdida)",
+   "actual": "347.812",
+   "anterior": "197.828",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 101,
+   "etiqueta": "Costos de Personal y Jugadores",
+   "actual": "1,281,602,831",
+   "anterior": "718,294,572",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b10",
+   "linea": 102,
+   "etiqueta": "Partidos y Actividades Deportivas",
+   "actual": "2,307,105,430",
+   "anterior": "1,717,494,607",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b10",
+   "linea": 103,
+   "etiqueta": "Honorarios y Arriendos",
+   "actual": "632,024,047",
+   "anterior": "373,991,922",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b10",
+   "linea": 104,
+   "etiqueta": "Total",
+   "actual": "4,220,732,308",
+   "anterior": "2,809,781,101",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b11",
+   "linea": 112,
+   "etiqueta": "Recuperaciones",
+   "actual": "0",
+   "anterior": "798,002",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 113,
+   "etiqueta": "Subsidios Estatales PAEF",
+   "actual": "89,665,000",
+   "anterior": "63,657,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 114,
+   "etiqueta": "Diversos",
+   "actual": "2,180",
+   "anterior": "548,239",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 115,
+   "etiqueta": "Total",
+   "actual": "89,667,180",
+   "anterior": "65,003,241",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b12",
+   "linea": 123,
+   "etiqueta": "Financieros",
+   "actual": "91,659,121",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos"
+  },
+  {
+   "bloque": "b12",
+   "linea": 124,
+   "etiqueta": "Perdidas en Ventas y Retiros de Bienes",
+   "actual": "0",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos"
+  },
+  {
+   "bloque": "b12",
+   "linea": 125,
+   "etiqueta": "Gastos extraordinarios",
+   "actual": "19,413,806",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos"
+  },
+  {
+   "bloque": "b12",
+   "linea": 126,
+   "etiqueta": "Gastos diversos",
+   "actual": "66,288,247",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos"
+  },
+  {
+   "bloque": "b12",
+   "linea": 127,
+   "etiqueta": "Total……………………………….",
+   "actual": "177,361,174",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 21,
+  "actual": "347.812",
+  "anterior": "197.828"
+ },
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
+}
