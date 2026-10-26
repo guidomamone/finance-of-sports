@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1163 — medidor cargar-cola-vacia: cuántas preguntas abre la carga con la cola vacía [465 · medir-cargar.mjs, pipeline-tools.json]
+- `medir-cargar.mjs --cola-vacia` corre el ensayo de la carga con la cola de partida sin una respuesta, como un club nuevo, y `--comparar` imprime «preguntas que abre: N antes · M después». Con la cola real una pregunta ya contestada no se ve: en el lote chico la cola real abre 1 pregunta y la vacía 74, así que un cambio que abre más preguntas pasaba sin que el medidor `cargar` lo notara.
+- Es el medidor `cargar-cola-vacia` de `tools/pipeline-tools.json`, sumado solo a `cargar.mjs` (y por import a `cargar-categorias.mjs` y `cargar-ejercicio.mjs`): +unos 6 minutos a su medición (de ~14 a ~20 en el completo).
+- Medición: `medir-cargar.mjs` y `pipeline-tools.json` no son del pipeline (no piden medición); probado de punta a punta con `medir-pipeline --solo-chico --medidor cargar-cola-vacia` (idéntico, sin anotar).
+
 ## Versión 1162 — auditoria.mjs --extractos avisa los club-años sin informe del auditor [465 · auditoria.mjs]
 - Al escribir los extractos, lista los club-años cuyos `.md` no traen ninguna frase de un informe del auditor y dice qué hacer (`sin_informe` o `falta_transcripcion`): citar el `.md` de otro ejercicio se rechaza («es del ejercicio X, no del Y») recién al final de la corrida.
 - Sin pendientes hoy, el aviso no se pudo ver disparar; se revisó solo el código.

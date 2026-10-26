@@ -17,6 +17,7 @@
 //   node tools/medir-cargar.mjs --salida /tmp/despues.jsonl        # después
 //   node tools/medir-cargar.mjs --comparar /tmp/antes.jsonl /tmp/despues.jsonl
 //   node tools/medir-cargar.mjs --contra-sitio /tmp/despues.jsonl  # ¿el ensayo reproduce lo publicado?
+//   node tools/medir-cargar.mjs --cola-vacia --salida …            # con la cola de partida VACÍA: cuántas preguntas abre cada documento (el medidor `cargar-cola-vacia`)
 //
 // --contra-sitio: por documento cuyo año está publicado CON ESE MISMO documento (mismo sourceId), la suma por categoría del ensayo contra
 // la de data/ (diferencia de más de 0,001 M); y los que el ensayo frena aunque estén publicados. Un año publicado con otra fuente, a mano
@@ -52,7 +53,8 @@ async function medir(salida) {
   for (const g of colas) { const k = peso.indexOf(Math.min(...peso)); carga[k].push(...g); peso[k] += g.length; } // reparto por club, balanceado
   const res = []; let hechos = 0;
   await Promise.all(carga.map(async (lista, k) => {
-    const cola = `${salida}.cola${k}.jsonl`; copyFileSync(resolve(ROOT, 'Admin/registros/cola-revision.jsonl'), cola);
+    // --cola-vacia: la cola de partida sin una sola respuesta, como la de un club nuevo; con la cola real una pregunta ya contestada no se ve, y un cambio que abre más preguntas pasa sin que el medidor lo note
+    const cola = `${salida}.cola${k}.jsonl`; if (A.includes('--cola-vacia')) writeFileSync(cola, ''); else copyFileSync(resolve(ROOT, 'Admin/registros/cola-revision.jsonl'), cola);
     for (const pdf of lista) {
       if (!existsSync(resolve(ROOT, pdf))) { res.push({ pdf, error: 'sin pdf' }); continue; }
       let out = '';
@@ -84,7 +86,10 @@ function comparar(fa, fb) {
     }
     if (lin.length || JSON.stringify(a.frena) !== JSON.stringify(b.frena)) { docs++; console.log(pdf, 'frena', JSON.stringify(a.frena), '->', JSON.stringify(b.frena), 'carga', a.carga, '->', b.carga); lin.forEach((l) => console.log(l)); }
   }
-  console.log(`\ndocumentos distintos: ${docs} · filas que pasan a la cola: ${colaNuevas} · filas con categoría o destino distinto: ${catCambia}`);
+  // las preguntas distintas que abre cada corrida (un caso por documento y clave, como la cola; no por fila), para ver el volumen y no solo qué fila cambia
+  const abre = (m) => { let n = 0; for (const o of m.values()) n += new Set((o.filas || []).filter((f) => f[4]).map((f) => f[5])).size; return n; };
+  console.log(`\npreguntas que abre: ${abre(a0)} antes · ${abre(b0)} después`);
+  console.log(`documentos distintos: ${docs} · filas que pasan a la cola: ${colaNuevas} · filas con categoría o destino distinto: ${catCambia}`);
 }
 
 const club_pub = (generic, d) => { const ym = generic[d.clubId]?.fiscalYearMeta?.[d.year]; return !!(ym && d.sourceId && ym.sourceId === d.sourceId); };

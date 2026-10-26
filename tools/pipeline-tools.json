@@ -15,6 +15,14 @@
    "difRegex": "documentos distintos: (\\d+)",
    "restaurar": ["Admin/registros/categorias-aprendidas.jsonl"]
   },
+  "cargar-cola-vacia": {
+   "que": "el ensayo de cargar.mjs con la cola de partida VACÍA (como un club nuevo): cuántas preguntas abre cada documento y cuáles; con la cola real las ya contestadas no se ven",
+   "usaLista": true,
+   "correr": ["tools/medir-cargar.mjs", "--cola-vacia", "--lista", "{lista}", "--salida", "{salida}.jsonl"],
+   "comparar": ["tools/medir-cargar.mjs", "--comparar", "{antes}.jsonl", "{despues}.jsonl"],
+   "difRegex": "documentos distintos: (\\d+)",
+   "restaurar": ["Admin/registros/categorias-aprendidas.jsonl"]
+  },
   "verificar": {
    "que": "verificar.mjs sobre la lista (estado, totales y cada línea que suma); deja los registros como estaban",
    "usaLista": true,
@@ -91,7 +99,7 @@
   "correr": ["tools/comparar-sin-comentarios.js", "--tools"]
  },
  "tools": {
-  "cargar.mjs": { "alcance": "compartida", "medidores": ["cargar", "audit", "escribir"] },
+  "cargar.mjs": { "alcance": "compartida", "medidores": ["cargar", "cargar-cola-vacia", "audit", "escribir"] },
   "cargar-lote.mjs": { "alcance": "etapa", "medidores": ["cargar"] },
   "categorizar-claude.mjs": { "alcance": "compartida", "medidores": ["cargar"] },
   "jev-categorizar.mjs": { "alcance": "compartida", "medidores": ["cargar"] },
