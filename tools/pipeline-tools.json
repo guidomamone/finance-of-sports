@@ -101,6 +101,7 @@
  "tools": {
   "cargar.mjs": { "alcance": "compartida", "medidores": ["cargar", "cargar-cola-vacia", "audit", "escribir"] },
   "cargar-lote.mjs": { "alcance": "etapa", "medidores": ["cargar"] },
+  "cola-historial.mjs": { "alcance": "etapa", "medidores": ["cargar"] },
   "categorizar-claude.mjs": { "alcance": "compartida", "medidores": ["cargar"] },
   "jev-categorizar.mjs": { "alcance": "compartida", "medidores": ["cargar"] },
   "reglas-categoria.mjs": { "alcance": "compartida", "medidores": ["cargar"] },
@@ -165,7 +166,6 @@
   "hallazgo.mjs": "orden: escribe un hallazgo en HALLAZGOS-pipeline.md en su formato (412)",
   "arranque.mjs": "orden: imprime las secciones de ESTADO.md de un rol (solo lee)",
   "existe.mjs": "orden: busca si ya hay una regla o decisión sobre un tema (solo lee)",
-  "cola-historial.mjs": "orden: las cifras de la cola con su definición (solo lee)",
   "changelog.mjs": "orden: el CHANGELOG por tool (historial, migración, archivado, chequeos); no lo corre ninguna etapa",
   "fuente-documento.mjs": "datos: completa `document` (el PDF de origen) en las fuentes ya cargadas; no lo corre ninguna etapa",
   "cerrar.mjs": "orden: el cierre de una tarea (TODO, índice, auditoría, CHANGELOG)",

@@ -2,6 +2,7 @@
  "_comentario": "El patrón del veredicto (`fos patron`, `fos cerrar-tool`) por tool, para no inventar la regex cada vez: lo que el cambio a esa tool se ve en los .md de Clubes/. `patron` es una regex JS (flags im) y `sinDocumentos` el motivo de una tool que no lee documentos. Si no pasás --patron ni --sin-documentos, patron.mjs toma esto de las tools cambiadas (varias: los patrones se unen con |). Una tool sin entrada frena y dice cuál sumar. Es una lista corta: se suma una tool la primera vez que hace falta, con una palabra que sus documentos traigan siempre.",
  "publicar.mjs": { "sinDocumentos": "genera las páginas y sube ASSET_V; no lee ningún documento" },
  "medir-pipeline.mjs": { "sinDocumentos": "mide los cambios a las tools; no lee ningún documento" },
+ "cola-historial.mjs": { "sinDocumentos": "las cifras e historia de la cola de revisión; solo lee el registro de la cola, no lee ningún documento" },
  "cola.mjs": { "sinDocumentos": "la cola de revisión: guarda casos y respuestas y ahora imprime su historia; no lee ningún documento" },
  "cargar.mjs": { "patron": "ingresos|revenue|omzet|umsatz|ricavi|chiffre d'affaires" },
  "cargar-ejercicio.mjs": { "patron": "presidente|president|chairman|voorzitter" },
