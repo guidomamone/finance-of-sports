@@ -38,3 +38,5 @@ Color de marca: null — ambiguo, sin desempate (criterio de Guido: elegir y con
 - Cargado en el sitio por tools/cargar.mjs (2026-10-20): ejercicio 2020 desde `Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.pdf` (sourceId `atleticobucaramanga-co-estados-financieros-2020`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2023 desde `Clubes/Colombia/Atletico Bucaramanga/siis-estado-2023.pdf` (sourceId `atleticobucaramanga-co-siis-estado-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2024 desde `Clubes/Colombia/Atletico Bucaramanga/siis-estado-2024.pdf` (sourceId `atleticobucaramanga-co-siis-estado-2024`).
