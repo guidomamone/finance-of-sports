@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Páginas de club con margen bruto — mockup</title>
+<!-- Qué decisiones explica: las páginas estáticas club/<id>.html (tools/generate-club-pages.js) cuando el último ejercicio es de margen bruto
+     (revenue_basis gross_margin). Hoy el título, la descripción, la tabla y la imagen al compartir (og) presentan ese margen como «Ingresos».
+     Se muestran tres alternativas: A (estimado cuando hay, margen cuando no), B (siempre el margen, rotulado como margen) y C (sin número).
+     Números del 2026-10-25: Lierse SK 2024/2025 (margen US$ 3,2 M, resultado −1,1 M, estimado de data/estimados/be-challengerproleague.js: US$ 10,6 M entre 3,7 M y 31,7 M)
+     y Vejle 2025 (margen US$ 8,5 M, resultado −0,56 M, sin estimado para 2025; 2024 y 2022 sí tienen, de data/estimados/dk-*.js).
+     Cada idioma va entero en su columna, sin mezclar. Hoy las páginas estáticas salen solo en español; la columna en inglés muestra cómo se leerían si se tradujeran. -->
+<style>
+:root{--azul:#0a2b5c;--oro:#f2b705;--bg:#f7f7f5;--card:#fff;--text:#1c1c1c;--muted:#6b6b6b;--border:#e3e3e0;--budget:#8a6d00;--budgetbg:#fdf8e7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 -apple-system,system-ui,"Segoe UI",Roboto,Arial,sans-serif;padding:16px}
+h1{font-size:16px;margin:0 0 4px}
+.nota{color:var(--muted);font-size:12.5px;margin:0 0 18px;max-width:760px}
+.cols{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start}
+.col{flex:1 1 440px;max-width:600px;min-width:0}
+.idioma{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--azul);font-weight:700;border-bottom:2px solid var(--oro);padding-bottom:4px;margin:0 0 12px}
+.opc{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--azul);margin:26px 0 4px;font-weight:700}
+.club{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:14px 0 6px;font-weight:700}
+.lbl{font-size:11px;color:var(--muted);margin:8px 0 3px}
+.tab{background:#e8e8e4;border:1px solid var(--border);border-radius:8px 8px 0 0;padding:6px 10px;font-size:12px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.snip{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:8px 10px;font-size:12.5px;color:var(--muted)}
+.snip b{display:block;color:var(--azul);font-size:14px;font-weight:600;margin-bottom:2px}
+table{border-collapse:collapse;width:100%;background:var(--card);border:1px solid var(--border);font-size:13px}
+th,td{padding:6px 8px;border-bottom:1px solid var(--border);text-align:left}
+th{font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.n{text-align:right;font-variant-numeric:tabular-nums}
+.tag{display:inline-block;font-size:9.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:4px;padding:0 4px;vertical-align:2px;margin-left:5px}
+.tag.amb{color:var(--budget);background:var(--budgetbg);border:1px dashed #d9c27a}
+.tag.az{color:var(--azul);background:#eef2f8;border:1px solid #c9d6ea}
+.og{width:100%;max-width:420px;height:auto;border:1px solid var(--border);display:block}
+.rec{background:var(--budgetbg);border:1px dashed #d9c27a;color:var(--budget);padding:8px 10px;border-radius:8px;font-size:12.5px;max-width:760px;margin:0 0 16px}
+</style>
+</head>
+<body>
+<h1>Páginas estáticas de club cuando el ejercicio es de margen bruto</h1>
+<p class="nota">Lo que se ve al compartir el link o al buscar el club: la pestaña, el texto de búsqueda, la tabla que leen los buscadores y la imagen al compartir. Dos clubes reales: Lierse SK (con estimado) y Vejle (sin estimado para 2025). La izquierda está entera en español y la derecha entera en inglés.</p>
+<p class="rec">Recomendación: B. Muestra el número que dice el documento, rotulado como margen, y no mezcla un estimado en un texto de buscador, donde se leería como dato cerrado. El estimado queda en el card «en otra liga», con su etiqueta ámbar. A sirve si querés que Lierse muestre una cifra de ingresos aunque sea estimada. C no dice nada que un lector pueda citar mal.</p>
+
+<div class="cols" id="cols"></div>
+
+<script>
+// Textos completos por idioma: nada se arma mezclando los dos.
+const L = {
+  es: {
+    nombre: 'Español', sitio: 'El deporte en Números', dec: ',', ej: 'Ejercicio', ing: 'Ingresos (US$ M)', mar: 'Margen bruto (US$ M)', res: 'Resultado neto (US$ M)',
+    opc: { A: 'A · Estimado si hay, margen si no', B: 'B · Siempre el margen, rotulado', C: 'C · Sin número' },
+    club: { lierse: 'Lierse SK 2024/2025 · con estimado', vejle: 'Vejle 2025 · sin estimado', },
+    lTab: 'Pestaña', lSnip: 'Texto en el buscador', lTabla: 'Tabla de la página', lOg: 'Imagen al compartir',
+    est: 'Estimado', mg: 'Margen bruto', bal: 'Balance',
+    t: {
+      'A:lierse': ['Lierse SK · Ingresos ≈ US$ 10,6 M (estimado) 2024/2025', 'En 2024/2025, Lierse SK tuvo ingresos estimados en US$ 10,6 M (el documento informa un margen bruto de US$ 3,2 M) y un resultado neto de −US$ 1,1 M. Cada número, con su documento fuente.'],
+      'A:vejle': ['Vejle · Margen bruto 2025: US$ 8,5 M', 'En 2025, Vejle informó un margen bruto de US$ 8,5 M (el documento no trae ingresos) y un resultado neto de −US$ 0,56 M. Cada número, con su documento fuente.'],
+      'B:lierse': ['Lierse SK · Margen bruto 2024/2025: US$ 3,2 M', 'En 2024/2025, Lierse SK informó un margen bruto de US$ 3,2 M (el documento no trae ingresos) y un resultado neto de −US$ 1,1 M. Cada número, con su documento fuente.'],
+      'B:vejle': ['Vejle · Margen bruto 2025: US$ 8,5 M', 'En 2025, Vejle informó un margen bruto de US$ 8,5 M (el documento no trae ingresos) y un resultado neto de −US$ 0,56 M. Cada número, con su documento fuente.'],
+      'C:lierse': ['Lierse SK · Finanzas 2024/2025', 'Finanzas de Lierse SK: resultado neto de −US$ 1,1 M en 2024/2025. Cada número, con su documento fuente.'],
+      'C:vejle': ['Vejle · Finanzas 2025', 'Finanzas de Vejle: resultado neto de −US$ 0,56 M en 2025. Cada número, con su documento fuente.'],
+    },
+    ogSub: { A: ['Ingresos estimados', 'Margen bruto'], B: ['Margen bruto', 'Margen bruto'], C: ['Finanzas', 'Finanzas'] },
+    nota: { A: 'Las barras con borde punteado son estimadas, igual que las de un presupuesto.', B: 'Todas las barras son márgenes: el subtítulo lo dice.', C: 'Sin cifra grande ni barras.' },
+  },
+  en: {
+    nombre: 'English', sitio: 'Finance of Sports', dec: '.', ej: 'Financial year', ing: 'Revenue (US$ M)', mar: 'Gross margin (US$ M)', res: 'Net result (US$ M)',
+    opc: { A: 'A · Estimate if there is one, margin if not', B: 'B · Always the margin, labeled', C: 'C · No number' },
+    club: { lierse: 'Lierse SK 2024/2025 · with an estimate', vejle: 'Vejle 2025 · no estimate', },
+    lTab: 'Tab', lSnip: 'Search snippet', lTabla: 'Table on the page', lOg: 'Share image',
+    est: 'Estimate', mg: 'Gross margin', bal: 'Report',
+    t: {
+      'A:lierse': ['Lierse SK · Revenue ≈ US$ 10.6M (estimate) 2024/2025', 'In 2024/2025, Lierse SK had estimated revenue of US$ 10.6M (the document reports a gross margin of US$ 3.2M) and a net result of −US$ 1.1M. Every number, with its source document.'],
+      'A:vejle': ['Vejle · Gross margin 2025: US$ 8.5M', 'In 2025, Vejle reported a gross margin of US$ 8.5M (the document has no revenue) and a net result of −US$ 0.56M. Every number, with its source document.'],
+      'B:lierse': ['Lierse SK · Gross margin 2024/2025: US$ 3.2M', 'In 2024/2025, Lierse SK reported a gross margin of US$ 3.2M (the document has no revenue) and a net result of −US$ 1.1M. Every number, with its source document.'],
+      'B:vejle': ['Vejle · Gross margin 2025: US$ 8.5M', 'In 2025, Vejle reported a gross margin of US$ 8.5M (the document has no revenue) and a net result of −US$ 0.56M. Every number, with its source document.'],
+      'C:lierse': ['Lierse SK · Finances 2024/2025', 'Finances of Lierse SK: net result of −US$ 1.1M in 2024/2025. Every number, with its source document.'],
+      'C:vejle': ['Vejle · Finances 2025', 'Finances of Vejle: net result of −US$ 0.56M in 2025. Every number, with its source document.'],
+    },
+    ogSub: { A: ['Estimated revenue', 'Gross margin'], B: ['Gross margin', 'Gross margin'], C: ['Finances', 'Finances'] },
+    nota: { A: 'Bars with a dashed outline are estimates, the same as a budget.', B: 'Every bar is a margin: the subtitle says so.', C: 'No big figure and no bars.' },
+  },
+};
+// Filas reales (US$ M). m = margen bruto del documento, e = estimado nuestro (null si no hay), r = resultado neto.
+const D = {
+  lierse: { nombre: 'Lierse SK', grande: { m: 3.2, e: 10.6 }, filas: [
+    { y: '2024/2025', m: 3.2, e: 10.6, r: -1.1 }, { y: '2023/2024', m: 3.1, e: 11.0, r: -0.12 },
+    { y: '2022/2023', m: 2.8, e: 7.1, r: -0.18 }, { y: '2021/2022', m: 1.7, e: 7.5, r: -0.58 } ] },
+  vejle: { nombre: 'Vejle', grande: { m: 8.5, e: null }, filas: [
+    { y: '2025', m: 8.5, e: null, r: -0.56 }, { y: '2024', m: 6.6, e: 13.6, r: -0.51 }, { y: '2022', m: 6.0, e: 7.5, r: -0.95 } ] },
+};
+const num = (v, l, dec) => (l.dec === ',' ? String(v.toFixed(dec)).replace('.', ',') : v.toFixed(dec));
+const fmt = (v, l) => num(v, l, Math.abs(v) < 1 ? 2 : 1);
+const neg = (v, l) => (v < 0 ? '−' : '') + fmt(Math.abs(v), l);
+
+function tabla(o, c, l) {
+  const d = D[c]; const conMargen = o !== 'C';
+  const th = `<tr><th>${l.ej}</th><th class="n">${l.ing}</th>${conMargen ? `<th class="n">${l.mar}</th>` : ''}<th class="n">${l.res}</th></tr>`;
+  const tr = d.filas.map((f) => {
+    let ing = '—';
+    if (o === 'A' && f.e != null) ing = `${fmt(f.e, l)}<span class="tag amb">${l.est}</span>`;
+    const mar = conMargen ? `<td class="n">${fmt(f.m, l)}</td>` : '';
+    return `<tr><td>${l.bal} ${f.y}</td><td class="n">${ing}</td>${mar}<td class="n">${neg(f.r, l)}</td></tr>`;
+  }).join('');
+  return `<table><thead>${th}</thead><tbody>${tr}</tbody></table>`;
+}
+function og(o, c, l) {
+  const d = D[c]; const sub = l.ogSub[o][d.grande.e != null && o === 'A' ? 0 : 1];
+  const y = d.filas[0].y;
+  const big = o === 'C' ? '' : (o === 'A' && d.grande.e != null ? `≈ US$ ${num(d.grande.e, l, 1)} M` : `US$ ${num(d.grande.m, l, 1)} M`);
+  const sub2 = o === 'C' ? l.ogSub.C[0] + ' ' + y : sub + ' ' + y;
+  const filas = d.filas.slice().reverse();
+  let barras = '';
+  if (o !== 'C') {
+    const val = (f) => (o === 'A' && f.e != null ? f.e : f.m); const mx = Math.max(...filas.map(val));
+    barras = filas.map((f, i) => {
+      const h = Math.max(4, Math.round(val(f) / mx * 200)); const x = 1140 - (filas.length * 84 + (filas.length - 1) * 22) + i * 106; const yy = 520 - h;
+      const est = o === 'A' && f.e != null;
+      const rect = est ? `<rect x="${x}" y="${yy}" width="84" height="${h}" fill="none" stroke="#f2b705" stroke-width="3" stroke-dasharray="8 6"/>` : `<rect x="${x}" y="${yy}" width="84" height="${h}" fill="#f2b705"/>`;
+      return rect + `<text x="${x + 42}" y="552" font-size="20" text-anchor="middle" fill="#c9d6ea">${f.y.slice(-4)}</text>`;
+    }).join('');
+  }
+  return `<svg class="og" viewBox="0 0 1200 630" font-family="-apple-system,Segoe UI,Arial,sans-serif"><rect width="1200" height="630" fill="#0a2b5c"/><rect width="14" height="630" fill="#f2b705"/>
+<text x="80" y="82" font-size="28" fill="#c9d6ea">${l.sitio}</text><text x="80" y="170" font-size="64" font-weight="700" fill="#fff">${d.nombre}</text>
+<text x="80" y="420" font-size="34" fill="#c9d6ea">${sub2}</text><text x="80" y="520" font-size="${Math.min(108, Math.floor(540 / ((big.length || 1) * 0.58)))}" font-weight="700" fill="#f2b705">${big}</text>
+<text x="80" y="590" font-size="26" fill="#c9d6ea">financeofsports.com</text>${barras}</svg>`;
+}
+function col(k) {
+  const l = L[k]; let h = `<div class="col" lang="${k}"><p class="idioma">${l.nombre}</p>`;
+  for (const o of ['A', 'B', 'C']) {
+    h += `<div class="opc">${l.opc[o]}</div>`;
+    for (const c of ['lierse', 'vejle']) {
+      const [titulo, desc] = l.t[`${o}:${c}`];
+      h += `<div class="club">${l.club[c]}</div><div class="lbl">${l.lTab}</div><div class="tab">${titulo} | ${l.sitio}</div>
+<div class="lbl">${l.lSnip}</div><div class="snip"><b>${titulo}</b>${desc}</div>
+<div class="lbl">${l.lTabla}</div>${tabla(o, c, l)}
+<div class="lbl">${l.lOg}</div>${og(o, c, l)}<div class="lbl">${l.nota[o]}</div>`;
+    }
+  }
+  return h + '</div>';
+}
+document.getElementById('cols').innerHTML = col('es') + col('en');
+</script>
+</body>
+</html>
