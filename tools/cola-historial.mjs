@@ -95,22 +95,11 @@ function reaparece({ casos, resp }) {
   console.log(`claves con clave estable: ${g.size}; con más de un id: ${multi}; con alguna respuesta real: ${conReal} (todas iguales: ${iguales}); con un caso nacido después de una respuesta: ${reap}`);
 }
 
-// historia de un club: cada caso y cada respuesta en el orden en que se escribieron (fecha, motivo, detalle, documento, decisión, causa, nota). `texto` se busca en el documento y en el detalle, sin acentos ni mayúsculas.
-function historiaDeClub(texto, motivo) {
-  const L = readFileSync(resolve(ROOT, 'Admin/registros/cola-revision.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean);
-  const t = norm(texto); const casos = new Map(L.filter((r) => r.tipo === 'caso').map((r) => [r.id, r]));
-  const sirve = (c) => c && (norm(c.pdf).includes(t) || norm(c.detalle || '').includes(t)) && (!motivo || c.motivo === motivo);
-  let n = 0;
-  for (const r of L) {
-    const c = casos.get(r.id); if (!sirve(c)) continue; n++;
-    const doc = c.pdf.split('/').slice(2).join('/');
-    console.log(r.tipo === 'caso' ? `${String(r.ts).slice(0, 16)} CASO      ${r.id} ${c.motivo} ${c.detalle || ''} ${doc}` : `${String(r.ts).slice(0, 16)} respuesta ${r.id} ${r.decision} ${r.causa || ''} ${String(r.nota || '').slice(0, 90)}`);
-  }
-  if (!n) console.log(`Ninguna línea de la cola nombra «${texto}»${motivo ? ` con el motivo ${motivo}` : ''}.`);
-}
 const que = process.argv[2]; const datos = leer();
-if (que === 'club') historiaDeClub(process.argv[3] || '', process.argv[4]);
-else if (que === 'tipos') tipos(datos);
+if (que === 'club') { // la historia de un club la imprime cola.mjs --historial (una sola copia del código)
+  const { spawnSync } = await import('node:child_process');
+  process.exit(spawnSync('node', [resolve(ROOT, 'tools/cola.mjs'), '--historial', process.argv[3] || '', ...(process.argv[4] ? [process.argv[4]] : [])], { stdio: 'inherit' }).status ?? 1);
+} else if (que === 'tipos') tipos(datos);
 else if (que === 'categoria') categoria(datos);
 else if (que === 'materialidad') materialidad(datos);
 else if (que === 'reaparece') { globalThis.__cola = await import('./cola.mjs'); reaparece(datos); }

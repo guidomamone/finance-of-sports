@@ -16,7 +16,7 @@
 // puede correr en ensayo mientras tanto; su `--cargar` exige `data/` limpio, así que espera a que terminen y se commitee lo suyo. El del auditor va después de la carga.
 //   node tools/club-siis.mjs                                 los clubes de tools/siis-clubes.json con lo que les falta, una línea cada uno
 // ============================================================================
-import { readFileSync, existsSync, readdirSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync, writeFileSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { pendientes } from './cola.mjs';
@@ -33,6 +33,18 @@ const iso = 'co';
 function wikipediaCubre(clubId, a, liga) {
   if (!liga) return false;
   try { const out = execFileSync('node', [join(ROOT, 'tools/estadio-sponsor.mjs'), '--ensayo', '--club', clubId, '--anio', a, '--liga', liga, '--cierre', '12-31'], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }); return /estadio \d+ \(100%\)/.test(out) && /sponsor \d+ \(100%\)/.test(out); } catch { return false; }
+}
+// La liga de cada año, del roster cacheado de Wikipedia (lookup-club-league.js), SOLO donde el nombre de la lista es exactamente el del club: una coincidencia «NO EXACTA» (Fortaleza) puede ser otro club y la confirma una persona.
+function ligasExactas(nombre, anios) {
+  let out = ''; try { out = execFileSync('node', [join(ROOT, 'tools/lookup-club-league.js'), nombre, '--pais', 'CO'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }); } catch { return {}; }
+  const m = {}; for (const l of out.split('\n')) { const x = l.match(/^(co-\w+) (\d{4}): /); if (x && anios.includes(x[2]) && !/NO EXACTA/.test(l)) m[x[2]] = x[1]; }
+  return m;
+}
+// Suma esos años a data/club-leagues/co.js (la entrada del club si existe, o una nueva).
+function escribirLigas(clubId, mapa) {
+  const ruta = join(ROOT, 'data/club-leagues/co.js'); const t = readFileSync(ruta, 'utf8'); const par = Object.entries(mapa).sort().map(([a, l]) => `${a}: '${l}'`).join(', ');
+  const re = new RegExp(`('${clubId}':\\s*\\{\\s*)`);
+  writeFileSync(ruta, re.test(t) ? t.replace(re, `$1${par}, `) : t.replace(/\n\}\);\s*$/, `\n  '${clubId}': { ${par} },\n});\n`));
 }
 function estadoDe(carpeta) {
   const c = cfg.clubes[carpeta]; if (!c) return { error: `«${carpeta}» no está en tools/siis-clubes.json (se suma con su NIT)` };
@@ -174,6 +186,14 @@ if (A.includes('--avanzar')) {
     const t2 = t.replace(new RegExp(`("${club.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}":\\s*\\{[^}]*?)(\\s*\\})`), `$1, "clubId": "${id}"$2`); if (t2 === t) { console.log(`No pude sumar el clubId ${id} a siis-clubes.json: hacelo a mano.`); process.exit(1); }
     writeFileSync(ruta, t2); console.log(`clubId ${id} sumado a tools/siis-clubes.json.\nA MANO, ahora: mirar el nombre legal en data/clubs.js (en SIIS la sociedad figura como «${(readFileSync(join(s.dir, `siis-estado-${ultimo}.md`), 'utf8').match(/^# (.+?) — NIT/m) || [, club])[1]}») y poner el color de marca; commitear el alta (git add data index.html club fuentes liga …) antes del lote con --cargar.`); s.c.clubId = id;
   }
+  { // la liga de los años que no la tienen, donde el roster de Wikipedia la da con el nombre exacto; el resto queda a mano
+    const sinLigaAnios = estadoDe(club).filas.filter((f) => !f.liga && !f.cargado).map((f) => f.a);
+    if (s.c.clubId && sinLigaAnios.length) {
+      const m = ligasExactas(club, sinLigaAnios); const sin = sinLigaAnios.filter((a) => !m[a]);
+      if (Object.keys(m).length) { escribirLigas(s.c.clubId, m); console.log(`\nLiga escrita en data/club-leagues/co.js (roster de Wikipedia, nombre exacto): ${Object.entries(m).map(([a, l]) => `${a} ${l}`).join(', ')}.`); }
+      if (sin.length) console.log(`Liga a mano (sin coincidencia exacta en el roster): ${sin.join(', ')}.`);
+    }
+  }
   if (readdirSync(s.dir).some((x) => /^dictamen-revisor-fiscal-\d{4}\.pdf$/.test(x) && !existsSync(join(s.dir, x.replace(/\.pdf$/, '.md'))))) run(['tools/dictamenes-md.mjs', club, '--escribir']);
   for (const p of evaluar().pesos.filter((p) => p.pct > 50 && !s.filas.find((f) => f.a === p.a)?.cargado)) run(['tools/cola.mjs', '--corregir-categoria', `Clubes/${cfg.pais}/${club}/siis-estado-${p.a}.pdf`, 'Costo de ventas', 'lump_football_operations_expense', '--nota', `Costo de ventas es ${p.pct}% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)`]);
   const sinCargar = s.filas.filter((f) => f.siis && !f.cargado).map((f) => f.a);
@@ -206,6 +226,8 @@ if (A.includes('--avanzar')) {
   }
   contestarReexpresiones();
   console.log('\n=== lo que falta ==='); process.stdout.write(execFileSync('node', [join(ROOT, 'tools/club-siis.mjs'), club], { cwd: ROOT, encoding: 'utf8' }));
+  // lo que quedó sin commitear: los comandos, cada uno en su llamada de Bash (el hook de commit audita antes de ejecutar el comando entero: publicar y commitear juntos fallan por asset-v-sin-subir)
+  if (execFileSync('git', ['status', '--porcelain'], { cwd: ROOT, encoding: 'utf8' }).trim()) console.log(`\n=== para commitear (una llamada de Bash cada uno) ===\n1. node tools/publicar.mjs\n2. git add -A club fuentes liga data fuentes.html index.html tools/contexto-manual.json Admin "Clubes/${cfg.pais}/${club}" "Generados/${cfg.pais}/${club}"\n3. git commit -m "${club}: <años> desde SIIS (463)"`);
   process.exit(0);
 }
 
