@@ -60,6 +60,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Boyaca Chico/siis-estado-2019.pdf"
+    },
+    {
+      "id": "boyacachico-co-siis-estado-2020",
+      "club_id": "boyacachico-co",
+      "title": "Deportivo Boyacá Chicó Futbol Club S.A. — siis-estado-2020 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Boyaca Chico/siis-estado-2020.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2024,"last_year":2024}],
@@ -244,6 +252,59 @@
             "kind": "other"
           }
         ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-12-31",
+      "currency": "COP",
+      "source_id": "boyacachico-co-siis-estado-2020",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2020-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 4139.568,
+          "disclosure": "aggregated"
+        },
+        {"label":"Recuperaciones","category":"other_revenue","subcategory":"other_income","amount":0.798002,"disclosure":"aggregated"},
+        {"label":"Subsidios Estatales PAEF","category":"grants_donations","subcategory":"grants_donations","amount":63.657,"disclosure":"aggregated"},
+        {"label":"Diversos","category":"other_revenue","subcategory":"other_income","amount":0.548239,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costos de Personal y Jugadores","category":"first_team_staff","subcategory":"wages_squad","amount":-718.294572,"disclosure":"aggregated"},
+        {
+          "label": "Partidos y Actividades Deportivas",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -1717.494607,
+          "disclosure": "aggregated"
+        },
+        {"label":"Honorarios y Arriendos","category":"admin_general","subcategory":"admin_general_expense","amount":-373.991922,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-769.431,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-256.255,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-171.279,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":4204.571241,"expenses":3835.467101,"net_result":197.825},
+      "adjustments": {
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":4139.568,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Partidos y Actividades Deportivas",
+            "side": "expense",
+            "amount": 1717.494607,
+            "reason": "Fila de la nota de Costo de ventas que no separa nómina, partidos ni viajes: 'Partidos y Actividades Deportivas' es la actividad deportiva sin desglosar (61% de los gastos). Espejo del ingreso 'Actividades Deportivas' de Fortaleza CEIF, que va a lump_football_operations por decisión de Guido (2026-10-02); regla de Colombia, Costo de ventas = actividad deportiva (CONVENCIONES-DATOS.md).",
+            "kind": "other"
+          }
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        },
         "revenue_basis": "full"
       }
     },
