@@ -27,6 +27,10 @@ const atleticobucaramangaCoRevenueLinesByYear = {
     {"rawLabel":"Auxilio Conmebol evolución","normalizedCategory":"competition_bonus","amountNative":272.157,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":5.553,"disclosureLevel":"aggregated"},
   ],
+  2023: [
+    {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":10168.673,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":2862.756,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const atleticobucaramangaCoExpenseLinesByYear = {
@@ -221,11 +225,18 @@ const atleticobucaramangaCoExpenseLinesByYear = {
     {"rawLabel":"Multas sanciones y litigios","normalizedCategory":"other_expenses","amountNative":-44.515,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-1.238,"disclosureLevel":"aggregated"},
   ],
+  2023: [
+    {"rawLabel":"Costo de ventas","normalizedCategory":"other_expenses","amountNative":0,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-10412.28,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-719.689,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-622.872,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const atleticobucaramangaCoFiscalYearMeta = {
   2019: {"currency":"COP","sourceId":"atleticobucaramanga-co-estados-financieros-2019","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2019-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-52.215,"tax":-361.862,"grossDebt":null,"cash":null,"officialTotalRevenue":13047.875,"officialTotalExpenses":13367.695,"officialPAT":-733.89,"extraRows":[{"label":"Ingresos financieros","value":2.078},{"label":"Costos financieros","value":-54.293},{"label":"Ingreso (gasto) por impuestos","value":-361.862}],"baseIngreso":"full"},
   2020: {"currency":"COP","sourceId":"atleticobucaramanga-co-estados-financieros-2020","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2020-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-39.694,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":5408.984,"officialTotalExpenses":5793.337,"officialPAT":-424.049,"extraRows":[{"label":"Ingresos financieros","value":0.039},{"label":"Costos financieros","value":-39.733},{"label":"Ingreso (gasto) por impuestos","value":null}],"baseIngreso":"full"},
+  2023: {"currency":"COP","sourceId":"atleticobucaramanga-co-siis-estado-2023","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2023-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-53.881,"tax":-373.105,"grossDebt":null,"cash":null,"officialTotalRevenue":13031.429,"officialTotalExpenses":11754.841,"officialPAT":849.602,"extraRows":[{"label":"Ingresos financieros","value":0.028},{"label":"Costos financieros","value":-53.909},{"label":"Ingreso (gasto) por impuestos","value":-373.105}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":10168.673,"motivo":"Línea única de ingresos sin abrir: lump_football_operations (regla de Colombia, 463, 2026-10-26)","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":10412.28,"motivo":"el documento no desglosa este renglón","tipo":"other"}],"incluidoEn":{"sponsorship_commercial":{"en":"lump_football_operations","posible":true,"por":"precedente"},"matchday_competition":{"en":"lump_football_operations","posible":true,"por":"precedente"},"season_tickets":{"en":"lump_football_operations","posible":true,"por":"precedente"},"stadium_other":{"en":"lump_football_operations","posible":true,"por":"precedente"},"broadcasting":{"en":"lump_football_operations","posible":true,"por":"precedente"},"competition_bonus":{"en":"lump_football_operations","posible":true,"por":"precedente"},"wages_squad":{"en":"lump_football_operations_expense","posible":true,"por":"precedente"},"depreciation":{"en":"lump_football_operations_expense","posible":true,"por":"precedente"},"other_amortisation":{"en":"lump_football_operations_expense","posible":true,"por":"precedente"},"match_organisation_expense":{"en":"lump_football_operations_expense","posible":true,"por":"precedente"}},"baseIngreso":"full"},
 };
 
 const atleticobucaramangaCoPresupuestoOverlayByYear = {};
@@ -242,6 +253,6 @@ window.CLUB_GENERIC_DATA["atleticobucaramanga-co"] = {
   presupuestoOverlayByYear: atleticobucaramangaCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"atleticobucaramanga-co-estados-financieros-2019":{"id":"atleticobucaramanga-co-estados-financieros-2019","clubId":"atleticobucaramanga-co","title":"Club Atlético Bucaramanga S.A. — estados-financieros-2019 (ejercicio 2019)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2019.pdf"},"atleticobucaramanga-co-estados-financieros-2020":{"id":"atleticobucaramanga-co-estados-financieros-2020","clubId":"atleticobucaramanga-co","title":"Club Atlético Bucaramanga S.A. — estados-financieros-2020 (ejercicio 2020)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.pdf"}});
+Object.assign(sources, {"atleticobucaramanga-co-estados-financieros-2019":{"id":"atleticobucaramanga-co-estados-financieros-2019","clubId":"atleticobucaramanga-co","title":"Club Atlético Bucaramanga S.A. — estados-financieros-2019 (ejercicio 2019)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2019.pdf"},"atleticobucaramanga-co-estados-financieros-2020":{"id":"atleticobucaramanga-co-estados-financieros-2020","clubId":"atleticobucaramanga-co","title":"Club Atlético Bucaramanga S.A. — estados-financieros-2020 (ejercicio 2020)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.pdf"},"atleticobucaramanga-co-siis-estado-2023":{"id":"atleticobucaramanga-co-siis-estado-2023","clubId":"atleticobucaramanga-co","title":"Club Atlético Bucaramanga S.A. — siis-estado-2023 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Bucaramanga/siis-estado-2023.pdf"}});
 
 memberCountByClub["atleticobucaramanga-co"] = null;

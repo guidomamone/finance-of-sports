@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2022.md",
+  "pdf": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2022.pdf",
+  "club": "atleticobucaramanga-co",
+  "year": 2022,
+  "generatedAt": "2026-10-26T06:10:10.770Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        12242.978
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        567.992
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        10277.446
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        543.987
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        132.946
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2017.md",
+  "pdf": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2017.pdf",
+  "club": "atleticobucaramanga-co",
+  "year": 2017,
+  "generatedAt": "2026-10-26T06:10:10.678Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        8243.02
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.019
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        7316.459
+      ],
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        260.481
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        16.075
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

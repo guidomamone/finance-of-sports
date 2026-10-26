@@ -1,0 +1,81 @@
+{
+ "md": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2021.md",
+ "club": "atleticobucaramanga-co",
+ "year": 2021,
+ "generatedAt": "2026-10-26T06:12:21.441Z",
+ "rubrosHuella": "24c03c12ea1a7e725180b32fc84f4c93b8192190",
+ "jevHuella": "8d2ffca5ee668d6d4b87c03bb6d597353fea69de",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "lump_football_operations",
+   "confianza": 0.98
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de ventas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations_expense",
+   "escalon": 2,
+   "confCache": 0.8,
+   "motivo": "Regla Colombia: «Gastos de ventas» sin abrir en el documento va a lump_football_operations_expense",
+   "jev": "admin_general_expense",
+   "jevConf": 0.5,
+   "desdeCache": true,
+   "categoria": "lump_football_operations_expense",
+   "confianza": 0.8
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 1,
+   "jevConf": 0.9,
+   "categoria": "other_expenses",
+   "confianza": 0.9
+  }
+ ]
+}
