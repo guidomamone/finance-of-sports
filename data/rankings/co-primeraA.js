@@ -181,6 +181,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"deportestolima-co", revenue:8.31, reportType:"official_balance_sheet",
         sourceId:"deportestolima-co-siis-estado-2016",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",8.31]] },
+      { id:"laequidad-co", revenue:5.145, reportType:"official_balance_sheet",
+        sourceId:"laequidad-co-siis-estado-2016",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.074],["Otros ingresos",0.071]] },
     ],
   },
 };

@@ -682,6 +682,7 @@ window.SPONSORS_INDICE = [
   ["correio-da-manha","Correio da Manha",["c"]],
   ["correo-oca","Correo OCA",["c"]],
   ["cospe-costruzioni","COSPE Costruzioni",["c"]],
+  ["cotrafa","Cotrafa",["c"]],
   ["couteiro-mor","Couteiro Mor",["c"]],
   ["cp-aps","CP ApS",["c"]],
   ["cpn-engenharia","CPN Engenharia",["c"]],
