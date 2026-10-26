@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1137 — SIIS: la tool toma el perímetro propio del club; Santa Fe 2019 y 2025 no eran contradicciones de SIIS [463 · siis-estado.mjs]
+- `siis-estado.mjs` elige por el id del documento el estado propio del club («individuales» o «separados») y el consolidado solo si no hay otro o si `tools/siis-clubes.json` pide `perimetro: consolidado`; el inventario y el `perimetro` de las filas salen de esa elección. Antes elegía uno cualquiera cuando un club presentaba los dos (Santa Fe) y comparaba perímetros distintos: 2019 y 2025 salían como contradicción. Los 380 club-años de los 38 clubes cierran ahora; Santa Fe ya no tiene años frenados.
+- Decisión registrada con `decision.mjs` (`auditoria-proceso.jsonl` y punto 463); regla en `Admin/CONVENCIONES-DATOS.md`. En `audit.js` queda un solo `siis-control`: Fortaleza 2021.
+- Medición: idéntico (lote mediano) y veredicto GENERAL; el ensayo de Tolima del medidor `siis` no cambia.
+
 ## Versión 1136 — El control permanente de SIIS: audit.js compara lo cargado de Colombia con SIIS y avisa de los años sin bajar [463 · audit.js, audit-chequeos-siis.js, siis-estado.mjs]
 - Avisos P3 nuevos en `audit.js` (módulo `tools/audit-chequeos-siis.js`, sin red, leen `Admin/sourcing/Colombia/siis-resumen.json` que genera `siis-estado.mjs --inventario --escribir`): `siis-control` (resultado cargado distinto del de SIIS, o ingresos cargados menores que los ordinarios de SIIS), `siis-faltante` (337 club-años que SIIS tiene y no están bajados) y `siis-resumen-viejo` (más de 120 días). Entradas en `audit-acciones.json`. Sin revisión independiente (aviso P3 nuevo, sección 7 de la skill de auditoría).
 - Primer día: encontró un error publicado (Fortaleza 2021 cargada antes de impuestos, −647,3 M contra −208,8 M del documento) y dos casos de Santa Fe 2025; `siis-estado.mjs` suma el rubro de participación en subsidiarias a la compuerta (Santa Fe 2016 a 2018 ahora cierran), saltea los `frenados` de `tools/siis-clubes.json` y guarda el resumen offline.

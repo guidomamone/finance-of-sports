@@ -1,5 +1,5 @@
 {
- "_comentario": "El NIT de SIIS (Supersociedades) de cada carpeta de Clubes/<país>/. Lo lee tools/siis-estado.mjs. `clubId` es el id del club en el sitio, si ya está cargado (lo usa el chequeo siis-control de audit.js); `frenados` son años que las compuertas de la tool no dejan bajar, con su motivo. Un club nuevo se suma acá al darlo de alta (la razón social de SIIS no siempre es el nombre del club: Águilas Doradas deposita como TALENTO DORADO S.A.; Independiente Medellín, como EL EQUIPO DEL PUEBLO S.A.). Real Soacha no figura en SIIS con ese nombre. El inventario de lo que SIIS tiene y falta bajar es Admin/sourcing/Colombia/siis-inventario.md (generado).",
+ "_comentario": "El NIT de SIIS (Supersociedades) de cada carpeta de Clubes/<país>/. Lo lee tools/siis-estado.mjs. `clubId` es el id del club en el sitio, si ya está cargado (lo usa el chequeo siis-control de audit.js); `frenados` son años que las compuertas de la tool no dejan bajar (con `motivoFrenados`); `perimetro: consolidado` hace que la tool tome el estado consolidado en vez del individual o separado, que es el que toma por defecto (un club puede presentar los dos en el mismo año, con cifras distintas). Un club nuevo se suma acá al darlo de alta (la razón social de SIIS no siempre es el nombre del club: Águilas Doradas deposita como TALENTO DORADO S.A.; Independiente Medellín, como EL EQUIPO DEL PUEBLO S.A.). Real Soacha no figura en SIIS con ese nombre. El inventario de lo que SIIS tiene y falta bajar es Admin/sourcing/Colombia/siis-inventario.md (generado).",
  "pais": "Colombia",
  "moneda": "COP",
  "clubes": {
@@ -25,7 +25,7 @@
   "Envigado": { "nit": "900470848", "clubId": "envigado-co" },
   "Fortaleza CEIF": { "nit": "900964178", "clubId": "fortalezaceif-co" },
   "Independiente Medellin": { "nit": "900577148" },
-  "Independiente Santa Fe": { "nit": "860009807", "clubId": "santafe-co", "frenados": ["2019", "2025"], "motivoFrenados": "Guido, 2026-10-26: SIIS se contradice a sí mismo y las compuertas no cierran. 2019: el estado trae ingresos de 34.011.201.181 (parece en pesos, no en miles) y siis_empresas 26.876.667 miles; el año siguiente repite 2018 con otra cifra. 2025: el estado da ingresos de 61.020.279 y resultado de 1.971.333 y siis_empresas 67.777.819 y 1.926.558 (el resultado del estado coincide con lo cargado del PDF). Se frenan hasta decidir qué fuente de SIIS manda (punto 463)." },
+  "Independiente Santa Fe": { "nit": "860009807", "clubId": "santafe-co" },
   "Jaguares": { "nit": "808000102" },
   "Junior de Barranquilla": { "nit": "900456729", "clubId": "junior-co" },
   "La Equidad": { "nit": "800108152" },

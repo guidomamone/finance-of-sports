@@ -51,10 +51,14 @@ async function buscar(indice, cuerpo) {
   }
   throw new Error(`SIIS no respondió para ${indice}`);
 }
-// un hit por (NIT, año): el individual si hay individual y consolidado
-function porAnio(hits, fechaDe) {
+// El perímetro de cada registro va en el id del documento: «individuales» y «separados» son los estados propios del club, «consolidados» los del grupo. Un club puede presentar los dos en el mismo año
+// (con cifras distintas, y a veces el consolidado en otra unidad). Se toma el propio; el consolidado solo si no hay otro, o si tools/siis-clubes.json pide `perimetro: "consolidado"` para ese club.
+const esConsolidado = (id) => /onsolidad/.test(id);
+const rangoPerimetro = (id, preferido = 'individual') => ((esConsolidado(id) ? 1 : 0) === (preferido === 'consolidado' ? 1 : 0) ? 0 : 1);
+// un hit por (NIT, año), del perímetro preferido
+function porAnio(hits, fechaDe, preferido) {
   const m = new Map();
-  for (const h of hits) { const a = fechaDe(h._source).slice(0, 4); const ind = /ndividual/.test(h._id); if (!m.has(a) || (ind && !/ndividual/.test(m.get(a)._id))) m.set(a, h); }
+  for (const h of hits) { const a = fechaDe(h._source).slice(0, 4); if (!m.has(a) || rangoPerimetro(h._id, preferido) < rangoPerimetro(m.get(a)._id, preferido)) m.set(a, h); }
   return m;
 }
 const delNit = (nit) => ({
@@ -118,14 +122,14 @@ const CLASE = {
   gananciaPerdidaOperacionesDiscontinuadas: ['renglon', 'otro'], gananciaPerd: ['resultado', 'resultado'],
 };
 // La especificación de armar-a-mano.mjs: el estado de resultados de SIIS son las filas, cada una en su línea del .md. Devuelve null si algún rubro no tiene clase.
-function especificacion({ club, anio, md, filasRes, sal, ant }) {
+function especificacion({ club, anio, md, filasRes, sal, ant, perimetro }) {
   const sinClase = filasRes.filter((f) => !CLASE[f.clave]); if (sinClase.length) return { error: `rubros de SIIS sin clase en CLASE: ${sinClase.map((f) => f.clave).join(', ')}` };
   const bloque = indiceBloques(md).bloques.find((b) => b.lineas[0] <= filasRes[0].linea && b.lineas[1] >= filasRes.at(-1).linea);
   if (!bloque) return { error: 'el índice de bloques no encuentra la tabla del estado de resultados' };
   const imp = (n) => fmt(n);
   const resultado = filasRes.find((f) => f.clave === 'gananciaPerd');
   return { spec: {
-    pdf: rutaClub(club, `siis-estado-${anio}.pdf`), estado: [bloque.id], escala: 'miles', escala_evidencia: 'L1: Cifras en miles de pesos colombianos', moneda: MONEDA, columna_ejercicio: sal, columna_anterior: ant, perimetro: 'individual',
+    pdf: rutaClub(club, `siis-estado-${anio}.pdf`), estado: [bloque.id], escala: 'miles', escala_evidencia: 'L1: Cifras en miles de pesos colombianos', moneda: MONEDA, columna_ejercicio: sal, columna_anterior: ant, perimetro: perimetro || 'individual',
     escalas: [{ bloque: bloque.id, escala: 'miles', evidencia: 'L1: Cifras en miles de pesos colombianos' }],
     filas: filasRes.map((f) => ({ bloque: bloque.id, linea: f.linea, etiqueta: f.nombre, actual: imp(f.corte), anterior: f.anterior == null ? '0' : imp(f.anterior), tipo: CLASE[f.clave][0], lado: CLASE[f.clave][1], detalla_a: null })),
     total_ingresos: null, total_gastos: null, resultado: resultado ? { linea: resultado.linea, actual: imp(resultado.corte), anterior: resultado.anterior == null ? '0' : imp(resultado.anterior) } : null,
@@ -152,7 +156,7 @@ async function estadosDe(club, anios, { escribir, rehacer }) {
   const cfg = CLUBES[club]; if (!cfg) throw new Error(`«${club}» no está en tools/siis-clubes.json`);
   const dir = resolve(ROOT, 'Clubes', PAIS, club);
   const q =delNit(cfg.nit); const [emps, ress, bals] = [await q.empresas(), await q.resultado(), await q.balance()];
-  const E = porAnio(emps, (s) => s.fechaCorte), R = porAnio(ress, (s) => s.resultado.fechaCorte), B = porAnio(bals, (s) => s.infoEmpresa.corte);
+  const E = porAnio(emps, (s) => s.fechaCorte, cfg.perimetro), R = porAnio(ress, (s) => s.resultado.fechaCorte, cfg.perimetro), B = porAnio(bals, (s) => s.infoEmpresa.corte, cfg.perimetro);
   const lista = (anios === 'todos' ? [...R.keys()].filter((a) => !(cfg.frenados || []).includes(a) && (rehacer || !existsSync(join(dir, `siis-estado-${a}.md`)))) : [String(anios)]).sort();
   const hoy = new Date().toISOString().slice(0, 10); let escritos = 0, frenados = 0;
   for (const a of lista) {
@@ -173,7 +177,7 @@ async function estadosDe(club, anios, { escribir, rehacer }) {
     writeFileSync(`${base}.md`, md); escritos++;
     appendFileSync(resolve(ROOT, 'Admin/registros/api/siis-api.jsonl'), JSON.stringify({ ts: new Date().toISOString(), md: rutaClub(club, `siis-estado-${a}.md`), model: MOTOR, costUsd: 0, nit: cfg.nit, radicado: res.infoEmpresa.num_radicado }) + '\n'); // el motor que lee inventario-transcripciones.mjs
     // las filas, sin leer con IA: la especificación del estado de resultados y armar-a-mano.mjs (valida cada fila contra el .md y deja el .ubicacion.json y el .filas.json con sus huellas)
-    const { spec, error } = especificacion({ club, anio: a, md, filasRes, sal, ant });
+    const { spec, error } = especificacion({ club, anio: a, md, filasRes, sal, ant, perimetro: esConsolidado(res.infoEmpresa.puntoEntrada) ? 'consolidado' : 'individual' });
     if (error) { console.log(`  ${club} ${a}: el .md quedó escrito pero las filas no se armaron solas: ${error}`); continue; }
     const carpetaSpec = resolve(ROOT, 'Generados', PAIS, club); mkdirSync(carpetaSpec, { recursive: true });
     const specAbs = join(carpetaSpec, `siis-estado-${a}.spec.json`); writeFileSync(specAbs, JSON.stringify(spec, null, 1) + '\n');
@@ -187,7 +191,13 @@ async function inventario() {
   const ciiu = ['Actividades de clubes deportivos', 'Otras actividades deportivas', 'Gestión de instalaciones deportivas'];
   const hits = await buscar('siis_empresas', { query: { bool: { should: ciiu.map((a) => ({ match_phrase: { actividadesEconomicas: a } })), minimum_should_match: 1 } }, _source: ['NIT', 'nombreEmpresa', 'fechaCorte', 'actividadesEconomicas', 'financieros.ingresosEmpresa', 'financieros.utilidades'] });
   const porNit = new Map();
-  for (const h of hits) { const s = h._source; const e = porNit.get(s.NIT) || { nombre: s.nombreEmpresa, ciiu: s.actividadesEconomicas[0].slice(0, 5), anios: new Set(), datos: {} }; e.anios.add(s.fechaCorte.slice(0, 4)); e.datos[s.fechaCorte.slice(0, 4)] = { ingresos: s.financieros?.ingresosEmpresa ?? null, utilidades: s.financieros?.utilidades ?? null }; porNit.set(s.NIT, e); }
+  const preferidoDe = new Map(Object.values(CLUBES).map((v) => [v.nit, v.perimetro]));
+  for (const h of hits) {
+    const s = h._source; const e = porNit.get(s.NIT) || { nombre: s.nombreEmpresa, ciiu: s.actividadesEconomicas[0].slice(0, 5), anios: new Set(), datos: {}, rango: {} };
+    const a = s.fechaCorte.slice(0, 4); const r = rangoPerimetro(h._id, preferidoDe.get(s.NIT)); e.anios.add(a);
+    if (e.rango[a] === undefined || r < e.rango[a]) { e.rango[a] = r; e.datos[a] = { ingresos: s.financieros?.ingresosEmpresa ?? null, utilidades: s.financieros?.utilidades ?? null }; } // dos perímetros en un año: el propio del club
+    porNit.set(s.NIT, e);
+  }
   // los años que tienen estado de resultados en siis_resultadointegral (un registro en siis_empresas no siempre lo tiene)
   const estados = await buscar('siis_resultadointegral', { query: { terms: { 'resultado.NIT': [...porNit.keys()] } }, _source: ['resultado.NIT', 'resultado.fechaCorte'] });
   const conEstado = new Set(estados.map((h) => `${h._source.resultado.NIT}|${h._source.resultado.fechaCorte.slice(0, 4)}`));
