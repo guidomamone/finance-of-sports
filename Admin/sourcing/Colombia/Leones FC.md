@@ -17,3 +17,5 @@ Color de marca: #FF0000 (rojo) — es.wikipedia «Leones Fútbol Club» (colores
 Estados financieros en disco ahora: 9 ejercicios (2016, 2018-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2016 desde `Clubes/Colombia/Leones FC/siis-estado-2016.pdf` (sourceId `leonesfc-co-siis-estado-2016`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2017 desde `Clubes/Colombia/Leones FC/siis-estado-2017.pdf` (sourceId `leonesfc-co-siis-estado-2017`).
