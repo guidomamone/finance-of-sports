@@ -8,5 +8,5 @@ window.ESTIMADOS["co-primeraB"] = {
   2020: [{"id":"unionmagdalena-co","revenue":2.35,"lo":1.606,"hi":3.5,"caso":"entre","error":18,"de":[2018,2025]}],
   2022: [{"id":"boyacachico-co","revenue":1.761,"lo":0.981,"hi":3.347,"caso":"afuera","error":29,"de":[2024]}],
   2023: [{"id":"llaneros-co","revenue":2.998,"lo":1.669,"hi":5.698,"caso":"afuera","error":29,"de":[2025]}],
-  2024: [{"id":"llaneros-co","revenue":3.075,"lo":1.712,"hi":5.844,"caso":"afuera","error":29,"de":[2025]},{"id":"unionmagdalena-co","revenue":3,"lo":2.05,"hi":4.469,"caso":"entre","error":18,"de":[2018,2025]}],
+  2024: [{"id":"llaneros-co","revenue":3.075,"lo":1.712,"hi":5.844,"caso":"afuera","error":29,"de":[2025]},{"id":"unionmagdalena-co","revenue":3,"lo":2.05,"hi":4.467,"caso":"entre","error":18,"de":[2018,2025]}],
 };

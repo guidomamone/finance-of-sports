@@ -128,6 +128,10 @@ window.RANKINGS["co-primeraA"] = {
       { id:"aguilasdoradas-co", revenue:3.126, reportType:"official_balance_sheet",
         sourceId:"aguilasdoradas-co-siis-estado-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.953],["Otros ingresos",0.173]] },
+      { id:"atleticobucaramanga-co", revenue:2.663, reportType:"official_balance_sheet",
+        sourceId:"atleticobucaramanga-co-siis-estado-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.545],["Otros ingresos",0.118]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2021: {
