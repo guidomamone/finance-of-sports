@@ -62,9 +62,11 @@ window.RANKINGS["co-primeraA"] = {
   },
   2024: {
     leagueSize: 20,
-    sinDato: ["independientemedellin-co"],
     wiki: {"t":"2024 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
+      { id:"independientemedellin-co", revenue:18.183, reportType:"official_balance_sheet",
+        sourceId:"independientemedellin-co-siis-estado-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",17.837],["Otros ingresos",0.347]] },
       { id:"deportestolima-co", revenue:10.829, reportType:"official_balance_sheet",
         sourceId:"deportestolima-co-siis-estado-2024",
         mix:[["Comercial / Sponsors",2.32],["Estadio",2.933],["Televisión",1.735],["Premios por competencias",0.5],["Venta de Jugadores",2.836],["Otros ingresos",0.504]] },
