@@ -33,9 +33,12 @@ window.RANKINGS["co-primeraB"] = {
   },
   2022: {
     leagueSize: 16,
-    sinDato: ["boyacachico-co"],
     wiki: {"t":"2022 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
+      { id:"boyacachico-co", revenue:1.221, reportType:"official_balance_sheet",
+        sourceId:"boyacachico-co-siis-estado-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.209],["Otros ingresos",0.012]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"leonesfc-co", revenue:1.199, reportType:"official_balance_sheet",
         sourceId:"leonesfc-co-siis-estado-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.953],["Otros ingresos",0.245]] },
