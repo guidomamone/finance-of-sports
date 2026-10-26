@@ -25,6 +25,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2022: {"estadio":"Alfonso López","capacidad":28000,"temporada":"2022 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376520069"},
     2023: {"estadio":"Alfonso López","capacidad":28000,"sponsor":"Marsbet, Pool, Clinisports","marca":"Lotto","temporada":"2023 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377160814"},
     2024: {"estadio":"Américo Montanini","capacidad":28000,"sponsor":"Rivalo, Súper Bodega Bogotá, Clinisports","marca":"Lotto","temporada":"2024 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692752"},
+    2025: {"estadio":"Américo Montanini","capacidad":28000,"sponsor":"Rivalo, Clinisports","marca":"Lotto","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
   'atlnacional-co': {
     2025: {"estadio":"Atanasio Girardot","capacidad":44863,"sponsor":"Betsson","marca":"Nike","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},

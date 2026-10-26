@@ -40,3 +40,5 @@ Color de marca: null — ambiguo, sin desempate (criterio de Guido: elegir y con
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2023 desde `Clubes/Colombia/Atletico Bucaramanga/siis-estado-2023.pdf` (sourceId `atleticobucaramanga-co-siis-estado-2023`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2024 desde `Clubes/Colombia/Atletico Bucaramanga/siis-estado-2024.pdf` (sourceId `atleticobucaramanga-co-siis-estado-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2025 desde `Clubes/Colombia/Atletico Bucaramanga/siis-estado-2025.pdf` (sourceId `atleticobucaramanga-co-siis-estado-2025`).

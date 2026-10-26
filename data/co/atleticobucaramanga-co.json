@@ -44,6 +44,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2024.pdf"
+    },
+    {
+      "id": "atleticobucaramanga-co-siis-estado-2025",
+      "club_id": "atleticobucaramanga-co",
+      "title": "Club Atlético Bucaramanga S.A. — siis-estado-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2025.pdf"
     }
   ],
   "members": null,
@@ -570,6 +578,62 @@
             "kind": "net_sales"
           },
           {"line":"Gastos de ventas","side":"expense","amount":25830.379,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        },
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "COP",
+      "source_id": "atleticobucaramanga-co-siis-estado-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2025-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 44739.8,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":1454.984,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-39748.1,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2513.565,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-532.724,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":81.276,"tax":-1542.648,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":46194.784,"expenses":42794.389,"net_result":1939.023},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":294.449},
+          {"label":"Costos financieros","amount":-213.173},
+          {"label":"Ingreso (gasto) por impuestos","amount":-1542.648}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Ingresos de actividades ordinarias",
+            "side": "revenue",
+            "amount": 44739.8,
+            "reason": "Línea única de ingresos sin abrir: lump_football_operations (regla de Colombia, 463, 2026-10-26)",
+            "kind": "net_sales"
+          },
+          {"line":"Gastos de ventas","side":"expense","amount":39748.1,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
