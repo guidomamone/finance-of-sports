@@ -1,6 +1,15 @@
 // GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraB"] = {
+  2025: {
+    leagueSize: 16,
+    wiki: {"t":"2025 Torneo DIMAYOR","lang":"en","at":"2026-10-17","n":16},
+    clubs: [
+      { id:"leonesfc-co", revenue:1.9, reportType:"official_balance_sheet",
+        sourceId:"leonesfc-co-siis-estado-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.879],["Otros ingresos",0.021]] },
+    ],
+  },
   2024: {
     leagueSize: 16,
     wiki: {"t":"2024 Torneo DIMAYOR","lang":"en","at":"2026-10-26","n":16},
