@@ -48,6 +48,7 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Gastos de Ventas: Gastos de personal (plantel)":{"en":"Selling expenses: Personnel expenses (squad)"},
 "Gastos de Ventas: Organización y logística (honorarios, arrendamientos, servicios, viaje, mantenimiento, adecuación)":{"en":"Selling expenses: Organization and logistics (fees, leases, services, travel, maintenance, refurbishment)"},
 "Gastos de Ventas: Organización y logística (viaje, arrendamientos, servicios, mantenimiento, adecuaciones)":{"en":"Selling expenses: Organization and logistics (travel, leases, services, maintenance, refurbishments)"},
+"Gastos de administración":{"en":"Administrative expenses"},
 "Gastos de personal":{"en":"Personnel expenses"},
 "Gastos de ventas":{"en":"Selling expenses"},
 "Gastos de viaje":{"en":"Travel expenses"},

@@ -68,6 +68,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Once Caldas/siis-estado-2017.pdf"
+    },
+    {
+      "id": "oncecaldas-co-siis-estado-2019",
+      "club_id": "oncecaldas-co",
+      "title": "Once Caldas S.A. En Reorganización — siis-estado-2019 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Once Caldas/siis-estado-2019.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2022,"last_year":2025}],
@@ -252,6 +260,55 @@
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        },
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-12-31",
+      "currency": "COP",
+      "source_id": "oncecaldas-co-siis-estado-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2019-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 13265.651,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":1208.748,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-399.933,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-12478.046,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-780.368,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1430.23,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":28.67,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":14474.399,"expenses":15088.577,"net_result":-585.508},
+      "adjustments": {
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":13265.651,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {"line":"Gastos de ventas","side":"expense","amount":12478.046,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "player_impairment": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }

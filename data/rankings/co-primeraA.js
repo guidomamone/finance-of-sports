@@ -197,7 +197,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2019: {
     leagueSize: 20,
-    sinDato: ["oncecaldas-co"],
     wiki: {"t":"2019 Categoría Primera A season","lang":"en","at":"2026-10-02","n":20},
     clubs: [
       { id:"deportestolima-co", revenue:10.888, reportType:"official_balance_sheet",
@@ -210,6 +209,10 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"laequidad-co-siis-estado-2019",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.826],["Otros ingresos",0.098]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras actividades (educación y otros deportes)","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"oncecaldas-co", revenue:4.417, reportType:"official_balance_sheet",
+        sourceId:"oncecaldas-co-siis-estado-2019",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",4.048],["Otros ingresos",0.369]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"atleticobucaramanga-co", revenue:3.981, reportType:"official_balance_sheet",
         sourceId:"atleticobucaramanga-co-estados-financieros-2019",
         mix:[["Comercial / Sponsors",0.719],["Estadio",0.625],["Televisión",1.626],["Premios por competencias",0.468],["Venta de Jugadores",0.488],["Otros ingresos",0.054]] },
