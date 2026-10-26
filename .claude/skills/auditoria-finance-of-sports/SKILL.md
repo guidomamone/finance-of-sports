@@ -38,7 +38,7 @@ repo entero: leé lo que la capa 1 marcó.**
 node tools/audit.js
 ```
 
-Agrupa todo en P0/P1/P2/P3 y sale con código 1 si hay P0 o P1. `--json` da la lista completa
+Agrupa todo en P0 a P4 y sale con código 1 si hay P0 o P1. `--json` da la lista completa
 (el informe humano corta cada grupo en 8), `--quiet` muestra solo P0/P1.
 
 Si la sesión tocó `data/` o el motor, corré **además** `auditAll()` en el navegador (`?audit=1`):
@@ -69,10 +69,14 @@ suyo); si Guido pidió uno explícito (`/auditoria escala`), ese manda.
 
 | | Qué significa | Qué se hace |
 |---|---|---|
-| **P0** | Un número publicado está mal, o puede estarlo | Se arregla en esta sesión, antes que nada |
-| **P1** | Algo roto o ausente que el visitante ve | Se arregla en esta sesión, o va al tope de `Admin/TODO.md` con su motivo |
-| **P2** | No está mal hoy; se rompe o no escala mañana | Va a `Admin/TODO.md` |
-| **P3** | Limpieza e informativo | Queda en el reporte. No ensucia `Admin/TODO.md` |
+| **P0** | un número publicado está mal, o puede estarlo | Se arregla en esta sesión, antes que nada |
+| **P1** | algo roto que frena el commit, lo vea o no el visitante | Se arregla en esta sesión, o va al tope de `Admin/TODO.md` con su motivo |
+| **P2** | riesgo: no está mal hoy, se rompe o no escala mañana | Va a `Admin/TODO.md` |
+| **P3** | limpieza: pide trabajo de una sesión | Queda en el reporte. No ensucia `Admin/TODO.md` |
+| **P4** | informativo: no pide nada | Queda en el reporte (un código con acción `nada` en `tools/audit-acciones.json` pasa de P3 a P4) |
+
+La columna «Qué significa» es la misma frase que `SEV_TITULO` de `tools/audit.js`; el aviso `severidades-desfasadas` salta si dejan de coincidir.
+`node tools/audit.js --leyenda` da cada nivel con su definición, los hallazgos de hoy y los códigos que lo emiten. P0 y P1 frenan el commit.
 
 **Nunca bajes la severidad de un hallazgo para que el resumen quede más lindo.** Si un hallazgo está
 mal clasificado, se reclasifica en `tools/audit.js` (con el comentario de por qué), no en el reporte.
