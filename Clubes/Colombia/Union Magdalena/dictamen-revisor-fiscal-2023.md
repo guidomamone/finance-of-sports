@@ -1,0 +1,284 @@
+> **⚠️ ESCANEADO, TRANSCRIPTO CON MISTRAL OCR (ver Admin/Archive/test-costo-transcripcion.md).** El único
+> error de calidad real que encontramos en el test de comparación fue justo en un documento así: en
+> celdas dañadas/tapadas/rotadas, Mistral no avisa que no está seguro -- devuelve un número con la
+> misma confianza que uno bien leído. Antes de usar este archivo para cargar datos al sitio,
+> verificá a mano contra el PDF cualquier cifra que use (no alcanza con que el tie-out cierre, un
+> total mal leído puede colar igual si no hay una fuente independiente para comparar). Borrar esta
+> nota una vez verificado.
+
+--- pág. 1 ---
+
+# LUIS MANUEL MOLINA IBÁÑEZ
+
+CONTADOR PUBLICO – UNIVERSIDAD COOPERATIVA DE COLOMBIA
+
+Asesoría Contable, Tributaria y de Sistemas
+
+# DICTAMEN DEL REVISOR FISCAL OPINION CORRESPODIENTE SOBRE LA AUDITORIA DE LOS ESTADOS FINANCIEROS DEL AÑO GRAVABLE
+
+2023
+
+Señores:
+
+Accionistas
+
+UNION MAGDALENA SA
+
+# OPINION
+
+He auditado los estados financieros individuales adjuntos de la sociedad UNION MAGDALENA SA., preparados a 31 de diciembre de 2023 y 2022, que comprenden el estado de situación financiera, el estado de resultados integrales, el estado de cambios en el patrimonio y el estado de flujos de efectivo, correspondientes al ejercicio terminado en dicha fecha y el resumen de las políticas contables significativas y otras notas explicativas.
+
+En mi opinión, los estados financieros individuales adjuntos presentan razonablemente en todos los aspectos de importancia material, la situación financiera por el periodo comprendido de enero 1 a 31 de diciembre de 2023, los resultados y flujos de efectivo consolidados, correspondientes al ejercicio terminado en dicha fecha, de conformidad con los nuevos marcos técnicos normativos descritos en la Ley 1314 de 2009, reglamentada por el DUR 2420 de 2015 y sus adiciones o modificaciones, y su actualización compilados en el Decreto 2483 de 2018, aplicadas de manera uniforme con el año anterior.
+
+Mzna G Casa 1 Villa Alejandria Tel 4309367 Cel 313-746-0484 Santa Marta - Colombia
+
+--- pág. 2 ---
+
+# LUIS MANUEL MOLINA IBÁÑEZ
+
+CONTADOR PUBLICO - UNIVERSIDAD COOPERATIVA DE COLOMBIA
+
+Asesoría Contable, Tributaria y de Sistemas
+
+Fundamento de la opinión
+
+He llevado a cabo esta auditoría, de conformidad con las Normas Internacionales de Auditoría aceptadas en Colombia (NIAs,) expuestas en el Anexo técnico compilatorio y actualizado 4 - 2019, de las Normas de Aseguramiento de la Información del DUR 2420 de 2015 y sus adiciones o modificaciones.
+
+Declaro mi independencia con respecto a la entidad, de conformidad con los requerimientos del código de ética aplicables a mi auditoría, incluidos en las Normas de Aseguramiento de la Información aceptadas en Colombia y los establecidos en la Ley 43 de 1990. Considero que la evidencia de auditoría que he obtenido proporciona una base suficiente y adecuada para emitir mi opinión. Este dictamen se presenta con la aplicación de la NIA 701, sobre cuestiones claves que acá se desarrollan en el párrafo de otros asuntos. He advertido a la administración con suficiente oportunidad sobre la situación presentada en cada detalle.
+
+# ASUNTOS CLAVES DE AUDITORIA
+
+De manera mensual esta revisoría fiscal solicita información financiera y se revisan de manera aleatoria comprobantes contables y soportes de las operaciones realizadas por la entidad:
+
+# 1.IMPUESTOS DE LA ENTIDAD
+
+Se revisaron y firmaron las declaraciones de retención en la fuente, IVA, renta y se validó la presentación oportuna de las mismas por parte de la empresa, al igual que los reportes de información exógena a la Dian e informes empresariales ante la SuperSociedades y el ministerio del deporte. Se respondieron todos los requerimientos generados por los organismos de control.
+
+Mzna G Casa 1 Villa Alejandria Tel 4309367 Cel 313-746-0494 Santa Marta - Colombia
+
+--- pág. 3 ---
+
+# LUIS MANUEL MOLINA IBÁÑEZ
+
+CONTADOR PUBLICO – UNIVERSIDAD COOPERATIVA DE COLOMBIA
+
+Asesoría Contable, Tributaria y de Sistemas
+
+Se realizó la validación de los gastos de la entidad y se informó a la entidad de aquellos que cumplían con las condiciones para aplicarles retención en la fuente, sin embargo, la entidad lo había omitido; esta situación fue subsanada en la vigencia corriente por parte de la empresa asumiendo las retenciones dejadas de practicar.
+
+# 2. RENOVACION DEL REGISTRO MERCANTIL
+
+Para la vigencia 2023, se validó el cumplimiento de esta obligación a través del certificado de existencia y representación legal, evidenciándose que la empresa cumplió oportunamente con esta obligación.
+
+# 3. EFECTIVO Y EQUIVALENTES
+
+Se revisan conciliaciones bancarias y se validan saldos con corte al 31 de diciembre de 2023, evidenciándose de manera general que los valores entre conciliaciones bancarias y estados financieros coinciden, cumpliendo de esta manera con la política contable establecida por la entidad.
+
+# 4. LIBRO DE ACTAS DE ACCIONISTAS, JUNTA DIRECTIVA Y CORRESPONDENCIA.
+
+En la auditoría realizada a los libros antes mencionados durante la vigencia 2023 no se evidenciaron objeciones ni observaciones sobre el manejo de los mismos y se llevan conforme a las disposiciones legales y actualizados con corte a la última asamblea realizada.
+
+Mzna G Casa 1 Villa Alejandria Tel 4309367 Cel 313-746-0494 Santa Marta - Colombia
+
+--- pág. 4 ---
+
+# LUIS MANUEL MOLINA IBÁÑEZ
+
+CONTADOR PUBLICO - UNIVERSIDAD COOPERATIVA DE COLOMBIA
+
+Asesoría Contable, Tributaria y de Sistemas
+
+# 5. PROPIEDAD, PLANTA Y EQUIPO
+
+Se evaluaron los manuales de procedimientos, política contable y el control interno del rubro, evidenciando que la empresa posee un listado de activos organizado, sin embargo, los responsables de los activos son designados de manera verbal y no se realiza inventarlo periódico de activos fijos ni están identificados claramente por nomenclaturas, placas o códigos y el control de los mismos está a cargo del área de contabilidad.
+
+# 6. CUENTAS POR COBRAR Y POR PAGAR
+
+La revisoría fiscal realizó Circularización de saldos con corte al mes de diciembre de la vigencia 2023 de las cuentas por cobrar y por pagar con el objetivo de validar la información reportada por la entidad en los estados financieros.
+
+Con respecto a las cuentas por pagar la entidad presenta deudas superiores a 360 días y en varias ocasiones esta revisoría fiscal le ha reiterado a la gerencia cumplir con las instrucciones de la Superintendencia de Sociedades y cancelar estos saldos o realizar acuerdos de pago; sin embargo, estos saldos persisten situación que se viene reportando en los dictámenes anteriores emitidos por la revisoría fiscal. A continuación, se detallan tales cuentas:
+
+|  TERCEROS | VALOR DEUDA  |
+| --- | --- |
+|  DAVILA ARMENTA LTDA | $ 72.028.866.00  |
+|  CATAPULT SPORT PTY LTD | $ 23.084.566.00  |
+|  CLUB DEPORTIVO FUTBOLPAZ | $ 26.925.000.00  |
+|  FABRICA COLOMBIANA DE MEDIAS | $24.970.860  |
+|  INVERSIONES ORION LTDA | $137.500.000  |
+|  CAMPO JUAN | $640.000  |
+
+Mzna G Casa 1 Villa Alejandria Tel 4309367 Cel 313-746-0494 Santa Marta - Colombia
+
+--- pág. 5 ---
+
+# LUIS MANUEL MOLINA IBÁÑEZ
+
+CONTADOR PUBLICO – UNIVERSIDAD COOPERATIVA DE COLOMBIA
+
+Asesoría Contable, Tributaria y de Sistemas
+
+# 7. SIPLAFT
+
+Teniendo en cuenta la normatividad y por ser un equipo de futbol está el Unión Magdalena obligado a mantener el sistema de autocontrol "Siplaft". Se recibe manual de procedimientos, matriz de riesgos, reportes de ausencia de operaciones sospechosas mensuales e informes trimestrales entregados a la junta directiva por parte del oficial de cumplimiento. La revisoría fiscal valida cumplimiento de la normatividad y del manual implementado por la entidad, oportunidad en envió de los reportes a la UIAF y el cumplimiento de las funciones de las diversas partes que intervienen en el proceso. Como resultado de la evaluación realizada, se concluye un buen manejo del sistema y autocontrol interno de la compañía en lo que al Siplaft se refiere.
+
+# 8. CERTIFICACIONES LABORALES E IMPOSITIVAS
+
+Durante la vigencia 2023 se validaron y firmaron las certificaciones de obligaciones laborales e impositivas solicitadas por el Ministerio del deporte y de manera bimestral se solicitó informe del área jurídica con respecto a los procesos activos de la sociedad.
+
+# 9. ACUERDO DE PAGO CON LA UGPP Y LADIAN
+
+Actualmente la entidad tiene un acuerdo de pago vigente con la UGPP por un lapso de 12 meses el cual debía culminar en mayo del año 2023, sin embargo, por un error en la base de datos del ministerio de la protección social queda pendiente de pago un saldo, el cual según información recibida por la contadora será cancelado una vez actualicen dicha información. Esta revisoría fiscal constato la información suministrada a través del radicado emitido por la UGPP en el cual se observa el recurso interpuesto solicitando la actualización de la base de datos para proceder con el pago de la última cuota. Este acuerdo de pago se suscribió para
+
+Mzna G Casa 1 Villa Alejandria Tel 4309367 Cel 313-748-0494 Santa Marta - Colombia
+
+--- pág. 6 ---
+
+# LUIS MANUEL MOLINA IBÁÑEZ
+
+CONTADOR PUBLICO – UNIVERSIDAD COOPERATIVA DE COLOMBIA
+
+Asesoría Contable, Tributaria y de Sistemas
+
+subsanar los aportes de los años 2008, 2009, 2010 y 2011. Con la Dian se suscribió un acuerdo de pago por un lapso de 5 años correspondiente a impuesto sobre las ventas y retenciones en la fuente de los años 2019 y 2020 (a la fecha de este dictamen se han cancelado 38 cuotas), los cuales se han venido cancelando y amortizando de manera mensual. Se radicó el 29 de diciembre del 2023 ante la Dian otra solicitud de acuerdo de pago por Impuesto sobre las ventas bimestre 04 y retenciones en la fuente de los periodos julio, agosto y septiembre del año 2023.
+
+# 10. NOMINA Y SEGURIDAD SOCIAL
+
+Durante la vigencia se validaron los cálculos de retención en la fuente realizados a los jugadores del club deportivo y las novedades reportadas en la seguridad social de la empresa de manera aleatoria; de igual manera se validaron las cuentas de cobro recibidas por los contratistas, los documentos soportes y el pago de seguridad social de cada uno de ellos.
+
+# 11.INGRESOS
+
+La empresa facturo de manera electrónica sus ingresos propios entre los que se destaca la venta de elementos deportivos y los ingresos de la Dimayor. Se conservan en archivo físico y digital las facturas electrónicas y los documentos soportes expedidos por la entidad que se descargan desde el portal de la Dian, cumpliendo de esta manera con las políticas previamente establecidas.
+
+Mzna G Casa 1 Villa Alejandría Tel 4309367 Cel 313-746-0494 Santa Marta - Colombia
+
+--- pág. 7 ---
+
+# LUIS MANUEL MOLINA IBÁÑEZ
+
+CONTADOR PUBLICO – UNIVERSIDAD COOPERATIVA DE COLOMBIA
+
+Asesoría Contable, Tributaria y de Sistemas
+
+# 12. GASTOS Y COMPRAS
+
+En la revisión efectuada a los soportes de gastos de la entidad se evidencio que se soportan los pagos con facturas electrónicas y documentos soportes según el caso. La empresa maneja un presupuesto anual el cual es presentado ante el ministerio de deporte.
+
+# RESPONSABILIDAD DE LA ADMINISTRACIÓN Y DE LOS RESPONSABLES DE GOBIERNO CORPORATIVO EN RELACIÓN CON LOS ESTADOS FINANCIEROS.
+
+Los estados financieros certificados que se adjuntan son responsabilidad de la administración, quien supervisó su adecuada elaboración de acuerdo con los lineamientos incluidos en el Decreto 2420 de 2015 y sus modificatorios, así como las directrices de las orientaciones profesionales y técnicas del Consejo Técnico de Contaduría Pública, junto con el manual de políticas contables adoptadas por UNION MAGDALENA SA, de conformidad con las Normas Internacionales de Información Financiera. Dicha responsabilidad administrativa incluye diseñar, implementar y mantener el control interno relevante en la preparación y la presentación de los estados financieros para que estén libres de errores de importancia relativa, bien sea por fraude o error; seleccionar y aplicar políticas contables apropiadas, y registrar estimaciones contables que sean razonables.
+
+Adicionalmente, en la preparación de los estados financieros, la administración es responsable de la valoración de la capacidad que tiene la entidad para continuar como un negocio en marcha, de revelar, según corresponda, las cuestiones relacionadas con la continuidad del mismo, y de usar la base contable de negocio en marcha, a menos que la administración pretenda liquidar la entidad, o cesar sus actividades, o bien no exista otra alternativa más realista que proceder de una de estas formas.
+
+Los responsables del gobierno corporativo de la entidad, también deben supervisar el proceso de información financiera de esta.
+
+Mzna G Casa 1 Villa Alejandria Tel 4309367 Cel 313-746-0494 Santa Marta - Colombia
+
+--- pág. 8 ---
+
+# LUIS MANUEL MOLINA IBÁÑEZ
+
+CONTADOR PUBLICO - UNIVERSIDAD COOPERATIVA DE COLOMBIA
+
+Asesoría Contable, Tributaria y de Sistemas
+
+# RESPONSABILIDAD DEL REVISOR FISCAL EN RELACIÓN CON LA AUDITORÍA DE LOS ESTADOS FINANCIEROS
+
+Mi responsabilidad consiste en obtener una seguridad razonable de que los estados financieros en su conjunto están libres de incorrección material, bien sea por fraude o error, y emitir un informe de auditoría que contenga mi opinión, para esta auditoría se estimó la materialidad en $50.436.395.
+
+La información es material, si individualmente o de forma agregada se puede prever
+
+razonablemente que influye en las decisiones de los usuarios.
+
+Como parte de una auditoría efectuada de acuerdo con NIAS, apliqué mi juicio profesional; manteniendo escepticismo profesional. Durante la auditoría también:
+
+- Identifique y evalué los riesgos de error material en los Estados financieros, bien sea por fraude o error, diséné y realizé procedimientos de auditoría en respuesta a这些东西 riesgos y obtuve evidencia de auditoría suficiente y apropiada para fundamentalar mi Opinion. El riesgo de no detectar un error material resultante de fraude es mayor que aquel que surge de un error, debido a que el fraude pueda involucrar colusión, falsificaciones, omisiones intencionales, representaciones engañosas o la elusión o sobrepaso del control interno.
+- Obtuve entendimiento del control interno relevante para la auditoria con el objetivo de Diseñar procedimientos de auditoria que fueran apropriados a las circunstancias.
+- Evalué lo apropiado de las políticas contables realizadas y la Reasonabilidad de los estimados contables y de las revelaciones relacionadas realizadas por la administration.
+- Proporción a los encargados del gobernó corporativo la confirmación de que he cumplido con losrequireimientos éticos relevantes de independencia y les he comunicado todas las relaciones yotiros asuntos que razonablemente se pueda considerar que influyen en mi independencia.
+
+Mzna G Casa 1 Villa Alejandria Tel 4309367 Cel 313-746-0494 Santa Marta - Colombia
+
+--- pág. 9 ---
+
+# **LUIS MANUEL MOLINA IBÁÑEZ**  
+CONTADOR PUBLICO – UNIVERSIDAD COOPERATIVA DE COLOMBIA  
+Asesoría Contable, Tributaria y de Sistemas
+
+- Evalué la presentación general, estructura y contenido de los estados financieros, incluyendo las revelaciones, y si los estados financieros presentan las transacciones y eventos subyacentes para lograr una presentación razonable.
+
+La revisoría fiscal no evidencio riesgo alguno de lo mencionado anteriormente, directrices de las orientaciones profesionales y técnicas del Consejo Técnico de Contaduría Pública, junto con el manual de políticas contables adoptadas por UNION MAGDALENA SA, de conformidad con las Normas Internacionales de Información Financiera. Dicha responsabilidad administrativa incluye diseñar, implementar y mantener el control interno relevante en la preparación y la presentación de los estados financieros para que estén libres de errores de importancia relativa, bien sea por fraude o error; seleccionar y aplicar políticas contables apropiadas, y registrar estimaciones contables que sean razonables.
+
+Adicionalmente, en la preparación de los estados financieros, la administración es responsable de la valoración de la capacidad que tiene la entidad para continuar como un negocio en marcha, de revelar, según corresponda, las cuestiones relacionadas con la continuidad del mismo, y de usar la base contable de negocio en marcha, a menos que la administración pretenda liquidar la entidad, o cesar sus actividades, o bien no exista otra alternativa más realista que proceder de una de estas formas.
+
+Los responsables del gobierno corporativo de la entidad, también deben supervisar el proceso de información financiera de esta.
+
+La revisoría fiscal deja constancia que, al recibo de los Estados Financieros, para su firma, fueron enviadas las notas a los Estados Financieros y considera que se ajustan a los preceptos contenidos en la circular 01 del 14 de marzo de 2023 de Ministerio del deporte.
+
+---Mzma G Casa 1 Villa Alejandría Tel 4309367 Cel 313-746-0494 Santa Marta - Colombia
+
+--- pág. 10 ---
+
+# LUIS MANUEL MOLINA IBÁÑEZ
+
+CONTADOR PUBLICO - UNIVERSIDAD COOPERATIVA DE COLOMBIA
+
+Asesoria Contable, Tributaria y de Sistemas
+
+INFORME SOBRE OTROS REQUERIMIENTOS LEGALES O REGLAMENTARIOS.
+
+Con base en el resultado de mis pruebas, en mi concepto durante el año 2023:
+
+a) La contabilidad de la Compañía ha sido llevada conforme a las normas legales ya la técnica contable.
+
+Las operaciones registradas en los libros se ajustan a los estatutos y a las decisiones de la Asamblea de Accionistas y la Junta Directiva.
+
+b) La correspondencia, los comprobantes de las cuentas y los libros de actas y de registro de acciones se llevan y se conservan debidamente.
+
+c) Existe concordancia entre los estados financieros que se acompañan y el informe de gestión preparado por los administradores.
+
+d) La información contenida en las declaraciones de autoliquidación de aportes al sistema de seguridad social integral, en particular la relativa a los afiliados y a sus ingresos base de cotización, ha sido tomada de los registros y soportes contables. La empresa ha firmado un acuerdo de pago con la UGPP y por lo tanto no se encuentra en mora por concepto de aportes al sistema de seguridad social integral.
+
+e) Las medidas de conservación y custodia de los bienes de la Sociedad o de terceros que estén en su poder, se ajustan adecuadamente al sistema de control interno diseñado e implementado por la administración.
+
+Mzna G Casa 1 Villa Alejandria Tel 4309367 Cel 313-746-0494 Santa Marta - Colombia
+
+--- pág. 11 ---
+
+LUIS MANUEL MOLINA IBÁÑEZ
+CONTADOR PUBLICO - UNIVERSIDAD COOPERATIVA DE COLOMBIA
+Asesoría Contable, Tributaria y de Sistemas
+
+NEGOCIO EN MARCHA
+
+La empresa a cierre del periodo, presenta una pérdida acumulada, de $1.280,805.000, que representa el 48.17% del capital suscrito y pagado, correspondiendo el 53.95% a la perdida por el ajuste de adopción en NIIF; sin embargo la administración considera que la entidad cuenta con la capacidad de continuar sus operaciones durante un futuro predecible, sin necesidad de ser liquidada o de cesar en sus operaciones y por lo tanto, sus activos y pasivos son reconocidos sobre la base de que los activos serán realizados y los pasivos cancelados en el curso normal de las operaciones comerciales. Se solicita que, en la asamblea ordinaria, se tomen las medidas presupuestales y administrativas que garanticen que para el 2024 las operaciones generen ganancias y así enjugar las pérdidas de los años anteriores y mejorar los índices de riesgo de insolvencia y deterioro patrimonial.
+
+Santa Marta, marzo 15 de 2024
+
+LUIS MANUEL MOLINA IBÁÑEZ
+Revisor Fiscal
+T.P.No 66974-T
+
+Mzna G Casa 1 Villa Alejandria Tel 4309367 Cel 313-748-0494 Santa Marta - Colombia
+
+--- pág. 12 ---
+
+# LUIS MANUEL MOLINA IBÁÑEZ
+CONTADOR PUBLICO – UNIVERSIDAD COOPERATIVA DE COLOMBIA
+Asesoría Contable, Tributaria y de Sistemas
+
+GENTE CENTRAL DE CONTADORES
+JAPISTA PROFESIONAL
+DE CONTADOR PUBLICO
+66924-I
+LUIS MANUEL
+MOLINA IBÁÑEZ
+C.C. 85462039
+RESOLUCIÓN INSURICCIÓN 247 FECHA 12/08/1999
+UNIVERSIDAD COOPERATIVA DE COLOMBIA
+PRESIDENTE
+DANIEL SARMIENTO PAVAS 73730
+
+DUPLICADO
+2017
+
+Mzna G Casa 1 Villa Alejandria Tel 4309367 Cel 313-746-0494 Santa Marta - Colombia

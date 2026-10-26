@@ -99,6 +99,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2023: {
     leagueSize: 20,
+    sinDato: ["unionmagdalena-co"],
     wiki: {"t":"2023 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:23.786, reportType:"official_balance_sheet",
@@ -133,6 +134,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2022: {
     leagueSize: 20,
+    sinDato: ["unionmagdalena-co"],
     wiki: {"t":"2022 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:12.989, reportType:"official_balance_sheet",
@@ -215,6 +217,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2019: {
     leagueSize: 20,
+    sinDato: ["unionmagdalena-co"],
     wiki: {"t":"2019 Categoría Primera A season","lang":"en","at":"2026-10-02","n":20},
     clubs: [
       { id:"deportestolima-co", revenue:10.888, reportType:"official_balance_sheet",

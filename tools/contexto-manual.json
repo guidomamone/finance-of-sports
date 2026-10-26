@@ -378,6 +378,34 @@
       }
     }
   },
+  "unionmagdalena-co": {
+    "2016": { "estadio": "Estadio Federico Serrano Soto", "capacidad": 8000, "marca": "VeraLima", "fuente": "estadio y capacidad: https://es.wikipedia.org/wiki/Estadio_Federico_Serrano_Soto (Riohacha, capacidad 8.000; ficha: Unión Magdalena de local en 2013 y 2016); marca: https://es.wikipedia.org/w/index.php?oldid=174862459 (VeraLima 2016)",
+      "sin-fuente": {
+        "sponsor": {
+          "buscado": "2026-10-26",
+          "por": "Claude (subagente Sonnet)",
+          "intentos": [
+            { "clase": "informe-anual", "donde": "Clubes/Colombia/Union Magdalena/*.md, grep -i patroc|sponsor (no hay informe de 2016; los de 2022 y 2025 solo traen «patrocinio» en abstracto)", "resultado": "sin-dato" },
+            { "clase": "prensa", "donde": "búsquedas «Unión Magdalena camiseta 2016 patrocinador principal Torneo Águila VeraLima» y «Unión Magdalena nueva camiseta 2016 Torneo Águila marca patrocinador pecho»: ningún medio con fecha de 2016 nombra el sponsor del frente", "resultado": "sin-dato" },
+            { "clase": "base-camisetas", "donde": "https://www.footballkitarchive.com/es/union-magdalena-camisetas-t3614/ (403 al abrirla; el resumen de la búsqueda dice «Sin patrocinador 2015-2017», sin confirmar con la página)", "resultado": "inaccesible" }
+          ]
+        }
+      }
+    },
+    "2022": { "marca": "FSS", "fuente": "marca: https://es.wikipedia.org/w/index.php?oldid=174862459 (FSS 2022); el estadio y la capacidad ya los trae Wikipedia",
+      "sin-fuente": {
+        "sponsor": {
+          "buscado": "2026-10-26",
+          "por": "Claude (subagente Sonnet)",
+          "intentos": [
+            { "clase": "informe-anual", "donde": "Clubes/Colombia/Union Magdalena/dictamen-revisor-fiscal-2022.md, grep -i patroc|sponsor (solo «ingresos vía taquilla y patrocinio» en abstracto, sin nombre)", "resultado": "sin-dato" },
+            { "clase": "prensa", "donde": "búsquedas «Unión Magdalena camiseta 2022 patrocinador principal FSS Liga BetPlay», «Unión Magdalena nueva camiseta 2022 patrocinador al frente de la camiseta»; https://www.hoydiariodelmagdalena.com.co/archivos/795177/union-magdalena-suma-un-nuevo-patrocinador/ (31-mar-2023: Pool llega para la temporada 2023); ninguna nota de 2022 nombra el sponsor del frente (el resumen de una búsqueda sugiere Wplay 2022-2023 solo desde Football Kit Archive, sin confirmar)", "resultado": "sin-dato" },
+            { "clase": "base-camisetas", "donde": "https://www.footballkitarchive.com/es/union-magdalena-camisetas-t3614/ (403 al abrirla)", "resultado": "inaccesible" }
+          ]
+        }
+      }
+    }
+  },
   "laequidad-co": {
     "2016": {"estadio":"Estadio Metropolitano de Techo","capacidad":10000,"sponsor":"Cotrafa","marca":"Puma","fuente":"estadio y capacidad: https://es.wikipedia.org/wiki/Estadio_Metropolitano_de_Techo (capacidad actual unos 10.000, sede habitual de La Equidad desde 2007); marca (Puma 2016-2019): https://casacaslucholass.com/clubs/colombia/cd-la-equidad-seguros/ y https://es.wikipedia.org/wiki/Club_Deportivo_La_Equidad (Puma 2016-2019, Attle 2020-); presentación 2016-II con camisetas Puma: https://dxtcapital.com/futbol/presentacion-oficial-de-camisetas-y-nomina-de-equidad-para-2016-ii/; sponsor (Cotrafa 2012-2024): historial de sponsors de Football Kit Archive https://www.footballkitarchive.com/es/la-equidad-sponsor-history/ (base de aficionados, una sola fuente; leída por el resumen de la búsqueda, la página dio 403; no dice explícitamente 'frente'); otras fuentes solo listan a Cotrafa entre los patrocinadores sin ubicación: https://www.portafolio.co/tendencias/las-marcas-que-patrocinan-los-equipos-del-futbol-colombiano-498599 (julio 2016: Equidad Seguros, Cotrafa, Colanta, Puma, Fundequidad)"},
     "2017": {"estadio":"Estadio Metropolitano de Techo","capacidad":10000,"sponsor":"Cotrafa","marca":"Puma","fuente":"estadio y capacidad: https://es.wikipedia.org/wiki/Estadio_Metropolitano_de_Techo (capacidad actual unos 10.000, sede habitual de La Equidad desde 2007); marca (Puma 2016-2019): https://casacaslucholass.com/clubs/colombia/cd-la-equidad-seguros/ y https://es.wikipedia.org/wiki/Club_Deportivo_La_Equidad (Puma 2016-2019, Attle 2020-); sponsor (Cotrafa 2012-2024): historial de sponsors de Football Kit Archive https://www.footballkitarchive.com/es/la-equidad-sponsor-history/ (base de aficionados, una sola fuente; leída por el resumen de la búsqueda, la página dio 403; no dice explícitamente 'frente'); otras fuentes solo listan a Cotrafa entre los patrocinadores sin ubicación: https://www.portafolio.co/tendencias/las-marcas-que-patrocinan-los-equipos-del-futbol-colombiano-498599 (julio 2016: Equidad Seguros, Cotrafa, Colanta, Puma, Fundequidad)"},
