@@ -67,6 +67,12 @@
    "correr": ["tools/xhtml-aarsrapport.mjs", "Clubes", "--rehacer"],
    "comparar": "texto"
   },
+  "siis": {
+   "que": "las compuertas de siis-estado.mjs (ensayo, no escribe) sobre todos los años de SIIS de un club: si cierran, cuáles no y los avisos de reexpresión",
+   "usaLista": false,
+   "correr": ["tools/siis-estado.mjs", "--club", "Deportes Tolima", "--todos", "--rehacer"],
+   "comparar": "texto"
+  },
   "alta": {
    "que": "el ensayo de altas de club sobre todos los documentos, sin API",
    "usaLista": false,
@@ -106,6 +112,7 @@
   "caja-deuda.mjs": { "alcance": "etapa", "medidores": ["caja-deuda", "caja-deuda-personal", "personal-ensayos", "audit", "escribir"] },
   "alta-club.mjs": { "alcance": "compartida", "medidores": ["alta", "cargar"] },
   "xhtml-aarsrapport.mjs": { "alcance": "etapa", "medidores": ["xhtml"], "familia": { "formato": "xhtml" } },
+  "siis-estado.mjs": { "alcance": "etapa", "medidores": ["siis", "verificar"], "familia": { "formato": "siis" } },
   "ixbrl-resultado.mjs": { "alcance": "etapa", "medidores": ["xhtml", "verificar"], "familia": { "formato": "xhtml" } },
   "bfo-rusia.mjs": { "alcance": "etapa", "medidores": ["cargar"], "familia": { "pais": "Rusia" } },
   "nbb.mjs": { "alcance": "etapa", "medidores": ["cargar"], "familia": { "pais": "Bélgica" } },
@@ -135,7 +142,8 @@
  "escriben_sin_prueba": {
   "cargar-lote.mjs": "corre cargar.mjs por documento: lo que escribe lo prueba la carga de prueba-escribir.mjs; falta un escenario del lote entero",
   "bfo-rusia.mjs": "carga los estados rusos desde bo.nalog.gov.ru por red; falta un escenario con una respuesta guardada",
-  "bfo-rusia-notas.mjs": "completa las notas de los estados rusos; falta su escenario"
+  "bfo-rusia-notas.mjs": "completa las notas de los estados rusos; falta su escenario",
+  "siis-estado.mjs": "baja de SIIS por red, imprime con Chrome y llama a armar-a-mano; falta un escenario con una respuesta guardada de SIIS (punto 401)"
  },
  "no_pipeline": {
   "archivar.mjs": "orden: archiva un documento cerrado",

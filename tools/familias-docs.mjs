@@ -6,7 +6,7 @@
 // Una sola definición para los dos.
 //
 // País: la carpeta de Clubes/<País>/. Formato: `xhtml` si el documento viene de un informe XHTML/iXBRL (hay un .xhtml con el mismo nombre, o
-// el nombre dice ixbrl), `pdf` en el resto.
+// el nombre dice ixbrl), `siis` si es un siis-estado-AAAA.pdf, `pdf` en el resto.
 // ============================================================================
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -18,5 +18,7 @@ export function familiaDe(pdf) {
   const pais = partes[1] || '?';
   const tronco = pdf.replace(/\.[^.]+$/, '');
   const xhtml = /ixbrl/i.test(pdf) || existsSync(resolve(ROOT, `${tronco}.xhtml`)) || existsSync(resolve(ROOT, `${tronco}-ixbrl.xhtml`));
-  return { pais, formato: xhtml ? 'xhtml' : 'pdf', clave: `${pais} · ${xhtml ? 'xhtml' : 'pdf'}` };
+  const siis = /(^|\/)siis-estado-\d{4}\.pdf$/.test(pdf); // el estado de resultados y el balance de SIIS (Colombia): tools/siis-estado.mjs, sin API
+  const formato = siis ? 'siis' : xhtml ? 'xhtml' : 'pdf';
+  return { pais, formato, clave: `${pais} · ${formato}` };
 }

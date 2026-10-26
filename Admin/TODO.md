@@ -32,11 +32,11 @@ CASOS: (1) PDF completo con su estado propio: se carga del PDF y SIIS es control
 
 ORDEN DE TRABAJO (grupos; cada grupo termina y se commitea antes del siguiente; dentro de un grupo, de a un paso):
 GRUPO 1 · La base (Pipeline): lo que lo demás necesita.
- 1.1 Averiguar el índice del balance de SIIS (situación financiera) y el de flujo de efectivo: si dan caja, deuda y personal de los clubes de solo notas, sirven para `caja-deuda`. Anotar el nombre del índice y los campos en la nota de sourcing.
- 1.2 Criterio escrito en `Admin/CONVENCIONES-DATOS.md` con los cuatro casos de arriba, el nivel de dato «solo SIIS», la regla de conciliación rubro por rubro y qué va a `officialPAT`. Si quedan preguntas de criterio sin precedente (cómo se rotula el rubro de SIIS que las notas no abren; cómo se carga el año solo-SIIS en las filas del sitio), `votacion-de-criterios`; lo demás ya lo decidió Guido.
- 1.3 La tool `tools/siis-estado.mjs`: baja el estado por NIT y año, guarda el JSON crudo y una transcripción `.md` generada en `Clubes/Colombia/<Club>/` (con fecha de consulta y huella), sin API paga. Se anota en `tools/fos-comandos.json` y `tools/pipeline-tools.json`, y se mide (`fos medir pipeline`, `fos patron`).
- 1.4 El pipeline reconoce ese documento (`familias-docs.mjs` y lo que lea las etapas) y lo usa donde el PDF trae solo las notas. Si hace falta un escalón nuevo de script, se mide antes y después, sin excepción.
- 1.5 `armar-a-mano` o la ruta que corresponda cubre la carga desde SIIS más notas; la prueba de escritura (401) cubre la tool nueva.
+ 1.1 HECHO (2026-10-26): el balance es el índice `siis_sitfinan` y también existen `siis_flujoefectivo` y `siis_otroreporte` (`_notas-generales.md`). QUEDA: usar el balance de SIIS (caja y «otros pasivos financieros») en `caja-deuda.mjs` para los clubes de solo notas, con su medición.
+ 1.2 HECHO: regla en `Admin/CONVENCIONES-DATOS.md`. QUEDA: si al cargar aparece una pregunta de criterio sin precedente (cómo se rotula un rubro de SIIS que las notas no abren; cómo se cargan las notas que sí suman), `votacion-de-criterios`.
+ 1.3 HECHO: `tools/siis-estado.mjs` (+ `tools/siis-clubes.json`, `fos siis-estado`, medidor `siis`, familia «Colombia · siis»). QUEDA: la prueba de escritura con una respuesta guardada de SIIS (va con el 401; hoy figura en `escriben_sin_prueba` de `pipeline-tools.json`).
+ 1.4 HECHO: el pipeline lo reconoce (inventario con su motor, localizar y extraer en US$ 0, verificar cierra). QUEDA: probar el lote con `--ejecutar` (categorización con IA, unos US$ 0,03 por documento) cuando se cargue Tolima, y que la prueba completa incluya más de un documento de la familia.
+ 1.5 La carga desde SIIS más notas (casos 2 de la regla): QUEDA decidir en el grupo 3 si las notas abren algún rubro; hasta entonces se carga el estado de SIIS solo.
 GRUPO 2 · El control permanente (Auditora):
  2.1 Chequeo en `audit.js` (código nuevo, por ejemplo `siis-control`): todo año colombiano cargado se compara con SIIS (ingresos y resultado) con una tolerancia escrita; avisa cuando no coincide o cuando falta el estado. Recorrer la sección 7 de `auditoria-finance-of-sports` y medir antes de dejarlo activo; anotarlo en CHANGELOG como «sin revisión independiente».
  2.2 Correr ese control sobre los 15 clubes colombianos de `data/co/` ya cargados y arreglar lo que encuentre (cada diferencia es un posible error cargado).
@@ -226,7 +226,15 @@ Verificar: contiene Admin/lotes/prueba-completa.txt | Clubes/Rusia/
 
 ## E. Después de A a D (Guido, 2026-10-20)
 
-### 15. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
+### 15. 464 · (Onboarding, con Pantallas y Contrato de datos): abrir con SIIS los deportes que no son fútbol (baloncesto y béisbol de Colombia)
+
+Pedido de Guido (2026-10-26): SIIS tiene el estado de resultados de clubes de otros deportes y hay que abrirlos. No se cargan hasta que Guido active cada deporte (`Admin/PIPELINE.md`, «Un deporte nuevo»; activar un deporte es suyo). Lo que SIIS tiene hoy (`Admin/sourcing/Colombia/siis-inventario.md`, generado): baloncesto, Gigantes de Barranquilla (NIT 901330760, 2021 a 2025), Titanes de Barranquilla (901213941, 2021 a 2025; ya hay carpeta en `Clubes/Colombia/`), Frastbreak Basketball Club (901123128, 2018, 2019 y 2021 a 2025), Bogotá Piratas (900720607, 2016, 2017, 2019 y 2021 a 2025) y un club de baloncesto de razón social «Fomentar, patrocinar y practicar el baloncesto…» (900721306, 2024); béisbol, Toros de Córdoba (900477535, 2017 a 2019 y 2021 a 2023; carpeta existente) y Caimanes de Barranquilla (900650770; carpeta existente). Los dos de béisbol y Titanes ya figuran en `tools/siis-clubes.json`; los demás hay que sumarlos con su carpeta.
+Pasos: (1) Guido decide qué deportes se activan (baloncesto, béisbol) y con qué taxonomía. (2) Se suman los NIT que faltan a `tools/siis-clubes.json` y se dan de alta los clubes (`alta-club.mjs`, que pregunta el deporte). (3) `node tools/siis-estado.mjs --club "<Club>" --todos --escribir` y el pipeline de siempre. (4) Pantallas y Contrato de datos si el deporte cambia algo visible o público.
+Terminado cuando: Guido decidió qué deportes se activan con SIIS y los clubes de esos deportes con estado en SIIS están cargados, o quedó escrito por qué no.
+
+Verificar: manual
+
+### 16. 357 · mostrar las inyecciones de capital de los dueños (diseño de Pantallas, con mockup)
 
 MOSTRAR LAS INYECCIONES DE CAPITAL (Guido, 2026-10-21: «agregá como to do mostrar en algún lado inyecciones de capital»). Lo que el
 dueño o los socios ponen como aumento de capital, aporte o préstamo va al patrimonio o a la deuda, no al resultado, y hoy el sitio no lo
@@ -236,7 +244,7 @@ JSON, pasa por la skill `contrato-de-datos`. Se relaciona con el 350 (subsidios 
 
 Verificar: manual
 
-### 16. 420 · (Onboarding, con la Auditora): cargar los británicos en iXBRL: lote 143 y Hibernian, los años pagables, Falkirk, las altas (viene del 356)
+### 17. 420 · (Onboarding, con la Auditora): cargar los británicos en iXBRL: lote 143 y Hibernian, los años pagables, Falkirk, las altas (viene del 356)
 
 Viene del 356 (el conversor ya está: celdas por coordenadas como tablas, medido sobre 317 XHTML). Qué hay hecho: los 55 `.md` de Hibernian, Bolton, Bristol Rovers, Cambridge, Crewe, Northampton, Oxford, Peterborough, Plymouth, Rotherham, Salford, Tranmere, Blackpool y Reading están reconvertidos con tablas (costo 0), y Bolton 2024-25 corrió de punta a punta (`lote.mjs --rehacer --ejecutar --pagar-ia-xhtml`: US$ 0,15, verificó, 2 dudas ordinarias en la cola). Presupuesto del 356: US$ 35 de Guido, gastados ~2 (`node tools/gasto.mjs`), con ensayo gratis antes de cada corrida.
 - Los lotes: `Admin/lotes/lote-143.txt` (13 documentos de Inglaterra, el año más reciente de cada club; ensayo ~US$ 0,4 por documento con IA) y Hibernian en un lote de Escocia (un país por lote). Los `Generados/` de esos clubes eran de cuando el `.md` no tenía tablas (`sin_estado: true`); desde el 419 el lote lo ve solo («el .md cambió desde localizar … se rehace») y el ensayo cotiza US$ 4,85 para los 13 (Bolton ya está hecho). Los 2 documentos de OH Leuven 2017 y 2022 (Bélgica) también quedan «viejos» por su `.md` cambiado. Después las altas como en los lotes 140 y 141: cola contestada por subagentes Sonnet, ficha de alta, estadio y sponsor, perímetros (group accounts: perímetro consolidado con la regla 1 de CONVENCIONES-DATOS), gestiones.
@@ -254,7 +262,7 @@ Verificar: contiene data/leagues.js | Scottish Championship
 Verificar: contiene Admin/CONVENCIONES-DATOS.md | Trust
 Verificar: manual
 
-### 17. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
+### 18. 337 · las 5 grandes ligas, Brasil y Argentina bien cargadas, con Mistral (medido; falta tu decisión de umbral y presupuesto)
 
 ANTES DE DIFUNDIR: LAS GRANDES LIGAS BIEN CARGADAS (pedido de Guido, 2026-10-20). No se difunde nada (313) hasta tener bien cargadas
 Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Brasileirão Série A y la Primera argentina. Primero medir qué falta por liga
@@ -267,7 +275,7 @@ faltan (Pipeline).
 
 Verificar: manual
 
-### 18. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+### 19. 313 · contenido y difusión: X, Instagram y material para periodistas y sponsors (después del 337)
 
 CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La idea es promocionar el sitio con publicaciones propias.
  Ideas a diseñar cuando se retome, una por vez y con el ok de Guido:
@@ -283,7 +291,7 @@ CONTENIDO PARA X E INSTAGRAM (pedido de Guido, 2026-10-19; todavía falta). La i
 
 Verificar: manual
 
-### 19. 335 · mails a clubes
+### 20. 335 · mails a clubes
 
 MAILS A CLUBES (une el 51, el 282 y el 326, Guido 2026-10-20). Todo lo que implique escribirle a un club vive acá. Nadie manda ni redacta
 un mail sin que Guido lo pida en sus palabras.
@@ -298,14 +306,14 @@ consolidado público). Si el sitio publicara el consolidado de Juventus, sus lí
 
 Verificar: manual
 
-### 20. 460 · (Contenido, con Pantallas, prioridad baja): una página de blog: sumar nuestros datos a lo que dicen los informes de UEFA, Deloitte y similares
+### 21. 460 · (Contenido, con Pantallas, prioridad baja): una página de blog: sumar nuestros datos a lo que dicen los informes de UEFA, Deloitte y similares
 
 Pedido de Guido (2026-10-26): hacer eventualmente una página de blog (la ruta se decide con Pantallas) que tome lo que dicen informes como el de UEFA (*The European Club Finance and Investment Landscape*) o la Money League de Deloitte y le agregue lo que dicen NUESTROS datos. No se toman cifras de esos informes para cargarlas en el sitio ni para compararlas con nuestros clubes como control de calidad; es contenido de blog. Ya está guardado el informe de UEFA 2025: `Admin/informes-externos/uefa/ecfil-2025.md` (transcripción de Mistral, 112 páginas) y su `README.md` dice qué trae (no trae ingresos por club; trae KPI por liga y país). Falta: elegir qué liga o tema abre el primer artículo, qué de nuestros datos lo completa (cobertura de la liga en el sitio, ingresos por rubro de los clubes cargados), diseño de la página (Pantallas, mockup antes; la skill `contenido-y-difusion-finance-of-sports` es el criterio de lo que se publica con un dato), la fila del informe en `Admin/fuentes-externas.md` y sus términos de uso, y la Money League de Deloitte (aún sin bajar). Va antes del punto de la API.
 Terminado cuando: existe la página de blog con al menos un artículo que cita el informe externo con su fuente y suma datos del sitio, con el mockup aprobado por Guido y la fila del informe en `Admin/fuentes-externas.md`.
 
 Verificar: manual
 
-### 21. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
+### 22. 249 · API en dominio propio (necesita antes el contrato de datos del 257, el índice partido del 258 y la carga del 337)
 
 API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
 api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,

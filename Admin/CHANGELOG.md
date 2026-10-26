@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1134 — La tool siis-estado.mjs: el estado de resultados y el balance de SIIS como documento del pipeline [463 · 464 · siis-estado.mjs, familias-docs.mjs, inventario-transcripciones.mjs]
+- `tools/siis-estado.mjs` baja de SIIS (Colombia) el estado de resultados y el balance de un club y deja `siis-estado-AAAA.md` (fiel), `.json` y `.pdf` en su carpeta, con 5 compuertas aritméticas (de unos 340 club-años solo Independiente Santa Fe falla en 5), más las filas armadas con `armar-a-mano.mjs`: localizar y extraer cuestan US$ 0, y verificar cierra el resultado de Tolima 2025. `--inventario` genera `Admin/sourcing/Colombia/siis-inventario.md`. El país y la moneda salen de `tools/siis-clubes.json`.
+- `inventario-transcripciones.mjs` reconoce el motor «siis-api (determinista)»; `familias-docs.mjs` tiene la familia «siis»; `pipeline-tools.json` tiene el medidor `siis`; `fos siis-estado` figura en `fos-comandos.json`. Regla: `Admin/CONVENCIONES-DATOS.md`; proceso: `Admin/PIPELINE.md`. Punto nuevo 464 (deportes que no son fútbol con SIIS).
+- Medición: 13 diferencias, todas explicadas (las altas del medidor nuevo y dos avisos de audit que se van); `lote-ensayo` y `verificar` idénticos en los tres niveles.
+
 ## Versión 1133 — Los puntos 257, 461 y 462 se agrupan en el 463, con orden de trabajo en cinco grupos [257 · 461 · 462 · 463]
 - Se abrió el 463 (SIIS como estado primario oficial en Colombia) con las decisiones de Guido, los hechos, los cuatro casos y los pasos en cinco grupos (base, control permanente, clubes, skills y pantalla, cositas chicas); no se perdió ningún item del 257, 461 ni 462, y el texto original está en `git show 743efef04a:Admin/TODO.md`. Se cerró el 257, el 461 y el 462; el 6 del 461 (imágenes de UEFA) quedó descartado por Guido.
 - Se sacó el worktree viejo de una medición (`wt-antes`, sin rama).

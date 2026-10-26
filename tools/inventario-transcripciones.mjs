@@ -101,7 +101,7 @@ function pendingByOnboard(dirs = null) {
 // es ese archivo. Si un motor re-hizo el archivo (Gemini sobre un escaneo de Mistral), gana el último.
 function loadProvenance() {
   const byMd = new Map();
-  const sources = [['mistral', 'Admin/registros/api/mistral.jsonl'], ['gemini', 'Admin/registros/api/gemini.jsonl'], ['claude-api', 'Admin/registros/api/claude-api.jsonl'], ['xhtml-ixbrl (determinista)', 'Admin/registros/api/xhtml-ixbrl.jsonl']]; // los informes daneses en XHTML: tools/xhtml-aarsrapport.mjs, sin API; el PDF de al lado es la impresión de Chrome del mismo XHTML
+  const sources = [['mistral', 'Admin/registros/api/mistral.jsonl'], ['gemini', 'Admin/registros/api/gemini.jsonl'], ['claude-api', 'Admin/registros/api/claude-api.jsonl'], ['xhtml-ixbrl (determinista)', 'Admin/registros/api/xhtml-ixbrl.jsonl'], ['siis-api (determinista)', 'Admin/registros/api/siis-api.jsonl']]; // los informes daneses en XHTML: tools/xhtml-aarsrapport.mjs, sin API; el PDF de al lado es la impresión de Chrome del mismo XHTML. Los estados de SIIS (Colombia): tools/siis-estado.mjs, sin API; el PDF es la impresión del .md
   for (const [engine, rel] of sources) {
     for (const r of readJsonl(resolve(root, rel))) {
       if (!r.md) continue;
