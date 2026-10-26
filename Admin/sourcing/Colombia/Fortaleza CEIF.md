@@ -48,3 +48,5 @@
 Estados financieros en disco ahora: 9 ejercicios (2017-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2020 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf` (sourceId `fortalezaceif-co-estados-financieros-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2016 desde `Clubes/Colombia/Fortaleza CEIF/siis-estado-2016.pdf` (sourceId `fortalezaceif-co-siis-estado-2016`).

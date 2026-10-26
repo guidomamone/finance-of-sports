@@ -260,7 +260,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2016: {
     leagueSize: 20,
-    sinDato: ["fortalezaceif-co"],
     wiki: {"t":"2016 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:16.41, reportType:"official_balance_sheet",
@@ -276,6 +275,10 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"atleticobucaramanga-co-siis-estado-2016",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.438],["Otros ingresos",0.067]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"fortalezaceif-co", revenue:0.553, reportType:"official_balance_sheet",
+        sourceId:"fortalezaceif-co-siis-estado-2016",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.549],["Otros ingresos",0.004]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
 };

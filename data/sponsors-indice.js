@@ -2203,6 +2203,7 @@ window.SPONSORS_INDICE = [
   ["seas-nve","SEAS-NVE",["c"]],
   ["secco","Secco",["c"]],
   ["segafredo-zanetti","Segafredo Zanetti",["c"]],
+  ["seguros-del-estado","Seguros del Estado",["c"]],
   ["seguros-orbis","Seguros Orbis",["c"]],
   ["seguros-soliss","Seguros Solíss",["c"]],
   ["sela","Sela",["c"]],

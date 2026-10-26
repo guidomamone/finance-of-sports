@@ -920,7 +920,7 @@ tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento si
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Televisión, Premios por competencias, Venta de Jugadores
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025)
 ```
 
 ### Liga
@@ -1091,7 +1091,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Televisión, Premios por competencias, Venta de Jugadores
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025)
 ```
 
 ### Liga
@@ -1114,6 +1114,41 @@ _investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/
 ```text
 Carlos Francisco Serrano Mogollón (2025-01-01 a hoy): Wikipedia (sección Presidentes) lo lista desde el 1 de enero de 2025 (presente), sucediendo a Carlos Barato (1/8/2017 al 31/12/2024); El Espectador (25/11/2025) dice que Barato presidió 'hasta enero de este año'. Ex gerente deportivo del club. El balance 2025 lo firma como Representante Legal, C.C. 79.979.660, en Clubes/Colombia/Fortaleza CEIF/certificacion-ef-2025.md:24-26 (certificación del 12/3/2026) y estados-financieros-2025.md:1467-1469; ya firmaba la certificación 2024 (certificacion-ef-2024.md:24-26). Sin cambio de gestión entre el cierre y la aprobación.
 Duda: data/gestiones/co.js (fuera de mi alcance, no editado) tiene a Carlos Alberto Barato Méndez como presidente 2015-01-01 a 2025-11-25 (Win Sports solo dice 2015 como cambio de administración; el 25/11/2025 es la fecha del anuncio de su desvinculación total). Contradice a Wikipedia y a la firma de Serrano como representante legal desde el balance 2024: conviene revisar esa gestión y que termine el 2024-12-31. Nombre de Serrano: la prensa lo llama Francisco Serrano; el nombre completo sale del balance.
+```
+
+## 2016
+
+### Ingresos
+
+```text
+2016: cargado por tools/cargar.mjs (2026-10-26) desde Clubes/Colombia/Fortaleza CEIF/siis-estado-2016.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Fortaleza CEIF/siis-estado-2016.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ingresos de actividades ordinarias | pág. 1, Jev 0.97 |
+| 2 | Otros ingresos | pág. 1, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costo de ventas | pág. 1, precedente |
+| 2 | Gastos de ventas | pág. 1, ? 0.75 |
+| 3 | Gastos de administración | pág. 1, Jev 1 |
+| 4 | Otros gastos | pág. 1, precedente |
+
+### Meta
+
+```text
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025)
 ```
 
 ## Fuentes
@@ -1194,4 +1229,12 @@ _note (data/):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fortalezaceif-co-siis-estado-2016
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Fortaleza CEIF/siis-estado-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
