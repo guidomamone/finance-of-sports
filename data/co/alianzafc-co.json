@@ -140,8 +140,7 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -182,8 +181,7 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -222,8 +220,7 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -321,8 +318,8 @@
         {"label":"Gastos de viaje","category":"admin_general","subcategory":"admin_general_expense","amount":-740.264545,"disclosure":"aggregated"},
         {
           "label": "Diversos (Gastos de administración)",
-          "category": "admin_general",
-          "subcategory": "admin_general_expense",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -3079.966145,
           "disclosure": "aggregated"
         },
@@ -378,8 +375,7 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -428,8 +424,7 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -486,8 +481,7 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -509,7 +503,7 @@
         {"label":"DIMAYOR (derechos de televisión)","category":"media_rights","subcategory":"broadcasting","amount":7966.544302,"disclosure":"aggregated"},
         {"label":"Federación Colombiana de Fútbol","category":"prize_money","subcategory":"competition_bonus","amount":462.875,"disclosure":"aggregated"},
         {"label":"Convenios","category":"other_revenue","subcategory":"other_income","amount":16,"disclosure":"aggregated"},
-        {"label":"Donaciones","category":"grants_donations","subcategory":"grants_donations","amount":20,"disclosure":"aggregated"},
+        {"label":"Donaciones","category":"other_revenue","subcategory":"other_income","amount":20,"disclosure":"aggregated"},
         {"label":"Venta artículos deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":2.415953,"disclosure":"aggregated"}
       ],
       "expenses": [
@@ -522,7 +516,7 @@
         {"label":"Servicios","category":"admin_general","subcategory":"admin_general_expense","amount":-34.035571,"disclosure":"aggregated"},
         {"label":"Gastos Legales","category":"admin_general","subcategory":"admin_general_expense","amount":-27.402747,"disclosure":"aggregated"},
         {"label":"Mantenimiento y reparaciones","category":"admin_general","subcategory":"admin_general_expense","amount":-2.272533,"disclosure":"aggregated"},
-        {"label":"Diversos","category":"admin_general","subcategory":"admin_general_expense","amount":-3264.244042,"disclosure":"aggregated"},
+        {"label":"Diversos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3264.244042,"disclosure":"aggregated"},
         {"label":"Depreciaciones","category":"depreciation","subcategory":"depreciation","amount":-114.253422,"disclosure":"aggregated"},
         {"label":"Honorarios","category":"admin_general","subcategory":"admin_general_expense","amount":-173.359999,"disclosure":"aggregated"},
         {"label":"Servicios","category":"admin_general","subcategory":"admin_general_expense","amount":-346.387164,"disclosure":"aggregated"},
@@ -604,8 +598,7 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -654,8 +647,7 @@
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }

@@ -114,7 +114,7 @@ tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por pr
 ### Ingresos
 
 ```text
-2023: cargado por tools/cargar.mjs (2026-10-20) desde Clubes/Colombia/Alianza FC/estados-financieros-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+2023: cargado por tools/cargar.mjs (2026-10-26) desde Clubes/Colombia/Alianza FC/estados-financieros-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
 Generados/Colombia/Alianza FC/estados-financieros-2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
@@ -136,7 +136,7 @@ Generados/Colombia/Alianza FC/estados-financieros-2023.categorias.json (escalón
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Costos de Venta | pág. 2, Jev 0.99 |
-| 2 | Gastos de personal | pág. 15, Claude 0.85 |
+| 2 | Gastos de personal | pág. 15, precedente |
 | 3 | Honorarios | pág. 15, Jev 0.97 |
 | 4 | Impuestos | pág. 15, Jev 1 |
 | 5 | Arriendos | pág. 15, precedente |
@@ -148,7 +148,7 @@ Generados/Colombia/Alianza FC/estados-financieros-2023.categorias.json (escalón
 | 11 | Depreciaciones | pág. 15, Jev 1 |
 | 12 | Honorarios | pág. 15, Jev 0.97 |
 | 13 | Servicios | pág. 15, Jev 0.9 |
-| 14 | Gastos de Viaje | pág. 15, Jev 1 |
+| 14 | Gastos de Viaje | pág. 15, precedente |
 | 15 | Amortizaciones derechos deportivos | pág. 15, Jev 1 |
 | 16 | Otro Gastos de actividades ordinarias | pág. 2, Jev 0.97 |
 | 17 | Devoluciones en ventas | pág. 14, precedente |
@@ -180,7 +180,7 @@ Generados/Colombia/Alianza FC/estados-financieros-2023.categorias.json (escalón
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): fila = 3513100819. Gastos Deportivos: nómina del plantel y cuerpo técnico (L707-708); el rótulo de administración (L697) queda aparte
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): categoria = wages_squad. nómina de Gastos Deportivos
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-20): cero-real = Estadio. sin ingreso por uso del estadio: la taquilla va aparte y el arrendamiento es de la Alcaldía (L241)
-tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ### Liga
@@ -336,7 +336,7 @@ Generados/Colombia/Alianza FC/siis-estado-2019.categorias.json (escalón de cada
 | 10 | Servicios | pág. 1, precedente |
 | 11 | Gastos Legales | pág. 1, precedente |
 | 12 | Mantenimiento y reparaciones | pág. 1, precedente |
-| 13 | Gastos de viaje | pág. 1, Claude 0.85 |
+| 13 | Gastos de viaje | pág. 1, precedente |
 | 14 | Diversos (Gastos de administración) | pág. 1, precedente |
 | 15 | Depreciaciones | pág. 1, precedente |
 | 16 | Otros gastos | pág. 1, Jev 1 |

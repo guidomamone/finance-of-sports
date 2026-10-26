@@ -16,7 +16,7 @@ Lo escribe `node tools/relevancia-filas.mjs --escribir` (lo corre solo `publicar
 | Premios por competencias | 483 de 1438 (34 %) | 143 de 336 (43 %) | 6.8 % · 39 % | 545 (38 %) | 410 | 0 |
 | Venta de Jugadores | 940 de 1438 (65 %) | 238 de 336 (71 %) | 17.0 % · 67 % | 131 (9 %) | 367 | 0 |
 | Otras actividades (educación y otros deportes) | 242 de 1438 (17 %) | 80 de 336 (24 %) | 2.0 % · 14 % | 792 (55 %) | 404 | 0 |
-| Subsidios y donaciones | 408 de 1438 (28 %) | 126 de 336 (38 %) | 2.6 % · 31 % | 663 (46 %) | 367 | 0 |
+| Subsidios y donaciones | 407 de 1438 (28 %) | 126 de 336 (38 %) | 2.6 % · 31 % | 664 (46 %) | 367 | 0 |
 | Fútbol profesional (sin desglosar por la fuente) | 419 de 1438 (29 %) | 129 de 336 (38 %) | 86.9 % · 96 % | 1019 (71 %) | 0 | 0 |
 | Otros ingresos (catch-all) | 1288 de 1438 (90 %) | 303 de 336 (90 %) | 6.9 % · 37 % | 150 (10 %) | 0 | 0 |
 
@@ -39,7 +39,7 @@ Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que 
 | Otras actividades (educación, juvenil, otros deportes, básquet) | 198 de 1438 (14 %) | 62 de 336 (18 %) | 5.6 % · 27 % | 993 (69 %) | 243 | 4 |
 | Administración y gastos generales | 1190 de 1438 (83 %) | 284 de 336 (85 %) | 15.8 % · 72 % | 225 (16 %) | 23 | 0 |
 | Fútbol profesional (sin desglosar por la fuente) | 276 de 1438 (19 %) | 68 de 336 (20 %) | 74.0 % · 89 % | 1162 (81 %) | 0 | 0 |
-| Otros gastos (catch-all) | 1305 de 1438 (91 %) | 304 de 336 (90 %) | 10.1 % · 50 % | 133 (9 %) | 0 | 0 |
+| Otros gastos (catch-all) | 1305 de 1438 (91 %) | 304 de 336 (90 %) | 10.2 % · 51 % | 133 (9 %) | 0 | 0 |
 
 Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que la tienen alguna vez / clubes medidos):
 
@@ -50,13 +50,13 @@ Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que 
 
 | Fila | Club-años con número | Clubes que la tienen alguna vez | Cuando la tiene: mediana de la sección · casos ≥ 10 % | Cero real | «—» sin saber | Dentro de otro |
 |---|---|---|---|---|---|---|
-| Subsidios y donaciones, estricta (subsidio, subvención, donación, grant…) | 65 de 1438 (5 %) | 36 de 336 (11 %) | 1.6 % · 23 % | 1373 (95 %) | 0 | 0 |
-| Subsidios, donaciones y aportes, amplia (cota superior) | 95 de 1438 (7 %) | 49 de 336 (15 %) | 2.6 % · 17 % | 1343 (93 %) | 0 | 0 |
+| Subsidios y donaciones, estricta (subsidio, subvención, donación, grant…) | 66 de 1438 (5 %) | 37 de 336 (11 %) | 1.5 % · 23 % | 1372 (95 %) | 0 | 0 |
+| Subsidios, donaciones y aportes, amplia (cota superior) | 96 de 1438 (7 %) | 50 de 336 (15 %) | 2.6 % · 17 % | 1342 (93 %) | 0 | 0 |
 
 Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que la tienen alguna vez / clubes medidos):
 
-- **Subsidios y donaciones, estricta (subsidio, subvención, donación, grant…)** — países: ES 15/19 · PT 8/33 · CO 4/20 · GB 2/31 · HR 2/8 · NO 1/6 · GR 1/14 · DK 1/11 · AR 1/19 · CL 1/3
-- **Subsidios, donaciones y aportes, amplia (cota superior)** — países: ES 15/19 · PT 8/33 · BR 8/42 · IT 5/22 · CO 4/20 · GB 2/31 · HR 2/8 · NO 1/6 · GR 1/14 · DK 1/11 · AR 1/19 · CL 1/3
+- **Subsidios y donaciones, estricta (subsidio, subvención, donación, grant…)** — países: ES 15/19 · PT 8/33 · CO 5/20 · GB 2/31 · HR 2/8 · NO 1/6 · GR 1/14 · DK 1/11 · AR 1/19 · CL 1/3
+- **Subsidios, donaciones y aportes, amplia (cota superior)** — países: ES 15/19 · PT 8/33 · BR 8/42 · IT 5/22 · CO 5/20 · GB 2/31 · HR 2/8 · NO 1/6 · GR 1/14 · DK 1/11 · AR 1/19 · CL 1/3
 
 Otra candidata: `node tools/relevancia-filas.mjs --etiqueta "<regex>" [--lado gastos]`. Un club concreto de una fila: `--fila "Educación"`.
 
