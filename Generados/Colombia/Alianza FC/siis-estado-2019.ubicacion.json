@@ -1,0 +1,79 @@
+{
+ "pdf": "Clubes/Colombia/Alianza FC/siis-estado-2019.pdf",
+ "md": "Clubes/Colombia/Alianza FC/siis-estado-2019.md",
+ "mdSha1": "b99ced4854e2a90e6410d698295f89a906807cf7",
+ "modelo": "a mano (Claude Code, sesión 2026-10-26)",
+ "generado": "2026-10-26T22:33:41.380Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    23
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 1,
+   "lineas": [
+    99,
+    110
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 1,
+   "lineas": [
+    157,
+    167
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 1,
+   "lineas": [
+    116,
+    120
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 1,
+   "lineas": [
+    126,
+    131
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 1,
+   "lineas": [
+    137,
+    151
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b10",
+  "b14"
+ ],
+ "notas_gastos": [
+  "b11",
+  "b12",
+  "b13"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
+ "moneda": "COP",
+ "columna_ejercicio": "2019",
+ "columna_anterior": "2018",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
+}

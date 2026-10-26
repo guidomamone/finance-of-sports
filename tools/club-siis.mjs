@@ -36,9 +36,13 @@ function wikipediaCubre(clubId, a, liga) {
   try { const out = execFileSync('node', [join(ROOT, 'tools/estadio-sponsor.mjs'), '--ensayo', '--club', clubId, '--anio', a, '--liga', liga, '--cierre', '12-31'], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }); return /estadio \d+ \(100%\)/.test(out) && /sponsor \d+ \(100%\)/.test(out); } catch { return false; }
 }
 // La liga de cada año, del roster cacheado de Wikipedia (lookup-club-league.js), SOLO donde el nombre de la lista es exactamente el del club: una coincidencia «NO EXACTA» (Fortaleza) puede ser otro club y la confirma una persona.
-function ligasExactas(nombre, anios) {
-  let out = ''; try { out = execFileSync('node', [join(ROOT, 'tools/lookup-club-league.js'), nombre, '--pais', 'CO'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }); } catch { return {}; }
-  const m = {}; for (const l of out.split('\n')) { const x = l.match(/^(co-\w+) (\d{4}): /); if (x && anios.includes(x[2]) && !/NO EXACTA/.test(l)) m[x[2]] = x[1]; }
+// También por los nombres que tools/club-league-reference/alias.json le da al club (Alianza FC fue «Alianza Petrolera» en Wikipedia hasta 2022): una consulta por nombre, con --club para que valga el alias.
+function ligasExactas(nombre, anios, clubId) {
+  const alias = leer('tools/club-league-reference/alias.json')?.co || {}; const m = {};
+  for (const n of [nombre, ...Object.entries(alias).filter(([, a]) => a.clubId === clubId).map(([k]) => k)]) {
+    let out = ''; try { out = execFileSync('node', [join(ROOT, 'tools/lookup-club-league.js'), n, '--pais', 'CO', ...(clubId ? ['--club', clubId] : [])], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }); } catch { continue; }
+    for (const l of out.split('\n')) { const x = l.match(/^(co-\w+) (\d{4}): /); if (x && anios.includes(x[2]) && !/NO EXACTA/.test(l) && !m[x[2]]) m[x[2]] = x[1]; }
+  }
   return m;
 }
 // Suma esos años a data/club-leagues/co.js (la entrada del club si existe, o una nueva).
@@ -190,7 +194,7 @@ if (A.includes('--avanzar')) {
   { // la liga de los años que no la tienen, donde el roster de Wikipedia la da con el nombre exacto; el resto queda a mano
     const sinLigaAnios = estadoDe(club).filas.filter((f) => !f.liga && !f.cargado).map((f) => f.a);
     if (s.c.clubId && sinLigaAnios.length) {
-      const m = ligasExactas(club, sinLigaAnios); const sin = sinLigaAnios.filter((a) => !m[a]);
+      const m = ligasExactas(club, sinLigaAnios, s.c.clubId); const sin = sinLigaAnios.filter((a) => !m[a]);
       if (Object.keys(m).length) { escribirLigas(s.c.clubId, m); console.log(`\nLiga escrita en data/club-leagues/co.js (roster de Wikipedia, nombre exacto): ${Object.entries(m).map(([a, l]) => `${a} ${l}`).join(', ')}.`); }
       if (sin.length) console.log(`Liga a mano (sin coincidencia exacta en el roster): ${sin.join(', ')}.`);
     }
