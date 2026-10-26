@@ -68,6 +68,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Aguilas Doradas/siis-estado-2021.pdf"
+    },
+    {
+      "id": "aguilasdoradas-co-siis-estado-2022",
+      "club_id": "aguilasdoradas-co",
+      "title": "Talento Dorado S.A. — siis-estado-2022 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Aguilas Doradas/siis-estado-2022.pdf"
     }
   ],
   "members": null,
@@ -330,6 +338,50 @@
             "kind": "net_sales"
           },
           {"line":"Gastos de ventas","side":"expense","amount":977.354,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "currency": "COP",
+      "source_id": "aguilasdoradas-co-siis-estado-2022",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2022-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 14204.6,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":831.106,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-1659.061,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-10995.39,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-321.563,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-7.514,"tax":-291.284,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":15035.706,"expenses":12976.014,"net_result":1760.894},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":90.782},
+          {"label":"Costos financieros","amount":-98.296},
+          {"label":"Ingreso (gasto) por impuestos","amount":-291.284}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Ingresos de actividades ordinarias",
+            "side": "revenue",
+            "amount": 14204.6,
+            "reason": "Línea única de ingresos sin abrir: lump_football_operations (regla de Colombia, 463, 2026-10-26)",
+            "kind": "net_sales"
+          },
+          {"line":"Gastos de ventas","side":"expense","amount":1659.061,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "revenue_basis": "full"
       }
