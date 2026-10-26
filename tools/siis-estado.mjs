@@ -71,7 +71,7 @@ function filasDe(registros) {
   return Object.entries(registros || {}).filter(([, v]) => v && typeof v === 'object' && (num(v.corte) != null || num(v.corteAnterior) != null)).map(([k, v]) => ({ clave: k, nombre: (v.nombre || k).trim(), corte: num(v.corte), anterior: num(v.corteAnterior) }));
 }
 // el orden en que se lee un estado de resultados; los rubros que no están acá van al final, en el orden de la API. `gananciaPerdida` («[sinopsis]») repite a `gananciaPerd` y no se imprime.
-const ORDEN_RESULTADO = ['ingresosActividadesOrdinarias', 'costoVentas', 'gananciaBruta', 'gastosVentas', 'gastosAdministracion', 'otrosIngresos', 'otrosGastos', 'otrasGananciasPerdidas', 'deterioroValorGanancias', 'gananciaPerdidaAmortizado', 'gananciasPerdidasDifCostoAmortizado', 'gananciaPerdidasCovertura', 'gananciaPerdidaXActividadesOperacion', 'ingresosFinancieros', 'costosFinancieros', 'gananciaPerdidaAntesImpuestos', 'ingresoGastoXImpuestos', 'gananciaPerdidaOperacionesContinuadas', 'gananciaPerdidaOperacionesDiscontinuadas', 'gananciaPerd'];
+const ORDEN_RESULTADO = ['ingresosActividadesOrdinarias', 'costoVentas', 'gananciaBruta', 'gastosVentas', 'gastosAdministracion', 'otrosIngresos', 'otrosGastos', 'otrasGananciasPerdidas', 'deterioroValorGanancias', 'gananciaPerdidaAmortizado', 'gananciasPerdidasDifCostoAmortizado', 'gananciaPerdidasCovertura', 'gananciaPerdidaXActividadesOperacion', 'ingresosFinancieros', 'costosFinancieros', 'participacion_ganancias_subsidiarias', 'gananciaPerdidaAntesImpuestos', 'ingresoGastoXImpuestos', 'gananciaPerdidaOperacionesContinuadas', 'gananciaPerdidaOperacionesDiscontinuadas', 'gananciaPerd'];
 const ordenar = (filas) => [...filas].sort((x, y) => { const i = ORDEN_RESULTADO.indexOf(x.clave), j = ORDEN_RESULTADO.indexOf(y.clave); return (i < 0 ? 99 : i) - (j < 0 ? 99 : j); });
 const tabla = (titulo, filas, a, b) => [`### ${titulo}`, '', `| Concepto | ${a} | ${b} |`, '| --- | ---: | ---: |', ...filas.map((f) => `| ${f.nombre} | ${fmt(f.corte)} | ${fmt(f.anterior)} |`), ''];
 
@@ -80,7 +80,7 @@ function compuertas(res, emp) {
   const cierra = (a, b, que) => { if (Math.abs(a - b) > TOL) fallas.push(`${que}: ${fmt(a)} contra ${fmt(b)}`); };
   cierra(c('ingresosActividadesOrdinarias') - c('costoVentas'), c('gananciaBruta'), 'ingresos − costo de ventas = ganancia bruta');
   const antes = num(r.gananciaPerdidaAntesImpuestos?.corte);
-  if (antes != null) cierra(c('gananciaBruta') - c('gastosVentas') - c('gastosAdministracion') + c('otrosIngresos') - c('otrosGastos') + c('otrasGananciasPerdidas') + c('ingresosFinancieros') - c('costosFinancieros') - c('deterioroValorGanancias') + c('gananciaPerdidaAmortizado') + c('gananciasPerdidasDifCostoAmortizado') + c('gananciaPerdidasCovertura'), antes, 'ganancia bruta − gastos ± otros + financieros = ganancia antes de impuestos');
+  if (antes != null) cierra(c('gananciaBruta') - c('gastosVentas') - c('gastosAdministracion') + c('otrosIngresos') - c('otrosGastos') + c('otrasGananciasPerdidas') + c('ingresosFinancieros') - c('costosFinancieros') - c('deterioroValorGanancias') + c('gananciaPerdidaAmortizado') + c('gananciasPerdidasDifCostoAmortizado') + c('gananciaPerdidasCovertura') + c('participacion_ganancias_subsidiarias'), antes, 'ganancia bruta − gastos ± otros + financieros = ganancia antes de impuestos');
   if (antes != null) cierra(antes - c('ingresoGastoXImpuestos') + c('gananciaPerdidaOperacionesDiscontinuadas'), c('gananciaPerdida'), 'antes de impuestos − impuesto + operaciones discontinuadas = ganancia del año');
   if (emp) { cierra(c('ingresosActividadesOrdinarias'), emp.financieros.ingresosEmpresa, 'ingresos contra siis_empresas'); cierra(c('gananciaPerdida'), emp.financieros.utilidades, 'ganancia contra siis_empresas (utilidades)'); } else fallas.push('no hay registro en siis_empresas para cruzar');
   return fallas;
@@ -114,7 +114,7 @@ const CLASE = {
   ingresosActividadesOrdinarias: ['renglon', 'ingreso'], costoVentas: ['renglon', 'gasto'], gananciaBruta: ['subtotal', 'resultado'], gastosVentas: ['renglon', 'gasto'], gastosAdministracion: ['renglon', 'gasto'],
   otrosIngresos: ['renglon', 'ingreso'], otrosGastos: ['renglon', 'gasto'], otrasGananciasPerdidas: ['renglon', 'otro'], deterioroValorGanancias: ['renglon', 'gasto'], gananciaPerdidaAmortizado: ['renglon', 'otro'],
   gananciasPerdidasDifCostoAmortizado: ['renglon', 'otro'], gananciaPerdidasCovertura: ['renglon', 'otro'], gananciaPerdidaXActividadesOperacion: ['resultado', 'resultado'], ingresosFinancieros: ['renglon', 'financiero'],
-  costosFinancieros: ['renglon', 'financiero'], gananciaPerdidaAntesImpuestos: ['resultado', 'resultado'], ingresoGastoXImpuestos: ['renglon', 'impuesto'], gananciaPerdidaOperacionesContinuadas: ['resultado', 'resultado'],
+  costosFinancieros: ['renglon', 'financiero'], participacion_ganancias_subsidiarias: ['renglon', 'otro'], gananciaPerdidaAntesImpuestos: ['resultado', 'resultado'], ingresoGastoXImpuestos: ['renglon', 'impuesto'], gananciaPerdidaOperacionesContinuadas: ['resultado', 'resultado'],
   gananciaPerdidaOperacionesDiscontinuadas: ['renglon', 'otro'], gananciaPerd: ['resultado', 'resultado'],
 };
 // La especificación de armar-a-mano.mjs: el estado de resultados de SIIS son las filas, cada una en su línea del .md. Devuelve null si algún rubro no tiene clase.
@@ -153,7 +153,7 @@ async function estadosDe(club, anios, { escribir, rehacer }) {
   const dir = resolve(ROOT, 'Clubes', PAIS, club);
   const q =delNit(cfg.nit); const [emps, ress, bals] = [await q.empresas(), await q.resultado(), await q.balance()];
   const E = porAnio(emps, (s) => s.fechaCorte), R = porAnio(ress, (s) => s.resultado.fechaCorte), B = porAnio(bals, (s) => s.infoEmpresa.corte);
-  const lista = (anios === 'todos' ? [...R.keys()].filter((a) => rehacer || !existsSync(join(dir, `siis-estado-${a}.md`))) : [String(anios)]).sort();
+  const lista = (anios === 'todos' ? [...R.keys()].filter((a) => !(cfg.frenados || []).includes(a) && (rehacer || !existsSync(join(dir, `siis-estado-${a}.md`)))) : [String(anios)]).sort();
   const hoy = new Date().toISOString().slice(0, 10); let escritos = 0, frenados = 0;
   for (const a of lista) {
     const res = R.get(a)?._source; if (!res) { console.log(`${club} ${a}: SIIS no tiene estado de resultados`); continue; }
@@ -185,21 +185,28 @@ async function estadosDe(club, anios, { escribir, rehacer }) {
 // el inventario: por NIT, los años que SIIS tiene (siis_empresas, tres CIIU deportivos) contra los siis-estado-AAAA.md y los estados-financieros-AAAA.pdf de la carpeta
 async function inventario() {
   const ciiu = ['Actividades de clubes deportivos', 'Otras actividades deportivas', 'Gestión de instalaciones deportivas'];
-  const hits = await buscar('siis_empresas', { query: { bool: { should: ciiu.map((a) => ({ match_phrase: { actividadesEconomicas: a } })), minimum_should_match: 1 } }, _source: ['NIT', 'nombreEmpresa', 'fechaCorte', 'actividadesEconomicas'] });
+  const hits = await buscar('siis_empresas', { query: { bool: { should: ciiu.map((a) => ({ match_phrase: { actividadesEconomicas: a } })), minimum_should_match: 1 } }, _source: ['NIT', 'nombreEmpresa', 'fechaCorte', 'actividadesEconomicas', 'financieros.ingresosEmpresa', 'financieros.utilidades'] });
   const porNit = new Map();
-  for (const h of hits) { const s = h._source; const e = porNit.get(s.NIT) || { nombre: s.nombreEmpresa, ciiu: s.actividadesEconomicas[0].slice(0, 5), anios: new Set() }; e.anios.add(s.fechaCorte.slice(0, 4)); porNit.set(s.NIT, e); }
+  for (const h of hits) { const s = h._source; const e = porNit.get(s.NIT) || { nombre: s.nombreEmpresa, ciiu: s.actividadesEconomicas[0].slice(0, 5), anios: new Set(), datos: {} }; e.anios.add(s.fechaCorte.slice(0, 4)); e.datos[s.fechaCorte.slice(0, 4)] = { ingresos: s.financieros?.ingresosEmpresa ?? null, utilidades: s.financieros?.utilidades ?? null }; porNit.set(s.NIT, e); }
+  // los años que tienen estado de resultados en siis_resultadointegral (un registro en siis_empresas no siempre lo tiene)
+  const estados = await buscar('siis_resultadointegral', { query: { terms: { 'resultado.NIT': [...porNit.keys()] } }, _source: ['resultado.NIT', 'resultado.fechaCorte'] });
+  const conEstado = new Set(estados.map((h) => `${h._source.resultado.NIT}|${h._source.resultado.fechaCorte.slice(0, 4)}`));
+  const resumen = { generado: new Date().toISOString().slice(0, 10), pais: PAIS, moneda: MONEDA, unidad: 'miles', nits: {} };
   const carpetaDe = new Map(Object.entries(CLUBES).map(([c, v]) => [v.nit, c]));
   const filas = [], faltantes = [], sinCarpeta = [];
   for (const [nit, e] of [...porNit.entries()].sort((a, b) => a[1].nombre.localeCompare(b[1].nombre))) {
     const anios = [...e.anios].sort(); const club = carpetaDe.get(nit);
+    resumen.nits[nit] = { nombre: e.nombre, anios: Object.fromEntries(anios.map((a) => [a, { ...e.datos[a], estado: conEstado.has(`${nit}|${a}`) }])) };
     if (!club) { sinCarpeta.push(`| ${nit} | ${e.nombre} | ${e.ciiu} | ${anios[0]}–${anios.at(-1)} (${anios.length}) |`); continue; }
     const dir = resolve(ROOT, 'Clubes', PAIS, club); const ls = existsSync(dir) ? readdirSync(dir) : [];
+    const frenados = new Set(CLUBES[club].frenados || []);
     const tiene = (a) => ls.includes(`siis-estado-${a}.md`); const conPdf = (a) => ls.includes(`estados-financieros-${a}.pdf`);
-    const falta = anios.filter((a) => !tiene(a));
+    const marca = (a) => (tiene(a) ? '✔' : frenados.has(a) ? '✗' : !conEstado.has(`${nit}|${a}`) ? '–' : conPdf(a) ? 'p' : '·');
+    const falta = anios.filter((a) => !tiene(a) && !frenados.has(a) && conEstado.has(`${nit}|${a}`));
     for (const a of falta) faltantes.push({ club, anio: a });
-    filas.push(`| ${club} | ${nit} | ${anios.map((a) => `${a}${tiene(a) ? '✔' : conPdf(a) ? 'p' : '·'}`).join(' ')} | ${falta.length} |`);
+    filas.push(`| ${club} | ${nit} | ${anios.map((a) => `${a}${marca(a)}`).join(' ')} | ${falta.length} |`);
   }
-  return { filas, faltantes, sinCarpeta, total: hits.length, nits: porNit.size };
+  return { filas, faltantes, sinCarpeta, resumen, total: hits.length, nits: porNit.size };
 }
 
 const A = process.argv.slice(2); const flag = (k) => { const i = A.indexOf(k); return i >= 0 ? A[i + 1] : null; };
@@ -210,9 +217,9 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (A.includes('--faltantes')) { for (const f of inv.faltantes) console.log(`${f.club} ${f.anio}`); process.exit(0); }
     const hoy = new Date().toISOString().slice(0, 10);
     const md = ['<!-- md: qué años de cada club colombiano tiene SIIS y cuáles faltan bajar | leer: antes de buscar documentos de Colombia; generado, no se edita -->', '# SIIS: lo que tiene contra lo que bajamos (generado)', '',
-      `Generado el ${hoy} por \`node tools/siis-estado.mjs --inventario --escribir\`. ${inv.total} presentaciones de ${inv.nits} NIT en los tres CIIU deportivos (R9312, R9319, R9311). Cada año: ✔ bajado (\`siis-estado-AAAA.md\`), p solo tenemos el PDF de notas, · no tenemos nada. La columna «faltan» cuenta los años sin \`siis-estado\`: se bajan con \`node tools/siis-estado.mjs --club "<Club>" --todos --escribir\`. El mismo faltante lo avisa \`audit.js\` (\`siis-faltante\`).`, '',
+      `Generado el ${hoy} por \`node tools/siis-estado.mjs --inventario --escribir\`. ${inv.total} presentaciones de ${inv.nits} NIT en los tres CIIU deportivos (R9312, R9319, R9311). Cada año: ✔ bajado (\`siis-estado-AAAA.md\`), p solo tenemos el PDF de notas, · no tenemos nada, ✗ frenado (una compuerta no cierra; \`frenados\` en \`tools/siis-clubes.json\`), – SIIS no tiene estado de resultados de ese año. La columna «faltan» cuenta los años sin \`siis-estado\`: se bajan con \`node tools/siis-estado.mjs --club "<Club>" --todos --escribir\`. El mismo faltante lo avisa \`audit.js\` (\`siis-faltante\`).`, '',
       '| Club (carpeta) | NIT | Años en SIIS | Faltan |', '| --- | --- | --- | ---: |', ...inv.filas, '', '## NIT de SIIS sin carpeta en tools/siis-clubes.json', '', 'Algunos son clubes de fútbol que faltan dar de alta (se suman a `tools/siis-clubes.json` y a `alta-club.mjs`); el resto son gimnasios, campos de golf y empresas de instalaciones que no entran.', '', '| NIT | Razón social | CIIU | Años (cantidad) |', '| --- | --- | --- | --- |', ...inv.sinCarpeta, ''].join('\n');
-    if (A.includes('--escribir')) { writeFileSync(resolve(ROOT, 'Admin/sourcing', PAIS, 'siis-inventario.md'), md); console.log(`Escrito Admin/sourcing/${PAIS}/siis-inventario.md: ${inv.faltantes.length} club-años por bajar, ${inv.sinCarpeta.length} NIT sin carpeta.`); } else console.log(md.slice(0, 3000), `\n... (ensayo: ${inv.faltantes.length} club-años por bajar; --escribir lo guarda)`);
+    if (A.includes('--escribir')) { writeFileSync(resolve(ROOT, 'Admin/sourcing', PAIS, 'siis-resumen.json'), JSON.stringify(inv.resumen) + '\n'); writeFileSync(resolve(ROOT, 'Admin/sourcing', PAIS, 'siis-inventario.md'), md); console.log(`Escrito Admin/sourcing/${PAIS}/siis-inventario.md: ${inv.faltantes.length} club-años por bajar, ${inv.sinCarpeta.length} NIT sin carpeta.`); } else console.log(md.slice(0, 3000), `\n... (ensayo: ${inv.faltantes.length} club-años por bajar; --escribir lo guarda)`);
     process.exit(0);
   }
   const club = flag('--club'); const anio = flag('--anio'); const todos = A.includes('--todos');
