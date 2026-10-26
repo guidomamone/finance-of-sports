@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1181 — Colombia: lo cargado que la regla de notas contradecía, corregido [468 · alianzafc-co, atleticobucaramanga-co, fortalezaceif-co, deportestolima-co, oncecaldas-co]
+- 21 líneas de gastos, un commit por club con `Corrige:`: «Diversos» a `other_expenses` (Alianza 2019 y 2023, Bucaramanga 2019 y 2020, Tolima 2016 a 2023 y 2025, Once Caldas 2016 a 2018) y los viajes de la nota de administración a `admin_general_expense` (Bucaramanga 2020, Fortaleza 2019, Once Caldas 2016 y 2017). Los totales de cada año no cambian. Alianza se rehízo con `cargar --reemplazar` (corrigiendo antes la respuesta vieja de la cola); los demás con `recategorizar-linea --gasto`, porque `cargar` no los puede rehacer (Bucaramanga 2019 y 2020 frenan con 19 filas en la cola, ya antes de este cambio).
+- Un escaneo de todo `data/co` con la nota de cada fila contra la regla da 0 diferencias.
+- Medición: solo datos; ninguna tool cambió.
+
 ## Versión 1180 — recategorizar-linea: líneas de gastos [468 · recategorizar-linea.mjs]
 - `--gasto` (y `--importe <monto>` para desempatar dos líneas con la misma etiqueta) cambia la categoría de una línea de GASTOS de un ejercicio ya cargado, con su cita y su respuesta en la cola; sirve para los años que `cargar` no puede rehacer (Bucaramanga 2019 y 2020 frenan con 19 filas en la cola) y corrige lo que la regla de notas de Colombia contradice.
 - Medición: no es del pipeline (clasificada «manual», no pide medición).
