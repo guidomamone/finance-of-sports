@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1121 — Los niveles de la auditoría dicen lo mismo en el código y en la skill [417 · audit.js, audit-chequeos-6.js]
+- P1 pasa a «algo roto que frena el commit, lo vea o no el visitante». Aviso P3 nuevo `severidades-desfasadas`: salta si la tabla de severidades de la skill `auditoria-finance-of-sports` y `SEV_TITULO` dejan de coincidir. El texto de la skill va en su propio commit.
+- Medición: `audit.js` y `audit-chequeos-6.js`, medidor audit, lote chico: idéntico. Patrón GENERAL. Sin revisión independiente de la Auditora.
+
 ## Versión 1120 — Ganancias en inmovilizado que eran traspasos pasan a ventas de jugadores [414 · recategorizar-linea.mjs, CONVENCIONES-DATOS]
 - Regla votada 3 a 0: una ganancia en inmovilizado de un club de fútbol va a `player_sales` solo si el documento la liga con jugadores. Corrige: Benfica 2007 (24,1 M), Sporting 2002 y 2003 (13,4 M y 8,1 M) y PAOK 2017 y 2019 a 2025 (de 0,5 M a 31,8 M) pasan de «Otros ingresos» a «Ventas de jugadores», cada una con la cita del documento; los totales no cambian. Santa Clara 2025 queda como estaba (el documento no la liga con jugadores). Sporting 2005 y Chelsea 2023 no son jugadores (venta de participaciones): quedan para decidir si van a `assetSales`.
 - Herramienta nueva `fos recategorizar-linea` (manual, no es del pipeline: no corre en ningún lote). Se quitaron 3 silencios `catchall-dominante` que ya no hacen falta. Sin medición de pipeline.

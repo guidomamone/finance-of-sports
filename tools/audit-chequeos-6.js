@@ -74,4 +74,15 @@ function checkEstimadoRepetido() {
   if (repetidos.length) add('P1', 'estimado-repetido', `un club con más de una estimación en la misma liga-año: ${repetidos.slice(0, 8).join('; ')}${repetidos.length > 8 ? ` y ${repetidos.length - 8} más` : ''}`);
 }
 
-module.exports = { checkLigasNoCatalogadas, checkJsonClavesRepetidas, checkEstimadoRepetido };
+// LOS NIVELES P0 A P4 DICEN LO MISMO EN EL CÓDIGO Y EN LA SKILL: la tabla de la sección 2 de la skill auditoria-finance-of-sports repite la frase de SEV_TITULO (audit.js).
+// `severidades-desfasadas` (P3) salta si falta un nivel o si una frase cambió en un lado y no en el otro.
+function checkSeveridadesDesfasadas(sevTitulo) {
+  const f = path.join(ROOT, '.claude', 'skills', 'auditoria-finance-of-sports', 'SKILL.md');
+  if (!fs.existsSync(f)) return;
+  const enSkill = {};
+  for (const ln of fs.readFileSync(f, 'utf8').split('\n')) { const m = /^\|\s*\*\*(P\d)\*\*\s*\|\s*([^|]+?)\s*\|/.exec(ln); if (m) enSkill[m[1]] = m[2]; }
+  const difieren = Object.entries(sevTitulo).filter(([n, t]) => enSkill[n] !== t.replace(/^P\d — /, '')).map(([n]) => n);
+  if (difieren.length) add('P3', 'severidades-desfasadas', `la tabla de severidades de la skill auditoria-finance-of-sports (sección 2) no dice lo mismo que SEV_TITULO de tools/audit.js en ${difieren.join(', ')}`);
+}
+
+module.exports = { checkLigasNoCatalogadas, checkJsonClavesRepetidas, checkEstimadoRepetido, checkSeveridadesDesfasadas };

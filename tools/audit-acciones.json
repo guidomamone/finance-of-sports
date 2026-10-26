@@ -5,6 +5,11 @@
   "quien": "sesion",
   "donde": "tools/audit-chequeos-2.js (checkJsonClavesRepetidas)"
  },
+ "severidades-desfasadas": {
+  "hacer": "Igualar la tabla de severidades de la sección 2 de la skill auditoria-finance-of-sports con SEV_TITULO de tools/audit.js (la frase de cada nivel); el texto de una skill se propone a Guido y va en su propio commit.",
+  "quien": "guido",
+  "donde": "skill auditoria-finance-of-sports, sección 2; tools/audit.js (SEV_TITULO)"
+ },
  "liga-por-abrir": {
   "hacer": "Abrir la liga: node tools/catalogo-liga.mjs --liga <id> (propone nombre, país, deporte y nivel desde Wikipedia; la aprueba la Auditora), después asignarles esa liga a los club-años de Admin/registros/ligas-no-catalogadas.jsonl y sacar sus líneas del registro.",
   "quien": "sesion",

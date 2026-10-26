@@ -29,7 +29,7 @@
 
 const { ARGS, IGNORADOS, IGNORE_FILE, JSON_OUT, MUESTRAS, QUIET, ROOT, add, archivosData, clubYears, findings, fs, path, reglasUsadas, silenciados, vm } = require('./audit-base.js');
 const { checkCajaDeudaProporcion, checkCategorias, checkEstructura, checkLineas, checkMoneda, checkTieOuts } = require('./audit-chequeos-1.js');
-const { checkJsonClavesRepetidas, checkLigasNoCatalogadas, checkEstimadoRepetido } = require('./audit-chequeos-6.js');
+const { checkJsonClavesRepetidas, checkLigasNoCatalogadas, checkEstimadoRepetido, checkSeveridadesDesfasadas } = require('./audit-chequeos-6.js');
 const { checkCabeceraLargaEnTools, checkComentarioHistoricoEnTools, checkComentariosPublicados, checkDeployInterno, checkGenerados, checkHistoriaEnDocs, checkIndexFileRoto, checkLigasPorEjercicio, checkParrafoNetlifyDuplicado, checkParrafosRepetidos, checkRayaLarga, checkRutasMuertas, checkSponsorBusqueda, checkToolGrande } = require('./audit-chequeos-2.js');
 const { checkArchivoNoEsLoQueDice, checkIngresoBase, checkCambioDeFormatoSinNota, checkCarpetasClubes, checkClubIds, checkColisionSourcing, checkCorreccionesSinMotivo, checkFuentesPublicas, checkRankings } = require('./audit-chequeos-3.js');
 const { checkCategorizacion, checkEscala, checkEtiquetaSinRevisar, checkFxProcedencia, checkGestiones, checkImportsSinExport, checkLigaDosFuentes, checkPagoSobreDeterminista, checkRevisionTaxonomia, checkTodo } = require('./audit-chequeos-4.js');
@@ -95,7 +95,7 @@ function loadEngine() {
 // ---------------------------------------------------------------------------
 const SEV_TITULO = {
   P0: 'P0 — un número publicado está mal, o puede estarlo',
-  P1: 'P1 — algo roto o ausente que el visitante ve',
+  P1: 'P1 — algo roto que frena el commit, lo vea o no el visitante',
   P2: 'P2 — riesgo: no está mal hoy, se rompe o no escala mañana',
   P3: 'P3 — limpieza: pide trabajo de una sesión',
   P4: 'P4 — informativo: no pide nada',
@@ -224,6 +224,7 @@ function main() {
   checkLigasPorEjercicio(api);
   checkGenerados();
   checkEstimadoRepetido();
+  checkSeveridadesDesfasadas(SEV_TITULO);
   checkLigasNoCatalogadas(api);
   checkJsonClavesRepetidas();
   checkCorreccionesSinMotivo();
