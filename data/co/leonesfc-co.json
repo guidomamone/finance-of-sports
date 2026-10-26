@@ -60,6 +60,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Leones FC/siis-estado-2021.pdf"
+    },
+    {
+      "id": "leonesfc-co-siis-estado-2022",
+      "club_id": "leonesfc-co",
+      "title": "Leones Fútbol Club S.A. — siis-estado-2022 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Leones FC/siis-estado-2022.pdf"
     }
   ],
   "members": null,
@@ -272,6 +280,41 @@
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":3801.793,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {"line":"Gastos de ventas","side":"expense","amount":4425.966,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "currency": "COP",
+      "source_id": "leonesfc-co-siis-estado-2022",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2022-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 4585.205,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":1180.276,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-5831.002,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-696.276,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-127.852,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":5765.481,"expenses":6655.13,"net_result":-889.649},
+      "adjustments": {
+        "extra_rows": [{"label":"Ingresos financieros","amount":0},{"label":"Costos financieros","amount":0},{"label":"Ingreso (gasto) por impuestos","amount":0}],
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":4585.205,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {"line":"Gastos de ventas","side":"expense","amount":5831.002,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "revenue_basis": "full"
       }

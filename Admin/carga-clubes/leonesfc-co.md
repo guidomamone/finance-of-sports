@@ -49,6 +49,37 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 alta-club.mjs (2026-10-26): co-primeraB, verificado contra NO EXACTA, confirmar en la página del club: roster cacheado de "2025 Torneo DIMAYOR" (tools/club-league-reference/co.json), coincidencia única por palabras "Itagüí Leones" = "Leones FC" (si es el mismo club, agregarlo a alias.json).
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-26) desde Clubes/Colombia/Leones FC/siis-estado-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Leones FC/siis-estado-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ingresos de actividades ordinarias | pág. 1, Jev 0.97 |
+| 2 | Otros ingresos | pág. 1, Jev 0.97 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costo de ventas | pág. 1, Claude 0.8 |
+| 2 | Gastos de ventas | pág. 1, Claude 0.85 |
+| 3 | Gastos de administración | pág. 1, Jev 1 |
+| 4 | Otros gastos | pág. 1, Jev 1 |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
 ## 2021
 
 ### Ingresos
@@ -281,4 +312,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Leones FC/siis-estado-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### leonesfc-co-siis-estado-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Leones FC/siis-estado-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
