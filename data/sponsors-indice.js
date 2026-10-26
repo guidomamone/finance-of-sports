@@ -2657,6 +2657,7 @@ window.SPONSORS_INDICE = [
   ["veneta-nastri","Veneta Nastri",["c"]],
   ["venetis-bakery","Venetis Bakery",["c"]],
   ["veneto-banca","Veneto Banca",["c"]],
+  ["veralima","VeraLima",["m"]],
   ["veratour","Veratour",["c"]],
   ["verdo","Verdo",["c"]],
   ["verdo-a","Verdo A",["c"]],

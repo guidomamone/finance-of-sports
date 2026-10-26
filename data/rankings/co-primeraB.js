@@ -122,12 +122,15 @@ window.RANKINGS["co-primeraB"] = {
   },
   2016: {
     leagueSize: 16,
-    sinDato: ["unionmagdalena-co"],
     wiki: {"t":"2016 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"leonesfc-co", revenue:1.191, reportType:"official_balance_sheet",
         sourceId:"leonesfc-co-siis-estado-2016",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.184],["Otros ingresos",0.007]] },
+      { id:"unionmagdalena-co", revenue:1.113, reportType:"official_balance_sheet",
+        sourceId:"unionmagdalena-co-siis-estado-2016",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.104],["Otros ingresos",0.009]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
 };
