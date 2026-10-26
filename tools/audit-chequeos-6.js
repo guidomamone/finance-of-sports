@@ -74,6 +74,38 @@ function checkEstimadoRepetido() {
   if (repetidos.length) add('P1', 'estimado-repetido', `un club con más de una estimación en la misma liga-año: ${repetidos.slice(0, 8).join('; ')}${repetidos.length > 8 ? ` y ${repetidos.length - 8} más` : ''}`);
 }
 
+// GANANCIA EN INMOVILIZADO SIN MIRAR: una línea de «Otros ingresos» con rótulo de venta o ganancia de activos (Ganhos em imobilizações, Profit on disposal of fixed assets, Κέρδη … διάθεση μη
+// κυκλοφορούντων…) que pesa el 5 % o más de los ingresos del ejercicio puede ser la venta de jugadores o de una filial (REGLA de Admin/CONVENCIONES-DATOS.md, «una ganancia en inmovilizado…»):
+// se decide por el documento de cada año. P3 `ganancia-inmovilizado-sin-mirar` hasta que `node tools/recategorizar-linea.mjs` la mueva o la anote como `--mirada` en
+// Admin/registros/recategorizaciones-linea.jsonl. El aviso general `catchall-dominante` solo salta desde el 40 %.
+const RE_GANANCIA_ACTIVOS = /imobiliz|inmoviliz|immobili[sz]|disposal of (fixed|tangible|non|property|assets)|διάθεση μη κυκλοφορ|aliena[cç][aã]o de ativos|abgang von anlage|mais.?valia|plusvalen|gains? on (sale|disposal)/i;
+const RE_GANANCIA_NO = /subven|subsid|incrementi|inventar|investimento|investment|perd[aã]o|descuento|imputaci/i;
+const UMBRAL_GANANCIA_ACTIVOS = 0.05;
+function checkGananciaInmovilizadoSinMirar() {
+  const f = path.join(ROOT, 'Admin', 'registros', 'recategorizaciones-linea.jsonl');
+  const vistas = new Set(fs.existsSync(f) ? fs.readFileSync(f, 'utf8').split('\n').filter(Boolean).map((l) => { try { const r = JSON.parse(l); return `${r.club}|${r.anio}|${r.etiqueta}`; } catch { return null; } }) : []);
+  const pendientes = [];
+  const dataDir = path.join(ROOT, 'data');
+  for (const pais of fs.readdirSync(dataDir)) {
+    const dir = path.join(dataDir, pais);
+    if (!fs.statSync(dir).isDirectory()) continue;
+    for (const fn of fs.readdirSync(dir).filter((x) => x.endsWith('.json') && !x.includes('glosas'))) {
+      let j; try { j = JSON.parse(fs.readFileSync(path.join(dir, fn), 'utf8')); } catch { continue; }
+      const id = j.club && j.club.id; if (!id || !Array.isArray(j.years)) continue;
+      for (const y of j.years) {
+        const rev = y.revenue || []; const tot = (y.official_totals && y.official_totals.revenue) || rev.reduce((s, l) => s + (l.amount || 0), 0);
+        if (!(tot > 0)) continue;
+        for (const l of rev) {
+          if (l.subcategory !== 'other_income' || !l.label || !RE_GANANCIA_ACTIVOS.test(l.label) || RE_GANANCIA_NO.test(l.label)) continue;
+          if (l.amount / tot < UMBRAL_GANANCIA_ACTIVOS || vistas.has(`${id}|${y.fiscal_year}|${l.label}`)) continue;
+          pendientes.push(`${id} ${y.fiscal_year} «${l.label.slice(0, 40)}» ${Math.round(100 * l.amount / tot)} %`);
+        }
+      }
+    }
+  }
+  if (pendientes.length) add('P3', 'ganancia-inmovilizado-sin-mirar', `${pendientes.length} línea(s) de «Otros ingresos» con rótulo de ganancia de activos y el 5 % o más de los ingresos, sin decidir si son venta de jugadores, de una filial o nada de eso (${pendientes.slice(0, 6).join('; ')}${pendientes.length > 6 ? ` y ${pendientes.length - 6} más` : ''})`);
+}
+
 // LOS NIVELES P0 A P4 DICEN LO MISMO EN EL CÓDIGO Y EN LA SKILL: la tabla de la sección 2 de la skill auditoria-finance-of-sports repite la frase de SEV_TITULO (audit.js).
 // `severidades-desfasadas` (P3) salta si falta un nivel o si una frase cambió en un lado y no en el otro.
 function checkSeveridadesDesfasadas(sevTitulo) {
@@ -85,4 +117,4 @@ function checkSeveridadesDesfasadas(sevTitulo) {
   if (difieren.length) add('P3', 'severidades-desfasadas', `la tabla de severidades de la skill auditoria-finance-of-sports (sección 2) no dice lo mismo que SEV_TITULO de tools/audit.js en ${difieren.join(', ')}`);
 }
 
-module.exports = { checkLigasNoCatalogadas, checkJsonClavesRepetidas, checkEstimadoRepetido, checkSeveridadesDesfasadas };
+module.exports = { checkLigasNoCatalogadas, checkJsonClavesRepetidas, checkEstimadoRepetido, checkSeveridadesDesfasadas, checkGananciaInmovilizadoSinMirar };

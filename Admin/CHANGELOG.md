@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1122 — Prevención de las ganancias en inmovilizado mal categorizadas [414 · audit.js, recategorizar-linea.mjs, votacion-contar.mjs]
+- Aviso P3 nuevo `ganancia-inmovilizado-sin-mirar`: una línea de «Otros ingresos» con rótulo de ganancia de activos y el 5 % o más de los ingresos pide mirar el documento (la misma cifra) y moverla o anotarla con `fos recategorizar-linea` (`--a player_sales`, `--a asset_sales` o `--mirada`). Cada recategorización deja la respuesta de la cola para que una recarga no la deshaga.
+- Corrige: Sporting 2005 (de 99,8 M a 34,8 M de ingresos) y Chelsea 2023 (de 682,5 M a 605,9 M) pasan la venta de una participación a `assetSales`, con su fila «Venta de activos»; el resultado neto no cambia. `votacion-contar --escribir` guarda los votos completos en `Admin/mediciones/votos/`.
+- Medición: `audit.js` y `audit-chequeos-6.js`, medidor audit, lote chico: una diferencia explicada (el índice de los .md, que ya venía desactualizado). Patrón GENERAL. Sin revisión independiente de la Auditora.
+
 ## Versión 1121 — Los niveles de la auditoría dicen lo mismo en el código y en la skill [417 · audit.js, audit-chequeos-6.js]
 - P1 pasa a «algo roto que frena el commit, lo vea o no el visitante». Aviso P3 nuevo `severidades-desfasadas`: salta si la tabla de severidades de la skill `auditoria-finance-of-sports` y `SEV_TITULO` dejan de coincidir. El texto de la skill va en su propio commit.
 - Medición: `audit.js` y `audit-chequeos-6.js`, medidor audit, lote chico: idéntico. Patrón GENERAL. Sin revisión independiente de la Auditora.

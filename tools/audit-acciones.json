@@ -5,6 +5,11 @@
   "quien": "sesion",
   "donde": "tools/audit-chequeos-2.js (checkJsonClavesRepetidas)"
  },
+ "ganancia-inmovilizado-sin-mirar": {
+  "hacer": "Buscar en el .md del ejercicio la MISMA CIFRA de la línea (grep del importe) y ver qué dice el informe o la nota. Si la liga con jugadores: node tools/recategorizar-linea.mjs --club <id> --anio <AAAA> --etiqueta \"<tal cual>\" --a player_sales --cita \"ruta.md:línea\" --regla \"…\" --escribir. Si es la venta de una filial o participación: --a asset_sales. Si no dice nada: la misma orden con --mirada (queda anotada y el aviso se apaga). Después node tools/publicar.mjs y un commit con «Corrige:».",
+  "quien": "sesion",
+  "donde": "Admin/CONVENCIONES-DATOS.md, «una ganancia en inmovilizado de un club de fútbol…»; tools/recategorizar-linea.mjs"
+ },
  "severidades-desfasadas": {
   "hacer": "Igualar la tabla de severidades de la sección 2 de la skill auditoria-finance-of-sports con SEV_TITULO de tools/audit.js (la frase de cada nivel); el texto de una skill se propone a Guido y va en su propio commit.",
   "quien": "guido",
