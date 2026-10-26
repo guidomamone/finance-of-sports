@@ -39,7 +39,7 @@ const outDir = resolve(projectRoot, 'tools', 'fx-reference');
 const CURRENCIES = {
   ARS: { file: 'ars-usd.json', label: 'ARS por 1 USD (BCRA, Comunicación A 3500 / dólar mayorista)', fetch: fetchARS, defaultFrom: '2003-01-01',
     source: 'BCRA API pública, api.bcra.gob.ar/estadisticascambiarias' },
-  BRL: { file: 'brl-usd.json', label: 'BRL por 1 USD (Banco Central do Brasil, PTAX de cierre — venda)', fetch: fetchBRL, defaultFrom: '2010-01-01',
+  BRL: { file: 'brl-usd.json', label: 'BRL por 1 USD (Banco Central do Brasil, PTAX de cierre — venda)', fetch: fetchBRL, defaultFrom: '2005-01-01',
     source: 'BCB API pública (Olinda), olinda.bcb.gov.br/olinda/servico/PTAX' },
   COP: { file: 'cop-usd.json', label: 'COP por 1 USD (TRM oficial, Banco de la República / Superfinanciera de Colombia)', fetch: fetchCOP, defaultFrom: '2010-01-01',
     source: 'datos.gov.co, dataset 32sa-8pi3 (TRM)' },

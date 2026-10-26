@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1129 — Series de tipo de cambio al día; el BRL ya no pierde 2005 a 2009 [461 · fetch-fx-reference.mjs]
+- `fetch-fx-reference.mjs` sin `--currency` volvió a bajar las 21 series (hasta el 22 al 26 de octubre según la moneda). El BRL tenía `defaultFrom` 2010 y lo cargado arranca en 2005 (Goiás 2008-2009): la corrida habría borrado 1.254 días; ahora el default es 2005-01-01.
+- Medición: se comparó cada serie contra HEAD: ninguna fecha perdida, ningún valor viejo cambiado, solo días agregados (el PEN llenó un `null` del 2026-09-28); `medir-pipeline.mjs` dice «nada que medir» para esta tool.
+
 ## Versión 1128 — Las listas de prueba cambian por la ranura de la semana, no por un defecto [461]
 - Se reprodujo el «reescribe los lotes de prueba sin que cambie nada»: lo que cambia es la ranura de la semana (S43 a S44, rota por diseño) y el orden de un bloque de casos raros; `lotes-prueba.mjs` es estable al repetirlo y `--check` da «al día». Se commitean las listas regeneradas y el item 8 del 461 queda tachado con ese motivo.
 - Medición: no cambió ninguna tool.

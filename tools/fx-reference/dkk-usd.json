@@ -1,10 +1,10 @@
 {
- "label": "DKK por 1 USD (Danmarks Nationalbank, valutakurser)",
- "source": "Danmarks Nationalbank, Statbank tabla DNVALD (api.statbank.dk), USD, DKK por 100",
- "fetchedAt": "2026-10-01T15:55:23.505Z",
+ "label": "DKK por 1 USD (Danmarks Nationalbank, tipo oficial diario)",
+ "source": "Danmarks Nationalbank, Statbank tabla DNVALD (api.statbank.dk/v1/data), USD, DKK por 100 unidades (dividido por 100)",
+ "fetchedAt": "2026-10-26T03:39:26.409Z",
  "rangeFrom": "2000-01-03",
- "rangeTo": "2026-09-30",
- "count": 6684,
+ "rangeTo": "2026-10-22",
+ "count": 6700,
  "series": {
   "2000-01-03": 7.3539,
   "2000-01-04": 7.2645,
@@ -6689,6 +6689,22 @@
   "2026-09-25": 6.5557,
   "2026-09-28": 6.5699,
   "2026-09-29": 6.5834,
-  "2026-09-30": 6.5834
+  "2026-09-30": 6.5834,
+  "2026-10-01": 6.6169,
+  "2026-10-02": 6.658,
+  "2026-10-05": 6.6713,
+  "2026-10-06": 6.633,
+  "2026-10-07": 6.6874,
+  "2026-10-08": 6.6815,
+  "2026-10-09": 6.6706,
+  "2026-10-12": 6.6853,
+  "2026-10-13": 6.6815,
+  "2026-10-14": 6.6774,
+  "2026-10-15": 6.6693,
+  "2026-10-16": 6.6425,
+  "2026-10-19": 6.659,
+  "2026-10-20": 6.6648,
+  "2026-10-21": 6.6536,
+  "2026-10-22": 6.6709
  }
 }
