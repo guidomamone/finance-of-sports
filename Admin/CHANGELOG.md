@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1167 — fos siis-adicionales: los documentos adicionales de SIIS por club-año [465 · siis-adicionales.mjs]
+- Un GET por año a `documentos-adicionales` con el radicado de los `siis-estado-AAAA.json` ya bajados (si el del resultado integral dice «None», el de empresas o balance: Tolima 2021 y 2022) y lista trámite y radicado contra lo que hay en la carpeta. Sin descargas. Muestra lo que antes se rehacía en el scratchpad: Tolima 2022 y 2025 traen dictámenes, certificaciones y notas por duplicado.
+- Medición: no es del pipeline (no pide medición); probado con Deportes Tolima.
+
 ## Versión 1166 — fos cola-historial club y patrón del veredicto desde una lista corta [465 · cola-historial.mjs, patron.mjs, cerrar-tool.mjs, patrones-tools.mjs]
 - `fos cola-historial club <texto> [motivo]` imprime en orden cada caso y cada respuesta de un club (decisión, causa, nota), sin armar un script suelto.
 - `fos patron` y `fos cerrar-tool` sin `--patron` ni `--sin-documentos` toman el patrón (o el motivo) de cada tool cambiada de `tools/patrones-tools.json`; `cerrar-tool` frena en segundos, antes de medir, si a una tool le falta la entrada. La lista arranca con 8 tools y se suma una cuando hace falta.

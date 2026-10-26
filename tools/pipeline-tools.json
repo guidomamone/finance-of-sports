@@ -203,6 +203,7 @@
   "siis-notas-clasificar.mjs": "orden: de cada club-año de SIIS, qué rubros abren las notas y por qué los demás no (solo lee los siis-estado-AAAA.json y los estados-financieros ya bajados)",
   "git-resumen.mjs":"orden: git status sin las páginas generadas (solo lee git)",
   "audit-perfil.mjs":"orden: el tiempo de cada chequeo de audit.js (corre audit.js con --cpu-prof en una carpeta temporal; solo mide)",
+  "siis-adicionales.mjs":"orden: los documentos adicionales de SIIS por club-año (un GET por año; no baja archivos ni escribe)",
   "patrones-tools.mjs":"orden: el patrón del veredicto de cada tool, de tools/patrones-tools.json (lo usan patron.mjs y cerrar-tool.mjs)",
   "duraciones-lib.mjs":"orden: la lectura de los segundos de cada medidor (la usan duraciones-mediciones y el ensayo de medir-pipeline); solo lee",
   "duraciones-mediciones.mjs":"orden: los segundos de cada medidor de medir-pipeline por nivel (solo lee Admin/registros/mediciones-pipeline.jsonl y Admin/mediciones/pipeline)",
