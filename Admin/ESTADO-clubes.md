@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 332 clubes, 1376 ejercicios, 24 países.
+TOTAL: 333 clubes, 1377 ejercicios, 24 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -132,7 +132,7 @@ CHILE (3)
   Universidad Católica  16 ejercicios (2010 a 2025), balance, CLP
   Universidad de Chile  5 ejercicios (2013, 2022, 2023, 2024, 2025), balance, CLP
 
-COLOMBIA (16)
+COLOMBIA (17)
   Alianza FC              1 ejercicio (2023), balance, COP, sin deuda/caja
   América de Cali         1 ejercicio (2025), balance, COP
   Atletico Bucaramanga    2 ejercicios (2019 a 2020), balance, COP, sin deuda/caja
@@ -145,6 +145,7 @@ COLOMBIA (16)
   Fortaleza CEIF          9 ejercicios (2017 a 2025), balance, COP
   Independiente Santa Fe  1 ejercicio (2025), balance, COP
   Junior de Barranquilla  1 ejercicio (2025), balance, COP
+  La Equidad              1 ejercicio (2023), balance, COP, sin deuda/caja
   Llaneros                1 ejercicio (2025), balance, COP, sin deuda/caja
   Millonarios             1 ejercicio (2025), balance, COP
   Once Caldas             5 ejercicios (2018, 2022, 2023, 2024, 2025), balance, COP

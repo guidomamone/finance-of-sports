@@ -12,9 +12,64 @@
     "sport": "football",
     "taxonomy": "football-1"
   },
-  "sources": [],
+  "sources": [
+    {
+      "id": "laequidad-co-siis-estado-2023",
+      "club_id": "laequidad-co",
+      "title": "IDBDC Albinegro S.A. — siis-estado-2023 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/La Equidad/siis-estado-2023.pdf"
+    }
+  ],
   "members": null,
-  "years": [],
+  "years": [
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "COP",
+      "source_id": "laequidad-co-siis-estado-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2023-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 20007.369,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":1710.231,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-138.663,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-16277.847,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2084.126,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-266.793,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1796.694,"tax":-581.746,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":21717.6,"expenses":18767.429,"net_result":571.731},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":60.828},
+          {"label":"Costos financieros","amount":-1857.522},
+          {"label":"Ingreso (gasto) por impuestos","amount":-581.746}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Ingresos de actividades ordinarias",
+            "side": "revenue",
+            "amount": 20007.369,
+            "reason": "Línea única de ingresos sin abrir: lump_football_operations (regla de Colombia, 463, 2026-10-26)",
+            "kind": "net_sales"
+          },
+          {"line":"Gastos de ventas","side":"expense","amount":16277.847,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
+        "revenue_basis": "full"
+      }
+    }
+  ],
   "budget_overlay": {},
   "squad_transfers": [],
   "results": {},

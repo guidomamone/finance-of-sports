@@ -59,6 +59,16 @@ Object.assign(window.CLUB_CONTEXT, {
   'junior-co': {
     2025: {"estadio":"Metropolitano Roberto Meléndez","capacidad":46692,"sponsor":"Olímpica, Águila, Tecnoglass","marca":"Adidas","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
+  'laequidad-co': {
+    2016: {"temporada":"2016 Categoría Primera A season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378566724"},
+    2017: {"estadio":"Metropolitano de Techo","capacidad":8000,"temporada":"2017 Categoría Primera A season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341690336"},
+    2018: {"estadio":"Metropolitano de Techo","capacidad":8000,"temporada":"2018 Categoría Primera A season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692380"},
+    2019: {"estadio":"Metropolitano de Techo","capacidad":8000,"temporada":"2019 Categoría Primera A season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264218"},
+    2020: {"estadio":"Metropolitano de Techo","capacidad":8000,"temporada":"2020 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375528276"},
+    2021: {"estadio":"Metropolitano de Techo","capacidad":8000,"temporada":"2021 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375989701"},
+    2022: {"estadio":"Metropolitano de Techo","capacidad":8000,"temporada":"2022 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376520069"},
+    2023: {"estadio":"Metropolitano de Techo","capacidad":8000,"sponsor":"Cootrafa","marca":"Attle","temporada":"2023 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377160814"},
+  },
   'llaneros-co': {
     2025: {"estadio":"Bello Horizonte – Rey Pelé","capacidad":15000,"sponsor":"Maxi Cola, Aitabü Hotel Campestre, Gobernación del Meta","marca":"Aerosport","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356","fuenteManual":"https://en.wikipedia.org/wiki/2025_Categor%C3%ADa_Primera_A_season (tablas Stadia y Personnel and kits; sponsors de camiseta listados: Maxi Cola, Aitabü Hotel Campestre, Gobernación del Meta)","manual":["estadio","capacidad","sponsor","marca"]},
   },
