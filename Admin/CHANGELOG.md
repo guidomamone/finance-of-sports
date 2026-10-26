@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1153 — cola.mjs, cola-respuesta.mjs y duraciones-mediciones.mjs: el uso de --responder dice las tres banderas; cuánto tarda cada medidor [465 · cola.mjs · cola-respuesta.mjs · duraciones-mediciones.mjs]
+- El uso de `cola.mjs --responder` muestra `--evidencia`, `--seguridad` y `--causa` (obligatorias) y el error de `--evidencia` dice que la ruta termina en .md o es «ninguna»; antes costó diez llamadas perdidas. `duraciones-mediciones.mjs` (comando `fos duraciones`) lista los segundos de cada medidor por nivel: `siis` 2 s de mediana, `verificar` 9, `cargar` completo 182, `escribir` 126, `xhtml` 340.
+- Medición: idéntico en el lote completo (una tool compartida lo pide aunque solo cambie un mensaje; tardó unos 14 minutos y una primera corrida frenó por el tamaño de la cabecera); veredicto GENERAL; `audit.js` P0 0 y P1 0.
+
 ## Versión 1152 — club-siis.mjs y dictamenes-md.mjs: subagentes juntos con su brief, --evaluar y --avanzar [463 · club-siis.mjs · dictamenes-md.mjs]
 - `club-siis` imprime el brief de cada subagente (`--brief`, plantillas en `Admin/briefs-subagentes-siis.md`) y pide lanzarlos juntos; `--evaluar` dice CARGAR, REVISAR o DESCARTAR (solo se descarta una sociedad sin actividad: la liga no descarta, se cargan amateurs) y muestra el peso de «Costo de ventas»; `--avanzar` corre los pasos mecánicos hasta el primero que pide juicio. `dictamenes-md.mjs` transcribe los dictámenes de texto nativo y marca duplicados, escaneos y firmas.
 - Medición: ninguna es tool del pipeline (orden y manual en `pipeline-tools.json`: `fos que-pide` no pide medición); `--avanzar` sin probar de punta a punta con un club nuevo.

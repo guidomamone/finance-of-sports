@@ -16,7 +16,7 @@ export function lineaDeRespuesta({ id, decision, valor = null, nota = null, evid
   if (faltan.length) return { linea: null, errores: faltan, conEsquema: true };
   const em = evidencia && /^(.+\.md):(\d+)(?:-(\d+))?$/.exec(evidencia);
   const errores = [];
-  if (evidencia !== 'ninguna' && !em) errores.push(`--evidencia «${evidencia}» no es ruta.md:línea ni ninguna`);
+  if (evidencia !== 'ninguna' && !em) errores.push(`--evidencia «${evidencia}» no es «ruta.md:línea» (o «ruta.md:12-30»; la ruta tiene que terminar en .md) ni «ninguna» (la fuente es una web u otro archivo)`);
   const linea = { esquema: 1, ...base, evidencia: evidencia === 'ninguna' ? null : em ? { md: em[1], lineas: [Number(em[2]), Number(em[3] || em[2])] } : undefined, seguridad: seguridad || undefined, causa: causa || undefined, ...(precedentes ? { precedentes: String(precedentes).split(',').filter(Boolean) } : {}) };
   for (const k of Object.keys(linea)) if (linea[k] === undefined) delete linea[k];
   return { linea, errores: [...errores, ...validar('cola-respuesta', linea).filter((e) => !(errores.length && /`evidencia`/.test(e)))], conEsquema: true };

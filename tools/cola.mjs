@@ -30,9 +30,8 @@
 //   node tools/cola.mjs                                  los casos pendientes, agrupados por documento, con qué abrir y qué mirar
 //   node tools/cola.mjs --todas                          también los respondidos
 //   node tools/cola.mjs --lista Admin/lotes/lote-NN.txt  solo los casos de los documentos de ese lote; también --dir "Clubes/<País>/<Club>"
-//   node tools/cola.mjs --responder <id> aceptar
-//   node tools/cola.mjs --responder <id> corregir --valor "1.234.567" --nota "en el PDF dice 1.234.567, Mistral leyó 1.284.567"
-//   node tools/cola.mjs --responder <id> preguntar-club --nota "¿el ingreso por transferencias es bruto o neto?"
+//   node tools/cola.mjs --responder <id> aceptar|corregir|preguntar-club [--valor "1.234.567"] [--nota "…"] --evidencia "ruta.md:12-30"|ninguna --seguridad alta|media|baja --causa lectura-del-documento|regla-escrita|otra|…
+//     (las tres últimas son obligatorias, sin ellas no se guarda; --evidencia es de un .md del club, «ninguna» si la fuente es una web u otro archivo; todas las causas: cola-respuesta.mjs)
 //   node tools/cola.mjs --corregir-categoria "<pdf>" "<etiqueta>" <categoría> --nota "..."   (fija la categoría de una fila, ver abajo)
 //   import { agregarCaso, respuestaDe, pendientes } from './cola.mjs';
 // ============================================================================
