@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1152 — club-siis.mjs y dictamenes-md.mjs: subagentes juntos con su brief, --evaluar y --avanzar [463 · club-siis.mjs · dictamenes-md.mjs]
+- `club-siis` imprime el brief de cada subagente (`--brief`, plantillas en `Admin/briefs-subagentes-siis.md`) y pide lanzarlos juntos; `--evaluar` dice CARGAR, REVISAR o DESCARTAR (solo se descarta una sociedad sin actividad: la liga no descarta, se cargan amateurs) y muestra el peso de «Costo de ventas»; `--avanzar` corre los pasos mecánicos hasta el primero que pide juicio. `dictamenes-md.mjs` transcribe los dictámenes de texto nativo y marca duplicados, escaneos y firmas.
+- Medición: ninguna es tool del pipeline (orden y manual en `pipeline-tools.json`: `fos que-pide` no pide medición); `--avanzar` sin probar de punta a punta con un club nuevo.
+
 ## Versión 1151 — Independiente Medellín (diez años de SIIS), dictámenes de Tolima, colores de marca de tres clubes colombianos y «Sueldos / Ingresos» en «—» [463 · independientemedellin-co · deportestolima-co · laequidad-co · aguilasdoradas-co]
 - Independiente Medellín (El Equipo del Pueblo S.A.) cargado de 2016 a 2025 con el camino de `club-siis.mjs`, un commit por año; «Costo de ventas» (87 a 90 % de los gastos) va a fútbol profesional sin desglosar por la excepción de la regla de Colombia; diez dictámenes de RSM transcriptos con su línea del auditor (2024: solo el informe legal). Real Sincelejo se descartó (sociedad sin actividad). Los dictámenes que faltaban de los otros cuatro clubes no están en SIIS (huecos); el de Tolima 2025 se bajó y el «2025» archivado era el de 2024.
 - Pantalla: la razón de sueldos sobre ingresos muestra «—» (no 0 %) si el documento no abre los sueldos, y el Δ ya no compara contra ese cero; Tolima, La Equidad y Águilas Doradas tenían el color de marca sin poner.
