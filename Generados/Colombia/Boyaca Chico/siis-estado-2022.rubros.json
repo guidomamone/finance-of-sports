@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Colombia/Boyaca Chico/siis-estado-2022.md",
+  "pdf": "Clubes/Colombia/Boyaca Chico/siis-estado-2022.pdf",
+  "club": "boyacachico-co",
+  "year": 2022,
+  "generatedAt": "2026-10-26T21:56:52.388Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        5813.263
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        57.934
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        4146.519
+      ],
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        628.306
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        85.097
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

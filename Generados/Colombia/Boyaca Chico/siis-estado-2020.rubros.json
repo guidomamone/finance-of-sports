@@ -1,0 +1,100 @@
+{
+  "md": "Clubes/Colombia/Boyaca Chico/siis-estado-2020.md",
+  "pdf": "Clubes/Colombia/Boyaca Chico/siis-estado-2020.pdf",
+  "club": "boyacachico-co",
+  "year": 2020,
+  "generatedAt": "2026-10-26T21:56:52.331Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        4139.568
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Recuperaciones",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Otros ingresos\"",
+      "values": [
+        0.798002
+      ],
+      "glosa": "Recuperaciones"
+    },
+    {
+      "label": "Subsidios Estatales PAEF",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Otros ingresos\"",
+      "values": [
+        63.657
+      ],
+      "glosa": "Subsidios Estatales PAEF"
+    },
+    {
+      "label": "Diversos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Otros ingresos\"",
+      "values": [
+        0.548239
+      ],
+      "glosa": "Diversos"
+    },
+    {
+      "label": "Costos de Personal y Jugadores",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        718.294572
+      ],
+      "glosa": "Costos de Personal y Jugadores"
+    },
+    {
+      "label": "Partidos y Actividades Deportivas",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        1717.494607
+      ],
+      "glosa": "Partidos y Actividades Deportivas"
+    },
+    {
+      "label": "Honorarios y Arriendos",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        373.991922
+      ],
+      "glosa": "Honorarios y Arriendos"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        769.431
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        256.255
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

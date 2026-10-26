@@ -1,0 +1,305 @@
+{
+ "md": "Clubes/Colombia/Boyaca Chico/siis-estado-2019.md",
+ "generatedAt": "2026-10-26T21:57:31.859Z",
+ "rubrosHuella": "bb288b44ce17261f953136eaf448c8cb8abc63a9",
+ "rubros": [
+  {
+   "label": "Ventas por Derechos Deportivos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1139
+  },
+  {
+   "label": "Ventas por Derechos de Televisión",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1122
+  },
+  {
+   "label": "Ventas por auxilio Hotelero",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "broadcasting",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "broadcasting",
+     0.66
+    ],
+    [
+     "competition_bonus",
+     0.23
+    ],
+    [
+     "grants_donations",
+     0.05
+    ]
+   ],
+   "tokens": 1152
+  },
+  {
+   "label": "Diversos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ventas por auxilio de Transportes",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "broadcasting",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "broadcasting",
+     0.96
+    ],
+    [
+     "grants_donations",
+     0.02
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1167
+  },
+  {
+   "label": "Partidos y Actividades Deportivas",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Honorarios y Arriendos",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicad",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "sponsorship_commercial",
+     0.25
+    ],
+    [
+     "broadcasting",
+     0.1
+    ]
+   ],
+   "tokens": 930
+  },
+  {
+   "label": "Ventas por auxilio de Arbitraje",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "broadcasting",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "broadcasting",
+     0.8
+    ],
+    [
+     "competition_bonus",
+     0.14
+    ],
+    [
+     "grants_donations",
+     0.03
+    ]
+   ],
+   "tokens": 1156
+  },
+  {
+   "label": "Descuentos comerciales",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "sponsorship_commercial",
+     0.05
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1159
+  },
+  {
+   "label": "Ventas Auxilio Federación Colombiana",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "competition_bonus",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "competition_bonus",
+     0.81
+    ],
+    [
+     "broadcasting",
+     0.12
+    ],
+    [
+     "grants_donations",
+     0.04
+    ]
+   ],
+   "tokens": 1170
+  },
+  {
+   "label": "Recuperaciones",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1228
+  },
+  {
+   "label": "Costos de Personal",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "wages_squad",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "wages_squad",
+     0.52
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Ventas por Patrocinios",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1157
+  }
+ ]
+}

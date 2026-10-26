@@ -1,0 +1,110 @@
+{
+  "md": "Clubes/Colombia/Boyaca Chico/siis-estado-2021.md",
+  "pdf": "Clubes/Colombia/Boyaca Chico/siis-estado-2021.pdf",
+  "club": "boyacachico-co",
+  "year": 2021,
+  "generatedAt": "2026-10-26T21:56:52.360Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        5643.756
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Subsidios Estatales PAEF",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Otros ingresos\"",
+      "values": [
+        89.665
+      ],
+      "glosa": "Subsidios Estatales PAEF"
+    },
+    {
+      "label": "Diversos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Otros ingresos\"",
+      "values": [
+        0.00218
+      ],
+      "glosa": "Diversos"
+    },
+    {
+      "label": "Costos de Personal y Jugadores",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        1281.602831
+      ],
+      "glosa": "Costos de Personal y Jugadores"
+    },
+    {
+      "label": "Partidos y Actividades Deportivas",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        2307.10543
+      ],
+      "glosa": "Partidos y Actividades Deportivas"
+    },
+    {
+      "label": "Honorarios y Arriendos",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        632.024047
+      ],
+      "glosa": "Honorarios y Arriendos"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        773.681
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Financieros",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Otros gastos\"",
+      "values": [
+        91.659121
+      ],
+      "glosa": "Financieros"
+    },
+    {
+      "label": "Gastos extraordinarios",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Otros gastos\"",
+      "values": [
+        19.413806
+      ],
+      "glosa": "Gastos extraordinarios"
+    },
+    {
+      "label": "Gastos diversos",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Otros gastos\"",
+      "values": [
+        66.288247
+      ],
+      "glosa": "Gastos diversos"
+    }
+  ]
+}

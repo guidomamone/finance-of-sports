@@ -1,0 +1,91 @@
+{
+ "md": "Clubes/Colombia/Boyaca Chico/siis-estado-2016.md",
+ "club": "boyacachico-co",
+ "year": 2016,
+ "generatedAt": "2026-10-26T21:57:36.321Z",
+ "rubrosHuella": "b844ed37facd293c558c26aaf9a5475d2854c027",
+ "jevHuella": "8842b388f1ed1b1d9fad6d001950f6df13cd2bd9",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.041263,
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.97,
+   "categoria": "lump_football_operations",
+   "confianza": 0.97
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.97,
+   "categoria": "other_income",
+   "confianza": 0.97
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Costo de ventas",
+   "page": 1,
+   "pendiente": true,
+   "jev": "lump_football_operations_expense",
+   "jevConf": 0.57,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.75,
+   "motivo": "Regla decidida: en clubes colombianos «Costo de ventas» va a other_expenses."
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de ventas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:familia",
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 1,
+   "jevConf": 0.96,
+   "categoria": "other_expenses",
+   "confianza": 0.96
+  }
+ ]
+}

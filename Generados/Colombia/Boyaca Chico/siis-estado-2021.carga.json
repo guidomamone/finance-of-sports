@@ -1,0 +1,444 @@
+{
+ "pdf": "Clubes/Colombia/Boyaca Chico/siis-estado-2021.pdf",
+ "generado": "2026-10-26T21:57:43.909Z",
+ "frena": [
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Partidos y Actividades Deportivas\" -> match_organisation_expense 0.75; \"Honorarios y Arriendos\" -> admin_general_expense 0.55"
+  }
+ ],
+ "avisos": [
+  "pregunta ya abierta (frena igual): \"Partidos y Actividades Deportivas\" -> match_organisation_expense está en la cola por siis-estado-2019.pdf (5c30a48); su respuesta vale para este año",
+  "pregunta ya abierta (frena igual): \"Honorarios y Arriendos\" -> admin_general_expense está en la cola por siis-estado-2019.pdf (597344d); su respuesta vale para este año",
+  "gastos: ningún total impreso igual a la suma de las líneas (-5152.360676); queda la suma, verificada por el resultado del ejercicio"
+ ],
+ "ejercicio": {
+  "clubId": "boyacachico-co",
+  "year": 2021,
+  "cierre": "2021-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Ingresos de actividades ordinarias",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 5643.756,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subsidios Estatales PAEF",
+    "normalizedCategory": "grants_donations",
+    "amountNative": 89.665,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.88,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diversos",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.00218,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Costos de Personal y Jugadores",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1281.602831,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Partidos y Actividades Deportivas",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -2307.10543,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Honorarios y Arriendos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -632.024047,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos de administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -773.681,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Financieros",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -91.659121,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos extraordinarios",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -19.413806,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos diversos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -66.288247,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "COP",
+   "fxRef": "COP@2021-12-31",
+   "sourceId": "boyacachico-co-siis-estado-2021",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0,
+   "tax": -213.837,
+   "sinDesglose": [
+    {
+     "renglon": "Ingresos de actividades ordinarias",
+     "lado": "revenue",
+     "importe": 5643.756,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "net_sales"
+    }
+   ],
+   "baseIngreso": "full",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 5733.42318,
+   "officialTotalExpenses": 5152.360676,
+   "officialPAT": 347.812
+  },
+  "source": {
+   "id": "boyacachico-co-siis-estado-2021",
+   "clubId": "boyacachico-co",
+   "title": "Deportivo Boyacá Chicó Futbol Club S.A. — siis-estado-2021 (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Colombia/Boyaca Chico/siis-estado-2021.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Boyaca Chico/siis-estado-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Colombia/Boyaca Chico/siis-estado-2021.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2021-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "boyacachico-co",
+ "year": 2021,
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Boyaca Chico/siis-estado-2021.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2021.md L11-L127",
+   "autor": "Claude",
+   "fecha": "2026-10-26"
+  }
+ ],
+ "seleccion": {
+  "filas": 11,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "native": 5643.756,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5643.756,
+   "cat": "lump_football_operations",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5643.756
+  },
+  {
+   "label": "Subsidios Estatales PAEF",
+   "page": 1,
+   "native": 89.665,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Otros ingresos\")",
+   "signoFijo": 89.665,
+   "cat": "grants_donations",
+   "conf": 0.88,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 89.665
+  },
+  {
+   "label": "Diversos",
+   "page": 1,
+   "native": 0.00218,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Otros ingresos\")",
+   "signoFijo": 0.00218,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.00218
+  },
+  {
+   "label": "Costos de Personal y Jugadores",
+   "page": 1,
+   "native": 1281.602831,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 1281.602831,
+   "cat": "wages_squad",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1281.602831
+  },
+  {
+   "label": "Partidos y Actividades Deportivas",
+   "page": 1,
+   "native": 2307.10543,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 2307.10543,
+   "cat": "match_organisation_expense",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -2307.10543
+  },
+  {
+   "label": "Honorarios y Arriendos",
+   "page": 1,
+   "native": 632.024047,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 632.024047,
+   "cat": "admin_general_expense",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -632.024047
+  },
+  {
+   "label": "Gastos de administración",
+   "page": 1,
+   "native": 773.681,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 773.681,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -773.681
+  },
+  {
+   "label": "Financieros",
+   "page": 1,
+   "native": 91.659121,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Otros gastos\")",
+   "signoFijo": 91.659121,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -91.659121
+  },
+  {
+   "label": "Gastos extraordinarios",
+   "page": 1,
+   "native": 19.413806,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Otros gastos\")",
+   "signoFijo": 19.413806,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -19.413806
+  },
+  {
+   "label": "Gastos diversos",
+   "page": 1,
+   "native": 66.288247,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Otros gastos\")",
+   "signoFijo": 66.288247,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -66.288247
+  },
+  {
+   "label": "Ingreso (gasto) por impuestos",
+   "page": null,
+   "native": -213.837,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Otros ingresos\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Costo de ventas\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Otros gastos\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 5733.42318,
+  "expSum": -5152.360676,
+  "officialTotalRevenue": 5733.42318,
+  "officialTotalExpenses": 5152.360676,
+  "officialPAT": 347.812,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 347.812,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 5733.42318
+  }
+ },
+ "liga": {
+  "valor": "co-primeraA",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-12-31",
+   "fuente": "año del ejercicio + mes de cierre (los demás .md del club (7 de 7 documentos cierran en el mes 12); este documento no alcanza solo)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "COP",
+   "fuente": "moneda de curso legal de Colombia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "COP@2021-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene COP@2021-12-31 = 3981.16 (TRM oficial (Banco de la República / Superfinanciera de Colombia) al 2021-12-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "boyacachico-co-siis-estado-2021",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "co-primeraA",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 3,
+  "lineasGasto": 7,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
+}
