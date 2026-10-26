@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1178 — sponsor-fka --buscar: Football Kit Archive con Exa [468 · sponsor-fka.mjs]
+- `node tools/sponsor-fka.mjs <clubId> --buscar --nombre "<Club>"` consulta Exa (`tools/exa-search.mjs`, clave en `Admin/api-keys/exa.env`) por cada año de sponsor débil y lee de las fichas de camisetas de FKA el campo Sponsor y la marca, sin el cartel «View a short ad»; imprime lo hallado y el comando para registrarlo. Cuesta ~US$ 0,007 por año (anotado en `Admin/registros/api/exa.jsonl`). `club-siis` lo ofrece primero y deja Claude in Chrome para los años que Exa no trae.
+- Probado: Once Caldas 2018 da Colanta (coincide con lo cargado, ficha de FKA); 2016 y 2021 la ficha no tiene campo Sponsor (coincide con «sin sponsor»); 2017, 2019 y 2020 Exa no trae la ficha. Boyacá Chicó: 2016 a 2023 sin campo Sponsor en FKA (no contradice los `sin-fuente`).
+- Medición: no es del pipeline (no pide medición).
+
 ## Versión 1177 — fos club-datos [468 · club-datos.mjs]
 - `node tools/fos.mjs club-datos <clubId> <año> [gastos|ingresos|todo]` imprime las líneas de un año de un club (etiqueta, subcategoría, importe) con el total por subcategoría y los totales oficiales; reemplaza los scripts sueltos del scratchpad que se armaban para mirar un año cargado.
 - Medición: no es del pipeline (no pide medición).

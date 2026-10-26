@@ -31,7 +31,8 @@ Guido (2026-10-26): no se cargan más clubes de SIIS hasta cerrar este punto; se
 3. Los silencios de `sin-salarios` se repiten (Fortaleza 2016, Alianza 2017 y 2018): silenciar solos cuando el estado de SIIS no trae Gastos de ventas y todo va en Gastos de administración, con la cita de las líneas.
 4. `auditoria.mjs`: avisar un dictamen con fechas o años que no son los del ejercicio (Alianza 2024 y 2025 parecen la plantilla de otro año; el chequeo de citas solo mira que la cita exista).
 5. `club-siis` sin nombre escribe `tools/club-league-reference/misses.jsonl` al listar y hay que restaurarlo a mano: que no escriba.
-6. HECHO por el 465 y este turno: ver el CHANGELOG (Versión 1176 en adelante, `fos club-datos <clubId> <año> gastos`).
+6. HECHO: `fos club-datos <clubId> <año> gastos` (Versión 1177).
+7. Sponsors débiles de los clubes ya cargados: correr `node tools/sponsor-fka.mjs <clubId> --buscar --nombre "<Club>"` (Exa, Versión 1178) en Once Caldas, Boyacá Chicó, Unión Magdalena, Alianza FC, Fortaleza CEIF, Deportes Tolima y La Equidad, registrar con `--registrar` lo que coincide y corregir `tools/contexto-manual.json` lo que no (clase `base-camisetas`, con la URL de la ficha); Exa no trae todos los años (Once Caldas 2017, 2019 y 2020): ahí queda Claude in Chrome o `sin-fuente`. Mejorar la cobertura (otras consultas, las páginas de historial del equipo en otros idiomas) si pasa de la mitad de los años sin ficha.
 Terminado cuando: cada arreglo está hecho (con su medición y su entrada de CHANGELOG) o descartado con su motivo escrito acá, y los años de Colombia que contradecían la regla están corregidos con `Corrige:`.
 
 Verificar: manual
