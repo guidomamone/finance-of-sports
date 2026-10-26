@@ -44,6 +44,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Independiente Medellin/siis-estado-2019.pdf"
+    },
+    {
+      "id": "independientemedellin-co-siis-estado-2020",
+      "club_id": "independientemedellin-co",
+      "title": "El Equipo del Pueblo S.A. — siis-estado-2020 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Independiente Medellin/siis-estado-2020.pdf"
     }
   ],
   "members": null,
@@ -249,6 +257,60 @@
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":30927.387,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
           {"line":"Gastos de ventas","side":"expense","amount":1984.743,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-12-31",
+      "currency": "COP",
+      "source_id": "independientemedellin-co-siis-estado-2020",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2020-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 32405.213,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":1549.724,"disclosure":"aggregated"},
+        {"label":"Otras ganancias (pérdidas)","category":"other_revenue","subcategory":"other_income","amount":96.153,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-26799.565,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-1114.341,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1394.901,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-469.737,"disclosure":"aggregated"},
+        {
+          "label": "Deterioro de valor de ganancias y reversión de pérdidas por deterioro de valor (pérdidas por deterioro de valor) determinado de acuerdo con la NIIF 9",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -174.747,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ganancias (pérdidas) que surgen de la baja en cuentas de activos financieros medidos al costo amortizado",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -272.373,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-872.05,"tax":-53.057,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":34051.09,"expenses":30225.664,"net_result":2900.319},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":1811.162},
+          {"label":"Costos financieros","amount":-2683.212},
+          {"label":"Ingreso (gasto) por impuestos","amount":-53.057}
+        ],
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":32405.213,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {"line":"Gastos de ventas","side":"expense","amount":1114.341,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "revenue_basis": "full"
       }

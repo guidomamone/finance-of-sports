@@ -164,9 +164,11 @@ window.RANKINGS["co-primeraA"] = {
   },
   2020: {
     leagueSize: 20,
-    sinDato: ["independientemedellin-co"],
     wiki: {"t":"2020 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
+      { id:"independientemedellin-co", revenue:9.92, reportType:"official_balance_sheet",
+        sourceId:"independientemedellin-co-siis-estado-2020",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",9.441],["Otros ingresos",0.479]] },
       { id:"deportestolima-co", revenue:5.855, reportType:"official_balance_sheet",
         sourceId:"deportestolima-co-siis-estado-2020",
         mix:[["Comercial / Sponsors",0.863],["Estadio",0.298],["Televisión",1.073],["Premios por competencias",1.617],["Venta de Jugadores",0.694],["Otros ingresos",1.309]] },
