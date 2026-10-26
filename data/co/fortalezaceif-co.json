@@ -434,7 +434,7 @@
         {"label":"Gastos por Servicios","category":"admin_general","subcategory":"admin_general_expense","amount":-385.986,"disclosure":"aggregated"},
         {"label":"Gastos por Legales","category":"admin_general","subcategory":"admin_general_expense","amount":-7.361,"disclosure":"aggregated"},
         {"label":"Gastos por Mantenimiento","category":"admin_general","subcategory":"admin_general_expense","amount":-62.566,"disclosure":"aggregated"},
-        {"label":"Gastos de Viajes","category":"match_operations","subcategory":"match_organisation_expense","amount":-5.099,"disclosure":"aggregated"},
+        {"label":"Gastos de Viajes","category":"admin_general","subcategory":"admin_general_expense","amount":-5.099,"disclosure":"aggregated"},
         {"label":"Gastos por Depreciación","category":"depreciation","subcategory":"depreciation","amount":-47.474,"disclosure":"aggregated"},
         {"label":"Gastos por Amortización","category":"other_amortisation","subcategory":"other_amortisation","amount":-127.617,"disclosure":"aggregated"},
         {"label":"Gastos Diversos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-85.967,"disclosure":"aggregated"},

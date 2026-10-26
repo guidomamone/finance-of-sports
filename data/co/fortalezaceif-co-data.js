@@ -331,7 +331,7 @@ const fortalezaceifCoExpenseLinesByYear = {
     {"rawLabel":"Gastos por Servicios","normalizedCategory":"admin_general_expense","amountNative":-385.986,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gastos por Legales","normalizedCategory":"admin_general_expense","amountNative":-7.361,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gastos por Mantenimiento","normalizedCategory":"admin_general_expense","amountNative":-62.566,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Gastos de Viajes","normalizedCategory":"match_organisation_expense","amountNative":-5.099,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de Viajes","normalizedCategory":"admin_general_expense","amountNative":-5.099,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gastos por Depreciación","normalizedCategory":"depreciation","amountNative":-47.474,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gastos por Amortización","normalizedCategory":"other_amortisation","amountNative":-127.617,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gastos Diversos","normalizedCategory":"other_expenses","amountNative":-85.967,"disclosureLevel":"aggregated"},
