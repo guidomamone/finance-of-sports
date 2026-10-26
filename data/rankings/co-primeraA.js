@@ -84,6 +84,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2022: {
     leagueSize: 20,
+    sinDato: ["deportestolima-co"],
     wiki: {"t":"2022 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"oncecaldas-co", revenue:12.33, reportType:"official_balance_sheet",
@@ -93,6 +94,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2020: {
     leagueSize: 20,
+    sinDato: ["deportestolima-co"],
     wiki: {"t":"2020 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"atleticobucaramanga-co", revenue:1.576, reportType:"official_balance_sheet",
@@ -102,6 +104,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2019: {
     leagueSize: 20,
+    sinDato: ["deportestolima-co"],
     wiki: {"t":"2019 Categoría Primera A season","lang":"en","at":"2026-10-02","n":20},
     clubs: [
       { id:"atleticobucaramanga-co", revenue:3.981, reportType:"official_balance_sheet",
@@ -111,6 +114,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2018: {
     leagueSize: 20,
+    sinDato: ["deportestolima-co"],
     wiki: {"t":"2018 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"oncecaldas-co", revenue:7.571, reportType:"official_balance_sheet",

@@ -1,10 +1,8 @@
 {
  "pdf": "Clubes/Colombia/Deportes Tolima/siis-estado-2020.pdf",
- "generado": "2026-10-26T05:45:42.478Z",
+ "generado": "2026-10-26T05:53:52.695Z",
  "frena": [],
- "avisos": [
-  "ingresos: el rótulo «Ingresos de actividades ordinarias» no se reconoce; pregunta en la cola (tipo-linea, no frena): queda como other hasta que se conteste"
- ],
+ "avisos": [],
  "ejercicio": {
   "clubId": "deportestolima-co",
   "year": 2020,
@@ -114,7 +112,7 @@
      "lado": "revenue",
      "importe": 15603.304,
      "motivo": "Línea única de ingresos que el estado de SIIS no abre: va a la categoría de fútbol sin desglosar, como Omzet o Chiffre d'affaires de los clubes belgas y argentinos; el precedente de Tolima es la regla de Gastos de ventas (463, 2026-10-26)",
-     "tipo": "other"
+     "tipo": "net_sales"
     },
     {
      "renglon": "Gastos de ventas",
@@ -352,8 +350,8 @@
  },
  "liga": {
   "valor": "co-primeraA",
-  "fuente": "roster cacheado de \"2020 Liga DIMAYOR\" (tools/club-league-reference/co.json), coincidencia exacta \"Deportes Tolima\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -393,7 +391,7 @@
   },
   "liga": {
    "valor": "co-primeraA",
-   "fuente": "roster cacheado de \"2020 Liga DIMAYOR\" (tools/club-league-reference/co.json), coincidencia exacta \"Deportes Tolima\"",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
    "estado": "ok"
   }
  },
