@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1180 — recategorizar-linea: líneas de gastos [468 · recategorizar-linea.mjs]
+- `--gasto` (y `--importe <monto>` para desempatar dos líneas con la misma etiqueta) cambia la categoría de una línea de GASTOS de un ejercicio ya cargado, con su cita y su respuesta en la cola; sirve para los años que `cargar` no puede rehacer (Bucaramanga 2019 y 2020 frenan con 19 filas en la cola) y corrige lo que la regla de notas de Colombia contradice.
+- Medición: no es del pipeline (clasificada «manual», no pide medición).
+
 ## Versión 1179 — La regla escrita de las notas de gastos de Colombia gana sobre el precedente y sobre Jev [468 · cargar-categorias.mjs, categorizar-claude-listos.mjs, reglas-categoria.mjs]
 - Causa: la regla `CATEGORÍA (prompt)` solo llegaba al prompt de Claude, que casi nunca se consultaba: el precedente del club (mal aprendido de un año) o Jev decidían antes y repetían el error (Alianza 2019 «Gastos de personal (Gastos de ventas)» a administración; «Diversos» a `admin_general_expense` en Tolima, Alianza, Once Caldas y Bucaramanga).
 - `NOTA-CATEGORÍA (co): <nota> | <concepto> | <categoría>` en la sección de la regla de `CONVENCIONES-DATOS.md` y `reglaDeNota()` en `reglas-categoria.mjs` (valida nota, concepto y categoría): se aplica antes del precedente en `categorizar-claude-listos.mjs` y al empezar `catDe` de `cargar-categorias.mjs`; una respuesta de la cola o un ajuste manual de la fila siguen ganando. Si la nota no se sabe (o son las dos) no decide.

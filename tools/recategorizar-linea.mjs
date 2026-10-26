@@ -10,6 +10,7 @@
 //   node tools/recategorizar-linea.mjs --club benfica-pt --anio 2007 --etiqueta "Ganhos em imobilizações" --a player_sales \
 //        --cita "Clubes/Portugal/Benfica/relatorio-contas-2006-07.md:361" --regla "ganancia en inmovilizado ligada a jugadores por el documento" [--escribir]
 //   Sin --escribir solo dice qué cambiaría. Después: node tools/publicar.mjs y un commit con «Corrige:».
+//   --gasto           la línea es de GASTOS (Colombia: «Diversos» y viajes de administración que la regla de notas manda a otra categoría); --importe <monto> si la etiqueta se repite
 //   --a asset_sales   la línea sale de los ingresos y va al meta `assetSales` del año (venta de una filial o participación)
 //   --mirada          no cambia nada: anota que la línea se miró y queda como está (el aviso `ganancia-inmovilizado-sin-mirar` de audit.js deja de pedirla)
 // ============================================================================
@@ -34,10 +35,13 @@ const m = /^(.+\.md):(\d+)$/.exec(cita); if (!m) falla(`--cita «${cita}» no es
 const rutaMd = resolve(ROOT, m[1]); if (!existsSync(rutaMd)) falla(`No existe ${m[1]}`);
 if (!(readFileSync(rutaMd, 'utf8').split('\n')[Number(m[2]) - 1] || '').trim()) falla(`La línea ${m[2]} de ${m[1]} está vacía.`);
 
-const lineas = (c) => (c.datos.revenueLinesByYear || {})[anio] || [];
-const hallar = (c) => lineas(c).filter((l) => l.rawLabel === etiqueta);
+const GASTO = A.includes('--gasto'); // la línea es de GASTOS (default: ingresos); --importe <monto> desempata dos líneas con la misma etiqueta
+const importe = flag('--importe');
+const lineas = (c) => ((GASTO ? c.datos.expenseLinesByYear : c.datos.revenueLinesByYear) || {})[anio] || [];
+const hallar = (c) => lineas(c).filter((l) => l.rawLabel === etiqueta && (importe === null || Math.abs(l.amountNative - Number(importe)) < 0.0005));
 const hay = hallar(deJson(leerJsonClub(club)));
-if (hay.length !== 1) falla(`${club} ${anio}: ${hay.length} línea(s) de ingresos con la etiqueta «${etiqueta}» (tiene que haber exactamente una).`);
+if (hay.length !== 1) falla(`${club} ${anio}: ${hay.length} línea(s) de ${GASTO ? 'gastos' : 'ingresos'} con la etiqueta «${etiqueta}» (tiene que haber exactamente una; --importe desempata).`);
+if (GASTO && a === 'asset_sales') falla('--a asset_sales es solo de ingresos.');
 const antes = hay[0];
 const MIRADA = A.includes('--mirada'); // «la miré y queda como está»: no cambia nada, deja la decisión anotada
 const A_ACTIVOS = a === 'asset_sales'; // la venta de una filial o participación sale de los ingresos y va al meta `assetSales` del año (REGLA de las inversiones o filiales)
