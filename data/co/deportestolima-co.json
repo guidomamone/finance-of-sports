@@ -60,6 +60,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Deportes Tolima/siis-estado-2018.pdf"
+    },
+    {
+      "id": "deportestolima-co-siis-estado-2019",
+      "club_id": "deportestolima-co",
+      "title": "Club Deportes Tolima S.A. — siis-estado-2019 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Deportes Tolima/siis-estado-2019.pdf"
     }
   ],
   "members": null,
@@ -210,6 +218,57 @@
             "line": "Gastos de ventas",
             "side": "expense",
             "amount": 17963.917,
+            "reason": "Regla votada 2026-10-26: «Gastos de ventas» sin abrir va a lump_football_operations_expense",
+            "kind": "other"
+          }
+        ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-12-31",
+      "currency": "COP",
+      "source_id": "deportestolima-co-siis-estado-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2019-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 35681.58,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-539.967,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-25670.55,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2918.699,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":212.763,"tax":-879.72,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":35681.58,"expenses":29129.216,"net_result":5885.407},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":2780.03},
+          {"label":"Costos financieros","amount":-2567.267},
+          {"label":"Ingreso (gasto) por impuestos","amount":-879.72}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Ingresos de actividades ordinarias",
+            "side": "revenue",
+            "amount": 35681.58,
+            "reason": "Línea única de ingresos que el estado de SIIS no abre: va a la categoría de fútbol sin desglosar, como Omzet o Chiffre d'affaires de los clubes belgas y argentinos; el precedente de Tolima es la regla de Gastos de ventas (463, 2026-10-26)",
+            "kind": "net_sales"
+          },
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 25670.55,
             "reason": "Regla votada 2026-10-26: «Gastos de ventas» sin abrir va a lump_football_operations_expense",
             "kind": "other"
           }
