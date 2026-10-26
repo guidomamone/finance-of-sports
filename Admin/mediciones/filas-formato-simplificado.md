@@ -10,7 +10,7 @@ Lo escribe `node tools/relevancia-filas.mjs --escribir` (lo corre solo `publicar
 | Fila | Club-años con número | Clubes que la tienen alguna vez | Cuando la tiene: mediana de la sección · casos ≥ 10 % | Cero real | «—» sin saber | Dentro de otro |
 |---|---|---|---|---|---|---|
 | Cuotas Sociales | 330 de 1348 (24 %) | 84 de 331 (25 %) | 7.0 % · 39 % | 673 (50 %) | 265 | 80 |
-| Comercial / Sponsors | 1018 de 1348 (76 %) | 260 de 331 (79 %) | 16.1 % · 74 % | 25 (2 %) | 239 | 66 |
+| Comercial / Sponsors | 1018 de 1348 (76 %) | 260 de 331 (79 %) | 16.1 % · 75 % | 25 (2 %) | 239 | 66 |
 | Estadio | 961 de 1348 (71 %) | 253 de 331 (76 %) | 8.9 % · 45 % | 47 (3 %) | 261 | 79 |
 | Televisión | 931 de 1348 (69 %) | 235 de 331 (71 %) | 27.1 % · 84 % | 65 (5 %) | 266 | 86 |
 | Premios por competencias | 463 de 1348 (34 %) | 140 de 331 (42 %) | 6.9 % · 39 % | 544 (40 %) | 341 | 0 |
@@ -18,7 +18,7 @@ Lo escribe `node tools/relevancia-filas.mjs --escribir` (lo corre solo `publicar
 | Otras actividades (educación y otros deportes) | 237 de 1348 (18 %) | 78 de 331 (24 %) | 1.9 % · 14 % | 776 (58 %) | 335 | 0 |
 | Subsidios y donaciones | 402 de 1348 (30 %) | 123 de 331 (37 %) | 2.7 % · 31 % | 646 (48 %) | 300 | 0 |
 | Fútbol profesional (sin desglosar por la fuente) | 350 de 1348 (26 %) | 120 de 331 (36 %) | 78.9 % · 96 % | 998 (74 %) | 0 | 0 |
-| Otros ingresos (catch-all) | 1200 de 1348 (89 %) | 298 de 331 (90 %) | 7.3 % · 39 % | 148 (11 %) | 0 | 0 |
+| Otros ingresos (catch-all) | 1200 de 1348 (89 %) | 298 de 331 (90 %) | 7.2 % · 39 % | 148 (11 %) | 0 | 0 |
 
 Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que la tienen alguna vez / clubes medidos):
 

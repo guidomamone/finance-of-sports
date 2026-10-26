@@ -481,9 +481,9 @@ window.RANKINGS["pt-primeiraliga"] = {
     leagueSize: 18,
     wiki: {"t":"2004–05 Primeira Liga","lang":"en","at":"2026-10-15","n":18},
     clubs: [
-      { id:"sportingcp-pt", revenue:120.642, reportType:"official_balance_sheet",
+      { id:"sportingcp-pt", revenue:42.067, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2004-05",
-        mix:[["Cuotas Sociales",4.548],["Comercial / Sponsors",4.828],["Estadio",14.437],["Televisión",11.767],["Premios por competencias",3.692],["Otros ingresos",81.371]] },
+        mix:[["Cuotas Sociales",4.548],["Comercial / Sponsors",4.828],["Estadio",14.437],["Televisión",11.767],["Premios por competencias",3.692],["Otros ingresos",2.796]] },
     ],
   },
   2004: {

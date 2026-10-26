@@ -26,5 +26,6 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Research & development tax credit":{"es":"Crédito fiscal por investigación y desarrollo"},
 "Research and development tax credit":{"es":"Crédito fiscal por investigación y desarrollo"},
 "Settlement fee":{"es":"Honorarios de acuerdo transaccional"},
-"Taxation":{"es":"Impuestos"}
+"Taxation":{"es":"Impuestos"},
+"Venta de activos":{"es":"Venta de activos"}
 });

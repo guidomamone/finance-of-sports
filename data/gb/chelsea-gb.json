@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-25",
+  "exported_at": "2026-10-26",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "chelsea-gb",
@@ -220,17 +220,17 @@
           "subcategory": "player_sales",
           "amount": 62.861,
           "disclosure": "aggregated"
-        },
-        {"label":"Profit on disposal of fixed assets","category":"other_revenue","subcategory":"other_income","amount":76.524,"disclosure":"aggregated"}
+        }
       ],
       "expenses": [
         {"label":"Cost of sales","category":"first_team_staff","subcategory":"wages_squad","amount":-467.205,"disclosure":"aggregated"},
         {"label":"Administrative expenses","category":"admin_general","subcategory":"admin_general_expense","amount":-293.85,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-11.503,"tax":0.331,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":682.458,"expenses":761.055,"net_result":-89.769},
+      "financial": {"profit_on_player_sales":0,"asset_sales":76.524,"net_interest":-11.503,"tax":0.331,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":605.934,"expenses":761.055,"net_result":-89.769},
       "adjustments": {
         "extra_rows": [
+          {"label":"Venta de activos","amount":76.524},
           {"label":"Interest receivable and similar income","amount":4.889},
           {"label":"Interest payable and similar charges","amount":-16.392},
           {"label":"Taxation","amount":0.331}

@@ -10,8 +10,11 @@
 //   node tools/recategorizar-linea.mjs --club benfica-pt --anio 2007 --etiqueta "Ganhos em imobilizações" --a player_sales \
 //        --cita "Clubes/Portugal/Benfica/relatorio-contas-2006-07.md:361" --regla "ganancia en inmovilizado ligada a jugadores por el documento" [--escribir]
 //   Sin --escribir solo dice qué cambiaría. Después: node tools/publicar.mjs y un commit con «Corrige:».
+//   --a asset_sales   la línea sale de los ingresos y va al meta `assetSales` del año (venta de una filial o participación)
+//   --mirada          no cambia nada: anota que la línea se miró y queda como está (el aviso `ganancia-inmovilizado-sin-mirar` de audit.js deja de pedirla)
 // ============================================================================
 import { readFileSync, appendFileSync, existsSync } from 'node:fs';
+import { spawnSync } from 'node:child_process';
 import { resolve } from 'node:path';
 import { leerJsonClub, modificarClub } from './club-json.mjs';
 import { deJson } from './json-datos.mjs';
@@ -36,10 +39,27 @@ const hallar = (c) => lineas(c).filter((l) => l.rawLabel === etiqueta);
 const hay = hallar(deJson(leerJsonClub(club)));
 if (hay.length !== 1) falla(`${club} ${anio}: ${hay.length} línea(s) de ingresos con la etiqueta «${etiqueta}» (tiene que haber exactamente una).`);
 const antes = hay[0];
-console.log(`${club} ${anio}: «${etiqueta}» ${antes.amountNative}: ${antes.normalizedCategory} -> ${a}`);
-if (antes.normalizedCategory === a) falla('Ya está en esa categoría.');
+const MIRADA = A.includes('--mirada'); // «la miré y queda como está»: no cambia nada, deja la decisión anotada
+const A_ACTIVOS = a === 'asset_sales'; // la venta de una filial o participación sale de los ingresos y va al meta `assetSales` del año (REGLA de las inversiones o filiales)
+console.log(`${club} ${anio}: «${etiqueta}» ${antes.amountNative}: ${antes.normalizedCategory} -> ${MIRADA ? `queda en ${antes.normalizedCategory} (mirada)` : a}`);
+if (!MIRADA && !A_ACTIVOS && antes.normalizedCategory === a) falla('Ya está en esa categoría.');
 if (!A.includes('--escribir')) { console.log('Ensayo: no se escribió nada (--escribir).'); process.exit(0); }
 
-modificarClub(club, (c) => { const l = hallar(c)[0]; l.normalizedCategory = a; });
-appendFileSync(resolve(ROOT, 'Admin', 'registros', 'recategorizaciones-linea.jsonl'), JSON.stringify({ fecha: new Date().toISOString().slice(0, 10), club, anio, etiqueta, monto: antes.amountNative, de: antes.normalizedCategory, a, cita, regla }) + '\n');
-console.log('Escrito. Ahora: node tools/publicar.mjs y un commit con «Corrige:».');
+if (!MIRADA) modificarClub(club, (c) => {
+  const l = hallar(c)[0];
+  if (!A_ACTIVOS) { l.normalizedCategory = a; return; }
+  const ys = c.datos.revenueLinesByYear[anio]; ys.splice(ys.indexOf(l), 1);
+  const meta = c.datos.fiscalYearMeta[anio]; meta.assetSales = Math.round(((meta.assetSales || 0) + l.amountNative) * 1e6) / 1e6;
+  // el total impreso de ingresos de esta base incluía la línea: sale también, y el resultado sigue cerrando porque assetSales entra en él
+  if (typeof meta.officialTotalRevenue === 'number') meta.officialTotalRevenue = Math.round((meta.officialTotalRevenue - l.amountNative) * 1e6) / 1e6;
+  // un año con filas propias debajo de Gastos (meta.extraRows) no arma «Venta de activos» solo: sin esa fila el resultado neto de la tabla no suma lo que suma el motor
+  if (Array.isArray(meta.extraRows)) meta.extraRows.unshift({ label: 'Venta de activos', value: l.amountNative });
+});
+appendFileSync(resolve(ROOT, 'Admin', 'registros', 'recategorizaciones-linea.jsonl'), JSON.stringify({ fecha: new Date().toISOString().slice(0, 10), club, anio, etiqueta, monto: antes.amountNative, de: antes.normalizedCategory, a: MIRADA ? antes.normalizedCategory : a, ...(MIRADA ? { mirada: true } : {}), cita, regla }) + '\n');
+// la respuesta de la cola: si alguien recarga ese documento, cargar.mjs la toma y no deshace el cambio (solo para una categoría de la taxonomía; no para assetSales ni para «mirada»)
+if (!MIRADA && !A_ACTIVOS) {
+  const pdf = m[1].replace(/\.md$/i, '.pdf');
+  const r = spawnSync('node', [resolve(ROOT, 'tools/cola.mjs'), '--corregir-categoria', pdf, etiqueta, a, '--nota', `recategorizar-linea: ${regla} (${cita})`], { cwd: ROOT, encoding: 'utf8' });
+  console.log(r.status === 0 ? 'Respuesta de la cola anotada (una recarga la respeta).' : `Aviso: no se pudo anotar la respuesta de la cola: ${(r.stderr || r.stdout).trim().split('\n')[0]}`);
+}
+console.log(MIRADA ? 'Anotada.' : 'Escrito. Ahora: node tools/publicar.mjs y un commit con «Corrige:».');

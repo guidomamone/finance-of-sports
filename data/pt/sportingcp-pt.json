@@ -559,7 +559,6 @@
       "revenue": [
         {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0,"disclosure":"aggregated"},
         {"label":"Outros Proveitos e Ganhos Operacionais","category":"other_revenue","subcategory":"other_income","amount":1.299,"disclosure":"aggregated"},
-        {"label":"G. Imobilizações","category":"other_revenue","subcategory":"other_income","amount":64.981,"disclosure":"aggregated"},
         {"label":"Benef. Contratuais","category":"other_revenue","subcategory":"other_income","amount":0.176,"disclosure":"aggregated"},
         {"label":"Corr. Exer. Anteriores","category":"other_revenue","subcategory":"other_income","amount":0.266,"disclosure":"aggregated"},
         {"label":"O. P. Extraordinários","category":"other_revenue","subcategory":"other_income","amount":0.159,"disclosure":"aggregated"},
@@ -600,10 +599,11 @@
         },
         {"label":"Custos e Perdas Extraordinários","category":"exceptional","subcategory":"exceptional_items","amount":-0.839,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-1.672,"tax":0,"gross_debt":25.728,"cash":68.311},
-      "official_totals": {"revenue":99.77,"expenses":42.589,"net_result":54.67},
+      "financial": {"profit_on_player_sales":0,"asset_sales":64.981,"net_interest":-1.672,"tax":0,"gross_debt":25.728,"cash":68.311},
+      "official_totals": {"revenue":34.789,"expenses":42.589,"net_result":54.67},
       "adjustments": {
         "extra_rows": [
+          {"label":"Venta de activos","amount":64.981},
           {"label":"Outros Juros e Proveitos Similares","amount":0.467},
           {"label":"Juros e Custos Similares","amount":-2.139},
           {"label":"Imposto sobre o Rendimento do Exercício","amount":0}

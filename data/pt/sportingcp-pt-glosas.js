@@ -247,5 +247,6 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Value Pillar - Liga dos Campeões":{"es":"Value Pillar - Liga de Campeones","en":"Value Pillar - Champions League"},
 "Venda de direitos desportivos":{"es":"Venta de derechos deportivos","en":"Sale of sporting rights"},
 "Venda de direitos desportivos deduzido do valor líquido contabilístico":{"es":"Venta de derechos deportivos neta del valor contable","en":"Sale of sporting rights net of carrying amount"},
+"Venta de activos":{"es":"Venta de activos","en":"Sale of assets"},
 "Vigilância":{"es":"Vigilancia","en":"Security"}
 });

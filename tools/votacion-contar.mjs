@@ -9,9 +9,10 @@
 //   - A GUIDO: empate, un 2 a 1 con un precedente 1 a 3 verificado del mismo hecho en minoría, o una opción que cambia más de 10 años ya cargados.
 //
 // USO: node tools/votacion-contar.mjs <voto1.json> <voto2.json> <voto3.json> [--caso "texto"] [--sesion unica] [--escribir]
-//   --escribir anota la línea en Admin/registros/auditoria-proceso.jsonl (votos como letras, como las anteriores, más `esquema`, `tipo: votacion` y `veredicto_codigo`).
+//   --escribir anota la línea en Admin/registros/auditoria-proceso.jsonl (votos como letras, como las anteriores, más `esquema`, `tipo: votacion` y `veredicto_codigo`)
+//   y copia los votos completos, con sus citas, a Admin/mediciones/votos/<fecha>-<caso>/voto-N.json.
 // ============================================================================
-import { readFileSync, appendFileSync } from 'node:fs';
+import { readFileSync, appendFileSync, mkdirSync, copyFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { verificarCita } from './votacion-citas.mjs';
 import { validar } from './registro-esquema.js';
@@ -67,6 +68,12 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (fuera.length) { console.error(`No se anota: la línea no cumple el esquema (${fuera.join('; ')}).`); process.exit(1); }
     appendFileSync(resolve(ROOT, 'Admin', 'registros', 'auditoria-proceso.jsonl'), `${JSON.stringify(linea)}\n`);
     console.log('Anotado en Admin/registros/auditoria-proceso.jsonl.');
+    // los votos completos (con sus citas) se guardan junto a la línea: la línea solo trae las letras, y los archivos de los votantes viven en el scratchpad de la sesión
+    const slug = caso.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 50);
+    const dir = resolve(ROOT, 'Admin', 'mediciones', 'votos', `${linea.fecha}-${slug}`);
+    mkdirSync(dir, { recursive: true });
+    archivos.forEach((f, i) => copyFileSync(resolve(f), resolve(dir, `voto-${i + 1}.json`)));
+    console.log(`Votos guardados en ${dir.replace(`${ROOT}/`, '')}/`);
   }
   process.exit(0);
 }
