@@ -100,6 +100,42 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "alianzafc-co": {
+  "2020": {
+   "auditor": {
+    "nombre": "Alonso Rueda Gualdron",
+    "tipo": "persona"
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2020.md",
+    "linea": 53
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Alonso Rueda Gualdron",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2021.md",
+    "linea": 13
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Alonso Rueda Gualdron",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2022.md",
+    "linea": 11
+   }
+  },
   "2023": {
    "auditor": {
     "nombre": "ALONSO RUEDA GUALDRON",
@@ -110,6 +146,30 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2023.md",
     "linea": 15
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Alonso Rueda Gualdron",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2024.md",
+    "linea": 13
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Alonso Rueda Gualdron",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2025.md",
+    "linea": 13
    }
   }
  },

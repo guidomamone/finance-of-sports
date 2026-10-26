@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1175 — Alianza FC 2016 a 2022, 2024 y 2025 desde SIIS [463 · alianzafc-co]
+- Con esto Alianza FC (antes Alianza Petrolera) tiene sus 10 años. Las ligas las escribió `club-siis --avanzar` buscando también por los alias (`Alianza Petrolera` y `Alianza` en `alias.json`; antes no encontraba nada). Estadio Daniel Villa Zapata; sponsor `sin-fuente` de 2016 a 2022 (nadie lo nombra), marca de 2016 y 2022 de una sola base de aficionados. Líneas del auditor de 2020 a 2025 (2020 con salvedades; 2021 y 2022 dicen «introducir una salvedad» en el texto pero no en la opinión: dejadas sin salvedades, a revisar). Faltan los dictámenes de 2016 a 2019.
+- Corrección en 2019: «Gastos de personal (Gastos de ventas)», 2.569 M de pesos, estaba como administración y va a sueldos del plantel (regla de Colombia); `Corrige:`. Silencios `sin-salarios` de 2017 y 2018 (SIIS pone todos los gastos en administración).
+- Medición: no cambió ninguna tool pipeline (`club-siis.mjs` busca la liga por alias); la carga corrió con categorización primero y cola de una sola pregunta (resultado idéntico entre el balance de 2023 y el comparativo de SIIS).
+
 ## Versión 1174 — Regla de Colombia: las filas de una nota de Costo de ventas [463 · boyacachico-co]
 - La regla de las notas de gastos suma el caso que abrió dos preguntas en Boyacá Chicó 2019: una fila de la nota de «Costo de ventas» que nombra la actividad deportiva sin separar nómina, partidos ni viajes («Partidos y Actividades Deportivas») va a `lump_football_operations_expense` (espejo del ingreso «Actividades Deportivas» de Fortaleza CEIF, tabla aprobada por Guido el 2026-10-02) y «Honorarios y Arriendos» a administración. Con su frase para el categorizador y dos ejemplos registrados (`reglas-categoria --escribir`).
 - Medición: ninguna tool cambió; es texto de criterio que Guido lee en el diff.
