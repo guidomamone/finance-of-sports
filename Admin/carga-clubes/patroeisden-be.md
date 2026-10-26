@@ -638,3 +638,9 @@ _note (cargar.mjs):_
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
+
+## Liga de 2013 (2026-10-26)
+
+```text
+be-div1amateur (la tercera división de entonces, «Derde klasse», que la fila de 2014 ya trae con esa liga): nl.wikipedia «Derde klasse 2012-13 (voetbal België)» lista a «K. Patro Eisden Maasmechelen» en su tabla, y la página del club en nl.wikipedia enlaza esa misma temporada en su historia. Dos páginas de la Wikipedia en neerlandés; la lista en inglés de esa temporada no existe (no hay «2012–13 Belgian Third Division»), así que no hay lista cacheada en tools/club-league-reference/be.json.
+```

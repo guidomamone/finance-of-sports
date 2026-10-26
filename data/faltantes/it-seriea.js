@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-25';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["it-seriea"] = {
   1999: {"size":18,"cargados":1,"faltan":[{"n":"Milan","id":"acmilan-it","e":"buscado"},{"n":"Bari","e":"buscado"},{"n":"Bologna","id":"bologna-it","e":"buscado"},{"n":"Fiorentina","id":"fiorentina-it","e":"buscado"},{"n":"Cagliari","e":"buscado"},{"n":"Parma","id":"parma-it","e":"buscado"},{"n":"Empoli","e":"buscado"},{"n":"Roma","id":"asroma-it","e":"buscado"},{"n":"Udinese","id":"udinese-it","e":"buscado"},{"n":"Inter Milan","id":"inter-it","e":"buscado"},{"n":"Juventus","id":"juventus-it","e":"buscado"},{"n":"Venezia","e":"buscado"},{"n":"Perugia","e":"buscado"},{"n":"Piacenza","e":"buscado"},{"n":"Salernitana","id":"salernitana-it","e":"buscado"},{"n":"Sampdoria","id":"sampdoria-it","e":"buscado"},{"n":"Vicenza","e":"buscado"}]},

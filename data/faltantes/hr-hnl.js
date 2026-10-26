@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-25';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["hr-hnl"] = {
   2023: {"size":10,"cargados":1,"faltan":[{"n":"Dinamo Zagreb","id":"dinamozagreb-hr","e":"en-mano"},{"n":"Gorica","id":"gorica-hr","e":"en-mano"},{"n":"Hajduk Split","id":"hajduksplit-hr","e":"en-mano"},{"n":"Istra 1961","id":"istra-hr","e":"en-mano"},{"n":"Lokomotiva","e":"buscado"},{"n":"Osijek","id":"osijek-hr","e":"en-mano"},{"n":"Slaven Belupo","id":"slavenbelupo-hr","e":"en-mano"},{"n":"Šibenik","e":"sin-buscar"},{"n":"Varaždin","id":"varazdin-hr","e":"en-mano"}]},

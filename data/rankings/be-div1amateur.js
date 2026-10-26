@@ -32,7 +32,7 @@ window.RANKINGS["be-div1amateur"] = {
   },
   2020: {
     leagueSize: 16,
-    sinDato: ["liersekempenzonen-be","rwdm-be"],
+    sinDato: ["liersekempenzonen-be","liersesk-be","rwdm-be"],
     margen: [["liersekempenzonen-be",0.895,null],["rwdm-be",0.998,null]],
     wiki: {"t":"2019–20 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
@@ -46,7 +46,7 @@ window.RANKINGS["be-div1amateur"] = {
   },
   2019: {
     leagueSize: 16,
-    sinDato: ["liersekempenzonen-be"],
+    sinDato: ["liersekempenzonen-be","liersesk-be"],
     margen: [["liersekempenzonen-be",0.986,null]],
     wiki: {"t":"2018–19 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
@@ -84,6 +84,14 @@ window.RANKINGS["be-div1amateur"] = {
     margen: [["patroeisden-be",0.369,null]],
     wiki: {"t":"2013–14 Belgian Third Division","lang":"en","at":"2026-10-19","n":36},
     clubs: [
+    ],
+  },
+  2013: {
+    leagueSize: null,
+    clubs: [
+      { id:"patroeisden-be", revenue:0.61, reportType:"official_balance_sheet",
+        sourceId:"patroeisden-be-jaarrekening-2013-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.61]] },
     ],
   },
 };

@@ -40,6 +40,7 @@ function clubLeagueCoverage(){
   let total = 0, cargadas = 0;
   for(const clubId of Object.keys(window.CLUB_LEAGUE_BY_YEAR)){
     for(const year of Object.keys(window.CLUB_LEAGUE_BY_YEAR[clubId])){
+      if(Number(year) > new Date().getFullYear()) continue; // un presupuesto de un año que todavía no se juega: su liga no se puede verificar, null es lo correcto
       total++;
       if(window.CLUB_LEAGUE_BY_YEAR[clubId][year]) cargadas++;
     }

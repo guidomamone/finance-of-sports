@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-25';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["pt-ligaportugal2"] = {
   2000: {"size":18,"cargados":0,"faltan":[{"n":"Paços de Ferreira","id":"pacosdeferreira-pt","e":"buscado"},{"n":"Beira-Mar","e":"sin-buscar"},{"n":"Desportivo das Aves","e":"sin-buscar"},{"n":"Varzim","e":"sin-buscar"},{"n":"Académica","id":"academica-pt","e":"buscado"},{"n":"Penafiel","e":"sin-buscar"},{"n":"Felgueiras","id":"felgueiras-pt","e":"buscado"},{"n":"União de Lamas","e":"sin-buscar"},{"n":"Espinho","e":"sin-buscar"},{"n":"Freamunde","e":"sin-buscar"},{"n":"Leça","e":"sin-buscar"},{"n":"Chaves","id":"chaves-pt","e":"buscado"},{"n":"Naval 1º Maio","e":"sin-buscar"},{"n":"Maia","e":"sin-buscar"},{"n":"Imortal","e":"sin-buscar"},{"n":"Moreirense","id":"moreirense-pt","e":"buscado"},{"n":"Esposende","e":"sin-buscar"},{"n":"Sporting da Covilhã","e":"sin-buscar"}]},

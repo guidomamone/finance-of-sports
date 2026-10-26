@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-25';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["co-primeraB"] = {
   2010: {"size":18,"cargados":0,"faltan":[{"n":"Academia F.C.","e":"sin-buscar"},{"n":"Alianza Petrolera","id":"alianzafc-co","e":"buscado"},{"n":"Atlético Bucaramanga","id":"atleticobucaramanga-co","e":"buscado"},{"n":"Atlético La Sabana","e":"sin-buscar"},{"n":"Barranquilla F.C.","e":"buscado"},{"n":"Bogotá F.C.","e":"buscado"},{"n":"Centauros Villavicencio","e":"sin-buscar"},{"n":"Depor F.C.","e":"sin-buscar"},{"n":"Deportivo Pasto","e":"buscado"},{"n":"Deportivo Rionegro","e":"sin-buscar"},{"n":"Expreso Rojo","e":"sin-buscar"},{"n":"Itagüí Ditaires","e":"sin-buscar"},{"n":"Juventud Girardot","e":"sin-buscar"},{"n":"Pacífico F.C.","e":"sin-buscar"},{"n":"Patriotas F.C.","e":"buscado"},{"n":"Real Santander","e":"buscado"},{"n":"Unión Magdalena","id":"unionmagdalena-co","e":"buscado"},{"n":"Valledupar F.C.","e":"sin-buscar"}]},

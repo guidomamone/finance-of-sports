@@ -489,30 +489,6 @@
   "revisar": "2027-01-23"
  },
  {
-  "code": "liga-una-fuente",
-  "match": "gr-superleague2:",
-  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). aellarissa-gr 2025: la liga sale solo de Wikipedia; la segunda fuente (tools/segunda-fuente-liga.mjs) se hace al tocar el club.",
-  "revisar": "2026-12-23"
- },
- {
-  "code": "liga-una-fuente",
-  "match": "pt-liga3:",
-  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). felgueiras-pt 2023: la liga sale solo de Wikipedia; la segunda fuente se hace al tocar el club.",
-  "revisar": "2026-12-23"
- },
- {
-  "code": "club-sin-color-ni-null",
-  "match": "bathrugby-gb",
-  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). Bath Rugby es un club de prueba de la taxonomía por deporte (Admin/CONVENCIONES.md); el color sale de la camiseta, no de adivinarlo.",
-  "revisar": "2026-12-23"
- },
- {
-  "code": "liga-sin-verificar",
-  "match": "filas de data/club-leagues/<iso2>.js siguen en null",
-  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). Filas viejas de data/club-leagues con null; se verifican contra la página de temporada al tocar cada club (tools/lookup-club-league.js).",
-  "revisar": "2026-12-23"
- },
- {
   "code": "sponsor-sin-registro",
   "match": "con el sponsor sin fuente como texto libre",
   "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). Sponsors de antes del registro de búsqueda (tools/sponsor-legacy.json); se completan al tocar el club.",

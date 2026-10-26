@@ -93,6 +93,7 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 alta-club.mjs (2026-10-19): null, SIN VERIFICAR (coincidencia NO exacta en los rosters cacheados: "Utrecht" en 2024–25 Eredivisie | "Jong FC Utrecht" en 2024–25 Eerste Divisie).
+2026-10-26: nl-eredivisie. El primer equipo es «Utrecht» de la Eredivisie 2024–25 (Wikipedia en inglés); «Jong FC Utrecht» es el filial de la Eerste Divisie. Segunda fuente: nl.wikipedia, «Eredivisie 2024/25 (mannenvoetbal)», que lista «FC Utrecht» (segunda-fuente-wikipedia-local.mjs, unidas por Wikidata: 18 de 18).
 ```
 
 ## Fuentes

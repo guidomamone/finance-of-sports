@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-25';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["no-1divisjon"] = {
   2008: {"size":16,"cargados":1,"faltan":[{"n":"Odd Grenland","e":"en-mano"},{"n":"Alta","e":"sin-buscar"},{"n":"Sandefjord","e":"en-mano"},{"n":"Bryne","e":"sin-buscar"},{"n":"Start","e":"en-mano"},{"n":"Haugesund","e":"en-mano"},{"n":"Sogndal","e":"buscado"},{"n":"Hødd","e":"buscado"},{"n":"Hønefoss","e":"sin-buscar"},{"n":"Notodden","e":"sin-buscar"},{"n":"Kongsvinger","e":"buscado"},{"n":"Løv-Ham","e":"sin-buscar"},{"n":"Nybergsund","e":"sin-buscar"},{"n":"Moss","e":"en-mano"},{"n":"Sandnes Ulf","e":"sin-buscar"}]},

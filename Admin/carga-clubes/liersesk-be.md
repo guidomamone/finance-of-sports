@@ -352,3 +352,9 @@ _note (cargar.mjs):_
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
+
+## Liga de 2019, 2020 y 2021 (2026-10-26)
+
+```text
+segunda-fuente-wikipedia-local.mjs: 2019 y 2020 be-div1amateur y 2021 be-challengerproleague, las mismas filas que liersekempenzonen-be (el mismo club con otro nombre); «Lierse Kempenzonen» está en la lista de Wikipedia en inglés y en la de nl.wikipedia (unidas por Wikidata) de Eerste klasse amateurs 2018-19 y 2019-20 y de Eerste klasse B 2020-21.
+```

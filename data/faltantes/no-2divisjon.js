@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-25';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["no-2divisjon"] = {
   2008: {"size":12,"cargados":0,"faltan":[{"n":"Mjøndalen","e":"sin-buscar"},{"n":"Lørenskog","e":"sin-buscar"},{"n":"Stabæk 2","e":"sin-buscar"},{"n":"Raufoss","e":"buscado"},{"n":"Follo","e":"sin-buscar"},{"n":"Strømsgodset 2","e":"sin-buscar"},{"n":"Manglerud Star","e":"sin-buscar"},{"n":"Valdres","e":"sin-buscar"},{"n":"Fredrikstad 2","e":"sin-buscar"},{"n":"Strømmen","e":"sin-buscar"},{"n":"Modum","e":"sin-buscar"},{"n":"Østsiden","e":"sin-buscar"}]},

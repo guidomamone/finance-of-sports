@@ -26,7 +26,7 @@ De dónde salió cada campo (estado según alta-club.mjs: ok / pendiente):
   reportingCurrency  ok        "GBP" — moneda de curso legal de Inglaterra
   fiscalYearStart    ok        "07-01" — cierre del ejercicio: contenido del .md (43 de 44 fechas de fin de mes caen en el mes 6)
   sport              ok        "rugby" — la liga gb-premiershiprugby del catálogo (data/leagues.js) es de rugby
-  brandColor         pendiente (ausente) — la liga del club no está en tools/brand-color-reference/ (o el club no está en footylogos)
+  brandColor         ok        "#005BAA" (2026-10-26) — la camiseta de Bath es azul con negro y blanco (Wikipedia, infobox «Colours»; el azul y el negro son el escudo y la camiseta). Hex: teamcolorcodes.com/bath-rugby-color-codes (Blue #005BAA, PMS 293 C; `node tools/color-teamcolorcodes.mjs "Bath Rugby"`); brandcolorcode.com da #014997, la misma familia azul. footylogos no cubre rugby.
   anio               ok        2021 — nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md
   cierre             ok        "2021-06-30" — año del ejercicio + mes de cierre (contenido del .md (43 de 44 fechas de fin de mes caen en el mes 6))
   reportType         ok        "official_balance_sheet" — el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo

@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-25';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["gb-leagueone"] = {
   2019: {"size":24,"cargados":1,"faltan":[{"n":"Accrington Stanley","e":"buscado"},{"n":"AFC Wimbledon","id":"afcwimbledon-gb","e":"en-mano"},{"n":"Barnsley","id":"barnsley-gb","e":"en-mano"},{"n":"Blackpool","e":"buscado"},{"n":"Bradford City","e":"en-mano"},{"n":"Bristol Rovers","e":"buscado"},{"n":"Burton Albion","id":"burtonalbion-gb","e":"en-mano"},{"n":"Charlton Athletic","e":"en-mano"},{"n":"Coventry City","e":"buscado"},{"n":"Doncaster Rovers","e":"buscado"},{"n":"Fleetwood Town","e":"en-mano"},{"n":"Gillingham","id":"gillingham-gb","e":"buscado"},{"n":"Luton Town","e":"buscado"},{"n":"Oxford United","e":"en-mano"},{"n":"Peterborough United","e":"en-mano"},{"n":"Plymouth Argyle","e":"buscado"},{"n":"Portsmouth","e":"en-mano"},{"n":"Rochdale","e":"en-mano"},{"n":"Scunthorpe United","e":"en-mano"},{"n":"Shrewsbury Town","id":"shrewsburytown-gb","e":"en-mano"},{"n":"Southend United","e":"en-mano"},{"n":"Walsall","e":"en-mano"},{"n":"Wycombe Wanderers","e":"buscado"}]},

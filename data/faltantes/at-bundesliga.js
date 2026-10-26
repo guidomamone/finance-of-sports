@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-25';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["at-bundesliga"] = {
   2013: {"size":10,"cargados":1,"faltan":[{"n":"Admira","e":"sin-buscar"},{"n":"Austria Wien","e":"buscado"},{"n":"SV Mattersburg","e":"sin-buscar"},{"n":"Red Bull Salzburg","e":"buscado"},{"n":"SV Ried","e":"buscado"},{"n":"Sturm Graz","e":"buscado"},{"n":"Wacker Innsbruck","e":"sin-buscar"},{"n":"Wiener Neustadt","e":"sin-buscar"},{"n":"Wolfsberger AC","e":"buscado"}]},

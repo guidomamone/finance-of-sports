@@ -1367,3 +1367,9 @@ _note (cargar.mjs):_
 ```text
 Cargado por tools/cargar.mjs (2026-10-20) desde la transcripción Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
+
+## Liga de 2011 (2026-10-26)
+
+```text
+no-eliteserien: Molde está en la lista de Wikipedia en inglés de «2011 Tippeligaen» y en la de no.wikipedia «Tippeligaen 2011» (unidas por Wikidata, 16 de 16): segunda-fuente-wikipedia-local.mjs.
+```

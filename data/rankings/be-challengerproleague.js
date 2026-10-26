@@ -60,7 +60,7 @@ window.RANKINGS["be-challengerproleague"] = {
   },
   2021: {
     leagueSize: 8,
-    sinDato: ["liersekempenzonen-be","lommelsk-be","rwdm-be"],
+    sinDato: ["liersekempenzonen-be","liersesk-be","lommelsk-be","rwdm-be"],
     margen: [["liersekempenzonen-be",0.664,null],["lommelsk-be",2.686,null],["rwdm-be",1.839,null]],
     wiki: {"t":"2020–21 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
     clubs: [

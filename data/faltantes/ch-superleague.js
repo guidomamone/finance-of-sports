@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-25';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["ch-superleague"] = {
   2006: {"size":10,"cargados":1,"faltan":[{"n":"Zürich","e":"buscado"},{"n":"Aarau","e":"sin-buscar"},{"n":"Young Boys","e":"buscado"},{"n":"Grasshopper","e":"buscado"},{"n":"Neuchâtel Xamax","e":"sin-buscar"},{"n":"Thun","e":"buscado"},{"n":"Schaffhausen","e":"sin-buscar"},{"n":"St. Gallen","id":"stgallen-ch","e":"buscado"},{"n":"Yverdon-Sport","e":"sin-buscar"}]},

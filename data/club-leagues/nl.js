@@ -18,7 +18,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'fcdordrecht-nl': { 2025: 'nl-eerstedivisie' },
   'fcemmen-nl': { 2019: 'nl-eredivisie', 2020: 'nl-eredivisie', 2021: 'nl-eredivisie' },
   'fctwente-nl': { 2025: 'nl-eredivisie' },
-  'fcutrecht-nl': { 2025: null },
+  'fcutrecht-nl': { 2025: 'nl-eredivisie' },
   'fcvolendam-nl': { 2025: 'nl-eerstedivisie' },
   'helmondsport-nl': { 2025: 'nl-eerstedivisie' },
   'peczwolle-nl': { 2025: 'nl-eredivisie' },

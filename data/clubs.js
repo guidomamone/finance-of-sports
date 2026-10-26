@@ -322,7 +322,7 @@ const clubs = {
   'alianzafc-co': { id:'alianzafc-co', name:'Alianza FC S.A.', displayName:'Alianza FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   'atleticobucaramanga-co': { id:'atleticobucaramanga-co', name:'Club Atlético Bucaramanga S.A.', displayName:'Atletico Bucaramanga', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#F3E638' },
   'rapidwien-at': { id:'rapidwien-at', name:'SK Rapid GmbH', displayName:'Rapid Wien', country:'AT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#009150' },
-  'bathrugby-gb': { id:'bathrugby-gb', name:'Bath Rugby Limited', displayName:'Bath Rugby', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'rugby' },
+  'bathrugby-gb': { id:'bathrugby-gb', name:'Bath Rugby Limited', displayName:'Bath Rugby', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'rugby', brandColor:'#005BAA' },
   'omonia29maiou-cy': { id:'omonia29maiou-cy', name:'Omonia 29 Maiou', displayName:'Omonia 29 Maiou', country:'CY', reportingCurrency:'EUR', fiscalYearStart:'06-01', sport:'futbol', brandColor:null },
   'afcwimbledon-gb': { id:'afcwimbledon-gb', name:'AFC Wimbledon Limited', displayName:'AFC Wimbledon', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#2B4690' },
   'barnsley-gb': { id:'barnsley-gb', name:'Barnsley Football Club Limited', displayName:'Barnsley', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#D71921' },
