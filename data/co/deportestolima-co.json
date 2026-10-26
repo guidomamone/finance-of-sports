@@ -224,8 +224,8 @@
         {"label":"Deterioro","category":"other_operating_expenses","subcategory":"other_expenses","amount":-147.989,"disclosure":"aggregated"},
         {
           "label": "Diversos (Gastos de administración)",
-          "category": "admin_general",
-          "subcategory": "admin_general_expense",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -207.431,
           "disclosure": "aggregated"
         },
@@ -372,8 +372,8 @@
         {"label":"Deterioro","category":"other_operating_expenses","subcategory":"other_expenses","amount":-111.536,"disclosure":"aggregated"},
         {
           "label": "Diversos (Gastos de administración)",
-          "category": "admin_general",
-          "subcategory": "admin_general_expense",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -139.864,
           "disclosure": "aggregated"
         },
@@ -545,8 +545,8 @@
         {"label":"Deterioro","category":"other_operating_expenses","subcategory":"other_expenses","amount":-46.185,"disclosure":"aggregated"},
         {
           "label": "Diversos (Gastos de administración)",
-          "category": "admin_general",
-          "subcategory": "admin_general_expense",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -99.858,
           "disclosure": "aggregated"
         },
@@ -603,7 +603,7 @@
         {"label":"Adecuación e Instalación","category":"admin_general","subcategory":"admin_general_expense","amount":-45.979,"disclosure":"aggregated"},
         {"label":"Gastos de Viaje","category":"match_operations","subcategory":"match_organisation_expense","amount":-1197.98,"disclosure":"aggregated"},
         {"label":"Amortizaciones","category":"other_amortisation","subcategory":"other_amortisation","amount":-3107.487,"disclosure":"aggregated"},
-        {"label":"Diversos","category":"admin_general","subcategory":"admin_general_expense","amount":-5904.691,"disclosure":"aggregated"},
+        {"label":"Diversos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-5904.691,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2918.699,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
@@ -663,7 +663,7 @@
         {"label":"Adecuación e Instalación","category":"admin_general","subcategory":"admin_general_expense","amount":-15.932,"disclosure":"aggregated"},
         {"label":"Gastos de Viaje","category":"match_operations","subcategory":"match_organisation_expense","amount":-988.833,"disclosure":"aggregated"},
         {"label":"Amortizaciones","category":"other_amortisation","subcategory":"other_amortisation","amount":-2692.917,"disclosure":"aggregated"},
-        {"label":"Diversos","category":"admin_general","subcategory":"admin_general_expense","amount":-2378.859,"disclosure":"aggregated"},
+        {"label":"Diversos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2378.859,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2146.226,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1019.537,"disclosure":"aggregated"}
       ],
@@ -721,7 +721,7 @@
           "amount": -35,
           "disclosure": "aggregated"
         },
-        {"label":"Diversos","category":"admin_general","subcategory":"admin_general_expense","amount":-4246.835,"disclosure":"aggregated"},
+        {"label":"Diversos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-4246.835,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-3322.793,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2361.844,"disclosure":"aggregated"},
         {
@@ -911,8 +911,8 @@
         {"label":"Depreciaciones","category":"depreciation","subcategory":"depreciation","amount":-597.4,"disclosure":"aggregated"},
         {
           "label": "Diversos (5) (Gastos de administración)",
-          "category": "admin_general",
-          "subcategory": "admin_general_expense",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -1954.771,
           "disclosure": "aggregated"
         },
@@ -1110,8 +1110,8 @@
         {"label":"Deterioro","category":"other_operating_expenses","subcategory":"other_expenses","amount":-5.672,"disclosure":"aggregated"},
         {
           "label": "Diversos (5) (Gastos de administración)",
-          "category": "admin_general",
-          "subcategory": "admin_general_expense",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -150.301,
           "disclosure": "aggregated"
         },
@@ -1367,8 +1367,8 @@
         },
         {
           "label": "diversos (4) (Gastos de administración)",
-          "category": "admin_general",
-          "subcategory": "admin_general_expense",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
           "amount": -225.1,
           "disclosure": "aggregated"
         },
