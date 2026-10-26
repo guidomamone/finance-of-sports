@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1170 — cola.mjs --historial y club-siis --avanzar con la liga y los comandos de commit [463, 465 · cola.mjs, cola-historial.mjs, club-siis.mjs]
+- `node tools/cola.mjs --historial <texto> [motivo]` imprime la historia de un club (cada caso y cada respuesta, en orden) llamando a `cola-historial.mjs`, que entra a la tabla del pipeline. `cola.mjs` quedó en 40.930 bytes (límite 40.960): comentarios viejos con historia achicados.
+- `club-siis --avanzar` escribe en `data/club-leagues/co.js` la liga de los años donde el roster de Wikipedia da el nombre exacto (sin probar todavía con un club nuevo) y al final imprime los tres comandos de commit, uno por llamada.
+- Medición: `cola.mjs` y `cola-historial.mjs` (lote completo, siete medidores) idéntico, veredicto GENERAL; `club-siis.mjs` no es del pipeline. Costó cuatro corridas: dos por `tool-grande` y por una clasificación que tenía que estar en el commit antes de medir (la prueba de escritura corre en un worktree armado desde el último commit).
+
 ## Versión 1169 — Once Caldas 2016, 2017, 2019, 2020 y 2021 desde SIIS [463 · oncecaldas-co]
 - Con esto Once Caldas tiene sus 10 años (2016 a 2025). Liga Primera A de Wikipedia (coincidencia exacta); estadio Palogrande (28.678) y marca de Wikipedia; sponsor de FKA, fuente única y débil: «sin sponsor» 2016 y 2017, Colanta 2019 a 2021 (revisar con prensa colombiana con fecha). 2016 y 2017 abren con las notas del club; 2019 a 2021 quedan como SIIS. Líneas del auditor de 2016, 2017, 2019 y 2021 (sin salvedades; 2019 de otra firma, Gerencia y Control); falta el dictamen de 2020.
 - Medición: no cambió ninguna tool; la carga corrió en segundo plano (~11 min) con `club-siis --avanzar --ejecutar --cargar --en-segundo-plano` y la cola quedó sin preguntas.

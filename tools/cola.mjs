@@ -33,6 +33,7 @@
 //   node tools/cola.mjs --responder <id> aceptar|corregir|preguntar-club [--valor "1.234.567"] [--nota "…"] --evidencia "ruta.md:12-30"|ninguna --seguridad alta|media|baja --causa lectura-del-documento|regla-escrita|otra|…
 //     (las tres últimas son obligatorias, sin ellas no se guarda; --evidencia es de un .md del club, «ninguna» si la fuente es una web u otro archivo; todas las causas: cola-respuesta.mjs)
 //   node tools/cola.mjs --corregir-categoria "<pdf>" "<etiqueta>" <categoría> --nota "..."   (fija la categoría de una fila, ver abajo)
+//   node tools/cola.mjs --historial <texto> [motivo]     la historia de un club: cada caso y cada respuesta, en orden
 //   import { agregarCaso, respuestaDe, pendientes } from './cola.mjs';
 // ============================================================================
 
@@ -137,8 +138,7 @@ export function agregarCaso(caso) {
   appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'caso', id, ts: new Date().toISOString(), clave, ...(estable ? { claveEstable: estable } : {}), ...caso, ...(extra ? { que: `${caso.que}  ${extra}` } : {}) }) + '\n');
   return id;
 }
-// EL SIGNO CON ACLARACIÓN (407): en una duda de signo, si la línea que cita la pregunta (o las 3 de arriba y abajo) trae la aclaración del rótulo —«(- = Steuerertrag)», «(+/-)»,
-// «(−) = ingreso»— se la copia a la pregunta. Medido: con aclaración en el rótulo, 6 de 6 se aceptaron (muestra chica: solo informa, no decide).
+// EL SIGNO CON ACLARACIÓN (407): si la línea que cita una duda de signo (o 3 arriba y abajo) trae la aclaración del rótulo —«(- = Steuerertrag)», «(+/-)»— se copia a la pregunta. Solo informa.
 const ACLARACION_RE = /\(\s*[-−–+]\s*\)?\s*=\s*[^)\n]{2,60}\)?/;
 export function aclaracionDeSigno(caso) {
   if (caso.etapa !== 'verificar' || caso.motivo !== 'duda-de-extraer' || !/signo|negativ|positiv|paréntesis|restar/i.test(caso.que || '') || !caso.md) return null;
@@ -149,9 +149,8 @@ export function aclaracionDeSigno(caso) {
   } catch { /* sin .md */ }
   return null;
 }
-// EL HISTORIAL DE CASOS PARECIDOS (407): en las dudas de verificar, qué se les contestó a las anteriores de la misma etapa, motivo y país. Solo informa: la sesión ve «de 40 parecidas,
-// 31 se aceptaron» y decide ella. Medido: la tasa de «aceptar» va de 36 % (Noruega, extraer) a 95 % (Estonia, extraer), así que el país discrimina; ni una tabla que suma su propio
-// total ni una cifra citada igual a la del cuadro separaron las respuestas (49-67 % de «aceptar» contra 76 %: ruido), por eso no se agregan. Con menos de 10 respuestas no se dice nada.
+// EL HISTORIAL DE CASOS PARECIDOS (407): qué se les contestó a las dudas de verificar anteriores de la misma etapa, motivo y país («de 40 parecidas, 31 se aceptaron»). Solo informa; el país
+// discrimina la tasa de «aceptar» (36 a 95 %) y con menos de 10 respuestas no se dice nada.
 export function historialParecidos(caso, { casos, resp }) {
   if (caso.etapa !== 'verificar' || !/^duda-/.test(caso.motivo || '') || !caso.pdf) return null;
   const pais = String(caso.pdf).split('/')[1]; let n = 0, ac = 0, no = 0;
@@ -300,6 +299,7 @@ export function cerrarPerfilSabido(detalle, nota) {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
+  if (A.includes('--historial')) process.exit(spawnSync('node', [resolve(ROOT, 'tools/cola-historial.mjs'), 'club', flag('--historial') || '', ...A.slice(A.indexOf('--historial') + 2, A.indexOf('--historial') + 3)], { stdio: 'inherit' }).status ?? 1); // la historia de un club la imprime cola-historial.mjs
   negarSiSeMide('cola.mjs', { si: A.includes('--responder') || A.includes('--corregir-categoria') }); // escriben la cola: no mientras medir pipeline mide
   // --corregir-categoria: Guido fija la categoría de UNA fila de un documento aunque la categorización no haya tenido dudas (UC
   // 2025: "Costo de ventas" sin desglose -> "sin desglosar por la fuente", no "Otros gastos"). Crea el caso y su respuesta de una vez; la toma
