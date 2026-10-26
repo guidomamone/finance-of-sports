@@ -46,7 +46,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"De Grolsch Veste","capacidad":30205,"sponsor":"Elektramat","marca":"Castore","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
   },
   'fcutrecht-nl': {
-    2025: {"estadio":"Stadion Galgenwaard","capacidad":23750,"sponsor":"Conclusion Digital Transformation","marca":"Castore","fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Eredivisie (tablas de estadios y de Personnel and kits)","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Eredivisie (tablas de estadios y de Personnel and kits)","manual":["estadio","capacidad","sponsor","marca"]},
+    2025: {"estadio":"Stadion Galgenwaard","capacidad":23750,"sponsor":"Conclusion Digital Transformation","marca":"Castore","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Eredivisie (tablas de estadios y de Personnel and kits)","manual":["estadio","capacidad","sponsor","marca"]},
   },
   'fcvolendam-nl': {
     2025: {"estadio":"Kras Stadion","capacidad":7384,"temporada":"2024–25 Eerste Divisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372593507"},

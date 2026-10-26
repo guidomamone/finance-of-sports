@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1125 — Los 26 sponsors anteriores al registro, buscados con el registro; cierra el punto 418 [sponsor-legacy.json, contexto-manual.json]
+- Cuatro subagentes Sonnet buscaron el sponsor de camiseta de los 26 club-años que tenían un texto libre de antes del registro, con las clases de fuente de la skill de sourcing. Con sponsor y su fuente: Rapid Wien 2013 a 2022, 2024 y 2025 (Wien Energie), Molde 2008 y 2010 a 2012 (Sparebanken Møre) y Beşiktaş 2007 (Cola Turka). Sin sponsor, con su registro de búsqueda: Patro Eisden 2013 y 2015, RAAL La Louvière 2018 y 2019 (candidatos Payconiq y UNICEF anotados, sin confirmar que fueran del frente), Vålerenga 2023, Alianza FC 2023, Atlético Bucaramanga 2019 y 2020 y Rapid Wien 2023.
+- `tools/sponsor-legacy.json` quedó vacío y se sacó su silencio de `audit-ignore.json`; con esto las 5 entradas «aceptado sin verificar» de ese archivo quedaron resueltas. Las fuentes más débiles: Molde (el informe dice «generalsponsor», la camiseta sale de una base de camisetas leída por el buscador) y Rapid Wien 2024 (la nota dice sponsor principal, no pecho).
+
 ## Versión 1124 — La prueba de escritura cubre 12 tools más y medir-pipeline la exige [401 · prueba-escribir.mjs, medir-pipeline.mjs, fetch-fx-reference.mjs]
 - `prueba-escribir.mjs` suma `dentro-de-otro`, `gestiones-tanda`, `alta-club`, `recategorizar-linea`, `segunda-fuente-wikipedia-local`, `segunda-fuente-liga`, `estadio-sponsor`, `fetch-fx-reference`, `reglas-categoria`, `imports-sin-export`, `fuente-url-xhtml` y `xhtml-aarsrapport`. `medir-pipeline.mjs` no da «idéntico» a una tool que escribe sin su prueba (`escriben_sin_prueba` de `pipeline-tools.json` anota la deuda: `cargar-lote`, `bfo-rusia`, `bfo-rusia-notas`).
 - Fallas que la prueba encontró y se corrigieron: `fetch-fx-reference --from` pisaba la serie con solo ese tramo (ahora la suma; la serie del ARS quedó al día hasta 2026-10-23) y el BCRA rechazaba la fecha UTC de noche. `recategorizar-linea` recuerda correr `dentro-de-otro`: PAOK 2019 a 2022 tenían una marca vieja de ventas de jugadores dentro de otro rubro y se actualizó.

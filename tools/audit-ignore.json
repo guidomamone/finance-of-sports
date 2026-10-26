@@ -489,12 +489,6 @@
   "revisar": "2027-01-23"
  },
  {
-  "code": "sponsor-sin-registro",
-  "match": "con el sponsor sin fuente como texto libre",
-  "motivo": "ACEPTADO SIN VERIFICAR POR PEDIDO DE GUIDO (2026-10-23, para llevar el P3 a cero). Sponsors de antes del registro de búsqueda (tools/sponsor-legacy.json); se completan al tocar el club.",
-  "revisar": "2026-12-23"
- },
- {
   "code": "ejercicio-sin-rastro",
   "match": "fredrikstad-no:",
   "motivo": "VERIFICADO (Admin/registros/documentos-descartados.txt L866-870 y Admin/sourcing/Noruega/Fredrikstad.md, 2026-10-23). El FLI Fredrikstad Fotballklubb (el club) dejó de depositar cuentas después de 2018; los PDF de 2019 a 2023 en Clubes/Noruega/Fredrikstad/ son de Fredrikstad Fotballinvest AS, tenedora de derechos de jugadores y no el club, y están descartados (Auditora 5, Onboarding 8, 2026-10-21). Sin documento publicado del club."
