@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Colombia/Alianza FC/siis-estado-2018.md",
+  "pdf": "Clubes/Colombia/Alianza FC/siis-estado-2018.pdf",
+  "club": "alianzafc-co",
+  "year": 2018,
+  "generatedAt": "2026-10-26T22:38:22.877Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        7104.612
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2092.811
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        35.01
+      ],
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        8841.052
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Colombia/Alianza FC/siis-estado-2022.md",
+  "pdf": "Clubes/Colombia/Alianza FC/siis-estado-2022.pdf",
+  "club": "alianzafc-co",
+  "year": 2022,
+  "generatedAt": "2026-10-26T22:38:23.057Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        13070.576
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        997.258
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        4509.603
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        8062.174
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        541.154
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Ganancia (pérdida) procedente de operaciones discontinuadas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+      "values": [
+        54.03
+      ],
+      "glosa": "Ganancia (pérdida) procedente de operaciones discontinuadas"
+    }
+  ]
+}

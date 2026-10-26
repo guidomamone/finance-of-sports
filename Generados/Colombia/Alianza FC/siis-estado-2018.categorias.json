@@ -1,0 +1,68 @@
+{
+ "md": "Clubes/Colombia/Alianza FC/siis-estado-2018.md",
+ "club": "alianzafc-co",
+ "year": 2018,
+ "generatedAt": "2026-10-26T22:39:04.690Z",
+ "rubrosHuella": "5db84c7ab25d719827f228aed7d02a41e690d3ca",
+ "jevHuella": "baf5e1abf55041508760da8b6085faec8d58a213",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.97,
+   "categoria": "lump_football_operations",
+   "confianza": 0.97
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Costo de ventas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 2,
+   "confCache": 0.88,
+   "motivo": "Igual a 'Costos de Venta' del club; regla colombiana: Costo de ventas a other_expenses",
+   "jev": "lump_football_operations_expense",
+   "jevConf": 0.49,
+   "desdeCache": true,
+   "categoria": "other_expenses",
+   "confianza": 0.88
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  }
+ ]
+}
