@@ -36,3 +36,5 @@ Color de marca: #C6A845 — identidad dorada (nombre y escudo dorado/azul oscuro
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2024 desde `Clubes/Colombia/Aguilas Doradas/siis-estado-2024.pdf` (sourceId `aguilasdoradas-co-siis-estado-2024`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2016 desde `Clubes/Colombia/Aguilas Doradas/siis-estado-2016.pdf` (sourceId `aguilasdoradas-co-siis-estado-2016`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2017 desde `Clubes/Colombia/Aguilas Doradas/siis-estado-2017.pdf` (sourceId `aguilasdoradas-co-siis-estado-2017`).
