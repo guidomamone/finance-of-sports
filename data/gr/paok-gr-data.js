@@ -8,7 +8,7 @@ const paokGrRevenueLinesByYear = {
     {"rawLabel":"Έσοδα από χορηγίες-διαφημίσεις","normalizedCategory":"sponsorship_commercial","amountNative":5.007688,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ενοίκια Έσοδα","normalizedCategory":"other_income","amountNative":0.166959,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά Έσοδα πάροχης Υπηρεσιών","normalizedCategory":"other_income","amountNative":0.028102,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"other_income","amountNative":6.040966,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"player_sales","amountNative":6.040966,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά έκτακτα έσοδα","normalizedCategory":"other_income","amountNative":0.376465,"disclosureLevel":"aggregated"},
     {"rawLabel":"Έσοδα προηγούμενων χρήσεων","normalizedCategory":"other_income","amountNative":0.001158,"disclosureLevel":"aggregated"},
     {"rawLabel":"Έσοδα από αναστροφή προβλέψεων","normalizedCategory":"other_income","amountNative":0.12,"disclosureLevel":"aggregated"},
@@ -16,19 +16,19 @@ const paokGrRevenueLinesByYear = {
   2019: [
     {"rawLabel":"Κύκλος εργασιών","normalizedCategory":"lump_football_operations","amountNative":33.922723,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά συνήθη έσοδα","normalizedCategory":"other_income","amountNative":0.283655,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"other_income","amountNative":9.992336,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"player_sales","amountNative":9.992336,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά έσοδα και κέρδη","normalizedCategory":"other_income","amountNative":2.480573,"disclosureLevel":"aggregated"},
   ],
   2020: [
     {"rawLabel":"Κύκλος εργασιών","normalizedCategory":"lump_football_operations","amountNative":17.768593,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά συνήθη έσοδα","normalizedCategory":"other_income","amountNative":3.341295,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"other_income","amountNative":3.566975,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"player_sales","amountNative":3.566975,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά έσοδα και κέρδη","normalizedCategory":"other_income","amountNative":0.528165,"disclosureLevel":"aggregated"},
   ],
   2021: [
     {"rawLabel":"Κύκλος εργασιών","normalizedCategory":"lump_football_operations","amountNative":38.661362,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά συνήθη έσοδα","normalizedCategory":"other_income","amountNative":0.28173,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"other_income","amountNative":13.497294,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"player_sales","amountNative":13.497294,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά έκτακτα έσοδα","normalizedCategory":"other_income","amountNative":0.395293,"disclosureLevel":"aggregated"},
     {"rawLabel":"Έσοδα προηγούμενων χρήσεων","normalizedCategory":"other_income","amountNative":0.003609,"disclosureLevel":"aggregated"},
     {"rawLabel":"Έσοδα από αναστροφή προβλέψεων","normalizedCategory":"other_income","amountNative":0.049812,"disclosureLevel":"aggregated"},
@@ -36,7 +36,7 @@ const paokGrRevenueLinesByYear = {
   2022: [
     {"rawLabel":"Κύκλος εργασιών","normalizedCategory":"lump_football_operations","amountNative":32.627236,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά συνήθη έσοδα","normalizedCategory":"other_income","amountNative":0.096937,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"other_income","amountNative":14.485772,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"player_sales","amountNative":14.485772,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά έκτακτα έσοδα","normalizedCategory":"other_income","amountNative":0.704528,"disclosureLevel":"aggregated"},
     {"rawLabel":"Έσοδα προηγούμενων χρήσεων","normalizedCategory":"other_income","amountNative":0.006213,"disclosureLevel":"aggregated"},
     {"rawLabel":"Έσοδα από χρησιμοποίηση προβλέψεων","normalizedCategory":"other_income","amountNative":0.019,"disclosureLevel":"aggregated"},
@@ -49,7 +49,7 @@ const paokGrRevenueLinesByYear = {
     {"rawLabel":"Έσοδα από χορηγίες-διαφημίσεις","normalizedCategory":"sponsorship_commercial","amountNative":15.416586,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ενοίκια Έσοδα","normalizedCategory":"other_income","amountNative":0.20006,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά Έσοδα πάροχης Υπηρεσιών","normalizedCategory":"other_income","amountNative":0.165736,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"other_income","amountNative":0.467793,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"player_sales","amountNative":0.467793,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά έσοδα και κέρδη","normalizedCategory":"other_income","amountNative":0.42628,"disclosureLevel":"aggregated"},
   ],
   2024: [
@@ -60,7 +60,7 @@ const paokGrRevenueLinesByYear = {
     {"rawLabel":"Έσοδα από χορηγίες-διαφημίσεις","normalizedCategory":"sponsorship_commercial","amountNative":14.411195,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ενοίκια Έσοδα","normalizedCategory":"other_income","amountNative":0.188,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά Έσοδα παροχής Υπηρεσιών","normalizedCategory":"other_income","amountNative":0.168149,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"other_income","amountNative":8.709147,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"player_sales","amountNative":8.709147,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά έσοδα και κέρδη","normalizedCategory":"other_income","amountNative":0.909185,"disclosureLevel":"aggregated"},
   ],
   2025: [
@@ -71,7 +71,7 @@ const paokGrRevenueLinesByYear = {
     {"rawLabel":"Έσοδα από χορηγίες-διαφημίσεις","normalizedCategory":"sponsorship_commercial","amountNative":12.663195,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ενοίκια Έσοδα","normalizedCategory":"other_income","amountNative":0.18865,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά Έσοδα πάροχης Υπηρεσιών","normalizedCategory":"other_income","amountNative":0.294302,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"other_income","amountNative":31.772701,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων","normalizedCategory":"player_sales","amountNative":31.772701,"disclosureLevel":"aggregated"},
     {"rawLabel":"Λοιπά έσοδα και κέρδη","normalizedCategory":"other_income","amountNative":1.094295,"disclosureLevel":"aggregated"},
   ],
 };

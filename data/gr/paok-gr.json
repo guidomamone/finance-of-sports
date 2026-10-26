@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-25",
+  "exported_at": "2026-10-26",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "paok-gr",
@@ -98,8 +98,8 @@
         {"label":"Λοιπά Έσοδα πάροχης Υπηρεσιών","category":"other_revenue","subcategory":"other_income","amount":0.028102,"disclosure":"aggregated"},
         {
           "label": "Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 6.040966,
           "disclosure": "aggregated"
         },
@@ -170,8 +170,8 @@
         {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":0.283655,"disclosure":"aggregated"},
         {
           "label": "Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 9.992336,
           "disclosure": "aggregated"
         },
@@ -228,8 +228,8 @@
         {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":3.341295,"disclosure":"aggregated"},
         {
           "label": "Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 3.566975,
           "disclosure": "aggregated"
         },
@@ -294,8 +294,8 @@
         {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":0.28173,"disclosure":"aggregated"},
         {
           "label": "Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 13.497294,
           "disclosure": "aggregated"
         },
@@ -383,8 +383,8 @@
         {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":0.096937,"disclosure":"aggregated"},
         {
           "label": "Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 14.485772,
           "disclosure": "aggregated"
         },
@@ -481,8 +481,8 @@
         {"label":"Λοιπά Έσοδα πάροχης Υπηρεσιών","category":"other_revenue","subcategory":"other_income","amount":0.165736,"disclosure":"aggregated"},
         {
           "label": "Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 0.467793,
           "disclosure": "aggregated"
         },
@@ -562,8 +562,8 @@
         {"label":"Λοιπά Έσοδα παροχής Υπηρεσιών","category":"other_revenue","subcategory":"other_income","amount":0.168149,"disclosure":"aggregated"},
         {
           "label": "Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 8.709147,
           "disclosure": "aggregated"
         },
@@ -650,8 +650,8 @@
         {"label":"Λοιπά Έσοδα πάροχης Υπηρεσιών","category":"other_revenue","subcategory":"other_income","amount":0.294302,"disclosure":"aggregated"},
         {
           "label": "Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
-          "category": "other_revenue",
-          "subcategory": "other_income",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
           "amount": 31.772701,
           "disclosure": "aggregated"
         },

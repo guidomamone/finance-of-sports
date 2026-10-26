@@ -28,7 +28,7 @@ const benficaPtRevenueLinesByYear = {
     {"rawLabel":"Proveitos suplementares","normalizedCategory":"other_income","amountNative":11.683949,"disclosureLevel":"aggregated"},
     {"rawLabel":"Subsídios à exploração","normalizedCategory":"grants_donations","amountNative":0.003516,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros proveitos e ganhos operacionais","normalizedCategory":"other_income","amountNative":0.702353,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Ganhos em imobilizações","normalizedCategory":"other_income","amountNative":24.114308,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Ganhos em imobilizações","normalizedCategory":"player_sales","amountNative":24.114308,"disclosureLevel":"aggregated"},
     {"rawLabel":"Benefícios de penalidades contratuais","normalizedCategory":"other_income","amountNative":0.034333,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros proveitos e ganhos extraordinários","normalizedCategory":"other_income","amountNative":2.11739,"disclosureLevel":"aggregated"},
   ],

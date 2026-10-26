@@ -17,7 +17,7 @@ const sportingcpPtRevenueLinesByYear = {
   2002: [
     {"rawLabel":"Subsídios à Exploração","normalizedCategory":"grants_donations","amountNative":0,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros Proveitos e Ganhos Operacionais","normalizedCategory":"other_income","amountNative":0.465,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Ganhos em Imobiliz.","normalizedCategory":"other_income","amountNative":13.413,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Ganhos em Imobiliz.","normalizedCategory":"player_sales","amountNative":13.413,"disclosureLevel":"aggregated"},
     {"rawLabel":"Benefícios Contratuais","normalizedCategory":"other_income","amountNative":0.028,"disclosureLevel":"aggregated"},
     {"rawLabel":"Redução de Provisões","normalizedCategory":"other_income","amountNative":0.12,"disclosureLevel":"aggregated"},
     {"rawLabel":"O Prov. e G. Extraord.","normalizedCategory":"other_income","amountNative":0.274,"disclosureLevel":"aggregated"},
@@ -32,7 +32,7 @@ const sportingcpPtRevenueLinesByYear = {
   2003: [
     {"rawLabel":"Subsídios à Exploração","normalizedCategory":"grants_donations","amountNative":0,"disclosureLevel":"aggregated"},
     {"rawLabel":"Outros Proveitos e Ganhos Operacionais","normalizedCategory":"other_income","amountNative":0.198,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Ganhos em Imobiliz.","normalizedCategory":"other_income","amountNative":8.108,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Ganhos em Imobiliz.","normalizedCategory":"player_sales","amountNative":8.108,"disclosureLevel":"aggregated"},
     {"rawLabel":"Benefícios Contratuais","normalizedCategory":"other_income","amountNative":0.086,"disclosureLevel":"aggregated"},
     {"rawLabel":"Redução de Provisões","normalizedCategory":"other_income","amountNative":0.139,"disclosureLevel":"aggregated"},
     {"rawLabel":"O Prov. e G. Extraord.","normalizedCategory":"other_income","amountNative":0.2,"disclosureLevel":"aggregated"},

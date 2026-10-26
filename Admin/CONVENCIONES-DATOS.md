@@ -457,7 +457,7 @@ CATEGORÍA (prompt, futbol): en Bélgica, el intangible «Concessies, octrooien,
 el meta `assetSales` del año, no como línea de ingresos: así los ingresos cierran con el turnover impreso y el resultado con el impreso. Casos:
 Everton 2025 (£49,2 M, venta de Everton FC Women y Goodison Park Stadium a la matriz Roundhouse), Newcastle 2025 (venta de una filial) y Brentford 2025.
 
-## REGLA: una ganancia en inmovilizado de un club de fútbol va a `player_sales` solo si el documento la liga con jugadores (votación 3 a 0, 2026-10-25)
+## REGLA: una ganancia en inmovilizado de un club de fútbol va a `player_sales` solo si el documento la liga con jugadores (votación 3 a 0)
 
 «Ganhos em imobilizações», «Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων», «Profit on disposal of fixed assets» y parecidos son ambiguos: en un club de
 fútbol pueden ser la venta de derechos de jugadores (que el informe de gestión o una nota imprime con otro rótulo) o la venta de una filial, una participación

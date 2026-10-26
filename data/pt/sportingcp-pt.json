@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-25",
+  "exported_at": "2026-10-26",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "sportingcp-pt",
@@ -358,7 +358,7 @@
       "revenue": [
         {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0,"disclosure":"aggregated"},
         {"label":"Outros Proveitos e Ganhos Operacionais","category":"other_revenue","subcategory":"other_income","amount":0.465,"disclosure":"aggregated"},
-        {"label":"Ganhos em Imobiliz.","category":"other_revenue","subcategory":"other_income","amount":13.413,"disclosure":"aggregated"},
+        {"label":"Ganhos em Imobiliz.","category":"player_transfers","subcategory":"player_sales","amount":13.413,"disclosure":"aggregated"},
         {"label":"Benefícios Contratuais","category":"other_revenue","subcategory":"other_income","amount":0.028,"disclosure":"aggregated"},
         {"label":"Redução de Provisões","category":"other_revenue","subcategory":"other_income","amount":0.12,"disclosure":"aggregated"},
         {"label":"O Prov. e G. Extraord.","category":"other_revenue","subcategory":"other_income","amount":0.274,"disclosure":"aggregated"},
@@ -425,7 +425,7 @@
       "revenue": [
         {"label":"Subsídios à Exploração","category":"grants_donations","subcategory":"grants_donations","amount":0,"disclosure":"aggregated"},
         {"label":"Outros Proveitos e Ganhos Operacionais","category":"other_revenue","subcategory":"other_income","amount":0.198,"disclosure":"aggregated"},
-        {"label":"Ganhos em Imobiliz.","category":"other_revenue","subcategory":"other_income","amount":8.108,"disclosure":"aggregated"},
+        {"label":"Ganhos em Imobiliz.","category":"player_transfers","subcategory":"player_sales","amount":8.108,"disclosure":"aggregated"},
         {"label":"Benefícios Contratuais","category":"other_revenue","subcategory":"other_income","amount":0.086,"disclosure":"aggregated"},
         {"label":"Redução de Provisões","category":"other_revenue","subcategory":"other_income","amount":0.139,"disclosure":"aggregated"},
         {"label":"O Prov. e G. Extraord.","category":"other_revenue","subcategory":"other_income","amount":0.2,"disclosure":"aggregated"},

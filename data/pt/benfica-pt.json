@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-25",
+  "exported_at": "2026-10-26",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "benfica-pt",
@@ -263,7 +263,7 @@
         {"label":"Proveitos suplementares","category":"other_revenue","subcategory":"other_income","amount":11.683949,"disclosure":"aggregated"},
         {"label":"Subsídios à exploração","category":"grants_donations","subcategory":"grants_donations","amount":0.003516,"disclosure":"aggregated"},
         {"label":"Outros proveitos e ganhos operacionais","category":"other_revenue","subcategory":"other_income","amount":0.702353,"disclosure":"aggregated"},
-        {"label":"Ganhos em imobilizações","category":"other_revenue","subcategory":"other_income","amount":24.114308,"disclosure":"aggregated"},
+        {"label":"Ganhos em imobilizações","category":"player_transfers","subcategory":"player_sales","amount":24.114308,"disclosure":"aggregated"},
         {"label":"Benefícios de penalidades contratuais","category":"other_revenue","subcategory":"other_income","amount":0.034333,"disclosure":"aggregated"},
         {
           "label": "Outros proveitos e ganhos extraordinários",

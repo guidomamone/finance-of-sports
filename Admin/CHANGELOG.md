@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1120 — Ganancias en inmovilizado que eran traspasos pasan a ventas de jugadores [414 · recategorizar-linea.mjs, CONVENCIONES-DATOS]
+- Regla votada 3 a 0: una ganancia en inmovilizado de un club de fútbol va a `player_sales` solo si el documento la liga con jugadores. Corrige: Benfica 2007 (24,1 M), Sporting 2002 y 2003 (13,4 M y 8,1 M) y PAOK 2017 y 2019 a 2025 (de 0,5 M a 31,8 M) pasan de «Otros ingresos» a «Ventas de jugadores», cada una con la cita del documento; los totales no cambian. Santa Clara 2025 queda como estaba (el documento no la liga con jugadores). Sporting 2005 y Chelsea 2023 no son jugadores (venta de participaciones): quedan para decidir si van a `assetSales`.
+- Herramienta nueva `fos recategorizar-linea` (manual, no es del pipeline: no corre en ningún lote). Se quitaron 3 silencios `catchall-dominante` que ya no hacen falta. Sin medición de pipeline.
+
 ## Versión 1119 — Nota en el Estado de resultados cuando un ingreso es negativo [415 · finanzas-render.js, finanzas-multi.js]
 - Un renglón de ingresos negativo (las deducciones sobre la receita de los clubes brasileños, y los de Turquía, Portugal y otros) lleva un bocadillo y un asterisco a «Notas sobre este club», con una nota por ejercicio; sin cambiar los datos. Un año y varios años. Verificado con Flamengo 2024 y 2025 en español e inglés y a 375 px.
 

@@ -459,7 +459,7 @@ window.RANKINGS["pt-primeiraliga"] = {
     clubs: [
       { id:"benfica-pt", revenue:113.96, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2006-07",
-        mix:[["Cuotas Sociales",11.415],["Comercial / Sponsors",15.12],["Estadio",17.33],["Televisión",12.617],["Premios por competencias",0.316],["Venta de Jugadores",1.166],["Subsidios y donaciones",0.005],["Otros ingresos",55.991]] },
+        mix:[["Cuotas Sociales",11.415],["Comercial / Sponsors",15.12],["Estadio",17.33],["Televisión",12.617],["Premios por competencias",0.316],["Venta de Jugadores",34.22],["Subsidios y donaciones",0.005],["Otros ingresos",22.937]] },
       { id:"sportingcp-pt", revenue:88.221, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2006-07",
         mix:[["Cuotas Sociales",5.534],["Comercial / Sponsors",8.681],["Estadio",15.301],["Televisión",12.144],["Premios por competencias",8.938],["Otros ingresos",37.624]] },
@@ -501,7 +501,7 @@ window.RANKINGS["pt-primeiraliga"] = {
     clubs: [
       { id:"sportingcp-pt", revenue:29.93, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2002-03",
-        mix:[["Cuotas Sociales",4.133],["Comercial / Sponsors",2.721],["Estadio",5.184],["Televisión",7.509],["Otros ingresos",10.383]] },
+        mix:[["Cuotas Sociales",4.133],["Comercial / Sponsors",2.721],["Estadio",5.184],["Televisión",7.509],["Venta de Jugadores",9.177],["Otros ingresos",1.206]] },
     ],
   },
   2002: {
@@ -510,7 +510,7 @@ window.RANKINGS["pt-primeiraliga"] = {
     clubs: [
       { id:"sportingcp-pt", revenue:35.855, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2001",
-        mix:[["Cuotas Sociales",3.512],["Comercial / Sponsors",2.4],["Estadio",8.085],["Televisión",6.919],["Otros ingresos",14.939]] },
+        mix:[["Cuotas Sociales",3.512],["Comercial / Sponsors",2.4],["Estadio",8.085],["Televisión",6.919],["Venta de Jugadores",13.122],["Otros ingresos",1.818]] },
     ],
   },
   2001: {

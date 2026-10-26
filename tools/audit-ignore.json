@@ -332,11 +332,6 @@
  },
  {
   "code": "catchall-dominante",
-  "match": "benfica-pt 2007 Ingresos",
-  "motivo": "VERIFICADO (relatorio-contas-2006-07.pdf L1377: «Ganhos em imobilizações» 24.114308 en la unidad del sitio, 2026-10-23). Ganancia de inmovilizado o extraordinaria que hoy va a Otros ingresos (o es una quita de deuda): puede incluir plusvalías por traspasos de jugadores (Sporting 2002 imprime «Mais-valias em Transferências» 13.413 y «Ganhos em Imobiliz.» 13.413). Es la pregunta abierta del TODO 414; no se recategoriza antes."
- },
- {
-  "code": "catchall-dominante",
   "match": "besiktas-tr 2008 Gastos",
   "motivo": "VERIFICADO (besiktas-futbol-bilanco-31-05-2008.pdf L2916: «Kur farkı giderleri» -17.624316 en la unidad del sitio, 2026-10-23). Línea de gasto propia del documento que la taxonomía no abre (diferencias de cambio, deterioro de deudores, comisiones, variación de existencias y costo de ventas, gastos del departamento de fútbol, el acuerdo de gestión entre el club y su sociedad con ingreso y gasto simétricos, compra y alquiler de jugadores de la otra entidad): Otros gastos es correcto o el documento no permite abrirla."
  },
@@ -417,11 +412,6 @@
  },
  {
   "code": "catchall-dominante",
-  "match": "paok-gr 2025 Ingresos",
-  "motivo": "VERIFICADO (PAOK_FS_2025-06-30.pdf L447: «Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχ» 31.772701 en la unidad del sitio, 2026-10-23). Ganancia de inmovilizado o extraordinaria que hoy va a Otros ingresos (o es una quita de deuda): puede incluir plusvalías por traspasos de jugadores (Sporting 2002 imprime «Mais-valias em Transferências» 13.413 y «Ganhos em Imobiliz.» 13.413). Es la pregunta abierta del TODO 414; no se recategoriza antes."
- },
- {
-  "code": "catchall-dominante",
   "match": "remo-br 2021 Ingresos",
   "motivo": "VERIFICADO (demonstracoes-contabeis-2021.pdf L671: «Receita com redução juros/multa - Perse» 13.490829 en la unidad del sitio, 2026-10-23). Subsidio o transferencia de una federación, un gobierno o un club hermano (o un ingreso compuesto «socios/subsidios» que el documento no abre) que hoy va a Otros ingresos porque su categoría fina no está decidida: las etiquetas de subsidios se revisan en el TODO 372 y lo cargado no se recategoriza en masa."
  },
@@ -449,11 +439,6 @@
   "code": "catchall-dominante",
   "match": "sportingcp-pt 2001 Ingresos",
   "motivo": "VERIFICADO (relatorio-contas-2000.pdf L126: «Proveitos Suplementares» 1866.067 en la unidad del sitio, 2026-10-23). Línea propia del documento (ingresos de apuestas, de actividades accesorias o proveitos suplementares) sin categoría fina en la taxonomía: Otros ingresos es correcto."
- },
- {
-  "code": "catchall-dominante",
-  "match": "sportingcp-pt 2002 Ingresos",
-  "motivo": "VERIFICADO (relatorio-contas-2001.pdf L761: «Ganhos em Imobiliz.» 13.413 en la unidad del sitio, 2026-10-23). Ganancia de inmovilizado o extraordinaria que hoy va a Otros ingresos (o es una quita de deuda): puede incluir plusvalías por traspasos de jugadores (Sporting 2002 imprime «Mais-valias em Transferências» 13.413 y «Ganhos em Imobiliz.» 13.413). Es la pregunta abierta del TODO 414; no se recategoriza antes."
  },
  {
   "code": "catchall-dominante",
