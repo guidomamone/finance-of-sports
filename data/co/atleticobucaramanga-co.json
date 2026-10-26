@@ -68,6 +68,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2017.pdf"
+    },
+    {
+      "id": "atleticobucaramanga-co-siis-estado-2018",
+      "club_id": "atleticobucaramanga-co",
+      "title": "Club Atlético Bucaramanga S.A. — siis-estado-2018 (ejercicio 2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2018.pdf"
     }
   ],
   "members": null,
@@ -179,6 +187,70 @@
             "reason": "El costo de ventas es el 97 % de los gastos y el estado de 2019 repite el de 2018 como Gastos de ventas: es la actividad deportiva (regla de Colombia en CONVENCIONES-DATOS.md)",
             "kind": "cost_of_sales"
           }
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        },
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-12-31",
+      "currency": "COP",
+      "source_id": "atleticobucaramanga-co-siis-estado-2018",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2018-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 11466.093,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":416.537,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-8044.67,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":0,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-167.854,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-884.794,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-10.061,"tax":-1001.799,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":11882.63,"expenses":9097.318,"net_result":1773.452},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":0},
+          {"label":"Costos financieros","amount":-10.061},
+          {"label":"Ingreso (gasto) por impuestos","amount":-1001.799}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Ingresos de actividades ordinarias",
+            "side": "revenue",
+            "amount": 11466.093,
+            "reason": "Línea única de ingresos sin abrir: lump_football_operations (regla de Colombia, 463, 2026-10-26)",
+            "kind": "net_sales"
+          },
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 8044.67,
+            "reason": "El costo de ventas es el 97 % de los gastos y el estado de 2019 repite el de 2018 como Gastos de ventas: es la actividad deportiva (regla de Colombia en CONVENCIONES-DATOS.md)",
+            "kind": "cost_of_sales"
+          },
+          {"line":"Gastos de ventas","side":"expense","amount":0,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
