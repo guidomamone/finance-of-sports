@@ -19,3 +19,5 @@ Estados financieros en disco ahora: 9 ejercicios (2016, 2018-2025), cada uno con
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2016 desde `Clubes/Colombia/Leones FC/siis-estado-2016.pdf` (sourceId `leonesfc-co-siis-estado-2016`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2017 desde `Clubes/Colombia/Leones FC/siis-estado-2017.pdf` (sourceId `leonesfc-co-siis-estado-2017`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2018 desde `Clubes/Colombia/Leones FC/siis-estado-2018.pdf` (sourceId `leonesfc-co-siis-estado-2018`).

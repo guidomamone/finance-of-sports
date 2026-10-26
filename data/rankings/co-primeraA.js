@@ -211,7 +211,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2018: {
     leagueSize: 20,
-    sinDato: ["leonesfc-co"],
     wiki: {"t":"2018 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:12.493, reportType:"official_balance_sheet",
@@ -231,6 +230,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"atleticobucaramanga-co", revenue:3.656, reportType:"official_balance_sheet",
         sourceId:"atleticobucaramanga-co-siis-estado-2018",
         mix:[["Comercial / Sponsors",0.488],["Estadio",1.091],["Televisión",1.016],["Otros ingresos",1.061]] },
+      { id:"leonesfc-co", revenue:1.293, reportType:"official_balance_sheet",
+        sourceId:"leonesfc-co-siis-estado-2018",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.29],["Otros ingresos",0.003]] },
     ],
   },
   2017: {
