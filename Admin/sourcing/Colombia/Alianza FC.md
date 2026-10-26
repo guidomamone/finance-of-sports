@@ -38,3 +38,5 @@ Color de marca: null — colores azul, blanco y rojo (infobox es.wikipedia 'Alia
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2017 desde `Clubes/Colombia/Alianza FC/siis-estado-2017.pdf` (sourceId `alianzafc-co-siis-estado-2017`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2018 desde `Clubes/Colombia/Alianza FC/siis-estado-2018.pdf` (sourceId `alianzafc-co-siis-estado-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2019 desde `Clubes/Colombia/Alianza FC/siis-estado-2019.pdf` (sourceId `alianzafc-co-siis-estado-2019`).

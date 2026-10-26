@@ -44,6 +44,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Alianza FC/siis-estado-2018.pdf"
+    },
+    {
+      "id": "alianzafc-co-siis-estado-2019",
+      "club_id": "alianzafc-co",
+      "title": "Alianza FC S.A. — siis-estado-2019 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Alianza FC/siis-estado-2019.pdf"
     }
   ],
   "members": null,
@@ -85,6 +93,16 @@
             "kind": "other"
           }
         ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        },
         "revenue_basis": "full"
       }
     },
@@ -117,6 +135,16 @@
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":10049.793,"reason":"el documento no desglosa este renglón","kind":"net_sales"}
         ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        },
         "revenue_basis": "full"
       }
     },
@@ -147,8 +175,123 @@
       "adjustments": {
         "extra_rows": [{"label":"Costos financieros","amount":-224.056},{"label":"Ingreso (gasto) por impuestos","amount":0}],
         "no_breakdown": [{"line":"Ingresos de actividades ordinarias","side":"revenue","amount":7104.612,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        },
         "revenue_basis": "full"
       }
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-12-31",
+      "currency": "COP",
+      "source_id": "alianzafc-co-siis-estado-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2019-12-31"},
+      "revenue": [
+        {"label":"Taquilla","category":"matchday","subcategory":"matchday_competition","amount":1071.0335,"disclosure":"aggregated"},
+        {
+          "label": "Escuelas de Formación Deportiva",
+          "category": "other_sporting_sections",
+          "subcategory": "youth_football",
+          "amount": 146.197379,
+          "disclosure": "aggregated"
+        },
+        {"label":"Publicidad","category":"commercial","subcategory":"sponsorship_commercial","amount":988.647059,"disclosure":"aggregated"},
+        {"label":"Dimayor","category":"media_rights","subcategory":"broadcasting","amount":5316.609739,"disclosure":"aggregated"},
+        {
+          "label": "Venta Derechos Deportivos (Ingresos de actividades ordinarias)",
+          "category": "player_transfers",
+          "subcategory": "player_sales",
+          "amount": 1111.166125,
+          "disclosure": "aggregated"
+        },
+        {"label":"Prestamos Derechos Deportivos","category":"player_transfers","subcategory":"player_sales","amount":750.919195,"disclosure":"aggregated"},
+        {"label":"Venta artículos deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":65.182607,"disclosure":"aggregated"},
+        {"label":"Arrendamiento","category":"other_revenue","subcategory":"other_income","amount":28.352857,"disclosure":"aggregated"},
+        {"label":"Recuperaciones","category":"other_revenue","subcategory":"other_income","amount":575.0989,"disclosure":"aggregated"},
+        {
+          "label": "Federación Colombiana de Futbol (Otros ingresos)",
+          "category": "prize_money",
+          "subcategory": "competition_bonus",
+          "amount": 286,
+          "disclosure": "aggregated"
+        },
+        {"label":"Financieros","category":"other_revenue","subcategory":"other_income","amount":0.486892,"disclosure":"aggregated"},
+        {"label":"Subvenciones","category":"grants_donations","subcategory":"grants_donations","amount":85,"disclosure":"aggregated"},
+        {"label":"Multas y Recargos","category":"other_revenue","subcategory":"other_income","amount":5.881046,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {
+          "label": "Costos (De Boletería) (Costo de ventas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -52.507714,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Costos (Artículos Deportivos) (Costo de ventas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -38.325,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos de personal (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2568.516506,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Amortización de Derechos Deportivos",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -294.609411,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos de personal (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1576.466978,
+          "disclosure": "aggregated"
+        },
+        {"label":"Honorarios","category":"admin_general","subcategory":"admin_general_expense","amount":-341.693359,"disclosure":"aggregated"},
+        {"label":"Impuestos","category":"admin_general","subcategory":"admin_general_expense","amount":-218.865431,"disclosure":"aggregated"},
+        {"label":"Arrendamientos","category":"admin_general","subcategory":"admin_general_expense","amount":-86.422905,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-4.118665,"disclosure":"aggregated"},
+        {"label":"Servicios","category":"admin_general","subcategory":"admin_general_expense","amount":-367.204022,"disclosure":"aggregated"},
+        {"label":"Gastos Legales","category":"admin_general","subcategory":"admin_general_expense","amount":-4.168684,"disclosure":"aggregated"},
+        {
+          "label": "Mantenimiento y reparaciones",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -44.088745,
+          "disclosure": "aggregated"
+        },
+        {"label":"Gastos de viaje","category":"admin_general","subcategory":"admin_general_expense","amount":-740.264545,"disclosure":"aggregated"},
+        {
+          "label": "Diversos (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -3079.966145,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciaciones","category":"depreciation","subcategory":"depreciation","amount":-31.71323,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-430.238,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-261.875,"tax":-95.545,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":10430.575299,"expenses":9879.16934,"net_result":193.986},
+      "adjustments": {"extra_rows":[{"label":"Costos financieros","amount":-261.875},{"label":"Ingreso (gasto) por impuestos","amount":-95.545}],"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,

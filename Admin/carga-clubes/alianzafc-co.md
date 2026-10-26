@@ -121,6 +121,59 @@ tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-20): co-primeraA, verificado contra roster cacheado de "2023 Liga DIMAYOR" (tools/club-league-reference/co.json), coincidencia única por palabras "Alianza Petrolera" = "Alianza FC".
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-26) desde Clubes/Colombia/Alianza FC/siis-estado-2019.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Alianza FC/siis-estado-2019.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Taquilla | pág. 1, Jev 1 |
+| 2 | Escuelas de Formación Deportiva | pág. 1, Jev 0.94 |
+| 3 | Publicidad | pág. 1, Jev 1 |
+| 4 | Dimayor | pág. 1, precedente |
+| 5 | Venta Derechos Deportivos (Ingresos de actividades ordinarias) | pág. 1, precedente |
+| 6 | Prestamos Derechos Deportivos | pág. 1, precedente |
+| 7 | Venta artículos deportivos | pág. 1, Jev 1 |
+| 8 | Arrendamiento | pág. 1, Claude 0.85 |
+| 9 | Recuperaciones | pág. 1, Jev 1 |
+| 10 | Federación Colombiana de Futbol (Otros ingresos) | pág. 1, precedente |
+| 11 | Financieros | pág. 1, Jev 0.98 |
+| 12 | Subvenciones | pág. 1, Jev 0.94 |
+| 13 | Multas y Recargos | pág. 1, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costos (De Boletería) (Costo de ventas) | pág. 1, ? 0.6 |
+| 2 | Costos (Artículos Deportivos) (Costo de ventas) | pág. 1, Jev 0.99 |
+| 3 | Gastos de personal (Gastos de ventas) | pág. 1, precedente |
+| 4 | Amortización de Derechos Deportivos | pág. 1, Jev 1 |
+| 5 | Gastos de personal (Gastos de administración) | pág. 1, precedente |
+| 6 | Honorarios | pág. 1, precedente |
+| 7 | Impuestos | pág. 1, precedente |
+| 8 | Arrendamientos | pág. 1, Jev 1 |
+| 9 | Seguros | pág. 1, precedente |
+| 10 | Servicios | pág. 1, precedente |
+| 11 | Gastos Legales | pág. 1, precedente |
+| 12 | Mantenimiento y reparaciones | pág. 1, precedente |
+| 13 | Gastos de viaje | pág. 1, Claude 0.85 |
+| 14 | Diversos (Gastos de administración) | pág. 1, precedente |
+| 15 | Depreciaciones | pág. 1, precedente |
+| 16 | Otros gastos | pág. 1, Jev 1 |
+
+### Meta
+
+```text
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2018
 
 ### Ingresos
@@ -148,6 +201,10 @@ Generados/Colombia/Alianza FC/siis-estado-2018.categorias.json (escalón de cada
 2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
 tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2023)
 ```
 
 ## 2017
@@ -179,6 +236,10 @@ tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```
 
+```text
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2023)
+```
+
 ## 2016
 
 ### Ingresos
@@ -208,6 +269,10 @@ Generados/Colombia/Alianza FC/siis-estado-2016.categorias.json (escalón de cada
 2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
 tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2023)
 ```
 
 ## Fuentes
@@ -242,4 +307,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Alianza FC/siis-estado-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### alianzafc-co-siis-estado-2019
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Alianza FC/siis-estado-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
