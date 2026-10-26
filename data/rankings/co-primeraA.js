@@ -3,7 +3,6 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraA"] = {
   2025: {
     leagueSize: 20,
-    sinDato: ["deportestolima-co"],
     wiki: {"t":"2025 Liga DIMAYOR","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:52.403, reportType:"official_balance_sheet",
@@ -27,6 +26,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"depcali-co", revenue:15.274, reportType:"official_balance_sheet",
         sourceId:"depcali-co-estados-financieros-2025",
         mix:[["Cuotas Sociales",0.026],["Comercial / Sponsors",1.683],["Estadio",2.948],["Televisión",2.144],["Premios por competencias",0.806],["Venta de Jugadores",0.822],["Otras actividades (educación y otros deportes)",0.345],["Otros ingresos",6.5]] },
+      { id:"deportestolima-co", revenue:13.555, reportType:"official_balance_sheet",
+        sourceId:"deportestolima-co-siis-estado-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",13.13],["Otros ingresos",0.425]] },
       { id:"envigado-co", revenue:10.029, reportType:"official_balance_sheet",
         sourceId:"envigado-co-estados-financieros-2025",
         mix:[["Cuotas Sociales",0.322],["Comercial / Sponsors",0.871],["Estadio",0.492],["Televisión",1.703],["Premios por competencias",0.181],["Venta de Jugadores",7.15],["Otras actividades (educación y otros deportes)",0.344],["Otros ingresos",-1.033]] },

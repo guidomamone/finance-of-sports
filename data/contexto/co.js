@@ -37,6 +37,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2022: {"estadio":"Manuel Murillo Toro","capacidad":28100,"temporada":"2022 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376520069"},
     2023: {"estadio":"Manuel Murillo Toro","capacidad":28100,"sponsor":"AK-1, BetPlay, Mercacentro, Pool","marca":"Sheffy","temporada":"2023 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377160814"},
     2024: {"estadio":"Manuel Murillo Toro","capacidad":28100,"sponsor":"BetPlay, Mercacentro, Pool","marca":"Sheffy","temporada":"2024 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692752"},
+    2025: {"estadio":"Manuel Murillo Toro","capacidad":28100,"sponsor":"BetPlay, Pool, Mercacentro","marca":"Umbro","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
   'deportivopereira-co': {
     2025: {"estadio":"Hernán Ramírez Villegas","capacidad":30297,"sponsor":"Aeropuerto Internacional Matecaña","marca":"Oto","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
