@@ -17,6 +17,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'alianzafc-co': { 2023: 'co-primeraA' },
   'atleticobucaramanga-co': { 2019: 'co-primeraA', 2020: 'co-primeraA', 2023: 'co-primeraA', 2024: 'co-primeraA', 2025: 'co-primeraA' },
   'deportestolima-co': { 2025: 'co-primeraA', 2023: 'co-primeraA', 2024: 'co-primeraA', 2016: 'co-primeraA', 2017: 'co-primeraA', 2018: 'co-primeraA', 2019: 'co-primeraA', 2020: 'co-primeraA', 2021: 'co-primeraA', 2022: 'co-primeraA' },
-  'laequidad-co': { 2025: 'co-primeraA', 2023: 'co-primeraA', 2024: 'co-primeraA', 2016: 'co-primeraA', 2017: 'co-primeraA', 2018: 'co-primeraA', 2019: 'co-primeraA', 2020: 'co-primeraA' },
+  'laequidad-co': { 2025: 'co-primeraA', 2023: 'co-primeraA', 2024: 'co-primeraA', 2016: 'co-primeraA', 2017: 'co-primeraA', 2018: 'co-primeraA', 2019: 'co-primeraA', 2020: 'co-primeraA', 2021: 'co-primeraA' },
   'aguilasdoradas-co': { 2025: 'co-primeraA', 2024: 'co-primeraA' },
 });
