@@ -3,7 +3,6 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraA"] = {
   2025: {
     leagueSize: 20,
-    sinDato: ["alianzafc-co"],
     wiki: {"t":"2025 Liga DIMAYOR","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:52.403, reportType:"official_balance_sheet",
@@ -52,6 +51,10 @@ window.RANKINGS["co-primeraA"] = {
       { id:"aguilasdoradas-co", revenue:5.959, reportType:"official_balance_sheet",
         sourceId:"aguilasdoradas-co-siis-estado-2025",
         mix:[["Comercial / Sponsors",0.019],["Estadio",0.097],["Televisión",2.011],["Premios por competencias",0.171],["Venta de Jugadores",2.796],["Otros ingresos",0.866]] },
+      { id:"alianzafc-co", revenue:3.909, reportType:"official_balance_sheet",
+        sourceId:"alianzafc-co-siis-estado-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",3.819],["Otros ingresos",0.09]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Subsidios y donaciones","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"llaneros-co", revenue:3.156, reportType:"official_balance_sheet",
         sourceId:"llaneros-co-estados-financieros-2025",
         mix:[["Comercial / Sponsors",1.701],["Estadio",0.486],["Televisión",0.681],["Premios por competencias",0.256],["Venta de Jugadores",0.032],["Otros ingresos",0]] },
