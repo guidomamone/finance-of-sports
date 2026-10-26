@@ -9,6 +9,7 @@
 // USO:
 //   node tools/dictamenes-md.mjs "<Club>"              ensayo: una línea por año (huella, duplicado, texto nativo o escaneo, .md, firma)
 //   node tools/dictamenes-md.mjs "<Club>" --escribir   además escribe los .md de texto nativo que no existen (nunca pisa uno existente)
+//   node tools/dictamenes-md.mjs --firma <archivo.md>  solo el escalón de firma de UN .md (1 ok, 2 firma-imagen que falta, 3 otro formato)
 //   Carpeta: Clubes/<País>/<Club>/ con el país de tools/siis-clubes.json (Colombia).
 // No llama a ninguna API. Escaneo: node tools/mistral-ocr-transcribe.mjs "<pdf>" (unos US$ 0,004 por página).
 // ============================================================================
@@ -21,7 +22,22 @@ const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
 const club = A.find((a) => !a.startsWith('--'));
 const ESCRIBIR = A.includes('--escribir');
-if (!club) { console.error('Uso: node tools/dictamenes-md.mjs "<Club>" [--escribir]'); process.exit(1); }
+// La firma, en escalones (de lo seguro a lo dudoso). El dictamen termina con la fecha y el bloque del revisor (nombre, «Revisor Fiscal», T.P., «Designado por …»); en muchos PDF ese bloque es una imagen y no sale en el .md.
+//  escalón 1: la ÚLTIMA fecha de dictamen del .md tiene un indicio de firma a menos de 8 líneas (o el .md ya trae el aviso «Bloque de firma» a mano): silencioso.
+//  escalón 2: hay fecha pero sin indicio de firma cerca: casi seguro una firma-imagen que falta; dice la línea y qué hacer.
+//  escalón 3: ni fecha ni indicio en todo el .md (otro formato): mirar el PDF a mano.
+const FECHA = /^\s*[^\n,]{2,40},?\s+(?:\d{1,2}\s+de\s+[a-zñáéíóú]+\s+de\s+\d{4}|[a-zñáéíóú]+\s+\d{1,2}\s+de\s+\d{4})\.?\s*$/i;
+const INDICIO = /(Revisor[a]?\s+Fiscal|T\.?\s?P\.?\s*N?[o°.]?\s*[\d.]+|Tarjeta\s+Profesional|Designad[oa]\s+por|Contador\s+P[úu]blico|Bloque de firma)/i;
+function firma(md) {
+  const L = md.split('\n'); let ultima = -1;
+  L.forEach((l, i) => { if (FECHA.test(l)) ultima = i; });
+  if (ultima < 0) return { escalon: INDICIO.test(md) ? 1 : 3 };
+  const cerca = L.slice(Math.max(0, ultima - 8), ultima + 9).join('\n');
+  const final = L.filter((l) => l.trim()).slice(-15).join('\n'); // la fecha puede estar arriba (carta) y el bloque del revisor al final
+  return INDICIO.test(cerca) || INDICIO.test(final) ? { escalon: 1 } : { escalon: 2, linea: ultima + 1, texto: L[ultima].trim() };
+}
+if (A[0] === '--firma') { const f = firma(readFileSync(resolve(A[1]), 'utf8')); console.log(`escalón ${f.escalon}${f.linea ? ` (línea ${f.linea}: ${f.texto})` : ''}`); process.exit(0); } // prueba de la heurística sobre UN .md
+if (!club) { console.error('Uso: node tools/dictamenes-md.mjs "<Club>" [--escribir]   |   --firma <archivo.md>'); process.exit(1); }
 const cfg = JSON.parse(readFileSync(join(ROOT, 'tools/siis-clubes.json'), 'utf8'));
 const dir = join(ROOT, 'Clubes', cfg.pais, club);
 if (!existsSync(dir)) { console.error(`No existe ${dir}`); process.exit(1); }
@@ -47,7 +63,10 @@ for (const f of pdfs) {
     writeFileSync(md, `# ${club} — Dictamen del revisor fiscal, ejercicio ${a}\n\nTranscripción completa de \`${f}\` (texto nativo, extraído con \`pdftotext -layout\`). Fiel al original, sin redondear ni reclasificar — ver CLAUDE.md.\n\n${cuerpo}`);
   }
   const mdTexto = existsSync(md) ? readFileSync(md, 'utf8') : '';
-  if (mdTexto && !/(Revisor Fiscal|Revisora Fiscal)\s*\n?[^\n]*\n?\s*T\.?\s?P\.?/i.test(mdTexto) && !/Bloque de firma/i.test(mdTexto)) notas.push('el .md no trae el bloque de firma (suele ser imagen en el PDF): leer la página en el PDF y agregarlo a mano marcado «[Bloque de firma impreso como imagen en el PDF …, transcripto a mano:]»');
+  const fi = mdTexto ? firma(mdTexto) : null;
+  if (fi && fi.escalon > 1) notas.push(fi.escalon === 2
+    ? `firma, escalón 2: la fecha del dictamen (línea ${fi.linea}, «${fi.texto}») no tiene nombre ni T.P. del revisor a su lado: la firma suele ser una imagen que pdftotext no extrae; leé la última página del PDF (Read con pages) y agregá el bloque al .md marcado «[Bloque de firma impreso como imagen en el PDF (pág. N), transcripto a mano:]» antes de la fecha`
+    : 'firma, escalón 3: el .md no trae ninguna fecha de dictamen ni nombre de revisor: otro formato, mirar el PDF a mano');
   if (paginas.length && paginas.length <= 4 && !/opini[oó]n/i.test(t)) notas.push('sin palabra «opinión»: puede ser solo el informe legal o de control interno; si no trae la opinión sobre los estados, el año es `falta_transcripcion`');
   console.log(`${a}  ${huella}  ${paginas.length ? `${paginas.length} pág. de texto` : 'sin texto'}  ${estado}${notas.length ? '\n      · ' + notas.join('\n      · ') : ''}`);
 }
