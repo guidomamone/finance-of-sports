@@ -2767,6 +2767,7 @@ window.SPONSORS_INDICE = [
   ["world-mobile","World Mobile",["c"]],
   ["wowalbo","WoWalBo",["c"]],
   ["wplay","Wplay",["c"]],
+  ["wplay-yoga-land","Wplay - Yoga Land",["c"]],
   ["wto-servizi-ambientali","WTO Servizi Ambientali",["c"]],
   ["wuber","Wüber",["c"]],
   ["wulfz","Wulfz",["c","m"]],

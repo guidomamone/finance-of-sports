@@ -50,9 +50,12 @@ window.RANKINGS["co-primeraB"] = {
   },
   2021: {
     leagueSize: 16,
-    sinDato: ["unionmagdalena-co"],
     wiki: {"t":"2021 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
+      { id:"unionmagdalena-co", revenue:1.764, reportType:"official_balance_sheet",
+        sourceId:"unionmagdalena-co-siis-estado-2021",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.74],["Otros ingresos",0.024]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"leonesfc-co", revenue:1.329, reportType:"official_balance_sheet",
         sourceId:"leonesfc-co-siis-estado-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.955],["Otros ingresos",0.374]] },
