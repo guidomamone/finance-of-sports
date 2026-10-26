@@ -20,6 +20,9 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1119 — Nota en el Estado de resultados cuando un ingreso es negativo [415 · finanzas-render.js, finanzas-multi.js]
+- Un renglón de ingresos negativo (las deducciones sobre la receita de los clubes brasileños, y los de Turquía, Portugal y otros) lleva un bocadillo y un asterisco a «Notas sobre este club», con una nota por ejercicio; sin cambiar los datos. Un año y varios años. Verificado con Flamengo 2024 y 2025 en español e inglés y a 375 px.
+
 ## Versión 1118 — La cola no guarda una respuesta sin evidencia, seguridad y causa [458 B · cola.mjs, cola-respuesta.mjs, probar-registros.mjs]
 - `cola.mjs --responder` se niega si falta `--evidencia` (`ruta.md:12-30` o `ninguna`), `--seguridad` o `--causa`, y dice las que faltan; sin salida de emergencia. `--corregir-categoria` y el cierre de obsoletos siguen igual. La prueba de `probar registros` pasa de «es la de siempre» a «no guarda».
 - `desde` de `esquemas-registros.json` pasa a 2026-10-26: las 112 respuestas del 25 sin esquema quedan como legado y el aviso `registro-fuera-de-esquema` baja a 0. No se reescribieron.

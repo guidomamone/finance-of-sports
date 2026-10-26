@@ -234,6 +234,7 @@
   .pl-arrow{display:inline-block;width:14px;color:var(--muted);font-size:10px;}
   .gl-etiqueta{cursor:help;border-bottom:1px dotted currentColor;}
   .pl-sd{cursor:help;border-bottom:1px dotted currentColor;color:var(--muted);}
+  .pl-neg{cursor:help;border-bottom:1px dotted currentColor;}
   .pl-sd-n a{color:var(--accent,#1f4fd8);text-decoration:none;font-size:11px;margin-left:1px;}
   .pl-notas{margin-top:18px;padding-top:14px;border-top:1px solid var(--border,#e5e5e5);font-size:14px;line-height:1.6;}
   .pl-notas-flash{background:var(--accent-soft,#eef3ff);transition:background .3s;}

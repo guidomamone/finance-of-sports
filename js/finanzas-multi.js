@@ -194,7 +194,7 @@ const FIN_MULTI_PL = (function(){
         if(row.incluidoEn){ h += `<td${cls(c)}><span class="pl-incluido" tabindex="0" data-info-tip="${esc(window.FINANZAS_DENTRO_TIP(row.incluidoEn, row.incluidoPosible))}">—</span></td>`; return; }
         if(row.unknown){ h += `<td${cls(c)}>${c.src === 'main' ? marcaSD(d.meta, lSD) : '—'}</td>`; return; }
         const v = val(d, c.src, row.value);
-        h += `<td${cls(c)}>${pct ? fmtPct(comoPct(v, totalDe(d, c.src, totK))) : fmtDisplay(v)}</td>`;
+        h += `<td${cls(c)}>${pct ? fmtPct(comoPct(v, totalDe(d, c.src, totK))) : (key === 'ingresos' && c.src === 'main' && v < 0 ? marcaNeg(fmtDisplay(v)) : fmtDisplay(v))}</td>`;
       });
       h += `<td class="pl-delta">${delta(serie[0], serie[serie.length - 1], key)}</td><td class="pl-spark">${spark(serie, key)}</td></tr>`;
       if(abierto) h += `<tr class="pl-row-chart"><td colspan="${N}"><div class="pl-row-chart-wrap"><canvas data-chart="${esc(id)}"></canvas></div></td></tr>`;
@@ -295,7 +295,7 @@ const FIN_MULTI_PL = (function(){
         estado.abiertos.has(id) ? estado.abiertos.delete(id) : estado.abiertos.add(id);
         render(estado.club, estado.years, estado.tableId);
       };
-      tr.addEventListener('click', e => { if(!e.target.closest('.pl-incluido, .pl-sd, .pl-sd-n')) toggle(); });
+      tr.addEventListener('click', e => { if(!e.target.closest('.pl-incluido, .pl-sd, .pl-sd-n, .pl-neg')) toggle(); });
       tr.addEventListener('keydown', e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); toggle(); } });
     });
     // Gráficos de los rubros abiertos

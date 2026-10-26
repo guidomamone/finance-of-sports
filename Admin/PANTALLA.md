@@ -478,6 +478,10 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
   `sales` (la línea es todo el ingreso: el total sí se compara), `salesPart` (el año tiene otras líneas de ingreso: esa no se abre por fuente y el resto está abierto),
   `other` y `exp`. No se escribe a mano. `incluidoEn` tiene prioridad. `cargar-ejercicio.mjs` anota la línea y su tipo al cargar un año; `fos sin-desglose-tipo` completa los años viejos.
   Qué son los ingresos de un año (completo, ventas totales o margen bruto) lo dice `revenue_basis`, que escribe la carga (`fos ingreso-base` lo completa).
+- INGRESO NEGATIVO (el documento resta deducciones de los ingresos brutos, p. ej. impuestos y derecho de arena en Brasil): el renglón de ingresos con valor
+  negativo se pinta con su número subrayado a puntos, un bocadillo y el asterisco que lleva a «Notas sobre este club», donde una nota por ejercicio lista los
+  renglones negativos (`marcaNeg`, `ingresosNegativos` y `renderNotasClub` de js/finanzas-render.js; la vista multi-año usa `marcaNeg` desde js/finanzas-multi.js).
+  Los datos no cambian: el total sigue siendo el que informa el club. Texto del bocadillo decidido por Guido; mockup: `Prototyping/Finanzas/mockup-150.html`.
 - "DENTRO DE OTRO RUBRO" (textos de Guido): una fila con `incluidoEn` dice solo "Dentro de otro rubro" / "Posiblemente
   dentro de otro rubro" (en la celda no entra el nombre del rubro: ocupaba seis renglones) y el rubro va en el bocadillo:
   "Está incluido en X: la fuente lo reporta junto con ese rubro." / "Sospecho que está dentro de X: no es un cero, pero la fuente no lo

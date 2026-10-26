@@ -288,6 +288,8 @@ window.I18N.strings.en = {
   "pl.sd.tip.margin": "Not broken down: this year the document reports only \"{r}\" (a gross margin), not revenue by source. It is not zero.",
   "pl.sd.tip.one": "Not broken down: this year the document reports revenue in a single line (\"{r}\"), without splitting it by source. It is not zero.",
   "pl.notas.title": "Notes on this club",
+  "pl.neg.tip": "The team declared the number in negative and I preferred being honest to the source",
+  "pl.notas.neg": "Negative revenue ({r}): the document subtracts these from gross revenue (usually a tax or another deduction). Total revenue is the net figure the club reports.",
   "pl.notas.margin": "The document reports only \"{r}\", so we don't know how much revenue the club generated: only the difference between its revenue and part of its costs. The revenue shown here is not comparable with years that break revenue down. The categories are marked n/d.",
   "pl.notas.sales": "The document reports one category as revenue but does not split it by item. The total can be compared with other years; the categories are marked n/d.",
   "pl.notas.both": "The document reports revenue (\"{r}\") and expenses in a single line each, without splitting them. The categories are marked n/d.",

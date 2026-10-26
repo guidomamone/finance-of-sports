@@ -115,7 +115,7 @@
     // `unknown` (bolsón sin desglosar con plata adentro) e `incluidoEn` (el documento junta esta fila con otra): ver bucketize() en
     // js/finanzas-calc.js. Valor y % se pintan "—"; con incluidoEn la celda dice "Dentro de otro rubro" y el rubro va en el
     // bocadillo (js/info-tip.js).
-    const celdaValor = (row, val, esActual) => row && row.incluidoEn ? `<span class="pl-incluido" tabindex="0" data-info-tip="${window.FINANZAS_DENTRO_TIP(row.incluidoEn, row.incluidoPosible).replace(/&/g,'&amp;').replace(/"/g,'&quot;')}">${row.incluidoPosible ? t('finanzas.posibleDentroOtro', 'Posiblemente dentro de otro rubro') : t('finanzas.dentroOtro', 'Dentro de otro rubro')}</span>` : row && row.unknown ? (esActual ? marcaSD(meta, /-gas$/.test(groupPrefix) ? 'expense' : 'revenue') : '—') : fmtDisplay(val);
+    const celdaValor = (row, val, esActual) => row && row.incluidoEn ? `<span class="pl-incluido" tabindex="0" data-info-tip="${window.FINANZAS_DENTRO_TIP(row.incluidoEn, row.incluidoPosible).replace(/&/g,'&amp;').replace(/"/g,'&quot;')}">${row.incluidoPosible ? t('finanzas.posibleDentroOtro', 'Posiblemente dentro de otro rubro') : t('finanzas.dentroOtro', 'Dentro de otro rubro')}</span>` : row && row.unknown ? (esActual ? marcaSD(meta, /-gas$/.test(groupPrefix) ? 'expense' : 'revenue') : '—') : (esActual && val < 0 && /-ing$/.test(groupPrefix) ? marcaNeg(fmtDisplay(val)) : fmtDisplay(val));
     const celdaPct = (row, val, tot) => row && (row.unknown || row.incluidoEn) ? '—' : fmtPctOfTotal(val, tot);
     // El total se calcula ANTES de armar las filas: cada fila necesita el total cerrado para su %.
     const total = curList.reduce((s,c) => s + nativeDisplayVal(c.value, meta, targetCurrency), 0);
@@ -898,6 +898,16 @@
     const e = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
     return `<span class="pl-sd" tabindex="0" data-info-tip="${e(textoSD(meta, lado))}">${e(t('pl.sd', 's/d'))}</span><sup class="pl-sd-n"><a href="#finNotasClub" role="button" aria-label="${e(t('pl.notas.title', 'Notas sobre este club'))}">*</a></sup>`;
   }
+  // Un ingreso negativo (el documento lo resta de los ingresos brutos): el número con su bocadillo y el asterisco que lleva a «Notas sobre este club».
+  function marcaNeg(valorHtml){
+    const e = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+    return `<span class="pl-neg" tabindex="0" data-info-tip="${e(t('pl.neg.tip', 'El equipo declaró el número en negativo y preferí ser honesto con la fuente.'))}">${valorHtml}</span><sup class="pl-sd-n"><a href="#finNotasClub" role="button" aria-label="${e(t('pl.notas.title', 'Notas sobre este club'))}">*</a></sup>`;
+  }
+  // Los renglones de ingresos negativos de un ejercicio (rótulo corto), para su nota.
+  function ingresosNegativos(clubId, y){
+    const rep = nativeReportFor(clubId, y); const meta = yearMetaFor(clubId, y);
+    return ((rep && rep.ingresos) || []).filter(c => !c.unknown && !c.incluidoEn && nativeDisplayVal(c.value, meta, currentCurrency) < 0).map(c => (window.SITE_LABEL_KEYS || {})[c.label] ? tLabel(c.label) : rotuloCorto(c.label));
+  }
   // «Notas sobre este club»: una nota por ejercicio mostrado que tiene líneas sin desglosar, armada con los datos del año (sinDesglose) y las plantillas del idioma.
   function renderNotasClub(clubId, years){
     const box = document.getElementById('finNotasClub');
@@ -917,6 +927,8 @@
         const clave = lado === 'expense' ? 'exp' : (e.tipo === 'gross_margin' ? 'margin' : e.tipo === 'net_sales' ? (otras ? 'salesPart' : 'sales') : (otras ? 'salesPart' : 'other'));
         (porAnio[y] = porAnio[y] || {})[lado] = { clave, r: rotuloCorto(e.renglon) };
       });
+      const neg = ingresosNegativos(clubId, y);
+      if(neg.length) (porAnio[y] = porAnio[y] || {}).neg = neg;
     });
     const PLANTILLA = {
       margin: 'El documento informa solo «{r}», así que no sabemos cuántos ingresos generó el club: solo la diferencia entre sus ingresos y parte de sus costos. Los ingresos que se muestran acá no son comparables con los de los años que abren los ingresos. Las categorías figuran como s/d.',
@@ -929,12 +941,15 @@
     const porTexto = new Map();
     Object.keys(porAnio).map(Number).sort((a, b) => a - b).forEach(y => {
       const n = porAnio[y];
-      let texto;
-      if(n.revenue && n.expense){
+      let texto = '';
+      if(!n.revenue && !n.expense){
+        // solo ingresos negativos: sin nada que no se abra
+      } else if(n.revenue && n.expense){
         texto = n.revenue.clave === 'other'
           ? t('pl.notas.both', 'El documento informa los ingresos («{r}») y los gastos en una sola línea cada uno, sin abrirlos. Las categorías figuran como s/d.').replace('{r}', n.revenue.r)
           : textoDe(n.revenue) + ' ' + t('pl.notas.expTambien', 'Los gastos tampoco se abren: vienen en una sola línea y su categoría figura como s/d.');
       } else texto = textoDe(n.revenue || n.expense);
+      if(n.neg) texto = (texto ? texto + ' ' : '') + t('pl.notas.neg', 'Ingresos negativos ({r}): el documento los resta de los ingresos brutos (suele ser un impuesto u otra deducción). El total de ingresos es el neto que informa el club.').replace('{r}', n.neg.join(', '));
       if(!porTexto.has(texto)) porTexto.set(texto, []);
       porTexto.get(texto).push(y);
     });
