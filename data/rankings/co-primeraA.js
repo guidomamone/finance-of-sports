@@ -236,9 +236,11 @@ window.RANKINGS["co-primeraA"] = {
   },
   2016: {
     leagueSize: 20,
-    sinDato: ["independientemedellin-co"],
     wiki: {"t":"2016 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
+      { id:"independientemedellin-co", revenue:16.41, reportType:"official_balance_sheet",
+        sourceId:"independientemedellin-co-siis-estado-2016",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",16.274],["Otros ingresos",0.136]] },
       { id:"deportestolima-co", revenue:8.31, reportType:"official_balance_sheet",
         sourceId:"deportestolima-co-siis-estado-2016",
         mix:[["Comercial / Sponsors",1.031],["Estadio",1.043],["Televisión",1.082],["Premios por competencias",0.224],["Venta de Jugadores",4.93]] },

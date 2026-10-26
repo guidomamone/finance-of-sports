@@ -41,3 +41,5 @@
 - La búsqueda previa por "Independiente Medellín" y por el NIT 890900575 daba 0 hits porque la sociedad que opera el club NO lleva ese nombre: "El Equipo del Pueblo" es el apodo del DIM, y Wikipedia (ficha del equipo femenino) lista "El Equipo del Pueblo S.A." como dueña del 100%. La hipótesis de la nota anterior ("corporación fuera de Supersociedades") era incorrecta.
 - **10 ejercicios bajados** en `Clubes/Colombia/Independiente Medellin/` (carpeta antes llamada "El Equipo del Pueblo"): estados financieros 2016-2025 con certificación y dictamen del revisor fiscal. SIIS lista exactamente esos 10 registros.
 - Confirmar contra el primer PDF que el objeto social sea el club (se leyó que el objeto incluye "deporte competitivo de alto rendimiento con deportistas bajo remuneración").
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2016 desde `Clubes/Colombia/Independiente Medellin/siis-estado-2016.pdf` (sourceId `independientemedellin-co-siis-estado-2016`).

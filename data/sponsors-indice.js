@@ -1892,6 +1892,7 @@ window.SPONSORS_INDICE = [
   ["penafielverde","PenafielVerde",["c"]],
   ["penalty","Penalty",["m"]],
   ["peppermill-casino","PepperMill Casino",["c"]],
+  ["pepsi","Pepsi",["c"]],
   ["peregrine-holdings","Peregrine Holdings",["c"]],
   ["peroni","Peroni",["c"]],
   ["peroni-3-5","Peroni 3.5",["c"]],

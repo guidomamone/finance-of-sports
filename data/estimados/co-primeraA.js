@@ -1,10 +1,11 @@
 // GENERADO por tools/estimar.mjs: no editar a mano. ESTIMACIONES, no datos reales: ingreso en millones de USD del año, rango del 80% (lo-hi) y error mediano medido (%).
 window.ESTIMADOS = window.ESTIMADOS || {};
 window.ESTIMADOS["co-primeraA"] = {
-  2014: [{"id":"deportestolima-co","revenue":8.156,"lo":4.541,"hi":15.5,"caso":"afuera","error":29,"de":[2016]},{"id":"laequidad-co","revenue":5.05,"lo":2.812,"hi":9.596,"caso":"afuera","error":29,"de":[2016]}],
-  2015: [{"id":"deportestolima-co","revenue":8.232,"lo":4.584,"hi":15.644,"caso":"afuera","error":29,"de":[2016]},{"id":"laequidad-co","revenue":5.097,"lo":2.838,"hi":9.686,"caso":"afuera","error":29,"de":[2016]}],
+  2014: [{"id":"deportestolima-co","revenue":8.156,"lo":4.541,"hi":15.5,"caso":"afuera","error":29,"de":[2016]},{"id":"independientemedellin-co","revenue":16.106,"lo":8.968,"hi":30.608,"caso":"afuera","error":29,"de":[2016]},{"id":"laequidad-co","revenue":5.05,"lo":2.812,"hi":9.596,"caso":"afuera","error":29,"de":[2016]}],
+  2015: [{"id":"deportestolima-co","revenue":8.232,"lo":4.584,"hi":15.644,"caso":"afuera","error":29,"de":[2016]},{"id":"independientemedellin-co","revenue":16.255,"lo":9.051,"hi":30.892,"caso":"afuera","error":29,"de":[2016]},{"id":"laequidad-co","revenue":5.097,"lo":2.838,"hi":9.686,"caso":"afuera","error":29,"de":[2016]}],
   2016: [{"id":"fortalezaceif-co","revenue":1.752,"lo":0.975,"hi":3.329,"caso":"afuera","error":29,"de":[2017]},{"id":"oncecaldas-co","revenue":7.271,"lo":4.049,"hi":13.818,"caso":"afuera","error":29,"de":[2018]}],
-  2017: [{"id":"oncecaldas-co","revenue":7.401,"lo":4.121,"hi":14.066,"caso":"afuera","error":29,"de":[2018]}],
+  2017: [{"id":"independientemedellin-co","revenue":16.704,"lo":9.301,"hi":31.744,"caso":"afuera","error":29,"de":[2016]},{"id":"oncecaldas-co","revenue":7.401,"lo":4.121,"hi":14.066,"caso":"afuera","error":29,"de":[2018]}],
+  2018: [{"id":"independientemedellin-co","revenue":17.087,"lo":9.514,"hi":32.471,"caso":"afuera","error":29,"de":[2016]}],
   2019: [{"id":"oncecaldas-co","revenue":8.388,"lo":5.733,"hi":12.492,"caso":"entre","error":18,"de":[2018,2022]},{"id":"unionmagdalena-co","revenue":2.279,"lo":1.558,"hi":3.394,"caso":"entre","error":18,"de":[2018,2025]}],
   2020: [{"id":"oncecaldas-co","revenue":9.266,"lo":6.333,"hi":13.8,"caso":"entre","error":18,"de":[2018,2022]}],
   2021: [{"id":"alianzafc-co","revenue":3.488,"lo":1.942,"hi":6.628,"caso":"afuera","error":29,"de":[2023]},{"id":"oncecaldas-co","revenue":10.558,"lo":7.216,"hi":15.724,"caso":"entre","error":18,"de":[2018,2022]}],

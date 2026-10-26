@@ -76,6 +76,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Metropolitano de Techo","capacidad":10000,"sponsor":"BetPlay, Colanta, Pool, Gencell Pharma","marca":"Kimo","temporada":"2024 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692752"},
     2025: {"estadio":"Metropolitano de Techo","capacidad":10000,"sponsor":"Stake","marca":"Go Rigo Go","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
+  'independientemedellin-co': {
+    2016: {"estadio":"Estadio Atanasio Girardot","capacidad":45943,"sponsor":"Pepsi","marca":"Puma","temporada":"2016 Categoría Primera A season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378566724","fuenteManual":"estadio y capacidad: https://es.wikipedia.org/wiki/Estadio_Atanasio_Girardot (capacidad 45.943, sede del DIM); marca y sponsor: https://www.portafolio.co/tendencias/las-marcas-que-patrocinan-los-equipos-del-futbol-colombiano-498599 (6-jul-2016: la camiseta del DIM, campeón de la Liga I-2016, lleva siete patrocinadores: Puma, Office Depot, Coordinadora, Pepsi, Surtimax, Chao Yang y Alkomprar, y «en el pecho de la casaca el logo de Pepsi»); Puma como marca técnica: https://todosobrecamisetas.com/2018/08/camisetas-puma-de-independiente-medellin-2018-19/ (el club viste Puma desde hace varios años); sponsor Pepsi 2016-2017 también en el historial de Football Kit Archive https://www.footballkitarchive.com/independiente-de-medellin-kits-t1406/ (por resumen de búsqueda; la página dio 403)","manual":["estadio","capacidad","sponsor","marca"]},
+  },
   'junior-co': {
     2025: {"estadio":"Metropolitano Roberto Meléndez","capacidad":46692,"sponsor":"Olímpica, Águila, Tecnoglass","marca":"Adidas","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
