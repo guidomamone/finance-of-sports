@@ -1,4 +1,4 @@
-<!-- md: transcripción (Mistral OCR) del informe de UEFA «The European Club Finance and Investment Landscape», edición 2025 | leer: solo para consultar qué dice sobre una liga o un país antes de armar /blog.html; no se copian sus cifras al sitio -->
+<!-- md: transcripción (Mistral OCR) del informe de UEFA «The European Club Finance and Investment Landscape», edición 2025 | leer: solo para consultar qué dice sobre una liga o un país antes de armar la página de blog; no se copian sus cifras al sitio -->
 --- pág. 1 ---
 
 ![img-0.jpeg](img-0.jpeg)

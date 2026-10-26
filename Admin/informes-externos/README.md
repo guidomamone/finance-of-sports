@@ -1,7 +1,7 @@
-<!-- md: los informes de terceros (UEFA, Deloitte y similares) guardados para consultar | leer: antes de armar /blog.html o de citar un informe externo -->
+<!-- md: los informes de terceros (UEFA, Deloitte y similares) guardados para consultar | leer: antes de armar la página de blog o de citar un informe externo -->
 # Informes externos
 
-Informes de otros que el sitio NO publica ni copia. Se guardan para leer qué dicen y, eventualmente, sumarles nuestros datos en un `/blog.html` (TODO «/blog.html»).
+Informes de otros que el sitio NO publica ni copia. Se guardan para leer qué dicen y, eventualmente, sumarles nuestros datos en una página de blog (su punto del TODO).
 Los PDF no se trackean (`.gitignore`); la transcripción sí. Nada de acá entra en lo que se cobra ni en los datos del sitio: ninguna cifra de estos informes se carga como dato; antes de
 citar una, su fila en `Admin/fuentes-externas.md` y su término de uso.
 
