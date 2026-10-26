@@ -99,7 +99,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2023: {
     leagueSize: 20,
-    sinDato: ["unionmagdalena-co"],
     wiki: {"t":"2023 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:23.786, reportType:"official_balance_sheet",
@@ -126,6 +125,10 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"atleticobucaramanga-co-siis-estado-2023",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.661],["Otros ingresos",0.749]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"unionmagdalena-co", revenue:3.166, reportType:"official_balance_sheet",
+        sourceId:"unionmagdalena-co-siis-estado-2023",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.843],["Otros ingresos",0.323]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"boyacachico-co", revenue:3.044, reportType:"official_balance_sheet",
         sourceId:"boyacachico-co-siis-estado-2023",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",3.044],["Otros ingresos",0]],
