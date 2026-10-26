@@ -335,6 +335,8 @@ const clubs = {
   'shrewsburytown-gb': { id:'shrewsburytown-gb', name:'Shrewsbury Town Football Club Limited', displayName:'Shrewsbury Town', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#144E9D' },
   'wiganathletic-gb': { id:'wiganathletic-gb', name:'Wigan Athletic A.F.C. Limited', displayName:'Wigan Athletic', country:'GB', reportingCurrency:'GBP', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#1D59AF' },
   'deportestolima-co': { id:'deportestolima-co', name:'Club Deportes Tolima S.A.', displayName:'Deportes Tolima', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
+  'laequidad-co': { id:'laequidad-co', name:'IDBDC Albinegro S.A.', displayName:'La Equidad', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
+  'aguilasdoradas-co': { id:'aguilasdoradas-co', name:'Talento Dorado S.A.', displayName:'Aguilas Doradas', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
 };
 
 // Source: de dónde sale cada número; `reliability` es lo que distingue dato oficial, de prensa o placeholder.
