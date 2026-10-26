@@ -51,6 +51,9 @@ window.RANKINGS["co-primeraA"] = {
     leagueSize: 20,
     wiki: {"t":"2024 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
+      { id:"deportestolima-co", revenue:10.829, reportType:"official_balance_sheet",
+        sourceId:"deportestolima-co-siis-estado-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",10.33],["Otros ingresos",0.499]] },
       { id:"oncecaldas-co", revenue:6.117, reportType:"official_balance_sheet",
         sourceId:"oncecaldas-co-estados-financieros-2024",
         mix:[["Comercial / Sponsors",1.106],["Estadio",2.73],["Televisión",1.609],["Premios por competencias",0.154],["Venta de Jugadores",0.419],["Otros ingresos",0.099]] },

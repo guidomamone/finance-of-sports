@@ -49,3 +49,5 @@ Estados financieros en disco ahora: 10 ejercicios (2016-2025), cada uno con cert
 Color de marca: #981A26 — vinotinto y dorado (infobox es.wikipedia: Colores #92000A y #CDA434; camiseta local body1 981A26; footylogos #8D3031 burgundy), escudo vinotinto y dorado, verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2023 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2023.pdf` (sourceId `deportestolima-co-siis-estado-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2024 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2024.pdf` (sourceId `deportestolima-co-siis-estado-2024`).
