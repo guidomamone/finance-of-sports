@@ -1,5 +1,7 @@
 # Deportes Tolima (Club Deportes Tolima S.A.)
 
+Color de marca: #8D3031 (vinotinto) — es.wikipedia (infobox «Vinotinto y Dorado», lista ordenada, gana el primero) y el hex de footylogos (burgundy #8D3031), verificado 2026-10-26.
+
 **Ángulos**: sitio oficial: no intentado esta sesión · regulador/país: agotado (SIIS API, serie completa bajada) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 2 (Sonnet) — 2026-10-03
 
 - **Hit fuerte vía SIIS, y el primer club del barrido colombiano SIN proceso de reorganización

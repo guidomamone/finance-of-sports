@@ -1,5 +1,9 @@
 # Independiente Medellín (Corporación Deportiva Independiente Medellín)
 
+**Actualización 2026-10-26:** el club SÍ está en SIIS, como EL EQUIPO DEL PUEBLO S.A. (NIT 900577148, 2016 a 2025), y está cargado desde esos estados; lo de abajo es la búsqueda anterior que no lo encontró.
+
+Color de marca: #E91B29 (rojo) — es.wikipedia (colores «Rojo y azul», lista ordenada, gana el primero) y el hex de footylogos (red #E91B29), verificado 2026-10-26.
+
 - **Dead-end de esta sesión (2026-09-22), con causa societaria identificada pero no cerrada del
   todo.** Es el único club de la Primera A chequeado esta sesión que NO aparece en SIIS
   (Supersociedades) por ninguna vía, a diferencia de los otros 7 clubes nuevos que sí aparecieron.

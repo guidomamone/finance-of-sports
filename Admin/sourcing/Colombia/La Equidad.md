@@ -1,5 +1,7 @@
 # La Equidad (Club Deportivo La Equidad Seguros S.A.)
 
+Color de marca: #33B540 (verde) — es.wikipedia (sección Uniforme: titular «camiseta, pantalón y medias verdes») y el hex de footylogos (green #33B540), verificado 2026-10-26.
+
 - **Club nuevo de la sesión 2026-09-22, y el mejor hallazgo de los 7 clubes nuevos colombianos: 9
   ejercicios con PDF real (2016, 2017, 2019-2025).** Vía SIIS (Supersociedades), NIT **800108152**,
   punto de entrada "Pymes-Individuales", sociedad constituida el 23/12/2012 en Bogotá D.C., estado

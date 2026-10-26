@@ -1,5 +1,7 @@
 # Águilas Doradas (Rionegro) — deposita como TALENTO DORADO S.A.
 
+Color de marca: #C6A845 (dorado) — es.wikipedia (sección Uniforme: «Camiseta dorada, pantalón y medias negras») y el hex de footylogos (gold #C6A845), verificado 2026-10-26.
+
 - **Club nuevo de la sesión 2026-09-22, y el hallazgo metodológicamente más interesante de Colombia:
   el club NO aparece en SIIS con su nombre deportivo.** Buscar `"AGUILAS DORADAS"` o
   `"RIONEGRO AGUILAS"` como frase exacta sobre `nombreEmpresa` devuelve **0 hits**. La sociedad que

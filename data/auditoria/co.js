@@ -523,6 +523,125 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "independientemedellin-co": {
+  "2016": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM CA S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Colombia/Independiente Medellin/dictamen-revisor-fiscal-2016.md",
+    "linea": 48
+   }
+  },
+  "2017": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM CA S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Colombia/Independiente Medellin/dictamen-revisor-fiscal-2017.md",
+    "linea": 48
+   }
+  },
+  "2018": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM CA S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Colombia/Independiente Medellin/dictamen-revisor-fiscal-2018.md",
+    "linea": 183
+   }
+  },
+  "2019": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM CA S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Colombia/Independiente Medellin/dictamen-revisor-fiscal-2019.md",
+    "linea": 191
+   }
+  },
+  "2020": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM CA S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Colombia/Independiente Medellin/dictamen-revisor-fiscal-2020.md",
+    "linea": 241
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM CA S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Colombia/Independiente Medellin/dictamen-revisor-fiscal-2021.md",
+    "linea": 29
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM CA S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Colombia/Independiente Medellin/dictamen-revisor-fiscal-2022.md",
+    "linea": 29
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM CA S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Colombia/Independiente Medellin/dictamen-revisor-fiscal-2023.md",
+    "linea": 264
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM CA S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Colombia/Independiente Medellin/dictamen-revisor-fiscal-2025.md",
+    "linea": 23
+   }
+  }
+ },
  "junior-co": {
   "2025": {
    "auditor": {
