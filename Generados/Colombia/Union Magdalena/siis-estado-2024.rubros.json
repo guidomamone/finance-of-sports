@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Colombia/Union Magdalena/siis-estado-2024.md",
+  "pdf": "Clubes/Colombia/Union Magdalena/siis-estado-2024.pdf",
+  "club": "unionmagdalena-co",
+  "year": 2024,
+  "generatedAt": "2026-10-26T22:12:35.329Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        9735.619
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1496.386
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        202.141
+      ],
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        8433.786
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2028.825
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}
