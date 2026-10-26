@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Colombia/Aguilas Doradas/siis-estado-2016.md",
+  "pdf": "Clubes/Colombia/Aguilas Doradas/siis-estado-2016.pdf",
+  "club": "aguilasdoradas-co",
+  "year": 2016,
+  "generatedAt": "2026-10-26T06:10:10.340Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        9487.082
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        361.463
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        582.17
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        8082.85
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        81.618
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

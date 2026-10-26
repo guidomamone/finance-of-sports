@@ -32,3 +32,5 @@
 Estados financieros en disco ahora: 10 ejercicios (2016-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
 
 Color de marca: #C6A845 — identidad dorada (nombre y escudo dorado/azul oscuro; infobox es.wikipedia: camiseta local histórica DAA520 dorado, 2026 E0D08F; las camisetas recientes son blancas); hex de footylogos (gold), mismo hue que el escudo, verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2024 desde `Clubes/Colombia/Aguilas Doradas/siis-estado-2024.pdf` (sourceId `aguilasdoradas-co-siis-estado-2024`).
