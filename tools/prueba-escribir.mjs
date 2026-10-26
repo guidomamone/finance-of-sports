@@ -40,10 +40,15 @@ try {
   if (fuente.public_note !== 'Informe oficial en formato XHTML (iXBRL)') throw new Error(`la fuente nueva no trae la nota XHTML (public_note: ${fuente.public_note})`);
   // LAS DEMÁS TOOLS QUE ESCRIBEN, en el mismo worktree y sobre los datos de HEAD (idempotentes: no cambian lo cargado). Un ensayo no pasa por los imports dinámicos ni por snapshot/revertir/publicarCambios, que
   // son lo que se rompió cuando se partió cargar.mjs. Cada una tiene que salir con 0 y sin un error de código en la salida; qué se escribe lo mira la prueba de cada tool.
+  // [nombre, argumentos, { idempotente }]: una tool `idempotente` sobre los datos de HEAD no puede dejar ningún JSON de club distinto de como estaba
+  const IDEM = { idempotente: true };
   const ESCRIBEN = [
-    ['caja-deuda --personal --escribir', ['tools/caja-deuda.mjs', '--personal', '--club', 'brighton-gb', '--escribir']],
-    ['caja-deuda --personal --partir --escribir', ['tools/caja-deuda.mjs', '--personal', '--club', 'newcastle-gb', '--partir', '--escribir']],
-    ['recategorizar-etiquetas --escribir', ['tools/recategorizar-etiquetas.mjs', '--categoria', 'grants_donations', '--escribir']],
+    ['caja-deuda --personal --escribir', ['tools/caja-deuda.mjs', '--personal', '--club', 'brighton-gb', '--escribir'], IDEM],
+    ['caja-deuda --personal --partir --escribir', ['tools/caja-deuda.mjs', '--personal', '--club', 'newcastle-gb', '--partir', '--escribir'], IDEM],
+    ['recategorizar-etiquetas --escribir', ['tools/recategorizar-etiquetas.mjs', '--categoria', 'grants_donations', '--escribir'], IDEM],
+    ['dentro-de-otro --escribir', ['tools/dentro-de-otro.mjs', '--club', 'paok-gr', '--escribir'], IDEM],
+    ['gestiones-tanda --armar --escribir', ['tools/gestiones-tanda.mjs', '--armar', '--pais', 'gr', '--escribir'], IDEM],
+    ['recategorizar-linea --escribir', ['tools/recategorizar-linea.mjs', '--club', 'benfica-pt', '--anio', '2007', '--etiqueta', 'Ganhos em imobilizações', '--a', 'player_sales', '--cita', 'Clubes/Portugal/Benfica/relatorio-contas-2006-07.md:361', '--regla', 'prueba-escribir (worktree descartable)', '--mirada', '--escribir']],
     ['generar-correcciones', ['tools/generar-correcciones.mjs']],
     ['ajustes --agregar', ['tools/ajustes.mjs', '--agregar', PDF, 'sin-dudas', '--motivo', 'prueba-escribir (worktree descartable)', '--autor', 'prueba']],
     ['publicar', ['tools/publicar.mjs']],
@@ -51,14 +56,24 @@ try {
   writeFileSync(join(W, PDF), ''); // los PDF no se trackean: ajustes.mjs pide que el documento exista
   const ERROR_DE_CODIGO =/is not a function|is not defined|Cannot find (module|package)|SyntaxError|does not provide an export|REVERTIDO|TypeError|ReferenceError/;
   const antes = execFileSync('git', ['status', '--porcelain', '--', 'data'], { cwd: W, encoding: 'utf8' });
-  for (const [i, [nombre, args]] of ESCRIBEN.entries()) {
+  for (const [nombre, args, opt] of ESCRIBEN) {
     const s = spawnSync('node', [join(W, args[0]), ...args.slice(1)], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28 });
     const out = (s.stdout || '') + (s.stderr || '');
     if (s.status !== 0 || ERROR_DE_CODIGO.test(out)) throw new Error(`${nombre} salió con ${s.status}: ${(out.match(ERROR_DE_CODIGO) ? out.slice(Math.max(0, out.search(ERROR_DE_CODIGO) - 120), out.search(ERROR_DE_CODIGO) + 200) : out.trim().split('\n').slice(-3).join(' | ')).replace(/\n/g, ' | ')}`);
-    // las tres primeras son idempotentes sobre los datos de HEAD: no pueden dejar ningún JSON de club distinto de como estaba tras la carga de arriba
-    if (i < 3) { const ahora = execFileSync('git', ['status', '--porcelain', '--', 'data'], { cwd: W, encoding: 'utf8' }); if (ahora !== antes) throw new Error(`${nombre} cambió datos que no tenía que cambiar:\n${ahora}`); }
+    // las idempotentes sobre los datos de HEAD no pueden dejar ningún JSON de club distinto de como estaba tras la carga de arriba
+    if (opt && opt.idempotente) { const ahora = execFileSync('git', ['status', '--porcelain', '--', 'data'], { cwd: W, encoding: 'utf8' }); if (ahora !== antes) throw new Error(`${nombre} cambió datos que no tenía que cambiar:\n${ahora}`); }
     console.log(`  ok ${nombre}`);
   }
+  // alta-club --escribir: se saca un club chico (Bath Rugby) de data/clubs.js de la copia y la tool lo da de alta otra vez desde su documento; la fila vuelve a estar
+  const MD_ALTA = 'Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.md'; const CLUBS = join(W, 'data/clubs.js');
+  const filaDe = (txt) => txt.split('\n').find((l) => l.includes("'bathrugby-gb':"));
+  const clubsAntes = readFileSync(CLUBS, 'utf8'); if (!filaDe(clubsAntes)) throw new Error('la prueba de alta-club espera que data/clubs.js tenga bathrugby-gb');
+  writeFileSync(CLUBS, clubsAntes.split('\n').filter((l) => !l.includes("'bathrugby-gb':")).join('\n'));
+  const alta = spawnSync('node', [join(W, 'tools/alta-club.mjs'), MD_ALTA, '--escribir'], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28 });
+  const salidaAlta = (alta.stdout || '') + (alta.stderr || '');
+  if (alta.status !== 0 || ERROR_DE_CODIGO.test(salidaAlta)) throw new Error(`alta-club --escribir salió con ${alta.status}: ${(salidaAlta.match(ERROR_DE_CODIGO) ? salidaAlta.slice(Math.max(0, salidaAlta.search(ERROR_DE_CODIGO) - 120), salidaAlta.search(ERROR_DE_CODIGO) + 200) : salidaAlta.trim().split('\n').slice(-3).join(' | ')).replace(/\n/g, ' | ')}`);
+  if (!filaDe(readFileSync(CLUBS, 'utf8'))) throw new Error(`alta-club --escribir salió con 0 pero no volvió a escribir la fila de bathrugby-gb en data/clubs.js: ${salidaAlta.trim().split('\n').slice(-3).join(' | ')}`);
+  console.log('  ok alta-club --escribir (la fila del club vuelve a estar)');
   ok = true; console.log(`prueba-escribir: la escritura de cargar.mjs anduvo (fuente nueva con su nota XHTML) y la de ${ESCRIBEN.length} tools más, en un worktree descartable.`);
   }, 'prueba-escribir');
 } catch (err) {

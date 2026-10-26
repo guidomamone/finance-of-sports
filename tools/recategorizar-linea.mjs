@@ -62,4 +62,4 @@ if (!MIRADA && !A_ACTIVOS) {
   const r = spawnSync('node', [resolve(ROOT, 'tools/cola.mjs'), '--corregir-categoria', pdf, etiqueta, a, '--nota', `recategorizar-linea: ${regla} (${cita})`], { cwd: ROOT, encoding: 'utf8' });
   console.log(r.status === 0 ? 'Respuesta de la cola anotada (una recarga la respeta).' : `Aviso: no se pudo anotar la respuesta de la cola: ${(r.stderr || r.stdout).trim().split('\n')[0]}`);
 }
-console.log(MIRADA ? 'Anotada.' : 'Escrito. Ahora: node tools/publicar.mjs y un commit con «Corrige:».');
+console.log(MIRADA ? 'Anotada.' : `Escrito. Ahora: node tools/dentro-de-otro.mjs --club ${club} --escribir (una marca «posiblemente dentro de otro rubro» de la categoría que acaba de tener línea propia deja de valer), node tools/publicar.mjs y un commit con «Corrige:».`);

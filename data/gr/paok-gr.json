@@ -210,7 +210,7 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -271,7 +271,7 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "player_impairment": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
@@ -365,7 +365,7 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -452,7 +452,7 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
