@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Colombia/Deportes Tolima/siis-estado-2025.pdf",
  "md": "Clubes/Colombia/Deportes Tolima/siis-estado-2025.md",
- "generado": "2026-10-26T04:36:01.847Z",
+ "generado": "2026-10-26T05:45:39.393Z",
  "scriptHuella": "f1d4dee41de6",
- "estado": "cola",
- "clubId": null,
+ "estado": "ok",
+ "clubId": "deportestolima-co",
  "year": 2025,
  "escala": {
   "valor": "miles",
@@ -25,9 +25,7 @@
    "fecha": "2026-10-26"
   }
  ],
- "cola": [
-  "8eeaace"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -51,9 +49,14 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2024: 47745.729 en siis-estado-2024.pdf y 47745.729 en este documento (columna del año anterior)"
+  },
+  {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -142,25 +145,5 @@
    "M": -638.669,
    "linea": 21
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "pendiente",
-  "clave": "805a4c7a40053196d95d4b51fefe4bb9320d316f",
-  "rango": [
-   8,
-   26
-  ],
-  "lineasCargadas": [
-   11,
-   16,
-   12,
-   14,
-   15,
-   17,
-   18,
-   21
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 8 a 26 del .md):\nL9: | Concepto | 2025 | 2024 |\nL10: | --- | ---: | ---: |\nL11: | Ingresos de actividades ordinarias | 49.330.876 | 45.544.864 |\nL12: | Costo de ventas | 2.774.438 | 2.632.780 |\nL13: | Ganancia bruta | 46.556.438 | 42.912.084 |\nL14: | Gastos de ventas | 39.666.000 | 37.305.416 |\nL15: | Gastos de administración | 5.110.640 | 5.166.142 |\nL16: | Otros ingresos | 1.595.496 | 1.973.190 |\nL17: | Otros gastos | 2.326.088 | 1.006.202 |\nL18: | Otras ganancias (pérdidas) | (51.332) | 227.675 |\nL19: | Ganancia (pérdida) por actividades de operación | 997.874 | 1.635.189 |\nL20: | Ganancia (pérdida), antes de impuestos | 997.874 | 1.635.189 |\nL21: | Ingreso (gasto) por impuestos | 638.669 | 720.859 |\nL22: | Ganancia (pérdida) procedente de operaciones continuadas | 359.205 | 914.330 |\nL23: | Ganancia (pérdida) | 359.205 | 914.330 |\nL25: ## Estado de situación financiera\n\nLO QUE SE CARGA:\n- ingreso · \"Ingresos de actividades ordinarias\" · 49330.876 · L11\n- ingreso · \"Otros ingresos\" · 1595.496 · L16\n- gasto · \"Costo de ventas\" · 2774.438 · L12\n- gasto · \"Gastos de ventas\" · 39666 · L14\n- gasto · \"Gastos de administración\" · 5110.64 · L15\n- gasto · \"Otros gastos\" · 2326.088 · L17\n- gasto · \"Otras ganancias (pérdidas)\" · 51.332 · L18\n- impuesto · \"Ingreso (gasto) por impuestos\" · -638.669 · L21"
- }
+ ]
 }

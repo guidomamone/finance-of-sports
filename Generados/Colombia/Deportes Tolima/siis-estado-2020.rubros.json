@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Colombia/Deportes Tolima/siis-estado-2020.md",
+  "pdf": "Clubes/Colombia/Deportes Tolima/siis-estado-2020.pdf",
+  "club": "deportestolima-co",
+  "year": 2020,
+  "generatedAt": "2026-10-26T05:35:59.746Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        15603.304
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3973.902
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Ganancia (pérdida) procedente de operaciones discontinuadas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        519.285
+      ],
+      "glosa": "Ganancia (pérdida) procedente de operaciones discontinuadas"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        276.531
+      ],
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        18455.377
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2146.226
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1019.537
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

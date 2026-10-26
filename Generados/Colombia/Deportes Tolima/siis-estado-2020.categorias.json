@@ -1,0 +1,103 @@
+{
+ "md": "Clubes/Colombia/Deportes Tolima/siis-estado-2020.md",
+ "club": "deportestolima-co",
+ "year": 2020,
+ "generatedAt": "2026-10-26T05:45:40.815Z",
+ "rubrosHuella": "9265b2791ca5a54fc6b2048984922a303f6828c8",
+ "jevHuella": "06042dd8443f4f9e9018c28192ac2a4c6876b2b1",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.9,
+   "categoria": "other_income",
+   "confianza": 0.9
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.95,
+   "categoria": "other_income",
+   "confianza": 0.95
+  },
+  {
+   "label": "Ganancia (pérdida) procedente de operaciones discontinuadas",
+   "lado": "revenue",
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "glosa": "Ganancia (pérdida) procedente de operaciones discontinuadas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_income",
+   "confianza": 0.99
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Costo de ventas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "memoria-claude:exacto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de ventas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations_expense",
+   "escalon": 0,
+   "precedenteDe": "memoria-claude:exacto-con-contexto",
+   "categoria": "lump_football_operations_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_expenses",
+   "confianza": 0.99
+  }
+ ]
+}

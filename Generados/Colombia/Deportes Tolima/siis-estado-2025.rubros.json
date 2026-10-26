@@ -1,73 +1,80 @@
 {
- "md": "Clubes/Colombia/Deportes Tolima/siis-estado-2025.md",
- "pdf": "Clubes/Colombia/Deportes Tolima/siis-estado-2025.pdf",
- "club": "deportes-tolima",
- "year": 2025,
- "generatedAt": "2026-10-26T04:36:01.847Z",
- "origen": "verificar.mjs (proceso nuevo, Versión 324)",
- "rubros": [
-  {
-   "label": "Ingresos de actividades ordinarias",
-   "lado": "revenue",
-   "page": 1,
-   "section": "estado",
-   "values": [
-    49330.876
-   ]
-  },
-  {
-   "label": "Otros ingresos",
-   "lado": "revenue",
-   "page": 1,
-   "section": "estado",
-   "values": [
-    1595.496
-   ]
-  },
-  {
-   "label": "Costo de ventas",
-   "lado": "expense",
-   "page": 1,
-   "section": "estado",
-   "values": [
-    2774.438
-   ]
-  },
-  {
-   "label": "Gastos de ventas",
-   "lado": "expense",
-   "page": 1,
-   "section": "estado",
-   "values": [
-    39666
-   ]
-  },
-  {
-   "label": "Gastos de administración",
-   "lado": "expense",
-   "page": 1,
-   "section": "estado",
-   "values": [
-    5110.64
-   ]
-  },
-  {
-   "label": "Otros gastos",
-   "lado": "expense",
-   "page": 1,
-   "section": "estado",
-   "values": [
-    2326.088
-   ]
-  },
-  {
-   "label": "Otras ganancias (pérdidas)",
-   "lado": "expense",
-   "page": 1,
-   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
-   "values": [
-    51.332
-   ]
-  }
- ]
+  "md": "Clubes/Colombia/Deportes Tolima/siis-estado-2025.md",
+  "pdf": "Clubes/Colombia/Deportes Tolima/siis-estado-2025.pdf",
+  "club": "deportestolima-co",
+  "year": 2025,
+  "generatedAt": "2026-10-26T05:35:59.874Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        49330.876
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1595.496
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2774.438
+      ],
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        39666
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        5110.64
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2326.088
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Otras ganancias (pérdidas)",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+      "values": [
+        51.332
+      ],
+      "glosa": "Otras ganancias (pérdidas)"
+    }
+  ]
 }

@@ -27,6 +27,16 @@ Object.assign(window.CLUB_CONTEXT, {
   'depcali-co': {
     2025: {"estadio":"Deportivo Cali","capacidad":42000,"sponsor":"Wplay, Pastas La Muñeca, FluoCardent","marca":"Hillside","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
+  'deportestolima-co': {
+    2016: {"temporada":"2016 Categoría Primera A season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378566724"},
+    2017: {"estadio":"Manuel Murillo Toro","capacidad":28100,"temporada":"2017 Categoría Primera A season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341690336"},
+    2018: {"estadio":"Manuel Murillo Toro","capacidad":28100,"temporada":"2018 Categoría Primera A season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692380"},
+    2019: {"estadio":"Manuel Murillo Toro","capacidad":28100,"temporada":"2019 Categoría Primera A season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264218"},
+    2020: {"estadio":"Manuel Murillo Toro","capacidad":28100,"temporada":"2020 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375528276"},
+    2021: {"estadio":"Manuel Murillo Toro","capacidad":28100,"temporada":"2021 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375989701"},
+    2022: {"estadio":"Manuel Murillo Toro","capacidad":28100,"temporada":"2022 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376520069"},
+    2023: {"estadio":"Manuel Murillo Toro","capacidad":28100,"sponsor":"AK-1, BetPlay, Mercacentro, Pool","marca":"Sheffy","temporada":"2023 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377160814"},
+  },
   'deportivopereira-co': {
     2025: {"estadio":"Hernán Ramírez Villegas","capacidad":30297,"sponsor":"Aeropuerto Internacional Matecaña","marca":"Oto","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },

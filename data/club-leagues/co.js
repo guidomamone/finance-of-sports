@@ -16,5 +16,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'llaneros-co': { 2025: 'co-primeraA' },
   'alianzafc-co': { 2023: 'co-primeraA' },
   'atleticobucaramanga-co': { 2019: 'co-primeraA', 2020: 'co-primeraA' },
-  'deportestolima-co': { 2025: 'co-primeraA' },
+  'deportestolima-co': { 2025: 'co-primeraA', 2023: 'co-primeraA' },
 });
