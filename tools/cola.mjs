@@ -349,10 +349,9 @@ if (import.meta.url === `file://${process.argv[1]}`) {
         process.exit(1);
       }
     }
-    // Con esquema: --evidencia "ruta.md:12-30" (o ninguna) --seguridad --causa (cola-respuesta.mjs); sin las tres, sin `esquema`.
+    // --evidencia "ruta.md:12-30" (o ninguna), --seguridad y --causa son obligatorios (cola-respuesta.mjs): sin los tres no se guarda.
     const respuesta = lineaDeRespuesta({ id, decision, valor: flag('--valor'), nota: flag('--nota'), evidencia: flag('--evidencia'), seguridad: flag('--seguridad'), causa: flag('--causa'), precedentes: flag('--precedentes') });
     if (respuesta.errores.length) { console.error(`No guardé la respuesta: ${respuesta.errores.join('; ')}. --causa: ${CAUSAS.join('|')}`); process.exit(1); }
-    if (!respuesta.conEsquema) console.log('Aviso: la respuesta no lleva esquema.');
     appendFileSync(ARCHIVO, JSON.stringify(respuesta.linea) + '\n');
     console.log(`Respuesta guardada para ${id}: ${decision}${flag('--valor') ? ` (${flag('--valor')})` : ''}. La toma la próxima corrida de la etapa que mandó el caso.`);
     // PERFIL: UNA RESPUESTA VALE PARA TODO EL CLUB. El perfil (socios, otros deportes) es del club, pero la respuesta llegaba

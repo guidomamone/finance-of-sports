@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1118 — La cola no guarda una respuesta sin evidencia, seguridad y causa [458 B · cola.mjs, cola-respuesta.mjs, probar-registros.mjs]
+- `cola.mjs --responder` se niega si falta `--evidencia` (`ruta.md:12-30` o `ninguna`), `--seguridad` o `--causa`, y dice las que faltan; sin salida de emergencia. `--corregir-categoria` y el cierre de obsoletos siguen igual. La prueba de `probar registros` pasa de «es la de siempre» a «no guarda».
+- `desde` de `esquemas-registros.json` pasa a 2026-10-26: las 112 respuestas del 25 sin esquema quedan como legado y el aviso `registro-fuera-de-esquema` baja a 0. No se reescribieron.
+- Medición: `cola.mjs` y `cola-respuesta.mjs`, lote completo (cargar, audit, escribir, verificar, lote-ensayo, alta): idéntico. Patrón GENERAL. Sin revisión independiente de la Auditora.
+
 ## Versión 1117 — Las páginas de club con margen bruto ya no dicen «Ingresos» [458 A · generate-club-pages.js]
 - Los 14 clubes con ejercicios de margen bruto (los 7 con último ejercicio de margen, entre ellos Lierse SK y Vejle) llaman «Margen bruto» a esa cifra en el título, la descripción, la tabla y la imagen al compartir; la tabla suma la columna y las barras no mezclan bases. Elegida la alternativa B del mockup 149.
 - Medición: `generate-club-pages.js`, medidor audit, lote chico: con las páginas viejas, 2 diferencias explicadas (`club-pages-desfasado`, `codigo-sin-accion`); con las 14 regeneradas, idéntico. Patrón GENERAL. Sin revisión independiente de la Auditora.

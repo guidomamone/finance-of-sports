@@ -28,7 +28,7 @@ caso('`revision` es obligatorio en una condición nueva', validar('auditoria-pro
 
 // ---- lineaDeRespuesta / validar cola-respuesta
 let r = lineaDeRespuesta({ id: 'a1', decision: 'aceptar' });
-caso('sin --evidencia, --seguridad ni --causa la respuesta es la de siempre', !r.conEsquema && !('esquema' in r.linea) && r.errores.length === 0);
+caso('sin --evidencia, --seguridad ni --causa no se guarda y dice las tres que faltan', r.linea === null && r.errores.length === 3, JSON.stringify(r));
 r = lineaDeRespuesta({ id: 'a1', decision: 'aceptar', evidencia: 'Clubes/X/y.md:10-12', seguridad: 'alta', causa: 'lectura-del-documento' });
 caso('con las tres: lleva esquema, la evidencia se parte en md y líneas, y cumple', r.conEsquema && r.errores.length === 0 && r.linea.evidencia.md === 'Clubes/X/y.md' && r.linea.evidencia.lineas.join() === '10,12', JSON.stringify(r));
 caso('«ninguna» es evidencia null', lineaDeRespuesta({ id: 'a1', decision: 'aceptar', evidencia: 'ninguna', seguridad: 'baja', causa: 'otra' }).linea.evidencia === null);
@@ -49,7 +49,9 @@ caso('cola --responder con las tres guarda la línea con esquema que cumple', x.
 x = responder('aceptar', '--seguridad', 'alta');
 caso('cola --responder con una sola no guarda y dice qué falta', x.status === 1 && /evidencia/.test(x.out) && JSON.parse(readFileSync(cola, 'utf8').trim().split('\n').at(-1)).seguridad === 'media', x.out);
 x = responder('aceptar');
-caso('cola --responder sin las tres guarda la de siempre y avisa', x.status === 0 && ultima().esquema === undefined && /no lleva esquema/.test(x.out), x.out);
+caso('cola --responder sin las tres no guarda nada y dice qué falta', x.status === 1 && /evidencia/.test(x.out) && /seguridad/.test(x.out) && /causa/.test(x.out) && ultima().seguridad === 'media', x.out);
+x = responder('descartar', '--evidencia', 'ninguna', '--seguridad', 'baja');
+caso('cola --responder sin --causa no guarda (ninguna decisión sale del esquema)', x.status === 1 && /causa/.test(x.out) && ultima().seguridad === 'media', x.out);
 
 // ---- decision.mjs en un repo de juguete
 const D = join(T, 'repo'); mkdirSync(join(D, 'tools'), { recursive: true }); mkdirSync(join(D, 'Admin', 'registros'), { recursive: true });
