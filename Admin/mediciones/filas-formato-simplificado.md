@@ -35,11 +35,11 @@ Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que 
 | Compra de jugadores | 827 de 1438 (58 %) | 228 de 336 (68 %) | 14.1 % · 64 % | 362 (25 %) | 249 | 0 |
 | Salarios y primas (plantel y cuerpo técnico) | 1148 de 1438 (80 %) | 291 de 336 (87 %) | 48.7 % · 99 % | 14 (1 %) | 157 | 119 |
 | Inversiones (amortizaciones y depreciación) | 1007 de 1438 (70 %) | 269 de 336 (80 %) | 2.0 % · 8 % | 199 (14 %) | 232 | 0 |
-| Organización de partidos | 771 de 1438 (54 %) | 205 de 336 (61 %) | 7.0 % · 31 % | 413 (29 %) | 254 | 0 |
+| Organización de partidos | 769 de 1438 (53 %) | 205 de 336 (61 %) | 7.0 % · 31 % | 413 (29 %) | 256 | 0 |
 | Otras actividades (educación, juvenil, otros deportes, básquet) | 198 de 1438 (14 %) | 62 de 336 (18 %) | 5.6 % · 27 % | 993 (69 %) | 243 | 4 |
 | Administración y gastos generales | 1190 de 1438 (83 %) | 284 de 336 (85 %) | 15.8 % · 72 % | 225 (16 %) | 23 | 0 |
 | Fútbol profesional (sin desglosar por la fuente) | 276 de 1438 (19 %) | 68 de 336 (20 %) | 74.0 % · 89 % | 1162 (81 %) | 0 | 0 |
-| Otros gastos (catch-all) | 1305 de 1438 (91 %) | 304 de 336 (90 %) | 10.2 % · 51 % | 133 (9 %) | 0 | 0 |
+| Otros gastos (catch-all) | 1305 de 1438 (91 %) | 304 de 336 (90 %) | 10.3 % · 51 % | 133 (9 %) | 0 | 0 |
 
 Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que la tienen alguna vez / clubes medidos):
 

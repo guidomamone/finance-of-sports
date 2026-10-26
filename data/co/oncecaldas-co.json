@@ -127,9 +127,9 @@
         {"label":"GASTOS LEGALES","category":"admin_general","subcategory":"admin_general_expense","amount":-3.988,"disclosure":"aggregated"},
         {"label":"MANTENIMIENTO Y REPARACIONES","category":"admin_general","subcategory":"admin_general_expense","amount":-10.442,"disclosure":"aggregated"},
         {"label":"ADECUACION E INSTALACION","category":"admin_general","subcategory":"admin_general_expense","amount":-0.867,"disclosure":"aggregated"},
-        {"label":"GASTOS DE VIAJE","category":"match_operations","subcategory":"match_organisation_expense","amount":-35.938,"disclosure":"aggregated"},
+        {"label":"GASTOS DE VIAJE","category":"admin_general","subcategory":"admin_general_expense","amount":-35.938,"disclosure":"aggregated"},
         {"label":"DEPRECIACIONES","category":"depreciation","subcategory":"depreciation","amount":-4.568,"disclosure":"aggregated"},
-        {"label":"DIVERSOS","category":"admin_general","subcategory":"admin_general_expense","amount":-36.958,"disclosure":"aggregated"},
+        {"label":"DIVERSOS","category":"other_operating_expenses","subcategory":"other_expenses","amount":-36.958,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1507.061,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-33.471,"gross_debt":null,"cash":null},
@@ -149,7 +149,8 @@
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "player_impairment": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
-          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -181,9 +182,9 @@
         {"label":"SERVICIOS","category":"admin_general","subcategory":"admin_general_expense","amount":-44.885,"disclosure":"aggregated"},
         {"label":"GASTOS LEGALES","category":"admin_general","subcategory":"admin_general_expense","amount":-2.286,"disclosure":"aggregated"},
         {"label":"MANTENIMIENTO Y REPARACIONES","category":"admin_general","subcategory":"admin_general_expense","amount":-0.873,"disclosure":"aggregated"},
-        {"label":"GASTOS DE VIAJE","category":"match_operations","subcategory":"match_organisation_expense","amount":-30.524,"disclosure":"aggregated"},
+        {"label":"GASTOS DE VIAJE","category":"admin_general","subcategory":"admin_general_expense","amount":-30.524,"disclosure":"aggregated"},
         {"label":"DEPRECIACIONES","category":"depreciation","subcategory":"depreciation","amount":-2.806,"disclosure":"aggregated"},
-        {"label":"DIVERSOS","category":"admin_general","subcategory":"admin_general_expense","amount":-31.955,"disclosure":"aggregated"},
+        {"label":"DIVERSOS","category":"other_operating_expenses","subcategory":"other_expenses","amount":-31.955,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2430.28,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":1706.815,"gross_debt":null,"cash":null},
@@ -203,7 +204,8 @@
           "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "player_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "player_impairment": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
-          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -231,7 +233,7 @@
         {"label":"ADECUACION E INSTALACION","category":"admin_general","subcategory":"admin_general_expense","amount":-0.035,"disclosure":"aggregated"},
         {"label":"GASTOS DE VIAJE","category":"match_operations","subcategory":"match_organisation_expense","amount":-22.06,"disclosure":"aggregated"},
         {"label":"DEPRECIACIONES","category":"depreciation","subcategory":"depreciation","amount":-1.164,"disclosure":"aggregated"},
-        {"label":"DIVERSOS","category":"admin_general","subcategory":"admin_general_expense","amount":-14.584,"disclosure":"aggregated"},
+        {"label":"DIVERSOS","category":"other_operating_expenses","subcategory":"other_expenses","amount":-14.584,"disclosure":"aggregated"},
         {"label":"HONORARIOS","category":"admin_general","subcategory":"admin_general_expense","amount":-49.825,"disclosure":"aggregated"},
         {"label":"IMPUESTOS","category":"admin_general","subcategory":"admin_general_expense","amount":-492.496,"disclosure":"aggregated"},
         {"label":"ARRENDAMIENTOS","category":"admin_general","subcategory":"admin_general_expense","amount":-605.806,"disclosure":"aggregated"},
@@ -250,7 +252,7 @@
           "amount": -3649.049,
           "disclosure": "aggregated"
         },
-        {"label":"DIVERSOS","category":"admin_general","subcategory":"admin_general_expense","amount":-1075.825,"disclosure":"aggregated"},
+        {"label":"DIVERSOS","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1075.825,"disclosure":"aggregated"},
         {"label":"PROVISIONES","category":"other_operating_expenses","subcategory":"other_expenses","amount":-26.242,"disclosure":"aggregated"},
         {"label":"GASTOS FINANCIEROS","category":"admin_general","subcategory":"admin_general_expense","amount":-820.054,"disclosure":"aggregated"},
         {"label":"GASTOS EXTRAORDINARIOS","category":"exceptional","subcategory":"exceptional_items","amount":-713.284,"disclosure":"aggregated"},
