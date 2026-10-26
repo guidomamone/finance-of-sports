@@ -190,7 +190,7 @@ async function estadosDe(club, anios, { escribir, rehacer, sinNotas }) {
     mkdirSync(dir, { recursive: true });
     const armado = armarMd({ club, nit: cfg.nit, anio: a, res, bal, nombre: emp?.nombreEmpresa || res.infoEmpresa.nombreEmpresa, consulta: hoy });
     const { filasRes, sal, ant } = armado; let md = armado.md; let notas = null;
-    if (abre.abiertos.length) { notas = anexarNotas({ md, notasRel, notasMd, abiertos: abre.abiertos, nombreDe: (clave) => filasRes.find((f) => f.clave === clave).nombre }); md = notas.md; }
+    if (abre.abiertos.length) { notas = anexarNotas({ md, notasRel, notasMd, abiertos: abre.abiertos, nombreDe: (clave) => filasRes.find((f) => f.clave === clave).nombre, reservados: filasRes.map((f) => f.nombre) }); md = notas.md; }
     imprimirPdf(md, `${base}.pdf`);
     writeFileSync(`${base}.json`, JSON.stringify({ consulta: hoy, nit: cfg.nit, anio: Number(a), siis_empresas: emp, siis_resultadointegral: res, siis_sitfinan: bal }, null, 1) + '\n');
     writeFileSync(`${base}.md`, md); escritos++;
