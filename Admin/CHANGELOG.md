@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1169 — Once Caldas 2016, 2017, 2019, 2020 y 2021 desde SIIS [463 · oncecaldas-co]
+- Con esto Once Caldas tiene sus 10 años (2016 a 2025). Liga Primera A de Wikipedia (coincidencia exacta); estadio Palogrande (28.678) y marca de Wikipedia; sponsor de FKA, fuente única y débil: «sin sponsor» 2016 y 2017, Colanta 2019 a 2021 (revisar con prensa colombiana con fecha). 2016 y 2017 abren con las notas del club; 2019 a 2021 quedan como SIIS. Líneas del auditor de 2016, 2017, 2019 y 2021 (sin salvedades; 2019 de otra firma, Gerencia y Control); falta el dictamen de 2020.
+- Medición: no cambió ninguna tool; la carga corrió en segundo plano (~11 min) con `club-siis --avanzar --ejecutar --cargar --en-segundo-plano` y la cola quedó sin preguntas.
+
 ## Versión 1168 — Fortaleza CEIF 2016 desde SIIS [463 · fortalezaceif-co]
 - Con esto Fortaleza CEIF tiene sus 10 años (2016 a 2025). Liga Primera A de 2016 (ascendió de la B en 2015 y descendió al cerrar 2016), estadio Metropolitano de Techo y sponsor «Seguros del Estado» de Wikipedia (fuente única, débil); en SIIS el club imprime Costo de ventas y Gastos de ventas en 0 y todos los gastos en administración, así que `sin-salarios` queda silenciado con la cita. Sin dictamen del revisor fiscal de 2016 a 2019.
 - Medición: no cambió ninguna tool; el año por el pipeline medido, con el camino `club-siis --avanzar --ejecutar --cargar` en unos 3 minutos y la cola sin preguntas.

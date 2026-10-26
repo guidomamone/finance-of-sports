@@ -858,6 +858,30 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "oncecaldas-co": {
+  "2016": {
+   "auditor": {
+    "nombre": "Asesorías y Soluciones Contables S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Once Caldas/dictamen-revisor-fiscal-2016.md",
+    "linea": 36
+   }
+  },
+  "2017": {
+   "auditor": {
+    "nombre": "Asesorías y Soluciones Contables S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Once Caldas/dictamen-revisor-fiscal-2017.md",
+    "linea": 36
+   }
+  },
   "2018": {
    "auditor": {
     "nombre": "Asesorías y Soluciones Contables S.A.S.",
@@ -868,6 +892,30 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Colombia/Once Caldas/dictamen-revisor-fiscal-2018.md",
     "linea": 36
+   }
+  },
+  "2019": {
+   "auditor": {
+    "nombre": "Gerencia y Control S.A.S",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Once Caldas/dictamen-revisor-fiscal-2019.md",
+    "linea": 43
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Asesorías y Soluciones Contables S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Once Caldas/dictamen-revisor-fiscal-2021.md",
+    "linea": 21
    }
   },
   "2022": {
