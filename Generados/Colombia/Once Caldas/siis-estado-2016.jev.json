@@ -1,0 +1,216 @@
+{
+ "md": "Clubes/Colombia/Once Caldas/siis-estado-2016.md",
+ "generatedAt": "2026-10-26T20:55:49.610Z",
+ "rubrosHuella": "35e3862476f1b2d394768b2780c003751c1d20b9",
+ "rubros": [
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS DE PERSONAL",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "wages_squad",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "HONORARIOS",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "IMPUESTOS",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "ARRENDAMIENTOS",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "SEGUROS",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "SERVICIOS",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS LEGALES",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "MANTENIMIENTO Y REPARACIONES",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "ADECUACION E INSTALACION",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS DE VIAJE",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DEPRECIACIONES",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DIVERSOS",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1143
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1106
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.48
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1034
+  }
+ ]
+}

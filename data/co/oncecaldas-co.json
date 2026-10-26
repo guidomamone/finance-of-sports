@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-25",
+  "exported_at": "2026-10-26",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "oncecaldas-co",
@@ -52,11 +52,76 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf"
+    },
+    {
+      "id": "oncecaldas-co-siis-estado-2016",
+      "club_id": "oncecaldas-co",
+      "title": "Once Caldas S.A. En Reorganización — siis-estado-2016 (ejercicio 2016)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Once Caldas/siis-estado-2016.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2022,"last_year":2025}],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2016,
+      "period_end": "2016-12-31",
+      "currency": "COP",
+      "source_id": "oncecaldas-co-siis-estado-2016",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2016-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 17789.038,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":776.161,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-230.568,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-14523.514,"disclosure":"aggregated"},
+        {"label":"GASTOS DE PERSONAL","category":"admin_general","subcategory":"admin_general_expense","amount":-757.862,"disclosure":"aggregated"},
+        {"label":"HONORARIOS","category":"admin_general","subcategory":"admin_general_expense","amount":-69.572,"disclosure":"aggregated"},
+        {"label":"IMPUESTOS","category":"admin_general","subcategory":"admin_general_expense","amount":-12.05,"disclosure":"aggregated"},
+        {"label":"ARRENDAMIENTOS","category":"admin_general","subcategory":"admin_general_expense","amount":-0.045,"disclosure":"aggregated"},
+        {"label":"SEGUROS","category":"admin_general","subcategory":"admin_general_expense","amount":-2.363,"disclosure":"aggregated"},
+        {"label":"SERVICIOS","category":"admin_general","subcategory":"admin_general_expense","amount":-47.167,"disclosure":"aggregated"},
+        {"label":"GASTOS LEGALES","category":"admin_general","subcategory":"admin_general_expense","amount":-3.988,"disclosure":"aggregated"},
+        {"label":"MANTENIMIENTO Y REPARACIONES","category":"admin_general","subcategory":"admin_general_expense","amount":-10.442,"disclosure":"aggregated"},
+        {"label":"ADECUACION E INSTALACION","category":"admin_general","subcategory":"admin_general_expense","amount":-0.867,"disclosure":"aggregated"},
+        {"label":"GASTOS DE VIAJE","category":"match_operations","subcategory":"match_organisation_expense","amount":-35.938,"disclosure":"aggregated"},
+        {"label":"DEPRECIACIONES","category":"depreciation","subcategory":"depreciation","amount":-4.568,"disclosure":"aggregated"},
+        {"label":"DIVERSOS","category":"admin_general","subcategory":"admin_general_expense","amount":-36.958,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1507.061,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-33.471,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":18565.199,"expenses":17242.963,"net_result":1288.764},
+      "adjustments": {
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":17789.038,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {"line":"Gastos de ventas","side":"expense","amount":14523.514,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "player_impairment": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        },
+        "revenue_basis": "full"
+      }
+    },
     {
       "fiscal_year": 2018,
       "period_end": "2018-12-31",

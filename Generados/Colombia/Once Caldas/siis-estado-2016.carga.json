@@ -1,0 +1,619 @@
+{
+ "pdf": "Clubes/Colombia/Once Caldas/siis-estado-2016.pdf",
+ "generado": "2026-10-26T20:55:57.452Z",
+ "frena": [],
+ "avisos": [],
+ "ejercicio": {
+  "clubId": "oncecaldas-co",
+  "year": 2016,
+  "cierre": "2016-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Ingresos de actividades ordinarias",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 17789.038,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros ingresos",
+    "normalizedCategory": "other_income",
+    "amountNative": 776.161,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Costo de ventas",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -230.568,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos de ventas",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -14523.514,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "GASTOS DE PERSONAL",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -757.862,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "HONORARIOS",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -69.572,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "IMPUESTOS",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -12.05,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "ARRENDAMIENTOS",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.045,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "SEGUROS",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.363,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "SERVICIOS",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -47.167,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "GASTOS LEGALES",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.988,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "MANTENIMIENTO Y REPARACIONES",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -10.442,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "ADECUACION E INSTALACION",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.867,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "GASTOS DE VIAJE",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -35.938,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "DEPRECIACIONES",
+    "normalizedCategory": "depreciation",
+    "amountNative": -4.568,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "DIVERSOS",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -36.958,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Otros gastos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1507.061,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "COP",
+   "fxRef": "COP@2016-12-31",
+   "sourceId": "oncecaldas-co-siis-estado-2016",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0,
+   "tax": -33.471,
+   "sinDesglose": [
+    {
+     "renglon": "Ingresos de actividades ordinarias",
+     "lado": "revenue",
+     "importe": 17789.038,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "net_sales"
+    },
+    {
+     "renglon": "Gastos de ventas",
+     "lado": "expense",
+     "importe": 14523.514,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "other"
+    }
+   ],
+   "baseIngreso": "full",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 18565.199,
+   "officialTotalExpenses": 17242.963,
+   "officialPAT": 1288.764
+  },
+  "source": {
+   "id": "oncecaldas-co-siis-estado-2016",
+   "clubId": "oncecaldas-co",
+   "title": "Once Caldas S.A. En Reorganización — siis-estado-2016 (ejercicio 2016)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Colombia/Once Caldas/siis-estado-2016.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Once Caldas/siis-estado-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Colombia/Once Caldas/siis-estado-2016.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2016-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "oncecaldas-co",
+ "year": 2016,
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Once Caldas/siis-estado-2016.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2016.md L11-L118",
+   "autor": "Claude",
+   "fecha": "2026-10-26"
+  }
+ ],
+ "seleccion": {
+  "filas": 18,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "native": 17789.038,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 17789.038,
+   "cat": "lump_football_operations",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 17789.038
+  },
+  {
+   "label": "Otros ingresos",
+   "page": 1,
+   "native": 776.161,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 776.161,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 776.161
+  },
+  {
+   "label": "Costo de ventas",
+   "page": 1,
+   "native": 230.568,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 230.568,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -230.568
+  },
+  {
+   "label": "Gastos de ventas",
+   "page": 1,
+   "native": 14523.514,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 14523.514,
+   "cat": "lump_football_operations_expense",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -14523.514
+  },
+  {
+   "label": "GASTOS DE PERSONAL",
+   "page": 1,
+   "native": 757.862,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 757.862,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -757.862
+  },
+  {
+   "label": "HONORARIOS",
+   "page": 1,
+   "native": 69.572,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 69.572,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -69.572
+  },
+  {
+   "label": "IMPUESTOS",
+   "page": 1,
+   "native": 12.05,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 12.05,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -12.05
+  },
+  {
+   "label": "ARRENDAMIENTOS",
+   "page": 1,
+   "native": 0.045,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 0.045,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.045
+  },
+  {
+   "label": "SEGUROS",
+   "page": 1,
+   "native": 2.363,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 2.363,
+   "cat": "admin_general_expense",
+   "conf": 0.92,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.363
+  },
+  {
+   "label": "SERVICIOS",
+   "page": 1,
+   "native": 47.167,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 47.167,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -47.167
+  },
+  {
+   "label": "GASTOS LEGALES",
+   "page": 1,
+   "native": 3.988,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 3.988,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.988
+  },
+  {
+   "label": "MANTENIMIENTO Y REPARACIONES",
+   "page": 1,
+   "native": 10.442,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 10.442,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -10.442
+  },
+  {
+   "label": "ADECUACION E INSTALACION",
+   "page": 1,
+   "native": 0.867,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 0.867,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.867
+  },
+  {
+   "label": "GASTOS DE VIAJE",
+   "page": 1,
+   "native": 35.938,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 35.938,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -35.938
+  },
+  {
+   "label": "DEPRECIACIONES",
+   "page": 1,
+   "native": 4.568,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 4.568,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.568
+  },
+  {
+   "label": "DIVERSOS",
+   "page": 1,
+   "native": 36.958,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 36.958,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-25 (sesion): lineas 638-653: DIVERSOS son gastos generales (logistica de eventos, otros, aseo, papeleria): admin_general_expense",
+   "destino": "expense",
+   "amountNative": -36.958
+  },
+  {
+   "label": "Otros gastos",
+   "page": 1,
+   "native": 1507.061,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1507.061,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1507.061
+  },
+  {
+   "label": "Ingreso (gasto) por impuestos",
+   "page": null,
+   "native": -33.471,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Gastos de administración\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 18565.199,
+  "expSum": -17242.963,
+  "officialTotalRevenue": 18565.199,
+  "officialTotalExpenses": 17242.963,
+  "officialPAT": 1288.764,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 1288.764,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 18565.199
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 17242.963
+  }
+ },
+ "liga": {
+  "valor": "co-primeraA",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2016,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2016-12-31",
+   "fuente": "año del ejercicio + mes de cierre (los demás .md del club (3 de 3 documentos cierran en el mes 12); este documento no alcanza solo)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "COP",
+   "fuente": "moneda de curso legal de Colombia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "COP@2016-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene COP@2016-12-31 = 3000.71 (TRM oficial (Banco de la República / Superfinanciera de Colombia) al 2016-12-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "oncecaldas-co-siis-estado-2016",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "co-primeraA",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 2,
+  "lineasGasto": 15,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
+}

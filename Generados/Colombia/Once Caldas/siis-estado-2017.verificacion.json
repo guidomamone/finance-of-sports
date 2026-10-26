@@ -1,0 +1,245 @@
+{
+ "pdf": "Clubes/Colombia/Once Caldas/siis-estado-2017.pdf",
+ "md": "Clubes/Colombia/Once Caldas/siis-estado-2017.md",
+ "generado": "2026-10-26T20:55:55.706Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "oncecaldas-co",
+ "year": 2017,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Once Caldas/siis-estado-2017.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2017.md L11-L117",
+   "autor": "Claude",
+   "fecha": "2026-10-26"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 0.000999999999407919
+  },
+  {
+   "nombre": "documento del año 2018",
+   "ok": true,
+   "detalle": "ingresos de 2017: 17660.46 en este documento y 17660.46 en estados-financieros-2018.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2016",
+   "ok": true,
+   "detalle": "ingresos de 2016: 18565.199 en siis-estado-2016.pdf y 18565.199 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "línea 106: 754,574 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 107: 64,422 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 109: 10,814 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 111: 44,885 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 112: 2,286 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 115: 30,524 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 116: 2,806 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 117: 31,955 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 17660.46,
+  "gastos": 18577.999,
+  "financiero": 0,
+  "impuesto": -1706.815,
+  "resultadoImpreso": 789.275,
+  "resultadoParaCargar": 789.275,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "lado": "ingreso",
+   "M": 16672.414,
+   "pagina": 1,
+   "linea": 11,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros ingresos",
+   "lado": "ingreso",
+   "M": 988.046,
+   "pagina": 1,
+   "linea": 16,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Costo de ventas",
+   "lado": "gasto",
+   "M": 1273.292,
+   "pagina": 1,
+   "linea": 12,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de ventas",
+   "lado": "gasto",
+   "M": 13931.288,
+   "pagina": 1,
+   "linea": 14,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "GASTOS DE PERSONAL",
+   "lado": "gasto",
+   "M": 754.574,
+   "pagina": 1,
+   "linea": 106,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "HONORARIOS",
+   "lado": "gasto",
+   "M": 64.422,
+   "pagina": 1,
+   "linea": 107,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "ARRENDAMIENTOS",
+   "lado": "gasto",
+   "M": 10.814,
+   "pagina": 1,
+   "linea": 109,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "SERVICIOS",
+   "lado": "gasto",
+   "M": 44.885,
+   "pagina": 1,
+   "linea": 111,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "GASTOS LEGALES",
+   "lado": "gasto",
+   "M": 2.286,
+   "pagina": 1,
+   "linea": 112,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "MANTENIMIENTO Y REPARACIONES",
+   "lado": "gasto",
+   "M": 0.873,
+   "pagina": 1,
+   "linea": 113,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "GASTOS DE VIAJE",
+   "lado": "gasto",
+   "M": 30.524,
+   "pagina": 1,
+   "linea": 115,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "DEPRECIACIONES",
+   "lado": "gasto",
+   "M": 2.806,
+   "pagina": 1,
+   "linea": 116,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "DIVERSOS",
+   "lado": "gasto",
+   "M": 31.955,
+   "pagina": 1,
+   "linea": 117,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Otros gastos",
+   "lado": "gasto",
+   "M": 2430.28,
+   "pagina": 1,
+   "linea": 17,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [],
+ "impuesto": [
+  {
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "M": 1706.815,
+   "linea": 20
+  }
+ ],
+ "confirmadosPorSumas": [
+  {
+   "linea": 106,
+   "numero": "754,574"
+  },
+  {
+   "linea": 107,
+   "numero": "64,422"
+  },
+  {
+   "linea": 109,
+   "numero": "10,814"
+  },
+  {
+   "linea": 111,
+   "numero": "44,885"
+  },
+  {
+   "linea": 112,
+   "numero": "2,286"
+  },
+  {
+   "linea": 115,
+   "numero": "30,524"
+  },
+  {
+   "linea": 116,
+   "numero": "2,806"
+  },
+  {
+   "linea": 117,
+   "numero": "31,955"
+  }
+ ]
+}

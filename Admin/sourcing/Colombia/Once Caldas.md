@@ -52,3 +52,5 @@ Estados financieros en disco ahora: 10 ejercicios (2016-2025), cada uno con cert
 - Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2018 desde `Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf` (sourceId `oncecaldas-co-estados-financieros-2018`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-25): ejercicio 2018 desde `Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf` (sourceId `oncecaldas-co-estados-financieros-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2016 desde `Clubes/Colombia/Once Caldas/siis-estado-2016.pdf` (sourceId `oncecaldas-co-siis-estado-2016`).

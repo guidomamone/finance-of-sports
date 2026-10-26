@@ -1,0 +1,133 @@
+{
+ "md": "Clubes/Colombia/Once Caldas/siis-estado-2017.md",
+ "generatedAt": "2026-10-26T20:55:49.611Z",
+ "rubrosHuella": "f7b5e47f0c6ed48c3a39d49304fb17ec5e2a11ca",
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS DE PERSONAL",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "wages_squad",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "HONORARIOS",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "ARRENDAMIENTOS",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "SERVICIOS",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS LEGALES",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "MANTENIMIENTO Y REPARACIONES",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS DE VIAJE",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DEPRECIACIONES",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DIVERSOS",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

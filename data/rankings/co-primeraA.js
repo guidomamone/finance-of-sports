@@ -264,7 +264,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2016: {
     leagueSize: 20,
-    sinDato: ["oncecaldas-co"],
     wiki: {"t":"2016 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:16.41, reportType:"official_balance_sheet",
@@ -273,6 +272,10 @@ window.RANKINGS["co-primeraA"] = {
       { id:"deportestolima-co", revenue:8.31, reportType:"official_balance_sheet",
         sourceId:"deportestolima-co-siis-estado-2016",
         mix:[["Comercial / Sponsors",1.031],["Estadio",1.043],["Televisión",1.082],["Premios por competencias",0.224],["Venta de Jugadores",4.93]] },
+      { id:"oncecaldas-co", revenue:6.187, reportType:"official_balance_sheet",
+        sourceId:"oncecaldas-co-siis-estado-2016",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.928],["Otros ingresos",0.259]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"laequidad-co", revenue:5.145, reportType:"official_balance_sheet",
         sourceId:"laequidad-co-siis-estado-2016",
         mix:[["Comercial / Sponsors",1.457],["Estadio",0.185],["Televisión",1.418],["Premios por competencias",0.036],["Venta de Jugadores",1.14],["Otras actividades (educación y otros deportes)",0.839],["Otros ingresos",0.071]] },
