@@ -1,0 +1,17 @@
+{
+  "opcion": "A",
+  "criterios": {
+    "1": { "valor": "a favor", "cita": { "ref": "Clubes/Portugal/Sporting CP/relatorio-contas-2002-03.md:725", "texto": "O valor registado na rubrica Ganhos em Imobilizações reflecte as mais-valias apuradas na alienação dos direitos desportivos dos jogadores Ricardo Quaresma", "mismo_hecho": true } },
+    "2": { "valor": "a favor", "cita": { "ref": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.md:420", "texto": "nomeadamente com a mais-valia obtida com a venda do atleta Simão Sabrosa", "mismo_hecho": true } },
+    "3": { "valor": "a favor", "cita": { "ref": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.md:770", "texto": "reflecte as mais-valias apuradas na alienação dos direitos desportivos do jogador Hugo Viana", "mismo_hecho": true } },
+    "4": { "valor": "a favor", "cita": { "ref": "Clubes/Grecia/PAOK/PAOK_FS_2025-06-30.md:896", "texto": "Από την πώληση ποδοσφαιριστών και προπονητών, προέκυψε καθαρό κέρδος", "mismo_hecho": true } },
+    "5": { "valor": "a favor", "cita": { "ref": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.md:706", "texto": "compreende a mais valia apurada na alienação da participação financeira detida na DE – Desporto e Espectáculo, SA", "mismo_hecho": false } },
+    "6": { "valor": "no aplica" },
+    "7": { "valor": "a favor", "cita": { "ref": "Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.md:706", "texto": "compreende a mais valia apurada na alienação da participação financeira detida na DE – Desporto e Espectáculo, SA", "mismo_hecho": false } },
+    "8": { "valor": "no aplica" },
+    "9": { "valor": "a favor", "cita": { "ref": "Admin/CONVENCIONES-DATOS.md:476", "texto": "`player_sales` es plata que entró por una venta.", "mismo_hecho": false } }
+  },
+  "hallazgo": "El caso afirma que Sporting 2005 (64,981 M) es venta de jugadores. Es falso: Sporting 2004-05 L706 y 2005-06 L744 dicen que la ganancia es la venta de la participacion financiera en DE - Desporto e Espectaculo SA (sociedad del estadio), no de jugadores. Bajo A esa linea queda en other_income (como la regla L456 de ventas de participaciones); B la mandaria a player_sales erroneamente. Bajo A si pasan: Sporting 2001 (13,413 M, Hugo Viana + fondo de jugadores), Sporting 2003 (8,108 M, Quaresma y otros), Benfica 2006/07 (24,114 M, Simao), PAOK (nota de venta de futbolistas, 8 ejercicios).",
+  "anios_que_cambian": ["sportingcp-pt-2002", "sportingcp-pt-2003", "benfica-pt-2007", "paok-gr-2017", "paok-gr-2018", "paok-gr-2019", "paok-gr-2020", "paok-gr-2021", "paok-gr-2022", "paok-gr-2023", "paok-gr-2024", "paok-gr-2025"],
+  "no_abri": ["Admin/registros/auditoria-proceso.jsonl", "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2022-23.md", "data/pt/ (JSON de las otras ligas y clubes, salvo sportingcp-pt.json)", "Admin/CONVENCIONES-DATOS.md:600", "skill club-data-mapping y su referencia/"]
+}

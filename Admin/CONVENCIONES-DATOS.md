@@ -457,6 +457,20 @@ CATEGORÍA (prompt, futbol): en Bélgica, el intangible «Concessies, octrooien,
 el meta `assetSales` del año, no como línea de ingresos: así los ingresos cierran con el turnover impreso y el resultado con el impreso. Casos:
 Everton 2025 (£49,2 M, venta de Everton FC Women y Goodison Park Stadium a la matriz Roundhouse), Newcastle 2025 (venta de una filial) y Brentford 2025.
 
+## REGLA: una ganancia en inmovilizado de un club de fútbol va a `player_sales` solo si el documento la liga con jugadores (votación 3 a 0, 2026-10-25)
+
+«Ganhos em imobilizações», «Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων», «Profit on disposal of fixed assets» y parecidos son ambiguos: en un club de
+fútbol pueden ser la venta de derechos de jugadores (que el informe de gestión o una nota imprime con otro rótulo) o la venta de una filial, una participación
+o un inmueble. Se decide por el documento de cada ejercicio, nunca por la etiqueta ni por lo que dijo otro año. Se busca la MISMA CIFRA en el informe y en las
+notas (un grep del importe en el `.md`, no leer el documento entero). Si el documento la llama venta de jugadores, de derechos desportivos o traspasos, va a
+`player_sales` con su cita; si es la venta de una filial o de una participación, a `assetSales` (la regla de arriba); si no dice nada, queda en `other_income`.
+Casos que sí: Benfica 2006/07 (24,1 M = «Alienação de direitos desportivos», `relatorio-contas-2006-07.md` L361), PAOK (la nota lo dice en cada ejercicio),
+Sporting 2001/02 (`relatorio-contas-2001.md` L152 y L180). Que no: Sporting 2004/05 (64,98 M: venta de la participación en DE, `relatorio-contas-2004-05.md`
+L706, va a `assetSales`) y Chelsea 2022/23 (£76,5 M: venta de la sociedad Blueco 22, `chelsea-fc-holdings-group-accounts-2022-23.md` L98). El caso y los tres votos:
+`Admin/mediciones/414-votacion-ganancia-inmovilizado-jugadores.md` y `Admin/mediciones/414-votos/`.
+CATEGORÍA (prompt, futbol): una ganancia en inmovilizado (Ganhos em imobilizações, Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων, Profit on disposal of fixed assets) va a player_sales solo si una nota o el informe de gestión del mismo documento la llama venta de jugadores, de derechos desportivos o traspasos (la misma cifra con otro rótulo); si es la venta de una filial o de una participación va a assetSales; si el documento no lo dice queda en other_income.
+EJEMPLO-CATEGORÍA: benfica-pt | revenue | Ganhos em imobilizações | player_sales
+
 ## REGLA: los bonos de fichaje o de trayectoria pagados a jugadores y técnicos por nombre son `wages_squad` (votación 3 a 0)
 
 Un bono pagado a personas, sin contrato de pase con otro club, es remuneración, no `player_amortisation` (que es adquisición de pases a otros clubes).

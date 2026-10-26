@@ -1,0 +1,14 @@
+{ "opcion": "A",
+  "criterios": {
+    "1": { "valor": "a favor", "cita": { "ref": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.md:180", "texto": "resultaram da alienação dos direitos desportivos do jogador Hugo Viana", "mismo_hecho": true } },
+    "2": { "valor": "a favor", "cita": { "ref": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.md:420", "texto": "a mais-valia obtida com a venda do atleta Simão Sabrosa", "mismo_hecho": true } },
+    "3": { "valor": "no aplica", "cita": {} },
+    "4": { "valor": "a favor", "cita": { "ref": "Clubes/Grecia/PAOK/PAOK_FS_2025-06-30.md:896", "texto": "Από την πώληση ποδοσφαιριστών και προπονητών, προέκυψε καθαρό κέρδος", "mismo_hecho": true } },
+    "5": { "valor": "a favor", "cita": { "ref": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2022-23.md:98", "texto": "This resulted in a profit on disposal of fixed assets of £76.5m to the Group.", "mismo_hecho": false } },
+    "6": { "valor": "no aplica", "cita": {} },
+    "7": { "valor": "a favor", "cita": { "ref": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2022-23.md:98", "texto": "This resulted in a profit on disposal of fixed assets of £76.5m to the Group.", "mismo_hecho": false } },
+    "8": { "valor": "no aplica", "cita": {} },
+    "9": { "valor": "a favor", "cita": {} }
+  },
+  "anios_que_cambian": ["sportingcp-pt-2005", "sportingcp-pt-2002", "benfica-pt-2006/07", "paok-gr-2016/17-2024/25"],
+  "no_abri": ["data/pt/sportingcp-pt.json", "Admin/carga-clubes/sportingcp-pt.md", "data/pt/ (JSON de otros clubes de la liga y del país)", "Admin/registros/auditoria-proceso.jsonl", "Admin/CONVENCIONES-DATOS.md:600 y :448-:486 (salvo L456)"] }
