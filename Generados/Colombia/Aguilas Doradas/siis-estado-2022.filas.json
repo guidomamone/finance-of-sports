@@ -1,16 +1,18 @@
 {
  "pdf": "Clubes/Colombia/Aguilas Doradas/siis-estado-2022.pdf",
  "md": "Clubes/Colombia/Aguilas Doradas/siis-estado-2022.md",
- "mdSha1": "603e15a3bd4d7bb998f84a6fbf9912baeda5061b",
- "ubicacionSha1": "a5d381acc039ca31bc93cbd962ebd6d9a667d7b1",
+ "mdSha1": "49d27b7306c1de1842294ce66d9bc65b06716340",
+ "ubicacionSha1": "9b1846923f52448e6cab4e99117ff820bd40e7bb",
  "modelo": "a mano (Claude Code, sesión 2026-10-26)",
- "generado": "2026-10-26T06:07:09.783Z",
+ "generado": "2026-10-26T12:30:26.864Z",
  "salida": "a mano",
  "ubicacion": {
   "estado": [
    "b1"
   ],
-  "notas_ingresos": [],
+  "notas_ingresos": [
+   "b10"
+  ],
   "notas_gastos": []
  },
  "escalas": [
@@ -18,6 +20,11 @@
    "bloque": "b1",
    "escala": "miles",
    "evidencia": "L1: Cifras en miles de pesos colombianos"
+  },
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "L95: Cifras de esta tabla en pesos colombianos"
   }
  ],
  "filas": [
@@ -150,6 +157,106 @@
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 99,
+   "etiqueta": "Por taquilla",
+   "actual": "827,326,000",
+   "anterior": "1,008,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 100,
+   "etiqueta": "Venta Derechos deportivos",
+   "actual": "4,876,838,591",
+   "anterior": "3,334,500,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 101,
+   "etiqueta": "Publicidad y propaganda",
+   "actual": "2,260,496,000",
+   "anterior": "925,496,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 102,
+   "etiqueta": "Dimayor: Derechos de televisión",
+   "actual": "5,355,140,074",
+   "anterior": "4,750,923,560",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 103,
+   "etiqueta": "Dimayor: Diferidos",
+   "actual": "159,680,776",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 104,
+   "etiqueta": "Dimayor participaciones",
+   "actual": "156,178,500",
+   "anterior": "85,079,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 105,
+   "etiqueta": "Dimayor: Apoyo logístico",
+   "actual": "0",
+   "anterior": "266,516,808",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 106,
+   "etiqueta": "Federación Colombiana de futbol",
+   "actual": "436,000,000",
+   "anterior": "621,000,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 107,
+   "etiqueta": "Actividades conexas",
+   "actual": "132,939,949",
+   "anterior": "77,256,156",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 108,
+   "etiqueta": "TOTAL INGRESOS",
+   "actual": "14,204,599,890",
+   "anterior": "10,061,779,524",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
   }
  ],
  "total_ingresos": null,
@@ -160,5 +267,5 @@
   "anterior": "366.372"
  },
  "dudas": [],
- "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
 }

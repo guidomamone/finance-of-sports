@@ -94,3 +94,65 @@ Estado de resultados integral y estado de situación financiera al 2025-12-31 (P
 | --- | ---: | ---: |
 | Total patrimonio | 15.846.934 | 10.332.911 |
 
+## Detalle de las notas del club
+
+> Las tablas de abajo se copiaron de Clubes/Colombia/La Equidad/estados-financieros-2025.md (las notas del club, otro documento del mismo año), sin el signo «$» ni las negritas, con las cifras escritas con coma de miles y, si una etiqueta se repite entre tablas, con el rubro entre paréntesis. Cada una abre un rubro del estado de resultados de arriba porque sus filas, sin los subtotales, suman EXACTO ese rubro (regla de Colombia, caso 2). Lo que las notas no abren queda como el rubro de SIIS.
+
+### Ingresos de actividades ordinarias: Ingresos Operacionales (Clubes/Colombia/La Equidad/estados-financieros-2025.md, L1324-L1336)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+|   | 2,025 | 2,024 |
+| --- | --- | --- |
+|  Taquilla - Venta de Boletería | 4,102,414 | 3,923,290 |
+|  Escuelas de Futbol | 1,830,768 | 1,689,249 |
+|  Publicidad y Propaganda | 614,210 | 1,082,173 |
+|  Dimayor | 7,245,343 | 6,922,108 |
+|  Federacion Colombiana de Futbol | 680,148 | 752,373 |
+|  Patrocinio | 4,916,600 | 5,054,877 |
+|  Venta de Artículos Deportivos | 252,372 | 220,085 |
+|  Devoluciones en Ventas | 0 | -560 |
+|  Actividades Conexas | 950,381 | 927,758 |
+|  Ingresos Fuerzas Basicas | 20,000 | 43,500 |
+|  Total Ingresos Operacionales | 20,612,236 | 20,614,852 |
+
+### Gastos de ventas: Gastos Deportivos (Clubes/Colombia/La Equidad/estados-financieros-2025.md, L1516-L1534)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+|   | 2,025 | 2,024 |
+| --- | --- | --- |
+|  Gastos De Personal | 15,860,461 | 10,995,776 |
+|  Honorarios | 647,428 | 108,454 |
+|  Impuestos | 895,461 | 756,178 |
+|  Arrendamientos | 1,995,877 | 1,804,719 |
+|  Seguros | 84,008 | 89,226 |
+|  Servicios | 1,067,210 | 834,213 |
+|  Legales | 28,772 | 0 |
+|  Mantenimiento Y Reparaciones | 69,220 | 53,166 |
+|  Adecuacion E Instalacion | 3,323 | 7,757 |
+|  Gastos De Viaje | 860,237 | 732,936 |
+|  Depreciaciones | 8,772 | 7,743 |
+|  Amortizaciones | 1,129,732 | 307,882 |
+|  Amortizaciones Donaciones Derechos | 138,133 | 581,886 |
+|  Derechos Deportivos | 2,107,770 | 1,038,775 |
+|  Diversos | 4,116,533 | 6,470,296 |
+|  Provision | 0 | 626,715 |
+|  Total Gastos Deportivos | 29,012,937 | 24,415,721 |
+
+### Otros ingresos: Nota 22. Otros Ingresos – Ingresos Financieros (Clubes/Colombia/La Equidad/estados-financieros-2025.md, L1437-L1447)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+|   | 2,025 | 2,024 |
+| --- | --- | --- |
+|  Reintegro de Otros Costos y Gastos | 946,032 | 1,011,579 |
+|  Recobro Incapacidades | 212,890 | 308,490 |
+|  Ingresos de Ejercicios Anteriores | 0 | 500 |
+|  Venta Derechos Deportivos | 10,549,680 | 12,723,100 |
+|  Aprovechamientos | 54 | 0 |
+|  Financieros | 116,083 | 14,855 |
+|  Otros | 1,072 | 0 |
+|  Ajuste al Peso | 8 | 69 |
+|  Total Otros Ingresos | 11,825,819 | 14,058,593 |
+

@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Colombia/La Equidad/siis-estado-2025.pdf",
  "md": "Clubes/Colombia/La Equidad/siis-estado-2025.md",
- "mdSha1": "3f767158ee8e02c4d7930cecb01ff4b1bdddee67",
+ "mdSha1": "7bb216137d479fc698bd63bb45318e98dac9ae5a",
  "modelo": "a mano (Claude Code, sesión 2026-10-26)",
- "generado": "2026-10-26T06:07:02.786Z",
+ "generado": "2026-10-26T12:30:22.698Z",
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -12,14 +12,43 @@
     23
    ],
    "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 1,
+   "lineas": [
+    105,
+    117
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 1,
+   "lineas": [
+    147,
+    157
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 1,
+   "lineas": [
+    123,
+    141
+   ],
+   "tipo": "tabla"
   }
  },
  "sin_estado": false,
  "estado": [
   "b1"
  ],
- "notas_ingresos": [],
- "notas_gastos": [],
+ "notas_ingresos": [
+  "b10",
+  "b12"
+ ],
+ "notas_gastos": [
+  "b11"
+ ],
  "escala": "miles",
  "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
  "moneda": "COP",
@@ -28,5 +57,5 @@
  "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [],
- "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
 }

@@ -105,19 +105,130 @@
       "management_id": null,
       "fx": {"ref":"COP@2016-12-31"},
       "revenue": [
+        {"label":"Taquillas","category":"matchday","subcategory":"matchday_competition","amount":3130.775,"disclosure":"aggregated"},
+        {"label":"Venta de Derechos Deportivos","category":"player_transfers","subcategory":"player_sales","amount":14793.063,"disclosure":"aggregated"},
+        {"label":"Publicidad y Propaganda","category":"commercial","subcategory":"sponsorship_commercial","amount":2638.858,"disclosure":"aggregated"},
+        {"label":"Dimayor y Federación","category":"media_rights","subcategory":"broadcasting","amount":3245.837,"disclosure":"aggregated"},
+        {"label":"Participación en Eventos","category":"prize_money","subcategory":"competition_bonus","amount":672.926,"disclosure":"aggregated"},
+        {"label":"Venta de Artículos Deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":470.472,"disclosure":"aggregated"},
         {
-          "label": "Ingresos de actividades ordinarias",
-          "category": "undisclosed",
-          "subcategory": "lump_football_operations",
-          "amount": 24935.19,
+          "label": "Devoluciones en Artículos Deportivos",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": -16.741,
           "disclosure": "aggregated"
         },
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
       ],
       "expenses": [
         {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-248.993,"disclosure":"aggregated"},
-        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-19222.408,"disclosure":"aggregated"},
-        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1670.978,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de Personal (Gastos de ventas)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -7426.676,
+          "disclosure": "aggregated"
+        },
+        {"label":"Honorarios (Gastos de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-6.574,"disclosure":"aggregated"},
+        {"label":"Impuestos (Gastos de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-413.709,"disclosure":"aggregated"},
+        {
+          "label": "Arrendamientos (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -716.894,
+          "disclosure": "aggregated"
+        },
+        {"label":"Seguros (Gastos de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-6.12,"disclosure":"aggregated"},
+        {"label":"Servicios (Gastos de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-480.505,"disclosure":"aggregated"},
+        {
+          "label": "Gastos Legales (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.644,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Mantenimiento y Reparaciones (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -79.78,
+          "disclosure": "aggregated"
+        },
+        {"label":"Gastos de Viaje","category":"match_operations","subcategory":"match_organisation_expense","amount":-466.91,"disclosure":"aggregated"},
+        {"label":"Amortizaciones","category":"other_amortisation","subcategory":"other_amortisation","amount":-2337.514,"disclosure":"aggregated"},
+        {
+          "label": "Diversos (Gastos de ventas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -7283.082,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos de Personal (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -745.573,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Honorarios (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -90.052,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Impuestos (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -158.653,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Arrendamientos (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -78.139,
+          "disclosure": "aggregated"
+        },
+        {"label":"Contribuciones y Afiliaciones","category":"admin_general","subcategory":"admin_general_expense","amount":-8.949,"disclosure":"aggregated"},
+        {
+          "label": "Seguros (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -73.7,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servicios (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -74.844,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos Legales (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -11.572,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Mantenimiento y Reparaciones (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.677,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciaciones","category":"depreciation","subcategory":"depreciation","amount":-72.399,"disclosure":"aggregated"},
+        {"label":"Deterioro","category":"other_operating_expenses","subcategory":"other_expenses","amount":-147.989,"disclosure":"aggregated"},
+        {
+          "label": "Diversos (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -207.431,
+          "disclosure": "aggregated"
+        },
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-363.662,"tax":-930.932,"gross_debt":null,"cash":null},
@@ -127,22 +238,6 @@
           {"label":"Ingresos financieros","amount":669.486},
           {"label":"Costos financieros","amount":-1033.148},
           {"label":"Ingreso (gasto) por impuestos","amount":-930.932}
-        ],
-        "no_breakdown": [
-          {
-            "line": "Ingresos de actividades ordinarias",
-            "side": "revenue",
-            "amount": 24935.19,
-            "reason": "Línea única de ingresos que el estado de SIIS no abre: va a la categoría de fútbol sin desglosar, como Omzet o Chiffre d'affaires de los clubes belgas y argentinos; el precedente de Tolima es la regla de Gastos de ventas (463, 2026-10-26)",
-            "kind": "net_sales"
-          },
-          {
-            "line": "Gastos de ventas",
-            "side": "expense",
-            "amount": 19222.408,
-            "reason": "Regla votada 2026-10-26: «Gastos de ventas» sin abrir va a lump_football_operations_expense",
-            "kind": "other"
-          }
         ],
         "revenue_basis": "full"
       }
@@ -156,19 +251,132 @@
       "management_id": null,
       "fx": {"ref":"COP@2017-12-31"},
       "revenue": [
+        {"label":"Taquillas","category":"matchday","subcategory":"matchday_competition","amount":2612.384,"disclosure":"aggregated"},
+        {"label":"Venta de Derechos Deportivos","category":"player_transfers","subcategory":"player_sales","amount":797.027,"disclosure":"aggregated"},
+        {"label":"Préstamo de Derechos Deportivos","category":"player_transfers","subcategory":"player_sales","amount":40,"disclosure":"aggregated"},
+        {"label":"Publicidad y Propaganda","category":"commercial","subcategory":"sponsorship_commercial","amount":2807.73,"disclosure":"aggregated"},
+        {"label":"Dimayor y Federación","category":"media_rights","subcategory":"broadcasting","amount":4762.606,"disclosure":"aggregated"},
+        {"label":"Participación en Eventos","category":"prize_money","subcategory":"competition_bonus","amount":746.257,"disclosure":"aggregated"},
+        {"label":"Venta de Artículos Deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":365.704,"disclosure":"aggregated"},
+        {"label":"Actividades Conexas","category":"other_revenue","subcategory":"other_income","amount":16.588,"disclosure":"aggregated"},
         {
-          "label": "Ingresos de actividades ordinarias",
-          "category": "undisclosed",
-          "subcategory": "lump_football_operations",
-          "amount": 12136.863,
+          "label": "Devoluciones en Artículos Deportivos",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": -11.433,
           "disclosure": "aggregated"
         },
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
       ],
       "expenses": [
         {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-184.555,"disclosure":"aggregated"},
-        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-13980.447,"disclosure":"aggregated"},
-        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1738.832,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de Personal (Gastos de ventas)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -7993.772,
+          "disclosure": "aggregated"
+        },
+        {"label":"Honorarios (Gastos de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-217.714,"disclosure":"aggregated"},
+        {"label":"Impuestos (Gastos de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-261.949,"disclosure":"aggregated"},
+        {
+          "label": "Arrendamientos (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -667.844,
+          "disclosure": "aggregated"
+        },
+        {"label":"Servicios (Gastos de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-498.594,"disclosure":"aggregated"},
+        {
+          "label": "Gastos Legales (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -5.175,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Mantenimiento y Reparaciones (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -18.788,
+          "disclosure": "aggregated"
+        },
+        {"label":"Gastos de Viaje","category":"match_operations","subcategory":"match_organisation_expense","amount":-391.558,"disclosure":"aggregated"},
+        {"label":"Amortizaciones","category":"other_amortisation","subcategory":"other_amortisation","amount":-1761.373,"disclosure":"aggregated"},
+        {
+          "label": "Diversos (Gastos de ventas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -2163.68,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos de Personal (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -915.24,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Honorarios (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -172.206,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Impuestos (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -18.027,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Arrendamientos (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -103.274,
+          "disclosure": "aggregated"
+        },
+        {"label":"Contribuciones y Afiliaciones","category":"admin_general","subcategory":"admin_general_expense","amount":-4.125,"disclosure":"aggregated"},
+        {
+          "label": "Seguros (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -30.771,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servicios (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -132.664,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos Legales (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -6.187,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Mantenimiento y Reparaciones (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -6.011,
+          "disclosure": "aggregated"
+        },
+        {"label":"Adecuación e Instalación","category":"admin_general","subcategory":"admin_general_expense","amount":-0.3,"disclosure":"aggregated"},
+        {"label":"Depreciaciones","category":"depreciation","subcategory":"depreciation","amount":-98.627,"disclosure":"aggregated"},
+        {"label":"Deterioro","category":"other_operating_expenses","subcategory":"other_expenses","amount":-111.536,"disclosure":"aggregated"},
+        {
+          "label": "Diversos (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -139.864,
+          "disclosure": "aggregated"
+        },
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":914.641,"tax":-62.382,"gross_debt":null,"cash":null},
@@ -178,22 +386,6 @@
           {"label":"Ingresos financieros","amount":2376.665},
           {"label":"Costos financieros","amount":-1462.024},
           {"label":"Ingreso (gasto) por impuestos","amount":-62.382}
-        ],
-        "no_breakdown": [
-          {
-            "line": "Ingresos de actividades ordinarias",
-            "side": "revenue",
-            "amount": 12136.863,
-            "reason": "Línea única de ingresos que el estado de SIIS no abre: va a la categoría de fútbol sin desglosar, como Omzet o Chiffre d'affaires de los clubes belgas y argentinos; el precedente de Tolima es la regla de Gastos de ventas (463, 2026-10-26)",
-            "kind": "net_sales"
-          },
-          {
-            "line": "Gastos de ventas",
-            "side": "expense",
-            "amount": 13980.447,
-            "reason": "Regla votada 2026-10-26: «Gastos de ventas» sin abrir va a lump_football_operations_expense",
-            "kind": "other"
-          }
         ],
         "revenue_basis": "full"
       }
@@ -207,19 +399,157 @@
       "management_id": null,
       "fx": {"ref":"COP@2018-12-31"},
       "revenue": [
+        {"label":"Taquillas","category":"matchday","subcategory":"matchday_competition","amount":4710.846,"disclosure":"aggregated"},
+        {"label":"Venta de Derechos Deportivos","category":"player_transfers","subcategory":"player_sales","amount":11628.076,"disclosure":"aggregated"},
+        {"label":"Mecanismo de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":202.967,"disclosure":"aggregated"},
+        {"label":"Publicidad y Propaganda","category":"commercial","subcategory":"sponsorship_commercial","amount":2306.09,"disclosure":"aggregated"},
+        {"label":"Dimayor y Federación","category":"media_rights","subcategory":"broadcasting","amount":5878.753,"disclosure":"aggregated"},
+        {"label":"Participación en Eventos","category":"prize_money","subcategory":"competition_bonus","amount":484.176,"disclosure":"aggregated"},
+        {"label":"Venta de Artículos Deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":987.476,"disclosure":"aggregated"},
         {
-          "label": "Ingresos de actividades ordinarias",
-          "category": "undisclosed",
-          "subcategory": "lump_football_operations",
-          "amount": 26150.016,
+          "label": "Devoluciones en Artículos Deportivos",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": -48.368,
           "disclosure": "aggregated"
         },
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
       ],
       "expenses": [
         {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-379.63,"disclosure":"aggregated"},
-        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-17963.917,"disclosure":"aggregated"},
-        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1802.284,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de Personal (Gastos de ventas)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -9833.687,
+          "disclosure": "aggregated"
+        },
+        {"label":"Honorarios (Gastos de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-155.306,"disclosure":"aggregated"},
+        {"label":"Impuestos (Gastos de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-533.832,"disclosure":"aggregated"},
+        {
+          "label": "Arrendamientos (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -769.118,
+          "disclosure": "aggregated"
+        },
+        {"label":"Seguros (Gastos de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-7.453,"disclosure":"aggregated"},
+        {"label":"Servicios (Gastos de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-569.399,"disclosure":"aggregated"},
+        {
+          "label": "Gastos Legales (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -19.267,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Mantenimiento y Reparaciones (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -126.291,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Adecuación e Instalación (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -24.974,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos de Viaje (Gastos de ventas)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -434.736,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortizaciones","category":"other_amortisation","subcategory":"other_amortisation","amount":-1134.49,"disclosure":"aggregated"},
+        {
+          "label": "Diversos (Gastos de ventas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -4355.364,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos de Personal (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1027.886,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Honorarios (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -193.515,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Impuestos (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -18.825,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Arrendamientos (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -104.097,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Seguros (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.741,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servicios (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -128.489,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos Legales (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -16.321,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Mantenimiento y Reparaciones (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -8.104,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Adecuación e Instalación (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.267,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos de Viaje (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -43.793,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciaciones","category":"depreciation","subcategory":"depreciation","amount":-113.203,"disclosure":"aggregated"},
+        {"label":"Deterioro","category":"other_operating_expenses","subcategory":"other_expenses","amount":-46.185,"disclosure":"aggregated"},
+        {
+          "label": "Diversos (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -99.858,
+          "disclosure": "aggregated"
+        },
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":795.683,"tax":-689.662,"gross_debt":null,"cash":null},
@@ -229,22 +559,6 @@
           {"label":"Ingresos financieros","amount":2637.493},
           {"label":"Costos financieros","amount":-1841.81},
           {"label":"Ingreso (gasto) por impuestos","amount":-689.662}
-        ],
-        "no_breakdown": [
-          {
-            "line": "Ingresos de actividades ordinarias",
-            "side": "revenue",
-            "amount": 26150.016,
-            "reason": "Línea única de ingresos que el estado de SIIS no abre: va a la categoría de fútbol sin desglosar, como Omzet o Chiffre d'affaires de los clubes belgas y argentinos; el precedente de Tolima es la regla de Gastos de ventas (463, 2026-10-26)",
-            "kind": "net_sales"
-          },
-          {
-            "line": "Gastos de ventas",
-            "side": "expense",
-            "amount": 17963.917,
-            "reason": "Regla votada 2026-10-26: «Gastos de ventas» sin abrir va a lump_football_operations_expense",
-            "kind": "other"
-          }
         ],
         "revenue_basis": "full"
       }
@@ -258,18 +572,38 @@
       "management_id": null,
       "fx": {"ref":"COP@2019-12-31"},
       "revenue": [
+        {"label":"Taquillas","category":"matchday","subcategory":"matchday_competition","amount":5980.008,"disclosure":"aggregated"},
+        {"label":"Venta de Derechos Deportivos","category":"player_transfers","subcategory":"player_sales","amount":6924,"disclosure":"aggregated"},
+        {"label":"Mecanismo de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":1604.158,"disclosure":"aggregated"},
+        {"label":"Publicidad y Propaganda","category":"commercial","subcategory":"sponsorship_commercial","amount":2473.218,"disclosure":"aggregated"},
+        {"label":"Dimayor y Federación","category":"media_rights","subcategory":"broadcasting","amount":5669.979,"disclosure":"aggregated"},
+        {"label":"Donaciones","category":"grants_donations","subcategory":"grants_donations","amount":1,"disclosure":"aggregated"},
+        {"label":"Participación en Eventos","category":"prize_money","subcategory":"competition_bonus","amount":10672.327,"disclosure":"aggregated"},
+        {"label":"Venta de Artículos Deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":1082.48,"disclosure":"aggregated"},
+        {"label":"Actividades Conexas","category":"other_revenue","subcategory":"other_income","amount":1354.178,"disclosure":"aggregated"},
         {
-          "label": "Ingresos de actividades ordinarias",
-          "category": "undisclosed",
-          "subcategory": "lump_football_operations",
-          "amount": 35681.58,
+          "label": "Devoluciones en Artículos Deportivos",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": -79.768,
           "disclosure": "aggregated"
         },
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
       ],
       "expenses": [
         {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-539.967,"disclosure":"aggregated"},
-        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-25670.55,"disclosure":"aggregated"},
+        {"label":"Gastos de Personal","category":"first_team_staff","subcategory":"wages_squad","amount":-12255.319,"disclosure":"aggregated"},
+        {"label":"Honorarios","category":"admin_general","subcategory":"admin_general_expense","amount":-74.254,"disclosure":"aggregated"},
+        {"label":"Impuestos","category":"admin_general","subcategory":"admin_general_expense","amount":-605.105,"disclosure":"aggregated"},
+        {"label":"Arrendamientos","category":"admin_general","subcategory":"admin_general_expense","amount":-867.7,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-34.539,"disclosure":"aggregated"},
+        {"label":"Servicios","category":"admin_general","subcategory":"admin_general_expense","amount":-1464.447,"disclosure":"aggregated"},
+        {"label":"Gastos Legales","category":"admin_general","subcategory":"admin_general_expense","amount":-14.524,"disclosure":"aggregated"},
+        {"label":"Mantenimiento y Reparaciones","category":"admin_general","subcategory":"admin_general_expense","amount":-98.525,"disclosure":"aggregated"},
+        {"label":"Adecuación e Instalación","category":"admin_general","subcategory":"admin_general_expense","amount":-45.979,"disclosure":"aggregated"},
+        {"label":"Gastos de Viaje","category":"match_operations","subcategory":"match_organisation_expense","amount":-1197.98,"disclosure":"aggregated"},
+        {"label":"Amortizaciones","category":"other_amortisation","subcategory":"other_amortisation","amount":-3107.487,"disclosure":"aggregated"},
+        {"label":"Diversos","category":"admin_general","subcategory":"admin_general_expense","amount":-5904.691,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2918.699,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
@@ -280,22 +614,6 @@
           {"label":"Ingresos financieros","amount":2780.03},
           {"label":"Costos financieros","amount":-2567.267},
           {"label":"Ingreso (gasto) por impuestos","amount":-879.72}
-        ],
-        "no_breakdown": [
-          {
-            "line": "Ingresos de actividades ordinarias",
-            "side": "revenue",
-            "amount": 35681.58,
-            "reason": "Línea única de ingresos que el estado de SIIS no abre: va a la categoría de fútbol sin desglosar, como Omzet o Chiffre d'affaires de los clubes belgas y argentinos; el precedente de Tolima es la regla de Gastos de ventas (463, 2026-10-26)",
-            "kind": "net_sales"
-          },
-          {
-            "line": "Gastos de ventas",
-            "side": "expense",
-            "amount": 25670.55,
-            "reason": "Regla votada 2026-10-26: «Gastos de ventas» sin abrir va a lump_football_operations_expense",
-            "kind": "other"
-          }
         ],
         "revenue_basis": "full"
       }
@@ -309,11 +627,18 @@
       "management_id": null,
       "fx": {"ref":"COP@2020-12-31"},
       "revenue": [
+        {"label":"Taquillas","category":"matchday","subcategory":"matchday_competition","amount":1023.255,"disclosure":"aggregated"},
+        {"label":"Venta de Derechos Deportivos","category":"player_transfers","subcategory":"player_sales","amount":1402.564,"disclosure":"aggregated"},
+        {"label":"Mecanismo de Solidaridad","category":"player_transfers","subcategory":"player_sales","amount":980.608,"disclosure":"aggregated"},
+        {"label":"Publicidad y Propaganda","category":"commercial","subcategory":"sponsorship_commercial","amount":2465.612,"disclosure":"aggregated"},
+        {"label":"Dimayor y Federación","category":"media_rights","subcategory":"broadcasting","amount":3683.034,"disclosure":"aggregated"},
+        {"label":"Participación en Eventos","category":"prize_money","subcategory":"competition_bonus","amount":5550.689,"disclosure":"aggregated"},
+        {"label":"Venta de Artículos Deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":545.093,"disclosure":"aggregated"},
         {
-          "label": "Ingresos de actividades ordinarias",
-          "category": "undisclosed",
-          "subcategory": "lump_football_operations",
-          "amount": 15603.304,
+          "label": "Devoluciones en Artículos Deportivos",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": -47.551,
           "disclosure": "aggregated"
         },
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":3973.902,"disclosure":"aggregated"},
@@ -327,7 +652,18 @@
       ],
       "expenses": [
         {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-276.531,"disclosure":"aggregated"},
-        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-18455.377,"disclosure":"aggregated"},
+        {"label":"Gastos de Personal","category":"first_team_staff","subcategory":"wages_squad","amount":-10105.575,"disclosure":"aggregated"},
+        {"label":"Honorarios","category":"admin_general","subcategory":"admin_general_expense","amount":-13.722,"disclosure":"aggregated"},
+        {"label":"Impuestos","category":"admin_general","subcategory":"admin_general_expense","amount":-86.164,"disclosure":"aggregated"},
+        {"label":"Arrendamientos","category":"admin_general","subcategory":"admin_general_expense","amount":-498.224,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-7.679,"disclosure":"aggregated"},
+        {"label":"Servicios","category":"admin_general","subcategory":"admin_general_expense","amount":-1563.775,"disclosure":"aggregated"},
+        {"label":"Gastos Legales","category":"admin_general","subcategory":"admin_general_expense","amount":-2.984,"disclosure":"aggregated"},
+        {"label":"Mantenimiento y Reparaciones","category":"admin_general","subcategory":"admin_general_expense","amount":-100.713,"disclosure":"aggregated"},
+        {"label":"Adecuación e Instalación","category":"admin_general","subcategory":"admin_general_expense","amount":-15.932,"disclosure":"aggregated"},
+        {"label":"Gastos de Viaje","category":"match_operations","subcategory":"match_organisation_expense","amount":-988.833,"disclosure":"aggregated"},
+        {"label":"Amortizaciones","category":"other_amortisation","subcategory":"other_amortisation","amount":-2692.917,"disclosure":"aggregated"},
+        {"label":"Diversos","category":"admin_general","subcategory":"admin_general_expense","amount":-2378.859,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2146.226,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1019.537,"disclosure":"aggregated"}
       ],
@@ -335,22 +671,6 @@
       "official_totals": {"revenue":20096.491,"expenses":21897.671,"net_result":-1874.835},
       "adjustments": {
         "extra_rows": [{"label":"Ingresos financieros","amount":0},{"label":"Costos financieros","amount":0},{"label":"Ingreso (gasto) por impuestos","amount":-73.655}],
-        "no_breakdown": [
-          {
-            "line": "Ingresos de actividades ordinarias",
-            "side": "revenue",
-            "amount": 15603.304,
-            "reason": "Línea única de ingresos que el estado de SIIS no abre: va a la categoría de fútbol sin desglosar, como Omzet o Chiffre d'affaires de los clubes belgas y argentinos; el precedente de Tolima es la regla de Gastos de ventas (463, 2026-10-26)",
-            "kind": "net_sales"
-          },
-          {
-            "line": "Gastos de ventas",
-            "side": "expense",
-            "amount": 18455.377,
-            "reason": "Regla votada 2026-10-26: «Gastos de ventas» sin abrir va a lump_football_operations_expense",
-            "kind": "other"
-          }
-        ],
         "revenue_basis": "full"
       }
     },
@@ -363,18 +683,45 @@
       "management_id": null,
       "fx": {"ref":"COP@2021-12-31"},
       "revenue": [
+        {"label":"Taquillas","category":"matchday","subcategory":"matchday_competition","amount":5917.035,"disclosure":"aggregated"},
+        {"label":"Venta de Derechos Deportivos 1(A)","category":"player_transfers","subcategory":"player_sales","amount":17029.57,"disclosure":"aggregated"},
+        {"label":"Mecanismo de Solidaridad 2(A)","category":"player_transfers","subcategory":"player_sales","amount":137.699,"disclosure":"aggregated"},
+        {"label":"Publicidad y Propaganda 3(A)","category":"commercial","subcategory":"sponsorship_commercial","amount":4572.854,"disclosure":"aggregated"},
+        {"label":"Dimayor y Federación 4(A)","category":"media_rights","subcategory":"broadcasting","amount":5767.631,"disclosure":"aggregated"},
+        {"label":"Participación en Eventos 5(A)","category":"prize_money","subcategory":"competition_bonus","amount":4141.073,"disclosure":"aggregated"},
+        {"label":"Venta de Artículos Deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":1613.214,"disclosure":"aggregated"},
+        {"label":"Actividades Conexas","category":"other_revenue","subcategory":"other_income","amount":57.703,"disclosure":"aggregated"},
         {
-          "label": "Ingresos de actividades ordinarias",
-          "category": "undisclosed",
-          "subcategory": "lump_football_operations",
-          "amount": 39144.945,
+          "label": "Devoluciones en Artículos Deportivos",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": -91.834,
           "disclosure": "aggregated"
         },
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":2849.564,"disclosure":"aggregated"}
       ],
       "expenses": [
         {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-858.852,"disclosure":"aggregated"},
-        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-27185.725,"disclosure":"aggregated"},
+        {"label":"Gastos de Personal","category":"first_team_staff","subcategory":"wages_squad","amount":-12714.273,"disclosure":"aggregated"},
+        {"label":"Honorarios","category":"admin_general","subcategory":"admin_general_expense","amount":-31.839,"disclosure":"aggregated"},
+        {"label":"Impuestos","category":"admin_general","subcategory":"admin_general_expense","amount":-721.634,"disclosure":"aggregated"},
+        {"label":"Arrendamientos","category":"admin_general","subcategory":"admin_general_expense","amount":-1092.304,"disclosure":"aggregated"},
+        {"label":"Contribuciones y Afiliaciones","category":"admin_general","subcategory":"admin_general_expense","amount":-2.02,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-34.56,"disclosure":"aggregated"},
+        {"label":"Servicios","category":"admin_general","subcategory":"admin_general_expense","amount":-4839.499,"disclosure":"aggregated"},
+        {"label":"Gastos Legales","category":"admin_general","subcategory":"admin_general_expense","amount":-16.481,"disclosure":"aggregated"},
+        {"label":"Mantenimiento y Reparaciones","category":"admin_general","subcategory":"admin_general_expense","amount":-266.934,"disclosure":"aggregated"},
+        {"label":"Adecuación e Instalación","category":"admin_general","subcategory":"admin_general_expense","amount":-7.147,"disclosure":"aggregated"},
+        {"label":"Gastos de Viaje","category":"match_operations","subcategory":"match_organisation_expense","amount":-1759.672,"disclosure":"aggregated"},
+        {"label":"Amortizaciones","category":"other_amortisation","subcategory":"other_amortisation","amount":-1417.527,"disclosure":"aggregated"},
+        {
+          "label": "Derechos Deportivos",
+          "category": "player_registrations_amortisation",
+          "subcategory": "player_amortisation",
+          "amount": -35,
+          "disclosure": "aggregated"
+        },
+        {"label":"Diversos","category":"admin_general","subcategory":"admin_general_expense","amount":-4246.835,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-3322.793,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2361.844,"disclosure":"aggregated"},
         {
@@ -387,25 +734,7 @@
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-1367.75,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":41994.509,"expenses":33729.214,"net_result":6483.443},
-      "adjustments": {
-        "no_breakdown": [
-          {
-            "line": "Ingresos de actividades ordinarias",
-            "side": "revenue",
-            "amount": 39144.945,
-            "reason": "Línea única de ingresos que el estado de SIIS no abre: va a la categoría de fútbol sin desglosar, como Omzet o Chiffre d'affaires de los clubes belgas y argentinos; el precedente de Tolima es la regla de Gastos de ventas (463, 2026-10-26)",
-            "kind": "net_sales"
-          },
-          {
-            "line": "Gastos de ventas",
-            "side": "expense",
-            "amount": 27185.725,
-            "reason": "Regla votada 2026-10-26: «Gastos de ventas» sin abrir va a lump_football_operations_expense",
-            "kind": "other"
-          }
-        ],
-        "revenue_basis": "full"
-      }
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2022,
@@ -416,11 +745,19 @@
       "management_id": null,
       "fx": {"ref":"COP@2022-12-31"},
       "revenue": [
+        {"label":"Taquillas","category":"matchday","subcategory":"matchday_competition","amount":9476.527,"disclosure":"aggregated"},
+        {"label":"Venta de Derechos Deportivos 1(A)","category":"player_transfers","subcategory":"player_sales","amount":1106.812,"disclosure":"aggregated"},
+        {"label":"Prestamo de Derechos Deportivos","category":"player_transfers","subcategory":"player_sales","amount":351.062,"disclosure":"aggregated"},
+        {"label":"Publicidad y Propaganda 2(A)","category":"commercial","subcategory":"sponsorship_commercial","amount":5581.776,"disclosure":"aggregated"},
+        {"label":"Dimayor y Federación 3(A)","category":"media_rights","subcategory":"broadcasting","amount":6686.919,"disclosure":"aggregated"},
+        {"label":"Participación en Eventos 4(A)","category":"prize_money","subcategory":"competition_bonus","amount":16142.527,"disclosure":"aggregated"},
+        {"label":"Venta de Artículos Deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":2158.175,"disclosure":"aggregated"},
+        {"label":"Actividades Conexas","category":"other_revenue","subcategory":"other_income","amount":20.169,"disclosure":"aggregated"},
         {
-          "label": "Ingresos de actividades ordinarias",
-          "category": "undisclosed",
-          "subcategory": "lump_football_operations",
-          "amount": 41411.641,
+          "label": "Devoluciones en Artículos Deportivos",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": -112.326,
           "disclosure": "aggregated"
         },
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":4499.208,"disclosure":"aggregated"},
@@ -434,31 +771,156 @@
       ],
       "expenses": [
         {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1154.388,"disclosure":"aggregated"},
-        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-32823.473,"disclosure":"aggregated"},
-        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-5280.278,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de Personal (Gastos de ventas)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -12074.94,
+          "disclosure": "aggregated"
+        },
+        {"label":"Honorarios (Gastos de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-19.403,"disclosure":"aggregated"},
+        {
+          "label": "Impuestos (1) (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -975.668,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Arrendamientos (2) (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1093.022,
+          "disclosure": "aggregated"
+        },
+        {"label":"Seguros (Gastos de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-39.586,"disclosure":"aggregated"},
+        {
+          "label": "Servicios (3) (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4223.553,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos Legales (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -10.6,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Mantenimiento y Reparaciones (4) (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -253.454,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Adecuación e Instalación (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -33.918,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos de Viaje (5) (Gastos de ventas)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1884.58,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortizaciones","category":"other_amortisation","subcategory":"other_amortisation","amount":-3403.817,"disclosure":"aggregated"},
+        {
+          "label": "Diversos (6) (Gastos de ventas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -8810.931,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos de Personal (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1477.388,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Honorarios (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -494.749,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Impuestos (1) (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -427.842,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Arrendamientos (2) (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -139.162,
+          "disclosure": "aggregated"
+        },
+        {"label":"Contribuciones y Afiliaciones","category":"admin_general","subcategory":"admin_general_expense","amount":-2.979,"disclosure":"aggregated"},
+        {
+          "label": "Seguros (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -14.207,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servicios (3) (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -48.105,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos Legales (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -19.641,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Mantenimiento y Reparaciones (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -17.142,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Adecuación e Instalación (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4.394,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos de Viaje (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -82.498,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciaciones","category":"depreciation","subcategory":"depreciation","amount":-597.4,"disclosure":"aggregated"},
+        {
+          "label": "Diversos (5) (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1954.771,
+          "disclosure": "aggregated"
+        },
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1471.874,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-849.558,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":45913.145,"expenses":40730.013,"net_result":4333.574},
-      "adjustments": {
-        "no_breakdown": [
-          {
-            "line": "Ingresos de actividades ordinarias",
-            "side": "revenue",
-            "amount": 41411.641,
-            "reason": "Línea única de ingresos que el estado de SIIS no abre: va a la categoría de fútbol sin desglosar, como Omzet o Chiffre d'affaires de los clubes belgas y argentinos; el precedente de Tolima es la regla de Gastos de ventas (463, 2026-10-26)",
-            "kind": "net_sales"
-          },
-          {
-            "line": "Gastos de ventas",
-            "side": "expense",
-            "amount": 32823.473,
-            "reason": "Regla votada 2026-10-26: «Gastos de ventas» sin abrir va a lump_football_operations_expense",
-            "kind": "other"
-          }
-        ],
-        "revenue_basis": "full"
-      }
+      "official_totals": {"revenue":45913.145,"expenses":40730.012,"net_result":4333.574},
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2023,
@@ -469,42 +931,195 @@
       "management_id": null,
       "fx": {"ref":"COP@2023-12-31"},
       "revenue": [
+        {"label":"Taquillas","category":"matchday","subcategory":"matchday_competition","amount":6958.004,"disclosure":"aggregated"},
+        {"label":"Venta de Derechos Deportivos 1(A)","category":"player_transfers","subcategory":"player_sales","amount":2349.258,"disclosure":"aggregated"},
+        {"label":"Prestamo de Derechos Deportivos","category":"player_transfers","subcategory":"player_sales","amount":282.484,"disclosure":"aggregated"},
+        {"label":"Publicidad y Propaganda 2(A)","category":"commercial","subcategory":"sponsorship_commercial","amount":5657.089,"disclosure":"aggregated"},
+        {"label":"Dimayor y Federación 3(A)","category":"media_rights","subcategory":"broadcasting","amount":8523.217,"disclosure":"aggregated"},
+        {"label":"Participación en Eventos 4(A)","category":"prize_money","subcategory":"competition_bonus","amount":6762.108,"disclosure":"aggregated"},
+        {"label":"Venta de Artículos Deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":2878.385,"disclosure":"aggregated"},
+        {"label":"Actividades Conexas","category":"other_revenue","subcategory":"other_income","amount":20.168,"disclosure":"aggregated"},
         {
-          "label": "Ingresos de actividades ordinarias",
-          "category": "undisclosed",
-          "subcategory": "lump_football_operations",
-          "amount": 33320.417,
+          "label": "Devoluciones en Artículos Deportivos",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": -110.296,
           "disclosure": "aggregated"
         },
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":3099.225,"disclosure":"aggregated"}
       ],
       "expenses": [
         {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1659.803,"disclosure":"aggregated"},
-        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-31753.876,"disclosure":"aggregated"},
-        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-4021.941,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de Personal (Gastos de ventas)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -14735.222,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Honorarios (1) (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -372.775,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Impuestos (2) (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -709.469,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Arrendamientos (3) (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1064.146,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Contribuciones y Afiliaciones (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -17.777,
+          "disclosure": "aggregated"
+        },
+        {"label":"Seguros (Gastos de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-97.678,"disclosure":"aggregated"},
+        {
+          "label": "Servicios (4) (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2762.402,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos Legales (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -16.922,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Mantenimiento y Reparaciones (5) (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -233.797,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Adecuación e Instalación (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -22.41,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos de Viaje (6) (Gastos de ventas)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1778.736,
+          "disclosure": "aggregated"
+        },
+        {"label":"Amortizaciones","category":"other_amortisation","subcategory":"other_amortisation","amount":-5931.968,"disclosure":"aggregated"},
+        {
+          "label": "Diversos (7) (Gastos de ventas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -4010.574,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos de Personal (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1908.192,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Honorarios (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -212.859,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Impuestos (1) (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -370.32,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Arrendamientos (2) (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -179.877,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Contribuciones y Afiliaciones (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -45.066,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Seguros (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -10.589,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servicios (3) (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -131.576,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos Legales (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -64.931,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Mantenimiento y Reparaciones (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -47.875,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Adecuación e Instalación (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.228,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos de Viaje (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -187.097,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciaciones","category":"depreciation","subcategory":"depreciation","amount":-705.358,"disclosure":"aggregated"},
+        {"label":"Deterioro","category":"other_operating_expenses","subcategory":"other_expenses","amount":-5.672,"disclosure":"aggregated"},
+        {
+          "label": "Diversos (5) (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -150.301,
+          "disclosure": "aggregated"
+        },
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-558.943,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-11.008,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":36419.642,"expenses":37994.563,"net_result":-1585.929},
-      "adjustments": {
-        "no_breakdown": [
-          {
-            "line": "Ingresos de actividades ordinarias",
-            "side": "revenue",
-            "amount": 33320.417,
-            "reason": "Línea única de ingresos que el estado de SIIS no abre: va a la categoría de fútbol sin desglosar, como Omzet o Chiffre d'affaires de los clubes belgas y argentinos; el precedente de Tolima es la regla de Gastos de ventas (463, 2026-10-26)",
-            "kind": "net_sales"
-          },
-          {
-            "line": "Gastos de ventas",
-            "side": "expense",
-            "amount": 31753.876,
-            "reason": "Regla votada 2026-10-26: «Gastos de ventas» sin abrir va a lump_football_operations_expense",
-            "kind": "other"
-          }
-        ],
-        "revenue_basis": "full"
-      }
+      "adjustments": {"revenue_basis":"full"}
     },
     {
       "fiscal_year": 2024,
@@ -515,11 +1130,19 @@
       "management_id": null,
       "fx": {"ref":"COP@2024-12-31"},
       "revenue": [
+        {"label":"Taquillas","category":"matchday","subcategory":"matchday_competition","amount":12934.108,"disclosure":"aggregated"},
+        {"label":"Venta de Derechos Deportivos 1(A)","category":"player_transfers","subcategory":"player_sales","amount":12473.275,"disclosure":"aggregated"},
+        {"label":"Publicidad y Propaganda 2(A)","category":"commercial","subcategory":"sponsorship_commercial","amount":6083.891,"disclosure":"aggregated"},
+        {"label":"Dimayor y Federación 3(A)","category":"media_rights","subcategory":"broadcasting","amount":7650.113,"disclosure":"aggregated"},
+        {"label":"Participación en Eventos 4(A)","category":"prize_money","subcategory":"competition_bonus","amount":2204.575,"disclosure":"aggregated"},
+        {"label":"Venta de Artículos Deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":4213.603,"disclosure":"aggregated"},
+        {"label":"Actividades Conexas","category":"other_revenue","subcategory":"other_income","amount":22.689,"disclosure":"aggregated"},
+        {"label":"Mecanismo de solidaridad","category":"player_transfers","subcategory":"player_sales","amount":32.349,"disclosure":"aggregated"},
         {
-          "label": "Ingresos de actividades ordinarias",
-          "category": "undisclosed",
-          "subcategory": "lump_football_operations",
-          "amount": 45544.864,
+          "label": "Devoluciones en Artículos Deportivos",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": -69.739,
           "disclosure": "aggregated"
         },
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":1973.19,"disclosure":"aggregated"},
@@ -528,28 +1151,25 @@
       "expenses": [
         {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2632.78,"disclosure":"aggregated"},
         {"label":"Gastos de ventas","category":"admin_general","subcategory":"admin_general_expense","amount":-5166.142,"disclosure":"aggregated"},
-        {"label":"Gastos de administración","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-37305.416,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de administración",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -37305.416,
+          "disclosure": "aggregated"
+        },
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1006.202,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-720.859,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":47745.729,"expenses":46110.54,"net_result":914.33},
       "adjustments": {
-        "no_breakdown": [
-          {
-            "line": "Ingresos de actividades ordinarias",
-            "side": "revenue",
-            "amount": 45544.864,
-            "reason": "Línea única de ingresos que el estado de SIIS no abre: va a la categoría de fútbol sin desglosar, como Omzet o Chiffre d'affaires de los clubes belgas y argentinos; el precedente de Tolima es la regla de Gastos de ventas (463, 2026-10-26)",
-            "kind": "net_sales"
-          },
-          {
-            "line": "Gastos de ventas",
-            "side": "expense",
-            "amount": 5166.142,
-            "reason": "Regla votada 2026-10-26: «Gastos de ventas» sin abrir va a lump_football_operations_expense",
-            "kind": "other"
-          }
-        ],
+        "no_breakdown": [{"line":"Gastos de administración","side":"expense","amount":37305.416,"reason":"el documento no desglosa este renglón","kind":"other"}],
+        "included_in": {
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        },
         "revenue_basis": "full"
       }
     },
@@ -562,43 +1182,202 @@
       "management_id": null,
       "fx": {"ref":"COP@2025-12-31"},
       "revenue": [
+        {"label":"taquillas","category":"matchday","subcategory":"matchday_competition","amount":10422.799,"disclosure":"aggregated"},
+        {"label":"venta de Derechos Deportivos 1(A)","category":"player_transfers","subcategory":"player_sales","amount":14933.893,"disclosure":"aggregated"},
+        {"label":"publicidad y Propaganda 2(A)","category":"commercial","subcategory":"sponsorship_commercial","amount":8397.992,"disclosure":"aggregated"},
+        {"label":"Dimayor y Federación 3(A)","category":"media_rights","subcategory":"broadcasting","amount":8270.256,"disclosure":"aggregated"},
+        {"label":"participación en Eventos 4(A)","category":"prize_money","subcategory":"competition_bonus","amount":1878.54,"disclosure":"aggregated"},
+        {"label":"venta de Artículos Deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":5200.41,"disclosure":"aggregated"},
+        {"label":"actividades Conexas","category":"other_revenue","subcategory":"other_income","amount":30.252,"disclosure":"aggregated"},
+        {"label":"mecanismo de solidaridad","category":"player_transfers","subcategory":"player_sales","amount":328.849,"disclosure":"aggregated"},
         {
-          "label": "Ingresos de actividades ordinarias",
-          "category": "undisclosed",
-          "subcategory": "lump_football_operations",
-          "amount": 49330.876,
+          "label": "devoluciones en Artículos Deportivos",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": -132.115,
           "disclosure": "aggregated"
         },
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":1595.496,"disclosure":"aggregated"}
       ],
       "expenses": [
         {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2774.438,"disclosure":"aggregated"},
-        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-39666,"disclosure":"aggregated"},
-        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-5110.64,"disclosure":"aggregated"},
+        {
+          "label": "gastos de Personal (Gastos de ventas)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -13512.051,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "honorarios (1) (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -690.129,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "impuestos (2) (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1031.242,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "arrendamientos (3) (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1417.664,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "contribuciones y Afiliaciones (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -17.612,
+          "disclosure": "aggregated"
+        },
+        {"label":"seguros (Gastos de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-109.999,"disclosure":"aggregated"},
+        {
+          "label": "servicios (4) (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -4473.216,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "gastos Legales (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -154.646,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "mantenimiento y Reparaciones (5) (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -237.831,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "adecuación e Instalación (Gastos de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -10.176,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "gastos de Viaje (6) (Gastos de ventas)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -1453.73,
+          "disclosure": "aggregated"
+        },
+        {"label":"amortizaciones","category":"other_amortisation","subcategory":"other_amortisation","amount":-5152.964,"disclosure":"aggregated"},
+        {
+          "label": "diversos (7) (Gastos de ventas)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -11404.741,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "gastos de personal (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2587.228,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "honorarios (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -384.27,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "impuestos (1) (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -486.756,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "arrendamientos (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -102.52,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "contribuciones y afiliaciones (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -50.768,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "seguros (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -30.118,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "servicios (2) (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -228.695,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "gastos legales (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -59.554,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "mantenimiento y reparaciones (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -33.682,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "adecuación e instalación (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -17.304,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "gastos de viaje (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -108.742,
+          "disclosure": "aggregated"
+        },
+        {"label":"depreciaciones","category":"depreciation","subcategory":"depreciation","amount":-684.371,"disclosure":"aggregated"},
+        {
+          "label": "amortizacion derechos de uso",
+          "category": "other_amortisation",
+          "subcategory": "other_amortisation",
+          "amount": -111.532,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "diversos (4) (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -225.1,
+          "disclosure": "aggregated"
+        },
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2326.088,"disclosure":"aggregated"},
         {"label":"Otras ganancias (pérdidas)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-51.332,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-638.669,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":50926.372,"expenses":49928.498,"net_result":359.205},
-      "adjustments": {
-        "no_breakdown": [
-          {
-            "line": "Ingresos de actividades ordinarias",
-            "side": "revenue",
-            "amount": 49330.876,
-            "reason": "Línea única de ingresos que el estado de SIIS no abre: va a la categoría de fútbol sin desglosar, como Omzet o Chiffre d'affaires de los clubes belgas y argentinos; el precedente de Tolima es la regla de Gastos de ventas (463, 2026-10-26)",
-            "kind": "net_sales"
-          },
-          {
-            "line": "Gastos de ventas",
-            "side": "expense",
-            "amount": 39666,
-            "reason": "Regla votada 2026-10-26: «Gastos de ventas» sin abrir va a lump_football_operations_expense",
-            "kind": "other"
-          }
-        ],
-        "revenue_basis": "full"
-      }
+      "official_totals": {"revenue":50926.372,"expenses":49928.499,"net_result":359.205},
+      "adjustments": {"revenue_basis":"full"}
     }
   ],
   "budget_overlay": {},

@@ -1,24 +1,132 @@
 {
  "md": "Clubes/Colombia/La Equidad/siis-estado-2025.md",
- "generatedAt": "2026-10-26T06:12:13.588Z",
- "rubrosHuella": "5db86ad60e9d0703e3a59a78a03bf5c24dbaaf0c",
+ "generatedAt": "2026-10-26T12:19:57.806Z",
+ "rubrosHuella": "9184f8e7295936842a7e0f3c7f627d4bc0e449a0",
  "rubros": [
   {
-   "label": "Ingresos de actividades ordinarias",
+   "label": "Taquilla - Venta de Boletería",
    "lado": "revenue",
    "page": 1,
-   "section": "estado",
-   "choice": "lump_football_operations",
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Escuelas de Futbol",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "youth_football",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidad y Propaganda",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Dimayor",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Federacion Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "competition_bonus",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocinio",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Venta de Artículos Deportivos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Actividades Conexas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos Fuerzas Basicas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "youth_football",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Reintegro de Otros Costos y Gastos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Recobro Incapacidades",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
    "confidence": 0.97,
    "desdeCache": true
   },
   {
-   "label": "Otros ingresos",
+   "label": "Venta Derechos Deportivos",
    "lado": "revenue",
    "page": 1,
-   "section": "estado",
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Aprovechamientos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
    "choice": "other_income",
    "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Ajuste al Peso",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
+   "confidence": 1,
    "desdeCache": true
   },
   {
@@ -31,12 +139,129 @@
    "desdeCache": true
   },
   {
-   "label": "Gastos de ventas",
+   "label": "Gastos De Personal",
    "lado": "expense",
    "page": 1,
-   "section": "estado",
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "wages_squad",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
    "choice": "admin_general_expense",
-   "confidence": 0.5,
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Mantenimiento Y Reparaciones",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Adecuacion E Instalacion",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos De Viaje",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizaciones",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "other_amortisation",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizaciones Donaciones Derechos",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "player_amortisation",
+   "confidence": 0.39,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos Deportivos",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "other_expenses",
+   "confidence": 0.76,
    "desdeCache": true
   },
   {
@@ -56,6 +281,75 @@
    "choice": "other_expenses",
    "confidence": 0.97,
    "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1104
+  },
+  {
+   "label": "Legales",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1084
+  },
+  {
+   "label": "Financieros",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "matchday_competition",
+     0.11
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1016
   }
  ]
 }

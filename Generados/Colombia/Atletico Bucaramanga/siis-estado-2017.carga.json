@@ -1,8 +1,12 @@
 {
  "pdf": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2017.pdf",
- "generado": "2026-10-26T06:30:38.193Z",
+ "generado": "2026-10-26T12:35:01.422Z",
  "frena": [],
- "avisos": [],
+ "avisos": [
+  "--reemplazar: el registro no lo daba por cargado, pero data/ tiene el año (registro desactualizado: tools/inventario-transcripciones.mjs)",
+  "atleticobucaramanga-co 2017 ya cargado: se reemplaza",
+  "sources['atleticobucaramanga-co-siis-estado-2017'] ya existe: se conserva"
+ ],
  "ejercicio": {
   "clubId": "atleticobucaramanga-co",
   "year": 2017,
@@ -42,9 +46,69 @@
     "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
-    "rawLabel": "Gastos de administración",
+    "rawLabel": "Gastos de personal",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -260.481,
+    "amountNative": -88.421,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Honorarios",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -12.05,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Impuestos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -34.553,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Arrendamientos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.32,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Seguros",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -32.029,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.88,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Servicio vigilancia",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.115,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Procesamiento electrónico",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.92,
     "disclosureLevel": "aggregated",
     "_pag": 1,
     "_escalon": 1,
@@ -52,13 +116,103 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Otros gastos",
-    "normalizedCategory": "other_expenses",
-    "amountNative": -16.075,
+    "rawLabel": "Publicidad propaganda",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.035,
     "disclosureLevel": "aggregated",
     "_pag": 1,
     "_escalon": 1,
-    "_conf": 0.9,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Servicios públicos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.935,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Correo portes y telegramas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.582,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos notariales y legales",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -9.677,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mantenimiento y reparaciones",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -5.293,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos de viaje",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -28.938,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-26): Regla de Colombia para las filas de una nota de gastos (CONVENCIONES-DATOS.md): los viajes de la nota de «Gastos de administración» son administración, no organización de partidos."
+   },
+   {
+    "rawLabel": "Depreciaciones",
+    "normalizedCategory": "depreciation",
+    "amountNative": -42.878,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos varios",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.736,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Costas y procesos judiciales",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -10.206,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Impuestos asumidos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -5.869,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    }
   ],
@@ -102,7 +256,7 @@
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 8243.039,
-   "officialTotalExpenses": 7593.015,
+   "officialTotalExpenses": 7593.016,
    "officialPAT": 392.102
   },
   "source": {
@@ -116,7 +270,7 @@
   }
  },
  "md": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2017.md",
- "reemplaza": false,
+ "reemplaza": true,
  "periodo": {
   "tipo": "anual",
   "meses": 12,
@@ -141,7 +295,7 @@
   }
  ],
  "seleccion": {
-  "filas": 7,
+  "filas": 22,
   "notasUsadas": [],
   "refM": null
  },
@@ -194,34 +348,261 @@
    "amountNative": -7316.459
   },
   {
-   "label": "Gastos de administración",
+   "label": "Gastos de personal",
    "page": 1,
-   "native": 260.481,
+   "native": 88.421,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 260.481,
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 88.421,
+   "cat": "admin_general_expense",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -88.421
+  },
+  {
+   "label": "Honorarios",
+   "page": 1,
+   "native": 12.05,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 12.05,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -12.05
+  },
+  {
+   "label": "Impuestos",
+   "page": 1,
+   "native": 34.553,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 34.553,
+   "cat": "admin_general_expense",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -34.553
+  },
+  {
+   "label": "Arrendamientos",
+   "page": 1,
+   "native": 1.32,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 1.32,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.32
+  },
+  {
+   "label": "Seguros",
+   "page": 1,
+   "native": 32.029,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 32.029,
+   "cat": "admin_general_expense",
+   "conf": 0.88,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -32.029
+  },
+  {
+   "label": "Servicio vigilancia",
+   "page": 1,
+   "native": 0.115,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 0.115,
+   "cat": "admin_general_expense",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.115
+  },
+  {
+   "label": "Procesamiento electrónico",
+   "page": 1,
+   "native": 2.92,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 2.92,
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -260.481
+   "amountNative": -2.92
   },
   {
-   "label": "Otros gastos",
+   "label": "Publicidad propaganda",
    "page": 1,
-   "native": 16.075,
+   "native": 0.035,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 16.075,
-   "cat": "other_expenses",
-   "conf": 0.9,
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 0.035,
+   "cat": "admin_general_expense",
+   "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -16.075
+   "amountNative": -0.035
+  },
+  {
+   "label": "Servicios públicos",
+   "page": 1,
+   "native": 0.935,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 0.935,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.935
+  },
+  {
+   "label": "Correo portes y telegramas",
+   "page": 1,
+   "native": 0.582,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 0.582,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.582
+  },
+  {
+   "label": "Gastos notariales y legales",
+   "page": 1,
+   "native": 9.677,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 9.677,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -9.677
+  },
+  {
+   "label": "Mantenimiento y reparaciones",
+   "page": 1,
+   "native": 5.293,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 5.293,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.293
+  },
+  {
+   "label": "Gastos de viaje",
+   "page": 1,
+   "native": 28.938,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 28.938,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-26): Regla de Colombia para las filas de una nota de gastos (CONVENCIONES-DATOS.md): los viajes de la nota de «Gastos de administración» son administración, no organización de partidos.",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -28.938
+  },
+  {
+   "label": "Depreciaciones",
+   "page": 1,
+   "native": 42.878,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 42.878,
+   "cat": "depreciation",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -42.878
+  },
+  {
+   "label": "Gastos varios",
+   "page": 1,
+   "native": 0.736,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 0.736,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-20 (subagente Sonnet, Onboarding 5): $ 294\"",
+   "destino": "expense",
+   "amountNative": -0.736
+  },
+  {
+   "label": "Costas y procesos judiciales",
+   "page": 1,
+   "native": 10.206,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Otros gastos\")",
+   "signoFijo": 10.206,
+   "cat": "other_expenses",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -10.206
+  },
+  {
+   "label": "Impuestos asumidos",
+   "page": 1,
+   "native": 5.869,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Otros gastos\")",
+   "signoFijo": 5.869,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.869
   },
   {
    "label": "Costos financieros",
@@ -249,15 +630,17 @@
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Gastos de administración\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Otros gastos\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
   "revSum": 8243.039,
-  "expSum": -7593.015,
+  "expSum": -7593.016,
   "officialTotalRevenue": 8243.039,
-  "officialTotalExpenses": 7593.015,
+  "officialTotalExpenses": 7593.016,
   "officialPAT": 392.102,
   "verificacion": {
    "pat": "impreso",
@@ -278,13 +661,13 @@
   "expImpreso": {
    "label": "total de gastos (verificado)",
    "pag": null,
-   "M": 7593.015
+   "M": 7593.016
   }
  },
  "liga": {
   "valor": "co-primeraA",
-  "fuente": "roster cacheado de \"2017 Categoría Primera A season\" (tools/club-league-reference/co.json), coincidencia exacta \"Atlético Bucaramanga\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -324,7 +707,7 @@
   },
   "liga": {
    "valor": "co-primeraA",
-   "fuente": "roster cacheado de \"2017 Categoría Primera A season\" (tools/club-league-reference/co.json), coincidencia exacta \"Atlético Bucaramanga\"",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
    "estado": "ok"
   }
  },
@@ -333,7 +716,7 @@
   "carga": true,
   "motivos": 0,
   "lineasIngreso": 2,
-  "lineasGasto": 3,
+  "lineasGasto": 18,
   "metaFilas": 2,
   "excluidas": 0
  }

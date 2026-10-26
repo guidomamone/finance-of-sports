@@ -126,3 +126,64 @@ Estado de resultados integral y estado de situación financiera al 2016-12-31 (P
 | --- | ---: | ---: |
 | Total patrimonio | 10.410.658 | 7.585.860 |
 
+## Detalle de las notas del club
+
+> Las tablas de abajo se copiaron de Clubes/Colombia/Deportes Tolima/estados-financieros-2016.md (las notas del club, otro documento del mismo año), sin el signo «$» ni las negritas, con las cifras escritas con coma de miles y, si una etiqueta se repite entre tablas, con el rubro entre paréntesis. Cada una abre un rubro del estado de resultados de arriba porque sus filas, sin los subtotales, suman EXACTO ese rubro (regla de Colombia, caso 2). Lo que las notas no abren queda como el rubro de SIIS.
+
+### Ingresos de actividades ordinarias: NOTA 16. INGRESOS DE ACTIVIDADES DE OPERACION (Clubes/Colombia/Deportes Tolima/estados-financieros-2016.md, L943-L955)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+|  CONCEPTOS | AÑO 2016 | AÑO 2015  |
+| --- | --- | --- |
+|  Taquillas | 3,130,775 | 2,533,390 |
+|  Venta de Derechos Deportivos | 14,793,063 | 11,864,681 |
+|  Préstamo de Derechos Deportivos | 0 | 47,541 |
+|  Publicidad y Propaganda | 2,638,858 | 3,447,562 |
+|  Dimayor y Federación | 3,245,837 | 2,871,976 |
+|  Participación en Eventos | 672,926 | 1,583,250 |
+|  Venta de Artículos Deportivos | 470,472 | 313,244 |
+|  Actividades Conexas | 0 | 143,223 |
+|  SUBTOTAL | 24,951,931 | 22,804,867 |
+|  Devoluciones en Artículos Deportivos | -16,741 | -8,740 |
+|  VALOR EN LIBROS | 24,935,190 | 22,796,127 |
+
+### Gastos de ventas: NOTA 18. GASTOS DE VENTAS (Clubes/Colombia/Deportes Tolima/estados-financieros-2016.md, L985-L998)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+| CONCEPTOS | AÑO 2016 | AÑO 2015 |
+| :--- | :--- | :--- |
+| Gastos de Personal (Gastos de ventas) | 7,426,676 | 7,305,520 |
+| Honorarios (Gastos de ventas) | 6,574 | 18,116 |
+| Impuestos (Gastos de ventas) | 413,709 | 249,548 |
+| Arrendamientos (Gastos de ventas) | 716,894 | 529,508 |
+| Seguros (Gastos de ventas) | 6,120 | 11,397 |
+| Servicios (Gastos de ventas) | 480,505 | 1,033,891 |
+| Gastos Legales (Gastos de ventas) | 4,644 | 6,032 |
+| Mantenimiento y Reparaciones (Gastos de ventas) | 79,780 | 83,122 |
+| Gastos de Viaje | 466,910 | 691,411 |
+| Amortizaciones | 2,337,514 | 3,766,019 |
+| Diversos (Gastos de ventas) | 7,283,082 | 8,032,395 |
+| VALOR EN LIBROS | 19,222,408 | 21,726,959 |
+
+### Gastos de administración: NOTA 17. GASTOS DE ADMINISTRACION (Clubes/Colombia/Deportes Tolima/estados-financieros-2016.md, L963-L977)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+|  CONCEPTOS | AÑO 2016 | AÑO 2015  |
+| --- | --- | --- |
+| Gastos de Personal (Gastos de administración) | 745,573 | 587,154 |
+| Honorarios (Gastos de administración) | 90,052 | 108,306 |
+| Impuestos (Gastos de administración) | 158,653 | 56,051 |
+| Arrendamientos (Gastos de administración) | 78,139 | 55,463 |
+|  Contribuciones y Afiliaciones | 8,949 | 0 |
+| Seguros (Gastos de administración) | 73,700 | 30,038 |
+| Servicios (Gastos de administración) | 74,844 | 45,373 |
+| Gastos Legales (Gastos de administración) | 11,572 | 16,248 |
+| Mantenimiento y Reparaciones (Gastos de administración) | 1,677 | 25,283 |
+|  Depreciaciones | 72,399 | 67,422 |
+|  Deterioro | 147,989 | 11,350 |
+| Diversos (Gastos de administración) | 207,431 | 204,807 |
+|  VALOR EN LIBROS | 1,670,978 | 1,207,495 |
+

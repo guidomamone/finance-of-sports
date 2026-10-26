@@ -126,3 +126,46 @@ Estado de resultados integral y estado de situación financiera al 2020-12-31 (P
 | --- | ---: | ---: |
 | Total patrimonio | 5.931.489 | 5.146.123 |
 
+## Detalle de las notas del club
+
+> Las tablas de abajo se copiaron de Clubes/Colombia/La Equidad/estados-financieros-2020.md (las notas del club, otro documento del mismo año), sin el signo «$» ni las negritas, con las cifras escritas con coma de miles y, si una etiqueta se repite entre tablas, con el rubro entre paréntesis. Cada una abre un rubro del estado de resultados de arriba porque sus filas, sin los subtotales, suman EXACTO ese rubro (regla de Colombia, caso 2). Lo que las notas no abren queda como el rubro de SIIS.
+
+### Ingresos de actividades ordinarias: Nota 25. Ingresos actividades ordinarias (Clubes/Colombia/La Equidad/estados-financieros-2020.md, L1126-L1142)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+| | 2,020 | 2019 Reexpresado | 2,019 |
+| :--- | :--- | :--- | :--- |
+| Taquilla - Venta de Boleteria | 670,777 | 1,279,541 | 1,279,541 |
+| Escuelas de Futbol | 662,665 | 1,918,734 | 1,918,734 |
+| Venta y Prestamo de Derechos | 1,687,051 | 2,769,869 | 2,769,869 |
+| Publicidad y Propaganda | 765,206 | 466,083 | 466,083 |
+| Dimayor | 3,304,121 | 4,046,863 | 4,046,863 |
+| Federacion Colombiana de Futbol | 272,156 | 304,832 | 304,832 |
+| Patrocinio | 4,545,827 | 4,963,454 | 4,963,454 |
+| Cuota de Sostenimiento | 219,891 | 34,242 | 34,242 |
+| Participación CopaSuramericana | 0 | 5,884,921 | 5,884,921 |
+| Venta de Artículos Deportivos | 61,856 | 141,466 | 141,466 |
+| Eventos | 4,700 | 0 | 0 |
+| Devoluciones en Ventas | -707,467 | -9,351 | -9,351 |
+| Actividades Conexas | 625,305 | 519,124 | 519,124 |
+| Ingresos Fuerzas Basicas | 3,880 | 51,033 | 51,033 |
+| Total Ingresos Operacionales | 12,115,968 | 22,370,813 | 22,370,813 |
+
+### Otros ingresos: Notas a los Estados Financieros – 31 de diciembre de 2020 y 31 de diciembre de 2019 (Clubes/Colombia/La Equidad/estados-financieros-2020.md, L1179-L1190)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+| | 2,020 | 2019 Reexpresado | 2,019 |
+| :--- | :--- | :--- | :--- |
+| Construcciones y Edificaciones | 18,000 | 44,000 | 44,000 |
+| Transporte | 0 | 240 | 240 |
+| Reintegro de Otros Costos y Gastos | 150,863 | 211,991 | 211,991 |
+| Recobro Incapacidades | 829,783 | 0 | 0 |
+| Ingresos de Ejercicios Anteriores | 12,505 | 9,048 | 9,048 |
+| Aprovechamientos | 2,003 | 54,868 | 54,868 |
+| Subvenciones del Estado | 317,340 | 0 | 0 |
+| Ajuste al Peso | 3 | 13 | 13 |
+| Donanciones Derechos Deportivos | 1,895,000 | 0 | 0 |
+| Total Otros Ingresos | 3,225,497 | 320,160 | 320,160 |
+

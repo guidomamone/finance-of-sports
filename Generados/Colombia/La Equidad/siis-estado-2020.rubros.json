@@ -1,70 +1,235 @@
 {
-  "md": "Clubes/Colombia/La Equidad/siis-estado-2020.md",
-  "pdf": "Clubes/Colombia/La Equidad/siis-estado-2020.pdf",
-  "club": "laequidad-co",
-  "year": 2020,
-  "generatedAt": "2026-10-26T06:10:10.122Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Ingresos de actividades ordinarias",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        12115.968
-      ],
-      "glosa": "Ingresos de actividades ordinarias"
-    },
-    {
-      "label": "Otros ingresos",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        3225.497
-      ],
-      "glosa": "Otros ingresos"
-    },
-    {
-      "label": "Costo de ventas",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        38.306
-      ],
-      "glosa": "Costo de ventas"
-    },
-    {
-      "label": "Gastos de ventas",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        12364.909
-      ],
-      "glosa": "Gastos de ventas"
-    },
-    {
-      "label": "Gastos de administración",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        1754.47
-      ],
-      "glosa": "Gastos de administración"
-    },
-    {
-      "label": "Otros gastos",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        109.316
-      ],
-      "glosa": "Otros gastos"
-    }
-  ]
+ "md": "Clubes/Colombia/La Equidad/siis-estado-2020.md",
+ "pdf": "Clubes/Colombia/La Equidad/siis-estado-2020.pdf",
+ "club": "laequidad-co",
+ "year": 2020,
+ "generatedAt": "2026-10-26T12:19:06.834Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Taquilla - Venta de Boleteria",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    670.777
+   ]
+  },
+  {
+   "label": "Escuelas de Futbol",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    662.665
+   ]
+  },
+  {
+   "label": "Venta y Prestamo de Derechos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    1687.051
+   ]
+  },
+  {
+   "label": "Publicidad y Propaganda",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    765.206
+   ]
+  },
+  {
+   "label": "Dimayor",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    3304.121
+   ]
+  },
+  {
+   "label": "Federacion Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    272.156
+   ]
+  },
+  {
+   "label": "Patrocinio",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    4545.827
+   ]
+  },
+  {
+   "label": "Cuota de Sostenimiento",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    219.891
+   ]
+  },
+  {
+   "label": "Venta de Artículos Deportivos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    61.856
+   ]
+  },
+  {
+   "label": "Eventos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    4.7
+   ]
+  },
+  {
+   "label": "Devoluciones en Ventas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    -707.467
+   ]
+  },
+  {
+   "label": "Actividades Conexas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    625.305
+   ]
+  },
+  {
+   "label": "Ingresos Fuerzas Basicas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    3.88
+   ]
+  },
+  {
+   "label": "Construcciones y Edificaciones",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "values": [
+    18
+   ]
+  },
+  {
+   "label": "Reintegro de Otros Costos y Gastos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "values": [
+    150.863
+   ]
+  },
+  {
+   "label": "Recobro Incapacidades",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "values": [
+    829.783
+   ]
+  },
+  {
+   "label": "Ingresos de Ejercicios Anteriores",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "values": [
+    12.505
+   ]
+  },
+  {
+   "label": "Aprovechamientos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "values": [
+    2.003
+   ]
+  },
+  {
+   "label": "Subvenciones del Estado",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "values": [
+    317.34
+   ]
+  },
+  {
+   "label": "Ajuste al Peso",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "values": [
+    0.003
+   ]
+  },
+  {
+   "label": "Donanciones Derechos Deportivos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "values": [
+    1895
+   ]
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    38.306
+   ]
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    12364.909
+   ]
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    1754.47
+   ]
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    109.316
+   ]
+  }
+ ]
 }

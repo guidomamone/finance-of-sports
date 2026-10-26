@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Colombia/La Equidad/siis-estado-2022.pdf",
  "md": "Clubes/Colombia/La Equidad/siis-estado-2022.md",
- "mdSha1": "7036044b3cb461f9e0583d02d8a1d1f2eabd011d",
+ "mdSha1": "8795dffdfe0ff1bc7425a574867158a10121edb8",
  "modelo": "a mano (Claude Code, sesión 2026-10-26)",
- "generado": "2026-10-26T06:07:00.493Z",
+ "generado": "2026-10-26T12:30:20.600Z",
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -12,14 +12,52 @@
     24
    ],
    "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 1,
+   "lineas": [
+    107,
+    125
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 1,
+   "lineas": [
+    178,
+    191
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 1,
+   "lineas": [
+    131,
+    150
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 1,
+   "lineas": [
+    156,
+    172
+   ],
+   "tipo": "tabla"
   }
  },
  "sin_estado": false,
  "estado": [
   "b1"
  ],
- "notas_ingresos": [],
- "notas_gastos": [],
+ "notas_ingresos": [
+  "b10",
+  "b13"
+ ],
+ "notas_gastos": [
+  "b11",
+  "b12"
+ ],
  "escala": "miles",
  "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
  "moneda": "COP",
@@ -28,5 +66,5 @@
  "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [],
- "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
 }

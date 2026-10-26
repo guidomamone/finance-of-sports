@@ -87,3 +87,45 @@ Estado de resultados integral y estado de situación financiera al 2024-12-31 (P
 | --- | ---: | ---: |
 | Total patrimonio | 20.844.921 | 15.352.834 |
 
+## Detalle de las notas del club
+
+> Las tablas de abajo se copiaron de Clubes/Colombia/Aguilas Doradas/estados-financieros-2024.md (las notas del club, otro documento del mismo año), sin el signo «$» ni las negritas, con las cifras escritas con coma de miles y, si una etiqueta se repite entre tablas, con el rubro entre paréntesis. Cada una abre un rubro del estado de resultados de arriba porque sus filas, sin los subtotales, suman EXACTO ese rubro (regla de Colombia, caso 2). Lo que las notas no abren queda como el rubro de SIIS.
+
+### Ingresos de actividades ordinarias: 16. INGRESOS: (Clubes/Colombia/Aguilas Doradas/estados-financieros-2024.md, L447-L459)
+
+Cifras de esta tabla en pesos colombianos.
+
+|  CONCEPTO | AÑO 2024 | AÑO 2023  |
+| --- | --- | --- |
+|  Por taquilla | 337,653,000 | 1,007,745,896 |
+|  Venta Derechos deportivos | 12,110,170,057 | 13,499,142,392 |
+|  Publicidad y propaganda | 308,044,000 | 2,077,225,008 |
+|  Dimayor Derechos de televisión | 5,885,367,352 | 5,400,355,150 |
+|  Dimayor Diferidos | 239,521,164 | 239,521,164 |
+|  Dimayor participaciones y otros | 1,152,927,337 | 1,753,345,904 |
+|  Donaciones | 0 | 420,000,000 |
+|  Federación Colombiana de futbol | 533,337,000 | 500,009,000 |
+|  Patrocinios | 4,287,179,487 | 0 |
+|  Particip. Eventos internales | 1,881,786,130 | 1,049,850,000 |
+|  TOTAL INGRESOS OPERACIONALES | 26,735,985,527 | 25,947,194,514 |
+
+### Gastos de administración: 17.1 Gastos de Administración (Clubes/Colombia/Aguilas Doradas/estados-financieros-2024.md, L559-L573)
+
+Cifras de esta tabla en pesos colombianos.
+
+|  GASTOS DE ADMINISTRACION | AÑO 2024 | AÑO 2023  |
+| --- | --- | --- |
+|  Gastos de Personal | 1,073,936,555 | 968,773,663 |
+|  Honorarios | 188,415,460 | 195,727,000 |
+|  Impuestos | 114,221,199 | 117,911,496 |
+|  Arrendamientos | 49,534,106 | 41,356,182 |
+|  Seguros | 32,445,800 | 38,449,405 |
+|  Servicios generales | 293,063,141 | 185,164,229 |
+|  Gastos legales | 2,746,900 | 2,300,200 |
+|  Mantenimiento y reparaciones | 96,722,715 | 37,275,675 |
+|  Gastos de viaje | 96,346,144 | 9,872,619 |
+|  Amortizaciones | 28,616,328 | 28,616,318 |
+|  Gastos diversos | 706,529,319 | 470,626,031 |
+|  Deterioro de cartera | 61,884,450 | 0 |
+|  TOTAL GASTOS ADMINISTRACION | 2,744,462,116 | 2,096,072,818 |
+

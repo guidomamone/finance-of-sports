@@ -1,80 +1,145 @@
 {
-  "md": "Clubes/Colombia/Deportes Tolima/siis-estado-2024.md",
-  "pdf": "Clubes/Colombia/Deportes Tolima/siis-estado-2024.pdf",
-  "club": "deportestolima-co",
-  "year": 2024,
-  "generatedAt": "2026-10-26T05:35:59.845Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Ingresos de actividades ordinarias",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        45544.864
-      ],
-      "glosa": "Ingresos de actividades ordinarias"
-    },
-    {
-      "label": "Otros ingresos",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        1973.19
-      ],
-      "glosa": "Otros ingresos"
-    },
-    {
-      "label": "Otras ganancias (pérdidas)",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
-      "values": [
-        227.675
-      ],
-      "glosa": "Otras ganancias (pérdidas)"
-    },
-    {
-      "label": "Costo de ventas",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        2632.78
-      ],
-      "glosa": "Costo de ventas"
-    },
-    {
-      "label": "Gastos de ventas",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        5166.142
-      ],
-      "glosa": "Gastos de ventas"
-    },
-    {
-      "label": "Gastos de administración",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        37305.416
-      ],
-      "glosa": "Gastos de administración"
-    },
-    {
-      "label": "Otros gastos",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        1006.202
-      ],
-      "glosa": "Otros gastos"
-    }
-  ]
+ "md": "Clubes/Colombia/Deportes Tolima/siis-estado-2024.md",
+ "pdf": "Clubes/Colombia/Deportes Tolima/siis-estado-2024.pdf",
+ "club": "deportestolima-co",
+ "year": 2024,
+ "generatedAt": "2026-10-26T12:28:48.705Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Taquillas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    12934.108
+   ]
+  },
+  {
+   "label": "Venta de Derechos Deportivos 1(A)",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    12473.275
+   ]
+  },
+  {
+   "label": "Publicidad y Propaganda 2(A)",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    6083.891
+   ]
+  },
+  {
+   "label": "Dimayor y Federación 3(A)",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    7650.113
+   ]
+  },
+  {
+   "label": "Participación en Eventos 4(A)",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    2204.575
+   ]
+  },
+  {
+   "label": "Venta de Artículos Deportivos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    4213.603
+   ]
+  },
+  {
+   "label": "Actividades Conexas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    22.689
+   ]
+  },
+  {
+   "label": "Mecanismo de solidaridad",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    32.349
+   ]
+  },
+  {
+   "label": "Devoluciones en Artículos Deportivos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    -69.739
+   ]
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    1973.19
+   ]
+  },
+  {
+   "label": "Otras ganancias (pérdidas)",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "values": [
+    227.675
+   ]
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    2632.78
+   ]
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    5166.142
+   ]
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    37305.416
+   ]
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    1006.202
+   ]
+  }
+ ]
 }

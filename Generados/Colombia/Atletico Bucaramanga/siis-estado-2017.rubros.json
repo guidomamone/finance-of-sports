@@ -1,60 +1,190 @@
 {
-  "md": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2017.md",
-  "pdf": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2017.pdf",
-  "club": "atleticobucaramanga-co",
-  "year": 2017,
-  "generatedAt": "2026-10-26T06:10:10.678Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Ingresos de actividades ordinarias",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        8243.02
-      ],
-      "glosa": "Ingresos de actividades ordinarias"
-    },
-    {
-      "label": "Otros ingresos",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0.019
-      ],
-      "glosa": "Otros ingresos"
-    },
-    {
-      "label": "Costo de ventas",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        7316.459
-      ],
-      "glosa": "Costo de ventas"
-    },
-    {
-      "label": "Gastos de administración",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        260.481
-      ],
-      "glosa": "Gastos de administración"
-    },
-    {
-      "label": "Otros gastos",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        16.075
-      ],
-      "glosa": "Otros gastos"
-    }
-  ]
+ "md": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2017.md",
+ "pdf": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2017.pdf",
+ "club": "atleticobucaramanga-co",
+ "year": 2017,
+ "generatedAt": "2026-10-26T12:21:33.797Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    8243.02
+   ]
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    0.019
+   ]
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    7316.459
+   ]
+  },
+  {
+   "label": "Gastos de personal",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    88.421
+   ]
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    12.05
+   ]
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    34.553
+   ]
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    1.32
+   ]
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    32.029
+   ]
+  },
+  {
+   "label": "Servicio vigilancia",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    0.115
+   ]
+  },
+  {
+   "label": "Procesamiento electrónico",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    2.92
+   ]
+  },
+  {
+   "label": "Publicidad propaganda",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    0.035
+   ]
+  },
+  {
+   "label": "Servicios públicos",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    0.935
+   ]
+  },
+  {
+   "label": "Correo portes y telegramas",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    0.582
+   ]
+  },
+  {
+   "label": "Gastos notariales y legales",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    9.677
+   ]
+  },
+  {
+   "label": "Mantenimiento y reparaciones",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    5.293
+   ]
+  },
+  {
+   "label": "Gastos de viaje",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    28.938
+   ]
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    42.878
+   ]
+  },
+  {
+   "label": "Gastos varios",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    0.736
+   ]
+  },
+  {
+   "label": "Costas y procesos judiciales",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Otros gastos\"",
+   "values": [
+    10.206
+   ]
+  },
+  {
+   "label": "Impuestos asumidos",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Otros gastos\"",
+   "values": [
+    5.869
+   ]
+  }
+ ]
 }

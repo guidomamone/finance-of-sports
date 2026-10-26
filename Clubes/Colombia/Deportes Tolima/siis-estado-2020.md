@@ -97,3 +97,46 @@ Estado de resultados integral y estado de situación financiera al 2020-12-31 (P
 | --- | ---: | ---: |
 | Total patrimonio | 20.053.338 | 21.928.173 |
 
+## Detalle de las notas del club
+
+> Las tablas de abajo se copiaron de Clubes/Colombia/Deportes Tolima/estados-financieros-2020.md (las notas del club, otro documento del mismo año), sin el signo «$» ni las negritas, con las cifras escritas con coma de miles y, si una etiqueta se repite entre tablas, con el rubro entre paréntesis. Cada una abre un rubro del estado de resultados de arriba porque sus filas, sin los subtotales, suman EXACTO ese rubro (regla de Colombia, caso 2). Lo que las notas no abren queda como el rubro de SIIS.
+
+### Ingresos de actividades ordinarias: NOTA 16. INGRESOS DE ACTIVIDADES DE OPERACION (Clubes/Colombia/Deportes Tolima/estados-financieros-2020.md, L1430-L1443)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+|  INGRESOS ACTIVIDADES DE OPERACIÓN | AÑO 2020 | AÑO 2019  |
+| --- | --- | --- |
+|  Taquillas | 1,023,255 | 5,980,008 |
+|  Venta de Derechos Deportivos (1) | 1,402,564 | 6,924,000 |
+|  Mecanismo de Solidaridad (2) | 980,608 | 1,604,158 |
+|  Publicidad y Propaganda (3) | 2,465,612 | 2,473,218 |
+|  Dimayor y Federación (4) | 3,683,034 | 5,669,979 |
+|  Donaciones | 0 | 1,000 |
+|  Participación en Eventos (5) | 5,550,689 | 10,672,327 |
+|  Venta de Artículos Deportivos | 545,093 | 1,082,480 |
+|  Actividades Conexas | 0 | 1,354,178 |
+|  SUBTOTAL | 15,650,855 | 35,761,348 |
+|  Devoluciones en Artículos Deportivos | -47,551 | -79,768 |
+|  TOTAL INGRESOS ACTIVIDADES DE OPERACIÓN | 15,603,304 | 35,681,580 |
+
+### Gastos de ventas: NOTA 18. GASTOS DE VENTAS (Clubes/Colombia/Deportes Tolima/estados-financieros-2020.md, L1640-L1654)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+|  GASTOS DE VENTAS | AÑO 2020 | AÑO 2019  |
+| --- | --- | --- |
+|  Gastos de Personal | 10,105,575 | 12,255,319 |
+|  Honorarios | 13,722 | 74,254 |
+|  Impuestos (1) | 86,164 | 605,105 |
+|  Arrendamientos (2) | 498,224 | 867,700 |
+|  Seguros | 7,679 | 34,539 |
+|  Servicios (3) | 1,563,775 | 1,464,447 |
+|  Gastos Legales | 2,984 | 14,524 |
+|  Mantenimiento y Reparaciones (4) | 100,713 | 98,525 |
+|  Adecuación e Instalación | 15,932 | 45,979 |
+|  Gastos de Viaje (5) | 988,833 | 1,197,980 |
+|  Amortizaciones | 2,692,917 | 3,107,487 |
+|  Diversos (6) | 2,378,859 | 5,904,691 |
+|  TOTAL GASTOS DE VENTAS | 18,455,377 | 25,670,550 |
+

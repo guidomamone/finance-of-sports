@@ -50,3 +50,11 @@ Color de marca: #00A153 — verde (apodo 'El Verde'; camiseta local 2025 body1 0
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2021 desde `Clubes/Colombia/La Equidad/siis-estado-2021.pdf` (sourceId `laequidad-co-siis-estado-2021`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2022 desde `Clubes/Colombia/La Equidad/siis-estado-2022.pdf` (sourceId `laequidad-co-siis-estado-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2016 desde `Clubes/Colombia/La Equidad/siis-estado-2016.pdf` (sourceId `laequidad-co-siis-estado-2016`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2020 desde `Clubes/Colombia/La Equidad/siis-estado-2020.pdf` (sourceId `laequidad-co-siis-estado-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2022 desde `Clubes/Colombia/La Equidad/siis-estado-2022.pdf` (sourceId `laequidad-co-siis-estado-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2025 desde `Clubes/Colombia/La Equidad/siis-estado-2025.pdf` (sourceId `laequidad-co-siis-estado-2025`).

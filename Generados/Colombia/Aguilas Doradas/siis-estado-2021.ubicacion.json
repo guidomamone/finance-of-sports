@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Colombia/Aguilas Doradas/siis-estado-2021.pdf",
  "md": "Clubes/Colombia/Aguilas Doradas/siis-estado-2021.md",
- "mdSha1": "d0d50df7d8410042f69001d70ba580957092d7b7",
+ "mdSha1": "12ca0ad7bb31243ad96bc2dba49d7c41c4e7c19c",
  "modelo": "a mano (Claude Code, sesión 2026-10-26)",
- "generado": "2026-10-26T06:07:09.002Z",
+ "generado": "2026-10-26T12:30:24.805Z",
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -12,13 +12,23 @@
     24
    ],
    "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 1,
+   "lineas": [
+    91,
+    100
+   ],
+   "tipo": "tabla"
   }
  },
  "sin_estado": false,
  "estado": [
   "b1"
  ],
- "notas_ingresos": [],
+ "notas_ingresos": [
+  "b9"
+ ],
  "notas_gastos": [],
  "escala": "miles",
  "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
@@ -28,5 +38,5 @@
  "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [],
- "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
 }

@@ -67,3 +67,23 @@ Color de marca: #981A26 — vinotinto y dorado (infobox es.wikipedia: Colores #9
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2021 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2021.pdf` (sourceId `deportestolima-co-siis-estado-2021`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2022 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2022.pdf` (sourceId `deportestolima-co-siis-estado-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2016 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2016.pdf` (sourceId `deportestolima-co-siis-estado-2016`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2017 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2017.pdf` (sourceId `deportestolima-co-siis-estado-2017`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2018 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2018.pdf` (sourceId `deportestolima-co-siis-estado-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2019 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2019.pdf` (sourceId `deportestolima-co-siis-estado-2019`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2020 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2020.pdf` (sourceId `deportestolima-co-siis-estado-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2021 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2021.pdf` (sourceId `deportestolima-co-siis-estado-2021`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2022 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2022.pdf` (sourceId `deportestolima-co-siis-estado-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2023 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2023.pdf` (sourceId `deportestolima-co-siis-estado-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2024 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2024.pdf` (sourceId `deportestolima-co-siis-estado-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2025 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2025.pdf` (sourceId `deportestolima-co-siis-estado-2025`).

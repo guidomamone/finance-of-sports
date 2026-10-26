@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2017.pdf",
  "md": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2017.md",
- "generado": "2026-10-26T06:30:34.686Z",
+ "generado": "2026-10-26T12:30:36.588Z",
  "scriptHuella": "f1d4dee41de6",
  "estado": "ok",
  "clubId": "atleticobucaramanga-co",
@@ -41,22 +41,22 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (financiero e impuesto invertidos)",
-   "dif": 1.1937117960769683e-12
+   "dif": 0.000999999999010015
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2016 de este documento suma ingresos 7517.284; el sitio tiene 7517.285"
   },
   {
    "nombre": "documento del año 2018",
    "ok": true,
-   "detalle": "ingresos de 2017: 8243.039 en este documento y 8243.039 en siis-estado-2018.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2017: 8243.039 en este documento y 8243.038 en siis-estado-2018.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2016",
    "ok": true,
    "detalle": "ingresos de 2016: 7517.285 en siis-estado-2016.pdf y 7517.284 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
   }
  ],
  "notas": [],
@@ -65,7 +65,7 @@
  "faltasDesglose": null,
  "totales": {
   "ingresos": 8243.039,
-  "gastos": 7593.015,
+  "gastos": 7593.016,
   "financiero": 2.807,
   "impuesto": 255.115,
   "resultadoImpreso": 392.102,
@@ -99,20 +99,140 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Gastos de administración",
+   "etiqueta": "Gastos de personal",
    "lado": "gasto",
-   "M": 260.481,
+   "M": 88.421,
    "pagina": 1,
-   "linea": 14,
-   "origen": "estado"
+   "linea": 99,
+   "origen": "nota que desglosa \"Gastos de administración\""
   },
   {
-   "etiqueta": "Otros gastos",
+   "etiqueta": "Honorarios",
    "lado": "gasto",
-   "M": 16.075,
+   "M": 12.05,
    "pagina": 1,
-   "linea": 16,
-   "origen": "estado"
+   "linea": 100,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Impuestos",
+   "lado": "gasto",
+   "M": 34.553,
+   "pagina": 1,
+   "linea": 101,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Arrendamientos",
+   "lado": "gasto",
+   "M": 1.32,
+   "pagina": 1,
+   "linea": 102,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 32.029,
+   "pagina": 1,
+   "linea": 104,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Servicio vigilancia",
+   "lado": "gasto",
+   "M": 0.115,
+   "pagina": 1,
+   "linea": 105,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Procesamiento electrónico",
+   "lado": "gasto",
+   "M": 2.92,
+   "pagina": 1,
+   "linea": 106,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Publicidad propaganda",
+   "lado": "gasto",
+   "M": 0.035,
+   "pagina": 1,
+   "linea": 107,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Servicios públicos",
+   "lado": "gasto",
+   "M": 0.935,
+   "pagina": 1,
+   "linea": 108,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Correo portes y telegramas",
+   "lado": "gasto",
+   "M": 0.582,
+   "pagina": 1,
+   "linea": 110,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Gastos notariales y legales",
+   "lado": "gasto",
+   "M": 9.677,
+   "pagina": 1,
+   "linea": 111,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Mantenimiento y reparaciones",
+   "lado": "gasto",
+   "M": 5.293,
+   "pagina": 1,
+   "linea": 112,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Gastos de viaje",
+   "lado": "gasto",
+   "M": 28.938,
+   "pagina": 1,
+   "linea": 113,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Depreciaciones",
+   "lado": "gasto",
+   "M": 42.878,
+   "pagina": 1,
+   "linea": 114,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Gastos varios",
+   "lado": "gasto",
+   "M": 0.736,
+   "pagina": 1,
+   "linea": 115,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Costas y procesos judiciales",
+   "lado": "gasto",
+   "M": 10.206,
+   "pagina": 1,
+   "linea": 125,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Impuestos asumidos",
+   "lado": "gasto",
+   "M": 5.869,
+   "pagina": 1,
+   "linea": 126,
+   "origen": "nota que desglosa \"Otros gastos\""
   }
  ],
  "signosCarga": {

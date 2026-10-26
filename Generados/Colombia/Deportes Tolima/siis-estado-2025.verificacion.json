@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Deportes Tolima/siis-estado-2025.pdf",
  "md": "Clubes/Colombia/Deportes Tolima/siis-estado-2025.md",
- "generado": "2026-10-26T05:45:39.393Z",
+ "generado": "2026-10-26T12:30:36.303Z",
  "scriptHuella": "f1d4dee41de6",
  "estado": "ok",
  "clubId": "deportestolima-co",
@@ -41,7 +41,7 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (financiero e impuesto invertidos)",
-   "dif": 3.808509063674137e-12
+   "dif": 0.0009999999858223418
   },
   {
    "nombre": "lectura",
@@ -49,14 +49,14 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 47745.729; el sitio tiene 47745.729"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": true,
    "detalle": "ingresos de 2024: 47745.729 en siis-estado-2024.pdf y 47745.729 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [
@@ -68,7 +68,7 @@
  "faltasDesglose": null,
  "totales": {
   "ingresos": 50926.372,
-  "gastos": 49928.498,
+  "gastos": 49928.499,
   "financiero": 0,
   "impuesto": 638.669,
   "resultadoImpreso": 359.205,
@@ -78,12 +78,76 @@
  },
  "lineas": [
   {
-   "etiqueta": "Ingresos de actividades ordinarias",
+   "etiqueta": "taquillas",
    "lado": "ingreso",
-   "M": 49330.876,
+   "M": 10422.799,
    "pagina": 1,
-   "linea": 11,
-   "origen": "estado"
+   "linea": 109,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "venta de Derechos Deportivos 1(A)",
+   "lado": "ingreso",
+   "M": 14933.893,
+   "pagina": 1,
+   "linea": 110,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "publicidad y Propaganda 2(A)",
+   "lado": "ingreso",
+   "M": 8397.992,
+   "pagina": 1,
+   "linea": 111,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Dimayor y Federación 3(A)",
+   "lado": "ingreso",
+   "M": 8270.256,
+   "pagina": 1,
+   "linea": 112,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "participación en Eventos 4(A)",
+   "lado": "ingreso",
+   "M": 1878.54,
+   "pagina": 1,
+   "linea": 113,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "venta de Artículos Deportivos",
+   "lado": "ingreso",
+   "M": 5200.41,
+   "pagina": 1,
+   "linea": 114,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "actividades Conexas",
+   "lado": "ingreso",
+   "M": 30.252,
+   "pagina": 1,
+   "linea": 115,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "mecanismo de solidaridad",
+   "lado": "ingreso",
+   "M": 328.849,
+   "pagina": 1,
+   "linea": 116,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "devoluciones en Artículos Deportivos",
+   "lado": "ingreso",
+   "M": -132.115,
+   "pagina": 1,
+   "linea": 118,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
   },
   {
    "etiqueta": "Otros ingresos",
@@ -102,20 +166,220 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Gastos de ventas",
+   "etiqueta": "gastos de Personal (Gastos de ventas)",
    "lado": "gasto",
-   "M": 39666,
+   "M": 13512.051,
    "pagina": 1,
-   "linea": 14,
-   "origen": "estado"
+   "linea": 127,
+   "origen": "nota que desglosa \"Gastos de ventas\""
   },
   {
-   "etiqueta": "Gastos de administración",
+   "etiqueta": "honorarios (1) (Gastos de ventas)",
    "lado": "gasto",
-   "M": 5110.64,
+   "M": 690.129,
    "pagina": 1,
-   "linea": 15,
-   "origen": "estado"
+   "linea": 128,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "impuestos (2) (Gastos de ventas)",
+   "lado": "gasto",
+   "M": 1031.242,
+   "pagina": 1,
+   "linea": 129,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "arrendamientos (3) (Gastos de ventas)",
+   "lado": "gasto",
+   "M": 1417.664,
+   "pagina": 1,
+   "linea": 130,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "contribuciones y Afiliaciones (Gastos de ventas)",
+   "lado": "gasto",
+   "M": 17.612,
+   "pagina": 1,
+   "linea": 131,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "seguros (Gastos de ventas)",
+   "lado": "gasto",
+   "M": 109.999,
+   "pagina": 1,
+   "linea": 132,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "servicios (4) (Gastos de ventas)",
+   "lado": "gasto",
+   "M": 4473.216,
+   "pagina": 1,
+   "linea": 133,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "gastos Legales (Gastos de ventas)",
+   "lado": "gasto",
+   "M": 154.646,
+   "pagina": 1,
+   "linea": 134,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "mantenimiento y Reparaciones (5) (Gastos de ventas)",
+   "lado": "gasto",
+   "M": 237.831,
+   "pagina": 1,
+   "linea": 135,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "adecuación e Instalación (Gastos de ventas)",
+   "lado": "gasto",
+   "M": 10.176,
+   "pagina": 1,
+   "linea": 136,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "gastos de Viaje (6) (Gastos de ventas)",
+   "lado": "gasto",
+   "M": 1453.73,
+   "pagina": 1,
+   "linea": 137,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "amortizaciones",
+   "lado": "gasto",
+   "M": 5152.964,
+   "pagina": 1,
+   "linea": 138,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "diversos (7) (Gastos de ventas)",
+   "lado": "gasto",
+   "M": 11404.741,
+   "pagina": 1,
+   "linea": 139,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "gastos de personal (Gastos de administración)",
+   "lado": "gasto",
+   "M": 2587.228,
+   "pagina": 1,
+   "linea": 148,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "honorarios (Gastos de administración)",
+   "lado": "gasto",
+   "M": 384.27,
+   "pagina": 1,
+   "linea": 149,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "impuestos (1) (Gastos de administración)",
+   "lado": "gasto",
+   "M": 486.756,
+   "pagina": 1,
+   "linea": 150,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "arrendamientos (Gastos de administración)",
+   "lado": "gasto",
+   "M": 102.52,
+   "pagina": 1,
+   "linea": 151,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "contribuciones y afiliaciones (Gastos de administración)",
+   "lado": "gasto",
+   "M": 50.768,
+   "pagina": 1,
+   "linea": 152,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "seguros (Gastos de administración)",
+   "lado": "gasto",
+   "M": 30.118,
+   "pagina": 1,
+   "linea": 153,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "servicios (2) (Gastos de administración)",
+   "lado": "gasto",
+   "M": 228.695,
+   "pagina": 1,
+   "linea": 154,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "gastos legales (Gastos de administración)",
+   "lado": "gasto",
+   "M": 59.554,
+   "pagina": 1,
+   "linea": 155,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "mantenimiento y reparaciones (Gastos de administración)",
+   "lado": "gasto",
+   "M": 33.682,
+   "pagina": 1,
+   "linea": 156,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "adecuación e instalación (Gastos de administración)",
+   "lado": "gasto",
+   "M": 17.304,
+   "pagina": 1,
+   "linea": 157,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "gastos de viaje (Gastos de administración)",
+   "lado": "gasto",
+   "M": 108.742,
+   "pagina": 1,
+   "linea": 158,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "depreciaciones (3)",
+   "lado": "gasto",
+   "M": 684.371,
+   "pagina": 1,
+   "linea": 159,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "amortizacion derechos de uso",
+   "lado": "gasto",
+   "M": 111.532,
+   "pagina": 1,
+   "linea": 160,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "diversos (4) (Gastos de administración)",
+   "lado": "gasto",
+   "M": 225.1,
+   "pagina": 1,
+   "linea": 161,
+   "origen": "nota que desglosa \"Gastos de administración\""
   },
   {
    "etiqueta": "Otros gastos",

@@ -1,15 +1,33 @@
 {
  "md": "Clubes/Colombia/Deportes Tolima/siis-estado-2020.md",
- "generatedAt": "2026-10-26T05:45:40.207Z",
- "rubrosHuella": "9265b2791ca5a54fc6b2048984922a303f6828c8",
+ "generatedAt": "2026-10-26T12:19:22.880Z",
+ "rubrosHuella": "8a360a95caadf3c310473151a624f408bca80c0c",
  "rubros": [
   {
-   "label": "Ingresos de actividades ordinarias",
+   "label": "Taquillas",
    "lado": "revenue",
    "page": 1,
-   "section": "estado",
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Venta de Artículos Deportivos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Devoluciones en Artículos Deportivos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
    "choice": "other_income",
-   "confidence": 0.9,
+   "confidence": 0.89,
    "desdeCache": true
   },
   {
@@ -40,13 +58,108 @@
    "desdeCache": true
   },
   {
-   "label": "Gastos de ventas",
+   "label": "Gastos de Personal",
    "lado": "expense",
    "page": 1,
-   "section": "estado",
+   "section": "nota que desglosa \"Gastos de ventas\"",
    "choice": "admin_general_expense",
-   "confidence": 0.89,
+   "confidence": 0.64,
    "desdeCache": true
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuestos (1)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrendamientos (2)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios (3)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Adecuación e Instalación",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizaciones",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "other_amortisation",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Dimayor y Federación (4)",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "broadcasting",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "broadcasting",
+     0.83
+    ],
+    [
+     "competition_bonus",
+     0.15000000000000002
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1129
   },
   {
    "label": "Gastos de administración",
@@ -65,6 +178,167 @@
    "choice": "other_expenses",
    "confidence": 0.99,
    "desdeCache": true
+  },
+  {
+   "label": "Participación en Eventos (5)",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "competition_bonus",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "competition_bonus",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1135
+  },
+  {
+   "label": "Gastos de Viaje (5)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Diversos (6)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Mecanismo de Solidaridad (2)",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "player_sales",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "player_sales",
+     0.93
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "youth_football",
+     0.02
+    ]
+   ],
+   "tokens": 1148
+  },
+  {
+   "label": "Mantenimiento y Reparaciones (4)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Venta de Derechos Deportivos (1)",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1137
+  },
+  {
+   "label": "Publicidad y Propaganda (3)",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1151
   }
  ]
 }

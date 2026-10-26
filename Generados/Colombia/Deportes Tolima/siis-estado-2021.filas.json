@@ -1,23 +1,37 @@
 {
  "pdf": "Clubes/Colombia/Deportes Tolima/siis-estado-2021.pdf",
  "md": "Clubes/Colombia/Deportes Tolima/siis-estado-2021.md",
- "mdSha1": "910a784b7bd4e5f1271c6e82cc7c4c56bb56644f",
- "ubicacionSha1": "4fb5bed19d1a0b7fe6f2e655a72ab7ecfb118f4f",
+ "mdSha1": "0270bc71c58a228c4d67ab419b1afdf1f9ec1ac7",
+ "ubicacionSha1": "52c64314388830f61381d2d49361be52a4a4e0e9",
  "modelo": "a mano (Claude Code, sesión 2026-10-26)",
- "generado": "2026-10-26T05:31:57.185Z",
+ "generado": "2026-10-26T12:30:05.977Z",
  "salida": "a mano",
  "ubicacion": {
   "estado": [
    "b1"
   ],
-  "notas_ingresos": [],
-  "notas_gastos": []
+  "notas_ingresos": [
+   "b10"
+  ],
+  "notas_gastos": [
+   "b11"
+  ]
  },
  "escalas": [
   {
    "bloque": "b1",
    "escala": "miles",
    "evidencia": "L1: Cifras en miles de pesos colombianos"
+  },
+  {
+   "bloque": "b10",
+   "escala": "miles",
+   "evidencia": "L101: Cifras de esta tabla en miles de pesos colombianos"
+  },
+  {
+   "bloque": "b11",
+   "escala": "miles",
+   "evidencia": "L119: Cifras de esta tabla en miles de pesos colombianos"
   }
  ],
  "filas": [
@@ -150,6 +164,266 @@
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 105,
+   "etiqueta": "Taquillas",
+   "actual": "5,917,035",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 106,
+   "etiqueta": "Venta de Derechos Deportivos 1(A)",
+   "actual": "17,029,570",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 107,
+   "etiqueta": "Mecanismo de Solidaridad 2(A)",
+   "actual": "137,699",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 108,
+   "etiqueta": "Publicidad y Propaganda 3(A)",
+   "actual": "4,572,854",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 109,
+   "etiqueta": "Dimayor y Federación 4(A)",
+   "actual": "5,767,631",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 110,
+   "etiqueta": "Participación en Eventos 5(A)",
+   "actual": "4,141,073",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 111,
+   "etiqueta": "Venta de Artículos Deportivos",
+   "actual": "1,613,214",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 112,
+   "etiqueta": "Actividades Conexas",
+   "actual": "57,703",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 113,
+   "etiqueta": "SUBTOTAL",
+   "actual": "39,236,780",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 114,
+   "etiqueta": "Devoluciones en Artículos Deportivos",
+   "actual": "-91,834",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 115,
+   "etiqueta": "TOTAL INGRESOS ACTIVIDADES DE OPERACIÓN",
+   "actual": "39,144,945",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b11",
+   "linea": 123,
+   "etiqueta": "Gastos de Personal",
+   "actual": "12,714,273",
+   "anterior": "10,105,575",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b11",
+   "linea": 124,
+   "etiqueta": "Honorarios",
+   "actual": "31,839",
+   "anterior": "13,722",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b11",
+   "linea": 125,
+   "etiqueta": "Impuestos (1)",
+   "actual": "721,634",
+   "anterior": "86,163",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b11",
+   "linea": 126,
+   "etiqueta": "Arrendamientos (2)",
+   "actual": "1,092,304",
+   "anterior": "498,224",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b11",
+   "linea": 127,
+   "etiqueta": "Contribuciones y Afiliaciones",
+   "actual": "2,020",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b11",
+   "linea": 128,
+   "etiqueta": "Seguros",
+   "actual": "34,560",
+   "anterior": "7,679",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b11",
+   "linea": 129,
+   "etiqueta": "Servicios (3)",
+   "actual": "4,839,499",
+   "anterior": "1,563,775",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b11",
+   "linea": 130,
+   "etiqueta": "Gastos Legales",
+   "actual": "16,481",
+   "anterior": "2,984",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b11",
+   "linea": 131,
+   "etiqueta": "Mantenimiento y Reparaciones (4)",
+   "actual": "266,934",
+   "anterior": "100,713",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b11",
+   "linea": 132,
+   "etiqueta": "Adecuación e Instalación",
+   "actual": "7,147",
+   "anterior": "15,932",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b11",
+   "linea": 133,
+   "etiqueta": "Gastos de Viaje (5)",
+   "actual": "1,759,672",
+   "anterior": "988,834",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b11",
+   "linea": 134,
+   "etiqueta": "Amortizaciones",
+   "actual": "1,417,527",
+   "anterior": "2,692,917",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b11",
+   "linea": 135,
+   "etiqueta": "Derechos Deportivos",
+   "actual": "35,000",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b11",
+   "linea": 136,
+   "etiqueta": "Diversos (6)",
+   "actual": "4,246,835",
+   "anterior": "2,378,859",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b11",
+   "linea": 137,
+   "etiqueta": "TOTAL GASTOS DE VENTAS",
+   "actual": "27,185,725",
+   "anterior": "18,455,377",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
   }
  ],
  "total_ingresos": null,
@@ -160,5 +434,5 @@
   "anterior": "(1.874.835)"
  },
  "dudas": [],
- "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
 }

@@ -1,70 +1,307 @@
 {
-  "md": "Clubes/Colombia/Deportes Tolima/siis-estado-2016.md",
-  "pdf": "Clubes/Colombia/Deportes Tolima/siis-estado-2016.pdf",
-  "club": "deportestolima-co",
-  "year": 2016,
-  "generatedAt": "2026-10-26T05:35:59.568Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Ingresos de actividades ordinarias",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        24935.19
-      ],
-      "glosa": "Ingresos de actividades ordinarias"
-    },
-    {
-      "label": "Otros ingresos",
-      "lado": "revenue",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Otros ingresos"
-    },
-    {
-      "label": "Costo de ventas",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        248.993
-      ],
-      "glosa": "Costo de ventas"
-    },
-    {
-      "label": "Gastos de ventas",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        19222.408
-      ],
-      "glosa": "Gastos de ventas"
-    },
-    {
-      "label": "Gastos de administración",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        1670.978
-      ],
-      "glosa": "Gastos de administración"
-    },
-    {
-      "label": "Otros gastos",
-      "lado": "expense",
-      "page": 1,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Otros gastos"
-    }
-  ]
+ "md": "Clubes/Colombia/Deportes Tolima/siis-estado-2016.md",
+ "pdf": "Clubes/Colombia/Deportes Tolima/siis-estado-2016.pdf",
+ "club": "deportestolima-co",
+ "year": 2016,
+ "generatedAt": "2026-10-26T12:30:35.960Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Taquillas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    3130.775
+   ]
+  },
+  {
+   "label": "Venta de Derechos Deportivos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    14793.063
+   ]
+  },
+  {
+   "label": "Publicidad y Propaganda",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    2638.858
+   ]
+  },
+  {
+   "label": "Dimayor y Federación",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    3245.837
+   ]
+  },
+  {
+   "label": "Participación en Eventos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    672.926
+   ]
+  },
+  {
+   "label": "Venta de Artículos Deportivos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    470.472
+   ]
+  },
+  {
+   "label": "Devoluciones en Artículos Deportivos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "values": [
+    -16.741
+   ]
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    0
+   ]
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    248.993
+   ]
+  },
+  {
+   "label": "Gastos de Personal (Gastos de ventas)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "values": [
+    7426.676
+   ]
+  },
+  {
+   "label": "Honorarios (Gastos de ventas)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "values": [
+    6.574
+   ]
+  },
+  {
+   "label": "Impuestos (Gastos de ventas)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "values": [
+    413.709
+   ]
+  },
+  {
+   "label": "Arrendamientos (Gastos de ventas)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "values": [
+    716.894
+   ]
+  },
+  {
+   "label": "Seguros (Gastos de ventas)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "values": [
+    6.12
+   ]
+  },
+  {
+   "label": "Servicios (Gastos de ventas)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "values": [
+    480.505
+   ]
+  },
+  {
+   "label": "Gastos Legales (Gastos de ventas)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "values": [
+    4.644
+   ]
+  },
+  {
+   "label": "Mantenimiento y Reparaciones (Gastos de ventas)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "values": [
+    79.78
+   ]
+  },
+  {
+   "label": "Gastos de Viaje",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "values": [
+    466.91
+   ]
+  },
+  {
+   "label": "Amortizaciones",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "values": [
+    2337.514
+   ]
+  },
+  {
+   "label": "Diversos (Gastos de ventas)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "values": [
+    7283.082
+   ]
+  },
+  {
+   "label": "Gastos de Personal (Gastos de administración)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    745.573
+   ]
+  },
+  {
+   "label": "Honorarios (Gastos de administración)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    90.052
+   ]
+  },
+  {
+   "label": "Impuestos (Gastos de administración)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    158.653
+   ]
+  },
+  {
+   "label": "Arrendamientos (Gastos de administración)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    78.139
+   ]
+  },
+  {
+   "label": "Contribuciones y Afiliaciones",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    8.949
+   ]
+  },
+  {
+   "label": "Seguros (Gastos de administración)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    73.7
+   ]
+  },
+  {
+   "label": "Servicios (Gastos de administración)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    74.844
+   ]
+  },
+  {
+   "label": "Gastos Legales (Gastos de administración)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    11.572
+   ]
+  },
+  {
+   "label": "Mantenimiento y Reparaciones (Gastos de administración)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    1.677
+   ]
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    72.399
+   ]
+  },
+  {
+   "label": "Deterioro",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    147.989
+   ]
+  },
+  {
+   "label": "Diversos (Gastos de administración)",
+   "lado": "expense",
+   "page": 1,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "values": [
+    207.431
+   ]
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "values": [
+    0
+   ]
+  }
+ ]
 }

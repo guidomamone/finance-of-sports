@@ -1,17 +1,8 @@
 {
  "md": "Clubes/Colombia/Aguilas Doradas/siis-estado-2021.md",
- "generatedAt": "2026-10-26T06:12:13.226Z",
- "rubrosHuella": "428046acae8c326303239ab0df67cc0c60591c51",
+ "generatedAt": "2026-10-26T12:19:21.542Z",
+ "rubrosHuella": "a7dc236c0392e85787e93ecd7fb207ff7aa5b64f",
  "rubros": [
-  {
-   "label": "Ingresos de actividades ordinarias",
-   "lado": "revenue",
-   "page": 1,
-   "section": "estado",
-   "choice": "lump_football_operations",
-   "confidence": 0.98,
-   "desdeCache": true
-  },
   {
    "label": "Otros ingresos",
    "lado": "revenue",
@@ -47,6 +38,167 @@
    "choice": "other_expenses",
    "confidence": 0.98,
    "desdeCache": true
+  },
+  {
+   "label": "Dimayor derechos de televisión",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1115
+  },
+  {
+   "label": "Dimayor otros conceptos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "broadcasting",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "broadcasting",
+     0.53
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ]
+   ],
+   "tokens": 1111
+  },
+  {
+   "label": "Venta Derechos deportivos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1134
+  },
+  {
+   "label": "Federación Colombiana de futbol",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "competition_bonus",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "competition_bonus",
+     0.93
+    ],
+    [
+     "grants_donations",
+     0.06
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1179
+  },
+  {
+   "label": "Por taquilla",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1166
+  },
+  {
+   "label": "Actividades conexas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1127
+  },
+  {
+   "label": "Publicidad y propaganda",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1147
   }
  ]
 }

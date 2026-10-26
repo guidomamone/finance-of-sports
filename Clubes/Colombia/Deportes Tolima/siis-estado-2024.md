@@ -93,3 +93,26 @@ Estado de resultados integral y estado de situación financiera al 2024-12-31 (P
 | --- | ---: | ---: |
 | Total patrimonio | 29.844.909 | 28.930.579 |
 
+## Detalle de las notas del club
+
+> Las tablas de abajo se copiaron de Clubes/Colombia/Deportes Tolima/estados-financieros-2024.md (las notas del club, otro documento del mismo año), sin el signo «$» ni las negritas, con las cifras escritas con coma de miles y, si una etiqueta se repite entre tablas, con el rubro entre paréntesis. Cada una abre un rubro del estado de resultados de arriba porque sus filas, sin los subtotales, suman EXACTO ese rubro (regla de Colombia, caso 2). Lo que las notas no abren queda como el rubro de SIIS.
+
+### Ingresos de actividades ordinarias: NOTA 19. INGRESOS POR ACTIVIDADES DE OPERACIÓN (Clubes/Colombia/Deportes Tolima/estados-financieros-2024.md, L1251-L1264)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+|  INGRESOS ACTIVIDADES DE OPERACIÓN | DIC-24 | DIC-23  |
+| --- | --- | --- |
+|  Taquillas | 12,934,108 | 6,958,004 |
+|  Venta de Derechos Deportivos 1(A) | 12,473,275 | 2,349,258 |
+|  Prestamo de Derechos Deportivos | - | 282,484 |
+|  Publicidad y Propaganda 2(A) | 6,083,891 | 5,657,089 |
+|  Dimayor y Federación 3(A) | 7,650,113 | 8,523,217 |
+|  Participación en Eventos 4(A) | 2,204,575 | 6,762,108 |
+|  Venta de Artículos Deportivos | 4,213,603 | 2,878,385 |
+|  Actividades Conexas | 22,689 | 20,168 |
+|  Mecanismo de solidaridad | 32,349 | -  |
+|  SUBTOTAL | 45,614,603 | 33,430,713 |
+|  Devoluciones en Artículos Deportivos | -69,739 | -110,296 |
+|  TOTAL INGRESOS ACTIVIDADES DE OPERACIÓN | 45,544,864 | 33,320,417 |
+

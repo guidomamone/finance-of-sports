@@ -1,8 +1,12 @@
 {
  "pdf": "Clubes/Colombia/Aguilas Doradas/siis-estado-2022.pdf",
- "generado": "2026-10-26T06:30:37.841Z",
+ "generado": "2026-10-26T12:35:01.082Z",
  "frena": [],
- "avisos": [],
+ "avisos": [
+  "--reemplazar: el registro no lo daba por cargado, pero data/ tiene el año (registro desactualizado: tools/inventario-transcripciones.mjs)",
+  "aguilasdoradas-co 2022 ya cargado: se reemplaza",
+  "sources['aguilasdoradas-co-siis-estado-2022'] ya existe: se conserva"
+ ],
  "ejercicio": {
   "clubId": "aguilasdoradas-co",
   "year": 2022,
@@ -10,14 +14,84 @@
   "perimetro": "individual",
   "revenueLines": [
    {
-    "rawLabel": "Ingresos de actividades ordinarias",
-    "normalizedCategory": "lump_football_operations",
-    "amountNative": 14204.6,
+    "rawLabel": "Por taquilla",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 827.326,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 0,
+    "_escalon": 1,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Venta Derechos deportivos",
+    "normalizedCategory": "player_sales",
+    "amountNative": 4876.838591,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Publicidad y propaganda",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 2260.496,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Dimayor: Derechos de televisión",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 5355.140074,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Dimayor: Diferidos",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 159.680776,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.94,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Dimayor participaciones",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 156.1785,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.94,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Federación Colombiana de futbol",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 436,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Actividades conexas",
+    "normalizedCategory": "other_income",
+    "amountNative": 132.939949,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Otros ingresos",
@@ -25,8 +99,8 @@
     "amountNative": 831.106,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 1,
-    "_conf": 0.96,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    }
   ],
@@ -37,8 +111,8 @@
     "amountNative": -1659.061,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.85,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -47,7 +121,7 @@
     "amountNative": -10995.39,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -57,8 +131,8 @@
     "amountNative": -321.563,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 1,
-    "_conf": 0.98,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    }
   ],
@@ -88,13 +162,6 @@
    ],
    "sinDesglose": [
     {
-     "renglon": "Ingresos de actividades ordinarias",
-     "lado": "revenue",
-     "importe": 14204.6,
-     "motivo": "Línea única de ingresos sin abrir: lump_football_operations (regla de Colombia, 463, 2026-10-26)",
-     "tipo": "net_sales"
-    },
-    {
      "renglon": "Gastos de ventas",
      "lado": "expense",
      "importe": 1659.061,
@@ -105,7 +172,7 @@
    "baseIngreso": "full",
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 15035.706,
+   "officialTotalRevenue": 15035.70589,
    "officialTotalExpenses": 12976.014,
    "officialPAT": 1760.894
   },
@@ -120,7 +187,7 @@
   }
  },
  "md": "Clubes/Colombia/Aguilas Doradas/siis-estado-2022.md",
- "reemplaza": false,
+ "reemplaza": true,
  "periodo": {
   "tipo": "anual",
   "meses": 12,
@@ -145,26 +212,130 @@
   }
  ],
  "seleccion": {
-  "filas": 8,
+  "filas": 15,
   "notasUsadas": [],
   "refM": null
  },
  "filas": [
   {
-   "label": "Ingresos de actividades ordinarias",
+   "label": "Por taquilla",
    "page": 1,
-   "native": 14204.6,
+   "native": 827.326,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 14204.6,
-   "cat": "lump_football_operations",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 827.326,
+   "cat": "matchday_competition",
    "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
    "enLista": true,
-   "notaGuido": "Línea única de ingresos sin abrir: lump_football_operations (regla de Colombia, 463, 2026-10-26)",
    "destino": "revenue",
-   "amountNative": 14204.6
+   "amountNative": 827.326
+  },
+  {
+   "label": "Venta Derechos deportivos",
+   "page": 1,
+   "native": 4876.838591,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 4876.838591,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4876.838591
+  },
+  {
+   "label": "Publicidad y propaganda",
+   "page": 1,
+   "native": 2260.496,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 2260.496,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2260.496
+  },
+  {
+   "label": "Dimayor: Derechos de televisión",
+   "page": 1,
+   "native": 5355.140074,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 5355.140074,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5355.140074
+  },
+  {
+   "label": "Dimayor: Diferidos",
+   "page": 1,
+   "native": 159.680776,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 159.680776,
+   "cat": "broadcasting",
+   "conf": 0.94,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 159.680776
+  },
+  {
+   "label": "Dimayor participaciones",
+   "page": 1,
+   "native": 156.1785,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 156.1785,
+   "cat": "broadcasting",
+   "conf": 0.94,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 156.1785
+  },
+  {
+   "label": "Federación Colombiana de futbol",
+   "page": 1,
+   "native": 436,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 436,
+   "cat": "competition_bonus",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 436
+  },
+  {
+   "label": "Actividades conexas",
+   "page": 1,
+   "native": 132.939949,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 132.939949,
+   "cat": "other_income",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 132.939949
   },
   {
    "label": "Otros ingresos",
@@ -174,8 +345,8 @@
    "origen": "verificacion (estado)",
    "signoFijo": 831.106,
    "cat": "other_income",
-   "conf": 0.96,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -189,8 +360,8 @@
    "origen": "verificacion (estado)",
    "signoFijo": 1659.061,
    "cat": "lump_football_operations_expense",
-   "conf": 0.85,
-   "escalon": 2,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -205,7 +376,7 @@
    "signoFijo": 10995.39,
    "cat": "admin_general_expense",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -219,8 +390,8 @@
    "origen": "verificacion (estado)",
    "signoFijo": 321.563,
    "cat": "other_expenses",
-   "conf": 0.98,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -262,15 +433,16 @@
  ],
  "signos": {
   "porTabla": {
+   "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 15035.706,
+  "revSum": 15035.70589,
   "expSum": -12976.014,
-  "officialTotalRevenue": 15035.706,
+  "officialTotalRevenue": 15035.70589,
   "officialTotalExpenses": 12976.014,
   "officialPAT": 1760.894,
   "verificacion": {
@@ -287,7 +459,7 @@
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
-   "M": 15035.706
+   "M": 15035.70589
   },
   "expImpreso": {
    "label": "total de gastos (verificado)",
@@ -297,8 +469,8 @@
  },
  "liga": {
   "valor": "co-primeraA",
-  "fuente": "roster cacheado de \"2022 Liga DIMAYOR\" (tools/club-league-reference/co.json), coincidencia exacta \"Águilas Doradas\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -338,7 +510,7 @@
   },
   "liga": {
    "valor": "co-primeraA",
-   "fuente": "roster cacheado de \"2022 Liga DIMAYOR\" (tools/club-league-reference/co.json), coincidencia exacta \"Águilas Doradas\"",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
    "estado": "ok"
   }
  },
@@ -346,7 +518,7 @@
  "resumen": {
   "carga": true,
   "motivos": 0,
-  "lineasIngreso": 2,
+  "lineasIngreso": 9,
   "lineasGasto": 3,
   "metaFilas": 3,
   "excluidas": 0

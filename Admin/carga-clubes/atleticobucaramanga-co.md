@@ -72,7 +72,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020)
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2018, 2019, 2020)
 ```
 
 ### Liga
@@ -113,7 +113,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020)
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2018, 2019, 2020)
 ```
 
 ### Liga
@@ -154,7 +154,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020)
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2018, 2019, 2020)
 ```
 
 ### Liga
@@ -194,7 +194,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020)
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2018, 2019, 2020)
 ```
 
 ### Liga
@@ -234,7 +234,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020)
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2018, 2019, 2020)
 ```
 
 ### Liga
@@ -518,22 +518,50 @@ alta-club.mjs (2026-10-20): co-primeraA, verificado contra roster cacheado de "2
 
 ```text
 2018: cargado por tools/cargar.mjs (2026-10-26) desde Clubes/Colombia/Atletico Bucaramanga/siis-estado-2018.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-Generados/Colombia/Atletico Bucaramanga/siis-estado-2018.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+Generados/Colombia/Atletico Bucaramanga/siis-estado-2018.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Ingresos de actividades ordinarias | pág. 1, precedente |
-| 2 | Otros ingresos | pág. 1, precedente |
+| 1 | Taquilla Venta de Boleteria | pág. 1, precedente |
+| 2 | Publicidad y propaganda (Ingresos de actividades ordinarias) | pág. 1, precedente |
+| 3 | Dimayor | pág. 1, Jev 1 |
+| 4 | Patrocinio | pág. 1, precedente |
+| 5 | Actividades Conexas | pág. 1, Jev 0.97 |
+| 6 | Otros ingresos | pág. 1, precedente |
 
 ### Gastos
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Costo de ventas | pág. 1, precedente |
-| 2 | Gastos de ventas | pág. 1, Claude 0.8 |
-| 3 | Gastos de administración | pág. 1, Jev 1 |
-| 4 | Otros gastos | pág. 1, Jev 0.9 |
+| 1 | Gastos de personal (Costo de ventas) | pág. 1, Jev 0.97 |
+| 2 | Honorarios (Costo de ventas) | pág. 1, precedente |
+| 3 | Impuestos (Costo de ventas) | pág. 1, Claude 0.88 |
+| 4 | Arrendamientos (Costo de ventas) | pág. 1, precedente |
+| 5 | Contribuciones y afiliaciones | pág. 1, precedente |
+| 6 | Seguros (Costo de ventas) | pág. 1, precedente |
+| 7 | Servicios (Costo de ventas) | pág. 1, precedente |
+| 8 | Gastos Legales (Costo de ventas) | pág. 1, precedente |
+| 9 | Mantenimiento y Reparacion | pág. 1, precedente |
+| 10 | Gastos de viaje (Costo de ventas) | pág. 1, precedente |
+| 11 | Depreciaciones (Costo de ventas) | pág. 1, precedente |
+| 12 | Amortizaciones | pág. 1, precedente |
+| 13 | Diversos | pág. 1, precedente |
+| 14 | Gastos de ventas | pág. 1, precedente |
+| 15 | Gastos de personal (Gastos de administración) | pág. 1, Claude 0.9 |
+| 16 | Honorarios (Gastos de administración) | pág. 1, precedente |
+| 17 | Impuestos (Gastos de administración) | pág. 1, Jev 1 |
+| 18 | Servicios (Gastos de administración) | pág. 1, precedente |
+| 19 | Gastos Legales (Gastos de administración) | pág. 1, precedente |
+| 20 | Mantenimiento y reparaciones | pág. 1, precedente |
+| 21 | Gastos varios | pág. 1, precedente |
+| 22 | Operacionales de venta | pág. 1, ? 0.65 |
+| 23 | Costos y gastos de ejercicios anterio | pág. 1, Jev 0.99 |
+| 24 | Impuestos asumidos | pág. 1, precedente |
+| 25 | Demandas laborales | pág. 1, precedente |
+| 26 | Indemnizaciones | pág. 1, precedente |
+| 27 | Multas y sanciones | pág. 1, Claude 0.9 |
+| 28 | Otros Gastos (Otros gastos) | pág. 1, precedente |
 
 ### Meta
 
@@ -541,16 +569,6 @@ Generados/Colombia/Atletico Bucaramanga/siis-estado-2018.categorias.json (escal�
 2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
 tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
-```
-
-```text
-tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020)
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-26): co-primeraA, verificado contra roster cacheado de "2018 Categoría Primera A season" (tools/club-league-reference/co.json), coincidencia exacta "Atlético Bucaramanga".
 ```
 
 ## 2017
@@ -572,8 +590,23 @@ Generados/Colombia/Atletico Bucaramanga/siis-estado-2017.categorias.json (escal�
 | Fila | Rubro | Nota |
 |---|---|---|
 | 1 | Costo de ventas | pág. 1, precedente |
-| 2 | Gastos de administración | pág. 1, Jev 1 |
-| 3 | Otros gastos | pág. 1, Jev 0.9 |
+| 2 | Gastos de personal | pág. 1, Claude 0.8 |
+| 3 | Honorarios | pág. 1, precedente |
+| 4 | Impuestos | pág. 1, Jev 0.92 |
+| 5 | Arrendamientos | pág. 1, Jev 0.99 |
+| 6 | Seguros | pág. 1, Claude 0.88 |
+| 7 | Servicio vigilancia | pág. 1, Claude 0.85 |
+| 8 | Procesamiento electrónico | pág. 1, Jev 1 |
+| 9 | Publicidad propaganda | pág. 1, Jev 1 |
+| 10 | Servicios públicos | pág. 1, Jev 1 |
+| 11 | Correo portes y telegramas | pág. 1, Jev 1 |
+| 12 | Gastos notariales y legales | pág. 1, Jev 1 |
+| 13 | Mantenimiento y reparaciones | pág. 1, precedente |
+| 14 | Gastos de viaje | pág. 1, precedente |
+| 15 | Depreciaciones | pág. 1, Jev 0.98 |
+| 16 | Gastos varios | pág. 1, precedente |
+| 17 | Costas y procesos judiciales | pág. 1, Claude 0.85 |
+| 18 | Impuestos asumidos | pág. 1, precedente |
 
 ### Meta
 
@@ -584,13 +617,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020)
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-26): co-primeraA, verificado contra roster cacheado de "2017 Categoría Primera A season" (tools/club-league-reference/co.json), coincidencia exacta "Atlético Bucaramanga".
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2018, 2019, 2020)
 ```
 
 ## 2016
@@ -626,7 +653,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020)
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2018, 2019, 2020)
 ```
 
 ### Liga

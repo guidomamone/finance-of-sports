@@ -92,3 +92,69 @@ Estado de resultados integral y estado de situación financiera al 2023-12-31 (P
 | --- | ---: | ---: |
 | Total patrimonio | 29.284.424 | 30.870.353 |
 
+## Detalle de las notas del club
+
+> Las tablas de abajo se copiaron de Clubes/Colombia/Deportes Tolima/estados-financieros-2023.md (las notas del club, otro documento del mismo año), sin el signo «$» ni las negritas, con las cifras escritas con coma de miles y, si una etiqueta se repite entre tablas, con el rubro entre paréntesis. Cada una abre un rubro del estado de resultados de arriba porque sus filas, sin los subtotales, suman EXACTO ese rubro (regla de Colombia, caso 2). Lo que las notas no abren queda como el rubro de SIIS.
+
+### Ingresos de actividades ordinarias: NOTA 16. INGRESOS DE ACTIVIDADES DE OPERACIÓN (Clubes/Colombia/Deportes Tolima/estados-financieros-2023.md, L1327-L1339)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+|  INGRESOS ACTIVIDADES DE OPERACIÓN | DIC-23 | DIC-22  |
+| --- | --- | --- |
+|  Taquillas | 6,958,004 | 9,476,527 |
+|  Venta de Derechos Deportivos 1(A) | 2,349,258 | 1,106,812 |
+|  Prestamo de Derechos Deportivos | 282,484 | 351,062 |
+|  Publicidad y Propaganda 2(A) | 5,657,089 | 5,581,776 |
+|  Dimayor y Federación 3(A) | 8,523,217 | 6,686,919 |
+|  Participación en Eventos 4(A) | 6,762,108 | 16,142,527 |
+|  Venta de Artículos Deportivos | 2,878,385 | 2,158,175 |
+|  Actividades Conexas | 20,168 | 20,169 |
+|  SUBTOTAL | 33,430,713 | 41,523,967 |
+|  Devoluciones en Artículos Deportivos | -110,296 | -112,326 |
+|  TOTAL INGRESOS ACTIVIDADES DE OPERACIÓN | 33,320,417 | 41,411,641 |
+
+### Gastos de ventas: NOTA 18. GASTOS DE VENTAS (Clubes/Colombia/Deportes Tolima/estados-financieros-2023.md, L1521-L1537)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+|  GASTOS DE VENTAS | DIC-23 | DIC-22  |
+| --- | --- | --- |
+| Gastos de Personal (Gastos de ventas) | 14,735,222 | 12,074,940 |
+| Honorarios (1) (Gastos de ventas) | 372,775 | 19,403 |
+| Impuestos (2) (Gastos de ventas) | 709,469 | 975,668 |
+| Arrendamientos (3) (Gastos de ventas) | 1,064,146 | 1,093,022 |
+| Contribuciones y Afiliaciones (Gastos de ventas) | 17,777 | -  |
+| Seguros (Gastos de ventas) | 97,678 | 39,586 |
+| Servicios (4) (Gastos de ventas) | 2,762,402 | 4,223,553 |
+| Gastos Legales (Gastos de ventas) | 16,922 | 10,600 |
+| Mantenimiento y Reparaciones (5) (Gastos de ventas) | 233,797 | 253,454 |
+| Adecuación e Instalación (Gastos de ventas) | 22,410 | 33,918 |
+| Gastos de Viaje (6) (Gastos de ventas) | 1,778,736 | 1,884,580 |
+|  Amortizaciones | 5,931,968 | 3,403,817 |
+|  Derechos Deportivos | - | -  |
+| Diversos (7) (Gastos de ventas) | 4,010,574 | 8,810,931 |
+|  TOTAL GASTOS DE VENTAS | 31,753,876 | 32,823,472 |
+
+### Gastos de administración: NOTA 17. GASTOS DE ADMINISTRACION (Clubes/Colombia/Deportes Tolima/estados-financieros-2023.md, L1415-L1431)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+|  GASTOS DE ADMINISTRACION | DIC-23 | DIC-22  |
+| --- | --- | --- |
+| Gastos de Personal (Gastos de administración) | 1,908,192 | 1,477,388 |
+| Honorarios (Gastos de administración) | 212,859 | 494,749 |
+| Impuestos (1) (Gastos de administración) | 370,320 | 427,842 |
+| Arrendamientos (2) (Gastos de administración) | 179,877 | 139,162 |
+| Contribuciones y Afiliaciones (Gastos de administración) | 45,066 | 2,979 |
+| Seguros (Gastos de administración) | 10,589 | 14,207 |
+| Servicios (3) (Gastos de administración) | 131,576 | 48,105 |
+| Gastos Legales (Gastos de administración) | 64,931 | 19,641 |
+| Mantenimiento y Reparaciones (Gastos de administración) | 47,875 | 17,142 |
+| Adecuación e Instalación (Gastos de administración) | 2,228 | 4,394 |
+| Gastos de Viaje (Gastos de administración) | 187,097 | 82,498 |
+|  Depreciaciones (4) | 705,358 | 597,400 |
+|  Deterioro | 5,672 | -  |
+| Diversos (5) (Gastos de administración) | 150,301 | 1,954,771 |
+|  TOTAL GASTOS DE ADMINISTRACION | 4,021,941 | 5,280,278 |
+

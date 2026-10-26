@@ -1,15 +1,31 @@
 {
  "pdf": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2017.pdf",
  "md": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2017.md",
- "mdSha1": "2e78123a204a1ff21d9d03157ec16a2e0a549cb2",
+ "mdSha1": "fd08f39d4f0d41996713febe40bf2ff2cdf5c9a4",
  "modelo": "a mano (Claude Code, sesión 2026-10-26)",
- "generado": "2026-10-26T06:07:15.286Z",
+ "generado": "2026-10-26T12:26:51.077Z",
  "bloques": {
   "b1": {
    "pagina": 1,
    "lineas": [
     9,
     22
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 1,
+   "lineas": [
+    96,
+    116
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 1,
+   "lineas": [
+    122,
+    131
    ],
    "tipo": "tabla"
   }
@@ -19,7 +35,10 @@
   "b1"
  ],
  "notas_ingresos": [],
- "notas_gastos": [],
+ "notas_gastos": [
+  "b10",
+  "b11"
+ ],
  "escala": "miles",
  "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
  "moneda": "COP",
@@ -28,5 +47,5 @@
  "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [],
- "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
 }

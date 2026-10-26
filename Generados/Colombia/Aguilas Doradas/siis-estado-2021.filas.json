@@ -1,16 +1,18 @@
 {
  "pdf": "Clubes/Colombia/Aguilas Doradas/siis-estado-2021.pdf",
  "md": "Clubes/Colombia/Aguilas Doradas/siis-estado-2021.md",
- "mdSha1": "d0d50df7d8410042f69001d70ba580957092d7b7",
- "ubicacionSha1": "950a92c2e05c06e5db196ab25060efbcc4404c9d",
+ "mdSha1": "12ca0ad7bb31243ad96bc2dba49d7c41c4e7c19c",
+ "ubicacionSha1": "687b0dbedf50b5b871f687236253e55a6182f03f",
  "modelo": "a mano (Claude Code, sesión 2026-10-26)",
- "generado": "2026-10-26T06:07:09.002Z",
+ "generado": "2026-10-26T12:30:24.805Z",
  "salida": "a mano",
  "ubicacion": {
   "estado": [
    "b1"
   ],
-  "notas_ingresos": [],
+  "notas_ingresos": [
+   "b9"
+  ],
   "notas_gastos": []
  },
  "escalas": [
@@ -18,6 +20,11 @@
    "bloque": "b1",
    "escala": "miles",
    "evidencia": "L1: Cifras en miles de pesos colombianos"
+  },
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "L89: Cifras de esta tabla en pesos colombianos"
   }
  ],
  "filas": [
@@ -160,6 +167,86 @@
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 93,
+   "etiqueta": "Por taquilla",
+   "actual": "1,008,000",
+   "anterior": "17,700,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b9",
+   "linea": 94,
+   "etiqueta": "Venta Derechos deportivos",
+   "actual": "3,334,500,000",
+   "anterior": "6,223,202,564",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b9",
+   "linea": 95,
+   "etiqueta": "Publicidad y propaganda",
+   "actual": "925,496,000",
+   "anterior": "656,956,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b9",
+   "linea": 96,
+   "etiqueta": "Dimayor derechos de televisión",
+   "actual": "4,180,220,358",
+   "anterior": "2,294,616,624",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b9",
+   "linea": 97,
+   "etiqueta": "Dimayor otros conceptos",
+   "actual": "922,299,010",
+   "anterior": "728,761,491",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b9",
+   "linea": 98,
+   "etiqueta": "Federación Colombiana de futbol",
+   "actual": "621,000,000",
+   "anterior": "370,135,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b9",
+   "linea": 99,
+   "etiqueta": "Actividades conexas",
+   "actual": "77,256,156",
+   "anterior": "978,615,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b9",
+   "linea": 100,
+   "etiqueta": "TOTAL INGRESOS",
+   "actual": "10,061,779,524",
+   "anterior": "11,269,986,679",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
   }
  ],
  "total_ingresos": null,
@@ -170,5 +257,5 @@
   "anterior": "349.207"
  },
  "dudas": [],
- "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
 }

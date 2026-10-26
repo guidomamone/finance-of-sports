@@ -52,24 +52,49 @@ Generados/Colombia/Aguilas Doradas/siis-estado-2025.categorias.json (escalón de
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Ingresos de actividades ordinarias | pág. 1, precedente |
-| 2 | Otros ingresos | pág. 1, Jev 0.96 |
+| 1 | Por taquilla | pág. 1, Jev 1 |
+| 2 | Venta Derechos deportivos | pág. 1, Jev 1 |
+| 3 | Publicidad y propaganda | pág. 1, Jev 1 |
+| 4 | Dimayor Derechos de TV y otros | pág. 1, Jev 1 |
+| 5 | Dimayor Diferidos | pág. 1, Jev 0.96 |
+| 6 | Federación Colombiana de futbol | pág. 1, Jev 0.93 |
+| 7 | Actividades conexas | pág. 1, Jev 0.97 |
+| 8 | Otros ingresos | pág. 1, precedente |
 
 ### Gastos
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Costo de ventas | pág. 1, Claude 0.88 |
-| 2 | Gastos de ventas | pág. 1, Claude 0.85 |
-| 3 | Gastos de administración | pág. 1, Jev 1 |
-| 4 | Otros gastos | pág. 1, Jev 0.98 |
+| 1 | Costo de ventas | pág. 1, precedente |
+| 2 | Gastos de Personal (Gastos de ventas) | pág. 1, Jev 0.95 |
+| 3 | Impuestos (Gastos de ventas) | pág. 1, Jev 1 |
+| 4 | Arrendamientos (Gastos de ventas) | pág. 1, Jev 0.93 |
+| 5 | Contribuciones y afiliaciones | pág. 1, Jev 0.98 |
+| 6 | Seguros (Gastos de ventas) | pág. 1, Jev 0.97 |
+| 7 | Servicios generales (Gastos de ventas) | pág. 1, Claude 0.85 |
+| 8 | Mantenimiento y reparaciones (Gastos de ventas) | pág. 1, Claude 0.8 |
+| 9 | Gastos de viaje (Gastos de ventas) | pág. 1, Jev 0.99 |
+| 10 | Gastos Diversos (Gastos de ventas) | pág. 1, precedente |
+| 11 | Derechos deportivos | pág. 1, Jev 0.99 |
+| 12 | Gastos de Personal (Gastos de administración) | pág. 1, Claude 0.93 |
+| 13 | Honorarios (Gastos de administración) | pág. 1, Jev 1 |
+| 14 | Impuestos (Gastos de administración) | pág. 1, Jev 1 |
+| 15 | Arrendamientos (Gastos de administración) | pág. 1, Jev 1 |
+| 16 | Seguros (Gastos de administración) | pág. 1, Jev 1 |
+| 17 | Servicios generales (Gastos de administración) | pág. 1, Jev 1 |
+| 18 | Gastos legales | pág. 1, Jev 1 |
+| 19 | Mantenimiento y reparaciones (Gastos de administración) | pág. 1, Jev 1 |
+| 20 | Gastos de viaje (Gastos de administración) | pág. 1, Claude 0.88 |
+| 21 | Amortizaciones | pág. 1, ? 0.6 |
+| 22 | Gastos diversos (Gastos de administración) | pág. 1, precedente |
+| 23 | Deterioro de cartera | pág. 1, Jev 0.98 |
+| 24 | Otros gastos | pág. 1, precedente |
 
 ### Meta
 
 ```text
 2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
 tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
-sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```
 
 ### Liga
@@ -89,17 +114,36 @@ Generados/Colombia/Aguilas Doradas/siis-estado-2024.categorias.json (escalón de
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Ingresos de actividades ordinarias | pág. 1, precedente |
-| 2 | Otros ingresos | pág. 1, Jev 0.96 |
+| 1 | Por taquilla | pág. 1, Jev 1 |
+| 2 | Venta Derechos deportivos | pág. 1, Jev 1 |
+| 3 | Publicidad y propaganda | pág. 1, Jev 1 |
+| 4 | Dimayor Derechos de televisión | pág. 1, Jev 1 |
+| 5 | Dimayor Diferidos | pág. 1, Jev 0.96 |
+| 6 | Dimayor participaciones y otros | pág. 1, precedente |
+| 7 | Federación Colombiana de futbol | pág. 1, Jev 0.93 |
+| 8 | Patrocinios | pág. 1, Jev 1 |
+| 9 | Particip. Eventos internales | pág. 1, Jev 0.97 |
+| 10 | Otros ingresos | pág. 1, precedente |
 
 ### Gastos
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Costo de ventas | pág. 1, Claude 0.88 |
-| 2 | Gastos de ventas | pág. 1, Claude 0.85 |
-| 3 | Gastos de administración | pág. 1, Jev 1 |
-| 4 | Otros gastos | pág. 1, Jev 0.98 |
+| 1 | Costo de ventas | pág. 1, precedente |
+| 2 | Gastos de ventas | pág. 1, precedente |
+| 3 | Gastos de Personal | pág. 1, Claude 0.85 |
+| 4 | Honorarios | pág. 1, Jev 0.98 |
+| 5 | Impuestos | pág. 1, Jev 1 |
+| 6 | Arrendamientos | pág. 1, Jev 0.99 |
+| 7 | Seguros | pág. 1, Claude 0.88 |
+| 8 | Servicios generales | pág. 1, Jev 1 |
+| 9 | Gastos legales | pág. 1, Jev 1 |
+| 10 | Mantenimiento y reparaciones | pág. 1, Jev 0.99 |
+| 11 | Gastos de viaje | pág. 1, precedente |
+| 12 | Amortizaciones | pág. 1, ? 0.6 |
+| 13 | Gastos diversos | pág. 1, precedente |
+| 14 | Deterioro de cartera | pág. 1, Jev 0.98 |
+| 15 | Otros gastos | pág. 1, precedente |
 
 ### Meta
 
@@ -107,12 +151,6 @@ Generados/Colombia/Aguilas Doradas/siis-estado-2024.categorias.json (escalón de
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
 tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-26): co-primeraA, verificado contra roster cacheado de "2024 Liga DIMAYOR" (tools/club-league-reference/co.json), coincidencia exacta "Águilas Doradas".
 ```
 
 ## 2023
@@ -146,6 +184,10 @@ tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```
 
+```text
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2024, 2025)
+```
+
 ### Liga
 
 ```text
@@ -163,16 +205,23 @@ Generados/Colombia/Aguilas Doradas/siis-estado-2022.categorias.json (escalón de
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Ingresos de actividades ordinarias | pág. 1, precedente |
-| 2 | Otros ingresos | pág. 1, Jev 0.96 |
+| 1 | Por taquilla | pág. 1, Jev 1 |
+| 2 | Venta Derechos deportivos | pág. 1, Jev 1 |
+| 3 | Publicidad y propaganda | pág. 1, Jev 1 |
+| 4 | Dimayor: Derechos de televisión | pág. 1, Jev 1 |
+| 5 | Dimayor: Diferidos | pág. 1, Jev 0.94 |
+| 6 | Dimayor participaciones | pág. 1, Jev 0.94 |
+| 7 | Federación Colombiana de futbol | pág. 1, Jev 0.93 |
+| 8 | Actividades conexas | pág. 1, Jev 0.97 |
+| 9 | Otros ingresos | pág. 1, precedente |
 
 ### Gastos
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Gastos de ventas | pág. 1, Claude 0.85 |
-| 2 | Gastos de administración | pág. 1, Jev 1 |
-| 3 | Otros gastos | pág. 1, Jev 0.98 |
+| 1 | Gastos de ventas | pág. 1, precedente |
+| 2 | Gastos de administración | pág. 1, precedente |
+| 3 | Otros gastos | pág. 1, precedente |
 
 ### Meta
 
@@ -180,12 +229,6 @@ Generados/Colombia/Aguilas Doradas/siis-estado-2022.categorias.json (escalón de
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
 tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-26): co-primeraA, verificado contra roster cacheado de "2022 Liga DIMAYOR" (tools/club-league-reference/co.json), coincidencia exacta "Águilas Doradas".
 ```
 
 ## 2021
@@ -199,16 +242,22 @@ Generados/Colombia/Aguilas Doradas/siis-estado-2021.categorias.json (escalón de
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Ingresos de actividades ordinarias | pág. 1, precedente |
-| 2 | Otros ingresos | pág. 1, Jev 0.96 |
+| 1 | Por taquilla | pág. 1, Jev 1 |
+| 2 | Venta Derechos deportivos | pág. 1, Jev 1 |
+| 3 | Publicidad y propaganda | pág. 1, Jev 1 |
+| 4 | Dimayor derechos de televisión | pág. 1, Jev 1 |
+| 5 | Dimayor otros conceptos | pág. 1, precedente |
+| 6 | Federación Colombiana de futbol | pág. 1, Jev 0.93 |
+| 7 | Actividades conexas | pág. 1, Jev 0.97 |
+| 8 | Otros ingresos | pág. 1, precedente |
 
 ### Gastos
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Gastos de ventas | pág. 1, Claude 0.85 |
-| 2 | Gastos de administración | pág. 1, Jev 1 |
-| 3 | Otros gastos | pág. 1, Jev 0.98 |
+| 1 | Gastos de ventas | pág. 1, precedente |
+| 2 | Gastos de administración | pág. 1, precedente |
+| 3 | Otros gastos | pág. 1, precedente |
 
 ### Meta
 
@@ -216,12 +265,6 @@ Generados/Colombia/Aguilas Doradas/siis-estado-2021.categorias.json (escalón de
 2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
 tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
-```
-
-### Liga
-
-```text
-tools/cargar.mjs (2026-10-26): co-primeraA, verificado contra roster cacheado de "2021 Liga DIMAYOR" (tools/club-league-reference/co.json), coincidencia exacta "Águilas Doradas".
 ```
 
 ## 2020
@@ -252,6 +295,10 @@ Generados/Colombia/Aguilas Doradas/siis-estado-2020.categorias.json (escalón de
 2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
 tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2024, 2025)
 ```
 
 ### Liga
@@ -288,6 +335,10 @@ Generados/Colombia/Aguilas Doradas/siis-estado-2019.categorias.json (escalón de
 2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
 tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2024, 2025)
 ```
 
 ### Liga
@@ -327,6 +378,10 @@ tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```
 
+```text
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2024, 2025)
+```
+
 ### Liga
 
 ```text
@@ -364,6 +419,10 @@ tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```
 
+```text
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2024, 2025)
+```
+
 ### Liga
 
 ```text
@@ -398,6 +457,10 @@ Generados/Colombia/Aguilas Doradas/siis-estado-2016.categorias.json (escalón de
 2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
 tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2024, 2025)
 ```
 
 ### Liga

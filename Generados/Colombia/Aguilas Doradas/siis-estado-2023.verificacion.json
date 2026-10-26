@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Aguilas Doradas/siis-estado-2023.pdf",
  "md": "Clubes/Colombia/Aguilas Doradas/siis-estado-2023.md",
- "generado": "2026-10-26T06:30:34.584Z",
+ "generado": "2026-10-26T12:24:56.052Z",
  "scriptHuella": "f1d4dee41de6",
  "estado": "ok",
  "clubId": "aguilasdoradas-co",
@@ -44,6 +44,11 @@
    "dif": 1.8189894035458565e-12
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2022 de este documento suma ingresos 15035.70589; el sitio tiene 15035.706"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": true,
    "detalle": "ingresos de 2023: 26476.647 en este documento y 26476.647 en siis-estado-2024.pdf (columna del año anterior)"
@@ -51,18 +56,27 @@
   {
    "nombre": "documento del año 2022",
    "ok": true,
-   "detalle": "ingresos de 2022: 15035.706 en siis-estado-2022.pdf y 15035.706 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+   "detalle": "ingresos de 2022: 15035.70589 en siis-estado-2022.pdf y 15035.70589 en este documento (columna del año anterior)"
   }
  ],
- "notas": [],
- "reintentar": null,
+ "notas": [
+  "la nota de \"Ingresos de actividades ordinarias\" no suma el renglón (25947.194514 contra 25947.194, sumando sus renglones): quedó el renglón del estado"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Ingresos de actividades ordinarias",
+   "suma": 25947.194514,
+   "objetivo": 25947.194
+  }
+ ],
  "reintentado": false,
- "faltasDesglose": null,
+ "faltasDesglose": [
+  {
+   "renglon": "Ingresos de actividades ordinarias",
+   "suma": 25947.194514,
+   "objetivo": 25947.194
+  }
+ ],
  "totales": {
   "ingresos": 26476.647,
   "gastos": 17864.336,

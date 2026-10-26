@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2018.pdf",
  "md": "Clubes/Colombia/Atletico Bucaramanga/siis-estado-2018.md",
- "mdSha1": "7bbc20a29748cb093dba5d807c9b6d9f0e943399",
+ "mdSha1": "c35b87400b23ba58d008528d76026cc19c7f1a81",
  "modelo": "a mano (Claude Code, sesión 2026-10-26)",
- "generado": "2026-10-26T06:07:16.057Z",
+ "generado": "2026-10-26T12:30:35.209Z",
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -12,14 +12,52 @@
     26
    ],
    "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 1,
+   "lineas": [
+    136,
+    143
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 1,
+   "lineas": [
+    149,
+    170
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 1,
+   "lineas": [
+    176,
+    195
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 1,
+   "lineas": [
+    201,
+    211
+   ],
+   "tipo": "tabla"
   }
  },
  "sin_estado": false,
  "estado": [
   "b1"
  ],
- "notas_ingresos": [],
- "notas_gastos": [],
+ "notas_ingresos": [
+  "b10"
+ ],
+ "notas_gastos": [
+  "b11",
+  "b12",
+  "b13"
+ ],
  "escala": "miles",
  "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
  "moneda": "COP",
@@ -28,5 +66,5 @@
  "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [],
- "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
 }

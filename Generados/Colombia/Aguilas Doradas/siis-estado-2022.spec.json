@@ -14,8 +14,17 @@
    "bloque": "b1",
    "escala": "miles",
    "evidencia": "L1: Cifras en miles de pesos colombianos"
+  },
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "L95: Cifras de esta tabla en pesos colombianos"
   }
  ],
+ "notas_ingresos": [
+  "b10"
+ ],
+ "notas_gastos": [],
  "filas": [
   {
    "bloque": "b1",
@@ -146,6 +155,106 @@
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 99,
+   "etiqueta": "Por taquilla",
+   "actual": "827,326,000",
+   "anterior": "1,008,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 100,
+   "etiqueta": "Venta Derechos deportivos",
+   "actual": "4,876,838,591",
+   "anterior": "3,334,500,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 101,
+   "etiqueta": "Publicidad y propaganda",
+   "actual": "2,260,496,000",
+   "anterior": "925,496,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 102,
+   "etiqueta": "Dimayor: Derechos de televisión",
+   "actual": "5,355,140,074",
+   "anterior": "4,750,923,560",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 103,
+   "etiqueta": "Dimayor: Diferidos",
+   "actual": "159,680,776",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 104,
+   "etiqueta": "Dimayor participaciones",
+   "actual": "156,178,500",
+   "anterior": "85,079,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 105,
+   "etiqueta": "Dimayor: Apoyo logístico",
+   "actual": "0",
+   "anterior": "266,516,808",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 106,
+   "etiqueta": "Federación Colombiana de futbol",
+   "actual": "436,000,000",
+   "anterior": "621,000,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 107,
+   "etiqueta": "Actividades conexas",
+   "actual": "132,939,949",
+   "anterior": "77,256,156",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 108,
+   "etiqueta": "TOTAL INGRESOS",
+   "actual": "14,204,599,890",
+   "anterior": "10,061,779,524",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
   }
  ],
  "total_ingresos": null,
@@ -155,5 +264,5 @@
   "actual": "1.760.894",
   "anterior": "366.372"
  },
- "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
 }

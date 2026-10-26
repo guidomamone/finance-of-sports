@@ -92,3 +92,70 @@ Estado de resultados integral y estado de situación financiera al 2022-12-31 (P
 | --- | ---: | ---: |
 | Total patrimonio | 30.870.351 | 26.536.781 |
 
+## Detalle de las notas del club
+
+> Las tablas de abajo se copiaron de Clubes/Colombia/Deportes Tolima/estados-financieros-2022.md (las notas del club, otro documento del mismo año), sin el signo «$» ni las negritas, con las cifras escritas con coma de miles y, si una etiqueta se repite entre tablas, con el rubro entre paréntesis. Cada una abre un rubro del estado de resultados de arriba porque sus filas, sin los subtotales, suman EXACTO ese rubro (regla de Colombia, caso 2). Lo que las notas no abren queda como el rubro de SIIS.
+
+### Ingresos de actividades ordinarias: NOTA 17. INGRESOS DE ACTIVIDADES DE OPERACIÓN (Clubes/Colombia/Deportes Tolima/estados-financieros-2022.md, L1412-L1425)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+|  INGRESOS ACTIVIDADES DE OPERACIÓN | DIC-22 | DIC-21  |
+| --- | --- | --- |
+|  Taquillas | 9,476,527 | 5,917,035 |
+|  Venta de Derechos Deportivos 1(A) | 1,106,812 | 17,029,570 |
+|  Prestamo de Derechos Deportivos | 351,062 | -  |
+|  Mecanismo de Solidaridad | - | 137,699 |
+|  Publicidad y Propaganda 2(A) | 5,581,776 | 4,572,854 |
+|  Dimayor y Federación 3(A) | 6,686,919 | 5,767,631 |
+|  Participación en Eventos 4(A) | 16,142,527 | 4,141,073 |
+|  Venta de Artículos Deportivos | 2,158,175 | 1,613,214 |
+|  Actividades Conexas | 20,169 | 57,703 |
+|  SUBTOTAL | 41,523,967 | 39,236,779 |
+|  Devoluciones en Artículos Deportivos | -112,326 | -91,834 |
+|  TOTAL INGRESOS ACTIVIDADES DE OPERACIÓN | 41,411,641 | 39,144,945 |
+
+### Gastos de ventas: NOTA 19. GASTOS DE VENTAS (Clubes/Colombia/Deportes Tolima/estados-financieros-2022.md, L1600-L1616)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+|  GASTOS DE VENTAS | DIC-22 | DIC-21  |
+| --- | --- | --- |
+| Gastos de Personal (Gastos de ventas) | 12,074,940 | 12,714,273 |
+| Honorarios (Gastos de ventas) | 19,403 | 31,839 |
+| Impuestos (1) (Gastos de ventas) | 975,668 | 721,634 |
+| Arrendamientos (2) (Gastos de ventas) | 1,093,022 | 1,092,304 |
+|  Contribuciones y Afiliaciones | - | 2,020 |
+| Seguros (Gastos de ventas) | 39,586 | 34,560 |
+| Servicios (3) (Gastos de ventas) | 4,223,553 | 4,839,499 |
+| Gastos Legales (Gastos de ventas) | 10,600 | 16,481 |
+| Mantenimiento y Reparaciones (4) (Gastos de ventas) | 253,454 | 266,934 |
+| Adecuación e Instalación (Gastos de ventas) | 33,918 | 7,147 |
+| Gastos de Viaje (5) (Gastos de ventas) | 1,884,580 | 1,759,672 |
+|  Amortizaciones | 3,403,817 | 1,417,527 |
+|  Derechos Deportivos | - | 35,000 |
+| Diversos (6) (Gastos de ventas) | 8,810,931 | 4,246,835 |
+|  TOTAL GASTOS DE VENTAS | 32,823,472 | 27,185,725 |
+
+### Gastos de administración: NOTA 18. GASTOS DE ADMINISTRACION (Clubes/Colombia/Deportes Tolima/estados-financieros-2022.md, L1497-L1513)
+
+Cifras de esta tabla en miles de pesos colombianos.
+
+|  GASTOS DE ADMINISTRACION | DIC-22 | DIC-21  |
+| --- | --- | --- |
+| Gastos de Personal (Gastos de administración) | 1,477,388 | 1,321,193 |
+| Honorarios (Gastos de administración) | 494,749 | 428,452 |
+| Impuestos (1) (Gastos de administración) | 427,842 | 293,609 |
+| Arrendamientos (2) (Gastos de administración) | 139,162 | 116,415 |
+|  Contribuciones y Afiliaciones | 2,979 | 895 |
+| Seguros (Gastos de administración) | 14,207 | 6,069 |
+| Servicios (3) (Gastos de administración) | 48,105 | 113,201 |
+| Gastos Legales (Gastos de administración) | 19,641 | 5,146 |
+| Mantenimiento y Reparaciones (Gastos de administración) | 17,142 | 28,934 |
+| Adecuación e Instalación (Gastos de administración) | 4,394 | 5,510 |
+| Gastos de Viaje (Gastos de administración) | 82,498 | 125,612 |
+|  Depreciaciones (4) | 597,400 | 558,608 |
+|  Deterioro | - | 227,236 |
+| Diversos (5) (Gastos de administración) | 1,954,771 | 91,913 |
+|  TOTAL GASTOS DE ADMINISTRACION | 5,280,278 | 3,322,793 |
+

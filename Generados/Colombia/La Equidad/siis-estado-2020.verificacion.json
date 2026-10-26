@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/La Equidad/siis-estado-2020.pdf",
  "md": "Clubes/Colombia/La Equidad/siis-estado-2020.md",
- "generado": "2026-10-26T06:30:34.295Z",
+ "generado": "2026-10-26T12:30:36.354Z",
  "scriptHuella": "f1d4dee41de6",
  "estado": "ok",
  "clubId": "laequidad-co",
@@ -41,7 +41,12 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (financiero por rótulo, impuesto invertido)",
-   "dif": 1.1368683772161603e-13
+   "dif": 1.7053025658242404e-12
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2019 de este documento suma ingresos 22690.973; el sitio tiene 22690.973"
   },
   {
    "nombre": "documento del año 2021",
@@ -52,11 +57,6 @@
    "nombre": "documento del año 2019",
    "ok": true,
    "detalle": "ingresos de 2019: 22690.973 en siis-estado-2019.pdf y 22690.973 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
   }
  ],
  "notas": [],
@@ -75,20 +75,172 @@
  },
  "lineas": [
   {
-   "etiqueta": "Ingresos de actividades ordinarias",
+   "etiqueta": "Taquilla - Venta de Boleteria",
    "lado": "ingreso",
-   "M": 12115.968,
+   "M": 670.777,
    "pagina": 1,
-   "linea": 11,
-   "origen": "estado"
+   "linea": 139,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
   },
   {
-   "etiqueta": "Otros ingresos",
+   "etiqueta": "Escuelas de Futbol",
    "lado": "ingreso",
-   "M": 3225.497,
+   "M": 662.665,
    "pagina": 1,
-   "linea": 16,
-   "origen": "estado"
+   "linea": 140,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Venta y Prestamo de Derechos",
+   "lado": "ingreso",
+   "M": 1687.051,
+   "pagina": 1,
+   "linea": 141,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Publicidad y Propaganda",
+   "lado": "ingreso",
+   "M": 765.206,
+   "pagina": 1,
+   "linea": 142,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Dimayor",
+   "lado": "ingreso",
+   "M": 3304.121,
+   "pagina": 1,
+   "linea": 143,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Federacion Colombiana de Futbol",
+   "lado": "ingreso",
+   "M": 272.156,
+   "pagina": 1,
+   "linea": 144,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Patrocinio",
+   "lado": "ingreso",
+   "M": 4545.827,
+   "pagina": 1,
+   "linea": 145,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Cuota de Sostenimiento",
+   "lado": "ingreso",
+   "M": 219.891,
+   "pagina": 1,
+   "linea": 146,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Venta de Artículos Deportivos",
+   "lado": "ingreso",
+   "M": 61.856,
+   "pagina": 1,
+   "linea": 148,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Eventos",
+   "lado": "ingreso",
+   "M": 4.7,
+   "pagina": 1,
+   "linea": 149,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Devoluciones en Ventas",
+   "lado": "ingreso",
+   "M": -707.467,
+   "pagina": 1,
+   "linea": 150,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Actividades Conexas",
+   "lado": "ingreso",
+   "M": 625.305,
+   "pagina": 1,
+   "linea": 151,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Ingresos Fuerzas Basicas",
+   "lado": "ingreso",
+   "M": 3.88,
+   "pagina": 1,
+   "linea": 152,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Construcciones y Edificaciones",
+   "lado": "ingreso",
+   "M": 18,
+   "pagina": 1,
+   "linea": 161,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Reintegro de Otros Costos y Gastos",
+   "lado": "ingreso",
+   "M": 150.863,
+   "pagina": 1,
+   "linea": 163,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Recobro Incapacidades",
+   "lado": "ingreso",
+   "M": 829.783,
+   "pagina": 1,
+   "linea": 164,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Ingresos de Ejercicios Anteriores",
+   "lado": "ingreso",
+   "M": 12.505,
+   "pagina": 1,
+   "linea": 165,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Aprovechamientos",
+   "lado": "ingreso",
+   "M": 2.003,
+   "pagina": 1,
+   "linea": 166,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Subvenciones del Estado",
+   "lado": "ingreso",
+   "M": 317.34,
+   "pagina": 1,
+   "linea": 167,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Ajuste al Peso",
+   "lado": "ingreso",
+   "M": 0.003,
+   "pagina": 1,
+   "linea": 168,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Donanciones Derechos Deportivos",
+   "lado": "ingreso",
+   "M": 1895,
+   "pagina": 1,
+   "linea": 169,
+   "origen": "nota que desglosa \"Otros ingresos\""
   },
   {
    "etiqueta": "Costo de ventas",

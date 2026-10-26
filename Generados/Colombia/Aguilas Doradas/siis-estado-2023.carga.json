@@ -1,8 +1,12 @@
 {
  "pdf": "Clubes/Colombia/Aguilas Doradas/siis-estado-2023.pdf",
- "generado": "2026-10-26T06:30:37.913Z",
+ "generado": "2026-10-26T12:21:51.442Z",
  "frena": [],
- "avisos": [],
+ "avisos": [
+  "--reemplazar: el registro no lo daba por cargado, pero data/ tiene el año (registro desactualizado: tools/inventario-transcripciones.mjs)",
+  "aguilasdoradas-co 2023 ya cargado: se reemplaza",
+  "sources['aguilasdoradas-co-siis-estado-2023'] ya existe: se conserva"
+ ],
  "ejercicio": {
   "clubId": "aguilasdoradas-co",
   "year": 2023,
@@ -130,7 +134,7 @@
   }
  },
  "md": "Clubes/Colombia/Aguilas Doradas/siis-estado-2023.md",
- "reemplaza": false,
+ "reemplaza": true,
  "periodo": {
   "tipo": "anual",
   "meses": 12,
@@ -322,8 +326,8 @@
  },
  "liga": {
   "valor": "co-primeraA",
-  "fuente": "roster cacheado de \"2023 Liga DIMAYOR\" (tools/club-league-reference/co.json), coincidencia exacta \"Águilas Doradas\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -363,7 +367,7 @@
   },
   "liga": {
    "valor": "co-primeraA",
-   "fuente": "roster cacheado de \"2023 Liga DIMAYOR\" (tools/club-league-reference/co.json), coincidencia exacta \"Águilas Doradas\"",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
    "estado": "ok"
   }
  },

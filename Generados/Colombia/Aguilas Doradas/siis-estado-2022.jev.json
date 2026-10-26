@@ -1,15 +1,51 @@
 {
  "md": "Clubes/Colombia/Aguilas Doradas/siis-estado-2022.md",
- "generatedAt": "2026-10-26T06:12:13.227Z",
- "rubrosHuella": "0dd842335c3e85b24c5cdcf679421929ee2ac795",
+ "generatedAt": "2026-10-26T12:19:21.653Z",
+ "rubrosHuella": "3be93635297ab9274b70e4068724690881076004",
  "rubros": [
   {
-   "label": "Ingresos de actividades ordinarias",
+   "label": "Por taquilla",
    "lado": "revenue",
    "page": 1,
-   "section": "estado",
-   "choice": "lump_football_operations",
-   "confidence": 0.98,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Venta Derechos deportivos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidad y propaganda",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Federación Colombiana de futbol",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "competition_bonus",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Actividades conexas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "other_income",
+   "confidence": 0.97,
    "desdeCache": true
   },
   {
@@ -47,6 +83,75 @@
    "choice": "other_expenses",
    "confidence": 0.98,
    "desdeCache": true
+  },
+  {
+   "label": "Dimayor participaciones",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "broadcasting",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "broadcasting",
+     0.9400000000000001
+    ],
+    [
+     "competition_bonus",
+     0.06
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1128
+  },
+  {
+   "label": "Dimayor: Diferidos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "broadcasting",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "broadcasting",
+     0.94
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "competition_bonus",
+     0.02
+    ]
+   ],
+   "tokens": 1128
+  },
+  {
+   "label": "Dimayor: Derechos de televisión",
+   "lado": "revenue",
+   "page": 1,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1116
   }
  ]
 }

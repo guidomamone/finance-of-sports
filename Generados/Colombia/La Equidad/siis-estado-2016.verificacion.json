@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/La Equidad/siis-estado-2016.pdf",
  "md": "Clubes/Colombia/La Equidad/siis-estado-2016.md",
- "generado": "2026-10-26T06:30:34.126Z",
+ "generado": "2026-10-26T12:30:36.316Z",
  "scriptHuella": "f1d4dee41de6",
  "estado": "ok",
  "clubId": "laequidad-co",
@@ -41,7 +41,7 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (impuesto invertido)",
-   "dif": 5.115907697472721e-13
+   "dif": 4.149569576838985e-12
   },
   {
    "nombre": "documento del año 2017",
@@ -52,11 +52,6 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2015: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
  "notas": [],
@@ -75,20 +70,116 @@
  },
  "lineas": [
   {
-   "etiqueta": "Ingresos de actividades ordinarias",
+   "etiqueta": "Venta de boletería",
    "lado": "ingreso",
-   "M": 15226.138,
+   "M": 556.074,
    "pagina": 1,
-   "linea": 11,
-   "origen": "estado"
+   "linea": 107,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
   },
   {
-   "etiqueta": "Otros ingresos",
+   "etiqueta": "Escuelas de futbol",
    "lado": "ingreso",
-   "M": 213.99,
+   "M": 2022.987,
    "pagina": 1,
-   "linea": 16,
-   "origen": "estado"
+   "linea": 108,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Venta y prestamos de derechos deportivos",
+   "lado": "ingreso",
+   "M": 3419.676,
+   "pagina": 1,
+   "linea": 109,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Publicidad y propaganda",
+   "lado": "ingreso",
+   "M": 3400,
+   "pagina": 1,
+   "linea": 110,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Dimayor",
+   "lado": "ingreso",
+   "M": 4253.898,
+   "pagina": 1,
+   "linea": 111,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Federacion Colombiana de Futbol",
+   "lado": "ingreso",
+   "M": 7.014,
+   "pagina": 1,
+   "linea": 112,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Patrocinio",
+   "lado": "ingreso",
+   "M": 900,
+   "pagina": 1,
+   "linea": 113,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Participacion eventos nacionales",
+   "lado": "ingreso",
+   "M": 100.386,
+   "pagina": 1,
+   "linea": 114,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Venta de articulos deportivos",
+   "lado": "ingreso",
+   "M": 70.78,
+   "pagina": 1,
+   "linea": 115,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Enseñansa",
+   "lado": "ingreso",
+   "M": 495.323,
+   "pagina": 1,
+   "linea": 117,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Arrendamientos (Otros ingresos)",
+   "lado": "ingreso",
+   "M": 68.795,
+   "pagina": 1,
+   "linea": 163,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Recuperaciones",
+   "lado": "ingreso",
+   "M": 139.702,
+   "pagina": 1,
+   "linea": 166,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Aprovechamientos",
+   "lado": "ingreso",
+   "M": 4.585,
+   "pagina": 1,
+   "linea": 167,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Ingresos elementos perdidos",
+   "lado": "ingreso",
+   "M": 0.908,
+   "pagina": 1,
+   "linea": 168,
+   "origen": "nota que desglosa \"Otros ingresos\""
   },
   {
    "etiqueta": "Costo de ventas",
@@ -99,12 +190,228 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Gastos de ventas",
+   "etiqueta": "Gastos de personal",
    "lado": "gasto",
-   "M": 12819.26,
+   "M": 6528.036,
    "pagina": 1,
-   "linea": 14,
-   "origen": "estado"
+   "linea": 126,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Honorarios",
+   "lado": "gasto",
+   "M": 56.211,
+   "pagina": 1,
+   "linea": 127,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Impuestos",
+   "lado": "gasto",
+   "M": 356.414,
+   "pagina": 1,
+   "linea": 128,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Arrendamientos (Gastos de ventas)",
+   "lado": "gasto",
+   "M": 1218.65,
+   "pagina": 1,
+   "linea": 129,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 64.029,
+   "pagina": 1,
+   "linea": 130,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Servicios",
+   "lado": "gasto",
+   "M": 227.047,
+   "pagina": 1,
+   "linea": 131,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Gastos Legales",
+   "lado": "gasto",
+   "M": 7.001,
+   "pagina": 1,
+   "linea": 132,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Mantenimiento y reparaciones",
+   "lado": "gasto",
+   "M": 80.751,
+   "pagina": 1,
+   "linea": 133,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Adecuación e instalación",
+   "lado": "gasto",
+   "M": 12.523,
+   "pagina": 1,
+   "linea": 134,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Gastos de viaje",
+   "lado": "gasto",
+   "M": 370.161,
+   "pagina": 1,
+   "linea": 135,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Amortizaciones",
+   "lado": "gasto",
+   "M": 81.403,
+   "pagina": 1,
+   "linea": 136,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Depreciaciones",
+   "lado": "gasto",
+   "M": 12.492,
+   "pagina": 1,
+   "linea": 137,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Gastos Derechos Deportivos",
+   "lado": "gasto",
+   "M": 1643.815,
+   "pagina": 1,
+   "linea": 138,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Comisiones (Gastos de ventas)",
+   "lado": "gasto",
+   "M": 104.678,
+   "pagina": 1,
+   "linea": 139,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Gastos de representación",
+   "lado": "gasto",
+   "M": 11.9,
+   "pagina": 1,
+   "linea": 140,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Elementos de aseo y cafetería",
+   "lado": "gasto",
+   "M": 2.842,
+   "pagina": 1,
+   "linea": 141,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Utiles y papelería",
+   "lado": "gasto",
+   "M": 4.342,
+   "pagina": 1,
+   "linea": 142,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Casino y restaurantes",
+   "lado": "gasto",
+   "M": 367.675,
+   "pagina": 1,
+   "linea": 143,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Logística y eventos",
+   "lado": "gasto",
+   "M": 561.475,
+   "pagina": 1,
+   "linea": 144,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Implementos deportivos",
+   "lado": "gasto",
+   "M": 554.807,
+   "pagina": 1,
+   "linea": 145,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Inscripción en torneos",
+   "lado": "gasto",
+   "M": 109.999,
+   "pagina": 1,
+   "linea": 146,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Sanciones jugadores",
+   "lado": "gasto",
+   "M": 16.208,
+   "pagina": 1,
+   "linea": 147,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Tramites liga",
+   "lado": "gasto",
+   "M": 51.024,
+   "pagina": 1,
+   "linea": 148,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Medicamentos",
+   "lado": "gasto",
+   "M": 18.114,
+   "pagina": 1,
+   "linea": 149,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Logística partidos local",
+   "lado": "gasto",
+   "M": 4.164,
+   "pagina": 1,
+   "linea": 150,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Provisiones",
+   "lado": "gasto",
+   "M": 279.61,
+   "pagina": 1,
+   "linea": 152,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Fotografías",
+   "lado": "gasto",
+   "M": 45.95,
+   "pagina": 1,
+   "linea": 153,
+   "origen": "nota que desglosa \"Gastos de ventas\""
+  },
+  {
+   "etiqueta": "Diversos (Gastos de ventas)",
+   "lado": "gasto",
+   "M": 27.938,
+   "pagina": 1,
+   "linea": 154,
+   "origen": "nota que desglosa \"Gastos de ventas\""
   },
   {
    "etiqueta": "Gastos de administración",
@@ -115,12 +422,68 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Otros gastos",
+   "etiqueta": "Gastos Financieros",
    "lado": "gasto",
-   "M": 590.223,
+   "M": 12.413,
    "pagina": 1,
-   "linea": 17,
-   "origen": "estado"
+   "linea": 178,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Comisiones (Otros gastos)",
+   "lado": "gasto",
+   "M": 34.09,
+   "pagina": 1,
+   "linea": 179,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Costos y gastos procesos jurídicos",
+   "lado": "gasto",
+   "M": 298.27,
+   "pagina": 1,
+   "linea": 180,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Diferencia en cambio",
+   "lado": "gasto",
+   "M": 61.028,
+   "pagina": 1,
+   "linea": 181,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Impuestos asumidos",
+   "lado": "gasto",
+   "M": 45.489,
+   "pagina": 1,
+   "linea": 182,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Multas, sanciones y litigios",
+   "lado": "gasto",
+   "M": 4.917,
+   "pagina": 1,
+   "linea": 183,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Diversos (Otros gastos)",
+   "lado": "gasto",
+   "M": 66.725,
+   "pagina": 1,
+   "linea": 184,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "GMF",
+   "lado": "gasto",
+   "M": 67.292,
+   "pagina": 1,
+   "linea": 186,
+   "origen": "nota que desglosa \"Otros gastos\""
   }
  ],
  "signosCarga": {
@@ -143,22 +506,68 @@
  ],
  "primerAnio": {
   "escalon": 3,
-  "estado": "confirmado",
-  "clave": "7e8e9f581b0464a3c5d560b10cf7805ea7b59fe0",
+  "estado": "pendiente",
+  "clave": "c1fe378d6a28d3e374832849590f25e684040306",
   "rango": [
    8,
    26
   ],
   "lineasCargadas": [
-   11,
-   16,
+   107,
+   108,
+   109,
+   110,
+   111,
+   112,
+   113,
+   114,
+   115,
+   117,
+   163,
+   166,
+   167,
+   168,
    12,
-   14,
+   126,
+   127,
+   128,
+   129,
+   130,
+   131,
+   132,
+   133,
+   134,
+   135,
+   136,
+   137,
+   138,
+   139,
+   140,
+   141,
+   142,
+   143,
+   144,
+   145,
+   146,
+   147,
+   148,
+   149,
+   150,
+   152,
+   153,
+   154,
    15,
-   17,
+   178,
+   179,
+   180,
+   181,
+   182,
+   183,
+   184,
+   186,
    19,
    21
   ],
-  "user": "ESTADO DE RESULTADOS (líneas 8 a 26 del .md):\nL9: | Concepto | 2016 | 2015 |\nL10: | --- | ---: | ---: |\nL11: | Ingresos de actividades ordinarias | 15.226.138 | 13.021.102 |\nL12: | Costo de ventas | 24.004 | 0 |\nL13: | Ganancia bruta | 15.202.134 | 13.021.102 |\nL14: | Gastos de ventas | 12.819.260 | 12.411.541 |\nL15: | Gastos de administración | 1.278.376 | 615.086 |\nL16: | Otros ingresos | 213.990 | 306.813 |\nL17: | Otros gastos | 590.223 | 276.748 |\nL18: | Ganancia (pérdida) por actividades de operación | 728.265 | 24.540 |\nL19: | Ingresos financieros | 44.767 | 169.052 |\nL20: | Ganancia (pérdida), antes de impuestos | 773.032 | 193.592 |\nL21: | Ingreso (gasto) por impuestos | 262.089 | 37.062 |\nL22: | Ganancia (pérdida) procedente de operaciones continuadas | 510.943 | 156.530 |\nL23: | Ganancia (pérdida) | 510.943 | 156.530 |\nL25: ## Estado de situación financiera\n\nLO QUE SE CARGA:\n- ingreso · \"Ingresos de actividades ordinarias\" · 15226.138 · L11\n- ingreso · \"Otros ingresos\" · 213.99 · L16\n- gasto · \"Costo de ventas\" · 24.004 · L12\n- gasto · \"Gastos de ventas\" · 12819.26 · L14\n- gasto · \"Gastos de administración\" · 1278.376 · L15\n- gasto · \"Otros gastos\" · 590.223 · L17\n- financiero · \"Ingresos financieros\" · 44.767 · L19\n- impuesto · \"Ingreso (gasto) por impuestos\" · -262.089 · L21"
+  "user": "ESTADO DE RESULTADOS (líneas 8 a 26 del .md):\nL9: | Concepto | 2016 | 2015 |\nL10: | --- | ---: | ---: |\nL11: | Ingresos de actividades ordinarias | 15.226.138 | 13.021.102 |\nL12: | Costo de ventas | 24.004 | 0 |\nL13: | Ganancia bruta | 15.202.134 | 13.021.102 |\nL14: | Gastos de ventas | 12.819.260 | 12.411.541 |\nL15: | Gastos de administración | 1.278.376 | 615.086 |\nL16: | Otros ingresos | 213.990 | 306.813 |\nL17: | Otros gastos | 590.223 | 276.748 |\nL18: | Ganancia (pérdida) por actividades de operación | 728.265 | 24.540 |\nL19: | Ingresos financieros | 44.767 | 169.052 |\nL20: | Ganancia (pérdida), antes de impuestos | 773.032 | 193.592 |\nL21: | Ingreso (gasto) por impuestos | 262.089 | 37.062 |\nL22: | Ganancia (pérdida) procedente de operaciones continuadas | 510.943 | 156.530 |\nL23: | Ganancia (pérdida) | 510.943 | 156.530 |\nL25: ## Estado de situación financiera\n\nLO QUE SE CARGA:\n- ingreso · \"Venta de boletería\" · 556.074 · L107 (de una nota)\n- ingreso · \"Escuelas de futbol\" · 2022.987 · L108 (de una nota)\n- ingreso · \"Venta y prestamos de derechos deportivos\" · 3419.676 · L109 (de una nota)\n- ingreso · \"Publicidad y propaganda\" · 3400 · L110 (de una nota)\n- ingreso · \"Dimayor\" · 4253.898 · L111 (de una nota)\n- ingreso · \"Federacion Colombiana de Futbol\" · 7.014 · L112 (de una nota)\n- ingreso · \"Patrocinio\" · 900 · L113 (de una nota)\n- ingreso · \"Participacion eventos nacionales\" · 100.386 · L114 (de una nota)\n- ingreso · \"Venta de articulos deportivos\" · 70.78 · L115 (de una nota)\n- ingreso · \"Enseñansa\" · 495.323 · L117 (de una nota)\n- ingreso · \"Arrendamientos (Otros ingresos)\" · 68.795 · L163 (de una nota)\n- ingreso · \"Recuperaciones\" · 139.702 · L166 (de una nota)\n- ingreso · \"Aprovechamientos\" · 4.585 · L167 (de una nota)\n- ingreso · \"Ingresos elementos perdidos\" · 0.908 · L168 (de una nota)\n- gasto · \"Costo de ventas\" · 24.004 · L12\n- gasto · \"Gastos de personal\" · 6528.036 · L126 (de una nota)\n- gasto · \"Honorarios\" · 56.211 · L127 (de una nota)\n- gasto · \"Impuestos\" · 356.414 · L128 (de una nota)\n- gasto · \"Arrendamientos (Gastos de ventas)\" · 1218.65 · L129 (de una nota)\n- gasto · \"Seguros\" · 64.029 · L130 (de una nota)\n- gasto · \"Servicios\" · 227.047 · L131 (de una nota)\n- gasto · \"Gastos Legales\" · 7.001 · L132 (de una nota)\n- gasto · \"Mantenimiento y reparaciones\" · 80.751 · L133 (de una nota)\n- gasto · \"Adecuación e instalación\" · 12.523 · L134 (de una nota)\n- gasto · \"Gastos de viaje\" · 370.161 · L135 (de una nota)\n- gasto · \"Amortizaciones\" · 81.403 · L136 (de una nota)\n- gasto · \"Depreciaciones\" · 12.492 · L137 (de una nota)\n- gasto · \"Gastos Derechos Deportivos\" · 1643.815 · L138 (de una nota)\n- gasto · \"Comisiones (Gastos de ventas)\" · 104.678 · L139 (de una nota)\n- gasto · \"Gastos de representación\" · 11.9 · L140 (de una nota)\n- gasto · \"Elementos de aseo y cafetería\" · 2.842 · L141 (de una nota)\n- gasto · \"Utiles y papelería\" · 4.342 · L142 (de una nota)\n- gasto · \"Casino y restaurantes\" · 367.675 · L143 (de una nota)\n- gasto · \"Logística y eventos\" · 561.475 · L144 (de una nota)\n- gasto · \"Implementos deportivos\" · 554.807 · L145 (de una nota)\n- gasto · \"Inscripción en torneos\" · 109.999 · L146 (de una nota)\n- gasto · \"Sanciones jugadores\" · 16.208 · L147 (de una nota)\n- gasto · \"Tramites liga\" · 51.024 · L148 (de una nota)\n- gasto · \"Medicamentos\" · 18.114 · L149 (de una nota)\n- gasto · \"Logística partidos local\" · 4.164 · L150 (de una nota)\n- gasto · \"Provisiones\" · 279.61 · L152 (de una nota)\n- gasto · \"Fotografías\" · 45.95 · L153 (de una nota)\n- gasto · \"Diversos (Gastos de ventas)\" · 27.938 · L154 (de una nota)\n- gasto · \"Gastos de administración\" · 1278.376 · L15\n- gasto · \"Gastos Financieros\" · 12.413 · L178 (de una nota)\n- gasto · \"Comisiones (Otros gastos)\" · 34.09 · L179 (de una nota)\n- gasto · \"Costos y gastos procesos jurídicos\" · 298.27 · L180 (de una nota)\n- gasto · \"Diferencia en cambio\" · 61.028 · L181 (de una nota)\n- gasto · \"Impuestos asumidos\" · 45.489 · L182 (de una nota)\n- gasto · \"Multas, sanciones y litigios\" · 4.917 · L183 (de una nota)\n- gasto · \"Diversos (Otros gastos)\" · 66.725 · L184 (de una nota)\n- gasto · \"GMF\" · 67.292 · L186 (de una nota)\n- financiero · \"Ingresos financieros\" · 44.767 · L19\n- impuesto · \"Ingreso (gasto) por impuestos\" · -262.089 · L21"
  }
 }

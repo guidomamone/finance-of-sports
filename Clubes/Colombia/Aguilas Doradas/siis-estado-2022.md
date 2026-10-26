@@ -86,3 +86,24 @@ Estado de resultados integral y estado de situación financiera al 2022-12-31 (P
 | --- | ---: | ---: |
 | Total patrimonio | 7.954.135 | 6.760.296 |
 
+## Detalle de las notas del club
+
+> Las tablas de abajo se copiaron de Clubes/Colombia/Aguilas Doradas/estados-financieros-2022.md (las notas del club, otro documento del mismo año), sin el signo «$» ni las negritas, con las cifras escritas con coma de miles y, si una etiqueta se repite entre tablas, con el rubro entre paréntesis. Cada una abre un rubro del estado de resultados de arriba porque sus filas, sin los subtotales, suman EXACTO ese rubro (regla de Colombia, caso 2). Lo que las notas no abren queda como el rubro de SIIS.
+
+### Ingresos de actividades ordinarias: 15. INGRESOS: (Clubes/Colombia/Aguilas Doradas/estados-financieros-2022.md, L345-L356)
+
+Cifras de esta tabla en pesos colombianos.
+
+| CONCEPTO | AÑO 2022 | AÑO 2021 |
+| :--- | :--- | :--- |
+| Por taquilla | 827,326,000 | 1,008,000 |
+| Venta Derechos deportivos | 4,876,838,591 | 3,334,500,000 |
+| Publicidad y propaganda | 2,260,496,000 | 925,496,000 |
+| Dimayor: Derechos de televisión | 5,355,140,074 | 4,750,923,560 |
+| Dimayor: Diferidos | 159,680,776 | 0 |
+| Dimayor participaciones | 156,178,500 | 85,079,000 |
+| Dimayor: Apoyo logístico | 0 | 266,516,808 |
+| Federación Colombiana de futbol | 436,000,000 | 621,000,000 |
+| Actividades conexas | 132,939,949 | 77,256,156 |
+| TOTAL INGRESOS | 14,204,599,890 | 10,061,779,524 |
+

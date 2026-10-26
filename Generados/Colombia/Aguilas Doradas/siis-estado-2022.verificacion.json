@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Aguilas Doradas/siis-estado-2022.pdf",
  "md": "Clubes/Colombia/Aguilas Doradas/siis-estado-2022.md",
- "generado": "2026-10-26T06:30:34.555Z",
+ "generado": "2026-10-26T12:30:36.468Z",
  "scriptHuella": "f1d4dee41de6",
  "estado": "ok",
  "clubId": "aguilasdoradas-co",
@@ -41,22 +41,22 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (financiero por rótulo, impuesto invertido)",
-   "dif": 6.821210263296962e-13
+   "dif": 0.00011000000199601345
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 10852.099524; el sitio tiene 10852.1"
   },
   {
    "nombre": "documento del año 2023",
    "ok": true,
-   "detalle": "ingresos de 2022: 15035.706 en este documento y 15035.706 en siis-estado-2023.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2022: 15035.70589 en este documento y 15035.706 en siis-estado-2023.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2021",
    "ok": true,
-   "detalle": "ingresos de 2021: 10852.1 en siis-estado-2021.pdf y 10852.1 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+   "detalle": "ingresos de 2021: 10852.099524 en siis-estado-2021.pdf y 10852.099524 en este documento (columna del año anterior)"
   }
  ],
  "notas": [],
@@ -64,7 +64,7 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 15035.706,
+  "ingresos": 15035.70589,
   "gastos": 12976.014,
   "financiero": 189.078,
   "impuesto": 291.284,
@@ -75,12 +75,68 @@
  },
  "lineas": [
   {
-   "etiqueta": "Ingresos de actividades ordinarias",
+   "etiqueta": "Por taquilla",
    "lado": "ingreso",
-   "M": 14204.6,
+   "M": 827.326,
    "pagina": 1,
-   "linea": 11,
-   "origen": "estado"
+   "linea": 99,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Venta Derechos deportivos",
+   "lado": "ingreso",
+   "M": 4876.838591,
+   "pagina": 1,
+   "linea": 100,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Publicidad y propaganda",
+   "lado": "ingreso",
+   "M": 2260.496,
+   "pagina": 1,
+   "linea": 101,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Dimayor: Derechos de televisión",
+   "lado": "ingreso",
+   "M": 5355.140074,
+   "pagina": 1,
+   "linea": 102,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Dimayor: Diferidos",
+   "lado": "ingreso",
+   "M": 159.680776,
+   "pagina": 1,
+   "linea": 103,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Dimayor participaciones",
+   "lado": "ingreso",
+   "M": 156.1785,
+   "pagina": 1,
+   "linea": 104,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Federación Colombiana de futbol",
+   "lado": "ingreso",
+   "M": 436,
+   "pagina": 1,
+   "linea": 106,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Actividades conexas",
+   "lado": "ingreso",
+   "M": 132.939949,
+   "pagina": 1,
+   "linea": 107,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
   },
   {
    "etiqueta": "Otros ingresos",

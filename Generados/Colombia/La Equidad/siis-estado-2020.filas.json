@@ -1,16 +1,19 @@
 {
  "pdf": "Clubes/Colombia/La Equidad/siis-estado-2020.pdf",
  "md": "Clubes/Colombia/La Equidad/siis-estado-2020.md",
- "mdSha1": "a1e87afd1d1593864b1f76ad9ca84a61b50c74d0",
- "ubicacionSha1": "d155e04fbc0ac54800baeccf46eb67fab96e5473",
+ "mdSha1": "105d28937a77d81f0496f0fee535336c1a50520c",
+ "ubicacionSha1": "ab9c37a63033a0822ed771607b73f8b68320b40b",
  "modelo": "a mano (Claude Code, sesión 2026-10-26)",
- "generado": "2026-10-26T06:06:58.922Z",
+ "generado": "2026-10-26T12:30:18.512Z",
  "salida": "a mano",
  "ubicacion": {
   "estado": [
    "b1"
   ],
-  "notas_ingresos": [],
+  "notas_ingresos": [
+   "b10",
+   "b11"
+  ],
   "notas_gastos": []
  },
  "escalas": [
@@ -18,6 +21,16 @@
    "bloque": "b1",
    "escala": "miles",
    "evidencia": "L1: Cifras en miles de pesos colombianos"
+  },
+  {
+   "bloque": "b10",
+   "escala": "miles",
+   "evidencia": "L135: Cifras de esta tabla en miles de pesos colombianos"
+  },
+  {
+   "bloque": "b11",
+   "escala": "miles",
+   "evidencia": "L157: Cifras de esta tabla en miles de pesos colombianos"
   }
  ],
  "filas": [
@@ -180,6 +193,256 @@
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 139,
+   "etiqueta": "Taquilla - Venta de Boleteria",
+   "actual": "670,777",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 140,
+   "etiqueta": "Escuelas de Futbol",
+   "actual": "662,665",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 141,
+   "etiqueta": "Venta y Prestamo de Derechos",
+   "actual": "1,687,051",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 142,
+   "etiqueta": "Publicidad y Propaganda",
+   "actual": "765,206",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 143,
+   "etiqueta": "Dimayor",
+   "actual": "3,304,121",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 144,
+   "etiqueta": "Federacion Colombiana de Futbol",
+   "actual": "272,156",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 145,
+   "etiqueta": "Patrocinio",
+   "actual": "4,545,827",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 146,
+   "etiqueta": "Cuota de Sostenimiento",
+   "actual": "219,891",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 147,
+   "etiqueta": "Participación CopaSuramericana",
+   "actual": "0",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 148,
+   "etiqueta": "Venta de Artículos Deportivos",
+   "actual": "61,856",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 149,
+   "etiqueta": "Eventos",
+   "actual": "4,700",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 150,
+   "etiqueta": "Devoluciones en Ventas",
+   "actual": "-707,467",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 151,
+   "etiqueta": "Actividades Conexas",
+   "actual": "625,305",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 152,
+   "etiqueta": "Ingresos Fuerzas Basicas",
+   "actual": "3,880",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 153,
+   "etiqueta": "Total Ingresos Operacionales",
+   "actual": "12,115,968",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b11",
+   "linea": 161,
+   "etiqueta": "Construcciones y Edificaciones",
+   "actual": "18,000",
+   "anterior": "44,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 162,
+   "etiqueta": "Transporte",
+   "actual": "0",
+   "anterior": "240",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 163,
+   "etiqueta": "Reintegro de Otros Costos y Gastos",
+   "actual": "150,863",
+   "anterior": "211,991",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 164,
+   "etiqueta": "Recobro Incapacidades",
+   "actual": "829,783",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 165,
+   "etiqueta": "Ingresos de Ejercicios Anteriores",
+   "actual": "12,505",
+   "anterior": "9,048",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 166,
+   "etiqueta": "Aprovechamientos",
+   "actual": "2,003",
+   "anterior": "54,868",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 167,
+   "etiqueta": "Subvenciones del Estado",
+   "actual": "317,340",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 168,
+   "etiqueta": "Ajuste al Peso",
+   "actual": "3",
+   "anterior": "13",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 169,
+   "etiqueta": "Donanciones Derechos Deportivos",
+   "actual": "1,895,000",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 170,
+   "etiqueta": "Total Otros Ingresos",
+   "actual": "3,225,497",
+   "anterior": "320,160",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
   }
  ],
  "total_ingresos": null,
@@ -190,5 +453,5 @@
   "anterior": "908.553"
  },
  "dudas": [],
- "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
 }

@@ -1,23 +1,37 @@
 {
  "pdf": "Clubes/Colombia/Aguilas Doradas/siis-estado-2024.pdf",
  "md": "Clubes/Colombia/Aguilas Doradas/siis-estado-2024.md",
- "mdSha1": "1cf6ac8be46a160ff8c9f13b6488b98d164be73f",
- "ubicacionSha1": "c36c0506053a641e74ae8703e8ae35896e83c1a2",
+ "mdSha1": "af63aa30be5ffc66cf400df7f8ba2d6baab8e3de",
+ "ubicacionSha1": "36772e18a52fc3ffffd96ff5f9062d739ae66593",
  "modelo": "a mano (Claude Code, sesión 2026-10-26)",
- "generado": "2026-10-26T06:07:11.365Z",
+ "generado": "2026-10-26T12:30:31.086Z",
  "salida": "a mano",
  "ubicacion": {
   "estado": [
    "b1"
   ],
-  "notas_ingresos": [],
-  "notas_gastos": []
+  "notas_ingresos": [
+   "b10"
+  ],
+  "notas_gastos": [
+   "b11"
+  ]
  },
  "escalas": [
   {
    "bloque": "b1",
    "escala": "miles",
    "evidencia": "L1: Cifras en miles de pesos colombianos"
+  },
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "L96: Cifras de esta tabla en pesos colombianos"
+  },
+  {
+   "bloque": "b11",
+   "escala": "unidades",
+   "evidencia": "L114: Cifras de esta tabla en pesos colombianos"
   }
  ],
  "filas": [
@@ -160,6 +174,246 @@
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 100,
+   "etiqueta": "Por taquilla",
+   "actual": "337,653,000",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 101,
+   "etiqueta": "Venta Derechos deportivos",
+   "actual": "12,110,170,057",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 102,
+   "etiqueta": "Publicidad y propaganda",
+   "actual": "308,044,000",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 103,
+   "etiqueta": "Dimayor Derechos de televisión",
+   "actual": "5,885,367,352",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 104,
+   "etiqueta": "Dimayor Diferidos",
+   "actual": "239,521,164",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 105,
+   "etiqueta": "Dimayor participaciones y otros",
+   "actual": "1,152,927,337",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 106,
+   "etiqueta": "Donaciones",
+   "actual": "0",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 107,
+   "etiqueta": "Federación Colombiana de futbol",
+   "actual": "533,337,000",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 108,
+   "etiqueta": "Patrocinios",
+   "actual": "4,287,179,487",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 109,
+   "etiqueta": "Particip. Eventos internales",
+   "actual": "1,881,786,130",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 110,
+   "etiqueta": "TOTAL INGRESOS OPERACIONALES",
+   "actual": "26,735,985,527",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b11",
+   "linea": 118,
+   "etiqueta": "Gastos de Personal",
+   "actual": "1,073,936,555",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b11",
+   "linea": 119,
+   "etiqueta": "Honorarios",
+   "actual": "188,415,460",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b11",
+   "linea": 120,
+   "etiqueta": "Impuestos",
+   "actual": "114,221,199",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b11",
+   "linea": 121,
+   "etiqueta": "Arrendamientos",
+   "actual": "49,534,106",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b11",
+   "linea": 122,
+   "etiqueta": "Seguros",
+   "actual": "32,445,800",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b11",
+   "linea": 123,
+   "etiqueta": "Servicios generales",
+   "actual": "293,063,141",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b11",
+   "linea": 124,
+   "etiqueta": "Gastos legales",
+   "actual": "2,746,900",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b11",
+   "linea": 125,
+   "etiqueta": "Mantenimiento y reparaciones",
+   "actual": "96,722,715",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b11",
+   "linea": 126,
+   "etiqueta": "Gastos de viaje",
+   "actual": "96,346,144",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b11",
+   "linea": 127,
+   "etiqueta": "Amortizaciones",
+   "actual": "28,616,328",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b11",
+   "linea": 128,
+   "etiqueta": "Gastos diversos",
+   "actual": "706,529,319",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b11",
+   "linea": 129,
+   "etiqueta": "Deterioro de cartera",
+   "actual": "61,884,450",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b11",
+   "linea": 130,
+   "etiqueta": "TOTAL GASTOS ADMINISTRACION",
+   "actual": "2,744,462,116",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
   }
  ],
  "total_ingresos": null,
@@ -170,5 +424,5 @@
   "anterior": "7.398.699"
  },
  "dudas": [],
- "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
 }

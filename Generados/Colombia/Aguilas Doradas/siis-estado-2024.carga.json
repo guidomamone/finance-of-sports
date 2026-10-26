@@ -1,8 +1,13 @@
 {
  "pdf": "Clubes/Colombia/Aguilas Doradas/siis-estado-2024.pdf",
- "generado": "2026-10-26T06:14:11.367Z",
+ "generado": "2026-10-26T12:35:01.159Z",
  "frena": [],
- "avisos": [],
+ "avisos": [
+  "--reemplazar: rehace un ejercicio ya cargado",
+  "aguilasdoradas-co 2024 ya cargado: se reemplaza",
+  "materialidad: \"Amortizaciones\" va como other_amortisation con 0.6 (0.14% de gastos; acumulado sin preguntar 0.14%)",
+  "sources['aguilasdoradas-co-siis-estado-2024'] ya existe: se conserva"
+ ],
  "ejercicio": {
   "clubId": "aguilasdoradas-co",
   "year": 2024,
@@ -10,9 +15,59 @@
   "perimetro": "individual",
   "revenueLines": [
    {
-    "rawLabel": "Ingresos de actividades ordinarias",
-    "normalizedCategory": "lump_football_operations",
-    "amountNative": 26735.986,
+    "rawLabel": "Por taquilla",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 337.653,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Venta Derechos deportivos",
+    "normalizedCategory": "player_sales",
+    "amountNative": 12110.170057,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Publicidad y propaganda",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 308.044,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Dimayor Derechos de televisión",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 5885.367352,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Dimayor Diferidos",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 239.521164,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Dimayor participaciones y otros",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 1152.927337,
     "disclosureLevel": "aggregated",
     "_pag": 1,
     "_escalon": 0,
@@ -20,13 +75,43 @@
     "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
+    "rawLabel": "Federación Colombiana de futbol",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 533.337,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Patrocinios",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 4287.179487,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Particip. Eventos internales",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 1881.78613,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
     "rawLabel": "Otros ingresos",
     "normalizedCategory": "other_income",
     "amountNative": 723.998,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 1,
-    "_conf": 0.96,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    }
   ],
@@ -37,8 +122,8 @@
     "amountNative": -117.156,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.88,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -47,18 +132,128 @@
     "amountNative": -17658.317,
     "disclosureLevel": "aggregated",
     "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos de Personal",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1073.936555,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
     "_escalon": 2,
     "_conf": 0.85,
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Gastos de administración",
+    "rawLabel": "Honorarios",
     "normalizedCategory": "admin_general_expense",
-    "amountNative": -2744.462,
+    "amountNative": -188.41546,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Impuestos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -114.221199,
     "disclosureLevel": "aggregated",
     "_pag": 1,
     "_escalon": 1,
     "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Arrendamientos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -49.534106,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Seguros",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -32.4458,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.88,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Servicios generales",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -293.063141,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos legales",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.7469,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mantenimiento y reparaciones",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -96.722715,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gastos de viaje",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -96.346144,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-26): Regla de Colombia para las filas de una nota de gastos (CONVENCIONES-DATOS.md): los viajes de la nota de «Gastos de administración» son administración, no organización de partidos."
+   },
+   {
+    "rawLabel": "Amortizaciones",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -28.616328,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": "materialidad",
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json · escalón de materialidad: 0.14% de su lado, acumulado 0.14% (tope 1%) y confianza 0.6"
+   },
+   {
+    "rawLabel": "Gastos diversos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -706.529319,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Deterioro de cartera",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -61.88445,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.98,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -67,8 +262,8 @@
     "amountNative": -478.829,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 1,
-    "_conf": 0.98,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    }
   ],
@@ -98,13 +293,6 @@
    ],
    "sinDesglose": [
     {
-     "renglon": "Ingresos de actividades ordinarias",
-     "lado": "revenue",
-     "importe": 26735.986,
-     "motivo": "Línea única de ingresos sin abrir: lump_football_operations (regla de Colombia, 463, 2026-10-26)",
-     "tipo": "net_sales"
-    },
-    {
      "renglon": "Gastos de ventas",
      "lado": "expense",
      "importe": 17658.317,
@@ -115,8 +303,8 @@
    "baseIngreso": "full",
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 27459.984,
-   "officialTotalExpenses": 20998.764,
+   "officialTotalRevenue": 27459.983527,
+   "officialTotalExpenses": 20998.764117,
    "officialPAT": 5492.087
   },
   "source": {
@@ -130,7 +318,7 @@
   }
  },
  "md": "Clubes/Colombia/Aguilas Doradas/siis-estado-2024.md",
- "reemplaza": false,
+ "reemplaza": true,
  "periodo": {
   "tipo": "anual",
   "meses": 12,
@@ -155,26 +343,146 @@
   }
  ],
  "seleccion": {
-  "filas": 9,
+  "filas": 28,
   "notasUsadas": [],
   "refM": null
  },
  "filas": [
   {
-   "label": "Ingresos de actividades ordinarias",
+   "label": "Por taquilla",
    "page": 1,
-   "native": 26735.986,
+   "native": 337.653,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 26735.986,
-   "cat": "lump_football_operations",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 337.653,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 337.653
+  },
+  {
+   "label": "Venta Derechos deportivos",
+   "page": 1,
+   "native": 12110.170057,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 12110.170057,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 12110.170057
+  },
+  {
+   "label": "Publicidad y propaganda",
+   "page": 1,
+   "native": 308.044,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 308.044,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 308.044
+  },
+  {
+   "label": "Dimayor Derechos de televisión",
+   "page": 1,
+   "native": 5885.367352,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 5885.367352,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5885.367352
+  },
+  {
+   "label": "Dimayor Diferidos",
+   "page": 1,
+   "native": 239.521164,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 239.521164,
+   "cat": "broadcasting",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 239.521164
+  },
+  {
+   "label": "Dimayor participaciones y otros",
+   "page": 1,
+   "native": 1152.927337,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 1152.927337,
+   "cat": "broadcasting",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "Línea única de ingresos sin abrir: lump_football_operations (regla de Colombia, 463, 2026-10-26)",
+   "notaGuido": "Dimayor reparte los ingresos de televisión y de la liga: broadcasting, igual que «Dimayor derechos de televisión» del mismo club",
    "destino": "revenue",
-   "amountNative": 26735.986
+   "amountNative": 1152.927337
+  },
+  {
+   "label": "Federación Colombiana de futbol",
+   "page": 1,
+   "native": 533.337,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 533.337,
+   "cat": "competition_bonus",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 533.337
+  },
+  {
+   "label": "Patrocinios",
+   "page": 1,
+   "native": 4287.179487,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 4287.179487,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4287.179487
+  },
+  {
+   "label": "Particip. Eventos internales",
+   "page": 1,
+   "native": 1881.78613,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 1881.78613,
+   "cat": "competition_bonus",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1881.78613
   },
   {
    "label": "Otros ingresos",
@@ -184,8 +492,8 @@
    "origen": "verificacion (estado)",
    "signoFijo": 723.998,
    "cat": "other_income",
-   "conf": 0.96,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -199,8 +507,8 @@
    "origen": "verificacion (estado)",
    "signoFijo": 117.156,
    "cat": "other_expenses",
-   "conf": 0.88,
-   "escalon": 2,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -214,27 +522,195 @@
    "origen": "verificacion (estado)",
    "signoFijo": 17658.317,
    "cat": "lump_football_operations_expense",
-   "conf": 0.85,
-   "escalon": 2,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
    "amountNative": -17658.317
   },
   {
-   "label": "Gastos de administración",
+   "label": "Gastos de Personal",
    "page": 1,
-   "native": 2744.462,
+   "native": 1073.936555,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 2744.462,
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 1073.936555,
+   "cat": "admin_general_expense",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1073.936555
+  },
+  {
+   "label": "Honorarios",
+   "page": 1,
+   "native": 188.41546,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 188.41546,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -188.41546
+  },
+  {
+   "label": "Impuestos",
+   "page": 1,
+   "native": 114.221199,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 114.221199,
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -2744.462
+   "amountNative": -114.221199
+  },
+  {
+   "label": "Arrendamientos",
+   "page": 1,
+   "native": 49.534106,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 49.534106,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -49.534106
+  },
+  {
+   "label": "Seguros",
+   "page": 1,
+   "native": 32.4458,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 32.4458,
+   "cat": "admin_general_expense",
+   "conf": 0.88,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -32.4458
+  },
+  {
+   "label": "Servicios generales",
+   "page": 1,
+   "native": 293.063141,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 293.063141,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -293.063141
+  },
+  {
+   "label": "Gastos legales",
+   "page": 1,
+   "native": 2.7469,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 2.7469,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.7469
+  },
+  {
+   "label": "Mantenimiento y reparaciones",
+   "page": 1,
+   "native": 96.722715,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 96.722715,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -96.722715
+  },
+  {
+   "label": "Gastos de viaje",
+   "page": 1,
+   "native": 96.346144,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 96.346144,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-26): Regla de Colombia para las filas de una nota de gastos (CONVENCIONES-DATOS.md): los viajes de la nota de «Gastos de administración» son administración, no organización de partidos.",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -96.346144
+  },
+  {
+   "label": "Amortizaciones",
+   "page": 1,
+   "native": 28.616328,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 28.616328,
+   "cat": "other_amortisation",
+   "conf": 0.6,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: 0.14% de su lado, acumulado 0.14% (tope 1%) y confianza 0.6",
+   "enLista": true,
+   "enCola": false,
+   "destino": "expense",
+   "amountNative": -28.616328
+  },
+  {
+   "label": "Gastos diversos",
+   "page": 1,
+   "native": 706.529319,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 706.529319,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Fortaleza CEIF), nota:gastos de administracion · Guido 2026-10-02: tabla de categorías de Fortaleza aprobada (la propuesta de la IA).",
+   "destino": "expense",
+   "amountNative": -706.529319
+  },
+  {
+   "label": "Deterioro de cartera",
+   "page": 1,
+   "native": 61.88445,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
+   "signoFijo": 61.88445,
+   "cat": "other_expenses",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -61.88445
   },
   {
    "label": "Otros gastos",
@@ -244,8 +720,8 @@
    "origen": "verificacion (estado)",
    "signoFijo": 478.829,
    "cat": "other_expenses",
-   "conf": 0.98,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -287,16 +763,18 @@
  ],
  "signos": {
   "porTabla": {
+   "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Gastos de administración\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 27459.984,
-  "expSum": -20998.764,
-  "officialTotalRevenue": 27459.984,
-  "officialTotalExpenses": 20998.764,
+  "revSum": 27459.983527,
+  "expSum": -20998.764117,
+  "officialTotalRevenue": 27459.983527,
+  "officialTotalExpenses": 20998.764117,
   "officialPAT": 5492.087,
   "verificacion": {
    "pat": "impreso",
@@ -312,18 +790,18 @@
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
-   "M": 27459.984
+   "M": 27459.983527
   },
   "expImpreso": {
    "label": "total de gastos (verificado)",
    "pag": null,
-   "M": 20998.764
+   "M": 20998.764117
   }
  },
  "liga": {
   "valor": "co-primeraA",
-  "fuente": "roster cacheado de \"2024 Liga DIMAYOR\" (tools/club-league-reference/co.json), coincidencia exacta \"Águilas Doradas\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -363,7 +841,7 @@
   },
   "liga": {
    "valor": "co-primeraA",
-   "fuente": "roster cacheado de \"2024 Liga DIMAYOR\" (tools/club-league-reference/co.json), coincidencia exacta \"Águilas Doradas\"",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
    "estado": "ok"
   }
  },
@@ -371,8 +849,8 @@
  "resumen": {
   "carga": true,
   "motivos": 0,
-  "lineasIngreso": 2,
-  "lineasGasto": 4,
+  "lineasIngreso": 10,
+  "lineasGasto": 15,
   "metaFilas": 3,
   "excluidas": 0
  }

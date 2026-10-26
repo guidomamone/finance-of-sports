@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Colombia/Deportes Tolima/siis-estado-2024.pdf",
  "md": "Clubes/Colombia/Deportes Tolima/siis-estado-2024.md",
- "mdSha1": "44905b097b5eb9c2282da5a0c6ec863bf2649a08",
+ "mdSha1": "c19514bed7b0796725dd32e570b7c23f73f6a81d",
  "modelo": "a mano (Claude Code, sesión 2026-10-26)",
- "generado": "2026-10-26T05:31:59.516Z",
+ "generado": "2026-10-26T12:30:12.218Z",
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -12,13 +12,23 @@
     23
    ],
    "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 1,
+   "lineas": [
+    104,
+    117
+   ],
+   "tipo": "tabla"
   }
  },
  "sin_estado": false,
  "estado": [
   "b1"
  ],
- "notas_ingresos": [],
+ "notas_ingresos": [
+  "b10"
+ ],
  "notas_gastos": [],
  "escala": "miles",
  "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
@@ -28,5 +38,5 @@
  "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [],
- "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
 }

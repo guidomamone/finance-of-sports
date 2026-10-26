@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Colombia/Deportes Tolima/siis-estado-2019.pdf",
  "md": "Clubes/Colombia/Deportes Tolima/siis-estado-2019.md",
- "mdSha1": "a8b769054c04576109fe15db9f596a14be68cff4",
+ "mdSha1": "d7f48b57087a6460ca20396412107056a581a4a3",
  "modelo": "a mano (Claude Code, sesión 2026-10-26)",
- "generado": "2026-10-26T05:31:55.631Z",
+ "generado": "2026-10-26T12:30:01.531Z",
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -12,14 +12,34 @@
     26
    ],
    "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 1,
+   "lineas": [
+    137,
+    150
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 1,
+   "lineas": [
+    156,
+    170
+   ],
+   "tipo": "tabla"
   }
  },
  "sin_estado": false,
  "estado": [
   "b1"
  ],
- "notas_ingresos": [],
- "notas_gastos": [],
+ "notas_ingresos": [
+  "b10"
+ ],
+ "notas_gastos": [
+  "b11"
+ ],
  "escala": "miles",
  "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
  "moneda": "COP",
@@ -28,5 +48,5 @@
  "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [],
- "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
 }

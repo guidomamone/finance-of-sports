@@ -152,7 +152,6 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
@@ -181,11 +180,32 @@
       ],
       "expenses": [
         {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-7316.459,"disclosure":"aggregated"},
-        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-260.481,"disclosure":"aggregated"},
-        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-16.075,"disclosure":"aggregated"}
+        {"label":"Gastos de personal","category":"admin_general","subcategory":"admin_general_expense","amount":-88.421,"disclosure":"aggregated"},
+        {"label":"Honorarios","category":"admin_general","subcategory":"admin_general_expense","amount":-12.05,"disclosure":"aggregated"},
+        {"label":"Impuestos","category":"admin_general","subcategory":"admin_general_expense","amount":-34.553,"disclosure":"aggregated"},
+        {"label":"Arrendamientos","category":"admin_general","subcategory":"admin_general_expense","amount":-1.32,"disclosure":"aggregated"},
+        {"label":"Seguros","category":"admin_general","subcategory":"admin_general_expense","amount":-32.029,"disclosure":"aggregated"},
+        {"label":"Servicio vigilancia","category":"admin_general","subcategory":"admin_general_expense","amount":-0.115,"disclosure":"aggregated"},
+        {"label":"Procesamiento electrónico","category":"admin_general","subcategory":"admin_general_expense","amount":-2.92,"disclosure":"aggregated"},
+        {"label":"Publicidad propaganda","category":"admin_general","subcategory":"admin_general_expense","amount":-0.035,"disclosure":"aggregated"},
+        {"label":"Servicios públicos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.935,"disclosure":"aggregated"},
+        {"label":"Correo portes y telegramas","category":"admin_general","subcategory":"admin_general_expense","amount":-0.582,"disclosure":"aggregated"},
+        {"label":"Gastos notariales y legales","category":"admin_general","subcategory":"admin_general_expense","amount":-9.677,"disclosure":"aggregated"},
+        {"label":"Mantenimiento y reparaciones","category":"admin_general","subcategory":"admin_general_expense","amount":-5.293,"disclosure":"aggregated"},
+        {"label":"Gastos de viaje","category":"admin_general","subcategory":"admin_general_expense","amount":-28.938,"disclosure":"aggregated"},
+        {"label":"Depreciaciones","category":"depreciation","subcategory":"depreciation","amount":-42.878,"disclosure":"aggregated"},
+        {"label":"Gastos varios","category":"admin_general","subcategory":"admin_general_expense","amount":-0.736,"disclosure":"aggregated"},
+        {
+          "label": "Costas y procesos judiciales",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -10.206,
+          "disclosure": "aggregated"
+        },
+        {"label":"Impuestos asumidos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-5.869,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.807,"tax":-255.115,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":8243.039,"expenses":7593.015,"net_result":392.102},
+      "official_totals": {"revenue":8243.039,"expenses":7593.016,"net_result":392.102},
       "adjustments": {
         "extra_rows": [{"label":"Costos financieros","amount":-2.807},{"label":"Ingreso (gasto) por impuestos","amount":-255.115}],
         "no_breakdown": [
@@ -210,10 +230,7 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
-          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
-          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
@@ -228,58 +245,112 @@
       "management_id": null,
       "fx": {"ref":"COP@2018-12-31"},
       "revenue": [
+        {"label":"Taquilla Venta de Boleteria","category":"matchday","subcategory":"matchday_competition","amount":3545.431,"disclosure":"aggregated"},
         {
-          "label": "Ingresos de actividades ordinarias",
-          "category": "undisclosed",
-          "subcategory": "lump_football_operations",
-          "amount": 11466.093,
+          "label": "Publicidad y propaganda (Ingresos de actividades ordinarias)",
+          "category": "commercial",
+          "subcategory": "sponsorship_commercial",
+          "amount": 17.121,
           "disclosure": "aggregated"
         },
+        {"label":"Dimayor","category":"media_rights","subcategory":"broadcasting","amount":3302.222,"disclosure":"aggregated"},
+        {"label":"Patrocinio","category":"commercial","subcategory":"sponsorship_commercial","amount":1570.04,"disclosure":"aggregated"},
+        {"label":"Actividades Conexas","category":"other_revenue","subcategory":"other_income","amount":3031.279,"disclosure":"aggregated"},
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":416.537,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-8044.67,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de personal (Costo de ventas)",
+          "category": "first_team_staff",
+          "subcategory": "wages_squad",
+          "amount": -4151.055,
+          "disclosure": "aggregated"
+        },
+        {"label":"Honorarios (Costo de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-17.437,"disclosure":"aggregated"},
+        {"label":"Impuestos (Costo de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-345.365,"disclosure":"aggregated"},
+        {
+          "label": "Arrendamientos (Costo de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -191.99,
+          "disclosure": "aggregated"
+        },
+        {"label":"Contribuciones y afiliaciones","category":"admin_general","subcategory":"admin_general_expense","amount":-45.169,"disclosure":"aggregated"},
+        {"label":"Seguros (Costo de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-4.062,"disclosure":"aggregated"},
+        {"label":"Servicios (Costo de ventas)","category":"admin_general","subcategory":"admin_general_expense","amount":-1504.373,"disclosure":"aggregated"},
+        {
+          "label": "Gastos Legales (Costo de ventas)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -24.466,
+          "disclosure": "aggregated"
+        },
+        {"label":"Mantenimiento y Reparacion","category":"admin_general","subcategory":"admin_general_expense","amount":-101.643,"disclosure":"aggregated"},
+        {
+          "label": "Gastos de viaje (Costo de ventas)",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -372.828,
+          "disclosure": "aggregated"
+        },
+        {"label":"Depreciaciones (Costo de ventas)","category":"depreciation","subcategory":"depreciation","amount":-42.683,"disclosure":"aggregated"},
+        {"label":"Amortizaciones","category":"other_amortisation","subcategory":"other_amortisation","amount":-481.153,"disclosure":"aggregated"},
+        {"label":"Diversos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-762.445,"disclosure":"aggregated"},
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":0,"disclosure":"aggregated"},
-        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-167.854,"disclosure":"aggregated"},
-        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-884.794,"disclosure":"aggregated"}
+        {
+          "label": "Gastos de personal (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -140.426,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Honorarios (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -20.574,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Impuestos (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.429,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Servicios (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.069,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Gastos Legales (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -1.301,
+          "disclosure": "aggregated"
+        },
+        {"label":"Mantenimiento y reparaciones","category":"admin_general","subcategory":"admin_general_expense","amount":-1.57,"disclosure":"aggregated"},
+        {"label":"Gastos varios","category":"admin_general","subcategory":"admin_general_expense","amount":-1.485,"disclosure":"aggregated"},
+        {"label":"Operacionales de venta","category":"other_operating_expenses","subcategory":"other_expenses","amount":-13.542,"disclosure":"aggregated"},
+        {"label":"Costos y gastos de ejercicios anterio","category":"exceptional","subcategory":"exceptional_items","amount":-10.87,"disclosure":"aggregated"},
+        {"label":"Impuestos asumidos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-125.711,"disclosure":"aggregated"},
+        {"label":"Demandas laborales","category":"other_operating_expenses","subcategory":"other_expenses","amount":-323.628,"disclosure":"aggregated"},
+        {"label":"Indemnizaciones","category":"other_operating_expenses","subcategory":"other_expenses","amount":-247.402,"disclosure":"aggregated"},
+        {"label":"Multas y sanciones","category":"other_operating_expenses","subcategory":"other_expenses","amount":-161.898,"disclosure":"aggregated"},
+        {"label":"Otros Gastos (Otros gastos)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.743,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-10.061,"tax":-1001.799,"gross_debt":null,"cash":null},
-      "official_totals": {"revenue":11882.63,"expenses":9097.318,"net_result":1773.452},
+      "official_totals": {"revenue":11882.63,"expenses":9086.447,"net_result":1773.452},
       "adjustments": {
         "extra_rows": [
           {"label":"Ingresos financieros","amount":0},
           {"label":"Costos financieros","amount":-10.061},
           {"label":"Ingreso (gasto) por impuestos","amount":-1001.799}
         ],
-        "no_breakdown": [
-          {
-            "line": "Ingresos de actividades ordinarias",
-            "side": "revenue",
-            "amount": 11466.093,
-            "reason": "Línea única de ingresos sin abrir: lump_football_operations (regla de Colombia, 463, 2026-10-26)",
-            "kind": "net_sales"
-          },
-          {
-            "line": "Costo de ventas",
-            "side": "expense",
-            "amount": 8044.67,
-            "reason": "El costo de ventas es el 97 % de los gastos y el estado de 2019 repite el de 2018 como Gastos de ventas: es la actividad deportiva (regla de Colombia en CONVENCIONES-DATOS.md)",
-            "kind": "cost_of_sales"
-          },
-          {"line":"Gastos de ventas","side":"expense","amount":0,"reason":"el documento no desglosa este renglón","kind":"other"}
-        ],
-        "included_in": {
-          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
-          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
-          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
-          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
-        },
+        "no_breakdown": [{"line":"Gastos de ventas","side":"expense","amount":0,"reason":"el documento no desglosa este renglón","kind":"other"}],
         "revenue_basis": "full"
       }
     },
@@ -754,7 +825,6 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
@@ -810,7 +880,6 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
@@ -867,7 +936,6 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
@@ -924,7 +992,6 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
@@ -980,7 +1047,6 @@
           "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
           "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
