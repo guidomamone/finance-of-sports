@@ -152,7 +152,9 @@ if (A.includes('--avanzar')) {
     return n;
   };
   let s = estadoDe(club);
-  if (s.filas.some((f) => !f.siis)) { run(['tools/siis-estado.mjs', '--club', club, '--todos', '--escribir']); s = estadoDe(club); }
+  // solo los años que todavía no están cargados: uno ya cargado desde su PDF no necesita el estado de SIIS (lo controla `siis-control`)
+  const sinEstado = s.filas.filter((f) => !f.siis && !f.cargado).map((f) => f.a);
+  if (sinEstado.length) { for (const a of sinEstado) run(['tools/siis-estado.mjs', '--club', club, '--anio', a, '--escribir']); s = estadoDe(club); }
   if (!s.c.clubId) {
     const ultimo = s.filas.filter((f) => f.siis).map((f) => f.a).pop();
     const out = run(['tools/alta-club.mjs', `Clubes/${cfg.pais}/${club}/siis-estado-${ultimo}.pdf`, '--escribir']); const id = (out.match(/data\/co\/([\w-]+)\.json/) || [])[1];
@@ -200,7 +202,7 @@ const m = (b) => (b ? '✔' : '·');
 console.log(`${club} · NIT ${c.nit} · ${c.clubId || 'sin alta en el sitio'}\n`);
 console.log('año   siis  verif cola liga ctx  cargado auditor notas');
 for (const f of filas) console.log(`${f.a}   ${m(f.siis)}     ${m(f.verif)}     ${f.cola || '·'}    ${m(f.liga)}    ${m(f.ctx)}    ${m(f.cargado)}       ${m(f.aud)}${f.aud ? '' : f.dictamen ? '' : '(sin dictamen)'}      ${f.notas}`);
-const sinSiis = filas.filter((f) => !f.siis).map((f) => f.a); const sinVerif = filas.filter((f) => f.siis && !f.verif && !f.cargado).map((f) => f.a);
+const sinSiis = filas.filter((f) => !f.siis && !f.cargado).map((f) => f.a); const sinVerif = filas.filter((f) => f.siis && !f.verif && !f.cargado).map((f) => f.a);
 const colaN = e.cola; const sinLiga = filas.filter((f) => !f.liga).map((f) => f.a); const sinCtx = filas.filter((f) => !f.ctx && !f.cargado).map((f) => f.a);
 const sinCarga = filas.filter((f) => f.siis && !f.cargado).map((f) => f.a); const sinAud = filas.filter((f) => f.cargado && !f.aud && f.dictamen).map((f) => f.a); const sinDict = filas.filter((f) => !f.dictamen).map((f) => f.a);
 console.log('\nFalta, en este orden (cada paso commiteado antes del siguiente; los SUBAGENTES de abajo van todos juntos):');
