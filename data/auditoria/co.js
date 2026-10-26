@@ -742,6 +742,80 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "leonesfc-co": {
+  "2016": {
+   "auditor": null,
+   "dictamen": "sin_informe",
+   "continuidad": false,
+   "fuente": null
+  },
+  "2017": {
+   "auditor": null,
+   "dictamen": "sin_informe",
+   "continuidad": false,
+   "fuente": null
+  },
+  "2018": {
+   "auditor": null,
+   "dictamen": "sin_informe",
+   "continuidad": false,
+   "fuente": null
+  },
+  "2019": {
+   "auditor": null,
+   "dictamen": "sin_informe",
+   "continuidad": false,
+   "fuente": null
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Gustavo Enrique Galindo Ruiz",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Leones FC/dictamen-revisor-fiscal-2021.md",
+    "linea": 76
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Gustavo Enrique Galindo Ruiz",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Leones FC/dictamen-revisor-fiscal-2022.md",
+    "linea": 76
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Gustavo Enrique Galindo Ruiz",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Leones FC/dictamen-revisor-fiscal-2023.md",
+    "linea": 129
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Gustavo E. Galindo Ruiz",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Leones FC/dictamen-revisor-fiscal-2025.md",
+    "linea": 29
+   }
+  }
+ },
  "llaneros-co": {
   "2025": {
    "auditor": {

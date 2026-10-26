@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1154 — Leones FC (diez años de SIIS) y club-siis.mjs --avanzar probado de punta a punta [463 · leonesfc-co · club-siis.mjs]
+- Leones FC cargado de 2016 a 2025 con `club-siis --avanzar --ejecutar --cargar` (un commit por año, publicado): color, liga y gestión a mano, estadio y sponsor y gestiones con dos subagentes lanzados en un solo mensaje, líneas del auditor de 2020 a 2025 (huecos de dictamen en 2016 a 2019, 2020 y 2024). La reexpresión de 2020 de SIIS (204.900 de «Otros ingresos») se aceptó: cada año se carga como lo imprimió su estado.
+- `club-siis --avanzar`: el nombre legal que SIIS imprime mal frena el alta y dice el caso de la cola; con la gestión cargada no frena por las preguntas de gestión viejas y las contesta solas.
+- Medición: `club-siis.mjs` no es del pipeline (no pide medición); datos cargados con el pipeline medido; `audit.js` P0 0 y P1 0.
+
 ## Versión 1153 — cola.mjs, cola-respuesta.mjs y duraciones-mediciones.mjs: el uso de --responder dice las tres banderas; cuánto tarda cada medidor [465 · cola.mjs · cola-respuesta.mjs · duraciones-mediciones.mjs]
 - El uso de `cola.mjs --responder` muestra `--evidencia`, `--seguridad` y `--causa` (obligatorias) y el error de `--evidencia` dice que la ruta termina en .md o es «ninguna»; antes costó diez llamadas perdidas. `duraciones-mediciones.mjs` (comando `fos duraciones`) lista los segundos de cada medidor por nivel: `siis` 2 s de mediana, `verificar` 9, `cargar` completo 182, `escribir` 126, `xhtml` 340.
 - Medición: idéntico en el lote completo (una tool compartida lo pide aunque solo cambie un mensaje; tardó unos 14 minutos y una primera corrida frenó por el tamaño de la cabecera); veredicto GENERAL; `audit.js` P0 0 y P1 0.
