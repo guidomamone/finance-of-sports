@@ -70,9 +70,11 @@ window.RANKINGS["co-primeraB"] = {
   },
   2019: {
     leagueSize: 17,
-    sinDato: ["boyacachico-co"],
     wiki: {"t":"2019 Categoría Primera B season","lang":"en","at":"2026-09-30","n":17},
     clubs: [
+      { id:"boyacachico-co", revenue:2.051, reportType:"official_balance_sheet",
+        sourceId:"boyacachico-co-siis-estado-2019",
+        mix:[["Comercial / Sponsors",0.035],["Televisión",1.307],["Premios por competencias",0.243],["Venta de Jugadores",0.463],["Otros ingresos",0.003]] },
       { id:"leonesfc-co", revenue:2.014, reportType:"official_balance_sheet",
         sourceId:"leonesfc-co-siis-estado-2019",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.004],["Otros ingresos",0.01]] },
@@ -108,7 +110,7 @@ window.RANKINGS["co-primeraB"] = {
       { id:"boyacachico-co", revenue:1.465, reportType:"official_balance_sheet",
         sourceId:"boyacachico-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.39],["Otros ingresos",0.075]],
-        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2016: {

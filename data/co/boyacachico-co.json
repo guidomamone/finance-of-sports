@@ -52,6 +52,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Boyaca Chico/siis-estado-2018.pdf"
+    },
+    {
+      "id": "boyacachico-co-siis-estado-2019",
+      "club_id": "boyacachico-co",
+      "title": "Deportivo Boyacá Chicó Futbol Club S.A. — siis-estado-2019 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Boyaca Chico/siis-estado-2019.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2024,"last_year":2024}],
@@ -97,9 +105,6 @@
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
@@ -144,9 +149,6 @@
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
@@ -191,11 +193,57 @@
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
         },
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-12-31",
+      "currency": "COP",
+      "source_id": "boyacachico-co-siis-estado-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2019-12-31"},
+      "revenue": [
+        {"label":"Ventas por Derechos de Televisión","category":"media_rights","subcategory":"broadcasting","amount":3584.804738,"disclosure":"aggregated"},
+        {"label":"Ventas por Derechos Deportivos","category":"player_transfers","subcategory":"player_sales","amount":1518.100172,"disclosure":"aggregated"},
+        {"label":"Ventas por auxilio Hotelero","category":"media_rights","subcategory":"broadcasting","amount":519.388317,"disclosure":"aggregated"},
+        {"label":"Ventas por auxilio de Transportes","category":"media_rights","subcategory":"broadcasting","amount":138.0745,"disclosure":"aggregated"},
+        {"label":"Ventas por auxilio de Arbitraje","category":"media_rights","subcategory":"broadcasting","amount":41.9795,"disclosure":"aggregated"},
+        {"label":"Ventas Auxilio Federación Colombiana","category":"prize_money","subcategory":"competition_bonus","amount":796,"disclosure":"aggregated"},
+        {"label":"Ventas por Patrocinios","category":"commercial","subcategory":"sponsorship_commercial","amount":100,"disclosure":"aggregated"},
+        {"label":"Publicad","category":"commercial","subcategory":"sponsorship_commercial","amount":15,"disclosure":"aggregated"},
+        {"label":"Descuentos comerciales","category":"other_revenue","subcategory":"other_income","amount":0.226028,"disclosure":"aggregated"},
+        {"label":"Recuperaciones","category":"other_revenue","subcategory":"other_income","amount":8.2729,"disclosure":"aggregated"},
+        {"label":"Diversos","category":"other_revenue","subcategory":"other_income","amount":0.001432,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costos de Personal","category":"first_team_staff","subcategory":"wages_squad","amount":-645.097934,"disclosure":"aggregated"},
+        {
+          "label": "Partidos y Actividades Deportivas",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations_expense",
+          "amount": -3862.046686,
+          "disclosure": "aggregated"
+        },
+        {"label":"Honorarios y Arriendos","category":"admin_general","subcategory":"admin_general_expense","amount":-346.613432,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1172.961,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-267.146,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-172.726,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":6721.847587,"expenses":6293.865052,"net_result":255.256},
+      "adjustments": {
+        "no_breakdown": [
+          {
+            "line": "Partidos y Actividades Deportivas",
+            "side": "expense",
+            "amount": 3862.046686,
+            "reason": "Fila de la nota de Costo de ventas que no separa nómina, partidos ni viajes: 'Partidos y Actividades Deportivas' es la actividad deportiva sin desglosar (61% de los gastos). Espejo del ingreso 'Actividades Deportivas' de Fortaleza CEIF, que va a lump_football_operations por decisión de Guido (2026-10-02); regla de Colombia, Costo de ventas = actividad deportiva (CONVENCIONES-DATOS.md).",
+            "kind": "other"
+          }
+        ],
         "revenue_basis": "full"
       }
     },
