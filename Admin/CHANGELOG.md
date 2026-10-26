@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1149 — club-siis.mjs: el camino de un club colombiano de SIIS en un comando [463 · club-siis.mjs · deportestolima-co · laequidad-co · aguilasdoradas-co]
+- `node tools/club-siis.mjs "<Club>"` (solo lee: no escribe ni llama a ninguna API) muestra por año si está hecho el estado de SIIS, la verificación, la cola, la liga, el estadio y sponsor, la carga y la línea del auditor, y si las notas abren; después lista lo que falta en orden, con el comando de cada paso y los subagentes (cola, estadio y sponsor, auditor). `--crear-lista` arma la lista del lote y `--rehacer-anio AAAA` da la cadena explícita para un año ya publicado. Sin nombre de club resume todos los de `siis-clubes.json`.
+- Al probarlo salió que Tolima, La Equidad y Águilas Doradas no tenían `clubId` en `tools/siis-clubes.json`, así que `siis-control` nunca los había comparado con SIIS; ya lo tienen y los 30 años cierran (sin avisos nuevos). Documentado en `Admin/PIPELINE.md`; registrado en `fos` y clasificado fuera del pipeline.
+- Medición: ninguna tool del pipeline cambió (herramienta de sesión nueva, de solo lectura); `audit.js` P0 0 y P1 0.
+
 ## Versión 1148 — Los 34 estados-financieros de solo notas de los cuatro clubes de SIIS: motivo al día en documentos-descartados [463 · deportestolima-co · laequidad-co · aguilasdoradas-co · atleticobucaramanga-co]
 - Los 34 `estados-financieros-*` de Tolima (10), La Equidad (9), Águilas Doradas (8) y Bucaramanga (7) siguen en `Admin/registros/documentos-descartados.txt`: son solo notas, y cargados como documento propio duplicarían el año y gastarían IA. Su motivo decía «se carga cuando haya el estado primario (SIIS)»; ahora dice que el estado del año es el de SIIS y que las notas abren sus rubros con `siis-notas.mjs` cuando suman exacto.
 - Solo cambió el texto de después del « # »; ninguna ruta, así que el lote, el alta y el auditor leen lo mismo. Cierra la parte (f) del 3.0.
