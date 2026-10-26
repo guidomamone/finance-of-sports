@@ -1,4 +1,4 @@
-// tools/audit-chequeos-siis.js — checkSiisControl, checkSiisFaltante: lo cargado de un país con SIIS (Supersociedades) contra SIIS, y los años de SIIS que todavía no se bajaron (punto 463).
+// tools/audit-chequeos-siis.js — checkSiisControl, checkSiisEntreAnios, checkSiisFaltante: lo cargado de un país con SIIS (Supersociedades) contra SIIS, y los años de SIIS que todavía no se bajaron (punto 463).
 // Sin red: leen el resumen que genera `node tools/siis-estado.mjs --inventario --escribir` (Admin/sourcing/<País>/siis-resumen.json) y tools/siis-clubes.json. Avisos P3: no frenan nada.
 
 const { ROOT, add, fs, path } = require('./audit-base.js');
@@ -52,4 +52,41 @@ function checkSiisFaltante() {
   if (dias > 120) add('P3', 'siis-resumen-viejo', `el resumen de SIIS es del ${c.resumen.generado} (${Math.round(dias)} días): volvé a generarlo con node tools/siis-estado.mjs --inventario --escribir`);
 }
 
-module.exports = { checkSiisControl, checkSiisFaltante };
+// siis-entre-anios: los rubros de un año contra el comparativo que el año siguiente imprime (los siis-estado-AAAA.md de cada club, sin red). Dos cosas: los intercambios son P3 y la reexpresión P4 (informativa):
+//  - rótulos intercambiados: el comparativo de AAAA+1 le da a un rubro de gasto el importe que AAAA imprime con OTRO rótulo (Tolima y La Equidad 2024: «Gastos de ventas» y «Gastos de administración» cambian de lugar; Bucaramanga 2018:
+//    «Costo de ventas» pasa a «Gastos de ventas»). Un año cargado con el rótulo y no con el contenido publica la actividad deportiva como administración (regla de Colombia en Admin/CONVENCIONES-DATOS.md): mirar el año y, si ya está bien, silenciar.
+//  - reexpresión material: ingresos o resultado del comparativo que difieren de lo que el año imprimió en más de 1 % de los ingresos. Un aviso por club.
+const RUBROS_DE_GASTO_E_INGRESO = ['Costo de ventas', 'Gastos de ventas', 'Gastos de administración', 'Otros ingresos', 'Otros gastos', 'Costos financieros', 'Ingresos financieros'];
+const cifra = (t) => { const x = String(t).trim(); if (!/\d/.test(x)) return null; const n = Number(x.replace(/[().\s]/g, '')); return /^\(/.test(x) ? -n : n; };
+function estadoDeMd(md) {
+  const L = md.split('\n'); const i = L.findIndex((l) => /^### Estado de resultados integral/.test(l)); if (i < 0) return null;
+  const filas = new Map();
+  for (let k = i + 4; k < L.length && /^\|/.test(L[k]); k++) { const c = L[k].split('|').map((x) => x.trim()); const a = cifra(c[2]); if (c[1] && a != null) filas.set(c[1], { act: a, ant: cifra(c[3]) }); }
+  return filas;
+}
+function checkSiisEntreAnios() {
+  const c = contexto(); if (!c) return;
+  for (const carpeta of Object.keys(c.cfg.clubes)) {
+    const dir = path.join(ROOT, 'Clubes', c.cfg.pais, carpeta); if (!fs.existsSync(dir)) continue;
+    const anios = fs.readdirSync(dir).map((f) => f.match(/^siis-estado-(\d{4})\.md$/)?.[1]).filter(Boolean).sort();
+    const E = new Map(anios.map((y) => [y, estadoDeMd(fs.readFileSync(path.join(dir, `siis-estado-${y}.md`), 'utf8'))]));
+    const reexp = [];
+    for (const y of anios) {
+      const cur = E.get(y), sig = E.get(String(Number(y) + 1)); if (!cur || !sig) continue;
+      const ing = Math.abs(cur.get('Ingresos de actividades ordinarias')?.act || 0); if (!ing) continue;
+      const vistos = new Set();
+      for (const [etq, v] of sig) {
+        if (!RUBROS_DE_GASTO_E_INGRESO.includes(etq) || v.ant == null) continue;
+        const mio = cur.get(etq); if (mio && Math.abs(mio.act - v.ant) <= 1) continue;
+        const otro = RUBROS_DE_GASTO_E_INGRESO.find((e2) => e2 !== etq && cur.get(e2) && Math.abs(cur.get(e2).act - v.ant) <= 1 && Math.abs(v.ant) > 0.005 * ing);
+        if (!otro) continue;
+        const par = [etq, otro].sort().join('|'); if (vistos.has(par)) continue; vistos.add(par);
+        add('P3', 'siis-entre-anios', `${carpeta} ${y}→${Number(y) + 1}: «${etq}» y «${otro}» cambian de lugar (el comparativo de ${Number(y) + 1} le da a «${etq}» el importe que ${y} imprime como «${otro}»): mirar que ${y} esté cargado por el contenido y no por el rótulo`);
+      }
+      for (const [etq, que] of [['Ingresos de actividades ordinarias', 'ingresos'], ['Ganancia (pérdida)', 'resultado']]) { const v = sig.get(etq), m = cur.get(etq); if (v && m && v.ant != null && Math.abs(v.ant - m.act) > 0.01 * ing) reexp.push(`${y}→${Number(y) + 1} ${que} ${(((v.ant - m.act) / 1e3)).toLocaleString('es-AR', { maximumFractionDigits: 0 })} M`); }
+    }
+    if (reexp.length) add('P4', 'siis-entre-anios', `${carpeta}: reexpresión de ingresos o resultado en el comparativo del año siguiente (más de 1 % de los ingresos): ${reexp.join('; ')} (millones de pesos; informativo: cada año se carga como lo imprimió su estado)`);
+  }
+}
+
+module.exports = { checkSiisControl, checkSiisEntreAnios, checkSiisFaltante };

@@ -5,6 +5,11 @@
   "quien": "sesion",
   "donde": "Admin/CONVENCIONES-DATOS.md, «Colombia, el estado de resultados y el balance de SIIS…»"
  },
+ "siis-entre-anios": {
+  "hacer": "Intercambio de rótulos: abrir siis-estado-AAAA.md y el del año siguiente (su columna del año anterior) y mirar que el año publicado tenga cada importe en la categoría de su CONTENIDO (la actividad deportiva no es administración; regla de Colombia en CONVENCIONES-DATOS.md); si ya está bien, silenciarlo con tools/silenciar.mjs y el motivo. Reexpresión: informativo, cada año se carga como lo imprimió su estado.",
+  "quien": "sesion",
+  "donde": "Admin/CONVENCIONES-DATOS.md, «Colombia, un «Gastos de ventas» que el documento no abre…»"
+ },
  "siis-faltante": {
   "hacer": "Bajar los años que SIIS tiene: node tools/siis-estado.mjs --club \"<Club>\" --todos --escribir (o --club todos); después el lote de siempre. El detalle por club: Admin/sourcing/Colombia/siis-inventario.md.",
   "quien": "script",

@@ -141,6 +141,7 @@
  "_no_pipeline": "Tools de primer nivel declaradas de afuera del pipeline, con el motivo. Una tool de la tabla no puede importar una de estas (clasificar-tools.mjs lo avisa). tools/hooks, tools/archivo y las carpetas de datos no se clasifican.",
  "_escriben_sin_prueba": "Tools del pipeline con un modo --escribir que tools/prueba-escribir.mjs todavía no prueba. Es deuda anotada con su motivo, no un permiso: medir-pipeline.mjs no da «idéntico» a una tool que escribe y no está en prueba-escribir.mjs ni acá. Al sumar la prueba, la tool sale de esta lista.",
  "escriben_sin_prueba": {
+  "audit-chequeos-siis.js": "no escribe nada: solo nombra --escribir en un comentario (el falso positivo del punto 463, 5.7); es un chequeo de audit.js sin red",
   "exigir-medida.mjs": "no escribe nada: solo nombra --escribir en su cabecera y en CON_MEDIDA (el falso positivo del punto 463, 5.7); su prueba es negarse a escribir cuando hay tools sin medir",
   "cargar-lote.mjs": "corre cargar.mjs por documento: lo que escribe lo prueba la carga de prueba-escribir.mjs; falta un escenario del lote entero",
   "bfo-rusia.mjs": "carga los estados rusos desde bo.nalog.gov.ru por red; falta un escenario con una respuesta guardada",

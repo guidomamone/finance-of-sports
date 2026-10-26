@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1146 — audit-chequeos-siis.js y audit.js: siis-entre-anios compara los rubros entre años [463 · audit-chequeos-siis.js, audit.js]
+- `siis-entre-anios` (sin red, desde los `siis-estado-AAAA.md`) compara cada rubro de un año con el comparativo que imprime el año siguiente. Avisa en P3 los rótulos intercambiados (el comparativo le da a un gasto el importe que el año imprime con otro rótulo) y en P4 la reexpresión de ingresos o resultado de más del 1 % de los ingresos, un aviso por club.
+- Sobre los cuatro clubes encontró los tres intercambios que se habían visto a mano (Tolima y La Equidad 2024, Bucaramanga 2018); quedaron silenciados con su verificación (ajustes de categoría y regla de las notas de gastos). Las tres reexpresiones (Bucaramanga 2023→2024, Tolima 2023→2024, La Equidad 2016→2017) quedan como informativas. Código nuevo en `audit-acciones.json`.
+- Medición: 5 diferencias del medidor `audit`, todas explicadas (el aviso nuevo y, del lado del antes, tres silencios sin chequeo todavía); veredicto GENERAL; P0 0 y P1 0. Aviso P3 nuevo sin revisión independiente (sección 7 de la auditora).
+
 ## Versión 1145 — cargar-ceros.mjs: un documento con filas armadas a mano no pide reintento por categorías en 0 [463 · cargar-ceros.mjs]
 - Un documento con el ajuste `filas-a-mano` (los estados de SIIS y los que arma una sesión) ya no frena la carga con «categorías en 0 que deberían tener número» ni genera la pregunta de perfil (socios, otros deportes): localizar y extraer lo devuelven protegido, así que el reintento con IA no podía cambiar sus filas. Las categorías en 0 quedan en un aviso y se carga como está.
 - Antes del cambio, ninguno de los 52 documentos armados a mano tenía un reintento pendiente en su última propuesta (40 de SIIS, 12 de otros clubes); el efecto es para los clubes que vienen.
