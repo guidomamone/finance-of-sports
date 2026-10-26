@@ -84,8 +84,10 @@ Object.assign(window.CLUB_GESTIONES, {
   'independientemedellin-co': [
     { nombre:'Eduardo Silva Meluk', corto:'Silva', cargo:'Presidente', desde:'2014-01-01', hasta:'2018-01-26',
       fuente:'https://www.elcolombiano.com/deportes/independiente-medellin/eduardo-silva-meluk-renuncia-a-la-presidencia-del-dim-CM8079433', confirmada:true },
-    { nombre:'Michael Gil Gómez', corto:'Gil', cargo:'Presidente', desde:'2018-09-01', hasta:'2019-07-01',
-      fuente:'https://www.minuto30.com/zambrano-conto-por-que-les-ha-caido-tan-bien-la-llegada-del-nuevo-presidente/703064/', confirmada:false },
+    { nombre:'José Raúl Giraldo Gómez', corto:'Giraldo', cargo:'Dueño', desde:'2018-01-26', hasta:'2018-09-19',
+      fuente:'https://www.elcolombiano.com/deportes/independiente-medellin/dim-anuncio-a-michael-gil-gomez-como-su-nuevo-presidente-ejecutivo-XN9359541', confirmada:true },
+    { nombre:'Michael Gil Gómez', corto:'Gil', cargo:'Presidente', desde:'2018-09-19', hasta:'2019-07-01',
+      fuente:'https://www.elcolombiano.com/deportes/independiente-medellin/dim-anuncio-a-michael-gil-gomez-como-su-nuevo-presidente-ejecutivo-XN9359541', confirmada:false },
     { nombre:'Daniel Mauricio Ossa Giraldo', corto:'Ossa', cargo:'Presidente', desde:'2019-07-01', hasta:'2020-07-01',
       fuente:'https://www.espn.com.co/futbol/colombia/nota/_/id/13620403/independiente-medellin-cambia-de-presidente-despues-cuatro-anos', confirmada:false },
     { nombre:'José Raúl Giraldo Gómez', corto:'Giraldo', cargo:'Dueño', desde:'2020-07-01', hasta:'2021-01-01',

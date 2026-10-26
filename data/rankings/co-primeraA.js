@@ -64,6 +64,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2024: {
     leagueSize: 20,
+    sinDato: ["deportivopereira-co"],
     wiki: {"t":"2024 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:18.183, reportType:"official_balance_sheet",

@@ -1,0 +1,154 @@
+{
+ "pdf": "Clubes/Colombia/Deportivo Pereira/siis-estado-2024.pdf",
+ "md": "Clubes/Colombia/Deportivo Pereira/siis-estado-2024.md",
+ "generado": "2026-10-26T19:25:33.206Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "deportivopereira-co",
+ "year": 2024,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Deportivo Pereira/siis-estado-2024.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2024.md L11-L23",
+   "autor": "Claude",
+   "fecha": "2026-10-26"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.2737367544323206e-12
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 31676.101,
+  "gastos": 34994.805,
+  "financiero": 0,
+  "impuesto": 0,
+  "resultadoImpreso": -3318.704,
+  "resultadoParaCargar": -3318.704,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "lado": "ingreso",
+   "M": 30098.063,
+   "pagina": 1,
+   "linea": 11,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros ingresos",
+   "lado": "ingreso",
+   "M": 1578.038,
+   "pagina": 1,
+   "linea": 16,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Costo de ventas",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 1,
+   "linea": 12,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de ventas",
+   "lado": "gasto",
+   "M": 29394.473,
+   "pagina": 1,
+   "linea": 14,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de administración",
+   "lado": "gasto",
+   "M": 3708.243,
+   "pagina": 1,
+   "linea": 15,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros gastos",
+   "lado": "gasto",
+   "M": 1892.089,
+   "pagina": 1,
+   "linea": 17,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [],
+ "impuesto": [
+  {
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "M": 0,
+   "linea": 21
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "2636de8b707bc3e966ed1afe0fbb915912e0f13c",
+  "rango": [
+   8,
+   26
+  ],
+  "lineasCargadas": [
+   11,
+   16,
+   12,
+   14,
+   15,
+   17,
+   21
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 8 a 26 del .md):\nL9: | Concepto | 2024 | 2023 |\nL10: | --- | ---: | ---: |\nL11: | Ingresos de actividades ordinarias | 30.098.063 | 39.292.755 |\nL12: | Costo de ventas | 0 | 0 |\nL13: | Ganancia bruta | 30.098.063 | 39.292.755 |\nL14: | Gastos de ventas | 29.394.473 | 33.706.551 |\nL15: | Gastos de administración | 3.708.243 | 1.732.216 |\nL16: | Otros ingresos | 1.578.038 | 1.042.647 |\nL17: | Otros gastos | 1.892.089 | 1.247.172 |\nL18: | Otras ganancias (pérdidas) | 0 | (389.150) |\nL19: | Ganancia (pérdida) por actividades de operación | (3.318.704) | 3.260.313 |\nL20: | Ganancia (pérdida), antes de impuestos | (3.318.704) | 3.260.313 |\nL21: | Ingreso (gasto) por impuestos | 0 | 1.580.947 |\nL22: | Ganancia (pérdida) procedente de operaciones continuadas | (3.318.704) | 1.679.366 |\nL23: | Ganancia (pérdida) | (3.318.704) | 1.679.366 |\nL25: ## Estado de situación financiera\n\nLO QUE SE CARGA:\n- ingreso · \"Ingresos de actividades ordinarias\" · 30098.063 · L11\n- ingreso · \"Otros ingresos\" · 1578.038 · L16\n- gasto · \"Costo de ventas\" · 0 · L12\n- gasto · \"Gastos de ventas\" · 29394.473 · L14\n- gasto · \"Gastos de administración\" · 3708.243 · L15\n- gasto · \"Otros gastos\" · 1892.089 · L17\n- impuesto · \"Ingreso (gasto) por impuestos\" · 0 · L21"
+ }
+}

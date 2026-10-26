@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Colombia/Deportivo Pereira/siis-estado-2024.md",
+ "clave": "2636de8b707bc3e966ed1afe0fbb915912e0f13c",
+ "generado": "2026-10-26T19:25:33.158Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "La carga es correcta: 30.098,063 + 1.578,038 − 29.394,473 − 3.708,243 − 1.892,089 = −3.318,704, que coincide con el resultado impreso. Los subtotales (L13, L19, L20, L22, L23) no se cargaron. Los renglones en cero (L12, L18, L21) no generan problema."
+ }
+}

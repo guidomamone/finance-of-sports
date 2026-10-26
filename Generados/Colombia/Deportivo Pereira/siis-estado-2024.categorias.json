@@ -1,0 +1,92 @@
+{
+ "md": "Clubes/Colombia/Deportivo Pereira/siis-estado-2024.md",
+ "club": "deportivopereira-co",
+ "year": 2024,
+ "generatedAt": "2026-10-26T19:25:41.844Z",
+ "rubrosHuella": "6563288ddc14d8aadec1aaed3c59a1ef4ab8f2fc",
+ "jevHuella": "84d38699652daf71cc0cc50d7e292ba3b247f09c",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.038071,
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "lump_football_operations",
+   "confianza": 0.98
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "other_income",
+   "confianza": 0.98
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Costo de ventas",
+   "page": 1,
+   "pendiente": true,
+   "jev": "lump_football_operations_expense",
+   "jevConf": 0.61,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.75,
+   "motivo": "Regla decidida: en Colombia «Costo de ventas» va a other_expenses."
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de ventas",
+   "page": 1,
+   "pendiente": true,
+   "jev": "lump_football_operations_expense",
+   "jevConf": 0.51,
+   "escalon": 2,
+   "categoria": "lump_football_operations_expense",
+   "confianza": 0.8,
+   "motivo": "Regla colombiana: «Gastos de ventas» sin abrir es actividad deportiva sin desglose."
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_expenses",
+   "confianza": 0.99
+  }
+ ]
+}
