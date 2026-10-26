@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1148 — Los 34 estados-financieros de solo notas de los cuatro clubes de SIIS: motivo al día en documentos-descartados [463 · deportestolima-co · laequidad-co · aguilasdoradas-co · atleticobucaramanga-co]
+- Los 34 `estados-financieros-*` de Tolima (10), La Equidad (9), Águilas Doradas (8) y Bucaramanga (7) siguen en `Admin/registros/documentos-descartados.txt`: son solo notas, y cargados como documento propio duplicarían el año y gastarían IA. Su motivo decía «se carga cuando haya el estado primario (SIIS)»; ahora dice que el estado del año es el de SIIS y que las notas abren sus rubros con `siis-notas.mjs` cuando suman exacto.
+- Solo cambió el texto de después del « # »; ninguna ruta, así que el lote, el alta y el auditor leen lo mismo. Cierra la parte (f) del 3.0.
+- Medición: ninguna tool cambió.
+
 ## Versión 1147 — medir-pipeline.mjs y exigir-medida.mjs: la prueba de escritura se pide a la tool que lee --escribir [463 · medir-pipeline.mjs, probar-medir-pipeline.mjs, exigir-medida.mjs]
 - `medir-pipeline.mjs` buscaba `--escribir` en cualquier parte del texto de una tool, y una que solo lo nombraba en un comentario o un mensaje frenaba la medición con «sin prueba de escritura» (pasó con `exigir-medida.mjs` y `audit-chequeos-siis.js`). Ahora la pide solo a la que lo lee como argumento (la cadena exacta entre comillas): de 77 tools que lo nombraban quedan 56, y las 21 que dejaron de marcarse solo lo tenían en comentarios o mensajes (ensayo gratis sobre todas las tools).
 - Dos casos nuevos en `probar-medir-pipeline.mjs` (nombrarlo no pide prueba; leerlo sin prueba no da idéntico); se sacaron las dos anotaciones que se habían puesto en `escriben_sin_prueba`, y `CON_MEDIDA` de `exigir-medida.mjs` pasa a lista de tools.
