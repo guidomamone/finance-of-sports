@@ -123,6 +123,15 @@ window.RANKINGS["co-primeraA"] = {
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
+  2017: {
+    leagueSize: 20,
+    wiki: {"t":"2017 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
+    clubs: [
+      { id:"deportestolima-co", revenue:4.067, reportType:"official_balance_sheet",
+        sourceId:"deportestolima-co-siis-estado-2017",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",4.067]] },
+    ],
+  },
   2016: {
     leagueSize: 20,
     wiki: {"t":"2016 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
