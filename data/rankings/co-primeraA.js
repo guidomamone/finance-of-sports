@@ -117,6 +117,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"deportestolima-co", revenue:9.545, reportType:"official_balance_sheet",
         sourceId:"deportestolima-co-siis-estado-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",8.609],["Otros ingresos",0.936]] },
+      { id:"laequidad-co", revenue:4.349, reportType:"official_balance_sheet",
+        sourceId:"laequidad-co-siis-estado-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",3.388],["Otros ingresos",0.961]] },
     ],
   },
   2021: {
