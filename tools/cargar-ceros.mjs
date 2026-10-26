@@ -20,6 +20,9 @@ export function faseCeros(ctx) {
   // (.ubicacion.json con indiceAmpliado) no se vuelve a reintentar: se carga con aviso.
   // INCLUIDO EN: ajustes `incluye` del documento -> fiscalYearMeta.incluidoEn ({ member_dues: 'matchday_competition' }, o
   // { member_dues: { en: 'other_income', posible: true } } si no está confirmado). Lo lee la vista simplificada (js/finanzas-calc.js bucketize).
+  // UN DOCUMENTO CON `filas-a-mano` (armado por script desde un estado ya leído, o por una sesión) no se reintenta: localizar y extraer lo devuelven protegido y el reintento no puede cambiar sus filas, así que pedirlo
+  // frenaba la carga para nada y la pregunta de perfil (socios, otros deportes) no decidía nada. Sus categorías en 0 quedan en un aviso y se carga como está.
+  const aMano = (() => { const a = ajusteDe(pdf, 'filas-a-mano'); return !!a && String(a.valor ?? '').trim().toLowerCase() !== 'no'; })();
   const incluidoEn = Object.fromEntries(ajustesDe(pdf).filter((a) => a.campo === 'incluye' && a.valor && a.categoria).map((a) => [a.valor, a.posible ? { en: a.categoria, posible: true } : a.categoria]));
   {
     const conCat = filas.filter((f) => (f.destino === 'revenue' || f.destino === 'expense') && f.cat);
@@ -62,7 +65,7 @@ export function faseCeros(ctx) {
         return r.v;
       };
       for (const [campo, nombre, catsIng, catsGas, pregunta] of CEROS.filter((x) => x.perfil).map((x) => [x.perfil.campo, x.nombre, x.perfil.catsIng, x.perfil.catsGas, x.perfil.pregunta(club.name || clubId)])) {
-        if (lumpIng || suma(catsIng) || (catsGas.length && suma(catsGas))) continue;
+        if (aMano || lumpIng || suma(catsIng) || (catsGas.length && suma(catsGas))) continue;
         // ajuste `incluye`: la categoría está dentro de otra línea (el documento las junta): no es un 0 a revisar ni una pregunta.
         if (catsIng.every((c) => incluidoEn[c]) && catsGas.every((c) => incluidoEn[c])) { P.avisos.push(`"${nombre}" da 0 porque está incluida en otra línea (ajuste manual \`incluye\`)`); continue; }
         let tiene = perfilVigente(clubId, campo, year)?.valor; if (tiene === undefined || tiene === null) tiene = respPerfil(campo, nombre);
@@ -130,7 +133,8 @@ export function faseCeros(ctx) {
       const CATS_TAQUILLA = ['matchday_competition', 'season_tickets'];
       for (const c of [...ceros]) if ((CATS_CERO[c.categoria.toLowerCase()] || []).some((x) => CATS_TAQUILLA.includes(x))) { ceros.splice(ceros.indexOf(c), 1); P.avisos.push(`"${c.categoria}" en 0 con cierre ${cierreCovid || `en ${year}`}, dentro de la ventana COVID: real (partidos suspendidos, a puertas cerradas o con aforo limitado)`); }
     }
-    if (ceros.length && !yaReintentado) { P.reintentar = ceros; frena('reintento', `categorías en 0 que deberían tener número: ${ceros.map((c) => c.categoria).join(', ')}. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar`); }
+    if (ceros.length && aMano) P.avisos.push(`categorías en 0 en un documento con filas armadas a mano (el reintento con IA no puede cambiarlas; se carga así): ${ceros.map((c) => c.categoria).join(', ')}`);
+    else if (ceros.length && !yaReintentado) { P.reintentar = ceros; frena('reintento', `categorías en 0 que deberían tener número: ${ceros.map((c) => c.categoria).join(', ')}. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar`); }
     else if (ceros.length) P.avisos.push(`categorías en 0 aun después del reintento (se carga así): ${ceros.map((c) => c.categoria).join(', ')}`);
   }
   return { incluidoEn };

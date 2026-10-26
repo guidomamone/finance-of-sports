@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1145 — cargar-ceros.mjs: un documento con filas armadas a mano no pide reintento por categorías en 0 [463 · cargar-ceros.mjs]
+- Un documento con el ajuste `filas-a-mano` (los estados de SIIS y los que arma una sesión) ya no frena la carga con «categorías en 0 que deberían tener número» ni genera la pregunta de perfil (socios, otros deportes): localizar y extraer lo devuelven protegido, así que el reintento con IA no podía cambiar sus filas. Las categorías en 0 quedan en un aviso y se carga como está.
+- Antes del cambio, ninguno de los 52 documentos armados a mano tenía un reintento pendiente en su última propuesta (40 de SIIS, 12 de otros clubes); el efecto es para los clubes que vienen.
+- Medición: idéntico (cargar, verificar y siis en chico, mediano y completo); veredicto GENERAL (52 documentos de 9 o más clubes); `audit.js` P0 0 y P1 0.
+
 ## Versión 1144 — exigir-medida.mjs, cargar.mjs y siis-estado.mjs: no se escriben datos reales con tools sin medir [463 · exigir-medida.mjs, cargar.mjs, siis-estado.mjs]
 - `cargar.mjs` y `siis-estado.mjs` se niegan a escribir (`--escribir`) si hay archivos de `tools/` cambiados contra HEAD, fuera de `no_pipeline`, sin una medición buena de su versión actual (`tools/exigir-medida.mjs`; no usa otras tools; `--ignorar-medicion` solo con el ok de Guido; `fos --check` verifica que sigan llamándolo). Así el orden (ensayo gratis completo, arreglar, medir una vez, recién después escribir) lo impone el código.
 - El medidor `siis` corre los cuatro clubes de `siis-clubes.json` (antes solo Tolima) y cuenta qué rubros abren las notas. La regla del orden queda en `Admin/PLANTILLA-SESION.md`.
