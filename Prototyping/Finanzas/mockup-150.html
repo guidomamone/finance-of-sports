@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nota en el Estado de resultados cuando un ingreso es negativo — mockup</title>
+<!-- Qué decisiones explica: el Estado de resultados de un club con un renglón de ingresos negativo (el documento resta impuestos y derecho de arena de la receita bruta).
+     Decisión de Guido (2026-10-24): solo una nota, los datos no cambian. Pedido (2026-10-25): que sea parecida a la de margen bruto, que ya existe:
+     una marca en la celda (asterisco que lleva a «Notas sobre este club» y un bocadillo) y la nota en la caja de abajo, una por ejercicio.
+     Números del 2026-10-25: Flamengo 2025, flamengo-br.json, BRL a 5,5024 (PTAX del 30/12/2025). «Otros ingresos» = «Outros» 24,5 M BRL menos las deducciones 60,5 M BRL.
+     Las categorías de la tabla son las del sitio, agrupadas. Cada idioma va entero en su columna, sin mezclar. -->
+<style>
+:root{--azul:#0a2b5c;--oro:#f2b705;--bg:#f7f7f5;--card:#fff;--text:#1c1c1c;--muted:#6b6b6b;--border:#e3e3e0;--accent:#1f4fd8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 -apple-system,system-ui,"Segoe UI",Roboto,Arial,sans-serif;padding:16px}
+h1{font-size:16px;margin:0 0 4px}
+.nota{color:var(--muted);font-size:12.5px;margin:0 0 18px;max-width:760px}
+.cols{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start}
+.col{flex:1 1 440px;max-width:600px;min-width:0}
+.idioma{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--azul);font-weight:700;border-bottom:2px solid var(--oro);padding-bottom:4px;margin:0 0 12px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px}
+.card h2{font-size:15px;margin:0 0 8px;color:var(--azul)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:6px 6px;border-bottom:1px solid var(--border);text-align:right}
+th:first-child,td:first-child{text-align:left}
+th{font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.sec td{background:#f1f1ee;font-weight:700;text-align:left;font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+.tot td{font-weight:700;background:#fafaf8}
+.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+.sd-n a{color:var(--accent);text-decoration:none;font-size:11px;margin-left:2px;display:inline-block;min-width:16px;text-align:center}
+.tip{display:inline-block;margin-top:6px;background:var(--text);color:#fff;border-radius:6px;padding:6px 8px;font-size:12px;max-width:300px;text-align:left}
+.notas{margin-top:16px;padding-top:12px;border-top:1px solid var(--border);font-size:14px;line-height:1.6}
+.notas h3{margin:0 0 6px;font-size:15px}
+.notas ul{margin:0 0 8px;padding-left:20px}
+.ley{margin:8px 0 0;font-size:12.5px;color:var(--muted)}
+.lbl{font-size:11px;color:var(--muted);margin:12px 0 4px;letter-spacing:.04em;text-transform:uppercase}
+</style>
+</head>
+<body>
+<h1>Nota en el Estado de resultados cuando un ingreso es negativo</h1>
+<p class="nota">Mismo patrón que la nota de margen bruto: un asterisco pegado al número, con un bocadillo que se abre al tocar, y una nota en «Notas sobre este club» debajo de la tabla. Los datos no cambian: el total sigue siendo el que informa el club. Caso real: Flamengo 2025. La izquierda está entera en español y la derecha entera en inglés.</p>
+
+<div class="cols" id="cols"></div>
+
+<script>
+const L = {
+  es: { nombre: 'Español', dec: ',', card: 'Estado de resultados · Flamengo · 2025 (US$ M)', ing: 'Ingresos', cat: ['Derechos de TV y medios', 'Premios y participación', 'Comercial', 'Entradas y día de partido', 'Socios', 'Otras secciones deportivas', 'Ventas de jugadores', 'Otros ingresos'], tot: 'Total Ingresos', th: ['', '2025', '%'],
+    notasT: 'Notas sobre este club', aria: 'Notas sobre este club',
+    tip: '«Otros ingresos» es negativo: el documento lo resta de los ingresos brutos.',
+    nota: '<b>2025.</b> «Otros ingresos» es negativo: el documento lo resta de los ingresos brutos (suele ser un impuesto u otra deducción). El total de ingresos es el neto que informa el club.',
+    ley: 'El asterisco lleva a la nota de ese ejercicio.', lb: ['Tabla', 'Bocadillo al tocar el asterisco', 'Caja de notas, debajo de la tabla'] },
+  en: { nombre: 'English', dec: '.', card: 'Income statement · Flamengo · 2025 (US$ M)', ing: 'Revenue', cat: ['TV and media rights', 'Prize money and participation', 'Commercial', 'Matchday', 'Members', 'Other sports sections', 'Player sales', 'Other revenue'], tot: 'Total Revenue', th: ['', '2025', '%'],
+    notasT: 'Notes on this club', aria: 'Notes on this club',
+    tip: '“Other revenue” is negative: the document subtracts it from gross revenue.',
+    nota: '<b>2025.</b> “Other revenue” is negative: the document subtracts it from gross revenue (usually a tax or another deduction). Total revenue is the net figure the club reports.',
+    ley: 'The asterisk leads to that year’s note.', lb: ['Table', 'Tooltip when the asterisk is tapped', 'Notes box, below the table'] },
+};
+const V = [42.3, 68.8, 96.8, 28.0, 22.3, 4.1, 91.8, -6.5]; const T = 347.6;
+const f = (v, l) => (v < 0 ? '−' : '') + Math.abs(v).toFixed(1).replace('.', l.dec);
+const pct = (v, l) => (v / T * 100).toFixed(1).replace('.', l.dec) + ' %';
+function col(k) {
+  const l = L[k];
+  const filas = l.cat.map((c, i) => { const neg = V[i] < 0;
+    return `<tr><td>${c}</td><td class="n">${f(V[i], l)}${neg ? `<sup class="sd-n"><a href="#n-${k}" role="button" aria-label="${l.aria}">*</a></sup>` : ''}</td><td class="n">${pct(V[i], l)}</td></tr>`; }).join('');
+  return `<div class="col" lang="${k}"><p class="idioma">${l.nombre}</p>
+<div class="lbl">${l.lb[0]}</div><div class="card"><h2>${l.card}</h2>
+<table><thead><tr><th></th><th>${l.th[1]}</th><th>${l.th[2]}</th></tr></thead><tbody>
+<tr class="sec"><td colspan="3">${l.ing}</td></tr>${filas}
+<tr class="tot"><td>${l.tot}</td><td class="n">${f(T, l)}</td><td class="n">100,0 %</td></tr></tbody></table>
+<div class="lbl">${l.lb[1]}</div><div class="tip">${l.tip}</div>
+<div class="lbl">${l.lb[2]}</div><div class="notas" id="n-${k}"><h3>${l.notasT}</h3><ul><li>${l.nota}</li></ul><p class="ley">${l.ley}</p></div></div></div>`;
+}
+document.getElementById('cols').innerHTML = col('es') + col('en');
+// el porcentaje con coma en inglés no corresponde: en inglés el separador decimal es punto
+document.querySelectorAll('[lang=en] .tot td:last-child').forEach((e) => { e.textContent = '100.0 %'; });
+</script>
+</body>
+</html>
