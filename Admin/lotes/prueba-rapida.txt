@@ -123,9 +123,6 @@ Clubes/Portugal/Benfica/relatorio-contas-2025-26.pdf
 Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.pdf
 # clase: cola:cargar|perfil-cambio|corregir
 Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotball-invest-as-2011.pdf
-# clase: cola:cargar|tipo-linea|corregir
-Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2018.pdf
-Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf
 # clase: cola:verificar|duda-de-localizar|corregir
 Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf
 Clubes/Brasil/Ponte Preta/balanco-2024-2025.pdf
@@ -164,6 +161,9 @@ Clubes/Portugal/Benfica/relatorio-contas-2014-15-pos-AG.pdf
 # clase: freno:298 v2
 Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.pdf
 Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.pdf
+# clase: freno:298 z2
+Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.pdf
+Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf
 # clase: freno:compensación intragrupo (Entschädigung von/an Event AG) no se elimina en 2018-19 ni 2019-20 aunque el perímetro es consolidado (298 ai solo la saca si el importe repite año y año anterior)
 Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.pdf
 # === AUTOMÁTICO: ranura de la semana 2026-S44 (la familia Portugal · pdf; rota cada semana; no se edita) ===

@@ -686,3 +686,5 @@ En los estados de un club colombiano el rubro «Gastos de ventas» no es una fue
 CATEGORÍA (prompt, futbol): en un club colombiano, «Gastos de ventas» es la actividad deportiva (jugadores, cuerpo técnico, partidos): si el documento no abre el rubro va a lump_football_operations_expense; si lo abre en servicios, impuestos, arrendamientos y honorarios va a admin_general_expense, y si abre la nómina del plantel, a wages_squad; «Costo de ventas» va a other_expenses.
 EJEMPLO-CATEGORÍA: deportestolima-co | expense | Gastos de ventas | lump_football_operations_expense
 EJEMPLO-CATEGORÍA: deportestolima-co | expense | Costo de ventas | other_expenses
+CATEGORÍA (prompt, futbol): la línea única de ingresos de un estado que no la abre («Ingresos de actividades ordinarias» de los estados de SIIS de Colombia, igual que «Omzet» o «Chiffre d'affaires») va a lump_football_operations, no a other_income: es la facturación del club sin desglosar por la fuente.
+EJEMPLO-CATEGORÍA: deportestolima-co | revenue | Ingresos de actividades ordinarias | lump_football_operations
