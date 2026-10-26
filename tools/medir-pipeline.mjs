@@ -366,10 +366,10 @@ for (let k = 0; k < niveles.length; k++) {
   if (nivel === 'chico' && (difTotal || vaciosN) && !explicacion) { pasoActual.cortado = true; console.log(difTotal ?'\nEl lote chico ya muestra diferencias: explicalas (--explicacion "…") o arreglá el cambio antes de seguir con lotes más grandes.' : '\nHay medidores vacíos: no midieron nada. Arreglá el medidor (qué mira, con qué argumentos) o, si de verdad no hay nada que medir, --explicacion "por qué".'); cortado = true; break; }
   if (nivel === 'mediano' && (difNivel || autoNivel) && !niveles.includes('completo')) { niveles.push('completo'); nivelFinal = 'completo'; planificar(niveles); console.log('El mediano mostró diferencias: escala al completo.'); }
 }
-// UNA TOOL QUE ESCRIBE SIN SU PRUEBA DE ESCRITURA no da «idéntico»: sus medidores corren en ensayo y un import roto solo aparece al escribir. Tiene su prueba si la nombra
+// UNA TOOL QUE ESCRIBE (la lee como argumento: la cadena exacta '--escribir' entre comillas, no un comentario ni un mensaje) SIN SU PRUEBA DE ESCRITURA no da «idéntico»: sus medidores corren en ensayo y un import roto solo aparece al escribir. Tiene su prueba si la nombra
 // tools/prueba-escribir.mjs, o está en `escriben_sin_prueba` de pipeline-tools.json (con el motivo: es deuda anotada, no un permiso).
 const pruebaEscribir = existsSync(resolve(ROOT, 'tools/prueba-escribir.mjs')) ? readFileSync(resolve(ROOT, 'tools/prueba-escribir.mjs'), 'utf8') : '';
-const faltaPrueba = nombres.filter((n) => existsSync(resolve(ROOT, 'tools', n)) && /--escribir/.test(readFileSync(resolve(ROOT, 'tools', n), 'utf8')) && !pruebaEscribir.includes(n) && !(T.escriben_sin_prueba || {})[n]);
+const faltaPrueba = nombres.filter((n) => existsSync(resolve(ROOT, 'tools', n)) && /(['"`])--escribir\1/.test(readFileSync(resolve(ROOT, 'tools', n), 'utf8')) && !pruebaEscribir.includes(n) && !(T.escriben_sin_prueba || {})[n]);
 const textoExplicacion = explicacion || (autoN && !difTotal ? `Explicadas por el resumen del medidor: ${resumenes.join(' | ')}` : null);
 // un medidor vacío cuenta como una diferencia que pide razón escrita: sin --explicacion el resultado es «vacío» (el hook no lo acepta), con ella «N diferencias, todas explicadas»
 const totalDif = difTotal + autoN + vaciosN;

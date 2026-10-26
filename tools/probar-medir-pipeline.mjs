@@ -65,6 +65,15 @@ caso('la tool queda como se editó (no la versión de git)', leer('tools/fake-to
 caso('lo que el medidor escribe en un archivo trackeado se revierte', g('status', '--porcelain', 'tools/escribe.json').stdout === '' && /revertido/.test(r.out), g('status', '--porcelain').stdout);
 const claveUno = registro().at(-1)?.medidores?.[0]?.despues;
 
+// 2b. la prueba de escritura se pide a una tool que LEE --escribir, no a una que lo nombra
+w('tools/fake-tool.mjs', "export const VALOR = 1; export const OTRO = 0; // un comentario con --escribir\nexport const AYUDA = 'uso: node tools/x.mjs --escribir';\n");
+r = medir();
+caso('una tool que nombra --escribir en un comentario o en un mensaje no pide prueba de escritura', !/sin prueba de escritura/.test(r.out), r.out.slice(-300));
+w('tools/fake-tool.mjs', "export const VALOR = 1; export const OTRO = 0; export const ESCRIBE = process.argv.includes('--escribir');\n");
+r = medir();
+caso('una tool que lee --escribir y no tiene su prueba no da idéntico', /sin prueba de escritura/.test(r.out), r.out.slice(-300));
+w('tools/fake-tool.mjs', 'export const VALOR = 1; export const OTRO = 0; // un comentario\n');
+
 // 3. la clave de la caché incluye lo que no es de la tabla: dato.json cambia y la caché no se reutiliza
 w('tools/dato.json', '{"d":"B"}\n');
 r = medir();

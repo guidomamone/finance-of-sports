@@ -17,8 +17,8 @@ import { readFileSync, existsSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 
 const ROOT = resolve(import.meta.dirname, '..');
-// las tools que lo llaman y en qué modo escriben datos reales
-export const CON_MEDIDA = { 'siis-estado.mjs': '--escribir', 'cargar.mjs': '--escribir' };
+// las tools que lo llaman antes de escribir datos reales
+export const CON_MEDIDA = ['siis-estado.mjs', 'cargar.mjs'];
 
 const git = (...a) => { try { return execFileSync('git', a, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim(); } catch { return ''; } };
 const BUENO = /^(idéntico|\d+ diferencias, todas explicadas)$/;
