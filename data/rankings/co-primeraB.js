@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraB"] = {
   2023: {
     leagueSize: 17,
+    sinDato: ["leonesfc-co"],
     wiki: {"t":"2023 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":17},
     clubs: [
       { id:"fortalezaceif-co", revenue:1.569, reportType:"official_balance_sheet",
@@ -12,6 +13,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2022: {
     leagueSize: 16,
+    sinDato: ["leonesfc-co"],
     wiki: {"t":"2022 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"fortalezaceif-co", revenue:0.894, reportType:"official_balance_sheet",
@@ -21,6 +23,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2021: {
     leagueSize: 16,
+    sinDato: ["leonesfc-co"],
     wiki: {"t":"2021 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"fortalezaceif-co", revenue:0.903, reportType:"official_balance_sheet",
@@ -30,6 +33,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2020: {
     leagueSize: 16,
+    sinDato: ["leonesfc-co"],
     wiki: {"t":"2020 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"fortalezaceif-co", revenue:0.648, reportType:"official_balance_sheet",
@@ -39,6 +43,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2019: {
     leagueSize: 17,
+    sinDato: ["leonesfc-co"],
     wiki: {"t":"2019 Categoría Primera B season","lang":"en","at":"2026-09-30","n":17},
     clubs: [
       { id:"fortalezaceif-co", revenue:1.057, reportType:"official_balance_sheet",
@@ -61,6 +66,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2017: {
     leagueSize: 16,
+    sinDato: ["leonesfc-co"],
     wiki: {"t":"2017 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"fortalezaceif-co", revenue:1.783, reportType:"official_balance_sheet",

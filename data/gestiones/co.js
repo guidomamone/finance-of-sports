@@ -99,6 +99,10 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Daniel Mauricio Ossa Giraldo', corto:'Ossa', cargo:'Presidente', desde:'2026-03-16', hasta:null,
       fuente:'https://www.noticiasrcn.com/deportes/independiente-medellin-confirmo-a-daniel-ossa-como-nuevo-presidente-del-club-1002992', confirmada:true },
   ],
+  'leonesfc-co': [
+    { nombre:'Carlos Alberto Murillo Giraldo', corto:'Murillo', cargo:'Presidente', desde:'2009-01-01', hasta:null,
+      fuente:'https://www.elescenariodelosclasicos.com/page.php?id=3795', confirmada:true },
+  ],
   'oncecaldas-co': [
     { nombre:'Tulio Mario Castrillón', corto:'Castrillón', cargo:'Presidente', desde:'2016-01-01', hasta:'2024-10-01',
       fuente:'https://www.clarosports.com/colombia/liga-bet-play/oficial-tulio-mario-castrillon-deja-de-ser-presidente-de-once-caldas/', confirmada:true },

@@ -1,0 +1,70 @@
+{
+  "md": "Clubes/Colombia/Leones FC/siis-estado-2017.md",
+  "pdf": "Clubes/Colombia/Leones FC/siis-estado-2017.pdf",
+  "club": "leonesfc-co",
+  "year": 2017,
+  "generatedAt": "2026-10-26T18:39:02.398Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        5490.044
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Otras ganancias (pérdidas)",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        24.162
+      ],
+      "glosa": "Otras ganancias (pérdidas)"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        439.393
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        4662.028
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2.802
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

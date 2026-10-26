@@ -1,0 +1,157 @@
+{
+ "pdf": "Clubes/Colombia/Leones FC/siis-estado-2017.pdf",
+ "md": "Clubes/Colombia/Leones FC/siis-estado-2017.md",
+ "generado": "2026-10-26T18:39:02.398Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "leonesfc-co",
+ "year": 2017,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Leones FC/siis-estado-2017.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2017.md L11-L24",
+   "autor": "Claude",
+   "fecha": "2026-10-26"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 1.7053025658242404e-13
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2018",
+   "ok": true,
+   "detalle": "ingresos de 2017: 5514.206 en este documento y 5490.044 en siis-estado-2018.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2016",
+   "ok": true,
+   "detalle": "ingresos de 2016: 3574.264 en siis-estado-2016.pdf y 3574.264 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
+  "la lectura base no cerraba; cerró con la lectura 4"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 5514.206,
+  "gastos": 5104.223,
+  "financiero": 2.174,
+  "impuesto": 138.995,
+  "resultadoImpreso": 268.814,
+  "resultadoParaCargar": 268.814,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "lado": "ingreso",
+   "M": 5490.044,
+   "pagina": 1,
+   "linea": 11,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros ingresos",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 1,
+   "linea": 15,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otras ganancias (pérdidas)",
+   "lado": "ingreso",
+   "M": 24.162,
+   "pagina": 1,
+   "linea": 17,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
+  },
+  {
+   "etiqueta": "Gastos de ventas",
+   "lado": "gasto",
+   "M": 439.393,
+   "pagina": 1,
+   "linea": 13,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de administración",
+   "lado": "gasto",
+   "M": 4662.028,
+   "pagina": 1,
+   "linea": 14,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros gastos",
+   "lado": "gasto",
+   "M": 2.802,
+   "pagina": 1,
+   "linea": 16,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Ingresos financieros",
+   "M": 0,
+   "linea": 19
+  },
+  {
+   "etiqueta": "Costos financieros",
+   "M": -2.174,
+   "linea": 20
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "M": -138.995,
+   "linea": 22
+  }
+ ]
+}
