@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1164 — fos siis-notas-clasificar: por qué las notas no abren un rubro de SIIS [465 · siis-notas-clasificar.mjs]
+- Gratis y sin red: de cada club-año de SIIS dice qué rubros abren las notas del club y clasifica los que no en «sin nota», «casi suma» (con la diferencia en miles de pesos), «ninguna se acerca» y «estructura», con `abrirConNotas` de `siis-notas.mjs`. Hoy: 51 rubros abren, 20 casi suman (de 0,5 a 12,8 miles de pesos), 125 ninguna tabla se acerca, 132 sin nota del club, 2 estructura.
+- Medición: `siis-notas-clasificar.mjs` no es del pipeline (no pide medición); no cambia `siis-notas.mjs`.
+
 ## Versión 1163 — medidor cargar-cola-vacia: cuántas preguntas abre la carga con la cola vacía [465 · medir-cargar.mjs, pipeline-tools.json]
 - `medir-cargar.mjs --cola-vacia` corre el ensayo de la carga con la cola de partida sin una respuesta, como un club nuevo, y `--comparar` imprime «preguntas que abre: N antes · M después». Con la cola real una pregunta ya contestada no se ve: en el lote chico la cola real abre 1 pregunta y la vacía 74, así que un cambio que abre más preguntas pasaba sin que el medidor `cargar` lo notara.
 - Es el medidor `cargar-cola-vacia` de `tools/pipeline-tools.json`, sumado solo a `cargar.mjs` (y por import a `cargar-categorias.mjs` y `cargar-ejercicio.mjs`): +unos 6 minutos a su medición (de ~14 a ~20 en el completo).
