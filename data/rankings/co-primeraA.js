@@ -3,7 +3,6 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraA"] = {
   2025: {
     leagueSize: 20,
-    sinDato: ["independientemedellin-co"],
     wiki: {"t":"2025 Liga DIMAYOR","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:52.403, reportType:"official_balance_sheet",
@@ -18,6 +17,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"junior-co", revenue:25.09, reportType:"official_balance_sheet",
         sourceId:"junior-co-estados-financieros-2025",
         mix:[["Comercial / Sponsors",6.217],["Estadio",4.612],["Televisión",2.05],["Premios por competencias",0.422],["Venta de Jugadores",9.903],["Otros ingresos",1.886]] },
+      { id:"independientemedellin-co", revenue:21.372, reportType:"official_balance_sheet",
+        sourceId:"independientemedellin-co-siis-estado-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",21.134],["Otros ingresos",0.238]] },
       { id:"santafe-co", revenue:18.007, reportType:"official_balance_sheet",
         sourceId:"santafe-co-estados-financieros-2025",
         mix:[["Comercial / Sponsors",2.959],["Estadio",7.254],["Televisión",3.468],["Premios por competencias",1.332],["Venta de Jugadores",0.278],["Otras actividades (educación y otros deportes)",1.563],["Otros ingresos",1.155]] },
