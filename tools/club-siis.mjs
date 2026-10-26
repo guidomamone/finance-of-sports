@@ -158,6 +158,11 @@ if (A.includes('--avanzar')) {
     return n;
   };
   let s = estadoDe(club);
+  // cuánto va a tardar (medianas de `fos duraciones` y de las cargas de SIIS: ~1 min por año el lote, otro tanto la carga, ~25 s publicar, ~10 s bajar un estado): una Bash en primer plano se corta a los 10 minutos y deja la sesión colgada
+  { const porCargar = s.filas.filter((f) => !f.cargado).length; const sinBajar = s.filas.filter((f) => !f.siis && !f.cargado).length;
+    const seg = sinBajar * 10 + (EJECUTAR ? porCargar * 60 + (CARGAR ? porCargar * 60 + 25 : 0) : 0); const min = Math.max(1, Math.round(seg / 60));
+    console.log(`Tiempo estimado: ~${min} min (${porCargar} año(s) por cargar${EJECUTAR ? '' : '; sin --ejecutar no corre el lote'}).`);
+    if (seg > 8 * 60 && !A.includes('--en-segundo-plano')) { console.log(`Pasa de 8 minutos: en primer plano la sesión se corta a los 10. Corrélo en segundo plano (run_in_background) y agregá --en-segundo-plano:\n  node tools/club-siis.mjs ${q} ${A.filter((x) => x !== club && !x.startsWith('"')).join(' ')} --en-segundo-plano\nNo se corrió nada.`); process.exit(0); } }
   // solo los años que todavía no están cargados: uno ya cargado desde su PDF no necesita el estado de SIIS (lo controla `siis-control`)
   const sinEstado = s.filas.filter((f) => !f.siis && !f.cargado).map((f) => f.a);
   if (sinEstado.length) { for (const a of sinEstado) run(['tools/siis-estado.mjs', '--club', club, '--anio', a, '--escribir']); s = estadoDe(club); }

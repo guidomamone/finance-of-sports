@@ -41,6 +41,7 @@ import { resolve, join } from 'node:path';
 import { familiaDe } from './familias-docs.mjs';
 import { clasificar } from './clasificar-tools.mjs';
 import { validar } from './registro-esquema.js';
+import { duraciones } from './duraciones-lib.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
@@ -172,6 +173,12 @@ while (hayLista && faltan(nivelFinal).length && nivelFinal !== 'completo') {
 }
 if (SOLO_CHICO) nivelFinal = 'chico';
 console.log(`Tools: ${nombres.join(', ')}\nMedidores: ${medidores.join(', ')}\n` + (hayLista ? `Lote: chico primero, hasta ${nivelFinal} (mínimo por tabla: ${minimo}); ${afectadas.length} familia(s) afectada(s) de ${total.size}.` : 'Lote: ningún medidor usa lista; miden el sitio entero.'));
+// tiempo estimado: la mediana de cada medidor y nivel en las mediciones anotadas (`fos duraciones`), dos veces (antes y después); un medidor sin usaLista corre solo en el primer nivel
+{
+  const med = new Map((duraciones() || []).map((f) => [f.k, f.mediana])); let seg = 0; const sinDato = [];
+  ['chico', ...NIVELES.slice(1, NIVELES.indexOf(nivelFinal) + 1)].forEach((nivel, k) => medidores.filter((m) => k === 0 || T.medidores[m].usaLista).forEach((m) => { const s = med.get(`${m} · ${nivel}`); if (s == null) sinDato.push(`${m} · ${nivel}`); else seg += 2 * s; }));
+  console.log(`Tiempo estimado de la medición: ~${Math.max(1, Math.round(seg / 60))} min${sinDato.length ? ` (sin dato de ${sinDato.join(', ')}: más)` : ''}; correla en segundo plano${NIVELES.indexOf(nivelFinal) < NIVELES.length - 1 ? ' (si el mediano muestra diferencias escala al completo y suma lo del completo)' : ''}.`);
+}
 if (A.includes('--ensayo')) { if (problemas.length) { console.error(`\n${problemas.join('\n\n')}`); process.exit(1); } process.exit(0); }
 
 // ---- candado ------------------------------------------------------
