@@ -10,7 +10,7 @@
 const ESQUEMAS = require('./esquemas-registros.json').validacion;
 
 const tipoDe = (v) => (v === null ? 'null' : Array.isArray(v) ? 'array' : typeof v);
-const DESDE = ESQUEMAS.desde;
+const DESDE = ESQUEMAS.desde; // { registro: 'AAAA-MM-DD' }: desde esa fecha una línea de ese registro tiene que llevar `esquema`
 
 function validar(registro, linea) {
   const def = ESQUEMAS.registros[registro];

@@ -121,8 +121,8 @@
   }
  },
  "validacion": {
-  "_comentario": "La parte que lee tools/registro-esquema.js (validar una línea) y audit.js (P3 `registro-fuera-de-esquema`). Una línea sin `esquema` es legado y no se valida. `desde`: una línea de esa fecha en adelante que debía llevar `esquema` y no lo trae también es un P3. Cada campo: `tipo` (uno o varios de string, number, boolean, object, array, null), `enum` (valores admitidos), `obligatorio` (true, o { si: { campo: [valores] } }). Un campo que no figura es un error (menos `nota`, que es libre).",
-  "desde": "2026-10-26",
+  "_comentario": "La parte que lee tools/registro-esquema.js (validar una línea) y audit.js (P3 `registro-fuera-de-esquema`). Una línea sin `esquema` es legado y no se valida. `desde` (una fecha por registro): una línea de esa fecha en adelante que debía llevar `esquema` y no lo trae también es un P3. Cada campo: `tipo` (uno o varios de string, number, boolean, object, array, null), `enum` (valores admitidos), `obligatorio` (true, o { si: { campo: [valores] } }). Un campo que no figura es un error (menos `nota`, que es libre).",
+  "desde": { "auditoria-proceso": "2026-10-26", "cola-respuesta": "2026-10-26", "ajustes-manuales": "2026-10-26", "mediciones-pipeline": "2026-10-26" },
   "registros": {
    "auditoria-proceso": {
     "archivo": "Admin/registros/auditoria-proceso.jsonl",

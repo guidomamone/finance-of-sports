@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1131 — La fecha `desde` del esquema de registros es una por registro [461 · registro-esquema.js, audit-chequeos-5.js]
+- `desde` de `esquemas-registros.json` pasó de una fecha a una por registro (auditoría, cola, ajustes, mediciones) y `registro-fuera-de-esquema` ahora también avisa de una línea de ajustes o de mediciones, de hoy en adelante, sin `esquema` (antes solo miraba las que lo declaraban).
+- Medición: `audit.js` sin avisos nuevos con los registros de hoy; con una línea falsa de mediciones sin `esquema` el aviso aparece (probado y revertido).
+
 ## Versión 1130 — La segunda fuente local ya no guarda técnicos ni encabezados como equipos [461 · segunda-fuente-wikipedia-local.mjs]
 - `segunda-fuente-wikipedia-local.mjs` saltea las filas de puro encabezado y descarta los ítems que Wikidata marca como personas. Bélgica 2.ª 2020-21 pasó de 14 «equipos» (con «Stam-nummer» y cinco técnicos) a los 8 reales.
 - Medición: el cruce con la lista en inglés quedó igual (6 de 8, mismos sin par); `medir-pipeline.mjs`: idéntico.

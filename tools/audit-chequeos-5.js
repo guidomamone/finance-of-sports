@@ -107,14 +107,14 @@ function checkDatosJson() {
 }
 
 // Las reglas de categoría de Admin/CONVENCIONES-DATOS.md (líneas «CATEGORÍA (prompt)» y «EJEMPLO-CATEGORÍA») tienen que ser válidas y sus ejemplos tienen que estar
-// registrados en categorias-aprendidas.jsonl (tools/reglas-categoria.mjs --escribir). Aviso, no frena.
+// registrados en categorias-aprendidas.jsonl (tools/reglas-categoria.mjs en su modo que escribe). Aviso, no frena.
 function checkReglasCategoria() {
   let out = ''; let fallo = false;
   try { out = execSync('node tools/reglas-categoria.mjs', { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); }
   catch (e) { out = String(e.stdout || e.stderr || ''); fallo = true; }
   const lineas = out.split('\n').map((l) => l.trim()).filter(Boolean);
   if (fallo) add('P2', 'regla-categoria-invalida', lineas.filter((l) => l.startsWith('ERROR')).slice(0, 3).join(' | ') || lineas.slice(-1)[0] || 'tools/reglas-categoria.mjs falló');
-  else if (lineas.filter((l) => l.startsWith('falta registrar')).length) add('P2', 'regla-categoria-sin-registrar', `${lineas.filter((l) => l.startsWith('falta registrar')).length} ejemplo(s) de reglas de categoría sin registrar: node tools/reglas-categoria.mjs --escribir`);
+  else if (lineas.filter((l) => l.startsWith('falta registrar')).length) add('P2', 'regla-categoria-sin-registrar', `${lineas.filter((l) => l.startsWith('falta registrar')).length} ejemplo(s) de reglas de categoría sin registrar: node tools/reglas-categoria.mjs (ensayo) y después con su opción de escritura`);
 }
 
 // Cada deporte activo (o con taxonomía) tiene su tabla de «ceros que no pueden ser cero» en tools/deporte-club.mjs (CEROS_POR_DEPORTE; [] si la vacía es a propósito) y su taxonomía.
@@ -285,7 +285,7 @@ function checkMedicionesSinDestino() {
 }
 
 
-// Un nombre que se usa y nadie definió (eslint no-undef, `node tools/fos.mjs indefinidos`): rompe al correr una rama que ningún ensayo recorre (`--escribir`, `--ejecutar`). P3. Sin eslint instalado (cd tools && npm install) no avisa.
+// Un nombre que se usa y nadie definió (eslint no-undef, `node tools/fos.mjs indefinidos`): rompe al correr una rama que ningún ensayo recorre (el modo que escribe, el que ejecuta). P3. Sin eslint instalado (cd tools && npm install) no avisa.
 function checkNombresSinDefinir() {
   if (!fs.existsSync(path.join(ROOT, 'tools', 'node_modules', '.bin', 'eslint'))) return;
   let h; try { h = JSON.parse(execSync('node tools/indefinidos.mjs --json', { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] })); } catch (e) { try { h = JSON.parse(e.stdout); } catch (e2) { return; } }
@@ -324,17 +324,20 @@ function checkRegistroFuera() {
   for (const x of leer('auditoria-proceso.jsonl')) {
     const e = validar('auditoria-proceso', x);
     if (e.length) malas.push(`auditoria-proceso ${x.fecha}: ${e[0]}`);
-    else if (x.esquema === undefined && String(x.fecha) >= DESDE) malas.push(`auditoria-proceso ${x.fecha}: sin esquema («${String(x.cambio).slice(0, 40)}»)`);
+    else if (x.esquema === undefined && String(x.fecha) >= DESDE['auditoria-proceso']) malas.push(`auditoria-proceso ${x.fecha}: sin esquema («${String(x.cambio).slice(0, 40)}»)`);
   }
   for (const x of leer('cola-revision.jsonl')) {
     if (x.tipo !== 'respuesta') continue;
     const e = validar('cola-respuesta', x);
     if (e.length) malas.push(`cola-revision ${x.id}: ${e[0]}`);
-    else if (x.esquema === undefined && ['aceptar', 'corregir', 'descartar', 'preguntar-club'].includes(x.decision) && String(x.ts).slice(0, 10) >= DESDE) malas.push(`cola-revision ${x.id}: respuesta sin esquema (--evidencia, --seguridad y --causa)`);
+    else if (x.esquema === undefined && ['aceptar', 'corregir', 'descartar', 'preguntar-club'].includes(x.decision) && String(x.ts).slice(0, 10) >= DESDE['cola-respuesta']) malas.push(`cola-revision ${x.id}: respuesta sin esquema (--evidencia, --seguridad y --causa)`);
   }
   // los registros de ajustes y de mediciones: solo se mira una línea que declara `esquema` (lo escriben ajustes.mjs y medir-pipeline.mjs, que no escriben otra cosa)
   for (const [archivo, registro] of [['ajustes-manuales.jsonl', 'ajustes-manuales'], ['mediciones-pipeline.jsonl', 'mediciones-pipeline']]) {
-    for (const x of leer(archivo)) { const e = validar(registro, x); if (e.length) malas.push(`${registro} ${x.fecha}: ${e[0]}`); }
+    for (const x of leer(archivo)) {
+      const e = validar(registro, x); if (e.length) malas.push(`${registro} ${x.fecha}: ${e[0]}`);
+      else if (x.esquema === undefined && String(x.fecha) >= DESDE[registro]) malas.push(`${registro} ${x.fecha}: sin esquema`);
+    }
   }
   if (malas.length) add('P3', 'registro-fuera-de-esquema', `${malas.length} línea(s) de los registros de decisión fuera del esquema (tools/esquemas-registros.json): ${malas.slice(0, 3).join(' · ')}`);
 }
