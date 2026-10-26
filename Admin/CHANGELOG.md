@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1128 — Las listas de prueba cambian por la ranura de la semana, no por un defecto [461]
+- Se reprodujo el «reescribe los lotes de prueba sin que cambie nada»: lo que cambia es la ranura de la semana (S43 a S44, rota por diseño) y el orden de un bloque de casos raros; `lotes-prueba.mjs` es estable al repetirlo y `--check` da «al día». Se commitean las listas regeneradas y el item 8 del 461 queda tachado con ese motivo.
+- Medición: no cambió ninguna tool.
+
 ## Versión 1127 — SIIS tiene el estado de resultados primario por rubro (Colombia) [257 · 462 · deportestolima-co]
 - Se encontró en el portal de SIIS el índice `siis_resultadointegral`: ingresos, costo de ventas, gastos, otros ingresos y gastos, impuestos y resultado de 2016 a 2025 para Tolima, La Equidad, Talento Dorado y Bucaramanga. Cómo consultarlo quedó en `Admin/sourcing/Colombia/_notas-generales.md`.
 - Tolima: el estado de SIIS suma exacto (2024 y 2025) y su resultado coincide con `utilidades`; el costo de ventas no explica solo la diferencia con las notas (2023 y 2024), así que hay que conciliar rubro por rubro. Los puntos 257 y 462 lo cuentan y quedan a la espera de la decisión de Guido sobre cómo entra una fuente que no es un PDF.
