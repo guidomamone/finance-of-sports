@@ -280,7 +280,7 @@
     const curMeta = yearMetaFor(cur.clubId, cur.year);
     const prevMeta = prev ? yearMetaFor(prev.clubId, prev.year) : null;
     const rows = [
-      {label:'Salarios / Ingresos', curTxt:(cur.wagesToTurnover*100).toFixed(0)+'%', prevTxt: prev ? (prev.wagesToTurnover*100).toFixed(0)+'%' : '—'},
+      {label:'Salarios / Ingresos', curTxt: cur.wages ? (cur.wagesToTurnover*100).toFixed(0)+'%' : '—', prevTxt: prev && prev.wages ? (prev.wagesToTurnover*100).toFixed(0)+'%' : '—'},
       {label:'Deuda bruta', cur:filaDeuda(cur, 'grossDebt'), prev:filaDeuda(prev, 'grossDebt'), bold:true},
       {label:'Caja', cur:filaDeuda(cur, 'cash'), prev:filaDeuda(prev, 'cash')},
       {label:'Deuda neta', cur:filaDeuda(cur, 'netDebt'), prev:filaDeuda(prev, 'netDebt'), bold:true, shade:true},

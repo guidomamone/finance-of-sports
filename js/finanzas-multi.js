@@ -540,7 +540,8 @@ const FIN_MULTI_DEBT = (function(){
       const f = FIN_REAL.fac(y);
       const v = x => toDisplayValue(x, meta, currentCurrency) * f;
       return { y, presu, sinDeuda,
-        wr: c && c.revenue ? c.wagesToTurnover * 100 : null,
+        // sin renglón de sueldos (el documento junta el gasto en una línea) no es 0 %: es dato que falta
+        wr: c && c.revenue && c.wages ? c.wagesToTurnover * 100 : null,
         // fila por fila (filaDeuda, js/finanzas-render.js): la deuda conocida se muestra aunque falte la caja; la neta, solo con las dos.
         gd: presu || filaDeuda(c, 'grossDebt') == null ? null : v(c.grossDebt), ca: presu || filaDeuda(c, 'cash') == null ? null : v(c.cash),
         nd: sinDeuda ? null : v(c.netDebt) };
