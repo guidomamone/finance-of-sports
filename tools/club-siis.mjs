@@ -123,7 +123,10 @@ if (A.includes('--avanzar')) {
   const ev = evaluar(); console.log(`=== --avanzar ${club} · ${ev.veredicto} ===`);
   if (ev.veredicto === 'DESCARTAR') { console.log(`${ev.motivos.join('; ')}. No se avanza (node tools/club-siis.mjs ${q} --evaluar).`); process.exit(0); }
   if (ev.veredicto === 'REVISAR') console.log(`REVISAR: ${ev.motivos[0]}\n(se sigue; si no es un club, frená acá)`);
-  const run = (args) => { console.log(`\n$ node ${args.join(' ')}`); try { const out = execFileSync('node', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1e8, stdio: ['ignore', 'pipe', 'pipe'] }); console.log(out.trim().split('\n').slice(-6).join('\n')); return out; } catch (err) { console.log(`${String(err.stdout || '').trim().split('\n').slice(-8).join('\n')}\n${String(err.stderr || '').trim()}`); console.log(`\nSE FRENÓ en: node ${args.join(' ')}`); process.exit(1); } };
+  const run = (args) => { console.log(`\n$ node ${args.join(' ')}`); try { const out = execFileSync('node', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1e8, stdio: ['ignore', 'pipe', 'pipe'] }); console.log(out.trim().split('\n').slice(-6).join('\n')); return out; } catch (err) { console.log(`${String(err.stdout || '').trim().split('\n').slice(-8).join('\n')}\n${String(err.stderr || '').trim()}`); console.log(`\nSE FRENÓ en: node ${args.join(' ')}`);
+    const casos = pendientes().filter((p) => p.pdf.startsWith(`Clubes/${cfg.pais}/${club}`)); // el alta frena con una pregunta del nombre legal (SIIS a veces lo imprime con errores): va a la cola
+    if (casos.length) console.log(`\nPregunta(s) en la cola del club: ${casos.map((p) => p.id).join(', ')}. Contestala con el nombre bien escrito y volvé a correr --avanzar:\n  node tools/cola.mjs --responder <id> corregir --valor "<nombre legal>" --nota "…" --evidencia "Clubes/${cfg.pais}/${club}/siis-estado-AAAA.md:3" --seguridad alta --causa lectura-del-documento`);
+    process.exit(1); } };
   let s = estadoDe(club);
   if (s.filas.some((f) => !f.siis)) { run(['tools/siis-estado.mjs', '--club', club, '--todos', '--escribir']); s = estadoDe(club); }
   if (!s.c.clubId) {
@@ -132,7 +135,7 @@ if (A.includes('--avanzar')) {
     if (!id) { console.log('No pude leer el clubId del alta: sumalo a tools/siis-clubes.json a mano.'); process.exit(1); }
     const { writeFileSync } = await import('node:fs'); const ruta = join(ROOT, 'tools/siis-clubes.json'); const t = readFileSync(ruta, 'utf8');
     const t2 = t.replace(new RegExp(`("${club.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}":\\s*\\{[^}]*?)(\\s*\\})`), `$1, "clubId": "${id}"$2`); if (t2 === t) { console.log(`No pude sumar el clubId ${id} a siis-clubes.json: hacelo a mano.`); process.exit(1); }
-    writeFileSync(ruta, t2); console.log(`clubId ${id} sumado a tools/siis-clubes.json.\nA MANO, ahora: el nombre legal («${(readFileSync(join(s.dir, `siis-estado-${ultimo}.md`), 'utf8').match(/^# (.+?) — NIT/m) || [, club])[1]}») y el color de marca en data/clubs.js; commitear el alta (git add data index.html club fuentes liga …) antes del lote con --cargar.`); s.c.clubId = id;
+    writeFileSync(ruta, t2); console.log(`clubId ${id} sumado a tools/siis-clubes.json.\nA MANO, ahora: mirar el nombre legal en data/clubs.js (en SIIS la sociedad figura como «${(readFileSync(join(s.dir, `siis-estado-${ultimo}.md`), 'utf8').match(/^# (.+?) — NIT/m) || [, club])[1]}») y poner el color de marca; commitear el alta (git add data index.html club fuentes liga …) antes del lote con --cargar.`); s.c.clubId = id;
   }
   if (readdirSync(s.dir).some((x) => /^dictamen-revisor-fiscal-\d{4}\.pdf$/.test(x) && !existsSync(join(s.dir, x.replace(/\.pdf$/, '.md'))))) run(['tools/dictamenes-md.mjs', club, '--escribir']);
   for (const p of evaluar().pesos.filter((p) => p.pct > 50 && !s.filas.find((f) => f.a === p.a)?.cargado)) run(['tools/cola.mjs', '--corregir-categoria', `Clubes/${cfg.pais}/${club}/siis-estado-${p.a}.pdf`, 'Costo de ventas', 'lump_football_operations_expense', '--nota', `Costo de ventas es ${p.pct}% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)`]);
