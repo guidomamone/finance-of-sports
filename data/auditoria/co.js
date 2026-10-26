@@ -403,6 +403,18 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "deportivopereira-co": {
+  "2024": {
+   "auditor": {
+    "nombre": "Juan David Salgado Rios",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Deportivo Pereira/dictamen-revisor-fiscal-2024.md",
+    "linea": 45
+   }
+  },
   "2025": {
    "auditor": {
     "nombre": "Juan David Salgado Rios",

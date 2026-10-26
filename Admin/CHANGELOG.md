@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1157 — club-siis.mjs --avanzar probado con un solo año (Deportivo Pereira 2024) [465 · club-siis.mjs · deportivopereira-co]
+- Un año suelto de un club ya cargado desde su PDF se carga con `--avanzar --ejecutar --cargar` en 75 segundos: baja el estado de SIIS solo de los años que faltan (antes bajaba todos) y da por cubiertos estadio y sponsor cuando el ensayo de Wikipedia los trae al 100 % (antes pedía un subagente aunque no hiciera falta).
+- Independiente Medellín: la gestión de Giraldo (dueño) de enero a septiembre de 2018 con fuente (El Colombiano, 19 de septiembre de 2018); la salida de Gil Gómez en 2019 y las gestiones de 2019 a 2023 siguen sin fuente fechada tras buscarlas.
+- Medición: `club-siis.mjs` no es del pipeline (no pide medición); el año cargado con el pipeline medido.
+
 ## Versión 1156 — club-siis.mjs: reexpresiones de comparativo que se contestan solas y la lista de clubes con veredicto [465 · club-siis.mjs]
 - `--avanzar` contesta las preguntas `anio-vecino` y `no-cierra` de un par de estados de SIIS solo si el resultado neto del año es idéntico en su estado y en el comparativo del siguiente; si cambia, queda para una persona. Corre el lote, contesta y lo repite para que el año no quede frenado.
 - `club-siis` sin nombre imprime el veredicto de `--evaluar` de cada club y ordena de menos a más años por cargar.

@@ -29,6 +29,11 @@ const leer = (rel) => { try { return JSON.parse(readFileSync(join(ROOT, rel), 'u
 const cfg = leer('tools/siis-clubes.json'); const resumen = leer(`Admin/sourcing/${cfg.pais}/siis-resumen.json`);
 const iso = 'co';
 
+// ¿Wikipedia ya trae estadio y sponsor de ese año? (el ensayo de estadio-sponsor.mjs, sin escribir): entonces no hace falta el subagente ni una entrada en contexto-manual.json
+function wikipediaCubre(clubId, a, liga) {
+  if (!liga) return false;
+  try { const out = execFileSync('node', [join(ROOT, 'tools/estadio-sponsor.mjs'), '--ensayo', '--club', clubId, '--anio', a, '--liga', liga, '--cierre', '12-31'], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }); return /estadio \d+ \(100%\)/.test(out) && /sponsor \d+ \(100%\)/.test(out); } catch { return false; }
+}
 function estadoDe(carpeta) {
   const c = cfg.clubes[carpeta]; if (!c) return { error: `«${carpeta}» no está en tools/siis-clubes.json (se suma con su NIT)` };
   const dir = join(ROOT, 'Clubes', cfg.pais, carpeta); const gen = join(ROOT, 'Generados', cfg.pais, carpeta);
@@ -36,6 +41,7 @@ function estadoDe(carpeta) {
   const json = c.clubId ? leer(`data/${iso}/${c.clubId}.json`) : null;
   const cargados = new Set((json?.years || []).map((y) => String(y.fiscal_year)));
   const ligas = c.clubId ? [...(readFileSync(join(ROOT, `data/club-leagues/${iso}.js`), 'utf8').match(new RegExp(`'${c.clubId}':\\s*\\{([^}]*)\\}`)) || [, ''])[1].matchAll(/(\d{4}):/g)].map((m) => m[1]) : [];
+  const ligaDe = c.clubId ? Object.fromEntries([...(readFileSync(join(ROOT, `data/club-leagues/${iso}.js`), 'utf8').match(new RegExp(`'${c.clubId}':\\s*\\{([^}]*)\\}`)) || [, ''])[1].matchAll(/(\d{4}):\s*'([^']+)'/g)].map((m) => [m[1], m[2]])) : {};
   const ctx = (c.clubId && leer('tools/contexto-manual.json')?.[c.clubId]) || {};
   const aud = existsSync(join(ROOT, 'Admin/registros/auditoria.jsonl')) && c.clubId ? new Set(readFileSync(join(ROOT, 'Admin/registros/auditoria.jsonl'), 'utf8').split('\n').filter((l) => l.includes(`"${c.clubId}"`)).map((l) => { try { return String(JSON.parse(l).anio); } catch { return null; } })) : new Set();
   const cola = pendientes().filter((p) => p.pdf.startsWith(`Clubes/${cfg.pais}/${carpeta}/`));
@@ -45,7 +51,7 @@ function estadoDe(carpeta) {
     return {
       a, siis: existsSync(md), notas: !existsSync(md) ? '-' : existsSync(join(dir, `estados-financieros-${a}.md`)) ? (/## Detalle de las notas del club/.test(texto) ? 'abre' : 'no abre') : 'sin notas',
       verif: ver?.estado === 'ok' && existsSync(join(gen, `siis-estado-${a}.categorias.json`)), cola: cola.filter((p) => p.pdf.endsWith(`siis-estado-${a}.pdf`)).length,
-      liga: ligas.includes(a), ctx: !!ctx[a], cargado: cargados.has(a), aud: aud.has(a), dictamen: existsSync(join(dir, `dictamen-revisor-fiscal-${a}.md`)),
+      liga: ligas.includes(a), ctx: !!ctx[a] || (!cargados.has(a) && ligas.includes(a) && wikipediaCubre(c.clubId, a, ligaDe[a])), cargado: cargados.has(a), aud: aud.has(a), dictamen: existsSync(join(dir, `dictamen-revisor-fiscal-${a}.md`)),
     };
   });
   return { carpeta, c, dir, filas, cola };
