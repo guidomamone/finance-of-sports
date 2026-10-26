@@ -31,6 +31,7 @@ import { execFileSync } from 'node:child_process';
 import { indiceBloques } from './indice-bloques.mjs';
 import { negarSiSeMide } from './candado-medicion.mjs';
 import { abrirConNotas, anexarNotas } from './siis-notas.mjs';
+import { exigirMedida } from './exigir-medida.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const BASE = 'https://siis.ia.supersociedades.gov.co/siis_backend/api/v1/qr';
@@ -240,6 +241,7 @@ async function inventario() {
 
 const A = process.argv.slice(2); const flag = (k) => { const i = A.indexOf(k); return i >= 0 ? A[i + 1] : null; };
 if (import.meta.url === `file://${process.argv[1]}`) {
+  exigirMedida('siis-estado.mjs', { si: A.includes('--escribir'), argv: process.argv }); // sin una versión medida de las tools del pipeline no se escriben datos reales
   negarSiSeMide('siis-estado.mjs', { si: A.includes('--escribir'), argv: process.argv }); // escribe Clubes/, Generados/ y Admin/registros: no mientras medir pipeline mide
   if (A.includes('--inventario') || A.includes('--faltantes')) {
     const inv = await inventario();

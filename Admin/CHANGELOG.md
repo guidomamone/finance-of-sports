@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1144 — exigir-medida.mjs, cargar.mjs y siis-estado.mjs: no se escriben datos reales con tools sin medir [463 · exigir-medida.mjs, cargar.mjs, siis-estado.mjs]
+- `cargar.mjs` y `siis-estado.mjs` se niegan a escribir (`--escribir`) si hay archivos de `tools/` cambiados contra HEAD, fuera de `no_pipeline`, sin una medición buena de su versión actual (`tools/exigir-medida.mjs`; no usa otras tools; `--ignorar-medicion` solo con el ok de Guido; `fos --check` verifica que sigan llamándolo). Así el orden (ensayo gratis completo, arreglar, medir una vez, recién después escribir) lo impone el código.
+- El medidor `siis` corre los cuatro clubes de `siis-clubes.json` (antes solo Tolima) y cuenta qué rubros abren las notas. La regla del orden queda en `Admin/PLANTILLA-SESION.md`.
+- La primera versión llamaba a `que-pide.mjs` y rompía la auditoría (una tool del pipeline no puede depender de una de afuera); se rehízo autocontenida y se midió de nuevo, sin explicación previa.
+- Medición: idéntico (cargar, verificar y siis en chico, mediano y completo; `escribir` pasa); veredicto GENERAL (sin documentos); `audit.js` P0 0 y P1 0.
+
 ## Versión 1143 — siis-notas.mjs y siis-estado.mjs: 20 club-años de Colombia rehechos con las notas abiertas [463 · siis-estado.mjs, siis-notas.mjs · deportestolima-co · laequidad-co · aguilasdoradas-co · atleticobucaramanga-co]
 - La tool se afinó con los cuatro clubes: columna de etiquetas (la de párrafos de la norma no cuenta), total impreso que tiene que sumar, tolerancia de verificar para una nota en pesos, tablas partidas por página, cifras con coma de miles, etiqueta repetida entre notas con el rubro entre paréntesis y no abrir si el título de la nota dice lo contrario del rubro (Tolima 2024).
 - Rehechos y publicados 20 club-años (Tolima 10, La Equidad 4, Águilas Doradas 4, Bucaramanga 2) con la cadena `siis-estado --rehacer`, `verificar`, Jev, Claude y `cargar --reemplazar`: ingresos y gastos abiertos (Tolima 2025: venta de derechos deportivos 14.934 M). Regla de las notas de gastos en `CONVENCIONES-DATOS.md` (personal y viajes de administración son administración) y 10 ajustes de categoría. Costo de API unos US$ 0,60.

@@ -36,6 +36,9 @@ if (A[0] === '--check') {
   const { CON_CANDADO } = await import('./candado-medicion.mjs');
   const texto = new Map(textos);
   for (const t of Object.keys(CON_CANDADO)) if (!/negarSiSeMide\(/.test(texto.get(t) || '')) { console.log(`«${t}» figura en candado-medicion.mjs (CON_CANDADO) y ya no llama a negarSiSeMide: una medición en curso no la frena`); mal++; }
+  // la exigencia de una versión medida (tools/exigir-medida.mjs): las tools de CON_MEDIDA siguen llamándola antes de escribir datos reales
+  const { CON_MEDIDA } = await import('./exigir-medida.mjs');
+  for (const t of Object.keys(CON_MEDIDA)) if (!/exigirMedida\(/.test(texto.get(t) || '')) { console.log(`«${t}» figura en exigir-medida.mjs (CON_MEDIDA) y ya no llama a exigirMedida: escribiría datos reales con una tool sin medir`); mal++; }
   const escriben = textos.filter(([f, t]) => !CON_CANDADO[f] && !/^(probar-|prueba-|medir-|candado)/.test(f) && /writeFileSync|appendFileSync/.test(t) && /Admin.{0,6}registros|'registros'/.test(t) && !/negarSiSeMide\(/.test(t)).map(([f]) => f);
   if (escriben.length) console.log(`Escriben en Admin/registros y no chequean el candado de la medición (${escriben.length}, informativo; las etapas del lote quedan cubiertas por lote.mjs --ejecutar):\n  ${escriben.join(' ')}`);
   console.log(mal ? `\n${mal} script(s) faltan` : '\nla lista está al día');

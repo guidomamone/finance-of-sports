@@ -40,6 +40,7 @@ import { faseTotales, faseIxbrl, faseFxYLiga, faseEjercicio } from './cargar-eje
 import { faseCeros, faseSinCategoria, faseSignos } from './cargar-ceros.mjs';
 import { faseCategorias } from './cargar-categorias.mjs';
 import { faseRegistro, faseClubYAnio, faseFilas } from './cargar-inicio.mjs';
+import { exigirMedida } from './exigir-medida.mjs';
 export { publicarCambios, compuertaContexto, escribir, snapshot, revertir, runNode } from './cargar-escribir.mjs';
 
 // Los módulos que se reusan leen process.argv al importarse (alta-club.mjs: --escribir activa ANOTAR_MISSES y --anio fuerza el año;
@@ -73,6 +74,7 @@ export const { normalizar, claveFamilia, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_
 const ROOT = resolve(import.meta.dirname, '..');
 const flagVal = (n) => { const i = ARGS.indexOf(n); return i >= 0 ? ARGS[i + 1] : null; };
 export const ESCRIBIR = ARGS.includes('--escribir');
+exigirMedida('cargar.mjs', { si: ESCRIBIR, argv: ARGS }); // no se escriben datos reales con una tool del pipeline cambiada y sin medir (tools/exigir-medida.mjs)
 // --reemplazar: rehace con el script un ejercicio YA cargado (UC 2022-2024, cargados a mano:
 // "Servicios de Seguridad" dentro de gastos de administración). "Ya cargado", "la fuente ya existe" y "sin .categorias.json" (Jev y Claude
 // nunca corrieron sobre años cargados a mano) pasan de frenar a aviso; todo lo demás frena igual (en particular, una fila sin categoría). Al
