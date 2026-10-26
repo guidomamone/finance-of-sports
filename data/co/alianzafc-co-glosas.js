@@ -39,6 +39,7 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Ingreso (gasto) por impuestos":{"en":"Tax income (expense)"},
 "Ingresos Financiero":{"en":"Financial income"},
 "Ingresos de actividades ordinarias":{"en":"Revenue"},
+"Ingresos financieros":{"en":"Finance income"},
 "Mantenimiento y reparaciones":{"en":"Maintenance and repairs"},
 "Multas y Recargos":{"en":"Fines and surcharges"},
 "Otro Gastos de actividades ordinarias":{"en":"Other expenses from ordinary activities"},

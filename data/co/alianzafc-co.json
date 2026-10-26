@@ -76,6 +76,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Alianza FC/siis-estado-2022.pdf"
+    },
+    {
+      "id": "alianzafc-co-siis-estado-2024",
+      "club_id": "alianzafc-co",
+      "title": "Alianza FC S.A. — siis-estado-2024 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Alianza FC/siis-estado-2024.pdf"
     }
   ],
   "members": null,
@@ -537,6 +545,60 @@
           {"label":"Gasto impuesto de renta y cree","amount":-1051.401},
           {"label":"Impuesto diferido","amount":-168.752483}
         ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "COP",
+      "source_id": "alianzafc-co-siis-estado-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2024-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 19179.851,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":1482.315,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-12327.615,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-5032.716,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-632.925,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-277.84,"tax":-1058.488,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":20662.166,"expenses":17993.256,"net_result":1332.582},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":10.075},
+          {"label":"Costos financieros","amount":-287.915},
+          {"label":"Ingreso (gasto) por impuestos","amount":-1058.488}
+        ],
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":19179.851,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 12327.615,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
+          }
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "grants_donations": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        },
         "revenue_basis": "full"
       }
     }

@@ -65,7 +65,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2024: {
     leagueSize: 20,
-    sinDato: ["alianzafc-co"],
     wiki: {"t":"2024 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:18.183, reportType:"official_balance_sheet",
@@ -91,6 +90,10 @@ window.RANKINGS["co-primeraA"] = {
       { id:"oncecaldas-co", revenue:6.117, reportType:"official_balance_sheet",
         sourceId:"oncecaldas-co-estados-financieros-2024",
         mix:[["Comercial / Sponsors",1.106],["Estadio",2.73],["Televisión",1.609],["Premios por competencias",0.154],["Venta de Jugadores",0.419],["Otros ingresos",0.099]] },
+      { id:"alianzafc-co", revenue:4.686, reportType:"official_balance_sheet",
+        sourceId:"alianzafc-co-siis-estado-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",4.35],["Otros ingresos",0.336]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Subsidios y donaciones","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"fortalezaceif-co", revenue:2.768, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2024",
         mix:[["Comercial / Sponsors",0.589],["Estadio",1.012],["Televisión",0.34],["Premios por competencias",0.141],["Venta de Jugadores",0.342],["Otras actividades (educación y otros deportes)",0.03],["Otros ingresos",0.314]] },
