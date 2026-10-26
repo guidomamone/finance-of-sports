@@ -38,6 +38,7 @@ export function equiposDeHtml(html) {
   const mejores = tablas.map((t) => {
     const nombres = [];
     for (const fila of t.split(/<tr[\s>]/).slice(1)) {
+      if (!/<td[\s>]/.test(fila) && !/<th[^>]*scope="row"/.test(fila)) continue; // una fila de puro encabezado («Stam-nummer») no es un equipo
       const celdas = [...fila.matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/g)].map((m) => m[1]).slice(0, 3); // el equipo está en las primeras columnas
       let hallado = null;
       for (const c of celdas) {
@@ -72,6 +73,18 @@ async function qidsDe(host, titulos) {
   }
   return salida;
 }
+// Los identificadores de Wikidata que son personas (instancia de «ser humano», Q5): las tablas de cambios de técnico cuelan sus nombres como si fueran equipos.
+async function personasDe(qids) {
+  const personas = new Set(); const ids = [...new Set(qids.filter(Boolean))];
+  for (let i = 0; i < ids.length; i += 40) {
+    await dormir(1000);
+    const url = `https://www.wikidata.org/w/api.php?${new URLSearchParams({ action: 'wbgetentities', format: 'json', props: 'claims', ids: ids.slice(i, i + 40).join('|') })}`;
+    const res = await fetch(url, { headers: { 'User-Agent': UA } });
+    if (!res.ok) throw new Error(`wikidata.org respondió ${res.status}`);
+    for (const [q, ent] of Object.entries((await res.json()).entities || {})) if ((ent.claims?.P31 || []).some((c) => c.mainsnak?.datavalue?.value?.id === 'Q5')) personas.add(q);
+  }
+  return personas;
+}
 const nrm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
 
 if (import.meta.url === `file://${process.argv[1]}`) {
@@ -89,11 +102,13 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const local = ll.query?.pages?.[0]?.langlinks?.[0]?.title;
   if (!local) falla(`«${e.wikipediaPage}» no tiene versión en «${lang}» (enlaces entre idiomas): no hay segunda fuente por este camino.`);
   const p = await api(lang, { action: 'parse', page: local, prop: 'text', redirects: '1' });
-  const equipos = equiposDeHtml(p.parse?.text || '');
+  let equipos = equiposDeHtml(p.parse?.text || '');
   // la MISMA página en inglés: sus equipos, para unir las dos listas por su identificador de Wikidata y no por el nombre (el griego o el cirílico no se pueden comparar por letras)
   const pe = await api(e.lang || 'en', { action: 'parse', page: e.wikipediaPage, prop: 'text', redirects: '1' });
   const enItems = equiposDeHtml(pe.parse?.text || '');
-  const qLocal = await qidsDe(lang, equipos.map((x) => x.titulo)); const qEn = await qidsDe(e.lang || 'en', enItems.map((x) => x.titulo));
+  const qLocal = await qidsDe(lang, equipos.map((x) => x.titulo));
+  const personas = await personasDe(equipos.map((x) => qLocal.get(x.titulo))); equipos = equipos.filter((x) => !personas.has(qLocal.get(x.titulo)));
+  const qEn = await qidsDe(e.lang || 'en', enItems.map((x) => x.titulo));
   // el nombre de la lista en inglés → su Q: el nombre igual al texto o al título del enlace; si no, un único enlace que lo tenga como prefijo de palabras enteras («Lommel» y «Lommel SK»)
   const qidDeClub = (nombre) => {
     const c = nrm(nombre); const nom = (i) => [nrm(i.texto), nrm(i.titulo), nrm(i.corto)];
