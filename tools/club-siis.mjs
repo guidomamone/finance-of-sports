@@ -20,6 +20,7 @@ import { readFileSync, existsSync, readdirSync, writeFileSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { pendientes } from './cola.mjs';
+import { pasoFka } from './sponsor-fka.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
@@ -66,7 +67,7 @@ function estadoDe(carpeta) {
       liga: ligas.includes(a), ctx: !!ctx[a] || (!cargados.has(a) && ligas.includes(a) && wikipediaCubre(c.clubId, a, ligaDe[a])), cargado: cargados.has(a), aud: aud.has(a), dictamen: existsSync(join(dir, `dictamen-revisor-fiscal-${a}.md`)),
     };
   });
-  return { carpeta, c, dir, filas, cola };
+  return { carpeta, c, dir, filas, cola, ligaDe };
 }
 const cmd = (s) => `    ${s}`;
 
@@ -104,12 +105,12 @@ if (flag('--brief')) {
   const plantilla = readFileSync(join(ROOT, 'Admin/briefs-subagentes-siis.md'), 'utf8'); const i = plantilla.indexOf(`## BRIEF ${k}`);
   if (i < 0) { console.error(`Sin plantilla «${k}» en Admin/briefs-subagentes-siis.md`); process.exit(1); }
   const resto = plantilla.slice(i).split('\n').slice(1).join('\n'); const cuerpo = resto.split(/\n## BRIEF /)[0].trim();
-  console.log(cuerpo.replaceAll('{{CLUB}}', club).replaceAll('{{CLUBID}}', c.clubId || '<clubId>').replaceAll('{{SOCIEDAD}}', sociedad).replaceAll('{{CARPETA}}', `Clubes/${cfg.pais}/${club}`).replaceAll('{{ANIOS}}', b.anios.join(', ')));
+  console.log(cuerpo.replaceAll('{{CLUB}}', club).replaceAll('{{CLUBID}}', c.clubId || '<clubId>').replaceAll('{{SOCIEDAD}}', sociedad).replaceAll('{{CARPETA}}', `Clubes/${cfg.pais}/${club}`).replaceAll('{{ANIOS}}', b.anios.join(', ')).replaceAll('{{LIGAS}}', b.anios.map((a) => `${a} ${e.ligaDe[a] || '(sin liga cargada: se pone a mano)'}`).join(', ')).replaceAll('{{HOY}}', new Date().toISOString().slice(0, 10)));
   process.exit(0);
 }
 
 // ---- ¿vale la pena? (--evaluar y el primer paso de --avanzar): solo lee Admin/sourcing/<País>/siis-resumen.json y los siis-estado-AAAA.md que ya haya; sin red.
-// Criterio (Guido, 2026-10-26): NO se descarta por no estar en una liga profesional (se cargan clubes amateurs, como los de Bélgica); solo una sociedad sin actividad (ingresos 0 en todos los años).
+// Criterio (Guido): NO se descarta por no estar en una liga profesional (se cargan clubes amateurs, como los de Bélgica); solo una sociedad sin actividad (ingresos 0 en todos los años).
 const UMBRAL_CHICO = 500000; // miles de pesos por año = 500 M: por debajo en todos los años, el club se revisa antes de cargar
 const miles = (n) => `${Math.round(n / 1000).toLocaleString('es-AR')} M`;
 function evaluar() {
@@ -221,7 +222,12 @@ if (A.includes('--avanzar')) {
     else {
       run(lote); if (contestarReexpresiones()) run(lote); // las preguntas de verificación nacen en el lote: se contestan y se repite para que el año no quede frenado
       const faltaJuicio = juicioFaltante();
-      if (CARGAR && faltaJuicio.length) console.log(`\nNo se carga: falta ${faltaJuicio.join(', ')}.`);
+      if (CARGAR && faltaJuicio.length) {
+        console.log(`\nNo se carga: falta ${faltaJuicio.join(', ')}.`);
+        // paso fijo: el lote ya categorizó todo y lo que frena es la cola; se imprime acá cada pregunta con su propuesta, para contestarla y volver a correr solo la carga (la categorización ya está hecha)
+        const casos = estadoDe(club).cola.filter((p) => !(g && p.motivo === 'gestion'));
+        if (casos.length) console.log(`\n=== la cola de ${club} (${casos.length}) ===\n${casos.map((p) => `[${p.id}] ${p.pdf.split('/').pop()} · ${p.motivo}: ${String(p.que || '').slice(0, 420)}\n   propuesta: ${String(p.propuesta || '').slice(0, 200)}`).join('\n')}\nContestá con: node tools/cola.mjs --responder <id> aceptar|corregir --valor "<categoría>" --nota "…" --evidencia "ruta.md:línea" --seguridad alta|media --causa regla-escrita|precedente-del-pais|lectura-del-documento; commiteá lo del lote (git add -A Admin Generados "Clubes/${cfg.pais}/${club}") y volvé a correr este mismo comando: la categorización ya está hecha y solo carga.`);
+      }
       else if (CARGAR) { run([...lote, '--cargar']); run(['tools/publicar.mjs']); }
     }
   }
@@ -259,6 +265,7 @@ if (sinCarga.length) paso(`Cargar ${sinCarga.join(', ')} (un commit por año; an
 if (sinDict.length && !dictSinMd.length) console.log(`   (sin dictamen del revisor fiscal: ${sinDict.join(', ')}; es de sourcing, Admin/sourcing/${cfg.pais}/_notas-generales.md)`);
 if (sinAud.length) paso(`Líneas del auditor de ${sinAud.join(', ')} (con la carga hecha y los dictámenes en git)`, `SUBAGENTE auditor (brief: node tools/club-siis.mjs ${q} --brief auditor; escribe Admin/registros/auditoria.jsonl)`, 'node tools/auditoria.mjs');
 if (!n && !subagentes.length) console.log('Nada falta: todos los años están cargados y con sus pasos al día.');
+const fka = c.clubId ? pasoFka(c.clubId, club) : null; if (fka) console.log(`\n${fka}`); // el sponsor débil se verifica en Football Kit Archive (tools/sponsor-fka.mjs): un paso fijo, no de memoria
 console.log('\nUn año ya publicado que hay que rehacer: node tools/club-siis.mjs ' + q + ' --rehacer-anio AAAA');
 
 if (A.includes('--crear-lista') && sinCarga.length) {

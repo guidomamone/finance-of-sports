@@ -204,6 +204,7 @@
   "git-resumen.mjs":"orden: git status sin las páginas generadas (solo lee git)",
   "audit-perfil.mjs":"orden: el tiempo de cada chequeo de audit.js (corre audit.js con --cpu-prof en una carpeta temporal; solo mide)",
   "siis-adicionales.mjs":"orden: los documentos adicionales de SIIS por club-año (un GET por año; no baja archivos ni escribe)",
+  "sponsor-fka.mjs":"orden: los sponsors débiles de un club para verificarlos en Football Kit Archive y el registro de lo verificado (Admin/registros/sponsor-fka.jsonl); no lee documentos",
   "patrones-tools.mjs":"orden: el patrón del veredicto de cada tool, de tools/patrones-tools.json (lo usan patron.mjs y cerrar-tool.mjs)",
   "duraciones-lib.mjs":"orden: la lectura de los segundos de cada medidor (la usan duraciones-mediciones y el ensayo de medir-pipeline); solo lee",
   "duraciones-mediciones.mjs":"orden: los segundos de cada medidor de medir-pipeline por nivel (solo lee Admin/registros/mediciones-pipeline.jsonl y Admin/mediciones/pipeline)",

@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1173 — club-siis: sponsor débil a Football Kit Archive, cola a la vista antes de cargar y brief con las ligas [463, 467 · club-siis.mjs, sponsor-fka.mjs]
+- `club-siis` lista, en el estado de cada club y al final de `--avanzar`, los sponsors débiles o sin dato (`tools/sponsor-fka.mjs`) como paso fijo: verificarlos en Football Kit Archive con Claude in Chrome y anotarlos con `sponsor-fka --registrar` (Admin/registros/sponsor-fka.jsonl). Probado: FKA da la verificación anti-bots en el navegador interno y 403 a las tools; en el Chrome de Guido abre la ficha del equipo (proveedores por año visibles) pero tapa el resto con «Unlock more content / View a short ad»: sin ver el anuncio, que es de Guido, el sponsor de cada temporada no se lee. El punto 467 del TODO se cierra: el paso vive en el script.
+- `--avanzar --ejecutar --cargar`, si la cola frena la carga, imprime cada pregunta con su propuesta y el comando para contestar y volver a correr (la categorización ya está hecha); el brief del subagente de estadio y sponsor trae la liga de cada año, la fecha y «clave existente: agregá solo los años que faltan».
+- Medición: ninguna es del pipeline (no piden medición); el brief probado con Unión Magdalena y Alianza FC.
+
 ## Versión 1172 — Unión Magdalena 2016, 2017 y 2019 a 2024 desde SIIS [463 · unionmagdalena-co]
 - Con esto Unión Magdalena tiene sus 10 años. Ligas escritas por `club-siis --avanzar` desde el roster de Wikipedia; «Gastos de ventas» sin abrir fue a fútbol profesional sin desglosar solo (la corrección nueva de `--avanzar`); dictámenes de 2022 y 2023 por OCR (US$ 0,08). Estadio Federico Serrano Soto en 2016 (8.000, una sola ficha); sponsor de 2016 y 2022 `sin-fuente` (Wplay 2022 sin confirmar). Líneas del auditor de 2022 a 2024, sin salvedades; faltan los dictámenes de 2016 a 2021.
 - Por primera vez el lote de categorización corrió antes y sin `--cargar`: la cola quedó vacía y la carga salió de una vez.

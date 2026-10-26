@@ -337,10 +337,3 @@ SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en 
 (`Admin/fuentes-externas.md`, "Consecuencias").
 
 Verificar: manual
-
-### 24. 467 · (Sourcing, con Guido): verificar en Football Kit Archive los sponsors de camiseta que quedaron con fuente débil
-
-Football Kit Archive (footballkitarchive.com) da 403 a las herramientas y a los subagentes, así que sus datos entran solo como resumen de una búsqueda, sin decir que el sponsor va al FRENTE; la verificación la hace Guido a mano en el navegador, o una sesión con Claude in Chrome si él lo pide. Qué hay que mirar (de `tools/contexto-manual.json` y `Admin/TODO.md`, 463 3.4 a): Once Caldas 2016 y 2017 («sin sponsor») y 2019 a 2021 (Colanta, Wakate), Deportes Tolima 2016 a 2019, La Equidad 2016 a 2022, Fortaleza CEIF 2016 (Seguros del Estado, solo Wikipedia), y los sin dato: Águilas Doradas todos los años, Bucaramanga 2016 y 2018, Tolima 2022. Por cada club y año: el sponsor del frente de esa temporada, si la camiseta es la local, y la URL de la ficha. Se carga en `tools/contexto-manual.json` con la clase de fuente `base-camisetas` (`club-sourcing`, `referencia/liga-y-sponsor.md` 0.5) y se repite el ensayo de `estadio-sponsor.mjs`; los clubes nuevos de SIIS que sumen más sponsors débiles se anotan acá.
-Terminado cuando: cada club y año de la lista tiene el sponsor con fuente verificada del frente, o `sin-fuente` con los intentos, y el ensayo de `estadio-sponsor.mjs` da 100 % en todos.
-
-Verificar: manual
