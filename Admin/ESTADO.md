@@ -39,7 +39,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 <!-- roles: pipeline, onboarding, auditora, orden, sourcing -->
 
 - Qué hace cada tool, qué se decide solo y qué no se transcribe: `Admin/ESTADO-pipeline.md` (no se lee en el arranque; se consulta con grep). Proceso etapa por etapa: `Admin/PIPELINE.md`; descartes medidos: `Admin/HALLAZGOS-pipeline.md`; cuántos documentos hay en cada etapa y cuánto cuesta el paso siguiente: `node tools/estado.mjs` (gratis).
-- Lo esencial: `lote.mjs` corre las etapas 3 a 8 en segundo plano, `cargar.mjs` escribe el año y revierte si algo falla, `caja-deuda.mjs` completa caja, deuda y personal, `cola.mjs` guarda lo que no se resuelve solo. Un dato publicado mal se corrige con un ajuste manual (`tools/ajustes.mjs`) además de en `data/`, para que una corrida futura no lo deshaga.
+- Lo esencial: `lote.mjs` corre las etapas 3 a 8 en segundo plano, `cargar.mjs` escribe el año y revierte si algo falla, `caja-deuda.mjs` completa caja, deuda y personal, `cola.mjs` guarda lo que no se resuelve solo. Un dato publicado mal se corrige con un ajuste manual (`tools/ajustes.mjs`) además de en `data/`, para que una corrida futura no lo deshaga. Colombia: el estado de resultados y el balance de SIIS son documento del pipeline (`tools/siis-estado.mjs`, inventario en `Admin/sourcing/Colombia/siis-inventario.md`); `Admin/PIPELINE.md`, «Colombia: los estados de SIIS».
 
 ### Qué falta de cada liga y estimados
 <!-- roles: sourcing, onboarding, pantallas -->

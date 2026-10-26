@@ -81,6 +81,7 @@ Clubes/Brasil/CRB/balanco-patrimonial-2020.pdf
 Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.pdf
 Clubes/Chipre/Omonia 29 Maiou/wf-src-A.L.S._OMONOIA_29_-Annual_Financial_Statements_2024.pdf
 Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.pdf
+Clubes/Colombia/Deportes Tolima/siis-estado-2025.pdf
 Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2025.pdf
 Clubes/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.pdf
 Clubes/Dinamarca/SønderjyskE/aarsrapport-2024-09-30.pdf
@@ -97,6 +98,9 @@ Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf
 Clubes/Suiza/Basel/geschaeftsbericht-2017.pdf
 Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2023.pdf
 # === AUTOMÁTICO: casos raros (un ajuste manual, un freno o una respuesta de la cola que no fue «aceptar»; el más viejo y el más nuevo de cada clase; no se edita) ===
+# clase: ajuste:filas-a-mano
+Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.pdf
+Clubes/Italia/Torino/Torino-bilancio-2025.pdf
 # clase: cola:cargar|categoria|corregir
 Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf
 Clubes/Portugal/Belenenses/Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.pdf
@@ -131,9 +135,6 @@ Clubes/Brasil/Paysandu/dre-2025.pdf
 # clase: ajuste:desglose
 Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.pdf
 Clubes/Inglaterra/Bath Rugby/bath-rugby-medium-company-accounts-2024-25.pdf
-# clase: ajuste:filas-a-mano
-Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.pdf
-Clubes/Italia/Torino/Torino-bilancio-2025.pdf
 # clase: freno:armar-a-mano rechaza un subtotal impreso sin rótulo
 Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2022-23.pdf
 # clase: freno:audit.js checkCategorias: categoria-inexistente (P0) valida contra la lista del fútbol, no la del deporte del club
@@ -165,5 +166,5 @@ Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.pdf
 Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.pdf
 # clase: freno:compensación intragrupo (Entschädigung von/an Event AG) no se elimina en 2018-19 ni 2019-20 aunque el perímetro es consolidado (298 ai solo la saca si el importe repite año y año anterior)
 Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.pdf
-# === AUTOMÁTICO: ranura de la semana 2026-S44 (la familia Suiza · pdf; rota cada semana; no se edita) ===
-Clubes/Suiza/Luzern/geschaeftsbericht-2019-20.pdf
+# === AUTOMÁTICO: ranura de la semana 2026-S44 (la familia Portugal · pdf; rota cada semana; no se edita) ===
+Clubes/Portugal/Sporting CP/relatorio-contas-2008-09.pdf
