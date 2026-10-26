@@ -84,6 +84,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Boyaca Chico/siis-estado-2022.pdf"
+    },
+    {
+      "id": "boyacachico-co-siis-estado-2023",
+      "club_id": "boyacachico-co",
+      "title": "Deportivo Boyacá Chicó Futbol Club S.A. — siis-estado-2023 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Boyaca Chico/siis-estado-2023.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2024,"last_year":2024}],
@@ -411,6 +419,49 @@
             "side": "expense",
             "amount": 4146.519,
             "reason": "Costo de ventas es 85% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          }
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        },
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "COP",
+      "source_id": "boyacachico-co-siis-estado-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2023-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 11632.541,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":1.682,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-7407.762,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2350.23,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-338.634,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-538.159,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":11634.223,"expenses":10096.626,"net_result":999.438},
+      "adjustments": {
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":11632.541,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 7407.762,
+            "reason": "Costo de ventas es 73% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
             "kind": "cost_of_sales"
           }
         ],

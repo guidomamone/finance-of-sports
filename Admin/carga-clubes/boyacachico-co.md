@@ -215,6 +215,40 @@ _antes de Eduardo Pimentel (data/gestiones/co.js):_
 Dueño: Eduardo Pimentel, persona con nombre (dueño y gestor del proyecto desde la fundación del club en 2002, Wikipedia; Publimetro 2024 lo llama "dueño del Boyacá Chicó"). Su hijo Nicolás Pimentel es el presidente/gerente que firma (Publimetro, 10/2024): sin fecha de inicio, queda fuera por el criterio del dueño.
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-26) desde Clubes/Colombia/Boyaca Chico/siis-estado-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Boyaca Chico/siis-estado-2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ingresos de actividades ordinarias | pág. 1, Jev 0.97 |
+| 2 | Otros ingresos | pág. 1, Jev 0.97 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costo de ventas | pág. 1, precedente |
+| 2 | Gastos de administración | pág. 1, precedente |
+| 3 | Otros gastos | pág. 1, Jev 0.96 |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2024, 2025)
+```
+
 ## 2022
 
 ### Ingresos
@@ -546,4 +580,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Boyaca Chico/siis-estado-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### boyacachico-co-siis-estado-2023
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Boyaca Chico/siis-estado-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
