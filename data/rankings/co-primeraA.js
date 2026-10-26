@@ -260,6 +260,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2016: {
     leagueSize: 20,
+    sinDato: ["fortalezaceif-co"],
     wiki: {"t":"2016 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:16.41, reportType:"official_balance_sheet",
