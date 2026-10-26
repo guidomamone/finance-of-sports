@@ -104,6 +104,104 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "deportestolima-co": {
+  "2016": {
+   "auditor": {
+    "nombre": "Hernando Ochoa Alba",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2016.md",
+    "linea": 35
+   }
+  },
+  "2017": {
+   "auditor": {
+    "nombre": "Hernando Ochoa Alba",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2017.md",
+    "linea": 33
+   }
+  },
+  "2018": {
+   "auditor": {
+    "nombre": "Hernando Ochoa Alba",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2018.md",
+    "linea": 39
+   }
+  },
+  "2019": {
+   "auditor": {
+    "nombre": "Russell Bedford Colombia S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2019.md",
+    "linea": 43
+   }
+  },
+  "2020": {
+   "auditor": {
+    "nombre": "Russell Bedford RBG S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2020.md",
+    "linea": 41
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Iván Arturo Novella Rivera",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2021.md",
+    "linea": 18
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Iván Arturo Novella Rivera",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2022.md",
+    "linea": 30
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Iván Arturo Novella Rivera",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2023.md",
+    "linea": 32
+   }
+  }
+ },
  "deportivopereira-co": {
   "2025": {
    "auditor": {

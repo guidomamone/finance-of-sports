@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1140 — Deportes Tolima 2016 a 2025 en el sitio, desde el estado de SIIS [463 · deportestolima-co]
+- Tolima (primer club de solo notas) quedó cargado completo: diez años, un commit por año, desde sus estados de SIIS, con el resultado oficial de SIIS (2025: 359 M de pesos, que son los 359 de SIIS y no las tres cifras que no concilian). Cola contestada con la regla votada 3 a 0 (`Gastos de ventas` sin abrir a `lump_football_operations_expense`, `Costo de ventas` a `other_expenses`) y la línea única de ingresos a `lump_football_operations`; estadio, capacidad y sponsor 2016 a 2022 con fuente en `tools/contexto-manual.json` (sponsor 2016 a 2019 con fuente débil y 2022 sin sponsor, registrado); líneas del auditor 2016 a 2023 con citas (2024 y 2025 «falta transcripción»: el dictamen que hay es el de 2024 archivado como 2025).
+- Pendiente anotado en el punto 463: abrir los ingresos con la Nota 19 (suma exacta con SIIS; esconde la venta de jugadores, 30 % de los ingresos en 2025).
+- Medición: ninguna tool cambió en esta entrada; `audit.js` P0 0 y P1 0 después de `publicar.mjs`.
+
 ## Versión 1139 — Deportes Tolima: alta y los diez estados de SIIS; la tool imprime 0 en el año que falta de un rubro [463 · siis-estado.mjs · deportestolima-co]
 - Alta de Deportes Tolima (`alta-club.mjs`, 15 de 16 campos ok) y sus diez estados de SIIS (2016 a 2025) bajados con `siis-estado.mjs`, con filas armadas y verificación sin IA. Tolima destapó un defecto de la tool: un rubro que SIIS informa en un solo año salía en blanco y `armar-a-mano` rechazaba la fila (2020 y 2023); ahora se imprime 0 en el año que falta.
 - Medición: idéntico (lote mediano) y veredicto GENERAL; el ensayo de Tolima del medidor `siis` no cambia.
