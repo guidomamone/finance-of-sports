@@ -4,7 +4,7 @@
 // ============================================================================
 import { readFileSync, existsSync, appendFileSync } from 'node:fs';
 import { dirname } from 'node:path';
-import { precedenteFamilia, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub, respuestasDonde, ajustesDe, esLineaJunta, datosCategoria, ARCHIVO_APRENDIDAS, padreDe, padreEnClub, padreEnDoc, mismoPadre, contextoFila, sinMarca, NOMBRE_CAT, claveFamilia, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE, UMBRAL_CLAUDE, norm, r6 } from './cargar.mjs';
+import { precedenteFamilia, pendientes, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub, respuestasDonde, ajustesDe, esLineaJunta, datosCategoria, ARCHIVO_APRENDIDAS, padreDe, padreEnClub, padreEnDoc, mismoPadre, contextoFila, sinMarca, NOMBRE_CAT, claveFamilia, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE, UMBRAL_CLAUDE, norm, r6 } from './cargar.mjs';
 
 // 4. La categoría de cada fila: la escalera, la cola humana y el escalón de materialidad.
 export function faseCategorias(ctx) {
@@ -295,7 +295,14 @@ export function faseCategorias(ctx) {
       if (!/^NO aceptar/.test(f.casoCola.propuesta)) f.casoCola.propuesta = `sin respuesta por defecto: mirá los datos. Si la categoría propuesta (${f.cat}) está bien, responder aceptar; si no, corregir --valor <categoría> con una de data/category-map.js`;
     }
   }
-  for (const f of enCola) if (f.casoCola) agregarCaso(f.casoCola);
+  // UNA PREGUNTA POR CLUB, ETIQUETA Y PROPUESTA: si otro documento del club ya tiene abierta la misma pregunta (misma clave, misma categoría propuesta), no se abre otra por cada año:
+  // el documento frena igual hasta que se conteste y esa respuesta vale para todos los del club (respuestaPorDetalle). Una respuesta `aceptar` solo vale con la misma propuesta, por eso se pide igual.
+  const abiertas = pendientes().filter((c) => c.etapa === 'cargar' && c.motivo === 'categoria' && c.pdf !== pdf && dirname(c.pdf) === dirname(pdf));
+  for (const f of enCola) if (f.casoCola) {
+    const igual = abiertas.find((c) => c.detalle === f.casoCola.detalle && c.categoriaPropuesta === f.casoCola.categoriaPropuesta);
+    if (igual) { P.avisos.push(`pregunta ya abierta (frena igual): "${f.label.slice(0, 40)}" -> ${f.cat} está en la cola por ${igual.pdf.split('/').pop()} (${igual.id}); su respuesta vale para este año`); continue; }
+    agregarCaso(f.casoCola);
+  }
   for (const f of filas) delete f.casoCola; // (no va al .carga.json)
   if (enCola.length) frena('categoria-en-cola', `${enCola.length} fila(s) esperan categoría en la cola humana (node tools/cola.mjs): ${enCola.slice(0, 5).map((f) => `"${f.label.slice(0, 40)}" -> ${f.cat} ${f.conf ?? ''}`).join('; ')}`);
   return { cj, aceptable, filas };

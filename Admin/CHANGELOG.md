@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1150 — cargar-categorias.mjs: una pregunta de categoría por club, etiqueta y propuesta [463 · cargar-categorias.mjs]
+- Antes, cada año de un club abría su propia pregunta de categoría aunque otro año ya tuviera abierta la misma (misma clave y misma categoría propuesta), porque se proponían varios años antes de que se contestara el primero. Ahora se abre una vez por club; los otros años frenan igual con el aviso «pregunta ya abierta» y, al contestarla, la respuesta les vale (`respuestaPorDetalle` ya era por club; una respuesta `aceptar` solo vale con la misma propuesta, por eso se compara).
+- Ensayo gratis sobre toda la historia de la cola: 1.032 de 3.407 preguntas de categoría (30 %) eran repeticiones del mismo club, etiqueta y propuesta (Portugal 262, Brasil 206, Grecia 184, Colombia 179). Con una cola vacía, tres años de Tolima abren un caso y no tres. Queda en el TODO que la memoria de categorías no ve la sección de la nota.
+- Medición: idéntico en el lote completo (el medidor compara propuestas, no las preguntas abiertas: el efecto se probó aparte con una cola de prueba); veredicto GENERAL; `audit.js` P0 0 y P1 0.
+
 ## Versión 1149 — club-siis.mjs: el camino de un club colombiano de SIIS en un comando [463 · club-siis.mjs · deportestolima-co · laequidad-co · aguilasdoradas-co]
 - `node tools/club-siis.mjs "<Club>"` (solo lee: no escribe ni llama a ninguna API) muestra por año si está hecho el estado de SIIS, la verificación, la cola, la liga, el estadio y sponsor, la carga y la línea del auditor, y si las notas abren; después lista lo que falta en orden, con el comando de cada paso y los subagentes (cola, estadio y sponsor, auditor). `--crear-lista` arma la lista del lote y `--rehacer-anio AAAA` da la cadena explícita para un año ya publicado. Sin nombre de club resume todos los de `siis-clubes.json`.
 - Al probarlo salió que Tolima, La Equidad y Águilas Doradas no tenían `clubId` en `tools/siis-clubes.json`, así que `siis-control` nunca los había comparado con SIIS; ya lo tienen y los 30 años cierran (sin avisos nuevos). Documentado en `Admin/PIPELINE.md`; registrado en `fos` y clasificado fuera del pipeline.

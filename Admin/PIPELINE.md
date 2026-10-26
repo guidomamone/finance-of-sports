@@ -818,6 +818,7 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
     vale para todos sus años, también si se contestó antes del alta;
   - una de perfil (`corregir --valor sí|no`) se guarda en el perfil y cierra los casos iguales de los otros años; el chequeo más
     cercano del club vale también fuera de la ventana de 5 años (con aviso), y no se vuelve a preguntar;
+  - una pregunta de categoría (misma clave, misma categoría propuesta) se abre UNA vez por club mientras esté pendiente: los otros años del club frenan igual con el aviso «pregunta ya abierta» y, cuando se contesta, la respuesta les vale (`cargar-categorias.mjs`; en la historia de la cola, 30 % de las preguntas de categoría eran repeticiones). Dos filas con la misma etiqueta en notas distintas se distinguen con el rubro entre paréntesis en la etiqueta (la memoria de categorías es por etiqueta y no ve la sección);
   - `descartar` en una de gestión cierra los otros pendientes de gestión del club;
   - una duda de localizar o extraer reformulada (mismo documento, etiquetas citadas y bloques) nace con la última respuesta;
   - una de categoría (aceptar o corregir, salvo `no_es_rubro`) cierra los casos pendientes del club con la misma etiqueta en otros años
