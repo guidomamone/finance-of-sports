@@ -217,7 +217,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2019: {
     leagueSize: 20,
-    sinDato: ["unionmagdalena-co"],
     wiki: {"t":"2019 Categoría Primera A season","lang":"en","at":"2026-10-02","n":20},
     clubs: [
       { id:"deportestolima-co", revenue:10.888, reportType:"official_balance_sheet",
@@ -237,6 +236,10 @@ window.RANKINGS["co-primeraA"] = {
       { id:"atleticobucaramanga-co", revenue:3.981, reportType:"official_balance_sheet",
         sourceId:"atleticobucaramanga-co-estados-financieros-2019",
         mix:[["Comercial / Sponsors",0.719],["Estadio",0.625],["Televisión",1.626],["Premios por competencias",0.468],["Venta de Jugadores",0.488],["Otros ingresos",0.054]] },
+      { id:"unionmagdalena-co", revenue:3.373, reportType:"official_balance_sheet",
+        sourceId:"unionmagdalena-co-siis-estado-2019",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",3.321],["Otros ingresos",0.052]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2018: {

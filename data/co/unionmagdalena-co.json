@@ -44,6 +44,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Union Magdalena/siis-estado-2017.pdf"
+    },
+    {
+      "id": "unionmagdalena-co-siis-estado-2019",
+      "club_id": "unionmagdalena-co",
+      "title": "Unión Magdalena S.A. — siis-estado-2019 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Union Magdalena/siis-estado-2019.pdf"
     }
   ],
   "management": [{"id":"sin_confirmar","name":"Sin confirmar","first_year":2018,"last_year":2018}],
@@ -273,6 +281,63 @@
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-59.188,"tax":-348.114,"gross_debt":1058.314,"cash":1494.693},
       "official_totals": {"revenue":7163.276,"expenses":6470.232,"net_result":285.742},
       "adjustments": {"revenue_basis":"full"}
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-12-31",
+      "currency": "COP",
+      "source_id": "unionmagdalena-co-siis-estado-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2019-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 10884.503,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":170.23,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-8928.69,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1517.279,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-51.148,"tax":-252.699,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":11054.733,"expenses":10445.969,"net_result":304.917},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":38.952},
+          {"label":"Costos financieros","amount":-90.1},
+          {"label":"Ingreso (gasto) por impuestos","amount":-252.699}
+        ],
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":10884.503,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 8928.69,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
+          }
+        ],
+        "included_in": {
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "player_impairment": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "match_organisation_expense": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        },
+        "revenue_basis": "full"
+      }
     },
     {
       "fiscal_year": 2025,
