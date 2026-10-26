@@ -6,6 +6,7 @@
 // otros recortes. Acá cada cifra imprime su definición, y cualquier sesión la repite sobre Admin/registros/cola-revision.jsonl (gratis, solo lee).
 //
 // USO (node tools/fos.mjs cola-historial <qué>)
+//   club <texto> [motivo]   la historia de un club en orden: cada caso y cada respuesta (decisión, causa, nota); `texto` se busca en el documento y en el detalle
 //   tipos         casos y respuestas por (etapa, motivo): cuántos, qué se respondió, cuántos terminaron `obsoleto`, y cuánto tardó en cerrarse solo
 //   categoria     preguntas de categoría con respuesta: % en que la sesión dejó la categoría propuesta, por confianza; precedente unánime (club / país / todo) y cuántas veces la respuesta fue distinta
 //   materialidad  de las preguntas de categoría, cuántas se contestarían solas con un umbral por pregunta y el error acumulado por documento (monto contra el total de su lado, por `sources[].document`)
@@ -94,9 +95,23 @@ function reaparece({ casos, resp }) {
   console.log(`claves con clave estable: ${g.size}; con más de un id: ${multi}; con alguna respuesta real: ${conReal} (todas iguales: ${iguales}); con un caso nacido después de una respuesta: ${reap}`);
 }
 
+// historia de un club: cada caso y cada respuesta en el orden en que se escribieron (fecha, motivo, detalle, documento, decisión, causa, nota). `texto` se busca en el documento y en el detalle, sin acentos ni mayúsculas.
+function historiaDeClub(texto, motivo) {
+  const L = readFileSync(resolve(ROOT, 'Admin/registros/cola-revision.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean);
+  const t = norm(texto); const casos = new Map(L.filter((r) => r.tipo === 'caso').map((r) => [r.id, r]));
+  const sirve = (c) => c && (norm(c.pdf).includes(t) || norm(c.detalle || '').includes(t)) && (!motivo || c.motivo === motivo);
+  let n = 0;
+  for (const r of L) {
+    const c = casos.get(r.id); if (!sirve(c)) continue; n++;
+    const doc = c.pdf.split('/').slice(2).join('/');
+    console.log(r.tipo === 'caso' ? `${String(r.ts).slice(0, 16)} CASO      ${r.id} ${c.motivo} ${c.detalle || ''} ${doc}` : `${String(r.ts).slice(0, 16)} respuesta ${r.id} ${r.decision} ${r.causa || ''} ${String(r.nota || '').slice(0, 90)}`);
+  }
+  if (!n) console.log(`Ninguna línea de la cola nombra «${texto}»${motivo ? ` con el motivo ${motivo}` : ''}.`);
+}
 const que = process.argv[2]; const datos = leer();
-if (que === 'tipos') tipos(datos);
+if (que === 'club') historiaDeClub(process.argv[3] || '', process.argv[4]);
+else if (que === 'tipos') tipos(datos);
 else if (que === 'categoria') categoria(datos);
 else if (que === 'materialidad') materialidad(datos);
 else if (que === 'reaparece') { globalThis.__cola = await import('./cola.mjs'); reaparece(datos); }
-else { console.error('Uso: node tools/fos.mjs cola-historial tipos | categoria | materialidad | reaparece'); process.exit(1); }
+else { console.error('Uso: node tools/fos.mjs cola-historial club <texto> [motivo] | tipos | categoria | materialidad | reaparece'); process.exit(1); }

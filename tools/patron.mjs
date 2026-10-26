@@ -4,6 +4,7 @@
 //
 // USO:
 //   node tools/patron.mjs --cambio "<qué hace>" --patron "<regex sobre los .md>" [--rango A..B] [--tools a.mjs,b.mjs] [--sesion unica] [--motivo "…"] [--escribir]
+//   Sin --patron ni --sin-documentos: el patrón (o el motivo) de cada tool cambiada sale de tools/patrones-tools.json (una lista corta; la tool que no esté frena y se suma ahí)
 //   --en-xhtml "<regex>"   en vez de --patron, para un cambio al lector de XHTML: cuenta los Clubes/**/*.xhtml (documentos y clubes) con la misma regla
 //   --revision propia|auditora   anota en el registro (campo `revision`) quién revisó el cambio; audit.js cuenta las `propia` sin una `auditora` posterior que cubra las mismas tools (P4 `revision-propia-pendiente`)
 //   --en <carpeta>   busca el patrón en los .js y .mjs de esa carpeta (p. ej. tools, para una condición nueva de audit.js) en vez de en Clubes/**/*.md
@@ -26,6 +27,7 @@ import { join, resolve, relative, sep } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { clasificar } from './clasificar-tools.mjs';
 import { validar } from './registro-esquema.js';
+import { patronDe } from './patrones-tools.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const git = (a, o = {}) => execFileSync('git', a, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28, ...o });
@@ -152,7 +154,7 @@ function principal() {
   if (A.includes('--revision') && !['propia', 'auditora'].includes(revision)) { console.error('--revision es «propia» (la sesión que hizo el cambio) o «auditora» (una revisión independiente)'); process.exit(1); }
   const enXhtml = v('--en-xhtml'); // el patrón se ve en el .xhtml del documento (lectores de XHTML), no en su .md
   if (A.includes('--en-xhtml') && (!enXhtml || enXhtml.startsWith('--'))) { console.error('--en-xhtml pide la regex que se busca en los .xhtml de Clubes/'); process.exit(1); }
-  const patron = enXhtml ?? v('--patron'), cambio = v('--cambio'), rango = v('--rango'), sinDoc = v('--sin-documentos');
+  let patron = enXhtml ?? v('--patron'); const cambio = v('--cambio'), rango = v('--rango'); let sinDoc = v('--sin-documentos');
   if (sinDoc !== undefined && (sinDoc.length < 15 || sinDoc.startsWith('--') || !cambio)) { console.error('--sin-documentos pide el motivo (15 caracteres o más: por qué el cambio no lee ningún documento) y --cambio "<qué hace>"'); process.exit(1); }
   if (!patron && !cambio) { console.error('Uso: node tools/patron.mjs --cambio "<qué hace>" --patron "<regex>" [--rango A..B] [--tools a.mjs] [--escribir]  (ver la cabecera)'); process.exit(1); }
   const [base, destino] = rango ? rango.split('..') : ['HEAD', null];
@@ -161,6 +163,11 @@ function principal() {
     const cambiados = rango ? git(['diff', '--name-only', rango, '--', 'tools']) : `${git(['diff', '--name-only', 'HEAD', '--', 'tools'])}\n${git(['ls-files', '--others', '--exclude-standard', 'tools'])}`;
     const C = clasificar(ROOT); // solo las tools del pipeline y sus módulos: un medidor o una tool de orden no es lo que juzga la regla
     nombres = [...new Set(cambiados.split('\n').map((f) => f.match(/^tools\/([^/]+\.(?:mjs|js))$/)?.[1]).filter((n) => n && ['tools', 'modulo'].includes(C.clase(n))))];
+  }
+  if (!patron && sinDoc === undefined && cambio && nombres.length) { // ni --patron ni --sin-documentos: el de la lista corta tools/patrones-tools.json
+    const p = patronDe(nombres);
+    if (p.falta) { console.error(`Sin --patron ni --sin-documentos y sin entrada en tools/patrones-tools.json para: ${p.falta.join(', ')}.`); process.exit(1); }
+    patron = p.patron ?? undefined; sinDoc = p.sinDocumentos ?? undefined; console.log(`(de tools/patrones-tools.json: ${patron ? `/${patron}/` : sinDoc})`);
   }
   const dif = nombres.length ? cambioDeCodigo(nombres, { base, destino }) : { agregado: [], quitado: [], hayCodigo: false };
   const cont = patron ? contar(patron, v('--en') || 'Clubes', enXhtml !== undefined ? '.xhtml' : undefined) : null;

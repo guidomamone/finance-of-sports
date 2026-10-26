@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1166 — fos cola-historial club y patrón del veredicto desde una lista corta [465 · cola-historial.mjs, patron.mjs, cerrar-tool.mjs, patrones-tools.mjs]
+- `fos cola-historial club <texto> [motivo]` imprime en orden cada caso y cada respuesta de un club (decisión, causa, nota), sin armar un script suelto.
+- `fos patron` y `fos cerrar-tool` sin `--patron` ni `--sin-documentos` toman el patrón (o el motivo) de cada tool cambiada de `tools/patrones-tools.json`; `cerrar-tool` frena en segundos, antes de medir, si a una tool le falta la entrada. La lista arranca con 8 tools y se suma una cuando hace falta.
+- Medición: ninguna es del pipeline (no piden medición); probado a mano con tools sueltas y con una sin entrada.
+
 ## Versión 1165 — fos git-resumen y aviso del hook al leer entera una tool grande [465 · git-resumen.mjs, post-tool.mjs]
 - `node tools/fos.mjs git-resumen`: `git status` sin las páginas generadas (club/, liga/, fuentes/, og/, los `-data.js`), un renglón con la cuenta de cada tipo y el resto archivo por archivo; evita las ~600 líneas de después de un alta.
 - `tools/hooks/post-tool.mjs` avisa (sin bloquear) cuando un `Read` trae entera una tool de más de 30 KB y manda a `fos mapa` y a `Read` con offset y limit; `.claude/settings.json` suma `Read` al matcher de PostToolUse (ningún chequeo ni mensaje existente cambia; `probar-post-tool.mjs` con cuatro casos nuevos, 16 de 16 ok; `probar-pre-tool.mjs`, 79 de 79).
