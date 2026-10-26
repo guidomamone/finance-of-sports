@@ -9,6 +9,7 @@ import { resolve } from 'node:path';
 import { derivado } from './rutas.mjs';
 import { registrarAprendidas, lineasAprendidas, MIN_PRECEDENTE, padreDe } from './memoria-categorias.mjs';
 import { abrirCache } from './respuestas-cache.mjs';
+import { reglaDeNota } from './reglas-categoria.mjs';
 import { readJsonl } from './categorizar-claude-backtest.mjs';
 import { catsDe, norm, allLines, precedenteFamilia, makeRetriever, readKey, categorizarConClaude } from './categorizar-claude.mjs';
 
@@ -70,7 +71,10 @@ export async function listos(opt) {
       // ESCALÓN 5a: "¿Claude ya respondió esto?" con clave carpeta del club + lado + etiqueta + NOTA. La carpeta y no
       // el id del club: Goiás tenía 'goias' (antes del alta) y 'goias-br' (después) con respuestas distintas para la misma etiqueta.
       const guardada = opt.sinCache ? null : cacheClaude.get(carpetaClub, r.lado, r.label, padreFila);
-      if (prec) rubros.push({ ...base, pendiente: false, ya: prec.cat, escalon: 0, precedenteDe: `${precProd ? 'sitio' : 'memoria-claude'}:${prec.via}` });
+      // La REGLA ESCRITA por nota (CONVENCIONES-DATOS, NOTA-CATEGORÍA) gana sobre el precedente y sobre Jev: ellos repetían el error de un año a los otros.
+      const regla = reglaDeNota({ clubId: rj.club, lado: r.lado, label: r.label, padre: padreFila });
+      if (regla) rubros.push({ ...base, pendiente: false, ya: regla.cat, escalon: 0, precedenteDe: `regla:${regla.nota || 'cualquiera'}/${regla.concepto}` });
+      else if (prec) rubros.push({ ...base, pendiente: false, ya: prec.cat, escalon: 0, precedenteDe: `${precProd ? 'sitio' : 'memoria-claude'}:${prec.via}` });
       else if (j && j.confidence >= opt.umbral) rubros.push({ ...base, pendiente: false, ya: j.choice, escalon: 1, jevConf: j.confidence });
       // Ya preguntado a Claude antes para este club y lado (tools/respuestas-cache.mjs): misma respuesta, sin pagar. Queda como escalón 2.
       else if (guardada) { rubros.push({ ...base, pendiente: false, ya: guardada.categoria, escalon: 2, confCache: guardada.confianza, motivo: guardada.motivo, jev: j?.choice, jevConf: j?.confidence, desdeCache: true }); nDesdeCache++; }

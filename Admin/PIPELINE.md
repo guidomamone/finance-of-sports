@@ -513,6 +513,7 @@ Mitigaciones:
 
 ```
  ESCALÓN 0  ajuste manual · respuesta de la cola para esa fila, o la de otro documento del club con la misma etiqueta ──── gana siempre, en cualquier fila
+ ESCALÓN R  la regla escrita por nota (`NOTA-CATEGORÍA` de `CONVENCIONES-DATOS.md`, `reglaDeNota()`): personal, viajes y «Diversos» de una nota de gastos de Colombia ──── gana sobre el precedente y Jev; solo 0 la pisa
  ETIQUETA REPETIDA la misma etiqueta (mismo lado) bajo dos o más renglones de categoría distinta del documento
             (PAOK "Αποσβέσεις" en fútbol y en administración; Olympiacos "Εισφορές" de jugadores y de otros empleados): el precedente sin
             contexto y la respuesta por etiqueta no deciden; solo el precedente del club con la misma nota, o la cola con la clave

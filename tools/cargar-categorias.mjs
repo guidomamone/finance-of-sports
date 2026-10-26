@@ -4,6 +4,7 @@
 // ============================================================================
 import { readFileSync, existsSync, appendFileSync } from 'node:fs';
 import { dirname } from 'node:path';
+import { reglaDeNota } from './reglas-categoria.mjs';
 import { precedenteFamilia, pendientes, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub, respuestasDonde, ajustesDe, esLineaJunta, datosCategoria, ARCHIVO_APRENDIDAS, padreDe, padreEnClub, padreEnDoc, mismoPadre, contextoFila, sinMarca, NOMBRE_CAT, claveFamilia, FINANCIERO_RE, IMPUESTO_GANANCIAS_RE, IMPUESTO_SOLO_RE, UMBRAL_CLAUDE, norm, r6 } from './cargar.mjs';
 
 // 4. La categoría de cada fila: la escalera, la cola humana y el escalón de materialidad.
@@ -30,6 +31,8 @@ export function faseCategorias(ctx) {
   // resultado), un "no_es_rubro" por debajo del umbral no la excluye en silencio: sigue el mismo camino que una categoría del otro lado
   // (precedente de su lado, o la genérica a la cola). Caso: Fortaleza 2019 "Total Costo de Ventas" 137.713 y 2020 52.995 (Claude, 0,6).
   const catDe = (label, lado, verificada = false, padre = null) => {
+    const rn = reglaDeNota({ clubId, lado, label, padre }); // la regla escrita por nota va antes que todo
+    if (rn) return { cat: rn.cat, conf: 1, escalon: 0, fuenteCat: `regla escrita por nota (${rn.titulo.slice(0, 40)}…, ${rn.concepto} en ${rn.nota || 'cualquier nota'})`, enLista: true };
     const k = norm(label);
     let c = (lado && porEtiqueta.get(`${k}|${lado}`)) || porEtiqueta.get(k);
     const noRubroDudoso = verificada && lado && c?.categoria === 'no_es_rubro' && (c.escalon === 2 && (incluirNoRubro || (c.confianza ?? 0) < UMBRAL_CLAUDE));

@@ -30,15 +30,37 @@ export function leerReglasCategoria() {
   const reglas = []; let actual = null;
   for (const [i, linea] of readFileSync(DOC, 'utf8').split('\n').entries()) {
     const h = linea.match(/^##\s+REGLA:\s*(.+)$/);
-    if (h) { actual = { titulo: h[1].trim(), prompt: [], promptItems: [], ejemplos: [] }; reglas.push(actual); continue; }
+    if (h) { actual = { titulo: h[1].trim(), prompt: [], promptItems: [], notas: [], ejemplos: [] }; reglas.push(actual); continue; }
     if (/^##\s/.test(linea)) { actual = null; continue; }
     if (!actual) continue;
     const p = linea.match(/^CATEGOR[ÍI]A \(prompt(?:,\s*([^)\s]+))?\):\s*(.+)$/);
     if (p) { actual.prompt.push(p[2].trim()); actual.promptItems.push({ texto: p[2].trim(), deporte: p[1] || null, linea: i + 1 }); continue; }
+    const n = linea.match(/^NOTA-CATEGOR[ÍI]A \((\w\w)\):\s*([^|]+)\|([^|]+)\|\s*([a-z_]+)\s*$/);
+    if (n) { actual.notas.push({ pais: n[1], nota: n[2].trim(), concepto: n[3].trim(), categoria: n[4], linea: i + 1 }); continue; }
     const e = linea.match(/^EJEMPLO-CATEGOR[ÍI]A:\s*(.+)$/);
     if (e) { const [club, lado, etiqueta, categoria] = e[1].split('|').map((x) => x.trim()); actual.ejemplos.push({ club, lado, etiqueta, categoria, linea: i + 1 }); }
   }
   return reglas;
+}
+
+// LA REGLA POR NOTA (`NOTA-CATEGORÍA (co): <nota> | <concepto> | <categoría>`, nota = ventas | administración | cualquiera): la categoría de una fila de GASTO que se decide por la
+// nota que la abre y por qué concepto es, no por su rótulo suelto. Gana sobre el precedente y sobre Jev (categorizar-claude-listos.mjs y catDe de cargar-categorias.mjs la
+// llaman antes); una respuesta de la cola o un ajuste manual de esa fila siguen ganando. La nota sale del renglón que la fila desglosa (`padre`, padreDe) o, si no, de la marca
+// «(Gastos de ventas)» de su etiqueta; si no se sabe cuál es (o son las dos), la regla no decide. Los conceptos son el vocabulario de las etiquetas (acá), la decisión es de la regla (el doc).
+const CONCEPTOS = { personal: /^(?:(?:gastos?|costos?)\s+)?(?:de(?:l)?\s+)?personal\b/, viaje: /^(?:(?:otros\s+)?gastos?\s+)?(?:de\s+)?viajes?\b/, diversos: /^(?:gastos?\s+)?divers[oa]s\b/ };
+const plano = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+let porNota = null; // las reglas leídas una vez por proceso
+export function notaDeFila(padre, label) {
+  const tipo = (t) => { const a = /administraci|administrativ/.test(t); const v = /gastos? de venta|deportiv|equipo (?:de futbol|profesional)/.test(t); return a === v ? null : a ? 'administración' : 'ventas'; };
+  return tipo(plano(padre)) || tipo(plano((String(label).match(/\(([^()]*(?:venta|administraci)[^()]*)\)\s*$/) || [])[1]));
+}
+export function reglaDeNota({ clubId, lado, label, padre }) {
+  if (lado !== 'expense' || !clubId) return null; const pais = String(clubId).split('-').pop();
+  const concepto = Object.keys(CONCEPTOS).find((c) => CONCEPTOS[c].test(plano(label).replace(/(?:\s*\([^()]*\))+\s*$/, '').trim())); if (!concepto) return null;
+  const nota = notaDeFila(padre, label);
+  porNota ??= leerReglasCategoria();
+  for (const r of porNota) for (const x of r.notas) if (x.pais === pais && x.concepto === concepto && (x.nota === 'cualquiera' || x.nota === nota)) return { cat: x.categoria, titulo: r.titulo, linea: x.linea, nota, concepto };
+  return null;
 }
 
 // Las frases para el prompt de categorizar-claude.mjs (solo texto: no importa nada del categorizador, que importa esto).
@@ -74,6 +96,12 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const clubs = readFileSync(resolve(ROOT, 'data', 'clubs.js'), 'utf8');
   const ya = existsSync(APRENDIDAS) ? readFileSync(APRENDIDAS, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : [];
   const faltan = [];
+  for (const r of reglas) for (const x of r.notas) { // NOTA-CATEGORÍA: nota, concepto y categoría de gasto válidos
+    const q = `L${x.linea} (${r.titulo.slice(0, 50)})`; const t = categoriasDeDeporte('futbol');
+    if (!['ventas', 'administración', 'cualquiera'].includes(x.nota)) errores.push(`${q}: la nota «${x.nota}» no es ventas | administración | cualquiera`);
+    if (!CONCEPTOS[x.concepto]) errores.push(`${q}: el concepto «${x.concepto}» no es ${Object.keys(CONCEPTOS).join(' | ')}`);
+    if (!t?.expense.has(x.categoria)) errores.push(`${q}: «${x.categoria}» no es una categoría de gasto de fútbol`);
+  }
   for (const r of reglas) for (const e of r.ejemplos) {
     const q = `L${e.linea} (${r.titulo.slice(0, 50)})`;
     if (!e.club || !e.lado || !e.etiqueta || !e.categoria) { errores.push(`${q}: el ejemplo necesita club | lado | etiqueta | categoría`); continue; }
