@@ -108,6 +108,13 @@ const nombres = cambiadas.filter((n) => ['tools', 'modulo'].includes(C.clase(n))
 const modulosCambiados = nombres.filter((n) => !T.tools[n]);
 if (modulosCambiados.length) console.log(`Módulos que usan tools del pipeline (se miden con los medidores de quienes los usan): ${modulosCambiados.join(', ')}`);
 if (!nombres.length) { console.log('Ninguna tool del pipeline (ni módulo que usen) cambió respecto de ' + base + ': nada que medir.'); process.exit(0); }
+// El chequeo de nombres del veredicto (fos patron), en seco y ANTES de gastar la medición: si el código agregado nombra un club, un año o una ruta de Clubes/, el veredicto lo rechaza igual al final.
+if (base === 'HEAD' && existsSync(resolve(ROOT, 'tools/patron.mjs')) && existsSync(resolve(ROOT, 'data/clubs.js'))) {
+  const { cambioDeCodigo: cambioDe, nombresEn } = await import('./patron.mjs');
+  const cambio = cambioDe(nombres, { base: baseRev });
+  const halladas = cambio.hayCodigo ? nombresEn(cambio.agregado, (flag('--ignorar-nombre') || '').split(',').filter(Boolean)) : [];
+  if (halladas.length) problemas.push(`El código agregado nombra cosas que una tool general no puede nombrar (${halladas.length}); el veredicto de fos patron la rechazaría. Sacalas del código (a un archivo de configuración o a un parámetro) antes de medir:\n${halladas.slice(0, 8).map((x) => `  ${x.motivo}: ${x.linea.trim().slice(0, 140)}`).join('\n')}`);
+}
 
 // ---- solo comentarios ----------------------------------------------
 // Si el código sin comentarios de cada tool es el de la base, no hay nada que ejercitar con un lote: la prueba es la comparación
@@ -165,7 +172,7 @@ while (hayLista && faltan(nivelFinal).length && nivelFinal !== 'completo') {
 }
 if (SOLO_CHICO) nivelFinal = 'chico';
 console.log(`Tools: ${nombres.join(', ')}\nMedidores: ${medidores.join(', ')}\n` + (hayLista ? `Lote: chico primero, hasta ${nivelFinal} (mínimo por tabla: ${minimo}); ${afectadas.length} familia(s) afectada(s) de ${total.size}.` : 'Lote: ningún medidor usa lista; miden el sitio entero.'));
-if (A.includes('--ensayo')) { process.exit(0); }
+if (A.includes('--ensayo')) { if (problemas.length) { console.error(`\n${problemas.join('\n\n')}`); process.exit(1); } process.exit(0); }
 
 // ---- candado ------------------------------------------------------
 // Mientras mide, deja Admin/mediciones/pipeline/_corriendo con su pid: el hook de pre-tool rechaza editar un archivo trackeado (esta tool lo revierte) hasta que termine.
@@ -189,7 +196,7 @@ const SENSIBLE = /^(data|Generados|Clubes|js|css|Admin\/registros)\b|^index\.htm
 const propio = (p) => p.startsWith('Admin/mediciones/pipeline') || p === 'Admin/registros/mediciones-pipeline.jsonl' || p === 'Admin/registros/auditoria-proceso.jsonl' || nombres.some((n) => p === `tools/${n}`);
 const estado = () => git('status', '--porcelain', '-uall').split('\n').filter(Boolean).filter((l) => !propio(l.slice(3).replace(/^"|"$/g, '')));
 const sucios = estado().filter((l) => SENSIBLE.test(l.slice(3)));
-if (sucios.length) problemas.push(`Hay cambios sin commitear en datos o registros; el antes y el después se miden sobre los mismos datos. Commitealos o descartalos primero:\n  ${sucios.join('\n  ')}`);
+if (sucios.length) problemas.push(`Hay cambios sin commitear en datos o registros; el antes y el después se miden sobre los mismos datos. Commitealos o descartalos primero (un commit de solo datos y registros pasa el hook aunque haya tools sin medir, con \`git add <esas rutas>\`, sin \`-A\` ni \`.\`):\n  ${sucios.join('\n  ')}`);
 if (problemas.length) { console.error(problemas.join('\n\n')); process.exit(1); }
 const estadoInicial = new Set(estado());
 function limpiarEfectos(med) {

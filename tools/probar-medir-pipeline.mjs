@@ -156,6 +156,19 @@ w('Admin/mediciones/pipeline/_corriendo', JSON.stringify({ pid: 2147483000 }));
 caso('un candado de un pid muerto no cuenta', escritor().escribio);
 rmSync(join(T, 'Admin/mediciones/pipeline/_corriendo'), { force: true });
 
+// 10. el chequeo de nombres del veredicto corre antes de medir y frena: el código que nombra una ruta de Clubes/ no llega a la medición
+volver();
+mkdirSync(join(T, 'data'), { recursive: true });
+w('data/clubs.js', "  'clubfalso-xx':{name:'Club Falso Ejemplo'},\n");
+g('add', '-A'); g('commit', '-q', '-m', 'clubs');
+w('tools/fake-tool.mjs', "export const VALOR = 1; export const RUTA = 'Clubes/Pais/Club/x.pdf';\n");
+r = medir('--ensayo');
+caso('el código que nombra una ruta de Clubes/ frena antes de medir y dice la línea', r.status === 1 && /nombra cosas/.test(r.out) && /ruta de Clubes\//.test(r.out), r.out.slice(-300));
+w('tools/fake-tool.mjs', "export const VALOR = 1; export const OTRO = 2;\n");
+r = medir('--ensayo');
+caso('el código sin nombres pasa el chequeo', r.status === 0 && !/nombra cosas/.test(r.out), r.out.slice(-300));
+volver();
+
 rmSync(T, { recursive: true, force: true });
 console.log(mal ? `\n${mal} caso(s) MAL` : '\ntodos los casos ok');
 process.exit(mal ? 1 : 0);

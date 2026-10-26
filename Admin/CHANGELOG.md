@@ -20,9 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
-## Versión 1135 — Punto 465: medir y commitear una tool sin tropezar [465]
-- Se abrió el punto 465 (Pipeline) con tres mejoras que salieron de cargar `siis-estado.mjs`: el chequeo de nombres antes de medir, que el hook de commit mire solo lo que va en el commit, y un comando que ordene los pasos. Ningún cambio a tools todavía.
-- Medición: solo TODO y CHANGELOG; no cambió ninguna tool.
+## Versión 1135 — Medir y commitear una tool sin tropezar: nombres antes de medir, el hook mira lo que va en el commit y un comando que ordena los pasos [465 · medir-pipeline.mjs, cerrar-tool.mjs, pre-tool.mjs]
+- `medir-pipeline.mjs` corre el chequeo de nombres del veredicto (en seco) antes de gastar la medición y frena en segundos si el código agregado nombra un club, un año o una ruta de `Clubes/` (también con `--ensayo`); su mensaje de «datos sin commitear» dice cómo commitearlos sin `-A` ni `.`.
+- El hook de commit (`tools/hooks/pre-tool.mjs`) entiende las rutas y las exclusiones de `git add` en el mismo comando (`git add -A Admin/registros`, `git add -A -- . ':!tools'`): un commit de solo datos y registros pasa aunque haya tools sin medir; `git add .` y `-A` sin rutas siguen mirando todo el árbol. `FOS_ARBOL` lo simula en la prueba.
+- `tools/cerrar-tool.mjs` (`fos cerrar-tool`) corre en orden el chequeo en seco, la medición, el veredicto y la lista de lo que falta; no commitea. Regla en `Admin/PLANTILLA-SESION.md`.
+- Medición: `probar-pre-tool.mjs` 79 casos ok (5 nuevos) y `probar-medir-pipeline.mjs` todos ok (2 nuevos); ninguna tool del pipeline cambió (las tres son de orden o de prueba), así que `medir pipeline` dice «nada que medir».
 
 ## Versión 1134 — La tool siis-estado.mjs: el estado de resultados y el balance de SIIS como documento del pipeline [463 · 464 · siis-estado.mjs, familias-docs.mjs, inventario-transcripciones.mjs]
 - `tools/siis-estado.mjs` baja de SIIS (Colombia) el estado de resultados y el balance de un club y deja `siis-estado-AAAA.md` (fiel), `.json` y `.pdf` en su carpeta, con 5 compuertas aritméticas (de unos 340 club-años solo Independiente Santa Fe falla en 5), más las filas armadas con `armar-a-mano.mjs`: localizar y extraer cuestan US$ 0, y verificar cierra el resultado de Tolima 2025. `--inventario` genera `Admin/sourcing/Colombia/siis-inventario.md`. El país y la moneda salen de `tools/siis-clubes.json`.
