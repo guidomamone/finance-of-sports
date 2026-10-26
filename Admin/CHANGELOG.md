@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1156 — club-siis.mjs: reexpresiones de comparativo que se contestan solas y la lista de clubes con veredicto [465 · club-siis.mjs]
+- `--avanzar` contesta las preguntas `anio-vecino` y `no-cierra` de un par de estados de SIIS solo si el resultado neto del año es idéntico en su estado y en el comparativo del siguiente; si cambia, queda para una persona. Corre el lote, contesta y lo repite para que el año no quede frenado.
+- `club-siis` sin nombre imprime el veredicto de `--evaluar` de cada club y ordena de menos a más años por cargar.
+- Medición: `club-siis.mjs` no es del pipeline (no pide medición); la lógica de reexpresión se probó con casos falsos, no con un caso real nuevo.
+
 ## Versión 1155 — audit.js más rápido: de 22 a 11 segundos [465 · audit-base.js · audit-chequeos-2.js · comparar-sin-comentarios.js]
 - `audit.js` corre en cada año cargado, cada commit, cada publicar y cada medición. Los ~20 `--check` hijos de `checkGenerados` se lanzan a la vez (`execJuntos` en `audit-base.js`, archivos temporales y sueño corto) y `comparar-sin-comentarios.js` recuerda en la carpeta temporal los comentarios de los `data/*-data.js` ya vistos (se descarta si cambia el escáner). Mismos chequeos y mensajes: P0 0, P1 0, P2 2, P3 10, P4 63 antes y después. Contestar la cola de categoría por precedente de otros clubes se midió y no entró (`HALLAZGOS-pipeline.md`).
 - Medición: idéntico en el medidor `audit` (lote chico: el sitio entero, sin lista); veredicto GENERAL.

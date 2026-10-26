@@ -53,7 +53,15 @@ function estadoDe(carpeta) {
 const cmd = (s) => `    ${s}`;
 
 if (!club) {
-  for (const k of Object.keys(cfg.clubes)) { const e = estadoDe(k); if (e.error || !e.filas.length) continue; const f = e.filas; const hechos = f.filter((x) => x.cargado).length; console.log(`${k.padEnd(26)} ${hechos}/${f.length} años cargados${e.c.clubId ? '' : ' · sin alta'}${f.some((x) => x.cola) ? ` · ${f.reduce((n, x) => n + x.cola, 0)} en la cola` : ''}`); }
+  // una línea por club, con el veredicto de --evaluar (solo para los que tienen años por cargar), de menos a más años por cargar: arranca por el que menos le falta
+  const filasLista = [];
+  for (const k of Object.keys(cfg.clubes)) {
+    const e = estadoDe(k); if (e.error || !e.filas.length) continue; const f = e.filas; const hechos = f.filter((x) => x.cargado).length; const faltan = f.length - hechos;
+    let ver = '';
+    if (faltan) { try { ver = ` · ${(execFileSync('node', [join(ROOT, 'tools/club-siis.mjs'), k, '--evaluar'], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).match(/· (CARGAR|REVISAR|DESCARTAR)/) || [, '?'])[1]}`; } catch { ver = ' · ?'; } }
+    filasLista.push({ faltan, txt: `${k.padEnd(26)} ${hechos}/${f.length} años cargados${e.c.clubId ? '' : ' · sin alta'}${ver}${f.some((x) => x.cola) ? ` · ${f.reduce((n, x) => n + x.cola, 0)} en la cola` : ''}` });
+  }
+  for (const l of filasLista.sort((a, b) => (a.faltan === 0) - (b.faltan === 0) || a.faltan - b.faltan)) console.log(l.txt);
   process.exit(0);
 }
 const e = estadoDe(club); if (e.error) { console.error(e.error); process.exit(1); }
@@ -127,6 +135,22 @@ if (A.includes('--avanzar')) {
     const casos = pendientes().filter((p) => p.pdf.startsWith(`Clubes/${cfg.pais}/${club}`)); // el alta frena con una pregunta del nombre legal (SIIS a veces lo imprime con errores): va a la cola
     if (casos.length) console.log(`\nPregunta(s) en la cola del club: ${casos.map((p) => p.id).join(', ')}. Contestala con el nombre bien escrito y volvé a correr --avanzar:\n  node tools/cola.mjs --responder <id> corregir --valor "<nombre legal>" --nota "…" --evidencia "Clubes/${cfg.pais}/${club}/siis-estado-AAAA.md:3" --seguridad alta --causa lectura-del-documento`);
     process.exit(1); } };
+  // Reexpresión de comparativo de SIIS: el estado de un año imprime el año anterior con otra cifra (un renglón reclasificado). Las preguntas de verificación (anio-vecino y no-cierra) se contestan solas SOLO si el resultado
+  // neto de ese año es idéntico en su propio estado y en el comparativo del siguiente (se movió plata entre renglones, no cambió el resultado); cada año se carga como lo imprimió su propio estado (regla de Colombia).
+  // Si el resultado cambia es una reexpresión de verdad y la contesta una persona. Solo para los estados de SIIS (siis-estado-AAAA.md).
+  const contestarReexpresiones = () => {
+    const gan = (a, col) => { const md = join(ROOT, 'Clubes', cfg.pais, club, `siis-estado-${a}.md`); if (!existsSync(md)) return null; const L = readFileSync(md, 'utf8').split('\n'); const i = L.findIndex((l) => /^\| Ganancia \(pérdida\) \|/.test(l)); if (i < 0) return null; const v = L[i].split('|')[col].trim(); return { v, md: `Clubes/${cfg.pais}/${club}/siis-estado-${a}.md`, linea: i + 1 }; };
+    let n = 0; const aparte = [];
+    for (const p of pendientes().filter((x) => x.etapa === 'verificar' && ['anio-vecino', 'no-cierra'].includes(x.motivo) && x.pdf.startsWith(`Clubes/${cfg.pais}/${club}/siis-estado-`))) {
+      const y = (String(p.que).match(/ingresos de (\d{4})/) || [])[1]; const anios = new Set([...String(p.que).matchAll(/siis-estado-(\d{4})\.pdf/g)].map((m) => m[1]).concat((p.pdf.match(/siis-estado-(\d{4})\.pdf/) || [])[1], (String(p.que).match(/documento del año (\d{4})/) || [])[1]).filter(Boolean));
+      if (!y || anios.size !== 2 || !anios.has(y) || !anios.has(String(Number(y) + 1))) { aparte.push(`${p.id} (no es un par de años consecutivos)`); continue; }
+      const propio = gan(y, 2), comparativo = gan(String(Number(y) + 1), 3);
+      if (!propio || !comparativo || propio.v !== comparativo.v) { aparte.push(`${p.id} (el resultado de ${y} cambia: ${propio?.v} en su estado, ${comparativo?.v} en el de ${Number(y) + 1}: reexpresión de verdad, la contesta una persona)`); continue; }
+      run(['tools/cola.mjs', '--responder', p.id, 'aceptar', '--nota', `Reclasificación del comparativo de SIIS: el resultado de ${y} es idéntico (${propio.v}) en el estado de ${y} y en el comparativo de ${Number(y) + 1}; cada año se carga como lo imprimió su propio estado.`, '--evidencia', `${comparativo.md}:${comparativo.linea}`, '--seguridad', 'alta', '--causa', 'regla-escrita']); n++;
+    }
+    if (aparte.length) console.log(`\nReexpresiones que NO se contestan solas: ${aparte.join('; ')}`);
+    return n;
+  };
   let s = estadoDe(club);
   if (s.filas.some((f) => !f.siis)) { run(['tools/siis-estado.mjs', '--club', club, '--todos', '--escribir']); s = estadoDe(club); }
   if (!s.c.clubId) {
@@ -145,18 +169,29 @@ if (A.includes('--avanzar')) {
     let lista = listas.reverse().find((x) => readFileSync(join(ROOT, 'Admin/lotes', x), 'utf8').includes(marca)); lista = lista && `Admin/lotes/${lista}`;
     if (!lista) { const salida = execFileSync('node', [join(ROOT, 'tools', 'lote-nuevo.mjs'), `${club} SIIS`], { cwd: ROOT, encoding: 'utf8' }); lista = (salida.match(/Admin\/lotes\/[\w.-]+\.txt/) || [])[0]; const { appendFileSync } = await import('node:fs'); appendFileSync(join(ROOT, lista), sinCargar.map((a) => `${marca}${a}.pdf`).join('\n') + '\n'); console.log(`\nLista creada: ${lista}`); } else console.log(`\nLista: ${lista}`);
     run(['tools/inventario-transcripciones.mjs', '--solo', `Clubes/${cfg.pais}/${club}`]);
-    const faltaJuicio = []; const f2 = estadoDe(club); const g = !!s.c.clubId && new RegExp(`'${s.c.clubId}'\\s*:`).test(readFileSync(join(ROOT, `data/gestiones/${iso}.js`), 'utf8'));
-    if (f2.filas.some((f) => !f.liga)) faltaJuicio.push('liga de cada año'); if (f2.filas.some((f) => !f.ctx && !f.cargado)) faltaJuicio.push('estadio y sponsor (subagente)'); if (!g) faltaJuicio.push('gestiones (subagente)'); const colaVigente = f2.cola.filter((p) => !(g && p.motivo === 'gestion')); // con la gestión ya cargada, las preguntas de gestión viejas no frenan: la corrida de carga las cierra como obsoletas
-    if (colaVigente.length) faltaJuicio.push(`${colaVigente.length} preguntas de la cola`);
+    const g = !!s.c.clubId && new RegExp(`'${s.c.clubId}'\\s*:`).test(readFileSync(join(ROOT, `data/gestiones/${iso}.js`), 'utf8'));
+    const juicioFaltante = () => { // lo que todavía pide a una persona o a un subagente, con el estado de ahora
+      const f = []; const f2 = estadoDe(club);
+      if (f2.filas.some((x) => !x.liga)) f.push('liga de cada año'); if (f2.filas.some((x) => !x.ctx && !x.cargado)) f.push('estadio y sponsor (subagente)'); if (!g) f.push('gestiones (subagente)');
+      const colaVigente = f2.cola.filter((p) => !(g && p.motivo === 'gestion')); // con la gestión ya cargada, las preguntas de gestión viejas no frenan: la corrida de carga las cierra como obsoletas
+      if (colaVigente.length) f.push(`${colaVigente.length} preguntas de la cola`);
+      return f;
+    };
     const lote = ['tools/lote.mjs', '--lista', lista, '--ejecutar'];
+    contestarReexpresiones();
     if (!EJECUTAR) console.log(`\nNo se gastó API. El lote de categorización (unos US$ 0,03 por documento): node ${lote.join(' ')}   (--avanzar --ejecutar lo corre)`);
-    else if (CARGAR && faltaJuicio.length) { console.log(`\nNo se carga: falta ${faltaJuicio.join(', ')}. Corre el lote sin --cargar.`); run(lote); }
-    else if (CARGAR) { run([...lote, '--cargar']); run(['tools/publicar.mjs']); } else run(lote);
+    else {
+      run(lote); if (contestarReexpresiones()) run(lote); // las preguntas de verificación nacen en el lote: se contestan y se repite para que el año no quede frenado
+      const faltaJuicio = juicioFaltante();
+      if (CARGAR && faltaJuicio.length) console.log(`\nNo se carga: falta ${faltaJuicio.join(', ')}.`);
+      else if (CARGAR) { run([...lote, '--cargar']); run(['tools/publicar.mjs']); }
+    }
   }
   // las preguntas de gestión que quedaron de antes de cargar la gestión del club ya no tienen objeto: se contestan solas (la gestión está en data/gestiones y la corrida de carga la tomó)
   if (s.c.clubId && new RegExp(`'${s.c.clubId}'\\s*:`).test(readFileSync(join(ROOT, `data/gestiones/${iso}.js`), 'utf8'))) {
     for (const p of estadoDe(club).cola.filter((x) => x.motivo === 'gestion')) run(['tools/cola.mjs', '--responder', p.id, 'aceptar', '--nota', 'La gestión del club ya está cargada en data/gestiones/co.js; la pregunta es de antes de cargarla.', '--evidencia', 'ninguna', '--seguridad', 'alta', '--causa', 'regla-escrita']);
   }
+  contestarReexpresiones();
   console.log('\n=== lo que falta ==='); process.stdout.write(execFileSync('node', [join(ROOT, 'tools/club-siis.mjs'), club], { cwd: ROOT, encoding: 'utf8' }));
   process.exit(0);
 }
