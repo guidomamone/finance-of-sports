@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1159 — publicar.mjs avisa que el commit va en otra llamada de Bash [465 · publicar.mjs, medir-pipeline.mjs]
+- Al terminar, `publicar.mjs` imprime que `git commit` va en OTRA llamada: el hook de commit audita antes de ejecutar el comando entero y los dos juntos fallan por `asset-v-sin-subir`. El ensayo de `medir-pipeline` ya no sugiere escalar al completo cuando los medidores no usan lista.
+- Medición: `publicar.mjs` (medidores audit y escribir, lote chico) idéntico; veredicto GENERAL.
+
 ## Versión 1158 — Tiempo estimado en club-siis --avanzar y en medir-pipeline --ensayo [465 · club-siis.mjs, medir-pipeline.mjs, duraciones-mediciones.mjs, duraciones-lib.mjs]
 - `club-siis --avanzar` imprime «Tiempo estimado» (~1 min por año el lote, otro tanto la carga, ~25 s publicar, ~10 s bajar un estado) y, si pasa de 8 minutos, no corre nada: dice el comando exacto para correrlo en segundo plano con `--en-segundo-plano` (en primer plano la Bash se corta a los 10 minutos).
 - `medir-pipeline` imprime el tiempo estimado de la medición (mediana de cada medidor y nivel, antes y después); para `cargar.mjs` da ~14 min, lo que mide de verdad. La lectura de las duraciones pasó a `duraciones-lib.mjs`, que usan también `fos duraciones` (salida idéntica) y el ensayo.

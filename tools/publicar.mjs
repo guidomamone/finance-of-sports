@@ -50,4 +50,4 @@ let r;
 try { r = publicarCambios(snap, [], escritos); }
 catch (e) { const rv = revertir(snap, []); console.error(`${e.message}\nSe revirtió lo que cambió (${rv.restaurados} restaurados, ${rv.borrados} borrados).`); process.exit(1); }
 if (!r.ok) { console.error(`NO publicado: ${r.motivo}`); process.exit(1); }
-console.log(`Publicado. ${escritos.join('; ') || 'ASSET_V ya estaba subido'}. Auditoría: ${r.audit}.`);
+console.log(`Publicado. ${escritos.join('; ') || 'ASSET_V ya estaba subido'}. Auditoría: ${r.audit}.\nAhora commiteá en OTRA llamada de Bash: el hook de commit audita antes de ejecutar el comando entero, así que \`node tools/publicar.mjs\` y \`git commit\` juntos fallan por asset-v-sin-subir.`);

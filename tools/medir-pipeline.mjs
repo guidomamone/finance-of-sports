@@ -177,7 +177,7 @@ console.log(`Tools: ${nombres.join(', ')}\nMedidores: ${medidores.join(', ')}\n`
 {
   const med = new Map((duraciones() || []).map((f) => [f.k, f.mediana])); let seg = 0; const sinDato = [];
   ['chico', ...NIVELES.slice(1, NIVELES.indexOf(nivelFinal) + 1)].forEach((nivel, k) => medidores.filter((m) => k === 0 || T.medidores[m].usaLista).forEach((m) => { const s = med.get(`${m} · ${nivel}`); if (s == null) sinDato.push(`${m} · ${nivel}`); else seg += 2 * s; }));
-  console.log(`Tiempo estimado de la medición: ~${Math.max(1, Math.round(seg / 60))} min${sinDato.length ? ` (sin dato de ${sinDato.join(', ')}: más)` : ''}; correla en segundo plano${NIVELES.indexOf(nivelFinal) < NIVELES.length - 1 ? ' (si el mediano muestra diferencias escala al completo y suma lo del completo)' : ''}.`);
+  console.log(`Tiempo estimado de la medición: ~${Math.max(1, Math.round(seg / 60))} min${sinDato.length ? ` (sin dato de ${sinDato.join(', ')}: más)` : ''}; correla en segundo plano${hayLista && NIVELES.indexOf(nivelFinal) < NIVELES.length - 1 ? ' (si el mediano muestra diferencias escala al completo y suma lo del completo)' : ''}.`);
 }
 if (A.includes('--ensayo')) { if (problemas.length) { console.error(`\n${problemas.join('\n\n')}`); process.exit(1); } process.exit(0); }
 
