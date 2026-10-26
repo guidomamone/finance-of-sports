@@ -1076,6 +1076,7 @@ window.SPONSORS_INDICE = [
   ["girosbet","GirosBET",["c"]],
   ["givec","GIVEC",["c"]],
   ["givova","Givova",["m"]],
+  ["glacial","Glacial",["c"]],
   ["glassdrive","Glassdrive",["c"]],
   ["gleeson-homes","Gleeson Homes",["c"]],
   ["globalcaja","Globalcaja",["c"]],

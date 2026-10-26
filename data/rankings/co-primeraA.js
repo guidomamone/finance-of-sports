@@ -114,9 +114,11 @@ window.RANKINGS["co-primeraA"] = {
   },
   2018: {
     leagueSize: 20,
-    sinDato: ["deportestolima-co"],
     wiki: {"t":"2018 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
+      { id:"deportestolima-co", revenue:8.047, reportType:"official_balance_sheet",
+        sourceId:"deportestolima-co-siis-estado-2018",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",8.047]] },
       { id:"oncecaldas-co", revenue:7.571, reportType:"official_balance_sheet",
         sourceId:"oncecaldas-co-estados-financieros-2018",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.597],["Otros ingresos",0.974]],

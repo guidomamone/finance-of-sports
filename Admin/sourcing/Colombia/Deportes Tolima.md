@@ -57,3 +57,5 @@ Color de marca: #981A26 — vinotinto y dorado (infobox es.wikipedia: Colores #9
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2016 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2016.pdf` (sourceId `deportestolima-co-siis-estado-2016`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2017 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2017.pdf` (sourceId `deportestolima-co-siis-estado-2017`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2018 desde `Clubes/Colombia/Deportes Tolima/siis-estado-2018.pdf` (sourceId `deportestolima-co-siis-estado-2018`).
