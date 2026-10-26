@@ -80,3 +80,5 @@ Estados financieros en disco ahora: 5 ejercicios (2018, 2022-2025), cada uno con
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2022 desde `Clubes/Colombia/Union Magdalena/siis-estado-2022.pdf` (sourceId `unionmagdalena-co-siis-estado-2022`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2023 desde `Clubes/Colombia/Union Magdalena/siis-estado-2023.pdf` (sourceId `unionmagdalena-co-siis-estado-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2024 desde `Clubes/Colombia/Union Magdalena/siis-estado-2024.pdf` (sourceId `unionmagdalena-co-siis-estado-2024`).
