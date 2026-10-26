@@ -115,7 +115,7 @@
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":409.046,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-43361.762,"disclosure":"aggregated"},
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-43361.762,"disclosure":"aggregated"},
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-1856.236,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2326.954,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1542.121,"disclosure":"aggregated"},
@@ -144,6 +144,13 @@
         ],
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":48833.823,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 43361.762,
+            "reason": "Costo de ventas es 88% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
           {"line":"Gastos de ventas","side":"expense","amount":1856.236,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "revenue_basis": "full"
@@ -168,7 +175,7 @@
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":1218.366,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-40478.922,"disclosure":"aggregated"},
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-40478.922,"disclosure":"aggregated"},
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-2465.794,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2262.037,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1470.712,"disclosure":"aggregated"},
@@ -197,6 +204,13 @@
         ],
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":45125.595,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 40478.922,
+            "reason": "Costo de ventas es 87% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
           {"line":"Gastos de ventas","side":"expense","amount":2465.794,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "revenue_basis": "full"
@@ -221,7 +235,7 @@
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":1421.984,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-39237.381,"disclosure":"aggregated"},
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-39237.381,"disclosure":"aggregated"},
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-1969.515,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1901.882,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-405.268,"disclosure":"aggregated"},
@@ -246,6 +260,13 @@
         "extra_rows": [{"label":"Ingresos financieros","amount":1380.054},{"label":"Costos financieros","amount":-3782.717}],
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":39177.724,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 39237.381,
+            "reason": "Costo de ventas es 90% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
           {"line":"Gastos de ventas","side":"expense","amount":1969.515,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "revenue_basis": "full"
@@ -270,7 +291,7 @@
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":458.137,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-36659.123,"disclosure":"aggregated"},
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-36659.123,"disclosure":"aggregated"},
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-1984.743,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2017.634,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-757.487,"disclosure":"aggregated"},
@@ -296,6 +317,13 @@
         "extra_rows": [{"label":"Ingresos financieros","amount":827.075},{"label":"Costos financieros","amount":-3287.964}],
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":30927.387,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 36659.123,
+            "reason": "Costo de ventas es 89% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
           {"line":"Gastos de ventas","side":"expense","amount":1984.743,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "revenue_basis": "full"
@@ -321,7 +349,7 @@
         {"label":"Otras ganancias (pérdidas)","category":"other_revenue","subcategory":"other_income","amount":96.153,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-26799.565,"disclosure":"aggregated"},
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-26799.565,"disclosure":"aggregated"},
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-1114.341,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1394.901,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-469.737,"disclosure":"aggregated"},
@@ -350,6 +378,13 @@
         ],
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":32405.213,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 26799.565,
+            "reason": "Costo de ventas es 90% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
           {"line":"Gastos de ventas","side":"expense","amount":1114.341,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "revenue_basis": "full"
@@ -375,7 +410,7 @@
         {"label":"Otras ganancias (pérdidas)","category":"other_revenue","subcategory":"other_income","amount":285.491,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-27752.616,"disclosure":"aggregated"},
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-27752.616,"disclosure":"aggregated"},
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-1433.814,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1607.733,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-599.064,"disclosure":"aggregated"},
@@ -404,6 +439,13 @@
         ],
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":25429.816,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 27752.616,
+            "reason": "Costo de ventas es 88% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
           {"line":"Gastos de ventas","side":"expense","amount":1433.814,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "revenue_basis": "full"
@@ -428,7 +470,7 @@
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":774.729,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-47892.53,"disclosure":"aggregated"},
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-47892.53,"disclosure":"aggregated"},
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-2010.921,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2721.766,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1690.784,"disclosure":"aggregated"}
@@ -443,6 +485,13 @@
         ],
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":61703.128,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 47892.53,
+            "reason": "Costo de ventas es 88% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
           {"line":"Gastos de ventas","side":"expense","amount":2010.921,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "revenue_basis": "full"
@@ -467,7 +516,7 @@
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":773.806,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-65714.706,"disclosure":"aggregated"},
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-65714.706,"disclosure":"aggregated"},
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-2745.765,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-3667.601,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1076.802,"disclosure":"aggregated"}
@@ -482,6 +531,13 @@
         ],
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":90136.99,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 65714.706,
+            "reason": "Costo de ventas es 90% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
           {"line":"Gastos de ventas","side":"expense","amount":2745.765,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "revenue_basis": "full"
@@ -506,7 +562,7 @@
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":1529.614,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-66242.84,"disclosure":"aggregated"},
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-66242.84,"disclosure":"aggregated"},
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-2665.465,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-3427.996,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2327.331,"disclosure":"aggregated"}
@@ -521,6 +577,13 @@
         ],
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":78644.117,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 66242.84,
+            "reason": "Costo de ventas es 89% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
           {"line":"Gastos de ventas","side":"expense","amount":2665.465,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "revenue_basis": "full"
@@ -545,7 +608,7 @@
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":895.718,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-82706.27,"disclosure":"aggregated"},
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-82706.27,"disclosure":"aggregated"},
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-2054.748,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-4632.902,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-4520.095,"disclosure":"aggregated"}
@@ -560,6 +623,13 @@
         ],
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":79401.476,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 82706.27,
+            "reason": "Costo de ventas es 88% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
           {"line":"Gastos de ventas","side":"expense","amount":2054.748,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "revenue_basis": "full"

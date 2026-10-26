@@ -59,7 +59,7 @@ Generados/Colombia/Independiente Medellin/siis-estado-2025.categorias.json (esca
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Costo de ventas | pág. 1, Claude 0.8 |
+| 1 | Costo de ventas | pág. 1, precedente |
 | 2 | Gastos de ventas | pág. 1, Claude 0.82 |
 | 3 | Gastos de administración | pág. 1, Jev 1 |
 | 4 | Otros gastos | pág. 1, Jev 1 |
@@ -96,7 +96,7 @@ Generados/Colombia/Independiente Medellin/siis-estado-2024.categorias.json (esca
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Costo de ventas | pág. 1, Claude 0.8 |
+| 1 | Costo de ventas | pág. 1, precedente |
 | 2 | Gastos de ventas | pág. 1, Claude 0.82 |
 | 3 | Gastos de administración | pág. 1, Jev 1 |
 | 4 | Otros gastos | pág. 1, Jev 1 |
@@ -127,7 +127,7 @@ Generados/Colombia/Independiente Medellin/siis-estado-2023.categorias.json (esca
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Costo de ventas | pág. 1, Claude 0.8 |
+| 1 | Costo de ventas | pág. 1, precedente |
 | 2 | Gastos de ventas | pág. 1, Claude 0.82 |
 | 3 | Gastos de administración | pág. 1, Jev 1 |
 | 4 | Otros gastos | pág. 1, Jev 1 |
@@ -158,7 +158,7 @@ Generados/Colombia/Independiente Medellin/siis-estado-2022.categorias.json (esca
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Costo de ventas | pág. 1, Claude 0.8 |
+| 1 | Costo de ventas | pág. 1, precedente |
 | 2 | Gastos de ventas | pág. 1, Claude 0.82 |
 | 3 | Gastos de administración | pág. 1, Jev 1 |
 | 4 | Otros gastos | pág. 1, Jev 1 |
@@ -190,7 +190,7 @@ Generados/Colombia/Independiente Medellin/siis-estado-2021.categorias.json (esca
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Costo de ventas | pág. 1, Claude 0.8 |
+| 1 | Costo de ventas | pág. 1, precedente |
 | 2 | Gastos de ventas | pág. 1, Claude 0.82 |
 | 3 | Gastos de administración | pág. 1, Jev 1 |
 | 4 | Otros gastos | pág. 1, Jev 1 |
@@ -224,7 +224,7 @@ Generados/Colombia/Independiente Medellin/siis-estado-2020.categorias.json (esca
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Costo de ventas | pág. 1, Claude 0.8 |
+| 1 | Costo de ventas | pág. 1, precedente |
 | 2 | Gastos de ventas | pág. 1, Claude 0.82 |
 | 3 | Gastos de administración | pág. 1, Jev 1 |
 | 4 | Otros gastos | pág. 1, Jev 1 |
@@ -257,7 +257,7 @@ Generados/Colombia/Independiente Medellin/siis-estado-2019.categorias.json (esca
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Costo de ventas | pág. 1, Claude 0.8 |
+| 1 | Costo de ventas | pág. 1, precedente |
 | 2 | Gastos de ventas | pág. 1, Claude 0.82 |
 | 3 | Gastos de administración | pág. 1, Jev 1 |
 | 4 | Otros gastos | pág. 1, Jev 1 |
@@ -291,7 +291,7 @@ Generados/Colombia/Independiente Medellin/siis-estado-2018.categorias.json (esca
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Costo de ventas | pág. 1, Claude 0.8 |
+| 1 | Costo de ventas | pág. 1, precedente |
 | 2 | Gastos de ventas | pág. 1, Claude 0.82 |
 | 3 | Gastos de administración | pág. 1, Jev 1 |
 | 4 | Otros gastos | pág. 1, Jev 1 |
@@ -324,7 +324,7 @@ Generados/Colombia/Independiente Medellin/siis-estado-2017.categorias.json (esca
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Costo de ventas | pág. 1, Claude 0.8 |
+| 1 | Costo de ventas | pág. 1, precedente |
 | 2 | Gastos de ventas | pág. 1, Claude 0.82 |
 | 3 | Gastos de administración | pág. 1, Jev 1 |
 | 4 | Otros gastos | pág. 1, Jev 1 |
@@ -357,7 +357,7 @@ Generados/Colombia/Independiente Medellin/siis-estado-2016.categorias.json (esca
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Costo de ventas | pág. 1, Claude 0.8 |
+| 1 | Costo de ventas | pág. 1, precedente |
 | 2 | Gastos de ventas | pág. 1, Claude 0.82 |
 | 3 | Gastos de administración | pág. 1, Jev 1 |
 | 4 | Otros gastos | pág. 1, Jev 1 |
