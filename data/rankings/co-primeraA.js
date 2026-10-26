@@ -169,7 +169,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2021: {
     leagueSize: 21,
-    sinDato: ["alianzafc-co"],
     wiki: {"t":"2021 Liga DIMAYOR","lang":"en","at":"2026-10-02","n":21},
     clubs: [
       { id:"deportestolima-co", revenue:10.548, reportType:"official_balance_sheet",
@@ -182,6 +181,10 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"laequidad-co-siis-estado-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.475],["Otros ingresos",0.419]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras actividades (educación y otros deportes)","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"alianzafc-co", revenue:2.997, reportType:"official_balance_sheet",
+        sourceId:"alianzafc-co-siis-estado-2021",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.969],["Otros ingresos",0.029]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Subsidios y donaciones","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"oncecaldas-co", revenue:2.786, reportType:"official_balance_sheet",
         sourceId:"oncecaldas-co-siis-estado-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.725],["Otros ingresos",0.061]],
