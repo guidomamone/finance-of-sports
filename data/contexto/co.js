@@ -69,6 +69,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2022: {"estadio":"Metropolitano de Techo","capacidad":8000,"temporada":"2022 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376520069"},
     2023: {"estadio":"Metropolitano de Techo","capacidad":8000,"sponsor":"Cootrafa","marca":"Attle","temporada":"2023 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377160814"},
     2024: {"estadio":"Metropolitano de Techo","capacidad":10000,"sponsor":"Cootrafa, BetPlay","marca":"Attle","temporada":"2024 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692752"},
+    2025: {"estadio":"Metropolitano de Techo","capacidad":10000,"sponsor":"Colanta, BetPlay","marca":"Attle","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
   'llaneros-co': {
     2025: {"estadio":"Bello Horizonte – Rey Pelé","capacidad":15000,"sponsor":"Maxi Cola, Aitabü Hotel Campestre, Gobernación del Meta","marca":"Aerosport","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356","fuenteManual":"https://en.wikipedia.org/wiki/2025_Categor%C3%ADa_Primera_A_season (tablas Stadia y Personnel and kits; sponsors de camiseta listados: Maxi Cola, Aitabü Hotel Campestre, Gobernación del Meta)","manual":["estadio","capacidad","sponsor","marca"]},

@@ -3,7 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraA"] = {
   2025: {
     leagueSize: 20,
-    sinDato: ["aguilasdoradas-co","laequidad-co"],
+    sinDato: ["aguilasdoradas-co"],
     wiki: {"t":"2025 Liga DIMAYOR","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:52.403, reportType:"official_balance_sheet",
@@ -33,6 +33,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"envigado-co", revenue:10.029, reportType:"official_balance_sheet",
         sourceId:"envigado-co-estados-financieros-2025",
         mix:[["Cuotas Sociales",0.322],["Comercial / Sponsors",0.871],["Estadio",0.492],["Televisión",1.703],["Premios por competencias",0.181],["Venta de Jugadores",7.15],["Otras actividades (educación y otros deportes)",0.344],["Otros ingresos",-1.033]] },
+      { id:"laequidad-co", revenue:8.634, reportType:"official_balance_sheet",
+        sourceId:"laequidad-co-siis-estado-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.486],["Otros ingresos",3.148]] },
       { id:"deportivopereira-co", revenue:6.962, reportType:"official_balance_sheet",
         sourceId:"deportivopereira-co-estados-financieros-2025",
         mix:[["Comercial / Sponsors",1.656],["Estadio",1.521],["Televisión",1.695],["Premios por competencias",0.312],["Venta de Jugadores",0.442],["Otras actividades (educación y otros deportes)",0.271],["Otros ingresos",1.065]] },
