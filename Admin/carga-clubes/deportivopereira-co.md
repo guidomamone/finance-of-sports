@@ -210,6 +210,37 @@ López Bedoya: presidente, representante legal y máximo accionista (Supersocied
 la familia López Bedoya recuperó el club en 9/2010 (Wikipedia en inglés) y Las2orillas dice que lleva 16 años en el equipo en 2026. Desde aproximado: 2010-09-01, sin confirmar. El anuncio de venta a Group Empresarios Full CCI Dubai (11/2025) no se concretó según las fuentes.
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-26) desde Clubes/Colombia/Deportivo Pereira/siis-estado-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Deportivo Pereira/siis-estado-2024.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ingresos de actividades ordinarias | pág. 1, Jev 0.98 |
+| 2 | Otros ingresos | pág. 1, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costo de ventas | pág. 1, ? 0.75 |
+| 2 | Gastos de ventas | pág. 1, Claude 0.8 |
+| 3 | Gastos de administración | pág. 1, Jev 1 |
+| 4 | Otros gastos | pág. 1, Jev 0.99 |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-26): filas-a-mano. Claude 2026-10-26 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
 ## Fuentes
 
 ### deportivopereira-co-estados-financieros-2025
@@ -218,6 +249,14 @@ _note (data/):_
 
 ```text
 Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 901644853). PDF con texto nativo, pero cada tabla de cifras está insertada como imagen (captura de Excel) — números leídos renderizando esas páginas puntuales a PNG y leyéndolas directo, no de la transcripción .md (que solo tiene el texto narrativo). El 22/1/2026 la Superintendencia de Sociedades ordenó DE OFICIO el inicio de un proceso de reorganización empresarial (Auto 2026-01-023551) por cesación de pagos de $11.252 M (50,4% del pasivo) verificada al 31/8/2025 — el ejercicio 2025 acá cargado es el que sustenta esa decisión; el dictamen del revisor fiscal confirma incertidumbre material de negocio en marcha, sin modificar su opinión. Transcripción completa en Clubes/Colombia/Deportivo Pereira/estados-financieros-2025.md.
+```
+
+### deportivopereira-co-siis-estado-2024
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Deportivo Pereira/siis-estado-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

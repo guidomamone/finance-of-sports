@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Colombia/Deportivo Pereira/siis-estado-2024.pdf",
- "generado": "2026-10-26T19:25:42.252Z",
+ "generado": "2026-10-26T19:27:48.616Z",
  "frena": [],
  "avisos": [
   "materialidad: \"Costo de ventas\" va como other_expenses con 0.75 (0.00% de gastos; acumulado sin preguntar 0.00%)",
@@ -289,8 +289,8 @@
  },
  "liga": {
   "valor": "co-primeraA",
-  "fuente": "roster cacheado de \"2024 Liga DIMAYOR\" (tools/club-league-reference/co.json), coincidencia exacta \"Deportivo Pereira\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -330,7 +330,7 @@
   },
   "liga": {
    "valor": "co-primeraA",
-   "fuente": "roster cacheado de \"2024 Liga DIMAYOR\" (tools/club-league-reference/co.json), coincidencia exacta \"Deportivo Pereira\"",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
    "estado": "ok"
   }
  },

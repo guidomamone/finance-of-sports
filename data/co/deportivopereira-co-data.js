@@ -1,5 +1,9 @@
 // GENERADO desde data/co/deportivopereira-co.json por tools/generar-data.mjs: no editar a mano (se edita el JSON).
 const deportivopereiraCoRevenueLinesByYear = {
+  2024: [
+    {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":30098.063,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":1578.038,"disclosureLevel":"aggregated"},
+  ],
   2025: [
     {"rawLabel":"Comercio al por mayor y al detal","normalizedCategory":"sponsorship_commercial","amountNative":0.955336,"disclosureLevel":"detailed"},
     {"rawLabel":"Patrocinio","normalizedCategory":"sponsorship_commercial","amountNative":0,"disclosureLevel":"detailed"},
@@ -32,6 +36,12 @@ const deportivopereiraCoRevenueLinesByYear = {
 };
 
 const deportivopereiraCoExpenseLinesByYear = {
+  2024: [
+    {"rawLabel":"Costo de ventas","normalizedCategory":"other_expenses","amountNative":0,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-29394.473,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-3708.243,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-1892.089,"disclosureLevel":"aggregated"},
+  ],
   2025: [
     {"rawLabel":"Gastos administrativos","normalizedCategory":"admin_general_expense","amountNative":-3458.523458,"disclosureLevel":"detailed","items":[["Personal",-2947.384496],["Honorarios",-113.03496],["Impuestos",-13.070317],["Arrendamientos",-35.680676],["Afiliaciones y sostenimiento",-0.445142],["Seguros",-2.734597],["Servicios",-164.88682],["Gastos legales",-13.5371],["Mantenimiento",-15.80288],["Adecuaciones e instalaciones",-0.793969],["Gastos de viaje",-134.140319],["Diversos",-17.012181]]},
     {"rawLabel":"Gastos de personal (planta deportiva: jugadores, cuerpo técnico y médico)","normalizedCategory":"wages_squad","amountNative":-16652.322362,"disclosureLevel":"detailed"},
@@ -46,6 +56,7 @@ const deportivopereiraCoExpenseLinesByYear = {
 };
 
 const deportivopereiraCoFiscalYearMeta = {
+  2024: {"currency":"COP","sourceId":"deportivopereira-co-siis-estado-2024","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":31676.101,"officialTotalExpenses":34994.805,"officialPAT":-3318.704,"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":30098.063,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":29394.473,"motivo":"el documento no desglosa este renglón","tipo":"other"}],"baseIngreso":"full"},
   2025: {"currency":"COP","sourceId":"deportivopereira-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","fxSource":"market_close","profitOnPlayerSales":0,"assetSales":0,"netInterest":0.284862,"tax":0,"grossDebt":11271.366835,"cash":9.65677,"officialTotalRevenue":26157.407627,"officialTotalExpenses":32016.211587,"officialPAT":-5908.561384,"baseIngreso":"full"},
 };
 
@@ -63,7 +74,7 @@ window.CLUB_GENERIC_DATA["deportivopereira-co"] = {
   presupuestoOverlayByYear: deportivopereiraCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"deportivopereira-co-estados-financieros-2025":{"id":"deportivopereira-co-estados-financieros-2025","clubId":"deportivopereira-co","title":"Revelaciones Estados Financieros de Propósito General bajo NIIF para PYME's, al 31 de diciembre de 2025","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Deportivo Pereira/estados-financieros-2025.pdf"}});
+Object.assign(sources, {"deportivopereira-co-estados-financieros-2025":{"id":"deportivopereira-co-estados-financieros-2025","clubId":"deportivopereira-co","title":"Revelaciones Estados Financieros de Propósito General bajo NIIF para PYME's, al 31 de diciembre de 2025","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Deportivo Pereira/estados-financieros-2025.pdf"},"deportivopereira-co-siis-estado-2024":{"id":"deportivopereira-co-siis-estado-2024","clubId":"deportivopereira-co","title":"Deportivo Pereira F.C. S.A. — siis-estado-2024 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Deportivo Pereira/siis-estado-2024.pdf"}});
 
 gestionesByClub["deportivopereira-co"] = {"actual":{"nombre":"Gestión actual (sin confirmar)","firstYear":2025,"lastYear":2025}};
 

@@ -37,3 +37,5 @@
 **Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
 
 Estados financieros en disco ahora: 2 ejercicios (2024-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2024 desde `Clubes/Colombia/Deportivo Pereira/siis-estado-2024.pdf` (sourceId `deportivopereira-co-siis-estado-2024`).

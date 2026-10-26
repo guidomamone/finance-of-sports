@@ -64,7 +64,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2024: {
     leagueSize: 20,
-    sinDato: ["deportivopereira-co"],
     wiki: {"t":"2024 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:18.183, reportType:"official_balance_sheet",
@@ -77,6 +76,9 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"laequidad-co-siis-estado-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",4.675],["Otros ingresos",3.189]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras actividades (educación y otros deportes)","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"deportivopereira-co", revenue:7.184, reportType:"official_balance_sheet",
+        sourceId:"deportivopereira-co-siis-estado-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",6.826],["Otros ingresos",0.358]] },
       { id:"atleticobucaramanga-co", revenue:6.742, reportType:"official_balance_sheet",
         sourceId:"atleticobucaramanga-co-siis-estado-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.692],["Otros ingresos",0.05]],

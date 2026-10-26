@@ -60,6 +60,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Manuel Murillo Toro","capacidad":28100,"sponsor":"BetPlay, Pool, Mercacentro","marca":"Umbro","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
   'deportivopereira-co': {
+    2024: {"estadio":"Hernán Ramírez Villegas","capacidad":30297,"sponsor":"Rivalo, Ukumarí","marca":"Oto","temporada":"2024 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692752"},
     2025: {"estadio":"Hernán Ramírez Villegas","capacidad":30297,"sponsor":"Aeropuerto Internacional Matecaña","marca":"Oto","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
   'envigado-co': {
