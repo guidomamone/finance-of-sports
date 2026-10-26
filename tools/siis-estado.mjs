@@ -77,7 +77,9 @@ function filasDe(registros) {
 // el orden en que se lee un estado de resultados; los rubros que no están acá van al final, en el orden de la API. `gananciaPerdida` («[sinopsis]») repite a `gananciaPerd` y no se imprime.
 const ORDEN_RESULTADO = ['ingresosActividadesOrdinarias', 'costoVentas', 'gananciaBruta', 'gastosVentas', 'gastosAdministracion', 'otrosIngresos', 'otrosGastos', 'otrasGananciasPerdidas', 'deterioroValorGanancias', 'gananciaPerdidaAmortizado', 'gananciasPerdidasDifCostoAmortizado', 'gananciaPerdidasCovertura', 'gananciaPerdidaXActividadesOperacion', 'ingresosFinancieros', 'costosFinancieros', 'participacion_ganancias_subsidiarias', 'gananciaPerdidaAntesImpuestos', 'ingresoGastoXImpuestos', 'gananciaPerdidaOperacionesContinuadas', 'gananciaPerdidaOperacionesDiscontinuadas', 'gananciaPerd'];
 const ordenar = (filas) => [...filas].sort((x, y) => { const i = ORDEN_RESULTADO.indexOf(x.clave), j = ORDEN_RESULTADO.indexOf(y.clave); return (i < 0 ? 99 : i) - (j < 0 ? 99 : j); });
-const tabla = (titulo, filas, a, b) => [`### ${titulo}`, '', `| Concepto | ${a} | ${b} |`, '| --- | ---: | ---: |', ...filas.map((f) => `| ${f.nombre} | ${fmt(f.corte)} | ${fmt(f.anterior)} |`), ''];
+// un rubro que SIIS informa en un año y no en el otro (null) es cero en el que falta: se imprime 0 para que la fila tenga sus dos cifras
+const celda = (v, otro) => (v == null && otro != null ? '0' : fmt(v));
+const tabla = (titulo, filas, a, b) => [`### ${titulo}`, '', `| Concepto | ${a} | ${b} |`, '| --- | ---: | ---: |', ...filas.map((f) => `| ${f.nombre} | ${celda(f.corte, f.anterior)} | ${celda(f.anterior, f.corte)} |`), ''];
 
 function compuertas(res, emp) {
   const r = res.resultado.registros; const c = (k) => num(r[k]?.corte) ?? 0; const fallas = [];
@@ -131,7 +133,7 @@ function especificacion({ club, anio, md, filasRes, sal, ant, perimetro }) {
   return { spec: {
     pdf: rutaClub(club, `siis-estado-${anio}.pdf`), estado: [bloque.id], escala: 'miles', escala_evidencia: 'L1: Cifras en miles de pesos colombianos', moneda: MONEDA, columna_ejercicio: sal, columna_anterior: ant, perimetro: perimetro || 'individual',
     escalas: [{ bloque: bloque.id, escala: 'miles', evidencia: 'L1: Cifras en miles de pesos colombianos' }],
-    filas: filasRes.map((f) => ({ bloque: bloque.id, linea: f.linea, etiqueta: f.nombre, actual: imp(f.corte), anterior: f.anterior == null ? '0' : imp(f.anterior), tipo: CLASE[f.clave][0], lado: CLASE[f.clave][1], detalla_a: null })),
+    filas: filasRes.map((f) => ({ bloque: bloque.id, linea: f.linea, etiqueta: f.nombre, actual: f.corte == null ? '0' : imp(f.corte), anterior: f.anterior == null ? '0' : imp(f.anterior), tipo: CLASE[f.clave][0], lado: CLASE[f.clave][1], detalla_a: null })),
     total_ingresos: null, total_gastos: null, resultado: resultado ? { linea: resultado.linea, actual: imp(resultado.corte), anterior: resultado.anterior == null ? '0' : imp(resultado.anterior) } : null,
     observaciones: 'Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento.' } };
 }

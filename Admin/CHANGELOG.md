@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1139 — Deportes Tolima: alta y los diez estados de SIIS; la tool imprime 0 en el año que falta de un rubro [463 · siis-estado.mjs · deportestolima-co]
+- Alta de Deportes Tolima (`alta-club.mjs`, 15 de 16 campos ok) y sus diez estados de SIIS (2016 a 2025) bajados con `siis-estado.mjs`, con filas armadas y verificación sin IA. Tolima destapó un defecto de la tool: un rubro que SIIS informa en un solo año salía en blanco y `armar-a-mano` rechazaba la fila (2020 y 2023); ahora se imprime 0 en el año que falta.
+- Medición: idéntico (lote mediano) y veredicto GENERAL; el ensayo de Tolima del medidor `siis` no cambia.
+
 ## Versión 1138 — Fortaleza 2021: el resultado del ejercicio incluye el beneficio de impuesto diferido (lo encontró el control de SIIS) [463 · fortalezaceif-co]
 - Fortaleza CEIF 2021 estaba cargada con resultado −647,3 M de pesos (antes de impuestos); el documento imprime «Resultados del ejercicio (208.773)» porque suma un beneficio de impuesto diferido de 438,5 M, y SIIS y el documento de 2022 dicen lo mismo. Corregido en `data/co/fortalezaceif-co.json` (impuesto +438,544; resultado −208,773) con el ajuste manual `resultado-final` en `ajustes-manuales.jsonl`, y publicado.
 - Medición: `audit.js` sin `siis-control` (de 1 a 0), P0 0 y P1 0 después de `publicar.mjs`; ninguna tool cambió.
