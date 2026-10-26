@@ -453,3 +453,19 @@ _note (cargar.mjs):_
 ```text
 Cargado por tools/cargar.mjs (2026-10-26) desde la transcripción Clubes/Colombia/Independiente Medellin/siis-estado-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
+
+## Gestiones: contraste de una tabla de Guido (2026-10-26)
+
+Guido pegó una línea de tiempo de la conducción del club (sin fuentes). Se contrastó con la prensa que sí cita data/gestiones/co.js:
+
+| Tramo de la tabla | Veredicto | Qué dicen las fuentes |
+| --- | --- | --- |
+| 2014 a sep 2018, José Raúl Giraldo (propietario y representante legal) | CONTRADICHO en lo de 2014 a ene 2018 | Eduardo Silva Meluk fue presidente hasta su renuncia el 26 ene 2018 (El Colombiano, CM8079433; el perfil de TEDx lo da como presidente de 2014 a 2018). Giraldo, el máximo accionista, relevó en funciones de ene a sep 2018 (El Colombiano, 19 sep 2018: «relevará en funciones al máximo accionista»). |
+| 19 sep 2018, Michael Gil Gómez asume | CONFIRMADO | El Colombiano, 19 sep 2018 (XN9359541). |
+| Gil Gómez renuncia el 31 oct 2019 | PLAUSIBLE, sin fuente fechada | Antena 2 y Win Sports dan la renuncia sin fecha; el artículo enlaza a la Liga Águila 2019-II, compatible con oct-nov 2019. |
+| 1 nov 2019 a ene 2020, Jamer Ospina (interino, representación legal) | NO VERIFICADO | Ninguna búsqueda lo nombra. ESPN dice que Daniel Ossa llegó en el segundo semestre de 2019 y acompañó al máximo accionista de manera interina hasta el primer semestre de 2020. |
+| ene a 17 ago 2020, «Jhariel Ossa» (presidente encargado) | NO VERIFICADO, el nombre parece un error | Ninguna búsqueda lo nombra; ESPN y el club hablan de Daniel Ossa interino hasta el primer semestre de 2020. |
+| 17 ago 2020 a 6 may 2024, Daniel Ossa Giraldo | FIN CONFIRMADO, inicio sin fuente | La salida del 6 may 2024 está en varias fuentes y ESPN dice «casi cuatro años» (consistente con mediados de 2020), pero el club y otras notas dicen que volvió «en enero de 2021» como presidente ejecutivo. |
+| 6 may 2024 en adelante, Juan Camilo Restrepo | CONFIRMADO hasta su renuncia del 16 dic 2024 | La República, Infobae y Win Sports. Después, Giraldo representó legalmente al club hasta el regreso de Ossa el 16 mar 2026 (Claro Sports, Noticias RCN). |
+
+Decisión: nada de la tabla que no tenga fuente pública entra a `data/gestiones/co.js` (es un archivo público): lo no verificado queda acá como pista, y las gestiones de 2019 a 2023 siguen con confirmada:false. Para confirmarlas hace falta un comunicado del club o prensa fechada de oct-nov 2019 y de 2020 (probar la Wayback de dim.co); los nombres «Jamer Ospina» y «Jhariel Ossa» hay que encontrarlos en una fuente antes de usarlos.
