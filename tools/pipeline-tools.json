@@ -113,6 +113,7 @@
   "alta-club.mjs": { "alcance": "compartida", "medidores": ["alta", "cargar"] },
   "xhtml-aarsrapport.mjs": { "alcance": "etapa", "medidores": ["xhtml"], "familia": { "formato": "xhtml" } },
   "siis-estado.mjs": { "alcance": "etapa", "medidores": ["siis", "verificar"], "familia": { "formato": "siis" } },
+  "siis-notas.mjs": { "alcance": "etapa", "medidores": ["siis", "verificar"], "familia": { "formato": "siis" } },
   "ixbrl-resultado.mjs": { "alcance": "etapa", "medidores": ["xhtml", "verificar"], "familia": { "formato": "xhtml" } },
   "bfo-rusia.mjs": { "alcance": "etapa", "medidores": ["cargar"], "familia": { "pais": "Rusia" } },
   "nbb.mjs": { "alcance": "etapa", "medidores": ["cargar"], "familia": { "pais": "Bélgica" } },

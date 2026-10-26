@@ -30,6 +30,7 @@ import { pathToFileURL } from 'node:url';
 import { execFileSync } from 'node:child_process';
 import { indiceBloques } from './indice-bloques.mjs';
 import { negarSiSeMide } from './candado-medicion.mjs';
+import { abrirConNotas, anexarNotas } from './siis-notas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const BASE = 'https://siis.ia.supersociedades.gov.co/siis_backend/api/v1/qr';
@@ -124,18 +125,25 @@ const CLASE = {
   gananciaPerdidaOperacionesDiscontinuadas: ['renglon', 'otro'], gananciaPerd: ['resultado', 'resultado'],
 };
 // La especificación de armar-a-mano.mjs: el estado de resultados de SIIS son las filas, cada una en su línea del .md. Devuelve null si algún rubro no tiene clase.
-function especificacion({ club, anio, md, filasRes, sal, ant, perimetro }) {
+function especificacion({ club, anio, md, filasRes, sal, ant, perimetro, notas }) {
   const sinClase = filasRes.filter((f) => !CLASE[f.clave]); if (sinClase.length) return { error: `rubros de SIIS sin clase en CLASE: ${sinClase.map((f) => f.clave).join(', ')}` };
   const bloque = indiceBloques(md).bloques.find((b) => b.lineas[0] <= filasRes[0].linea && b.lineas[1] >= filasRes.at(-1).linea);
   if (!bloque) return { error: 'el índice de bloques no encuentra la tabla del estado de resultados' };
   const imp = (n) => fmt(n);
   const resultado = filasRes.find((f) => f.clave === 'gananciaPerd');
+  // las tablas de las notas que abren rubros (siis-notas.mjs): cada una es un bloque del .md, con su escala y sus filas, y `detalla_a` el rubro de SIIS
+  const delIndice = indiceBloques(md).bloques; const notasSpec = { notas_ingresos: [], notas_gastos: [], escalas: [], filas: [] };
+  for (const t of notas?.tablas || []) {
+    const b = delIndice.find((x) => x.lineas[0] <= t.inicio && x.lineas[1] >= t.fin); if (!b) return { error: `el índice de bloques no encuentra la tabla de las notas que abre ${t.a.clave}` };
+    notasSpec[t.a.destino].push(b.id); notasSpec.escalas.push({ bloque: b.id, escala: t.unidad === 'pesos' ? 'unidades' : 'miles', evidencia: t.evidencia }); notasSpec.filas.push(...notas.filasDe(t, b.id));
+  }
   return { spec: {
     pdf: rutaClub(club, `siis-estado-${anio}.pdf`), estado: [bloque.id], escala: 'miles', escala_evidencia: 'L1: Cifras en miles de pesos colombianos', moneda: MONEDA, columna_ejercicio: sal, columna_anterior: ant, perimetro: perimetro || 'individual',
-    escalas: [{ bloque: bloque.id, escala: 'miles', evidencia: 'L1: Cifras en miles de pesos colombianos' }],
-    filas: filasRes.map((f) => ({ bloque: bloque.id, linea: f.linea, etiqueta: f.nombre, actual: f.corte == null ? '0' : imp(f.corte), anterior: f.anterior == null ? '0' : imp(f.anterior), tipo: CLASE[f.clave][0], lado: CLASE[f.clave][1], detalla_a: null })),
+    escalas: [{ bloque: bloque.id, escala: 'miles', evidencia: 'L1: Cifras en miles de pesos colombianos' }, ...notasSpec.escalas],
+    notas_ingresos: notasSpec.notas_ingresos, notas_gastos: notasSpec.notas_gastos,
+    filas: [...filasRes.map((f) => ({ bloque: bloque.id, linea: f.linea, etiqueta: f.nombre, actual: f.corte == null ? '0' : imp(f.corte), anterior: f.anterior == null ? '0' : imp(f.anterior), tipo: CLASE[f.clave][0], lado: CLASE[f.clave][1], detalla_a: null })), ...notasSpec.filas],
     total_ingresos: null, total_gastos: null, resultado: resultado ? { linea: resultado.linea, actual: imp(resultado.corte), anterior: resultado.anterior == null ? '0' : imp(resultado.anterior) } : null,
-    observaciones: 'Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento.' } };
+    observaciones: `Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; ${notas?.tablas?.length ? 'el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)' : 'no hay notas en este documento'}.` } };
 }
 function mdAHtml(md) {
   const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
@@ -154,7 +162,7 @@ function imprimirPdf(md, pdfAbs) {
   try { execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--no-pdf-header-footer', `--print-to-pdf=${pdfAbs}`, pathToFileURL(html).href], { stdio: 'ignore', timeout: 120000 }); } finally { rmSync(dir, { recursive: true, force: true }); }
 }
 
-async function estadosDe(club, anios, { escribir, rehacer }) {
+async function estadosDe(club, anios, { escribir, rehacer, sinNotas }) {
   const cfg = CLUBES[club]; if (!cfg) throw new Error(`«${club}» no está en tools/siis-clubes.json`);
   const dir = resolve(ROOT, 'Clubes', PAIS, club);
   const q =delNit(cfg.nit); const [emps, ress, bals] = [await q.empresas(), await q.resultado(), await q.balance()];
@@ -169,17 +177,26 @@ async function estadosDe(club, anios, { escribir, rehacer }) {
     if (sig) for (const k of ['ingresosActividadesOrdinarias', 'gananciaPerdida']) { const x = num(res.resultado.registros[k]?.corte), y = num(sig.resultado.registros[k]?.corteAnterior); if (x != null && y != null && Math.abs(x - y) > TOL) avisos.push(`${k}: ${fmt(x)} y el año siguiente lo repite como ${fmt(y)}`); }
     console.log(`${club} ${a}: ${fallas.length ? `NO CIERRA — ${fallas.join(' · ')}` : 'cierra'}${bal ? '' : ' (sin balance)'}${avisos.length ? ` · aviso: ${avisos.join(' · ')}` : ''}`);
     if (fallas.length) { frenados++; continue; }
+    // las notas del club (estados-financieros-AAAA.md de la misma carpeta) abren los rubros de SIIS que suman exacto (siis-notas.mjs; regla de Colombia, caso 2)
+    const notasRel = rutaClub(club, `estados-financieros-${a}.md`); const notasAbs = resolve(ROOT, notasRel); let abre = { abiertos: [], sinAbrir: [] }; let notasMd = null;
+    if (!sinNotas && existsSync(notasAbs)) {
+      notasMd = readFileSync(notasAbs, 'utf8');
+      abre = abrirConNotas({ notasMd, valores: Object.fromEntries(Object.entries(res.resultado.registros).map(([k, v]) => [k, { corte: num(v?.corte), anterior: num(v?.corteAnterior) }])) });
+      console.log(`  notas: abren ${abre.abiertos.map((x) => `${x.clave} (L${x.tabla.desde}, ${x.filas} filas${x.anterior == null ? ', sin año anterior' : ''})`).join(', ') || 'nada'}${abre.sinAbrir.length ? ` · no abren: ${abre.sinAbrir.map((x) => `${x.clave} (${x.motivo})`).join('; ')}` : ''}`);
+    } else console.log(`  notas: ${sinNotas ? 'apagadas (--sin-notas)' : 'el club no tiene estados-financieros de este año'}`);
     const base = join(dir, `siis-estado-${a}`);
     if (existsSync(`${base}.md`) && !rehacer) { console.log(`  ya existe ${base.slice(ROOT.length + 1)}.md (--rehacer lo pisa)`); continue; }
     if (!escribir) continue;
     mkdirSync(dir, { recursive: true });
-    const { md, filasRes, sal, ant } = armarMd({ club, nit: cfg.nit, anio: a, res, bal, nombre: emp?.nombreEmpresa || res.infoEmpresa.nombreEmpresa, consulta: hoy });
+    const armado = armarMd({ club, nit: cfg.nit, anio: a, res, bal, nombre: emp?.nombreEmpresa || res.infoEmpresa.nombreEmpresa, consulta: hoy });
+    const { filasRes, sal, ant } = armado; let md = armado.md; let notas = null;
+    if (abre.abiertos.length) { notas = anexarNotas({ md, notasRel, notasMd, abiertos: abre.abiertos, nombreDe: (clave) => filasRes.find((f) => f.clave === clave).nombre }); md = notas.md; }
     imprimirPdf(md, `${base}.pdf`);
     writeFileSync(`${base}.json`, JSON.stringify({ consulta: hoy, nit: cfg.nit, anio: Number(a), siis_empresas: emp, siis_resultadointegral: res, siis_sitfinan: bal }, null, 1) + '\n');
     writeFileSync(`${base}.md`, md); escritos++;
     appendFileSync(resolve(ROOT, 'Admin/registros/api/siis-api.jsonl'), JSON.stringify({ ts: new Date().toISOString(), md: rutaClub(club, `siis-estado-${a}.md`), model: MOTOR, costUsd: 0, nit: cfg.nit, radicado: res.infoEmpresa.num_radicado }) + '\n'); // el motor que lee inventario-transcripciones.mjs
     // las filas, sin leer con IA: la especificación del estado de resultados y armar-a-mano.mjs (valida cada fila contra el .md y deja el .ubicacion.json y el .filas.json con sus huellas)
-    const { spec, error } = especificacion({ club, anio: a, md, filasRes, sal, ant, perimetro: esConsolidado(res.infoEmpresa.puntoEntrada) ? 'consolidado' : 'individual' });
+    const { spec, error } = especificacion({ club, anio: a, md, filasRes, sal, ant, perimetro: esConsolidado(res.infoEmpresa.puntoEntrada) ? 'consolidado' : 'individual', notas });
     if (error) { console.log(`  ${club} ${a}: el .md quedó escrito pero las filas no se armaron solas: ${error}`); continue; }
     const carpetaSpec = resolve(ROOT, 'Generados', PAIS, club); mkdirSync(carpetaSpec, { recursive: true });
     const specAbs = join(carpetaSpec, `siis-estado-${a}.spec.json`); writeFileSync(specAbs, JSON.stringify(spec, null, 1) + '\n');
@@ -237,6 +254,6 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const club = flag('--club'); const anio = flag('--anio'); const todos = A.includes('--todos');
   if (!club || (!anio && !todos)) { console.error('Uso: node tools/siis-estado.mjs --club "<Club>" (--anio AAAA | --todos) [--escribir] [--rehacer]   ·   --inventario [--escribir]   ·   --faltantes'); process.exit(1); }
   const clubes = club === 'todos' ? Object.keys(CLUBES) : [club]; let escritos = 0, frenados = 0;
-  for (const c of clubes) { const r = await estadosDe(c, todos ? 'todos' : anio, { escribir: A.includes('--escribir'), rehacer: A.includes('--rehacer') }); escritos += r.escritos; frenados += r.frenados; }
+  for (const c of clubes) { const r = await estadosDe(c, todos ? 'todos' : anio, { escribir: A.includes('--escribir'), rehacer: A.includes('--rehacer'), sinNotas: A.includes('--sin-notas') }); escritos += r.escritos; frenados += r.frenados; }
   console.log(`${A.includes('--escribir') ? `Escritos ${escritos} año(s)` : 'Ensayo: no se escribió nada (--escribir)'}${frenados ? `; ${frenados} año(s) frenado(s) por una compuerta` : ''}.`);
 }

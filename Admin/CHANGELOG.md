@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1142 — siis-estado.mjs y siis-notas.mjs: las notas del club abren los rubros de SIIS que suman exacto [463 · siis-estado.mjs, siis-notas.mjs]
+- `siis-notas.mjs` busca, entre las tablas de los `estados-financieros-AAAA.md` del club, la que abre cada rubro del estado de SIIS (ingresos, costo de ventas, gastos de ventas y de administración, otros): una columna cuyas filas, sin subtotales, suman el rubro (en miles o en pesos). `siis-estado.mjs` copia esa tabla al final del `siis-estado-AAAA.md` (sin «$» ni negritas, con su origen) y la deja como `notas_ingresos` / `notas_gastos` con `detalla_a` = el rubro; `verificar.mjs` hace el cierre de siempre. Una tabla que no suma no entra: se avisa la más cercana (< 0,1 %) y el rubro queda como SIIS lo trae. `--sin-notas` lo apaga.
+- Primer ensayo en los cuatro clubes: Tolima abre ingresos y gastos de ventas sus diez años (más administración en 2016 a 2018 y 2022 a 2025); en los otros tres abre una parte de los años. Tolima 2025 pasó por verificar y la propuesta de carga: los ingresos salen en 8 líneas con la venta de derechos deportivos (14.934 M de pesos). Condición nueva sin revisión independiente (sección 7 de la auditora).
+- Medición: lote chico y mediano idénticos salvo 10 diferencias del medidor `siis`, todas la línea nueva «notas: …» por año de Tolima; veredicto GENERAL (42 documentos de 12 clubes).
+
 ## Versión 1141 — La Equidad, Águilas Doradas y Atlético Bucaramanga: 30 años en el sitio desde los estados de SIIS [463 · laequidad-co · aguilasdoradas-co · atleticobucaramanga-co]
 - Con Tolima, los cuatro clubes colombianos de solo notas tienen sus diez años (40 club-años nuevos, un commit por año), con el resultado oficial de SIIS, estadio y sponsor con su fuente o con el registro de búsqueda, y la línea del auditor de cada año (8 + 10 + 10 + 10; los dictámenes que faltan están en el punto 463).
 - Dos correcciones de criterio salieron de cargarlos: «Costo de ventas» es la actividad deportiva cuando pesa más de la mitad de los gastos o el año siguiente lo repite como «Gastos de ventas» (Bucaramanga 2016 a 2018), y los rótulos de ventas y administración de SIIS se intercambian en algún año (Tolima y La Equidad 2024, corregidos con ajuste y publicados con `Corrige:`). Regla en `Admin/CONVENCIONES-DATOS.md`.
