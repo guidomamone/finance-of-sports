@@ -897,6 +897,7 @@ window.SPONSORS_INDICE = [
   ["espak","Espak",["c"]],
   ["esportenet","EsporteNet",["c"]],
   ["esportes-da-sorte","Esportes da Sorte",["c"]],
+  ["esprint","Esprint",["m"]],
   ["esquadrao","Esquadrão",["m"]],
   ["esquadrao-1909","Esquadrão 1909",["c"]],
   ["essar","Essar",["c"]],
