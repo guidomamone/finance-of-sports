@@ -41,7 +41,9 @@ Dos tareas, en este orden, cada una terminada y commiteada antes de la otra. Se 
 
 Terminado cuando: (A) existe `Prototyping/Finanzas/mockup-149.html` aprobado por Guido y el título, la descripción, la tabla y la imagen de los 7 clubes ya no presentan el margen bruto como ingreso; (B) `cola.mjs --responder` rechaza una respuesta sin evidencia, seguridad y causa, con su prueba en `tools/probar-registros.mjs`, la medición de `cola.mjs` anotada en `Admin/registros/mediciones-pipeline.jsonl` y la decisión sobre `desde` aplicada.
 
-Verificar: manual (Pipeline, con la Auditora, prioridad media): «Ganhos em imobilizações» y afines: ¿son ventas de jugadores? (Benfica 2007, Sporting 2000-2005, PAOK 2025, Académica 2023)
+Verificar: manual
+
+### 2. 414 · (Pipeline, con la Auditora, prioridad media): «Ganhos em imobilizações» y afines: ¿son ventas de jugadores? (Benfica 2007, Sporting 2000-2005, PAOK 2025, Académica 2023)
 
 Salió de la auditoría (`catchall-dominante`): una sola línea de «Otros ingresos» pesa del 29 % al 65 % de los ingresos del ejercicio. Hay indicio de que son plusvalías por traspasos: en Sporting 2002 el documento imprime «Mais-valias em Transferências» 13.413 y «Ganhos em Imobiliz.» 13.413 (misma cifra, `Clubes/Portugal/Sporting CP/relatorio-contas-2001.md` L152 y L761). Casos visibles hoy: Benfica 2007 «Ganhos em imobilizações» 24,1 M (29 %), Sporting 2000 «Proveitos e Ganhos Extraordinários», 2002 «Ganhos em Imobiliz.» y 2005 «G. Imobilizações» 65,0 M (65 %), PAOK 2025 «Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων» 31,8 M (43 %) y Académica 2023 «Ganhos em perdão de dívida» (esta es una quita de deuda, no un traspaso). Los hay más, por debajo del umbral del aviso (40 %). Es una decisión de criterio de datos: si la nota del documento dice que son traspasos de jugadores, van a `player_sales` (cambia lo ya publicado: skill `contrato-de-datos`, trailer `Corrige:`).
 Terminado cuando: cada etiqueta de «ganancias de inmovilizado» de los clubes cargados está mirada contra su nota (¿jugadores o activos fijos?) y votada si no tiene precedente (`votacion-de-criterios`), y la que sea traspaso está recategorizada con su cita.
