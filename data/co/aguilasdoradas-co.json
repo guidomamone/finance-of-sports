@@ -20,10 +20,58 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Aguilas Doradas/siis-estado-2024.pdf"
+    },
+    {
+      "id": "aguilasdoradas-co-siis-estado-2016",
+      "club_id": "aguilasdoradas-co",
+      "title": "Talento Dorado S.A. — siis-estado-2016 (ejercicio 2016)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Aguilas Doradas/siis-estado-2016.pdf"
     }
   ],
   "members": null,
   "years": [
+    {
+      "fiscal_year": 2016,
+      "period_end": "2016-12-31",
+      "currency": "COP",
+      "source_id": "aguilasdoradas-co-siis-estado-2016",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2016-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 9487.082,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":361.463,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-582.17,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-8082.85,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-81.618,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-53.759,"tax":-308.432,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":9848.545,"expenses":8746.638,"net_result":739.716},
+      "adjustments": {
+        "extra_rows": [{"label":"Costos financieros","amount":-53.759},{"label":"Ingreso (gasto) por impuestos","amount":-308.432}],
+        "no_breakdown": [
+          {
+            "line": "Ingresos de actividades ordinarias",
+            "side": "revenue",
+            "amount": 9487.082,
+            "reason": "Línea única de ingresos sin abrir: lump_football_operations (regla de Colombia, 463, 2026-10-26)",
+            "kind": "net_sales"
+          },
+          {"line":"Gastos de ventas","side":"expense","amount":582.17,"reason":"el documento no desglosa este renglón","kind":"other"}
+        ],
+        "revenue_basis": "full"
+      }
+    },
     {
       "fiscal_year": 2024,
       "period_end": "2024-12-31",

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Aguilas Doradas/siis-estado-2025.pdf",
  "md": "Clubes/Colombia/Aguilas Doradas/siis-estado-2025.md",
- "generado": "2026-10-26T06:14:07.580Z",
+ "generado": "2026-10-26T06:30:34.612Z",
  "scriptHuella": "f1d4dee41de6",
  "estado": "ok",
  "clubId": "aguilasdoradas-co",
@@ -44,14 +44,14 @@
    "dif": 3.979039320256561e-13
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 27459.984; el sitio tiene 27459.984"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": true,
    "detalle": "ingresos de 2024: 27459.984 en siis-estado-2024.pdf y 27459.984 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [],
