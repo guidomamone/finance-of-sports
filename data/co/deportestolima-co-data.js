@@ -97,8 +97,8 @@ const deportestolimaCoExpenseLinesByYear = {
   ],
   2024: [
     {"rawLabel":"Costo de ventas","normalizedCategory":"other_expenses","amountNative":-2632.78,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-5166.142,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-37305.416,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de ventas","normalizedCategory":"admin_general_expense","amountNative":-5166.142,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de administración","normalizedCategory":"lump_football_operations_expense","amountNative":-37305.416,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-1006.202,"disclosureLevel":"aggregated"},
   ],
   2025: [

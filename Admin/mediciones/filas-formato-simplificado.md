@@ -38,7 +38,7 @@ Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que 
 | Organización de partidos | 755 de 1365 (55 %) | 202 de 334 (60 %) | 7.1 % · 31 % | 409 (30 %) | 201 | 0 |
 | Otras actividades (educación, juvenil, otros deportes, básquet) | 198 de 1365 (15 %) | 62 de 334 (19 %) | 5.6 % · 27 % | 975 (71 %) | 188 | 4 |
 | Administración y gastos generales | 1117 de 1365 (82 %) | 282 de 334 (84 %) | 15.7 % · 72 % | 225 (16 %) | 23 | 0 |
-| Fútbol profesional (sin desglosar por la fuente) | 221 de 1365 (16 %) | 61 de 334 (18 %) | 71.7 % · 89 % | 1144 (84 %) | 0 | 0 |
+| Fútbol profesional (sin desglosar por la fuente) | 221 de 1365 (16 %) | 61 de 334 (18 %) | 72.6 % · 89 % | 1144 (84 %) | 0 | 0 |
 | Otros gastos (catch-all) | 1239 de 1365 (91 %) | 302 de 334 (90 %) | 10.5 % · 52 % | 126 (9 %) | 0 | 0 |
 
 Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que la tienen alguna vez / clubes medidos):

@@ -23,8 +23,8 @@ const laequidadCoExpenseLinesByYear = {
   ],
   2024: [
     {"rawLabel":"Costo de ventas","normalizedCategory":"other_expenses","amountNative":-127.399,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-2471.578,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-24415.721,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de ventas","normalizedCategory":"admin_general_expense","amountNative":-2471.578,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de administración","normalizedCategory":"lump_football_operations_expense","amountNative":-24415.721,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-319.542,"disclosureLevel":"aggregated"},
   ],
   2025: [

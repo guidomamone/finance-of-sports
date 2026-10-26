@@ -527,8 +527,8 @@
       ],
       "expenses": [
         {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2632.78,"disclosure":"aggregated"},
-        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-5166.142,"disclosure":"aggregated"},
-        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-37305.416,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"admin_general","subcategory":"admin_general_expense","amount":-5166.142,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-37305.416,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1006.202,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-720.859,"gross_debt":null,"cash":null},
