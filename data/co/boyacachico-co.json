@@ -117,7 +117,7 @@
       ],
       "expenses": [
         {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":0,"disclosure":"aggregated"},
-        {"label":"Gastos de ventas","category":"admin_general","subcategory":"admin_general_expense","amount":-3862.382,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-3862.382,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-825.51,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
@@ -133,11 +133,21 @@
             "amount": 0,
             "reason": "Costo de ventas es 73% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
             "kind": "cost_of_sales"
+          },
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 3862.382,
+            "reason": "Gastos de ventas sin abrir (82 % de los gastos de 2016) es la actividad deportiva: regla de Colombia, CONVENCIONES-DATOS.md; la categorización lo había mandado a administración.",
+            "kind": "other"
           }
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -181,7 +191,10 @@
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -225,7 +238,10 @@
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -276,6 +292,10 @@
             "kind": "other"
           }
         ],
+        "included_in": {
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
+        },
         "revenue_basis": "full"
       }
     },
@@ -327,7 +347,9 @@
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -381,7 +403,9 @@
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -424,7 +448,10 @@
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
@@ -467,7 +494,10 @@
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
-          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "wages_squad": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "depreciation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"},
+          "other_amortisation": {"in":"lump_football_operations_expense","possible":true,"by":"precedente"}
         },
         "revenue_basis": "full"
       }
