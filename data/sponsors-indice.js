@@ -1089,6 +1089,7 @@ window.SPONSORS_INDICE = [
   ["goal-studio","Goal Studio",["m"]],
   ["goalbet","Goalbet",["c"]],
   ["goalsbet-italia","Goalsbet Italia",["c"]],
+  ["gobernacion-de-bolivar","Gobernación de Bolívar",["c"]],
   ["gobernacion-del-cesar","Gobernación del Cesar",["c"]],
   ["gobernacion-del-meta","Gobernación del Meta",["c"]],
   ["golaco","Golaço",["m"]],
