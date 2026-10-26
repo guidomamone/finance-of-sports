@@ -492,5 +492,20 @@
   "code": "ejercicio-sin-rastro",
   "match": "fredrikstad-no:",
   "motivo": "VERIFICADO (Admin/registros/documentos-descartados.txt L866-870 y Admin/sourcing/Noruega/Fredrikstad.md, 2026-10-23). El FLI Fredrikstad Fotballklubb (el club) dejó de depositar cuentas después de 2018; los PDF de 2019 a 2023 en Clubes/Noruega/Fredrikstad/ son de Fredrikstad Fotballinvest AS, tenedora de derechos de jugadores y no el club, y están descartados (Auditora 5, Onboarding 8, 2026-10-21). Sin documento publicado del club."
+ },
+ {
+  "code": "siis-entre-anios",
+  "match": "Deportes Tolima 2024→2025",
+  "motivo": "VERIFICADO (Admin/registros/ajustes-manuales.jsonl L3299-L3300 (ajustes de categoría de Tolima 2024) y Clubes/Colombia/Deportes Tolima/siis-estado-2025.md, columna 2024 del estado de resultados, 2026-10-26). SIIS intercambió los rótulos en el estado de 2024; el año está cargado por el contenido (la fila grande como actividad deportiva, la chica como administración) con dos ajustes de categoría, y las notas de gastos de 2024 no se abren a propósito"
+ },
+ {
+  "code": "siis-entre-anios",
+  "match": "La Equidad 2024→2025",
+  "motivo": "VERIFICADO (Admin/registros/ajustes-manuales.jsonl L3301-L3302 (ajustes de categoría de La Equidad 2024) y Clubes/Colombia/La Equidad/siis-estado-2025.md, columna 2024, 2026-10-26). SIIS intercambió los rótulos en el estado de 2024; el año está cargado por el contenido con dos ajustes de categoría"
+ },
+ {
+  "code": "siis-entre-anios",
+  "match": "Atletico Bucaramanga 2018→2019",
+  "motivo": "VERIFICADO (Clubes/Colombia/Atletico Bucaramanga/siis-estado-2019.md columna 2018 y data/co/atleticobucaramanga-co.json (2018, líneas de la nota de costos), 2026-10-26). El estado de 2018 imprime la actividad deportiva como «Costo de ventas» y el de 2019 la repite como «Gastos de ventas»; 2018 está cargado por su contenido (las filas de la nota de costos van a plantel, administración y otros según la regla de las notas de gastos), no por el rótulo"
  }
 ]
