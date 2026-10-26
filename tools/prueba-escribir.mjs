@@ -13,7 +13,7 @@
 // USO:  node tools/prueba-escribir.mjs        (sale con 0 si la escritura anduvo; con 1 y el motivo si no)
 // ============================================================================
 import { spawnSync, execFileSync } from 'node:child_process';
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
 import { conWorktree } from './con-worktree.mjs'; // el worktree descartable con las tools de este árbol (una prueba nueva es solo el escenario)
 
@@ -49,6 +49,15 @@ try {
     ['dentro-de-otro --escribir', ['tools/dentro-de-otro.mjs', '--club', 'paok-gr', '--escribir'], IDEM],
     ['gestiones-tanda --armar --escribir', ['tools/gestiones-tanda.mjs', '--armar', '--pais', 'gr', '--escribir'], IDEM],
     ['recategorizar-linea --escribir', ['tools/recategorizar-linea.mjs', '--club', 'benfica-pt', '--anio', '2007', '--etiqueta', 'Ganhos em imobilizações', '--a', 'player_sales', '--cita', 'Clubes/Portugal/Benfica/relatorio-contas-2006-07.md:361', '--regla', 'prueba-escribir (worktree descartable)', '--mirada', '--escribir']],
+    // las que salen a internet: sin red no se pueden probar y la prueba lo dice (no falla); con red tienen que salir con 0
+    ['segunda-fuente-wikipedia-local --escribir', ['tools/segunda-fuente-wikipedia-local.mjs', 'gr-superleague2', '2025', '--pais', 'gr', '--escribir'], { red: true }],
+    ['fetch-fx-reference', ['tools/fetch-fx-reference.mjs', '--currency', 'ARS', '--from', '2026-10-01'], { red: true }],
+    ['segunda-fuente-liga --escribir', ['tools/segunda-fuente-liga.mjs', 'https://www.rsssf.org/tablesc/cyp2024.html', 'cy-seconddivision', '2024', '--pais', 'cy', '--tabla', '2023/24 Cypriot Second Division', '--escribir'], { red: true }],
+    ['estadio-sponsor --escribir', ['tools/estadio-sponsor.mjs', '--escribir', '--club', 'paok-gr', '--anio', '2025'], { red: true }],
+    ['reglas-categoria --escribir', ['tools/reglas-categoria.mjs', '--escribir']],
+    ['imports-sin-export --escribir', ['tools/imports-sin-export.mjs', '--escribir']],
+    ['fuente-url-xhtml --escribir', ['tools/fuente-url-xhtml.mjs', '--todos', '--escribir']],
+    ['xhtml-aarsrapport --escribir', ['tools/xhtml-aarsrapport.mjs', 'Clubes/Dinamarca/SønderjyskE', '--escribir']],
     ['generar-correcciones', ['tools/generar-correcciones.mjs']],
     ['ajustes --agregar', ['tools/ajustes.mjs', '--agregar', PDF, 'sin-dudas', '--motivo', 'prueba-escribir (worktree descartable)', '--autor', 'prueba']],
     ['publicar', ['tools/publicar.mjs']],
@@ -59,6 +68,7 @@ try {
   for (const [nombre, args, opt] of ESCRIBEN) {
     const s = spawnSync('node', [join(W, args[0]), ...args.slice(1)], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28 });
     const out = (s.stdout || '') + (s.stderr || '');
+    if (opt && opt.red && s.status !== 0 && /fetch failed|ENOTFOUND|EAI_AGAIN|ECONNREFUSED|ETIMEDOUT|respondió (403|429|5\d\d)/i.test(out)) { console.log(`  -- ${nombre}: sin red o la fuente no respondió, no se pudo probar`); continue; }
     if (s.status !== 0 || ERROR_DE_CODIGO.test(out)) throw new Error(`${nombre} salió con ${s.status}: ${(out.match(ERROR_DE_CODIGO) ? out.slice(Math.max(0, out.search(ERROR_DE_CODIGO) - 120), out.search(ERROR_DE_CODIGO) + 200) : out.trim().split('\n').slice(-3).join(' | ')).replace(/\n/g, ' | ')}`);
     // las idempotentes sobre los datos de HEAD no pueden dejar ningún JSON de club distinto de como estaba tras la carga de arriba
     if (opt && opt.idempotente) { const ahora = execFileSync('git', ['status', '--porcelain', '--', 'data'], { cwd: W, encoding: 'utf8' }); if (ahora !== antes) throw new Error(`${nombre} cambió datos que no tenía que cambiar:\n${ahora}`); }
@@ -69,9 +79,14 @@ try {
   const filaDe = (txt) => txt.split('\n').find((l) => l.includes("'bathrugby-gb':"));
   const clubsAntes = readFileSync(CLUBS, 'utf8'); if (!filaDe(clubsAntes)) throw new Error('la prueba de alta-club espera que data/clubs.js tenga bathrugby-gb');
   writeFileSync(CLUBS, clubsAntes.split('\n').filter((l) => !l.includes("'bathrugby-gb':")).join('\n'));
+  // «club nuevo» para la regla de existencia (tools/carpetas-clubes.mjs): sin datos del club ni su evidencia
+  for (const f of ['data/gb/bathrugby-gb.json', 'data/gb/bathrugby-gb-data.js', 'data/gb/bathrugby-gb-glosas.js', 'Admin/carga-clubes/bathrugby-gb.md']) rmSync(join(W, f), { force: true });
+  // las líneas de la auditoría de los balances de ese club (la verificación de después las compara con lo cargado, y no hay nada cargado)
+  const AUD = join(W, 'Admin/registros/auditoria.jsonl');
+  writeFileSync(AUD, readFileSync(AUD, 'utf8').split('\n').filter((l) => !l.includes('bathrugby-gb')).join('\n'));
   const alta = spawnSync('node', [join(W, 'tools/alta-club.mjs'), MD_ALTA, '--escribir'], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28 });
   const salidaAlta = (alta.stdout || '') + (alta.stderr || '');
-  if (alta.status !== 0 || ERROR_DE_CODIGO.test(salidaAlta)) throw new Error(`alta-club --escribir salió con ${alta.status}: ${(salidaAlta.match(ERROR_DE_CODIGO) ? salidaAlta.slice(Math.max(0, salidaAlta.search(ERROR_DE_CODIGO) - 120), salidaAlta.search(ERROR_DE_CODIGO) + 200) : salidaAlta.trim().split('\n').slice(-3).join(' | ')).replace(/\n/g, ' | ')}`);
+  if (alta.status !== 0 || ERROR_DE_CODIGO.test(salidaAlta)) throw new Error(`alta-club --escribir salió con ${alta.status}: ${(salidaAlta.match(ERROR_DE_CODIGO) ? salidaAlta.slice(Math.max(0, salidaAlta.search(ERROR_DE_CODIGO) - 120), salidaAlta.search(ERROR_DE_CODIGO) + 200) : salidaAlta.trim().split('\n').filter((l) => /error|falta|pendiente|✗|no se escribe/i.test(l)).slice(0, 12).join(' | ')).replace(/\n/g, ' | ')}`);
   if (!filaDe(readFileSync(CLUBS, 'utf8'))) throw new Error(`alta-club --escribir salió con 0 pero no volvió a escribir la fila de bathrugby-gb en data/clubs.js: ${salidaAlta.trim().split('\n').slice(-3).join(' | ')}`);
   console.log('  ok alta-club --escribir (la fila del club vuelve a estar)');
   ok = true; console.log(`prueba-escribir: la escritura de cargar.mjs anduvo (fuente nueva con su nota XHTML) y la de ${ESCRIBEN.length} tools más, en un worktree descartable.`);

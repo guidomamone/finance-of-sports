@@ -131,6 +131,12 @@
   "armar-a-mano.mjs": "arma el .ubicacion.json y el .filas.json de un documento desde una especificación de la sesión (carga con tokens); ningún medidor lo ejercita todavía"
  },
  "_no_pipeline": "Tools de primer nivel declaradas de afuera del pipeline, con el motivo. Una tool de la tabla no puede importar una de estas (clasificar-tools.mjs lo avisa). tools/hooks, tools/archivo y las carpetas de datos no se clasifican.",
+ "_escriben_sin_prueba": "Tools del pipeline con un modo --escribir que tools/prueba-escribir.mjs todavía no prueba. Es deuda anotada con su motivo, no un permiso: medir-pipeline.mjs no da «idéntico» a una tool que escribe y no está en prueba-escribir.mjs ni acá. Al sumar la prueba, la tool sale de esta lista.",
+ "escriben_sin_prueba": {
+  "cargar-lote.mjs": "corre cargar.mjs por documento: lo que escribe lo prueba la carga de prueba-escribir.mjs; falta un escenario del lote entero",
+  "bfo-rusia.mjs": "carga los estados rusos desde bo.nalog.gov.ru por red; falta un escenario con una respuesta guardada",
+  "bfo-rusia-notas.mjs": "completa las notas de los estados rusos; falta su escenario"
+ },
  "no_pipeline": {
   "archivar.mjs": "orden: archiva un documento cerrado",
   "color-teamcolorcodes.mjs": "consulta: lee la página de colores de un club en teamcolorcodes.com y la imprime; no escribe nada",

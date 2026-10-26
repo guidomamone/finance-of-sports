@@ -359,10 +359,14 @@ for (let k = 0; k < niveles.length; k++) {
   if (nivel === 'chico' && (difTotal || vaciosN) && !explicacion) { pasoActual.cortado = true; console.log(difTotal ?'\nEl lote chico ya muestra diferencias: explicalas (--explicacion "…") o arreglá el cambio antes de seguir con lotes más grandes.' : '\nHay medidores vacíos: no midieron nada. Arreglá el medidor (qué mira, con qué argumentos) o, si de verdad no hay nada que medir, --explicacion "por qué".'); cortado = true; break; }
   if (nivel === 'mediano' && (difNivel || autoNivel) && !niveles.includes('completo')) { niveles.push('completo'); nivelFinal = 'completo'; planificar(niveles); console.log('El mediano mostró diferencias: escala al completo.'); }
 }
+// UNA TOOL QUE ESCRIBE SIN SU PRUEBA DE ESCRITURA no da «idéntico» (TODO 401): sus medidores corren en ensayo y un import roto solo aparece al escribir. Tiene su prueba si la nombra
+// tools/prueba-escribir.mjs, o está en `escriben_sin_prueba` de pipeline-tools.json (con el motivo: es deuda anotada, no un permiso).
+const pruebaEscribir = existsSync(resolve(ROOT, 'tools/prueba-escribir.mjs')) ? readFileSync(resolve(ROOT, 'tools/prueba-escribir.mjs'), 'utf8') : '';
+const faltaPrueba = nombres.filter((n) => existsSync(resolve(ROOT, 'tools', n)) && /--escribir/.test(readFileSync(resolve(ROOT, 'tools', n), 'utf8')) && !pruebaEscribir.includes(n) && !(T.escriben_sin_prueba || {})[n]);
 const textoExplicacion = explicacion || (autoN && !difTotal ? `Explicadas por el resumen del medidor: ${resumenes.join(' | ')}` : null);
 // un medidor vacío cuenta como una diferencia que pide razón escrita: sin --explicacion el resultado es «vacío» (el hook no lo acepta), con ella «N diferencias, todas explicadas»
 const totalDif = difTotal + autoN + vaciosN;
-const resultado = vaciosN && !explicacion ? `vacío: ${vaciosN} medidor(es) no imprimieron nada, no midieron nada` : !totalDif ? 'idéntico' : (difTotal || vaciosN ? !!explicacion : true) ? `${totalDif} diferencias, todas explicadas` : `${totalDif} diferencias sin explicar`;
+const resultado = faltaPrueba.length && !explicacion ? `sin prueba de escritura: ${faltaPrueba.join(', ')} (sumala a tools/prueba-escribir.mjs, o anotala en escriben_sin_prueba de tools/pipeline-tools.json con el motivo)` : vaciosN && !explicacion ? `vacío: ${vaciosN} medidor(es) no imprimieron nada, no midieron nada` : !totalDif ? 'idéntico' : (difTotal || vaciosN ? !!explicacion : true) ? `${totalDif} diferencias, todas explicadas` : `${totalDif} diferencias sin explicar`;
 const linea = {
   fecha: new Date().toISOString().slice(0, 10), base: baseRev, tools: Object.fromEntries(nombres.map((n) => [n, { antes: huellasAntes[n], despues: huellasDespues[n] }])),
   lote: { nivel: nivelUsado, lista: T.lotes[nivelUsado], listaSha: sha1(readFileSync(resolve(ROOT, T.lotes[nivelUsado]), 'utf8')).slice(0, 12), documentos: leerLista(nivelUsado).length },
@@ -371,4 +375,4 @@ const linea = {
 if (A.includes('--no-anotar') || SOLO_CHICO) console.log(`\nResultado: ${resultado} (no se escribió el registro).`);
 else if (!cortado && nivelUsado === nivelFinal) { anotar(linea); console.log(`\nResultado: ${resultado}. Anotado en Admin/registros/mediciones-pipeline.jsonl.`); }
 else console.log(`\nResultado parcial (${resultado}) en el lote ${nivelUsado}; no se anotó.`);
-process.exitCode = (difTotal || vaciosN) && !explicacion ? 1 : process.exitCode || 0;
+process.exitCode = (difTotal || vaciosN || faltaPrueba.length) && !explicacion ? 1 : process.exitCode || 0;

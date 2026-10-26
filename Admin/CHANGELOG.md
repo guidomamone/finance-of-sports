@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1124 — La prueba de escritura cubre 12 tools más y medir-pipeline la exige [401 · prueba-escribir.mjs, medir-pipeline.mjs, fetch-fx-reference.mjs]
+- `prueba-escribir.mjs` suma `dentro-de-otro`, `gestiones-tanda`, `alta-club`, `recategorizar-linea`, `segunda-fuente-wikipedia-local`, `segunda-fuente-liga`, `estadio-sponsor`, `fetch-fx-reference`, `reglas-categoria`, `imports-sin-export`, `fuente-url-xhtml` y `xhtml-aarsrapport`. `medir-pipeline.mjs` no da «idéntico» a una tool que escribe sin su prueba (`escriben_sin_prueba` de `pipeline-tools.json` anota la deuda: `cargar-lote`, `bfo-rusia`, `bfo-rusia-notas`).
+- Fallas que la prueba encontró y se corrigieron: `fetch-fx-reference --from` pisaba la serie con solo ese tramo (ahora la suma; la serie del ARS quedó al día hasta 2026-10-23) y el BCRA rechazaba la fecha UTC de noche. `recategorizar-linea` recuerda correr `dentro-de-otro`: PAOK 2019 a 2022 tenían una marca vieja de ventas de jugadores dentro de otro rubro y se actualizó.
+- Sin medición de pipeline: ninguna de estas tools es del pipeline.
+
 ## Versión 1123 — La segunda fuente de una liga puede ser la Wikipedia local, y cuatro silencios menos [418 · segunda-fuente-wikipedia-local.mjs]
 - `fos liga-segunda-fuente-local`: busca la página de la misma temporada en el idioma del país por los enlaces entre idiomas, une los equipos de las dos Wikipedias por su identificador de Wikidata (el griego o el cirílico no se pueden comparar por letras) y guarda la lista con tipo `wikipedia-local`; el auditor la cuenta como cualquier segunda fuente. Con ella: Aellarissa 2025 (19 de 20), Felgueiras 2023, FC Utrecht 2025, Lierse SK 2019 a 2021 y Molde 2011; Patro Eisden 2013 con dos páginas de nl.wikipedia.
 - `clubLeagueCoverage` no cuenta los años futuros (Boca y Racing 2027, presupuestos). `fos color-rugby`: colores candidatos de un club de rugby desde teamcolorcodes (Bath Rugby, #005BAA). Se quitaron 4 silencios de `audit-ignore.json` (las dos `liga-una-fuente`, `liga-sin-verificar` y el color de Bath Rugby).

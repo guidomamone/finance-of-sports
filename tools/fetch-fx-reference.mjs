@@ -363,7 +363,10 @@ async function runOne(code, from, to) {
   }
   const effectiveFrom = from ?? cfg.defaultFrom;
   console.log(`Bajando serie ${cfg.label} de ${effectiveFrom} a ${to}...`);
-  const series = await cfg.fetch(effectiveFrom, to);
+  let series = await cfg.fetch(effectiveFrom, to);
+  // --from es un TRAMO: se suma a lo que ya hay (antes pisaba la serie entera con solo ese tramo; la prueba de escritura lo encontró). Sin --from baja todo y reemplaza.
+  const previo = resolve(outDir, cfg.file);
+  if (from && existsSync(previo) && Object.keys(series).length) { try { series = { ...JSON.parse(readFileSync(previo, 'utf8')).series, ...series }; } catch { /* sin serie previa legible: queda solo el tramo */ } }
   const dates = Object.keys(series).sort();
   if (!dates.length) {
     console.error(`  ${code}: la API no devolvió ningún dato -- no piso el archivo existente.`);

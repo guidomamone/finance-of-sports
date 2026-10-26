@@ -9,6 +9,9 @@ const projectRoot = resolve(import.meta.dirname, '..');
 const outDir = resolve(projectRoot, 'tools', 'fx-reference');
 
 export async function fetchARS(from, to) {
+  // el BCRA rechaza una fecha mayor al día de Argentina: de noche en Buenos Aires la fecha UTC ya es la de mañana (la prueba de escritura lo encontró)
+  const hoyAR = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Argentina/Buenos_Aires' });
+  if (to > hoyAR) to = hoyAR;
   const series = {};
   let offset = 0;
   const limit = 1000;
