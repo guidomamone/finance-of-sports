@@ -1,0 +1,42 @@
+{
+ "pdf": "Clubes/Colombia/Once Caldas/siis-estado-2016.pdf",
+ "md": "Clubes/Colombia/Once Caldas/siis-estado-2016.md",
+ "mdSha1": "3d15b168e14f8f1e6fa9656b0505288b67a5e27b",
+ "modelo": "a mano (Claude Code, sesión 2026-10-26)",
+ "generado": "2026-10-26T20:51:47.272Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    22
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 1,
+   "lineas": [
+    104,
+    118
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b10"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
+ "moneda": "COP",
+ "columna_ejercicio": "2016",
+ "columna_anterior": "2015",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
+}

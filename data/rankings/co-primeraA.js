@@ -154,6 +154,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2021: {
     leagueSize: 21,
+    sinDato: ["oncecaldas-co"],
     wiki: {"t":"2021 Liga DIMAYOR","lang":"en","at":"2026-10-02","n":21},
     clubs: [
       { id:"deportestolima-co", revenue:10.548, reportType:"official_balance_sheet",
@@ -177,6 +178,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2020: {
     leagueSize: 20,
+    sinDato: ["oncecaldas-co"],
     wiki: {"t":"2020 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:9.92, reportType:"official_balance_sheet",
@@ -195,6 +197,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2019: {
     leagueSize: 20,
+    sinDato: ["oncecaldas-co"],
     wiki: {"t":"2019 Categoría Primera A season","lang":"en","at":"2026-10-02","n":20},
     clubs: [
       { id:"deportestolima-co", revenue:10.888, reportType:"official_balance_sheet",
@@ -240,6 +243,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2017: {
     leagueSize: 20,
+    sinDato: ["oncecaldas-co"],
     wiki: {"t":"2017 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:15.531, reportType:"official_balance_sheet",
@@ -260,6 +264,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2016: {
     leagueSize: 20,
+    sinDato: ["oncecaldas-co"],
     wiki: {"t":"2016 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:16.41, reportType:"official_balance_sheet",

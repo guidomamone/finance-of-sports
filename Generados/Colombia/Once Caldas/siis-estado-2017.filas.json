@@ -1,0 +1,291 @@
+{
+ "pdf": "Clubes/Colombia/Once Caldas/siis-estado-2017.pdf",
+ "md": "Clubes/Colombia/Once Caldas/siis-estado-2017.md",
+ "mdSha1": "ac34491374d130aaa019df956a9bac9010126931",
+ "ubicacionSha1": "1d31e486c689b5a637d56ee2b2759353cb8a99ad",
+ "modelo": "a mano (Claude Code, sesión 2026-10-26)",
+ "generado": "2026-10-26T20:51:49.396Z",
+ "salida": "a mano",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b10"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "miles",
+   "evidencia": "L1: Cifras en miles de pesos colombianos"
+  },
+  {
+   "bloque": "b10",
+   "escala": "miles",
+   "evidencia": "L101: Cifras de esta tabla en miles de pesos colombianos"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 11,
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "actual": "16.672.414",
+   "anterior": "17.789.038",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 12,
+   "etiqueta": "Costo de ventas",
+   "actual": "1.273.292",
+   "anterior": "230.568",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "Ganancia bruta",
+   "actual": "15.399.122",
+   "anterior": "17.558.470",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Gastos de ventas",
+   "actual": "13.931.288",
+   "anterior": "14.523.514",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Gastos de administración",
+   "actual": "943.140",
+   "anterior": "981.821",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Otros ingresos",
+   "actual": "988.046",
+   "anterior": "776.161",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Otros gastos",
+   "actual": "2.430.280",
+   "anterior": "1.507.061",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "Ganancia (pérdida) por actividades de operación",
+   "actual": "(917.540)",
+   "anterior": "1.322.235",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Ganancia (pérdida), antes de impuestos",
+   "actual": "(917.540)",
+   "anterior": "1.322.235",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "actual": "(1.706.815)",
+   "anterior": "33.471",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Ganancia (pérdida) procedente de operaciones continuadas",
+   "actual": "789.275",
+   "anterior": "1.288.764",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 22,
+   "etiqueta": "Ganancia (pérdida)",
+   "actual": "789.275",
+   "anterior": "1.288.764",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 105,
+   "etiqueta": "TOTAL GASTOS OPERACIONALES DE ADMINISTRACION",
+   "actual": "943,140",
+   "anterior": "981,821",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b10",
+   "linea": 106,
+   "etiqueta": "GASTOS DE PERSONAL",
+   "actual": "754,574",
+   "anterior": "757,862",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b10",
+   "linea": 107,
+   "etiqueta": "HONORARIOS",
+   "actual": "64,422",
+   "anterior": "69,572",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b10",
+   "linea": 108,
+   "etiqueta": "IMPUESTOS",
+   "actual": "0",
+   "anterior": "12,050",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b10",
+   "linea": 109,
+   "etiqueta": "ARRENDAMIENTOS",
+   "actual": "10,814",
+   "anterior": "45",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b10",
+   "linea": 110,
+   "etiqueta": "SEGUROS",
+   "actual": "0",
+   "anterior": "2,363",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b10",
+   "linea": 111,
+   "etiqueta": "SERVICIOS",
+   "actual": "44,885",
+   "anterior": "47,167",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b10",
+   "linea": 112,
+   "etiqueta": "GASTOS LEGALES",
+   "actual": "2,286",
+   "anterior": "3,988",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b10",
+   "linea": 113,
+   "etiqueta": "MANTENIMIENTO Y REPARACIONES",
+   "actual": "873",
+   "anterior": "10,442",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b10",
+   "linea": 114,
+   "etiqueta": "ADECUACION E INSTALACION",
+   "actual": "0",
+   "anterior": "867",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b10",
+   "linea": 115,
+   "etiqueta": "GASTOS DE VIAJE",
+   "actual": "30,524",
+   "anterior": "35,938",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b10",
+   "linea": 116,
+   "etiqueta": "DEPRECIACIONES",
+   "actual": "2,806",
+   "anterior": "4,568",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  },
+  {
+   "bloque": "b10",
+   "linea": 117,
+   "etiqueta": "DIVERSOS",
+   "actual": "31,955",
+   "anterior": "36,958",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de administración"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 22,
+  "actual": "789.275",
+  "anterior": "1.288.764"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
+}
