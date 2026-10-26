@@ -8,12 +8,22 @@
 // Prueba con entradas simuladas: node tools/hooks/probar-post-tool.mjs
 // ============================================================================
 import { execFileSync } from 'node:child_process';
-import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 
 const entrada = JSON.parse(readFileSync(0, 'utf8') || '{}');
 
+// aviso-tool-grande-leida-entera (465, aviso SUAVE): un Read de tools/<x> de más de 30 KB sin offset ni limit trae el archivo entero; se le dice que `fos mapa` da las funciones con su rango de líneas y que Read con offset y limit trae solo ese tramo.
+if (entrada.tool_name === 'Read') {
+  const ruta = String(entrada.tool_input?.file_path || '');
+  if (!/\/tools\/[a-z0-9][a-z0-9-]*\.(?:mjs|js)$/.test(ruta) || entrada.tool_input?.offset != null || entrada.tool_input?.limit != null) process.exit(0);
+  let kb = 0; try { kb = statSync(ruta).size / 1024; } catch { process.exit(0); }
+  if (kb <= 30) process.exit(0); // las tools de más de 40 KB se partieron (audit.js `tool-grande`): las que quedan pesan 30 a 40 KB y también cuestan leerlas enteras
+  process.stdout.write(JSON.stringify({ hookSpecificOutput: { hookEventName: 'PostToolUse',
+    additionalContext: `Aviso (no bloquea): ${ruta.split('/').pop()} pesa ${Math.round(kb)} KB y se leyó entero. Para la próxima: node tools/fos.mjs mapa tools/${ruta.split('/').pop()} (funciones con su rango de líneas) y Read con offset y limit del tramo que se usa.` } }));
+  process.exit(0);
+}
 // aviso-al-editar-una-tool (412, aviso SUAVE: no bloquea ni pregunta): la primera vez que una sesión edita tools/<x>.mjs, si hay entradas del CHANGELOG o hallazgos que la nombran,
 // se le dice cuántos y con qué comando verlos. Una vez por tool y por sesión (el estado vive en la carpeta temporal del sistema); sin historial no dice nada.
 if (['Edit', 'Write', 'MultiEdit'].includes(entrada.tool_name)) {

@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1165 — fos git-resumen y aviso del hook al leer entera una tool grande [465 · git-resumen.mjs, post-tool.mjs]
+- `node tools/fos.mjs git-resumen`: `git status` sin las páginas generadas (club/, liga/, fuentes/, og/, los `-data.js`), un renglón con la cuenta de cada tipo y el resto archivo por archivo; evita las ~600 líneas de después de un alta.
+- `tools/hooks/post-tool.mjs` avisa (sin bloquear) cuando un `Read` trae entera una tool de más de 30 KB y manda a `fos mapa` y a `Read` con offset y limit; `.claude/settings.json` suma `Read` al matcher de PostToolUse (ningún chequeo ni mensaje existente cambia; `probar-post-tool.mjs` con cuatro casos nuevos, 16 de 16 ok; `probar-pre-tool.mjs`, 79 de 79).
+- Medición: ninguna de las dos es del pipeline (no piden medición).
+
 ## Versión 1164 — fos siis-notas-clasificar: por qué las notas no abren un rubro de SIIS [465 · siis-notas-clasificar.mjs]
 - Gratis y sin red: de cada club-año de SIIS dice qué rubros abren las notas del club y clasifica los que no en «sin nota», «casi suma» (con la diferencia en miles de pesos), «ninguna se acerca» y «estructura», con `abrirConNotas` de `siis-notas.mjs`. Hoy: 51 rubros abren, 20 casi suman (de 0,5 a 12.831 miles de pesos), 125 ninguna tabla se acerca, 132 sin nota del club, 2 estructura.
 - Medición: `siis-notas-clasificar.mjs` no es del pipeline (no pide medición); no cambia `siis-notas.mjs`.

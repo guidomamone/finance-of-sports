@@ -201,6 +201,7 @@
   "muestra.mjs": "orden: una muestra repartida de las líneas que cumplen un patrón (solo lee)",
   "club-siis.mjs": "orden: el camino de un club colombiano de SIIS (estado por año, qué falta, comandos, y el brief de cada subagente); solo lee, no escribe ni llama a ninguna API",
   "siis-notas-clasificar.mjs": "orden: de cada club-año de SIIS, qué rubros abren las notas y por qué los demás no (solo lee los siis-estado-AAAA.json y los estados-financieros ya bajados)",
+  "git-resumen.mjs":"orden: git status sin las páginas generadas (solo lee git)",
   "audit-perfil.mjs":"orden: el tiempo de cada chequeo de audit.js (corre audit.js con --cpu-prof en una carpeta temporal; solo mide)",
   "duraciones-lib.mjs":"orden: la lectura de los segundos de cada medidor (la usan duraciones-mediciones y el ensayo de medir-pipeline); solo lee",
   "duraciones-mediciones.mjs":"orden: los segundos de cada medidor de medir-pipeline por nivel (solo lee Admin/registros/mediciones-pipeline.jsonl y Admin/mediciones/pipeline)",

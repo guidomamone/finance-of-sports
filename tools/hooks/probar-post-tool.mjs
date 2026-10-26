@@ -34,6 +34,11 @@ const avisos = [
   ['una tool sin historial no dice nada', edita(`${raiz}/tools/zz-sin-historial-alguno.mjs`), (s) => s === ''],
   ['un archivo que no es de tools/ no dice nada', edita(`${raiz}/Admin/TODO.md`), (s) => s === ''],
   ['Write también avisa', edita(`${raiz}/tools/cargar.mjs`, `${sesion}-c`, 'Write'), (s) => s.includes('cargar.mjs')],
+  // aviso suave al leer entera una tool de más de 40 KB (465)
+  ['leer entera una tool de más de 30 KB avisa de fos mapa', edita(`${raiz}/tools/cola.mjs`, sesion, 'Read'), (s) => s.includes('fos.mjs mapa tools/cola.mjs') && s.includes('no bloquea')],
+  ['leerla con offset y limit no dice nada', { ...edita(`${raiz}/tools/cola.mjs`, sesion, 'Read'), tool_input: { file_path: `${raiz}/tools/cola.mjs`, offset: 10, limit: 50 } }, (s) => s === ''],
+  ['leer una tool chica no dice nada', edita(`${raiz}/tools/publicar.mjs`, sesion, 'Read'), (s) => s === ''],
+  ['leer un .md no dice nada', edita(`${raiz}/Admin/TODO.md`, sesion, 'Read'), (s) => s === ''],
 ];
 for (const [nombre, entrada, bien] of avisos) { const ok = bien(corre(entrada)); if (!ok) mal++; console.log(`${ok ? 'ok ' : 'MAL'} ${nombre}`); }
 console.log(mal ? `\n${mal} caso(s) MAL` : `\n${casos.length + avisos.length} casos, todos ok`);
