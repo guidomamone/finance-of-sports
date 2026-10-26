@@ -32,13 +32,13 @@ Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que 
 
 | Fila | Club-años con número | Clubes que la tienen alguna vez | Cuando la tiene: mediana de la sección · casos ≥ 10 % | Cero real | «—» sin saber | Dentro de otro |
 |---|---|---|---|---|---|---|
-| Compra de jugadores | 826 de 1421 (58 %) | 228 de 336 (68 %) | 14.1 % · 64 % | 361 (25 %) | 234 | 0 |
-| Salarios y primas (plantel y cuerpo técnico) | 1147 de 1421 (81 %) | 291 de 336 (87 %) | 48.8 % · 99 % | 13 (1 %) | 142 | 119 |
-| Inversiones (amortizaciones y depreciación) | 1006 de 1421 (71 %) | 269 de 336 (80 %) | 2.0 % · 8 % | 198 (14 %) | 217 | 0 |
-| Organización de partidos | 771 de 1421 (54 %) | 205 de 336 (61 %) | 7.0 % · 31 % | 411 (29 %) | 239 | 0 |
-| Otras actividades (educación, juvenil, otros deportes, básquet) | 198 de 1421 (14 %) | 62 de 336 (18 %) | 5.6 % · 27 % | 991 (70 %) | 228 | 4 |
+| Compra de jugadores | 826 de 1421 (58 %) | 228 de 336 (68 %) | 14.1 % · 64 % | 360 (25 %) | 235 | 0 |
+| Salarios y primas (plantel y cuerpo técnico) | 1147 de 1421 (81 %) | 291 de 336 (87 %) | 48.8 % · 99 % | 12 (1 %) | 143 | 119 |
+| Inversiones (amortizaciones y depreciación) | 1006 de 1421 (71 %) | 269 de 336 (80 %) | 2.0 % · 8 % | 197 (14 %) | 218 | 0 |
+| Organización de partidos | 771 de 1421 (54 %) | 205 de 336 (61 %) | 7.0 % · 31 % | 410 (29 %) | 240 | 0 |
+| Otras actividades (educación, juvenil, otros deportes, básquet) | 198 de 1421 (14 %) | 62 de 336 (18 %) | 5.6 % · 27 % | 990 (70 %) | 229 | 4 |
 | Administración y gastos generales | 1173 de 1421 (83 %) | 284 de 336 (85 %) | 15.7 % · 72 % | 225 (16 %) | 23 | 0 |
-| Fútbol profesional (sin desglosar por la fuente) | 261 de 1421 (18 %) | 66 de 336 (20 %) | 73.6 % · 88 % | 1160 (82 %) | 0 | 0 |
+| Fútbol profesional (sin desglosar por la fuente) | 262 de 1421 (18 %) | 66 de 336 (20 %) | 73.6 % · 88 % | 1159 (82 %) | 0 | 0 |
 | Otros gastos (catch-all) | 1293 de 1421 (91 %) | 304 de 336 (90 %) | 10.2 % · 51 % | 128 (9 %) | 0 | 0 |
 
 Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que la tienen alguna vez / clubes medidos):

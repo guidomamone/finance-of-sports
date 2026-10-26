@@ -196,6 +196,11 @@ if (A.includes('--avanzar')) {
   }
   if (readdirSync(s.dir).some((x) => /^dictamen-revisor-fiscal-\d{4}\.pdf$/.test(x) && !existsSync(join(s.dir, x.replace(/\.pdf$/, '.md'))))) run(['tools/dictamenes-md.mjs', club, '--escribir']);
   for (const p of evaluar().pesos.filter((p) => p.pct > 50 && !s.filas.find((f) => f.a === p.a)?.cargado)) run(['tools/cola.mjs', '--corregir-categoria', `Clubes/${cfg.pais}/${club}/siis-estado-${p.a}.pdf`, 'Costo de ventas', 'lump_football_operations_expense', '--nota', `Costo de ventas es ${p.pct}% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)`]);
+  // «Gastos de ventas» que ni SIIS ni las notas abren (cifra única, sin una tabla de nota colgada de él) es la actividad deportiva: va a lump_football_operations_expense (regla de Colombia); la categorización lo mandó a administración en Boyacá Chicó 2016 (82 % de los gastos)
+  for (const f of s.filas.filter((x) => x.siis && !x.cargado)) {
+    const md = readFileSync(join(s.dir, `siis-estado-${f.a}.md`), 'utf8'); const fila = md.match(/^\| Gastos de ventas \| ([^|]+) \|/m);
+    if (fila && !/^[\s0.]*$/.test(fila[1]) && !/^### Gastos de ventas:/m.test(md)) run(['tools/cola.mjs', '--corregir-categoria', `Clubes/${cfg.pais}/${club}/siis-estado-${f.a}.pdf`, 'Gastos de ventas', 'lump_football_operations_expense', '--nota', 'Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)']);
+  }
   const sinCargar = s.filas.filter((f) => f.siis && !f.cargado).map((f) => f.a);
   if (sinCargar.length) {
     const { readdirSync: ls } = await import('node:fs'); const listas = ls(join(ROOT, 'Admin/lotes')).filter((x) => /^lote-\d+\.txt$/.test(x)).sort(); const marca = `Clubes/${cfg.pais}/${club}/siis-estado-`;
