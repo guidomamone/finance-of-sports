@@ -10,7 +10,7 @@ import { tipoSinDesglose, tipoConocido, aprender } from './tipo-sin-desglose.js'
 import { leerEstadoNBB } from './nbb.mjs';
 import { baseDeIngreso } from './ingreso-derivado.js';
 import { leerResultadoIxbrl, chequearIxbrl, xhtmlDelMismoEmisor } from './ixbrl-resultado.mjs';
-import { respuestaPorDetalle, ajusteDe, bolsonDeDeporte, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, FINANCIERO_RE, HOY, norm, r6 } from './cargar.mjs';
+import { respuestaPorDetalle, respuestasDonde, ajusteDe, bolsonDeDeporte, TOTAL_RE, TOTAL_INGRESOS_RE, RESULTADO_EJERCICIO_RE, FINANCIERO_RE, HOY, norm, r6 } from './cargar.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const UMBRAL_JEV_TIPO = 0.8; // confianza mínima de Jev (la menor de 3 respuestas que coinciden) para clasificar solo el rótulo de una línea única: medido con rótulos de los tres tipos, los claros dan 0,85 o más y los ambiguos 0,4 a 0,79 (van a la cola)
@@ -256,7 +256,10 @@ export function faseEjercicio(ctx) {
     const cierreY = alta.ejercicio.cierre; const gs = (sitio.gestiones || {})[clubId] || [];
     const cubre = gs.some((g) => g.confirmada && ((g.desde && g.desde <= cierreY && (!g.hasta || g.hasta >= cierreY)) || (g.firmo || []).includes(year)));
     const previa = respuestaPorDetalle('cargar', 'gestion', clubId);
-    if (cierreY && !cubre && previa?.resp?.decision !== 'descartar') {
+    // Este documento ya tuvo una pregunta de gestión contestada «aceptar» (con la gestión sin confirmar o sin fuente que cubra el año): la persona ya miró este año, así que no se le vuelve a preguntar
+    // en cada corrida con otro detalle. Una gestión que después cubre el año cierra la duda sola (`cubre`); un año de OTRO documento sí abre su pregunta.
+    const yaContestada = respuestasDonde('cargar', 'gestion', (c) => c.pdf === pdf).some((x) => x.resp.decision === 'aceptar');
+    if (cierreY && !cubre && previa?.resp?.decision !== 'descartar' && !yaContestada) {
       const iso = String(club.country || '').toLowerCase();
       let pistas = [];
       // El nombre del firmante suele ir en el renglón de ARRIBA del cargo ("Paulo Rogério de Carvalho Pinheiro" / "Presidente Executivo",

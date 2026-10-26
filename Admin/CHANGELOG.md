@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1161 — cargar-ejercicio.mjs: la pregunta de gestión no se repite con otro detalle [465 · cargar-ejercicio.mjs]
+- Causa: contestada la pregunta genérica del club (`aceptar`) con la gestión todavía sin cubrir el año, la corrida siguiente abría otra con detalle `club:año` para el mismo documento (Medellín 2018 a 2023, 6 preguntas). Ahora, si ese documento ya tiene una pregunta de gestión contestada `aceptar`, no se vuelve a abrir; una gestión que cubre el año cierra la duda sola y un año de otro documento abre la suya.
+- Las 6 abiertas de Medellín siguen en la cola hasta que `cerrarObsoletos` las cierre en una corrida de carga de esos documentos (no verificado).
+- Medición: `cargar-ejercicio.mjs` (compartida, lote completo) idéntico; veredicto GENERAL (1405 documentos de 250 clubes).
+
 ## Versión 1160 — fos perfil-audit: el tiempo de cada chequeo de audit.js [465 · audit-perfil.mjs]
 - `node tools/fos.mjs perfil-audit [N]` corre `audit.js` con `--cpu-prof` en una carpeta temporal y lista los N chequeos más lentos con lo que llaman adentro (antes se armaba a mano con un script del scratchpad). No toca `audit.js`: ningún chequeo ni mensaje cambia; los tres más pesados (5 de 11 s) no se aceleran.
 - Medición: `audit-perfil.mjs` no es del pipeline (no pide medición); sus tiempos coinciden con el perfil manual de la sesión anterior.
