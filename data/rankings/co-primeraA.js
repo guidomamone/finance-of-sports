@@ -201,6 +201,10 @@ window.RANKINGS["co-primeraA"] = {
       { id:"deportestolima-co", revenue:4.067, reportType:"official_balance_sheet",
         sourceId:"deportestolima-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",4.067]] },
+      { id:"atleticobucaramanga-co", revenue:2.762, reportType:"official_balance_sheet",
+        sourceId:"atleticobucaramanga-co-siis-estado-2017",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.762],["Otros ingresos",0]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2016: {

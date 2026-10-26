@@ -1016,6 +1016,7 @@ window.SPONSORS_INDICE = [
   ["frankstahl","Frankstahl",["c"]],
   ["fratelli-beretta","Fratelli Beretta",["c"]],
   ["freitas-transportes","Freitas Transportes",["c"]],
+  ["freskaleche","Freskaleche",["c"]],
   ["frigorifico-paladini","Frigorífico Paladini",["c"]],
   ["fromm","FROMM",["c"]],
   ["frutta","Frutta",["c"]],
