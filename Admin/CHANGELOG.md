@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1132 — La skill de club nuevo nombra el color de un club de rugby [461]
+- `club-nuevo.md` (skill de onboarding) dice que un club de rugby usa `node tools/fos.mjs color-rugby "<club>"`, que se corre a mano y no decide el color.
+- Medición: solo texto de skill; no cambió ninguna tool.
+
 ## Versión 1131 — La fecha `desde` del esquema de registros es una por registro [461 · registro-esquema.js, audit-chequeos-5.js]
 - `desde` de `esquemas-registros.json` pasó de una fecha a una por registro (auditoría, cola, ajustes, mediciones) y `registro-fuera-de-esquema` ahora también avisa de una línea de ajustes o de mediciones, de hoy en adelante, sin `esquema` (antes solo miraba las que lo declaraban).
 - Medición: `audit.js` sin avisos nuevos con los registros de hoy; con una línea falsa de mediciones sin `esquema` el aviso aparece (probado y revertido).

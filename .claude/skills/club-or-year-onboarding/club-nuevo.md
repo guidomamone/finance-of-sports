@@ -23,7 +23,9 @@ Dos capas, EN ESTE ORDEN (invertirlo es la trampa del primer bullet de abajo):
    cuáles), 0 fetches. Si el club no aparece, lo anota en `tools/brand-color-reference/misses.jsonl`;
    si la liga no está cacheada, cachearla es un fetch de una página pública, sin API key:
    `node tools/fetch-brand-color-reference.mjs <slug-liga-footylogos> <nombre-local>` (el uso está
-   en la cabecera del script). Después volvé a correr el lookup. Si la liga no está en footylogos
+   en la cabecera del script). Después volvé a correr el lookup. Un club de rugby (footylogos es solo
+   de fútbol): `node tools/fos.mjs color-rugby "<club>"` trae los candidatos de teamcolorcodes; se corre
+   a mano (`alta-club.mjs` no lo llama) y no decide el color: valen las mismas trampas. Si la liga no está en footylogos
    (no tiene J.League), los dos intentos baratos que fallan rápido: un `curl` al sitio oficial
    buscando `theme-color` (pocos aciertos: el resto son apps JS que devuelven un shell vacío, sitios
    caídos o un WAF) y el wikitext de la plantilla de camiseta (`?action=raw` + `body1`, exacto
