@@ -20,6 +20,9 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1126 — Cierra el punto 417 y se reordena el TODO [417]
+- 417 (niveles P0 a P4 del auditor) cerrado: la skill y `audit.js` dicen lo mismo, `--leyenda` existe, P1 es «frena el commit», y los contrastes externos quedaron decididos: no se comparan los clubes contra los informes de UEFA ni de Deloitte; lo que queda de esa idea es la página de blog (punto 460). Orden del TODO: 257, 461, 462 y 401 arriba.
+
 ## Versión 1125 — Los 26 sponsors anteriores al registro, buscados con el registro; cierra el punto 418 [sponsor-legacy.json, contexto-manual.json]
 - Cuatro subagentes Sonnet buscaron el sponsor de camiseta de los 26 club-años que tenían un texto libre de antes del registro, con las clases de fuente de la skill de sourcing. Con sponsor y su fuente: Rapid Wien 2013 a 2022, 2024 y 2025 (Wien Energie), Molde 2008 y 2010 a 2012 (Sparebanken Møre) y Beşiktaş 2007 (Cola Turka). Sin sponsor, con su registro de búsqueda: Patro Eisden 2013 y 2015, RAAL La Louvière 2018 y 2019 (candidatos Payconiq y UNICEF anotados, sin confirmar que fueran del frente), Vålerenga 2023, Alianza FC 2023, Atlético Bucaramanga 2019 y 2020 y Rapid Wien 2023.
 - `tools/sponsor-legacy.json` quedó vacío y se sacó su silencio de `audit-ignore.json`; con esto las 5 entradas «aceptado sin verificar» de ese archivo quedaron resueltas. Las fuentes más débiles: Molde (el informe dice «generalsponsor», la camiseta sale de una base de camisetas leída por el buscador) y Rapid Wien 2024 (la nota dice sponsor principal, no pecho).
