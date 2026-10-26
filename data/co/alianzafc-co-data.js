@@ -79,7 +79,7 @@ const alianzafcCoExpenseLinesByYear = {
   2019: [
     {"rawLabel":"Costos (De Boletería) (Costo de ventas)","normalizedCategory":"other_expenses","amountNative":-52.507714,"disclosureLevel":"aggregated"},
     {"rawLabel":"Costos (Artículos Deportivos) (Costo de ventas)","normalizedCategory":"other_expenses","amountNative":-38.325,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Gastos de personal (Gastos de ventas)","normalizedCategory":"admin_general_expense","amountNative":-2568.516506,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de personal (Gastos de ventas)","normalizedCategory":"wages_squad","amountNative":-2568.516506,"disclosureLevel":"aggregated"},
     {"rawLabel":"Amortización de Derechos Deportivos","normalizedCategory":"player_amortisation","amountNative":-294.609411,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gastos de personal (Gastos de administración)","normalizedCategory":"admin_general_expense","amountNative":-1576.466978,"disclosureLevel":"aggregated"},
     {"rawLabel":"Honorarios","normalizedCategory":"admin_general_expense","amountNative":-341.693359,"disclosureLevel":"aggregated"},

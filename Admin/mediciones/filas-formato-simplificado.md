@@ -33,7 +33,7 @@ Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que 
 | Fila | Club-años con número | Clubes que la tienen alguna vez | Cuando la tiene: mediana de la sección · casos ≥ 10 % | Cero real | «—» sin saber | Dentro de otro |
 |---|---|---|---|---|---|---|
 | Compra de jugadores | 827 de 1438 (58 %) | 228 de 336 (68 %) | 14.1 % · 64 % | 362 (25 %) | 249 | 0 |
-| Salarios y primas (plantel y cuerpo técnico) | 1147 de 1438 (80 %) | 291 de 336 (87 %) | 48.8 % · 99 % | 15 (1 %) | 157 | 119 |
+| Salarios y primas (plantel y cuerpo técnico) | 1148 de 1438 (80 %) | 291 de 336 (87 %) | 48.7 % · 99 % | 14 (1 %) | 157 | 119 |
 | Inversiones (amortizaciones y depreciación) | 1007 de 1438 (70 %) | 269 de 336 (80 %) | 2.0 % · 8 % | 199 (14 %) | 232 | 0 |
 | Organización de partidos | 771 de 1438 (54 %) | 205 de 336 (61 %) | 7.0 % · 31 % | 413 (29 %) | 254 | 0 |
 | Otras actividades (educación, juvenil, otros deportes, básquet) | 198 de 1438 (14 %) | 62 de 336 (18 %) | 5.6 % · 27 % | 993 (69 %) | 243 | 4 |
