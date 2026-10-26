@@ -32,3 +32,5 @@ Estados financieros en disco ahora: 9 ejercicios (2016-2017, 2019-2025), cada un
 Color de marca: #00A153 — verde (apodo 'El Verde'; camiseta local 2025 body1 00A153 en infobox es.wikipedia; footylogos #33B540 green y gold); escudo verde y dorado. Ojo: el club desapareció (9-dic-2025) y la ficha pasó a Internacional de Bogotá con otros colores (blanco y negro); el verde vale para los ejercicios 2017-2025, verificado 2026-10-09
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2023 desde `Clubes/Colombia/La Equidad/siis-estado-2023.pdf` (sourceId `laequidad-co-siis-estado-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2024 desde `Clubes/Colombia/La Equidad/siis-estado-2024.pdf` (sourceId `laequidad-co-siis-estado-2024`).
