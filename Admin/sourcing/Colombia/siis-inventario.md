@@ -1,7 +1,7 @@
 <!-- md: qué años de cada club colombiano tiene SIIS y cuáles faltan bajar | leer: antes de buscar documentos de Colombia; generado, no se edita -->
 # SIIS: lo que tiene contra lo que bajamos (generado)
 
-Generado el 2026-10-26 por `node tools/siis-estado.mjs --inventario --escribir`. 454 presentaciones de 66 NIT en los tres CIIU deportivos (R9312, R9319, R9311). Cada año: ✔ bajado (`siis-estado-AAAA.md`), p solo tenemos el PDF de notas, · no tenemos nada. La columna «faltan» cuenta los años sin `siis-estado`: se bajan con `node tools/siis-estado.mjs --club "<Club>" --todos --escribir`. El mismo faltante lo avisa `audit.js` (`siis-faltante`).
+Generado el 2026-10-26 por `node tools/siis-estado.mjs --inventario --escribir`. 454 presentaciones de 66 NIT en los tres CIIU deportivos (R9312, R9319, R9311). Cada año: ✔ bajado (`siis-estado-AAAA.md`), p solo tenemos el PDF de notas, · no tenemos nada, ✗ frenado (una compuerta no cierra; `frenados` en `tools/siis-clubes.json`), – SIIS no tiene estado de resultados de ese año. La columna «faltan» cuenta los años sin `siis-estado`: se bajan con `node tools/siis-estado.mjs --club "<Club>" --todos --escribir`. El mismo faltante lo avisa `audit.js` (`siis-faltante`).
 
 | Club (carpeta) | NIT | Años en SIIS | Faltan |
 | --- | --- | --- | ---: |
@@ -34,7 +34,7 @@ Generado el 2026-10-26 por `node tools/siis-estado.mjs --inventario --escribir`.
 | Independiente Medellin | 900577148 | 2016p 2017p 2018p 2019p 2020p 2021p 2022p 2023p 2024p 2025p | 10 |
 | Envigado | 900470848 | 2016p 2017p 2018p 2019p 2020p 2021p 2022p 2023p 2024p 2025p | 10 |
 | Fortaleza CEIF | 900964178 | 2016· 2017p 2018p 2019p 2020p 2021p 2022p 2023p 2024p 2025p | 10 |
-| Independiente Santa Fe | 860009807 | 2016p 2017p 2018p 2019p 2020p 2021p 2022p 2023p 2024p 2025p | 10 |
+| Independiente Santa Fe | 860009807 | 2016p 2017p 2018p 2019✗ 2020p 2021p 2022p 2023p 2024p 2025✗ | 8 |
 | Jaguares | 808000102 | 2016· 2017p 2018· 2019p 2020p 2021· 2022p 2023p 2024p 2025p | 10 |
 | Leones FC | 800015819 | 2016p 2017· 2018p 2019p 2020p 2021p 2022p 2023p 2024p 2025p | 10 |
 | Once Caldas | 890801447 | 2016p 2017p 2018p 2019p 2020p 2021p 2022p 2023p 2024p 2025p | 10 |
