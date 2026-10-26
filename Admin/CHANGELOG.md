@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1117 — Las páginas de club con margen bruto ya no dicen «Ingresos» [458 A · generate-club-pages.js]
+- Los 14 clubes con ejercicios de margen bruto (los 7 con último ejercicio de margen, entre ellos Lierse SK y Vejle) llaman «Margen bruto» a esa cifra en el título, la descripción, la tabla y la imagen al compartir; la tabla suma la columna y las barras no mezclan bases. Elegida la alternativa B del mockup 149.
+- Medición: `generate-club-pages.js`, medidor audit, lote chico: con las páginas viejas, 2 diferencias explicadas (`club-pages-desfasado`, `codigo-sin-accion`); con las 14 regeneradas, idéntico. Patrón GENERAL. Sin revisión independiente de la Auditora.
+
 ## Versión 1116 — Sarpsborg 2021 y Telstar 2025: el PDF mismo no trae el informe, no se re-transcribe
 - Mirados a ojo, sin gastar API: el PDF de Sarpsborg 2021 trae el informe de EY de 2020 repetido (pág. 9) y el de Telstar 2025 termina en la pág. 26 y remite a la controleverklaring de la 27. Las dos líneas pasan a «FALTA EN EL PDF» y a la lista de sourcing.
 - Medición: no cambió ninguna tool.

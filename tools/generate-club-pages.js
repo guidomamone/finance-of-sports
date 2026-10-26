@@ -82,7 +82,7 @@ function datosClub(api, id) {
     if (!c || !meta) continue;
     const ingresos = api.toDisplayValue(c.revenue, meta, 'USD');
     if (!ingresos) continue;
-    filas.push({ anio: y, etiqueta: c.yearLabel, presupuesto: esBudget(c.meta.reportType), ingresos, resultado: api.toDisplayValue(c.pat, meta, 'USD') });
+    filas.push({ anio: y, etiqueta: c.yearLabel, presupuesto: esBudget(c.meta.reportType), margen: !!(gd.fiscalYearMeta[y] && gd.fiscalYearMeta[y].baseIngreso === 'gross_margin'), ingresos, resultado: api.toDisplayValue(c.pat, meta, 'USD') });
   }
   return filas;
 }
@@ -98,10 +98,11 @@ function textosClub(api, id, nombre, filas) {
   const reales = filas.filter((f) => !f.presupuesto);
   const u = reales[0] || filas[0];
   const ej = ejercicioDe(u);
-  const base = u.presupuesto ? `Presupuesto ${ej}` : `Ingresos ${ej}`;
+  const base = u.presupuesto ? `Presupuesto ${ej}` : u.margen ? `Margen bruto ${ej}` : `Ingresos ${ej}`; // un ejercicio de margen bruto no trae ingresos: su cifra es el margen y se llama así
   const titulo = recorta(`${nombre} · ${base}: ${usd(u.ingresos)}`, MAX_TITULO);
   const cuando = u.presupuesto ? `En su presupuesto ${ej}` : `En ${ej}`;
-  const desc = recorta(`${cuando}, ${nombre} tuvo ingresos por ${usd(u.ingresos)} y un resultado neto de ${usd(u.resultado)}. Cada número, con su documento fuente.`, MAX_DESC);
+  const queTuvo = u.margen ? `informó un margen bruto de ${usd(u.ingresos)} (sin ingresos)` : `tuvo ingresos por ${usd(u.ingresos)}`;
+  const desc = recorta(`${cuando}, ${nombre} ${queTuvo} y un resultado neto de ${usd(u.resultado)}. Cada número, con su ${u.margen ? 'fuente' : 'documento fuente'}.`, MAX_DESC);
   return { titulo, desc, ultimo: u };
 }
 
@@ -169,10 +170,11 @@ function construir(api, plantilla) {
     const filas = datos[id]; const t = textosClub(api, id, nombre, filas);
     const liga = ligaDeClub(api, id); const L = liga && api.LEAGUES[liga];
     const pais = (api.COUNTRIES[api.nationOf(id)] || {}).name || club.country;
-    const tr = filas.map((f) => `<tr><td>${esc(f.etiqueta)}</td><td class="n">${fmt(f.ingresos)}</td><td class="n">${f.resultado < 0 ? '−' : ''}${fmt(f.resultado)}</td></tr>`).join('\n');
+    const conMargen = filas.some((f) => f.margen); // solo un club con un ejercicio de margen bruto suma la columna; en ese ejercicio Ingresos queda en «—»
+    const tr = filas.map((f) => `<tr><td>${esc(f.etiqueta)}</td><td class="n">${f.margen ? '—' : fmt(f.ingresos)}</td>${conMargen ? `<td class="n">${f.margen ? fmt(f.ingresos) : '—'}</td>` : ''}<td class="n">${f.resultado < 0 ? '−' : ''}${fmt(f.resultado)}</td></tr>`).join('\n');
     const cuerpo = `<h1>${esc(nombre)}: ingresos y resultado por ejercicio</h1>
 <p>${esc(nombre)} (${esc(pais)}${L ? `, ${esc(L.full || L.name)}` : ''}). ${esc(t.desc)}</p>
-<table><thead><tr><th>Ejercicio</th><th class="n">Ingresos (US$ M)</th><th class="n">Resultado neto (US$ M)</th></tr></thead><tbody>
+<table><thead><tr><th>Ejercicio</th><th class="n">Ingresos (US$ M)</th>${conMargen ? '<th class="n">Margen bruto (US$ M)</th>' : ''}<th class="n">Resultado neto (US$ M)</th></tr></thead><tbody>
 ${tr}
 </tbody></table>
 <p>Cifras en millones de dólares con el tipo de cambio de cierre de cada documento. <a href="/fuentes/${esc(id)}.html">Documentos fuente de ${esc(nombre)}</a>${liga ? ` · <a href="/liga/${esc(liga)}">${esc(L.full || L.name)}</a>` : ''}</p>`;
@@ -246,7 +248,7 @@ ${derecha}
 </svg>`;
 }
 function svgClub(nombre, u, filas) {
-  const ult = filas.slice(0, 6).reverse(); // cronológico, de izquierda a derecha
+  const ult = filas.filter((f) => f.margen === u.margen).slice(0, 6).reverse(); // cronológico; no se mezclan barras de margen con barras de ingresos
   const max = Math.max(...ult.map((f) => Math.max(f.ingresos, 0)), 1e-9);
   const bw = 84, gap = 22, x0 = 1140 - (ult.length * bw + (ult.length - 1) * gap);
   const barras = ult.map((f, i) => {
@@ -254,7 +256,7 @@ function svgClub(nombre, u, filas) {
     const rect = f.presupuesto ? `<rect x="${x}" y="${y}" width="${bw}" height="${h}" fill="none" stroke="${ORO}" stroke-width="3" stroke-dasharray="8 6"/>` : `<rect x="${x}" y="${y}" width="${bw}" height="${h}" fill="${ORO}"/>`;
     return `${rect}<text x="${x + bw / 2}" y="552" font-size="20" text-anchor="middle" fill="${CLARO}">${ejercicioDe(f).slice(-4)}</text>`;
   }).join('');
-  return marco(nombre, `${u.presupuesto ? 'Presupuesto' : 'Ingresos'} ${ejercicioDe(u)}`, usd(u.ingresos), barras);
+  return marco(nombre, `${u.presupuesto ? 'Presupuesto' : u.margen ? 'Margen bruto' : 'Ingresos'} ${ejercicioDe(u)}`, usd(u.ingresos), barras);
 }
 function svgLiga(nombre, d, api) {
   const top = d.clubs.slice(0, 6); const max = Math.max(...top.map((c) => c.revenue), 1e-9);

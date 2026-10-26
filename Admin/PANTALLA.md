@@ -962,6 +962,12 @@ Texto movido sin cambios.
   contacto dejó de ser el placeholder `contacto@bocaennumeros.example` en la
   hoy el mailto va a `guidomamone91@gmail.com`.
 
+- **Páginas estáticas de club (`club/<id>.html`, `tools/generate-club-pages.js`):** el título, el texto del buscador, la tabla sin JS y la imagen
+  al compartir (`og/`) hablan del último ejercicio real. Si ese ejercicio es de margen bruto (`baseIngreso: 'gross_margin'`), la cifra se llama
+  «Margen bruto» (título, subtítulo de la imagen, descripción con «(sin ingresos)»), nunca «Ingresos». La tabla de un club con algún ejercicio de
+  margen suma la columna «Margen bruto (US$ M)» y deja «—» en Ingresos de ese ejercicio; las barras de la imagen no mezclan márgenes con ingresos.
+  Mockup aprobado: `Prototyping/Finanzas/mockup-149.html` (alternativa B). El estimado no sale en estas páginas: vive solo en el card «en otra liga».
+
 
 ---
 
