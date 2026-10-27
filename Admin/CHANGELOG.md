@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1228 — Los encabezados del cierre de turno viven en PLANTILLA-SESION, no en el prompt [hooks/session-start.mjs]
+- `Admin/PLANTILLA-SESION.md` tiene una sección «Cierre de cada turno» con los cinco encabezados fijos y su orden (leí en vano, qué pudo haber impreso la tool, te toca a vos, to dos, en curso); el aviso de arranque de la sesión la nombra. Antes estaban solo en el prompt pegado y una sesión nueva no los conocía.
+- Medición: sin cambio de tools del pipeline (`probar-session-start.mjs` ok).
+
 ## Versión 1227 — TODO con HECHO y PENDIENTE, `fos ayuda`, `&` rechazado y las pruebas que nadie corría [todo.mjs, audit-chequeos-4.js, fos.mjs, probar-todas.mjs, probar-patron.mjs, probar-votacion-nueva.mjs · hooks/pre-tool.mjs]
 - `todo.mjs`: un punto con ítems `- [x]` hecho y `- [ ]` pendiente muestra `[2 de 5 hechos]` en la lista y abre con HECHO y PENDIENTE antes del cuerpo; `audit.js` da `todo-todo-hecho` (P3) si todos están hechos y el punto sigue abierto. 463 y 476 ya usan ítems; la cabecera de `Admin/TODO.md` lo explica.
 - `fos ayuda <tool>` (y `fos <cmd> --ayuda`) imprime el USO de la cabecera sin correr nada; el hook de Bash rechaza `node tools/<x> --ayuda|--help` y manda ahí, y rechaza un `&` al final (usar `run_in_background`). `probar-pre-tool.mjs` 111 casos, todos ok.

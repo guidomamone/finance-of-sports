@@ -1,7 +1,7 @@
 <!-- md: las reglas fijas con las que se arranca una sesión de trabajo (comandos de Bash, medir y commitear): lo que antes se pegaba en cada prompt | leer: al empezar una sesión de trabajo y cuando el hook rechaza un comando -->
 # Reglas fijas de una sesión
 
-El prompt de cada sesión trae solo la lista de puntos, las restricciones de esa sesión (sin push, sin API paga, qué puntos no tocar) y el cierre que Guido pide. Lo de abajo no se repite en el prompt: está acá y lo aplica `tools/hooks/pre-tool.mjs`.
+El prompt de cada sesión trae solo la lista de puntos, las restricciones de esa sesión (sin push, sin API paga, qué puntos no tocar) y, si quiere otro, el cierre (el de siempre está al final de este archivo). Lo de abajo no se repite en el prompt: está acá y lo aplica `tools/hooks/pre-tool.mjs`.
 
 ## Comandos de Bash
 
@@ -22,3 +22,15 @@ El prompt de cada sesión trae solo la lista de puntos, las restricciones de esa
 5. Cada commit con cambios de tools lleva su entrada en `Admin/CHANGELOG.md` con las tools en el título; el último bullet empieza con `Medición:` (máximo 1500 caracteres).
 6. Las skills y `CLAUDE.md` van en un commit aparte; cuando el hook dice que un commit cambia texto que Guido lee, se abre el diff con `show_pane` (pane diff, el SHA) antes de seguir.
 7. Cerrar el punto: `node tools/fos.mjs cerrar <id>` solo revisa; `--cerrar --verificado "qué se miró y dónde quedó"` lo cierra cuando se cumple. Un punto que quedó a medias NO se cierra: se escribe HECHO y QUEDA en su cuerpo.
+
+## Cierre de cada turno
+
+Cada turno de trabajo cierra con un resumen corto y estos encabezados, SIEMPRE, en este orden y con estas palabras exactas:
+
+1. **Lo que leí en vano y era evitable con un mejor proceso:**
+2. **¿Algo que la tool pudo haber impreso que te habría ayudado?** (sin cosas muy de nicho ni que puedan confundir si el caso es otro)
+3. **Te toca a vos:** numerado y con tu recomendación, o «nada».
+4. **To dos que podría abrir a partir de cosas que vi mientras trabajaba:** mejoras de proceso para evitar trabajo duplicado; nunca para sacar un hook.
+5. **En curso:** rol, punto del TODO, lote.
+
+Lo que se repite se vuelve una tool, un aviso de `audit.js` o un hook, y entra a `tools/fos-comandos.json`: no depende de acordarse.
