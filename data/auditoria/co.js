@@ -1375,6 +1375,116 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "realcartagena-co": {
+  "2017": {
+   "auditor": {
+    "nombre": "Erwin García Calvo",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Real Cartagena/dictamen-revisor-fiscal-2017.md",
+    "linea": 56
+   }
+  },
+  "2018": {
+   "auditor": {
+    "nombre": "Erwin García Calvo",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Real Cartagena/dictamen-revisor-fiscal-2018.md",
+    "linea": 99
+   }
+  },
+  "2019": {
+   "auditor": {
+    "nombre": "Erwin García Calvo",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Real Cartagena/dictamen-revisor-fiscal-2019.md",
+    "linea": 111
+   }
+  },
+  "2020": {
+   "auditor": {
+    "nombre": "Erwin García Calvo",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Real Cartagena/dictamen-revisor-fiscal-2020.md",
+    "linea": 114
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Erwin García Calvo",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Real Cartagena/dictamen-revisor-fiscal-2021.md",
+    "linea": 52
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Erwin García Calvo",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Real Cartagena/dictamen-revisor-fiscal-2022.md",
+    "linea": 96
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Erwin García Calvo",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Real Cartagena/dictamen-revisor-fiscal-2023.md",
+    "linea": 96
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Erwin García Calvo",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Real Cartagena/dictamen-revisor-fiscal-2024.md",
+    "linea": 96
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Erwin García Calvo",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Real Cartagena/dictamen-revisor-fiscal-2025.md",
+    "linea": 94
+   }
+  }
+ },
  "santafe-co": {
   "2025": {
    "auditor": {
