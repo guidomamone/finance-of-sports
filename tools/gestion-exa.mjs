@@ -5,7 +5,7 @@
 // QUÉ HACE. Lee data/gestiones/<iso>.js y los ejercicios del club (data/<iso>/<clubId>.json, o --anios AAAA-AAAA si todavía no está cargado), marca los cierres que ninguna gestión CONFIRMADA cubre y, por cada año con hueco, trae de Exa
 // las notas de prensa de nombramiento y de renuncia (fecha, URL, título y un extracto), más la lista de presidentes de Wikipedia como pista. NO escribe data/gestiones: la sesión o el subagente elige la fuente y la carga con su fecha.
 // Costo: ~US$ 0,007 por consulta (dos por año con hueco, más una); cada una queda en Admin/registros/api/exa.jsonl.
-// USO: node tools/fos.mjs gestion-exa <clubId> [--nombre "Club"] [--anios 2016-2025 | "2016, 2017, 2019"] [--anio AAAA]
+// USO: node tools/fos.mjs gestion-exa <clubId> [--nombre "Club"] [--anios 2016-2025 | "2016, 2017, 2019"] [--anio AAAA] [--resumen] [--exa]
 import { readFileSync, existsSync, appendFileSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import vm from 'node:vm';
@@ -15,6 +15,7 @@ const A = process.argv.slice(2); const v = (k) => { const i = A.indexOf(k); retu
 const clubId = A.find((a, i) => !a.startsWith('--') && !['--nombre', '--anios', '--anio'].includes(A[i - 1]));
 if (!clubId || !/-[a-z]{2}$/.test(clubId)) { console.error('Uso: node tools/fos.mjs gestion-exa <clubId> [--nombre "Club"] [--anios 2016-2025] [--anio AAAA]'); process.exit(1); }
 const iso = clubId.split('-').pop();
+const RESUMEN = A.includes('--resumen'); // solo las afirmaciones del modelo que traen una fuente real de la búsqueda, sin el texto entero
 
 // las gestiones del club: el archivo es un script de navegador (window.CLUB_GESTIONES)
 const archivo = join(ROOT, 'data', 'gestiones', `${iso}.js`); const win = {};
@@ -55,9 +56,11 @@ async function gemini() {
   const c = j.candidates?.[0]; const g = c?.groundingMetadata; const chunks = g?.groundingChunks || [];
   appendFileSync(join(ROOT, 'Admin/registros/api/gemini-busqueda.jsonl'), JSON.stringify({ ts: new Date().toISOString(), tool: 'gestion-exa', clubId, modelo, anios, busquedas: (g?.webSearchQueries || []).length, tokens: j.usageMetadata }) + '\n');
   const finales = await Promise.all(chunks.map(async (x) => { try { return (await fetch(x.web.uri, { redirect: 'manual' })).headers.get('location') || x.web.uri; } catch { return x.web.uri; } }));
-  console.log(`\n=== GEMINI CON BÚSQUEDA DE GOOGLE (${(g?.webSearchQueries || []).length} búsquedas) ===\n${(c?.content?.parts || []).map((p) => p.text).join('')}`);
-  console.log('\nAFIRMACIONES CON SU FUENTE REAL (las URLs del texto de arriba NO sirven: usá estas; la fecha suele ir en la URL, y si no, abrí la nota):');
-  for (const s of g?.groundingSupports || []) console.log(`  «${String(s.segment?.text || '').replace(/\s+/g, ' ').slice(0, 170)}»\n     <- ${(s.groundingChunkIndices || []).map((i) => finales[i]).filter(Boolean).join('\n        ')}`);
+  const conFuente = (g?.groundingSupports || []).filter((s) => (s.groundingChunkIndices || []).length && String(s.segment?.text || '').replace(/[\s*#\-:.]/g, '').length > 25);
+  console.log(`\n=== GEMINI CON BÚSQUEDA DE GOOGLE (${(g?.webSearchQueries || []).length} búsquedas, ${conFuente.length} afirmaciones con fuente) ===`);
+  if (!RESUMEN) console.log((c?.content?.parts || []).map((p) => p.text).join(''));
+  console.log(`\nAFIRMACIONES CON SU FUENTE REAL${RESUMEN ? ' (solo las que tienen fuente; lo demás del texto del modelo se descarta)' : ' (las URLs del texto de arriba NO sirven: usá estas; la fecha suele ir en la URL, y si no, abrí la nota)'}:`);
+  for (const s of conFuente) console.log(`  «${String(s.segment.text).replace(/\s+/g, ' ').replace(/\*+/g, '').slice(0, RESUMEN ? 260 : 170)}»\n     <- ${[...new Set(s.groundingChunkIndices.map((i) => finales[i]).filter(Boolean))].join('\n        ')}`);
 }
 await gemini();
 if (!A.includes('--exa')) { console.log('\nLa sesión elige la nota que dice CUÁNDO asumió o dejó el cargo y la carga en data/gestiones/' + iso + '.js con confirmada:true y esa URL (la real de arriba); lo que ninguna nota fecha queda confirmada:false. Con --exa se suman las notas de Exa (más homónimos).'); process.exit(0); }

@@ -342,8 +342,8 @@ const clubs = {
   'cucutadeportivo-co': { id:'cucutadeportivo-co', name:'Cúcuta Deportivo Fútbol Club S.A.', displayName:'Cucuta Deportivo', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#D90706' },
   'cortulua-co': { id:'cortulua-co', name:'Cortuluá Fútbol Club S.A.', displayName:'Inter de Palmira', names:[{ name:'Cortuluá', to:2023 }, { name:'Inter de Palmira', from:2024 }], country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   'tigresfc-co': { id:'tigresfc-co', name:'Tigres Fútbol Club S.A.', displayName:'Tigres FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
-  'bodoglimt-no': { id:'bodoglimt-no', name:'FK Bodø/Glimt', displayName:'Bodø-Glimt', country:'NO', reportingCurrency:'NOK', fiscalYearStart:'01-01', sport:'futbol' },
-  'atleticofc-co': { id:'atleticofc-co', name:'Club Deportivo Atletico Futbol Club Sa', displayName:'Atletico FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
+  'bodoglimt-no': { id:'bodoglimt-no', name:'FK Bodø/Glimt', displayName:'Bodø-Glimt', country:'NO', reportingCurrency:'NOK', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  'atleticofc-co': { id:'atleticofc-co', name:'Club Deportivo Atlético Fútbol Club S.A.', displayName:'Atlético FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   'realcartagena-co': { id:'realcartagena-co', name:'Real Cartagena Fútbol Club S.A.', displayName:'Real Cartagena', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
 };
 

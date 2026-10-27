@@ -67,7 +67,7 @@ que dice `ESTADO.md` era verdad ese día.
 ## Versión 1199 — Cargar un año audita una vez, y el commit no repite una auditoría idéntica [475 · cargar-escribir.mjs, segunda-fuente-liga.mjs, audit.js, sello-audit.js, probar-sello-audit.mjs, pre-tool.mjs]
 - `publicarCambios` (de `cargar --escribir` y `publicar`) corría `audit.js` dos veces sobre el mismo árbol: la de `segunda-fuente-liga --pendientes` (para ver las ligas de una sola fuente, ~12 s) y la compuerta (~12 s). Ahora corre una `audit.js --json` que es la compuerta y da esas ligas (`segunda-fuente-liga --hallazgos <archivo>`); si la segunda fuente escribe algo, regenera y audita de nuevo; con P0/P1 o salida ilegible, la compuerta es la de siempre (`--quiet`, mismo texto). `publicar` baja de ~29 a ~19 s.
 - `tools/sello-audit.js`: `audit.js` guarda en `.git/fos-audit-sello.json` el estado del árbol (HEAD, el día, tamaño y mtime de cada archivo que `git status` lista) cuando da P0 0 y P1 0; el hook de commit no repite la auditoría si el estado es idéntico y audita ante cualquier diferencia. `node tools/fos.mjs probar-sello-audit` (12 casos).
-- Verificado a mano (475): Atlético FC (4 min 28 s, 10 años) y Real Cartagena (5 min 26 s, 9 años) cronometrados con lo nuevo; el paso que queda (audit.js ~14,6 s por año) está medido en la entrada 1208 del CHANGELOG; audit.js dio los mismos avisos en el lote completo (medición del 475) y ningún hook ni compuerta se sacó ni se aflojó
+- Verificado a mano (475): tiempos de dos clubes y el paso que queda, en la entrada 1208.
 - Medición: lote completo, idéntico (cargar, cargar-cola-vacia y audit). Sin revisión independiente de la Auditora.
 
 ## Versión 1198 — fos gestion-exa [463 · gestion-exa.mjs]

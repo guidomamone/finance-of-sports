@@ -60,8 +60,8 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://en.wikipedia.org/wiki/Alianza_Petrolera_F.C.', confirmada:false },
   ],
   'atleticofc-co': [
-    { nombre:'Gustavo Bernardo Moreno Arango', corto:'Moreno', cargo:'Dueño', desde:'2005-01-01', hasta:null,
-      fuente:'https://www.elheraldo.co/deportes/2017/01/13/giovanni-hernandez-nuevo-manager-deportivo-del-atletico-fc-319456', confirmada:false },
+    { nombre:'Gustavo Bernardo Moreno Arango', corto:'Moreno', cargo:'Presidente', desde:'2016-03-10', hasta:null,
+      fuente:'https://colombia.as.com/colombia/2016/03/10/futbol/1457641929_960132.html (marzo de 2016, ingreso de Atlético FC a la Dimayor; no se pudo abrir, la fecha va en la URL); https://www.cali.gov.co/deportes/publicaciones/154833/atletico-fc-de-cali-tambien-listo-para-volver-a-entrenar/ (2020-07-10: «el presidente del club, Gustavo Moreno Arango»); https://www.eltiempo.com/deportes/futbol-colombiano/superintendencia-anuncia-investigacion-a-16-clubes-de-dimayor-635480 (noviembre de 2021: presidente y representante legal); https://zonacero.com/deportes/giovanni-hernandez-no-continua-como-tecnico-del-atletico-de-cali (2023-11-22: «Gustavo Moreno Arango, presidente del Atlético»); https://primertiempo.co/real-cartagena/le-salieron-a-deber-el-presidente-de-atletico-se-queja-de-que-real-cartagena-no-le-colaboro/ (2024-09-13: «el presidente del Atlético FC, Gustavo Moreno Arango»); https://dimayor.com.co/2026/03/16/dimayor-avanza-en-la-articulacion-con-gobiernos-locales-y-autoridades-en-cali/ (2026-03-16)', confirmada:true },
   ],
   'atleticobucaramanga-co': [
     { nombre:'Óscar Enrique Álvarez Ascanio', corto:'Álvarez', cargo:'Dueño', desde:'2012-05-31', hasta:null,
