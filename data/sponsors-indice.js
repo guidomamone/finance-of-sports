@@ -854,7 +854,7 @@ window.SPONSORS_INDICE = [
   ["eidsiva-energi","Eidsiva Energi",["c"]],
   ["ekoniva","EkoNiva",["c"]],
   ["elabet","Elabet",["c"]],
-  ["electrohuila","Electrohuila",["c"]],
+  ["electrohuila","ElectroHuila",["c"]],
   ["elefante-mq","Elefante MQ",["m"]],
   ["elektramat","Elektramat",["c"]],
   ["eletrobras","Eletrobras",["c"]],

@@ -110,7 +110,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2023: {
     leagueSize: 20,
-    sinDato: ["atleticohuila-co"],
     wiki: {"t":"2023 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:23.786, reportType:"official_balance_sheet",
@@ -133,6 +132,9 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"laequidad-co-siis-estado-2023",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.235],["Otros ingresos",0.447]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras actividades (educación y otros deportes)","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"atleticohuila-co", revenue:4.044, reportType:"official_balance_sheet",
+        sourceId:"atleticohuila-co-siis-estado-2023",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",4.024],["Otros ingresos",0.02]] },
       { id:"alianzafc-co", revenue:3.877, reportType:"official_balance_sheet",
         sourceId:"alianzafc-co-estados-financieros-2023",
         mix:[["Comercial / Sponsors",0.309],["Estadio",0.141],["Televisión",2.084],["Premios por competencias",0.121],["Venta de Jugadores",1.178],["Subsidios y donaciones",0.005],["Otros ingresos",0.038]] },

@@ -27,3 +27,5 @@ Estados financieros en disco ahora: 10 ejercicios (2016-2025), cada uno con cert
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2021 desde `Clubes/Colombia/Atletico Huila/siis-estado-2021.pdf` (sourceId `atleticohuila-co-siis-estado-2021`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2022 desde `Clubes/Colombia/Atletico Huila/siis-estado-2022.pdf` (sourceId `atleticohuila-co-siis-estado-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2023 desde `Clubes/Colombia/Atletico Huila/siis-estado-2023.pdf` (sourceId `atleticohuila-co-siis-estado-2023`).
