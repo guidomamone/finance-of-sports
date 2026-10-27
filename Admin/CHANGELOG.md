@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1201 — club-siis --preparar corre el ensayo del alta [474 · club-siis-preparar.mjs]
+- `--preparar` de un club sin alta corre `alta-club.mjs <último siis-estado> --resumen` (no escribe `data/`) y deja la pregunta del nombre legal en la cola, con su id, para contestarla antes de `--avanzar`. Probado con Cortulua: una pregunta (`name`), contestada con el formato de Envigado y Leones.
+- Medición: no es una tool del pipeline (`tools/pipeline-tools.json`); sin revisión independiente de la Auditora.
+
 ## Versión 1200 — club-siis --preparar, --avanzar --ensayo y la cola por tipo [474 · club-siis.mjs, club-siis-preparar.mjs, cola.mjs]
 - `node tools/club-siis.mjs "<Club>" --preparar` adelanta, sin alta y sin tocar lo que se publica, los estados de SIIS, los dictámenes (los escaneos por Mistral) y deja los briefs de gestiones, estadio y sponsor y auditor con el clubId previsto (slug de la carpeta + `-co`; `--avanzar` avisa si el alta da otro). Las líneas del auditor de un club sin balance van a `Admin/registros/auditoria-adelantada.jsonl` (`auditoria.mjs` rechaza un ejercicio sin balance) y `--mudar-auditor` (y `--avanzar`) las pasan a `auditoria.jsonl` cuando el año está cargado.
 - `--avanzar --ensayo` dice qué correría y no escribe nada; sin `--ensayo` avisa al empezar que escribe. `cola.mjs --tipo <motivo>` filtra y el encabezado cuenta los casos por tipo; el filtro por club ya existía como `--dir`.

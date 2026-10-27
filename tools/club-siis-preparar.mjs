@@ -10,6 +10,7 @@
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
+import { pendientes } from './cola.mjs';
 
 // LAS LÍNEAS DEL AUDITOR ADELANTADAS: `auditoria.mjs` rechaza una línea de un ejercicio que no tiene balance cargado, así que lo que el subagente escribe antes de la carga vive en
 // Admin/registros/auditoria-adelantada.jsonl (que nadie lee) y se muda a auditoria.jsonl cuando el año está cargado. Devuelve cuántas mudó. `anios`: los años ya cargados del club.
@@ -50,6 +51,16 @@ export async function preparar({ club, cfg, ROOT, estadoDe, evaluar, ENSAYO }) {
   s = estadoDe(club); const id = s.idEf; const filas = s.filas;
   const previsto = !s.c.clubId; const anios = filas.map((f) => f.a).join(', ');
   console.log(`\n3. clubId ${previsto ? 'PREVISTO' : 'del alta'}: ${id}${previsto ? ' (el alta lo da por la carpeta; si da otro, --avanzar avisa: lo preparado hay que renombrarlo)' : ''}`);
+  if (previsto) { // el ensayo del alta (sin --escribir): la pregunta del nombre legal, si la hay, queda en la cola ahora y no frena a --avanzar después
+    const ultimo = s.filas.filter((f) => f.siis).map((f) => f.a).pop(); const pdf = `Clubes/${cfg.pais}/${club}/siis-estado-${ultimo}.pdf`;
+    if (!ultimo || !existsSync(join(ROOT, pdf))) console.log(`   Ensayo del alta: todavía no hay estado de SIIS bajado${ENSAYO ? ' (el ensayo no los baja)' : ''}.`);
+    else {
+      const out = corre(['tools/alta-club.mjs', pdf, '--resumen']); console.log(`   Ensayo del alta (no escribe data/): ${out.trim().split('\n').join('\n   ')}`);
+      const casos = pendientes().filter((p) => p.pdf.startsWith(`Clubes/${cfg.pais}/${club}`));
+      if (casos.length) console.log(`   Pregunta(s) en la cola del club: ${casos.map((p) => p.id).join(', ')}. Contestarlas ahora (node tools/cola.mjs --responder <id> corregir --valor "<nombre legal>" … --causa lectura-del-documento) deja el alta sin frenos.`);
+      else console.log('   El alta no pregunta nada.');
+    }
+  }
   const faltan = { gestiones: !s.hayGestion, 'estadio-sponsor': filas.some((f) => !f.ctx && !f.cargado), auditor: filas.some((f) => f.dictamen && !f.aud) };
   const lanzar = Object.entries(faltan).filter(([, v]) => v).map(([k]) => k);
   console.log(`\n4. Subagentes de lo adelantable (años ${anios}): ${lanzar.length ? lanzar.join(' · ') : 'nada falta'}`);
