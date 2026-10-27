@@ -31,3 +31,5 @@ Color de marca: null — la ficha de es.wikipedia (Real Cartagena) lista «Amari
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2023 desde `Clubes/Colombia/Real Cartagena/siis-estado-2023.pdf` (sourceId `realcartagena-co-siis-estado-2023`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2024 desde `Clubes/Colombia/Real Cartagena/siis-estado-2024.pdf` (sourceId `realcartagena-co-siis-estado-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2025 desde `Clubes/Colombia/Real Cartagena/siis-estado-2025.pdf` (sourceId `realcartagena-co-siis-estado-2025`).

@@ -8,5 +8,5 @@ window.ESTIMADOS["co-primeraB"] = {
   2019: [{"id":"cortulua-co","revenue":2.682,"lo":1.487,"hi":5.071,"caso":"afuera","error":29,"de":[2020]}],
   2023: [{"id":"llaneros-co","revenue":2.998,"lo":1.662,"hi":5.67,"caso":"afuera","error":29,"de":[2025]},{"id":"tigresfc-co","revenue":0.617,"lo":0.416,"hi":0.938,"caso":"entre","error":18,"de":[2022,2024]}],
   2024: [{"id":"llaneros-co","revenue":3.075,"lo":1.705,"hi":5.815,"caso":"afuera","error":29,"de":[2025]}],
-  2025: [{"id":"realcartagena-co","revenue":3.456,"lo":1.915,"hi":6.534,"caso":"afuera","error":29,"de":[2024]},{"id":"tigresfc-co","revenue":0.684,"lo":0.379,"hi":1.293,"caso":"afuera","error":29,"de":[2024]}],
+  2025: [{"id":"tigresfc-co","revenue":0.684,"lo":0.379,"hi":1.293,"caso":"afuera","error":29,"de":[2024]}],
 };
