@@ -90,6 +90,13 @@ r = medir();
 caso('un veredicto sin commitear en auditoria-proceso.jsonl no frena la medición', r.status === 0 && !/sin commitear/.test(r.out), r.out.slice(-300));
 volver();
 
+// las pruebas que cerrar-tool corre antes de medir anotan cuándo pasaron en pruebas-corridas.json (no es un dato que el medidor lea): sin commitear, no frena la medición
+w('tools/fake-tool.mjs', 'export const VALOR = 1; export const OTRO = 2;\n');
+w('Admin/registros/pruebas-corridas.json', '{"tools/probar-x.mjs":{"fecha":"2026-10-27","ok":true,"segundos":1}}\n');
+r = medir();
+caso('un registro de pruebas corridas sin commitear no frena la medición', r.status === 0 && !/sin commitear/.test(r.out), r.out.slice(-300));
+volver();
+
 // 2. un cambio que altera la salida
 w('tools/fake-tool.mjs', 'export const VALOR = 2;\n');
 r = medir();

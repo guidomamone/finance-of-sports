@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/probar-todas.mjs — corre TODAS las pruebas (`tools/probar-*.mjs` y `tools/hooks/probar-*.mjs`) y anota cuándo pasó cada una en Admin/registros/pruebas-corridas.json.
+// tools/probar-todas.mjs — corre TODAS las pruebas (`tools/probar-*.mjs`, `tools/hooks/probar-*.mjs` y `tools/prueba-escribir.mjs`, la de las escrituras, que dura unos minutos) y anota cuándo pasó cada una en Admin/registros/pruebas-corridas.json.
 // POR QUÉ. Una prueba que ningún chequeo corre se rompe sin que nadie lo vea: `probar-medir-pipeline.mjs` llevaba rota (19 casos MAL) desde que `medir-pipeline` sumó imports que su repo de juguete no copiaba.
 // `audit.js` lee el registro (`prueba-sin-correr`, P3: una prueba que falló, o que no corrió en 14 días, o que no figura) y dice este comando. El audit no las corre (algunas tardan minutos).
 // USO: node tools/probar-todas.mjs [--solo a.mjs,b.mjs]     (en segundo plano: unos 5 a 10 minutos; sale con 1 si alguna falla)
@@ -12,7 +12,7 @@ import { resolve, join } from 'node:path';
 const ROOT = resolve(import.meta.dirname, '..');
 const REGISTRO = join(ROOT, 'Admin', 'registros', 'pruebas-corridas.json');
 const A = process.argv.slice(2); const solo = A.includes('--solo') ? A[A.indexOf('--solo') + 1].split(',') : null;
-const pruebas = ['tools', 'tools/hooks'].flatMap((d) => readdirSync(join(ROOT, d)).filter((f) => /^probar-.*\.mjs$/.test(f) && f !== 'probar-todas.mjs').map((f) => `${d}/${f}`)).filter((p) => !solo || solo.includes(p.split('/').pop()));
+const pruebas = ['tools', 'tools/hooks'].flatMap((d) => readdirSync(join(ROOT, d)).filter((f) => /^(probar-.*|prueba-escribir)\.mjs$/.test(f) && f !== 'probar-todas.mjs').map((f) => `${d}/${f}`)).filter((p) => !solo || solo.includes(p.split('/').pop()));
 const reg = existsSync(REGISTRO) ? JSON.parse(readFileSync(REGISTRO, 'utf8')) : {};
 let mal = 0;
 for (const p of pruebas) {

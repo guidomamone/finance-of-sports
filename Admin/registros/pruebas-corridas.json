@@ -22,7 +22,7 @@
  "tools/probar-cache-audit.mjs": {
   "fecha": "2026-10-27",
   "ok": true,
-  "segundos": 127
+  "segundos": 101
  },
  "tools/probar-cierre.mjs": {
   "fecha": "2026-10-27",
@@ -37,7 +37,7 @@
  "tools/probar-medir-pipeline.mjs": {
   "fecha": "2026-10-27",
   "ok": true,
-  "segundos": 5
+  "segundos": 4
  },
  "tools/probar-mover-bloque.mjs": {
   "fecha": "2026-10-27",
@@ -53,6 +53,11 @@
   "fecha": "2026-10-27",
   "ok": true,
   "segundos": 1
+ },
+ "tools/probar-pruebas-de-tool.mjs": {
+  "fecha": "2026-10-27",
+  "ok": true,
+  "segundos": 0
  },
  "tools/probar-reemplazar.mjs": {
   "fecha": "2026-10-27",
@@ -78,5 +83,10 @@
   "fecha": "2026-10-27",
   "ok": true,
   "segundos": 0
+ },
+ "tools/prueba-escribir.mjs": {
+  "fecha": "2026-10-27",
+  "ok": true,
+  "segundos": 165
  }
 }

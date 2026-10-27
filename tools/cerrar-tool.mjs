@@ -5,13 +5,14 @@
 // de memoria: un paso fuera de orden costaba una medición de varios minutos. Acá el orden lo impone el código; cada paso es la tool de siempre.
 // USO (la medición tarda: correrlo en segundo plano):
 //   node tools/cerrar-tool.mjs --cambio "<qué hace>" [--patron "<regex sobre los .md>" | --sin-documentos "<por qué no lee documentos>"] [--explicacion "<diferencias esperadas>"] [--tools a.mjs,b.mjs]
-// PASOS: 1 `medir-pipeline.mjs --ensayo` (nombres, clasificación, plan: frena en segundos) · 2 `medir-pipeline.mjs` (con --explicacion si la pasaste) · 3 `patron.mjs --escribir` · 4 la lista de lo que falta.
+// PASOS: 1 `medir-pipeline.mjs --ensayo` (nombres, clasificación, plan: frena en segundos) · 2 las pruebas de lo que cambió (`pruebas-de-tool.mjs` las elige, `probar-todas.mjs --solo` las corre y las anota; una que falla frena antes de medir; si no cambió ninguna tool del pipeline y pasan, termina acá) · 3 `medir-pipeline.mjs` (con --explicacion si la pasaste) · 4 `patron.mjs --escribir` · 5 la lista de lo que falta.
 // Los datos y registros se commitean ANTES (un commit de solo datos pasa el hook aunque haya tools sin medir, con `git add <rutas>`, sin -A ni .). No commitea nada.
 // ============================================================================
 import { spawnSync } from 'node:child_process';
 import { readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { patronDe } from './patrones-tools.mjs';
+import { pruebasDe } from './pruebas-de-tool.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
@@ -30,19 +31,34 @@ if (!cambio) { console.error('Uso: node tools/cerrar-tool.mjs --cambio "<qué ha
 const correr = (args, capturar = false) => spawnSync('node', args, { cwd: ROOT, encoding: 'utf8', stdio: capturar ? ['ignore', 'pipe', 'pipe'] : 'inherit' });
 const parar = (m) => { console.error(`\nFRENADO: ${m}`); process.exit(1); };
 
-console.log('== 1/4 Chequeo en seco (nombres, clasificación, plan)');
+console.log('== 1/5 Chequeo en seco (nombres, clasificación, plan)');
 const seco = correr(['tools/medir-pipeline.mjs', '--ensayo'], true); process.stdout.write(seco.stdout || ''); process.stderr.write(seco.stderr || '');
 if (seco.status !== 0) parar('arreglá lo de arriba y volvé a correr; no se midió nada.');
-if (/nada que medir/.test(seco.stdout || '')) parar('ninguna tool del pipeline cambió: no hay nada que medir ni que juzgar (¿ya estaba medido, o solo cambiaron comentarios? `node tools/medir-pipeline.mjs` lo dice).');
+const sinMedir = /nada que medir/.test(seco.stdout || '');
+// archivos de tools/ y tools/hooks/ distintos de HEAD (con los nuevos sin trackear): lo que tocó la sesión, para elegir sus pruebas
+const gitL = (...a) => spawnSync('git', a, { cwd: ROOT, encoding: 'utf8' }).stdout || '';
+const tocados = [...new Set(`${gitL('diff', '--name-only', 'HEAD', '--', 'tools')}\n${gitL('ls-files', '--others', '--exclude-standard', 'tools')}`.split('\n').map((f) => f.match(/^tools\/(?:hooks\/)?([^/]+\.(?:mjs|js))$/)?.[1]).filter(Boolean))];
+const pruebas = pruebasDe(tocados);
+if (sinMedir && !pruebas.length) parar('ninguna tool del pipeline cambió: no hay nada que medir ni que juzgar (¿ya estaba medido, o solo cambiaron comentarios? `node tools/medir-pipeline.mjs` lo dice).');
 
-if (!patron && !sinDoc) { // sin --patron ni --sin-documentos: el de la lista corta, y se frena ahora (en segundos) si a una tool le falta, no después de la medición
+if (!sinMedir && !patron && !sinDoc) { // sin --patron ni --sin-documentos: el de la lista corta, y se frena ahora (en segundos, antes de las pruebas y de la medición) si a una tool le falta
   const nombres = tools ? tools.split(',') : ((seco.stdout || '').match(/^Tools: (.+)$/m)?.[1] || '').split(', ').filter(Boolean);
   const p = patronDe(nombres);
   if (p.falta) parar(`sin --patron ni --sin-documentos y sin entrada en tools/patrones-tools.json para: ${p.falta.join(', ')}. Pasá --patron "<regex sobre los .md>" o --sin-documentos "<motivo>", o sumá la tool a esa lista.`);
   patron = p.patron; sinDoc = p.sinDocumentos; console.log(`\nVeredicto con ${patron ? `el patrón /${patron}/` : `«${sinDoc}»`} (tools/patrones-tools.json).`);
 }
 
-console.log('\n== 2/4 Medición (antes y después; tarda varios minutos)');
+// Antes de medir (minutos): las pruebas de lo que cambió, porque una prueba rota por este cambio no puede esperar a que `audit.js` la pida a los 14 días. Pasa o falla; no se compara con un "antes".
+console.log('\n== 2/5 Pruebas de lo que cambió');
+if (!pruebas.length) console.log('  ninguna prueba nombra lo que cambió (tools/pruebas-de-tool.mjs).');
+else {
+  for (const p of pruebas) console.log(`  ${p.ruta}  (por ${p.por})`);
+  const pr = correr(['tools/probar-todas.mjs', '--solo', pruebas.map((p) => p.ruta.split('/').pop()).join(',')]); // anota cuándo pasó cada una en Admin/registros/pruebas-corridas.json
+  if (pr.status !== 0) parar('una prueba de lo que cambió falla (arriba): arreglá el cambio, o la prueba si el comportamiento nuevo es a propósito, y volvé a correr; no se midió nada.');
+}
+if (sinMedir) { console.log('\nNada que medir (ninguna tool del pipeline cambió) y las pruebas de lo que cambió pasan: no hay más pasos.'); process.exit(0); }
+
+console.log('\n== 3/5 Medición (antes y después; tarda varios minutos)');
 const registro = resolve(ROOT, 'Admin/registros/mediciones-pipeline.jsonl');
 const antes = existsSync(registro) ? readFileSync(registro, 'utf8').split('\n').filter(Boolean).length : 0;
 const med = correr(['tools/medir-pipeline.mjs', ...(explicacion ? ['--explicacion', explicacion] : [])]);
@@ -52,11 +68,11 @@ const ultima = lineas.length > antes ? JSON.parse(lineas.at(-1)) : null;
 if (!ultima) parar('la medición no anotó ninguna línea (¿pidió datos commiteados antes?).');
 if (!/^(idéntico|\d+ diferencias, todas explicadas)$/.test(ultima.resultado || '')) parar(`resultado «${ultima.resultado}»: explicá las diferencias esperadas y volvé a correr con --explicacion "…", o arreglá el cambio.`);
 
-console.log('\n== 3/4 Veredicto (fos patron)');
+console.log('\n== 4/5 Veredicto (fos patron)');
 const pat = correr(['tools/patron.mjs', '--cambio', cambio, ...(patron ? ['--patron', patron] : ['--sin-documentos', sinDoc]), ...(tools ? ['--tools', tools] : []), '--escribir']);
 if (pat.status !== 0) parar('el veredicto no se pudo calcular.');
 
-console.log('\n== 4/4 Lo que falta para commitear');
+console.log('\n== 5/5 Lo que falta para commitear');
 const cambiadas = [...new Set(`${spawnSync('git', ['diff', '--name-only', 'HEAD', '--', 'tools'], { cwd: ROOT, encoding: 'utf8' }).stdout}\n${spawnSync('git', ['ls-files', '--others', '--exclude-standard', 'tools'], { cwd: ROOT, encoding: 'utf8' }).stdout}`.split('\n').map((f) => f.match(/^tools\/([^/]+\.(?:mjs|js))$/)?.[1]).filter(Boolean))];
 const changelog = readFileSync(resolve(ROOT, 'Admin/CHANGELOG.md'), 'utf8').slice(0, 12000);
 const sinEntrada = cambiadas.filter((n) => !changelog.includes(n));

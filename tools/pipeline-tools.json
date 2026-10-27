@@ -152,7 +152,6 @@
  "_no_pipeline": "Tools de primer nivel declaradas de afuera del pipeline, con el motivo. Una tool de la tabla no puede importar una de estas (clasificar-tools.mjs lo avisa). tools/hooks, tools/archivo y las carpetas de datos no se clasifican.",
  "_escriben_sin_prueba": "Tools del pipeline con un modo --escribir que tools/prueba-escribir.mjs todavía no prueba. Es deuda anotada con su motivo, no un permiso: medir-pipeline.mjs no da «idéntico» a una tool que escribe y no está en prueba-escribir.mjs ni acá. Al sumar la prueba, la tool sale de esta lista.",
  "escriben_sin_prueba": {
-  "cargar-lote.mjs": "corre cargar.mjs por documento: lo que escribe lo prueba la carga de prueba-escribir.mjs; falta un escenario del lote entero",
   "bfo-rusia.mjs": "carga los estados rusos desde bo.nalog.gov.ru por red; falta un escenario con una respuesta guardada",
   "bfo-rusia-notas.mjs": "completa las notas de los estados rusos; falta su escenario",
   "siis-estado.mjs": "baja de SIIS por red, imprime con Chrome y llama a armar-a-mano; falta un escenario con una respuesta guardada de SIIS (punto 401)"
@@ -250,6 +249,8 @@
   "medir-ixbrl-consolidado.mjs": "medidor: chequeo iXBRL consolidado",
   "medir-segunda-fuente.mjs": "medidor: Wikidata y OpenStreetMap contra lo cargado",
   "prueba-escribir.mjs": "prueba: regresión de la escritura de cargar",
+  "pruebas-de-tool.mjs": "orden: dice qué pruebas corresponden a unos archivos de tools/ (las nombran o nombran a quien los importa); cerrar-tool.mjs las corre; solo lee",
+  "probar-pruebas-de-tool.mjs": "prueba: pruebas-de-tool.mjs sobre un árbol de juguete",
   "ida-y-vuelta.mjs": "contrato de datos: prueba JSON a data.js y vuelta",
   "exportar-json.mjs": "contrato de datos: exporta un JSON por club",
   "exportar-paquete.mjs": "contrato de datos: Data Package de Frictionless",

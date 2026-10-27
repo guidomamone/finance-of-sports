@@ -11,7 +11,7 @@ function checkTodo() {
   const hasta = findings.slice();
   { // una prueba (probar-*.mjs) que falló, que no figura o que no corrió en 14 días: `node tools/probar-todas.mjs` las corre y anota (Admin/registros/pruebas-corridas.json)
     let reg = {}; try { reg = JSON.parse(fs.readFileSync(path.join(ROOT, 'Admin/registros/pruebas-corridas.json'), 'utf8')); } catch { /* sin registro: ninguna figura */ }
-    const hoy = Date.now(); const pruebas = ['tools', 'tools/hooks'].flatMap((d) => { try { return fs.readdirSync(path.join(ROOT, d)).filter((f) => /^probar-.*\.mjs$/.test(f) && f !== 'probar-todas.mjs').map((f) => `${d}/${f}`); } catch { return []; } });
+    const hoy = Date.now(); const pruebas = ['tools', 'tools/hooks'].flatMap((d) => { try { return fs.readdirSync(path.join(ROOT, d)).filter((f) => /^(probar-.*|prueba-escribir)\.mjs$/.test(f) && f !== 'probar-todas.mjs').map((f) => `${d}/${f}`); } catch { return []; } });
     const malas = pruebas.filter((p) => !reg[p] || !reg[p].ok || hoy - new Date(reg[p].fecha).getTime() > 14 * 864e5);
     if (malas.length) add('P3', 'prueba-sin-correr', `${malas.length} de ${pruebas.length} pruebas fallaron, no figuran o no corrieron en 14 días: ${malas.slice(0, 6).map((p) => p.replace(/^tools\//, '')).join(', ')}${malas.length > 6 ? '…' : ''}. node tools/probar-todas.mjs las corre y anota (en segundo plano)`);
   }

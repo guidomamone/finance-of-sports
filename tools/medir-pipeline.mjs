@@ -203,7 +203,8 @@ for (const s of ['SIGINT', 'SIGTERM']) process.on(s, () => process.exit(130));
 const SENSIBLE = /^(data|Generados|Clubes|js|css|Admin\/registros)\b|^index\.html/;
 // lo que esta tool mueve a propósito: sus salidas, el registro y las tools que intercambia (no el resto de tools/: un medidor puede escribir ahí, p. ej. la caché de estadio-sponsor)
 // auditoria-proceso.jsonl: lo escriben patron.mjs y decision.mjs (los veredictos), no los medidores; un veredicto RECHAZADA sin commitear no tiene que frenar la medición siguiente
-const propio = (p) => p.startsWith('Admin/mediciones/pipeline') || p === 'Admin/registros/mediciones-pipeline.jsonl' || p === 'Admin/registros/auditoria-proceso.jsonl' || nombres.some((n) => p === `tools/${n}`);
+// pruebas-corridas.json: lo escribe probar-todas.mjs (cerrar-tool corre las pruebas de lo que cambió antes de medir), no los medidores
+const propio = (p) => p.startsWith('Admin/mediciones/pipeline') || p === 'Admin/registros/mediciones-pipeline.jsonl' || p === 'Admin/registros/auditoria-proceso.jsonl' || p === 'Admin/registros/pruebas-corridas.json' || nombres.some((n) => p === `tools/${n}`);
 const estado = () => git('status', '--porcelain', '-uall').split('\n').filter(Boolean).filter((l) => !propio(l.slice(3).replace(/^"|"$/g, '')));
 const sucios = estado().filter((l) => SENSIBLE.test(l.slice(3)));
 if (sucios.length) problemas.push(`Hay cambios sin commitear en datos o registros; el antes y el después se miden sobre los mismos datos. Commitealos o descartalos primero (un commit de solo datos y registros pasa el hook aunque haya tools sin medir, con \`git add <esas rutas>\`, sin \`-A\` ni \`.\`):\n  ${sucios.join('\n  ')}`);
