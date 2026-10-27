@@ -116,7 +116,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2019: {
     leagueSize: 17,
-    sinDato: ["tigresfc-co"],
     wiki: {"t":"2019 Categoría Primera B season","lang":"en","at":"2026-09-30","n":17},
     clubs: [
       { id:"boyacachico-co", revenue:2.051, reportType:"official_balance_sheet",
@@ -128,6 +127,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"fortalezaceif-co", revenue:1.057, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2019",
         mix:[["Comercial / Sponsors",0.065],["Estadio",0.143],["Televisión",0.252],["Premios por competencias",0.063],["Venta de Jugadores",0.335],["Otros ingresos",0.199]] },
+      { id:"tigresfc-co", revenue:0.659, reportType:"official_balance_sheet",
+        sourceId:"tigresfc-co-siis-estado-2019",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.657],["Otros ingresos",0.002]] },
     ],
   },
   2018: {
