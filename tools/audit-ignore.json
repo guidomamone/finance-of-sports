@@ -542,5 +542,10 @@
   "code": "siis-entre-anios",
   "match": "Tigres FC 2018→2019",
   "motivo": "VERIFICADO (Clubes/Colombia/Tigres FC/siis-estado-2019.md L13 (columna 2018) y data/co/tigresfc-co.json 2018, 2026-10-27, 2026-10-27). VERIFICADO. El estado de 2018 imprime la actividad deportiva como «Costo de ventas» (466.172) y el comparativo de 2019 lo repite como «Gastos de ventas»; 2018 está recargado por el contenido con un ajuste de categoría, igual que Atlético Bucaramanga 2018. 2016 y 2017 NO siguen el criterio: el rótulo pesa 43 % y 41 % de los gastos (menos de la mitad) y el comparativo del año siguiente lo repite como «Costo de ventas» con «Gastos de ventas» en 0 (siis-estado-2017.md y siis-estado-2018.md), así que quedan en other_operating_expenses por la regla de Colombia"
+ },
+ {
+  "code": "dictamen-fechas-ajenas",
+  "match": "barranquillafc-co 2020",
+  "motivo": "VERIFICADO (Clubes/Colombia/Barranquilla FC/dictamen-revisor-fiscal-2020.pdf páginas 2 y 3 (y .md L23, L47, L77), 2026-10-27, 2026-10-27). El dictamen está fechado 20 de febrero de 2021 en las tres fechas del documento; la frase «informe separado de fecha 20 de febrero de 2020» (L65 del .md, página 3 del PDF) es una errata del original: el informe de control interno es del mismo día de 2021"
  }
 ]

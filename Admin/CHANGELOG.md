@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1222 — Barranquilla FC y Bogotá FC (2016 a 2025) desde SIIS; Δ % con tope en Finanzas multi-año [463, 476 · barranquillafc-co, bogotafc-co]
+- Los dos clubes cargados por `club-siis.mjs` (alta, estados, dictámenes, tres subagentes cada uno, lote con un commit por año), con la línea del auditor (sin salvedades en los 12 años), caja y deuda de SIIS y ligas en Primera B (el roster de Wikipedia los nombra «Barranquilla» y «Bogotá»). Un aviso `dictamen-fechas-ajenas` de Barranquilla 2020 queda silenciado con motivo (errata del original: el dictamen es del 20-2-2021). Faltan su `brandColor`, sponsors fuertes y las gestiones con nota propia por año (TODO 476).
+- `js/finanzas-multi.js`: el Δ primero→último con un año base casi en cero muestra el tope «>+1.000%» en vez de +38.046 % (Águilas Doradas, Estadio); verificado a 375 px, sin scroll horizontal de la página. `auditAll()` en el navegador: 344 clubes, 4.391 chequeos, 0 que no cierran.
+- Medición: sin cambio de tools en esta entrada.
+
 ## Versión 1221 — cola.mjs --corregir-categoria no repite una respuesta ya fijada; TODO 463 achicado, sus pendientes al 476 [463, 476 · cola.mjs, cola-corregir-categoria.mjs]
 - `node tools/cola.mjs --corregir-categoria` (lo que `club-siis --avanzar` corre en cada pasada) agregaba otra respuesta idéntica cada vez; ahora dice «Ya estaba fijada (id)» y no escribe. La lógica salió a `tools/cola-corregir-categoria.mjs` (`cola.mjs` había pasado los 40 KB con el cambio).
 - El punto 463 del TODO queda con los clubes que faltan cargar; sus pendientes de lo ya cargado (gestiones, sponsors, dictámenes, pantallas, skills, cositas del 461) pasan al punto nuevo 476 sin cambiar de contenido.
