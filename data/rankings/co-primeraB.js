@@ -40,9 +40,11 @@ window.RANKINGS["co-primeraB"] = {
   },
   2022: {
     leagueSize: 16,
-    sinDato: ["cucutadeportivo-co"],
     wiki: {"t":"2022 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
+      { id:"cucutadeportivo-co", revenue:1.983, reportType:"official_balance_sheet",
+        sourceId:"cucutadeportivo-co-siis-estado-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.571],["Otros ingresos",0.412]] },
       { id:"boyacachico-co", revenue:1.221, reportType:"official_balance_sheet",
         sourceId:"boyacachico-co-siis-estado-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.209],["Otros ingresos",0.012]],
