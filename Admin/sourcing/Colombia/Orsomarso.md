@@ -15,3 +15,5 @@
 Estados financieros en disco ahora: 9 ejercicios (2016-2018, 2020-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2016 desde `Clubes/Colombia/Orsomarso/siis-estado-2016.pdf` (sourceId `orsomarso-co-siis-estado-2016`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2017 desde `Clubes/Colombia/Orsomarso/siis-estado-2017.pdf` (sourceId `orsomarso-co-siis-estado-2017`).
