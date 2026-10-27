@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1207 — gestion-exa busca con Gemini y la búsqueda de Google [gestion-exa.mjs]
+- `fos gestion-exa <clubId>` (mismo comando para un club de SIIS y uno que no) pregunta a Gemini con `google_search` quién presidió en cada cierre sin gestión confirmada, y devuelve el texto con las afirmaciones y la URL REAL de cada fuente (`groundingChunks`, resueltas); las URLs que el modelo escribe en el texto pueden ser inventadas (una dio 404). Exa queda con `--exa`. Cada llamada anota tokens y búsquedas en `Admin/registros/api/gemini-busqueda.jsonl`. El brief de gestiones dice cómo usarlo.
+- Caso que lo motivó: Real Cartagena 2018 a 2020. Exa y WebFetch dejaron huecos y un error (padre e hijo Rendón); Gemini dio en una consulta de 10 búsquedas la muerte del padre (2019-07-09), a Vergara como presidente de la promotora y al hijo como presidente de 2007 a 2021, con notas fechadas que se abrieron para confirmar. La gestión de Real Cartagena se corrigió con eso.
+- Medición: `gestion-exa.mjs` es de orden y no lee documentos (`fos que-pide`). Sin revisión independiente de la Auditora.
+
 ## Versión 1206 — Cierre del 474: lo adelantado con `--preparar`, medido en dos clubes seguidos
 - Cortulua, Tigres FC, Atlético FC y Real Cartagena se cargaron con `--preparar` y los tres subagentes (gestiones, estadio y sponsor, auditor). Tigres se preparó durante la carga de Cortulua y Real Cartagena durante la de Atlético FC.
 - Tiempos medidos (reloj, 2026-10-27): `--preparar` de un club entero (9 estados de SIIS, dictámenes y ensayo del alta) ~25 s; los tres subagentes en paralelo 1 a 5 min (el más lento, estadio y sponsor, 5,4 min); alta y lote de categorización ~2 min; la carga de 9 a 10 años y sus commits 4,5 a 5,5 min. Sin lo adelantado, la sesión espera a los subagentes (hasta 5,4 min) antes de cargar: con lo adelantado esa espera se solapa con la carga del club anterior, un ahorro de ~5 min de sesión por club (de ~14 min a ~8).
