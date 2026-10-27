@@ -106,7 +106,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2020: {
     leagueSize: 16,
-    sinDato: ["atleticofc-co"],
     wiki: {"t":"2020 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"cortulua-co", revenue:2.718, reportType:"official_balance_sheet",
@@ -125,6 +124,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"tigresfc-co", revenue:0.499, reportType:"official_balance_sheet",
         sourceId:"tigresfc-co-siis-estado-2020",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.445],["Otros ingresos",0.054]] },
+      { id:"atleticofc-co", revenue:0.331, reportType:"official_balance_sheet",
+        sourceId:"atleticofc-co-siis-estado-2020",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.254],["Otros ingresos",0.077]] },
     ],
   },
   2019: {

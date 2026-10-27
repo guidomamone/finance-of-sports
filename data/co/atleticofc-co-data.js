@@ -16,6 +16,10 @@ const atleticofcCoRevenueLinesByYear = {
     {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":1579.278,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":50.149,"disclosureLevel":"aggregated"},
   ],
+  2020: [
+    {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":871.06,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":263.475,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const atleticofcCoExpenseLinesByYear = {
@@ -41,6 +45,11 @@ const atleticofcCoExpenseLinesByYear = {
     {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-79.168,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-104.118,"disclosureLevel":"aggregated"},
   ],
+  2020: [
+    {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-1085.737,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-79.394,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-78.018,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const atleticofcCoFiscalYearMeta = {
@@ -48,6 +57,7 @@ const atleticofcCoFiscalYearMeta = {
   2017: {"currency":"COP","sourceId":"atleticofc-co-siis-estado-2017","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2017-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":2.492,"grossDebt":null,"cash":null,"officialTotalRevenue":899.813,"officialTotalExpenses":1506.162,"officialPAT":-603.857,"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":876.445,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Costo de ventas","lado":"expense","importe":528.381,"motivo":"Costo de ventas es 74% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)","tipo":"cost_of_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":0,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
   2018: {"currency":"COP","sourceId":"atleticofc-co-siis-estado-2018","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2018-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":-17.946,"grossDebt":null,"cash":null,"officialTotalRevenue":1398.567,"officialTotalExpenses":1283.937,"officialPAT":96.684,"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":1389.192,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Costo de ventas","lado":"expense","importe":949.018,"motivo":"Costo de ventas es 74% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)","tipo":"cost_of_sales"}],"baseIngreso":"full"},
   2019: {"currency":"COP","sourceId":"atleticofc-co-siis-estado-2019","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2019-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-41.324,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":1629.427,"officialTotalExpenses":1434.936,"officialPAT":153.167,"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":1579.278,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":1251.65,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
+  2020: {"currency":"COP","sourceId":"atleticofc-co-siis-estado-2020","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2020-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":-23.691,"grossDebt":null,"cash":null,"officialTotalRevenue":1134.535,"officialTotalExpenses":1243.149,"officialPAT":-132.305,"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":871.06,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":1085.737,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
 };
 
 const atleticofcCoPresupuestoOverlayByYear = {};
@@ -64,6 +74,6 @@ window.CLUB_GENERIC_DATA["atleticofc-co"] = {
   presupuestoOverlayByYear: atleticofcCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"atleticofc-co-siis-estado-2016":{"id":"atleticofc-co-siis-estado-2016","clubId":"atleticofc-co","title":"Club Deportivo Atletico Futbol Club Sa — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico FC/siis-estado-2016.pdf"},"atleticofc-co-siis-estado-2017":{"id":"atleticofc-co-siis-estado-2017","clubId":"atleticofc-co","title":"Club Deportivo Atletico Futbol Club Sa — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico FC/siis-estado-2017.pdf"},"atleticofc-co-siis-estado-2018":{"id":"atleticofc-co-siis-estado-2018","clubId":"atleticofc-co","title":"Club Deportivo Atletico Futbol Club Sa — siis-estado-2018 (ejercicio 2018)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico FC/siis-estado-2018.pdf"},"atleticofc-co-siis-estado-2019":{"id":"atleticofc-co-siis-estado-2019","clubId":"atleticofc-co","title":"Club Deportivo Atletico Futbol Club Sa — siis-estado-2019 (ejercicio 2019)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico FC/siis-estado-2019.pdf"}});
+Object.assign(sources, {"atleticofc-co-siis-estado-2016":{"id":"atleticofc-co-siis-estado-2016","clubId":"atleticofc-co","title":"Club Deportivo Atletico Futbol Club Sa — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico FC/siis-estado-2016.pdf"},"atleticofc-co-siis-estado-2017":{"id":"atleticofc-co-siis-estado-2017","clubId":"atleticofc-co","title":"Club Deportivo Atletico Futbol Club Sa — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico FC/siis-estado-2017.pdf"},"atleticofc-co-siis-estado-2018":{"id":"atleticofc-co-siis-estado-2018","clubId":"atleticofc-co","title":"Club Deportivo Atletico Futbol Club Sa — siis-estado-2018 (ejercicio 2018)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico FC/siis-estado-2018.pdf"},"atleticofc-co-siis-estado-2019":{"id":"atleticofc-co-siis-estado-2019","clubId":"atleticofc-co","title":"Club Deportivo Atletico Futbol Club Sa — siis-estado-2019 (ejercicio 2019)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico FC/siis-estado-2019.pdf"},"atleticofc-co-siis-estado-2020":{"id":"atleticofc-co-siis-estado-2020","clubId":"atleticofc-co","title":"Club Deportivo Atletico Futbol Club Sa — siis-estado-2020 (ejercicio 2020)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico FC/siis-estado-2020.pdf"}});
 
 memberCountByClub["atleticofc-co"] = null;
