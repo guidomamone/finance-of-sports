@@ -29,3 +29,5 @@ Color de marca: #D90706 (rojo) — es.wikipedia (infobox: colores «Rojo y Negro
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2019 desde `Clubes/Colombia/Cucuta Deportivo/siis-estado-2019.pdf` (sourceId `cucutadeportivo-co-siis-estado-2019`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2022 desde `Clubes/Colombia/Cucuta Deportivo/siis-estado-2022.pdf` (sourceId `cucutadeportivo-co-siis-estado-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2023 desde `Clubes/Colombia/Cucuta Deportivo/siis-estado-2023.pdf` (sourceId `cucutadeportivo-co-siis-estado-2023`).
