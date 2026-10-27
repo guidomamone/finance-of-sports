@@ -22,7 +22,7 @@ que dice `ESTADO.md` era verdad ese día.
 
 ## Versión 1186 — sponsor-fka --buscar lee la ficha en inglés; 24 sponsors débiles verificados [468 · sponsor-fka.mjs · oncecaldas-co, boyacachico-co, unionmagdalena-co, deportestolima-co, laequidad-co]
 - Exa devolvía la ficha en el idioma del buscador (/el/, /zh/, /ar/), con los rótulos traducidos y sin el campo Sponsor, y contaba como «sin sponsor» lo que era un error de lectura. Ahora la tool lee la misma ficha sin el prefijo de idioma con Exa `/contents` (US$ 0,001), entiende sus dos formatos de texto e imprime también la liga (para ver que no es otro club: «Alianza FC» devuelve las de El Salvador y Panamá).
-- 24 años registrados en `Admin/registros/sponsor-fka.jsonl` (La Equidad 2016 a 2022 Cotrafa, Boyacá Chicó 2016 y 2017 a 2023 sin campo, Once Caldas 2016, 2018 y 2021, Tolima 2016, 2018, 2019 y 2022, Unión Magdalena 2016 y 2022); uno no coincidía: Unión Magdalena 2022 pasa de «sin dato» a Wplay (ficha de la camiseta local), en `contexto-manual.json` y `data/contexto/co.js`. Quedan 13 años: Alianza FC 2016 a 2023 (Exa no trae «Alianza Petrolera»), Once Caldas 2017, 2019 y 2020, Boyacá Chicó 2020 y Tolima 2017 (FKA no trae el campo: el contexto dice Mercacentro).
+- 24 años registrados en `Admin/registros/sponsor-fka.jsonl` (La Equidad 2016 a 2022 Cotrafa, Boyacá Chicó 2016 y 2017 a 2023 sin campo, Once Caldas 2016, 2018 y 2021, Tolima 2016, 2018, 2019 y 2022, Unión Magdalena 2016 y 2022); uno no coincidía: Unión Magdalena 2022 pasa de «sin dato» a Wplay (ficha de la camiseta local), en `contexto-manual.json` y `data/contexto/co.js`. Los 13 que quedaban se cierran en la Versión 1187.
 - Medición: no es del pipeline (clasificada como tool de sesión, no pide medición).
 
 ## Versión 1185 — club-siis ya no deja misses.jsonl para restaurar [468 · lookup-club-league.js, club-siis.mjs]
@@ -31,7 +31,7 @@ que dice `ESTADO.md` era verdad ese día.
 
 ## Versión 1184 — dictamen-fechas.mjs: aviso dictamen-fechas-ajenas [468 · audit.js, audit-chequeos-siis.js, dictamen-fechas.mjs]
 - `node tools/dictamen-fechas.mjs` (gratis) mira, en cada línea de `Admin/registros/auditoria.jsonl` cuyo `.md` es un informe del auditor, las fechas de la firma (4 líneas arriba y 1 abajo de la cita del auditor) contra el cierre del ejercicio del JSON del club: firma anterior al cierre, o más de 30 meses después, o un `.md` que no nombra el año del cierre. `audit.js` lo muestra como P3 `dictamen-fechas-ajenas`. Solo mira documentos que son el informe (no un balance entero) y meses en español, portugués, inglés, italiano, alemán, francés y neerlandés: 75 de 1.459 líneas se pueden mirar hoy.
-- Salen 6: Alianza FC 2025 (dictamen fechado marzo de 2025 para el cierre de diciembre de 2025: la plantilla del año anterior; consulta al club en `dudas-por-club.md`), Alianza 2024 y 2023 (la cabecera está bien, la firma del pie trae el año equivocado en el propio documento: no es otro ejercicio), Deportes Tolima 2023, AEL Larissa 2017 y Lazio 2006 (por mirar).
+- Salen 6: Alianza FC 2025, 2024 y 2023, Deportes Tolima 2023, AEL Larissa 2017 y Lazio 2006 (resueltos en la Versión 1187).
 - Medición: lote chico del medidor `audit`, 7 diferencias, todas explicadas: aparecen los 6 avisos nuevos y sale `tool-sin-clasificar` de `dictamen-fechas.mjs` (se clasificó antes de medir). Sin revisión independiente de la Auditora.
 
 ## Versión 1183 — sin-salarios: SIIS sin Gastos de ventas [468 · audit-chequeos-4.js]

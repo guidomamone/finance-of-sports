@@ -507,5 +507,10 @@
   "code": "siis-entre-anios",
   "match": "Atletico Bucaramanga 2018→2019",
   "motivo": "VERIFICADO (Clubes/Colombia/Atletico Bucaramanga/siis-estado-2019.md columna 2018 y data/co/atleticobucaramanga-co.json (2018, líneas de la nota de costos), 2026-10-26). El estado de 2018 imprime la actividad deportiva como «Costo de ventas» y el de 2019 la repite como «Gastos de ventas»; 2018 está cargado por su contenido (las filas de la nota de costos van a plantel, administración y otros según la regla de las notas de gastos), no por el rótulo"
+ },
+ {
+  "code": "dictamen-fechas-ajenas",
+  "match": "alianzafc-co 2025",
+  "motivo": "VERIFICADO (Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2025.md L5 y L153-L155: firma «Marzo 29 de 2025» para estados al 31 de diciembre de 2025, 2026-10-27). el revisor fiscal firmó tarde y dejó el año del dictamen anterior: un error de año del propio documento, no el dictamen de otro ejercicio; la nota de Admin/registros/auditoria.jsonl lo dice. No se pide al club."
  }
 ]

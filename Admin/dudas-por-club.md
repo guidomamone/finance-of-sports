@@ -1483,7 +1483,3 @@ Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso est
 
 - **Juventude 2021**: tiene planes de sócio-torcedor (Jaconero; búsqueda web), pero "Receitas Patrimoniais" y "Outras Receitas" no desglosan dónde registra las mensalidades. ¿En qué línea del balance están?
 - **Ponte Preta 2025**: tiene el programa "Torcedor Camisa 10+" (19.130 sócios-torcedores según el Torcedômetro). ¿Las mensalidades están en "Social / Outras" (2.692.000 en 2025)?
-
-## Alianza FC (auditoría, sesión 2026-10-27: no frena la carga; pedírselo al club)
-
-- **Dictamen del revisor fiscal del ejercicio 2025** (`Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2025.md`): está fechado «Marzo 29 de 2025» y dice «a 31 de diciembre de 2025», es decir, firmado nueve meses antes del cierre; parece el de 2024 con el año retocado (el de 2024 está fechado «Marzo 29 de 2025», con la firma del pie en «2024»). ¿Cuál es el dictamen firmado de los estados de 2025, con su fecha?
