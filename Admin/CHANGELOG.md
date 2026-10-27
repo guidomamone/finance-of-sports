@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1202 — Cortulua y Tigres FC desde SIIS; Inter Palmira es Cortuluá [474 · alias.json, briefs-subagentes-siis.md]
+- Cortulua (2020 a 2025) y Tigres FC (2016 a 2022 y 2024) cargados con lo adelantado por `--preparar` (gestiones, estadio y sponsor, auditor); Tigres se preparó mientras se cargaba Cortulua.
+- El brief del subagente de estadio y sponsor trae la verificación en FKA con Exa como paso fijo (`sponsor-fka.mjs --buscar` con varios nombres, `--registrar` o `--sin-ficha`), así que ningún sponsor llega «débil» a la sesión.
+- `tools/club-league-reference/alias.json`: «Inter Palmira» (Primera B 2024 y 2025) une al roster con `cortulua-co`; antes aparecía como un club aparte con un ingreso estimado. Sin medición: no es una tool del pipeline.
+
 ## Versión 1201 — club-siis --preparar corre el ensayo del alta [474 · club-siis-preparar.mjs]
 - `--preparar` de un club sin alta corre `alta-club.mjs <último siis-estado> --resumen` (no escribe `data/`) y deja la pregunta del nombre legal en la cola, con su id, para contestarla antes de `--avanzar`. Probado con Cortulua: una pregunta (`name`), contestada con el formato de Envigado y Leones.
 - Medición: no es una tool del pipeline (`tools/pipeline-tools.json`); sin revisión independiente de la Auditora.
