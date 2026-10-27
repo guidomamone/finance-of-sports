@@ -190,6 +190,16 @@
   "quien": "script",
   "donde": "Admin/PIPELINE.md, «Caja y deuda»"
  },
+ "dictamen-fechas-ajenas": {
+  "hacer": "Abrir el .md citado en la línea que dice el aviso: si el dictamen es de otro ejercicio (la plantilla de otro año con el año tocado), buscar el dictamen correcto o poner el dictamen como sin_informe/falta_transcripcion en Admin/registros/auditoria.jsonl; si es del ejercicio y la fecha es de una reexpresión o un anexo, silenciar con la cita (node tools/silenciar.mjs).",
+  "quien": "sesión",
+  "donde": "tools/dictamen-fechas.mjs"
+ },
+ "regla-nota-contradicha": {
+  "hacer": "Corregir la línea con node tools/recategorizar-linea.mjs --club <id> --anio <año> --etiqueta \"…\" --gasto --a <categoría> --cita … --regla … --escribir, node tools/publicar.mjs y un commit con Corrige:. Si la regla está mal, es un criterio: votacion-de-criterios.",
+  "quien": "script",
+  "donde": "Admin/CONVENCIONES-DATOS.md, «las filas que abre una nota de gastos van por su nota»"
+ },
  "proyeccion": {
   "hacer": "Nada: proyecta cuánto pesa data/ a 1000 clubes.",
   "quien": "nada",
