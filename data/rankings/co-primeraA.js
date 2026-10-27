@@ -258,6 +258,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2019: {
     leagueSize: 20,
+    sinDato: ["cucutadeportivo-co"],
     wiki: {"t":"2019 Categoría Primera A season","lang":"en","at":"2026-10-02","n":20},
     clubs: [
       { id:"americadecali-co", revenue:13.029, reportType:"official_balance_sheet",

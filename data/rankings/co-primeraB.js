@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraB"] = {
   2025: {
     leagueSize: 16,
+    sinDato: ["cucutadeportivo-co"],
     wiki: {"t":"2025 Torneo DIMAYOR","lang":"en","at":"2026-10-17","n":16},
     clubs: [
       { id:"leonesfc-co", revenue:1.9, reportType:"official_balance_sheet",
@@ -12,6 +13,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2024: {
     leagueSize: 16,
+    sinDato: ["cucutadeportivo-co"],
     wiki: {"t":"2024 Torneo DIMAYOR","lang":"en","at":"2026-10-26","n":16},
     clubs: [
       { id:"unionmagdalena-co", revenue:2.547, reportType:"official_balance_sheet",
@@ -25,6 +27,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2023: {
     leagueSize: 17,
+    sinDato: ["cucutadeportivo-co"],
     wiki: {"t":"2023 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":17},
     clubs: [
       { id:"fortalezaceif-co", revenue:1.569, reportType:"official_balance_sheet",
@@ -37,6 +40,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2022: {
     leagueSize: 16,
+    sinDato: ["cucutadeportivo-co"],
     wiki: {"t":"2022 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"boyacachico-co", revenue:1.221, reportType:"official_balance_sheet",
@@ -100,6 +104,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2018: {
     leagueSize: 16,
+    sinDato: ["cucutadeportivo-co"],
     wiki: {"t":"2018 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"unionmagdalena-co", revenue:2.204, reportType:"official_balance_sheet",
@@ -113,6 +118,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2017: {
     leagueSize: 16,
+    sinDato: ["cucutadeportivo-co"],
     wiki: {"t":"2017 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"leonesfc-co", revenue:1.848, reportType:"official_balance_sheet",
@@ -134,6 +140,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2016: {
     leagueSize: 16,
+    sinDato: ["cucutadeportivo-co"],
     wiki: {"t":"2016 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"americadecali-co", revenue:5.917, reportType:"official_balance_sheet",

@@ -94,6 +94,7 @@ window.CLUB_INDEX = {
   "cruzeiro-br": {"n":"Cruzeiro","c":"BR","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "crystalpalace-gb": {"n":"Crystal Palace","c":"GB","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "cskamoscow-ru": {"n":"CSKA Moscow","c":"RU","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
+  "cucutadeportivo-co": {"n":"Cucuta Deportivo","c":"CO","q":"empty","y":0,"last":null,"yrs":[]},
   "cuiaba-br": {"n":"Cuiaba","c":"BR","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "degraafschap-nl": {"n":"De Graafschap","c":"NL","q":"full","y":1,"last":2022,"yrs":[[2022,"official_balance_sheet"]]},
   "dender-be": {"n":"Dender EH","c":"BE","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2017,"official_balance_sheet"]],"gm":[2023,2024]},
