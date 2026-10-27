@@ -209,6 +209,7 @@
   "siis-adicionales.mjs":"orden: los documentos adicionales de SIIS por club-año (un GET por año; no baja archivos ni escribe)",
   "club-siis-preparar.mjs":"orden: club-siis --preparar: baja los estados de SIIS y transcribe los dictámenes de un club sin alta y deja listos los briefs de los subagentes (no toca data/clubs.js ni las páginas)",
   "gestion-exa.mjs":"orden: los cierres sin gestión confirmada de un club y quién presidió según Gemini con búsqueda de Google, con cada fuente abierta y comprobada (no escribe data/gestiones; no lee documentos)",
+  "probar-cache-audit.mjs":"orden: compara la auditoría con y sin la caja de audit-cache.js, sobre el árbol y sobre errores plantados en archivos de prueba que borra al terminar (no escribe datos)",
   "verificar-fuente-web.mjs":"orden: abre una URL citada por un modelo y comprueba que se abra, que el nombre aparezca en la nota y su fecha (solo lee la web; no escribe ni lee documentos)",
   "comparar-carga.mjs":"orden: el ensayo de cargar de un documento contra lo cargado de su año (corre cargar sin --escribir y restaura los registros que el ensayo toca; no escribe datos)",
   "club-datos.mjs":"orden: las líneas de un año de un club de su JSON público con el total por subcategoría (solo lee)",
