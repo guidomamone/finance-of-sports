@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1215 — 463: «2.2» (clubes sin official_totals) ya estaba resuelto [463]
+- Ningún año de `data/co/*.json` carece de `official_totals` hoy (se recorrió cada club), así que `siis-control` compara todos los años; el punto sale del TODO 463. El motivo por el que figuraba abierto (3 clubes sin totales) ya no es cierto.
+- Medición: sin cambio de datos ni de tools.
+
 ## Versión 1214 — audit.js: «sin historia» cubre los briefs de SIIS, los contadores fijos y «Guido decidió…» [audit-chequeos-2.js]
 - `checkHistoriaEnDocs` (`historia-en-doc-de-criterio`, P3) suma `Admin/briefs-subagentes-siis.md` a los documentos que mira y dos patrones: `Guido cambió|decidió|eligió|resolvió|aprobó|quiso` y contadores fijos («60 clubes», «265 entidades»; solo en ESTADO, CLAUDE.md y los briefs, donde el documento dice qué hay HOY: en una convención el número ilustra el caso). Hoy no da hallazgos nuevos: el contador de `Admin/ESTADO.md` se cambió antes por el comando que lo da (`entidades.mjs --check`). Los avisos van por el mismo camino de silenciar con motivo.
 - Medición: idéntico (`audit`). Probado plantando una línea en los briefs: salta con cada patrón; revertida. Sin revisión independiente de la Auditora.
