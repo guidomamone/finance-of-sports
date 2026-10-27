@@ -129,7 +129,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2019: {
     leagueSize: 17,
-    sinDato: ["atleticofc-co"],
     wiki: {"t":"2019 Categoría Primera B season","lang":"en","at":"2026-09-30","n":17},
     clubs: [
       { id:"boyacachico-co", revenue:2.051, reportType:"official_balance_sheet",
@@ -144,6 +143,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"tigresfc-co", revenue:0.659, reportType:"official_balance_sheet",
         sourceId:"tigresfc-co-siis-estado-2019",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.657],["Otros ingresos",0.002]] },
+      { id:"atleticofc-co", revenue:0.497, reportType:"official_balance_sheet",
+        sourceId:"atleticofc-co-siis-estado-2019",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.482],["Otros ingresos",0.015]] },
     ],
   },
   2018: {
