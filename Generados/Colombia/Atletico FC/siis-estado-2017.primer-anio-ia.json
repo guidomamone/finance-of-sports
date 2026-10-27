@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Colombia/Atletico FC/siis-estado-2017.md",
+ "clave": "f0d541d240c497341e20ec1da9eb52099facd6fa",
+ "generado": "2026-10-27T15:09:33.474Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Sin problemas: se cargan todos los renglones de 2017 (L11, L12, L14 en cero, L15, L16, L17 y L20) y ningún subtotal. El resultado operativo da (606.349). El impuesto de 2.492 opera como ingreso, ya que lleva a una pérdida final de (603.857), que coincide con lo impreso."
+ }
+}

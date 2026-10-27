@@ -87,6 +87,16 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Juan Carlos Trujillo Velásquez', corto:'Trujillo', cargo:'Presidente', desde:'2020-01-01', hasta:null,
       fuente:'https://www.las2orillas.co/?p=918944', confirmada:true },
   ],
+  'realcartagena-co': [
+    { nombre:'Rodrigo Rendón hijo', corto:'Rendón', cargo:'Presidente', desde:'2007-01-01', hasta:'2018-12-06',
+      fuente:'https://caracol.com.co/emisora/2018/12/06/cartagena/1544117014_686630.html', confirmada:true },
+    { nombre:'Roberto Carlos Vergara', corto:'Vergara', cargo:'Presidente', desde:'2018-12-06', hasta:'2019-06-18',
+      fuente:'https://caracol.com.co/emisora/2018/12/06/cartagena/1544117014_686630.html', confirmada:false },
+    { nombre:'Rodrigo Alejandro Rendón Ruiz', corto:'Rendón', cargo:'Presidente', desde:'2020-08-31', hasta:'2021-01-05',
+      fuente:'https://primertiempo.co/real-cartagena/real-cartagena-cambio-su-junta-directiva-rendon-sigue-en-la-presidencia/', confirmada:false },
+    { nombre:'Renato Damiani', corto:'Damiani', cargo:'Presidente', desde:'2021-01-05', hasta:null,
+      fuente:'https://primertiempo.co/real-cartagena/renato-damiani-si-sera-el-presidente-de-real-cartagena-rendon-no-tendra-ningun-cargo/', confirmada:true },
+  ],
   'envigado-co': [
     { nombre:'Óscar Armando Astudillo Palomino', corto:'Astudillo', cargo:'Presidente', desde:'2025-11-21', hasta:null,
       fuente:'https://telemedellin.tv/?p=152246', confirmada:true },
