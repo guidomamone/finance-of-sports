@@ -362,6 +362,68 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "atleticofc-co": {
+  "2020": {
+   "auditor": {
+    "nombre": "María Enilce Cuenca Trujillo",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico FC/dictamen-revisor-fiscal-2020.md",
+    "linea": 98
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "María Enilce Cuenca Trujillo",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico FC/dictamen-revisor-fiscal-2022.md",
+    "linea": 82
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "María Enilce Cuenca Trujillo",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico FC/dictamen-revisor-fiscal-2023.md",
+    "linea": 82
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "María Enilce Cuenca Trujillo",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico FC/dictamen-revisor-fiscal-2024.md",
+    "linea": 83
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "María Enilce Cuenca Trujillo",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico FC/dictamen-revisor-fiscal-2025.md",
+    "linea": 83
+   }
+  }
+ },
  "atlnacional-co": {
   "2025": {
    "auditor": {
