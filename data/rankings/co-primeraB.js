@@ -193,7 +193,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2016: {
     leagueSize: 16,
-    sinDato: ["atleticofc-co"],
     wiki: {"t":"2016 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"americadecali-co", revenue:5.917, reportType:"official_balance_sheet",
@@ -212,6 +211,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"tigresfc-co", revenue:0.42, reportType:"official_balance_sheet",
         sourceId:"tigresfc-co-siis-estado-2016",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.396],["Otros ingresos",0.024]] },
+      { id:"atleticofc-co", revenue:0.384, reportType:"official_balance_sheet",
+        sourceId:"atleticofc-co-siis-estado-2016",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.381],["Otros ingresos",0.003]] },
     ],
   },
 };
