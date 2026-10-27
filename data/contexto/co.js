@@ -70,6 +70,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2019: {"temporada":"2019 Categoría Primera A season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264218"},
     2020: {"temporada":"2020 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375528276"},
   },
+  'cucutadeportivo-co': {
+    2016: {"estadio":"Estadio General Santander","capacidad":42901,"temporada":"2016 Categoría Primera B season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1339025949","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=175850162","local":["estadio"],"fuenteManual":"estadio y capacidad: https://en.wikipedia.org/wiki/C%C3%BAcuta_Deportivo (local: Estadio General Santander, capacidad 42.901 en la ficha) y https://es.wikipedia.org/wiki/Estadio_General_Santander (sede del club, unos 42.000)","manual":["estadio","capacidad"],"sinFuente":{"sponsor":{"buscado":"2026-10-27","por":"Claude (subagente Sonnet)","intentos":[{"clase":"informe-anual","donde":"Clubes/Colombia/Cucuta Deportivo/*.md (dictamen-revisor-fiscal-2016, siis-estado-2016), grep -i patroc|sponsor: solo el objeto social y «Patrocinios» como ingreso, sin nombre ni lugar en la camiseta","resultado":"sin-dato"},{"clase":"prensa","donde":"búsqueda «Cúcuta Deportivo camiseta 2016 patrocinador principal marca» y «Cúcuta Deportivo 2016 Torneo Águila camiseta Kimo presentación sin patrocinador»: ninguna nota con fecha de 2016 nombra un sponsor de frente","resultado":"sin-dato"},{"clase":"base-camisetas","donde":"https://www.footballkitarchive.com/es/cucuta-deportivo-camisetas-t3510/ (403 al abrirla; el resumen de la búsqueda dice «Sin patrocinador 2015-2018», sin confirmar con la página)","resultado":"inaccesible"}]}}},
+  },
   'depcali-co': {
     2025: {"estadio":"Deportivo Cali","capacidad":42000,"sponsor":"Wplay, Pastas La Muñeca, FluoCardent","marca":"Hillside","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
