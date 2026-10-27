@@ -698,6 +698,7 @@ window.SPONSORS_INDICE = [
   ["credito-agricola","Crédito Agrícola",["c"]],
   ["crefisa","Crefisa",["c"]],
   ["cresol","Cresol",["c"]],
+  ["crezcamos","Crezcamos",["c"]],
   ["criare","Criare",["m"]],
   ["cristal","Cristal",["c"]],
   ["cristalcopo","Cristalcopo",["c"]],
