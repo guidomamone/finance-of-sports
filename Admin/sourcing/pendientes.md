@@ -611,12 +611,11 @@ GENERADO por `node tools/faltantes-liga.mjs` (calculado: 2026-10-27): no editar 
 
 - Omonia 29M — sin-buscar: 2025 (cy-firstdivision)
 
-## Colombia (26 clubes, 64 club-años)
+## Colombia (25 clubes, 62 club-años)
 
 - Uniautónoma — sin-buscar: 2015 (co-primeraA), 2014 (co-primeraA)
 - Itagüí — sin-buscar: 2013 (co-primeraA), 2012 (co-primeraA)
 - Itagüí Ditaires — sin-buscar: 2011 (co-primeraA), 2010 (co-primeraB)
-- Inter Palmira — sin-buscar: 2025 (co-primeraB), 2024 (co-primeraB)
 - Real Cundinamarca — sin-buscar: 2025 (co-primeraB), 2024 (co-primeraB)
 - Valledupar — sin-buscar: 2023 (co-primeraB), 2022 (co-primeraB), 2021 (co-primeraB), 2020 (co-primeraB), 2019 (co-primeraB), 2018 (co-primeraB), 2017 (co-primeraB), 2016 (co-primeraB), 2015 (co-primeraB)
 - Real San Andrés — sin-buscar: 2020 (co-primeraB), 2019 (co-primeraB)
