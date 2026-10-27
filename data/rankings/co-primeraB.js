@@ -134,9 +134,11 @@ window.RANKINGS["co-primeraB"] = {
   },
   2016: {
     leagueSize: 16,
-    sinDato: ["americadecali-co"],
     wiki: {"t":"2016 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
+      { id:"americadecali-co", revenue:5.917, reportType:"official_balance_sheet",
+        sourceId:"americadecali-co-siis-estado-2016",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.691],["Otros ingresos",0.226]] },
       { id:"leonesfc-co", revenue:1.191, reportType:"official_balance_sheet",
         sourceId:"leonesfc-co-siis-estado-2016",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.184],["Otros ingresos",0.007]] },
