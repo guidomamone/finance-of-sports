@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 342 clubes, 1512 ejercicios, 24 países.
+TOTAL: 342 clubes, 1513 ejercicios, 24 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -155,7 +155,7 @@ COLOMBIA (26)
   Llaneros                1 ejercicio (2025), balance, COP, sin deuda/caja
   Millonarios             1 ejercicio (2025), balance, COP
   Once Caldas             10 ejercicios (2016 a 2025), balance, COP
-  Orsomarso               6 ejercicios (2016, 2017, 2018, 2020, 2021, 2022), balance, COP, sin deuda/caja
+  Orsomarso               7 ejercicios (2016, 2017, 2018, 2020, 2021, 2022, 2023), balance, COP, sin deuda/caja
   Real Cartagena          9 ejercicios (2017 a 2025), balance, COP
   Tigres FC               8 ejercicios (2016, 2017, 2018, 2019, 2020, 2021, 2022, 2024), balance, COP
   Unión Magdalena         10 ejercicios (2016 a 2025), balance, COP
