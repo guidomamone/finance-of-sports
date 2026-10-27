@@ -1052,6 +1052,7 @@ window.SPONSORS_INDICE = [
   ["gangwon","Gangwon",["c"]],
   ["garman","Garman",["m"]],
   ["garra91","Garra91",["m"]],
+  ["gaseosas-de-oro","Gaseosas De Oro",["c"]],
   ["gaudi-jeans","Gaudì Jeans",["c"]],
   ["gaudianello","Gaudianello",["c"]],
   ["gavinox","Gavinox",["c"]],
