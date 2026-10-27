@@ -16,8 +16,8 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://www.eltiempo.com/deportes/futbol-colombiano/ricardo-gato-perez-nuevo-presidente-del-america-de-cali-224130', confirmada:true },
     { nombre:'Mauricio Romero', corto:'Romero', cargo:'Presidente', desde:'2019-12-18', hasta:'2023-12-28',
       fuente:'https://www.elpais.com.co/deportes/atencion-mauricio-romero-no-es-mas-el-presidente-del-america-de-cali-2813.html', confirmada:true },
-    { nombre:'Marcela Gómez Giraldo', corto:'Gómez', cargo:'Presidente', desde:'2024-01-04', hasta:null,
-      fuente:'https://es.wikipedia.org/wiki/Anexo:Presidentes_del_Am%C3%A9rica_de_Cali', confirmada:true },
+    { nombre:'Marcela Gómez Giraldo', corto:'Gómez', cargo:'Presidente', desde:'2023-12-29', hasta:null,
+      fuente:'https://www.eltiempo.com/deportes/futbol-colombiano/tulio-gomez-anuncia-a-marcela-gomez-en-la-presidencia-del-america-840188', confirmada:true },
   ],
   'depcali-co': [
     { nombre:'Rafael Tinoco Kipps', corto:'Tinoco', cargo:'Presidente', desde:'2025-11-20', hasta:'2026-04-21',
