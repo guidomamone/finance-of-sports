@@ -98,4 +98,11 @@ function checkReglaNotas() {
   for (const [club, ls] of porClub) add('P3', 'regla-nota-contradicha', `${club}: ${ls.length} línea(s) de gastos que la regla por nota manda a otra categoría: ${ls.slice(0, 4).join('; ')}${ls.length > 4 ? '…' : ''} (node tools/reglas-categoria.mjs --cargadas; se corrige con recategorizar-linea --gasto y «Corrige:»)`);
 }
 
-module.exports = { checkSiisControl, checkSiisEntreAnios, checkSiisFaltante, checkReglaNotas };
+// dictamen-fechas-ajenas: un dictamen del registro de auditoría cuya firma es anterior al cierre del ejercicio (o 30 meses posterior) o cuyo .md no nombra el año del cierre: suele ser la plantilla de otro
+// año (Alianza FC 2024 y 2025, firmados en marzo del mismo año del cierre). Lo lista `node tools/dictamen-fechas.mjs`; se mira contra el documento y, si el dictamen es de otro ejercicio, se corrige el registro. Aviso P3.
+function checkDictamenFechas() {
+  let out; try { out = require('child_process').execFileSync('node', ['tools/dictamen-fechas.mjs'], { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); } catch (e) { add('P3', 'dictamen-fechas-ajenas', `tools/dictamen-fechas.mjs falló: ${String(e.stderr || e.message).split('\n')[0]}`); return; }
+  for (const l of out.split('\n').filter((x) => /^\S+ \d{4}: /.test(x))) add('P3', 'dictamen-fechas-ajenas', `${l} (node tools/dictamen-fechas.mjs; mirar el documento: si el dictamen es de otro ejercicio, corregir Admin/registros/auditoria.jsonl)`);
+}
+
+module.exports = { checkSiisControl, checkSiisEntreAnios, checkSiisFaltante, checkReglaNotas, checkDictamenFechas };

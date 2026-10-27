@@ -29,7 +29,7 @@
 
 const { ARGS, IGNORADOS, IGNORE_FILE, JSON_OUT, MUESTRAS, QUIET, ROOT, add, archivosData, clubYears, findings, fs, path, reglasUsadas, silenciados, vm } = require('./audit-base.js');
 const { checkCajaDeudaProporcion, checkCategorias, checkEstructura, checkLineas, checkMoneda, checkTieOuts } = require('./audit-chequeos-1.js');
-const { checkSiisControl, checkSiisEntreAnios, checkSiisFaltante, checkReglaNotas } = require('./audit-chequeos-siis.js');
+const { checkSiisControl, checkSiisEntreAnios, checkSiisFaltante, checkReglaNotas, checkDictamenFechas } = require('./audit-chequeos-siis.js');
 const { checkJsonClavesRepetidas, checkLigasNoCatalogadas, checkEstimadoRepetido, checkSeveridadesDesfasadas, checkGananciaInmovilizadoSinMirar } = require('./audit-chequeos-6.js');
 const { checkCabeceraLargaEnTools, checkComentarioHistoricoEnTools, checkComentariosPublicados, checkDeployInterno, checkGenerados, checkHistoriaEnDocs, checkIndexFileRoto, checkLigasPorEjercicio, checkParrafoNetlifyDuplicado, checkParrafosRepetidos, checkRayaLarga, checkRutasMuertas, checkSponsorBusqueda, checkToolGrande } = require('./audit-chequeos-2.js');
 const { checkArchivoNoEsLoQueDice, checkIngresoBase, checkCambioDeFormatoSinNota, checkCarpetasClubes, checkClubIds, checkColisionSourcing, checkCorreccionesSinMotivo, checkFuentesPublicas, checkRankings } = require('./audit-chequeos-3.js');
@@ -254,6 +254,7 @@ function main() {
   checkSiisEntreAnios();
   checkSiisFaltante();
   checkReglaNotas();
+  checkDictamenFechas();
   checkEtiquetaSinGlosa();
   checkTextoSinTraducir();
   checkMetodologiaAlDia();
