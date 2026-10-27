@@ -211,21 +211,6 @@
   "motivo": "VERIFICADO 2026-10-23 contra el documento: el balanço 2010 de un club amateur (ingresos de R$ 0,13 M) imprime solo tres renglones de gasto (Administrativas, Despesas Gerais e Manutenção, Projeto Escola de Futebol) y ninguna línea de personal (balanco-2010.md L12-L14); no hay sueldos que separar."
  },
  {
-  "code": "sin-salarios",
-  "match": "alianzafc-co 2017",
-  "motivo": "VERIFICADO 2026-10-26 contra SIIS: el estado de resultados de 2017 no trae Gastos de ventas y pone todos los gastos en Gastos de administración, 8.724.803 miles de pesos (Clubes/Colombia/Alianza FC/siis-estado-2017.md L12-L14); sin notas del club de ese año, y la regla de Colombia manda el rubro tal cual, sin partirlo."
- },
- {
-  "code": "sin-salarios",
-  "match": "alianzafc-co 2018",
-  "motivo": "VERIFICADO 2026-10-26 contra SIIS: el estado de resultados de 2018 no trae Gastos de ventas y pone todos los gastos en Gastos de administración, 8.841.052 miles de pesos (Clubes/Colombia/Alianza FC/siis-estado-2018.md L12-L14); sin notas del club de ese año, y la regla de Colombia manda el rubro tal cual, sin partirlo."
- },
- {
-  "code": "sin-salarios",
-  "match": "fortalezaceif-co 2016",
-  "motivo": "VERIFICADO 2026-10-26 contra SIIS: el estado de resultados de 2016 imprime Costo de ventas 0, Gastos de ventas 0 y todos los gastos en Gastos de administración, 1.955.981 miles de pesos (Clubes/Colombia/Fortaleza CEIF/siis-estado-2016.md L12-L15); el club no separa la nómina y la regla de Colombia manda el rubro tal cual, sin partirlo. Sin notas del club de ese año."
- },
- {
   "code": "doc-interno-no-excluido",
   "match": "correcciones.html",
   "motivo": "VERIFICADO 2026-10-23: es contenido PARA EL VISITANTE (el registro público de correcciones de datos ya publicados, generado desde data/correcciones/), no un documento interno: a propósito en la raíz, linkeado desde el sitio."

@@ -113,6 +113,19 @@ const ETIQUETA_OTROS_RE = new RegExp('(?:^|[^\\p{L}])(?:' + [
   'sonstige\\p{L}*', 'overig\\p{L}*', 'diverse','annen', 'annet', 'andre', 'övriga', 'muut', 'muud', 'muu', 'prochi\\p{L}*', 'прочи\\p{L}*', 'иные', 'λοιπ\\p{L}*', 'άλλ\\p{L}*', 'inne',
 ].join('|') + ')(?![\\p{L}])', 'iu');
 
+// SIIS SIN GASTOS DE VENTAS: el estado de resultados de SIIS de ese año (Clubes/<país>/<carpeta>/siis-estado-AAAA.md) no trae «Gastos de ventas» (o lo trae en 0) y pone los gastos en
+// «Gastos de administración»: la regla de Colombia manda el rubro tal cual y no hay nómina del plantel que separar (Alianza 2017 y 2018, Fortaleza 2016). `sin-salarios` no aplica.
+function siisSinGastosDeVentas(clubId, year) {
+  try {
+    const cfg = JSON.parse(fs.readFileSync(path.join(ROOT, 'tools/siis-clubes.json'), 'utf8')); const carpeta = Object.entries(cfg.clubes).find(([, v]) => v.clubId === clubId)?.[0]; if (!carpeta) return false;
+    const L = fs.readFileSync(path.join(ROOT, 'Clubes', cfg.pais, carpeta, `siis-estado-${year}.md`), 'utf8').split('\n').filter((l) => l.trim().startsWith('|'));
+    const celdas = (l) => l.split('|').slice(1, -1).map((x) => x.replace(/\*/g, '').trim()); const col = celdas(L.find((l) => celdas(l)[0] === 'Concepto') || '').indexOf(String(year)); if (col < 1) return false;
+    const valor = (rotulo) => { const f = L.find((l) => celdas(l)[0].toLowerCase() === rotulo); return f ? Number((celdas(f)[col] || '0').replace(/\./g, '').replace(/[()]/g, '')) || 0 : null; };
+    const ventas = valor('gastos de ventas'); const admin = valor('gastos de administración');
+    return (ventas === null || ventas === 0) && admin > 0;
+  } catch { return false; }
+}
+
 function checkCategorizacion(api) {
   for (const { clubId, year, ym, rev, exp } of clubYears(api)) {
     if (!exp.length && !rev.length) continue;
@@ -123,7 +136,7 @@ function checkCategorizacion(api) {
     // Un ejercicio placeholder tiene sus líneas en cero: no es que falten los sueldos,
     // es que no hay datos todavía. Solo se mira donde hay plata cargada.
     // Los sueldos marcados «incluidos en» otra fila (`incluye`, el documento no permite separarlos) están resueltos: el sitio lo dice en la fila.
-    if (SUELDOS && sum(exp) !== 0 && cat(SUELDOS) === 0 && (!BOLSON || cat(BOLSON) === 0) && !(ym && ym.incluidoEn && ym.incluidoEn[SUELDOS])) {
+    if (SUELDOS && sum(exp) !== 0 && cat(SUELDOS) === 0 && (!BOLSON || cat(BOLSON) === 0) && !(ym && ym.incluidoEn && ym.incluidoEn[SUELDOS]) && !siisSinGastosDeVentas(clubId, year)) {
       add('P2', 'sin-salarios', `${ref(clubId, year)}: no hay ni una línea en '${SUELDOS}' ni un bolsón sin desglosar — todo club paga sueldos, probablemente quedaron enterrados en otra categoría`);
     }
     // SUELDOS POSIBLEMENTE ESCONDIDOS: con el costo de personal del ejercicio ya leído de su nota (fiscalYearMeta.staffCost,

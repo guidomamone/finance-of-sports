@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1183 — sin-salarios: SIIS sin Gastos de ventas [468 · audit-chequeos-4.js]
+- `sin-salarios` no aplica cuando el `siis-estado-AAAA.md` del año no trae «Gastos de ventas» (o lo trae en 0) y sí «Gastos de administración»: la regla de Colombia manda el rubro tal cual y no hay nómina del plantel que separar. Se sacan de `audit-ignore.json` los tres silencios manuales que lo decían (Alianza 2017 y 2018, L12-L14 de su `siis-estado`; Fortaleza 2016, L12-L15); la cita vive ahora en la condición, que lee las mismas líneas.
+- Medición: lote chico del medidor `audit`, 3 diferencias, las tres explicadas: salen los hallazgos `sin-salarios` de esos tres club-años (silenciados hasta hoy); ninguno aparece. Sin revisión independiente de la Auditora.
+
 ## Versión 1182 — audit.js: aviso regla-nota-contradicha [468 · audit.js, audit-chequeos-siis.js, reglas-categoria.mjs]
 - Aviso P3 `regla-nota-contradicha`: las líneas de gastos cargadas que la regla por nota (`NOTA-CATEGORÍA`) manda a otra categoría, por club, con la nota de cada fila; las lista `node tools/reglas-categoria.mjs --cargadas` (0,4 s). Probado al revés: con una regla cambiada a propósito lista 50 líneas. Hoy da 0.
 - Entra sin veredicto previo de la Auditora (sección 7: aviso P3 nuevo que no frena nada) y sin revisión independiente.
