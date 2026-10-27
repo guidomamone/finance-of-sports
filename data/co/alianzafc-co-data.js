@@ -48,7 +48,7 @@ const alianzafcCoRevenueLinesByYear = {
     {"rawLabel":"DIMAYOR (derechos de televisión)","normalizedCategory":"broadcasting","amountNative":7966.544302,"disclosureLevel":"aggregated"},
     {"rawLabel":"Federación Colombiana de Fútbol","normalizedCategory":"competition_bonus","amountNative":462.875,"disclosureLevel":"aggregated"},
     {"rawLabel":"Convenios","normalizedCategory":"other_income","amountNative":16,"disclosureLevel":"aggregated"},
-    {"rawLabel":"Donaciones","normalizedCategory":"other_income","amountNative":20,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Donaciones","normalizedCategory":"grants_donations","amountNative":20,"disclosureLevel":"aggregated"},
     {"rawLabel":"Venta artículos deportivos","normalizedCategory":"sponsorship_commercial","amountNative":2.415953,"disclosureLevel":"aggregated"},
   ],
   2024: [
