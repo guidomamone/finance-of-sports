@@ -1,6 +1,7 @@
 // tools/audit-chequeos-3.js — checkCorreccionesSinMotivo, checkRankings, checkClubIds, checkReferenciaAClub, checkColisionSourcing, checkCarpetasClubes, checkArchivoNoEsLoQueDice, checkFuentesPublicas. Mudados de tools/audit.js sin cambiar una línea; lo compartido (add, ROOT, fs, path…) está en tools/audit-base.js.
 
 const { ROOT, add, archivosData, execFileSync, execSync, fs, idDeArchivo, path, vm } = require('./audit-base.js');
+const cache = require('./audit-cache.js');
 
 // un commit que corrige un dato publicado (importe, categoría, filas, totales, caja/deuda, moneda, fuente, perímetro) lleva el trailer
 // `Corrige: <motivo en una frase>` (o una línea en Admin/registros/correcciones.jsonl). Sin eso el registro público dice «Motivo no registrado».
@@ -367,10 +368,15 @@ function checkArchivoNoEsLoQueDice() {
       if (e.isDirectory() || (e.isSymbolicLink() && (() => { try { return fs.statSync(p).isDirectory(); } catch { return false; } })())) { walk(p); continue; }
       const m = /^(.*)\.(pdf|xhtml|xml)$/i.exec(e.name); if (!m) continue;
       if (nombres.has(`${m[1]}-descomprimido.${m[2]}`)) continue;
-      let n = 0; try { const fd = fs.openSync(p, 'r'); try { n = fs.readSync(fd, buf, 0, 64, 0); } finally { fs.closeSync(fd); } } catch { continue; }
-      const cab = buf.subarray(0, n);
-      const real = cab[0] === 0x1f && cab[1] === 0x8b ? (m[2].toLowerCase() === 'xhtml' ? null : 'gzip') : (cab[0] === 0x50 && cab[1] === 0x4b && cab[2] === 0x03 && cab[3] === 0x04) ? 'Zip'
-        : (m[2].toLowerCase() === 'pdf' && /^(\xEF\xBB\xBF)?\s*<(!doctype html|html)/i.test(cab.toString('latin1'))) ? 'HTML' : null;
+      // lo que son los primeros 64 bytes del archivo depende solo de su contenido: se guarda por archivo (tools/audit-cache.js) y se vuelve a leer solo si cambió
+      let real; try {
+        real = cache.porArchivo('archivoNoEs', p, m[2].toLowerCase(), () => {
+          let n = 0; const fd = fs.openSync(p, 'r'); try { n = fs.readSync(fd, buf, 0, 64, 0); } finally { fs.closeSync(fd); }
+          const cab = buf.subarray(0, n);
+          return cab[0] === 0x1f && cab[1] === 0x8b ? (m[2].toLowerCase() === 'xhtml' ? null : 'gzip') : (cab[0] === 0x50 && cab[1] === 0x4b && cab[2] === 0x03 && cab[3] === 0x04) ? 'Zip'
+            : (m[2].toLowerCase() === 'pdf' && /^(\xEF\xBB\xBF)?\s*<(!doctype html|html)/i.test(cab.toString('latin1'))) ? 'HTML' : null;
+        });
+      } catch { continue; }
       if (!real) continue;
       const rel = path.relative(ROOT, p);
       add('P2', 'archivo-no-es-lo-que-dice', `${rel} es ${real}, no ${m[2].toLowerCase()}: ${real === 'HTML' ? 'es una página de error o de login, no el documento; se vuelve a bajar' : `el depósito lo sirvió comprimido; se descomprime a ${m[1]}-descomprimido.${m[2]} al lado y el original queda`} (skill club-sourcing, «Gotchas de tooling»)`);

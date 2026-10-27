@@ -1,6 +1,7 @@
 // tools/audit-chequeos-5.js — checkHigiene, checkDatosJson, checkReglasCategoria, checkDeportes, checkComaComida, checkRarezas, checkEjercicioSinRastro, checkDudasResueltas, checkRegistrosSinLector, checkMedicionesSinDestino. Mudados de tools/audit.js sin cambiar una línea; lo compartido (add, ROOT, fs, path…) está en tools/audit-base.js.
 
 const { ROOT, add, archivosData, execSync, fs, idDeArchivo, mdsDeSkills, path, vm } = require('./audit-base.js');
+const cache = require('./audit-cache.js');
 
 function checkHigiene(api) {
   const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
@@ -137,16 +138,25 @@ function checkComaComida() {
   const re = new RegExp('^[|\\s]*([A-Za-z][^|\\d]{2,60}?)[|\\s]+' + TOK + '[|\\s]+' + TOK + '[|\\s]+' + TOK + '[|\\s]*$');
   const cierra = (a, b, c) => Math.abs(a - b - c) <= 0.051 || Math.abs(b - a - c) <= 0.051;
   const walk = (d) => { for (const e of fs.readdirSync(d)) { const f = path.join(d, e); const st = fs.statSync(f, { throwIfNoEntry: false }); if (!st) continue; /* un enlace a un PDF que ya no está (worktree) */ if (st.isDirectory()) walk(f); else if (f.endsWith('.md')) leer(f); } };
+  // Lo que un .md tiene de candidato (la fila, y qué cifras al dividirse por 10 la hacen cerrar) depende solo de su contenido: se guarda por archivo (tools/audit-cache.js). Las rarezas ya revisadas
+  // (Admin/registros/rarezas.jsonl) se miran en cada corrida, no se guardan, y el orden y el `break` son los de siempre.
   const leer = (f) => {
-    fs.readFileSync(f, 'utf8').split('\n').forEach((l, i) => {
-      const m = l.match(re); if (!m) return;
-      const t = [m[2], m[3], m[4]]; if (!t.some((x) => x.includes('.'))) return;
-      const [a, b, c] = t.map(num); if (cierra(a, b, c)) return;
-      for (const k of [0, 1]) {
-        const v = [a, b]; v[k] = v[k] / 10;
-        if (!t[k].includes('.') && cierra(v[0], v[1], c) && !R_.rarezaEn(path.relative(ROOT, f), i + 1, t[k])) { add('P2', 'coma-comida', `${path.relative(ROOT, f)} L${i + 1}: «${l.trim().slice(0, 80)}» — la cifra ${k + 1} (${t[k]}) parece haber perdido la coma decimal (con ÷10 la fila cierra); corregir el .md o silenciar tras mirar el documento`); break; }
-      }
+    const candidatos = cache.porArchivo('comaComida', f, '', () => {
+      const out = [];
+      fs.readFileSync(f, 'utf8').split('\n').forEach((l, i) => {
+        const m = l.match(re); if (!m) return;
+        const t = [m[2], m[3], m[4]]; if (!t.some((x) => x.includes('.'))) return;
+        const [a, b, c] = t.map(num); if (cierra(a, b, c)) return;
+        const ks = [0, 1].filter((k) => { const v = [a, b]; v[k] = v[k] / 10; return !t[k].includes('.') && cierra(v[0], v[1], c); });
+        if (ks.length) out.push({ i, t, ks, fila: l.trim().slice(0, 80) });
+      });
+      return out;
     });
+    for (const c of candidatos) {
+      for (const k of c.ks) {
+        if (!R_.rarezaEn(path.relative(ROOT, f), c.i + 1, c.t[k])) { add('P2', 'coma-comida', `${path.relative(ROOT, f)} L${c.i + 1}: «${c.fila}» — la cifra ${k + 1} (${c.t[k]}) parece haber perdido la coma decimal (con ÷10 la fila cierra); corregir el .md o silenciar tras mirar el documento`); break; }
+      }
+    }
   };
   if (fs.existsSync(R)) walk(R);
 }
@@ -288,12 +298,21 @@ function checkMedicionesSinDestino() {
 // Un nombre que se usa y nadie definió (eslint no-undef, `node tools/fos.mjs indefinidos`): rompe al correr una rama que ningún ensayo recorre (el modo que escribe, el que ejecuta). P3. Sin eslint instalado (cd tools && npm install) no avisa.
 function checkNombresSinDefinir() {
   if (!fs.existsSync(path.join(ROOT, 'tools', 'node_modules', '.bin', 'eslint'))) return;
-  let h; try { h = JSON.parse(execSync('node tools/indefinidos.mjs --json', { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] })); } catch (e) { try { h = JSON.parse(e.stdout); } catch (e2) { return; } }
+  // El resultado de eslint depende solo de los archivos de tools/ (mjs, js y hooks) y de su configuración: si ninguno cambió de tamaño ni de fecha, se reusa (tools/audit-cache.js). Una falla de eslint no se guarda.
+  const enTools = fs.readdirSync(path.join(ROOT, 'tools')).filter((f) => /\.(mjs|js)$/.test(f)).map((f) => path.join(ROOT, 'tools', f));
+  const hooks = fs.existsSync(path.join(ROOT, 'tools', 'hooks')) ? fs.readdirSync(path.join(ROOT, 'tools', 'hooks')).filter((f) => /\.mjs$/.test(f)).map((f) => path.join(ROOT, 'tools', 'hooks', f)) : [];
+  const resultado = cache.unico('nombresSinDefinir', cache.firmaDeArchivos([...enTools, ...hooks, path.join(ROOT, 'tools', 'package.json'), path.join(ROOT, 'tools', 'node_modules', '.bin', 'eslint')]), () => {
+    let h; try { h = JSON.parse(execSync('node tools/indefinidos.mjs --json', { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] })); } catch (e) { try { h = JSON.parse(e.stdout); } catch (e2) { return { falla: true }; } }
+    let imp = null; try { imp = JSON.parse(execSync('node tools/indefinidos.mjs --imports --json', { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] })); } catch (e) { imp = null; }
+    return { h, imp };
+  }, (r) => !r.falla);
+  if (resultado.falla) return;
+  const h = resultado.h;
   const sinDefinir = h.filter(x => !x.regla), errores = h.filter(x => x.regla);
   if (sinDefinir.length) add('P3', 'nombre-sin-definir', `${sinDefinir.length} nombre(s) usados sin definir en tools/: ${sinDefinir.slice(0, 4).map(x => `${x.archivo}:${x.linea} ${x.nombre}`).join(', ')}. Corré: node tools/fos.mjs indefinidos`);
   if (errores.length) add('P3', 'error-estatico', `${errores.length} error(es) que eslint encuentra en tools/ (una de las reglas de ERRORES de tools/eslint.config.mjs): ${errores.slice(0, 4).map(x => `${x.archivo}:${x.linea} [${x.regla}] ${x.nombre}`).join(', ')}. Corré: node tools/fos.mjs indefinidos`);
   // los imports que ningún código usa: información (P4), el código muerto que dejan las particiones
-  let imp; try { imp = JSON.parse(execSync('node tools/indefinidos.mjs --imports --json', { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] })); } catch (e) { return; }
+  const imp = resultado.imp; if (!imp) return;
   if (imp.length) add('P3', 'imports-sin-uso', `${imp.length} import(s) sin uso en ${new Set(imp.map(x => x.archivo)).size} archivos de tools/ (ej. ${imp.slice(0, 3).map(x => `${x.archivo}:${x.linea} ${x.nombre}`).join(', ')}). Información: se limpian de a un archivo`);
 }
 

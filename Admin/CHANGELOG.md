@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1210 — La auditoría guarda lo que tres chequeos calculan por archivo [audit-cache.js, audit-chequeos-3.js, audit-chequeos-5.js]
+- `tools/audit-cache.js`: `checkComaComida` (cada `.md` de `Clubes/`), `checkArchivoNoEsLoQueDice` (los 64 bytes de cada PDF, XHTML y XML) y `checkNombresSinDefinir` (eslint sobre `tools/`) guardan su resultado en `.git/fos-audit-cache.json` y no lo recalculan si el archivo no cambió de tamaño ni de fecha. La clave suma la versión del código de los chequeos (cambiar uno, `rarezas.mjs` o eslint invalida todo); las rarezas ya revisadas se miran en cada corrida; los hallazgos se emiten con `add` siempre. Ningún chequeo ni mensaje cambia. `--sin-cache` o `FOS_SIN_CACHE=1` hacen la auditoría completa.
+- `fos probar-cache-audit` (~100 s): mismos hallazgos con y sin caja en el árbol, con una coma comida, un PDF que es HTML y un nombre sin definir plantados, y arreglados. Mediana de `audit.js --json`: 12,8 s sin caja, 8,3 s con caja caliente (35 %).
+- Medición: idéntico (`audit`), veredicto GENERAL. Sin revisión independiente de la Auditora.
+
 ## Versión 1209 — gestion-exa abre cada fuente de Gemini y la comprueba [gestion-exa.mjs, verificar-fuente-web.mjs]
 - `tools/verificar-fuente-web.mjs` (`fos verificar-url <url> --nombre "…"`, gratis) abre una URL citada por un modelo y dice si abre (o el HTTP con que no abre), la fecha de la URL y la que declara la página (meta, JSON-LD, `<time>`; marca cuando difieren de año), y por cada nombre de persona de la afirmación si su apellido aparece en la nota, con la frase. `gestion-exa` lo corre con cada fuente real de Gemini: ✓ el nombre aparece, ✗ no abre o la nota no nombra a nadie del texto. Lo que se hacía a mano con WebFetch.
 - Verificado contra las notas ya abiertas a mano: confirma la nota de Cali 2020 con su frase, rechaza la de 2023 (no menciona a Volt) y la URL inventada (404).
