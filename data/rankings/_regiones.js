@@ -19,7 +19,7 @@ window.RANKINGS_INDICE = {
   "ch-superleague": [2020,3,10],
   "cl-primera": [2025,3,16],
   "co-primeraA": [2025,19,20],
-  "co-primeraB": [2022,5,16],
+  "co-primeraB": [2024,5,16],
   "cy-seconddivision": [2024,1,16],
   "de-2bundesliga": [2025,2,18],
   "de-bundesliga": [2024,10,18],
