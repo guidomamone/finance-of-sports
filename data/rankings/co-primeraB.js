@@ -104,9 +104,11 @@ window.RANKINGS["co-primeraB"] = {
   },
   2018: {
     leagueSize: 16,
-    sinDato: ["cucutadeportivo-co"],
     wiki: {"t":"2018 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
+      { id:"cucutadeportivo-co", revenue:2.336, reportType:"official_balance_sheet",
+        sourceId:"cucutadeportivo-co-siis-estado-2018",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.333],["Otros ingresos",0.003]] },
       { id:"unionmagdalena-co", revenue:2.204, reportType:"official_balance_sheet",
         sourceId:"unionmagdalena-co-estados-financieros-2018",
         mix:[["Comercial / Sponsors",0.075],["Estadio",0.635],["Televisión",1.31],["Premios por competencias",0.149],["Otros ingresos",0.035]] },

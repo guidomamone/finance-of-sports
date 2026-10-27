@@ -610,6 +610,7 @@ window.SPONSORS_INDICE = [
   ["citta-di-salerno","Città di Salerno",["c"]],
   ["city-center-online","City Center ONLINE",["c"]],
   ["city-container","City Container",["c"]],
+  ["civilec-business-group","Civilec Business Group",["c"]],
   ["civitus-assicurazioni","Civitus Assicurazioni",["c"]],
   ["clanel","Clanel",["m"]],
   ["claro","Claro",["c"]],
