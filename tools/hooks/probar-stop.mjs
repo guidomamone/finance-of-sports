@@ -38,6 +38,18 @@ writeFileSync(join(T, 'Admin', 'mediciones', 'pipeline', '_corriendo'), JSON.str
 s = correr();
 caso('el candado de un pid muerto no cuenta: avisa', s?.decision === 'block', JSON.stringify(s));
 rmSync(join(T, 'Admin', 'mediciones'), { recursive: true, force: true });
+// trabajo en segundo plano: un subagente lanzado y sin su aviso de fin no deja bloquear; con el aviso, sí; un monitor de espera no cuenta
+const trans = (contenido) => { const p = join(T, 'transcript.jsonl'); writeFileSync(p, contenido); return p; };
+const lanzado = '{"type":"user","content":"Async agent launched successfully.\\nagentId: abc123def456abc12 (internal ID)"}\n';
+const terminado = '{"type":"user","content":"<task-notification>\\n<task-id>abc123def456abc12</task-id>\\n<status>completed</status>\\n</task-notification>"}\n';
+s = correr({ transcript_path: trans(lanzado) });
+caso('un subagente en curso no deja bloquear el cierre', s === null, JSON.stringify(s));
+s = correr({ transcript_path: trans(lanzado + terminado) });
+caso('con el aviso de fin del subagente vuelve a avisar', s?.decision === 'block', JSON.stringify(s));
+s = correr({ transcript_path: trans('{"type":"user","content":"Monitor started (task bmon12345678, expires in 5m)"}\n') });
+caso('un monitor de espera no cuenta como trabajo en curso', s?.decision === 'block', JSON.stringify(s));
+s = correr({ transcript_path: trans('{"type":"user","content":"Command running in background with ID: bcmd12345678. Output"}\n') });
+caso('un comando en segundo plano sin terminar tampoco deja bloquear', s === null, JSON.stringify(s));
 s = correr({ stop_hook_active: true });
 caso('si ya está continuando por un bloqueo, no repite', s === null, JSON.stringify(s));
 

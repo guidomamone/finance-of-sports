@@ -22,6 +22,14 @@ const sh = (cmd, args) => { try { return { ok: true, out: execFileSync(cmd, args
 if (!sh('git', ['rev-parse', '--show-toplevel']).ok) process.exit(0);
 // una medición en curso (candado de medir-pipeline, TODO 394) deja el árbol sin commitear a propósito: no se avisa hasta que termine
 try { process.kill(JSON.parse(readFileSync(join(raiz, 'Admin', 'mediciones', 'pipeline', '_corriendo'), 'utf8')).pid, 0); process.exit(0); } catch { /* sin candado, o de un pid muerto */ }
+// trabajo en segundo plano sin terminar (un subagente o un comando con run_in_background que arrancó en este transcript y cuyo aviso de fin todavía no llegó): el turno no se cierra a medias, los archivos
+// sin commitear son su salida en curso. Los monitores de espera no cuentan. Sin transcript, no se puede saber y se sigue de largo.
+{
+  let t = ''; try { t = entrada.transcript_path ? readFileSync(entrada.transcript_path, 'utf8') : ''; } catch { /* sin transcript */ }
+  const ids = [...new Set([...t.matchAll(/(?:agentId: |running in background with ID: |moved to the background \(ID: )([a-z0-9]{8,20})/g)].map((m) => m[1]))];
+  const sinTerminar = ids.filter((id) => !new RegExp(`<task-id>${id}</task-id>[\\s\\S]{0,400}?<status>(?:completed|failed|killed|stopped)</status>`).test(t.replace(/\\n/g, '\n')));
+  if (sinTerminar.length) process.exit(0);
+}
 
 const sucios = sh('git', ['status', '--porcelain']).out.split('\n').filter(Boolean);
 const ultimoCommit = Number(sh('git', ['log', '-1', '--format=%ct']).out.trim()) || 0;

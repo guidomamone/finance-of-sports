@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1220 — Hook de fin de turno: no bloquea con trabajo en segundo plano sin terminar [hooks/stop.mjs]
+- `tools/hooks/stop.mjs` mira el transcript: un subagente (`agentId:`) o un comando con `run_in_background` (`running in background with ID:`) sin su `<task-notification>` de fin deja el cierre pasar sin decir nada (los archivos sin commitear son su salida en curso). Los monitores de espera no cuentan. Antes avisaba a cada rato mientras los subagentes escribían. Sin transcript sigue como antes.
+- Medición: `probar-stop.mjs` 12 casos, todos ok (4 nuevos). Un comando en segundo plano que se mata sin aviso deja el hook en silencio hasta que termine la sesión: si pasa, `git status` lo dice igual al cierre del turno siguiente.
+
 ## Versión 1219 — Orsomarso (2016 a 2018, 2020 a 2025) y Atlético Huila (2016 a 2025) desde SIIS [463 · orsomarso-co, atleticohuila-co]
 - Los dos clubes cargados por `club-siis.mjs` (alta, estados, dictámenes, tres subagentes cada uno, lote con un commit por año), con la línea del auditor (sin salvedades en los 15 años con dictamen), caja y deuda de SIIS, ligas por año (Huila en B 2020, 2022 y 2024 por prensa: descendió en 2019, subió en 2021, bajó en 2021 y 2023) y gestiones de Huila 2016 a 2025. Lo que quedó abierto está en el TODO 463 (gestiones y sponsors de Orsomarso, sponsors débiles de Huila).
 - Medición: sin cambio de tools en esta entrada.
