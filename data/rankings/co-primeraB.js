@@ -41,7 +41,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2023: {
     leagueSize: 17,
-    sinDato: ["atleticofc-co"],
     wiki: {"t":"2023 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":17},
     clubs: [
       { id:"cortulua-co", revenue:4.776, reportType:"official_balance_sheet",
@@ -56,6 +55,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"leonesfc-co", revenue:1.461, reportType:"official_balance_sheet",
         sourceId:"leonesfc-co-siis-estado-2023",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.334],["Otros ingresos",0.127]] },
+      { id:"atleticofc-co", revenue:0.575, reportType:"official_balance_sheet",
+        sourceId:"atleticofc-co-siis-estado-2023",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.563],["Otros ingresos",0.012]] },
     ],
   },
   2022: {

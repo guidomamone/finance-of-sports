@@ -27,3 +27,5 @@ Estados financieros en disco ahora: 8 ejercicios (2017-2020, 2022-2025), cada un
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2021 desde `Clubes/Colombia/Atletico FC/siis-estado-2021.pdf` (sourceId `atleticofc-co-siis-estado-2021`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2022 desde `Clubes/Colombia/Atletico FC/siis-estado-2022.pdf` (sourceId `atleticofc-co-siis-estado-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2023 desde `Clubes/Colombia/Atletico FC/siis-estado-2023.pdf` (sourceId `atleticofc-co-siis-estado-2023`).
