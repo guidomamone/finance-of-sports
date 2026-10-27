@@ -6,8 +6,7 @@ window.ESTIMADOS["co-primeraB"] = {
   2016: [{"id":"realcartagena-co","revenue":1.665,"lo":0.923,"hi":3.149,"caso":"afuera","error":29,"de":[2017]}],
   2018: [{"id":"cortulua-co","revenue":2.638,"lo":1.462,"hi":4.989,"caso":"afuera","error":29,"de":[2020]}],
   2019: [{"id":"cortulua-co","revenue":2.682,"lo":1.487,"hi":5.071,"caso":"afuera","error":29,"de":[2020]}],
-  2022: [{"id":"realcartagena-co","revenue":1.656,"lo":0.918,"hi":3.132,"caso":"afuera","error":29,"de":[2021]}],
-  2023: [{"id":"llaneros-co","revenue":2.998,"lo":1.662,"hi":5.67,"caso":"afuera","error":29,"de":[2025]},{"id":"realcartagena-co","revenue":1.719,"lo":0.953,"hi":3.25,"caso":"afuera","error":29,"de":[2021]},{"id":"tigresfc-co","revenue":0.617,"lo":0.416,"hi":0.938,"caso":"entre","error":18,"de":[2022,2024]}],
-  2024: [{"id":"llaneros-co","revenue":3.075,"lo":1.705,"hi":5.815,"caso":"afuera","error":29,"de":[2025]}],
+  2023: [{"id":"llaneros-co","revenue":2.998,"lo":1.662,"hi":5.67,"caso":"afuera","error":29,"de":[2025]},{"id":"realcartagena-co","revenue":1.892,"lo":1.049,"hi":3.578,"caso":"afuera","error":29,"de":[2022]},{"id":"tigresfc-co","revenue":0.617,"lo":0.416,"hi":0.938,"caso":"entre","error":18,"de":[2022,2024]}],
+  2024: [{"id":"llaneros-co","revenue":3.075,"lo":1.705,"hi":5.815,"caso":"afuera","error":29,"de":[2025]},{"id":"realcartagena-co","revenue":1.941,"lo":1.076,"hi":3.67,"caso":"afuera","error":29,"de":[2022]}],
   2025: [{"id":"tigresfc-co","revenue":0.684,"lo":0.379,"hi":1.293,"caso":"afuera","error":29,"de":[2024]}],
 };

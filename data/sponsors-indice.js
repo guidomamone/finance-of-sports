@@ -2696,6 +2696,7 @@ window.SPONSORS_INDICE = [
   ["vim","VIM",["c"]],
   ["vina-del-mar","Viña del Mar",["c"]],
   ["vintykids-com","VintyKids.com",["c"]],
+  ["viomar","Viomar",["m"]],
   ["virgin-media","Virgin Media",["c"]],
   ["virgin-wines","Virgin Wines",["c"]],
   ["visabeira","Visabeira",["c"]],

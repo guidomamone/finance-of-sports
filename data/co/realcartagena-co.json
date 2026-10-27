@@ -52,6 +52,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Real Cartagena/siis-estado-2021.pdf"
+    },
+    {
+      "id": "realcartagena-co-siis-estado-2022",
+      "club_id": "realcartagena-co",
+      "title": "Real Cartagena Fútbol Club S.A. — siis-estado-2022 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Real Cartagena/siis-estado-2022.pdf"
     }
   ],
   "members": null,
@@ -252,6 +260,45 @@
             "line": "Gastos de ventas",
             "side": "expense",
             "amount": 4118.02,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
+          }
+        ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "currency": "COP",
+      "source_id": "realcartagena-co-siis-estado-2022",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2022-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 8702.428,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":73.096,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-5381.864,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1830.557,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1714.843,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":8775.524,"expenses":8927.264,"net_result":-151.74},
+      "adjustments": {
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":8702.428,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 5381.864,
             "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
             "kind": "other"
           }
