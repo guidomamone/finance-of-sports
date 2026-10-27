@@ -66,7 +66,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2023: {
     leagueSize: 17,
-    sinDato: ["barranquillafc-co","bogotafc-co"],
+    sinDato: ["bogotafc-co"],
     wiki: {"t":"2023 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":17},
     clubs: [
       { id:"cortulua-co", revenue:4.776, reportType:"official_balance_sheet",
@@ -78,6 +78,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"realcartagena-co", revenue:3.382, reportType:"official_balance_sheet",
         sourceId:"realcartagena-co-siis-estado-2023",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",3.317],["Otros ingresos",0.065]] },
+      { id:"barranquillafc-co", revenue:1.727, reportType:"official_balance_sheet",
+        sourceId:"barranquillafc-co-siis-estado-2023",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.726],["Otros ingresos",0.001]] },
       { id:"fortalezaceif-co", revenue:1.569, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2023",
         mix:[["Comercial / Sponsors",0.221],["Estadio",0.105],["Televisión",0.335],["Premios por competencias",0.118],["Venta de Jugadores",0.289],["Otras actividades (educación y otros deportes)",0.016],["Otros ingresos",0.486]] },
