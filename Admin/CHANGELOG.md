@@ -23,6 +23,7 @@ que dice `ESTADO.md` era verdad ese día.
 ## Versión 1197 — regla-de-pais-en-doc-general mira también ESTADO.md y PIPELINE.md [472 · reglas-pais.mjs, audit-chequeos-siis.js, pre-tool.mjs]
 - El aviso P3 y el hook de `pre-tool` miran los `##` y `###` de `ESTADO.md` y `PIPELINE.md` (además de los `## REGLA:` de `CONVENCIONES-DATOS.md`) con `paisDeTitulo()`; el hook rechaza el título nuevo, no uno que ya está en el archivo. Un título general que nombra un país se acepta con su motivo en `tools/titulos-pais-aceptados.json` (hoy «Dinamarca: los informes en XHTML», que es un formato).
 - Hoy marca 1 de 61 títulos de `ESTADO.md`, `PIPELINE.md`, `CONVENCIONES.md` y `PANTALLA.md` (el de Dinamarca, aceptado); la prueba del hook (`probar-pre-tool.mjs`) tiene 5 casos nuevos y da 87 ok.
+- Verificado a mano (472): aviso y hook cubren CONVENCIONES-DATOS, ESTADO y PIPELINE; excepción de Dinamarca escrita con motivo en tools/titulos-pais-aceptados.json; probar-pre-tool.mjs 87 casos ok (5 nuevos); audit P0 0 P1 0; medido (audit idéntico)
 - Medición: lote chico del medidor audit, idéntico. Sin revisión independiente de la Auditora.
 
 ## Versión 1196 — PIPELINE.md sin lo que solo vale para un país [471 · audit-acciones.json]
