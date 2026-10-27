@@ -84,6 +84,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/America de Cali/siis-estado-2023.pdf"
+    },
+    {
+      "id": "americadecali-co-siis-estado-2024",
+      "club_id": "americadecali-co",
+      "title": "América de Cali S.A. En Reorganización — siis-estado-2024 (ejercicio 2024)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/America de Cali/siis-estado-2024.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Marcela Gómez Giraldo (Representante Legal)","first_year":2025,"last_year":2025}],
@@ -481,6 +489,57 @@
             "line": "Gastos de ventas",
             "side": "expense",
             "amount": 1706.203,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
+          }
+        ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2024,
+      "period_end": "2024-12-31",
+      "currency": "COP",
+      "source_id": "americadecali-co-siis-estado-2024",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2024-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 77326.526,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":759.342,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-64308.04,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-1667.079,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-3141.009,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-5668.867,"tax":-1122.872,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":78085.868,"expenses":69116.128,"net_result":2178.001},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":631.479},
+          {"label":"Costos financieros","amount":-6300.346},
+          {"label":"Ingreso (gasto) por impuestos","amount":-1122.872}
+        ],
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":77326.526,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 64308.04,
+            "reason": "Costo de ventas es 93% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 1667.079,
             "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
             "kind": "other"
           }
