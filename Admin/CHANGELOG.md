@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1198 — fos gestion-exa [463 · gestion-exa.mjs]
+- `node tools/fos.mjs gestion-exa <clubId> [--nombre "Club"] [--anios 2016-2025 | "2016, 2017"]` marca los cierres que ninguna gestión confirmada de `data/gestiones/<iso>.js` cubre (con el club cargado o sin alta) y trae de Exa, por cada año con hueco, las notas de prensa de nombramiento y de renuncia con su fecha de publicación (~US$ 0,007 por consulta; queda en `Admin/registros/api/exa.jsonl`). No escribe `data/gestiones`. El brief del subagente de gestiones (`Admin/briefs-subagentes-siis.md`) empieza por él.
+- Caso: América de Cali 2023, que una fuente débil (Wikipedia, 2024-01-04) dejaba sin cobertura, quedó con la nota de El Tiempo del 29-12-2023 («con Marcela al frente del equipo»).
+- Medición: no es del pipeline (no pide medición).
+
 ## Versión 1197 — regla-de-pais-en-doc-general mira también ESTADO.md y PIPELINE.md [472 · reglas-pais.mjs, audit-chequeos-siis.js, pre-tool.mjs]
 - El aviso P3 y el hook de `pre-tool` miran los `##` y `###` de `ESTADO.md` y `PIPELINE.md` (además de los `## REGLA:` de `CONVENCIONES-DATOS.md`) con `paisDeTitulo()`; el hook rechaza el título nuevo, no uno que ya está en el archivo. Un título general que nombra un país se acepta con su motivo en `tools/titulos-pais-aceptados.json` (hoy «Dinamarca: los informes en XHTML», que es un formato).
 - Hoy marca 1 de 61 títulos de `ESTADO.md`, `PIPELINE.md`, `CONVENCIONES.md` y `PANTALLA.md` (el de Dinamarca, aceptado); la prueba del hook (`probar-pre-tool.mjs`) tiene 5 casos nuevos y da 87 ok.

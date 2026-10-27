@@ -206,6 +206,7 @@
   "git-resumen.mjs":"orden: git status sin las páginas generadas (solo lee git)",
   "audit-perfil.mjs":"orden: el tiempo de cada chequeo de audit.js (corre audit.js con --cpu-prof en una carpeta temporal; solo mide)",
   "siis-adicionales.mjs":"orden: los documentos adicionales de SIIS por club-año (un GET por año; no baja archivos ni escribe)",
+  "gestion-exa.mjs":"orden: los cierres sin gestión confirmada de un club y las notas de prensa fechadas de Exa para completarlas (no escribe data/gestiones; no lee documentos)",
   "comparar-carga.mjs":"orden: el ensayo de cargar de un documento contra lo cargado de su año (corre cargar sin --escribir y restaura los registros que el ensayo toca; no escribe datos)",
   "club-datos.mjs":"orden: las líneas de un año de un club de su JSON público con el total por subcategoría (solo lee)",
   "sponsor-fka.mjs":"orden: los sponsors débiles de un club para verificarlos en Football Kit Archive y el registro de lo verificado (Admin/registros/sponsor-fka.jsonl); no lee documentos",
