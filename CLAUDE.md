@@ -9,6 +9,8 @@ Sitio financeofsports.com («El deporte en Números»): las finanzas de clubes d
 planes) va adentro de `Admin/`. Si lo dejás suelto en la raíz, se publica: `node tools/audit.js` lo caza (`doc-interno-no-excluido`).
 La extensión no dice nada sobre si un documento es interno. `CLAUDE.md` es la única excepción que se queda en la raíz.
 
+**DÓNDE PONER UNA REGLA DE DATOS NUEVA.** Si vale para cualquier club, en `Admin/CONVENCIONES-DATOS.md`; si solo vale para un país o un club, en `Admin/paises/<iso>.md` (mismo formato; el título nombra el país). El hook de pre-tool rechaza la de un país en el general y `audit.js` la marca (`regla-de-pais-en-doc-general`); `cargar`, `club-siis` y `recategorizar-linea` imprimen al empezar dónde están las reglas del país del club.
+
 **Lo que está cerrado no se borra ni se apila: se archiva** en `Admin/Archive/` (ver su `README.md`). Antes, sacale lo que todavía
 sirve y llevalo a donde se lee: una regla a `Admin/CONVENCIONES.md` (proceso), `Admin/CONVENCIONES-DATOS.md` (datos) o
 `Admin/PANTALLA.md` (pantalla y código), o a la skill que corresponda; un pendiente a `Admin/TODO.md`.

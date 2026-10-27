@@ -28,6 +28,7 @@ está resumida en la sección 5 y el detalle en `referencia/fx.md`.
 
 ## 0. Ubicate primero
 
+- Las reglas de datos generales están en `Admin/CONVENCIONES-DATOS.md`; las que solo valen para un país, en `Admin/paises/<iso>.md` (se leen al cargar o corregir un club de ese país).
 - La taxonomía compartida está en `data/category-map.js` (`REVENUE_CATEGORIES`, `EXPENSE_CATEGORIES`). Leela antes de inventar una
   categoría nueva: probablemente ya está.
   REGLA: `category-map.js` tiene que reflejar EXACTAMENTE los `normalizedCategory` que usan los datos reales. Al agregar o usar una
