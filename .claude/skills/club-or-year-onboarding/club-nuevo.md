@@ -21,7 +21,9 @@ Dos capas, EN ESTE ORDEN (invertirlo es la trampa del primer bullet de abajo):
    de pedirle la tabla a footylogos, probá `node tools/lookup-brand-color.js "<club>"`**: busca
    LOCAL contra ligas que ya se cachearon (`tools/lookup-brand-color.js --list-ligas` dice
    cuáles), 0 fetches. Si el club no aparece, lo anota en `tools/brand-color-reference/misses.jsonl`;
-   si la liga no está cacheada, cachearla es un fetch de una página pública, sin API key:
+   si el club no está en footylogos (un club de ascenso, una liga que no cachea): `node tools/fos.mjs color-club "<club>" --gemini`
+   trae del infobox de la Wikipedia en el idioma del país los colores con su hex, el apodo y la camiseta local con fuentes (la capa 1 y el hex de la plantilla de camiseta de un
+   solo paso; Colombia: Orsomarso, Huila, Barranquilla FC y Bogotá FC); no decide el color. Si la liga está en footylogos y no está cacheada, cachearla es un fetch de una página pública, sin API key:
    `node tools/fetch-brand-color-reference.mjs <slug-liga-footylogos> <nombre-local>` (el uso está
    en la cabecera del script). Después volvé a correr el lookup. Un club de rugby (footylogos es solo
    de fútbol): `node tools/fos.mjs color-rugby "<club>"` trae los candidatos de teamcolorcodes; se corre
