@@ -25,7 +25,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2024: {
     leagueSize: 16,
-    sinDato: ["orsomarso-co"],
     wiki: {"t":"2024 Torneo DIMAYOR","lang":"en","at":"2026-10-26","n":16},
     clubs: [
       { id:"realcartagena-co", revenue:3.367, reportType:"official_balance_sheet",
@@ -44,6 +43,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"leonesfc-co", revenue:1.797, reportType:"official_balance_sheet",
         sourceId:"leonesfc-co-siis-estado-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.707],["Otros ingresos",0.09]] },
+      { id:"orsomarso-co", revenue:1.599, reportType:"official_balance_sheet",
+        sourceId:"orsomarso-co-siis-estado-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.567],["Otros ingresos",1.032]] },
       { id:"tigresfc-co", revenue:0.666, reportType:"official_balance_sheet",
         sourceId:"tigresfc-co-siis-estado-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.665],["Otros ingresos",0.002]] },
