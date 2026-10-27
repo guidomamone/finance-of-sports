@@ -68,9 +68,11 @@ window.RANKINGS["co-primeraB"] = {
   },
   2021: {
     leagueSize: 16,
-    sinDato: ["cortulua-co"],
     wiki: {"t":"2021 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
+      { id:"cortulua-co", revenue:5.172, reportType:"official_balance_sheet",
+        sourceId:"cortulua-co-siis-estado-2021",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.642],["Otros ingresos",3.531]] },
       { id:"unionmagdalena-co", revenue:1.764, reportType:"official_balance_sheet",
         sourceId:"unionmagdalena-co-siis-estado-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.74],["Otros ingresos",0.024]],
