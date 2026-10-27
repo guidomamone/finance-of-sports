@@ -181,9 +181,11 @@ window.RANKINGS["co-primeraA"] = {
   },
   2021: {
     leagueSize: 21,
-    sinDato: ["americadecali-co"],
     wiki: {"t":"2021 Liga DIMAYOR","lang":"en","at":"2026-10-02","n":21},
     clubs: [
+      { id:"americadecali-co", revenue:13.105, reportType:"official_balance_sheet",
+        sourceId:"americadecali-co-siis-estado-2021",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",12.186],["Otros ingresos",0.919]] },
       { id:"deportestolima-co", revenue:10.548, reportType:"official_balance_sheet",
         sourceId:"deportestolima-co-siis-estado-2021",
         mix:[["Comercial / Sponsors",1.531],["Estadio",1.486],["Televisión",1.449],["Premios por competencias",1.04],["Venta de Jugadores",4.312],["Otros ingresos",0.73]] },
