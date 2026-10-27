@@ -1,7 +1,7 @@
 // GENERADO por tools/estimar.mjs: no editar a mano. ESTIMACIONES, no datos reales: ingreso en millones de USD del año, rango del 80% (lo-hi) y error mediano medido (%).
 window.ESTIMADOS = window.ESTIMADOS || {};
 window.ESTIMADOS["gr-superleague2"] = {
-  2017: [{"id":"aris-gr","revenue":4.644,"lo":2.579,"hi":8.786,"caso":"afuera","error":29,"de":[2019]},{"id":"oficrete-gr","revenue":0.832,"lo":0.462,"hi":1.574,"caso":"afuera","error":29,"de":[2018]}],
-  2018: [{"id":"aris-gr","revenue":4.751,"lo":2.638,"hi":8.987,"caso":"afuera","error":29,"de":[2019]}],
-  2022: [{"id":"panserraikos-gr","revenue":1.019,"lo":0.566,"hi":1.927,"caso":"afuera","error":29,"de":[2023]}],
+  2017: [{"id":"aris-gr","revenue":4.644,"lo":2.573,"hi":8.748,"caso":"afuera","error":29,"de":[2019]},{"id":"oficrete-gr","revenue":0.832,"lo":0.461,"hi":1.567,"caso":"afuera","error":29,"de":[2018]}],
+  2018: [{"id":"aris-gr","revenue":4.751,"lo":2.632,"hi":8.948,"caso":"afuera","error":29,"de":[2019]}],
+  2022: [{"id":"panserraikos-gr","revenue":1.019,"lo":0.564,"hi":1.919,"caso":"afuera","error":29,"de":[2023]}],
 };
