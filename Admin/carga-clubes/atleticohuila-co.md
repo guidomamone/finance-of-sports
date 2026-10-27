@@ -71,6 +71,10 @@ tools/cargar.mjs (2026-10-27). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-27): grossDebt escalón S (compuerta: balance de SIIS cuadra): balance de SIIS (siis-estado-2025.json, miles de COP): otros pasivos financieros corrientes 6965 + no corrientes 526488; cash escalón S (compuerta: balance de SIIS cuadra): balance de SIIS (siis-estado-2025.json, miles de COP): efectivo y equivalentes = 597480
+```
+
 ### Liga
 
 ```text
@@ -107,6 +111,10 @@ tools/cargar.mjs (2026-10-27). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-27): grossDebt escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2024.json, miles de COP): otros pasivos financieros corrientes 1573 + no corrientes 696774; cash escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2024.json, miles de COP): efectivo y equivalentes = 222857
+```
+
 ## 2023
 
 ### Ingresos
@@ -135,6 +143,10 @@ Generados/Colombia/Atletico Huila/siis-estado-2023.categorias.json (escalón de 
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-27): filas-a-mano. Claude 2026-10-27 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
 tools/cargar.mjs (2026-10-27). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-27): grossDebt escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2023.json, miles de COP): otros pasivos financieros corrientes 27412 + no corrientes 49219; cash escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2023.json, miles de COP): efectivo y equivalentes = 688737
 ```
 
 ## 2022
@@ -167,6 +179,10 @@ tools/cargar.mjs (2026-10-27). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-27): cash escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2022.json, miles de COP): efectivo y equivalentes = 358239
+```
+
 ## 2021
 
 ### Ingresos
@@ -195,6 +211,10 @@ Generados/Colombia/Atletico Huila/siis-estado-2021.categorias.json (escalón de 
 2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-27): filas-a-mano. Claude 2026-10-27 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
 tools/cargar.mjs (2026-10-27). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-27): cash escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2021.json, miles de COP): efectivo y equivalentes = 3484716
 ```
 
 ## 2020
@@ -257,6 +277,10 @@ tools/cargar.mjs (2026-10-27). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-27): grossDebt escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2019.json, miles de COP): otros pasivos financieros corrientes 550153 + no corrientes 1549828; cash escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2019.json, miles de COP): efectivo y equivalentes = 43802
+```
+
 ## 2018
 
 ### Ingresos
@@ -285,6 +309,10 @@ Generados/Colombia/Atletico Huila/siis-estado-2018.categorias.json (escalón de 
 2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-27): filas-a-mano. Claude 2026-10-27 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
 tools/cargar.mjs (2026-10-27). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-27): grossDebt escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2018.json, miles de COP): otros pasivos financieros corrientes vacío + no corrientes 1872222; cash escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2018.json, miles de COP): efectivo y equivalentes = 440651
 ```
 
 ## 2017
@@ -317,6 +345,10 @@ tools/cargar.mjs (2026-10-27). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-27): grossDebt escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2017.json, miles de COP): otros pasivos financieros corrientes 0 + no corrientes 1305556; cash escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2017.json, miles de COP): efectivo y equivalentes = 8248
+```
+
 ## 2016
 
 ### Ingresos
@@ -345,6 +377,10 @@ Generados/Colombia/Atletico Huila/siis-estado-2016.categorias.json (escalón de 
 2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-27): filas-a-mano. Claude 2026-10-27 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
 tools/cargar.mjs (2026-10-27). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-27): cash escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2016.json, miles de COP): efectivo y equivalentes = 134496
 ```
 
 ## Fuentes

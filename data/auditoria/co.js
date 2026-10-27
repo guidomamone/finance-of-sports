@@ -424,6 +424,80 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "atleticohuila-co": {
+  "2020": {
+   "auditor": {
+    "nombre": "Miguel Angel Leal Ramirez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico Huila/dictamen-revisor-fiscal-2020.md",
+    "linea": 30
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Miguel Angel Leal Ramirez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico Huila/dictamen-revisor-fiscal-2021.md",
+    "linea": 30
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Miguel Angel Leal Ramirez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico Huila/dictamen-revisor-fiscal-2022.md",
+    "linea": 28
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Miguel Angel Leal Ramirez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico Huila/dictamen-revisor-fiscal-2023.md",
+    "linea": 34
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Miguel Angel Leal Ramirez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico Huila/dictamen-revisor-fiscal-2024.md",
+    "linea": 30
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Miguel Angel Leal Ramirez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico Huila/dictamen-revisor-fiscal-2025.md",
+    "linea": 31
+   }
+  }
+ },
  "atlnacional-co": {
   "2025": {
    "auditor": {
