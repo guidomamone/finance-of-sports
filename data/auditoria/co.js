@@ -451,6 +451,104 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "cucutadeportivo-co": {
+  "2016": {
+   "auditor": {
+    "nombre": "Argemiro Abaunza Sepúlveda",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Cucuta Deportivo/dictamen-revisor-fiscal-2016.md",
+    "linea": 64
+   }
+  },
+  "2017": {
+   "auditor": {
+    "nombre": "Argemiro Abaunza Sepúlveda",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Cucuta Deportivo/dictamen-revisor-fiscal-2017.md",
+    "linea": 43
+   }
+  },
+  "2018": {
+   "auditor": {
+    "nombre": "Argemiro Abaunza Sepúlveda",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Cucuta Deportivo/dictamen-revisor-fiscal-2018.md",
+    "linea": 39
+   }
+  },
+  "2019": {
+   "auditor": {
+    "nombre": "Argemiro Abaunza Sepúlveda",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Cucuta Deportivo/dictamen-revisor-fiscal-2019.md",
+    "linea": 23
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Sergio Andrés Muñoz Cano",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Cucuta Deportivo/dictamen-revisor-fiscal-2022.md",
+    "linea": 88
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Sergio Andrés Muñoz Cano",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Cucuta Deportivo/dictamen-revisor-fiscal-2023.md",
+    "linea": 78
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Sergio Andrés Muñoz Cano",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Cucuta Deportivo/dictamen-revisor-fiscal-2024.md",
+    "linea": 74
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Sergio Andrés Muñoz Cano",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Cucuta Deportivo/dictamen-revisor-fiscal-2025.md",
+    "linea": 79
+   }
+  }
+ },
  "depcali-co": {
   "2025": {
    "auditor": {
