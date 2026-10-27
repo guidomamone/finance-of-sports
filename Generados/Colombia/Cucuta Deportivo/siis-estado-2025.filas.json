@@ -1,0 +1,184 @@
+{
+ "pdf": "Clubes/Colombia/Cucuta Deportivo/siis-estado-2025.pdf",
+ "md": "Clubes/Colombia/Cucuta Deportivo/siis-estado-2025.md",
+ "mdSha1": "e3969572462cbf4b285b7ba6798501654e89dac4",
+ "ubicacionSha1": "c586efe66457685e50b8684a31aed6b264293f79",
+ "modelo": "a mano (Claude Code, sesión 2026-10-27)",
+ "generado": "2026-10-27T04:29:51.575Z",
+ "salida": "a mano",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "miles",
+   "evidencia": "L1: Cifras en miles de pesos colombianos"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 11,
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "actual": "11.796.910",
+   "anterior": "7.587.055",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 12,
+   "etiqueta": "Costo de ventas",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "Ganancia bruta",
+   "actual": "11.796.910",
+   "anterior": "7.587.055",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Gastos de ventas",
+   "actual": "9.376.170",
+   "anterior": "6.375.489",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Gastos de administración",
+   "actual": "1.909.293",
+   "anterior": "1.503.187",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Otros ingresos",
+   "actual": "796.992",
+   "anterior": "849.687",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Otros gastos",
+   "actual": "72.819",
+   "anterior": "16.033",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "Ganancia (pérdida) por actividades de operación",
+   "actual": "1.235.620",
+   "anterior": "542.033",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Ingresos financieros",
+   "actual": "53",
+   "anterior": "198",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Costos financieros",
+   "actual": "439.354",
+   "anterior": "90.481",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Ganancia (pérdida), antes de impuestos",
+   "actual": "796.319",
+   "anterior": "451.750",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 22,
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "actual": "317.882",
+   "anterior": "207.077",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "Ganancia (pérdida) procedente de operaciones continuadas",
+   "actual": "478.437",
+   "anterior": "244.673",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 24,
+   "etiqueta": "Ganancia (pérdida) procedente de operaciones discontinuadas",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 25,
+   "etiqueta": "Ganancia (pérdida)",
+   "actual": "478.437",
+   "anterior": "244.673",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 25,
+  "actual": "478.437",
+  "anterior": "244.673"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+}

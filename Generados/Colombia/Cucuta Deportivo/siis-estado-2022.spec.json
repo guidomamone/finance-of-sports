@@ -1,0 +1,181 @@
+{
+ "pdf": "Clubes/Colombia/Cucuta Deportivo/siis-estado-2022.pdf",
+ "estado": [
+  "b1"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
+ "moneda": "COP",
+ "columna_ejercicio": "2022",
+ "columna_anterior": "2021",
+ "perimetro": "individual",
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "miles",
+   "evidencia": "L1: Cifras en miles de pesos colombianos"
+  }
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 11,
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "actual": "7.554.585",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 12,
+   "etiqueta": "Costo de ventas",
+   "actual": "3.980",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "Ganancia bruta",
+   "actual": "7.550.605",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Gastos de ventas",
+   "actual": "3.721.722",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Gastos de administración",
+   "actual": "1.179.485",
+   "anterior": "16.240",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Otros ingresos",
+   "actual": "1.984.144",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Otros gastos",
+   "actual": "218.926",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "Ganancia (pérdida) por actividades de operación",
+   "actual": "4.414.616",
+   "anterior": "(16.240)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Ingresos financieros",
+   "actual": "3.041",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Costos financieros",
+   "actual": "56.305",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Ganancia (pérdida), antes de impuestos",
+   "actual": "4.361.352",
+   "anterior": "(16.240)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 22,
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "Ganancia (pérdida) procedente de operaciones continuadas",
+   "actual": "4.361.352",
+   "anterior": "(16.240)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 24,
+   "etiqueta": "Ganancia (pérdida) procedente de operaciones discontinuadas",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 25,
+   "etiqueta": "Ganancia (pérdida)",
+   "actual": "4.361.352",
+   "anterior": "(16.240)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 25,
+  "actual": "4.361.352",
+  "anterior": "(16.240)"
+ },
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+}

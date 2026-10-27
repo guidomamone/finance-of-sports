@@ -1,0 +1,194 @@
+{
+ "pdf": "Clubes/Colombia/Cucuta Deportivo/siis-estado-2017.pdf",
+ "md": "Clubes/Colombia/Cucuta Deportivo/siis-estado-2017.md",
+ "mdSha1": "6896b5b7071a52989408b343e047bd4d141acf2d",
+ "ubicacionSha1": "f5e672f5ea8e766b5cf814fadd6e2071fd992ae9",
+ "modelo": "a mano (Claude Code, sesión 2026-10-27)",
+ "generado": "2026-10-27T04:29:46.962Z",
+ "salida": "a mano",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "miles",
+   "evidencia": "L1: Cifras en miles de pesos colombianos"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 11,
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "actual": "3.870.273",
+   "anterior": "3.216.538",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 12,
+   "etiqueta": "Costo de ventas",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "Ganancia bruta",
+   "actual": "3.870.273",
+   "anterior": "3.216.538",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Gastos de ventas",
+   "actual": "1.421.772",
+   "anterior": "971.008",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Gastos de administración",
+   "actual": "2.468.139",
+   "anterior": "1.795.634",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Otros ingresos",
+   "actual": "166.379",
+   "anterior": "718.886",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Otros gastos",
+   "actual": "1.061.715",
+   "anterior": "1.576.058",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "Otras ganancias (pérdidas)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Ganancia (pérdida) por actividades de operación",
+   "actual": "(914.974)",
+   "anterior": "(407.276)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Ingresos financieros",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Costos financieros",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 22,
+   "etiqueta": "Ganancia (pérdida), antes de impuestos",
+   "actual": "(914.974)",
+   "anterior": "(407.276)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 24,
+   "etiqueta": "Ganancia (pérdida) procedente de operaciones continuadas",
+   "actual": "(914.974)",
+   "anterior": "(407.276)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 25,
+   "etiqueta": "Ganancia (pérdida) procedente de operaciones discontinuadas",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 26,
+   "etiqueta": "Ganancia (pérdida)",
+   "actual": "(914.974)",
+   "anterior": "(407.276)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 26,
+  "actual": "(914.974)",
+  "anterior": "(407.276)"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+}

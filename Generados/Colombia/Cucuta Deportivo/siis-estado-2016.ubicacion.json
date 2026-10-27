@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Colombia/Cucuta Deportivo/siis-estado-2016.pdf",
+ "md": "Clubes/Colombia/Cucuta Deportivo/siis-estado-2016.md",
+ "mdSha1": "1d53e7515b3f180684ba96cacce155c825193b58",
+ "modelo": "a mano (Claude Code, sesión 2026-10-27)",
+ "generado": "2026-10-27T04:29:46.191Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    26
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
+ "moneda": "COP",
+ "columna_ejercicio": "2016",
+ "columna_anterior": "2015",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+}
