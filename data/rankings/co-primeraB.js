@@ -214,7 +214,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2019: {
     leagueSize: 17,
-    sinDato: ["bogotafc-co"],
     wiki: {"t":"2019 Categoría Primera B season","lang":"en","at":"2026-09-30","n":17},
     clubs: [
       { id:"realcartagena-co", revenue:2.31, reportType:"official_balance_sheet",
@@ -229,6 +228,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"barranquillafc-co", revenue:1.442, reportType:"official_balance_sheet",
         sourceId:"barranquillafc-co-siis-estado-2019",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.441],["Otros ingresos",0.001]] },
+      { id:"bogotafc-co", revenue:1.134, reportType:"official_balance_sheet",
+        sourceId:"bogotafc-co-siis-estado-2019",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.134]] },
       { id:"fortalezaceif-co", revenue:1.057, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2019",
         mix:[["Comercial / Sponsors",0.065],["Estadio",0.143],["Televisión",0.252],["Premios por competencias",0.063],["Venta de Jugadores",0.335],["Otros ingresos",0.199]] },

@@ -19,3 +19,5 @@ Estados financieros en disco ahora: 9 ejercicios (2016, 2018-2025), cada uno con
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2017 desde `Clubes/Colombia/Bogota FC/siis-estado-2017.pdf` (sourceId `bogotafc-co-siis-estado-2017`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2018 desde `Clubes/Colombia/Bogota FC/siis-estado-2018.pdf` (sourceId `bogotafc-co-siis-estado-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2019 desde `Clubes/Colombia/Bogota FC/siis-estado-2019.pdf` (sourceId `bogotafc-co-siis-estado-2019`).

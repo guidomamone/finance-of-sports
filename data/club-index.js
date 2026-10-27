@@ -61,7 +61,7 @@ window.CLUB_INDEX = {
   "boavista-pt": {"n":"Boavista","c":"PT","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "boca-ar": {"n":"Boca Juniors","c":"AR","q":"full","y":4,"last":2027,"yrs":[[2027,"official_budget"],[2025,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "bodoglimt-no": {"n":"Bodø-Glimt","c":"NO","q":"empty","y":0,"last":null,"yrs":[]},
-  "bogotafc-co": {"n":"Bogota FC","c":"CO","q":"full","y":3,"last":2018,"yrs":[[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"]]},
+  "bogotafc-co": {"n":"Bogota FC","c":"CO","q":"full","y":4,"last":2019,"yrs":[[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"]]},
   "bologna-it": {"n":"Bologna","c":"IT","q":"full","y":8,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
   "botafogo-br": {"n":"Botafogo","c":"BR","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "botafogosp-br": {"n":"Botafogo-SP","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
