@@ -1327,6 +1327,20 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "tigresfc-co": {
+  "2020": {
+   "auditor": {
+    "nombre": "Jorge Enrique Castañeda Sánchez",
+    "tipo": "persona"
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Tigres FC/dictamen-revisor-fiscal-2020.md",
+    "linea": 49
+   }
+  }
+ },
  "unionmagdalena-co": {
   "2018": {
    "auditor": null,
