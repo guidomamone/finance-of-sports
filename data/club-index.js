@@ -20,7 +20,7 @@ window.CLUB_INDEX = {
   "almerecity-nl": {"n":"Almere City","c":"NL","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "alverca-pt": {"n":"Alverca","c":"PT","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "amazonas-br": {"n":"Amazonas","c":"BR","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
-  "americadecali-co": {"n":"América de Cali","c":"CO","q":"full","y":8,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"]]},
+  "americadecali-co": {"n":"América de Cali","c":"CO","q":"full","y":9,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"]]},
   "americamineiro-br": {"n":"América Mineiro","c":"BR","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "anderlecht-be": {"n":"Anderlecht","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "antwerp-be": {"n":"Antwerp","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
