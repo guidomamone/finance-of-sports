@@ -65,8 +65,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 
 - Finanzas tiene la tarjeta Estructura ("De quién son estos números": entidad y perímetro, cadena de dueños, controladas, clubes del
   mismo grupo y nota para periodistas) y la página del grupo multiclub (`?tab=grupo`, clubes que controla y total por año), desde
-  `data/entidades/` (lo genera `tools/entidades.mjs` del registro `Admin/registros/entidades.jsonl`, con cita por línea). El registro tiene
-  60 clubes y 9 grupos multiclub (265 entidades). Donde el registro los tiene, la tarjeta muestra también los ingresos de la otra entidad del club.
+  `data/entidades/` (lo genera `tools/entidades.mjs` del registro `Admin/registros/entidades.jsonl`, con cita por línea). Cuántos clubes,
+  grupos y entidades tiene el registro: `node tools/entidades.mjs --check`. Donde el registro los tiene, la tarjeta muestra también los ingresos de la otra entidad del club.
 - Para periodistas: la tarjeta "Citar y descargar" de Finanzas (cita sugerida de lo que se ve, copiar la cita o el link, CSV por rubro y
   ejercicio con moneda, tipo de cambio y documento; sin dato va vacío, nunca 0) y la página pública `metodologia.html` (link en el pie).
 - Balances propios de las entidades que organizan las ligas: en `Ligas/` (cuáles hay: `data/auditoria/_ligas.js`; las notas de sourcing de cada entidad, en `Admin/sourcing/Ligas/`), con su auditoría en
