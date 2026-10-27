@@ -35,7 +35,7 @@ window.CLUB_INDEX = {
   "athleticclub-es": {"n":"Athletic Club","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "athleticoparanaense-br": {"n":"Athletico Paranaense","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "atleticobucaramanga-co": {"n":"Atletico Bucaramanga","c":"CO","q":"full","y":10,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"]]},
-  "atleticofc-co": {"n":"Atletico FC","c":"CO","q":"full","y":1,"last":2016,"yrs":[[2016,"official_balance_sheet"]]},
+  "atleticofc-co": {"n":"Atletico FC","c":"CO","q":"full","y":2,"last":2017,"yrs":[[2017,"official_balance_sheet"],[2016,"official_balance_sheet"]]},
   "atleticogoianiense-br": {"n":"Atlético Goianiense","c":"BR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "atleticomadrid-es": {"n":"Atlético de Madrid","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "atleticomineiro-br": {"n":"Atlético Mineiro","c":"BR","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},

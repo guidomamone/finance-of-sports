@@ -168,7 +168,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2017: {
     leagueSize: 16,
-    sinDato: ["atleticofc-co"],
     wiki: {"t":"2017 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"leonesfc-co", revenue:1.848, reportType:"official_balance_sheet",
@@ -189,6 +188,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"cucutadeportivo-co", revenue:1.353, reportType:"official_balance_sheet",
         sourceId:"cucutadeportivo-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.297],["Otros ingresos",0.056]] },
+      { id:"atleticofc-co", revenue:0.302, reportType:"official_balance_sheet",
+        sourceId:"atleticofc-co-siis-estado-2017",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.294],["Otros ingresos",0.008]] },
     ],
   },
   2016: {

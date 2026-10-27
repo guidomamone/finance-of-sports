@@ -20,6 +20,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Atletico FC/siis-estado-2016.pdf"
+    },
+    {
+      "id": "atleticofc-co-siis-estado-2017",
+      "club_id": "atleticofc-co",
+      "title": "Club Deportivo Atletico Futbol Club Sa — siis-estado-2017 (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Atletico FC/siis-estado-2017.pdf"
     }
   ],
   "members": null,
@@ -65,6 +73,53 @@
             "line": "Gastos de ventas",
             "side": "expense",
             "amount": 952.314,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
+          }
+        ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-12-31",
+      "currency": "COP",
+      "source_id": "atleticofc-co-siis-estado-2017",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2017-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 876.445,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":23.368,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-528.381,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":0,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-629.974,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-347.807,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":2.492,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":899.813,"expenses":1506.162,"net_result":-603.857},
+      "adjustments": {
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":876.445,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 528.381,
+            "reason": "Costo de ventas es 74% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 0,
             "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
             "kind": "other"
           }
