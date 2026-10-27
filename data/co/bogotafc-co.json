@@ -84,6 +84,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Bogota FC/siis-estado-2024.pdf"
+    },
+    {
+      "id": "bogotafc-co-siis-estado-2025",
+      "club_id": "bogotafc-co",
+      "title": "Bogota Futbol Club S.A. — siis-estado-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Bogota FC/siis-estado-2025.pdf"
     }
   ],
   "members": null,
@@ -459,6 +467,48 @@
           }
         ],
         "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "COP",
+      "source_id": "bogotafc-co-siis-estado-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2025-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 5019.631,
+          "disclosure": "aggregated"
+        }
+      ],
+      "expenses": [
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-3080.837,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1514.154,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-18.607,"tax":-160.995,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":5019.631,"expenses":4594.991,"net_result":245.038},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":49.433},
+          {"label":"Costos financieros","amount":-68.04},
+          {"label":"Ingreso (gasto) por impuestos","amount":-160.995}
+        ],
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":5019.631,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 3080.837,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
+          }
+        ],
+        "revenue_basis": "sales_total"
       }
     }
   ],
