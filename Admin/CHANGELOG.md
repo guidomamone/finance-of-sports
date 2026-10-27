@@ -20,8 +20,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1206 — Cierre del 474: lo adelantado con `--preparar`, medido en dos clubes seguidos
+- Cortulua, Tigres FC, Atlético FC y Real Cartagena se cargaron con `--preparar` y los tres subagentes (gestiones, estadio y sponsor, auditor). Tigres se preparó durante la carga de Cortulua y Real Cartagena durante la de Atlético FC.
+- Tiempos medidos (reloj, 2026-10-27): `--preparar` de un club entero (9 estados de SIIS, dictámenes y ensayo del alta) ~25 s; los tres subagentes en paralelo 1 a 5 min (el más lento, estadio y sponsor, 5,4 min); alta y lote de categorización ~2 min; la carga de 9 a 10 años y sus commits 4,5 a 5,5 min. Sin lo adelantado, la sesión espera a los subagentes (hasta 5,4 min) antes de cargar: con lo adelantado esa espera se solapa con la carga del club anterior, un ahorro de ~5 min de sesión por club (de ~14 min a ~8).
+- El ensayo de estadio-sponsor se repite solo en cada corrida de `club-siis` (una entrada sin sponsor ni `sin-fuente` cuenta como pendiente) y la verificación de sponsors en FKA con Exa es un paso del brief del subagente.
+- Medición: no cambia ninguna tool. Sin revisión independiente de la Auditora.
+
 ## Versión 1205 — generate-sponsors: un prefijo compartido no une equipos [474 · generate-sponsors.js]
 - Un nombre del sitio que es prefijo de varios equipos del país («Atlético FC» frente a «Atlético Huila», «Atlético Nacional»…) ya no se une por prefijo a ninguno: queda sin unir salvo nombre exacto. Salió de la alta de Atlético FC, que se llevó los sponsors de Atlético Huila; en todo `data/sponsors.js` dejan de unirse seis pares falsos (Atlético Huila a Atlético FC, Botafogo-PB a Botafogo, Grêmio Barueri y Prudente a Grêmio, Sporting da Covilhã a Sporting CP) y no se une ninguno nuevo.
+- Verificado a mano (474): Cortulua y Tigres FC, y Atlético FC y Real Cartagena, se cargaron con lo adelantado (--preparar y tres subagentes) mientras se cargaba el club anterior; tiempos en la entrada 1206 del CHANGELOG; club-siis muestra ctx y auditor por año (node tools/club-siis.mjs Real Cartagena)
 - Medición: lote chico, 1 diferencia, explicada (los seis pares). Veredicto GENERAL. Sin revisión independiente de la Auditora.
 
 ## Versión 1204 — club-siis: la lista «para commitear» sale de git status [474 · club-siis.mjs, club-siis-preparar.mjs]
