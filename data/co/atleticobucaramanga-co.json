@@ -121,7 +121,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-224.546,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-268.418,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-38.983,"tax":-201.076,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-38.983,"tax":-201.076,"gross_debt":0,"cash":1189.965},
       "official_totals": {"revenue":7517.285,"expenses":7049.724,"net_result":227.502},
       "adjustments": {
         "extra_rows": [
@@ -204,7 +204,7 @@
         },
         {"label":"Impuestos asumidos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-5.869,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.807,"tax":-255.115,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.807,"tax":-255.115,"gross_debt":null,"cash":1299.494},
       "official_totals": {"revenue":8243.039,"expenses":7593.016,"net_result":392.102},
       "adjustments": {
         "extra_rows": [{"label":"Costos financieros","amount":-2.807},{"label":"Ingreso (gasto) por impuestos","amount":-255.115}],
@@ -342,7 +342,7 @@
         {"label":"Multas y sanciones","category":"other_operating_expenses","subcategory":"other_expenses","amount":-161.898,"disclosure":"aggregated"},
         {"label":"Otros Gastos (Otros gastos)","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.743,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-10.061,"tax":-1001.799,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-10.061,"tax":-1001.799,"gross_debt":0,"cash":1619.405},
       "official_totals": {"revenue":11882.63,"expenses":9086.447,"net_result":1773.452},
       "adjustments": {
         "extra_rows": [
@@ -549,7 +549,7 @@
         },
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-4.395,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-52.215,"tax":-361.862,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-52.215,"tax":-361.862,"gross_debt":null,"cash":1229.008},
       "official_totals": {"revenue":13047.875,"expenses":13367.695,"net_result":-733.89},
       "adjustments": {
         "extra_rows": [
@@ -801,7 +801,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-903.478,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-118.682,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-35.949,"tax":-512.614,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-35.949,"tax":-512.614,"gross_debt":null,"cash":402.304},
       "official_totals": {"revenue":8364.457,"expenses":8504.882,"net_result":-688.988},
       "adjustments": {
         "extra_rows": [
@@ -856,7 +856,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-543.987,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-132.946,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-382.22,"tax":-582.586,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-382.22,"tax":-582.586,"gross_debt":325.594,"cash":350.247},
       "official_totals": {"revenue":12810.97,"expenses":10954.379,"net_result":891.785},
       "adjustments": {
         "extra_rows": [
@@ -912,7 +912,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-719.689,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-622.872,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-53.881,"tax":-373.105,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-53.881,"tax":-373.105,"gross_debt":0,"cash":887.364},
       "official_totals": {"revenue":13031.429,"expenses":11754.841,"net_result":849.602},
       "adjustments": {
         "extra_rows": [
@@ -968,7 +968,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-854.222,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2456.656,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":215.753,"tax":-499.683,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":215.753,"tax":-499.683,"gross_debt":0,"cash":1532.045},
       "official_totals": {"revenue":29726.806,"expenses":29141.257,"net_result":301.619},
       "adjustments": {
         "extra_rows": [
@@ -1023,7 +1023,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2513.565,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-532.724,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":81.276,"tax":-1542.648,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":81.276,"tax":-1542.648,"gross_debt":null,"cash":2703.445},
       "official_totals": {"revenue":46194.784,"expenses":42794.389,"net_result":1939.023},
       "adjustments": {
         "extra_rows": [

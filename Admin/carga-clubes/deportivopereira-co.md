@@ -241,6 +241,10 @@ tools/cargar.mjs (2026-10-26). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-27): grossDebt escalón S (compuerta: balance de SIIS cuadra): balance de SIIS (siis-estado-2024.json, miles de COP): otros pasivos financieros corrientes 579744 + no corrientes 675000; cash escalón S (compuerta: balance de SIIS cuadra): balance de SIIS (siis-estado-2024.json, miles de COP): efectivo y equivalentes = 819342
+```
+
 ## Fuentes
 
 ### deportivopereira-co-estados-financieros-2025

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-26",
+  "exported_at": "2026-10-27",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "oncecaldas-co",
@@ -132,7 +132,7 @@
         {"label":"DIVERSOS","category":"other_operating_expenses","subcategory":"other_expenses","amount":-36.958,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1507.061,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-33.471,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-33.471,"gross_debt":10241.447,"cash":134.137},
       "official_totals": {"revenue":18565.199,"expenses":17242.963,"net_result":1288.764},
       "adjustments": {
         "no_breakdown": [
@@ -187,7 +187,7 @@
         {"label":"DIVERSOS","category":"other_operating_expenses","subcategory":"other_expenses","amount":-31.955,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2430.28,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":1706.815,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":1706.815,"gross_debt":6020.686,"cash":222.076},
       "official_totals": {"revenue":17660.46,"expenses":18577.999,"net_result":789.275},
       "adjustments": {
         "no_breakdown": [
@@ -306,7 +306,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-780.368,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1430.23,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":28.67,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":28.67,"gross_debt":638.888,"cash":744.481},
       "official_totals": {"revenue":14474.399,"expenses":15088.577,"net_result":-585.508},
       "adjustments": {
         "no_breakdown": [
@@ -355,7 +355,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-777.322,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1266.306,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0.578,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0.578,"gross_debt":null,"cash":1972.546},
       "official_totals": {"revenue":9455.706,"expenses":10771.615,"net_result":-1315.331},
       "adjustments": {
         "no_breakdown": [
@@ -404,7 +404,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-836.224,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-758.455,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":784.946,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":784.946,"gross_debt":413.265,"cash":854.004},
       "official_totals": {"revenue":11090.604,"expenses":11773.631,"net_result":101.919},
       "adjustments": {
         "no_breakdown": [

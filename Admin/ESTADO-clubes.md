@@ -133,30 +133,30 @@ CHILE (3)
   Universidad de Chile  5 ejercicios (2013, 2022, 2023, 2024, 2025), balance, CLP
 
 COLOMBIA (25)
-  Aguilas Doradas         10 ejercicios (2016 a 2025), balance, COP, sin deuda/caja
-  Alianza FC              10 ejercicios (2016 a 2025), balance, COP, sin deuda/caja
+  Aguilas Doradas         10 ejercicios (2016 a 2025), balance, COP
+  Alianza FC              10 ejercicios (2016 a 2025), balance, COP
   América de Cali         10 ejercicios (2016 a 2025), balance, COP
-  Atletico Bucaramanga    10 ejercicios (2016 a 2025), balance, COP, sin deuda/caja
-  Atlético FC             10 ejercicios (2016 a 2025), balance, COP, sin deuda/caja
+  Atletico Bucaramanga    10 ejercicios (2016 a 2025), balance, COP
+  Atlético FC             10 ejercicios (2016 a 2025), balance, COP
   Atlético Nacional       1 ejercicio (2025), balance, COP
   Boyacá Chicó            10 ejercicios (2016 a 2025), balance, COP
   Cucuta Deportivo        8 ejercicios (2016, 2017, 2018, 2019, 2022, 2023, 2024, 2025), balance, COP, sin deuda/caja
-  Deportes Tolima         10 ejercicios (2016 a 2025), balance, COP, sin deuda/caja
+  Deportes Tolima         10 ejercicios (2016 a 2025), balance, COP
   Deportivo Cali          1 ejercicio (2025), balance, COP
   Deportivo Pereira       2 ejercicios (2024 a 2025), balance, COP
   Envigado FC             1 ejercicio (2025), balance, COP
   Fortaleza CEIF          10 ejercicios (2016 a 2025), balance, COP
-  Independiente Medellín  10 ejercicios (2016 a 2025), balance, COP, sin deuda/caja
+  Independiente Medellín  10 ejercicios (2016 a 2025), balance, COP
   Independiente Santa Fe  1 ejercicio (2025), balance, COP
-  Inter de Palmira        6 ejercicios (2020 a 2025), balance, COP, sin deuda/caja
+  Inter de Palmira        6 ejercicios (2020 a 2025), balance, COP
   Junior de Barranquilla  1 ejercicio (2025), balance, COP
-  La Equidad              10 ejercicios (2016 a 2025), balance, COP, sin deuda/caja
-  Leones FC               10 ejercicios (2016 a 2025), balance, COP, sin deuda/caja
+  La Equidad              10 ejercicios (2016 a 2025), balance, COP
+  Leones FC               10 ejercicios (2016 a 2025), balance, COP
   Llaneros                1 ejercicio (2025), balance, COP, sin deuda/caja
   Millonarios             1 ejercicio (2025), balance, COP
   Once Caldas             10 ejercicios (2016 a 2025), balance, COP
-  Real Cartagena          9 ejercicios (2017 a 2025), balance, COP, sin deuda/caja
-  Tigres FC               8 ejercicios (2016, 2017, 2018, 2019, 2020, 2021, 2022, 2024), balance, COP, sin deuda/caja
+  Real Cartagena          9 ejercicios (2017 a 2025), balance, COP
+  Tigres FC               8 ejercicios (2016, 2017, 2018, 2019, 2020, 2021, 2022, 2024), balance, COP
   Unión Magdalena         10 ejercicios (2016 a 2025), balance, COP
 
 CY (1)

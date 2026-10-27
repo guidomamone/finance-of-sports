@@ -1147,6 +1147,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/dentro-de-otro.mjs (2026-10-27): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-27): grossDebt escalón S (compuerta: balance de SIIS cuadra): balance de SIIS (siis-estado-2016.json, miles de COP): otros pasivos financieros corrientes 0 + no corrientes 0; cash escalón S (compuerta: balance de SIIS cuadra): balance de SIIS (siis-estado-2016.json, miles de COP): efectivo y equivalentes = 101136
+```
+
 ## Fuentes
 
 ### (general)

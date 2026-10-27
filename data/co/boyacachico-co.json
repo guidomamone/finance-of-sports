@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-26",
+  "exported_at": "2026-10-27",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "boyacachico-co",
@@ -121,7 +121,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-825.51,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-71.479,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-71.479,"gross_debt":212.352,"cash":null},
       "official_totals": {"revenue":4888.125,"expenses":4687.892,"net_result":128.754},
       "adjustments": {
         "extra_rows": [{"label":"Ingresos financieros","amount":0},{"label":"Costos financieros","amount":0},{"label":"Ingreso (gasto) por impuestos","amount":-71.479}],
@@ -176,7 +176,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-389.587,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-290.388,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-59.415,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-59.415,"gross_debt":null,"cash":43.387},
       "official_totals": {"revenue":4371.165,"expenses":4196.417,"net_result":115.333},
       "adjustments": {
         "no_breakdown": [
@@ -223,7 +223,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-615.327,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-433.712,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-250.899,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-250.899,"gross_debt":1868.085,"cash":77.574},
       "official_totals": {"revenue":9059.327,"expenses":8299.026,"net_result":509.402},
       "adjustments": {
         "no_breakdown": [
@@ -280,7 +280,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1172.961,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-267.146,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-172.726,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-172.726,"gross_debt":1398.829,"cash":0},
       "official_totals": {"revenue":6721.847587,"expenses":6293.865052,"net_result":255.256},
       "adjustments": {
         "no_breakdown": [
@@ -332,7 +332,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-769.431,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-256.255,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-171.279,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-171.279,"gross_debt":null,"cash":496.448},
       "official_totals": {"revenue":4204.571241,"expenses":3835.467101,"net_result":197.825},
       "adjustments": {
         "no_breakdown": [
@@ -388,7 +388,7 @@
         {"label":"Gastos extraordinarios","category":"exceptional","subcategory":"exceptional_items","amount":-19.413806,"disclosure":"aggregated"},
         {"label":"Gastos diversos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-66.288247,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-213.837,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-213.837,"gross_debt":851.47,"cash":null},
       "official_totals": {"revenue":5733.42318,"expenses":5152.360676,"net_result":347.812},
       "adjustments": {
         "no_breakdown": [
@@ -433,7 +433,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-628.306,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-85.097,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-395.66,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-395.66,"gross_debt":380.597,"cash":427.673},
       "official_totals": {"revenue":5871.197,"expenses":4859.922,"net_result":615.615},
       "adjustments": {
         "no_breakdown": [
@@ -479,7 +479,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2350.23,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-338.634,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-538.159,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":-538.159,"gross_debt":0,"cash":922.427},
       "official_totals": {"revenue":11634.223,"expenses":10096.626,"net_result":999.438},
       "adjustments": {
         "no_breakdown": [
@@ -776,7 +776,7 @@
         {"label":"Multas SIC","category":"other_operating_expenses","subcategory":"other_expenses","amount":-315.374691,"disclosure":"aggregated"},
         {"label":"Embargos Colpensiones","category":"other_operating_expenses","subcategory":"other_expenses","amount":-135.512832,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-83.859833,"tax":-205.56515,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-83.859833,"tax":-205.56515,"gross_debt":319.167704,"cash":333.940694},
       "official_totals": {"revenue":9305.853883,"expenses":8634.665049,"net_result":381.763851},
       "adjustments": {"extra_rows":[{"label":"Gasto por impuesto a las ganancias","amount":-205.56515},{"label":"Intereses","amount":-83.859833}],"revenue_basis":"full"}
     }
