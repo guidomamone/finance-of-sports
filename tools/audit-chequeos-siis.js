@@ -89,4 +89,13 @@ function checkSiisEntreAnios() {
   }
 }
 
-module.exports = { checkSiisControl, checkSiisEntreAnios, checkSiisFaltante };
+// regla-nota-contradicha: las líneas de gastos cargadas que la regla por nota (NOTA-CATEGORÍA de CONVENCIONES-DATOS: personal, viajes y «Diversos» de la nota de gastos de Colombia) manda a otra categoría.
+// Las lista `node tools/reglas-categoria.mjs --cargadas`, que mira la nota de cada fila; se corrige con `recategorizar-linea --gasto` (o recargando el año) y un commit con `Corrige:`. Aviso P3 por club.
+function checkReglaNotas() {
+  let out; try { out = require('child_process').execFileSync('node', ['tools/reglas-categoria.mjs', '--cargadas'], { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); } catch (e) { add('P3', 'regla-nota-contradicha', `tools/reglas-categoria.mjs --cargadas falló: ${String(e.stderr || e.message).split('\n')[0]}`); return; }
+  const porClub = new Map();
+  for (const l of out.split('\n').filter((x) => x.includes(' | '))) { const club = l.split(' ')[0]; (porClub.get(club) || porClub.set(club, []).get(club)).push(l.slice(club.length + 1)); }
+  for (const [club, ls] of porClub) add('P3', 'regla-nota-contradicha', `${club}: ${ls.length} línea(s) de gastos que la regla por nota manda a otra categoría: ${ls.slice(0, 4).join('; ')}${ls.length > 4 ? '…' : ''} (node tools/reglas-categoria.mjs --cargadas; se corrige con recategorizar-linea --gasto y «Corrige:»)`);
+}
+
+module.exports = { checkSiisControl, checkSiisEntreAnios, checkSiisFaltante, checkReglaNotas };

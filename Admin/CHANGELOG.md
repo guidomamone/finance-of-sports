@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1182 — audit.js: aviso regla-nota-contradicha [468 · audit.js, audit-chequeos-siis.js, reglas-categoria.mjs]
+- Aviso P3 `regla-nota-contradicha`: las líneas de gastos cargadas que la regla por nota (`NOTA-CATEGORÍA`) manda a otra categoría, por club, con la nota de cada fila; las lista `node tools/reglas-categoria.mjs --cargadas` (0,4 s). Probado al revés: con una regla cambiada a propósito lista 50 líneas. Hoy da 0.
+- Entra sin veredicto previo de la Auditora (sección 7: aviso P3 nuevo que no frena nada) y sin revisión independiente.
+- Medición: idéntico (lote completo, medidores cargar y audit); el aviso no aparece porque lo cargado ya cumple la regla.
+
 ## Versión 1181 — Colombia: lo cargado que la regla de notas contradecía, corregido [468 · alianzafc-co, atleticobucaramanga-co, fortalezaceif-co, deportestolima-co, oncecaldas-co]
 - 21 líneas de gastos, un commit por club con `Corrige:`: «Diversos» a `other_expenses` (Alianza 2019 y 2023, Bucaramanga 2019 y 2020, Tolima 2016 a 2023 y 2025, Once Caldas 2016 a 2018) y los viajes de la nota de administración a `admin_general_expense` (Bucaramanga 2020, Fortaleza 2019, Once Caldas 2016 y 2017). Los totales de cada año no cambian. Alianza se rehízo con `cargar --reemplazar` (corrigiendo antes la respuesta vieja de la cola); los demás con `recategorizar-linea --gasto`, porque `cargar` no los puede rehacer (Bucaramanga 2019 y 2020 frenan con 19 filas en la cola, ya antes de este cambio).
 - Un escaneo de todo `data/co` con la nota de cada fila contra la regla da 0 diferencias.

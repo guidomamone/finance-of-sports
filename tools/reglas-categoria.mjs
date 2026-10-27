@@ -91,7 +91,27 @@ export function validarReglasPrompt({ activos = deportesActivos() } = {}) {
   return { errores, reglas: detalle };
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+// LO CARGADO CONTRA LA REGLA POR NOTA: las líneas de gastos de data/<país>/*.json que la regla de su país manda a otra categoría, con la nota de cada fila (padres-filas.mjs).
+// `--cargadas` las lista, una por renglón («club año | etiqueta | nota | actual -> regla»); el chequeo `regla-nota-contradicha` de audit.js lo llama.
+export async function cargadasContradichas() {
+  const { padreEnClub } = await import('./padres-filas.mjs'); const { readdirSync } = await import('node:fs'); const out = [];
+  porNota ??= leerReglasCategoria();
+  for (const pais of new Set(porNota.flatMap((r) => r.notas.map((x) => x.pais)))) {
+    const dir = resolve(ROOT, 'data', pais); if (!existsSync(dir)) continue;
+    for (const f of readdirSync(dir).filter((x) => /-[a-z]{2}\.json$/.test(x))) {
+      const id = f.replace('.json', '');
+      for (const y of JSON.parse(readFileSync(resolve(dir, f), 'utf8')).years || []) for (const l of y.expenses || []) {
+        const g = reglaDeNota({ clubId: id, lado: 'expense', label: l.label, padre: padreEnClub(id, String(y.fiscal_year), 'expense', l.label) });
+        if (g && g.cat !== l.subcategory) out.push(`${id} ${y.fiscal_year} | ${l.label} | ${g.nota || 'cualquiera'} | ${l.subcategory} -> ${g.cat}`);
+      }
+    }
+  }
+  return out;
+}
+
+if (import.meta.url === `file://${process.argv[1]}` && process.argv.includes('--cargadas')) {
+  const l = await cargadasContradichas(); console.log(l.join('\n')); console.log(`${l.length} línea(s) cargadas que contradicen la regla por nota.`);
+} else if (import.meta.url === `file://${process.argv[1]}`) {
   const reglas = leerReglasCategoria(); const errores = validarReglasPrompt().errores;
   const clubs = readFileSync(resolve(ROOT, 'data', 'clubs.js'), 'utf8');
   const ya = existsSync(APRENDIDAS) ? readFileSync(APRENDIDAS, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : [];
