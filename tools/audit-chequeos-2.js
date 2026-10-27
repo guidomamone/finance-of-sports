@@ -340,8 +340,11 @@ function checkRutasMuertas() {
 // No mira contadores fijos («58 clubes»): el patrón da falsos positivos y no se midió su precisión.
 // (más las reglas por país, Admin/paises/<iso>.md: tools/docs-reglas.mjs)
 const reglasPorPais = () => { try { return fs.readdirSync(path.join(ROOT, 'Admin/paises')).filter(f => /^[a-z]{2}\.md$/.test(f)).sort().map(f => `Admin/paises/${f}`); } catch { return []; } };
-const DOCS_DE_CRITERIO = ['CLAUDE.md', 'Admin/ESTADO.md', 'Admin/PIPELINE.md', 'Admin/CONVENCIONES.md', 'Admin/CONVENCIONES-DATOS.md', 'Admin/PANTALLA.md', ...reglasPorPais()];
+const DOCS_DE_CRITERIO = ['CLAUDE.md', 'Admin/ESTADO.md', 'Admin/PIPELINE.md', 'Admin/CONVENCIONES.md', 'Admin/CONVENCIONES-DATOS.md', 'Admin/PANTALLA.md', 'Admin/briefs-subagentes-siis.md', ...reglasPorPais()];
+// el cuarto elemento (opcional) limita el patrón a esos documentos: un contador es historia donde el documento dice qué hay HOY (ESTADO, CLAUDE.md, los briefs); en una convención «10 filas de clubes colombianos» es el caso que la ilustra
 const HISTORIA_EN_DOCS = [
+  ['guido', /\bGuido (?:cambió|decidió|eligió|resolvió|aprobó|quiso)(?![\wáéíóúñ])/g, '«Guido decidió…» (quién decidió y cuándo es historia)'],
+  ['contador', /\b\d{2,4} (?:clubes|ejercicios|entidades|grupos|PDFs|ligas|tools|hallazgos)\b/g, 'contadores fijos («60 clubes»; el comando que los da, no el número)', /^(?:Admin\/ESTADO\.md|CLAUDE\.md|Admin\/briefs-subagentes-siis\.md)$/],
   ['version', /\bVersi[óo]n \d+/g, '«Versión N»'],
   ['fecha', /\b20\d\d-\d\d-\d\d\b/g, 'fechas AAAA-MM-DD'],
   ['todo', /\bto-dos? (?:n[°º] ?)?\d{2,3}\b|\btodo (?:n[°º] ?)?\d{2,3}\b/gi, '«to-do N»'], // «todos» seguido de un código de respuesta HTTP no es un número de tarea
@@ -382,10 +385,11 @@ function checkToolGrande() {
 
 function checkHistoriaEnDocs() {
   const archivos = [...DOCS_DE_CRITERIO, ...mdsDeSkills()].filter(f => fs.existsSync(path.join(ROOT, f)));
-  for (const [clave, re, nombre] of HISTORIA_EN_DOCS) {
+  for (const [clave, re, nombre, soloEn] of HISTORIA_EN_DOCS) {
     const porArchivo = new Map();
     const primera = new Map();   // la primera línea con el patrón: dónde empezar a limpiar
     for (const f of archivos) {
+      if (soloEn && !soloEn.test(f)) continue;
       let texto = fs.readFileSync(path.join(ROOT, f), 'utf8');
       // la línea o la anterior (la frase sigue en la línea de abajo: «Último chequeo» y debajo la fecha); el número de línea no cambia
       if (clave === 'fecha') texto = texto.split('\n').map((l, i, ls) => (FECHA_QUE_ES_DATO_RE.test(l) || (i > 0 && FECHA_QUE_ES_DATO_RE.test(ls[i - 1])) ? '' : l)).join('\n');

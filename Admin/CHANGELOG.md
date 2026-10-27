@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1214 — audit.js: «sin historia» cubre los briefs de SIIS, los contadores fijos y «Guido decidió…» [audit-chequeos-2.js]
+- `checkHistoriaEnDocs` (`historia-en-doc-de-criterio`, P3) suma `Admin/briefs-subagentes-siis.md` a los documentos que mira y dos patrones: `Guido cambió|decidió|eligió|resolvió|aprobó|quiso` y contadores fijos («60 clubes», «265 entidades»; solo en ESTADO, CLAUDE.md y los briefs, donde el documento dice qué hay HOY: en una convención el número ilustra el caso). Hoy no da hallazgos nuevos: el contador de `Admin/ESTADO.md` se cambió antes por el comando que lo da (`entidades.mjs --check`). Los avisos van por el mismo camino de silenciar con motivo.
+- Medición: idéntico (`audit`). Probado plantando una línea en los briefs: salta con cada patrón; revertida. Sin revisión independiente de la Auditora.
+
 ## Versión 1213 — Hook texto-de-guido-aparte: todo el texto que Guido lee va en su propio commit y con el diff mostrado [hooks/pre-tool.mjs, hooks/post-tool.mjs, hooks/texto-de-guido.mjs]
 - `tools/hooks/texto-de-guido.mjs` es la lista única (skills, CLAUDE.md, CONVENCIONES*, PANTALLA, PIPELINE, ESTADO, `Admin/briefs-subagentes-siis.md`, `Admin/paises/*.md`). Antes el aviso de `show_pane` (post-tool) solo miraba una parte y NADA exigía el commit aparte, ni para skills.
 - `pre-tool.mjs`, `texto-de-guido-aparte`: un commit con ese texto no puede llevar otros archivos (CHANGELOG y TODO sí), una skill por commit, y el primer intento se frena una vez para pedir el `show_pane` del diff (huella en `.git/fos-diff-visto.json`; el mismo commit con el mismo texto pasa). `[texto-junto]` solo con el ok de Guido.
