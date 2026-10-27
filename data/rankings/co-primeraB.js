@@ -129,7 +129,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2021: {
     leagueSize: 16,
-    sinDato: ["barranquillafc-co","bogotafc-co"],
+    sinDato: ["bogotafc-co"],
     wiki: {"t":"2021 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"cortulua-co", revenue:5.172, reportType:"official_balance_sheet",
@@ -145,6 +145,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"leonesfc-co", revenue:1.329, reportType:"official_balance_sheet",
         sourceId:"leonesfc-co-siis-estado-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.955],["Otros ingresos",0.374]] },
+      { id:"barranquillafc-co", revenue:1.291, reportType:"official_balance_sheet",
+        sourceId:"barranquillafc-co-siis-estado-2021",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.29],["Otros ingresos",0.001]] },
       { id:"fortalezaceif-co", revenue:0.903, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2021",
         mix:[["Comercial / Sponsors",0.1],["Televisión",0.29],["Premios por competencias",0.137],["Venta de Jugadores",0.072],["Subsidios y donaciones",0.011],["Otros ingresos",0.293]] },

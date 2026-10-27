@@ -49,6 +49,36 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 alta-club.mjs (2026-10-27): co-primeraB, verificado contra NO EXACTA, confirmar en la página del club: roster cacheado de "2025 Torneo DIMAYOR" (tools/club-league-reference/co.json), coincidencia única por palabras "Barranquilla" = "Barranquilla FC" (si es el mismo club, agregarlo a alias.json).
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-27) desde Clubes/Colombia/Barranquilla FC/siis-estado-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Barranquilla FC/siis-estado-2021.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ingresos de actividades ordinarias | pág. 1, Jev 0.97 |
+| 2 | Otros ingresos | pág. 1, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gastos de ventas | pág. 1, precedente |
+| 2 | Gastos de administración | pág. 1, Jev 1 |
+| 3 | Otros gastos | pág. 1, Jev 1 |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-27): filas-a-mano. Claude 2026-10-27 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+tools/cargar.mjs (2026-10-27). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
 ## 2020
 
 ### Ingresos
@@ -239,4 +269,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-27) desde la transcripción Clubes/Colombia/Barranquilla FC/siis-estado-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### barranquillafc-co-siis-estado-2021
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-27) desde la transcripción Clubes/Colombia/Barranquilla FC/siis-estado-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
