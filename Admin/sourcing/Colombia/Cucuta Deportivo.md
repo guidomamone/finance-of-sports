@@ -21,3 +21,5 @@ Presidentes: José Augusto Cadena (2013-12-04 a 2020-11-11: areacucuta.com lo pr
 Color de marca: #D90706 (rojo) — es.wikipedia (infobox: colores «Rojo y Negro», apodo «rojinegros») y el hex de footylogos (red #D90706, primero de la lista; black #010000), verificado 2026-10-27.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2016 desde `Clubes/Colombia/Cucuta Deportivo/siis-estado-2016.pdf` (sourceId `cucutadeportivo-co-siis-estado-2016`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2017 desde `Clubes/Colombia/Cucuta Deportivo/siis-estado-2017.pdf` (sourceId `cucutadeportivo-co-siis-estado-2017`).
