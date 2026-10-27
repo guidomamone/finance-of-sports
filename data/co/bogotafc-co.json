@@ -20,6 +20,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Bogota FC/siis-estado-2016.pdf"
+    },
+    {
+      "id": "bogotafc-co-siis-estado-2017",
+      "club_id": "bogotafc-co",
+      "title": "Bogota Futbol Club S.A. — siis-estado-2017 (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Bogota FC/siis-estado-2017.pdf"
     }
   ],
   "members": null,
@@ -61,6 +69,50 @@
             "line": "Gastos de ventas",
             "side": "expense",
             "amount": 237.686,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
+          }
+        ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-12-31",
+      "currency": "COP",
+      "source_id": "bogotafc-co-siis-estado-2017",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2017-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 1214.168,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-124.585,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-906.74,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-7.604,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-31.686,"tax":-25.333,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":1214.168,"expenses":1038.929,"net_result":118.22},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":0},
+          {"label":"Costos financieros","amount":-31.686},
+          {"label":"Ingreso (gasto) por impuestos","amount":-25.333}
+        ],
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":1214.168,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 124.585,
             "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
             "kind": "other"
           }

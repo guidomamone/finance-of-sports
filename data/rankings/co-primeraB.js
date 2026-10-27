@@ -274,7 +274,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2017: {
     leagueSize: 16,
-    sinDato: ["bogotafc-co"],
     wiki: {"t":"2017 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"leonesfc-co", revenue:1.848, reportType:"official_balance_sheet",
@@ -304,6 +303,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"orsomarso-co", revenue:0.999, reportType:"official_balance_sheet",
         sourceId:"orsomarso-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.971],["Otros ingresos",0.027]] },
+      { id:"bogotafc-co", revenue:0.407, reportType:"official_balance_sheet",
+        sourceId:"bogotafc-co-siis-estado-2017",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.407]] },
       { id:"atleticofc-co", revenue:0.302, reportType:"official_balance_sheet",
         sourceId:"atleticofc-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.294],["Otros ingresos",0.008]] },
