@@ -23,3 +23,5 @@ Color de marca: null — la ficha de es.wikipedia (Corporación Club Deportivo T
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2022 desde `Clubes/Colombia/Cortulua/siis-estado-2022.pdf` (sourceId `cortulua-co-siis-estado-2022`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2023 desde `Clubes/Colombia/Cortulua/siis-estado-2023.pdf` (sourceId `cortulua-co-siis-estado-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2024 desde `Clubes/Colombia/Cortulua/siis-estado-2024.pdf` (sourceId `cortulua-co-siis-estado-2024`).

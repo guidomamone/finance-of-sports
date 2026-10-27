@@ -16,6 +16,10 @@ const cortuluaCoRevenueLinesByYear = {
     {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":16332.259,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":1921.86,"disclosureLevel":"aggregated"},
   ],
+  2024: [
+    {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":7547.079,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":739.432,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const cortuluaCoExpenseLinesByYear = {
@@ -36,6 +40,11 @@ const cortuluaCoExpenseLinesByYear = {
     {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-11609.063,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-4883.202,"disclosureLevel":"aggregated"},
   ],
+  2024: [
+    {"rawLabel":"Costo de ventas","normalizedCategory":"other_expenses","amountNative":0,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-9349.196,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-3703.956,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const cortuluaCoFiscalYearMeta = {
@@ -43,6 +52,7 @@ const cortuluaCoFiscalYearMeta = {
   2021: {"currency":"COP","sourceId":"cortulua-co-siis-estado-2021","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2021-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-258.149,"tax":-513.877,"grossDebt":null,"cash":null,"officialTotalRevenue":20592.404,"officialTotalExpenses":16242.59,"officialPAT":3577.788,"extraRows":[{"label":"Costos financieros","value":-258.149},{"label":"Ingreso (gasto) por impuestos","value":-513.877}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":6535.977,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":16242.59,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
   2022: {"currency":"COP","sourceId":"cortulua-co-siis-estado-2022","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2022-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-80.208,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":9182.29,"officialTotalExpenses":14087.5,"officialPAT":-4985.418,"extraRows":[{"label":"Costos financieros","value":-80.208},{"label":"Ingreso (gasto) por impuestos","value":0}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":6947.961,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":12360.61,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
   2023: {"currency":"COP","sourceId":"cortulua-co-siis-estado-2023","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2023-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-127.359,"tax":-360.316,"grossDebt":null,"cash":null,"officialTotalRevenue":18254.119,"officialTotalExpenses":16506.314,"officialPAT":1260.13,"extraRows":[{"label":"Costos financieros","value":-127.359},{"label":"Ingreso (gasto) por impuestos","value":-360.316}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":16332.259,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":11609.063,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
+  2024: {"currency":"COP","sourceId":"cortulua-co-siis-estado-2024","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2024-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-182.651,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":8286.511,"officialTotalExpenses":13053.152,"officialPAT":-4949.292,"extraRows":[{"label":"Costos financieros","value":-182.651},{"label":"Ingreso (gasto) por impuestos","value":0}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":7547.079,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":9349.196,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
 };
 
 const cortuluaCoPresupuestoOverlayByYear = {};
@@ -59,6 +69,6 @@ window.CLUB_GENERIC_DATA["cortulua-co"] = {
   presupuestoOverlayByYear: cortuluaCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"cortulua-co-siis-estado-2020":{"id":"cortulua-co-siis-estado-2020","clubId":"cortulua-co","title":"Cortuluá Fútbol Club S.A. — siis-estado-2020 (ejercicio 2020)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cortulua/siis-estado-2020.pdf"},"cortulua-co-siis-estado-2021":{"id":"cortulua-co-siis-estado-2021","clubId":"cortulua-co","title":"Cortuluá Fútbol Club S.A. — siis-estado-2021 (ejercicio 2021)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cortulua/siis-estado-2021.pdf"},"cortulua-co-siis-estado-2022":{"id":"cortulua-co-siis-estado-2022","clubId":"cortulua-co","title":"Cortuluá Fútbol Club S.A. — siis-estado-2022 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cortulua/siis-estado-2022.pdf"},"cortulua-co-siis-estado-2023":{"id":"cortulua-co-siis-estado-2023","clubId":"cortulua-co","title":"Cortuluá Fútbol Club S.A. — siis-estado-2023 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cortulua/siis-estado-2023.pdf"}});
+Object.assign(sources, {"cortulua-co-siis-estado-2020":{"id":"cortulua-co-siis-estado-2020","clubId":"cortulua-co","title":"Cortuluá Fútbol Club S.A. — siis-estado-2020 (ejercicio 2020)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cortulua/siis-estado-2020.pdf"},"cortulua-co-siis-estado-2021":{"id":"cortulua-co-siis-estado-2021","clubId":"cortulua-co","title":"Cortuluá Fútbol Club S.A. — siis-estado-2021 (ejercicio 2021)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cortulua/siis-estado-2021.pdf"},"cortulua-co-siis-estado-2022":{"id":"cortulua-co-siis-estado-2022","clubId":"cortulua-co","title":"Cortuluá Fútbol Club S.A. — siis-estado-2022 (ejercicio 2022)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cortulua/siis-estado-2022.pdf"},"cortulua-co-siis-estado-2023":{"id":"cortulua-co-siis-estado-2023","clubId":"cortulua-co","title":"Cortuluá Fútbol Club S.A. — siis-estado-2023 (ejercicio 2023)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cortulua/siis-estado-2023.pdf"},"cortulua-co-siis-estado-2024":{"id":"cortulua-co-siis-estado-2024","clubId":"cortulua-co","title":"Cortuluá Fútbol Club S.A. — siis-estado-2024 (ejercicio 2024)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cortulua/siis-estado-2024.pdf"}});
 
 memberCountByClub["cortulua-co"] = null;

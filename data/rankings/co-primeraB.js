@@ -16,7 +16,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2024: {
     leagueSize: 16,
-    sinDato: ["cortulua-co"],
     wiki: {"t":"2024 Torneo DIMAYOR","lang":"en","at":"2026-10-26","n":16},
     clubs: [
       { id:"unionmagdalena-co", revenue:2.547, reportType:"official_balance_sheet",
@@ -26,6 +25,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"cucutadeportivo-co", revenue:1.913, reportType:"official_balance_sheet",
         sourceId:"cucutadeportivo-co-siis-estado-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.721],["Otros ingresos",0.193]] },
+      { id:"cortulua-co", revenue:1.879, reportType:"official_balance_sheet",
+        sourceId:"cortulua-co-siis-estado-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.712],["Otros ingresos",0.168]] },
       { id:"leonesfc-co", revenue:1.797, reportType:"official_balance_sheet",
         sourceId:"leonesfc-co-siis-estado-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.707],["Otros ingresos",0.09]] },
