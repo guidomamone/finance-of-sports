@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1219 — Orsomarso (2016 a 2018, 2020 a 2025) y Atlético Huila (2016 a 2025) desde SIIS [463 · orsomarso-co, atleticohuila-co]
+- Los dos clubes cargados por `club-siis.mjs` (alta, estados, dictámenes, tres subagentes cada uno, lote con un commit por año), con la línea del auditor (sin salvedades en los 15 años con dictamen), caja y deuda de SIIS, ligas por año (Huila en B 2020, 2022 y 2024 por prensa: descendió en 2019, subió en 2021, bajó en 2021 y 2023) y gestiones de Huila 2016 a 2025. Lo que quedó abierto está en el TODO 463 (gestiones y sponsors de Orsomarso, sponsors débiles de Huila).
+- Medición: sin cambio de tools en esta entrada.
+
 ## Versión 1218 — siis-caja-deuda.mjs: la proporción con los ingresos de audit.js, antes de escribir [463 · siis-caja-deuda.mjs · cucutadeportivo-co]
 - Caja y deuda de 17 clubes colombianos quedaron escritas desde SIIS (commit aparte). Cúcuta frenó solo: `caja-deuda-desproporcionada` (caja 2016 = 64 mil COP contra 3.935 M de ingresos, 1,6e-5 < el piso 7e-5) y la tool revirtió todo. Ahora `siisDeBalance` aplica la misma proporción (caja entre 7e-5 y 3 veces los ingresos, deuda hasta 20 veces) y ese año queda sin dato; la escalera por documento tampoco lo decide (1,871 contra 0,064 en el documento siguiente).
 - Medición: idéntico (los cinco medidores). Sin revisión independiente de la Auditora.
