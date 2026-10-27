@@ -9,6 +9,7 @@
 import { readFileSync, existsSync, appendFileSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import vm from 'node:vm';
+import { nombresDe, verificarUrl, lineaDe } from './verificar-fuente-web.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2); const v = (k) => { const i = A.indexOf(k); return i >= 0 ? A[i + 1] : null; };
@@ -60,7 +61,16 @@ async function gemini() {
   console.log(`\n=== GEMINI CON BÚSQUEDA DE GOOGLE (${(g?.webSearchQueries || []).length} búsquedas, ${conFuente.length} afirmaciones con fuente) ===`);
   if (!RESUMEN) console.log((c?.content?.parts || []).map((p) => p.text).join(''));
   console.log(`\nAFIRMACIONES CON SU FUENTE REAL${RESUMEN ? ' (solo las que tienen fuente; lo demás del texto del modelo se descarta)' : ' (las URLs del texto de arriba NO sirven: usá estas; la fecha suele ir en la URL, y si no, abrí la nota)'}:`);
-  for (const s of conFuente) console.log(`  «${String(s.segment.text).replace(/\s+/g, ' ').replace(/\*+/g, '').slice(0, RESUMEN ? 260 : 170)}»\n     <- ${[...new Set(s.groundingChunkIndices.map((i) => finales[i]).filter(Boolean))].join('\n        ')}`);
+  // cada URL citada se abre y se comprueba que el nombre de la afirmación aparezca en la nota y qué fecha tiene (tools/verificar-fuente-web.mjs): una afirmación puede decir más que su nota
+  const porUrl = new Map();
+  for (const s of conFuente) for (const u of new Set(s.groundingChunkIndices.map((i) => finales[i]).filter(Boolean))) { const e = porUrl.get(u) || new Set(); for (const n of nombresDe(s.segment.text)) e.add(n); porUrl.set(u, e); }
+  const verif = new Map(); const urls = [...porUrl.keys()];
+  for (let i = 0; i < urls.length; i += 6) await Promise.all(urls.slice(i, i + 6).map(async (u) => verif.set(u, await verificarUrl(u, [...porUrl.get(u)]))));
+  for (const s of conFuente) {
+    console.log(`  «${String(s.segment.text).replace(/\s+/g, ' ').replace(/\*+/g, '').slice(0, RESUMEN ? 260 : 170)}»`);
+    for (const u of new Set(s.groundingChunkIndices.map((i) => finales[i]).filter(Boolean))) console.log(`     <- ${u}\n        ${lineaDe(verif.get(u))}`);
+  }
+  console.log('\n  ✓ el nombre de la afirmación aparece en la nota (con su frase) · ✗ no abre o la nota no nombra a nadie del texto: NO sirve de fuente · · afirmación sin nombre que comprobar (mirá la nota)');
 }
 await gemini();
 if (!A.includes('--exa')) { console.log('\nLa sesión elige la nota que dice CUÁNDO asumió o dejó el cargo y la carga en data/gestiones/' + iso + '.js con confirmada:true y esa URL (la real de arriba); lo que ninguna nota fecha queda confirmada:false. Con --exa se suman las notas de Exa (más homónimos).'); process.exit(0); }

@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1209 — gestion-exa abre cada fuente de Gemini y la comprueba [gestion-exa.mjs, verificar-fuente-web.mjs]
+- `tools/verificar-fuente-web.mjs` (`fos verificar-url <url> --nombre "…"`, gratis) abre una URL citada por un modelo y dice si abre (o el HTTP con que no abre), la fecha de la URL y la que declara la página (meta, JSON-LD, `<time>`; marca cuando difieren de año), y por cada nombre de persona de la afirmación si su apellido aparece en la nota, con la frase. `gestion-exa` lo corre con cada fuente real de Gemini: ✓ el nombre aparece, ✗ no abre o la nota no nombra a nadie del texto. Lo que se hacía a mano con WebFetch.
+- Verificado contra las notas ya abiertas a mano: confirma la nota de Cali 2020 con su frase, rechaza la de 2023 (no menciona a Volt) y la URL inventada (404).
+- Medición: tools de orden, no leen documentos (`fos que-pide`). Sin revisión independiente de la Auditora.
+
 ## Versión 1208 — Cierre del 475: cuánto tarda cargar un club de SIIS y en qué paso se va
 - Medido con lo nuevo (`club-siis --avanzar --ejecutar --cargar`, reloj): Atlético FC 10 años en 4 min 28 s (27 s por año) y Real Cartagena 9 años en 5 min 26 s (36 s por año), con la categorización, la escritura de cada año y sus commits; Cúcuta Deportivo, 8 años, 4 min 10 s (31 s por año).
 - Dónde queda el tiempo por año: `audit.js --json` ~14,6 s (la compuerta de P0 y P1, hoy una vez por año), `generar-data --check` ~0,15 s y el índice de clubes ~0,2 s; el resto es la categorización, escribir el año y el commit (el hook ya no repite una auditoría idéntica). Lo que queda es la auditoría completa: el único camino a bajarla más es guardar por hash el resultado de los chequeos de `audit.js` que dependen de archivos que no cambian al cargar un año (~6 s de los ~15, medidos en el 475) o escribir todos los años del club y auditar una vez; las dos cosas mueven cuándo corre una compuerta y no se hicieron: el tiempo no es el objetivo.
