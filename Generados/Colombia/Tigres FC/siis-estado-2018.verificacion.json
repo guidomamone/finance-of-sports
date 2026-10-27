@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Tigres FC/siis-estado-2018.pdf",
  "md": "Clubes/Colombia/Tigres FC/siis-estado-2018.md",
- "generado": "2026-10-27T13:26:11.502Z",
+ "generado": "2026-10-27T14:24:57.029Z",
  "scriptHuella": "f1d4dee41de6",
  "estado": "ok",
  "clubId": "tigresfc-co",
@@ -21,6 +21,19 @@
    "linea": null,
    "motivo": "Claude 2026-10-27 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
    "evidencia": "siis-estado-2018.md L11-L21",
+   "autor": "Claude",
+   "fecha": "2026-10-27"
+  },
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Tigres FC/siis-estado-2018.pdf",
+   "campo": "categoria",
+   "valor": "lump_football_operations_expense",
+   "linea": null,
+   "etiqueta": "Costo de ventas",
+   "motivo": "El estado de 2018 imprime la actividad deportiva como «Costo de ventas» (466.172) y el de 2019, en su columna 2018, repite ese importe como «Gastos de ventas», que en Colombia es la actividad deportiva (regla de Admin/paises/co.md; mismo caso que Atlético Bucaramanga 2018).",
+   "evidencia": "Clubes/Colombia/Tigres FC/siis-estado-2019.md:13",
+   "causa": "precedente-del-pais",
    "autor": "Claude",
    "fecha": "2026-10-27"
   }
@@ -44,6 +57,11 @@
    "dif": 4.405364961712621e-13
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2017 de este documento suma ingresos 3147.412; el sitio tiene 3147.412"
+  },
+  {
    "nombre": "documento del año 2019",
    "ok": true,
    "detalle": "ingresos de 2018: 2143.125 en este documento y 2123.366 en siis-estado-2019.pdf (columna del año anterior)"
@@ -52,11 +70,6 @@
    "nombre": "documento del año 2017",
    "ok": true,
    "detalle": "ingresos de 2017: 3147.412 en siis-estado-2017.pdf y 3147.412 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
   }
  ],
  "notas": [],

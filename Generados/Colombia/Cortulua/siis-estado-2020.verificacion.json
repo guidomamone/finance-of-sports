@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Cortulua/siis-estado-2020.pdf",
  "md": "Clubes/Colombia/Cortulua/siis-estado-2020.md",
- "generado": "2026-10-27T13:12:41.561Z",
+ "generado": "2026-10-27T14:24:13.444Z",
  "scriptHuella": "f1d4dee41de6",
  "estado": "ok",
  "clubId": "cortulua-co",
@@ -21,6 +21,19 @@
    "linea": null,
    "motivo": "Claude 2026-10-27 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
    "evidencia": "siis-estado-2020.md L11-L21",
+   "autor": "Claude",
+   "fecha": "2026-10-27"
+  },
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Cortulua/siis-estado-2020.pdf",
+   "campo": "categoria",
+   "valor": "lump_football_operations_expense",
+   "linea": null,
+   "etiqueta": "Gastos de administración",
+   "motivo": "El estado de 2020 imprime todo el gasto operativo (8.859.297, más que los ingresos de 7.080.765) como «Gastos de administración» y el de 2021, en su columna 2020, da ese mismo importe como «Gastos de ventas», que en Colombia es la actividad deportiva (regla de Admin/paises/co.md; mismo caso que Tolima y La Equidad 2024, Bucaramanga 2018 y América de Cali 2017 y 2020).",
+   "evidencia": "Clubes/Colombia/Cortulua/siis-estado-2021.md:13",
+   "causa": "precedente-del-pais",
    "autor": "Claude",
    "fecha": "2026-10-27"
   }

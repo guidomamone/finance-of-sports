@@ -59,6 +59,10 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Carlos Orlando Ferreira Pinzón', corto:'Ferreira', cargo:'Presidente', desde:'2016-01-01', hasta:null,
       fuente:'https://en.wikipedia.org/wiki/Alianza_Petrolera_F.C.', confirmada:false },
   ],
+  'atleticofc-co': [
+    { nombre:'Gustavo Bernardo Moreno Arango', corto:'Moreno', cargo:'Dueño', desde:'2005-01-01', hasta:null,
+      fuente:'https://www.elheraldo.co/deportes/2017/01/13/giovanni-hernandez-nuevo-manager-deportivo-del-atletico-fc-319456', confirmada:false },
+  ],
   'atleticobucaramanga-co': [
     { nombre:'Óscar Enrique Álvarez Ascanio', corto:'Álvarez', cargo:'Dueño', desde:'2012-05-31', hasta:null,
       fuente:'https://www.vanguardia.com/deportes/futbol-colombiano/video-oscar-alvarez-se-llevara-al-atletico-bucaramanga-para-ocana-esto-es-lo-que-se-sabe-YD7467991', confirmada:true },
