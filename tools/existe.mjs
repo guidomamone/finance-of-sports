@@ -9,6 +9,7 @@
 // ============================================================================
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { resolve, join } from 'node:path';
+import { docsDeReglas } from './docs-reglas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2); const todas = A.includes('--todas');
@@ -19,7 +20,7 @@ if (!palabras.length) { console.error('Uso: node tools/fos.mjs existe <palabra> 
 const archivos = [];
 const lista = (dir, re) => { try { for (const f of readdirSync(join(ROOT, dir))) if (re.test(f)) archivos.push({ ruta: `${dir}/${f}`, tipo: dir.startsWith('tools') ? 'tool' : 'doc' }); } catch { /* sin carpeta */ } };
 lista('tools', /\.(mjs|js)$/); lista('tools/hooks', /\.mjs$/);
-for (const f of ['Admin/CONVENCIONES.md', 'Admin/CONVENCIONES-DATOS.md', 'Admin/HALLAZGOS-pipeline.md', 'Admin/PIPELINE.md', 'Admin/TODO.md', 'Admin/CHANGELOG.md']) if (existsSync(join(ROOT, f))) archivos.push({ ruta: f, tipo: 'doc' });
+for (const f of ['Admin/CONVENCIONES.md', ...docsDeReglas(), 'Admin/HALLAZGOS-pipeline.md', 'Admin/PIPELINE.md', 'Admin/TODO.md', 'Admin/CHANGELOG.md']) if (existsSync(join(ROOT, f))) archivos.push({ ruta: f, tipo: 'doc' });
 lista('Admin/Archive', /^CHANGELOG-.*\.md$/);
 
 const hallazgos = [];

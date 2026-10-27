@@ -20,6 +20,7 @@ import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { resolve, dirname, basename } from 'node:path';
 import { rutaData } from './data-clubes.js';
 import { verificarCita } from './votacion-citas.mjs';
+import { docsDeReglas } from './docs-reglas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
@@ -46,11 +47,11 @@ for (let i = 0; i < opciones.length; i++) for (let j = i + 1; j < opciones.lengt
 // qué abrir y dónde: los renglones de CONVENCIONES-DATOS.md con las palabras del caso, y los precedentes del club y del país
 const palabras = (val('--palabras') || '').split(',').map((s) => s.trim()).filter(Boolean);
 const leer = (rel) => { try { return readFileSync(resolve(ROOT, rel), 'utf8').split('\n'); } catch { return []; } };
-const conv = leer('Admin/CONVENCIONES-DATOS.md');
+const docs = docsDeReglas().map((f) => ({ f, l: leer(f) })); // CONVENCIONES-DATOS.md y las reglas por país (Admin/paises/<iso>.md)
 const reglas = palabras.map((p) => {
   const re = new RegExp(p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
-  const hits = conv.flatMap((l, i) => (re.test(l) ? [`  - Admin/CONVENCIONES-DATOS.md:${i + 1} — ${l.replace(/\s+/g, ' ').trim().slice(0, 110)}`] : [])).slice(0, 6);
-  return `- «${p}»: ${hits.length ? `\n${hits.join('\n')}` : 'ningún renglón de CONVENCIONES-DATOS.md (buscar en la skill club-data-mapping y su referencia/)'}`;
+  const hits = docs.flatMap(({ f, l }) => l.flatMap((t, i) => (re.test(t) ? [`  - ${f}:${i + 1} — ${t.replace(/\s+/g, ' ').trim().slice(0, 110)}`] : []))).slice(0, 6);
+  return `- «${p}»: ${hits.length ? `\n${hits.join('\n')}` : 'ningún renglón de las reglas de datos (buscar en la skill club-data-mapping y su referencia/)'}`;
 });
 const club = val('--club');
 const precedentes = [];

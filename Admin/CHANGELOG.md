@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1188 — Las reglas de datos se leen de CONVENCIONES-DATOS.md y de Admin/paises/<iso>.md [469 · reglas-categoria.mjs, docs-reglas.mjs, votacion-nueva.mjs, historia.mjs, existe.mjs, audit-chequeos-2.js]
+- `tools/docs-reglas.mjs` da la lista de documentos de reglas (el general y un archivo por país); `reglas-categoria.mjs`, `votacion-nueva.mjs`, `historia.mjs`, `existe.mjs` y la lista de documentos de criterio del audit la usan, así un país nuevo no obliga a tocarlos. Las reglas llevan su `archivo` y los mensajes de error lo nombran.
+- Medición: lote completo, medidores cargar y audit: cargar idéntico; en audit solo sale `indice-md-desfasado` (el índice se regeneró antes de medir). Sin revisión independiente de la Auditora.
+
 ## Versión 1187 — Sponsors por Exa sin pasar por el anuncio de FKA; los avisos de dictamen resueltos y silenciados [468 · sponsor-fka.mjs, dictamen-fechas.mjs · alianzafc-co]
 - `sponsor-fka.mjs` ya no tiene el camino de abrir FKA a mano; `--buscar` prueba hasta cuatro consultas por año y varios nombres (`--nombre "A|B"`), y `--registrar --sin-ficha "<qué se probó>"` anota lo que Exa no trae. Los 13 años quedaron cerrados (Boyacá 2020 y Tolima 2017 verificados; Once Caldas 2017, 2019 y 2020 y Alianza FC 2016 a 2023 sin ficha).
 - `dictamen-fechas.mjs` mira también el encabezado y descarta notas de fuente, normas y la fecha del cierre; no lee meses en griego ni cirílico. Queda un aviso, Alianza FC 2025 (firma con el año del dictamen anterior): corregido en la nota del registro y silenciado.

@@ -10,6 +10,7 @@
 // ============================================================================
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, resolve, relative } from 'node:path';
+import { docsDeReglas } from './docs-reglas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
@@ -17,7 +18,7 @@ const val = (k) => { const i = A.indexOf(k); return i < 0 ? null : A[i + 1]; };
 const archivos = [];
 const recorrer = (d) => { for (const f of readdirSync(d)) { const p = join(d, f); statSync(p).isDirectory() ? recorrer(p) : /\.md$/.test(f) && archivos.push(p); } };
 recorrer(join(ROOT, '.claude', 'skills'));
-for (const f of ['CLAUDE.md', 'Admin/ESTADO.md', 'Admin/PIPELINE.md', 'Admin/PANTALLA.md', 'Admin/CONVENCIONES.md', 'Admin/CONVENCIONES-DATOS.md']) if (existsSync(join(ROOT, f))) archivos.push(join(ROOT, f));
+for (const f of ['CLAUDE.md', 'Admin/ESTADO.md', 'Admin/PIPELINE.md', 'Admin/PANTALLA.md', 'Admin/CONVENCIONES.md', ...docsDeReglas()]) if (existsSync(join(ROOT, f))) archivos.push(join(ROOT, f));
 
 const FECHA = /\b20\d\d-\d\d-\d\d\b/g, TODO_N = /\bto-?do\s+\d{1,3}\b/gi, VERSION = /\bVersi[óo]n\s+\d{1,3}\b/g;
 const DECISION = /decid|decisi[óo]n|Guido|votaci[óo]n|cerr[óo]|cerrad|aprob|pidi[óo]|pedido|corrigi[óo]|resuelt|se hizo|hecho|verificado|REVISADO|medi[óo]/i;

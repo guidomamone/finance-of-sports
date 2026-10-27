@@ -338,7 +338,9 @@ function checkRutasMuertas() {
 // Las skills, CLAUDE.md y los documentos de criterio dicen cómo se trabaja y qué hay HOY: sin «Versión N», sin fechas de decisión y
 // sin «to-do N» (eso va a Admin/CHANGELOG.md y Admin/TODO.md; ver CLAUDE.md, «Al empezar»). P3: es la lista de limpieza, no una alarma.
 // No mira contadores fijos («58 clubes»): el patrón da falsos positivos y no se midió su precisión.
-const DOCS_DE_CRITERIO = ['CLAUDE.md', 'Admin/ESTADO.md', 'Admin/PIPELINE.md', 'Admin/CONVENCIONES.md', 'Admin/CONVENCIONES-DATOS.md', 'Admin/PANTALLA.md'];
+// (más las reglas por país, Admin/paises/<iso>.md: tools/docs-reglas.mjs)
+const reglasPorPais = () => { try { return fs.readdirSync(path.join(ROOT, 'Admin/paises')).filter(f => /^[a-z]{2}\.md$/.test(f)).sort().map(f => `Admin/paises/${f}`); } catch { return []; } };
+const DOCS_DE_CRITERIO = ['CLAUDE.md', 'Admin/ESTADO.md', 'Admin/PIPELINE.md', 'Admin/CONVENCIONES.md', 'Admin/CONVENCIONES-DATOS.md', 'Admin/PANTALLA.md', ...reglasPorPais()];
 const HISTORIA_EN_DOCS = [
   ['version', /\bVersi[óo]n \d+/g, '«Versión N»'],
   ['fecha', /\b20\d\d-\d\d-\d\d\b/g, 'fechas AAAA-MM-DD'],

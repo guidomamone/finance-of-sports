@@ -21,24 +21,30 @@
 import { readFileSync, appendFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { categoriasDeDeporte, deporteDeClub, deportes, deportesActivos, genericasIds } from './deporte-club.mjs'; // la regla puede ser de un deporte
+import { docsDeReglas, DOC_GENERAL } from './docs-reglas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
-const DOC = resolve(ROOT, 'Admin', 'CONVENCIONES-DATOS.md');
+const DOC = DOC_GENERAL;
 const APRENDIDAS = resolve(ROOT, 'Admin', 'registros', 'categorias-aprendidas.jsonl');
 
+// Las reglas de todos los documentos de tools/docs-reglas.mjs (CONVENCIONES-DATOS.md y Admin/paises/<iso>.md). `archivo` dice de cuál es cada una; `donde(x)` arma «L12» o «co.md L12» para un mensaje.
+export const donde = (x) => `${x.archivo && x.archivo !== DOC_GENERAL ? `${x.archivo.split('/').pop()} ` : ''}L${x.linea}`;
 export function leerReglasCategoria() {
   const reglas = []; let actual = null;
-  for (const [i, linea] of readFileSync(DOC, 'utf8').split('\n').entries()) {
-    const h = linea.match(/^##\s+REGLA:\s*(.+)$/);
-    if (h) { actual = { titulo: h[1].trim(), prompt: [], promptItems: [], notas: [], ejemplos: [] }; reglas.push(actual); continue; }
-    if (/^##\s/.test(linea)) { actual = null; continue; }
-    if (!actual) continue;
-    const p = linea.match(/^CATEGOR[ÍI]A \(prompt(?:,\s*([^)\s]+))?\):\s*(.+)$/);
-    if (p) { actual.prompt.push(p[2].trim()); actual.promptItems.push({ texto: p[2].trim(), deporte: p[1] || null, linea: i + 1 }); continue; }
-    const n = linea.match(/^NOTA-CATEGOR[ÍI]A \((\w\w)\):\s*([^|]+)\|([^|]+)\|\s*([a-z_]+)\s*$/);
-    if (n) { actual.notas.push({ pais: n[1], nota: n[2].trim(), concepto: n[3].trim(), categoria: n[4], linea: i + 1 }); continue; }
-    const e = linea.match(/^EJEMPLO-CATEGOR[ÍI]A:\s*(.+)$/);
-    if (e) { const [club, lado, etiqueta, categoria] = e[1].split('|').map((x) => x.trim()); actual.ejemplos.push({ club, lado, etiqueta, categoria, linea: i + 1 }); }
+  for (const archivo of docsDeReglas()) {
+    actual = null;
+    for (const [i, linea] of readFileSync(resolve(ROOT, archivo), 'utf8').split('\n').entries()) {
+      const h = linea.match(/^##\s+REGLA:\s*(.+)$/);
+      if (h) { actual = { titulo: h[1].trim(), archivo, prompt: [], promptItems: [], notas: [], ejemplos: [] }; reglas.push(actual); continue; }
+      if (/^##\s/.test(linea)) { actual = null; continue; }
+      if (!actual) continue;
+      const p = linea.match(/^CATEGOR[ÍI]A \(prompt(?:,\s*([^)\s]+))?\):\s*(.+)$/);
+      if (p) { actual.prompt.push(p[2].trim()); actual.promptItems.push({ texto: p[2].trim(), deporte: p[1] || null, linea: i + 1, archivo }); continue; }
+      const n = linea.match(/^NOTA-CATEGOR[ÍI]A \((\w\w)\):\s*([^|]+)\|([^|]+)\|\s*([a-z_]+)\s*$/);
+      if (n) { actual.notas.push({ pais: n[1], nota: n[2].trim(), concepto: n[3].trim(), categoria: n[4], linea: i + 1, archivo }); continue; }
+      const e = linea.match(/^EJEMPLO-CATEGOR[ÍI]A:\s*(.+)$/);
+      if (e) { const [club, lado, etiqueta, categoria] = e[1].split('|').map((x) => x.trim()); actual.ejemplos.push({ club, lado, etiqueta, categoria, linea: i + 1, archivo }); }
+    }
   }
   return reglas;
 }
@@ -77,7 +83,7 @@ export function validarReglasPrompt({ activos = deportesActivos() } = {}) {
   // claves que una frase puede nombrar sin ser subcategorías de un deporte: las genéricas del 248 y las financieras del JSON
   const NO_SUBCATEGORIAS = new Set([...genericasIds(), 'profit_on_player_sales', 'asset_sales', 'net_interest', 'gross_debt', 'staff_cost', 'no_es_rubro']);
   for (const r of reglas) for (const x of r.promptItems) {
-    const q = `L${x.linea} (${r.titulo.slice(0, 50)})`; const antes = errores.length;
+    const q = `${donde(x)} (${r.titulo.slice(0, 50)})`; const antes = errores.length;
     if (x.deporte && !deportes().some((d) => d.id === x.deporte)) { errores.push(`${q}: el deporte «${x.deporte}» no es un id de SPORTS en data/leagues.js`); detalle.push({ titulo: r.titulo, linea: x.linea, deporte: x.deporte, texto: x.texto, ok: false }); continue; }
     const ids = [...new Set(x.texto.match(/\b[a-z]+(?:_[a-z]+)+\b/g) || [])].filter((i) => !NO_SUBCATEGORIAS.has(i));
     const deDeporte = x.deporte ? [x.deporte] : activos;
@@ -117,13 +123,13 @@ if (import.meta.url === `file://${process.argv[1]}` && process.argv.includes('--
   const ya = existsSync(APRENDIDAS) ? readFileSync(APRENDIDAS, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : [];
   const faltan = [];
   for (const r of reglas) for (const x of r.notas) { // NOTA-CATEGORÍA: nota, concepto y categoría de gasto válidos
-    const q = `L${x.linea} (${r.titulo.slice(0, 50)})`; const t = categoriasDeDeporte('futbol');
+    const q = `${donde(x)} (${r.titulo.slice(0, 50)})`; const t = categoriasDeDeporte('futbol');
     if (!['ventas', 'administración', 'cualquiera'].includes(x.nota)) errores.push(`${q}: la nota «${x.nota}» no es ventas | administración | cualquiera`);
     if (!CONCEPTOS[x.concepto]) errores.push(`${q}: el concepto «${x.concepto}» no es ${Object.keys(CONCEPTOS).join(' | ')}`);
     if (!t?.expense.has(x.categoria)) errores.push(`${q}: «${x.categoria}» no es una categoría de gasto de fútbol`);
   }
   for (const r of reglas) for (const e of r.ejemplos) {
-    const q = `L${e.linea} (${r.titulo.slice(0, 50)})`;
+    const q = `${donde(e)} (${r.titulo.slice(0, 50)})`;
     if (!e.club || !e.lado || !e.etiqueta || !e.categoria) { errores.push(`${q}: el ejemplo necesita club | lado | etiqueta | categoría`); continue; }
     if (!clubs.includes(`id:'${e.club}'`)) errores.push(`${q}: el club «${e.club}» no está en data/clubs.js`);
     if (!['revenue', 'expense'].includes(e.lado)) errores.push(`${q}: lado «${e.lado}» (revenue | expense)`);
@@ -134,7 +140,7 @@ if (import.meta.url === `file://${process.argv[1]}` && process.argv.includes('--
     else if (tx && ladoDe(e.categoria) !== e.lado) errores.push(`${q}: «${e.categoria}» es de ${ladoDe(e.categoria)} y el ejemplo dice ${e.lado}`);
     if (!ya.some((x) => x.club === e.club && x.lado === e.lado && x.label === e.etiqueta && x.categoria === e.categoria && /^regla de votación/.test(x.motivo || ''))) faltan.push({ r, e });
   }
-  console.log(`${reglas.length} reglas en CONVENCIONES-DATOS.md; ${reglas.filter((r) => r.prompt.length).length} con frase para el prompt; ${reglas.reduce((a, r) => a + r.ejemplos.length, 0)} ejemplos; ${faltan.length} sin registrar en categorias-aprendidas.jsonl.`);
+  console.log(`${reglas.length} reglas en ${docsDeReglas().map((f) => f.split('/').pop()).join(' + ')}; ${reglas.filter((r) => r.prompt.length).length} con frase para el prompt; ${reglas.reduce((a, r) => a + r.ejemplos.length, 0)} ejemplos; ${faltan.length} sin registrar en categorias-aprendidas.jsonl.`);
   for (const m of errores) console.log(`  ERROR ${m}`);
   if (errores.length) process.exit(1);
   if (process.argv.includes('--escribir') && faltan.length) {
