@@ -404,7 +404,39 @@ Representante Legal
 
 --- pág. 11 ---
 
+[Páginas 11 a 13 impresas como imagen en el PDF, transcriptas a mano:]
+
 Informe de Revisor Fiscal
+
+Señores ASAMBLEA DE ACCIONISTAS TIGRES FUTBOL CLUB SA. Bogotá D.C. Abril de 2025
+
+He Examinado los Estados Financieros adjuntos de Tigres Futbol Club S.A. preparados por el periodo fiscal entre 01 de Enero y el 31 de Diciembre de 2024. Estados financieros que comprenden: Estado de Situación Financiera, Estado de Resultado Integral, Estado de Cambios en el Patrimonio y Estado de Flujos de Efectivo; preparados de conformidad con el compilado de normas y decretos que incorporan las Normas Internacionales de Información Financiera para PYMES - Grupo 2, Estableciendo el marco técnico normativo para la presentación de la información financiera, tomados fielmente de los libros de contabilidad y/o del programa de contabilidad licenciado; debidamente certificados por el Representante Legal y Contador de la Sociedad junto con sus respectivas notas, revelaciones e información explicativa y políticas contables significativas.
+
+Es responsabilidad de la Gerencia la preparación y presentación fiel de los Estados Financieros Certificados adjuntos de conformidad con las Normas Internacionales de Información Financiera para PYMES reglamentados mediante: Decreto 2420 del 2015 y sus modificatorios, así como las directrices de orientación profesional y técnica del Consejo Técnico de Contaduría Publica, junto con el manual de Políticas Contables adoptadas por Tigres Futbol Club S.A. Responsabilidad administrativa que incluye diseñar, implementar y mantener el control interno relevante en cada operación, para que estén libres de errores, de importancia relativa debido a fraude o error, y la aplicación de sus políticas contables sean razonables.
+
+Mi responsabilidad consiste en expresar una opinión sobre los Estados Financieros adjuntos, en cumplimiento de mis funciones de auditoria descritas en los articulo 207, 208 y 209 del Código de Comercio y de conformidad con las Normas Internaciones de Auditoria - NIA. Estas normas me exigen cumplir con los principios éticos, planificando y ejecutando la auditoria con pruebas selectivas a los respectivos registros contables y documentos. En donde finalmente obtuve una seguridad razonable de los Estados Financieros al estar libres de errores materiales. Los procedimientos analíticos de revisión dependen de mi juicio profesional, incluida la valoración de los riesgos de importancia relativa en los estados financieros, debido a fraude o error. Al realizar dichas valoraciones de riesgo, he considerado el control interno implementado para la preparación y la presentación de los Estados Financieros. Con base en estas valoraciones y pruebas de auditoria realizadas, concluyo que, considerando la economía global del país, Tigres Futbol Club S.A cuenta con la capacidad para cumplir con las proyecciones presentadas para el año 2025. Asimismo, deberá mantener relaciones favorables con sus clientes y acreedores, consolidar líneas de negocio, fortalecer su visión estratégica y continuar como negocio en marcha.
+
+También hace parte de mi responsabilidad obtener suficiente y adecuada evidencia de auditoria en relación con la información financiera de la entidad y el cumplimiento del SIPLAFT en las disposiciones establecidas en el numeral 7,3 de la circular Externa No. 005 de 2016, y evaluar la adecuación de las políticas contables aplicadas, así como la razonabilidad de las estimaciones contables y la información revelada por la entidad. Comunico a los responsables del gobierno de la entidad el alcance, realización de la auditoria y los hallazgos significativos de la misma, y proporciono una declaración que he cumplido con todos los requerimientos de ética aplicables en relación con la independencia.
+
+Cabe declarar mi independencia de TIGRES FUTBOL CLUB SA. De conformidad con los requerimientos de Auditoria aplicada de las Normas Internacionales de Auditoria -NIA- y demás normas vigentes en Colombia para el ejercicio de la Revisoría Fiscal, obteniendo evidencia sobre la información revelada en los Estados Financieros. Considero que la evaluación de las políticas contables aplicadas, la razonabilidad de las estimaciones contables efectuadas por la Administración, así como la evaluación y la presentación de los Estados Financieros proporcionan una base adecuada y suficiente para mi opinión.
+
+Asuntos de Interés
+
+1. Se Considera una salvedad la deficiencia detectada en el control interno relacionada con el proceso de entrega al cargo, la cual derivó en el cambio de contador.
+
+2. En relación con el saldo reflejado en la obtención de recursos financieros del año inmediatamente anterior, se recomienda realizar una análisis detallado e informar el procedimiento a seguir para la cancelación definitiva de esta obligación.
+
+3. Como se indica en la Nota 21 de los Estados Financieros, se han efectuado ajustes por depuración de cuentas que impactan directamente los resultados del cierre contable de 2024. Dichos ajustes generan una proyección de pago para la vigencia en mencionada, al ser catalogados como gastos no deducibles.
+
+Considero que la evidencia en mi auditoria es suficiente y adecuada. Los Estados Financieros de Tigres Futbol Club SA. para el año 2024 han sido preparados de conformidad con las normas del Grupo 2, reglamentadas por el DUR 2420 de 2015 y decretos modificatorios, en el marco de la Ley 1314 de 2009, la cual establece los nuevos principios y normas de contabilidad aplicables en Colombia.
+
+En concordancia con lo mencionado en el numeral 4 del articulo 2.1.1 del DUR 2420 de 2015, adicionado por el Art. 10 del Decreto 2496 de 2015, los lineamientos contables que no se encuentren dentro del alcance de los Estándares Internacionales podrán consultarse en el Decreto 2649 de 1993, el cual se encuentra parcialmente vigente para algunos aspectos, entre estos, la teneduría de libros, comprobantes y soportes contables.
+
+Tigres Futbol Club S.A ha cumplido con la liquidación y pago de los aportes al sistema de seguridad social. Asimismo, el Informe de Gestión refleja los hechos, actos y demás temas de interés ocurridos durante la vigencia 2024.
+
+JORGE ENRIQUE CASTAÑEDA SANCHEZ
+Revisor Fiscal
+TP. 141153-T
 
 
 

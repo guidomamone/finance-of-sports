@@ -1339,6 +1339,42 @@ Object.assign(window.CLUB_AUDITORIA, {
     "md": "Clubes/Colombia/Tigres FC/dictamen-revisor-fiscal-2020.md",
     "linea": 49
    }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Jorge Enrique Castañeda Sánchez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Tigres FC/dictamen-revisor-fiscal-2021.md",
+    "linea": 66
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Jorge Enrique Castañeda Sánchez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Tigres FC/dictamen-revisor-fiscal-2022.md",
+    "linea": 78
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Jorge Enrique Castañeda Sánchez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Tigres FC/dictamen-revisor-fiscal-2024.md",
+    "linea": 431
+   }
   }
  },
  "unionmagdalena-co": {
