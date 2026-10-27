@@ -32,7 +32,7 @@ que dice `ESTADO.md` era verdad ese día.
 ## Versión 1189 — Las reglas de un país salen de CONVENCIONES-DATOS.md a Admin/paises/<iso>.md [469 · reglas-pais.mjs, club-siis.mjs]
 - `node tools/reglas-pais.mjs` (ensayo por defecto, `--escribir` mueve) pasa a `Admin/paises/<iso>.md` las reglas cuyo título nombra un país fuera del paréntesis del caso. Se movieron 6: Colombia (3), Bélgica, Alemania y Turquía. `CONVENCIONES-DATOS.md` pasa de 81 a 67 KB y queda con las generales.
 - `ESTADO.md` deja el detalle de SIIS (qué clubes, qué comandos) y apunta a `Admin/paises/` y a `club-siis.mjs`.
-- En lo movido se quitó la historia (fechas de decisión, «años ya cargados que cambian», la medición de origen); las referencias a esas reglas (`club-siis.mjs`, `audit-acciones.json`, `PIPELINE.md`) apuntan al archivo nuevo.
+- Se quitó la historia de lo movido y de varias reglas generales (fechas de decisión, citas de pedidos, contadores, el relato de cómo se descubrió); las referencias a esas reglas (`club-siis.mjs`, `audit-acciones.json`, `PIPELINE.md`) apuntan al archivo nuevo.
 - Medición: `reglas-categoria` da lo mismo (36 reglas, 14 con frase para el prompt, 19 ejemplos, 0 sin registrar); `club-siis.mjs` no es del pipeline.
 
 ## Versión 1188 — Las reglas de datos se leen de CONVENCIONES-DATOS.md y de Admin/paises/<iso>.md [469 · reglas-categoria.mjs, docs-reglas.mjs, votacion-nueva.mjs, historia.mjs, existe.mjs, audit-chequeos-2.js]

@@ -39,10 +39,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
 
 - DÓNDE PUEDE VIVIR UN DATO INVENTADO, Y DÓNDE NO. El proyecto existe porque sus números son verificables, así que un
   archivo de datos de mentira es lo más peligroso que se le puede agregar. **Hoy no hay ninguno.**
-  Si vuelve a hacer falta uno para prototipar —el caso real fue Guido pidiendo "el tener datos
-  incompletos me limita la creatividad", con la condición que él mismo puso: "documentar bien lo que
-  estamos tocando para no arrastrar balances inventados"— se permite UNO, con estas 6 condiciones, y
-  el día que se rompa cualquiera hay que borrarlo:
+  Si hace falta uno para prototipar se permite UNO, con estas 6 condiciones, y el día que se rompa cualquiera hay que borrarlo:
   (1) NO vive en `data/`, y lleva "inventados" en el nombre;
   (2) lo carga SOLO la página que lo necesita, que no está linkeada desde ningún lado, nunca
       `index.html`;
@@ -56,13 +53,9 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   (6) **NO QUEDA EN EL REPO MÁS ALLÁ DE LA SESIÓN QUE LO NECESITA**. Netlify publica la raíz, y `netlify.toml` solo borra del deploy lo
       interno (`Admin/`, con las notas de sourcing; `CLAUDE.md`, `auditorias/`, `Prototyping/`, `tools/` y `Generados/`). Todo lo demás
       que está trackeado es alcanzable por URL en `financeofsports.com`: la raíz, `data/`, `js/`, `fuentes/*.html` y las
-      transcripciones de `Clubes/`. El relleno de los prototipos estuvo servido públicamente tres días sin
-      que nadie se diera cuenta. Tenía su franja roja y nadie estaba linkeado a él, pero un sitio
-      cuyo argumento entero es que sus números son verificables no puede servir números falsos desde
-      su dominio. Vale para cualquier cosa que se deje en el repo "por las dudas".
-- NO EXISTE NINGUNA ARISTA CLUB -> LIGA SIN AÑO (decisión de arquitectura que salió
-  de un pushback de Guido: "si el usuario quiere ver cuánto generaba una liga en 2025 y 2024, 2023,
-  2022, tiene que tener en cuenta que los clubes fueron cambiando"). `data/leagues.js` es el
+      transcripciones de `Clubes/`. Un sitio cuyo argumento entero es que sus números son verificables
+      no puede servir números falsos desde su dominio, aunque nadie los linkee. Vale para cualquier cosa que se deje en el repo "por las dudas".
+- NO EXISTE NINGUNA ARISTA CLUB -> LIGA SIN AÑO (los clubes cambian de liga con los años). `data/leagues.js` es el
   CATÁLOGO de ligas (nombre, país, deporte, escalón) y no tiene una sola línea de membresía. La
   membresía es (club, ejercicio) -> liga y vive solo en `data/club-leagues.js`. Todo agregado de
   liga (promedio, mediana, ranking, "cuánto generaba la liga en 2022") pasa por
@@ -104,9 +97,7 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   todas, nunca en línea.
 - INGRESO EXTRAORDINARIO: SE QUEDA EN `exceptional_items` (decisión de Guido). Las 5 líneas de ingreso extraordinario de Racing (2009, 2010, 2012, 2014:
   desafectaciones de previsiones y condonaciones) usan `exceptional_items`, que es una categoría de
-  la taxonomía de GASTOS. Se evaluó la alternativa —crear una categoría de ingreso extraordinario
-  con fila propia en Formato simplificado, que eran 4 ediciones chicas y no movía ningún número— y
-  Guido decidió dejarlo como está.
+  la taxonomía de GASTOS; una categoría de ingreso extraordinario con fila propia en Formato simplificado se descartó.
   LO QUE HAY QUE SABER ANTES DE "ARREGLARLO": la consecuencia está aceptada, no pasada por alto. En
   Formato simplificado esas líneas caen bajo "Otras secciones deportivas y otros ingresos"; el total
   del ejercicio cierra igual (el motor suma por monto, no por bucket) y Formato del club las muestra
@@ -157,13 +148,10 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   compartidos, búsquedas guardadas y `fuentes/<id>.html` indexadas con el id viejo. Para el redirect de
   `fuentes/` se agregan las dos reglas 301 a `netlify.toml`. `node tools/audit.js` vigila el formato
   (`clubid-sin-pais`, P1) y el mapa (`alias-roto`, P1). Los tools aceptan un id viejo (`normalizarId()`).
-- `note` ES INTERNA Y NO SE RENDERIZA NUNCA; LO QUE VE EL VISITANTE ES `publicNote` (después de que Guido revisara la primera versión de la pestaña Fuentes: "veo que en Salvedades a
-  veces pones 'descargado por Guido' o direcciones que son de mi computadora. Eso no puede
-  aparecerle al usuario"). `sources[].note` es la nota que una sesión le deja a la siguiente: dónde
-  quedó la transcripción, cómo se leyó el PDF, qué falta. Las 91 entradas la tienen y 64 mencionan
-  el nombre de Guido o rutas del repo. `sources[].publicNote` es la que se muestra: una o dos
+- `note` ES INTERNA Y NO SE RENDERIZA NUNCA; LO QUE VE EL VISITANTE ES `publicNote` (puede nombrar a Guido o rutas del repo). `sources[].note` es la nota que una sesión le deja a la siguiente: dónde
+  quedó la transcripción, cómo se leyó el PDF, qué falta. `sources[].publicNote` es la que se muestra: una o dos
   oraciones escritas para un lector, y SOLO donde hay una salvedad que no se puede deducir de los
-  datos (hoy 17 de 91). Todo lo demás sale derivado por `sourceCaveats()` (`data/sources-view.js`)
+  datos. Todo lo demás sale derivado por `sourceCaveats()` (`data/sources-view.js`)
   de los campos que ya existen: que el tipo de cambio sea de referencia, que el documento no publique
   el resultado del ejercicio, que no informe deuda ni caja. Un club nuevo trae esas salvedades bien
   sin que nadie escriba una línea. Lo vigila `node tools/audit.js`: `nota-publica-con-interno` (P1)
@@ -209,13 +197,8 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
   PRIMER NIVEL (`items` no lo mira `sumCat()`/`computeYearGeneric()`, así que lo enterrado ahí desaparece de "Formato simplificado"). Regla
   completa: `.claude/skills/club-data-mapping/SKILL.md` sección 1; el ejemplo de Racing: `referencia/casos-por-pais-y-formato.md`, "Ejemplo
   largo"; cómo detectarlo probando en el navegador (mirar CADA bucket, no solo el total): `Admin/PANTALLA.md`, ex §8.
-- OJO REGLA REFORZADA: NUNCA cargar datos al sitio
-  extrayendo un PDF directo, sin pasar antes por una transcripción completa
-  a Markdown (CLAUDE.md ya lo decía, pero se saltó una vez con el
-  presupuesto 2026/27 y se perdió detalle real. Guido lo notó comparando
-  contra el PDF). Un "resumen para ahorrar tokens" en el momento de
-  transcribir casi siempre implica volver a hacerlo dos veces cuando falta
-  algo. Verificar SIEMPRE si existe el .md en `Clubes/<País>/<Club>/` antes
+- NUNCA cargar datos al sitio extrayendo un PDF directo, sin pasar antes por una transcripción completa a Markdown: un "resumen para
+  ahorrar tokens" pierde detalle y obliga a transcribir dos veces. Verificar SIEMPRE si existe el .md en `Clubes/<País>/<Club>/` antes
   de asumir que un dato no está desglosado en la fuente.
 - OJO Ejercicio 2027 tiene categorías EXTRA en el Formato simplificado que
   los demás ejercicios no tienen (Televisión/Premios por competencias en
@@ -230,11 +213,8 @@ proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.m
 ## REGLA (a pedido de Guido): un presupuesto en año CALENDARIO se reconstruye a temporada, nunca se carga tal cual
 
 
-Motivo del pedido: Instituto ACC publicó su Presupuesto 2025 (y sus Premisas) en año calendario
-(ene-25 a dic-25, con columna por mes), pero el sitio entero modela todo en TEMPORADA/ejercicio
-económico (el mismo criterio que ya usa el balance auditado real de ese club, jul-jun) — cargar el
-documento tal cual metería un `year` key que no es comparable con ningún otro del mismo club (un
-"año" que arranca en enero, al lado de ejercicios que arrancan en julio).
+El sitio modela todo en TEMPORADA/ejercicio económico: cargar un presupuesto en año calendario tal cual metería un `year` key que no es
+comparable con ningún otro del club (un "año" que arranca en enero, al lado de ejercicios que arrancan en julio).
 
 **La regla, para cualquier club futuro que publique un presupuesto en año calendario**: nosotros
 mismos reconstruimos la temporada, no lo subimos en año calendario. Si el documento tiene desglose
@@ -246,21 +226,10 @@ entero), no hay forma de reconstruir ninguna temporada con un solo documento —
 documento del año calendario siguiente/anterior igual, para poder recortar cada uno a su mitad útil
 antes de sumarlos.
 
-**Caso real que disparó la regla, Instituto Presupuesto 2025**: SÍ tiene desglose mensual (12
-columnas, ene-25 a dic-25 — ver `Clubes/Argentina/Instituto/presupuesto-2025.md`), así que en teoría
-se podrían reconstruir 2 mitades de temporada: ene-jun 2025 (2da mitad del Ejercicio 2024/2025) y
-jul-dic 2025 (1ra mitad del Ejercicio 2025/2026). Pero Instituto solo tiene ESTE presupuesto
-descargado — no hay un Presupuesto 2024 (para completar la mitad jul-dic 2024 del Ejercicio
-2024/2025) ni un Presupuesto 2026 (para completar la mitad ene-jun 2026 del Ejercicio 2025/2026) —
-así que NINGUNA de las 2 temporadas queda completa con lo que tenemos hoy. Conclusión (regla
-explícita de Guido: "para el caso en que tengamos solo la mitad de un año y sea irreconstruible,
-mantengamos esa info pero no subamos info incompleta"): **no se cargó nada al sitio** para este
-presupuesto — ni el año calendario tal cual (rompería el modelo de datos), ni una mitad de temporada
-sola (sería un ejercicio incompleto, y el sitio no tiene forma de marcar "esto es solo 6 meses" sin
-que se lea como un ejercicio completo raro). El documento y el hallazgo quedan documentados en
-`Admin/sourcing/Argentina/Instituto.md` (ver el índice en `Admin/sourcing/_indice/Argentina.md`) para que si en el
-futuro aparece el Presupuesto 2024 o 2026 del mismo club, se pueda completar una de las 2 temporadas
-y recién ahí cargarla.
+**Si la temporada es irreconstruible** (solo se tiene la mitad de un año), **no se carga nada**: ni el año calendario tal cual
+(rompería el modelo de datos) ni una mitad de temporada sola (se leería como un ejercicio completo raro). El documento y el hallazgo
+quedan en las notas de sourcing del club (`Admin/sourcing/<País>/<Club>.md`) y, cuando aparece el presupuesto que completa la
+temporada, se carga. Ejemplo: Instituto, Presupuesto 2025 (12 columnas mensuales) sin los de 2024 ni 2026 (`Clubes/Argentina/Instituto/presupuesto-2025.md`).
 
 **Balances parciales (de menos de 12 meses).** La misma regla vale para un BALANCE de menos de 12 meses (un cambio de
 fecha de cierre, un semestral): no se carga solo. Va a `Admin/registros/documentos-parciales.txt` (no a `documentos-descartados.txt`, que es para lo que no
