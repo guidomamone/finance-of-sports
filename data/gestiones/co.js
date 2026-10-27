@@ -129,4 +129,10 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Daniel Jaramillo Vélez', corto:'Jaramillo', cargo:'Presidente', desde:'2024-10-01', hasta:null,
       fuente:'https://www.lapatria.com/deportes/esta-es-la-nueva-junta-directiva-del-once-caldas', confirmada:true },
   ],
+  'tigresfc-co': [
+    { nombre:'Édgar Páez Cortés', corto:'Páez', cargo:'Presidente', desde:'2016-01-20', hasta:'2023-09-23',
+      fuente:'https://www.bluradio.com/deportes/futbol-colombiano/quien-era-edgar-paez-presidente-de-tigres-asesinado-en-bogota-so35', confirmada:true },
+    { nombre:'Andrea Patricia Páez Rodríguez', corto:'Páez', cargo:'Representante legal', desde:'2024-01-01', hasta:null,
+      fuente:'Clubes/Colombia/Tigres FC/dictamen-revisor-fiscal-2024.md', confirmada:false },
+  ],
 });

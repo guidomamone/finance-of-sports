@@ -553,5 +553,111 @@
     "2023": { "estadio": "Estadio Municipal Raúl Miranda", "capacidad": 3500, "marca": "Hillside", "sponsor": "BetPlay", "fuente": "estadio: https://en.wikipedia.org/wiki/Cortulu%C3%A1 (2023 local en Yumbo, Estadio Raúl Miranda; https://www.infobae.com/colombia/2023/02/01/cortulua-mantendra-el-nombre-pero-jugara-en-yumbo-el-torneo-de-ascenso/); capacidad 3.500: resumen de búsqueda sobre la página de Wikipedia del estadio, sin abrir; marca: https://es.wikipedia.org/wiki/Corporaci%C3%B3n_Club_Deportivo_Tulu%C3%A1 (Hillside 2020-2023); sponsor: ficha de la camiseta local 2023 en Football Kit Archive https://www.footballkitarchive.com/cortulua-fc-2023-home-kit-191748/ (campo Sponsor «BetPlay», Brand Hillside; base de aficionados, una sola fuente; leída por el resumen de la búsqueda, la página dio 403; DÉBIL, la sesión lo verifica)" },
     "2024": { "estadio": "Estadio Francisco Rivera Escobar", "capacidad": 15300, "sponsor": "BetPlay", "fuente": "estadio y capacidad: https://en.wikipedia.org/wiki/Internacional_F.C._de_Palmira (local en Palmira, 15.300); sponsor: ficha de la camiseta local 2024 en Football Kit Archive https://www.footballkitarchive.com/de/internacional-de-palmira-2024-home-kit/225031/ (campo Sponsor «BetPlay», leída con Exa)" },
     "2025": { "estadio": "Estadio Francisco Rivera Escobar", "capacidad": 15300, "sponsor": "BetPlay", "fuente": "estadio y capacidad: https://en.wikipedia.org/wiki/Internacional_F.C._de_Palmira (local en Palmira, 15.300; 2025 en Primera B); sponsor: ficha de la camiseta local 2025 en Football Kit Archive https://www.footballkitarchive.com/de/internacional-de-palmira-2025-home-kit/339433/ (campo Sponsor «BetPlay», leída con Exa)" }
+  },
+  "tigresfc-co": {
+    "2016": { "estadio": "Estadio Luis Carlos Galán Sarmiento", "capacidad": 8000, "marca": "Effort", "fuente": "estadio: https://es.wikipedia.org/wiki/Tigres_F%C3%BAtbol_Club (sección Estadio: 2016 Estadio Luis Carlos Galán Sarmiento, Soacha; también jugó algunos partidos en el Metropolitano de Techo) y ESPN, partidos de local 2016 en Soacha (https://espndeportes.espn.com/futbol/partido/_/juegoId/442530/itagui-leones-tigres); capacidad 8.000: https://en.wikipedia.org/wiki/List_of_football_stadiums_in_Colombia (estimación de fuente secundaria, no oficial); marca: https://es.wikipedia.org/wiki/Tigres_F%C3%BAtbol_Club (tabla de indumentaria: Effort 2016-2017) y https://en.wikipedia.org/wiki/Tigres_F.C. (Effort desde 2016)",
+      "sin-fuente": {
+        "sponsor": {
+          "buscado": "2026-10-27",
+          "por": "Claude (subagente Sonnet)",
+          "intentos": [
+            { "clase": "informe-anual", "donde": "Clubes/Colombia/Tigres FC/*.md (solo hay dictamen-revisor-fiscal-2021, 2022 y 2024; nada de 2016), grep -i patroc|sponsor: ninguna coincidencia del ejercicio", "resultado": "sin-dato" },
+            { "clase": "prensa", "donde": "búsquedas «Tigres FC Soacha patrocinador camiseta 2016 Effort nueva camiseta Primera B» y «Tigres FC Bogotá camiseta patrocinador principal 2018 2019 presentación uniforme»: ningún medio con fecha nombra el sponsor del frente", "resultado": "sin-dato" },
+            { "clase": "base-camisetas", "donde": "https://www.footballkitarchive.com/categoria-primera-b-kits-2018-l522/ y la colección de Primera B 2016 (403 al abrirlas; el resumen de la búsqueda no trae el campo Sponsor de Tigres)", "resultado": "inaccesible" }
+          ]
+        }
+      }
+    },
+    "2017": { "estadio": "Estadio Metropolitano de Techo", "capacidad": 10000, "marca": "Effort", "fuente": "estadio y capacidad: https://es.wikipedia.org/wiki/Tigres_F%C3%BAtbol_Club (sección Estadio: de 2017 a la actualidad Metropolitano de Techo, 10.000); marca: misma página, tabla de indumentaria (Effort 2016-2017). Ojo: 2017 fue en Primera A (Liga Águila) y el club descendió a fin de año (https://www.winsports.co/futbol-colombiano/equipos/tigres/historia); el ensayo se corrió con co-primeraB y hay que repetirlo con la liga correcta",
+      "sin-fuente": {
+        "sponsor": {
+          "buscado": "2026-10-27",
+          "por": "Claude (subagente Sonnet)",
+          "intentos": [
+            { "clase": "informe-anual", "donde": "Clubes/Colombia/Tigres FC/*.md (no hay documento de 2017), grep -i patroc|sponsor: ninguna coincidencia del ejercicio", "resultado": "sin-dato" },
+            { "clase": "prensa", "donde": "búsquedas «Tigres FC Bogotá camiseta patrocinador principal 2018 2019 presentación uniforme» y «Tigres FC Soacha patrocinador camiseta 2016 Effort»; https://www.colombia.com/futbol/liga-colombiana/noticias/sdi585/163012/liga-aguila-por-que-tigres-ya-no-entrena-en-soacha (21-sep-2017): no nombra patrocinadores", "resultado": "sin-dato" },
+            { "clase": "base-camisetas", "donde": "https://www.footballkitarchive.com/ (fichas de Tigres FC 2017; 403 al abrirlas)", "resultado": "inaccesible" }
+          ]
+        }
+      }
+    },
+    "2018": { "estadio": "Estadio Metropolitano de Techo", "capacidad": 10000, "fuente": "estadio y capacidad: https://es.wikipedia.org/wiki/Tigres_F%C3%BAtbol_Club (sección Estadio: de 2017 a la actualidad Metropolitano de Techo, 10.000; WinSports habla de unos 8.000: https://www.winsports.co/futbol-colombiano/equipos/tigres/historia). La marca de 2018-2021 figura como «Tigres T.F.C. / Diseños Deportivos» (marca propia, DÉBIL) y no se carga",
+      "sin-fuente": {
+        "sponsor": {
+          "buscado": "2026-10-27",
+          "por": "Claude (subagente Sonnet)",
+          "intentos": [
+            { "clase": "informe-anual", "donde": "Clubes/Colombia/Tigres FC/*.md (no hay documento de 2018), grep -i patroc|sponsor: ninguna coincidencia del ejercicio", "resultado": "sin-dato" },
+            { "clase": "prensa", "donde": "búsqueda «Tigres FC Bogotá camiseta patrocinador principal 2018 2019 presentación uniforme»: ningún medio con fecha nombra el sponsor del frente", "resultado": "sin-dato" },
+            { "clase": "base-camisetas", "donde": "https://www.footballkitarchive.com/categoria-primera-b-kits-2018-l522/ (ficha Tigres FC 2018 home kit; 403 al abrirla; el resumen de la búsqueda no trae el campo Sponsor)", "resultado": "inaccesible" }
+          ]
+        }
+      }
+    },
+    "2019": { "estadio": "Estadio Metropolitano de Techo", "capacidad": 10000, "fuente": "estadio y capacidad: https://es.wikipedia.org/wiki/Tigres_F%C3%BAtbol_Club (sección Estadio: de 2017 a la actualidad Metropolitano de Techo, 10.000)",
+      "sin-fuente": {
+        "sponsor": {
+          "buscado": "2026-10-27",
+          "por": "Claude (subagente Sonnet)",
+          "intentos": [
+            { "clase": "informe-anual", "donde": "Clubes/Colombia/Tigres FC/*.md (no hay documento de 2019), grep -i patroc|sponsor: ninguna coincidencia del ejercicio", "resultado": "sin-dato" },
+            { "clase": "prensa", "donde": "búsquedas «footballkitarchive Tigres FC Colombia 2019 home kit sponsor» y «Tigres FC Bogotá camiseta patrocinador principal 2018 2019 presentación uniforme»: ningún medio con fecha nombra el sponsor del frente", "resultado": "sin-dato" },
+            { "clase": "base-camisetas", "donde": "https://www.footballkitarchive.com/ (ficha Tigres FC 2019; 403; no apareció en la búsqueda)", "resultado": "inaccesible" }
+          ]
+        }
+      }
+    },
+    "2020": { "estadio": "Estadio Metropolitano de Techo", "capacidad": 10000, "fuente": "estadio y capacidad: https://es.wikipedia.org/wiki/Tigres_F%C3%BAtbol_Club (sección Estadio: de 2017 a la actualidad Metropolitano de Techo, 10.000)",
+      "sin-fuente": {
+        "sponsor": {
+          "buscado": "2026-10-27",
+          "por": "Claude (subagente Sonnet)",
+          "intentos": [
+            { "clase": "informe-anual", "donde": "Clubes/Colombia/Tigres FC/*.md (no hay documento de 2020), grep -i patroc|sponsor: ninguna coincidencia del ejercicio", "resultado": "sin-dato" },
+            { "clase": "prensa", "donde": "búsquedas «Tigres FC Bogotá camiseta patrocinador principal 2018 2019 presentación uniforme» y «Tigres FC Primera B 2022 BetPlay patrocinio camiseta»: ningún medio con fecha nombra un sponsor del frente en 2020", "resultado": "sin-dato" },
+            { "clase": "base-camisetas", "donde": "https://www.footballkitarchive.com/ (ficha Tigres FC 2020; 403)", "resultado": "inaccesible" }
+          ]
+        }
+      }
+    },
+    "2021": { "estadio": "Estadio Metropolitano de Techo", "capacidad": 10000, "fuente": "estadio y capacidad: https://es.wikipedia.org/wiki/Tigres_F%C3%BAtbol_Club (sección Estadio: de 2017 a la actualidad Metropolitano de Techo, 10.000)",
+      "sin-fuente": {
+        "sponsor": {
+          "buscado": "2026-10-27",
+          "por": "Claude (subagente Sonnet)",
+          "intentos": [
+            { "clase": "informe-anual", "donde": "Clubes/Colombia/Tigres FC/dictamen-revisor-fiscal-2021.md línea 70: «Se firma contrato de patrocinio con Corredor Empresarial S.A «BetPlay»», anticipo de $100.000.000 descontado en los 4 años del contrato; no dice el período, que sea de camiseta ni que sea de 2021 (el contrato se firma a fines de 2021 o inicios de 2022: la misma sección habla de dinero recibido en el primer bimestre de 2022)", "resultado": "sin-dato" },
+            { "clase": "prensa", "donde": "búsquedas «Tigres FC BetPlay patrocinador oficial Torneo BetPlay Primera B Tigres Fútbol Club camiseta 2022 presentó» y «Tigres FC Bogotá camiseta patrocinador principal 2018 2019 presentación uniforme»: ningún medio con fecha nombra el sponsor del frente en 2021", "resultado": "sin-dato" },
+            { "clase": "base-camisetas", "donde": "https://www.footballkitarchive.com/ (ficha Tigres FC 2021; 403)", "resultado": "inaccesible" }
+          ]
+        }
+      }
+    },
+    "2022": { "estadio": "Estadio Metropolitano de Techo", "capacidad": 10000, "fuente": "estadio y capacidad: https://es.wikipedia.org/wiki/Tigres_F%C3%BAtbol_Club (sección Estadio: de 2017 a la actualidad Metropolitano de Techo, 10.000). La marca no figura para 2022",
+      "sin-fuente": {
+        "sponsor": {
+          "buscado": "2026-10-27",
+          "por": "Claude (subagente Sonnet)",
+          "intentos": [
+            { "clase": "informe-anual", "donde": "Clubes/Colombia/Tigres FC/dictamen-revisor-fiscal-2021.md línea 70: contrato de patrocinio con Corredor Empresarial S.A «BetPlay» por 4 años; no dice que sea de camiseta ni cuál va en el frente; la tabla de indumentaria de es.wikipedia (2022-2023) lista BetPlay y Spinning Center GYM sin decir cuál va en el frente", "resultado": "sin-dato" },
+            { "clase": "prensa", "donde": "búsquedas «Tigres FC BetPlay patrocinador oficial Torneo BetPlay Primera B Tigres Fútbol Club camiseta 2022 presentó»: ningún medio con fecha nombra el sponsor del frente", "resultado": "sin-dato" },
+            { "clase": "base-camisetas", "donde": "Football Kit Archive por Exa (tools/sponsor-fka.mjs --buscar, nombres «Tigres FC», «Tigres Fútbol Club», «Tigres Soacha», «Tigres»): sin ficha de Tigres FC de 2022 (solo de Tigres UANL, Tigres do Brasil y CA Tigre)", "resultado": "sin-dato" }
+          ]
+        }
+      }
+    },
+    "2024": { "estadio": "Estadio Metropolitano de Techo", "capacidad": 10000, "fuente": "estadio y capacidad: https://es.wikipedia.org/wiki/Tigres_F%C3%BAtbol_Club (sección Estadio: Metropolitano de Techo, 10.000; desde 2023 ocasionalmente Parque Estadio Olaya Herrera). La marca de 2024 no se carga: D10/Boman es de fines de 2024",
+      "sin-fuente": {
+        "sponsor": {
+          "buscado": "2026-10-27",
+          "por": "Claude (subagente Sonnet)",
+          "intentos": [
+            { "clase": "informe-anual", "donde": "Clubes/Colombia/Tigres FC/dictamen-revisor-fiscal-2024.md líneas 273-278: nombra a D10 (de BOMAN, firmado en diciembre de 2024: indumentaria de 2025), ELECTROLIT y SPINNING CENTER, sin decir cuál va en el frente; el contrato de 4 años con BetPlay (dictamen 2021, línea 70) no dice que sea de camiseta", "resultado": "sin-dato" },
+            { "clase": "prensa", "donde": "búsqueda «Tigres FC Bogotá camiseta patrocinador principal 2018 2019 presentación uniforme» y las del año 2022: ningún medio con fecha nombra el sponsor del frente en 2024", "resultado": "sin-dato" },
+            { "clase": "base-camisetas", "donde": "https://www.footballkitarchive.com/tigres-fc-2024-home-kit/266457/ (leída por Exa): campo Sponsor ausente («sin campo Sponsor»)", "resultado": "sin-dato" }
+          ]
+        }
+      }
+    }
   }
 }
