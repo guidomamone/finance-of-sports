@@ -12,6 +12,10 @@ const cucutadeportivoCoRevenueLinesByYear = {
     {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":7582.398,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":10.435,"disclosureLevel":"aggregated"},
   ],
+  2019: [
+    {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":9695.298,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":231.448,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const cucutadeportivoCoExpenseLinesByYear = {
@@ -33,12 +37,19 @@ const cucutadeportivoCoExpenseLinesByYear = {
     {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-3267.055,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-1019.56,"disclosureLevel":"aggregated"},
   ],
+  2019: [
+    {"rawLabel":"Costo de ventas","normalizedCategory":"other_expenses","amountNative":0,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-2660.624,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-5663.186,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-1813.229,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const cucutadeportivoCoFiscalYearMeta = {
   2016: {"currency":"COP","sourceId":"cucutadeportivo-co-siis-estado-2016","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2016-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":3935.424,"officialTotalExpenses":4342.7,"officialPAT":-407.276,"extraRows":[{"label":"Ingresos financieros","value":0},{"label":"Costos financieros","value":0},{"label":"Ingreso (gasto) por impuestos","value":0}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":3216.538,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":971.008,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
   2017: {"currency":"COP","sourceId":"cucutadeportivo-co-siis-estado-2017","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2017-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":4036.652,"officialTotalExpenses":4951.626,"officialPAT":-914.974,"extraRows":[{"label":"Ingresos financieros","value":0},{"label":"Costos financieros","value":0},{"label":"Ingreso (gasto) por impuestos","value":0}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":3870.273,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":1421.772,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
   2018: {"currency":"COP","sourceId":"cucutadeportivo-co-siis-estado-2018","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2018-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":7592.833,"officialTotalExpenses":7578.587,"officialPAT":14.246,"extraRows":[{"label":"Ingresos financieros","value":0},{"label":"Costos financieros","value":0}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":7582.398,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":3291.972,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
+  2019: {"currency":"COP","sourceId":"cucutadeportivo-co-siis-estado-2019","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2019-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":9926.746,"officialTotalExpenses":10137.039,"officialPAT":-210.293,"extraRows":[{"label":"Ingresos financieros","value":0},{"label":"Costos financieros","value":0},{"label":"Ingreso (gasto) por impuestos","value":0}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":9695.298,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":2660.624,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
 };
 
 const cucutadeportivoCoPresupuestoOverlayByYear = {};
@@ -55,6 +66,6 @@ window.CLUB_GENERIC_DATA["cucutadeportivo-co"] = {
   presupuestoOverlayByYear: cucutadeportivoCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"cucutadeportivo-co-siis-estado-2016":{"id":"cucutadeportivo-co-siis-estado-2016","clubId":"cucutadeportivo-co","title":"Cúcuta Deportivo Fútbol Club S.A. — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cucuta Deportivo/siis-estado-2016.pdf"},"cucutadeportivo-co-siis-estado-2017":{"id":"cucutadeportivo-co-siis-estado-2017","clubId":"cucutadeportivo-co","title":"Cúcuta Deportivo Fútbol Club S.A. — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cucuta Deportivo/siis-estado-2017.pdf"},"cucutadeportivo-co-siis-estado-2018":{"id":"cucutadeportivo-co-siis-estado-2018","clubId":"cucutadeportivo-co","title":"Cúcuta Deportivo Fútbol Club S.A. — siis-estado-2018 (ejercicio 2018)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cucuta Deportivo/siis-estado-2018.pdf"}});
+Object.assign(sources, {"cucutadeportivo-co-siis-estado-2016":{"id":"cucutadeportivo-co-siis-estado-2016","clubId":"cucutadeportivo-co","title":"Cúcuta Deportivo Fútbol Club S.A. — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cucuta Deportivo/siis-estado-2016.pdf"},"cucutadeportivo-co-siis-estado-2017":{"id":"cucutadeportivo-co-siis-estado-2017","clubId":"cucutadeportivo-co","title":"Cúcuta Deportivo Fútbol Club S.A. — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cucuta Deportivo/siis-estado-2017.pdf"},"cucutadeportivo-co-siis-estado-2018":{"id":"cucutadeportivo-co-siis-estado-2018","clubId":"cucutadeportivo-co","title":"Cúcuta Deportivo Fútbol Club S.A. — siis-estado-2018 (ejercicio 2018)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cucuta Deportivo/siis-estado-2018.pdf"},"cucutadeportivo-co-siis-estado-2019":{"id":"cucutadeportivo-co-siis-estado-2019","clubId":"cucutadeportivo-co","title":"Cúcuta Deportivo Fútbol Club S.A. — siis-estado-2019 (ejercicio 2019)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Cucuta Deportivo/siis-estado-2019.pdf"}});
 
 memberCountByClub["cucutadeportivo-co"] = null;

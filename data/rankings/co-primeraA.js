@@ -258,7 +258,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2019: {
     leagueSize: 20,
-    sinDato: ["cucutadeportivo-co"],
     wiki: {"t":"2019 Categoría Primera A season","lang":"en","at":"2026-10-02","n":20},
     clubs: [
       { id:"americadecali-co", revenue:13.029, reportType:"official_balance_sheet",
@@ -288,6 +287,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"alianzafc-co", revenue:3.183, reportType:"official_balance_sheet",
         sourceId:"alianzafc-co-siis-estado-2019",
         mix:[["Comercial / Sponsors",0.322],["Estadio",0.327],["Televisión",1.622],["Premios por competencias",0.087],["Venta de Jugadores",0.568],["Otras actividades (educación y otros deportes)",0.045],["Subsidios y donaciones",0.026],["Otros ingresos",0.186]] },
+      { id:"cucutadeportivo-co", revenue:3.029, reportType:"official_balance_sheet",
+        sourceId:"cucutadeportivo-co-siis-estado-2019",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.958],["Otros ingresos",0.071]] },
     ],
   },
   2018: {
