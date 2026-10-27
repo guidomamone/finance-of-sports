@@ -27,9 +27,9 @@
 // Admin/registros/categorias-aprendidas.jsonl); una convención de un grupo de países (tools/grupos-pais.mjs) la pasa a regla una sesión.
 //
 // USO:
-//   node tools/cola.mjs                                  los casos pendientes, agrupados por documento, con qué abrir y qué mirar
+//   node tools/cola.mjs                                  los pendientes por documento, con qué abrir y qué mirar
 //   node tools/cola.mjs --todas                          también los respondidos
-//   node tools/cola.mjs --lista Admin/lotes/lote-NN.txt  solo los casos de los documentos de ese lote; también --dir "Clubes/<País>/<Club>"
+//   node tools/cola.mjs --lista Admin/lotes/lote-NN.txt  solo los de ese lote; también --dir "Clubes/<País>/<Club>" y --tipo gestion|categoria
 //   node tools/cola.mjs --responder <id> aceptar|corregir|preguntar-club [--valor "1.234.567"] [--nota "…"] --evidencia "ruta.md:12-30"|ninguna --seguridad alta|media|baja --causa lectura-del-documento|regla-escrita|otra|…
 //     (las tres últimas son obligatorias, sin ellas no se guarda; --evidencia es de un .md del club, «ninguna» si la fuente es una web u otro archivo; todas las causas: cola-respuesta.mjs)
 //   node tools/cola.mjs --corregir-categoria "<pdf>" "<etiqueta>" <categoría> --nota "..."   (fija la categoría de una fila, ver abajo)
@@ -405,21 +405,20 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const p = c.pdf || '';
     if (docsLista && !(docsLista.includes(p) || (p.endsWith('/') && docsLista.some((d) => d.startsWith(p))))) return false;
     if (dirFiltro && !(p.startsWith(dirFiltro) || (p.endsWith('/') && dirFiltro.startsWith(p)))) return false;
+    if (flag('--tipo') && c.motivo !== flag('--tipo')) return false; // --tipo: el motivo (gestion, categoria…)
     return true;
   };
   const lista = [...casos.values()].filter((c) => (A.includes('--todas') || pendiente(c, L)) && delFiltro(c));
   if (!lista.length) { console.log(docsLista || dirFiltro ? 'No hay casos en la cola para ese lote o carpeta.' : 'La cola está vacía.'); process.exit(0); }
   const porDoc = new Map(); for (const c of lista) { if (!porDoc.has(c.pdf)) porDoc.set(c.pdf, []); porDoc.get(c.pdf).push(c); }
-  console.log(`COLA DE REVISIÓN: ${lista.length} caso(s) en ${porDoc.size} documento(s)${A.includes('--todas') ? '' : ' pendientes'}\n`);
+  console.log(`COLA DE REVISIÓN: ${lista.length} caso(s) en ${porDoc.size} documento(s)${A.includes('--todas') ? '' : ' pendientes'}: ${Object.entries(lista.reduce((n, c) => ({ ...n, [c.motivo]: (n[c.motivo] || 0) + 1 }), {})).map(([m, n]) => `${n} ${m}`).join(' · ')}\n`);
   for (const [pdf, cs] of porDoc) {
     console.log(`## ${pdf}`);
     for (const c of cs) {
       const r = resp.get(c.id);
       console.log(`  [${c.id}] etapa ${c.etapa} · ${c.motivo}${r ? `   -> RESPONDIDO: ${r.decision}${r.valor ? ` ${r.valor}` : ''}` : cerrado.get(c.id) ? '   -> CERRADO: obsoleto' : ''}`);
       console.log(`      ${(c.motivo.startsWith('duda-') || c.motivo === 'categoria' || c.motivo === 'perimetro' || c.motivo === 'perfil') && c.propuesta ? 'Pregunta' : 'Qué mirar'}: ${c.que}`);
-      // la IA escribe la pregunta de una duda en dos formas: "¿Se carga X?" (sí = se carga) y "¿Se deja
-      // afuera X?" (sí = queda afuera), con la misma propuesta "sí": el mismo criterio daba `aceptar` o `corregir "no"` y confundía. Solo se agrega una
-      // aclaración al listado; lo guardado (la pregunta, la propuesta, las respuestas) no cambia, porque verificar.mjs lee las dos formas.
+      // "¿Se carga X?" (sí = se carga) o "¿Se deja afuera X?" (sí = queda afuera) con la misma propuesta «sí»: solo se aclara en el listado; lo guardado no cambia (verificar.mjs lee las dos formas).
       if (/^¿\s*Se\s+dejan?\s+afuera\b/i.test(String(c.que || ''))) console.log('      (en esta pregunta «sí» = queda AFUERA de la carga; «no» = se carga)');
       if (c.pagina) console.log(`      ${textoPagina(c)}`);
       if (c.lineas) console.log(`      En la transcripción (${c.md}), líneas ${c.lineas[0]}-${c.lineas[1]}.`);

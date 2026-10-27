@@ -30,6 +30,8 @@ const club = A.find((a, i) => !a.startsWith('--') && !['--rehacer-anio', '--brie
 const leer = (rel) => { try { return JSON.parse(readFileSync(join(ROOT, rel), 'utf8')); } catch { return null; } };
 const cfg = leer('tools/siis-clubes.json'); const resumen = leer(`Admin/sourcing/${cfg.pais}/siis-resumen.json`);
 const iso = 'co';
+const ENSAYO = A.includes('--ensayo'); // con --avanzar o --preparar: dice qué haría y no escribe nada
+const slugClub = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ''); // el clubId que da el alta a un club nuevo: slug de la carpeta + «-co» (alta-club.mjs)
 
 // ¿Wikipedia ya trae estadio y sponsor de ese año? (el ensayo de estadio-sponsor.mjs, sin escribir): entonces no hace falta el subagente ni una entrada en contexto-manual.json
 function wikipediaCubre(clubId, a, liga) {
@@ -60,8 +62,12 @@ function estadoDe(carpeta) {
   const cargados = new Set((json?.years || []).map((y) => String(y.fiscal_year)));
   const ligas = c.clubId ? [...(readFileSync(join(ROOT, `data/club-leagues/${iso}.js`), 'utf8').match(new RegExp(`'${c.clubId}':\\s*\\{([^}]*)\\}`)) || [, ''])[1].matchAll(/(\d{4}):/g)].map((m) => m[1]) : [];
   const ligaDe = c.clubId ? Object.fromEntries([...(readFileSync(join(ROOT, `data/club-leagues/${iso}.js`), 'utf8').match(new RegExp(`'${c.clubId}':\\s*\\{([^}]*)\\}`)) || [, ''])[1].matchAll(/(\d{4}):\s*'([^']+)'/g)].map((m) => [m[1], m[2]])) : {};
-  const ctx = (c.clubId && leer('tools/contexto-manual.json')?.[c.clubId]) || {};
-  const aud = existsSync(join(ROOT, 'Admin/registros/auditoria.jsonl')) && c.clubId ? new Set(readFileSync(join(ROOT, 'Admin/registros/auditoria.jsonl'), 'utf8').split('\n').filter((l) => l.includes(`"${c.clubId}"`)).map((l) => { try { return String(JSON.parse(l).anio); } catch { return null; } })) : new Set();
+  const idEf = c.clubId || `${slugClub(carpeta)}-${iso}`; // el del alta, o el previsto si todavía no tiene (lo adelantado con --preparar se guarda con ese id)
+  const hayGestion = new RegExp(`'${idEf}'\\s*:`).test(readFileSync(join(ROOT, `data/gestiones/${iso}.js`), 'utf8'));
+  const ctx = leer('tools/contexto-manual.json')?.[idEf] || {};
+  const añosAud = (rel) => (existsSync(join(ROOT, rel)) ? new Set(readFileSync(join(ROOT, rel), 'utf8').split('\n').filter((l) => l.includes(`"${idEf}"`)).map((l) => { try { return String(JSON.parse(l).anio); } catch { return null; } })) : new Set());
+  const audAdel = añosAud('Admin/registros/auditoria-adelantada.jsonl'); // escritas antes de la carga: auditoria.mjs las rechaza hasta que el año tenga balance (club-siis --mudar-auditor)
+  const aud = new Set([...añosAud('Admin/registros/auditoria.jsonl'), ...audAdel]);
   const cola = pendientes().filter((p) => p.pdf.startsWith(`Clubes/${cfg.pais}/${carpeta}/`));
   const filas = anios.map((a) => {
     const md = join(dir, `siis-estado-${a}.md`); const ver = leer(`Generados/${cfg.pais}/${carpeta}/siis-estado-${a}.verificacion.json`);
@@ -72,7 +78,7 @@ function estadoDe(carpeta) {
       liga: ligas.includes(a), ctx: !!ctx[a] || (!cargados.has(a) && ligas.includes(a) && wikipediaCubre(c.clubId, a, ligaDe[a])), cargado: cargados.has(a), aud: aud.has(a), dictamen: existsSync(join(dir, `dictamen-revisor-fiscal-${a}.md`)),
     };
   });
-  return { carpeta, c, dir, filas, cola, ligaDe };
+  return { carpeta, c, dir, filas, cola, ligaDe, idEf, hayGestion, audAdel };
 }
 const cmd = (s) => `    ${s}`;
 
@@ -102,16 +108,17 @@ if (flag('--rehacer-anio')) {
 }
 
 const primerMd = filas.find((f) => f.siis); const sociedad = (primerMd ? (readFileSync(join(e.dir, `siis-estado-${primerMd.a}.md`), 'utf8').match(/^# (.+?) — NIT/m) || [, club])[1] : club);
-const conGestion = !!c.clubId && new RegExp(`'${c.clubId}'\\s*:`).test(readFileSync(join(ROOT, `data/gestiones/${iso}.js`), 'utf8'));
+const conGestion = e.hayGestion;
 const sinAnioCtx = filas.filter((f) => !f.ctx && !f.cargado).map((f) => f.a);
 const dictSinMd = readdirSync(e.dir).filter((x) => /^dictamen-revisor-fiscal-\d{4}\.pdf$/.test(x) && !existsSync(join(e.dir, x.replace(/\.pdf$/, '.md')))).map((x) => x.match(/\d{4}/)[0]);
-const BRIEFS = { 'estadio-sponsor': { anios: sinAnioCtx, hace: 'estadio y sponsor' }, gestiones: { anios: filas.map((f) => f.a), hace: 'quién condujo el club' }, auditor: { anios: filas.filter((f) => f.cargado && !f.aud && f.dictamen).map((f) => f.a), hace: 'la línea del auditor' } };
+const BRIEFS = { 'estadio-sponsor': { anios: sinAnioCtx, hace: 'estadio y sponsor' }, gestiones: { anios: filas.map((f) => f.a), hace: 'quién condujo el club' }, auditor: { anios: filas.filter((f) => !f.aud && f.dictamen).map((f) => f.a), hace: 'la línea del auditor' } };
 if (flag('--brief')) {
   const k = flag('--brief'); const b = BRIEFS[k]; if (!b) { console.error(`--brief: ${Object.keys(BRIEFS).join(' | ')}`); process.exit(1); }
   const plantilla = readFileSync(join(ROOT, 'Admin/briefs-subagentes-siis.md'), 'utf8'); const i = plantilla.indexOf(`## BRIEF ${k}`);
   if (i < 0) { console.error(`Sin plantilla «${k}» en Admin/briefs-subagentes-siis.md`); process.exit(1); }
   const resto = plantilla.slice(i).split('\n').slice(1).join('\n'); const cuerpo = resto.split(/\n## BRIEF /)[0].trim();
-  console.log(cuerpo.replaceAll('{{CLUB}}', club).replaceAll('{{CLUBID}}', c.clubId || '<clubId>').replaceAll('{{SOCIEDAD}}', sociedad).replaceAll('{{CARPETA}}', `Clubes/${cfg.pais}/${club}`).replaceAll('{{ANIOS}}', b.anios.join(', ')).replaceAll('{{LIGAS}}', b.anios.map((a) => `${a} ${e.ligaDe[a] || '(sin liga cargada: se pone a mano)'}`).join(', ')).replaceAll('{{HOY}}', new Date().toISOString().slice(0, 10)));
+  const sinCargar = k === 'auditor' && b.anios.some((a) => !filas.find((f) => f.a === a)?.cargado); // adelantado: el club o el año todavía no están en el sitio
+  console.log((sinCargar ? `${cuerpo.replaceAll('Admin/registros/auditoria.jsonl', 'Admin/registros/auditoria-adelantada.jsonl')}\nOJO, adelantado: el club o alguno de esos años todavía NO está cargado en el sitio. Escribí en Admin/registros/auditoria-adelantada.jsonl (no en auditoria.jsonl: auditoria.mjs rechaza una línea de un ejercicio sin balance) y NO corras node tools/auditoria.mjs. Validá a mano las citas (el .md del mismo ejercicio, la línea y el texto literal); la sesión muda las líneas a auditoria.jsonl y valida al cargar el año (node tools/club-siis.mjs "${club}" --mudar-auditor).` : cuerpo).replaceAll('{{CLUB}}', club).replaceAll('{{CLUBID}}', e.idEf).replaceAll('{{SOCIEDAD}}', sociedad).replaceAll('{{CARPETA}}', `Clubes/${cfg.pais}/${club}`).replaceAll('{{ANIOS}}', b.anios.join(', ')).replaceAll('{{LIGAS}}', b.anios.map((a) => `${a} ${e.ligaDe[a] || '(sin liga cargada: se pone a mano)'}`).join(', ')).replaceAll('{{HOY}}', new Date().toISOString().slice(0, 10)));
   process.exit(0);
 }
 
@@ -137,6 +144,8 @@ function pesoCosto(a) { // peso de «Costo de ventas» en los gastos del año, d
   for (const l of readFileSync(md, 'utf8').split('\n')) { const x = l.match(/^\| (Costo de ventas|Gastos de ventas|Gastos de administración|Otros gastos) \| ([^|]+) \|/); if (x) v[x[1]] = n(x[2]); }
   const tot = Object.values(v).reduce((s, y) => s + y, 0); return tot && v['Costo de ventas'] != null ? { pct: Math.round(100 * v['Costo de ventas'] / tot) } : {};
 }
+if (A.includes('--mudar-auditor')) { const { mudarAuditor } = await import('./club-siis-preparar.mjs'); const n = mudarAuditor({ ROOT, clubId: e.idEf, anios: filas.filter((f) => f.cargado).map((f) => f.a), ENSAYO }); console.log(n ? '' : 'Ninguna línea del auditor adelantada para un año ya cargado.'); process.exit(0); }
+if (A.includes('--preparar')) { const { preparar } = await import('./club-siis-preparar.mjs'); await preparar({ club, cfg, ROOT, estadoDe, evaluar, ENSAYO }); process.exit(0); } // lo que se adelanta sin alta ni cambios en el sitio
 if (A.includes('--evaluar')) {
   const ev = evaluar();
   console.log(`${club} · NIT ${c.nit} · ${ev.veredicto}\n`);
@@ -156,7 +165,8 @@ if (A.includes('--avanzar')) {
   const ev = evaluar(); console.log(`=== --avanzar ${club} · ${ev.veredicto} ===`);
   if (ev.veredicto === 'DESCARTAR') { console.log(`${ev.motivos.join('; ')}. No se avanza (node tools/club-siis.mjs ${q} --evaluar).`); process.exit(0); }
   if (ev.veredicto === 'REVISAR') console.log(`REVISAR: ${ev.motivos[0]}\n(se sigue; si no es un club, frená acá)`);
-  const run = (args) => { console.log(`\n$ node ${args.join(' ')}`); try { const out = execFileSync('node', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1e8, stdio: ['ignore', 'pipe', 'pipe'] }); console.log(out.trim().split('\n').slice(-6).join('\n')); return out; } catch (err) { console.log(`${String(err.stdout || '').trim().split('\n').slice(-8).join('\n')}\n${String(err.stderr || '').trim()}`); console.log(`\nSE FRENÓ en: node ${args.join(' ')}`);
+  console.log(ENSAYO ? '(ENSAYO: dice qué correría, no escribe nada)' : 'OJO: --avanzar ESCRIBE (estados de SIIS, alta, dictámenes, categorías de la cola, lista del lote); con --ensayo solo dice qué haría.');
+  const run = (args) => { console.log(`\n$ node ${args.join(' ')}${ENSAYO ? '   (ensayo: no se corre)' : ''}`); if (ENSAYO) return ''; try { const out = execFileSync('node', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1e8, stdio: ['ignore', 'pipe', 'pipe'] }); console.log(out.trim().split('\n').slice(-6).join('\n')); return out; } catch (err) { console.log(`${String(err.stdout || '').trim().split('\n').slice(-8).join('\n')}\n${String(err.stderr || '').trim()}`); console.log(`\nSE FRENÓ en: node ${args.join(' ')}`);
     const casos = pendientes().filter((p) => p.pdf.startsWith(`Clubes/${cfg.pais}/${club}`)); // el alta frena con una pregunta del nombre legal (SIIS a veces lo imprime con errores): va a la cola
     if (casos.length) console.log(`\nPregunta(s) en la cola del club: ${casos.map((p) => p.id).join(', ')}. Contestala con el nombre bien escrito y volvé a correr --avanzar:\n  node tools/cola.mjs --responder <id> corregir --valor "<nombre legal>" --nota "…" --evidencia "Clubes/${cfg.pais}/${club}/siis-estado-AAAA.md:3" --seguridad alta --causa lectura-del-documento`);
     process.exit(1); } };
@@ -187,17 +197,19 @@ if (A.includes('--avanzar')) {
   if (sinEstado.length) { for (const a of sinEstado) run(['tools/siis-estado.mjs', '--club', club, '--anio', a, '--escribir']); s = estadoDe(club); }
   if (!s.c.clubId) {
     const ultimo = s.filas.filter((f) => f.siis).map((f) => f.a).pop();
-    const out = run(['tools/alta-club.mjs', `Clubes/${cfg.pais}/${club}/siis-estado-${ultimo}.pdf`, '--escribir']); const id = (out.match(/data\/co\/([\w-]+)\.json/) || [])[1];
-    if (!id) { console.log('No pude leer el clubId del alta: sumalo a tools/siis-clubes.json a mano.'); process.exit(1); }
-    const { writeFileSync } = await import('node:fs'); const ruta = join(ROOT, 'tools/siis-clubes.json'); const t = readFileSync(ruta, 'utf8');
+    const out = run(['tools/alta-club.mjs', `Clubes/${cfg.pais}/${club}/siis-estado-${ultimo}.pdf`, '--escribir']); const id = (out.match(/data\/co\/([\w-]+)\.json/) || [])[1] || (ENSAYO ? s.idEf : null);
+    if (ENSAYO) { console.log(`(ensayo) el alta daría el clubId ${id}; se sumaría a tools/siis-clubes.json`); s.c.clubId = id; }
+    else if (id !== s.idEf && id) console.log(`\nOJO: el alta dio el clubId ${id} y lo adelantado con --preparar (gestiones, estadio y sponsor, auditor) está con ${s.idEf}: hay que renombrar esas claves.`);
+    if (ENSAYO) { /* nada que escribir */ } else if (!id) { console.log('No pude leer el clubId del alta: sumalo a tools/siis-clubes.json a mano.'); process.exit(1); }
+    if (!ENSAYO) { const ruta = join(ROOT, 'tools/siis-clubes.json'); const t = readFileSync(ruta, 'utf8');
     const t2 = t.replace(new RegExp(`("${club.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}":\\s*\\{[^}]*?)(\\s*\\})`), `$1, "clubId": "${id}"$2`); if (t2 === t) { console.log(`No pude sumar el clubId ${id} a siis-clubes.json: hacelo a mano.`); process.exit(1); }
-    writeFileSync(ruta, t2); console.log(`clubId ${id} sumado a tools/siis-clubes.json.\nA MANO, ahora: mirar el nombre legal en data/clubs.js (en SIIS la sociedad figura como «${(readFileSync(join(s.dir, `siis-estado-${ultimo}.md`), 'utf8').match(/^# (.+?) — NIT/m) || [, club])[1]}») y poner el color de marca; commitear el alta (git add data index.html club fuentes liga …) antes del lote con --cargar.`); s.c.clubId = id;
+    writeFileSync(ruta, t2); console.log(`clubId ${id} sumado a tools/siis-clubes.json.\nA MANO, ahora: mirar el nombre legal en data/clubs.js (en SIIS la sociedad figura como «${(readFileSync(join(s.dir, `siis-estado-${ultimo}.md`), 'utf8').match(/^# (.+?) — NIT/m) || [, club])[1]}») y poner el color de marca; commitear el alta (git add data index.html club fuentes liga …) antes del lote con --cargar.`); s.c.clubId = id; }
   }
   { // la liga de los años que no la tienen, donde el roster de Wikipedia la da con el nombre exacto; el resto queda a mano
     const sinLigaAnios = estadoDe(club).filas.filter((f) => !f.liga && !f.cargado).map((f) => f.a);
     if (s.c.clubId && sinLigaAnios.length) {
       const m = ligasExactas(club, sinLigaAnios, s.c.clubId); const sin = sinLigaAnios.filter((a) => !m[a]);
-      if (Object.keys(m).length) { escribirLigas(s.c.clubId, m); console.log(`\nLiga escrita en data/club-leagues/co.js (roster de Wikipedia, nombre exacto): ${Object.entries(m).map(([a, l]) => `${a} ${l}`).join(', ')}.`); }
+      if (Object.keys(m).length) { if (!ENSAYO) escribirLigas(s.c.clubId, m); console.log(`\n${ENSAYO ? '(ensayo, no se escribe) ' : ''}Liga escrita en data/club-leagues/co.js (roster de Wikipedia, nombre exacto): ${Object.entries(m).map(([a, l]) => `${a} ${l}`).join(', ')}.`); }
       if (sin.length) console.log(`Liga a mano (sin coincidencia exacta en el roster): ${sin.join(', ')}.`);
     }
   }
@@ -212,7 +224,8 @@ if (A.includes('--avanzar')) {
   if (sinCargar.length) {
     const { readdirSync: ls } = await import('node:fs'); const listas = ls(join(ROOT, 'Admin/lotes')).filter((x) => /^lote-\d+\.txt$/.test(x)).sort(); const marca = `Clubes/${cfg.pais}/${club}/siis-estado-`;
     let lista = listas.reverse().find((x) => readFileSync(join(ROOT, 'Admin/lotes', x), 'utf8').includes(marca)); lista = lista && `Admin/lotes/${lista}`;
-    if (!lista) { const salida = execFileSync('node', [join(ROOT, 'tools', 'lote-nuevo.mjs'), `${club} SIIS`], { cwd: ROOT, encoding: 'utf8' }); lista = (salida.match(/Admin\/lotes\/[\w.-]+\.txt/) || [])[0]; const { appendFileSync } = await import('node:fs'); appendFileSync(join(ROOT, lista), sinCargar.map((a) => `${marca}${a}.pdf`).join('\n') + '\n'); console.log(`\nLista creada: ${lista}`); } else console.log(`\nLista: ${lista}`);
+    if (!lista && ENSAYO) { lista = '<lista nueva>'; console.log('\n(ensayo) se crearía una lista de lote con los siis-estado-AAAA.pdf por cargar'); }
+    else if (!lista) { const salida = execFileSync('node', [join(ROOT, 'tools', 'lote-nuevo.mjs'), `${club} SIIS`], { cwd: ROOT, encoding: 'utf8' }); lista = (salida.match(/Admin\/lotes\/[\w.-]+\.txt/) || [])[0]; const { appendFileSync } = await import('node:fs'); appendFileSync(join(ROOT, lista), sinCargar.map((a) => `${marca}${a}.pdf`).join('\n') + '\n'); console.log(`\nLista creada: ${lista}`); } else console.log(`\nLista: ${lista}`);
     run(['tools/inventario-transcripciones.mjs', '--solo', `Clubes/${cfg.pais}/${club}`]);
     const g = !!s.c.clubId && new RegExp(`'${s.c.clubId}'\\s*:`).test(readFileSync(join(ROOT, `data/gestiones/${iso}.js`), 'utf8'));
     const juicioFaltante = () => { // lo que todavía pide a una persona o a un subagente, con el estado de ahora
@@ -242,6 +255,7 @@ if (A.includes('--avanzar')) {
     for (const p of estadoDe(club).cola.filter((x) => x.motivo === 'gestion')) run(['tools/cola.mjs', '--responder', p.id, 'aceptar', '--nota', 'La gestión del club ya está cargada en data/gestiones/co.js; la pregunta es de antes de cargarla.', '--evidencia', 'ninguna', '--seguridad', 'alta', '--causa', 'regla-escrita']);
   }
   contestarReexpresiones();
+  { const s3 = estadoDe(club); if (s3.c.clubId && !ENSAYO) { const { mudarAuditor } = await import('./club-siis-preparar.mjs'); mudarAuditor({ ROOT, clubId: s3.c.clubId, anios: s3.filas.filter((f) => f.cargado).map((f) => f.a), ENSAYO }); } } // lo del auditor adelantado de años que ya están cargados
   console.log('\n=== lo que falta ==='); process.stdout.write(execFileSync('node', [join(ROOT, 'tools/club-siis.mjs'), club], { cwd: ROOT, encoding: 'utf8' }));
   // lo que quedó sin commitear: los comandos, cada uno en su llamada de Bash (el hook de commit audita antes de ejecutar el comando entero: publicar y commitear juntos fallan por asset-v-sin-subir)
   if (execFileSync('git', ['status', '--porcelain'], { cwd: ROOT, encoding: 'utf8' }).trim()) console.log(`\n=== para commitear (una llamada de Bash cada uno) ===\n1. node tools/publicar.mjs\n2. git add -A club fuentes liga data fuentes.html index.html tools/contexto-manual.json Admin "Clubes/${cfg.pais}/${club}" "Generados/${cfg.pais}/${club}"\n3. git commit -m "${club}: <años> desde SIIS (463)"`);
@@ -270,6 +284,8 @@ if (colaN.length) paso(`Contestar la cola (${colaN.length} casos): con la regla 
 if (sinCarga.length) paso(`Cargar ${sinCarga.join(', ')} (un commit por año; antes, lo de los subagentes commiteado)`, 'node tools/lote.mjs --lista <lista> --ejecutar --cargar', 'node tools/publicar.mjs');
 if (sinDict.length && !dictSinMd.length) console.log(`   (sin dictamen del revisor fiscal: ${sinDict.join(', ')}; es de sourcing, Admin/sourcing/${cfg.pais}/_notas-generales.md)`);
 if (sinAud.length) paso(`Líneas del auditor de ${sinAud.join(', ')} (con la carga hecha y los dictámenes en git)`, `SUBAGENTE auditor (brief: node tools/club-siis.mjs ${q} --brief auditor; escribe Admin/registros/auditoria.jsonl)`, 'node tools/auditoria.mjs');
+const mudables = filas.filter((f) => f.cargado && e.audAdel.has(f.a)).map((f) => f.a);
+if (mudables.length) paso(`Mudar la línea del auditor adelantada de ${mudables.join(', ')} a auditoria.jsonl y validarla`, `node tools/club-siis.mjs ${q} --mudar-auditor`);
 if (!n && !subagentes.length) console.log('Nada falta: todos los años están cargados y con sus pasos al día.');
 const fka = c.clubId ? pasoFka(c.clubId, club) : null; if (fka) console.log(`\n${fka}`); // el sponsor débil se verifica en Football Kit Archive (tools/sponsor-fka.mjs): un paso fijo, no de memoria
 console.log('\nUn año ya publicado que hay que rehacer: node tools/club-siis.mjs ' + q + ' --rehacer-anio AAAA');
