@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1226 — `tool-grande` a 60 KB, medir-pipeline rechaza argumentos desconocidos, cerrar-tool ignora tools sin cambios y la prueba del medidor, rota, arreglada [audit-chequeos-2.js, medir-pipeline.mjs, cerrar-tool.mjs, probar-medir-pipeline.mjs]
+- `tool-grande` (P3) pide partir una tool desde los 60 KB, no desde los 40: 14 tools estaban entre 34 y 39 KB y `cola.mjs` a 22 bytes del tope, así que cada línea nueva obligaba a mudar código y a medir de nuevo. El aviso de lectura entera a los 30 KB (hook) queda; `CLAUDE.md` y `CONVENCIONES.md` lo dicen igual (commit aparte).
+- `medir-pipeline.mjs` frena con «Argumento desconocido» (antes `--ayuda` arrancaba una medición entera); `cerrar-tool --tools` ignora las tools sin cambios contra HEAD y lo dice (una sin cambios hacía fallar el veredicto con «falta la medición con la huella actual»).
+- `probar-medir-pipeline.mjs` llevaba rota desde que `medir-pipeline` y `patron` ganaron `duraciones-lib.mjs` y `patrones-tools.mjs` (no los copiaba al repo de juguete): 19 casos MAL antes de tocar nada; ahora todos ok, con un caso nuevo del argumento desconocido. Nadie lo notó porque no lo corre ningún chequeo.
+- Medición: idéntico (`audit`, lote chico; `audit-chequeos-2.js` es módulo de `audit.js`). Sin revisión independiente de la Auditora.
+
 ## Versión 1225 — Lo hecho de los pendientes del 463 y el 476, al CHANGELOG [477]
 - Tigres 2016 y 2017 quedan como «Costo de ventas» en otros gastos; los clubes sin `official_totals` ya no existían; sponsors de Real Cartagena, Atlético FC, Tigres y Cortulua verificados en FKA; caja y deuda de SIIS en 19 clubes (`siis-caja-deuda.mjs`); Cúcuta 2016 caja de 64 miles de pesos; Δ % con tope en Finanzas multi-año; `auditAll()` sin diferencias; `brandColor` de los cuatro clubes nuevos (`fos color-club`, y `lookup-brand-color.js` lo llama); estadio de Orsomarso 2025 en Yumbo y fin de la gestión de Issa el `2026-01-01` por decisión de Guido.
 - El analizador de filas de `caja-deuda` descarta un entero de 1 a 99 en la primera columna por parecer un número de nota: 14 de 9.512 filas de los estados de SIIS, una sola de caja o deuda (Cúcuta 2016); no se toca. El 476 queda con lo que falta, una línea cada uno.

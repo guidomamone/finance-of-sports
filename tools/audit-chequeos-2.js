@@ -375,7 +375,7 @@ function checkCabeceraLargaEnTools() {
 }
 
 // Una tool de más de TOOL_MAX_KB no se lee entera (CLAUDE.md): se parte en módulos (`node tools/fos.mjs mover`) o queda con su motivo en tools/tamanos-aceptados.json ({ "<tool>": "motivo" }). P3.
-const TOOL_MAX_KB = 40;
+const TOOL_MAX_KB = 60; // era 40: varias tools quedaban a bytes del tope y cada línea nueva obligaba a mudar código (y a medir de nuevo); el aviso de lectura entera a los 30 KB (hooks/post-tool.mjs) y `fos mapa` siguen protegiendo la lectura
 function checkToolGrande() {
   let aceptadas = {}; try { aceptadas = JSON.parse(fs.readFileSync(path.join(ROOT, 'tools', 'tamanos-aceptados.json'), 'utf8')); } catch (e) { /* sin excepciones */ }
   const grandes = fs.readdirSync(path.join(ROOT, 'tools')).filter(f => /\.(mjs|js)$/.test(f)).map(f => ({ f, kb: fs.statSync(path.join(ROOT, 'tools', f)).size / 1024 })).filter(x => x.kb > TOOL_MAX_KB && !aceptadas[x.f]).sort((a, b) => b.kb - a.kb);

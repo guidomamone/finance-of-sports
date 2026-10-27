@@ -46,6 +46,9 @@ import { duraciones } from './duraciones-lib.mjs';
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
 const flag = (f) => { const i = A.indexOf(f); return i >= 0 ? A[i + 1] : null; };
+// un argumento que la tool no conoce (`--ayuda`, un error de tipeo) frena en seco: ignorarlo arrancaba una medición entera que nadie pidió
+const CONOCIDOS = ['--base', '--ensayo', '--explicacion', '--ignorar-nombre', '--lote', '--medidor', '--no-anotar', '--restaurar', '--solo-chico', '--tools'];
+{ const raros = A.filter((a) => a.startsWith('--') && !CONOCIDOS.includes(a)); if (raros.length) { console.error(`Argumento desconocido: ${raros.join(', ')}. Los que acepta: ${CONOCIDOS.join(' ')} (el uso está en la cabecera del archivo). No se midió nada.`); process.exit(1); } }
 const T = JSON.parse(readFileSync(resolve(ROOT, 'tools/pipeline-tools.json'), 'utf8'));
 const REGISTRO = resolve(ROOT, 'Admin/registros/mediciones-pipeline.jsonl');
 // Toda línea nueva lleva `esquema: 1` y cumple 'mediciones-pipeline' de tools/esquemas-registros.json; una que no lo cumple no se escribe.

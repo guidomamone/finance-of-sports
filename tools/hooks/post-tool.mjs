@@ -20,7 +20,7 @@ if (entrada.tool_name === 'Read') {
   const ruta = String(entrada.tool_input?.file_path || '');
   if (!/\/tools\/[a-z0-9][a-z0-9-]*\.(?:mjs|js)$/.test(ruta) || entrada.tool_input?.offset != null || entrada.tool_input?.limit != null) process.exit(0);
   let kb = 0; try { kb = statSync(ruta).size / 1024; } catch { process.exit(0); }
-  if (kb <= 30) process.exit(0); // las tools de más de 40 KB se partieron (audit.js `tool-grande`): las que quedan pesan 30 a 40 KB y también cuestan leerlas enteras
+  if (kb <= 30) process.exit(0); // desde los 60 KB audit.js (`tool-grande`) pide partirlas; entre 30 y 60 KB cuesta leerlas enteras y el aviso es lo que las protege
   process.stdout.write(JSON.stringify({ hookSpecificOutput: { hookEventName: 'PostToolUse',
     additionalContext: `Aviso (no bloquea): ${ruta.split('/').pop()} pesa ${Math.round(kb)} KB y se leyó entero. Para la próxima: node tools/fos.mjs mapa tools/${ruta.split('/').pop()} (funciones con su rango de líneas) y Read con offset y limit del tramo que se usa.` } }));
   process.exit(0);

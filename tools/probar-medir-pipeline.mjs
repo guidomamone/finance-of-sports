@@ -21,7 +21,7 @@ const ROOT = resolve(import.meta.dirname, '..');
 const T = resolve(ROOT, 'Admin', 'mediciones', 'pipeline', '_prueba-repo');
 rmSync(T, { recursive: true, force: true });
 for (const d of ['tools', 'Admin/lotes', 'Admin/registros']) mkdirSync(join(T, d), { recursive: true });
-for (const f of ['medir-pipeline.mjs', 'familias-docs.mjs', 'clasificar-tools.mjs', 'patron.mjs', 'comparar-sin-comentarios.js', 'registro-esquema.js', 'esquemas-registros.json']) copyFileSync(join(ROOT, 'tools', f), join(T, 'tools', f));
+for (const f of ['medir-pipeline.mjs', 'familias-docs.mjs', 'clasificar-tools.mjs', 'patron.mjs', 'comparar-sin-comentarios.js', 'registro-esquema.js', 'esquemas-registros.json', 'duraciones-lib.mjs', 'patrones-tools.mjs']) copyFileSync(join(ROOT, 'tools', f), join(T, 'tools', f));
 const w = (rel, txt) => writeFileSync(join(T, rel), txt);
 const leer = (rel) => readFileSync(join(T, rel), 'utf8');
 const NP = Object.fromEntries(['medir-pipeline.mjs', 'familias-docs.mjs', 'clasificar-tools.mjs', 'patron.mjs', 'comparar-sin-comentarios.js', 'registro-esquema.js', 'fake-medidor.mjs'].map((f) => [f, 'prueba']));
@@ -53,6 +53,8 @@ const registro = () => (existsSync(join(T, 'Admin/registros/mediciones-pipeline.
 
 let mal = 0;
 const caso = (nombre, cond, detalle = '') => { if (!cond) mal++; console.log(`${cond ? 'ok ' : 'MAL'} ${nombre}${cond ? '' : ` — ${detalle}`}`); };
+{ const antes = registro().length; const r = medir('--ayuda');
+  caso('un argumento desconocido frena sin medir ni anotar nada', r.status === 1 && /Argumento desconocido: --ayuda/.test(r.out) && registro().length === antes, r.out.slice(0, 160)); }
 
 // 1. cambio sin efecto
 w('tools/fake-tool.mjs', 'export const VALOR = 1; export const OTRO = 0; // un comentario\n');

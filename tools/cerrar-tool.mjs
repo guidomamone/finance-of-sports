@@ -17,6 +17,14 @@ const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
 const v = (k) => { const i = A.indexOf(k); return i >= 0 ? A[i + 1] : null; };
 let [cambio, patron, sinDoc, explicacion, tools] = ['--cambio', '--patron', '--sin-documentos', '--explicacion', '--tools'].map(v);
+// --tools nombra tools para el veredicto: una sin cambios contra HEAD no tiene nada que medir ni que juzgar y hacía fallar el veredicto («falta la medición con la huella actual»); se ignora y se dice
+if (tools) {
+  const git = (...a) => spawnSync('git', a, { cwd: ROOT, encoding: 'utf8' }).stdout || '';
+  const cambiadasAhora = new Set(`${git('diff', '--name-only', 'HEAD', '--', 'tools')}\n${git('ls-files', '--others', '--exclude-standard', 'tools')}`.split('\n').filter(Boolean));
+  const pedidas = tools.split(',').map((s) => s.trim()).filter(Boolean); const sinCambio = pedidas.filter((n) => !cambiadasAhora.has(`tools/${n}`));
+  if (sinCambio.length) console.log(`(se ignoran las tools sin cambios contra HEAD: ${sinCambio.join(', ')})`);
+  tools = pedidas.filter((n) => !sinCambio.includes(n)).join(',') || null;
+}
 if (!cambio) { console.error('Uso: node tools/cerrar-tool.mjs --cambio "<qué hace>" [--patron "<regex>" | --sin-documentos "<motivo>"] [--explicacion "…"] [--tools a.mjs,b.mjs]  (sin patrón ni motivo, sale de tools/patrones-tools.json)'); process.exit(1); }
 
 const correr = (args, capturar = false) => spawnSync('node', args, { cwd: ROOT, encoding: 'utf8', stdio: capturar ? ['ignore', 'pipe', 'pipe'] : 'inherit' });
