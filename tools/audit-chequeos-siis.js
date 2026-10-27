@@ -98,8 +98,8 @@ function checkReglaNotas() {
   for (const [club, ls] of porClub) add('P3', 'regla-nota-contradicha', `${club}: ${ls.length} línea(s) de gastos que la regla por nota manda a otra categoría: ${ls.slice(0, 4).join('; ')}${ls.length > 4 ? '…' : ''} (node tools/reglas-categoria.mjs --cargadas; se corrige con recategorizar-linea --gasto y «Corrige:»)`);
 }
 
-// respuesta-contradice-regla: la respuesta vigente de Admin/registros/categorias-aprendidas.jsonl (las de la cola, aplicadas al cargar) que la regla por nota manda a otra categoría. Una respuesta gana sobre la regla,
-// así que al recargar ese año volvería la categoría vieja (Alianza 2023 «Diversos»). Las lista `node tools/reglas-categoria.mjs --respuestas`; se contesta de nuevo el caso de la cola (`cola.mjs --responder <id> corregir --valor …`). Aviso P3 por club.
+// respuesta-contradice-regla: la respuesta de un caso de categoría de la cola (Admin/registros/cola-revision.jsonl) que la regla por nota manda a otra categoría. Una respuesta gana sobre la regla,
+// así que al recargar ese año volvería la categoría vieja (Alianza 2023 «Diversos»). Las lista `node tools/reglas-categoria.mjs --respuestas` (con el id del caso); se contesta de nuevo (`cola.mjs --responder <id> corregir --valor …`). Aviso P3 por club.
 function checkRespuestasContradicen() {
   let out; try { out = require('child_process').execFileSync('node', ['tools/reglas-categoria.mjs', '--respuestas'], { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); } catch (e) { add('P3', 'respuesta-contradice-regla', `tools/reglas-categoria.mjs --respuestas falló: ${String(e.stderr || e.message).split('\n')[0]}`); return; }
   const porClub = new Map();

@@ -20,13 +20,17 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1194 — `--respuestas` lee los casos de la cola; la nómina suma «Aportes Admin…» [470 · reglas-categoria.mjs, audit-chequeos-siis.js]
+- `respuestasContradichas()` lee los casos de categoría respondidos de `cola-revision.jsonl` (los que de verdad ganan sobre la regla), no `categorias-aprendidas.jsonl` (24 falsos avisos, 4 reales); el vocabulario de nómina reconoce `admin*` en los aportes.
+- Medición: lote completo, 6 diferencias, todas explicadas (filas de nómina de la nota de administración de Fortaleza). Sin revisión independiente de la Auditora.
+
 ## Versión 1193 — El pie de la cola nombra los tres flags de --responder [cola.mjs]
 - El pie de `node tools/cola.mjs` agrega `--evidencia`, `--seguridad` y `--causa` (obligatorios); se quita un comentario repetido del archivo para quedar bajo el límite de tamaño.
 - Medición: lote completo, idéntico. Sin revisión independiente de la Auditora.
 
 ## Versión 1192 — La regla por nota reconoce la nómina; aviso de respuestas de la cola que la contradicen [470 · reglas-categoria.mjs, audit.js, audit-chequeos-siis.js]
 - `reglaDeNota()`: el concepto «personal» cubre también los componentes sueltos de la nómina (cesantías, prima de servicios, vacaciones, auxilios, indemnizaciones laborales, aportes); antes esas filas caían a la cola aunque estuvieran en la nota de administración.
-- `node tools/reglas-categoria.mjs --respuestas` y aviso P3 `respuesta-contradice-regla` en `audit.js`: la respuesta vigente de `categorias-aprendidas.jsonl` que la regla por nota manda a otra categoría (una respuesta gana sobre la regla al recargar el año).
+- `node tools/reglas-categoria.mjs --respuestas` y aviso P3 `respuesta-contradice-regla` en `audit.js`: el caso de categoría de la cola, con su respuesta, que la regla por nota manda a otra categoría (una respuesta gana sobre la regla al recargar el año; nota de la fila por `padreEnDoc`). Cola de Fortaleza 2017 y 2023: 4 respuestas contestadas de nuevo.
 - Cola de Atlético Bucaramanga 2019 y 2020: 22 respuestas por la regla de `co.md`; la recarga limpia da los mismos totales.
 - Medición: lote completo, 8 diferencias, todas explicadas (filas de nómina de la nota de administración de Fortaleza y Bucaramanga). Sin revisión independiente de la Auditora.
 

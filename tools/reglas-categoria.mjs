@@ -53,7 +53,7 @@ export function leerReglasCategoria() {
 // nota que la abre y por qué concepto es, no por su rótulo suelto. Gana sobre el precedente y sobre Jev (categorizar-claude-listos.mjs y catDe de cargar-categorias.mjs la
 // llaman antes); una respuesta de la cola o un ajuste manual de esa fila siguen ganando. La nota sale del renglón que la fila desglosa (`padre`, padreDe) o, si no, de la marca
 // «(Gastos de ventas)» de su etiqueta; si no se sabe cuál es (o son las dos), la regla no decide. Los conceptos son el vocabulario de las etiquetas (acá), la decisión es de la regla (el doc).
-const NOMINA = '(?:(?:otros\\s+)?auxilios?(?:\\s+de\\s+transporte)?|cesantias|intereses\\s+(?:de|sobre)\\s+(?:las\\s+)?cesantias|prima\\s+de\\s+servicios|vacaciones|indemnizaciones?\\s+laborales|aportes?\\s+(?:a\\s+)?(?:(?:las?\\s+)?(?:administrad\\w+|entidades?|fondos?|cajas?)|sena|i\\.?c\\.?b\\.?f\\.?|icbf)|bonificaciones)'; // los componentes de la nómina que el estado imprime sueltos, sin la palabra «personal»
+const NOMINA = '(?:(?:otros\\s+)?auxilios?(?:\\s+de\\s+transporte)?|cesantias|intereses\\s+(?:de|sobre)\\s+(?:las\\s+)?cesantias|prima\\s+de\\s+servicios|vacaciones|indemnizaciones?\\s+laborales|aportes?\\s+(?:a\\s+)?(?:(?:las?\\s+)?(?:admin\\w*|entidades?|fondos?|cajas?)|sena|i\\.?c\\.?b\\.?f\\.?|icbf)|bonificaciones)'; // los componentes de la nómina que el estado imprime sueltos, sin la palabra «personal»
 const CONCEPTOS = { personal: new RegExp(`^(?:(?:(?:gastos?|costos?)\\s+)?(?:de(?:l)?\\s+)?personal|${NOMINA})\\b`), viaje: /^(?:(?:otros\s+)?gastos?\s+)?(?:de\s+)?viajes?\b/, diversos: /^(?:gastos?\s+)?divers[oa]s\b/ };
 const plano = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 let porNota = null; // las reglas leídas una vez por proceso
@@ -116,17 +116,21 @@ export async function cargadasContradichas() {
   return out;
 }
 
-// LAS RESPUESTAS CONTRA LA REGLA POR NOTA: la respuesta VIGENTE (la última por club, etiqueta y nota) de Admin/registros/categorias-aprendidas.jsonl que la regla de su país
+// LAS RESPUESTAS CONTRA LA REGLA POR NOTA: los casos de categoría de la cola (Admin/registros/cola-revision.jsonl) con respuesta (la última por caso) que la regla de su país
 // manda a otra categoría. Una respuesta gana sobre la regla al cargar, así que una vieja que la contradice se recarga mal recién al rehacer el año: acá se avisa antes.
-// `--respuestas` las lista («club año | etiqueta | nota | respuesta -> regla»); el chequeo `respuesta-contradice-regla` de audit.js lo llama.
-export function respuestasContradichas() {
-  porNota ??= leerReglasCategoria(); if (!existsSync(APRENDIDAS)) return [];
-  const vigente = new Map();
-  for (const l of readFileSync(APRENDIDAS, 'utf8').split('\n').filter(Boolean)) { let x; try { x = JSON.parse(l); } catch { continue; } if (x.lado === 'expense' && x.club && x.label && x.categoria) vigente.set([x.club, plano(x.label), plano(x.padre)].join('|'), x); } // la clave de memoria-categorias.mjs: sin año, la última gana
+// La nota de la fila sale de su documento (padreEnDoc). `--respuestas` las lista («club año | etiqueta | nota | respuesta -> regla | caso»); el chequeo `respuesta-contradice-regla` de audit.js lo llama.
+export async function respuestasContradichas() {
+  const { padreEnDoc } = await import('./padres-filas.mjs'); const { clubDeRuta } = await import('./carpetas-clubes.mjs');
+  porNota ??= leerReglasCategoria(); const cola = resolve(ROOT, 'Admin', 'registros', 'cola-revision.jsonl'); if (!existsSync(cola)) return [];
+  const casos = new Map(); const resp = new Map();
+  for (const l of readFileSync(cola, 'utf8').split('\n').filter(Boolean)) { let x; try { x = JSON.parse(l); } catch { continue; } if (x.tipo === 'caso' && x.etapa === 'cargar' && x.motivo === 'categoria') casos.set(x.id, x); else if (x.tipo === 'respuesta') resp.set(x.id, x); }
   const out = [];
-  for (const x of vigente.values()) {
-    const g = reglaDeNota({ clubId: x.club, lado: 'expense', label: x.label, padre: x.padre });
-    if (g && g.cat !== x.categoria) out.push(`${x.club} ${x.year || '—'} | ${x.label} | ${g.nota || 'cualquiera'} | ${x.categoria} -> ${g.cat}`);
+  for (const [id, c] of casos) {
+    const r = resp.get(id); const label = (String(c.que).match(/"(.+?)"/) || [])[1]; const lado = String(c.detalle).split('|')[1] || 'expense';
+    const cat = r?.decision === 'aceptar' ? c.categoriaPropuesta : r?.decision === 'corregir' ? String(r.valor || '').trim() : null;
+    const clubId = clubDeRuta(c.pdf).clubId; if (!cat || !label || !clubId || lado !== 'expense') continue;
+    const g = reglaDeNota({ clubId, lado, label, padre: padreEnDoc(c.md || c.pdf.replace(/\.pdf$/i, '.md'), lado, label) });
+    if (g && g.cat !== cat) out.push(`${clubId} ${(c.pdf.match(/(\d{4})\.pdf$/) || [])[1] || '—'} | ${label} | ${g.nota || 'cualquiera'} | ${cat} -> ${g.cat} | ${id}`);
   }
   return out;
 }
@@ -134,7 +138,7 @@ export function respuestasContradichas() {
 if (import.meta.url === `file://${process.argv[1]}` && process.argv.includes('--cargadas')) {
   const l = await cargadasContradichas(); console.log(l.join('\n')); console.log(`${l.length} línea(s) cargadas que contradicen la regla por nota.`);
 } else if (import.meta.url === `file://${process.argv[1]}` && process.argv.includes('--respuestas')) {
-  const l = respuestasContradichas(); console.log(l.join('\n')); console.log(`${l.length} respuesta(s) vigentes de la cola que contradicen la regla por nota.`);
+  const l = await respuestasContradichas(); console.log(l.join('\n')); console.log(`${l.length} respuesta(s) vigentes de la cola que contradicen la regla por nota.`);
 } else if (import.meta.url === `file://${process.argv[1]}`) {
   const reglas = leerReglasCategoria(); const errores = validarReglasPrompt().errores;
   const clubs = readFileSync(resolve(ROOT, 'data', 'clubs.js'), 'utf8');
