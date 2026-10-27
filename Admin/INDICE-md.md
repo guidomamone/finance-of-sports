@@ -5,14 +5,14 @@
 Lo escribe `node tools/indice-md.mjs --escribir`; no se edita a mano. Cada fila: ruta · KB · qué es · cuándo se lee · cuántos documentos o tools lo citan (←) · a qué otros documentos vivos manda (→).
 Huérfano = nadie lo cita; sin marca = no declara qué es ni cuándo se lee (primera línea `<!-- md: qué es | leer: cuándo -->`).
 
-Carpetas que se cuentan sin listar: `Admin/mediciones` 97, `Admin/Archive` 372, `Admin/carga-clubes` 346, `Admin/sourcing` 1573, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 138, `Admin/lotes` 110.
+Carpetas que se cuentan sin listar: `Admin/mediciones` 97, `Admin/Archive` 373, `Admin/carga-clubes` 346, `Admin/sourcing` 1573, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 138, `Admin/lotes` 110.
 
 ## CLAUDE.md y Admin
 
 - `CLAUDE.md` · ~15 KB · instrucciones permanentes del proyecto (se carga sola) · **leer:** siempre · ←37 · →CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
 - `Admin/ARQUITECTURA.md` · ~70 KB · cómo funciona el motor de Finanzas y los scripts que escriben data/ · **leer:** al tocar el motor (js/finanzas-*) o los scripts que escriben data/; la sección que toca · ←10 · →CLAUDE.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
 - `Admin/BRIEF-REVISOR-COLA.md` · <5 KB · el brief con el que un subagente Sonnet contesta, en JSON y con cita, las preguntas de la cola de revisión de UN documento · **leer:** al lanzar revisores de la cola (node tools/cola.mjs), antes de armar el prompt del subagente · ←1 · →CONVENCIONES-DATOS.md
-- `Admin/CHANGELOG.md` · ~60 KB · qué cambió y cuándo (las últimas 40 entradas; lo anterior está en Archive) · **leer:** solo por grep de una palabra o de una tool (fos changelog historial más el nombre de la tool), nunca de corrido · ←34 · →CLAUDE.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO.md, HALLAZGOS-pipeline.md, PANTALLA.md
+- `Admin/CHANGELOG.md` · ~40 KB · qué cambió y cuándo (las últimas 40 entradas; lo anterior está en Archive) · **leer:** solo por grep de una palabra o de una tool (fos changelog historial más el nombre de la tool), nunca de corrido · ←34 · →CLAUDE.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO.md, HALLAZGOS-pipeline.md, PANTALLA.md
 - `Admin/CONTRATO-ETAPAS.md` · ~10 KB · qué archivo lee y escribe cada etapa del pipeline, qué lo deja viejo y con qué comando se rehace · **leer:** antes de tocar algo que pasa de una etapa a otra (un arreglo local a una etapa no lo necesita) · ←6 · →PIPELINE.md
 - `Admin/CONVENCIONES-DATOS.md` · ~60 KB · reglas de datos: categorías, perímetro, períodos, tipos de cambio · **leer:** al cargar o corregir datos de un club; la sección que toca · ←50 · →CLAUDE.md, CONVENCIONES.md, PANTALLA.md, PIPELINE.md, dudas-por-club.md, propuestas/transicion-y-covid.md
 - `Admin/CONVENCIONES.md` · ~10 KB · reglas de proceso vigentes · **leer:** cuando la skill de la tarea lo pide · ←28 · →CLAUDE.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, NOTAS-DE-TOOLS.md, PANTALLA.md, PIPELINE.md
@@ -58,7 +58,7 @@ Carpetas que se cuentan sin listar: `Admin/mediciones` 97, `Admin/Archive` 372, 
 - `.claude/skills/club-data-mapping/referencia/leer-pdf.md` · ~10 KB · Leer un PDF fuente difícil: escaneos, tablas rotadas, filas acumuladas · **leer:** cuando lo manda su SKILL.md o el README de su carpeta · ←4 · →PIPELINE.md, club-sourcing/paises/Argentina.md
 - `.claude/skills/club-or-year-onboarding/SKILL.md` · <5 KB · Onboardear clubes en finance-of-sports con el pipeline (de un PDF a un año cargado en el sitio) — correr lotes en segundo plano, leer los resultados y · **leer:** la skill se carga sola cuando la tarea es la suya · ←5 · →CLAUDE.md, CONTRATO-ETAPAS.md, HALLAZGOS-pipeline.md, PIPELINE.md, TODO.md, club-or-year-onboarding/carga-con-tokens.md
 - `.claude/skills/club-or-year-onboarding/carga-con-tokens.md` · ~5 KB · Cargar con tokens de sesión · **leer:** cuando lo manda su SKILL.md o el README de su carpeta · ←2
-- `.claude/skills/club-or-year-onboarding/club-nuevo.md` · ~10 KB · Club nuevo: lo que el pipeline no hace · **leer:** cuando lo manda su SKILL.md o el README de su carpeta · ←19 · →PANTALLA.md
+- `.claude/skills/club-or-year-onboarding/club-nuevo.md` · ~10 KB · Club nuevo: lo que el pipeline no hace · **leer:** cuando lo manda su SKILL.md o el README de su carpeta · ←18 · →PANTALLA.md
 - `.claude/skills/club-or-year-onboarding/correr-clubes.md` · ~5 KB · Correr clubes con el pipeline (sección 3a) · **leer:** al correr un lote, cargar un año o dar de alta un club · ←1 · →CONVENCIONES-DATOS.md, CONVENCIONES.md, dudas-por-club.md
 - `.claude/skills/club-or-year-onboarding/mejorar-script.md` · <5 KB · Mejorar un script del pipeline (secciones 3b y 5) · **leer:** al arreglar o sumar una tool del pipeline y medir el cambio · ←3 · →CONVENCIONES.md, PIPELINE.md
 - `.claude/skills/club-or-year-onboarding/reglas.md` · ~5 KB · Reglas de Guido para el pipeline (sección 4) · **leer:** antes de correr un lote o de tocar un script · ←1 · →CONVENCIONES-DATOS.md, CONVENCIONES.md, HALLAZGOS-pipeline.md, dudas-por-club.md
