@@ -27,5 +27,5 @@
   balance del mismo año) y `Admin/CONVENCIONES.md` (ex §15, presupuesto en año calendario).
 - **Buscar el PDF:** skill `club-sourcing`.
 - **Rusia:** no sale de PDFs. `tools/bfo-rusia.mjs` lee los JSON del fisco (`Clubes/Rusia/<Club>/bfo-AAAA-datos.json`); el detalle, en
-  `Admin/PIPELINE.md`, sección Rusia.
+  `Admin/paises/ru.md`.
 - **Cómo se ve el club en el sitio:** `Admin/PANTALLA.md`.
