@@ -25,4 +25,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'cortulua-co': { 2020: 'co-primeraB', 2021: 'co-primeraB', 2022: 'co-primeraA', 2023: 'co-primeraB', 2024: 'co-primeraB', 2025: 'co-primeraB' },
   'tigresfc-co': { 2016: 'co-primeraB', 2017: 'co-primeraA', 2018: 'co-primeraB', 2019: 'co-primeraB', 2020: 'co-primeraB', 2021: 'co-primeraB', 2022: 'co-primeraB', 2024: 'co-primeraB' },
   'atleticofc-co': { 2016: 'co-primeraB', 2017: 'co-primeraB', 2018: 'co-primeraB', 2019: 'co-primeraB', 2020: 'co-primeraB', 2021: 'co-primeraB', 2022: 'co-primeraB', 2023: 'co-primeraB', 2024: 'co-primeraB', 2025: 'co-primeraB' },
+  'realcartagena-co': { 2017: 'co-primeraB', 2018: 'co-primeraB', 2019: 'co-primeraB', 2020: 'co-primeraB', 2021: 'co-primeraB', 2022: 'co-primeraB', 2023: 'co-primeraB', 2024: 'co-primeraB', 2025: 'co-primeraB' },
 });
