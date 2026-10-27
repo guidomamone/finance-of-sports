@@ -1,0 +1,68 @@
+{
+ "md": "Clubes/Colombia/Tigres FC/siis-estado-2018.md",
+ "club": "tigresfc-co",
+ "year": 2018,
+ "generatedAt": "2026-10-27T13:24:43.728Z",
+ "rubrosHuella": "9c69873643f6f69275a9b36b3c6c9e4c3cc4710c",
+ "jevHuella": "14a17e68709d1ee954f0dc4c88d8ddf53f2579ae",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "lump_football_operations",
+   "confianza": 0.98
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "other_income",
+   "confianza": 0.98
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Costo de ventas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 2,
+   "confCache": 0.8,
+   "motivo": "Regla Colombia: «Costo de ventas» va a other_expenses",
+   "jev": "lump_football_operations_expense",
+   "jevConf": 0.64,
+   "desdeCache": true,
+   "categoria": "other_expenses",
+   "confianza": 0.8
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  }
+ ]
+}

@@ -334,6 +334,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2017: {
     leagueSize: 20,
+    sinDato: ["tigresfc-co"],
     wiki: {"t":"2017 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:15.531, reportType:"official_balance_sheet",

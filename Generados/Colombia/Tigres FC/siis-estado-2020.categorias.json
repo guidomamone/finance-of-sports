@@ -1,0 +1,68 @@
+{
+ "md": "Clubes/Colombia/Tigres FC/siis-estado-2020.md",
+ "club": "tigresfc-co",
+ "year": 2020,
+ "generatedAt": "2026-10-27T13:24:43.735Z",
+ "rubrosHuella": "fce2b47d345c4f566e15955a72d76b70c7d41b1b",
+ "jevHuella": "6ab0a09d9a843b06fa0e8bd93f3416d17b556098",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "lump_football_operations",
+   "confianza": 0.98
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "other_income",
+   "confianza": 0.98
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de ventas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations_expense",
+   "escalon": 2,
+   "confCache": 0.85,
+   "motivo": "Regla Colombia: «Gastos de ventas» sin abrir es actividad deportiva sin desglose",
+   "jev": "lump_football_operations_expense",
+   "jevConf": 0.42,
+   "desdeCache": true,
+   "categoria": "lump_football_operations_expense",
+   "confianza": 0.85
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  }
+ ]
+}

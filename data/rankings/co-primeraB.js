@@ -18,6 +18,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2024: {
     leagueSize: 16,
+    sinDato: ["tigresfc-co"],
     wiki: {"t":"2024 Torneo DIMAYOR","lang":"en","at":"2026-10-26","n":16},
     clubs: [
       { id:"unionmagdalena-co", revenue:2.547, reportType:"official_balance_sheet",
@@ -55,6 +56,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2022: {
     leagueSize: 16,
+    sinDato: ["tigresfc-co"],
     wiki: {"t":"2022 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"cucutadeportivo-co", revenue:1.983, reportType:"official_balance_sheet",
@@ -74,6 +76,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2021: {
     leagueSize: 16,
+    sinDato: ["tigresfc-co"],
     wiki: {"t":"2021 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"cortulua-co", revenue:5.172, reportType:"official_balance_sheet",
@@ -93,6 +96,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2020: {
     leagueSize: 16,
+    sinDato: ["tigresfc-co"],
     wiki: {"t":"2020 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"cortulua-co", revenue:2.718, reportType:"official_balance_sheet",
@@ -112,6 +116,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2019: {
     leagueSize: 17,
+    sinDato: ["tigresfc-co"],
     wiki: {"t":"2019 Categoría Primera B season","lang":"en","at":"2026-09-30","n":17},
     clubs: [
       { id:"boyacachico-co", revenue:2.051, reportType:"official_balance_sheet",
@@ -127,6 +132,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2018: {
     leagueSize: 16,
+    sinDato: ["tigresfc-co"],
     wiki: {"t":"2018 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"cucutadeportivo-co", revenue:2.336, reportType:"official_balance_sheet",
@@ -167,6 +173,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2016: {
     leagueSize: 16,
+    sinDato: ["tigresfc-co"],
     wiki: {"t":"2016 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"americadecali-co", revenue:5.917, reportType:"official_balance_sheet",

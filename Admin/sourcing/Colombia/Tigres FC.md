@@ -13,3 +13,5 @@
 **Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
 
 Estados financieros en disco ahora: 8 ejercicios (2017-2024), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
+
+Color de marca: null — la ficha de es.wikipedia (Tigres Fútbol Club) describe la camiseta titular gris con detalles beige y la alternativa rosada, sin código hex ni color de escudo; sin footylogos (lookup-brand-color sin coincidencias), verificado 2026-10-27

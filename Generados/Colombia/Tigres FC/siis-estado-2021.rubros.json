@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Colombia/Tigres FC/siis-estado-2021.md",
+  "pdf": "Clubes/Colombia/Tigres FC/siis-estado-2021.pdf",
+  "club": "tigresfc-co",
+  "year": 2021,
+  "generatedAt": "2026-10-27T13:24:02.588Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2331.45
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        57.569
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        408.259
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1606.934
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

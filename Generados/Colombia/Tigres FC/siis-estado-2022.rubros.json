@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Colombia/Tigres FC/siis-estado-2022.md",
+  "pdf": "Clubes/Colombia/Tigres FC/siis-estado-2022.pdf",
+  "club": "tigresfc-co",
+  "year": 2022,
+  "generatedAt": "2026-10-27T13:24:02.616Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2652.934
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        64.22
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        646.429
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1956.39
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}
