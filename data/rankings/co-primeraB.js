@@ -148,7 +148,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2018: {
     leagueSize: 16,
-    sinDato: ["atleticofc-co"],
     wiki: {"t":"2018 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"cucutadeportivo-co", revenue:2.336, reportType:"official_balance_sheet",
@@ -164,6 +163,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"tigresfc-co", revenue:0.659, reportType:"official_balance_sheet",
         sourceId:"tigresfc-co-siis-estado-2018",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.646],["Otros ingresos",0.013]] },
+      { id:"atleticofc-co", revenue:0.43, reportType:"official_balance_sheet",
+        sourceId:"atleticofc-co-siis-estado-2018",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.427],["Otros ingresos",0.003]] },
     ],
   },
   2017: {
