@@ -1,0 +1,77 @@
+{
+ "md": "Clubes/Colombia/America de Cali/siis-estado-2016.md",
+ "club": "americadecali-co",
+ "year": 2016,
+ "generatedAt": "2026-10-27T03:22:44.037Z",
+ "rubrosHuella": "2cde1cfb14fa42f355fa70bed3152f697b0ddee4",
+ "jevHuella": "c430405d5745b18f193a2267ec31e8bb7a363312",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.97,
+   "categoria": "lump_football_operations",
+   "confianza": 0.97
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "other_income",
+   "confianza": 0.98
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Costo de ventas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de ventas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:familia",
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:familia",
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  }
+ ]
+}

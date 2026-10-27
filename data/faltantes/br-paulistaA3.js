@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-27';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["br-paulistaA3"] = {
   2010: {"size":20,"cargados":1,"faltan":[{"n":"Atlético Araçatuba","e":"sin-buscar"},{"n":"Bandeirante","e":"sin-buscar"},{"n":"Barueri","e":"sin-buscar"},{"n":"Batatais","e":"sin-buscar"},{"n":"Comercial","e":"sin-buscar"},{"n":"Força","e":"sin-buscar"},{"n":"Francana","e":"sin-buscar"},{"n":"Itapirense","e":"sin-buscar"},{"n":"Juventus","e":"sin-buscar"},{"n":"Lemense","e":"sin-buscar"},{"n":"Olímpia","e":"sin-buscar"},{"n":"Palmeiras B","e":"sin-buscar"},{"n":"Penapolense","e":"sin-buscar"},{"n":"Portuguesa Santista","e":"sin-buscar"},{"n":"Red Bull Brasil","e":"sin-buscar"},{"n":"São Carlos","e":"sin-buscar"},{"n":"Taubaté","e":"sin-buscar"},{"n":"XV de Jaú","e":"sin-buscar"},{"n":"XV de Piracicaba","e":"sin-buscar"}]},

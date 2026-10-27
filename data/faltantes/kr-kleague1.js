@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-27';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["kr-kleague1"] = {
   2016: {"size":12,"cargados":0,"faltan":[{"n":"Gwangju FC","e":"buscado"},{"n":"Incheon United","e":"sin-buscar"},{"n":"Jeju United","e":"en-mano"},{"n":"Jeonbuk Hyundai Motors","e":"buscado"},{"n":"Jeonnam Dragons","e":"sin-buscar"},{"n":"Pohang Steelers","e":"buscado"},{"n":"Sangju Sangmu","e":"buscado"},{"n":"Seongnam FC","e":"sin-buscar"},{"n":"FC Seoul","e":"en-mano"},{"n":"Suwon FC","e":"buscado"},{"n":"Suwon Samsung Bluewings","e":"buscado"},{"n":"Ulsan Hyundai","e":"buscado"}]},

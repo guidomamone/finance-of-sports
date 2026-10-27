@@ -134,6 +134,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2016: {
     leagueSize: 16,
+    sinDato: ["americadecali-co"],
     wiki: {"t":"2016 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"leonesfc-co", revenue:1.191, reportType:"official_balance_sheet",

@@ -10,6 +10,12 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://www.futbolred.com/futbol-colombiano/liga-betplay/sebastian-arango-botero-es-nuevo-presidente-de-atletico-nacional-208523', confirmada:true },
   ],
   'americadecali-co': [
+    { nombre:'Tulio Gómez', corto:'Tulio Gómez', cargo:'Presidente', desde:'2016-05-10', hasta:'2018-05-16',
+      fuente:'https://www.elespectador.com/deportes/futbol-colombiano/america-de-cali/tulio-gomez-renuncio-a-la-presidencia-del-america-de-cali-article-788819/', confirmada:true },
+    { nombre:'Ricardo Pérez', corto:'Pérez', cargo:'Presidente', desde:'2018-05-30', hasta:'2019-12-16',
+      fuente:'https://www.eltiempo.com/deportes/futbol-colombiano/ricardo-gato-perez-nuevo-presidente-del-america-de-cali-224130', confirmada:true },
+    { nombre:'Mauricio Romero', corto:'Romero', cargo:'Presidente', desde:'2019-12-18', hasta:'2024-01-04',
+      fuente:'https://www.elpais.com.co/deportes/atencion-mauricio-romero-no-es-mas-el-presidente-del-america-de-cali-2813.html', confirmada:false },
     { nombre:'Marcela Gómez Giraldo', corto:'Gómez', cargo:'Presidente', desde:'2024-01-04', hasta:null,
       fuente:'https://es.wikipedia.org/wiki/Anexo:Presidentes_del_Am%C3%A9rica_de_Cali', confirmada:true },
   ],

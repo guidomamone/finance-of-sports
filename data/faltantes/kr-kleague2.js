@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-27';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["kr-kleague2"] = {
   2016: {"size":11,"cargados":0,"faltan":[{"n":"Ansan Mugunghwa","e":"sin-buscar"},{"n":"FC Anyang","e":"buscado"},{"n":"Bucheon FC 1995","e":"sin-buscar"},{"n":"Busan IPark","e":"sin-buscar"},{"n":"Chungju Hummel","e":"sin-buscar"},{"n":"Daegu FC","e":"buscado"},{"n":"Daejeon Citizen","e":"en-mano"},{"n":"Gyeongnam FC","e":"sin-buscar"},{"n":"Gangwon FC","e":"buscado"},{"n":"Goyang Zaicro","e":"sin-buscar"},{"n":"Seoul E-Land","e":"en-mano"}]},

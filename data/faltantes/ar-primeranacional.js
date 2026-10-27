@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-27';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["ar-primeranacional"] = {
   2017: {"size":23,"cargados":1,"faltan":[{"n":"All Boys","e":"buscado"},{"n":"Almagro","id":"almagro-ar","e":"buscado"},{"n":"Atlético Paraná","e":"sin-buscar"},{"n":"Boca Unidos","e":"sin-buscar"},{"n":"Brown","e":"sin-buscar"},{"n":"Central Córdoba","e":"buscado"},{"n":"Chacarita Juniors","e":"buscado"},{"n":"Crucero del Norte","e":"sin-buscar"},{"n":"Douglas Haig","e":"sin-buscar"},{"n":"Estudiantes","e":"sin-buscar"},{"n":"Ferro Carril Oeste","id":"ferrocarriloeste-ar","e":"buscado"},{"n":"Flandria","e":"sin-buscar"},{"n":"Gimnasia y Esgrima","e":"sin-buscar"},{"n":"Guillermo Brown","e":"sin-buscar"},{"n":"Independiente Rivadavia","e":"buscado"},{"n":"Instituto","id":"instituto-ar","e":"buscado"},{"n":"Juventud Unida","e":"sin-buscar"},{"n":"Los Andes","id":"losandes-ar","e":"en-mano"},{"n":"Nueva Chicago","e":"buscado"},{"n":"San Martín","e":"sin-buscar"},{"n":"Santamarina","e":"sin-buscar"},{"n":"Villa Dálmine","e":"sin-buscar"}]},

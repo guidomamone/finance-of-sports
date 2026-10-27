@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-27';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["br-serieC"] = {
   2012: {"size":20,"cargados":0,"faltan":[{"n":"Águia","e":"sin-buscar"},{"n":"Brasiliense","e":"sin-buscar"},{"n":"Caxias","e":"sin-buscar"},{"n":"Chapecoense","id":"chapecoense-br","e":"buscado"},{"n":"Cuiabá","id":"cuiaba-br","e":"buscado"},{"n":"Duque de Caxias","e":"sin-buscar"},{"n":"Fortaleza","id":"fortaleza-br","e":"buscado"},{"n":"Guarany","e":"sin-buscar"},{"n":"Icasa","e":"sin-buscar"},{"n":"Luverdense","e":"sin-buscar"},{"n":"Macaé","e":"sin-buscar"},{"n":"Madureira","e":"sin-buscar"},{"n":"Oeste","e":"sin-buscar"},{"n":"Paysandu","id":"paysandu-br","e":"buscado"},{"n":"Salgueiro","e":"sin-buscar"},{"n":"Santa Cruz","e":"sin-buscar"},{"n":"Santo André","e":"sin-buscar"},{"n":"Treze","e":"sin-buscar"},{"n":"Tupi","e":"sin-buscar"},{"n":"Vila Nova","id":"vilanova-br","e":"buscado"}]},

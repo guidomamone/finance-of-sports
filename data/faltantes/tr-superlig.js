@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-27';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["tr-superlig"] = {
   2006: {"size":20,"cargados":1,"faltan":[{"n":"Galatasaray","e":"buscado"},{"n":"Ankaragücü","e":"sin-buscar"},{"n":"Fenerbahçe","e":"buscado"},{"n":"Ankaraspor","e":"sin-buscar"},{"n":"Trabzonspor","e":"buscado"},{"n":"Çaykur Rizespor","e":"buscado"},{"n":"Kayserispor","e":"buscado"},{"n":"Denizlispor","e":"sin-buscar"},{"n":"Gençlerbirliği","e":"buscado"},{"n":"Diyarbakırspor","e":"sin-buscar"},{"n":"Konyaspor","e":"buscado"},{"n":"Sivasspor","e":"sin-buscar"},{"n":"Gaziantepspor","e":"sin-buscar"},{"n":"Kayseri Erciyesspor","e":"sin-buscar"},{"n":"Manisaspor","e":"sin-buscar"},{"n":"MKE Ankaragücü","e":"sin-buscar"},{"n":"Malatyaspor","e":"sin-buscar"},{"n":"Samsunspor","e":"buscado"},{"n":"Vestel Manisaspor","e":"sin-buscar"}]},

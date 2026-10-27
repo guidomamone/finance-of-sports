@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-26';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-27';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["nl-eredivisie"] = {
   2015: {"size":18,"cargados":0,"faltan":[{"n":"ADO Den Haag","id":"adodenhaag-nl","e":"en-mano"},{"n":"Ajax","id":"ajax-nl","e":"en-mano"},{"n":"AZ","id":"az-nl","e":"buscado"},{"n":"Cambuur","id":"sccambuur-nl","e":"buscado"},{"n":"Dordrecht","id":"fcdordrecht-nl","e":"buscado"},{"n":"Excelsior","id":"excelsior-nl","e":"buscado"},{"n":"Feyenoord","id":"feyenoord-nl","e":"buscado"},{"n":"Go Ahead Eagles","id":"goaheadeagles-nl","e":"buscado"},{"n":"Groningen","id":"fcgroningen-nl","e":"en-mano"},{"n":"Heerenveen","id":"scheerenveen-nl","e":"buscado"},{"n":"Heracles Almelo","id":"heraclesalmelo-nl","e":"buscado"},{"n":"NAC Breda","id":"nacbreda-nl","e":"buscado"},{"n":"PEC Zwolle","id":"peczwolle-nl","e":"buscado"},{"n":"PSV","id":"psv-nl","e":"buscado"},{"n":"Twente","id":"fctwente-nl","e":"buscado"},{"n":"Utrecht","id":"fcutrecht-nl","e":"buscado"},{"n":"Vitesse Arnhem","id":"vitesse-nl","e":"buscado"},{"n":"Willem II","id":"willemii-nl","e":"en-mano"}]},
