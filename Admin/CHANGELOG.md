@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1208 — Cierre del 475: cuánto tarda cargar un club de SIIS y en qué paso se va
+- Medido con lo nuevo (`club-siis --avanzar --ejecutar --cargar`, reloj): Atlético FC 10 años en 4 min 28 s (27 s por año) y Real Cartagena 9 años en 5 min 26 s (36 s por año), con la categorización, la escritura de cada año y sus commits; Cúcuta Deportivo, 8 años, 4 min 10 s (31 s por año).
+- Dónde queda el tiempo por año: `audit.js --json` ~14,6 s (la compuerta de P0 y P1, hoy una vez por año), `generar-data --check` ~0,15 s y el índice de clubes ~0,2 s; el resto es la categorización, escribir el año y el commit (el hook ya no repite una auditoría idéntica). Lo que queda es la auditoría completa: el único camino a bajarla más es guardar por hash el resultado de los chequeos de `audit.js` que dependen de archivos que no cambian al cargar un año (~6 s de los ~15, medidos en el 475) o escribir todos los años del club y auditar una vez; las dos cosas mueven cuándo corre una compuerta y no se hicieron: el tiempo no es el objetivo.
+- Medición: no cambia ninguna tool. Sin revisión independiente de la Auditora.
+
 ## Versión 1207 — gestion-exa busca con Gemini y la búsqueda de Google [gestion-exa.mjs]
 - `fos gestion-exa <clubId>` (mismo comando para un club de SIIS y uno que no) pregunta a Gemini con `google_search` quién presidió en cada cierre sin gestión confirmada, y devuelve el texto con las afirmaciones y la URL REAL de cada fuente (`groundingChunks`, resueltas); las URLs que el modelo escribe en el texto pueden ser inventadas (una dio 404). Exa queda con `--exa`. Cada llamada anota tokens y búsquedas en `Admin/registros/api/gemini-busqueda.jsonl`. El brief de gestiones dice cómo usarlo.
 - Caso que lo motivó: Real Cartagena 2018 a 2020. Exa y WebFetch dejaron huecos y un error (padre e hijo Rendón); Gemini dio en una consulta de 10 búsquedas la muerte del padre (2019-07-09), a Vergara como presidente de la promotora y al hijo como presidente de 2007 a 2021, con notas fechadas que se abrieron para confirmar. La gestión de Real Cartagena se corrigió con eso.
@@ -62,6 +67,7 @@ que dice `ESTADO.md` era verdad ese día.
 ## Versión 1199 — Cargar un año audita una vez, y el commit no repite una auditoría idéntica [475 · cargar-escribir.mjs, segunda-fuente-liga.mjs, audit.js, sello-audit.js, probar-sello-audit.mjs, pre-tool.mjs]
 - `publicarCambios` (de `cargar --escribir` y `publicar`) corría `audit.js` dos veces sobre el mismo árbol: la de `segunda-fuente-liga --pendientes` (para ver las ligas de una sola fuente, ~12 s) y la compuerta (~12 s). Ahora corre una `audit.js --json` que es la compuerta y da esas ligas (`segunda-fuente-liga --hallazgos <archivo>`); si la segunda fuente escribe algo, regenera y audita de nuevo; con P0/P1 o salida ilegible, la compuerta es la de siempre (`--quiet`, mismo texto). `publicar` baja de ~29 a ~19 s.
 - `tools/sello-audit.js`: `audit.js` guarda en `.git/fos-audit-sello.json` el estado del árbol (HEAD, el día, tamaño y mtime de cada archivo que `git status` lista) cuando da P0 0 y P1 0; el hook de commit no repite la auditoría si el estado es idéntico y audita ante cualquier diferencia. `node tools/fos.mjs probar-sello-audit` (12 casos).
+- Verificado a mano (475): Atlético FC (4 min 28 s, 10 años) y Real Cartagena (5 min 26 s, 9 años) cronometrados con lo nuevo; el paso que queda (audit.js ~14,6 s por año) está medido en la entrada 1208 del CHANGELOG; audit.js dio los mismos avisos en el lote completo (medición del 475) y ningún hook ni compuerta se sacó ni se aflojó
 - Medición: lote completo, idéntico (cargar, cargar-cola-vacia y audit). Sin revisión independiente de la Auditora.
 
 ## Versión 1198 — fos gestion-exa [463 · gestion-exa.mjs]
