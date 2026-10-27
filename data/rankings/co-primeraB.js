@@ -94,7 +94,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2022: {
     leagueSize: 16,
-    sinDato: ["barranquillafc-co","bogotafc-co"],
+    sinDato: ["bogotafc-co"],
     wiki: {"t":"2022 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"cucutadeportivo-co", revenue:1.983, reportType:"official_balance_sheet",
@@ -106,6 +106,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"realcartagena-co", revenue:1.824, reportType:"official_balance_sheet",
         sourceId:"realcartagena-co-siis-estado-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.809],["Otros ingresos",0.015]] },
+      { id:"barranquillafc-co", revenue:1.308, reportType:"official_balance_sheet",
+        sourceId:"barranquillafc-co-siis-estado-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.3],["Otros ingresos",0.008]] },
       { id:"boyacachico-co", revenue:1.221, reportType:"official_balance_sheet",
         sourceId:"boyacachico-co-siis-estado-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.209],["Otros ingresos",0.012]],

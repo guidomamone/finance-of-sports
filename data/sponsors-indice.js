@@ -2349,6 +2349,7 @@ window.SPONSORS_INDICE = [
   ["sport-zone","Sport Zone",["m"]],
   ["sportful","Sportful",["c"]],
   ["sportigan","Sportigan",["c"]],
+  ["sportik","Sportik",["m"]],
   ["sportika","Sportika",["m"]],
   ["sportingbet","Sportingbet",["c"]],
   ["sportitalia","Sportitalia",["c"]],
