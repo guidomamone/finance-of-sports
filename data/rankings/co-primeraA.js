@@ -151,7 +151,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2022: {
     leagueSize: 20,
-    sinDato: ["cortulua-co"],
     wiki: {"t":"2022 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:12.989, reportType:"official_balance_sheet",
@@ -184,6 +183,9 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"unionmagdalena-co-siis-estado-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.809],["Otros ingresos",0.286]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"cortulua-co", revenue:1.909, reportType:"official_balance_sheet",
+        sourceId:"cortulua-co-siis-estado-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.444],["Otros ingresos",0.464]] },
     ],
   },
   2021: {

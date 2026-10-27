@@ -1,4 +1,5 @@
 window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
+"Costo de ventas":{"en":"Cost of sales"},
 "Costos financieros":{"en":"Finance costs"},
 "Gastos de administración":{"en":"Administrative expenses"},
 "Gastos de ventas":{"en":"Selling expenses"},
