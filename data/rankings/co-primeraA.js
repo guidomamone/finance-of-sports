@@ -263,7 +263,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2019: {
     leagueSize: 20,
-    sinDato: ["atleticohuila-co"],
     wiki: {"t":"2019 Categoría Primera A season","lang":"en","at":"2026-10-02","n":20},
     clubs: [
       { id:"americadecali-co", revenue:13.029, reportType:"official_balance_sheet",
@@ -279,6 +278,9 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"laequidad-co-siis-estado-2019",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.826],["Otros ingresos",0.098]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras actividades (educación y otros deportes)","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"atleticohuila-co", revenue:5.734, reportType:"official_balance_sheet",
+        sourceId:"atleticohuila-co-siis-estado-2019",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.661],["Otros ingresos",0.073]] },
       { id:"oncecaldas-co", revenue:4.417, reportType:"official_balance_sheet",
         sourceId:"oncecaldas-co-siis-estado-2019",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",4.048],["Otros ingresos",0.369]],
