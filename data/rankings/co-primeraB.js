@@ -33,9 +33,11 @@ window.RANKINGS["co-primeraB"] = {
   },
   2023: {
     leagueSize: 17,
-    sinDato: ["cortulua-co"],
     wiki: {"t":"2023 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":17},
     clubs: [
+      { id:"cortulua-co", revenue:4.776, reportType:"official_balance_sheet",
+        sourceId:"cortulua-co-siis-estado-2023",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",4.273],["Otros ingresos",0.503]] },
       { id:"cucutadeportivo-co", revenue:3.627, reportType:"official_balance_sheet",
         sourceId:"cucutadeportivo-co-siis-estado-2023",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",3.461],["Otros ingresos",0.166]] },
