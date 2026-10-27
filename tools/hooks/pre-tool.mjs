@@ -456,6 +456,13 @@ function comandosSimples(cmd) {
   if (/(^|\n|&&|;|\|)\s*cd\s+\S+\s*(&&|;)/.test(sinTextos)) {
     decidir('deny', 'Nada de `cd … &&` ni `cd …;`: el comando con cd no se puede chequear y pide permiso. Escribí la ruta completa en el comando; git y node se corren directo desde la carpeta de la sesión. Para un script de una sola vez: Write en el scratchpad y `node <ruta completa>` (nada de `node -e`).');
   }
+  // un `&` al final de un comando (o de una línea) lo manda a segundo plano de la shell: se pierde la salida y el aviso de fin, y lo que arranca queda huérfano (una medición que restaura archivos al terminar). Para eso existe run_in_background.
+  if (/(?:^|[^&>])&[ \t]*(?:\n|$)/.test(sinTextos.replace(/"(?:[^"\\]|\\.)*"/g, '""'))) {
+    decidir('deny', 'Nada de `&` al final para mandar algo a segundo plano: se pierde la salida y el aviso de fin, y lo que arranca queda huérfano. Usá el parámetro run_in_background: true de Bash con el comando solo (te avisan cuando termina) y, para esperar, un Monitor.');
+  }
+  // `node tools/<x>.mjs --ayuda`: casi ninguna tool lo entiende y arranca su trabajo (medir-pipeline empezó una medición entera). fos ayuda imprime el USO de la cabecera sin correr nada.
+  const pideAyuda = /\bnode\s+(?:\S*\/)?tools\/(?!fos\.mjs)([\w.-]+\.(?:mjs|js))\b[^|;&\n]*\s(?:--ayuda|--help|-h)(?:\s|$)/.exec(sinTextos);
+  if (pideAyuda) decidir('deny', `Nada de \`node tools/${pideAyuda[1]} --ayuda\`: la mayoría de las tools no lo entienden y arrancan su trabajo. Para ver el uso sin correrla: node tools/fos.mjs ayuda ${pideAyuda[1]}`);
   if (/\$\(|\$\{|\$[A-Za-z_]/.test(sinTextos)) {
     decidir('deny', 'Nada de `$(…)`, `${…}` ni `$VARIABLE` en un comando: una ruta que se resuelve al correr pide permiso cada vez. Escribí la ruta o el valor entero; para encadenar dos pasos, un pipe o dos llamadas. (Pasa el heredoc de `git commit -m "$(cat <<\'EOF\' … EOF)"`.)');
   }

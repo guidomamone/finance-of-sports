@@ -370,6 +370,16 @@
   "quien": "script",
   "donde": "tools/audit-ignore.json"
  },
+ "prueba-sin-correr": {
+  "hacer": "node tools/probar-todas.mjs (en segundo plano; corre cada probar-*.mjs y anota el resultado en Admin/registros/pruebas-corridas.json); una que falla se arregla, no se silencia.",
+  "quien": "script",
+  "donde": "tools/probar-todas.mjs"
+ },
+ "todo-todo-hecho": {
+  "hacer": "node tools/todo.mjs --cerrar <id> y la entrada en Admin/CHANGELOG.md (todos los ítems «- [x]» del punto están hechos).",
+  "quien": "script",
+  "donde": "Admin/TODO.md, cabecera «Cómo leerla y cómo editarla»"
+ },
  "todo-cumplido": {
   "hacer": "node tools/todo.mjs --cerrar <id> y la entrada en Admin/CHANGELOG.md.",
   "quien": "script",

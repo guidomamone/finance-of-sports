@@ -9,6 +9,20 @@ function checkTodo() {
   let T; try { T = require('./todo-verificar.js'); } catch { return; }
   let texto; try { texto = fs.readFileSync(path.join(ROOT, 'Admin/TODO.md'), 'utf8'); } catch { return; }
   const hasta = findings.slice();
+  { // una prueba (probar-*.mjs) que falló, que no figura o que no corrió en 14 días: `node tools/probar-todas.mjs` las corre y anota (Admin/registros/pruebas-corridas.json)
+    let reg = {}; try { reg = JSON.parse(fs.readFileSync(path.join(ROOT, 'Admin/registros/pruebas-corridas.json'), 'utf8')); } catch { /* sin registro: ninguna figura */ }
+    const hoy = Date.now(); const pruebas = ['tools', 'tools/hooks'].flatMap((d) => { try { return fs.readdirSync(path.join(ROOT, d)).filter((f) => /^probar-.*\.mjs$/.test(f) && f !== 'probar-todas.mjs').map((f) => `${d}/${f}`); } catch { return []; } });
+    const malas = pruebas.filter((p) => !reg[p] || !reg[p].ok || hoy - new Date(reg[p].fecha).getTime() > 14 * 864e5);
+    if (malas.length) add('P3', 'prueba-sin-correr', `${malas.length} de ${pruebas.length} pruebas fallaron, no figuran o no corrieron en 14 días: ${malas.slice(0, 6).map((p) => p.replace(/^tools\//, '')).join(', ')}${malas.length > 6 ? '…' : ''}. node tools/probar-todas.mjs las corre y anota (en segundo plano)`);
+  }
+  { // un punto con ítems `- [x]` / `- [ ]` y todos hechos: queda abierto por olvido (HECHO y PENDIENTE: node tools/todo.mjs <id>)
+    const ls = texto.split('\n'); const titulos = ls.map((l, i) => (/^### \d+\. \d{3} ·/.test(l) ? i : -1)).filter((i) => i >= 0);
+    titulos.forEach((i, k) => {
+      let f = i + 1; while (f < ls.length && !/^##+ /.test(ls[f])) f++;
+      const it = ls.slice(i + 1, f).map((l) => /^\s*- \[( |x|X)\] /.exec(l)).filter(Boolean);
+      if (it.length && it.every((m) => m[1] !== ' ')) add('P3', 'todo-todo-hecho', `Admin/TODO.md, punto ${ls[i].match(/\. (\d{3}) ·/)[1]}: sus ${it.length} ítems están hechos (- [x]) y el punto sigue abierto. Cerralo con su entrada de CHANGELOG: node tools/todo.mjs --cerrar ${ls[i].match(/\. (\d{3}) ·/)[1]}`);
+    });
+  }
   for (const p of T.puntos(texto)) {
     if (!p.verificar.length) { add('P3', 'todo-sin-verificar', `Admin/TODO.md, punto ${p.id}: sin línea «Verificar:». Agregá una condición que una máquina compruebe (audit <código> = 0, existe <ruta>, contiene <ruta> | <texto>) o «Verificar: manual»`); continue; }
     const rs = p.verificar.map((e) => T.evaluar(e, hasta, ROOT));

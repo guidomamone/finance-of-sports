@@ -63,9 +63,10 @@ rmSync(J, { recursive: true, force: true });
 // ---- las 22 votaciones del registro: cada 3 a 0 que el contador decidiría fue DECIDIDO; ninguna A GUIDO fue unánime
 const reg = readFileSync(resolve(ROOT, 'Admin', 'registros', 'auditoria-proceso.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l)).filter((x) => Array.isArray(x.votos));
 const clave = (x) => x.votos.map((v) => (typeof v === 'string' ? v : JSON.stringify(v)));
-const unanimes = reg.filter((x) => new Set(clave(x)).size === 1);
+// una votación unánime puede ir igual A GUIDO si la opción cambia más de 10 años ya cargados (`anios_cargados_que_cambian`, la votación del 414): esas no entran en «unánime ⇒ DECIDIDO»
+const unanimes = reg.filter((x) => new Set(clave(x)).size === 1 && !(x.anios_cargados_que_cambian > 10));
 caso(`registro: las ${unanimes.length} votaciones unánimes fueron DECIDIDO y el contador también las decide`, unanimes.every((x) => x.veredicto === 'DECIDIDO') && unanimes.every((x) => contar(clave(x).map((o) => voto(o))).veredicto === 'DECIDIDO'));
-caso('registro: las votaciones que fueron A GUIDO no eran unánimes', reg.filter((x) => x.veredicto === 'A GUIDO').every((x) => new Set(clave(x)).size > 1));
+caso('registro: las votaciones que fueron A GUIDO no eran unánimes', reg.filter((x) => x.veredicto === 'A GUIDO').every((x) => new Set(clave(x)).size > 1 || x.anios_cargados_que_cambian > 10));
 
 rmSync(SALIDA, { force: true });
 console.log(mal ? `\n${mal} caso(s) MAL` : '\ntodos los casos ok');

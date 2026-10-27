@@ -12,6 +12,7 @@ Lo que falta hacer. **Esta es la única lista oficial de próximos pasos del pro
 - **Para no leerla entera:** `node tools/todo.mjs` imprime la lista (orden, id y título); `node tools/todo.mjs 355` imprime el cuerpo de ese punto;
   `node tools/todo.mjs --cerrar 355` borra el punto y renumera el orden de los de abajo. A mano, `grep -n '^### ' Admin/TODO.md` da lo mismo que
   el primero.
+- **Un punto con varios pasos los lista como ítems: `- [x] hecho` y `- [ ] pendiente`.** `node tools/todo.mjs` muestra cuántos van (`[2 de 5 hechos]`), `node tools/todo.mjs <id>` abre con HECHO y PENDIENTE antes del cuerpo, y con todos hechos `audit.js` avisa `todo-todo-hecho` (hay que cerrarlo). Un punto sin ítems sigue como siempre.
 - **Un punto resuelto se BORRA** (no se marca «RESUELTO»); su historia queda en `Admin/CHANGELOG.md` y, si ameritaba el porqué, en
   `Admin/finance-of-sports-project.md`. Si el punto sigue vivo en parte, se reescribe a lo que falta.
 - **Un punto nuevo arranca con «Terminado cuando:»**: la lista cerrada de lo que entra (clubes, años, archivos, tools) y la prueba de que está
@@ -37,6 +38,9 @@ Verificar: manual
 Lo hecho (la tool `siis-estado.mjs`, el chequeo `siis-control`, el criterio en `CONVENCIONES-DATOS.md`, `siis-notas.mjs`, `club-siis.mjs` y los clubes cargados) está archivado en `Admin/Archive/TODO-463-siis-hecho.md` (historia) y en el CHANGELOG; cómo se carga un club: `Admin/paises/co.md`, «Pipeline de Colombia: los estados de SIIS», y `node tools/club-siis.mjs "<Club>"`. Decisiones de Guido que siguen vigentes: el estado de resultados y el balance de SIIS son el estado primario oficial de un club colombiano; un año que SIIS tiene y no tiene PDF útil se carga igual (rubros grandes y resultado); la tool, el chequeo y la regla viven en el pipeline y en `audit.js`; el informe de UEFA con imágenes y la Money League no entran.
 Qué está cargado y qué falta de cada club: `node tools/club-siis.mjs` (sin nombre; «N/N años cargados» y su veredicto). Sin alta: Valledupar FC (NIT 824006447, 2016 a 2025) y Cóndores de Cundinamarca (900695572, 2021 y 2022); Titanes de Barranquilla (baloncesto) y Toros de Córdoba (béisbol) van por el 464; Corsarios dio REVISAR; Real Sincelejo está descartado (sin actividad). Un club se carga con `node tools/club-siis.mjs "<Club>" --preparar`, los tres subagentes y `--avanzar --ejecutar --cargar --en-segundo-plano`.
 Lo que quedó pendiente de los clubes ya cargados está en el punto 476.
+- [x] Cargados: Deportes Tolima, La Equidad, Águilas Doradas, Atlético Bucaramanga, Independiente Medellín, Leones FC, Fortaleza CEIF, Once Caldas, Boyacá Chicó, Unión Magdalena, Alianza FC, Deportivo Pereira, Deportivo Cali, Cortulua, Tigres FC, Atlético FC, Real Cartagena, Cúcuta Deportivo, América de Cali, Orsomarso, Atlético Huila, Barranquilla FC y Bogotá FC (`node tools/club-siis.mjs` da el detalle).
+- [ ] Con años por cargar: Envigado, Independiente Santa Fe, Junior, Llaneros, Atlético Nacional, Millonarios, Boca Juniors de Cali, Deportes Quindío, Jaguares, Patriotas Boyacá, Real Santander y Caimanes de Barranquilla.
+- [ ] Sin alta: Valledupar FC (NIT 824006447) y Cóndores de Cundinamarca (900695572). Corsarios dio REVISAR; Titanes de Barranquilla y Toros de Córdoba van por el 464; Real Sincelejo está descartado.
 Terminado cuando: los clubes de SIIS que tienen años por cargar están cargados o descartados con motivo.
 
 Verificar: existe tools/siis-estado.mjs
@@ -47,15 +51,15 @@ Verificar: audit siis-faltante = 0
 ### 3. 476 · (Onboarding, con Pantallas y Pipeline): lo que quedó pendiente de lo ya cargado de SIIS Colombia (sale del 463)
 
 Lo que falta de los clubes colombianos ya cargados. Cada pendiente se hace o se descarta con su motivo escrito acá.
-- Gestiones que ninguna nota fecha (`fos gestion-exa <clubId> --anios "…" --resumen`): Independiente Medellín (17-12-2020 al 21-1-2021; interinato de Ossa Giraldo en 2019), Cortulua (Martán Palau; razón social desde 2024 como Inter de Palmira), Orsomarso (2017 y 2018, 2020 a 2025), Barranquilla FC (Herrera entre 2023 y hoy), Bogotá FC (Perdomo sin nota propia en 2016, 2017, 2019, 2020 y 2024).
-- Sponsors débiles o sin dato (`sponsor-fka.mjs <clubId> --buscar`, Exa, sin Gemini): Orsomarso (9 años sin dato, marca 2020), Atlético Huila (una sola fuente 2017 a 2019 y 2021 a 2025), Barranquilla FC (solo es.wikipedia), Bogotá FC (FKA sin campo «frente»).
-- Capacidad de Atlético Huila 2016; liga 2025 de Barranquilla FC de una sola fuente (`segunda-fuente-liga.mjs`; `audit` dice `liga-una-fuente`).
-- Caja y deuda en los años que SIIS no resuelve (el siguiente reexpresó el cierre, o ningún pasivo financiero reportado): `node tools/caja-deuda.mjs --club <id>` dice cuáles; mirar si el documento del año los resuelve.
-- Pantallas: (i) filas «n/d*» y «—» mezcladas en un mismo año (Bucaramanga); (iii) impuestos e intereses en filas distintas según el año (Leones FC, La Equidad, Tolima: `extra_rows` contra `financial`); un año «solo SIIS» con su marca «fuente: SIIS» (mockup antes de código).
-- Dictámenes del revisor fiscal sin transcribir (sourcing; `club-siis "<Club>"` los lista): Tigres 2016 a 2019 y 2023, Atlético FC 2016 a 2019 y 2021, Cortulua 2020, y 2016 a 2019 de Huila, Orsomarso, Barranquilla FC y Bogotá FC. Huecos que solo el club puede dar: La Equidad 2016, 2018 y 2019; Águilas Doradas 2016 y 2018; Bucaramanga 2017, 2018 y 2021 (mail solo si Guido lo pide).
-- Skills (un commit por skill, Guido ve el diff): `club-sourcing` (`paises/Colombia.md` y `_notas-generales.md`: «NOTAS EF» no es «el paquete COMPLETO»; `siis_resultadointegral` es dato oficial de cada año) y `club-or-year-onboarding` (el camino SIIS).
-- Cositas chicas del 461: la nota de ingreso negativo a 375 px y con teclado; imágenes `og/` y tabla de los otros seis clubes de margen bruto; nota en español de la vista de varios años; 414 (la carga manda a la cola una «ganancia en inmovilizado» que pese poco); `fos liga-segunda-fuente-local --escribir`.
-- La prueba de escritura de `siis-estado.mjs` va con el 401.
+- [ ] Gestiones que ninguna nota fecha (`fos gestion-exa <clubId> --anios "…" --resumen`): Independiente Medellín (17-12-2020 al 21-1-2021; interinato de Ossa Giraldo en 2019), Cortulua (Martán Palau; razón social desde 2024 como Inter de Palmira), Orsomarso (2017 y 2018, 2020 a 2025), Barranquilla FC (Herrera entre 2023 y hoy), Bogotá FC (Perdomo sin nota propia en 2016, 2017, 2019, 2020 y 2024).
+- [ ] Sponsors débiles o sin dato (`sponsor-fka.mjs <clubId> --buscar`, Exa, sin Gemini): Orsomarso (9 años sin dato, marca 2020), Atlético Huila (una sola fuente 2017 a 2019 y 2021 a 2025), Barranquilla FC (solo es.wikipedia), Bogotá FC (FKA sin campo «frente»).
+- [ ] Capacidad de Atlético Huila 2016; liga 2025 de Barranquilla FC de una sola fuente (`segunda-fuente-liga.mjs`; `audit` dice `liga-una-fuente`).
+- [ ] Caja y deuda en los años que SIIS no resuelve (el siguiente reexpresó el cierre, o ningún pasivo financiero reportado): `node tools/caja-deuda.mjs --club <id>` dice cuáles; mirar si el documento del año los resuelve.
+- [ ] Pantallas: (i) filas «n/d*» y «—» mezcladas en un mismo año (Bucaramanga); (iii) impuestos e intereses en filas distintas según el año (Leones FC, La Equidad, Tolima: `extra_rows` contra `financial`); un año «solo SIIS» con su marca «fuente: SIIS» (mockup antes de código).
+- [ ] Dictámenes del revisor fiscal sin transcribir (sourcing; `club-siis "<Club>"` los lista): Tigres 2016 a 2019 y 2023, Atlético FC 2016 a 2019 y 2021, Cortulua 2020, y 2016 a 2019 de Huila, Orsomarso, Barranquilla FC y Bogotá FC. Huecos que solo el club puede dar: La Equidad 2016, 2018 y 2019; Águilas Doradas 2016 y 2018; Bucaramanga 2017, 2018 y 2021 (mail solo si Guido lo pide).
+- [ ] Skills (un commit por skill, Guido ve el diff): `club-sourcing` (`paises/Colombia.md` y `_notas-generales.md`: «NOTAS EF» no es «el paquete COMPLETO»; `siis_resultadointegral` es dato oficial de cada año) y `club-or-year-onboarding` (el camino SIIS).
+- [ ] Cositas chicas del 461: la nota de ingreso negativo a 375 px y con teclado; imágenes `og/` y tabla de los otros seis clubes de margen bruto; nota en español de la vista de varios años; 414 (la carga manda a la cola una «ganancia en inmovilizado» que pese poco); `fos liga-segunda-fuente-local --escribir`.
+- [ ] La prueba de escritura de `siis-estado.mjs` va con el 401.
 Terminado cuando: cada pendiente de arriba está hecho o descartado con su motivo escrito acá.
 
 Verificar: manual

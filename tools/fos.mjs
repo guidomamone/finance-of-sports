@@ -24,6 +24,20 @@ function listar(filtro) {
 
 if (!A.length) { listar(); process.exit(0); }
 
+// `fos ayuda <comando|archivo>` (y `fos <comando> --ayuda`): el USO de una tool, de su cabecera, SIN correrla. Muchas tools no entienden --ayuda y arrancan su trabajo (una medición, una escritura); el hook de Bash rechaza `node tools/<x> --ayuda` y manda acá.
+const usoDe = (script) => {
+  const f = resolve(TOOLS, script); if (!existsSync(f)) return null;
+  const cab = []; for (const l of readFileSync(f, 'utf8').split('\n').slice(0, 120)) { if (/^\s*(#!|$)/.test(l) && !cab.length) continue; if (!/^\s*\/\//.test(l)) { if (cab.length) break; continue; } cab.push(l.replace(/^\s*\/\/ ?/, '')); }
+  const i = cab.findIndex((l) => /\bUSO\b/i.test(l)); return (i >= 0 ? cab.slice(i) : cab).filter((l) => !/^=+$/.test(l)).slice(0, 40).join('\n');
+};
+if (A[0] === 'ayuda' || A.includes('--ayuda') || A.includes('--help')) {
+  const q = A[0] === 'ayuda' ? A[1] : A[0]; const c0 = comandos.find((x) => x.cmd === q || x.cmd === `${q} ${A[1] || ''}`.trim()) || comandos.find((x) => x.cmd.startsWith(`${q} `));
+  const script = c0?.script || (q && /\.(mjs|js)$/.test(q) ? q : `${q}.mjs`);
+  const uso = q ? usoDe(script) : null;
+  if (!uso) { console.error(`No encuentro la cabecera de «${q || ''}». Uso: node tools/fos.mjs ayuda <comando o archivo de tools/>`); process.exit(1); }
+  console.log(`${script}${c0 ? ` (fos ${c0.cmd})` : ''}\n${uso}`); process.exit(0);
+}
+
 if (A[0] === '--check') {
   let mal = 0;
   for (const c of comandos) if (!existsSync(resolve(TOOLS, c.script))) { console.log(`falta el script de «${c.cmd}»: tools/${c.script}`); mal++; }

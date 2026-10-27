@@ -73,7 +73,7 @@ function casosTextoDeGuido() {
     ['texto de Guido: solo, el primer intento pide el show_pane', c(), 'deny', 'show_pane', 'una-sesion', env('Admin/CONVENCIONES.md,Admin/CHANGELOG.md,Admin/TODO.md', 'g')],
     ['texto de Guido: el mismo commit con el mismo texto pasa', c(), 'pasa', undefined, 'una-sesion', env('Admin/CONVENCIONES.md,Admin/CHANGELOG.md,Admin/TODO.md', 'g')],
     ['texto de Guido: una regla de país sola también pide el show_pane', c(), 'deny', 'show_pane', 'una-sesion', env('Admin/paises/co.md', 'h')],
-    ['texto de Guido: [texto-junto] lo saltea', c('x [texto-junto] [sin-audit]'), 'pasa', undefined, 'una-sesion', env('Admin/CONVENCIONES.md,tools/todo.mjs', 'i')],
+    ['texto de Guido: [texto-junto] lo saltea', c('x [texto-junto] [sin-audit]'), 'pasa', undefined, 'una-sesion', env('Admin/CONVENCIONES.md,tools/mapa-codigo.mjs', 'i')],
     ['texto de Guido: CHANGELOG y TODO solos no piden nada', c(), 'pasa', undefined, 'una-sesion', env('Admin/CHANGELOG.md,Admin/TODO.md', 'j')],
   ];
 }
@@ -137,6 +137,17 @@ const casos = [
   ['directorio: un cd a la raíz, solo, pasa', { ...bash(`cd ${raiz}`), cwd: `${raiz}/Clubes` }, 'pasa'],
   ['directorio: en la raíz no dice nada', { ...bash('node tools/todo.mjs'), cwd: raiz }, 'pasa'],
   ['directorio: una carpeta fuera del proyecto no se toca', { ...bash('ls'), cwd: '/private/tmp/otra-carpeta' }, 'pasa'],
+  // --ayuda en una tool: manda a fos ayuda
+  ['node tools/x.mjs --ayuda se rechaza y manda a fos ayuda', bash('node tools/medir-pipeline.mjs --ayuda'), 'deny', 'fos.mjs ayuda medir-pipeline.mjs'],
+  ['node tools/x.mjs --help también', bash('node tools/cola.mjs --help'), 'deny', 'fos.mjs ayuda cola.mjs'],
+  ['fos ayuda pasa', bash('node tools/fos.mjs ayuda medir-pipeline.mjs'), 'pasa'],
+  ['un script que nombra --ayuda en un texto no se rechaza', bash('grep -n "--ayuda" tools/fos.mjs'), 'pasa'],
+  // & al final: segundo plano de la shell
+  ['un & al final de un comando se rechaza y dice run_in_background', bash('node tools/todo.mjs 463 > /dev/null 2>&1 &'), 'deny', 'run_in_background'],
+  ['un & al final de una línea, con otro comando después, también', bash('node tools/todo.mjs 463 &\nsleep 1'), 'deny', 'run_in_background'],
+  ['&& entre dos comandos pasa', bash('git status && git log -1'), 'pasa'],
+  ['2>&1 no es un & al final', bash('node tools/todo.mjs 463 2>&1 | head -3'), 'pasa'],
+  ['un & dentro de comillas no cuenta', bash('grep -n "a &" Admin/TODO.md'), 'pasa'],
   ['node -e se rechaza', bash('node -e "console.log(1)"'), 'deny', 'node -e'],
   ['node -p se rechaza', bash('node -p 1+1'), 'deny', 'node -e'],
   ['python3 -c se rechaza', bash("python3 -c 'print(1)'"), 'deny', 'python'],

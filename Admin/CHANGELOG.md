@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1227 — TODO con HECHO y PENDIENTE, `fos ayuda`, `&` rechazado y las pruebas que nadie corría [todo.mjs, audit-chequeos-4.js, fos.mjs, probar-todas.mjs, probar-patron.mjs, probar-votacion-nueva.mjs · hooks/pre-tool.mjs]
+- `todo.mjs`: un punto con ítems `- [x]` hecho y `- [ ]` pendiente muestra `[2 de 5 hechos]` en la lista y abre con HECHO y PENDIENTE antes del cuerpo; `audit.js` da `todo-todo-hecho` (P3) si todos están hechos y el punto sigue abierto. 463 y 476 ya usan ítems; la cabecera de `Admin/TODO.md` lo explica.
+- `fos ayuda <tool>` (y `fos <cmd> --ayuda`) imprime el USO de la cabecera sin correr nada; el hook de Bash rechaza `node tools/<x> --ayuda|--help` y manda ahí, y rechaza un `&` al final (usar `run_in_background`). `probar-pre-tool.mjs` 111 casos, todos ok.
+- `node tools/probar-todas.mjs` (`fos probar`) corre las 16 pruebas y anota cuándo pasó cada una en `Admin/registros/pruebas-corridas.json`; `audit.js` da `prueba-sin-correr` (P3) si una falló, no figura o lleva 14 días sin correr. Al correrlas aparecieron dos rotas: `probar-patron.mjs` (no copiaba `patrones-tools.mjs` ni su `.json`, y su caso esperaba un PENDIENTE que ahora es un error) y `probar-votacion-nueva.mjs` (suponía que toda votación unánime es DECIDIDO; la del 414 fue A GUIDO por cambiar 12 años cargados). Las 16 pasan.
+- Medición: idéntico (`audit`). Sin revisión independiente de la Auditora.
+
 ## Versión 1226 — `tool-grande` a 60 KB, medir-pipeline rechaza argumentos desconocidos, cerrar-tool ignora tools sin cambios y la prueba del medidor, rota, arreglada [audit-chequeos-2.js, medir-pipeline.mjs, cerrar-tool.mjs, probar-medir-pipeline.mjs]
 - `tool-grande` (P3) pide partir una tool desde los 60 KB, no desde los 40: 14 tools estaban entre 34 y 39 KB y `cola.mjs` a 22 bytes del tope, así que cada línea nueva obligaba a mudar código y a medir de nuevo. El aviso de lectura entera a los 30 KB (hook) queda; `CLAUDE.md` y `CONVENCIONES.md` lo dicen igual (commit aparte).
 - `medir-pipeline.mjs` frena con «Argumento desconocido» (antes `--ayuda` arrancaba una medición entera); `cerrar-tool --tools` ignora las tools sin cambios contra HEAD y lo dice (una sin cambios hacía fallar el veredicto con «falta la medición con la huella actual»).

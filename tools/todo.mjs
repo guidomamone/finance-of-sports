@@ -42,9 +42,16 @@ for (const p of puntos) {
   p.fin = f;
 }
 
+// HECHO y PENDIENTE de un punto: sus ítems `- [x] …` (hecho) y `- [ ] …` (pendiente). Un punto sin ítems no muestra progreso; con todos hechos, audit.js avisa (`todo-todo-hecho`) que hay que cerrarlo.
+const items = (p) => L.slice(p.i + 1, p.fin).map((l) => /^\s*- \[( |x|X)\] (.*)$/.exec(l)).filter(Boolean).map((m) => ({ hecho: m[1] !== ' ', texto: m[2] }));
+const progreso = (p) => { const it = p ? items(p) : []; return it.length ? `  [${it.filter((x) => x.hecho).length} de ${it.length} hechos]` : ''; };
+const resumen = (p) => { const it = items(p); if (!it.length) return ''; const corto = (s) => s.replace(/\s+/g, ' ').slice(0, 110);
+  const h = it.filter((x) => x.hecho), t = it.filter((x) => !x.hecho);
+  return `HECHO (${h.length}): ${h.length ? '' : 'nada todavía'}\n${h.map((x) => `  ✓ ${corto(x.texto)}`).join('\n')}${h.length ? '\n' : ''}PENDIENTE (${t.length}): ${t.length ? '' : 'nada: cerrar el punto'}\n${t.map((x) => `  · ${corto(x.texto)}`).join('\n')}\n\n`; };
+
 if (!A.length) {
   let grupo = '';
-  for (const l of L) { if (/^## [A-Z]\. /.test(l) && l !== grupo) { grupo = l; console.log(`\n${l.slice(3)}`); } const m = TITULO.exec(l); if (m) console.log(`${m[1].padStart(2)}. ${m[2]} · ${m[3].slice(0, 150)}`); }
+  for (const l of L) { if (/^## [A-Z]\. /.test(l) && l !== grupo) { grupo = l; console.log(`\n${l.slice(3)}`); } const m = TITULO.exec(l); if (m) console.log(`${m[1].padStart(2)}. ${m[2]} · ${m[3].slice(0, 150)}${progreso(puntos.find((x) => x.id === m[2]))}`); }
   process.exit(0);
 }
 
@@ -151,7 +158,7 @@ function contexto(id) {
   return sec.length ? `\n\nContexto de este punto (rutas; se lee lo que haga falta):\n${sec.join('\n')}` : '\n\nContexto de este punto: nada lo cita todavía.';
 }
 
-if (!cerrar) { console.log(L.slice(p.i, p.fin).join('\n').trimEnd() + (A.includes('--sin-contexto') ? '' : contexto(p.id))); process.exit(0); }
+if (!cerrar) { console.log((A.includes('--sin-resumen') ? '' : resumen(p)) + L.slice(p.i, p.fin).join('\n').trimEnd() + (A.includes('--sin-contexto') ? '' : contexto(p.id))); process.exit(0); }
 
 if (!A.includes('--forzar')) {
   const e = estadoDe(p, hallazgos());
