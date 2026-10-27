@@ -87,12 +87,14 @@ window.RANKINGS["co-primeraB"] = {
   },
   2022: {
     leagueSize: 16,
-    sinDato: ["atleticohuila-co"],
     wiki: {"t":"2022 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"cucutadeportivo-co", revenue:1.983, reportType:"official_balance_sheet",
         sourceId:"cucutadeportivo-co-siis-estado-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.571],["Otros ingresos",0.412]] },
+      { id:"atleticohuila-co", revenue:1.904, reportType:"official_balance_sheet",
+        sourceId:"atleticohuila-co-siis-estado-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.73],["Otros ingresos",0.174]] },
       { id:"realcartagena-co", revenue:1.824, reportType:"official_balance_sheet",
         sourceId:"realcartagena-co-siis-estado-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.809],["Otros ingresos",0.015]] },
