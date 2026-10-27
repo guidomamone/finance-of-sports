@@ -40,6 +40,28 @@
         "display_name": {
           "type": "string"
         },
+        "names": {
+          "description": "Los nombres con que se conoció al club, por período, cuando cambió el nombre sin cambiar la entidad. `display_name` es el actual; `from` y `to` son años (ambos incluidos) y faltan en el extremo abierto.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "from": {
+                "type": "integer"
+              },
+              "to": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "name"
+            ],
+            "additionalProperties": false
+          }
+        },
         "country": {
           "type": "string",
           "pattern": "^[A-Z]{2}$"

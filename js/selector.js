@@ -2542,7 +2542,7 @@ window.CLUB_SELECTOR = (function(){
       if(!clubs[id]) return;
       var co = window.COUNTRIES[countryOf(id)];
       var ligasTxt = ligasDe(id).map(function(l){ return (window.LEAGUES[l] || {}).name || ''; }).join(' ');
-      textoBuscable[id] = norm(nameOf(id)) + ' ' + norm(co ? t(co.key, co.name) : '') + ' ' + norm(ligasTxt);
+      textoBuscable[id] = norm((window.nombresClub ? window.nombresClub(id) : [nameOf(id)]).join(' ')) + ' ' + norm(co ? t(co.key, co.name) : '') + ' ' + norm(ligasTxt);
     });
     return textoBuscable;
   }
@@ -2785,6 +2785,8 @@ window.CLUB_SELECTOR = (function(){
     if(liga) partes.push(liga.name);
     var co = window.COUNTRIES[countryOf(id)];
     if(co) partes.push(t(co.key, co.name));
+    var antes = window.nombresAnterioresClub ? window.nombresAnterioresClub(id) : '';
+    if(antes) partes.push(t('finanzas.antes', 'antes') + ' ' + antes);
     var BAL = { official_balance_sheet:1, unofficial_mirror:1, official_budget_and_balance:1 };
     var PRE = { official_budget:1, official_budget_and_balance:1 };
     var nb = 0, np = 0, anios = [];

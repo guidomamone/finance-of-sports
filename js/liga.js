@@ -39,7 +39,8 @@ window.LIGA_VIEW = (function(){
   }
   // OJO: `clubs` SIN `window.`: data/clubs.js lo declara con `const`, así que window.clubs da undefined.
   function clubDe(id){ return (typeof clubs !== 'undefined' && clubs[id]) || {}; }
-  function nombreDe(id){ return clubDe(id).displayName || id; }
+  // Con año, el nombre que el club tenía ese año (js/nombres.js): en la tabla de una temporada se ve el que ve el hincha en ese torneo.
+  function nombreDe(id, anio){ return window.nombreClubEn ? window.nombreClubEn(id, anio) : (clubDe(id).displayName || id); }
   function deporteNombre(id){ var sp = (window.SPORTS || []).filter(function(x){ return x.id === id; })[0]; return sp ? t(sp.key, sp.name) : ''; }
   function ligaDe(lid){ return (window.LEAGUES || {})[lid] || {}; }
   function paisDe(lid){ return (window.COUNTRIES || {})[ligaDe(lid).country] || {}; }
@@ -452,7 +453,7 @@ window.LIGA_VIEW = (function(){
       st.simulados.forEach(function(s){ yaEstan[s.clubId] = true; });
       var candidatos = Object.keys(typeof clubs !== 'undefined' ? clubs : {}).filter(function(id){
         if(yaEstan[id]) return false;
-        return norm(nombreDe(id)).indexOf(q) >= 0;
+        return (window.nombresClub ? window.nombresClub(id) : [nombreDe(id)]).some(function(n){ return norm(n).indexOf(q) >= 0; });
       }).sort(function(a, b){ return nombreDe(a).localeCompare(nombreDe(b), 'es'); }).slice(0, 8);
       candidatos.forEach(function(id){
         var co = window.COUNTRIES && window.COUNTRIES[window.nationOf(id)];
@@ -922,7 +923,7 @@ window.LIGA_VIEW = (function(){
       if(f.id) b.type = 'button';
       var dot = el('span', 'vid-dot'); dot.style.background = color;
       b.appendChild(dot);
-      b.appendChild(el('span', 'vid-nom-t', f.id ? nombreDe(f.id) : f.n));
+      b.appendChild(el('span', 'vid-nom-t', f.id ? nombreDe(f.id, st.year) : f.n));
       // Fuera del nombre: un nombre largo se recorta con "…", y la marca de estimado no se puede recortar nunca.
       if(f.estimado) b.appendChild(el('span', 'lg-est-tag', (f.ancla ? t('liga.est.tagAncla', '(informe siguiente)') : t('liga.est.tag', '(estimado)')) + '*'));
       if(f.id) b.addEventListener('click', function(){ irAlClub(f.id); });

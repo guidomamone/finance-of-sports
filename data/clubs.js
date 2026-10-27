@@ -340,7 +340,7 @@ const clubs = {
   'independientemedellin-co': { id:'independientemedellin-co', name:'El Equipo del Pueblo S.A.', displayName:'Independiente Medellín', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#E91B29' },
   'leonesfc-co': { id:'leonesfc-co', name:'Leones Fútbol Club S.A.', displayName:'Leones FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FF0000' },
   'cucutadeportivo-co': { id:'cucutadeportivo-co', name:'Cúcuta Deportivo Fútbol Club S.A.', displayName:'Cucuta Deportivo', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#D90706' },
-  'cortulua-co': { id:'cortulua-co', name:'Cortuluá Fútbol Club S.A.', displayName:'Cortuluá', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
+  'cortulua-co': { id:'cortulua-co', name:'Cortuluá Fútbol Club S.A.', displayName:'Inter de Palmira', names:[{ name:'Cortuluá', to:2023 }, { name:'Inter de Palmira', from:2024 }], country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   'tigresfc-co': { id:'tigresfc-co', name:'Tigres Fútbol Club S.A.', displayName:'Tigres FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
 };
 

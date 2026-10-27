@@ -139,7 +139,6 @@ COLOMBIA (23)
   Atletico Bucaramanga    10 ejercicios (2016 a 2025), balance, COP, sin deuda/caja
   Atlético Nacional       1 ejercicio (2025), balance, COP
   Boyacá Chicó            10 ejercicios (2016 a 2025), balance, COP
-  Cortuluá                6 ejercicios (2020 a 2025), balance, COP, sin deuda/caja
   Cucuta Deportivo        8 ejercicios (2016, 2017, 2018, 2019, 2022, 2023, 2024, 2025), balance, COP, sin deuda/caja
   Deportes Tolima         10 ejercicios (2016 a 2025), balance, COP, sin deuda/caja
   Deportivo Cali          1 ejercicio (2025), balance, COP
@@ -148,6 +147,7 @@ COLOMBIA (23)
   Fortaleza CEIF          10 ejercicios (2016 a 2025), balance, COP
   Independiente Medellín  10 ejercicios (2016 a 2025), balance, COP, sin deuda/caja
   Independiente Santa Fe  1 ejercicio (2025), balance, COP
+  Inter de Palmira        6 ejercicios (2020 a 2025), balance, COP, sin deuda/caja
   Junior de Barranquilla  1 ejercicio (2025), balance, COP
   La Equidad              10 ejercicios (2016 a 2025), balance, COP, sin deuda/caja
   Leones FC               10 ejercicios (2016 a 2025), balance, COP, sin deuda/caja
