@@ -49,3 +49,5 @@ Estados financieros en disco ahora: 8 ejercicios (2018-2025), cada uno con certi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2018 desde `Clubes/Colombia/America de Cali/siis-estado-2018.pdf` (sourceId `americadecali-co-siis-estado-2018`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2019 desde `Clubes/Colombia/America de Cali/siis-estado-2019.pdf` (sourceId `americadecali-co-siis-estado-2019`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2020 desde `Clubes/Colombia/America de Cali/siis-estado-2020.pdf` (sourceId `americadecali-co-siis-estado-2020`).
