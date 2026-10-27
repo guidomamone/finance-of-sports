@@ -14,6 +14,8 @@
 //   audit-antes-del-commit  un `git commit` con cambios publicables corre `audit.js --quiet` y se frena si da P0 o P1. Si los cambios son
 //                            solo internos (Admin/, .claude/, CLAUDE.md, auditorias/, Prototyping/), no audita. `[sin-audit]` en el mensaje
 //                            del commit lo saltea: solo con el ok de Guido, para un hallazgo que ya venía de main.
+//   texto-de-guido-aparte    (deny) un commit con texto que Guido lee en el diff (tools/hooks/texto-de-guido.mjs) va solo (con CHANGELOG y TODO), una skill por commit, y el primer
+//                            intento se frena una vez para mostrar el diff con show_pane; `[texto-junto]` solo con el ok de Guido.
 //   skills-con-ok [varias]   escribir en .claude/skills/ solo pasa si el texto exacto ya está en un archivo de Admin/propuestas/ commiteado en HEAD (Edit: el
 //                            new_string entero; Write: cada párrafo de 40+ caracteres); si no, deny. Con el texto, ask: el permiso dice dónde está. Un Bash que
 //                            escribe en skills se rechaza. En una sola sesión no hay candado: el texto de una skill lo ve Guido en el diff del commit (CLAUDE.md).
@@ -49,7 +51,9 @@
 // Entrada: el JSON del hook por stdin. Salida: nada (sigue normal) o el JSON de PreToolUse con permissionDecision "deny" / "ask".
 // ============================================================================
 import { execFileSync } from 'node:child_process';
-import { appendFileSync, existsSync, readFileSync } from 'node:fs';
+import { appendFileSync, existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { esTextoDeGuido, ACOMPANA, skillDe } from './texto-de-guido.mjs';
 import { join, relative, resolve } from 'node:path';
 import { clasificar } from '../clasificar-tools.mjs';
 import { createRequire } from 'node:module';
@@ -129,6 +133,31 @@ function auditAntesDelCommit(cmd) {
       + 'Arreglalo y volvé a commitear. Si el hallazgo no es de este cambio (ya venía de main), avisale a Guido; con su ok, '
       + 'agregá [sin-audit] al mensaje del commit.');
   }
+}
+
+// texto-de-guido-aparte: un commit con texto que Guido lee en el diff (skills, CLAUDE.md, CONVENCIONES*, PANTALLA, PIPELINE, ESTADO, briefs de SIIS, reglas por país: tools/hooks/texto-de-guido.mjs)
+// va SOLO (con la entrada de CHANGELOG y TODO de esa tarea) y una skill por commit; y el diff se le muestra con show_pane ANTES: el primer intento con ese texto se frena una vez, anota la
+// huella de los archivos en .git/fos-diff-visto.json y pide el show_pane; el mismo commit, con el mismo texto, pasa. FOS_CAMBIADOS reemplaza lo que se lee de git; FOS_VISTO (ruta) el registro.
+function textoDeGuidoAparte(cmd) {
+  if (!GIT_SUB('commit').test(cmd) || cmd.includes('[texto-junto]')) return;
+  let raiz;
+  try { raiz = git(['rev-parse', '--show-toplevel']).trim(); } catch { return; }
+  if (!existsSync(join(raiz, 'tools', 'hooks', 'texto-de-guido.mjs'))) return; // otro repo
+  const cambiados = [...new Set(archivosDelCommit(cmd).archivos.filter(Boolean))];
+  const texto = cambiados.filter(esTextoDeGuido);
+  if (!texto.length) return;
+  const otros = cambiados.filter((f) => !esTextoDeGuido(f) && !ACOMPANA.test(f));
+  if (otros.length) decidir('deny', `Commit frenado: ${texto.join(', ')} es texto que Guido lee en el diff y no puede ir con ${otros.slice(0, 5).join(', ')}${otros.length > 5 ? ` y ${otros.length - 5} más` : ''}. `
+    + 'Commiteá primero lo otro (`git add` solo de esos archivos) y después el texto, solo, con la entrada de CHANGELOG y TODO si le toca. Con el ok de Guido, `[texto-junto]` en el mensaje lo saltea.');
+  const skills = [...new Set(texto.map(skillDe).filter(Boolean))];
+  if (skills.length > 1 || (skills.length && texto.some((f) => !skillDe(f)))) decidir('deny', `Commit frenado: ${texto.join(', ')}: una skill por commit, y sola entre los textos (cada una se lee por separado en el diff).`);
+  const registro = process.env.FOS_VISTO || join(raiz, '.git', 'fos-diff-visto.json');
+  let visto = []; try { visto = JSON.parse(readFileSync(registro, 'utf8')); } catch { /* primera vez */ }
+  const huella = createHash('sha1').update(texto.sort().map((f) => `${f}\n${(() => { try { return git(['hash-object', f]).trim(); } catch { return 'borrado'; } })()}`).join('\n')).digest('hex');
+  if (visto.includes(huella)) return;
+  try { writeFileSync(registro, JSON.stringify([...visto.slice(-50), huella])); } catch { /* sin .git escribible: no frena de más */ return; }
+  decidir('deny', `Antes de commitear ${texto.join(', ')}: mostrale el diff a Guido con show_pane (pane diff; ToolSearch "select:mcp__ccd_view__show_pane" si no está cargada) y repetí el MISMO comando. `
+    + 'Este aviso salta una sola vez por cada versión de ese texto; si cambiás el texto, vuelve a saltar.');
 }
 
 // medicion-antes-del-commit (TODO 371): un commit que incluye una tool de tools/pipeline-tools.json necesita, en
@@ -496,5 +525,5 @@ pushConOk(cmd);
 if (VARIAS) docsDeLaPrincipal(cmd);
 pdfsConOk(cmd);
 if (herramienta === 'Bash') codigoSueltoEnLinea(cmd);
-if (herramienta === 'Bash') { medicionAntesDelCommit(cmd); auditAntesDelCommit(cmd); }
+if (herramienta === 'Bash') { textoDeGuidoAparte(cmd); medicionAntesDelCommit(cmd); auditAntesDelCommit(cmd); }
 edicionMientrasSeMide();

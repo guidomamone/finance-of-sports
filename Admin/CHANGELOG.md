@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1213 — Hook texto-de-guido-aparte: todo el texto que Guido lee va en su propio commit y con el diff mostrado [hooks/pre-tool.mjs, hooks/post-tool.mjs, hooks/texto-de-guido.mjs]
+- `tools/hooks/texto-de-guido.mjs` es la lista única (skills, CLAUDE.md, CONVENCIONES*, PANTALLA, PIPELINE, ESTADO, `Admin/briefs-subagentes-siis.md`, `Admin/paises/*.md`). Antes el aviso de `show_pane` (post-tool) solo miraba una parte y NADA exigía el commit aparte, ni para skills.
+- `pre-tool.mjs`, `texto-de-guido-aparte`: un commit con ese texto no puede llevar otros archivos (CHANGELOG y TODO sí), una skill por commit, y el primer intento se frena una vez para pedir el `show_pane` del diff (huella en `.git/fos-diff-visto.json`; el mismo commit con el mismo texto pasa). `[texto-junto]` solo con el ok de Guido.
+- Medición: `probar-pre-tool.mjs` 98 casos y `probar-post-tool.mjs` 18, todos ok (11 y 2 nuevos). Sin revisión independiente de la Auditora.
+
 ## Versión 1212 — publicar.mjs --correcciones imprime los dos comandos del commit siguiente [publicar.mjs, audit-acciones.json]
 - `tools/publicar.mjs --correcciones` termina imprimiendo el `git add -A` y el `git commit -q -m "Registro de correcciones y sitio regenerado tras: <asunto del último commit>"` exactos (cada uno en su llamada de Bash); `correcciones-desfasado` en `audit-acciones.json` lo dice igual. Sin cambio de lógica.
 - Medición: idéntico (`audit`, `escribir`). Sin revisión independiente de la Auditora.

@@ -57,6 +57,26 @@ function casosMedicion() {
     ['medición: un comando que no es commit pasa', bash('git status'), 'pasa', undefined, 'una-sesion', env(registro('vacio4', []))],
   ];
 }
+// texto-de-guido-aparte: el registro de lo visto de cada caso es un archivo de prueba (se borra con los demás `_prueba-hook-`); FOS_CAMBIADOS simula lo que entra al commit
+function casosTextoDeGuido() {
+  const dir = `${raiz}/Admin/mediciones/pipeline`;
+  mkdirSync(dir, { recursive: true });
+  const env = (cambiados, visto) => ({ FOS_CAMBIADOS: cambiados, FOS_VISTO: `${dir}/_prueba-hook-visto-${visto}.json` });
+  const c = (msg = 'x') => bash(`git commit -m "${msg}"`);
+  return [
+    ['texto de Guido: un doc de criterio con una tool en el mismo commit frena', c(), 'deny', 'solo', 'una-sesion', env('Admin/CONVENCIONES.md,tools/todo.mjs', 'a')],
+    ['texto de Guido: un doc de criterio con datos frena', c(), 'deny', 'solo', 'una-sesion', env('Admin/PIPELINE.md,data/co/x.json', 'b')],
+    ['texto de Guido: los briefs de SIIS cuentan', c(), 'deny', 'solo', 'una-sesion', env('Admin/briefs-subagentes-siis.md,tools/todo.mjs', 'c')],
+    ['texto de Guido: la regla de un país cuenta', c(), 'deny', 'solo', 'una-sesion', env('Admin/paises/co.md,data/co/x.json', 'd')],
+    ['texto de Guido: dos skills en un commit frenan', c(), 'deny', 'una skill por commit', 'una-sesion', env('.claude/skills/club-sourcing/SKILL.md,.claude/skills/club-data-mapping/SKILL.md', 'e')],
+    ['texto de Guido: una skill con un doc de criterio frena', c(), 'deny', 'una skill por commit', 'una-sesion', env('.claude/skills/club-sourcing/SKILL.md,Admin/PANTALLA.md', 'f')],
+    ['texto de Guido: solo, el primer intento pide el show_pane', c(), 'deny', 'show_pane', 'una-sesion', env('Admin/CONVENCIONES.md,Admin/CHANGELOG.md,Admin/TODO.md', 'g')],
+    ['texto de Guido: el mismo commit con el mismo texto pasa', c(), 'pasa', undefined, 'una-sesion', env('Admin/CONVENCIONES.md,Admin/CHANGELOG.md,Admin/TODO.md', 'g')],
+    ['texto de Guido: una regla de país sola también pide el show_pane', c(), 'deny', 'show_pane', 'una-sesion', env('Admin/paises/co.md', 'h')],
+    ['texto de Guido: [texto-junto] lo saltea', c('x [texto-junto] [sin-audit]'), 'pasa', undefined, 'una-sesion', env('Admin/CONVENCIONES.md,tools/todo.mjs', 'i')],
+    ['texto de Guido: CHANGELOG y TODO solos no piden nada', c(), 'pasa', undefined, 'una-sesion', env('Admin/CHANGELOG.md,Admin/TODO.md', 'j')],
+  ];
+}
 const casos = [
   ['skill: texto que nadie propuso', { tool_name: 'Edit', tool_input: { file_path: skill, old_string: 'x', new_string: 'Un texto que nadie propuso nunca en ningún archivo de propuestas.' } }, 'deny', 'no está en ningún archivo', 'varias-sesiones'],
   ['skill: texto propuesto y commiteado', { tool_name: 'Edit', tool_input: { file_path: skill, old_string: 'x', new_string: '**Un club extinto o refundado vale** si sus balances siguen publicados: se bajan y se documentan como los de cualquier otro.' } }, 'ask', 'Admin/propuestas/', 'varias-sesiones'],
@@ -120,6 +140,7 @@ const casos = [
   ['node con un script pasa', bash('node tools/todo.mjs 442'), 'pasa'],
   ['python3 -I con un script pasa', bash('python3 -I /private/tmp/claude-501/x/scratchpad/a.py'), 'pasa'],
   ...casosMedicion(),
+  ...casosTextoDeGuido(),
 ];
 
 let mal = 0;
