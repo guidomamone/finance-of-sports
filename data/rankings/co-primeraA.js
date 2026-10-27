@@ -191,7 +191,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2021: {
     leagueSize: 21,
-    sinDato: ["atleticohuila-co"],
     wiki: {"t":"2021 Liga DIMAYOR","lang":"en","at":"2026-10-02","n":21},
     clubs: [
       { id:"americadecali-co", revenue:13.105, reportType:"official_balance_sheet",
@@ -222,6 +221,9 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"atleticobucaramanga-co-siis-estado-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.063],["Otros ingresos",0.038]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"atleticohuila-co", revenue:1.937, reportType:"official_balance_sheet",
+        sourceId:"atleticohuila-co-siis-estado-2021",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.922],["Otros ingresos",0.016]] },
       { id:"boyacachico-co", revenue:1.44, reportType:"official_balance_sheet",
         sourceId:"boyacachico-co-siis-estado-2021",
         mix:[["Subsidios y donaciones",0.023],["Fútbol profesional (sin desglosar por la fuente)",1.418],["Otros ingresos",0]],
