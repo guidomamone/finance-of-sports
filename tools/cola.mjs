@@ -348,7 +348,6 @@ if (import.meta.url === `file://${process.argv[1]}`) {
         process.exit(1);
       }
     }
-    // --evidencia "ruta.md:12-30" (o ninguna), --seguridad y --causa son obligatorios (cola-respuesta.mjs): sin los tres no se guarda.
     const respuesta = lineaDeRespuesta({ id, decision, valor: flag('--valor'), nota: flag('--nota'), evidencia: flag('--evidencia'), seguridad: flag('--seguridad'), causa: flag('--causa'), precedentes: flag('--precedentes') });
     if (respuesta.errores.length) { console.error(`No guardé la respuesta: ${respuesta.errores.join('; ')}. --causa: ${CAUSAS.join('|')}`); process.exit(1); }
     appendFileSync(ARCHIVO, JSON.stringify(respuesta.linea) + '\n');
@@ -430,5 +429,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     }
     console.log('');
   }
-  console.log('Responder: node tools/cola.mjs --responder <id> aceptar | corregir --valor "..." | descartar | preguntar-club   [--nota "..."]');
+  console.log('Responder: node tools/cola.mjs --responder <id> aceptar | corregir --valor "..." | descartar | preguntar-club   [--nota "..."] --evidencia "ruta.md:12-30"|ninguna --seguridad alta|media|baja --causa <causa> (los tres, obligatorios)');
 }

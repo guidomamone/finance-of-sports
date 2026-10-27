@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1193 — El pie de la cola nombra los tres flags de --responder [cola.mjs]
+- El pie de `node tools/cola.mjs` agrega `--evidencia`, `--seguridad` y `--causa` (obligatorios); se quita un comentario repetido del archivo para quedar bajo el límite de tamaño.
+- Medición: lote completo, idéntico. Sin revisión independiente de la Auditora.
+
 ## Versión 1192 — La regla por nota reconoce la nómina; aviso de respuestas de la cola que la contradicen [470 · reglas-categoria.mjs, audit.js, audit-chequeos-siis.js]
 - `reglaDeNota()`: el concepto «personal» cubre también los componentes sueltos de la nómina (cesantías, prima de servicios, vacaciones, auxilios, indemnizaciones laborales, aportes); antes esas filas caían a la cola aunque estuvieran en la nota de administración.
 - `node tools/reglas-categoria.mjs --respuestas` y aviso P3 `respuesta-contradice-regla` en `audit.js`: la respuesta vigente de `categorias-aprendidas.jsonl` que la regla por nota manda a otra categoría (una respuesta gana sobre la regla al recargar el año).
