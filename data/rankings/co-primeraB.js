@@ -161,7 +161,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2020: {
     leagueSize: 16,
-    sinDato: ["barranquillafc-co","bogotafc-co"],
+    sinDato: ["bogotafc-co"],
     wiki: {"t":"2020 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"cortulua-co", revenue:2.718, reportType:"official_balance_sheet",
@@ -177,6 +177,9 @@ window.RANKINGS["co-primeraB"] = {
         sourceId:"unionmagdalena-co-siis-estado-2020",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.304],["Otros ingresos",0.059]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"barranquillafc-co", revenue:1.227, reportType:"official_balance_sheet",
+        sourceId:"barranquillafc-co-siis-estado-2020",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.226],["Otros ingresos",0.001]] },
       { id:"realcartagena-co", revenue:1.197, reportType:"official_balance_sheet",
         sourceId:"realcartagena-co-siis-estado-2020",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.126],["Otros ingresos",0.071]] },
