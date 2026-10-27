@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1218 — siis-caja-deuda.mjs: la proporción con los ingresos de audit.js, antes de escribir [463 · siis-caja-deuda.mjs · cucutadeportivo-co]
+- Caja y deuda de 17 clubes colombianos quedaron escritas desde SIIS (commit aparte). Cúcuta frenó solo: `caja-deuda-desproporcionada` (caja 2016 = 64 mil COP contra 3.935 M de ingresos, 1,6e-5 < el piso 7e-5) y la tool revirtió todo. Ahora `siisDeBalance` aplica la misma proporción (caja entre 7e-5 y 3 veces los ingresos, deuda hasta 20 veces) y ese año queda sin dato; la escalera por documento tampoco lo decide (1,871 contra 0,064 en el documento siguiente).
+- Medición: idéntico (los cinco medidores). Sin revisión independiente de la Auditora.
+
 ## Versión 1217 — caja-deuda.mjs --club --escribir ya no se cuelga; el año de siis-caja-deuda como número [463 · caja-deuda.mjs, siis-caja-deuda.mjs]
 - `node tools/caja-deuda.mjs --club <id> --escribir` terminaba con «unsettled top-level await» sin escribir: `costo-personal.mjs` importa `caja-deuda.mjs`, `cargar.mjs` importa `costo-personal`, y el `import('./cargar.mjs')` esperaba a un módulo con su `await` de nivel superior pendiente. El despacho del CLI ahora corre en una función asíncrona, sin `await` de nivel superior (latente desde que `costo-personal` se separó).
 - `siis-caja-deuda.mjs`: `a.anio` llega como texto y `anio + 1` daba «20211», así que la comparativa del año siguiente nunca se miraba; ahora `Number(a.anio) + 1`. Lo vio el ensayo sobre Tigres (la validación decía solo «cuadra»).

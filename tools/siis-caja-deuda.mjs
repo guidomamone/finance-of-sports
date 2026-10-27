@@ -18,6 +18,14 @@ function balance(carpeta, anio) {
   if (!existsSync(f)) return null;
   try { return JSON.parse(readFileSync(f, 'utf8')).siis_sitfinan?.resultado || null; } catch { return null; }
 }
+// los ingresos oficiales del año en millones de COP, del JSON del club (la unidad del JSON puede no ser el millón)
+function ingresosM(clubId, anio) {
+  try {
+    const j = JSON.parse(readFileSync(resolve(ROOT, 'data', clubId.split('-').pop(), `${clubId}.json`), 'utf8'));
+    const y = (j.years || []).find((z) => Number(z.fiscal_year) === Number(anio));
+    return y?.official_totals?.revenue != null ? Number(y.official_totals.revenue) * (j.unit?.scale || 1) / 1e6 : null;
+  } catch { return null; }
+}
 // lo que el balance dice de un cierre: col 'Corte' (el año) o 'Anterior' (la comparativa)
 function lecturas(b, col) {
   const k = col === 'Corte' ? 'corte' : 'corteAnterior'; const t = col === 'Corte' ? 'valorCorte' : 'valorAnterior';
@@ -41,13 +49,18 @@ export function siisDeBalance(clubId, a) {
   // el año siguiente de SIIS: su comparativa repite el cierre de este (si difiere, el siguiente lo reexpresó y no se sabe cuál vale)
   const sig = balance(carpeta, Number(a.anio) + 1); const s = sig ? lecturas(sig, 'Anterior') : null;
   const contradice = (cual) => (s && s[cual] != null && x[cual] != null && Math.abs(s[cual] - x[cual]) > Math.max(1, 0.001 * Math.abs(x[cual])));
-  const val = s ? 'balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide' : 'balance de SIIS cuadra';
+  // la misma proporción con los ingresos que frena audit.js (caja-deuda-desproporcionada: caja entre 7e-5 y 3 veces, deuda hasta 20 veces): fuera de eso es un error de escala o de fila, y no se escribe
+  const ing = ingresosM(clubId, a.anio);
+  const desproporcion = (cual, m) => (ing > 0 && m != null && ((cual === 'cash' && (m > 3 * ing || (m > 0 && m < 7e-5 * ing))) || (cual === 'grossDebt' && m > 20 * ing)) ? `${cual === 'cash' ? 'caja' : 'deuda'} ${r6(m)} M contra ingresos de ${r6(ing)} M: proporción de error de escala o de fila` : null);
+  const val = s ?'balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide' : 'balance de SIIS cuadra';
   const cita = (txt) => `balance de SIIS (siis-estado-${a.anio}.json, miles de COP): ${txt}`;
   if (x.caja == null) no('cash', 'sin «Efectivo y equivalentes al efectivo» (vacío no es 0)');
+  else if (desproporcion('cash', x.caja / 1000)) no('cash', desproporcion('cash', x.caja / 1000));
   else if (contradice('caja')) no('cash', `la comparativa del año siguiente de SIIS (${s.caja}) no repite este efectivo (${x.caja}): reexpresión`);
   else out.cash = { ...base, valor: r6(x.caja / 1000), validacion: val, como: cita(`efectivo y equivalentes = ${x.caja}`) };
   if (x.ofc == null && x.ofn == null) no('grossDebt', x.prestamos ? 'préstamos sin «Otros pasivos financieros» (criterio dudoso)' : 'ningún pasivo financiero reportado (vacío no es 0)');
   else if (x.ofc == null && x.prestamos) no('grossDebt', 'préstamos corrientes sin «Otros pasivos financieros corrientes» (criterio dudoso)');
+  else if (desproporcion('grossDebt', ((x.ofc || 0) + (x.ofn || 0)) / 1000)) no('grossDebt', desproporcion('grossDebt', ((x.ofc || 0) + (x.ofn || 0)) / 1000));
   else if (contradice('ofc') || contradice('ofn')) no('grossDebt', 'la comparativa del año siguiente de SIIS no repite estos pasivos financieros: reexpresión');
   else out.grossDebt = { ...base, valor: r6(((x.ofc || 0) + (x.ofn || 0)) / 1000), validacion: val, como: cita(`otros pasivos financieros corrientes ${x.ofc ?? 'vacío'} + no corrientes ${x.ofn ?? 'vacío'}`) };
   return out;
