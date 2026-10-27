@@ -343,7 +343,8 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
   } catch (err) { const rv = revertir(snap, evExtra); console.log(`NO se escribió: ${err.message} (se revirtió: ${rv.restaurados} restaurados)`); return { propuestas, error: err.message }; }
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+// sin `await` en el nivel superior del módulo: costo-personal.mjs importa este archivo y cargar.mjs importa costo-personal, y el `import('./cargar.mjs')` de --escribir se quedaba esperando a este módulo (ciclo con await pendiente)
+if (import.meta.url === `file://${process.argv[1]}`) (async () => {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
   if (A.includes('--personal') && A.includes('--ver-candidatos')) { // lo que recibiría Jev para un año, sin llamarlo
     const { G, S } = sitio(); const reg = registroDocs(); const a = aniosDe(G[flag('--club')], S).find((x) => x.anio === flag('--anio'));
@@ -357,4 +358,4 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (A.includes('--medir')) { await medir({ club: flag('--club'), detalle: A.includes('--detalle'), ia: A.includes('--ia'), jev: A.includes('--jev'), escalas: A.includes('--escalas'), ejecutar: A.includes('--ejecutar'), modelo: flag('--modelo') }); process.exit(0); }
   if (flag('--club')) { const r = await completarClub(flag('--club'), { ejecutar: A.includes('--ejecutar'), escribir: A.includes('--escribir') }); process.exit(r.error ? 1 : 0); }
   console.error('Uso: node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]  |  --medir [--club x] [--ia [--ejecutar]] [--detalle]'); process.exit(1);
-}
+})();

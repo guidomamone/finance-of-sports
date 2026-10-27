@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1217 — caja-deuda.mjs --club --escribir ya no se cuelga; el año de siis-caja-deuda como número [463 · caja-deuda.mjs, siis-caja-deuda.mjs]
+- `node tools/caja-deuda.mjs --club <id> --escribir` terminaba con «unsettled top-level await» sin escribir: `costo-personal.mjs` importa `caja-deuda.mjs`, `cargar.mjs` importa `costo-personal`, y el `import('./cargar.mjs')` esperaba a un módulo con su `await` de nivel superior pendiente. El despacho del CLI ahora corre en una función asíncrona, sin `await` de nivel superior (latente desde que `costo-personal` se separó).
+- `siis-caja-deuda.mjs`: `a.anio` llega como texto y `anio + 1` daba «20211», así que la comparativa del año siguiente nunca se miraba; ahora `Number(a.anio) + 1`. Lo vio el ensayo sobre Tigres (la validación decía solo «cuadra»).
+- Medición: idéntico (lote chico: los cinco medidores). Sin revisión independiente de la Auditora.
+
 ## Versión 1216 — caja-deuda.mjs: caja y deuda desde el balance de SIIS [463 · caja-deuda.mjs, siis-caja-deuda.mjs]
 - `tools/siis-caja-deuda.mjs` (nuevo, solo de SIIS): `siisDeBalance(clubId, a)` lee `siis_sitfinan` de `siis-estado-AAAA.json`. Caja = «Efectivo y equivalentes»; deuda = «Otros pasivos financieros» corrientes + no corrientes (los préstamos corrientes son parte de los corrientes y no se suman). Precedente: América de Cali 2025 y Unión Magdalena 2018 dan esos valores exactos. Compuerta: el balance cuadra y la comparativa del año siguiente de SIIS repite el cierre; con reexpresión o un préstamo sin «Otros pasivos financieros», no decide. Un rubro vacío no es 0.
 - `caja-deuda.mjs` (`completarClub`) lo llama después de Rusia y antes de los documentos; lo que SIIS no da sigue por la escalera de siempre. Ensayo sobre `data/co/`: 228 de 288 vacíos con balance de SIIS salen resueltos (Tigres 2021: 190,741 por SIIS = lo que da el documento por otro camino). Faltan por reexpresión (45) y por pasivo financiero no reportado (15).

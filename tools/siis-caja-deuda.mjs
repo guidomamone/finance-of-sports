@@ -39,7 +39,7 @@ export function siisDeBalance(clubId, a) {
   const no = (cual, como) => { out[cual] = { ...base, valor: null, como: `SIIS: ${como}` }; };
   if (!cuadra) { no('cash', 'el balance no cuadra (activo ≠ pasivo + patrimonio)'); no('grossDebt', 'el balance no cuadra (activo ≠ pasivo + patrimonio)'); return out; }
   // el año siguiente de SIIS: su comparativa repite el cierre de este (si difiere, el siguiente lo reexpresó y no se sabe cuál vale)
-  const sig = balance(carpeta, a.anio + 1); const s = sig ? lecturas(sig, 'Anterior') : null;
+  const sig = balance(carpeta, Number(a.anio) + 1); const s = sig ? lecturas(sig, 'Anterior') : null;
   const contradice = (cual) => (s && s[cual] != null && x[cual] != null && Math.abs(s[cual] - x[cual]) > Math.max(1, 0.001 * Math.abs(x[cual])));
   const val = s ? 'balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide' : 'balance de SIIS cuadra';
   const cita = (txt) => `balance de SIIS (siis-estado-${a.anio}.json, miles de COP): ${txt}`;
