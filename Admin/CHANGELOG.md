@@ -20,6 +20,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1205 — generate-sponsors: un prefijo compartido no une equipos [474 · generate-sponsors.js]
+- Un nombre del sitio que es prefijo de varios equipos del país («Atlético FC» frente a «Atlético Huila», «Atlético Nacional»…) ya no se une por prefijo a ninguno: queda sin unir salvo nombre exacto. Salió de la alta de Atlético FC, que se llevó los sponsors de Atlético Huila; en todo `data/sponsors.js` dejan de unirse seis pares falsos (Atlético Huila a Atlético FC, Botafogo-PB a Botafogo, Grêmio Barueri y Prudente a Grêmio, Sporting da Covilhã a Sporting CP) y no se une ninguno nuevo.
+- Medición: lote chico, 1 diferencia, explicada (los seis pares). Veredicto GENERAL. Sin revisión independiente de la Auditora.
+
+## Versión 1204 — club-siis: la lista «para commitear» sale de git status [474 · club-siis.mjs, club-siis-preparar.mjs]
+- La lista de `git add` que imprimen `--avanzar` y `--preparar` la calcula `listaParaCommitear` de `git status` (cada carpeta o archivo cambiado de la raíz; las tools de una en una; de `Clubes/` y `Generados/` solo lo de este club, y lo de otro club se dice aparte). Antes estaba escrita a mano y le faltaban el `clubId` de `siis-clubes.json`, las imágenes de `og/` y la verificación de un año recargado.
+- Medición: `club-siis` y su módulo no son del pipeline (`fos que-pide`). Sin revisión independiente de la Auditora.
+
 ## Versión 1203 — Un club con dos nombres; club-siis y el brief del auditor [474 · json-datos.mjs, generar-data.mjs, generate-club-pages.js, club-siis.mjs]
 - `data/clubs.js` admite `names: [{ name, from?, to? }]` (años incluidos) además del `displayName` de hoy; el JSON del club lo copia como `club.names` (campo opcional de `club-v2.json`, no rompe el contrato) y `generar-data --check` compara arreglos. Las páginas `club/<id>` dicen «También conocido como» y llevan `alternateName`. En el sitio, `js/nombres.js` da el nombre de cada año (la tabla de una liga), «antes X (hasta AAAA)» en la ficha y la búsqueda por cualquiera de los nombres. Primer caso: Inter de Palmira (antes Cortuluá, hasta 2023).
 - `club-siis`: una entrada de `contexto-manual.json` sin sponsor ni `sin-fuente` cuenta como pendiente salvo que el ensayo de estadio-sponsor (que corre solo, con alta) la dé completa; el brief del auditor ya no pide correr `auditoria.mjs` en un club sin cargar (`[[CARGADO]]` en `Admin/briefs-subagentes-siis.md`).

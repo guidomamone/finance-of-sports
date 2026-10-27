@@ -27,6 +27,20 @@ export function mudarAuditor({ ROOT, clubId, anios, ENSAYO }) {
   return mudar.length;
 }
 
+// El `git add` de lo que hay que commitear, CALCULADO de `git status` (una lista escrita a mano perdió el clubId de siis-clubes.json y las imágenes de og/): cada carpeta o archivo cambiado
+// de la raíz, y de Clubes/ y Generados/ solo lo de este club; lo de otro club se dice aparte para que no se mezcle en este commit.
+export function listaParaCommitear({ ROOT, cfg, club }) {
+  const salida = execFileSync('git', ['status', '--porcelain'], { cwd: ROOT, encoding: 'utf8' }).split('\n').filter(Boolean);
+  const propios = new Set(); const ajenos = new Set(); const suyo = `/${cfg.pais}/${club}`;
+  for (const l of salida) {
+    let p = l.slice(3).replace(/^"|"$/g, ''); if (p.includes(' -> ')) p = p.split(' -> ')[1];
+    if (/^(Clubes|Generados)\//.test(p)) { (p.includes(`${suyo}/`) || p.endsWith(suyo) ? propios : ajenos).add(p.includes(suyo) ? p.slice(0, p.indexOf(suyo) + suyo.length) : p.split('/').slice(0, 3).join('/')); continue; }
+    propios.add(p.includes('/') && !p.startsWith('tools/') ? p.split('/')[0] : p); // las tools de una en una: un cambio de tool va en su propio commit
+  }
+  const q = (p) => (/\s/.test(p) ? `"${p}"` : p);
+  return { add: propios.size ? `git add -A ${[...propios].sort().map(q).join(' ')}` : '(nada para commitear)', ajenos: [...ajenos].sort() };
+}
+
 export async function preparar({ club, cfg, ROOT, estadoDe, evaluar, ENSAYO }) {
   const q = JSON.stringify(club); const ev = evaluar();
   console.log(`=== --preparar ${club} · ${ev.veredicto}${ENSAYO ? ' · ENSAYO (no se escribe nada)' : ''} ===`);
@@ -65,5 +79,6 @@ export async function preparar({ club, cfg, ROOT, estadoDe, evaluar, ENSAYO }) {
   const lanzar = Object.entries(faltan).filter(([, v]) => v).map(([k]) => k);
   console.log(`\n4. Subagentes de lo adelantable (años ${anios}): ${lanzar.length ? lanzar.join(' · ') : 'nada falta'}`);
   if (lanzar.length) console.log(`   LANZÁ JUNTOS y en segundo plano, en UN solo mensaje con una llamada a Agent cada uno (modelo sonnet; el brief: node tools/club-siis.mjs ${q} --brief <nombre>):\n   ${lanzar.map((k) => `${k}  →  node tools/club-siis.mjs ${q} --brief ${k}`).join('\n   ')}\n   El del auditor NO corre auditoria.mjs mientras el club no esté cargado (lo dice su brief).`);
-  console.log(`\n5. Commit de lo adelantado (aparte de la carga; ninguna página del sitio cambia):\n   git add -A Admin tools/contexto-manual.json data/gestiones "Clubes/${cfg.pais}/${club}" "Generados/${cfg.pais}/${club}"\n   git commit -m "${club}: adelantado desde SIIS (474)"\n   Después, cuando toque cargarlo: node tools/club-siis.mjs ${q} --avanzar [--ejecutar [--cargar]]`);
+  const lc = listaParaCommitear({ ROOT, cfg, club });
+  console.log(`\n5. Commit de lo adelantado, después de los subagentes (aparte de la carga; ninguna página del sitio cambia; la lista sale de \`git status\` de ahora, vuelve a pedirla al terminar):\n   ${lc.add}${lc.ajenos.length ? `\n   (no incluidos, son de otro club: ${lc.ajenos.join(', ')})` : ''}\n   git commit -m "${club}: adelantado desde SIIS (474)"\n   Después, cuando toque cargarlo: node tools/club-siis.mjs ${q} --avanzar [--ejecutar [--cargar]]`);
 }

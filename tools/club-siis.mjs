@@ -260,7 +260,7 @@ if (A.includes('--avanzar')) {
   { const s3 = estadoDe(club); if (s3.c.clubId && !ENSAYO) { const { mudarAuditor } = await import('./club-siis-preparar.mjs'); mudarAuditor({ ROOT, clubId: s3.c.clubId, anios: s3.filas.filter((f) => f.cargado).map((f) => f.a), ENSAYO }); } } // lo del auditor adelantado de años que ya están cargados
   console.log('\n=== lo que falta ==='); process.stdout.write(execFileSync('node', [join(ROOT, 'tools/club-siis.mjs'), club], { cwd: ROOT, encoding: 'utf8' }));
   // lo que quedó sin commitear: los comandos, cada uno en su llamada de Bash (el hook de commit audita antes de ejecutar el comando entero: publicar y commitear juntos fallan por asset-v-sin-subir)
-  if (execFileSync('git', ['status', '--porcelain'], { cwd: ROOT, encoding: 'utf8' }).trim()) console.log(`\n=== para commitear (una llamada de Bash cada uno) ===\n1. node tools/publicar.mjs\n2. git add -A club fuentes liga data fuentes.html index.html tools/contexto-manual.json Admin "Clubes/${cfg.pais}/${club}" "Generados/${cfg.pais}/${club}"\n3. git commit -m "${club}: <años> desde SIIS (463)"`);
+  if (execFileSync('git', ['status', '--porcelain'], { cwd: ROOT, encoding: 'utf8' }).trim()) { const { listaParaCommitear } = await import('./club-siis-preparar.mjs'); const lc = listaParaCommitear({ ROOT, cfg, club }); console.log(`\n=== para commitear (una llamada de Bash cada uno; la lista sale de \`git status\` de ahora) ===\n1. node tools/publicar.mjs   (antes de la lista: regenera páginas e imágenes)\n2. ${lc.add}${lc.ajenos.length ? `\n   (no incluidos, son de otro club: ${lc.ajenos.join(', ')})` : ''}\n3. git commit -m "${club}: <años> desde SIIS (463)"`); }
   process.exit(0);
 }
 

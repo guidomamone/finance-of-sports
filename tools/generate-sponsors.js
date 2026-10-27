@@ -73,12 +73,17 @@ function construir() {
   }
   // un filial ("Sporting CP B", "Juventus Next Gen", "Atalanta U23") no se une por parecido al primer equipo: solo con su nombre exacto
   const filial = (n) => /\b(B|II|U-?2[13]|U-?19|Next Gen|Primavera|Reserves?|Juniors?|Sub-?2[03])$/i.test(String(n).trim());
+  const equiposPorPais = {}; // los nombres (cortos) de todos los equipos de las tablas de cada país: se llena antes de unir nada
   const unir = (iso, equipo) => {
     const cs = porPais[iso] || [];
     if (filial(equipo)) { const ex = cs.filter((c) => c.nombres.some((n) => norm(n) === norm(equipo))); return ex.length === 1 ? ex[0].id : null; }
     const ex = cs.filter((c) => c.nombres.some((n) => corto(n) === corto(equipo))); if (ex.length === 1) return ex[0].id;
     if (ex.length) return null;
-    const pa = cs.filter((c) => c.nombres.some((n) => pega(n, equipo))); return pa.length === 1 ? pa[0].id : null;
+    // Un nombre del sitio que es prefijo de varios equipos del país («Atlético FC» y «Atlético Huila», «Atlético Nacional», «Atlético La Sabana») no se une a ninguno por prefijo: solo por nombre exacto.
+    const compartido = (n, e) => { const x = corto(n), y = corto(e); return x !== y && y.startsWith(x + ' ') && [...(equiposPorPais[iso] || [])].filter((o) => o.startsWith(x + ' ')).length >= 2; };
+    const pa = cs.filter((c) => c.nombres.some((n) => pega(n, equipo)));
+    if (pa.some((c) => c.nombres.some((n) => pega(n, equipo) && compartido(n, equipo)))) return null; // un candidato era un prefijo compartido: el equipo queda sin unir, no se elige el que sobra
+    return pa.length === 1 ? pa[0].id : null;
   };
 
   const actuales = {}, fuentes = {}, lista = {}; const filas = [];
@@ -89,6 +94,10 @@ function construir() {
     s.e.push(fuente ? [...entrada, rol, fuente] : [...entrada, rol]);
   };
   const isos = fs.existsSync(CTX) ? fs.readdirSync(CTX).filter((f) => /^[a-z]{2}\.json$/.test(f)).map((f) => f.slice(0, 2)).sort() : [];
+  for (const iso of isos) {
+    const jj = JSON.parse(fs.readFileSync(path.join(CTX, `${iso}.json`), 'utf8'));
+    for (const lg of Object.values(jj)) for (const pg of Object.values(lg)) for (const k of (pg && pg.kits) || []) for (const f of k.filas || []) (equiposPorPais[iso] ??= new Set()).add(corto(f.club));
+  }
   for (const iso of isos) {
     const j = JSON.parse(fs.readFileSync(path.join(CTX, `${iso}.json`), 'utf8'));
     for (const liga of Object.keys(j).sort()) {
