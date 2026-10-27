@@ -96,7 +96,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2020: {
     leagueSize: 16,
-    sinDato: ["tigresfc-co"],
     wiki: {"t":"2020 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"cortulua-co", revenue:2.718, reportType:"official_balance_sheet",
@@ -112,6 +111,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"fortalezaceif-co", revenue:0.648, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2020",
         mix:[["Comercial / Sponsors",0.022],["Estadio",0.056],["Televisión",0.159],["Premios por competencias",0.12],["Venta de Jugadores",0.108],["Subsidios y donaciones",0.031],["Otros ingresos",0.152]] },
+      { id:"tigresfc-co", revenue:0.499, reportType:"official_balance_sheet",
+        sourceId:"tigresfc-co-siis-estado-2020",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.445],["Otros ingresos",0.054]] },
     ],
   },
   2019: {

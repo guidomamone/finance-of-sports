@@ -16,6 +16,10 @@ const tigresfcCoRevenueLinesByYear = {
     {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":2154.543,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":5.704,"disclosureLevel":"aggregated"},
   ],
+  2020: [
+    {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":1527.368,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":186.027,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const tigresfcCoExpenseLinesByYear = {
@@ -39,6 +43,10 @@ const tigresfcCoExpenseLinesByYear = {
     {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-406.66,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-1572.982,"disclosureLevel":"aggregated"},
   ],
+  2020: [
+    {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-443.434,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-1186.188,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const tigresfcCoFiscalYearMeta = {
@@ -46,6 +54,7 @@ const tigresfcCoFiscalYearMeta = {
   2017: {"currency":"COP","sourceId":"tigresfc-co-siis-estado-2017","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2017-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-93.78,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":3147.412,"officialTotalExpenses":3037.559,"officialPAT":16.073,"extraRows":[{"label":"Ingresos financieros","value":0},{"label":"Costos financieros","value":-93.78},{"label":"Ingreso (gasto) por impuestos","value":0}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":3088.567,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":0,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
   2018: {"currency":"COP","sourceId":"tigresfc-co-siis-estado-2018","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2018-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-108.147,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":2143.125,"officialTotalExpenses":1994.144,"officialPAT":40.834,"extraRows":[{"label":"Costos financieros","value":-108.147},{"label":"Ingreso (gasto) por impuestos","value":0}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":2100.508,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
   2019: {"currency":"COP","sourceId":"tigresfc-co-siis-estado-2019","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2019-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-113.044,"tax":-22.295,"grossDebt":null,"cash":null,"officialTotalRevenue":2160.247,"officialTotalExpenses":1979.642,"officialPAT":45.266,"extraRows":[{"label":"Ingresos financieros","value":54.438},{"label":"Costos financieros","value":-167.482},{"label":"Ingreso (gasto) por impuestos","value":-22.295}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":2154.543,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":406.66,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
+  2020: {"currency":"COP","sourceId":"tigresfc-co-siis-estado-2020","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2020-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-68.932,"tax":-4.749,"grossDebt":null,"cash":null,"officialTotalRevenue":1713.395,"officialTotalExpenses":1629.622,"officialPAT":10.092,"extraRows":[{"label":"Ingresos financieros","value":32.594},{"label":"Costos financieros","value":-101.526},{"label":"Ingreso (gasto) por impuestos","value":-4.749}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":1527.368,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":443.434,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
 };
 
 const tigresfcCoPresupuestoOverlayByYear = {};
@@ -62,6 +71,6 @@ window.CLUB_GENERIC_DATA["tigresfc-co"] = {
   presupuestoOverlayByYear: tigresfcCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"tigresfc-co-siis-estado-2016":{"id":"tigresfc-co-siis-estado-2016","clubId":"tigresfc-co","title":"Tigres Fútbol Club S.A. — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Tigres FC/siis-estado-2016.pdf"},"tigresfc-co-siis-estado-2017":{"id":"tigresfc-co-siis-estado-2017","clubId":"tigresfc-co","title":"Tigres Fútbol Club S.A. — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Tigres FC/siis-estado-2017.pdf"},"tigresfc-co-siis-estado-2018":{"id":"tigresfc-co-siis-estado-2018","clubId":"tigresfc-co","title":"Tigres Fútbol Club S.A. — siis-estado-2018 (ejercicio 2018)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Tigres FC/siis-estado-2018.pdf"},"tigresfc-co-siis-estado-2019":{"id":"tigresfc-co-siis-estado-2019","clubId":"tigresfc-co","title":"Tigres Fútbol Club S.A. — siis-estado-2019 (ejercicio 2019)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Tigres FC/siis-estado-2019.pdf"}});
+Object.assign(sources, {"tigresfc-co-siis-estado-2016":{"id":"tigresfc-co-siis-estado-2016","clubId":"tigresfc-co","title":"Tigres Fútbol Club S.A. — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Tigres FC/siis-estado-2016.pdf"},"tigresfc-co-siis-estado-2017":{"id":"tigresfc-co-siis-estado-2017","clubId":"tigresfc-co","title":"Tigres Fútbol Club S.A. — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Tigres FC/siis-estado-2017.pdf"},"tigresfc-co-siis-estado-2018":{"id":"tigresfc-co-siis-estado-2018","clubId":"tigresfc-co","title":"Tigres Fútbol Club S.A. — siis-estado-2018 (ejercicio 2018)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Tigres FC/siis-estado-2018.pdf"},"tigresfc-co-siis-estado-2019":{"id":"tigresfc-co-siis-estado-2019","clubId":"tigresfc-co","title":"Tigres Fútbol Club S.A. — siis-estado-2019 (ejercicio 2019)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Tigres FC/siis-estado-2019.pdf"},"tigresfc-co-siis-estado-2020":{"id":"tigresfc-co-siis-estado-2020","clubId":"tigresfc-co","title":"Tigres Fútbol Club S.A. — siis-estado-2020 (ejercicio 2020)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Tigres FC/siis-estado-2020.pdf"}});
 
 memberCountByClub["tigresfc-co"] = null;
