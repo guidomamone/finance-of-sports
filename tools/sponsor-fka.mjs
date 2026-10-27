@@ -1,6 +1,6 @@
 // tools/sponsor-fka.mjs — los sponsors débiles o sin dato de un club, para verificarlos en Football Kit Archive (FKA), y el registro de lo verificado.
 // POR QUÉ. Un sponsor de camiseta que llega de una sola base de aficionados (FKA leída por el resumen de una búsqueda) o que quedó `sin-fuente` no se da por confirmado, y FKA da 403 a las tools y a los subagentes y pone una
-// verificación anti-bots en el navegador interno. En el Chrome de Guido (Claude in Chrome, `mcp__claude-in-chrome__*`) la ficha del equipo abre; si pide «View a short ad» (Unlock more content) no se sigue: lo desbloquea Guido una vez.
+// verificación anti-bots y un anuncio («View a short ad») en el navegador: ninguno se abre a mano. La ficha se lee con Exa, que la tiene indexada; lo que Exa no trae se anota con --sin-ficha.
 // `club-siis` lista estos años en el estado de cada club y al final de `--avanzar`, para que el paso no dependa de que alguien se acuerde. Débil = el sponsor tiene `sin-fuente.sponsor`, o su `fuente` nombra solo el resumen de una búsqueda de
 // FKA («403», «resumen de la búsqueda», «una sola fuente», «débil»); deja de serlo cuando hay una línea en Admin/registros/sponsor-fka.jsonl.
 // USO:
@@ -28,7 +28,7 @@ export function pasoFka(clubId, nombre) {
   const d = debiles(clubId); if (!d.length) return null;
   return `SPONSOR DÉBIL O SIN DATO (${d.map((x) => `${x.anio}${x.sinDato ? ' sin dato' : ` ${x.sponsor}`}`).join(', ')}): paso fijo, verificarlo en Football Kit Archive.\n`
     + `   1) Con Exa (programático, ~US$ 0,007 por año; trae las fichas de FKA con su campo Sponsor, sin el cartel del anuncio): node tools/sponsor-fka.mjs ${clubId} --buscar --nombre "${nombre}". No trae todos los años.\n`
-    + `   2) Los años que Exa no trae: Claude in Chrome (mcp__claude-in-chrome__*; el navegador interno y los subagentes no pasan): https://www.footballkitarchive.com/search/?q=${encodeURIComponent(nombre)}, «${nombre} Kit History», pestaña Sponsors. Si pide «View a short ad» (Unlock more content), no sigas: queda pendiente.\n`
+    + `   2) Los años que Exa no trae: otro nombre del club (--nombre "A|B", separados por «|») y, si ninguno trae la ficha, anotarlo sin ficha: node tools/sponsor-fka.mjs --registrar --club ${clubId} --anio AAAA --sin-ficha "<qué se probó>". FKA no se abre a mano: da 403 a las tools y pone un anuncio («View a short ad») que no se clickea.\n`
     + `   Por cada año: node tools/sponsor-fka.mjs --registrar --club ${clubId} --anio AAAA --url <ficha> --sponsor "<lo que dice>" [--distinto si no coincide: corregir tools/contexto-manual.json con esa fuente, clase base-camisetas]`;
 }
 
@@ -48,15 +48,22 @@ export function leerFicha(t) {
 async function buscarConExa(clubId, nombre, soloAnio) {
   const clave = readFileSync(join(ROOT, 'Admin/api-keys/exa.env'), 'utf8').split('\n').find((l) => l.startsWith('EXA_API_KEY='))?.slice(12).trim();
   if (!clave) throw new Error('Falta EXA_API_KEY en Admin/api-keys/exa.env');
-  const slug = nombre.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  // --nombre admite varios nombres del club separados por «|» (Alianza FC fue «Alianza Petrolera» y «Alianza Valledupar»): cada uno es un slug válido y una consulta
+  const nombres = nombre.split('|').map((x) => x.trim()).filter(Boolean); const aSlug = (n) => n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); const slugs = nombres.map(aSlug);
   for (const { anio } of debiles(clubId).filter((d) => !soloAnio || d.anio === soloAnio)) {
-    const res = await fetch('https://api.exa.ai/search', { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-api-key': clave }, body: JSON.stringify({ query: `${nombre} ${anio} Home Kit footballkitarchive Sponsor Brand`, type: 'auto', numResults: 10, includeDomains: ['footballkitarchive.com', 'oldfootballshirts.com'], contents: { text: { maxCharacters: 1800 } } }) });
-    if (!res.ok) { console.log(`${anio}: Exa devolvió ${res.status}`); continue; }
-    const j = await res.json(); appendFileSync(join(ROOT, 'Admin/registros/api/exa.jsonl'), JSON.stringify({ ts: new Date().toISOString(), tool: 'sponsor-fka', clubId, anio, costUsd: j.costDollars?.total ?? null }) + '\n');
     const hallazgos = []; const vistas = new Set();
+    // se prueban consultas distintas hasta que alguna trae una ficha del año (cada una cuesta ~US$ 0,007): la ficha local, la visitante, la tercera y el nombre de la página
+    const consultas = nombres.flatMap((n) => [`${n} ${anio} Home Kit footballkitarchive Sponsor Brand`, `${n} ${anio} Home Kit - Football Kit Archive`, `${n} ${anio} Away Kit - Football Kit Archive`, `${n} ${anio} Third Kit Football Kit Archive`]);
+    for (const query of consultas) {
+    if (hallazgos.length) break;
+    const res = await fetch('https://api.exa.ai/search', { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-api-key': clave }, body: JSON.stringify({ query, type: 'auto', numResults: 10, includeDomains: ['footballkitarchive.com', 'oldfootballshirts.com'], contents: { text: { maxCharacters: 1800 } } }) });
+    if (!res.ok) { console.log(`${anio}: Exa devolvió ${res.status}`); break; }
+    const j = await res.json(); appendFileSync(join(ROOT, 'Admin/registros/api/exa.jsonl'), JSON.stringify({ ts: new Date().toISOString(), tool: 'sponsor-fka', clubId, anio, costUsd: j.costDollars?.total ?? null }) + '\n');
     for (const r of j.results || []) {
       const ficha = (r.url || '').match(/footballkitarchive\.com\/(?:[a-z]{2}\/)?([a-z0-9-]+)-(\d{4})(?:-\d{2})?-(home|away|third)-kit\//);
-      if (ficha && ficha[2] === anio && (ficha[1].includes(slug) || slug.includes(ficha[1]))) {
+      // el slug de la ficha es el del club sin «cd»/«fc» (o con ellos de más): «colombia» (la selección) no es «alianza-fc-colombia»
+      const sinSiglas = (s) => s.replace(/(^|-)(cd|fc|ca|club)(?=-|$)/g, '$1').replace(/--+/g, '-').replace(/^-+|-+$/g, '');
+      if (ficha && ficha[2] === anio && slugs.some((slug) => { const a = sinSiglas(ficha[1]), b = sinSiglas(slug); return a.includes(b) || (b.includes(a) && a.length >= b.length * 0.7); })) {
         // la ficha en otro idioma (/el/, /zh/, /ar/…) traduce los rótulos de la tabla y el campo Sponsor no aparece: se lee la misma ficha SIN el prefijo de idioma (Exa /contents, US$ 0,001), que trae la tabla en inglés
         const ingles = r.url.replace(/footballkitarchive\.com\/[a-z]{2}\//, 'footballkitarchive.com/'); if (vistas.has(ingles)) continue; vistas.add(ingles);
         let t = r.text || '', url = r.url;
@@ -66,7 +73,8 @@ async function buscarConExa(clubId, nombre, soloAnio) {
         hallazgos.push(`FKA ${ficha[3]}: sponsor «${f.sponsor}», marca ${f.marca}, liga ${f.liga} — ${url}`); }
       else if (/oldfootballshirts\.com/.test(r.url || '') && new RegExp(`\\b${anio}\\b`).test(r.text || '')) { const s = (r.text || '').match(new RegExp(`${anio}[^.]{0,80}[Ss]ponsored by ([^.\\n]+)`))?.[1]; if (s) hallazgos.push(`oldfootballshirts: sponsor «${s.trim()}» — ${r.url}`); }
     }
-    console.log(`${anio}: ${hallazgos.length ? '\n   ' + hallazgos.join('\n   ') : 'Exa no trae la ficha de ese año (queda para Claude in Chrome)'}`);
+    }
+    console.log(`${anio}: ${hallazgos.length ? '\n   ' + hallazgos.join('\n   ') : 'Exa no trae la ficha de ese año (con el nombre dado): probar otro --nombre, o anotar --registrar --sin-ficha'}`);
   }
   console.log(`\nSi coincide con tools/contexto-manual.json: node tools/sponsor-fka.mjs --registrar --club ${clubId} --anio AAAA --url <ficha de FKA> --sponsor "<sponsor>"  (--distinto si no: corregí contexto-manual.json con esa fuente, clase base-camisetas).`);
 }
@@ -76,6 +84,11 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (A.includes('--buscar')) { const clubId = A.find((a) => !a.startsWith('--') && a !== v('--nombre') && a !== v('--anio')); if (!clubId) { console.error('Uso: node tools/sponsor-fka.mjs <clubId> --buscar [--nombre "<Club>"] [--anio AAAA]'); process.exit(1); } await buscarConExa(clubId, v('--nombre') || clubId.replace(/-[a-z]{2}$/, ''), v('--anio')); process.exit(0); }
   if (A.includes('--registrar')) {
     const [clubId, anio, url, sponsor] = [v('--club'), v('--anio'), v('--url'), v('--sponsor')];
+    if (A.includes('--sin-ficha')) { // Exa no trae ninguna ficha del año con los nombres probados: queda anotado y deja de listarse como débil
+      const motivo = v('--sin-ficha'); if (!clubId || !/^\d{4}$/.test(anio || '') || !motivo) { console.error('Uso: --registrar --club <clubId> --anio AAAA --sin-ficha "<nombres y consultas que se probaron>"'); process.exit(1); }
+      appendFileSync(REGISTRO, JSON.stringify({ fecha: new Date().toISOString().slice(0, 10), clubId, anio: Number(anio), sinFicha: motivo, coincide: null }) + '\n');
+      console.log(`Anotado ${clubId} ${anio}: sin ficha en FKA (${motivo}).`); process.exit(0);
+    }
     if (!clubId || !/^\d{4}$/.test(anio || '') || !/^https:\/\/www\.footballkitarchive\.com\//.test(url || '') || !sponsor) { console.error('Uso: --registrar --club <clubId> --anio AAAA --url https://www.footballkitarchive.com/… --sponsor "<lo que dice FKA>" [--distinto]'); process.exit(1); }
     appendFileSync(REGISTRO, JSON.stringify({ fecha: new Date().toISOString().slice(0, 10), clubId, anio: Number(anio), url, sponsor, coincide: !A.includes('--distinto') }) + '\n');
     console.log(`Anotado ${clubId} ${anio} en Admin/registros/sponsor-fka.jsonl${A.includes('--distinto') ? ' (distinto: corregí tools/contexto-manual.json)' : ''}.`); process.exit(0);

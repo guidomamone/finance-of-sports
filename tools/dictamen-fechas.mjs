@@ -5,7 +5,7 @@
 // POR QUÉ. `auditoria.mjs` verifica que la cita de un dictamen exista y que su .md sea del ejercicio, pero no mira las fechas que el documento imprime: Alianza FC 2024 y 2025 traen un
 // dictamen firmado «Marzo 29 de 2024» y «Marzo 29 de 2025» para ejercicios que cierran el 31 de diciembre de esos años (la plantilla de otro año con el año tocado), y la cita pasaba.
 //
-// QUÉ MIRA. Del registro `Admin/registros/auditoria.jsonl`, de cada línea con auditor: las fechas completas (día, mes, año) en las 4 líneas de arriba y la de abajo de la cita del auditor (la firma: «Ciudad, Marzo 29 de 2025» va encima del nombre) y
+// QUÉ MIRA. Del registro `Admin/registros/auditoria.jsonl`, de cada línea con auditor: las fechas completas (día, mes, año) del encabezado del informe (20 primeras líneas, sin las notas «Fuente:») y de las 4 líneas de arriba y la de abajo de la cita del auditor (la firma: «Ciudad, Marzo 29 de 2025» va encima del nombre) y
 // el cierre del ejercicio (`period_end` del JSON del club). Avisa si la fecha más reciente de la firma es ANTERIOR al cierre (se firmó antes de que el ejercicio terminara) o pasa de 30 meses
 // después del cierre, y si el .md citado no nombra el año del cierre en ningún lado. Los meses están en español, portugués, inglés, italiano, alemán, francés y neerlandés; un idioma
 // sin esos meses no se mira (no avisa). Es un aviso: lo que reporta lo mira una sesión contra el documento (el dictamen puede estar bien y la firma ser de una reexpresión).
@@ -51,8 +51,12 @@ export function revisarLinea(o) {
   // solo un documento que ES el informe (dictamen-…, informe-…, auditor…): en un balance entero la firma está entre cientos de fechas que no son la firma
   if (!/dictamen|informe|revisor|audit|opini[oó]n|certifica|parecer|relat[oó]rio de aud|independent|revisione/i.test(c.md.split('/').pop())) return { mirada: false, motivo: null };
   const L = leerMd(c.md), P = cierreDe(o.clubId, o.anio); if (!L || P === null) return { mirada: false, motivo: null };
-  const ventana = L.slice(Math.max(0, c.linea - 5), c.linea + 2).join('\n'); if (/[Ѐ-ӿ]/.test(ventana)) return { mirada: false, motivo: null }; // meses en cirílico: no se leen
-  const fechas = fechasDe(ventana); if (!fechas.length) return { mirada: false, motivo: null };
+  // la fecha del dictamen está en la firma o en el encabezado (primeras 20 líneas); las notas del archivo («Fuente: captura de Wayback Machine (2021-06-20)…», «> ⚠️…») no son fechas del dictamen
+  // tampoco lo son las fechas de una norma o circular que el informe cita («D.Lgs. 27 gennaio 2010, n. 39», «circular 100-000011 de agosto 9 de 2021»)
+  const propia = (l) => !/^\s*(?:fuente\b|>|\*\*fuente)/i.test(l) && !/d\.?\s?lgs|decre|\bleg(?:ge|ge n)\b|\bley\b|\blaw\b|circular|art(?:\.|icol)|regolament|regulation|\bn\.\s?\d+\/?\d*/i.test(l);
+  const ventana = [...L.slice(0, 20).filter(propia), ...L.slice(Math.max(0, c.linea - 5), c.linea + 2).filter(propia)].join('\n');
+  if (/[Ͱ-ϿЀ-ӿ]/.test(ventana)) return { mirada: false, motivo: null }; // meses en griego o cirílico: no se leen
+  const fechas = fechasDe(ventana).filter((t) => t !== P); if (!fechas.length) return { mirada: false, motivo: null }; // la fecha del cierre («al 31 de diciembre de 2025») es la de los estados, no la de la firma
   const D = Math.max(...fechas); const motivos = [];
   if (D < P) motivos.push(`la firma más reciente (${iso(D)}) es anterior al cierre del ejercicio (${iso(P)})`);
   else if (D > P + 30 * 30.44 * 864e5) motivos.push(`la firma más reciente (${iso(D)}) es más de 30 meses posterior al cierre (${iso(P)})`);
