@@ -160,6 +160,7 @@
  "no_pipeline": {
   "archivar.mjs": "orden: archiva un documento cerrado",
   "cerrar-tool.mjs": "orden: corre en su orden los pasos de cerrar un cambio a una tool (chequeo en seco, medición, veredicto, lo que falta); no lee documentos ni escribe datos",
+  "color-candidatos.mjs": "consulta: busca el artículo de un club en la Wikipedia de su idioma y lee colores, apodo y camiseta del infobox (y, con --gemini, pregunta a Gemini con búsqueda); no decide el brandColor ni escribe datos",
   "color-teamcolorcodes.mjs": "consulta: lee la página de colores de un club en teamcolorcodes.com y la imprime; no escribe nada",
   "recategorizar-linea.mjs":"manual: cambia la categoría de una línea de ingresos de un ejercicio ya cargado, con su cita; no corre en ningún lote (solo con --escribir y a mano)",
   "informe-en-pdf.mjs":"consulta: lee un PDF con pdftotext y cuenta menciones del informe del auditor; no escribe nada ni llama a una API",

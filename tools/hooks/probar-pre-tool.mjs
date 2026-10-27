@@ -132,6 +132,11 @@ const casos = [
   ['medición en curso: un archivo afuera del repo (scratchpad) pasa', { tool_name: 'Write', tool_input: { file_path: '/private/tmp/claude-501/x/scratchpad/a.json', content: 'x' } }, 'pasa', undefined, 'una-sesion', { FOS_PID_MEDICION: String(process.pid) }],
   ['medición en curso: un archivo sin trackear pasa', { tool_name: 'Write', tool_input: { file_path: `${raiz}/Admin/archivo-que-no-existe-ni-esta-trackeado.txt`, content: 'x' } }, 'pasa', undefined, 'una-sesion', { FOS_PID_MEDICION: String(process.pid) }],
   ['sin medición corriendo se edita lo trackeado', { tool_name: 'Edit', tool_input: { file_path: `${raiz}/Admin/TODO.md`, old_string: 'x', new_string: 'y' } }, 'pasa'],
+  // directorio-no-es-la-raiz: un cd anterior dejó la shell en una subcarpeta del proyecto
+  ['directorio: una subcarpeta del proyecto frena y dice cómo volver', { ...bash('node tools/todo.mjs'), cwd: `${raiz}/Clubes/Colombia/Tigres FC` }, 'deny', `cd ${raiz}`],
+  ['directorio: un cd a la raíz, solo, pasa', { ...bash(`cd ${raiz}`), cwd: `${raiz}/Clubes` }, 'pasa'],
+  ['directorio: en la raíz no dice nada', { ...bash('node tools/todo.mjs'), cwd: raiz }, 'pasa'],
+  ['directorio: una carpeta fuera del proyecto no se toca', { ...bash('ls'), cwd: '/private/tmp/otra-carpeta' }, 'pasa'],
   ['node -e se rechaza', bash('node -e "console.log(1)"'), 'deny', 'node -e'],
   ['node -p se rechaza', bash('node -p 1+1'), 'deny', 'node -e'],
   ['python3 -c se rechaza', bash("python3 -c 'print(1)'"), 'deny', 'python'],
@@ -146,7 +151,7 @@ const casos = [
 let mal = 0;
 for (const [nombre, entrada, esperado, texto, modo, extra] of casos) {
   let salida = '';
-  try { salida = execFileSync('node', [`${raiz}/tools/hooks/pre-tool.mjs`], { input: JSON.stringify({ ...entrada, cwd: raiz }), encoding: 'utf8', env: { ...process.env, FOS_MODO: modo || 'una-sesion', ...(extra || {}) } }); }
+  try { salida = execFileSync('node', [`${raiz}/tools/hooks/pre-tool.mjs`], { input: JSON.stringify({ cwd: raiz, ...entrada }), encoding: 'utf8', env: { ...process.env, FOS_MODO: modo || 'una-sesion', FOS_RAIZ: raiz, ...(extra || {}) } }); }
   catch (e) { salida = `ERROR ${e.message}`; }
   const j = salida && !salida.startsWith('ERROR') ? JSON.parse(salida).hookSpecificOutput : null;
   const real = j ? j.permissionDecision : 'pasa';

@@ -1,5 +1,7 @@
 # Bogota FC (Bogota Futbol Club Sa)
 
+Color de marca: `#FFE217` — amarillo (es.wikipedia «Bogotá Fútbol Club»: colores «Amarillo y rojo» con el amarillo primero; la camiseta local es toda amarilla `body1 = FFE217`; Gemini con búsqueda: amarillo predominante, rojo en franja), verificado 2026-10-27 con `node tools/color-candidatos.mjs "Bogotá FC" --gemini`.
+
 **Ángulos**: sitio oficial: no intentado · regulador/país: agotado (SIIS API, ejercicios disponibles bajados) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
 
 - **Club nuevo en el proyecto (fútbol)**, hallado en el barrido de Supersociedades del 2026-10-03 (agregación por CIIU R9312 de SIIS). Razón social en SIIS: BOGOTA FUTBOL CLUB SA, NIT 800119855. 9 registros SIIS (sin 2017).

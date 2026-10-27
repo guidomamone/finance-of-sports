@@ -509,7 +509,17 @@ function subagenteConReglaDeComandos() {
     + 'con la ruta completa entre comillas, sin variables, sin cd, sin ; ni &&." Sin ella, cada comando del subagente le pide permiso a Guido.');
 }
 
+// directorio-no-es-la-raiz (deny): un `cd` de una llamada anterior deja la shell en una subcarpeta del proyecto y los comandos siguientes corren desde ahí (rutas relativas que no existen, o peor, que existen en otro lado). El hook mira el cwd
+// que trae la entrada contra la raíz del proyecto (CLAUDE_PROJECT_DIR o FOS_RAIZ): si está adentro y no es la raíz, frena y dice cómo volver. Un `cd <raíz>` solo pasa. Una carpeta fuera del proyecto no se toca (puede ser a propósito).
+function directorioNoEsLaRaiz(cmd) {
+  const raiz = (process.env.FOS_RAIZ || process.env.CLAUDE_PROJECT_DIR || '').replace(/\/$/, ''); const aqui = String(entrada.cwd || '').replace(/\/$/, '');
+  if (!raiz || !aqui || aqui === raiz || !aqui.startsWith(`${raiz}/`)) return;
+  if (new RegExp(`^\\s*cd\\s+"?${raiz.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"?\\s*$`).test(cmd)) return;
+  decidir('deny', `El directorio de trabajo de la shell es ${aqui}, no la raíz del proyecto (${raiz}): un cd anterior lo dejó ahí y los comandos con rutas relativas (node tools/…) corren desde esa carpeta. Volvé con una llamada que sea solo: cd ${raiz}`);
+}
+
 const cmd = herramienta === 'Bash' ? params.command || '' : '';
+if (herramienta === 'Bash') directorioNoEsLaRaiz(cmd);
 if (herramienta === 'Bash') { comandosSimples(cmd); noImportarTools(cmd); if (VARIAS) mergeEnWorktree(cmd); }
 if (VARIAS) planEnWorktree();
 if (herramienta === 'Bash' && VARIAS) rsyncSinNoLinks(cmd);

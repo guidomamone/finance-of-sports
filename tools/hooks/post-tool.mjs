@@ -40,9 +40,12 @@ if (['Edit', 'Write', 'MultiEdit'].includes(entrada.tool_name)) {
   let entradas = lineas('Admin/CHANGELOG.md', true);
   try { for (const f of readdirSync(join(raiz, 'Admin', 'Archive'))) if (/^CHANGELOG-.*\.md$/.test(f)) entradas += lineas(`Admin/Archive/${f}`, true); } catch { /* sin archivo */ }
   const hallazgos = lineas('Admin/HALLAZGOS-pipeline.md', false);
-  if (!entradas && !hallazgos) process.exit(0);
-  process.stdout.write(JSON.stringify({ hookSpecificOutput: { hookEventName: 'PostToolUse',
-    additionalContext: `Aviso (no bloquea): ${tool} figura en ${entradas} título(s) del CHANGELOG y ${hallazgos} línea(s) de HALLAZGOS-pipeline.md. Antes de cambiar su comportamiento: node tools/fos.mjs changelog historial ${tool}.` } }));
+  // una tool del pipeline (o un módulo que usan) se cierra con UN comando que impone el orden (ensayo, medición, veredicto): el aviso lo nombra en la primera edición, porque el paso suelto se olvida
+  let clase = ''; try { const { clasificar } = await import('../clasificar-tools.mjs'); clase = clasificar(raiz).clase(tool); } catch { /* sin clasificador */ }
+  const cierre = ['tools', 'modulo'].includes(clase) ? ` Al terminar de editarla: node tools/fos.mjs cerrar-tool --cambio "<qué hace>" (en segundo plano: ensayo, medición y veredicto en orden; el commit se frena sin eso).` : '';
+  const historia = entradas || hallazgos ? ` ${tool} figura en ${entradas} título(s) del CHANGELOG y ${hallazgos} línea(s) de HALLAZGOS-pipeline.md. Antes de cambiar su comportamiento: node tools/fos.mjs changelog historial ${tool}.` : '';
+  if (!cierre && !historia) process.exit(0);
+  process.stdout.write(JSON.stringify({ hookSpecificOutput: { hookEventName: 'PostToolUse', additionalContext: `Aviso (no bloquea):${historia}${cierre}` } }));
   process.exit(0);
 }
 if (entrada.tool_name !== 'Bash') process.exit(0);

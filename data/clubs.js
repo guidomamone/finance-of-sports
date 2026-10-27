@@ -345,10 +345,10 @@ const clubs = {
   'bodoglimt-no': { id:'bodoglimt-no', name:'FK Bodø/Glimt', displayName:'Bodø-Glimt', country:'NO', reportingCurrency:'NOK', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   'atleticofc-co': { id:'atleticofc-co', name:'Club Deportivo Atlético Fútbol Club S.A.', displayName:'Atlético FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
   'realcartagena-co': { id:'realcartagena-co', name:'Real Cartagena Fútbol Club S.A.', displayName:'Real Cartagena', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:null },
-  'orsomarso-co': { id:'orsomarso-co', name:'Orsomarso Sport Club S.A.', displayName:'Orsomarso', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
-  'atleticohuila-co': { id:'atleticohuila-co', name:'Atletico Huila', displayName:'Atletico Huila', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
-  'barranquillafc-co': { id:'barranquillafc-co', name:'Barranquilla Futbol Club S.A.', displayName:'Barranquilla FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
-  'bogotafc-co': { id:'bogotafc-co', name:'Bogota Futbol Club S.A.', displayName:'Bogota FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
+  'orsomarso-co': { id:'orsomarso-co', name:'Orsomarso Sport Club S.A.', displayName:'Orsomarso', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#1D4DF3' },
+  'atleticohuila-co': { id:'atleticohuila-co', name:'Atletico Huila', displayName:'Atletico Huila', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFF200' },
+  'barranquillafc-co': { id:'barranquillafc-co', name:'Barranquilla Futbol Club S.A.', displayName:'Barranquilla FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#ED1C24' },
+  'bogotafc-co': { id:'bogotafc-co', name:'Bogota Futbol Club S.A.', displayName:'Bogota FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFE217' },
 };
 
 // Source: de dónde sale cada número; `reliability` es lo que distingue dato oficial, de prensa o placeholder.

@@ -35,6 +35,8 @@ const avisos = [
   ['otra sesión vuelve a avisar', edita(`${raiz}/tools/cola.mjs`, `${sesion}-b`), (s) => s.includes('cola.mjs')],
   ['una tool sin historial no dice nada', edita(`${raiz}/tools/zz-sin-historial-alguno.mjs`), (s) => s === ''],
   ['un archivo que no es de tools/ no dice nada', edita(`${raiz}/Admin/TODO.md`), (s) => s === ''],
+  ['editar una tool del pipeline nombra cerrar-tool', edita(`${raiz}/tools/cargar.mjs`, `${sesion}-d`), (s) => s.includes('fos.mjs cerrar-tool')],
+  ['editar una tool que no es del pipeline no lo nombra', edita(`${raiz}/tools/mapa-codigo.mjs`, `${sesion}-e`), (s) => !s.includes('cerrar-tool')],
   ['Write también avisa', edita(`${raiz}/tools/cargar.mjs`, `${sesion}-c`, 'Write'), (s) => s.includes('cargar.mjs')],
   // aviso suave al leer entera una tool de más de 40 KB (465)
   ['leer entera una tool de más de 30 KB avisa de fos mapa', edita(`${raiz}/tools/cola.mjs`, sesion, 'Read'), (s) => s.includes('fos.mjs mapa tools/cola.mjs') && s.includes('no bloquea')],

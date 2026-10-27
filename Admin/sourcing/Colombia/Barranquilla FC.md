@@ -1,5 +1,7 @@
 # Barranquilla FC (Barranquilla Futbol Club Sa)
 
+Color de marca: `#ED1C24` — rojo (los «Rojos de Curramba»: es.wikipedia «Barranquilla Fútbol Club», apodo y plantilla de la camiseta local `body1 = ED1C24`; Gemini con búsqueda: rojo predominante), verificado 2026-10-27 con `node tools/color-candidatos.mjs "Barranquilla FC" --gemini`.
+
 **Ángulos**: sitio oficial: no intentado · regulador/país: agotado (SIIS API, ejercicios disponibles bajados) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 1 (Sonnet) — 2026-10-03
 
 - **Club nuevo en el proyecto (fútbol)**, hallado en el barrido de Supersociedades del 2026-10-03 (agregación por CIIU R9312 de SIIS). Razón social en SIIS: BARRANQUILLA FUTBOL CLUB SA, NIT 802019847. 10 registros SIIS 2016-2025.
