@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1186 — sponsor-fka --buscar lee la ficha en inglés; 24 sponsors débiles verificados [468 · sponsor-fka.mjs · oncecaldas-co, boyacachico-co, unionmagdalena-co, deportestolima-co, laequidad-co]
+- Exa devolvía la ficha en el idioma del buscador (/el/, /zh/, /ar/), con los rótulos traducidos y sin el campo Sponsor, y contaba como «sin sponsor» lo que era un error de lectura. Ahora la tool lee la misma ficha sin el prefijo de idioma con Exa `/contents` (US$ 0,001), entiende sus dos formatos de texto e imprime también la liga (para ver que no es otro club: «Alianza FC» devuelve las de El Salvador y Panamá).
+- 24 años registrados en `Admin/registros/sponsor-fka.jsonl` (La Equidad 2016 a 2022 Cotrafa, Boyacá Chicó 2016 y 2017 a 2023 sin campo, Once Caldas 2016, 2018 y 2021, Tolima 2016, 2018, 2019 y 2022, Unión Magdalena 2016 y 2022); uno no coincidía: Unión Magdalena 2022 pasa de «sin dato» a Wplay (ficha de la camiseta local), en `contexto-manual.json` y `data/contexto/co.js`. Quedan 13 años: Alianza FC 2016 a 2023 (Exa no trae «Alianza Petrolera»), Once Caldas 2017, 2019 y 2020, Boyacá Chicó 2020 y Tolima 2017 (FKA no trae el campo: el contexto dice Mercacentro).
+- Medición: no es del pipeline (clasificada como tool de sesión, no pide medición).
+
 ## Versión 1185 — club-siis ya no deja misses.jsonl para restaurar [468 · lookup-club-league.js, club-siis.mjs]
 - `lookup-club-league.js --sin-anotar` hace la misma consulta sin escribir `tools/club-league-reference/misses.jsonl`; `club-siis.mjs` lo pasa en sus dos consultas (la lista de clubes, `--evaluar` y la liga de cada año), que son de solo lectura. Sin la bandera (alta-club y los demás) todo igual.
 - Medición: lote completo, medidores lote-ensayo, alta y cargar: idéntico. Sin revisión independiente de la Auditora.

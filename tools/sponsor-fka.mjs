@@ -32,6 +32,17 @@ export function pasoFka(clubId, nombre) {
     + `   Por cada año: node tools/sponsor-fka.mjs --registrar --club ${clubId} --anio AAAA --url <ficha> --sponsor "<lo que dice>" [--distinto si no coincide: corregir tools/contexto-manual.json con esa fuente, clase base-camisetas]`;
 }
 
+// El texto de una ficha de FKA según Exa viene en dos formatos: una tabla de markdown («| Sponsor | Cotrafa |») o rótulo y valor en renglones sueltos (Brand, y el valor siguiente: marca y sponsor, el sponsor sin rótulo).
+export function leerFicha(t) {
+  const celda = (k) => t.match(new RegExp(`\\|\\s*${k}\\s*\\|\\s*([^|\\n]+?)\\s*\\|`))?.[1];
+  if (/\|\s*Team\s*\|/.test(t)) return { sponsor: celda('Sponsor') || 'sin campo Sponsor', marca: celda('Brand') || '?', liga: celda('League') || '?' };
+  const b = t.match(/\n\s*Brand\s*\n+([\s\S]*?)\n\s*(?:Competitions|League|Rating|Added)\b/);
+  if (!b) return { sponsor: 'no se pudo leer la ficha', marca: '?', liga: '?' };
+  const v = b[1].split(/\n+/).map((x) => x.trim()).filter(Boolean);
+  const s = v[1] === 'Sponsor' ? v[2] : v[1]; // con rótulo («Sponsor» y el valor debajo) o sin él (el valor suelto detrás de la marca)
+  return { sponsor: s && !/^(?:categor|copa|liga|league|cup|primera|division|\d)/i.test(s) ? s : 'sin campo Sponsor', marca: v[0] || '?', liga: t.match(/\n\s*Competitions\s*\n+\s*([^\n]+)/)?.[1].trim() || '?' };
+}
+
 // Búsqueda programática con Exa (tools/exa-search.mjs, Admin/api-keys/exa.env): Exa tiene indexadas las fichas de camisetas de FKA (`<club>-<año>-home-kit`) con su tabla «| Sponsor |» y «| Brand |», sin el cartel de «View a short ad»; también oldfootballshirts.com.
 // Una consulta por año débil (centavos; cada una se anota en Admin/registros/api/exa.jsonl). Imprime lo que encontró por año y el comando para registrarlo; la sesión decide (el sponsor de la ficha es el de la camiseta local de esa temporada).
 async function buscarConExa(clubId, nombre, soloAnio) {
@@ -42,10 +53,17 @@ async function buscarConExa(clubId, nombre, soloAnio) {
     const res = await fetch('https://api.exa.ai/search', { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-api-key': clave }, body: JSON.stringify({ query: `${nombre} ${anio} Home Kit footballkitarchive Sponsor Brand`, type: 'auto', numResults: 10, includeDomains: ['footballkitarchive.com', 'oldfootballshirts.com'], contents: { text: { maxCharacters: 1800 } } }) });
     if (!res.ok) { console.log(`${anio}: Exa devolvió ${res.status}`); continue; }
     const j = await res.json(); appendFileSync(join(ROOT, 'Admin/registros/api/exa.jsonl'), JSON.stringify({ ts: new Date().toISOString(), tool: 'sponsor-fka', clubId, anio, costUsd: j.costDollars?.total ?? null }) + '\n');
-    const hallazgos = [];
+    const hallazgos = []; const vistas = new Set();
     for (const r of j.results || []) {
       const ficha = (r.url || '').match(/footballkitarchive\.com\/(?:[a-z]{2}\/)?([a-z0-9-]+)-(\d{4})(?:-\d{2})?-(home|away|third)-kit\//);
-      if (ficha && ficha[2] === anio && (ficha[1].includes(slug) || slug.includes(ficha[1]))) { const t = r.text || ''; hallazgos.push(`FKA ${ficha[3]}: sponsor «${t.match(/\|\s*Sponsor\s*\|\s*([^|\n]+?)\s*\|/)?.[1] || 'sin campo Sponsor'}», marca ${t.match(/\|\s*Brand\s*\|\s*([^|\n]+?)\s*\|/)?.[1] || '?'} — ${r.url}`); }
+      if (ficha && ficha[2] === anio && (ficha[1].includes(slug) || slug.includes(ficha[1]))) {
+        // la ficha en otro idioma (/el/, /zh/, /ar/…) traduce los rótulos de la tabla y el campo Sponsor no aparece: se lee la misma ficha SIN el prefijo de idioma (Exa /contents, US$ 0,001), que trae la tabla en inglés
+        const ingles = r.url.replace(/footballkitarchive\.com\/[a-z]{2}\//, 'footballkitarchive.com/'); if (vistas.has(ingles)) continue; vistas.add(ingles);
+        let t = r.text || '', url = r.url;
+        if (ingles !== r.url) { const c = await fetch('https://api.exa.ai/contents', { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-api-key': clave }, body: JSON.stringify({ urls: [ingles], text: { maxCharacters: 1800 } }) }).then((x) => x.json()).catch(() => null); if (c?.results?.[0]?.text) { t = c.results[0].text; url = ingles; appendFileSync(join(ROOT, 'Admin/registros/api/exa.jsonl'), JSON.stringify({ ts: new Date().toISOString(), tool: 'sponsor-fka', clubId, anio, costUsd: c.costDollars?.total ?? null, contents: true }) + '\n'); } }
+        let f = leerFicha(t); const f0 = leerFicha(r.text || ''); const real = (x) => !/^(?:sin campo|no se pudo)/.test(x.sponsor) && x.sponsor !== '-';
+        if (!real(f) && real(f0)) { f = f0; url = r.url; } // la ficha en inglés no trae el campo y la de otro idioma sí: vale la que lo trae
+        hallazgos.push(`FKA ${ficha[3]}: sponsor «${f.sponsor}», marca ${f.marca}, liga ${f.liga} — ${url}`); }
       else if (/oldfootballshirts\.com/.test(r.url || '') && new RegExp(`\\b${anio}\\b`).test(r.text || '')) { const s = (r.text || '').match(new RegExp(`${anio}[^.]{0,80}[Ss]ponsored by ([^.\\n]+)`))?.[1]; if (s) hallazgos.push(`oldfootballshirts: sponsor «${s.trim()}» — ${r.url}`); }
     }
     console.log(`${anio}: ${hallazgos.length ? '\n   ' + hallazgos.join('\n   ') : 'Exa no trae la ficha de ese año (queda para Claude in Chrome)'}`);

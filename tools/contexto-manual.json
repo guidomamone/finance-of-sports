@@ -399,18 +399,7 @@
         }
       }
     },
-    "2022": { "marca": "FSS", "fuente": "marca: https://es.wikipedia.org/w/index.php?oldid=174862459 (FSS 2022); el estadio y la capacidad ya los trae Wikipedia",
-      "sin-fuente": {
-        "sponsor": {
-          "buscado": "2026-10-26",
-          "por": "Claude (subagente Sonnet)",
-          "intentos": [
-            { "clase": "informe-anual", "donde": "Clubes/Colombia/Union Magdalena/dictamen-revisor-fiscal-2022.md, grep -i patroc|sponsor (solo «ingresos vía taquilla y patrocinio» en abstracto, sin nombre)", "resultado": "sin-dato" },
-            { "clase": "prensa", "donde": "búsquedas «Unión Magdalena camiseta 2022 patrocinador principal FSS Liga BetPlay», «Unión Magdalena nueva camiseta 2022 patrocinador al frente de la camiseta»; https://www.hoydiariodelmagdalena.com.co/archivos/795177/union-magdalena-suma-un-nuevo-patrocinador/ (31-mar-2023: Pool llega para la temporada 2023); ninguna nota de 2022 nombra el sponsor del frente (el resumen de una búsqueda sugiere Wplay 2022-2023 solo desde Football Kit Archive, sin confirmar)", "resultado": "sin-dato" },
-            { "clase": "base-camisetas", "donde": "https://www.footballkitarchive.com/es/union-magdalena-camisetas-t3614/ (403 al abrirla)", "resultado": "inaccesible" }
-          ]
-        }
-      }
+    "2022": { "marca": "FSS", "sponsor": "Wplay", "fuente": "marca: https://es.wikipedia.org/w/index.php?oldid=174862459 (FSS 2022); sponsor: ficha de la camiseta local 2022 en Football Kit Archive, campo Sponsor «Wplay», https://www.footballkitarchive.com/union-magdalena-2022-home-kit/106881/ (base de aficionados, una sola fuente; Wikipedia lista a Wplay con Pool para 2023); el estadio y la capacidad ya los trae Wikipedia"
     }
   },
   "laequidad-co": {
