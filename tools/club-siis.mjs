@@ -72,10 +72,11 @@ function estadoDe(carpeta) {
   const filas = anios.map((a) => {
     const md = join(dir, `siis-estado-${a}.md`); const ver = leer(`Generados/${cfg.pais}/${carpeta}/siis-estado-${a}.verificacion.json`);
     const texto = existsSync(md) ? readFileSync(md, 'utf8') : '';
+    // ctx: una entrada a medias (sin sponsor ni «sin-fuente») cuenta como pendiente salvo que, ya con alta, el ensayo de estadio-sponsor la dé completa; el ensayo se repite solo en cada corrida
     return {
       a, siis: existsSync(md), notas: !existsSync(md) ? '-' : existsSync(join(dir, `estados-financieros-${a}.md`)) ? (/## Detalle de las notas del club/.test(texto) ? 'abre' : 'no abre') : 'sin notas',
       verif: ver?.estado === 'ok' && existsSync(join(gen, `siis-estado-${a}.categorias.json`)), cola: cola.filter((p) => p.pdf.endsWith(`siis-estado-${a}.pdf`)).length,
-      liga: ligas.includes(a), ctx: !!ctx[a] || (!cargados.has(a) && ligas.includes(a) && wikipediaCubre(c.clubId, a, ligaDe[a])), cargado: cargados.has(a), aud: aud.has(a), dictamen: existsSync(join(dir, `dictamen-revisor-fiscal-${a}.md`)),
+      liga: ligas.includes(a), ctx: ctx[a] ? !!(ctx[a].sponsor || ctx[a]['sin-fuente']?.sponsor || (!cargados.has(a) && ligas.includes(a) && wikipediaCubre(c.clubId, a, ligaDe[a]))) : (!cargados.has(a) && ligas.includes(a) && wikipediaCubre(c.clubId, a, ligaDe[a])), cargado: cargados.has(a), aud: aud.has(a), dictamen: existsSync(join(dir, `dictamen-revisor-fiscal-${a}.md`)),
     };
   });
   return { carpeta, c, dir, filas, cola, ligaDe, idEf, hayGestion, audAdel };
@@ -118,7 +119,8 @@ if (flag('--brief')) {
   if (i < 0) { console.error(`Sin plantilla «${k}» en Admin/briefs-subagentes-siis.md`); process.exit(1); }
   const resto = plantilla.slice(i).split('\n').slice(1).join('\n'); const cuerpo = resto.split(/\n## BRIEF /)[0].trim();
   const sinCargar = k === 'auditor' && b.anios.some((a) => !filas.find((f) => f.a === a)?.cargado); // adelantado: el club o el año todavía no están en el sitio
-  console.log((sinCargar ? `${cuerpo.replaceAll('Admin/registros/auditoria.jsonl', 'Admin/registros/auditoria-adelantada.jsonl')}\nOJO, adelantado: el club o alguno de esos años todavía NO está cargado en el sitio. Escribí en Admin/registros/auditoria-adelantada.jsonl (no en auditoria.jsonl: auditoria.mjs rechaza una línea de un ejercicio sin balance) y NO corras node tools/auditoria.mjs. Validá a mano las citas (el .md del mismo ejercicio, la línea y el texto literal); la sesión muda las líneas a auditoria.jsonl y valida al cargar el año (node tools/club-siis.mjs "${club}" --mudar-auditor).` : cuerpo).replaceAll('{{CLUB}}', club).replaceAll('{{CLUBID}}', e.idEf).replaceAll('{{SOCIEDAD}}', sociedad).replaceAll('{{CARPETA}}', `Clubes/${cfg.pais}/${club}`).replaceAll('{{ANIOS}}', b.anios.join(', ')).replaceAll('{{LIGAS}}', b.anios.map((a) => `${a} ${e.ligaDe[a] || '(sin liga cargada: se pone a mano)'}`).join(', ')).replaceAll('{{HOY}}', new Date().toISOString().slice(0, 10)));
+  const cuerpoCargado = cuerpo.replace(sinCargar ? /\[\[CARGADO\]\][\s\S]*?\[\[\/CARGADO\]\]/g : /\[\[\/?CARGADO\]\]/g, ''); // lo de «correr auditoria.mjs» solo para un club ya cargado
+  console.log((sinCargar ? `${cuerpoCargado.replaceAll('Admin/registros/auditoria.jsonl', 'Admin/registros/auditoria-adelantada.jsonl')}\nOJO, adelantado: el club o alguno de esos años todavía NO está cargado en el sitio. Escribí en Admin/registros/auditoria-adelantada.jsonl (no en auditoria.jsonl: auditoria.mjs rechaza una línea de un ejercicio sin balance) y NO corras node tools/auditoria.mjs. Validá a mano las citas (el .md del mismo ejercicio, la línea y el texto literal); la sesión muda las líneas a auditoria.jsonl y valida al cargar el año (node tools/club-siis.mjs "${club}" --mudar-auditor).` : cuerpoCargado).replaceAll('{{CLUB}}', club).replaceAll('{{CLUBID}}', e.idEf).replaceAll('{{SOCIEDAD}}', sociedad).replaceAll('{{CARPETA}}', `Clubes/${cfg.pais}/${club}`).replaceAll('{{ANIOS}}', b.anios.join(', ')).replaceAll('{{LIGAS}}', b.anios.map((a) => `${a} ${e.ligaDe[a] || '(sin liga cargada: se pone a mano)'}`).join(', ')).replaceAll('{{HOY}}', new Date().toISOString().slice(0, 10)));
   process.exit(0);
 }
 

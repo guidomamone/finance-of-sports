@@ -40,7 +40,7 @@ if (check) {
     const id = f.replace(/\.json$/, ''); const j = JSON.parse(readFileSync(resolve(ROOT, 'data', d.name, f), 'utf8')); const c = cl[id];
     if (!c) { console.log(`  data/${d.name}/${f}: el club no está en data/clubs.js`); desfasados++; continue; }
     const mapa = clubDeFicha(id, c);
-    for (const [k, v] of Object.entries(mapa)) if (v !== undefined && j.club[k] !== v) { console.log(`  data/${d.name}/${f}: club.${k} = ${JSON.stringify(j.club[k])} y data/clubs.js dice ${JSON.stringify(v)} (regenerá el JSON con tools/generar-data.mjs --identidad)`); desfasados++; break; }
+    for (const [k, v] of Object.entries(mapa)) if (v !== undefined && JSON.stringify(j.club[k]) !== JSON.stringify(v)) { console.log(`  data/${d.name}/${f}: club.${k} = ${JSON.stringify(j.club[k])} y data/clubs.js dice ${JSON.stringify(v)} (regenerá el JSON con tools/generar-data.mjs --identidad)`); desfasados++; break; }
   }
   // El camino inverso: un -data.js sin su JSON (quedó huérfano, o alguien lo escribió a mano) y un id de clubs.js sin JSON.
   let huerfanos = 0; const conJson = new Set();

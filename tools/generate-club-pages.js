@@ -172,15 +172,16 @@ function construir(api, plantilla) {
     const pais = (api.COUNTRIES[api.nationOf(id)] || {}).name || club.country;
     const conMargen = filas.some((f) => f.margen); // solo un club con un ejercicio de margen bruto suma la columna; en ese ejercicio Ingresos queda en «—»
     const tr = filas.map((f) => `<tr><td>${esc(f.etiqueta)}</td><td class="n">${f.margen ? '—' : fmt(f.ingresos)}</td>${conMargen ? `<td class="n">${f.margen ? fmt(f.ingresos) : '—'}</td>` : ''}<td class="n">${f.resultado < 0 ? '−' : ''}${fmt(f.resultado)}</td></tr>`).join('\n');
+    const antes = [...new Set((club.names || []).map((x) => x.name).filter((x) => x !== nombre))]; // los nombres que el club tuvo y ya no usa (data/clubs.js, `names`)
     const cuerpo = `<h1>${esc(nombre)}: ingresos y resultado por ejercicio</h1>
-<p>${esc(nombre)} (${esc(pais)}${L ? `, ${esc(L.full || L.name)}` : ''}). ${esc(t.desc)}</p>
+<p>${esc(nombre)} (${esc(pais)}${L ? `, ${esc(L.full || L.name)}` : ''}). ${esc(t.desc)}${antes.length ? ` También conocido como ${esc(antes.join(', '))}.` : ''}</p>
 <table><thead><tr><th>Ejercicio</th><th class="n">Ingresos (US$ M)</th>${conMargen ? '<th class="n">Margen bruto (US$ M)</th>' : ''}<th class="n">Resultado neto (US$ M)</th></tr></thead><tbody>
 ${tr}
 </tbody></table>
 <p>Cifras en millones de dólares con el tipo de cambio de cierre de cada documento. <a href="/fuentes/${esc(id)}.html">Documentos fuente de ${esc(nombre)}</a>${liga ? ` · <a href="/liga/${esc(liga)}">${esc(L.full || L.name)}</a>` : ''}</p>`;
     out.club[id] = pagina(plantilla, {
       ruta: { tab: 'finanzas', club: id }, titulo: t.titulo, desc: t.desc, canonical: clubUrl(id), ogImagen: ogDe('club', id, svgClub(nombre, t.ultimo, filas)),
-      jsonld: { '@context': 'https://schema.org', '@type': 'SportsTeam', name: nombre, sport: 'Soccer', url: clubUrl(id), ...(pais ? { location: { '@type': 'Country', name: pais } } : {}), ...(L ? { memberOf: { '@type': 'SportsOrganization', name: L.full || L.name } } : {}) },
+      jsonld: { '@context': 'https://schema.org', '@type': 'SportsTeam', name: nombre, ...(antes.length ? { alternateName: antes } : {}), sport: 'Soccer', url: clubUrl(id), ...(pais ? { location: { '@type': 'Country', name: pais } } : {}), ...(L ? { memberOf: { '@type': 'SportsOrganization', name: L.full || L.name } } : {}) },
       cuerpo,
     });
   }

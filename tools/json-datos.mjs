@@ -57,7 +57,7 @@ const EXTRAS = { presupuestoSupuestosByYear: 'budget_assumptions', presupuestoFi
 // Claves de los bloques de texto libre (resultados, títulos y extras): un solo diccionario, de ida y de vuelta. Una clave que no está queda como está
 // (los apellidos de las gestiones de `results` son datos, no claves del esquema).
 const CLAVES_LIBRES = { titulosLocales: 'local_titles', titulosInternacionales: 'international_titles', mejorResultadoLibertadores: 'best_libertadores_result', anio: 'year', competencia: 'competition', resultado: 'result', gestion: 'management', docLabel: 'doc_label', isResult: 'is_result', formato: 'format' };
-const CLUB = { id: 'id', name: 'name', displayName: 'display_name', country: 'country', reportingCurrency: 'reporting_currency', fiscalYearStart: 'fiscal_year_start', sport: 'sport', predecessorId: 'predecessor_id' };
+const CLUB = { id: 'id', name: 'name', displayName: 'display_name', names: 'names', country: 'country', reportingCurrency: 'reporting_currency', fiscalYearStart: 'fiscal_year_start', sport: 'sport', predecessorId: 'predecessor_id' };
 // El deporte: id interno del sitio (data/leagues.js, SPORTS) -> valor del JSON, en inglés. `club.taxonomy` es la versión del mapa de ese deporte.
 const DEPORTE = { futbol: 'football', basquet: 'basketball', rugby: 'rugby_union', nfl: 'american_football', f1: 'formula_1', tenis: 'tennis', cricket: 'cricket', otro: 'other' };
 

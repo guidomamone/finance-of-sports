@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1203 — Un club con dos nombres; club-siis y el brief del auditor [474 · json-datos.mjs, generar-data.mjs, generate-club-pages.js, club-siis.mjs]
+- `data/clubs.js` admite `names: [{ name, from?, to? }]` (años incluidos) además del `displayName` de hoy; el JSON del club lo copia como `club.names` (campo opcional de `club-v2.json`, no rompe el contrato) y `generar-data --check` compara arreglos. Las páginas `club/<id>` dicen «También conocido como» y llevan `alternateName`. En el sitio, `js/nombres.js` da el nombre de cada año (la tabla de una liga), «antes X (hasta AAAA)» en la ficha y la búsqueda por cualquiera de los nombres. Primer caso: Inter de Palmira (antes Cortuluá, hasta 2023).
+- `club-siis`: una entrada de `contexto-manual.json` sin sponsor ni `sin-fuente` cuenta como pendiente salvo que el ensayo de estadio-sponsor (que corre solo, con alta) la dé completa; el brief del auditor ya no pide correr `auditoria.mjs` en un club sin cargar (`[[CARGADO]]` en `Admin/briefs-subagentes-siis.md`).
+- Medición: lote completo, 22 diferencias, todas explicadas (el antes de `escribir` no corre con datos que ya llevan el campo; `cargar`, `caja-deuda`, `personal-ensayos` y `alta` idénticos). Sin revisión independiente de la Auditora.
+
 ## Versión 1202 — Cortulua y Tigres FC desde SIIS; Inter Palmira es Cortuluá [474 · alias.json, briefs-subagentes-siis.md]
 - Cortulua (2020 a 2025) y Tigres FC (2016 a 2022 y 2024) cargados con lo adelantado por `--preparar` (gestiones, estadio y sponsor, auditor); Tigres se preparó mientras se cargaba Cortulua.
 - El brief del subagente de estadio y sponsor trae la verificación en FKA con Exa como paso fijo (`sponsor-fka.mjs --buscar` con varios nombres, `--registrar` o `--sin-ficha`), así que ningún sponsor llega «débil» a la sesión.
