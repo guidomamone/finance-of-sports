@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["no-eliteserien"] = {
   2025: {
     leagueSize: 16,
+    sinDato: ["bodoglimt-no"],
     wiki: {"t":"2025 Eliteserien","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"viking-no", revenue:26.603, reportType:"official_balance_sheet",
