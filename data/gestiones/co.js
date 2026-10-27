@@ -107,6 +107,14 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Daniel Mauricio Ossa Giraldo', corto:'Ossa', cargo:'Presidente', desde:'2026-03-16', hasta:null,
       fuente:'https://www.noticiasrcn.com/deportes/independiente-medellin-confirmo-a-daniel-ossa-como-nuevo-presidente-del-club-1002992', confirmada:true },
   ],
+  'cucutadeportivo-co': [
+    { nombre:'José Augusto Cadena', corto:'Cadena', cargo:'Presidente', desde:'2013-12-04', hasta:'2020-11-11',
+      fuente:'https://www.areacucuta.com/es-un-negocio-que-esta-hecho-jose-augusto-cadena-nuevo-presidente-del-cd/', confirmada:true },
+    { nombre:'Eduardo Silva Meluk', corto:'Silva Meluk', cargo:'Presidente', desde:'2022-03-10', hasta:'2024-01-31',
+      fuente:'https://laopinion.co/cucuta-deportivo/oficial-eduardo-silva-meluk-es-el-nuevo-presidente-del-cucuta-deportivo', confirmada:true },
+    { nombre:'Wilmar Sánchez', corto:'Sánchez', cargo:'Presidente', desde:'2024-01-31', hasta:null,
+      fuente:'https://laopinion.co/cucuta-deportivo/wilmar-sanchez-nuevo-presidente-y-representante-legal-del-cucuta-deportivo', confirmada:true },
+  ],
   'leonesfc-co': [
     { nombre:'Carlos Alberto Murillo Giraldo', corto:'Murillo', cargo:'Presidente', desde:'2009-01-01', hasta:null,
       fuente:'https://www.elescenariodelosclasicos.com/page.php?id=3795', confirmada:true },

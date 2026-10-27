@@ -13,3 +13,7 @@
 **Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
 
 Estados financieros en disco ahora: 8 ejercicios (2016-2019, 2022-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
+
+## Gestiones (data/gestiones/co.js)
+
+Presidentes: José Augusto Cadena (2013-12-04 a 2020-11-11: areacucuta.com lo presenta como nuevo presidente el 4-12-2013; la Supersociedades decretó la liquidación judicial el 11-11-2020, El Tiempo de ese día, y el liquidador Arturo Acosta Villaveces llegó el 13-11-2020, La Opinión), Eduardo Silva Meluk (2022-03-10 a 2024-01-31, La Opinión; el fin es la fecha en que se presentó a su sucesor) y Wilmar Sánchez (desde 2024-01-31, La Opinión). De noviembre de 2020 a marzo de 2022 el club estuvo en liquidación: ningún cierre cae en ese tramo (el club no tiene ejercicios 2020 y 2021 en SIIS).
