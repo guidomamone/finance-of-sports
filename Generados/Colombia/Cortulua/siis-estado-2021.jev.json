@@ -1,0 +1,48 @@
+{
+ "md": "Clubes/Colombia/Cortulua/siis-estado-2021.md",
+ "generatedAt": "2026-10-27T13:06:48.459Z",
+ "rubrosHuella": "65c0d26d7536741634ddf51651b3a9da099c5599",
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.42
+    ],
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1036
+  }
+ ]
+}

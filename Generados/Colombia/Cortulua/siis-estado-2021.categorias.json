@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Colombia/Cortulua/siis-estado-2021.md",
+ "club": "cortulua-co",
+ "year": 2021,
+ "generatedAt": "2026-10-27T13:06:53.107Z",
+ "rubrosHuella": "65c0d26d7536741634ddf51651b3a9da099c5599",
+ "jevHuella": "657ef3be2cc7f2fbb1d7867edc8080ae849e0a31",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.030804,
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "lump_football_operations",
+   "confianza": 0.98
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "other_income",
+   "confianza": 0.98
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de ventas",
+   "page": 1,
+   "pendiente": true,
+   "jev": "lump_football_operations_expense",
+   "jevConf": 0.37,
+   "escalon": 2,
+   "categoria": "lump_football_operations_expense",
+   "confianza": 0.88,
+   "motivo": "Regla Colombia: «Gastos de ventas» sin abrir en el documento va a lump_football_operations_expense."
+  }
+ ]
+}

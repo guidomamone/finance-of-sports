@@ -551,31 +551,7 @@
     },
     "2022": { "estadio": "Estadio Doce de Octubre", "capacidad": 16000, "marca": "Hillside", "sponsor": "BetPlay", "fuente": "estadio y capacidad: https://es.wikipedia.org/wiki/Corporaci%C3%B3n_Club_Deportivo_Tulu%C3%A1 (ficha: Estadio 12 de Octubre, Tuluá, 16.000); marca: misma página, tabla de indumentaria (Hillside 2020-2023); sponsor: ficha de la camiseta 2022 en Football Kit Archive https://www.footballkitarchive.com/es/internacional-de-palmira-2022-third-kit/ (campo Sponsor «BetPlay»; base de aficionados, una sola fuente; leída por el resumen de la búsqueda, la página dio 403; no dice explícitamente 'frente' y es la ficha de la tercera camiseta; DÉBIL, la sesión lo verifica)" },
     "2023": { "estadio": "Estadio Municipal Raúl Miranda", "capacidad": 3500, "marca": "Hillside", "sponsor": "BetPlay", "fuente": "estadio: https://en.wikipedia.org/wiki/Cortulu%C3%A1 (2023 local en Yumbo, Estadio Raúl Miranda; https://www.infobae.com/colombia/2023/02/01/cortulua-mantendra-el-nombre-pero-jugara-en-yumbo-el-torneo-de-ascenso/); capacidad 3.500: resumen de búsqueda sobre la página de Wikipedia del estadio, sin abrir; marca: https://es.wikipedia.org/wiki/Corporaci%C3%B3n_Club_Deportivo_Tulu%C3%A1 (Hillside 2020-2023); sponsor: ficha de la camiseta local 2023 en Football Kit Archive https://www.footballkitarchive.com/cortulua-fc-2023-home-kit-191748/ (campo Sponsor «BetPlay», Brand Hillside; base de aficionados, una sola fuente; leída por el resumen de la búsqueda, la página dio 403; DÉBIL, la sesión lo verifica)" },
-    "2024": { "estadio": "Estadio Francisco Rivera Escobar", "capacidad": 15300, "fuente": "estadio y capacidad: https://en.wikipedia.org/wiki/Internacional_F.C._de_Palmira (local en Palmira, 15.300)",
-      "sin-fuente": {
-        "sponsor": {
-          "buscado": "2026-10-27",
-          "por": "Claude (subagente Sonnet)",
-          "intentos": [
-            { "clase": "informe-anual", "donde": "Clubes/Colombia/Cortulua/*.md (dictamen-revisor-fiscal-2021 a 2025, siis-estado-2020 a 2025), grep -i patroc|sponsor: ninguna coincidencia", "resultado": "sin-dato" },
-            { "clase": "prensa", "donde": "búsquedas «Internacional de Palmira 2024 camiseta patrocinador Torneo BetPlay» y notas de Claro Sports sobre la presentación del club y la camiseta 2024 (blanca, homenaje a las palmas): no nombran sponsor ni marca", "resultado": "sin-dato" },
-            { "clase": "base-camisetas", "donde": "https://www.footballkitarchive.com/ (ficha Internacional de Palmira 2024; el resumen de la búsqueda no trae el campo Sponsor ni la marca)", "resultado": "inaccesible" }
-          ]
-        }
-      }
-    },
-    "2025": { "estadio": "Estadio Francisco Rivera Escobar", "capacidad": 15300, "fuente": "estadio y capacidad: https://en.wikipedia.org/wiki/Internacional_F.C._de_Palmira (local en Palmira, 15.300; 2025 en Primera B)",
-      "sin-fuente": {
-        "sponsor": {
-          "buscado": "2026-10-27",
-          "por": "Claude (subagente Sonnet)",
-          "intentos": [
-            { "clase": "informe-anual", "donde": "Clubes/Colombia/Cortulua/*.md (dictamen-revisor-fiscal-2021 a 2025, siis-estado-2020 a 2025), grep -i patroc|sponsor: ninguna coincidencia", "resultado": "sin-dato" },
-            { "clase": "prensa", "donde": "búsquedas «Cortuluá 2025 Torneo BetPlay camiseta presentación patrocinador marca estadio» y «Cortuluá Fútbol Club S.A. 2025 Primera B camiseta patrocinador»: ningún resultado nombra sponsor ni marca de 2025", "resultado": "sin-dato" },
-            { "clase": "base-camisetas", "donde": "https://www.footballkitarchive.com/ (fichas 2025 del club; el resumen de la búsqueda no las devuelve)", "resultado": "inaccesible" }
-          ]
-        }
-      }
-    }
+    "2024": { "estadio": "Estadio Francisco Rivera Escobar", "capacidad": 15300, "sponsor": "BetPlay", "fuente": "estadio y capacidad: https://en.wikipedia.org/wiki/Internacional_F.C._de_Palmira (local en Palmira, 15.300); sponsor: ficha de la camiseta local 2024 en Football Kit Archive https://www.footballkitarchive.com/de/internacional-de-palmira-2024-home-kit/225031/ (campo Sponsor «BetPlay», leída con Exa)" },
+    "2025": { "estadio": "Estadio Francisco Rivera Escobar", "capacidad": 15300, "sponsor": "BetPlay", "fuente": "estadio y capacidad: https://en.wikipedia.org/wiki/Internacional_F.C._de_Palmira (local en Palmira, 15.300; 2025 en Primera B); sponsor: ficha de la camiseta local 2025 en Football Kit Archive https://www.footballkitarchive.com/de/internacional-de-palmira-2025-home-kit/339433/ (campo Sponsor «BetPlay», leída con Exa)" }
   }
 }

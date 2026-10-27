@@ -13,3 +13,5 @@
 **Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
 
 Estados financieros en disco ahora: 5 ejercicios (2021-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
+
+Color de marca: null — la ficha de es.wikipedia (Corporación Club Deportivo Tuluá) lista «Rojo, Verde y Blanco» sin ningún hex y sin dar un color predominante; sin footylogos (lookup-brand-color sin coincidencias). Rojo es el primero de la lista pero no hay código que usar, verificado 2026-10-27

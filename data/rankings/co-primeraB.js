@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraB"] = {
   2025: {
     leagueSize: 16,
+    sinDato: ["cortulua-co"],
     wiki: {"t":"2025 Torneo DIMAYOR","lang":"en","at":"2026-10-17","n":16},
     clubs: [
       { id:"cucutadeportivo-co", revenue:3.352, reportType:"official_balance_sheet",
@@ -15,6 +16,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2024: {
     leagueSize: 16,
+    sinDato: ["cortulua-co"],
     wiki: {"t":"2024 Torneo DIMAYOR","lang":"en","at":"2026-10-26","n":16},
     clubs: [
       { id:"unionmagdalena-co", revenue:2.547, reportType:"official_balance_sheet",
@@ -31,6 +33,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2023: {
     leagueSize: 17,
+    sinDato: ["cortulua-co"],
     wiki: {"t":"2023 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":17},
     clubs: [
       { id:"cucutadeportivo-co", revenue:3.627, reportType:"official_balance_sheet",
@@ -65,6 +68,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2021: {
     leagueSize: 16,
+    sinDato: ["cortulua-co"],
     wiki: {"t":"2021 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"unionmagdalena-co", revenue:1.764, reportType:"official_balance_sheet",
@@ -81,6 +85,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2020: {
     leagueSize: 16,
+    sinDato: ["cortulua-co"],
     wiki: {"t":"2020 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"leonesfc-co", revenue:1.43, reportType:"official_balance_sheet",

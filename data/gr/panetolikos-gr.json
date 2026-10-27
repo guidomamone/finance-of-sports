@@ -228,7 +228,13 @@
       "fx": {"ref":"EUR@2021-06-30"},
       "revenue": [
         {"label":"Ευρωπαϊκή αγορά","category":"player_transfers","subcategory":"player_sales","amount":0.6,"disclosure":"aggregated"},
-        {"label":"Κύκλος εργασιών (καθαρός), resto sin desglosar (sin la venta de un jugador)","category":"undisclosed","subcategory":"lump_football_operations","amount":0.004192,"disclosure":"aggregated"},
+        {
+          "label": "Κύκλος εργασιών (καθαρός), resto sin desglosar (sin la venta de un jugador)",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 0.004192,
+          "disclosure": "aggregated"
+        },
         {"label":"Λοιπά συνήθη έσοδα","category":"other_revenue","subcategory":"other_income","amount":3.839185,"disclosure":"aggregated"},
         {"label":"Λοιπά έσοδα και κέρδη","category":"other_revenue","subcategory":"other_income","amount":0.036941,"disclosure":"aggregated"}
       ],

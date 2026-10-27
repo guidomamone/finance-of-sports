@@ -1,0 +1,82 @@
+{
+ "md": "Clubes/Colombia/Cortulua/siis-estado-2022.md",
+ "club": "cortulua-co",
+ "year": 2022,
+ "generatedAt": "2026-10-27T13:06:55.010Z",
+ "rubrosHuella": "ae71cb06ac267dec5767fe91b01f25c42eea932c",
+ "jevHuella": "a929bb7c773d157a820070f11be815fda30cb6d8",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.006202399999999999,
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "lump_football_operations",
+   "confianza": 0.98
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "other_income",
+   "confianza": 0.98
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Costo de ventas",
+   "page": 1,
+   "pendiente": true,
+   "jev": "lump_football_operations_expense",
+   "jevConf": 0.59,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.85,
+   "motivo": "Regla decidida: en club colombiano «Costo de ventas» va a other_expenses; «Gastos de ventas» ya es lump"
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de ventas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations_expense",
+   "escalon": 2,
+   "confCache": 0.88,
+   "motivo": "Regla Colombia: «Gastos de ventas» sin abrir en el documento va a lump_football_operations_expense.",
+   "jev": "lump_football_operations_expense",
+   "jevConf": 0.37,
+   "desdeCache": true,
+   "categoria": "lump_football_operations_expense",
+   "confianza": 0.88
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  }
+ ]
+}

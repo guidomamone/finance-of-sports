@@ -1,0 +1,40 @@
+{
+  "md": "Clubes/Colombia/Cortulua/siis-estado-2021.md",
+  "pdf": "Clubes/Colombia/Cortulua/siis-estado-2021.pdf",
+  "club": "cortulua-co",
+  "year": 2021,
+  "generatedAt": "2026-10-27T13:06:21.277Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        6535.977
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        14056.427
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        16242.59
+      ],
+      "glosa": "Gastos de ventas"
+    }
+  ]
+}

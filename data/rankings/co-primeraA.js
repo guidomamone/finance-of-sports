@@ -151,6 +151,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2022: {
     leagueSize: 20,
+    sinDato: ["cortulua-co"],
     wiki: {"t":"2022 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:12.989, reportType:"official_balance_sheet",
