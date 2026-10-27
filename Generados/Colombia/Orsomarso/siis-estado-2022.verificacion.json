@@ -1,0 +1,138 @@
+{
+ "pdf": "Clubes/Colombia/Orsomarso/siis-estado-2022.pdf",
+ "md": "Clubes/Colombia/Orsomarso/siis-estado-2022.md",
+ "generado": "2026-10-27T18:26:25.204Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "orsomarso-co",
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Orsomarso/siis-estado-2022.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-27 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2022.md L11-L22",
+   "autor": "Claude",
+   "fecha": "2026-10-27"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 1.1368683772161603e-13
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 3339.682 en este documento y 3339.682 en siis-estado-2023.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 2672.667 en siis-estado-2021.pdf y 2672.667 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 3339.682,
+  "gastos": 3233.975,
+  "financiero": 0,
+  "impuesto": -54.434,
+  "resultadoImpreso": 160.141,
+  "resultadoParaCargar": 160.141,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "lado": "ingreso",
+   "M": 2176.719,
+   "pagina": 1,
+   "linea": 11,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros ingresos",
+   "lado": "ingreso",
+   "M": 1162.963,
+   "pagina": 1,
+   "linea": 16,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Costo de ventas",
+   "lado": "gasto",
+   "M": 6.484,
+   "pagina": 1,
+   "linea": 12,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de ventas",
+   "lado": "gasto",
+   "M": 2702.688,
+   "pagina": 1,
+   "linea": 14,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de administración",
+   "lado": "gasto",
+   "M": 438.381,
+   "pagina": 1,
+   "linea": 15,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros gastos",
+   "lado": "gasto",
+   "M": 86.422,
+   "pagina": 1,
+   "linea": 17,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [],
+ "impuesto": [
+  {
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "M": 54.434,
+   "linea": 20
+  }
+ ]
+}
