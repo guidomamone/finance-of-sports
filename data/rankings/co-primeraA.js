@@ -338,7 +338,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2017: {
     leagueSize: 20,
-    sinDato: ["atleticohuila-co"],
     wiki: {"t":"2017 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:15.531, reportType:"official_balance_sheet",
@@ -366,6 +365,9 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"atleticobucaramanga-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.762],["Otros ingresos",0]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"atleticohuila-co", revenue:2.272, reportType:"official_balance_sheet",
+        sourceId:"atleticohuila-co-siis-estado-2017",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.082],["Otros ingresos",0.19]] },
       { id:"tigresfc-co", revenue:1.055, reportType:"official_balance_sheet",
         sourceId:"tigresfc-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.035],["Otros ingresos",0.02]] },
