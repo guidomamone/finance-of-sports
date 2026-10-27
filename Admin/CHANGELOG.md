@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1189 — Las reglas de un país salen de CONVENCIONES-DATOS.md a Admin/paises/<iso>.md [469 · reglas-pais.mjs, club-siis.mjs]
+- `node tools/reglas-pais.mjs` (ensayo por defecto, `--escribir` mueve) pasa a `Admin/paises/<iso>.md` las reglas cuyo título nombra un país fuera del paréntesis del caso. Se movieron 6: Colombia (3), Bélgica, Alemania y Turquía. `CONVENCIONES-DATOS.md` pasa de 81 a 67 KB y queda con las generales.
+- En lo movido se quitó la historia (fechas de decisión, «años ya cargados que cambian», la medición de origen); las referencias a esas reglas (`club-siis.mjs`, `audit-acciones.json`, `PIPELINE.md`) apuntan al archivo nuevo.
+- Medición: `reglas-categoria` da lo mismo (36 reglas, 14 con frase para el prompt, 19 ejemplos, 0 sin registrar); `club-siis.mjs` no es del pipeline.
+
 ## Versión 1188 — Las reglas de datos se leen de CONVENCIONES-DATOS.md y de Admin/paises/<iso>.md [469 · reglas-categoria.mjs, docs-reglas.mjs, votacion-nueva.mjs, historia.mjs, existe.mjs, audit-chequeos-2.js]
 - `tools/docs-reglas.mjs` da la lista de documentos de reglas (el general y un archivo por país); `reglas-categoria.mjs`, `votacion-nueva.mjs`, `historia.mjs`, `existe.mjs` y la lista de documentos de criterio del audit la usan, así un país nuevo no obliga a tocarlos. Las reglas llevan su `archivo` y los mensajes de error lo nombran.
 - Medición: lote completo, medidores cargar y audit: cargar idéntico; en audit solo sale `indice-md-desfasado` (el índice se regeneró antes de medir). Sin revisión independiente de la Auditora.

@@ -214,6 +214,7 @@
   "que-pide.mjs": "orden: dice qué va a pedir el commit de lo cambiado (clasificación, medición, veredicto, commit aparte de una skill)",
   "patron.mjs": "orden: el veredicto general, parche o rechazada de una mejora a una tool (cuenta documentos, mira los nombres, toma la medición)",
   "probar-medir-pipeline.mjs": "prueba: medir-pipeline.mjs en un repo de juguete",
+  "reglas-pais.mjs":"orden: mueve de CONVENCIONES-DATOS.md a Admin/paises/<iso>.md las reglas cuyo título nombra un país (solo mueve texto de documentos)",
   "personal-pendientes.mjs":"orden: corre caja-deuda --personal en los clubes con sin-salarios (sin lógica propia)",
   "decision.mjs": "orden: registra una decisión de la Auditora",
   "silenciar.mjs": "orden: silencia un hallazgo de audit.js",

@@ -2,7 +2,7 @@
 # Convenciones de datos
 
 Reglas para cargar o corregir datos de un club: qué es un dato, qué se carga y cómo. Se lee cuando la tarea toca datos; las reglas de
-proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.md`. Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
+proceso están en `Admin/CONVENCIONES.md` y las de pantalla en `Admin/PANTALLA.md`. Acá van solo las reglas generales: **la que solo vale para un país (o un club) va en `Admin/paises/<iso>.md`**, con el mismo formato; el título de una regla de país nombra el país, y el hook y el aviso `regla-de-pais-en-doc-general` lo hacen cumplir.
 
 ---
 
@@ -441,16 +441,6 @@ silencia en `tools/audit-ignore.json` con el motivo, no se recategoriza.
 CATEGORÍA (prompt): la venta o cesión de un porcentaje de derechos de TV o comerciales a un fondo (o a la liga) va a other_income, ingreso único; no a broadcasting ni a exceptional_items.
 EJEMPLO-CATEGORÍA: ceara-br | revenue | Venda de direitos de participação (LFF) | other_income
 
-## REGLA: el intangible belga "Concessies, octrooien, licenties…" no es de jugadores sin confirmación del documento (votación 3 a 0)
-
-La amortización de ese intangible va a `depreciation` y el residuo de "Andere bedrijfsopbrengsten" a `other_income`, salvo que el propio
-documento (una nota de reglas de evaluación, el Jaarverslag con la cifra) diga que es de jugadores o de transferencias: entonces
-`player_amortisation` y `player_sales`. El rótulo cargado no agrega palabras que el documento no imprime ("spelersregistratierechten",
-"probablemente…"). Casos: Dender (`depreciation`), Charleroi y Anderlecht (confirmados por texto: `player_amortisation`), Mechelen 2025 (sin
-confirmación: pasa a `depreciation` el 1,11 M y a `other_income` el 8,54 M). Westerlo y Antwerp: mirar si tienen la confirmación por texto.
-
-CATEGORÍA (prompt, futbol): en Bélgica, el intangible «Concessies, octrooien, licenties…» y su amortización van a depreciation, y el residuo de «Andere bedrijfsopbrengsten» a other_income, salvo que el documento diga que es de jugadores o de transferencias (entonces player_amortisation y player_sales); no agregues palabras que el documento no imprime.
-
 ## REGLA: la ganancia por vender inversiones o filiales (también a la matriz) va a `assetSales`, no a los ingresos (votación 3 a 0)
 
 "Profit on disposal of investments" y parecidos (venta de una filial o de una participación, incluida la deconsolidación intragrupo) se cargan en
@@ -477,13 +467,6 @@ Un bono pagado a personas, sin contrato de pase con otro club, es remuneración,
 Caso: Deportivo Pereira 2025, "Trayectoria deportiva" (8,9 % de los gastos).
 CATEGORÍA (prompt, futbol): un bono de fichaje o de trayectoria pagado a jugadores y técnicos por nombre, sin contrato de pase con otro club, va a wages_squad, no a player_amortisation.
 EJEMPLO-CATEGORÍA: deportivopereira-co | expense | Trayectoria deportiva | wages_squad
-
-## REGLA: `officialPAT` de un consolidado alemán con partner silencioso o minoritarios es el resultado ANTES de esas asignaciones (votación 3 a 0)
-
-Se carga la línea del resultado consolidado total (Konzernjahresüberschuss), no la que queda después de la asignación al partner silencioso o a otros
-socios; la asignación no es un impuesto. Criterio de Augsburg y Eintracht Frankfurt. Caso: Hoffenheim 2023/24 y 2024/25 (línea 14: +1,268 M y +1,100 M
-en vez de la línea 16: -0,368 M y -0,189 M; `tax` deja de absorber la asignación). Pendiente de revisar: Stuttgart carga el resultado después de
-minoritarios y suma el NCI a `tax`, el criterio contrario.
 
 ## REGLA: una revaluación de jugadores o una fila de valor de jugadores sin explicar va a `other_income`, nunca a `player_sales` (votación 3 a 0)
 
@@ -585,15 +568,6 @@ igual: la falta de un dato de contexto nunca frena una carga ni es una pregunta 
 (votación de Patro Eisden 2013): si no hay fuente, queda `null`. Además, en la segunda división belga (`be-challengerproleague`) alcanza
 con el estadio, igual que en la Eerste Divisie y las segundas noruegas (`SOLO_ESTADIO`; votación de Patro Eisden 2015, opción C).
 
-## REGLA: en un balance turco, lo que el propio balance pone en las actividades principales va como línea operativa (votación 3 a 0, Beşiktaş)
-
-Las partidas que el balance imprime dentro de las actividades principales (Tecil - faiz, Reeskont, kur farkı, vade farkı) se cargan
-como líneas operativas (`other_income` / `other_expenses`), no como `netInterest`. El resultado financiero es el bloque Finansman.
-
-CATEGORÍA (prompt): en un balance turco, las partidas que el propio balance imprime dentro de las actividades principales (Tecil - faiz, Reeskont, kur farkı, vade farkı) van como líneas operativas (other_income / other_expenses), no como interés neto.
-EJEMPLO-CATEGORÍA: besiktas-tr | expense | Tecil - faiz giderleri | other_expenses
-EJEMPLO-CATEGORÍA: besiktas-tr | revenue | Reeskont gelirleri | other_income
-
 ## REGLA: si el documento declara varios tipos de cambio a USD del mismo día de cierre, vale el de caja y bancos (votación 3 a 0, Beşiktaş 2006)
 
 El `fx` es el de caja y bancos (`document_close`). Caso: Beşiktaş 2006, 1,5357 contra el 1,5442 de pasivos.
@@ -668,38 +642,3 @@ Un club danés que publica el balance reducido (Årsregnskabsloven § 32: un sol
 
 Los estimados de Ligas (`data/estimados/`) se publican solo si el error mediano de su país en su caso (club nuevo, entre dos años reales, antes o después) es de 60 % o menos. `tools/estimar.mjs` lo calcula solo en cada `--escribir` y `--check` (la constante `ERROR_MAXIMO`; con menos de 8 club-años medidos en el país vale el error global del caso), y la auditoría (`estimados-desfasado`) falla si un archivo publicado no es lo que sale con la regla. Un año de margen bruto (`revenue_basis: gross_margin`) se estima con la misma regla; un ingreso real de `Admin/registros/ingresos-ancla.jsonl` no pasa por ella. Para cambiar el tope se cambia esa constante y se corre `node tools/estimar.mjs --escribir`.
 
-
-## REGLA: Colombia, el estado de resultados y el balance de SIIS son el estado primario oficial (decisión de Guido, 2026-10-26)
-
-SIIS (Supersociedades) publica, por NIT y año, el estado de resultados y el balance que el club cargó en el formulario, como datos y no como PDF (índices `siis_resultadointegral` y `siis_sitfinan`; cómo consultarlos: `Admin/sourcing/Colombia/_notas-generales.md`). Es un estado primario oficial del club, no un resumen. `tools/siis-estado.mjs` lo deja en `Clubes/Colombia/<Club>/` como `siis-estado-2025.json` (la respuesta tal cual), `siis-estado-2025.md` (fiel, con las cifras impresas en miles de pesos y el motor «siis-api (determinista)» en la primera línea) y `siis-estado-2025.pdf` (los de 2025 son el ejemplo: hay uno por año; la impresión del `.md`: ancla del registro y del visor, no es el documento oficial). Después el documento es uno más del pipeline.
-
-1. **PDF completo con su estado propio:** manda el PDF y SIIS es control cruzado (ingresos y resultado; tolerancia de 1 en miles). Si difieren, a la cola.
-2. **Solo notas más SIIS** (Tolima, La Equidad, Águilas Doradas, Bucaramanga): manda SIIS. Las notas abren un rubro de SIIS solo si sus líneas, sin los subtotales, suman EXACTO ese rubro (tolerancia de redondeo: 1 mil pesos); si no suman, queda el rubro de SIIS con su cita y las notas no se usan para ese rubro (una nota que difiere en unas unidades, como Bucaramanga 2024 en ingresos, tampoco abre; medido con `node tools/fos.mjs siis-notas-clasificar`: de los 20 rubros que casi suman, 19 difieren de SIIS en 1,5 a 12.831 miles de pesos, que no es redondeo, y el único por debajo de 1 mil, Águilas 2023 ingresos, no justifica aflojar la tolerancia de `verificar.mjs` para todos los clubes). Lo hace `tools/siis-notas.mjs` y las filas de la nota se categorizan una por una por su contenido (la regla de «Gastos de ventas» de abajo). La diferencia entre las notas y SIIS nunca se carga como una fila de ajuste. `officialPAT` es la ganancia (pérdida) del año de SIIS.
-3. **Solo PDF, sin SIIS** (el club no deposita): como siempre.
-4. **Solo SIIS, sin PDF útil:** se carga igual, con los rubros de SIIS tal cual (`disclosure: aggregated`, sin partir ninguno) y la fuente «SIIS (Supersociedades), formulario del club».
-
-Los rubros de SIIS pasan por la categorización de siempre (Jev, Claude y las reglas de `club-data-mapping`): un rubro que el documento no abre (por ejemplo «Gastos de ventas») no se parte ni se manda a personal por lo que es habitual en otros clubes. La tool trae la leyenda del año anterior de cada rubro (`corteAnterior`): el `corte` de un año tiene que ser igual al `corteAnterior` del año siguiente, y si no, no se escribe. En el formulario de NIIF plenas (desde 2024) «gastos de ventas» y «gastos de administración» cambian de lugar en algunos clubes, así que entre años se comparan los totales. **Perímetro:** un club puede presentar en el mismo año dos estados, el individual (SIIS lo llama «individuales» o «separados») y el «consolidado», con cifras distintas y a veces el consolidado en otra unidad (Santa Fe 2019 lo trae en pesos, no en miles; en 2025 los ingresos son 61.020.279 separados contra 67.777.819 consolidados). La tool toma el propio del club, que es el que carga el sitio, y el consolidado solo si no hay otro o si `tools/siis-clubes.json` pide `perimetro: consolidado` para ese club; el `perimetro` de las filas sale del estado elegido. Un club que SIIS tiene y el sitio no entra por `alta-club.mjs`. Control permanente: el chequeo de `audit.js` que compara cada año colombiano cargado con SIIS (punto 463, grupo 2).
-
-## REGLA: Colombia, un «Gastos de ventas» que el documento no abre va a `lump_football_operations_expense`, y un «Costo de ventas» a `other_operating_expenses` (votación 3 a 0, 2026-10-26)
-
-En los estados de un club colombiano el rubro «Gastos de ventas» no es una fuerza de ventas: es la actividad deportiva. La nota 21 de Deportes Tolima 2025 lo dice (`Clubes/Colombia/Deportes Tolima/estados-financieros-2025.md` L1447: «los gastos que realiza el club concerniente a jugadores, cuerpo técnico, Gastos encuentros deportivos etc.»), y Once Caldas 2018 lo abre como nómina del plantel (`wages_squad`). Cuando el documento NO abre el rubro (el estado de SIIS lo trae como una cifra: Tolima 2016 a 2025, entre 80 y 91 % de los gastos) va a `lump_football_operations_expense` («Fútbol profesional, sin desglosar por la fuente»): mandarlo a `admin_general_expense` haría entender al lector que el club gasta casi todo en administración. Si el documento abre la nota, el contenido manda y no el rótulo: cada línea a su categoría; Atlético Nacional abre sus «Gastos de ventas» en servicios, impuestos, arrendamientos y honorarios y por eso van a `admin_general_expense`. «Costo de ventas» (lo que cuesta lo que vende la tienda) va a `other_operating_expenses`: 10 filas de clubes colombianos lo hacen así. Excepción por contenido: si el rubro pesa más de la mitad de los gastos o el estado del año siguiente imprime ese mismo importe como «Gastos de ventas», es la actividad deportiva y va a `lump_football_operations_expense` (Atlético Bucaramanga 2016 a 2018: «Costo de ventas» es 97 % de los gastos y el estado de 2019 lo repite como «Gastos de ventas», `Clubes/Colombia/Atletico Bucaramanga/siis-estado-2019.md`). Los rótulos de SIIS también se intercambian entre ventas y administración en algún año (Tolima y La Equidad 2024): manda el comparativo del año siguiente. El caso y los tres votos: `Admin/mediciones/463-votacion-gastos-de-ventas-siis.md` y `Admin/mediciones/votos/`. Años ya cargados que cambian: 0.
-CATEGORÍA (prompt, futbol): en un club colombiano, «Gastos de ventas» es la actividad deportiva (jugadores, cuerpo técnico, partidos): si el documento no abre el rubro va a lump_football_operations_expense; si lo abre en servicios, impuestos, arrendamientos y honorarios va a admin_general_expense, y si abre la nómina del plantel, a wages_squad; «Costo de ventas» va a other_expenses.
-EJEMPLO-CATEGORÍA: deportestolima-co | expense | Gastos de ventas | lump_football_operations_expense
-EJEMPLO-CATEGORÍA: deportestolima-co | expense | Costo de ventas | other_expenses
-CATEGORÍA (prompt, futbol): la línea única de ingresos de un estado que no la abre («Ingresos de actividades ordinarias» de los estados de SIIS de Colombia, igual que «Omzet» o «Chiffre d'affaires») va a lump_football_operations, no a other_income: es la facturación del club sin desglosar por la fuente.
-EJEMPLO-CATEGORÍA: deportestolima-co | revenue | Ingresos de actividades ordinarias | lump_football_operations
-
-## REGLA: Colombia, las filas que abre una nota de gastos van por su nota: el personal y los viajes de «Gastos de administración» son administración; los de «Gastos de ventas», la actividad deportiva
-
-Cuando las notas del club abren un rubro de SIIS (`tools/siis-notas.mjs`) cada fila se categoriza por lo que es y por la nota en que está, no por su rótulo suelto. En la nota de «Gastos de administración» el personal es el de las oficinas, no el plantel (`admin_general_expense`: «costos NO deportivos», `data/category-map.js`; Once Caldas imprime «Gastos de Administración (personal, honorarios, diversos, viaje, …)» y va a `admin_general`), y los viajes son administrativos. En la nota de «Gastos de ventas» (la actividad deportiva, regla de arriba) el personal es la nómina del plantel y del cuerpo técnico (`wages_squad`, como Once Caldas 2018) y los viajes son los del equipo (`match_organisation_expense`, que incluye viajes y concentración). Honorarios, impuestos, arrendamientos, seguros, servicios, mantenimiento y contribuciones son `admin_general_expense` en las dos; «Diversos» es `other_expenses`; una fila «Amortizaciones» suelta es `other_amortisation` (precedente del mismo país y el mismo hecho: «Gastos de Ventas: Amortizaciones» de Once Caldas y «Gasto equipo de fútbol: Amortizaciones» de Envigado) y la que dice derechos deportivos, `player_amortisation`. Una nota que abre «Costo de ventas» de un club donde ese rubro es la actividad deportiva (Atlético Bucaramanga 2017 y 2018) se lee como la de «Gastos de ventas»; una fila de esa nota que nombra la actividad deportiva sin separar nómina, partidos ni viajes («Partidos y Actividades Deportivas», Boyacá Chicó 2019, 61 % de los gastos) va a `lump_football_operations_expense`, como el rubro entero cuando no se abre y como el espejo del ingreso «Actividades Deportivas» de Fortaleza CEIF (`lump_football_operations`, tabla aprobada por Guido el 2026-10-02): no se inventa un desglose que el documento no da, y «Honorarios y Arriendos» de la misma nota va a `admin_general_expense`. Si el título de la nota dice lo contrario del rubro de SIIS (rótulos intercambiados: Tolima 2024), la tool no la abre. Años ya cargados que cambian: los de Colombia que abre `siis-notas.mjs` (el detalle sale en el CHANGELOG). Las líneas `NOTA-CATEGORÍA (co): <nota> | <concepto> | <categoría>` de abajo son lo que aplica la tool (`reglaDeNota()` de `tools/reglas-categoria.mjs`): gana sobre el precedente y sobre Jev, y solo una respuesta de la cola o un ajuste manual de esa fila la pisa; la nota sale del renglón que la fila desglosa o de la marca «(Gastos de ventas)» de su etiqueta, y si no se sabe cuál es la regla no decide. Los años ya cargados que la contradecían (los «Diversos» a `admin_general_expense` y los viajes de administración a `match_organisation_expense`) se rehacen con `Corrige:`.
-CATEGORÍA (prompt, futbol): en un club colombiano, las filas de la nota de «Gastos de administración» (personal, viajes, honorarios, servicios…) van a admin_general_expense; en la nota de «Gastos de ventas» (o «Costo de ventas» cuando es la actividad deportiva), el personal va a wages_squad y los viajes a match_organisation_expense; «Diversos» a other_expenses y «Amortizaciones» suelta a other_amortisation (player_amortisation si dice derechos deportivos); una fila de esa nota que nombra la actividad deportiva sin separar nómina, partidos ni viajes («Partidos y Actividades Deportivas») va a lump_football_operations_expense.
-NOTA-CATEGORÍA (co): administración | personal | admin_general_expense
-NOTA-CATEGORÍA (co): administración | viaje | admin_general_expense
-NOTA-CATEGORÍA (co): ventas | personal | wages_squad
-NOTA-CATEGORÍA (co): ventas | viaje | match_organisation_expense
-NOTA-CATEGORÍA (co): cualquiera | diversos | other_expenses
-EJEMPLO-CATEGORÍA: boyacachico-co | expense | Partidos y Actividades Deportivas (nota de Costo de ventas) | lump_football_operations_expense
-EJEMPLO-CATEGORÍA: boyacachico-co | expense | Honorarios y Arriendos (nota de Costo de ventas) | admin_general_expense
-EJEMPLO-CATEGORÍA: deportestolima-co | expense | gastos de personal (nota de Gastos de administración) | admin_general_expense
-EJEMPLO-CATEGORÍA: deportestolima-co | expense | gastos de Personal (nota de Gastos de ventas) | wages_squad
-EJEMPLO-CATEGORÍA: deportestolima-co | expense | gastos de Viaje (nota de Gastos de ventas) | match_organisation_expense

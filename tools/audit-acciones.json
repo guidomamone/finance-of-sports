@@ -3,12 +3,12 @@
  "siis-control": {
   "hacer": "Abrir el documento del club-año y compararlo con el estado de SIIS (node tools/siis-estado.mjs --club \"<Club>\" --anio AAAA): si el error es nuestro, corregir con un ajuste (tools/ajustes.mjs) y regenerar; si SIIS cambió o el club reexpresó, anotarlo y silenciarlo con tools/silenciar.mjs y el motivo.",
   "quien": "sesion",
-  "donde": "Admin/CONVENCIONES-DATOS.md, «Colombia, el estado de resultados y el balance de SIIS…»"
+  "donde": "Admin/paises/co.md, «Colombia, el estado de resultados y el balance de SIIS…»"
  },
  "siis-entre-anios": {
   "hacer": "Intercambio de rótulos: abrir siis-estado-AAAA.md y el del año siguiente (su columna del año anterior) y mirar que el año publicado tenga cada importe en la categoría de su CONTENIDO (la actividad deportiva no es administración; regla de Colombia en CONVENCIONES-DATOS.md); si ya está bien, silenciarlo con tools/silenciar.mjs y el motivo. Reexpresión: informativo, cada año se carga como lo imprimió su estado.",
   "quien": "sesion",
-  "donde": "Admin/CONVENCIONES-DATOS.md, «Colombia, un «Gastos de ventas» que el documento no abre…»"
+  "donde": "Admin/paises/co.md, «Colombia, un «Gastos de ventas» que el documento no abre…»"
  },
  "siis-faltante": {
   "hacer": "Bajar los años que SIIS tiene: node tools/siis-estado.mjs --club \"<Club>\" --todos --escribir (o --club todos); después el lote de siempre. El detalle por club: Admin/sourcing/Colombia/siis-inventario.md.",
@@ -198,7 +198,7 @@
  "regla-nota-contradicha": {
   "hacer": "Corregir la línea con node tools/recategorizar-linea.mjs --club <id> --anio <año> --etiqueta \"…\" --gasto --a <categoría> --cita … --regla … --escribir, node tools/publicar.mjs y un commit con Corrige:. Si la regla está mal, es un criterio: votacion-de-criterios.",
   "quien": "script",
-  "donde": "Admin/CONVENCIONES-DATOS.md, «las filas que abre una nota de gastos van por su nota»"
+  "donde": "Admin/paises/co.md, «las filas que abre una nota de gastos van por su nota»"
  },
  "proyeccion": {
   "hacer": "Nada: proyecta cuánto pesa data/ a 1000 clubes.",
