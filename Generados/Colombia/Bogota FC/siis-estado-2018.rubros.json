@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Colombia/Bogota FC/siis-estado-2018.md",
+  "pdf": "Clubes/Colombia/Bogota FC/siis-estado-2018.pdf",
+  "club": "bogotafc-co",
+  "year": 2018,
+  "generatedAt": "2026-10-27T19:31:12.040Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2314.632
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        317.878
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1787.753
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

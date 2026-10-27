@@ -1,0 +1,136 @@
+{
+ "pdf": "Clubes/Colombia/Bogota FC/siis-estado-2016.pdf",
+ "md": "Clubes/Colombia/Bogota FC/siis-estado-2016.md",
+ "generado": "2026-10-27T19:32:04.731Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "bogotafc-co",
+ "year": 2016,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Bogota FC/siis-estado-2016.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-27 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2016.md L11-L23",
+   "autor": "Claude",
+   "fecha": "2026-10-27"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 1.1368683772161603e-13
+  },
+  {
+   "nombre": "documento del año 2017",
+   "ok": true,
+   "detalle": "ingresos de 2016: 2141.075 en este documento y 2140.497 en siis-estado-2017.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2015: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 2141.075,
+  "gastos": 1460.29,
+  "financiero": 29.111,
+  "impuesto": 92.404,
+  "resultadoImpreso": 566.136,
+  "resultadoParaCargar": 566.136,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "lado": "ingreso",
+   "M": 2137.075,
+   "pagina": 1,
+   "linea": 11,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros ingresos",
+   "lado": "ingreso",
+   "M": 4,
+   "pagina": 1,
+   "linea": 15,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de ventas",
+   "lado": "gasto",
+   "M": 237.686,
+   "pagina": 1,
+   "linea": 13,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de administración",
+   "lado": "gasto",
+   "M": 1073.082,
+   "pagina": 1,
+   "linea": 14,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros gastos",
+   "lado": "gasto",
+   "M": 149.522,
+   "pagina": 1,
+   "linea": 16,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Ingresos financieros",
+   "M": 3.433,
+   "linea": 18
+  },
+  {
+   "etiqueta": "Costos financieros",
+   "M": -25.678,
+   "linea": 19
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "M": -92.404,
+   "linea": 21
+  }
+ ]
+}

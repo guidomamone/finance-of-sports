@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Colombia/Barranquilla FC/siis-estado-2017.md",
+  "pdf": "Clubes/Colombia/Barranquilla FC/siis-estado-2017.pdf",
+  "club": "barranquillafc-co",
+  "year": 2017,
+  "generatedAt": "2026-10-27T19:29:37.466Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3507.364
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        9.934
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3093.732
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        222.984
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        163.647
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

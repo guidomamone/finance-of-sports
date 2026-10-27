@@ -1,0 +1,144 @@
+{
+ "pdf": "Clubes/Colombia/Barranquilla FC/siis-estado-2017.pdf",
+ "md": "Clubes/Colombia/Barranquilla FC/siis-estado-2017.md",
+ "mdSha1": "4714134aca812d1c8d8896fac2aabc295e48d514",
+ "ubicacionSha1": "4dbcc4456228e11f2607637f3a632e0adc0665e0",
+ "modelo": "a mano (Claude Code, sesión 2026-10-27)",
+ "generado": "2026-10-27T19:22:15.991Z",
+ "salida": "a mano",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "miles",
+   "evidencia": "L1: Cifras en miles de pesos colombianos"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 11,
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "actual": "3.507.364",
+   "anterior": "2.800.484",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 12,
+   "etiqueta": "Ganancia bruta",
+   "actual": "3.507.364",
+   "anterior": "2.800.484",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "Gastos de ventas",
+   "actual": "3.093.732",
+   "anterior": "2.599.428",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Gastos de administración",
+   "actual": "222.984",
+   "anterior": "93.753",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Otros ingresos",
+   "actual": "9.934",
+   "anterior": "4.490",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Otros gastos",
+   "actual": "163.647",
+   "anterior": "125.275",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Ganancia (pérdida) por actividades de operación",
+   "actual": "36.935",
+   "anterior": "(13.482)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "Ganancia (pérdida), antes de impuestos",
+   "actual": "36.935",
+   "anterior": "(13.482)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "actual": "12.558",
+   "anterior": "9.704",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Ganancia (pérdida) procedente de operaciones continuadas",
+   "actual": "24.377",
+   "anterior": "(23.186)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Ganancia (pérdida)",
+   "actual": "24.377",
+   "anterior": "(23.186)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 21,
+  "actual": "24.377",
+  "anterior": "(23.186)"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+}

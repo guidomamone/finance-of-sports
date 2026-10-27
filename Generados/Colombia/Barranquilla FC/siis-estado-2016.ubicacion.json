@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Colombia/Barranquilla FC/siis-estado-2016.pdf",
+ "md": "Clubes/Colombia/Barranquilla FC/siis-estado-2016.md",
+ "mdSha1": "6a534b5920f87c1f8a2f4389b3e1bd41c0cae82e",
+ "modelo": "a mano (Claude Code, sesión 2026-10-27)",
+ "generado": "2026-10-27T19:22:13.960Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    21
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
+ "moneda": "COP",
+ "columna_ejercicio": "2016",
+ "columna_anterior": "2015",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; no hay notas en este documento."
+}

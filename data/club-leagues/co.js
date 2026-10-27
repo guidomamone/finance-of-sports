@@ -28,4 +28,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'realcartagena-co': { 2017: 'co-primeraB', 2018: 'co-primeraB', 2019: 'co-primeraB', 2020: 'co-primeraB', 2021: 'co-primeraB', 2022: 'co-primeraB', 2023: 'co-primeraB', 2024: 'co-primeraB', 2025: 'co-primeraB' },
   'orsomarso-co': { 2016: 'co-primeraB', 2017: 'co-primeraB', 2018: 'co-primeraB', 2020: 'co-primeraB', 2021: 'co-primeraB', 2022: 'co-primeraB', 2023: 'co-primeraB', 2024: 'co-primeraB', 2025: 'co-primeraB' },
   'atleticohuila-co': { 2016: 'co-primeraA', 2017: 'co-primeraA', 2018: 'co-primeraA', 2019: 'co-primeraA', 2020: 'co-primeraB', 2021: 'co-primeraA', 2022: 'co-primeraB', 2023: 'co-primeraA', 2024: 'co-primeraB', 2025: 'co-primeraB' },
+  'barranquillafc-co': { 2016: 'co-primeraB', 2017: 'co-primeraB', 2018: 'co-primeraB', 2019: 'co-primeraB', 2020: 'co-primeraB', 2021: 'co-primeraB', 2022: 'co-primeraB', 2023: 'co-primeraB', 2024: 'co-primeraB', 2025: 'co-primeraB' },
+  'bogotafc-co': { 2016: 'co-primeraB', 2017: 'co-primeraB', 2018: 'co-primeraB', 2019: 'co-primeraB', 2020: 'co-primeraB', 2021: 'co-primeraB', 2022: 'co-primeraB', 2023: 'co-primeraB', 2024: 'co-primeraB', 2025: 'co-primeraB' },
 });

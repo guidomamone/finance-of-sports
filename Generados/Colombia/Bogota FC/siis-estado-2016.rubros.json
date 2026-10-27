@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Colombia/Bogota FC/siis-estado-2016.md",
+  "pdf": "Clubes/Colombia/Bogota FC/siis-estado-2016.pdf",
+  "club": "bogotafc-co",
+  "year": 2016,
+  "generatedAt": "2026-10-27T19:31:11.973Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2137.075
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        4
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        237.686
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1073.082
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        149.522
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

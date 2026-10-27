@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Colombia/Bogota FC/siis-estado-2022.md",
+  "pdf": "Clubes/Colombia/Bogota FC/siis-estado-2022.pdf",
+  "club": "bogotafc-co",
+  "year": 2022,
+  "generatedAt": "2026-10-27T19:31:12.160Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2867.393
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        108.059
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1558.687
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1093.614
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

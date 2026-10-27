@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraB"] = {
   2025: {
     leagueSize: 16,
+    sinDato: ["barranquillafc-co","bogotafc-co"],
     wiki: {"t":"2025 Torneo DIMAYOR","lang":"en","at":"2026-10-17","n":16},
     clubs: [
       { id:"cortulua-co", revenue:3.675, reportType:"official_balance_sheet",
@@ -30,6 +31,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2024: {
     leagueSize: 16,
+    sinDato: ["barranquillafc-co","bogotafc-co"],
     wiki: {"t":"2024 Torneo DIMAYOR","lang":"en","at":"2026-10-26","n":16},
     clubs: [
       { id:"realcartagena-co", revenue:3.367, reportType:"official_balance_sheet",
@@ -64,6 +66,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2023: {
     leagueSize: 17,
+    sinDato: ["barranquillafc-co","bogotafc-co"],
     wiki: {"t":"2023 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":17},
     clubs: [
       { id:"cortulua-co", revenue:4.776, reportType:"official_balance_sheet",
@@ -91,6 +94,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2022: {
     leagueSize: 16,
+    sinDato: ["barranquillafc-co","bogotafc-co"],
     wiki: {"t":"2022 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"cucutadeportivo-co", revenue:1.983, reportType:"official_balance_sheet",
@@ -125,6 +129,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2021: {
     leagueSize: 16,
+    sinDato: ["barranquillafc-co","bogotafc-co"],
     wiki: {"t":"2021 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"cortulua-co", revenue:5.172, reportType:"official_balance_sheet",
@@ -156,6 +161,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2020: {
     leagueSize: 16,
+    sinDato: ["barranquillafc-co","bogotafc-co"],
     wiki: {"t":"2020 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"cortulua-co", revenue:2.718, reportType:"official_balance_sheet",
@@ -190,6 +196,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2019: {
     leagueSize: 17,
+    sinDato: ["barranquillafc-co","bogotafc-co"],
     wiki: {"t":"2019 Categoría Primera B season","lang":"en","at":"2026-09-30","n":17},
     clubs: [
       { id:"realcartagena-co", revenue:2.31, reportType:"official_balance_sheet",
@@ -214,6 +221,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2018: {
     leagueSize: 16,
+    sinDato: ["barranquillafc-co","bogotafc-co"],
     wiki: {"t":"2018 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"cucutadeportivo-co", revenue:2.336, reportType:"official_balance_sheet",
@@ -242,6 +250,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2017: {
     leagueSize: 16,
+    sinDato: ["barranquillafc-co","bogotafc-co"],
     wiki: {"t":"2017 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"leonesfc-co", revenue:1.848, reportType:"official_balance_sheet",
@@ -275,6 +284,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2016: {
     leagueSize: 16,
+    sinDato: ["barranquillafc-co","bogotafc-co"],
     wiki: {"t":"2016 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"americadecali-co", revenue:5.917, reportType:"official_balance_sheet",

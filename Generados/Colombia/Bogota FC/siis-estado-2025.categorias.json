@@ -1,0 +1,55 @@
+{
+ "md": "Clubes/Colombia/Bogota FC/siis-estado-2025.md",
+ "club": "bogotafc-co",
+ "year": 2025,
+ "generatedAt": "2026-10-27T19:32:02.136Z",
+ "rubrosHuella": "3467c07f7625a547dc12b44a93b9ec01349d571e",
+ "jevHuella": "b889bffba83561c771f718950e177730b1be8e58",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.97,
+   "categoria": "lump_football_operations",
+   "confianza": 0.97
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de ventas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations_expense",
+   "escalon": 2,
+   "confCache": 0.88,
+   "motivo": "Colombia: «Gastos de ventas» sin abrir en el documento es la actividad deportiva sin desglosar.",
+   "jev": "lump_football_operations_expense",
+   "jevConf": 0.52,
+   "desdeCache": true,
+   "categoria": "lump_football_operations_expense",
+   "confianza": 0.88
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  }
+ ]
+}

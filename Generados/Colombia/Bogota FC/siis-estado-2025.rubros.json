@@ -1,0 +1,40 @@
+{
+  "md": "Clubes/Colombia/Bogota FC/siis-estado-2025.md",
+  "pdf": "Clubes/Colombia/Bogota FC/siis-estado-2025.pdf",
+  "club": "bogotafc-co",
+  "year": 2025,
+  "generatedAt": "2026-10-27T19:31:12.251Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        5019.631
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3080.837
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1514.154
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

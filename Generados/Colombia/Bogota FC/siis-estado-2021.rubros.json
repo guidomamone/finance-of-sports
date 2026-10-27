@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Colombia/Bogota FC/siis-estado-2021.md",
+  "pdf": "Clubes/Colombia/Bogota FC/siis-estado-2021.pdf",
+  "club": "bogotafc-co",
+  "year": 2021,
+  "generatedAt": "2026-10-27T19:31:12.130Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        4442.112
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        146.776
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3316.407
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        917.909
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}
