@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Colombia/Barranquilla FC/siis-estado-2019.pdf",
- "generado": "2026-10-27T19:30:31.607Z",
+ "generado": "2026-10-27T19:33:12.861Z",
  "frena": [],
  "avisos": [],
  "ejercicio": {
@@ -261,8 +261,8 @@
  },
  "liga": {
   "valor": "co-primeraB",
-  "fuente": "NO EXACTA, confirmar en la página del club: roster cacheado de \"2019 Categoría Primera B season\" (tools/club-league-reference/co.json), coincidencia única por palabras \"Barranquilla\" = \"Barranquilla FC\" (si es el mismo club, agregarlo a alias.json)",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -272,7 +272,7 @@
   },
   "cierre": {
    "valor": "2019-12-31",
-   "fuente": "año del ejercicio + mes de cierre (patrón del país: los 28 clubes de CO ya cargados arrancan el 01-01 (el documento no trae fechas de cierre legibles))",
+   "fuente": "año del ejercicio + mes de cierre (patrón del país: los 29 clubes de CO ya cargados arrancan el 01-01 (el documento no trae fechas de cierre legibles))",
    "estado": "ok"
   },
   "reportType": {
@@ -302,7 +302,7 @@
   },
   "liga": {
    "valor": "co-primeraB",
-   "fuente": "NO EXACTA, confirmar en la página del club: roster cacheado de \"2019 Categoría Primera B season\" (tools/club-league-reference/co.json), coincidencia única por palabras \"Barranquilla\" = \"Barranquilla FC\" (si es el mismo club, agregarlo a alias.json)",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
    "estado": "ok"
   }
  },

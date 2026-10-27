@@ -284,7 +284,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2016: {
     leagueSize: 16,
-    sinDato: ["barranquillafc-co","bogotafc-co"],
+    sinDato: ["bogotafc-co"],
     wiki: {"t":"2016 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"americadecali-co", revenue:5.917, reportType:"official_balance_sheet",
@@ -300,6 +300,9 @@ window.RANKINGS["co-primeraB"] = {
         sourceId:"unionmagdalena-co-siis-estado-2016",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.104],["Otros ingresos",0.009]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"barranquillafc-co", revenue:0.935, reportType:"official_balance_sheet",
+        sourceId:"barranquillafc-co-siis-estado-2016",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.933],["Otros ingresos",0.001]] },
       { id:"orsomarso-co", revenue:0.581, reportType:"official_balance_sheet",
         sourceId:"orsomarso-co-siis-estado-2016",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.553],["Otros ingresos",0.028]] },

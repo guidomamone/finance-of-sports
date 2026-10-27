@@ -2508,6 +2508,7 @@ window.SPONSORS_INDICE = [
   ["tianjin-national-maritime-museum","Tianjin National Maritime Museum",["c"]],
   ["tianjin-seagull","Tianjin Seagull",["c"]],
   ["tic-health","TIC Health",["c"]],
+  ["tierra-santa","Tierra Santa",["c"]],
   ["timmermans-infra","Timmermans Infra",["c"]],
   ["timmermans-infra-bv","Timmermans Infra BV",["c"]],
   ["tintas-luztol","Tintas Luztol",["c"]],
