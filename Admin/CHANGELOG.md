@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1216 — caja-deuda.mjs: caja y deuda desde el balance de SIIS [463 · caja-deuda.mjs, siis-caja-deuda.mjs]
+- `tools/siis-caja-deuda.mjs` (nuevo, solo de SIIS): `siisDeBalance(clubId, a)` lee `siis_sitfinan` de `siis-estado-AAAA.json`. Caja = «Efectivo y equivalentes»; deuda = «Otros pasivos financieros» corrientes + no corrientes (los préstamos corrientes son parte de los corrientes y no se suman). Precedente: América de Cali 2025 y Unión Magdalena 2018 dan esos valores exactos. Compuerta: el balance cuadra y la comparativa del año siguiente de SIIS repite el cierre; con reexpresión o un préstamo sin «Otros pasivos financieros», no decide. Un rubro vacío no es 0.
+- `caja-deuda.mjs` (`completarClub`) lo llama después de Rusia y antes de los documentos; lo que SIIS no da sigue por la escalera de siempre. Ensayo sobre `data/co/`: 228 de 288 vacíos con balance de SIIS salen resueltos (Tigres 2021: 190,741 por SIIS = lo que da el documento por otro camino). Faltan por reexpresión (45) y por pasivo financiero no reportado (15).
+- Medición: idéntico (lote chico: `caja-deuda`, `caja-deuda-personal`, `personal-ensayos`, `audit`, `escribir`). Sin revisión independiente de la Auditora.
+
 ## Versión 1215 — 463: «2.2» (clubes sin official_totals) ya estaba resuelto [463]
 - Ningún año de `data/co/*.json` carece de `official_totals` hoy (se recorrió cada club), así que `siis-control` compara todos los años; el punto sale del TODO 463. El motivo por el que figuraba abierto (3 clubes sin totales) ya no es cierto.
 - Medición: sin cambio de datos ni de tools.

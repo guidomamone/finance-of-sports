@@ -38,6 +38,7 @@ import { candidatosPersonal, cierreDeMd, registroDocs, medirPersonal, completarP
 import { deporteDePdf } from './deporte-club.mjs'; // la categoría de sueldos es la del deporte del club
 import { coincide, parseNumber, esTotalBalance, soloTablaDelBalance, dedupe, r6, cita } from './caja-deuda-md.mjs';
 import { TOTAL_PASIVO_PLURAL_RE, familiasDelClub, propuestaPrecedente, propuestaVocabulario, propuestaIA, propuestaJev, jevDe } from './caja-deuda-propuestas.mjs';
+import { siisDeBalance } from './siis-caja-deuda.mjs';
 import { sitio, MODELOS_IA, contexto, aniosDe, filasCache, iaDe, medir, HOY, cajaNBB, rusiaDeCodigos } from './caja-deuda-escala.mjs';
 export { sitio, factorPorIngresos, escalaDe, porIA, criterioDeudaDe, aniosDe, filasCache, HOY, cajaNBB } from './caja-deuda-escala.mjs';
 export { aprender, familiasDelClub, avisarRecorte, pedirJev } from './caja-deuda-propuestas.mjs';
@@ -254,9 +255,17 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
   for (const a of anios) for (const k of ['grossDebt', 'cash']) if (a.m[k] != null) conocidos[k][a.anio] = a.m[k];
   const propuestas = []; let usd = 0;
   for (const a of anios) {
-    const faltan = ['grossDebt', 'cash'].filter((k) => a.m[k] == null); if (!faltan.length) continue;
+    let faltan = ['grossDebt', 'cash'].filter((k) => a.m[k] == null); if (!faltan.length) continue;
     const ru = rusiaDeCodigos(clubId, a); // (to-do: Rusia) antes de todo: el balance del fisco trae los códigos, no hay filas que elegir
     if (ru) { for (const k of faltan) propuestas.push({ anio: a.anio, cual: k, ...ru[k] }); continue; }
+    // el balance de SIIS (club colombiano): lo que da va tal cual; lo que no da sigue por los documentos si hay transcripción
+    const si = siisDeBalance(clubId, a);
+    if (si) {
+      const sin = faltan.filter((k) => si[k]?.valor == null);
+      for (const k of faltan) if (!sin.includes(k) || !a.md) propuestas.push({ anio: a.anio, cual: k, ...si[k] });
+      if (!sin.length || !a.md) continue;
+      faltan = sin;
+    }
     if (!a.md) { for (const k of faltan) propuestas.push({ anio: a.anio, cual: k, valor: null, como: 'la fuente no nombra la transcripción' }); continue; }
     const res = {};
     for (const k of faltan) {
