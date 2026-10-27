@@ -261,7 +261,7 @@ window.CLUB_INDEX = {
   "rbleipzig-de": {"n":"RB Leipzig","c":"DE","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "rcdmallorca-es": {"n":"RCD Mallorca","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "realbetis-es": {"n":"Real Betis","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
-  "realcartagena-co": {"n":"Real Cartagena","c":"CO","q":"empty","y":0,"last":null,"yrs":[]},
+  "realcartagena-co": {"n":"Real Cartagena","c":"CO","q":"full","y":1,"last":2017,"yrs":[[2017,"official_balance_sheet"]]},
   "realmadrid-es": {"n":"Real Madrid","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "realoviedo-es": {"n":"Real Oviedo","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "remo-br": {"n":"Remo","c":"BR","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},

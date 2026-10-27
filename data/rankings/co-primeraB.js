@@ -193,7 +193,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2017: {
     leagueSize: 16,
-    sinDato: ["realcartagena-co"],
     wiki: {"t":"2017 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"leonesfc-co", revenue:1.848, reportType:"official_balance_sheet",
@@ -207,6 +206,9 @@ window.RANKINGS["co-primeraB"] = {
         sourceId:"fortalezaceif-co-estados-financieros-2017",
         mix:[["Comercial / Sponsors",0.024],["Fútbol profesional (sin desglosar por la fuente)",1.414],["Otros ingresos",0.345]],
         incluidos:[["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"realcartagena-co", revenue:1.695, reportType:"official_balance_sheet",
+        sourceId:"realcartagena-co-siis-estado-2017",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.664],["Otros ingresos",0.032]] },
       { id:"boyacachico-co", revenue:1.465, reportType:"official_balance_sheet",
         sourceId:"boyacachico-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.39],["Otros ingresos",0.075]],

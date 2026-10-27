@@ -191,6 +191,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Palogrande","capacidad":31611,"sponsor":"Colanta, BetPlay, Wakate","marca":"Boman","temporada":"2024 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692752"},
     2025: {"estadio":"Palogrande","capacidad":31611,"sponsor":"Colanta, BetPlay, Wakate","marca":"Boman","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
+  'realcartagena-co': {
+    2017: {"estadio":"Estadio Jaime Morón León","capacidad":16068,"sponsor":"Gobierno de Resultados","marca":"Kelme","temporada":"2017 Categoría Primera B season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1321615242","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=173741340","local":["estadio"],"fuenteManual":"estadio y capacidad: https://en.wikipedia.org/wiki/Estadio_Jaime_Mor%C3%B3n_Le%C3%B3n y https://en.wikipedia.org/wiki/2017_Categor%C3%ADa_Primera_B_season (Real Cartagena en la Primera B 2017, sede Jaime Morón León; capacidad 16.068 en las páginas de 2018-2025); marca (Kelme 2017): https://en.wikipedia.org/wiki/Real_Cartagena y Football Kit Archive https://www.footballkitarchive.com/es/real-cartagena-camisetas-t10297/ (Kelme 2017-2018); sponsor (Gobierno de Resultados 2016-2019): historial de sponsors de Football Kit Archive (base de aficionados, una sola fuente; leída por el resumen de la búsqueda, la página dio 403; no dice explícitamente 'frente'; débil)","manual":["estadio","capacidad","sponsor","marca"]},
+  },
   'santafe-co': {
     2025: {"estadio":"Nemesio Camacho El Campín","capacidad":39512,"sponsor":"Colanta, BetPlay","marca":"Fila","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },

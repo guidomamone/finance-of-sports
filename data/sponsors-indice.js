@@ -1096,6 +1096,7 @@ window.SPONSORS_INDICE = [
   ["gobernacion-de-bolivar","Gobernación de Bolívar",["c"]],
   ["gobernacion-del-cesar","Gobernación del Cesar",["c"]],
   ["gobernacion-del-meta","Gobernación del Meta",["c"]],
+  ["gobierno-de-resultados","Gobierno de Resultados",["c"]],
   ["golaco","Golaço",["m"]],
   ["gold-meat","Gold Meat",["c"]],
   ["golden-palace","Golden Palace",["c"]],

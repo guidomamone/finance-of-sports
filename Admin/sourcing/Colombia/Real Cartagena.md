@@ -15,3 +15,5 @@
 Estados financieros en disco ahora: 9 ejercicios (2017-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
 
 Color de marca: null — la ficha de es.wikipedia (Real Cartagena) lista «Amarillo, Verde y Rojo» sin ningún hex y sin dar un color predominante; sin footylogos (lookup-brand-color sin coincidencias), verificado 2026-10-27
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2017 desde `Clubes/Colombia/Real Cartagena/siis-estado-2017.pdf` (sourceId `realcartagena-co-siis-estado-2017`).
