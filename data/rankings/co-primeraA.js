@@ -373,7 +373,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2016: {
     leagueSize: 20,
-    sinDato: ["atleticohuila-co"],
     wiki: {"t":"2016 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:16.41, reportType:"official_balance_sheet",
@@ -389,6 +388,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"laequidad-co", revenue:5.145, reportType:"official_balance_sheet",
         sourceId:"laequidad-co-siis-estado-2016",
         mix:[["Comercial / Sponsors",1.457],["Estadio",0.185],["Televisión",1.418],["Premios por competencias",0.036],["Venta de Jugadores",1.14],["Otras actividades (educación y otros deportes)",0.839],["Otros ingresos",0.071]] },
+      { id:"atleticohuila-co", revenue:3.407, reportType:"official_balance_sheet",
+        sourceId:"atleticohuila-co-siis-estado-2016",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",3.282],["Otros ingresos",0.125]] },
       { id:"atleticobucaramanga-co", revenue:2.505, reportType:"official_balance_sheet",
         sourceId:"atleticobucaramanga-co-siis-estado-2016",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.438],["Otros ingresos",0.067]],

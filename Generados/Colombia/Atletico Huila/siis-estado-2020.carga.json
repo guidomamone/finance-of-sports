@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Colombia/Atletico Huila/siis-estado-2020.pdf",
- "generado": "2026-10-27T18:32:31.839Z",
+ "generado": "2026-10-27T18:33:50.339Z",
  "frena": [],
  "avisos": [],
  "ejercicio": {
@@ -297,8 +297,8 @@
  },
  "liga": {
   "valor": "co-primeraB",
-  "fuente": "roster cacheado de \"2020 Torneo DIMAYOR\" (tools/club-league-reference/co.json), coincidencia exacta \"Atlético Huila\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -338,7 +338,7 @@
   },
   "liga": {
    "valor": "co-primeraB",
-   "fuente": "roster cacheado de \"2020 Torneo DIMAYOR\" (tools/club-league-reference/co.json), coincidencia exacta \"Atlético Huila\"",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
    "estado": "ok"
   }
  },
