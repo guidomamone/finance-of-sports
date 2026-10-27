@@ -185,6 +185,16 @@ criterios establecidos en las leyes, decretos, circulares, estatutos y las decis
 responsables del Gobierno Corporativo de la Entidad. Basado en el resultado de mi evaluación
 emití mis conclusiones en un informe separado de fecha 9 de marzo de 2021.
 
+[Bloque de firma impreso como imagen en el PDF (pág. 4), transcripto a mano:]
+Michael Stiven Arango De La Portilla
+Revisor Fiscal
+T.P. 257.870-T
+Designado por RSM CA S.A.S.
+William Garcia Perez
+Socio de Auditoría & Aseguramiento
+RSM CA S.A.S.
+T.R. 1.216
+Santiago de Cali, 9 de marzo de 2021
 
 
 

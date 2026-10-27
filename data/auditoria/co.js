@@ -174,6 +174,83 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "americadecali-co": {
+  "2018": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM CA S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Colombia/America de Cali/dictamen-revisor-fiscal-2018.md",
+    "linea": 46
+   }
+  },
+  "2019": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM CA S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Colombia/America de Cali/dictamen-revisor-fiscal-2019.md",
+    "linea": 22
+   }
+  },
+  "2020": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM CA S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Colombia/America de Cali/dictamen-revisor-fiscal-2020.md",
+    "linea": 26
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM CA S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Colombia/America de Cali/dictamen-revisor-fiscal-2021.md",
+    "linea": 30
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM CA S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/America de Cali/dictamen-revisor-fiscal-2023.md",
+    "linea": 251
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Millán & Asociados S.A.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/America de Cali/dictamen-revisor-fiscal-2024.md",
+    "linea": 20
+   }
+  },
   "2025": {
    "auditor": {
     "nombre": "Millán & Asociados S.A.",

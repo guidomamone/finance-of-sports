@@ -520,3 +520,7 @@ _note (cargar.mjs):_
 ```text
 Cargado por tools/cargar.mjs (2026-10-27) desde la transcripción Clubes/Colombia/America de Cali/siis-estado-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
+
+## Gestiones (data/gestiones/co.js)
+
+Presidentes: Tulio Gómez (2016-05-10 a 2018-05-16, renuncia en El Espectador), Ricardo Pérez (2018-05-30 a 2019-12-16, El Tiempo; el fin sale de Wikipedia), Mauricio Romero (2019-12-18 a 2023-12-28, nota de El País del 28-12-2023: dejó el cargo ese día), Marcela Gómez (desde 2024-01-04, Wikipedia). El cierre de 2023 (31-12) queda sin gestión confirmada: entre el 28-12-2023 y el 04-01-2024 ninguna fuente fechada dice quién conducía el club. Un artículo de 2026 dice que Pérez volvería como presidente ejecutivo desde el 2026-08-01; no se confirmó ni se cargó.
