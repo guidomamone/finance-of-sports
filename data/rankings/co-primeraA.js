@@ -314,12 +314,14 @@ window.RANKINGS["co-primeraA"] = {
   },
   2017: {
     leagueSize: 20,
-    sinDato: ["americadecali-co"],
     wiki: {"t":"2017 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:15.531, reportType:"official_balance_sheet",
         sourceId:"independientemedellin-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",15.123],["Otros ingresos",0.408]] },
+      { id:"americadecali-co", revenue:11.685, reportType:"official_balance_sheet",
+        sourceId:"americadecali-co-siis-estado-2017",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",11.195],["Otros ingresos",0.49]] },
       { id:"oncecaldas-co", revenue:5.918, reportType:"official_balance_sheet",
         sourceId:"oncecaldas-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.587],["Otros ingresos",0.331]],

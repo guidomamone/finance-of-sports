@@ -4,6 +4,10 @@ const americadecaliCoRevenueLinesByYear = {
     {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":17077.221,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":677.369,"disclosureLevel":"aggregated"},
   ],
+  2017: [
+    {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":33407.126,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":1461.569,"disclosureLevel":"aggregated"},
+  ],
   2025: [
     {"rawLabel":"Ingreso venta de boletería","normalizedCategory":"matchday_competition","amountNative":20397.872,"disclosureLevel":"detailed"},
     {"rawLabel":"Derechos Deportivos","normalizedCategory":"player_sales","amountNative":21564.695,"disclosureLevel":"detailed"},
@@ -29,6 +33,11 @@ const americadecaliCoExpenseLinesByYear = {
     {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-18826.799,"disclosureLevel":"aggregated"},
     {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-1774.63,"disclosureLevel":"aggregated"},
   ],
+  2017: [
+    {"rawLabel":"Costo de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-1086.697,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-39521.774,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-2291.36,"disclosureLevel":"aggregated"},
+  ],
   2025: [
     {"rawLabel":"Costo de Ventas","normalizedCategory":"other_expenses","amountNative":-6678.102,"disclosureLevel":"detailed"},
     {"rawLabel":"Costos deportivos: Gastos de personal (plantel)","normalizedCategory":"wages_squad","amountNative":-33897.003,"disclosureLevel":"detailed"},
@@ -48,6 +57,7 @@ const americadecaliCoExpenseLinesByYear = {
 
 const americadecaliCoFiscalYearMeta = {
   2016: {"currency":"COP","sourceId":"americadecali-co-siis-estado-2016","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2016-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1377.673,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":17754.59,"officialTotalExpenses":22138.988,"officialPAT":-5762.071,"extraRows":[{"label":"Ingresos financieros","value":145.939},{"label":"Costos financieros","value":-1523.612}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":17077.221,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Costo de ventas","lado":"expense","importe":1537.559,"motivo":"Costo de ventas es 93% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)","tipo":"cost_of_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":18826.799,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
+  2017: {"currency":"COP","sourceId":"americadecali-co-siis-estado-2017","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2017-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2042.621,"tax":-29.001,"grossDebt":null,"cash":null,"officialTotalRevenue":34868.695,"officialTotalExpenses":42899.831,"officialPAT":-10102.758,"extraRows":[{"label":"Ingresos financieros","value":38.766},{"label":"Costos financieros","value":-2081.387},{"label":"Ingreso (gasto) por impuestos","value":-29.001}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":33407.126,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Costo de ventas","lado":"expense","importe":1086.697,"motivo":"Costo de ventas es 93% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)","tipo":"cost_of_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":39521.774,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
   2025: {"currency":"COP","sourceId":"americadecali-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-4239.446,"tax":-569.145,"grossDebt":11835.971,"cash":870.325,"officialTotalRevenue":97231.328,"officialTotalExpenses":104321.212,"officialPAT":-11898.474,"baseIngreso":"full"},
 };
 
@@ -65,7 +75,7 @@ window.CLUB_GENERIC_DATA["americadecali-co"] = {
   presupuestoOverlayByYear: americadecaliCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"americadecali-co-estados-financieros-2025":{"id":"americadecali-co-estados-financieros-2025","clubId":"americadecali-co","title":"Estado Individual de Situación Financiera y Estado Individual de Resultados y Otros Resultados Integrales, al 31 de diciembre de 2025 y 2024","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/America de Cali/estados-financieros-2025.pdf"},"americadecali-co-siis-estado-2016":{"id":"americadecali-co-siis-estado-2016","clubId":"americadecali-co","title":"América de Cali S.A. En Reorganización — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/America de Cali/siis-estado-2016.pdf"}});
+Object.assign(sources, {"americadecali-co-estados-financieros-2025":{"id":"americadecali-co-estados-financieros-2025","clubId":"americadecali-co","title":"Estado Individual de Situación Financiera y Estado Individual de Resultados y Otros Resultados Integrales, al 31 de diciembre de 2025 y 2024","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/America de Cali/estados-financieros-2025.pdf"},"americadecali-co-siis-estado-2016":{"id":"americadecali-co-siis-estado-2016","clubId":"americadecali-co","title":"América de Cali S.A. En Reorganización — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/America de Cali/siis-estado-2016.pdf"},"americadecali-co-siis-estado-2017":{"id":"americadecali-co-siis-estado-2017","clubId":"americadecali-co","title":"América de Cali S.A. En Reorganización — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/America de Cali/siis-estado-2017.pdf"}});
 
 gestionesByClub["americadecali-co"] = {"actual":{"nombre":"Marcela Gómez Giraldo (Representante Legal)","firstYear":2025,"lastYear":2025}};
 

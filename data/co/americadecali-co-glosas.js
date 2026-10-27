@@ -34,6 +34,7 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Gravamen movimiento financiero":{"en":"Financial transactions tax"},
 "Honorarios":{"en":"Fees"},
 "Impuestos":{"en":"Taxes"},
+"Ingreso (gasto) por impuestos":{"en":"Tax income (expense)"},
 "Ingreso mecanismo de solidaridad":{"en":"Solidarity mechanism income"},
 "Ingreso venta de boletería":{"en":"Ticket sales income"},
 "Ingresos Conexos":{"en":"Related income"},
