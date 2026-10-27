@@ -28,6 +28,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Real Cartagena/siis-estado-2018.pdf"
+    },
+    {
+      "id": "realcartagena-co-siis-estado-2019",
+      "club_id": "realcartagena-co",
+      "title": "Real Cartagena Fútbol Club S.A. — siis-estado-2019 (ejercicio 2019)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Real Cartagena/siis-estado-2019.pdf"
     }
   ],
   "members": null,
@@ -105,6 +113,53 @@
             "amount": 2680.274,
             "reason": "Costo de ventas es 51% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
             "kind": "cost_of_sales"
+          }
+        ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2019,
+      "period_end": "2019-12-31",
+      "currency": "COP",
+      "source_id": "realcartagena-co-siis-estado-2019",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2019-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 7510.757,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":58.657,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":0,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-2531.559,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2367.277,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-2560.25,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":7569.414,"expenses":7459.086,"net_result":110.328},
+      "adjustments": {
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":7510.757,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 0,
+            "reason": "Costo de ventas es 51% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 2531.559,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
           }
         ],
         "revenue_basis": "full"

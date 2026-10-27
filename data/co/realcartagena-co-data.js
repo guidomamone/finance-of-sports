@@ -8,6 +8,10 @@ const realcartagenaCoRevenueLinesByYear = {
     {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":5477.665,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":35.075,"disclosureLevel":"aggregated"},
   ],
+  2019: [
+    {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":7510.757,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":58.657,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const realcartagenaCoExpenseLinesByYear = {
@@ -21,11 +25,18 @@ const realcartagenaCoExpenseLinesByYear = {
     {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-1772.847,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-823.298,"disclosureLevel":"aggregated"},
   ],
+  2019: [
+    {"rawLabel":"Costo de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":0,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-2531.559,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-2367.277,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-2560.25,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const realcartagenaCoFiscalYearMeta = {
   2017: {"currency":"COP","sourceId":"realcartagena-co-siis-estado-2017","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2017-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":5059.225,"officialTotalExpenses":5492.318,"officialPAT":-433.093,"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":4964.966,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Costo de ventas","lado":"expense","importe":3734.815,"motivo":"Costo de ventas es 68% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)","tipo":"cost_of_sales"}],"baseIngreso":"full"},
   2018: {"currency":"COP","sourceId":"realcartagena-co-siis-estado-2018","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2018-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":5512.74,"officialTotalExpenses":5276.419,"officialPAT":236.321,"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":5477.665,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Costo de ventas","lado":"expense","importe":2680.274,"motivo":"Costo de ventas es 51% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)","tipo":"cost_of_sales"}],"baseIngreso":"full"},
+  2019: {"currency":"COP","sourceId":"realcartagena-co-siis-estado-2019","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2019-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":7569.414,"officialTotalExpenses":7459.086,"officialPAT":110.328,"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":7510.757,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Costo de ventas","lado":"expense","importe":0,"motivo":"Costo de ventas es 51% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)","tipo":"cost_of_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":2531.559,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
 };
 
 const realcartagenaCoPresupuestoOverlayByYear = {};
@@ -42,6 +53,6 @@ window.CLUB_GENERIC_DATA["realcartagena-co"] = {
   presupuestoOverlayByYear: realcartagenaCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"realcartagena-co-siis-estado-2017":{"id":"realcartagena-co-siis-estado-2017","clubId":"realcartagena-co","title":"Real Cartagena Fútbol Club S.A. — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Real Cartagena/siis-estado-2017.pdf"},"realcartagena-co-siis-estado-2018":{"id":"realcartagena-co-siis-estado-2018","clubId":"realcartagena-co","title":"Real Cartagena Fútbol Club S.A. — siis-estado-2018 (ejercicio 2018)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Real Cartagena/siis-estado-2018.pdf"}});
+Object.assign(sources, {"realcartagena-co-siis-estado-2017":{"id":"realcartagena-co-siis-estado-2017","clubId":"realcartagena-co","title":"Real Cartagena Fútbol Club S.A. — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Real Cartagena/siis-estado-2017.pdf"},"realcartagena-co-siis-estado-2018":{"id":"realcartagena-co-siis-estado-2018","clubId":"realcartagena-co","title":"Real Cartagena Fútbol Club S.A. — siis-estado-2018 (ejercicio 2018)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Real Cartagena/siis-estado-2018.pdf"},"realcartagena-co-siis-estado-2019":{"id":"realcartagena-co-siis-estado-2019","clubId":"realcartagena-co","title":"Real Cartagena Fútbol Club S.A. — siis-estado-2019 (ejercicio 2019)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Real Cartagena/siis-estado-2019.pdf"}});
 
 memberCountByClub["realcartagena-co"] = null;

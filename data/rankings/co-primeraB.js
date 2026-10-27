@@ -148,9 +148,11 @@ window.RANKINGS["co-primeraB"] = {
   },
   2019: {
     leagueSize: 17,
-    sinDato: ["realcartagena-co"],
     wiki: {"t":"2019 Categoría Primera B season","lang":"en","at":"2026-09-30","n":17},
     clubs: [
+      { id:"realcartagena-co", revenue:2.31, reportType:"official_balance_sheet",
+        sourceId:"realcartagena-co-siis-estado-2019",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.292],["Otros ingresos",0.018]] },
       { id:"boyacachico-co", revenue:2.051, reportType:"official_balance_sheet",
         sourceId:"boyacachico-co-siis-estado-2019",
         mix:[["Comercial / Sponsors",0.035],["Televisión",1.307],["Premios por competencias",0.243],["Venta de Jugadores",0.463],["Otros ingresos",0.003]] },
