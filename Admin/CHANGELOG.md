@@ -22,6 +22,8 @@ que dice `ESTADO.md` era verdad ese día.
 
 ## Versión 1194 — `--respuestas` lee los casos de la cola; la nómina suma «Aportes Admin…» [470 · reglas-categoria.mjs, audit-chequeos-siis.js]
 - `respuestasContradichas()` lee los casos de categoría respondidos de `cola-revision.jsonl` (los que de verdad ganan sobre la regla), no `categorias-aprendidas.jsonl` (24 falsos avisos, 4 reales); el vocabulario de nómina reconoce `admin*` en los aportes.
+- Cierre del 470: Bucaramanga 2019 y 2020 y Fortaleza 2017 recargados con `cargar` sin frenar y con los mismos totales; el comando que rehace la categoría de una línea cargada se descarta (`--cargadas` más `recategorizar-linea --gasto` y la recarga del año alcanzaron).
+- Verificado a mano (470): Bucaramanga 2019 y 2020 y Fortaleza 2017 recargados con cargar --reemplazar --escribir sin frenar; ensayo contra lo cargado con los mismos totales y solo cambian filas de nómina/Logistica/Otros auxilios por la regla de co.md; reglas-categoria --cargadas y --respuestas dan 0; aviso respuesta-contradice-regla medido (lote completo, diferencias explicadas); el comando de rehacer línea se descartó (CHANGELOG 1194)
 - Medición: lote completo, 6 diferencias, todas explicadas (filas de nómina de la nota de administración de Fortaleza). Sin revisión independiente de la Auditora.
 
 ## Versión 1193 — El pie de la cola nombra los tres flags de --responder [cola.mjs]
