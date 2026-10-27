@@ -13,7 +13,7 @@
 // USO:  node tools/prueba-escribir.mjs        (sale con 0 si la escritura anduvo; con 1 y el motivo si no)
 // ============================================================================
 import { spawnSync, execFileSync } from 'node:child_process';
-import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync, readdirSync, copyFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { conWorktree } from './con-worktree.mjs'; // el worktree descartable con las tools de este árbol (una prueba nueva es solo el escenario)
 
@@ -70,6 +70,8 @@ try {
     ['publicar', ['tools/publicar.mjs']],
     // al final y sin IDEM: sobre los datos de HEAD todavía completa líneas (no todos los ejercicios cargados tienen su tipo de línea sin desglose); si esos datos se completan, pasa a ser idempotente
     ['sin-desglose-tipo --escribir', ['tools/sin-desglose-tipo.mjs', '--escribir']],
+    // el inventario de SIIS (un .md y un .json en Admin/sourcing/Colombia); la bajada de un club (json, md y pdf con Chrome) todavía no tiene escenario
+    ['siis-estado --inventario --escribir', ['tools/siis-estado.mjs', '--inventario', '--escribir'], { red: true }],
   ];
   writeFileSync(join(W, PDF), ''); // los PDF no se trackean: ajustes.mjs pide que el documento exista
   const ERROR_DE_CODIGO =/is not a function|is not defined|Cannot find (module|package)|SyntaxError|does not provide an export|unsettled top-level await|REVERTIDO|TypeError|ReferenceError/;
@@ -83,6 +85,9 @@ try {
     if (opt && opt.idempotente) { const ahora = execFileSync('git', ['status', '--porcelain', '--', 'data'], { cwd: W, encoding: 'utf8' }); if (ahora !== antes) throw new Error(`${nombre} cambió datos que no tenía que cambiar:\n${ahora}`); }
     console.log(`  ok ${nombre}`);
   }
+  // para comparar un año con el que HEAD tenía (claves ordenadas) y para commitear en la copia (nunca en el repo)
+  const canon = (o) => JSON.stringify(o, (k, v) => (v && typeof v === 'object' && !Array.isArray(v) ? Object.fromEntries(Object.entries(v).sort(([a], [b]) => a.localeCompare(b))) : v));
+  const gitW = (...a) => execFileSync('git', ['-c', 'user.email=prueba@prueba', '-c', 'user.name=prueba', ...a], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28 });
   // caja-deuda --club <id> --escribir: a un año de PAOK se le saca la caja del JSON (la copia está en HEAD) y la tool tiene que volver a escribirla igual por el escalón 0 (el año anterior la valida). Es el camino de
   // `import('./cargar.mjs')` + snapshot + publicarCambios, que solo se recorre cuando hay un dato para completar: un ciclo de imports con `await` lo dejó colgado sin que ninguna prueba lo viera. Tiene tope de tiempo
   // porque lo que rompió se quedaba esperando. Lo esperado es el valor que había: si la escalera da otro, o escribe fuera del JSON de ese club, falla.
@@ -113,13 +118,11 @@ try {
     e2.cargado = false; if (e2.estado === 'cargado') e2.estado = 'extraido'; delete e2.cargadoEn;
     writeFileSync(regf, reg2.map((x) => JSON.stringify(x)).join('\n') + '\n');
     const j = JSON.parse(readFileSync(jf, 'utf8')); const y = j.years.find((x) => x.fiscal_year === ANIO2); if (!y) throw new Error(`la prueba de cargar-lote espera sonderjyske-dk ${ANIO2} cargado`);
-    const canon = (o) => JSON.stringify(o, (k, v) => (v && typeof v === 'object' && !Array.isArray(v) ? Object.fromEntries(Object.entries(v).sort(([a], [b]) => a.localeCompare(b))) : v));
     const esperado = canon(y);
     j.years = j.years.filter((x) => x.fiscal_year !== ANIO2); j.sources = (j.sources || []).filter((s) => s.id !== y.source_id);
     writeFileSync(jf, JSON.stringify(j, null, 2) + '\n');
     execFileSync('node', [join(W, 'tools/generar-data.mjs')], { cwd: W, encoding: 'utf8' });
     writeFileSync(join(W, 'lista-lote.txt'), `${PDF2}\n`);
-    const gitW = (...a) => execFileSync('git', ['-c', 'user.email=prueba@prueba', '-c', 'user.name=prueba', ...a], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28 });
     gitW('add', '-A'); gitW('commit', '-qm', 'prueba-escribir: base de cargar-lote');
     const r = spawnSync('node', [join(W, 'tools/cargar-lote.mjs'), '--lista', 'lista-lote.txt', '--escribir'], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28, timeout: 400_000 });
     const out = (r.stdout || '') + (r.stderr || '');
@@ -128,6 +131,30 @@ try {
     const ahora = JSON.parse(readFileSync(jf, 'utf8')).years.find((x) => x.fiscal_year === ANIO2);
     if (!ahora || canon(ahora) !== esperado) throw new Error(`cargar-lote --escribir cargó SønderjyskE ${ANIO2} distinto del que HEAD tenía (mismo documento, mismo camino):\n  esperado ${esperado.slice(0, 300)}\n  ahora    ${ahora ? canon(ahora).slice(0, 300) : '(sin el año)'}`);
     console.log(`  ok cargar-lote --escribir (SønderjyskE ${ANIO2} vuelve a cargarse, con su commit, idéntico al de HEAD)`);
+  }
+  // bfo-rusia --escribir: se saca un año de Krasnodar (2025) y la tool lo carga de nuevo desde su formulario 2 del fisco; tiene que quedar IDÉNTICO al de HEAD. Los bfo-*-datos.json no se trackean (Clubes/**/*.json):
+  // se copian de la carpeta principal; si no están, la prueba lo dice y sigue. Caso que la hizo falta: el año armado por bfo-rusia no traía `baseIngreso` y la auditoría (ingreso-sin-base, P1) lo revertía.
+  {
+    const DIR = 'Clubes/Rusia/Krasnodar'; const ANIO3 = 2025; const jf = join(W, 'data/ru/krasnodar-ru.json');
+    const origen = [ROOT, principal].find((d) => existsSync(join(d, DIR, `bfo-${ANIO3}-datos.json`)));
+    if (!origen) console.log(`  -- bfo-rusia --escribir: sin ${DIR}/bfo-${ANIO3}-datos.json (no se trackea), no se pudo probar`);
+    else {
+      for (const f of readdirSync(join(origen, DIR)).filter((x) => /^bfo-.*-datos\.(json|md)$/.test(x))) copyFileSync(join(origen, DIR, f), join(W, DIR, f));
+      const j = JSON.parse(readFileSync(jf, 'utf8')); const y = j.years.find((x) => x.fiscal_year === ANIO3); if (!y) throw new Error(`la prueba de bfo-rusia espera krasnodar-ru ${ANIO3} cargado`);
+      // lo que bfo-rusia deja a propósito para pasos de después: caja y deuda (caja-deuda.mjs las completa) y un included_in vacío (no se escribe)
+      const sinPosteriores = (a) => { const c = JSON.parse(JSON.stringify(a)); c.financial.cash = null; c.financial.gross_debt = null; if (c.adjustments && !Object.keys(c.adjustments.included_in || {}).length) delete c.adjustments.included_in; return canon(c); };
+      const esperado = sinPosteriores(y);
+      j.years = j.years.filter((x) => x.fiscal_year !== ANIO3); j.sources = (j.sources || []).filter((s) => s.id !== y.source_id);
+      writeFileSync(jf, JSON.stringify(j, null, 2) + '\n');
+      execFileSync('node', [join(W, 'tools/generar-data.mjs')], { cwd: W, encoding: 'utf8' });
+      gitW('add', '-A'); gitW('commit', '-qm', 'prueba-escribir: base de bfo-rusia', '--allow-empty');
+      const r = spawnSync('node', [join(W, 'tools/bfo-rusia.mjs'), '--club', 'Krasnodar', '--escribir'], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28, timeout: 400_000 });
+      const out = (r.stdout || '') + (r.stderr || '');
+      if (r.status !== 0 || ERROR_DE_CODIGO.test(out) || !/Escritos y commiteados: [1-9]/.test(out)) throw new Error(`bfo-rusia --escribir ${r.status == null ? 'no terminó' : `salió con ${r.status}`} y no escribió el año: ${out.trim().split('\n').filter((l) => /NO escrito|P0|P1|Escritos/.test(l)).slice(-3).join(' | ') || out.trim().split('\n').slice(-3).join(' | ')}`);
+      const ahora = JSON.parse(readFileSync(jf, 'utf8')).years.find((x) => x.fiscal_year === ANIO3);
+      if (!ahora || sinPosteriores(ahora) !== esperado) throw new Error(`bfo-rusia --escribir cargó Krasnodar ${ANIO3} distinto del que HEAD tenía:\n  esperado ${esperado.slice(0, 300)}\n  ahora    ${ahora ? sinPosteriores(ahora).slice(0, 300) : '(sin el año)'}`);
+      console.log(`  ok bfo-rusia --escribir (Krasnodar ${ANIO3} vuelve a cargarse, idéntico al de HEAD)`);
+    }
   }
   // alta-club --escribir: se saca un club chico (Bath Rugby) de data/clubs.js de la copia y la tool lo da de alta otra vez desde su documento; la fila vuelve a estar
   const MD_ALTA = 'Clubes/Inglaterra/Bath Rugby/bath-rugby-full-accounts-2020-21.md'; const CLUBS = join(W, 'data/clubs.js');

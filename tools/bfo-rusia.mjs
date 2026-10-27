@@ -41,6 +41,7 @@ import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { derivado } from './rutas.mjs';
 import { tipoSinDesglose } from './tipo-sin-desglose.js';
+import { baseDeIngreso } from './ingreso-derivado.js';
 import * as EV from './evidencia-club.mjs';
 import { rutaData } from './data-clubes.js';
 
@@ -157,6 +158,8 @@ function proponer({ carpeta, anio, A, clubId, club, alta }) {
   const presentes = new Set([...rev, ...exp].map((l) => l.normalizedCategory)); const enLump = (en) => presentes.has(en);
   const incluidoEn = Object.fromEntries(Object.entries(INCLUIDO).filter(([k, en]) => !presentes.has(k) && enLump(en)).map(([k, en]) => [k, { en, posible: true }]));
   const sinDesglose = [...rev, ...exp].filter((l) => /^lump_football_operations/.test(l.normalizedCategory)).map((l) => ({ renglon: l.rawLabel, lado: l.amountNative < 0 ? 'gasto' : 'ingreso', importe: Math.abs(l.amountNative), motivo: 'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)', tipo: tipoSinDesglose(l.rawLabel, l.amountNative < 0 ? 'expenses' : 'revenue') }));
+  // qué son los ingresos del año (`baseIngreso`): la misma regla que cargar-ejercicio.mjs y `fos ingreso-base`; sin la marca audit.js frena el año (ingreso-sin-base, P1) y la escritura se revierte
+  const bi = baseDeIngreso({ lineas: rev, sinDesglose, documento: null, totalRevenue: null, sourceId });
   const md = `${carpeta}/bfo-${anio}-datos.md`;
   return {
     pdf: `${carpeta}/bfo-${anio}-datos.json`, md, reemplaza: false, ajustes: [], escalon2: [...Object.keys(T), ...(F6 ? ['formulario 6'] : [])],
@@ -168,7 +171,7 @@ function proponer({ carpeta, anio, A, clubId, club, alta }) {
     liga: { valor: liga.valor ?? null, fuente: liga.fuente || 'sin caché de la liga', estado: liga.estado || 'pendiente' },
     ejercicio: {
       clubId, year: anio, cierre: `${anio}-12-31`, perimetro: 'individual', revenueLines: rev, expenseLines: exp,
-      fiscalYearMeta: { currency: 'RUB', ...(fxRef.valor ? { fxRef: fxRef.valor } : {}), sourceId, reportType: 'official_balance_sheet', gestionId: null, profitOnPlayerSales: 0, assetSales: 0, netInterest, tax, extraRows, incluidoEn, sinDesglose, grossDebt: null, cash: null, officialTotalRevenue: null, officialTotalExpenses: null, officialPAT: pat },
+      fiscalYearMeta: { currency: 'RUB', ...(fxRef.valor ? { fxRef: fxRef.valor } : {}), sourceId, reportType: 'official_balance_sheet', gestionId: null, profitOnPlayerSales: 0, assetSales: 0, netInterest, tax, extraRows, incluidoEn, sinDesglose, ...(bi ? { baseIngreso: bi.base, ...(bi.derivacion ? { derivacionIngreso: bi.derivacion } : {}) } : {}), grossDebt: null, cash: null, officialTotalRevenue: null, officialTotalExpenses: null, officialPAT: pat },
       source: { id: sourceId, clubId, title: `${club.name || club.displayName} — отчетность ${anio} в ГИР БО (bo.nalog.gov.ru), ejercicio ${anio}`, type: 'official_balance_sheet', reliability: 'primary', note: `Cargado por tools/bfo-rusia.mjs (${HOY}) desde ${carpeta}/bfo-${anio}-datos.json: datos oficiales del Servicio Federal de Impuestos (GIR BO), formulario 2 en miles de rublos; la suma de los renglones da el 2300 impreso.${F6 ? ' Más el formulario 6 (uso de fondos con fin específico: aportes y gastos del programa, sin el 6240; 6100 + 6200 − 6300 = 6400); resultado = 2400 + (6200 − 6240) − 6300.' : ''} Transcripción legible: ${md}.${Object.keys(T).length ? ` Escalón 2: ${Object.entries(T).map(([k, t]) => `${k} de ${t.nota}`).join('; ')} (la suma de sus filas da el código del formulario).` : ''}` },
     },
   };
