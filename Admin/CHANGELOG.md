@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1211 — Tigres FC 2016 y 2017: «Costo de ventas» queda en otros gastos [463 · tigresfc-co]
+- Decisión por la regla de Colombia (`Admin/paises/co.md`): el rubro pesa 43 % (2016) y 41 % (2017) de los gastos y el comparativo del año siguiente lo repite como «Costo de ventas» con «Gastos de ventas» en 0, así que no entra en la excepción de la actividad deportiva (a diferencia de 2018). No se tocó ningún dato; el motivo del aviso silenciado `siis-entre-anios` de Tigres 2018→2019 lo dice. Sale del 463 el punto (i).
+- Medición: idéntico (sin cambio de datos ni de tools).
+
 ## Versión 1210 — La auditoría guarda lo que tres chequeos calculan por archivo [audit-cache.js, audit-chequeos-3.js, audit-chequeos-5.js]
 - `tools/audit-cache.js`: `checkComaComida` (cada `.md` de `Clubes/`), `checkArchivoNoEsLoQueDice` (los 64 bytes de cada PDF, XHTML y XML) y `checkNombresSinDefinir` (eslint sobre `tools/`) guardan su resultado en `.git/fos-audit-cache.json` y no lo recalculan si el archivo no cambió de tamaño ni de fecha. La clave suma la versión del código de los chequeos (cambiar uno, `rarezas.mjs` o eslint invalida todo); las rarezas ya revisadas se miran en cada corrida; los hallazgos se emiten con `add` siempre. Ningún chequeo ni mensaje cambia. `--sin-cache` o `FOS_SIN_CACHE=1` hacen la auditoría completa.
 - `fos probar-cache-audit` (~100 s): mismos hallazgos con y sin caja en el árbol, con una coma comida, un PDF que es HTML y un nombre sin definir plantados, y arreglados. Mediana de `audit.js --json`: 12,8 s sin caja, 8,3 s con caja caliente (35 %).
