@@ -103,7 +103,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2022: {
     leagueSize: 16,
-    sinDato: ["bogotafc-co"],
     wiki: {"t":"2022 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"cucutadeportivo-co", revenue:1.983, reportType:"official_balance_sheet",
@@ -131,6 +130,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"orsomarso-co", revenue:0.694, reportType:"official_balance_sheet",
         sourceId:"orsomarso-co-siis-estado-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.453],["Otros ingresos",0.242]] },
+      { id:"bogotafc-co", revenue:0.619, reportType:"official_balance_sheet",
+        sourceId:"bogotafc-co-siis-estado-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.596],["Otros ingresos",0.022]] },
       { id:"tigresfc-co", revenue:0.565, reportType:"official_balance_sheet",
         sourceId:"tigresfc-co-siis-estado-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.552],["Otros ingresos",0.013]] },
