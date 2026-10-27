@@ -279,7 +279,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2018: {
     leagueSize: 20,
-    sinDato: ["americadecali-co"],
     wiki: {"t":"2018 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:12.493, reportType:"official_balance_sheet",
@@ -292,6 +291,9 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"oncecaldas-co-estados-financieros-2018",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.597],["Otros ingresos",0.974]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"americadecali-co", revenue:7.464, reportType:"official_balance_sheet",
+        sourceId:"americadecali-co-siis-estado-2018",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",7.317],["Otros ingresos",0.147]] },
       { id:"laequidad-co", revenue:5.308, reportType:"official_balance_sheet",
         sourceId:"laequidad-co-siis-estado-2018",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.207],["Otros ingresos",0.101]],
