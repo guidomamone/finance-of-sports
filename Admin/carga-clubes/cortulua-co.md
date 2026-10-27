@@ -213,13 +213,14 @@ Generados/Colombia/Cortulua/siis-estado-2020.categorias.json (escalón de cada f
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Gastos de administración | pág. 1, Jev 1 |
+| 1 | Gastos de administración | pág. 1, precedente |
 | 2 | Otros gastos | pág. 1, Jev 1 |
 
 ### Meta
 
 ```text
 2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-27): filas-a-mano. Claude 2026-10-27 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-27): categoria = lump_football_operations_expense. El estado de 2020 imprime todo el gasto operativo (8.859.297, más que los ingresos de 7.080.765) como «Gastos de administración» y el de 2021, en su columna 2020, da ese mismo importe como «Gastos de ventas», que en Colombia es la actividad deportiva (regla de Admin/paises/co.md; mismo caso que Tolima y La Equidad 2024, Bucaramanga 2018 y América de Cali 2017 y 2020).
 tools/cargar.mjs (2026-10-27). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```

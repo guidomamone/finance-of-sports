@@ -212,13 +212,14 @@ Generados/Colombia/Tigres FC/siis-estado-2018.categorias.json (escalón de cada 
 
 | Fila | Rubro | Nota |
 |---|---|---|
-| 1 | Costo de ventas | pág. 1, Claude 0.8 |
+| 1 | Costo de ventas | pág. 1, precedente |
 | 2 | Gastos de administración | pág. 1, Jev 1 |
 
 ### Meta
 
 ```text
 2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-27): filas-a-mano. Claude 2026-10-27 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-27): categoria = lump_football_operations_expense. El estado de 2018 imprime la actividad deportiva como «Costo de ventas» (466.172) y el de 2019, en su columna 2018, repite ese importe como «Gastos de ventas», que en Colombia es la actividad deportiva (regla de Admin/paises/co.md; mismo caso que Atlético Bucaramanga 2018).
 tools/cargar.mjs (2026-10-27). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```

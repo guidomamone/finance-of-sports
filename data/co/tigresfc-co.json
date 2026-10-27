@@ -181,14 +181,17 @@
         {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":42.617,"disclosure":"aggregated"}
       ],
       "expenses": [
-        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":-466.172,"disclosure":"aggregated"},
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-466.172,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1527.972,"disclosure":"aggregated"}
       ],
       "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-108.147,"tax":0,"gross_debt":null,"cash":null},
       "official_totals": {"revenue":2143.125,"expenses":1994.144,"net_result":40.834},
       "adjustments": {
         "extra_rows": [{"label":"Costos financieros","amount":-108.147},{"label":"Ingreso (gasto) por impuestos","amount":0}],
-        "no_breakdown": [{"line":"Ingresos de actividades ordinarias","side":"revenue","amount":2100.508,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":2100.508,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {"line":"Costo de ventas","side":"expense","amount":466.172,"reason":"el documento no desglosa este renglón","kind":"cost_of_sales"}
+        ],
         "revenue_basis": "full"
       }
     },

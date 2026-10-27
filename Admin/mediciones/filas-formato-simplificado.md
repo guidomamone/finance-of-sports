@@ -32,14 +32,14 @@ Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que 
 
 | Fila | Club-años con número | Clubes que la tienen alguna vez | Cuando la tiene: mediana de la sección · casos ≥ 10 % | Cero real | «—» sin saber | Dentro de otro |
 |---|---|---|---|---|---|---|
-| Compra de jugadores | 827 de 1469 (56 %) | 228 de 339 (67 %) | 14.1 % · 64 % | 366 (25 %) | 276 | 0 |
-| Salarios y primas (plantel y cuerpo técnico) | 1148 de 1469 (78 %) | 291 de 339 (86 %) | 48.7 % · 99 % | 18 (1 %) | 184 | 119 |
-| Inversiones (amortizaciones y depreciación) | 1007 de 1469 (69 %) | 269 de 339 (79 %) | 2.0 % · 8 % | 203 (14 %) | 259 | 0 |
-| Organización de partidos | 769 de 1469 (52 %) | 205 de 339 (60 %) | 7.0 % · 31 % | 417 (28 %) | 283 | 0 |
-| Otras actividades (educación, juvenil, otros deportes, básquet) | 198 de 1469 (13 %) | 62 de 339 (18 %) | 5.6 % · 27 % | 997 (68 %) | 270 | 4 |
-| Administración y gastos generales | 1220 de 1469 (83 %) | 287 de 339 (85 %) | 15.9 % · 72 % | 225 (15 %) | 24 | 0 |
-| Fútbol profesional (sin desglosar por la fuente) | 303 de 1469 (21 %) | 72 de 339 (21 %) | 75.0 % · 89 % | 1166 (79 %) | 0 | 0 |
-| Otros gastos (catch-all) | 1321 de 1469 (90 %) | 307 de 339 (91 %) | 10.3 % · 51 % | 148 (10 %) | 0 | 0 |
+| Compra de jugadores | 827 de 1469 (56 %) | 228 de 339 (67 %) | 14.1 % · 64 % | 364 (25 %) | 278 | 0 |
+| Salarios y primas (plantel y cuerpo técnico) | 1148 de 1469 (78 %) | 291 de 339 (86 %) | 48.7 % · 99 % | 16 (1 %) | 186 | 119 |
+| Inversiones (amortizaciones y depreciación) | 1007 de 1469 (69 %) | 269 de 339 (79 %) | 2.0 % · 8 % | 201 (14 %) | 261 | 0 |
+| Organización de partidos | 769 de 1469 (52 %) | 205 de 339 (60 %) | 7.0 % · 31 % | 415 (28 %) | 285 | 0 |
+| Otras actividades (educación, juvenil, otros deportes, básquet) | 198 de 1469 (13 %) | 62 de 339 (18 %) | 5.6 % · 27 % | 995 (68 %) | 272 | 4 |
+| Administración y gastos generales | 1219 de 1469 (83 %) | 287 de 339 (85 %) | 15.9 % · 72 % | 225 (15 %) | 25 | 0 |
+| Fútbol profesional (sin desglosar por la fuente) | 305 de 1469 (21 %) | 72 de 339 (21 %) | 75.0 % · 90 % | 1164 (79 %) | 0 | 0 |
+| Otros gastos (catch-all) | 1320 de 1469 (90 %) | 307 de 339 (91 %) | 10.3 % · 51 % | 149 (10 %) | 0 | 0 |
 
 Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que la tienen alguna vez / clubes medidos):
 
