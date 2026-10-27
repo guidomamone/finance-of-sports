@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // ============================================================================
 // tools/siis-estado.mjs — EL ESTADO DE RESULTADOS Y EL BALANCE DE SIIS (Supersociedades, Colombia) AL FORMATO DEL PIPELINE: .json crudo + .md fiel + PDF de ancla.
-// Gratis, determinista, sin IA ni API paga. Regla y casos: Admin/CONVENCIONES-DATOS.md, «Colombia, el estado de resultados y el balance de SIIS…».
+// Gratis, determinista, sin IA ni API paga. Regla y casos: Admin/paises/co.md, «Colombia, el estado de resultados y el balance de SIIS…».
 //
 // POR QUÉ. Los PDF de «NOTAS EF» que SIIS guarda de algunos clubes traen solo las notas; el estado de resultados y el balance que el club cargó en el formulario están
 // en la API pública del portal como datos (índices siis_resultadointegral y siis_sitfinan; cómo consultarlos: Admin/sourcing/Colombia/_notas-generales.md). Esta tool los baja

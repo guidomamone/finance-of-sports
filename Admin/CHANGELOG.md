@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1190 — Comentarios de siis-estado, siis-notas y audit-chequeos-siis apuntan a Admin/paises/co.md [469 · siis-estado.mjs, siis-notas.mjs, audit-chequeos-siis.js]
+- Los comentarios que citaban la regla de Colombia en `CONVENCIONES-DATOS.md` citan `Admin/paises/co.md`.
+- Medición: solo comentarios, código sin comentarios idéntico (`fos medir pipeline`).
+
 ## Versión 1189 — Las reglas de un país salen de CONVENCIONES-DATOS.md a Admin/paises/<iso>.md [469 · reglas-pais.mjs, club-siis.mjs]
 - `node tools/reglas-pais.mjs` (ensayo por defecto, `--escribir` mueve) pasa a `Admin/paises/<iso>.md` las reglas cuyo título nombra un país fuera del paréntesis del caso. Se movieron 6: Colombia (3), Bélgica, Alemania y Turquía. `CONVENCIONES-DATOS.md` pasa de 81 a 67 KB y queda con las generales.
 - En lo movido se quitó la historia (fechas de decisión, «años ya cargados que cambian», la medición de origen); las referencias a esas reglas (`club-siis.mjs`, `audit-acciones.json`, `PIPELINE.md`) apuntan al archivo nuevo.

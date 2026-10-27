@@ -54,7 +54,7 @@ function checkSiisFaltante() {
 
 // siis-entre-anios: los rubros de un año contra el comparativo que el año siguiente imprime (los siis-estado-AAAA.md de cada club, sin red). Dos cosas: los intercambios son P3 y la reexpresión P4 (informativa):
 //  - rótulos intercambiados: el comparativo de AAAA+1 le da a un rubro de gasto el importe que AAAA imprime con OTRO rótulo (Tolima y La Equidad 2024: «Gastos de ventas» y «Gastos de administración» cambian de lugar; Bucaramanga 2018:
-//    «Costo de ventas» pasa a «Gastos de ventas»). Un año cargado con el rótulo y no con el contenido publica la actividad deportiva como administración (regla de Colombia en Admin/CONVENCIONES-DATOS.md): mirar el año y, si ya está bien, silenciar.
+//    «Costo de ventas» pasa a «Gastos de ventas»). Un año cargado con el rótulo y no con el contenido publica la actividad deportiva como administración (regla de Colombia en Admin/paises/co.md): mirar el año y, si ya está bien, silenciar.
 //  - reexpresión material: ingresos o resultado del comparativo que difieren de lo que el año imprimió en más de 1 % de los ingresos. Un aviso por club.
 const RUBROS_DE_GASTO_E_INGRESO = ['Costo de ventas', 'Gastos de ventas', 'Gastos de administración', 'Otros ingresos', 'Otros gastos', 'Costos financieros', 'Ingresos financieros'];
 const cifra = (t) => { const x = String(t).trim(); if (!/\d/.test(x)) return null; const n = Number(x.replace(/[().\s]/g, '')); return /^\(/.test(x) ? -n : n; };
@@ -89,7 +89,7 @@ function checkSiisEntreAnios() {
   }
 }
 
-// regla-nota-contradicha: las líneas de gastos cargadas que la regla por nota (NOTA-CATEGORÍA de CONVENCIONES-DATOS: personal, viajes y «Diversos» de la nota de gastos de Colombia) manda a otra categoría.
+// regla-nota-contradicha: las líneas de gastos cargadas que la regla por nota (NOTA-CATEGORÍA de Admin/paises/co.md: personal, viajes y «Diversos» de la nota de gastos de Colombia) manda a otra categoría.
 // Las lista `node tools/reglas-categoria.mjs --cargadas`, que mira la nota de cada fila; se corrige con `recategorizar-linea --gasto` (o recargando el año) y un commit con `Corrige:`. Aviso P3 por club.
 function checkReglaNotas() {
   let out; try { out = require('child_process').execFileSync('node', ['tools/reglas-categoria.mjs', '--cargadas'], { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); } catch (e) { add('P3', 'regla-nota-contradicha', `tools/reglas-categoria.mjs --cargadas falló: ${String(e.stderr || e.message).split('\n')[0]}`); return; }

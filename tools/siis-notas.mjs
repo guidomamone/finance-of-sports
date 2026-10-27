@@ -3,7 +3,7 @@
 // tools/siis-notas.mjs — QUÉ RUBROS DEL ESTADO DE SIIS ABREN LAS NOTAS DEL CLUB (punto 463, paso 3.0 a). Gratis, determinista, sin IA.
 //
 // POR QUÉ. El estado de resultados de SIIS trae ingresos y gastos en una línea cada uno; las notas del club (el `estados-financieros-AAAA.md` de la misma carpeta) los
-// abren (Tolima, Nota 19: taquillas, venta de derechos deportivos = 30 % de los ingresos, publicidad…). Regla (CONVENCIONES-DATOS.md, caso 2 de «Colombia, el estado de
+// abren (Tolima, Nota 19: taquillas, venta de derechos deportivos = 30 % de los ingresos, publicidad…). Regla (Admin/paises/co.md, caso 2 de «Colombia, el estado de
 // resultados y el balance de SIIS»): las notas abren un rubro de SIIS SOLO si sus líneas suman EXACTO ese rubro; si no suman, queda el rubro de SIIS tal cual.
 //
 // QUÉ HACE. Para cada rubro de SIIS (ingresos, costo de ventas, gastos de ventas y de administración, otros ingresos y gastos) busca, entre las tablas de las notas, la que
