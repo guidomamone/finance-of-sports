@@ -3,9 +3,11 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraB"] = {
   2025: {
     leagueSize: 16,
-    sinDato: ["cortulua-co"],
     wiki: {"t":"2025 Torneo DIMAYOR","lang":"en","at":"2026-10-17","n":16},
     clubs: [
+      { id:"cortulua-co", revenue:3.675, reportType:"official_balance_sheet",
+        sourceId:"cortulua-co-siis-estado-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",3.393],["Otros ingresos",0.282]] },
       { id:"cucutadeportivo-co", revenue:3.352, reportType:"official_balance_sheet",
         sourceId:"cucutadeportivo-co-siis-estado-2025",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",3.14],["Otros ingresos",0.212]] },
