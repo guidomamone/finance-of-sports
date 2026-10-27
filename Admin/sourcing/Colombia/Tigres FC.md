@@ -25,3 +25,5 @@ Color de marca: null — la ficha de es.wikipedia (Tigres Fútbol Club) describe
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2019 desde `Clubes/Colombia/Tigres FC/siis-estado-2019.pdf` (sourceId `tigresfc-co-siis-estado-2019`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2020 desde `Clubes/Colombia/Tigres FC/siis-estado-2020.pdf` (sourceId `tigresfc-co-siis-estado-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2021 desde `Clubes/Colombia/Tigres FC/siis-estado-2021.pdf` (sourceId `tigresfc-co-siis-estado-2021`).
