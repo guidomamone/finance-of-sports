@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1196 — PIPELINE.md sin lo que solo vale para un país [471 · audit-acciones.json]
+- Mudado a `Admin/paises/`: «Colombia: los estados de SIIS» (`co.md`), el camino de Rusia (`ru.md`, nuevo) y lo belga del esquema NBB (escalón «códigos NBB» y el 630 por la nota, año sin ingresos, caja sin vecino: `be.md`, «Pipeline de Bélgica»); en `PIPELINE.md` quedan punteros y la sección «Lo que solo vale para un país». Pesa 142 KB (150 KB antes). Sin las notas de «Medido…» de lo mudado.
+- La medición por menciones daba ~52 KB belgas; por sección, no hay una sección belga y lo propio de Bélgica es ~3 KB. «Dinamarca: los informes en XHTML» se queda: es el formato (también británico), no el país.
+- Verificado a mano (471): PIPELINE.md sin secciones propias de un país (Colombia SIIS, Rusia y lo belga NBB mudados a Admin/paises/{co,ru,be}.md, con punteros); audit P0 0 P1 0; citas actualizadas (audit-acciones.json, ESTADO, TODO, skill trampas); reglas-categoria lee las mismas 36 reglas
+- Medición: no es del pipeline (solo texto y la ruta citada por `audit-acciones.json`); `audit.js` P0 0 P1 0 y `reglas-categoria` lee las mismas 36 reglas.
+
 ## Versión 1195 — fos comparar-carga [comparar-carga.mjs]
 - `node tools/fos.mjs comparar-carga "<pdf>"` corre el ensayo de `cargar` y lo compara con lo cargado del año: qué frena, si los totales de ingresos y gastos dan lo mismo y qué líneas cambian de categoría; restaura los registros que el ensayo toca. Reemplaza el script suelto que se armaba antes de cada recarga.
 - Medición: no es del pipeline (no pide medición).
