@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1192 — La regla por nota reconoce la nómina; aviso de respuestas de la cola que la contradicen [470 · reglas-categoria.mjs, audit.js, audit-chequeos-siis.js]
+- `reglaDeNota()`: el concepto «personal» cubre también los componentes sueltos de la nómina (cesantías, prima de servicios, vacaciones, auxilios, indemnizaciones laborales, aportes); antes esas filas caían a la cola aunque estuvieran en la nota de administración.
+- `node tools/reglas-categoria.mjs --respuestas` y aviso P3 `respuesta-contradice-regla` en `audit.js`: la respuesta vigente de `categorias-aprendidas.jsonl` que la regla por nota manda a otra categoría (una respuesta gana sobre la regla al recargar el año).
+- Cola de Atlético Bucaramanga 2019 y 2020: 22 respuestas por la regla de `co.md`; la recarga limpia da los mismos totales.
+- Medición: lote completo, 8 diferencias, todas explicadas (filas de nómina de la nota de administración de Fortaleza y Bucaramanga). Sin revisión independiente de la Auditora.
+
 ## Versión 1191 — Reglas de país: aviso, hook y puntero automático [469 · audit.js, audit-chequeos-siis.js, cargar.mjs, docs-reglas.mjs, club-siis.mjs, recategorizar-linea.mjs, pre-tool.mjs]
 - Aviso P3 `regla-de-pais-en-doc-general` (la lista `node tools/reglas-pais.mjs`) y hook `pre-tool` que rechaza agregar a `CONVENCIONES-DATOS.md` un `## REGLA:` con un país en el título y dice en qué `Admin/paises/<iso>.md` va (82 casos de la prueba del hook, todos ok). Hoy no hay ninguno.
 - `cargar` (por stderr), `club-siis` y `recategorizar-linea` imprimen al empezar «Reglas de datos de CO: Admin/paises/co.md» cuando el país del club tiene archivo.

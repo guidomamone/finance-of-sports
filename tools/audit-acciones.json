@@ -205,6 +205,11 @@
   "quien": "script",
   "donde": "Admin/paises/co.md, «las filas que abre una nota de gastos van por su nota»"
  },
+ "respuesta-contradice-regla": {
+  "hacer": "Contestar de nuevo el caso de la cola de esa etiqueta con la categoría de la regla: node tools/cola.mjs --responder <id> corregir --valor <categoría> --causa regla-escrita --evidencia … --seguridad … (la última respuesta gana). Si la regla está mal, es un criterio: votacion-de-criterios.",
+  "quien": "script",
+  "donde": "Admin/paises/co.md, «las filas que abre una nota de gastos van por su nota»"
+ },
  "proyeccion": {
   "hacer": "Nada: proyecta cuánto pesa data/ a 1000 clubes.",
   "quien": "nada",

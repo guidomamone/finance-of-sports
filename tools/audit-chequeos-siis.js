@@ -98,6 +98,15 @@ function checkReglaNotas() {
   for (const [club, ls] of porClub) add('P3', 'regla-nota-contradicha', `${club}: ${ls.length} línea(s) de gastos que la regla por nota manda a otra categoría: ${ls.slice(0, 4).join('; ')}${ls.length > 4 ? '…' : ''} (node tools/reglas-categoria.mjs --cargadas; se corrige con recategorizar-linea --gasto y «Corrige:»)`);
 }
 
+// respuesta-contradice-regla: la respuesta vigente de Admin/registros/categorias-aprendidas.jsonl (las de la cola, aplicadas al cargar) que la regla por nota manda a otra categoría. Una respuesta gana sobre la regla,
+// así que al recargar ese año volvería la categoría vieja (Alianza 2023 «Diversos»). Las lista `node tools/reglas-categoria.mjs --respuestas`; se contesta de nuevo el caso de la cola (`cola.mjs --responder <id> corregir --valor …`). Aviso P3 por club.
+function checkRespuestasContradicen() {
+  let out; try { out = require('child_process').execFileSync('node', ['tools/reglas-categoria.mjs', '--respuestas'], { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); } catch (e) { add('P3', 'respuesta-contradice-regla', `tools/reglas-categoria.mjs --respuestas falló: ${String(e.stderr || e.message).split('\n')[0]}`); return; }
+  const porClub = new Map();
+  for (const l of out.split('\n').filter((x) => x.includes(' | '))) { const club = l.split(' ')[0]; (porClub.get(club) || porClub.set(club, []).get(club)).push(l.slice(club.length + 1)); }
+  for (const [club, ls] of porClub) add('P3', 'respuesta-contradice-regla', `${club}: ${ls.length} respuesta(s) de la cola que la regla por nota manda a otra categoría y volverían al recargar el año: ${ls.slice(0, 3).join('; ')}${ls.length > 3 ? '…' : ''} (node tools/reglas-categoria.mjs --respuestas; se contestan de nuevo en la cola)`);
+}
+
 // dictamen-fechas-ajenas: un dictamen del registro de auditoría cuya firma es anterior al cierre del ejercicio (o 30 meses posterior) o cuyo .md no nombra el año del cierre: suele ser la plantilla de otro
 // año (Alianza FC 2024 y 2025, firmados en marzo del mismo año del cierre). Lo lista `node tools/dictamen-fechas.mjs`; se mira contra el documento y, si el dictamen es de otro ejercicio, se corrige el registro. Aviso P3.
 function checkDictamenFechas() {
@@ -113,4 +122,4 @@ function checkReglaDePaisEnDocGeneral() {
   if (ls.length) add('P3', 'regla-de-pais-en-doc-general', `${ls.length} regla(s) de Admin/CONVENCIONES-DATOS.md nombran un país en su título y van en Admin/paises/<iso>.md (node tools/reglas-pais.mjs --escribir las mueve): ${ls.slice(0, 3).map((x) => x.slice(0, 90)).join('; ')}`);
 }
 
-module.exports = { checkSiisControl, checkSiisEntreAnios, checkSiisFaltante, checkReglaNotas, checkDictamenFechas, checkReglaDePaisEnDocGeneral };
+module.exports = { checkSiisControl, checkSiisEntreAnios, checkSiisFaltante, checkReglaNotas, checkRespuestasContradicen, checkDictamenFechas, checkReglaDePaisEnDocGeneral };
