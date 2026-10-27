@@ -451,6 +451,68 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "cortulua-co": {
+  "2021": {
+   "auditor": {
+    "nombre": "Sulima Estella Betancur Ospina",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Cortulua/dictamen-revisor-fiscal-2021.md",
+    "linea": 68
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Sulima Estella Betancur Ospina",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Cortulua/dictamen-revisor-fiscal-2022.md",
+    "linea": 24
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Sulima Estella Betancur Ospina",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Cortulua/dictamen-revisor-fiscal-2023.md",
+    "linea": 21
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Sulima Estella Betancur Ospina",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Cortulua/dictamen-revisor-fiscal-2024.md",
+    "linea": 21
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Sulima Estella Betancur Ospina",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Cortulua/dictamen-revisor-fiscal-2025.md",
+    "linea": 21
+   }
+  }
+ },
  "cucutadeportivo-co": {
   "2016": {
    "auditor": {
