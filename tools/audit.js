@@ -203,6 +203,7 @@ function pruebaDeDeporte(api) {
 
 function main() {
   let api;
+  const sello = require('./sello-audit.js'); let estadoAlArrancar = null; try { estadoAlArrancar = sello.estadoDelArbol(ROOT); } catch { /* sin git: sin sello */ }
   try { api = loadEngine(); }
   catch (e) { console.error(`ERROR cargando el motor: ${e.message}`); process.exit(2); }
 
@@ -319,6 +320,7 @@ function main() {
   }
 
   const bloqueantes = findings.filter(f => f.sev === 'P0' || f.sev === 'P1').length;
+  if (!bloqueantes && estadoAlArrancar) sello.escribirSello(ROOT, estadoAlArrancar); // el hook de commit no repite una auditoría idéntica sobre este mismo estado (tools/sello-audit.js)
   // process.exit antes de vaciar stdout cortaba el JSON a los 64 KB en un pipe: con --json se sale cuando la escritura terminó.
   if (JSON_OUT) { process.stdout.write(JSON.stringify({ findings, silenciados }, null, 2) + '\n', () => process.exit(bloqueantes ? 1 : 0)); return; }
   imprimir(api);

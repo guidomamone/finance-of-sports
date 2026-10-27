@@ -2,7 +2,8 @@
 // tools/cargar-escribir.mjs — escribir un año en el sitio (edición de los data files, publicar, revertir, backtest y git): lo que hace cargar.mjs --escribir
 // Mudado de tools/cargar.mjs sin cambiar una línea (salvo `export`); tools/cargar.mjs lo importa y re-exporta lo que ya exportaba.
 // ============================================================================
-import { readFileSync, writeFileSync, existsSync, readdirSync, statSync, unlinkSync, appendFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync, statSync, unlinkSync, appendFileSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { resolve, join, dirname } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
@@ -101,14 +102,24 @@ export function publicarCambios(snap, extra, escritos) {
   if (/url escritas/.test(urlXhtml.out)) escritos.push('urls del registro oficial en fuentes XHTML (tools/fuente-url-xhtml.mjs)');
   // la segunda fuente de la liga de lo recién cargado (regla «la liga de un año necesita dos fuentes»): sola, con la url y el título de otro año de la misma liga. No frena: una liga en grupos
   // o sin año de referencia se queda con el aviso `liga-una-fuente` de audit.js y la resuelve una sesión (tools/segunda-fuente-liga.mjs).
-  const segFuente = runNode('tools/segunda-fuente-liga.mjs', ['--pendientes', '--escribir']);
-  const segN = (segFuente.out.match(/(\d+) guardada\(s\)/) || [])[1];
-  if (segN && Number(segN) > 0) escritos.push(`segunda fuente de ${segN} liga(s) (tools/segunda-fuente-liga.mjs --pendientes)`);
-  // generadores + auditoría
-  for (const g of GENERADORES.filter((g) => existsSync(resolve(ROOT, g)))) { // la lista compartida con alta-club.mjs
+  const generar = () => { for (const g of GENERADORES.filter((g) => existsSync(resolve(ROOT, g)))) { // la lista compartida con alta-club.mjs
     const r = runNode(g, []); if (r.code !== 0) throw new Error(`${g} falló (código ${r.code}): ${r.out.slice(-500)}`);
+  } };
+  // UNA auditoría hace de las dos cosas: da las ligas con una sola fuente (para la segunda fuente) y es la compuerta. Antes `segunda-fuente-liga --pendientes` corría su propio `audit.js --json` (~12 s) y después la compuerta
+  // otro `audit.js --quiet`: la misma auditoría dos veces sobre el mismo árbol. Ahora: generadores, UNA auditoría `--json`, la segunda fuente con esos hallazgos (`--hallazgos`) y, solo si escribió algo, los generadores y la
+  // auditoría de nuevo (la compuerta es siempre la última, sobre lo que quedó escrito). Si la salida no se puede leer, la compuerta es la de siempre (`audit.js --quiet`).
+  generar();
+  let audit = runNode('tools/audit.js', ['--json']); let hallazgos = null, silenciados = 0;
+  try { const j = JSON.parse(audit.out.slice(audit.out.indexOf('{'))); hallazgos = j.findings; silenciados = (j.silenciados || []).length; } catch { hallazgos = null; }
+  if (hallazgos?.some((f) => f.code === 'liga-una-fuente')) {
+    const tmp = join(tmpdir(), `fos-hallazgos-${process.pid}.json`); writeFileSync(tmp, audit.out);
+    const segFuente = runNode('tools/segunda-fuente-liga.mjs', ['--pendientes', '--escribir', '--hallazgos', tmp]); rmSync(tmp, { force: true });
+    const segN = (segFuente.out.match(/(\d+) guardada\(s\)/) || [])[1];
+    if (segN && Number(segN) > 0) { escritos.push(`segunda fuente de ${segN} liga(s) (tools/segunda-fuente-liga.mjs --pendientes)`); generar(); hallazgos = null; } // escribió: lo que sigue audita el árbol nuevo
   }
-  const audit = runNode('tools/audit.js', ['--quiet']);
+  const cuenta = (s) => (hallazgos || []).filter((f) => f.sev === s).length;
+  if (hallazgos && !cuenta('P0') && !cuenta('P1')) return { ok: true, escritos, audit: `P0 0 · P1 0 · P2 ${cuenta('P2')} · P3 ${cuenta('P3')} · P4 ${cuenta('P4')}${silenciados ? ` · ${silenciados} silenciados por tools/audit-ignore.json` : ''}` };
+  audit = runNode('tools/audit.js', ['--quiet']); // la compuerta de siempre: con P0/P1 el texto del aviso es el de siempre; sin hallazgos legibles o tras escribir una segunda fuente, la auditoría del árbol final
   const linea0 = (audit.out.match(/P0 \d+ · P1 \d+[^\n]*/) || [''])[0];
   if (audit.code !== 0) { const rv = revertir(snap, extra); const falla = queFalla(audit.out); return { ok: false, motivo: `node tools/audit.js dio P0/P1 (${linea0}${falla.length ? `: ${falla.join(', ')}` : ''}); se revirtió todo (${rv.restaurados} restaurados, ${rv.borrados} borrados)`, audit: audit.out.slice(-2500), escritos }; }
   return { ok: true, escritos, audit: linea0 };

@@ -113,8 +113,9 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   // --pendientes: toma de `audit.js --json` las ligas-año que tienen UNA sola fuente (`liga-una-fuente`) e intenta la segunda con --auto en cada una. Nunca frena: lo que no sale lo dice y queda para la sesión.
   if (A.includes('--pendientes')) {
     const { spawnSync } = await import('node:child_process'); const { readdirSync } = await import('node:fs');
-    const au = spawnSync('node', [resolve(ROOT, 'tools', 'audit.js'), '--json'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28 });
-    let hallazgos = []; try { hallazgos = JSON.parse(au.stdout).findings.filter((f) => f.code === 'liga-una-fuente'); } catch { /* sin auditoría: nada */ }
+    // `--hallazgos <ruta>`: la salida de `audit.js --json` ya corrida (cargar-escribir.mjs la tiene de su compuerta); sin ella, corre su propia auditoría
+    const iH = A.indexOf('--hallazgos'); const au = iH >= 0 ? { stdout: readFileSync(A[iH + 1], 'utf8') } : spawnSync('node', [resolve(ROOT, 'tools', 'audit.js'), '--json'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28 });
+    let hallazgos = []; try { hallazgos = JSON.parse(au.stdout.slice(au.stdout.indexOf('{'))).findings.filter((f) => f.code === 'liga-una-fuente'); } catch { /* sin auditoría: nada */ }
     const isos = readdirSync(REF).filter((f) => /^[a-z]{2}\.json$/.test(f)).map((f) => f.slice(0, 2));
     let hechas = 0;
     for (const h of hallazgos) {

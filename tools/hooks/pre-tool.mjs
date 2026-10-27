@@ -52,6 +52,8 @@ import { execFileSync } from 'node:child_process';
 import { appendFileSync, existsSync, readFileSync } from 'node:fs';
 import { join, relative, resolve } from 'node:path';
 import { clasificar } from '../clasificar-tools.mjs';
+import { createRequire } from 'node:module';
+const selloVale = (raiz) => { try { return createRequire(import.meta.url)('../sello-audit.js').selloVale(raiz); } catch { return false; } };
 
 const entrada = JSON.parse(readFileSync(0, 'utf8') || '{}');
 const herramienta = entrada.tool_name || '';
@@ -116,6 +118,7 @@ function auditAntesDelCommit(cmd) {
   if (!cambiados.some((f) => !INTERNO.test(f))) return;
   let falla = null;
   if (process.env.FOS_AUDIT_SALIDA) falla = process.env.FOS_AUDIT_SALIDA; // la prueba simula un audit que frena
+  else if (selloVale(raiz)) return; // una auditoría con P0 0 y P1 0 acaba de pasar sobre este mismo estado del árbol (tools/sello-audit.js): repetirla da lo mismo
   else {
     try { execFileSync('node', ['tools/audit.js', '--quiet'], { cwd: raiz, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], timeout: 90_000 }); }
     catch (e) { falla = `${e.stdout || ''}${e.stderr || ''}`.trim(); }

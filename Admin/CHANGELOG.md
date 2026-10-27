@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1199 — Cargar un año audita una vez, y el commit no repite una auditoría idéntica [475 · cargar-escribir.mjs, segunda-fuente-liga.mjs, audit.js, sello-audit.js, probar-sello-audit.mjs, pre-tool.mjs]
+- `publicarCambios` (de `cargar --escribir` y `publicar`) corría `audit.js` dos veces sobre el mismo árbol: la de `segunda-fuente-liga --pendientes` (para ver las ligas de una sola fuente, ~12 s) y la compuerta (~12 s). Ahora corre una `audit.js --json` que es la compuerta y da esas ligas (`segunda-fuente-liga --hallazgos <archivo>`); si la segunda fuente escribe algo, regenera y audita de nuevo; con P0/P1 o salida ilegible, la compuerta es la de siempre (`--quiet`, mismo texto). `publicar` baja de ~29 a ~19 s.
+- `tools/sello-audit.js`: `audit.js` guarda en `.git/fos-audit-sello.json` el estado del árbol (HEAD, el día, tamaño y mtime de cada archivo que `git status` lista) cuando da P0 0 y P1 0; el hook de commit no repite la auditoría si el estado es idéntico y audita ante cualquier diferencia. `node tools/fos.mjs probar-sello-audit` (12 casos).
+- Medición: lote completo, idéntico (cargar, cargar-cola-vacia y audit). Sin revisión independiente de la Auditora.
+
 ## Versión 1198 — fos gestion-exa [463 · gestion-exa.mjs]
 - `node tools/fos.mjs gestion-exa <clubId> [--nombre "Club"] [--anios 2016-2025 | "2016, 2017"]` marca los cierres que ninguna gestión confirmada de `data/gestiones/<iso>.js` cubre (con el club cargado o sin alta) y trae de Exa, por cada año con hueco, las notas de prensa de nombramiento y de renuncia con su fecha de publicación (~US$ 0,007 por consulta; queda en `Admin/registros/api/exa.jsonl`). No escribe `data/gestiones`. El brief del subagente de gestiones (`Admin/briefs-subagentes-siis.md`) empieza por él.
 - Caso: América de Cali 2023, que una fuente débil (Wikipedia, 2024-01-04) dejaba sin cobertura, quedó con la nota de El Tiempo del 29-12-2023 («con Marcela al frente del equipo»).
