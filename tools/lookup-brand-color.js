@@ -31,6 +31,7 @@
 
 import { readFileSync, readdirSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { spawnSync } from 'node:child_process';
 
 const projectRoot = resolve(import.meta.dirname, '..');
 const refDir = resolve(projectRoot, 'tools', 'brand-color-reference');
@@ -126,6 +127,9 @@ function main() {
       logMiss('sin coincidencias en ninguna liga cacheada', query, soloLiga);
       console.log('(quedó anotado en tools/brand-color-reference/misses.jsonl -- avisale a Guido para que lo prepopule, o puede que el club no esté en footylogos)');
     }
+    // el club no está en footylogos: la capa 1 de club-nuevo.md por programa (infobox y camiseta de la Wikipedia del país, gratis; con --gemini, la camiseta local con fuentes, unos US$ 0,02)
+    console.log('\nCandidatos de la Wikipedia (node tools/fos.mjs color-club "<club>" --gemini suma la camiseta local con fuentes):');
+    spawnSync('node', [resolve(projectRoot, 'tools', 'color-candidatos.mjs'), query], { stdio: 'inherit' });
     return;
   }
   for (const m of matches) {

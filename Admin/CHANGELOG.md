@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1224 — lookup-brand-color.js corre color-candidatos cuando el club no está en footylogos [lookup-brand-color.js]
+- Sin coincidencias en las tablas de footylogos, `node tools/lookup-brand-color.js "<club>"` (la corrida a mano, no la de `--json` que usa `alta-club`) imprime a continuación los candidatos de la Wikipedia del país (`color-candidatos.mjs`, gratis; `--gemini` aparte). Es lo que hizo `fos cerrar-tool`: ensayo, medición y veredicto en orden, por primera vez de punta a punta en esta sesión.
+- Medición: idéntico (lote completo; `lookup-brand-color.js` es módulo de `alta-club.mjs`). Sin revisión independiente de la Auditora.
+
 ## Versión 1223 — color-candidatos (brandColor de los cuatro clubes nuevos), cerrar-tool a la vista en los hooks y aviso de directorio de trabajo [463, 476 · color-candidatos.mjs · cucutadeportivo-co]
 - `tools/color-candidatos.mjs` (`fos color-club "<Club>" [--gemini]`): la capa 1 de `club-nuevo.md` por programa para un club que footylogos no tiene: artículo de la Wikipedia en su idioma (la API de búsqueda), colores con hex, apodo, y con `--gemini` la camiseta local con fuentes. Probado: Exa trae las páginas pero no hace falta, Firecrawl no está configurado, teamcolorcodes no tiene estos clubes. `brandColor` puestos: Orsomarso `#1D4DF3`, Atlético Huila `#FFF200`, Barranquilla FC `#ED1C24`, Bogotá FC `#FFE217` (la plantilla de la camiseta local de es.wikipedia), con su procedencia en `Admin/sourcing/Colombia/`.
 - Hooks: la edición de una tool del pipeline y el rechazo del commit nombran `fos cerrar-tool` (antes `medir-pipeline.mjs` suelto, y el aviso de arranque listaba `medir` y `patron` por separado, de ahí que se olvidara); `pre-tool.mjs` frena un Bash cuando la shell quedó en una subcarpeta del proyecto por un `cd` anterior y dice cómo volver. `probar-pre-tool.mjs` 102 casos y `probar-post-tool.mjs` 20, todos ok.
