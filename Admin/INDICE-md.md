@@ -5,14 +5,14 @@
 Lo escribe `node tools/indice-md.mjs --escribir`; no se edita a mano. Cada fila: ruta · KB · qué es · cuándo se lee · cuántos documentos o tools lo citan (←) · a qué otros documentos vivos manda (→).
 Huérfano = nadie lo cita; sin marca = no declara qué es ni cuándo se lee (primera línea `<!-- md: qué es | leer: cuándo -->`).
 
-Carpetas que se cuentan sin listar: `Admin/mediciones` 97, `Admin/Archive` 371, `Admin/carga-clubes` 336, `Admin/sourcing` 1573, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 136, `Admin/lotes` 99.
+Carpetas que se cuentan sin listar: `Admin/mediciones` 97, `Admin/Archive` 372, `Admin/carga-clubes` 336, `Admin/sourcing` 1573, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 136, `Admin/lotes` 99.
 
 ## CLAUDE.md y Admin
 
 - `CLAUDE.md` · ~15 KB · instrucciones permanentes del proyecto (se carga sola) · **leer:** siempre · ←36 · →CONTRATO-ETAPAS.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
 - `Admin/ARQUITECTURA.md` · ~70 KB · cómo funciona el motor de Finanzas y los scripts que escriben data/ · **leer:** al tocar el motor (js/finanzas-*) o los scripts que escriben data/; la sección que toca · ←10 · →CLAUDE.md, CONVENCIONES-DATOS.md, CONVENCIONES.md, ESTADO-clubes.md, ESTADO.md, PANTALLA.md
 - `Admin/BRIEF-REVISOR-COLA.md` · <5 KB · el brief con el que un subagente Sonnet contesta, en JSON y con cita, las preguntas de la cola de revisión de UN documento · **leer:** al lanzar revisores de la cola (node tools/cola.mjs), antes de armar el prompt del subagente · ←1 · →CONVENCIONES-DATOS.md
-- `Admin/CHANGELOG.md` · ~60 KB · qué cambió y cuándo (las últimas 40 entradas; lo anterior está en Archive) · **leer:** solo por grep de una palabra o de una tool (fos changelog historial más el nombre de la tool), nunca de corrido · ←33 · →CONVENCIONES-DATOS.md, ESTADO.md, HALLAZGOS-pipeline.md, PIPELINE.md, PLANTILLA-SESION.md, TODO.md
+- `Admin/CHANGELOG.md` · ~30 KB · qué cambió y cuándo (las últimas 40 entradas; lo anterior está en Archive) · **leer:** solo por grep de una palabra o de una tool (fos changelog historial más el nombre de la tool), nunca de corrido · ←33 · →CONVENCIONES-DATOS.md, ESTADO.md, HALLAZGOS-pipeline.md, PIPELINE.md, TODO.md, briefs-subagentes-siis.md
 - `Admin/CONTRATO-ETAPAS.md` · ~10 KB · qué archivo lee y escribe cada etapa del pipeline, qué lo deja viejo y con qué comando se rehace · **leer:** antes de tocar algo que pasa de una etapa a otra (un arreglo local a una etapa no lo necesita) · ←6 · →PIPELINE.md
 - `Admin/CONVENCIONES-DATOS.md` · ~60 KB · reglas de datos: categorías, perímetro, períodos, tipos de cambio · **leer:** al cargar o corregir datos de un club; la sección que toca · ←50 · →CLAUDE.md, CONVENCIONES.md, PANTALLA.md, PIPELINE.md, dudas-por-club.md, propuestas/transicion-y-covid.md
 - `Admin/CONVENCIONES.md` · ~10 KB · reglas de proceso vigentes · **leer:** cuando la skill de la tarea lo pide · ←27 · →CLAUDE.md, CONVENCIONES-DATOS.md, HALLAZGOS-pipeline.md, NOTAS-DE-TOOLS.md, PANTALLA.md, PIPELINE.md
