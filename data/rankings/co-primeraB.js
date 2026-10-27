@@ -31,7 +31,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2024: {
     leagueSize: 16,
-    sinDato: ["barranquillafc-co","bogotafc-co"],
+    sinDato: ["bogotafc-co"],
     wiki: {"t":"2024 Torneo DIMAYOR","lang":"en","at":"2026-10-26","n":16},
     clubs: [
       { id:"realcartagena-co", revenue:3.367, reportType:"official_balance_sheet",
@@ -47,6 +47,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"cucutadeportivo-co", revenue:1.913, reportType:"official_balance_sheet",
         sourceId:"cucutadeportivo-co-siis-estado-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.721],["Otros ingresos",0.193]] },
+      { id:"barranquillafc-co", revenue:1.879, reportType:"official_balance_sheet",
+        sourceId:"barranquillafc-co-siis-estado-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.875],["Otros ingresos",0.004]] },
       { id:"cortulua-co", revenue:1.879, reportType:"official_balance_sheet",
         sourceId:"cortulua-co-siis-estado-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.712],["Otros ingresos",0.168]] },
