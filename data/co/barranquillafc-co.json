@@ -84,6 +84,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Barranquilla FC/siis-estado-2024.pdf"
+    },
+    {
+      "id": "barranquillafc-co-siis-estado-2025",
+      "club_id": "barranquillafc-co",
+      "title": "Barranquilla Futbol Club S.A. — siis-estado-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Barranquilla FC/siis-estado-2025.pdf"
     }
   ],
   "members": null,
@@ -434,6 +442,47 @@
             "line": "Gastos de ventas",
             "side": "expense",
             "amount": 6038.661,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
+          }
+        ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "COP",
+      "source_id": "barranquillafc-co-siis-estado-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2025-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 6684.191,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":83.006,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-6608.994,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-508.782,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-260.412,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":6767.197,"expenses":7378.188,"net_result":-610.991},
+      "adjustments": {
+        "extra_rows": [{"label":"Ingresos financieros","amount":0},{"label":"Costos financieros","amount":0},{"label":"Ingreso (gasto) por impuestos","amount":0}],
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":6684.191,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 6608.994,
             "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
             "kind": "other"
           }

@@ -58,7 +58,7 @@ window.RANKINGS_INDICE = {
   "tr-superlig": [2023,1,19],
 };
 window.RANKINGS_REGION = {
-  mundo: { year:2025, total:286, clubs:[
+  mundo: { year:2025, total:287, clubs:[
     { id:"realmadrid-es", league:"es-laliga", revenue:1388.522 },
     { id:"fcbarcelona-es", league:"es-laliga", revenue:1167.798 },
     { id:"bayernmunich-de", league:"de-bundesliga", revenue:1085.912 },
@@ -70,7 +70,7 @@ window.RANKINGS_REGION = {
     { id:"inter-it", league:"it-seriea", revenue:664.571 },
     { id:"dortmund-de", league:"de-bundesliga", revenue:627.63 },
   ] },
-  america: { year:2025, total:76, clubs:[
+  america: { year:2025, total:77, clubs:[
     { id:"flamengo-br", league:"br-serieA", revenue:347.575 },
     { id:"palmeiras-br", league:"br-serieA", revenue:295.959 },
     { id:"botafogo-br", league:"br-serieA", revenue:247.129 },
