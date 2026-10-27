@@ -67,6 +67,16 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Óscar Enrique Álvarez Ascanio', corto:'Álvarez', cargo:'Dueño', desde:'2012-05-31', hasta:null,
       fuente:'https://www.vanguardia.com/deportes/futbol-colombiano/video-oscar-alvarez-se-llevara-al-atletico-bucaramanga-para-ocana-esto-es-lo-que-se-sabe-YD7467991', confirmada:true },
   ],
+  'atleticohuila-co': [
+    { nombre:'Juan Carlos Patarroyo Córdoba', corto:'Patarroyo', cargo:'Presidente', desde:'2013-01-01', hasta:'2019-12-18',
+      fuente:'https://www.lanacion.com.co/juan-carlos-patarroyo-asumio-la-presidencia-del-atletico-huila/ (2012-12-28: asume el 1 de enero de 2013 tras Felio García); https://dimayor.com.co/2016/11/01/atletico-huila-inauguro-su-lugar-de-entrenamientos/ (2016-11-01: presidente del club); https://colombia.as.com/colombia/2019/12/18/futbol/1576680782_863719.html (2019-12-18: lo reemplaza Perdomo)', confirmada:true },
+    { nombre:'Jorge Fernando Perdomo Polanía', corto:'Perdomo', cargo:'Presidente', desde:'2019-12-18', hasta:'2021-02-19',
+      fuente:'https://colombia.as.com/colombia/2019/12/18/futbol/1576680782_863719.html (2019-12-18: nuevo presidente de la junta directiva); https://luchonoticias.com/editor/jorge-fernando-perdomo-oficializo-su-renuncia-a-la-presidencia-del-atletico-huila/ (nota del 2021-02-19: renuncia oficializada; la fecha exacta no figura en el texto)', confirmada:true },
+    { nombre:'Juan Carlos Patarroyo Córdoba', corto:'Patarroyo', cargo:'Presidente', desde:'2021-02-19', hasta:'2023-05-04',
+      fuente:'https://luchonoticias.com/editor/jorge-fernando-perdomo-oficializo-su-renuncia-a-la-presidencia-del-atletico-huila/ (2021-02-19: confirmado presidente en la junta que oficializó la renuncia de Perdomo); https://www.lanacion.com.co/el-estadio-es-una-necesidad-juan-carlos-patarroyo/ (2021-08-04: presidente del club)', confirmada:true },
+    { nombre:'Maruán David Issa', corto:'Issa', cargo:'Presidente', desde:'2023-05-04', hasta:'2026-01-01',
+      fuente:'https://www.noticiasrcn.com/deportes/nuevo-presidente-del-huila-pidio-paciencia-y-afirmo-que-neiva-se-merece-un-estadio-de-primer-nivel-445336 (2023-05-04: nuevo presidente tras la compra por Grupo Independiente); https://www.huila.gov.co/publicaciones/14998/gobernacion-ratifica-su-apoyo-al-club-atletico-huila/ (2024-08-03); https://www.colombia.com/futbol/torneo-ascenso/diario-la-nacion-confirma-que-atletico-huila-no-desaparecera-556560 (2025-12-26: «presidente del club» el 24 de diciembre de 2025; el cierre de la gestión se fijó el 2026-01-01 porque la carta de despedida es de enero de 2026 y la nota no trae día)', confirmada:true },
+  ],
   'deportestolima-co': [
     { nombre:'Gabriel Camargo Salamanca', corto:'Gabriel Camargo', cargo:'Presidente', desde:'2003-01-01', hasta:'2022-03-01',
       fuente:'https://www.pulzo.com/deportes/deportes-tolima-hoy-como-esta-salud-gabriel-camargo-presidente-club-PP1865394A', confirmada:true },
@@ -86,6 +96,16 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'Clubes/Colombia/Llaneros/certificacion-ef-2019.md', confirmada:false },
     { nombre:'Juan Carlos Trujillo Velásquez', corto:'Trujillo', cargo:'Presidente', desde:'2020-01-01', hasta:null,
       fuente:'https://www.las2orillas.co/?p=918944', confirmada:true },
+  ],
+  'orsomarso-co': [
+    { nombre:'Mauricio Torres Benítez', corto:'Torres', cargo:'Presidente', desde:'2014-01-01', hasta:'2017-01-01',
+      fuente:'https://www.elpais.com.co/deportes/de-un-pueblo-pequeno-de-italia-a-luchar-por-llegar-a-la-a-en-colombia-esta-es-la-historia-del-orsomarso-1100.html (2024-06-11: «el presidente del club entre el 2014 al 2017, Mauricio Torres»; la nota da solo años, el cierre se fijó el 2017-01-01); https://www.elheraldo.co/deportes/2015/11/24/orsomarso-admite-contactos-con-uniautonoma-fc-para-comprar-su-ficha-en-la-primera-b-229943/ (2015-11-24: «Mauricio Torres, presidente de Orsomarso SC»); https://www.elnuevodia.com.co/deportes/280795-pijao-fue-fichado-por-el-orsomarso (2016-01-19: presidente); https://canal1.com.co/noticias/hieren-expresidente-del-orsomarso-cali/ (2017-12-21: «expresidente del club»)', confirmada:true },
+    { nombre:'Agustín Rabat', corto:'Rabat', cargo:'Presidente', desde:'2017-02-15', hasta:'2019-08-23',
+      fuente:'https://www.elpais.com.co/deportes/futbol-colombiano/cual-es-el-exjugador-de-america-de-cali-que-sera-el-nuevo-presidente-de-orsomarso.html (2019-08-26: Romero reemplaza a Rabat, que renunció a la presidencia); https://codigofutbol.co/mauricio-romero-nuevo-presidente-de-orsomarso-sc/ (el club comunicó la renuncia el 23 de agosto). El inicio (2017-02-15) sale solo de un post de Facebook del club que no se pudo abrir (https://www.facebook.com/OrsomarsoSC/photos/en-reuni%C3%B3n-de-consejo-directivo-fue-elegido-hoy-el-doctor-agust%C3%ADn-rabat-como-nue/417835691886468/), sin fecha visible: ninguna nota fecha cuándo asumió', confirmada:false },
+    { nombre:'Mauricio Romero Sellares', corto:'Romero', cargo:'Presidente', desde:'2019-08-26', hasta:'2019-12-18',
+      fuente:'https://www.elpais.com.co/deportes/futbol-colombiano/cual-es-el-exjugador-de-america-de-cali-que-sera-el-nuevo-presidente-de-orsomarso.html (2019-08-26: nuevo presidente); https://www.elpais.com.co/america-de-cali/confirmado-mauricio-romero-es-el-nuevo-presidente-del.html (2019-12-18: deja Orsomarso para presidir al América)', confirmada:true },
+    { nombre:'Edward Lenis Ramírez', corto:'Lenis', cargo:'Presidente', desde:'2024-06-16', hasta:null,
+      fuente:'https://www.elpais.com.co/deportes/en-orsomarso-italia-saben-que-existimos-jose-sangiovanni-revelo-secretos-del-equipo-que-fundo-y-que-hoy-hace-historia-en-la-b-1552.html (2024-06-16: «el presidente es Edward Lenis»); https://www.bluradio.com/deportes/futbol-colombiano/tecnico-de-orsomarso-seguira-en-el-cargo-tras-incidentes-vs-llaneros-pr30 (2024-09-25: «el presidente de Orsomarso, Edward Lenis»). La fecha de inicio es la de la primera nota; cuándo asumió y si seguía el 2024-12-31 no está fechado', confirmada:false },
   ],
   'realcartagena-co': [
     { nombre:'Rodrigo Alejandro Rendón Ruiz', corto:'Rendón', cargo:'Presidente', desde:'2007-01-01', hasta:'2021-01-05',
