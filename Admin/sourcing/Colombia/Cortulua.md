@@ -15,3 +15,5 @@
 Estados financieros en disco ahora: 5 ejercicios (2021-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
 
 Color de marca: null — la ficha de es.wikipedia (Corporación Club Deportivo Tuluá) lista «Rojo, Verde y Blanco» sin ningún hex y sin dar un color predominante; sin footylogos (lookup-brand-color sin coincidencias). Rojo es el primero de la lista pero no hay código que usar, verificado 2026-10-27
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2020 desde `Clubes/Colombia/Cortulua/siis-estado-2020.pdf` (sourceId `cortulua-co-siis-estado-2020`).

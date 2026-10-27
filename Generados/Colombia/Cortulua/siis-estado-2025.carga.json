@@ -1,10 +1,8 @@
 {
  "pdf": "Clubes/Colombia/Cortulua/siis-estado-2025.pdf",
- "generado": "2026-10-27T13:06:55.987Z",
+ "generado": "2026-10-27T13:12:43.954Z",
  "frena": [],
- "avisos": [
-  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-12-31); pregunta en la cola (no frena)"
- ],
+ "avisos": [],
  "ejercicio": {
   "clubId": "cortulua-co",
   "year": 2025,
@@ -283,10 +281,9 @@
   }
  },
  "liga": {
-  "valor": null,
+  "valor": "co-primeraB",
   "fuente": "la fila ya existe en data/club-leagues",
-  "estado": "existe",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -325,9 +322,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no aparece en los rosters cacheados de 2025 (co-primeraA, co-primeraB): puede haber jugado otra división",
-   "estado": "pendiente"
+   "valor": "co-primeraB",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
+   "estado": "ok"
   }
  },
  "ancla": null,

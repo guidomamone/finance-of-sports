@@ -85,9 +85,11 @@ window.RANKINGS["co-primeraB"] = {
   },
   2020: {
     leagueSize: 16,
-    sinDato: ["cortulua-co"],
     wiki: {"t":"2020 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
+      { id:"cortulua-co", revenue:2.718, reportType:"official_balance_sheet",
+        sourceId:"cortulua-co-siis-estado-2020",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.063],["Otros ingresos",0.655]] },
       { id:"leonesfc-co", revenue:1.43, reportType:"official_balance_sheet",
         sourceId:"leonesfc-co-siis-estado-2020",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.37],["Otros ingresos",0.06]] },
