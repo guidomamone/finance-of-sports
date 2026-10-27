@@ -512,5 +512,15 @@
   "code": "dictamen-fechas-ajenas",
   "match": "alianzafc-co 2025",
   "motivo": "VERIFICADO (Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2025.md L5 y L153-L155: firma «Marzo 29 de 2025» para estados al 31 de diciembre de 2025, 2026-10-27). el revisor fiscal firmó tarde y dejó el año del dictamen anterior: un error de año del propio documento, no el dictamen de otro ejercicio; la nota de Admin/registros/auditoria.jsonl lo dice. No se pide al club."
+ },
+ {
+  "code": "siis-entre-anios",
+  "match": "America de Cali 2017→2018",
+  "motivo": "VERIFICADO (Clubes/Colombia/America de Cali/siis-estado-2017.md L14-15 y siis-estado-2018.md L14-15 (columna 2017), data/co/americadecali-co.json 2017, 2026-10-27). El comparativo de 2018 intercambia los rótulos de 2017 (ventas 2.291.360, administración 39.521.774) mientras 2018 imprime administración chica; 2017 está cargado por el contenido (la fila de 39,5 mil millones como actividad deportiva, la chica como administración), igual que Tolima 2024"
+ },
+ {
+  "code": "siis-entre-anios",
+  "match": "America de Cali 2020→2021",
+  "motivo": "VERIFICADO (Clubes/Colombia/America de Cali/siis-estado-2021.md L14-15 (columna 2020) y data/co/americadecali-co.json 2020 (dos ajustes de categoría, cola 58ff93d y 5a6a2f8), 2026-10-27). SIIS intercambió los rótulos entre 2020 y 2021; 2020 se recargó con el comparativo de 2021 (1.559.994 como administración, 772.211 como actividad deportiva), la regla de Admin/paises/co.md"
  }
 ]
