@@ -7,6 +7,12 @@ const ROOT = resolve(import.meta.dirname, '..');
 export const DOC_GENERAL = 'Admin/CONVENCIONES-DATOS.md';
 export const CARPETA_PAISES = 'Admin/paises';
 
+// Una línea para imprimir al empezar una tarea sobre un club: dónde están las reglas de su país (null si no tiene archivo propio). Así no depende de que alguien se acuerde de abrirlo.
+export function punteroReglasPais(clubId) {
+  const iso = String(clubId || '').split('-').pop(); const f = `${CARPETA_PAISES}/${iso}.md`;
+  return /^[a-z]{2}$/.test(iso) && existsSync(join(ROOT, f)) ? `Reglas de datos de ${iso.toUpperCase()} (solo valen para sus clubes): ${f}` : null;
+}
+
 export function docsDeReglas() {
   const dir = join(ROOT, CARPETA_PAISES);
   const paises = existsSync(dir) ? readdirSync(dir).filter((f) => /^[a-z]{2}\.md$/.test(f)).sort().map((f) => `${CARPETA_PAISES}/${f}`) : [];

@@ -195,6 +195,11 @@
   "quien": "sesión",
   "donde": "tools/dictamen-fechas.mjs"
  },
+ "regla-de-pais-en-doc-general": {
+  "hacer": "node tools/reglas-pais.mjs --escribir mueve la regla a Admin/paises/<iso>.md; después node tools/reglas-categoria.mjs, node tools/indice-md.mjs --escribir y un commit aparte (es texto que lee Guido).",
+  "quien": "script",
+  "donde": "Admin/CONVENCIONES-DATOS.md, apertura del documento"
+ },
  "regla-nota-contradicha": {
   "hacer": "Corregir la línea con node tools/recategorizar-linea.mjs --club <id> --anio <año> --etiqueta \"…\" --gasto --a <categoría> --cita … --regla … --escribir, node tools/publicar.mjs y un commit con Corrige:. Si la regla está mal, es un criterio: votacion-de-criterios.",
   "quien": "script",

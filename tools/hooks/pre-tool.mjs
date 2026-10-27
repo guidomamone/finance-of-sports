@@ -23,6 +23,7 @@
 //   memoria-no-es-regla      (ask) escribir en la memoria de una sesión un archivo type feedback o project: una regla de trabajo va a una convención,
 //                            una skill o un chequeo; user y reference pasan.
 //   lote-existente           (deny) un Write sobre un Admin/lotes/lote-NN.txt que ya existe: dice `fos lote-nuevo` (el próximo número libre).
+//   regla-de-pais-en-doc-general  (deny) un Edit/Write que agrega a Admin/CONVENCIONES-DATOS.md un `## REGLA:` cuyo título nombra un país: va a Admin/paises/<iso>.md.
 //   comando-que-edita        (ask) sed -i, perl -i o python por Bash que escriben: usá Edit o Write. Cada disparo se anota en
 //                            Admin/registros/.hooks-disparos.jsonl (gitignoreado) para medir cuántas veces pasa antes de pensar en deny.
 //                            Las herramientas de sesiones (archivar, iniciar, cambiar modelo) necesitan su matcher en .claude/settings.json.
@@ -315,6 +316,19 @@ function loteExistente() {
   decidir('deny', `${ruta} ya existe: escribirlo lo pisa. Para una lista nueva: node tools/fos.mjs lote-nuevo "<motivo>" (crea el próximo número libre); para sumarle rutas a esta, Edit.`);
 }
 
+// regla-de-pais-en-doc-general (deny): un Edit/Write que agrega a Admin/CONVENCIONES-DATOS.md un `## REGLA:` cuyo título nombra un país (fuera del paréntesis del caso) va a Admin/paises/<iso>.md.
+// La cuenta es la de tools/reglas-pais.mjs (paisDeTitulo), la misma del aviso `regla-de-pais-en-doc-general` de audit.js: una regla de país en el general se lee en cada sesión que toca datos.
+async function reglaDePaisEnDocGeneral() {
+  if (!EDITA.includes(herramienta) || !/\/Admin\/CONVENCIONES-DATOS\.md$/.test(rutaEditada())) return;
+  const titulos = String(params.new_string || params.content || '').split('\n').filter((l) => /^## REGLA/.test(l));
+  if (!titulos.length) return;
+  const { paisDeTitulo, PAISES } = await import('../reglas-pais.mjs');
+  for (const t of titulos) {
+    const iso = paisDeTitulo(t); if (!iso) continue;
+    decidir('deny', `Esta regla nombra a ${PAISES[iso][0]} en su título: una regla que solo vale para un país va en Admin/paises/${iso}.md (el mismo formato; si el archivo no existe, se crea con la marca de leer de los otros). CONVENCIONES-DATOS.md es solo de reglas generales.`);
+  }
+}
+
 // memoria-no-es-regla: una regla de trabajo no vive en la memoria de una sesión. Una preferencia de trato (type user o reference) sí.
 function memoriaNoEsRegla() {
   if (!EDITA.includes(herramienta)) return;
@@ -473,6 +487,7 @@ if (herramienta === 'Bash' && VARIAS) rsyncSinNoLinks(cmd);
 subagenteConReglaDeComandos();
 if (VARIAS) { archivarConOk(); modeloOpusConOk(); worktreeSinPermissionMode(); }
 memoriaNoEsRegla();
+await reglaDePaisEnDocGeneral();
 escrituraEnTmpSuelto();
 loteExistente();
 if (VARIAS) skillsConOk(cmd);

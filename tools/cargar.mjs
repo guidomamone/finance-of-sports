@@ -31,6 +31,7 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync, appendFileSync } from 'node:fs';
 import { resolve, relative } from 'node:path';
 import { execFileSync } from 'node:child_process';
+import { punteroReglasPais } from './docs-reglas.mjs';
 import vm from 'node:vm';
 import { archivosData } from './data-clubes.js';
 import {  } from './club-json.mjs'; // el JSON es la fuente de cada club
@@ -315,6 +316,7 @@ async function main() {
     writeFileSync(resolve(ROOT, 'Admin', 'registros', 'cargar-ultimo.jsonl'), resumen.map((x) => JSON.stringify({ ts: new Date().toISOString(), lista: LISTA, ...x })).join('\n') + '\n');
     console.log(`\n${resumen.filter((x) => x.carga).length} de ${resumen.length} cargarían. Resumen en Admin/registros/cargar-ultimo.jsonl (lo muestra node tools/estado.mjs).`);
   }
+  if (docs.length === 1 && !LISTA && punteroReglasPais(salidas[0]?.clubId)) console.error(punteroReglasPais(salidas[0].clubId)); // por stderr: el JSON de stdout lo leen otras tools
   if ((docs.length === 1 && !LISTA) || JSON_OUT) console.log(JSON.stringify(docs.length === 1 ? salidas[0] : salidas, null, 1));
   if (ESCRIBIR) {
     const P = salidas[0];

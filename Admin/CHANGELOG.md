@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1191 — Reglas de país: aviso, hook y puntero automático [469 · audit.js, audit-chequeos-siis.js, cargar.mjs, docs-reglas.mjs, club-siis.mjs, recategorizar-linea.mjs, pre-tool.mjs]
+- Aviso P3 `regla-de-pais-en-doc-general` (la lista `node tools/reglas-pais.mjs`) y hook `pre-tool` que rechaza agregar a `CONVENCIONES-DATOS.md` un `## REGLA:` con un país en el título y dice en qué `Admin/paises/<iso>.md` va (82 casos de la prueba del hook, todos ok). Hoy no hay ninguno.
+- `cargar` (por stderr), `club-siis` y `recategorizar-linea` imprimen al empezar «Reglas de datos de CO: Admin/paises/co.md» cuando el país del club tiene archivo.
+- Medición: lote completo, medidores cargar, cargar-cola-vacia, audit y escribir: cargar idéntico; en audit salen 2 `import-sin-export` del estado anterior; en escribir se suman dos pasos `caja-deuda --personal` ok. Sin revisión independiente de la Auditora.
+
 ## Versión 1190 — Comentarios de siis-estado, siis-notas y audit-chequeos-siis apuntan a Admin/paises/co.md [469 · siis-estado.mjs, siis-notas.mjs, audit-chequeos-siis.js]
 - Los comentarios que citaban la regla de Colombia en `CONVENCIONES-DATOS.md` citan `Admin/paises/co.md`.
 - Medición: solo comentarios, código sin comentarios idéntico (`fos medir pipeline`).

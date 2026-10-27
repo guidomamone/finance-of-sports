@@ -21,6 +21,7 @@ import { resolve, join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { pendientes } from './cola.mjs';
 import { pasoFka } from './sponsor-fka.mjs';
+import { punteroReglasPais } from './docs-reglas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
@@ -75,6 +76,7 @@ function estadoDe(carpeta) {
 }
 const cmd = (s) => `    ${s}`;
 
+console.log(punteroReglasPais(`x-${iso}`)); // las reglas de Colombia: al empezar, sin depender de que alguien se acuerde
 if (!club) {
   // una línea por club, con el veredicto de --evaluar (solo para los que tienen años por cargar), de menos a más años por cargar: arranca por el que menos le falta
   const filasLista = [];

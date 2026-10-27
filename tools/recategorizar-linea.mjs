@@ -20,6 +20,7 @@ import { resolve } from 'node:path';
 import { leerJsonClub, modificarClub } from './club-json.mjs';
 import { deJson } from './json-datos.mjs';
 import { negarSiSeMide } from './candado-medicion.mjs';
+import { punteroReglasPais } from './docs-reglas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
@@ -27,6 +28,7 @@ const flag = (n) => { const i = A.indexOf(n); return i < 0 ? null : (A[i + 1] ??
 const falla = (m) => { console.error(m); process.exit(1); };
 negarSiSeMide('recategorizar-linea.mjs', { si: A.includes('--escribir') });
 
+if (punteroReglasPais(flag('--club'))) console.error(punteroReglasPais(flag('--club')));
 const club = flag('--club'), anio = Number(flag('--anio')), etiqueta = flag('--etiqueta'), a = flag('--a'), cita = flag('--cita'), regla = flag('--regla');
 if (!club || !anio || !etiqueta || !a || !cita || !regla) falla('Uso: node tools/recategorizar-linea.mjs --club <id> --anio <AAAA> --etiqueta "<tal cual>" --a <categoría> --cita "ruta.md:línea" --regla "…" [--escribir]');
 

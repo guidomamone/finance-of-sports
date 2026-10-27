@@ -105,4 +105,12 @@ function checkDictamenFechas() {
   for (const l of out.split('\n').filter((x) => /^\S+ \d{4}: /.test(x))) add('P3', 'dictamen-fechas-ajenas', `${l} (node tools/dictamen-fechas.mjs; mirar el documento: si el dictamen es de otro ejercicio, corregir Admin/registros/auditoria.jsonl)`);
 }
 
-module.exports = { checkSiisControl, checkSiisEntreAnios, checkSiisFaltante, checkReglaNotas, checkDictamenFechas };
+// regla-de-pais-en-doc-general: una regla de Admin/CONVENCIONES-DATOS.md cuyo título nombra un país (fuera del paréntesis del caso) va en Admin/paises/<iso>.md. Las lista `node tools/reglas-pais.mjs`
+// (la misma cuenta del hook de pre-tool, que ya impide agregarlas) y las mueve con `--escribir`. Aviso P3.
+function checkReglaDePaisEnDocGeneral() {
+  let out; try { out = require('child_process').execFileSync('node', ['tools/reglas-pais.mjs'], { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); } catch (e) { add('P3', 'regla-de-pais-en-doc-general', `tools/reglas-pais.mjs falló: ${String(e.stderr || e.message).split('\n')[0]}`); return; }
+  const ls = out.split('\n').filter((x) => /^[a-z]{2} · L\d+/.test(x));
+  if (ls.length) add('P3', 'regla-de-pais-en-doc-general', `${ls.length} regla(s) de Admin/CONVENCIONES-DATOS.md nombran un país en su título y van en Admin/paises/<iso>.md (node tools/reglas-pais.mjs --escribir las mueve): ${ls.slice(0, 3).map((x) => x.slice(0, 90)).join('; ')}`);
+}
+
+module.exports = { checkSiisControl, checkSiisEntreAnios, checkSiisFaltante, checkReglaNotas, checkDictamenFechas, checkReglaDePaisEnDocGeneral };
