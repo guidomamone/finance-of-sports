@@ -11,6 +11,7 @@
 // «Informe oficial en formato XHTML (iXBRL)» en la fuente; 4) borra el worktree. Gratis, sin API.
 //
 // USO:  node tools/prueba-escribir.mjs        (sale con 0 si la escritura anduvo; con 1 y el motivo si no)
+//       node tools/prueba-escribir.mjs --con-api    suma bfo-rusia-notas, que llama a la API de pago (~US$ 0,12 por corrida)
 // ============================================================================
 import { spawnSync, execFileSync } from 'node:child_process';
 import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync, readdirSync, copyFileSync } from 'node:fs';
@@ -154,6 +155,89 @@ try {
       const ahora = JSON.parse(readFileSync(jf, 'utf8')).years.find((x) => x.fiscal_year === ANIO3);
       if (!ahora || sinPosteriores(ahora) !== esperado) throw new Error(`bfo-rusia --escribir cargó Krasnodar ${ANIO3} distinto del que HEAD tenía:\n  esperado ${esperado.slice(0, 300)}\n  ahora    ${ahora ? sinPosteriores(ahora).slice(0, 300) : '(sin el año)'}`);
       console.log(`  ok bfo-rusia --escribir (Krasnodar ${ANIO3} vuelve a cargarse, idéntico al de HEAD)`);
+    }
+  }
+  // bfo-rusia-notas --ejecutar: lee con la API de pago (Claude) las tablas de la nota explicativa y las valida contra el formulario 2 del fisco. Cuesta ~US$ 0,12 por corrida, así que SOLO con `--con-api`
+  // (la prueba de siempre, la de `fos probar` y la de cerrar-tool, no gasta). Se rehace la extracción de Krasnodar 2025 y las tablas tienen que pasar la compuerta como las que HEAD ya tiene (misma suma).
+  if (!process.argv.includes('--con-api')) console.log('  -- bfo-rusia-notas --ejecutar: gasta ~US$ 0,12 de API; se prueba con `node tools/prueba-escribir.mjs --con-api` (después de tocar bfo-rusia-notas.mjs o claude-llamada.mjs)');
+  else {
+    const DIR = 'Clubes/Rusia/Krasnodar'; const NOTA = `${DIR}/2025-poyasneniya.md`;
+    const clave = [join(ROOT, 'Admin/api-keys/claude-api.env'), join(principal, 'Admin/api-keys/claude-api.env')].find(existsSync);
+    const origen = [ROOT, principal].find((d) => existsSync(join(d, DIR, 'bfo-2025-datos.json')));
+    if (!clave || !origen) console.log(`  -- bfo-rusia-notas --ejecutar: falta ${!clave ? 'Admin/api-keys/claude-api.env' : `${DIR}/bfo-2025-datos.json`} (no se trackean), no se pudo probar`);
+    else {
+      for (const f of readdirSync(join(origen, DIR)).filter((x) => /^bfo-.*-datos\.(json|md)$/.test(x))) copyFileSync(join(origen, DIR, f), join(W, DIR, f));
+      mkdirSync(join(W, 'Admin/api-keys'), { recursive: true }); copyFileSync(clave, join(W, 'Admin/api-keys/claude-api.env')); // la copia se borra con el worktree
+      const { derivado } = await import(join(W, 'tools/rutas.mjs')); const salida = join(W, derivado(NOTA, '.bfo-notas.json'));
+      const resumen = (f) => Object.fromEntries((JSON.parse(readFileSync(f, 'utf8')).tablas || []).map((t) => [t.tipo, { pasa: t.pasa, suma: t.columnas.map((_, k) => Math.round(t.filas.reduce((a, x) => a + Math.abs(Number(x.valores?.[k] || 0)), 0))) }]));
+      const esperado = resumen(salida);
+      const r = spawnSync('node', [join(W, 'tools/bfo-rusia-notas.mjs'), '--club', 'Krasnodar', '--ejecutar', '--rehacer'], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28, timeout: 400_000 });
+      const out = (r.stdout || '') + (r.stderr || ''); const gasto = Number((out.match(/Gastado: US\$ (\d+(?:\.\d+)?)/) || [])[1]);
+      if (r.status !== 0 || ERROR_DE_CODIGO.test(out) || !(gasto > 0)) throw new Error(`bfo-rusia-notas --ejecutar ${r.status == null ? 'no terminó' : `salió con ${r.status}`} y gastó ${gasto || 0}: ${out.trim().split('\n').slice(-4).join(' | ')}`);
+      if (gasto > 1) throw new Error(`bfo-rusia-notas --ejecutar gastó US$ ${gasto}: una nota cuesta ~0,12; algo cambió`);
+      const ahora = resumen(salida);
+      for (const [tipo, e] of Object.entries(esperado)) {
+        const a = ahora[tipo]; if (!a) throw new Error(`bfo-rusia-notas --ejecutar ya no trae la tabla ${tipo}`);
+        for (const y of Object.keys(e.pasa)) if (e.pasa[y] && (!a.pasa[y] || JSON.stringify(a.suma) !== JSON.stringify(e.suma))) throw new Error(`bfo-rusia-notas --ejecutar: la tabla ${tipo} ${y} ya no pasa la compuerta o cambió de suma (esperado ${JSON.stringify(e)}, ahora ${JSON.stringify(a)})`);
+      }
+      console.log(`  ok bfo-rusia-notas --ejecutar (Krasnodar 2025: ${Object.keys(ahora).length} tablas, las que pasaban siguen pasando con la misma suma; gastó US$ ${gasto})`);
+    }
+  }
+  // siis-estado --club --escribir: baja de SIIS (red) los estados de un año de Tolima, imprime el PDF con Chrome, escribe el json, el md y las filas (armar-a-mano) y tiene que dar lo mismo que HEAD tiene. Es el motor
+  // de siis-api, determinista (y de paso ejercita armar-a-mano.mjs --escribir, que siis-estado llama para armar las filas): solo cambian las fechas de la consulta y el hash del md que las contiene (se normalizan). Sin red o sin que SIIS responda, la prueba lo dice y sigue.
+  {
+    const CLUB = 'Clubes/Colombia/Deportes Tolima'; const GEN = 'Generados/Colombia/Deportes Tolima';
+    const r = spawnSync('node', [join(W, 'tools/siis-estado.mjs'), '--club', 'Deportes Tolima', '--anio', '2025', '--escribir', '--rehacer'], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28, timeout: 400_000 });
+    const out = (r.stdout || '') + (r.stderr || '');
+    if (r.status !== 0 && /fetch failed|ENOTFOUND|EAI_AGAIN|ECONNREFUSED|ETIMEDOUT|respondió (403|429|5\d\d)/i.test(out)) console.log('  -- siis-estado --club --escribir: sin red o SIIS no respondió, no se pudo probar');
+    else {
+      if (r.status !== 0 || ERROR_DE_CODIGO.test(out) || !/Escritos 1 año/.test(out)) throw new Error(`siis-estado --club --escribir ${r.status == null ? 'no terminó' : `salió con ${r.status}`} y no escribió el año: ${out.trim().split('\n').slice(-4).join(' | ')}`);
+      const norm = (txt) => txt.replace(/\d{4}-\d{2}-\d{2}(T[\d:.]+Z)?/g, 'FECHA').replace(/"mdSha1": "[0-9a-f]+"/g, '"mdSha1": "HASH"');
+      for (const f of ['siis-estado-2025.json', 'siis-estado-2025.md', 'siis-estado-2025.pdf']) if (!existsSync(join(W, CLUB, f)) || !readFileSync(join(W, CLUB, f)).length) throw new Error(`siis-estado --club --escribir no dejó ${CLUB}/${f}`);
+      for (const f of [`${CLUB}/siis-estado-2025.md`, `${GEN}/siis-estado-2025.filas.json`, `${GEN}/siis-estado-2025.ubicacion.json`]) { // los que HEAD trackea
+        const enHead = execFileSync('git', ['show', `HEAD:${f}`], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28 });
+        if (norm(readFileSync(join(W, f), 'utf8')) !== norm(enHead)) throw new Error(`siis-estado --club --escribir dejó ${f} distinto del de HEAD (más que las fechas)`);
+      }
+      const delJson = [ROOT, principal].map((d) => join(d, CLUB, 'siis-estado-2025.json')).find(existsSync); // el json no se trackea: se compara con el de la carpeta principal si está
+      if (delJson && norm(readFileSync(delJson, 'utf8')) !== norm(readFileSync(join(W, CLUB, 'siis-estado-2025.json'), 'utf8'))) throw new Error('siis-estado --club --escribir dejó un siis-estado-2025.json distinto del de la carpeta principal (más que las fechas)');
+      console.log('  ok siis-estado --club --escribir (Tolima 2025: json, md, pdf y filas, iguales a los de HEAD salvo la fecha)');
+    }
+  }
+  // texto-propio-a-md --paginas N --escribir: rearma una página del .md con el texto propio del PDF (SønderjyskE 2024 es de texto nativo; los PDF no se trackean: se copia el de la carpeta principal). Reescribe una transcripción
+  // ya cargada, así que lo que se comprueba es la red de seguridad: el .md anterior tiene que quedar guardado IDÉNTICO en Generados/…antes-texto-propio.md, y el nuevo no puede quedar vacío ni encogido.
+  {
+    const PDF3 = 'Clubes/Dinamarca/SønderjyskE/aarsrapport-2024-09-30.pdf'; const MD3 = PDF3.replace(/\.pdf$/, '.md'); const BAK = MD3.replace(/^Clubes\//, 'Generados/').replace(/\.md$/, '.antes-texto-propio.md');
+    const origen = [ROOT, principal].find((d) => existsSync(join(d, PDF3)));
+    if (!origen) console.log(`  -- texto-propio-a-md --escribir: sin ${PDF3} (no se trackea), no se pudo probar`);
+    else {
+      copyFileSync(join(origen, PDF3), join(W, PDF3));
+      const antes = readFileSync(join(W, MD3), 'utf8');
+      const r = spawnSync('node', [join(W, 'tools/texto-propio-a-md.mjs'), PDF3, '--paginas', '8', '--escribir'], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28, timeout: 200_000 });
+      const out = (r.stdout || '') + (r.stderr || '');
+      if (r.status !== 0 || ERROR_DE_CODIGO.test(out) || !/págs\. 8 rearmadas/.test(out)) throw new Error(`texto-propio-a-md --escribir ${r.status == null ? 'no terminó' : `salió con ${r.status}`} y no rearmó la página: ${out.trim().split('\n').slice(-3).join(' | ')}`);
+      if (!existsSync(join(W, BAK)) || readFileSync(join(W, BAK), 'utf8') !== antes) throw new Error(`texto-propio-a-md --escribir no dejó el .md anterior idéntico en ${BAK} (sin eso no hay vuelta atrás)`);
+      const ahora = readFileSync(join(W, MD3), 'utf8');
+      if (ahora === antes) throw new Error('texto-propio-a-md --escribir dijo que rearmó la página 8 y el .md quedó igual');
+      if (ahora.length < antes.length * 0.8) throw new Error(`texto-propio-a-md --escribir dejó el .md mucho más corto (${antes.length} → ${ahora.length} caracteres)`);
+      console.log(`  ok texto-propio-a-md --escribir (la página 8 se rearma, el .md anterior queda guardado idéntico; ${antes.length} → ${ahora.length} caracteres)`);
+    }
+  }
+  // catalogo-liga --escribir: se saca la línea de cy-seconddivision de data/leagues.js de la copia, se agrega en la copia la aprobación de la Auditora que la tool exige (auditoria-proceso.jsonl) y la tool, que lee Wikipedia
+  // (red), tiene que volver a escribir EXACTAMENTE la misma línea. Sin red lo dice y sigue.
+  {
+    const LF = join(W, 'data/leagues.js'); const AF = join(W, 'Admin/registros/auditoria-proceso.jsonl'); const ID = 'cy-seconddivision';
+    const txt = readFileSync(LF, 'utf8'); const fila = txt.split('\n').find((l) => l.includes(`'${ID}'`)); if (!fila) throw new Error(`la prueba de catalogo-liga espera ${ID} en data/leagues.js`);
+    writeFileSync(LF, txt.split('\n').filter((l) => !l.includes(`'${ID}'`)).join('\n'));
+    writeFileSync(AF, readFileSync(AF, 'utf8').replace(/\n*$/, '\n') + JSON.stringify({ sesion: 'auditora-prueba', fecha: '2026-10-27', veredicto: 'APROBADO', cambio: `${ID} (prueba-escribir, worktree descartable)` }) + '\n');
+    const ref = readFileSync(AF, 'utf8').split('\n').filter(Boolean).length;
+    const r = spawnSync('node', [join(W, 'tools/catalogo-liga.mjs'), '--liga', ID, '--pagina', '2023–24 Cypriot Second Division', '--tier', '2', '--pais', 'CY', '--escribir', '--full', 'Second Division de Chipre', '--name', 'Second Division', '--aprobado-ref', String(ref)], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28, timeout: 120_000 });
+    const out = (r.stdout || '') + (r.stderr || '');
+    if (r.status !== 0 && /fetch failed|ENOTFOUND|EAI_AGAIN|ECONNREFUSED|ETIMEDOUT|respondió (403|429|5\d\d)/i.test(out)) console.log('  -- catalogo-liga --escribir: sin red o Wikipedia no respondió, no se pudo probar');
+    else {
+      if (r.status !== 0 || ERROR_DE_CODIGO.test(out) || !/Escrito en data\/leagues\.js/.test(out)) throw new Error(`catalogo-liga --escribir ${r.status == null ? 'no terminó' : `salió con ${r.status}`} y no escribió: ${out.trim().split('\n').slice(-4).join(' | ')}`);
+      const ahora = readFileSync(LF, 'utf8').split('\n').find((l) => l.includes(`'${ID}'`));
+      if (ahora?.trim() !== fila.trim()) throw new Error(`catalogo-liga --escribir escribió otra línea para ${ID}:\n  esperada ${fila.trim()}\n  ahora    ${ahora?.trim()}`);
+      console.log(`  ok catalogo-liga --escribir (la línea de ${ID} vuelve a ser la misma)`);
     }
   }
   // alta-club --escribir: se saca un club chico (Bath Rugby) de data/clubs.js de la copia y la tool lo da de alta otra vez desde su documento; la fila vuelve a estar

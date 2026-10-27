@@ -141,20 +141,17 @@
   "pipeline.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo"] },
   "lote-batch.mjs": { "alcance": "etapa", "medidores": ["lote-ensayo"] },
   "extraer-etiquetas.mjs": { "alcance": "etapa", "medidores": ["xhtml"], "familia": { "formato": "xhtml" } },
-  "bfo-rusia-notas.mjs": { "alcance": "etapa", "medidores": ["cargar"], "familia": { "pais": "Rusia" } },
+  "bfo-rusia-notas.mjs": { "alcance": "etapa", "medidores": ["escribir"] },
   "gestiones-tanda.mjs": { "alcance": "etapa", "medidores": ["audit"] },
   "recategorizar-etiquetas.mjs": { "alcance": "etapa", "medidores": ["audit", "escribir"] }
  },
  "_modulos": "Los módulos que una tool de la tabla importa (directa o indirectamente) o llama como comando NO se escriben acá: tools/clasificar-tools.mjs los calcula, y sus medidores son los de las tools que los usan.",
  "sin_medidor": {
-  "armar-a-mano.mjs": "arma el .ubicacion.json y el .filas.json de un documento desde una especificación de la sesión (carga con tokens); ningún medidor lo ejercita todavía"
+  "armar-a-mano.mjs": "arma el .ubicacion.json y el .filas.json de un documento desde una especificación de la sesión (carga con tokens); lo ejercita prueba-escribir.mjs a través de siis-estado --club --escribir (que lo llama)"
  },
  "_no_pipeline": "Tools de primer nivel declaradas de afuera del pipeline, con el motivo. Una tool de la tabla no puede importar una de estas (clasificar-tools.mjs lo avisa). tools/hooks, tools/archivo y las carpetas de datos no se clasifican.",
  "_escriben_sin_prueba": "Tools del pipeline con un modo --escribir que tools/prueba-escribir.mjs todavía no prueba. Es deuda anotada con su motivo, no un permiso: medir-pipeline.mjs no da «idéntico» a una tool que escribe y no está en prueba-escribir.mjs ni acá. Al sumar la prueba, la tool sale de esta lista.",
- "escriben_sin_prueba": {
-  "bfo-rusia-notas.mjs": "solo escribe leyendo las tablas de las notas con la API de pago (--ejecutar; con --sin-ia Krasnodar no tiene nada que leer sin IA): falta un escenario con una respuesta de la API guardada",
-  "siis-estado.mjs": "la prueba cubre --inventario; la bajada de un club (json, md y pdf impreso con Chrome, y armar-a-mano) falta: necesita una respuesta guardada de SIIS (punto 401)"
- },
+ "escriben_sin_prueba": {},
  "no_pipeline": {
   "archivar.mjs": "orden: archiva un documento cerrado",
   "cerrar-tool.mjs": "orden: corre en su orden los pasos de cerrar un cambio a una tool (chequeo en seco, medición, veredicto, lo que falta); no lee documentos ni escribe datos",
