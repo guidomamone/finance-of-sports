@@ -149,7 +149,9 @@ const FIN_MULTI_PL = (function(){
       const gasto = key === 'gastos';
       const p = gasto ? (Math.abs(v1) - Math.abs(v0)) / Math.abs(v0) * 100 : (v1 - v0) / Math.abs(v0) * 100;
       const bueno = gasto ? p < 0 : p > 0;
-      return `<span class="${Math.round(p) === 0 ? '' : bueno ? 'pl-up' : 'pl-down'}">${p > 0 ? '+' : ''}${p.toFixed(0)}%</span>`;
+      // un año base casi en cero da un % sin sentido (Águilas Doradas, Estadio: +38.046 %): pasado el 1.000 se muestra el tope
+      const txt = Math.abs(p) > 1000 ? `${p > 0 ? '>+' : '<−'}1.000%` : `${p > 0 ? '+' : ''}${p.toFixed(0)}%`;
+      return `<span class="${Math.round(p) === 0 ? '' : bueno ? 'pl-up' : 'pl-down'}">${txt}</span>`;
     }
     function spark(vals, key){
       const pts = vals.map((v, i) => v == null ? null : { i, v: key === 'gastos' ? Math.abs(v) : v }).filter(Boolean);
