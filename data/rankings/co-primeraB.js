@@ -170,7 +170,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2018: {
     leagueSize: 16,
-    sinDato: ["realcartagena-co"],
     wiki: {"t":"2018 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"cucutadeportivo-co", revenue:2.336, reportType:"official_balance_sheet",
@@ -183,6 +182,9 @@ window.RANKINGS["co-primeraB"] = {
         sourceId:"fortalezaceif-co-estados-financieros-2018",
         mix:[["Comercial / Sponsors",0.165],["Estadio",0.003],["Fútbol profesional (sin desglosar por la fuente)",1.806],["Otros ingresos",0.002]],
         incluidos:[["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"realcartagena-co", revenue:1.696, reportType:"official_balance_sheet",
+        sourceId:"realcartagena-co-siis-estado-2018",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.686],["Otros ingresos",0.011]] },
       { id:"tigresfc-co", revenue:0.659, reportType:"official_balance_sheet",
         sourceId:"tigresfc-co-siis-estado-2018",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.646],["Otros ingresos",0.013]] },

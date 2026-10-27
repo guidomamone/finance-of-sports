@@ -797,6 +797,7 @@ window.SPONSORS_INDICE = [
   ["doosan-group","Doosan Group",["c"]],
   ["doosan-skoda-power","Doosan Škoda Power",["c"]],
   ["doradobet","DoradoBet",["c"]],
+  ["dotta","Dotta",["m"]],
   ["dotz","Dotz",["c"]],
   ["dourado","Dourado",["c"]],
   ["doyouspain","DoYouSpain",["c"]],
