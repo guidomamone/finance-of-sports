@@ -547,5 +547,10 @@
   "code": "dictamen-fechas-ajenas",
   "match": "barranquillafc-co 2020",
   "motivo": "VERIFICADO (Clubes/Colombia/Barranquilla FC/dictamen-revisor-fiscal-2020.pdf páginas 2 y 3 (y .md L23, L47, L77), 2026-10-27, 2026-10-27). El dictamen está fechado 20 de febrero de 2021 en las tres fechas del documento; la frase «informe separado de fecha 20 de febrero de 2020» (L65 del .md, página 3 del PDF) es una errata del original: el informe de control interno es del mismo día de 2021"
+ },
+ {
+  "code": "caja-deuda-desproporcionada",
+  "match": "cucutadeportivo-co 2016",
+  "motivo": "VERIFICADO (Clubes/Colombia/Cucuta Deportivo/estados-financieros-2016.pdf pág. 11, Nota 5 «Efectivo y equivalente al efectivo», 2026-10-27). La caja del club al 31-12-2016 es de verdad chica: 64 miles de pesos (COP 64.000; bancos 54 más 10 de efectivo restringido), con ingresos de 3.935 M. El encabezado de la tabla dice «Miles de Pesos»; el 1,871 es la columna DIC.31.2015 de la misma fila. El balance de SIIS dice lo mismo. No es una tabla en miles leída en unidades"
  }
 ]

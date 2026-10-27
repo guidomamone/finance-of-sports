@@ -191,7 +191,7 @@ function medicionAntesDelCommit(cmd) {
   decidir('deny', `Commit frenado: ${sinMedir.join(', ')} ${sinMedir.length > 1 ? 'son tools del pipeline y no tienen' : 'es una tool del pipeline y no tiene'} una medición con su versión actual en Admin/registros/mediciones-pipeline.jsonl `
     + '(una tool editada después de medir no cuenta). Ningún cambio al pipeline se commitea sin medir antes y después (CLAUDE.md).\n'
     + 'Todo lo que pide este commit, por archivo: node tools/fos.mjs que-pide\n'
-    + 'Corré: node tools/medir-pipeline.mjs   (en segundo plano; elige medidor y lote por tools/pipeline-tools.json; si hay diferencias esperadas: --explicacion "cuáles y por qué").\n'
+    + 'Corré: node tools/fos.mjs cerrar-tool --cambio "<qué hace>"   (los pasos en orden: ensayo, medición y veredicto, todo en segundo plano; solo la medición: node tools/medir-pipeline.mjs; elige medidor y lote por tools/pipeline-tools.json; si hay diferencias esperadas: --explicacion "cuáles y por qué").\n'
     + 'Si es un caso de emergencia, con el ok de Guido agregá [sin-medicion] al mensaje del commit.');
 }
 

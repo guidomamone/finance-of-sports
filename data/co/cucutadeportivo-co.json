@@ -104,7 +104,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1795.634,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1576.058,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":0,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":0,"tax":0,"gross_debt":0,"cash":0.064},
       "official_totals": {"revenue":3935.424,"expenses":4342.7,"net_result":-407.276},
       "adjustments": {
         "extra_rows": [{"label":"Ingresos financieros","amount":0},{"label":"Costos financieros","amount":0},{"label":"Ingreso (gasto) por impuestos","amount":0}],

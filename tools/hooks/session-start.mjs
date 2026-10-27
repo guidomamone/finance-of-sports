@@ -33,5 +33,5 @@ if (existsSync(join(raiz, 'tools', 'todo-verificar.js'))) {
   const P = createRequire(import.meta.url)(join(raiz, 'tools', 'todo-verificar.js')).puntos(leer('Admin/TODO.md')).slice(0, 3);
   if (P.length) L.push(`Sigue: ${P.map((p) => `${p.id} ${p.titulo.replace(/^\([^)]*\):?\s*/, '').slice(0, 70)}`).join(' · ')}.`);
 }
-L.push('Arranque: fos mapa <tool> · fos medir pipeline · fos patron · fos causas · fos cerrar <id> (node tools/fos.mjs).');
+L.push('Arranque: fos mapa <tool> · al terminar de editar una tool del pipeline: fos cerrar-tool --cambio "<qué hace>" (ensayo, medición y veredicto en orden; nunca los pasos sueltos) · fos causas · fos cerrar <id> (node tools/fos.mjs).');
 process.stdout.write(`${L.slice(0, 10).join('\n')}\n`);

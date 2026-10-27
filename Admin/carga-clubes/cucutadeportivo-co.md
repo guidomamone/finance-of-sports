@@ -327,6 +327,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-27): grossDebt escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2016.json, miles de COP): otros pasivos financieros corrientes 0 + no corrientes 0
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-27): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-27): La caja de Cúcuta Deportivo al 31-12-2016 es 64 miles de pesos (columna 2016 de siis-estado-2016.md L34: 64 | 1.871; la segunda columna es 2015). El PDF propio lo confirma: Nota 5, DIC.31.2016 = 64 y DIC.31.2015 = 1,871, en miles de pesos.
+```
+
 ## Fuentes
 
 ### cucutadeportivo-co-siis-estado-2016
