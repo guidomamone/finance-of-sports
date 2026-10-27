@@ -301,25 +301,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const A = process.argv.slice(2); const flag = (n) => { const i = A.indexOf(n); return i >= 0 ? A[i + 1] : null; };
   if (A.includes('--historial')) process.exit(spawnSync('node', [resolve(ROOT, 'tools/cola-historial.mjs'), 'club', flag('--historial') || '', ...A.slice(A.indexOf('--historial') + 2, A.indexOf('--historial') + 3)], { stdio: 'inherit' }).status ?? 1); // la historia de un club la imprime cola-historial.mjs
   negarSiSeMide('cola.mjs', { si: A.includes('--responder') || A.includes('--corregir-categoria') }); // escriben la cola: no mientras medir pipeline mide
-  // --corregir-categoria: Guido fija la categoría de UNA fila de un documento aunque la categorización no haya tenido dudas (UC
-  // 2025: "Costo de ventas" sin desglose -> "sin desglosar por la fuente", no "Otros gastos"). Crea el caso y su respuesta de una vez; la toma
-  // cargar.mjs en la próxima corrida (respuestaCat) y queda como precedente del club. La etiqueta se escribe como en el documento.
-  if (A.includes('--corregir-categoria')) {
-    const i = A.indexOf('--corregir-categoria'); const [pdf, etiqueta, categoria] = A.slice(i + 1, i + 4);
-    if (!pdf || !etiqueta || !categoria) { console.error('Uso: node tools/cola.mjs --corregir-categoria "<pdf>" "<etiqueta tal cual>" <categoría> [--nota "..."]'); process.exit(1); }
-    // la categoría tiene que ser de la taxonomía del deporte del club del documento (data/category-map.js, SPORT_TAXONOMIES)
-    const { clubDeRuta } = await import('./carpetas-clubes.mjs'); const { categoriasDeDeporte, resolverDeporte, MENSAJE_SIN_DEPORTE } = await import('./deporte-club.mjs');
-    const deporteDoc = resolverDeporte({ club: clubDeRuta(pdf).clubId, pdf });
-    if (!deporteDoc) { console.error(MENSAJE_SIN_DEPORTE(pdf.split('/').slice(1, 3).join('/'))); process.exit(1); }
-    if (!categoriasDeDeporte(deporteDoc)?.todas.has(categoria)) { console.error(`"${categoria}" no es una categoría de ${deporteDoc} (SPORT_TAXONOMIES de data/category-map.js)`); process.exit(1); }
-    const { normalizar } = await import('./vocabulario.mjs');
-    const id = agregarCaso({ pdf, md: pdf.replace(/\.pdf$/i, '.md'), etapa: 'cargar', motivo: 'categoria', detalle: normalizar(etiqueta), categoriaPropuesta: categoria, que: `Corrección de Guido: "${etiqueta}" va como ${categoria}.` });
-    // 'corregir' con la categoría, no 'aceptar': agregarCaso devuelve el caso YA ABIERTO de esa fila, con SU categoriaPropuesta;
-    // 'aceptar' aceptaba esa propuesta vieja y no la corrección.
-    appendFileSync(ARCHIVO, JSON.stringify(lineaDeRespuesta({ id, decision: 'corregir', valor: categoria, nota: flag('--nota'), evidencia: 'ninguna', seguridad: 'alta', causa: 'decision-de-guido' }).linea) + '\n');
-    console.log(`Categoría fijada (${id}): "${etiqueta}" -> ${categoria}. La toma cargar.mjs en la próxima corrida.`);
-    process.exit(0);
-  }
+  // --corregir-categoria: fija la categoría de UNA fila de un documento (cola-corregir-categoria.mjs)
+  if (A.includes('--corregir-categoria')) { const { corregirCategoria } = await import('./cola-corregir-categoria.mjs'); await corregirCategoria({ A, flag, ARCHIVO, agregarCaso }); process.exit(0); }
   if (A.includes('--responder')) {
     const id = flag('--responder'); const decision = A[A.indexOf('--responder') + 2];
     const { casos } = leer();

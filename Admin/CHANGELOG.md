@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1221 — cola.mjs --corregir-categoria no repite una respuesta ya fijada; TODO 463 achicado, sus pendientes al 476 [463, 476 · cola.mjs, cola-corregir-categoria.mjs]
+- `node tools/cola.mjs --corregir-categoria` (lo que `club-siis --avanzar` corre en cada pasada) agregaba otra respuesta idéntica cada vez; ahora dice «Ya estaba fijada (id)» y no escribe. La lógica salió a `tools/cola-corregir-categoria.mjs` (`cola.mjs` había pasado los 40 KB con el cambio).
+- El punto 463 del TODO queda con los clubes que faltan cargar; sus pendientes de lo ya cargado (gestiones, sponsors, dictámenes, pantallas, skills, cositas del 461) pasan al punto nuevo 476 sin cambiar de contenido.
+- Medición: idéntico (lote chico: `cargar`, `cargar-cola-vacia`, `audit`, `escribir`, `verificar`, `lote-ensayo`, `alta`). Sin revisión independiente de la Auditora.
+
 ## Versión 1220 — Hook de fin de turno: no bloquea con trabajo en segundo plano sin terminar [hooks/stop.mjs]
 - `tools/hooks/stop.mjs` mira el transcript: un subagente (`agentId:`) o un comando con `run_in_background` (`running in background with ID:`) sin su `<task-notification>` de fin deja el cierre pasar sin decir nada (los archivos sin commitear son su salida en curso). Los monitores de espera no cuentan. Antes avisaba a cada rato mientras los subagentes escribían. Sin transcript sigue como antes.
 - Medición: `probar-stop.mjs` 12 casos, todos ok (4 nuevos). Un comando en segundo plano que se mata sin aviso deja el hook en silencio hasta que termine la sesión: si pasa, `git status` lo dice igual al cierre del turno siguiente.
