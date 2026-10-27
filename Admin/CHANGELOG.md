@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1231 — 401: la prueba de escritura cubre las últimas cuatro tools y el punto se cierra [401 · prueba-escribir.mjs]
+- `prueba-escribir.mjs` suma `siis-estado --club --escribir` (baja Tolima 2025 de SIIS, imprime el PDF con Chrome y deja json, md y filas iguales a los de HEAD salvo las fechas; de paso ejercita `armar-a-mano`), `texto-propio-a-md --escribir` (rearma la página 8 de SønderjyskE 2024; el `.md` anterior tiene que quedar guardado idéntico) y `catalogo-liga --escribir` (se saca `cy-seconddivision` de la copia y la tool tiene que volver a escribir la misma línea). Las tres con red; sin ella lo dicen y siguen.
+- `bfo-rusia-notas --ejecutar` llama a la API de pago: va detrás de `node tools/prueba-escribir.mjs --con-api` (~US$ 0,10 por corrida, tope de US$ 1 en la prueba; copia la clave a la copia descartable, que se borra). Las 4 tablas de Krasnodar 2025 salen con las mismas sumas que las de HEAD. `escriben_sin_prueba` queda vacío y `bfo-rusia-notas` mide con `escribir`.
+- Gasto de API de la sesión: US$ 0,32 (3 llamadas de ~0,10).
+- Verificado a mano (401): prueba-escribir.mjs corre las 24 tools que escriben en una copia descartable (node tools/prueba-escribir.mjs, salida 0; bfo-rusia-notas con --con-api, salida 0); cerrar-tool corre las pruebas de lo que cambio; escriben_sin_prueba vacio en tools/pipeline-tools.json
+- Medición: sin tools del pipeline cambiadas (`cerrar-tool` corrió las 2 pruebas de lo tocado: ok). Sin revisión independiente de la Auditora.
+
 ## Versión 1230 — 401: `bfo-rusia --escribir` no escribía ningún año (revertía por `ingreso-sin-base`) y la prueba de escritura lo recarga contra HEAD [401 · bfo-rusia.mjs, prueba-escribir.mjs]
 - `bfo-rusia.mjs` armaba el ejercicio sin `baseIngreso` (el punto 455 lo exige; `cargar-ejercicio.mjs` sí lo pone): `audit.js` daba P1 `ingreso-sin-base` y la escritura se revertía entera, con salida 0 (parecía que andaba). Ahora usa `baseDeIngreso` (la regla de `cargar-ejercicio` y de `fos ingreso-base`). Lo encontró la prueba nueva de `prueba-escribir`: saca Krasnodar 2025 de una copia descartable, lo recarga y lo compara con el de HEAD (igual, salvo caja y deuda, que completa `caja-deuda`, y un `included_in` vacío).
 - `prueba-escribir.mjs` suma `bfo-rusia --escribir` (copia los `bfo-*-datos.json` de la carpeta principal porque git los ignora; sin ellos lo dice y sigue) y `siis-estado --inventario --escribir` (con red). Quedan en `escriben_sin_prueba`: `bfo-rusia-notas` (solo escribe con la API de pago) y la bajada de un club de `siis-estado`.
