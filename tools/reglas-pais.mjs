@@ -37,9 +37,28 @@ export function secciones(L) {
   return hs.map((ini, k) => ({ ini, fin: k + 1 < hs.length ? hs[k + 1] : L.length, titulo: L[ini] }));
 }
 
+// LOS DOCUMENTOS GENERALES: qué títulos miran (CONVENCIONES-DATOS: los `## REGLA:`; ESTADO y PIPELINE: cualquier `##` o `###`). Un título que nombra un país y es general (un formato, un deporte) se acepta con su motivo
+// en tools/titulos-pais-aceptados.json ({ "<documento>": { "<título sin #>": "<motivo>" } }). Lo usan el CLI de abajo (el aviso `regla-de-pais-en-doc-general` de audit.js) y el hook de pre-tool.
+export const DOCS_GENERALES = { 'Admin/CONVENCIONES-DATOS.md': /^## REGLA/, 'Admin/ESTADO.md': /^#{2,3} /, 'Admin/PIPELINE.md': /^#{2,3} / };
+const aceptados = () => { try { return JSON.parse(readFileSync(join(ROOT, 'tools/titulos-pais-aceptados.json'), 'utf8')); } catch { return {}; } };
+const titulo = (l) => l.replace(/^#+\s+/, '').trim();
+export function titulosConPais(doc, lineas) {
+  const ok = aceptados()[doc] || {};
+  return lineas.map((l, i) => ({ l, linea: i + 1 })).filter((x) => DOCS_GENERALES[doc].test(x.l) && !(titulo(x.l) in ok)).map((x) => ({ ...x, iso: paisDeTitulo(x.l) })).filter((x) => x.iso);
+}
+// Para el hook: los títulos con país que un Edit/Write AGREGA a un documento general (los que ya están en el archivo no cuentan: es una edición de texto, no una sección nueva).
+export function nuevosTitulosConPais(ruta, texto) {
+  const doc = Object.keys(DOCS_GENERALES).find((d) => String(ruta).endsWith(`/${d}`)); if (!doc) return [];
+  let hoy = ''; try { hoy = readFileSync(join(ROOT, doc), 'utf8'); } catch { /* sin archivo */ }
+  const ya = new Set(hoy.split('\n').map(titulo));
+  return titulosConPais(doc, String(texto).split('\n')).filter((x) => !ya.has(titulo(x.l))).map((x) => ({ ...x, doc }));
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const ruta = join(ROOT, 'Admin/CONVENCIONES-DATOS.md'); const L = readFileSync(ruta, 'utf8').split('\n');
+  const otros = Object.keys(DOCS_GENERALES).filter((d) => d !== 'Admin/CONVENCIONES-DATOS.md').flatMap((d) => titulosConPais(d, readFileSync(join(ROOT, d), 'utf8').split('\n')).map((x) => ({ ...x, doc: d })));
   const mover = secciones(L).filter((s) => /^## REGLA/.test(s.titulo)).map((s) => ({ ...s, iso: paisDeTitulo(s.titulo) })).filter((s) => s.iso);
+  for (const x of otros) console.log(`${x.iso} · L${x.linea} · ${x.doc.split('/').pop()} · ${titulo(x.l).slice(0, 100)} (si el título es general, tools/titulos-pais-aceptados.json con su motivo; si no, a Admin/paises/${x.iso}.md)`);
   if (!mover.length) { console.log('Ninguna regla de CONVENCIONES-DATOS.md nombra un país en su título.'); process.exit(0); }
   for (const s of mover) console.log(`${s.iso} · L${s.ini + 1}-${s.fin} · ${s.titulo.slice(0, 110)}`);
   if (!process.argv.includes('--escribir')) { console.log(`\n${mover.length} regla(s) a Admin/paises/. Ensayo: no se escribió nada (--escribir).`); process.exit(0); }

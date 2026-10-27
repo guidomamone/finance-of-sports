@@ -119,7 +119,7 @@ function checkDictamenFechas() {
 function checkReglaDePaisEnDocGeneral() {
   let out; try { out = require('child_process').execFileSync('node', ['tools/reglas-pais.mjs'], { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); } catch (e) { add('P3', 'regla-de-pais-en-doc-general', `tools/reglas-pais.mjs falló: ${String(e.stderr || e.message).split('\n')[0]}`); return; }
   const ls = out.split('\n').filter((x) => /^[a-z]{2} · L\d+/.test(x));
-  if (ls.length) add('P3', 'regla-de-pais-en-doc-general', `${ls.length} regla(s) de Admin/CONVENCIONES-DATOS.md nombran un país en su título y van en Admin/paises/<iso>.md (node tools/reglas-pais.mjs --escribir las mueve): ${ls.slice(0, 3).map((x) => x.slice(0, 90)).join('; ')}`);
+  if (ls.length) add('P3', 'regla-de-pais-en-doc-general', `${ls.length} regla(s) o sección(es) de Admin/CONVENCIONES-DATOS.md, ESTADO.md o PIPELINE.md nombran un país en su título y van en Admin/paises/<iso>.md (node tools/reglas-pais.mjs --escribir mueve las reglas de CONVENCIONES-DATOS.md; un título general se acepta con su motivo en tools/titulos-pais-aceptados.json): ${ls.slice(0, 3).map((x) => x.slice(0, 90)).join('; ')}`);
 }
 
 module.exports = { checkSiisControl, checkSiisEntreAnios, checkSiisFaltante, checkReglaNotas, checkRespuestasContradicen, checkDictamenFechas, checkReglaDePaisEnDocGeneral };

@@ -316,16 +316,13 @@ function loteExistente() {
   decidir('deny', `${ruta} ya existe: escribirlo lo pisa. Para una lista nueva: node tools/fos.mjs lote-nuevo "<motivo>" (crea el próximo número libre); para sumarle rutas a esta, Edit.`);
 }
 
-// regla-de-pais-en-doc-general (deny): un Edit/Write que agrega a Admin/CONVENCIONES-DATOS.md un `## REGLA:` cuyo título nombra un país (fuera del paréntesis del caso) va a Admin/paises/<iso>.md.
-// La cuenta es la de tools/reglas-pais.mjs (paisDeTitulo), la misma del aviso `regla-de-pais-en-doc-general` de audit.js: una regla de país en el general se lee en cada sesión que toca datos.
+// regla-de-pais-en-doc-general (deny): un Edit/Write que AGREGA a Admin/CONVENCIONES-DATOS.md un `## REGLA:`, o a ESTADO.md o PIPELINE.md una sección (`##` o `###`), cuyo título nombra un país (fuera del paréntesis del caso) va a Admin/paises/<iso>.md.
+// La cuenta es la de tools/reglas-pais.mjs (nuevosTitulosConPais), la misma del aviso `regla-de-pais-en-doc-general` de audit.js: un título que ya está en el archivo no cuenta, y uno general se acepta con su motivo en tools/titulos-pais-aceptados.json.
 async function reglaDePaisEnDocGeneral() {
-  if (!EDITA.includes(herramienta) || !/\/Admin\/CONVENCIONES-DATOS\.md$/.test(rutaEditada())) return;
-  const titulos = String(params.new_string || params.content || '').split('\n').filter((l) => /^## REGLA/.test(l));
-  if (!titulos.length) return;
-  const { paisDeTitulo, PAISES } = await import('../reglas-pais.mjs');
-  for (const t of titulos) {
-    const iso = paisDeTitulo(t); if (!iso) continue;
-    decidir('deny', `Esta regla nombra a ${PAISES[iso][0]} en su título: una regla que solo vale para un país va en Admin/paises/${iso}.md (el mismo formato; si el archivo no existe, se crea con la marca de leer de los otros). CONVENCIONES-DATOS.md es solo de reglas generales.`);
+  if (!EDITA.includes(herramienta)) return;
+  const { nuevosTitulosConPais, PAISES } = await import('../reglas-pais.mjs');
+  for (const x of nuevosTitulosConPais(rutaEditada(), params.new_string || params.content || '')) {
+    decidir('deny', `Este título de ${x.doc} nombra a ${PAISES[x.iso][0]}: lo que solo vale para un país va en Admin/paises/${x.iso}.md (el mismo formato; si el archivo no existe, se crea con la marca de leer de los otros). ${x.doc.split('/').pop()} es solo de lo general; si el título es general (un formato, un deporte), agregalo con su motivo a tools/titulos-pais-aceptados.json.`);
   }
 }
 

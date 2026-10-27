@@ -1,0 +1,6 @@
+{
+ "_comentario": "Títulos de sección de un documento general (Admin/CONVENCIONES-DATOS.md, ESTADO.md, PIPELINE.md) que nombran un país y se aceptan, cada uno con su motivo. Lo lee tools/reglas-pais.mjs (el aviso regla-de-pais-en-doc-general de audit.js y el hook de pre-tool). Clave: el documento y, adentro, el título sin los # tal como está escrito.",
+ "Admin/PIPELINE.md": {
+  "Dinamarca: los informes en XHTML (ESEF / iXBRL)": "es el formato XHTML/iXBRL, no el país: también lo traen los informes británicos y de otros países, y `xhtml-aarsrapport.mjs` sirve a todos"
+ }
+}

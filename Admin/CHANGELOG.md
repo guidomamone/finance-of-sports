@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1197 — regla-de-pais-en-doc-general mira también ESTADO.md y PIPELINE.md [472 · reglas-pais.mjs, audit-chequeos-siis.js, pre-tool.mjs]
+- El aviso P3 y el hook de `pre-tool` miran los `##` y `###` de `ESTADO.md` y `PIPELINE.md` (además de los `## REGLA:` de `CONVENCIONES-DATOS.md`) con `paisDeTitulo()`; el hook rechaza el título nuevo, no uno que ya está en el archivo. Un título general que nombra un país se acepta con su motivo en `tools/titulos-pais-aceptados.json` (hoy «Dinamarca: los informes en XHTML», que es un formato).
+- Hoy marca 1 de 61 títulos de `ESTADO.md`, `PIPELINE.md`, `CONVENCIONES.md` y `PANTALLA.md` (el de Dinamarca, aceptado); la prueba del hook (`probar-pre-tool.mjs`) tiene 5 casos nuevos y da 87 ok.
+- Medición: lote chico del medidor audit, idéntico. Sin revisión independiente de la Auditora.
+
 ## Versión 1196 — PIPELINE.md sin lo que solo vale para un país [471 · audit-acciones.json]
 - Mudado a `Admin/paises/`: «Colombia: los estados de SIIS» (`co.md`), el camino de Rusia (`ru.md`, nuevo) y lo belga del esquema NBB (escalón «códigos NBB» y el 630 por la nota, año sin ingresos, caja sin vecino: `be.md`, «Pipeline de Bélgica»); en `PIPELINE.md` quedan punteros y la sección «Lo que solo vale para un país». Pesa 142 KB (150 KB antes). Sin las notas de «Medido…» de lo mudado.
 - La medición por menciones daba ~52 KB belgas; por sección, no hay una sección belga y lo propio de Bélgica es ~3 KB. «Dinamarca: los informes en XHTML» se queda: es el formato (también británico), no el país.
