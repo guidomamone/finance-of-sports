@@ -920,7 +920,7 @@ tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento si
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025)
+tools/dentro-de-otro.mjs (2026-10-27): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025)
 ```
 
 ### Liga
@@ -934,8 +934,8 @@ tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por pr
 ### Ingresos
 
 ```text
-2017: cargado por tools/cargar.mjs (2026-10-04) desde Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
-Generados/Colombia/Fortaleza CEIF/estados-financieros-2017.categorias.json (escalón por línea al lado). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+2017: cargado por tools/cargar.mjs (2026-10-27) desde Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Fortaleza CEIF/estados-financieros-2017.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
 ```
 
 | Fila | Rubro | Nota |
@@ -948,10 +948,6 @@ Generados/Colombia/Fortaleza CEIF/estados-financieros-2017.categorias.json (esca
 | 6 | Casa Hogar | pág. 14, Jev 0.96 |
 
 ### Gastos
-
-```text
-tools/cargar.mjs (2026-10-04)
-```
 
 | Fila | Rubro | Nota |
 |---|---|---|
@@ -971,7 +967,7 @@ tools/cargar.mjs (2026-10-04)
 | 14 | Gastos Deportivos y D | pág. 15, precedente |
 | 15 | Aportes Admin de Ries | pág. 15, precedente |
 | 16 | Aporte a Salud | pág. 15, precedente |
-| 17 | Aportes a Fondos de P | pág. 15, Claude 0.85 |
+| 17 | Aportes a Fondos de P | pág. 15, precedente |
 | 18 | Aportes a Cajas de Co | pág. 15, precedente |
 | 19 | Aportes a Icbf | pág. 15, precedente |
 | 20 | Sena | pág. 15, precedente |
@@ -1086,12 +1082,12 @@ tools/cargar.mjs (2026-10-04)
 2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): fila = 1,027,450. Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)
 2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): fila = 70,183. Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)
 2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-04): fila = 1,600. Guido 2026-10-04 (ajuste gratis): con las notas como estado la extracción trajo solo el total de la nota de ingresos; sus partes (L538-541) son las que ya estaban cargadas (4.220,658 + 1.027,45 + 70,183 + 1,6 = 5.319,891)
-tools/cargar.mjs (2026-10-04). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
-sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+tools/cargar.mjs (2026-10-27). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025)
+tools/dentro-de-otro.mjs (2026-10-27): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025)
 ```
 
 ### Liga
@@ -1148,7 +1144,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-26): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025)
+tools/dentro-de-otro.mjs (2026-10-27): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025)
 ```
 
 ## Fuentes

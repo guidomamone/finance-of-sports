@@ -50,3 +50,5 @@ Estados financieros en disco ahora: 9 ejercicios (2017-2025), cada uno con certi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2020 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf` (sourceId `fortalezaceif-co-estados-financieros-2020`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-26): ejercicio 2016 desde `Clubes/Colombia/Fortaleza CEIF/siis-estado-2016.pdf` (sourceId `fortalezaceif-co-siis-estado-2016`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2017 desde `Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf` (sourceId `fortalezaceif-co-estados-financieros-2017`).
