@@ -2525,6 +2525,7 @@ window.SPONSORS_INDICE = [
   ["tns-energo","TNS Energo",["c"]],
   ["tns-energo-rostov-on-don","TNS Energo Rostov-on-Don",["c"]],
   ["tns-energobetboom","TNS EnergoBetBoom",["c"]],
+  ["tokesport","TokeSport",["m"]],
   ["tokyo-gas","Tokyo Gas",["c"]],
   ["tolledo-sports","Tolledo Sports",["m"]],
   ["tommy","Tommy",["c"]],

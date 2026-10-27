@@ -108,7 +108,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2021: {
     leagueSize: 16,
-    sinDato: ["orsomarso-co"],
     wiki: {"t":"2021 Torneo DIMAYOR","lang":"en","at":"2026-10-02","n":16},
     clubs: [
       { id:"cortulua-co", revenue:5.172, reportType:"official_balance_sheet",
@@ -127,6 +126,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"fortalezaceif-co", revenue:0.903, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2021",
         mix:[["Comercial / Sponsors",0.1],["Televisión",0.29],["Premios por competencias",0.137],["Venta de Jugadores",0.072],["Subsidios y donaciones",0.011],["Otros ingresos",0.293]] },
+      { id:"orsomarso-co", revenue:0.671, reportType:"official_balance_sheet",
+        sourceId:"orsomarso-co-siis-estado-2021",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.539],["Otros ingresos",0.132]] },
       { id:"tigresfc-co", revenue:0.6, reportType:"official_balance_sheet",
         sourceId:"tigresfc-co-siis-estado-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.586],["Otros ingresos",0.014]] },

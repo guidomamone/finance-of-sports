@@ -21,3 +21,5 @@ Estados financieros en disco ahora: 9 ejercicios (2016-2018, 2020-2025), cada un
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2018 desde `Clubes/Colombia/Orsomarso/siis-estado-2018.pdf` (sourceId `orsomarso-co-siis-estado-2018`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2020 desde `Clubes/Colombia/Orsomarso/siis-estado-2020.pdf` (sourceId `orsomarso-co-siis-estado-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2021 desde `Clubes/Colombia/Orsomarso/siis-estado-2021.pdf` (sourceId `orsomarso-co-siis-estado-2021`).
