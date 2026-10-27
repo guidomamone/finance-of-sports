@@ -40,7 +40,7 @@ function wikipediaCubre(clubId, a, liga) {
 function ligasExactas(nombre, anios, clubId) {
   const alias = leer('tools/club-league-reference/alias.json')?.co || {}; const m = {};
   for (const n of [nombre, ...Object.entries(alias).filter(([, a]) => a.clubId === clubId).map(([k]) => k)]) {
-    let out = ''; try { out = execFileSync('node', [join(ROOT, 'tools/lookup-club-league.js'), n, '--pais', 'CO', ...(clubId ? ['--club', clubId] : [])], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }); } catch { continue; }
+    let out = ''; try { out = execFileSync('node', [join(ROOT, 'tools/lookup-club-league.js'), n, '--pais', 'CO', '--sin-anotar', ...(clubId ? ['--club', clubId] : [])], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }); } catch { continue; }
     for (const l of out.split('\n')) { const x = l.match(/^(co-\w+) (\d{4}): /); if (x && anios.includes(x[2]) && !/NO EXACTA/.test(l) && !m[x[2]]) m[x[2]] = x[1]; }
   }
   return m;
@@ -125,7 +125,7 @@ function evaluar() {
   else if (!max) { veredicto = 'DESCARTAR'; motivos.push('ingresos 0 en todos los años: sociedad sin actividad (Real Sincelejo 2017)'); }
   else if (max < UMBRAL_CHICO) { veredicto = 'REVISAR'; motivos.push(`ingresos chicos todos los años (el máximo, ${miles(max)}; el umbral, ${miles(UMBRAL_CHICO)}): ¿es un club o una sociedad con otra actividad? Si es de otro deporte, punto 464`); }
   if (sinIng.length && max) motivos.push(`años con ingresos 0 (${sinIng.join(', ')}): se cargan igual, mirar si es inactividad`);
-  let ligas = []; try { ligas = [...execFileSync('node', [join(ROOT, 'tools/lookup-club-league.js'), club, '--pais', 'CO'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).matchAll(/^(co-\w+) (\d{4}):/gm)].map((x) => `${x[2]} ${x[1]}`); } catch { /* sin caché */ }
+  let ligas = []; try { ligas = [...execFileSync('node', [join(ROOT, 'tools/lookup-club-league.js'), club, '--pais', 'CO', '--sin-anotar'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).matchAll(/^(co-\w+) (\d{4}):/gm)].map((x) => `${x[2]} ${x[1]}`); } catch { /* sin caché */ }
   const pesos = filas.filter((f) => f.siis).map((f) => ({ a: f.a, ...pesoCosto(f.a) })).filter((p) => p.pct);
   return { anios, veredicto, motivos, ligas, pesos };
 }

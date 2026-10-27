@@ -86,7 +86,7 @@ function main() {
   if (!existsSync(cachePath)) {
     console.log(`Sin caché todavía para --pais ${pais} (no existe ${cachePath.replace(projectRoot + '/', '')}).`);
     console.log('Buscar la página de temporada en Wikipedia y bajarla con tools/fetch-club-league-reference.mjs.');
-    logMiss(query, pais, anio);
+    if (!args.includes('--sin-anotar')) logMiss(query, pais, anio);
     return;
   }
 
@@ -112,7 +112,7 @@ function main() {
   if (!matches.length) {
     console.log(`Sin coincidencias para "${query}" en la caché de ${pais}${anio ? ' año ' + anio : ''}.`);
     console.log('Puede que esa liga-temporada todavía no esté cacheada -- bajarla con tools/fetch-club-league-reference.mjs.');
-    logMiss(query, pais, anio);
+    if (!args.includes('--sin-anotar')) logMiss(query, pais, anio); // --sin-anotar: una consulta de solo lectura (club-siis al listar) no deja misses.jsonl para restaurar
     return;
   }
   matches.forEach((m) => console.log(`${m.leagueId} ${m.year}: "${m.matchedName}" (${m.wikipediaPage}; ${m.fuentes} fuente${m.fuentes === 1 ? '' : 's'})${m.alias ? ` · alias de ${m.alias} (alias.json)` : m.exacta ? '' : ' · NO EXACTA'}`));

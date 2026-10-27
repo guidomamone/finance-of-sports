@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1185 — club-siis ya no deja misses.jsonl para restaurar [468 · lookup-club-league.js, club-siis.mjs]
+- `lookup-club-league.js --sin-anotar` hace la misma consulta sin escribir `tools/club-league-reference/misses.jsonl`; `club-siis.mjs` lo pasa en sus dos consultas (la lista de clubes, `--evaluar` y la liga de cada año), que son de solo lectura. Sin la bandera (alta-club y los demás) todo igual.
+- Medición: lote completo, medidores lote-ensayo, alta y cargar: idéntico. Sin revisión independiente de la Auditora.
+
 ## Versión 1184 — dictamen-fechas.mjs: aviso dictamen-fechas-ajenas [468 · audit.js, audit-chequeos-siis.js, dictamen-fechas.mjs]
 - `node tools/dictamen-fechas.mjs` (gratis) mira, en cada línea de `Admin/registros/auditoria.jsonl` cuyo `.md` es un informe del auditor, las fechas de la firma (4 líneas arriba y 1 abajo de la cita del auditor) contra el cierre del ejercicio del JSON del club: firma anterior al cierre, o más de 30 meses después, o un `.md` que no nombra el año del cierre. `audit.js` lo muestra como P3 `dictamen-fechas-ajenas`. Solo mira documentos que son el informe (no un balance entero) y meses en español, portugués, inglés, italiano, alemán, francés y neerlandés: 75 de 1.459 líneas se pueden mirar hoy.
 - Salen 6: Alianza FC 2025 (dictamen fechado marzo de 2025 para el cierre de diciembre de 2025: la plantilla del año anterior; consulta al club en `dudas-por-club.md`), Alianza 2024 y 2023 (la cabecera está bien, la firma del pie trae el año equivocado en el propio documento: no es otro ejercicio), Deportes Tolima 2023, AEL Larissa 2017 y Lazio 2006 (por mirar).
