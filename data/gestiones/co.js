@@ -88,8 +88,8 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://www.las2orillas.co/?p=918944', confirmada:true },
   ],
   'realcartagena-co': [
-    { nombre:'Rodrigo Rendón hijo', corto:'Rendón', cargo:'Presidente', desde:'2007-01-01', hasta:'2018-12-06',
-      fuente:'https://caracol.com.co/emisora/2018/12/06/cartagena/1544117014_686630.html', confirmada:true },
+    { nombre:'Rodrigo Rendón Cano', corto:'Rendón', cargo:'Presidente', desde:'2007-01-01', hasta:'2018-12-06',
+      fuente:'https://caracol.com.co/emisora/2018/12/06/cartagena/1544117014_686630.html (entrega la administración el 2018-12-06); https://www.lafm.com.co/colombia/murio-rodrigo-rendon-copropietario-de-real-cartagena (lo llama «expresidente» al morir: es el padre, no Rodrigo Alejandro, su hijo y accionista)', confirmada:true },
     { nombre:'Roberto Carlos Vergara', corto:'Vergara', cargo:'Presidente', desde:'2018-12-06', hasta:'2019-06-18',
       fuente:'https://caracol.com.co/emisora/2018/12/06/cartagena/1544117014_686630.html', confirmada:false },
     { nombre:'Rodrigo Alejandro Rendón Ruiz', corto:'Rendón', cargo:'Presidente', desde:'2020-08-31', hasta:'2021-01-05',
