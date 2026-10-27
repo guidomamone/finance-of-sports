@@ -90,6 +90,7 @@ window.SPONSORS_INDICE = [
   ["albani-brewery","Albani Brewery",["c"]],
   ["alcaldia-de-santa-marta","Alcaldía de Santa Marta",["c"]],
   ["alcaldia-de-sincelejo","Alcaldía de Sincelejo",["c"]],
+  ["alcaldia-mayor-de-cartagena-de-indias","Alcaldía Mayor de Cartagena de Indias",["c"]],
   ["aldro","Aldro",["c"]],
   ["aldro-energy","Aldro Energy",["c"]],
   ["ale-combustiveis","ALE Combustíveis",["c"]],

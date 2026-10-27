@@ -22,9 +22,11 @@ window.RANKINGS["co-primeraB"] = {
   },
   2024: {
     leagueSize: 16,
-    sinDato: ["realcartagena-co"],
     wiki: {"t":"2024 Torneo DIMAYOR","lang":"en","at":"2026-10-26","n":16},
     clubs: [
+      { id:"realcartagena-co", revenue:3.367, reportType:"official_balance_sheet",
+        sourceId:"realcartagena-co-siis-estado-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",3.062],["Otros ingresos",0.305]] },
       { id:"unionmagdalena-co", revenue:2.547, reportType:"official_balance_sheet",
         sourceId:"unionmagdalena-co-siis-estado-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.208],["Otros ingresos",0.339]],
