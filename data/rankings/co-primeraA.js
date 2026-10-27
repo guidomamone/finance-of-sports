@@ -248,9 +248,11 @@ window.RANKINGS["co-primeraA"] = {
   },
   2019: {
     leagueSize: 20,
-    sinDato: ["americadecali-co"],
     wiki: {"t":"2019 Categoría Primera A season","lang":"en","at":"2026-10-02","n":20},
     clubs: [
+      { id:"americadecali-co", revenue:13.029, reportType:"official_balance_sheet",
+        sourceId:"americadecali-co-siis-estado-2019",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",13.001],["Otros ingresos",0.028]] },
       { id:"deportestolima-co", revenue:10.888, reportType:"official_balance_sheet",
         sourceId:"deportestolima-co-siis-estado-2019",
         mix:[["Comercial / Sponsors",1.061],["Estadio",1.825],["Televisión",1.73],["Premios por competencias",3.257],["Venta de Jugadores",2.602],["Subsidios y donaciones",0],["Otros ingresos",0.413]] },

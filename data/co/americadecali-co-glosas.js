@@ -43,6 +43,7 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Mantenimiento y reparaciones":{"en":"Maintenance and repairs"},
 "Menos: Devoluciones":{"en":"Less: Returns"},
 "Otros Gastos (pérdida en venta y retiro de bienes, gastos extraordinarios, gravamen movimiento financiero, gastos diversos, deterioro)":{"en":"Other expenses (loss on sale and disposal of assets, extraordinary expenses, financial transactions tax, miscellaneous expenses, impairment)"},
+"Otros gastos":{"en":"Other expenses"},
 "Otros gastos de ventas (deterioro, seguros, servicios, legales, mantenimiento, viajes, depreciaciones, amortizaciones, diversos — no desglosados individualmente por solapamiento de notas en la transcripción)":{"en":"Other selling expenses (impairment, insurance, services, legal, maintenance, travel, depreciation, amortization, miscellaneous — not itemized individually due to overlapping notes in the transcription)"},
 "Otros ingresos":{"en":"Other income"},
 "Otros ingresos operacionales (servicios, utilidad en venta de PP&E, recuperaciones, devoluciones, diversos)":{"en":"Other operating income (services, gain on sale of PP&E, recoveries, returns, miscellaneous)"},
