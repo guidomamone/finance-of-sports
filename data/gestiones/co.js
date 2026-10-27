@@ -115,6 +115,10 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Wilmar Sánchez', corto:'Sánchez', cargo:'Presidente', desde:'2024-01-31', hasta:null,
       fuente:'https://laopinion.co/cucuta-deportivo/wilmar-sanchez-nuevo-presidente-y-representante-legal-del-cucuta-deportivo', confirmada:true },
   ],
+  'cortulua-co': [
+    { nombre:'Óscar Arturo Martán Palau', corto:'Martán', cargo:'Presidente', desde:'2016-03-01', hasta:null,
+      fuente:'https://www.tutogolradio.com/explosiva-y-entretenida-entrevista-con-oscar-arturo-martan-presidente-de-cortulua/', confirmada:false },
+  ],
   'leonesfc-co': [
     { nombre:'Carlos Alberto Murillo Giraldo', corto:'Murillo', cargo:'Presidente', desde:'2009-01-01', hasta:null,
       fuente:'https://www.elescenariodelosclasicos.com/page.php?id=3795', confirmada:true },
