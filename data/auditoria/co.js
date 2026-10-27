@@ -513,6 +513,154 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "barranquillafc-co": {
+  "2020": {
+   "auditor": {
+    "nombre": "Leonardo Taylor Pupo",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Barranquilla FC/dictamen-revisor-fiscal-2020.md",
+    "linea": 41
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Luizeth Caballero Navarro",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Barranquilla FC/dictamen-revisor-fiscal-2021.md",
+    "linea": 33
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Luizeth Caballero Navarro",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Barranquilla FC/dictamen-revisor-fiscal-2022.md",
+    "linea": 33
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Luizeth Caballero Navarro",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Barranquilla FC/dictamen-revisor-fiscal-2023.md",
+    "linea": 22
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Luizeth Caballero Navarro",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Barranquilla FC/dictamen-revisor-fiscal-2024.md",
+    "linea": 22
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Luizeth Caballero Navarro",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Barranquilla FC/dictamen-revisor-fiscal-2025.md",
+    "linea": 22
+   }
+  }
+ },
+ "bogotafc-co": {
+  "2020": {
+   "auditor": {
+    "nombre": "Farkaf Triany Gomez Lopez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Bogota FC/dictamen-revisor-fiscal-2020.md",
+    "linea": 18
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Farkaf Triany Gomez Lopez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Bogota FC/dictamen-revisor-fiscal-2021.md",
+    "linea": 18
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Farkaf Triany Gomez Lopez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Bogota FC/dictamen-revisor-fiscal-2022.md",
+    "linea": 16
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Farkaf Triany Gomez Lopez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Bogota FC/dictamen-revisor-fiscal-2023.md",
+    "linea": 16
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Farkaf Triany Gomez Lopez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Bogota FC/dictamen-revisor-fiscal-2024.md",
+    "linea": 16
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Farkaf Triany Gomez Lopez",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Bogota FC/dictamen-revisor-fiscal-2025.md",
+    "linea": 16
+   }
+  }
+ },
  "boyacachico-co": {
   "2020": {
    "auditor": {

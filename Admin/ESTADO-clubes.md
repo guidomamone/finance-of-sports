@@ -140,8 +140,8 @@ COLOMBIA (29)
   Atlético FC             10 ejercicios (2016 a 2025), balance, COP
   Atletico Huila          10 ejercicios (2016 a 2025), balance, COP
   Atlético Nacional       1 ejercicio (2025), balance, COP
-  Barranquilla FC         10 ejercicios (2016 a 2025), balance, COP, sin deuda/caja
-  Bogota FC               10 ejercicios (2016 a 2025), balance, COP, sin deuda/caja
+  Barranquilla FC         10 ejercicios (2016 a 2025), balance, COP
+  Bogota FC               10 ejercicios (2016 a 2025), balance, COP
   Boyacá Chicó            10 ejercicios (2016 a 2025), balance, COP
   Cucuta Deportivo        8 ejercicios (2016, 2017, 2018, 2019, 2022, 2023, 2024, 2025), balance, COP
   Deportes Tolima         10 ejercicios (2016 a 2025), balance, COP

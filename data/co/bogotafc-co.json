@@ -119,7 +119,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1073.082,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-149.522,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-22.245,"tax":-92.404,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-22.245,"tax":-92.404,"gross_debt":9.519,"cash":23.388},
       "official_totals": {"revenue":2141.075,"expenses":1460.29,"net_result":566.136},
       "adjustments": {
         "extra_rows": [
@@ -163,7 +163,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-906.74,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-7.604,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-31.686,"tax":-25.333,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-31.686,"tax":-25.333,"gross_debt":435.185,"cash":22.991},
       "official_totals": {"revenue":1214.168,"expenses":1038.929,"net_result":118.22},
       "adjustments": {
         "extra_rows": [
@@ -206,7 +206,7 @@
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-317.878,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1787.753,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-114.218,"tax":-43.463,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-114.218,"tax":-43.463,"gross_debt":551.574,"cash":31.371},
       "official_totals": {"revenue":2314.632,"expenses":2105.631,"net_result":51.32},
       "adjustments": {
         "extra_rows": [{"label":"Costos financieros","amount":-114.218},{"label":"Ingreso (gasto) por impuestos","amount":-43.463}],
@@ -247,7 +247,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2802.616,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-112.628,"tax":-134.528,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-112.628,"tax":-134.528,"gross_debt":398.755,"cash":99.164},
       "official_totals": {"revenue":3717.087,"expenses":3258.626,"net_result":211.305},
       "adjustments": {
         "extra_rows": [
@@ -292,7 +292,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-750.678,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-48.729,"tax":-56.256,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-48.729,"tax":-56.256,"gross_debt":328.879,"cash":257.244},
       "official_totals": {"revenue":4054.026,"expenses":3829.5,"net_result":119.541},
       "adjustments": {
         "extra_rows": [{"label":"Costos financieros","amount":-48.729},{"label":"Ingreso (gasto) por impuestos","amount":-56.256}],
@@ -331,7 +331,7 @@
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-3316.407,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-917.909,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-103.623,"tax":-93.902,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-103.623,"tax":-93.902,"gross_debt":1891.868,"cash":1201.99},
       "official_totals": {"revenue":4588.888,"expenses":4234.316,"net_result":157.047},
       "adjustments": {
         "extra_rows": [{"label":"Costos financieros","amount":-103.623},{"label":"Ingreso (gasto) por impuestos","amount":-93.902}],
@@ -370,7 +370,7 @@
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-1558.687,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1093.614,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-110.088,"tax":-74.572,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-110.088,"tax":-74.572,"gross_debt":1090.333,"cash":723.948},
       "official_totals": {"revenue":2975.452,"expenses":2652.301,"net_result":138.491},
       "adjustments": {
         "extra_rows": [{"label":"Costos financieros","amount":-110.088},{"label":"Ingreso (gasto) por impuestos","amount":-74.572}],
@@ -409,7 +409,7 @@
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-8260.385,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1434.998,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-239.258,"tax":-253.303,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-239.258,"tax":-253.303,"gross_debt":null,"cash":505.181},
       "official_totals": {"revenue":10636.396,"expenses":9695.383,"net_result":448.452},
       "adjustments": {
         "extra_rows": [{"label":"Costos financieros","amount":-239.258},{"label":"Ingreso (gasto) por impuestos","amount":-253.303}],
@@ -448,7 +448,7 @@
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-2265.32,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1359.597,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-24.295,"tax":-118.869,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-24.295,"tax":-118.869,"gross_debt":null,"cash":174.779},
       "official_totals": {"revenue":3888.975,"expenses":3624.917,"net_result":120.894},
       "adjustments": {
         "extra_rows": [
@@ -490,7 +490,7 @@
         {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-3080.837,"disclosure":"aggregated"},
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1514.154,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-18.607,"tax":-160.995,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-18.607,"tax":-160.995,"gross_debt":null,"cash":161.976},
       "official_totals": {"revenue":5019.631,"expenses":4594.991,"net_result":245.038},
       "adjustments": {
         "extra_rows": [
