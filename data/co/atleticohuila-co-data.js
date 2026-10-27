@@ -16,6 +16,10 @@ const atleticohuilaCoRevenueLinesByYear = {
     {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":18553.054,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":238.601,"disclosureLevel":"aggregated"},
   ],
+  2020: [
+    {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":6221.193,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":403.335,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const atleticohuilaCoExpenseLinesByYear = {
@@ -39,6 +43,11 @@ const atleticohuilaCoExpenseLinesByYear = {
     {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-1600.75,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-1222.15,"disclosureLevel":"aggregated"},
   ],
+  2020: [
+    {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-6730.463,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-1630.812,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-217.187,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const atleticohuilaCoFiscalYearMeta = {
@@ -46,6 +55,7 @@ const atleticohuilaCoFiscalYearMeta = {
   2017: {"currency":"COP","sourceId":"atleticohuila-co-siis-estado-2017","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2017-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-500.28,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":6779.214,"officialTotalExpenses":10213.949,"officialPAT":-3935.015,"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":6211.878,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":8492.848,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
   2018: {"currency":"COP","sourceId":"atleticohuila-co-siis-estado-2018","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2018-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":73.029,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":11164.981,"officialTotalExpenses":10326.493,"officialPAT":911.517,"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":10711.54,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":8284.11,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
   2019: {"currency":"COP","sourceId":"atleticohuila-co-siis-estado-2019","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2019-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-302.358,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":18791.655,"officialTotalExpenses":12270.57,"officialPAT":6218.727,"extraRows":[{"label":"Ingresos financieros","value":1.906},{"label":"Costos financieros","value":-304.264}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":18553.054,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":9447.67,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
+  2020: {"currency":"COP","sourceId":"atleticohuila-co-siis-estado-2020","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2020-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-361.224,"tax":0,"grossDebt":null,"cash":null,"officialTotalRevenue":6624.528,"officialTotalExpenses":8578.462,"officialPAT":-2315.158,"extraRows":[{"label":"Ingresos financieros","value":1.135},{"label":"Costos financieros","value":-362.359},{"label":"Ingreso (gasto) por impuestos","value":0}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":6221.193,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":6730.463,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
 };
 
 const atleticohuilaCoPresupuestoOverlayByYear = {};
@@ -62,6 +72,6 @@ window.CLUB_GENERIC_DATA["atleticohuila-co"] = {
   presupuestoOverlayByYear: atleticohuilaCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"atleticohuila-co-siis-estado-2016":{"id":"atleticohuila-co-siis-estado-2016","clubId":"atleticohuila-co","title":"Atletico Huila — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Huila/siis-estado-2016.pdf"},"atleticohuila-co-siis-estado-2017":{"id":"atleticohuila-co-siis-estado-2017","clubId":"atleticohuila-co","title":"Atletico Huila — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Huila/siis-estado-2017.pdf"},"atleticohuila-co-siis-estado-2018":{"id":"atleticohuila-co-siis-estado-2018","clubId":"atleticohuila-co","title":"Atletico Huila — siis-estado-2018 (ejercicio 2018)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Huila/siis-estado-2018.pdf"},"atleticohuila-co-siis-estado-2019":{"id":"atleticohuila-co-siis-estado-2019","clubId":"atleticohuila-co","title":"Atletico Huila — siis-estado-2019 (ejercicio 2019)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Huila/siis-estado-2019.pdf"}});
+Object.assign(sources, {"atleticohuila-co-siis-estado-2016":{"id":"atleticohuila-co-siis-estado-2016","clubId":"atleticohuila-co","title":"Atletico Huila — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Huila/siis-estado-2016.pdf"},"atleticohuila-co-siis-estado-2017":{"id":"atleticohuila-co-siis-estado-2017","clubId":"atleticohuila-co","title":"Atletico Huila — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Huila/siis-estado-2017.pdf"},"atleticohuila-co-siis-estado-2018":{"id":"atleticohuila-co-siis-estado-2018","clubId":"atleticohuila-co","title":"Atletico Huila — siis-estado-2018 (ejercicio 2018)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Huila/siis-estado-2018.pdf"},"atleticohuila-co-siis-estado-2019":{"id":"atleticohuila-co-siis-estado-2019","clubId":"atleticohuila-co","title":"Atletico Huila — siis-estado-2019 (ejercicio 2019)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Huila/siis-estado-2019.pdf"},"atleticohuila-co-siis-estado-2020":{"id":"atleticohuila-co-siis-estado-2020","clubId":"atleticohuila-co","title":"Atletico Huila — siis-estado-2020 (ejercicio 2020)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Huila/siis-estado-2020.pdf"}});
 
 memberCountByClub["atleticohuila-co"] = null;
