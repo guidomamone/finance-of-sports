@@ -5,7 +5,7 @@
 Lo escribe `node tools/indice-md.mjs --escribir`; no se edita a mano. Cada fila: ruta · KB · qué es · cuándo se lee · cuántos documentos o tools lo citan (←) · a qué otros documentos vivos manda (→).
 Huérfano = nadie lo cita; sin marca = no declara qué es ni cuándo se lee (primera línea `<!-- md: qué es | leer: cuándo -->`).
 
-Carpetas que se cuentan sin listar: `Admin/mediciones` 97, `Admin/Archive` 371, `Admin/carga-clubes` 336, `Admin/sourcing` 1573, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 135, `Admin/lotes` 99.
+Carpetas que se cuentan sin listar: `Admin/mediciones` 97, `Admin/Archive` 371, `Admin/carga-clubes` 336, `Admin/sourcing` 1573, `Admin/gestiones-por-pais` 205, `Admin/ligas-por-pais` 18, `Admin/registros` 136, `Admin/lotes` 99.
 
 ## CLAUDE.md y Admin
 
