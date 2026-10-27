@@ -17,3 +17,5 @@ Estados financieros en disco ahora: 10 ejercicios (2016-2025), cada uno con cert
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2016 desde `Clubes/Colombia/Barranquilla FC/siis-estado-2016.pdf` (sourceId `barranquillafc-co-siis-estado-2016`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2017 desde `Clubes/Colombia/Barranquilla FC/siis-estado-2017.pdf` (sourceId `barranquillafc-co-siis-estado-2017`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2018 desde `Clubes/Colombia/Barranquilla FC/siis-estado-2018.pdf` (sourceId `barranquillafc-co-siis-estado-2018`).
