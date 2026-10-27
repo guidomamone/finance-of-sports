@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1195 — fos comparar-carga [comparar-carga.mjs]
+- `node tools/fos.mjs comparar-carga "<pdf>"` corre el ensayo de `cargar` y lo compara con lo cargado del año: qué frena, si los totales de ingresos y gastos dan lo mismo y qué líneas cambian de categoría; restaura los registros que el ensayo toca. Reemplaza el script suelto que se armaba antes de cada recarga.
+- Medición: no es del pipeline (no pide medición).
+
 ## Versión 1194 — `--respuestas` lee los casos de la cola; la nómina suma «Aportes Admin…» [470 · reglas-categoria.mjs, audit-chequeos-siis.js]
 - `respuestasContradichas()` lee los casos de categoría respondidos de `cola-revision.jsonl` (los que de verdad ganan sobre la regla), no `categorias-aprendidas.jsonl` (24 falsos avisos, 4 reales); el vocabulario de nómina reconoce `admin*` en los aportes.
 - Cierre del 470: Bucaramanga 2019 y 2020 y Fortaleza 2017 recargados con `cargar` sin frenar y con los mismos totales; el comando que rehace la categoría de una línea cargada se descarta (`--cargadas` más `recategorizar-linea --gasto` y la recarga del año alcanzaron).
