@@ -250,7 +250,7 @@ window.RANKINGS["co-primeraB"] = {
   },
   2017: {
     leagueSize: 16,
-    sinDato: ["barranquillafc-co","bogotafc-co"],
+    sinDato: ["bogotafc-co"],
     wiki: {"t":"2017 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"leonesfc-co", revenue:1.848, reportType:"official_balance_sheet",
@@ -274,6 +274,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"cucutadeportivo-co", revenue:1.353, reportType:"official_balance_sheet",
         sourceId:"cucutadeportivo-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.297],["Otros ingresos",0.056]] },
+      { id:"barranquillafc-co", revenue:1.179, reportType:"official_balance_sheet",
+        sourceId:"barranquillafc-co-siis-estado-2017",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.175],["Otros ingresos",0.003]] },
       { id:"orsomarso-co", revenue:0.999, reportType:"official_balance_sheet",
         sourceId:"orsomarso-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.971],["Otros ingresos",0.027]] },

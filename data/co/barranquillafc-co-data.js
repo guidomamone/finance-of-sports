@@ -4,6 +4,10 @@ const barranquillafcCoRevenueLinesByYear = {
     {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":2800.484,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":4.49,"disclosureLevel":"aggregated"},
   ],
+  2017: [
+    {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":3507.364,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":9.934,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const barranquillafcCoExpenseLinesByYear = {
@@ -12,10 +16,16 @@ const barranquillafcCoExpenseLinesByYear = {
     {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-93.753,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-125.275,"disclosureLevel":"aggregated"},
   ],
+  2017: [
+    {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-3093.732,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-222.984,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-163.647,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const barranquillafcCoFiscalYearMeta = {
   2016: {"currency":"COP","sourceId":"barranquillafc-co-siis-estado-2016","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2016-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":-9.704,"grossDebt":null,"cash":null,"officialTotalRevenue":2804.974,"officialTotalExpenses":2818.456,"officialPAT":-23.186,"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":2800.484,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":2599.428,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
+  2017: {"currency":"COP","sourceId":"barranquillafc-co-siis-estado-2017","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2017-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":0,"tax":-12.558,"grossDebt":null,"cash":null,"officialTotalRevenue":3517.298,"officialTotalExpenses":3480.363,"officialPAT":24.377,"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":3507.364,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":3093.732,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
 };
 
 const barranquillafcCoPresupuestoOverlayByYear = {};
@@ -32,6 +42,6 @@ window.CLUB_GENERIC_DATA["barranquillafc-co"] = {
   presupuestoOverlayByYear: barranquillafcCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"barranquillafc-co-siis-estado-2016":{"id":"barranquillafc-co-siis-estado-2016","clubId":"barranquillafc-co","title":"Barranquilla Futbol Club S.A. — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Barranquilla FC/siis-estado-2016.pdf"}});
+Object.assign(sources, {"barranquillafc-co-siis-estado-2016":{"id":"barranquillafc-co-siis-estado-2016","clubId":"barranquillafc-co","title":"Barranquilla Futbol Club S.A. — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Barranquilla FC/siis-estado-2016.pdf"},"barranquillafc-co-siis-estado-2017":{"id":"barranquillafc-co-siis-estado-2017","clubId":"barranquillafc-co","title":"Barranquilla Futbol Club S.A. — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Barranquilla FC/siis-estado-2017.pdf"}});
 
 memberCountByClub["barranquillafc-co"] = null;
