@@ -1375,6 +1375,80 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "orsomarso-co": {
+  "2020": {
+   "auditor": {
+    "nombre": "Martha Cecilia Salazar Escudero (Control Financiero y Tributario SAS)",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Orsomarso/dictamen-revisor-fiscal-2020.md",
+    "linea": 24
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Angelica Duque Velasco",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Orsomarso/dictamen-revisor-fiscal-2021.md",
+    "linea": 71
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Angelica Duque Velasco",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Orsomarso/dictamen-revisor-fiscal-2022.md",
+    "linea": 71
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Angelica Duque Velasco",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Orsomarso/dictamen-revisor-fiscal-2023.md",
+    "linea": 73
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Angelica Duque Velasco",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Orsomarso/dictamen-revisor-fiscal-2024.md",
+    "linea": 71
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Angelica Duque Velasco",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Orsomarso/dictamen-revisor-fiscal-2025.md",
+    "linea": 60
+   }
+  }
+ },
  "realcartagena-co": {
   "2017": {
    "auditor": {
