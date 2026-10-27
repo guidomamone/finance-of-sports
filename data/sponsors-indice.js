@@ -846,6 +846,7 @@ window.SPONSORS_INDICE = [
   ["efapel","EFAPEL",["c"]],
   ["efbet","efbet",["c"]],
   ["effektief-groep","Effektief Groep",["c"]],
+  ["effort","Effort",["m"]],
   ["eggerglas","Eggerglas",["c"]],
   ["eibho","Eibho",["c"]],
   ["eidsiva-energi","Eidsiva Energi",["c"]],

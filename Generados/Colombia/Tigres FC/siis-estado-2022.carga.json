@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Colombia/Tigres FC/siis-estado-2022.pdf",
- "generado": "2026-10-27T13:24:44.816Z",
+ "generado": "2026-10-27T13:26:14.074Z",
  "frena": [],
  "avisos": [],
  "ejercicio": {
@@ -98,7 +98,7 @@
   "source": {
    "id": "tigresfc-co-siis-estado-2022",
    "clubId": "tigresfc-co",
-   "title": "Tigres FC — siis-estado-2022 (ejercicio 2022)",
+   "title": "Tigres Fútbol Club S.A. — siis-estado-2022 (ejercicio 2022)",
    "type": "official_balance_sheet",
    "reliability": "primary",
    "documento": "Clubes/Colombia/Tigres FC/siis-estado-2022.pdf",
@@ -257,8 +257,8 @@
  },
  "liga": {
   "valor": "co-primeraB",
-  "fuente": "NO EXACTA, confirmar en la página del club: roster cacheado de \"2022 Torneo DIMAYOR\" (tools/club-league-reference/co.json), coincidencia única por palabras \"Tigres\" = \"Tigres FC\" (si es el mismo club, agregarlo a alias.json)",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -298,7 +298,7 @@
   },
   "liga": {
    "valor": "co-primeraB",
-   "fuente": "NO EXACTA, confirmar en la página del club: roster cacheado de \"2022 Torneo DIMAYOR\" (tools/club-league-reference/co.json), coincidencia única por palabras \"Tigres\" = \"Tigres FC\" (si es el mismo club, agregarlo a alias.json)",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
    "estado": "ok"
   }
  },

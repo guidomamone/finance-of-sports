@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Colombia/Tigres FC/siis-estado-2016.pdf",
- "generado": "2026-10-27T13:24:44.135Z",
+ "generado": "2026-10-27T13:26:13.369Z",
  "frena": [],
  "avisos": [],
  "ejercicio": {
@@ -122,7 +122,7 @@
   "source": {
    "id": "tigresfc-co-siis-estado-2016",
    "clubId": "tigresfc-co",
-   "title": "Tigres FC — siis-estado-2016 (ejercicio 2016)",
+   "title": "Tigres Fútbol Club S.A. — siis-estado-2016 (ejercicio 2016)",
    "type": "official_balance_sheet",
    "reliability": "primary",
    "documento": "Clubes/Colombia/Tigres FC/siis-estado-2016.pdf",
@@ -322,8 +322,8 @@
  },
  "liga": {
   "valor": "co-primeraB",
-  "fuente": "NO EXACTA, confirmar en la página del club: roster cacheado de \"2016 Categoría Primera B season\" (tools/club-league-reference/co.json), coincidencia única por palabras \"Tigres\" = \"Tigres FC\" (si es el mismo club, agregarlo a alias.json)",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -363,7 +363,7 @@
   },
   "liga": {
    "valor": "co-primeraB",
-   "fuente": "NO EXACTA, confirmar en la página del club: roster cacheado de \"2016 Categoría Primera B season\" (tools/club-league-reference/co.json), coincidencia única por palabras \"Tigres\" = \"Tigres FC\" (si es el mismo club, agregarlo a alias.json)",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
    "estado": "ok"
   }
  },
