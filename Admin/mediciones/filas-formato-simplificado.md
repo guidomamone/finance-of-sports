@@ -37,7 +37,7 @@ Dónde está (filas que tienen menos de 60 % de los clubes; países: clubes que 
 | Inversiones (amortizaciones y depreciación) | 1007 de 1438 (70 %) | 269 de 336 (80 %) | 2.0 % · 8 % | 199 (14 %) | 232 | 0 |
 | Organización de partidos | 769 de 1438 (53 %) | 205 de 336 (61 %) | 7.0 % · 31 % | 413 (29 %) | 256 | 0 |
 | Otras actividades (educación, juvenil, otros deportes, básquet) | 198 de 1438 (14 %) | 62 de 336 (18 %) | 5.6 % · 27 % | 993 (69 %) | 243 | 4 |
-| Administración y gastos generales | 1190 de 1438 (83 %) | 284 de 336 (85 %) | 15.8 % · 72 % | 225 (16 %) | 23 | 0 |
+| Administración y gastos generales | 1190 de 1438 (83 %) | 284 de 336 (85 %) | 15.8 % · 73 % | 225 (16 %) | 23 | 0 |
 | Fútbol profesional (sin desglosar por la fuente) | 276 de 1438 (19 %) | 68 de 336 (20 %) | 74.0 % · 89 % | 1162 (81 %) | 0 | 0 |
 | Otros gastos (catch-all) | 1305 de 1438 (91 %) | 304 de 336 (90 %) | 10.3 % · 51 % | 133 (9 %) | 0 | 0 |
 

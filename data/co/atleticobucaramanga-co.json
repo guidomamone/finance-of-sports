@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-26",
+  "exported_at": "2026-10-27",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "atleticobucaramanga-co",
@@ -396,13 +396,13 @@
       "expenses": [
         {"label":"Costos de ventas mercancias","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"},
         {"label":"Sueldos de administracion","category":"admin_general","subcategory":"admin_general_expense","amount":-117.973,"disclosure":"aggregated"},
-        {"label":"Auxilio de transporte","category":"first_team_staff","subcategory":"wages_squad","amount":-4.865,"disclosure":"aggregated"},
-        {"label":"Otros Auxilios","category":"other_operating_expenses","subcategory":"other_expenses","amount":-66.653,"disclosure":"aggregated"},
-        {"label":"Cesantias","category":"first_team_staff","subcategory":"wages_squad","amount":-10.187,"disclosure":"aggregated"},
-        {"label":"Intereses de cesantias","category":"first_team_staff","subcategory":"wages_squad","amount":-1.017,"disclosure":"aggregated"},
-        {"label":"Prima de servicios","category":"first_team_staff","subcategory":"wages_squad","amount":-9.923,"disclosure":"aggregated"},
-        {"label":"Vacaciones","category":"first_team_staff","subcategory":"wages_squad","amount":-6.062,"disclosure":"aggregated"},
-        {"label":"Indemnizaciones laborales","category":"first_team_staff","subcategory":"wages_squad","amount":-28.01,"disclosure":"aggregated"},
+        {"label":"Auxilio de transporte","category":"admin_general","subcategory":"admin_general_expense","amount":-4.865,"disclosure":"aggregated"},
+        {"label":"Otros Auxilios","category":"admin_general","subcategory":"admin_general_expense","amount":-66.653,"disclosure":"aggregated"},
+        {"label":"Cesantias","category":"admin_general","subcategory":"admin_general_expense","amount":-10.187,"disclosure":"aggregated"},
+        {"label":"Intereses de cesantias","category":"admin_general","subcategory":"admin_general_expense","amount":-1.017,"disclosure":"aggregated"},
+        {"label":"Prima de servicios","category":"admin_general","subcategory":"admin_general_expense","amount":-9.923,"disclosure":"aggregated"},
+        {"label":"Vacaciones","category":"admin_general","subcategory":"admin_general_expense","amount":-6.062,"disclosure":"aggregated"},
+        {"label":"Indemnizaciones laborales","category":"admin_general","subcategory":"admin_general_expense","amount":-28.01,"disclosure":"aggregated"},
         {
           "label": "Aportes a administradores de riesgos profesionales",
           "category": "admin_general",
@@ -431,8 +431,8 @@
           "amount": -4.639,
           "disclosure": "aggregated"
         },
-        {"label":"Aportes i.c.b.f.","category":"first_team_staff","subcategory":"wages_squad","amount":-0.324,"disclosure":"aggregated"},
-        {"label":"Aportes sena","category":"first_team_staff","subcategory":"wages_squad","amount":-0.216,"disclosure":"aggregated"},
+        {"label":"Aportes i.c.b.f.","category":"admin_general","subcategory":"admin_general_expense","amount":-0.324,"disclosure":"aggregated"},
+        {"label":"Aportes sena","category":"admin_general","subcategory":"admin_general_expense","amount":-0.216,"disclosure":"aggregated"},
         {"label":"Honorarios","category":"admin_general","subcategory":"admin_general_expense","amount":-58.323,"disclosure":"aggregated"},
         {"label":"Arrendamientos","category":"admin_general","subcategory":"admin_general_expense","amount":-50.4,"disclosure":"aggregated"},
         {"label":"Servicios","category":"admin_general","subcategory":"admin_general_expense","amount":-3.556,"disclosure":"aggregated"},
@@ -450,7 +450,7 @@
         {"label":"Intereses de cesantias","category":"first_team_staff","subcategory":"wages_squad","amount":-6.216,"disclosure":"aggregated"},
         {"label":"Prima de servicios","category":"first_team_staff","subcategory":"wages_squad","amount":-69.899,"disclosure":"aggregated"},
         {"label":"Vacaciones","category":"first_team_staff","subcategory":"wages_squad","amount":-193.693,"disclosure":"aggregated"},
-        {"label":"Otros auxilios","category":"other_operating_expenses","subcategory":"other_expenses","amount":-11.844,"disclosure":"aggregated"},
+        {"label":"Otros auxilios","category":"first_team_staff","subcategory":"wages_squad","amount":-11.844,"disclosure":"aggregated"},
         {
           "label": "Dotacion y suministro a trabajadores",
           "category": "admin_general",
@@ -597,14 +597,14 @@
       "expenses": [
         {"label":"Costos de ventas mercancías","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"},
         {"label":"Sueldos de administracion","category":"admin_general","subcategory":"admin_general_expense","amount":-74.883,"disclosure":"aggregated"},
-        {"label":"Auxilio de transporte","category":"first_team_staff","subcategory":"wages_squad","amount":-2.846,"disclosure":"aggregated"},
-        {"label":"Otros Auxilios","category":"other_operating_expenses","subcategory":"other_expenses","amount":-35.612,"disclosure":"aggregated"},
-        {"label":"Cesantias","category":"first_team_staff","subcategory":"wages_squad","amount":-7.025,"disclosure":"aggregated"},
-        {"label":"Intereses de cesantias","category":"first_team_staff","subcategory":"wages_squad","amount":-0.724,"disclosure":"aggregated"},
-        {"label":"Prima de servicios","category":"first_team_staff","subcategory":"wages_squad","amount":-8.019,"disclosure":"aggregated"},
-        {"label":"Vacaciones","category":"first_team_staff","subcategory":"wages_squad","amount":-3.501,"disclosure":"aggregated"},
+        {"label":"Auxilio de transporte","category":"admin_general","subcategory":"admin_general_expense","amount":-2.846,"disclosure":"aggregated"},
+        {"label":"Otros Auxilios","category":"admin_general","subcategory":"admin_general_expense","amount":-35.612,"disclosure":"aggregated"},
+        {"label":"Cesantias","category":"admin_general","subcategory":"admin_general_expense","amount":-7.025,"disclosure":"aggregated"},
+        {"label":"Intereses de cesantias","category":"admin_general","subcategory":"admin_general_expense","amount":-0.724,"disclosure":"aggregated"},
+        {"label":"Prima de servicios","category":"admin_general","subcategory":"admin_general_expense","amount":-8.019,"disclosure":"aggregated"},
+        {"label":"Vacaciones","category":"admin_general","subcategory":"admin_general_expense","amount":-3.501,"disclosure":"aggregated"},
         {"label":"Bonificaciones","category":"admin_general","subcategory":"admin_general_expense","amount":-0.541,"disclosure":"aggregated"},
-        {"label":"Indemnizaciones laborales","category":"first_team_staff","subcategory":"wages_squad","amount":-3.3,"disclosure":"aggregated"},
+        {"label":"Indemnizaciones laborales","category":"admin_general","subcategory":"admin_general_expense","amount":-3.3,"disclosure":"aggregated"},
         {
           "label": "Aportes a administradores de riesgos profesionales",
           "category": "admin_general",
@@ -659,7 +659,7 @@
         {"label":"Telefono Fijo e Internet","category":"admin_general","subcategory":"admin_general_expense","amount":-0.992,"disclosure":"aggregated"},
         {"label":"Transporte, Fletes y Acarreos","category":"admin_general","subcategory":"admin_general_expense","amount":-0.319,"disclosure":"aggregated"},
         {"label":"Servicio Mensajeria/ domicilios","category":"admin_general","subcategory":"admin_general_expense","amount":-0.085,"disclosure":"aggregated"},
-        {"label":"Logistica","category":"match_operations","subcategory":"match_organisation_expense","amount":-0.264,"disclosure":"aggregated"},
+        {"label":"Logistica","category":"admin_general","subcategory":"admin_general_expense","amount":-0.264,"disclosure":"aggregated"},
         {
           "label": "Servicio de administracion edificio",
           "category": "admin_general",
@@ -684,7 +684,7 @@
         {"label":"Intereses de cesantias","category":"first_team_staff","subcategory":"wages_squad","amount":-3.719,"disclosure":"aggregated"},
         {"label":"Prima de servicios","category":"first_team_staff","subcategory":"wages_squad","amount":-68.53,"disclosure":"aggregated"},
         {"label":"Vacaciones","category":"first_team_staff","subcategory":"wages_squad","amount":-115.291,"disclosure":"aggregated"},
-        {"label":"Otros auxilios","category":"other_operating_expenses","subcategory":"other_expenses","amount":-16.131,"disclosure":"aggregated"},
+        {"label":"Otros auxilios","category":"first_team_staff","subcategory":"wages_squad","amount":-16.131,"disclosure":"aggregated"},
         {
           "label": "Dotacion y suministro a trabajadores",
           "category": "admin_general",
