@@ -17,3 +17,5 @@ Estados financieros en disco ahora: 8 ejercicios (2017-2024), cada uno con certi
 Color de marca: null — la ficha de es.wikipedia (Tigres Fútbol Club) describe la camiseta titular gris con detalles beige y la alternativa rosada, sin código hex ni color de escudo; sin footylogos (lookup-brand-color sin coincidencias), verificado 2026-10-27
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2016 desde `Clubes/Colombia/Tigres FC/siis-estado-2016.pdf` (sourceId `tigresfc-co-siis-estado-2016`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-27): ejercicio 2017 desde `Clubes/Colombia/Tigres FC/siis-estado-2017.pdf` (sourceId `tigresfc-co-siis-estado-2017`).
