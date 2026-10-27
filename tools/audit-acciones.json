@@ -13,12 +13,12 @@
  "siis-faltante": {
   "hacer": "Bajar los años que SIIS tiene: node tools/siis-estado.mjs --club \"<Club>\" --todos --escribir (o --club todos); después el lote de siempre. El detalle por club: Admin/sourcing/Colombia/siis-inventario.md.",
   "quien": "script",
-  "donde": "Admin/PIPELINE.md, «Colombia: los estados de SIIS»"
+  "donde": "Admin/paises/co.md, «Pipeline de Colombia: los estados de SIIS»"
  },
  "siis-resumen-viejo": {
   "hacer": "Regenerar el resumen y el inventario de SIIS: node tools/siis-estado.mjs --inventario --escribir.",
   "quien": "script",
-  "donde": "Admin/PIPELINE.md, «Colombia: los estados de SIIS»"
+  "donde": "Admin/paises/co.md, «Pipeline de Colombia: los estados de SIIS»"
  },
  "ruta-muerta": {
   "hacer": "Actualizar la referencia al archivo que se renombró o borró; si se nombra para decir que no existe, dejar una entrada en tools/audit-ignore.json con el motivo.",

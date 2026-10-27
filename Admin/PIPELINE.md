@@ -307,25 +307,7 @@ Mitigaciones:
   arriba cierra con lo que salió de esas filas, y lo de abajo queda afuera; (c) un ajuste `fila` que saca un renglón sin lado se respeta
   también en las lecturas 3 y 4 (antes volvía a entrar por su signo). Con (a), Vitória Guimarães 2021-22 pasa de la lectura 5 a la 4
   (mismos totales; abre más notas, así que una recarga pide categorizar esas filas).
-  Escalón "códigos NBB": un estado belga con los códigos legales del
-  esquema NBB (de 70/76A, 70/74 o 9900 hasta 9904; en tabla o en texto suelto) se lee por sus códigos: se cargan las hojas del esquema
-  con el signo de su código (las reversiones "(+)/(-)" negativas restan; el detalle 600/8 + 609 o 650/652/9 si suma su renglón, nunca
-  los dos; la Brutomarge abreviada se abre en Omzet/60/61 + el residuo implícito solo si el residuo no es negativo; con residuo
-  negativo y 60/61 impreso el ingreso es una sola línea, 70/74 = 9900 + 60/61 (las partes impresas no cuadran: no se inventa una
-  composición); sin 60/61 queda sin abrir: el margen, o como gasto si es negativa). Cada año cargado lleva `revenue_basis` (completo,
-  ventas totales o margen bruto) y, si se reconstruyó con 60/61, `revenue_derivation` (`tools/ingreso-derivado.js`; `node tools/fos.mjs
-  ingreso-base` lo completa en lo ya cargado; `audit.js`: `ingreso-reconstruido-no-cierra` e `ingreso-sin-base`). Compuerta: cierran EXACTO (media unidad por fila) todos los totales impresos de la columna del año; si
-  no, la escalera de siempre. No corre si el documento tiene ajustes `fila` (manda el ajuste). Con esas filas la escalera prueba primero
-  la lectura 4. Dos escalones más, con la misma lectura: el chequeo del año vecino compara los códigos 9904 y 9901 impresos de las dos
-  columnas cuando los ingresos se presentan distinto (Brutomarge abierta en un año y no en el otro, reclasificaciones, esquema abreviado
-  contra completo), y el caso "primer año" no hace falta (cada código tiene un solo lado). Medido sobre prueba-completa + los 60 belgas
-  con verificación: los 358 de otros países idénticos; en Bélgica 17 documentos pasan de cola a OK, ninguno de OK a cola, y la carga de
-  los 10 años belgas publicados reproduce lo publicado (10 de 10, como antes). Ensayo gratis: `node tools/nbb.mjs "<archivo.md>"`.
-  El 630 por la nota: si los códigos "Geboekt" de la nota de activos fijos (8072/8079 pases, 8073 goodwill,
-  8271-8276/8279 materiales) suman EXACTO el 630, el 630 se reemplaza por esas partes, con los rótulos de los ajustes ya cargados
-  ("Afschrijvingen immateriële vaste activa (spelers)", "Afschrijvingen goodwill", "Afschrijvingen materiële vaste activa"); si no, queda
-  entero. No en un año ya publicado (sus filas son las que se categorizaron). Medido: 33 de 191 documentos belgas con 630 lo parten; en
-  prueba-completa + belgas, 25 documentos cambian de filas con los mismos totales y estados, y los 10 años publicados se reproducen.
+  Escalón «códigos NBB» (un estado belga con los códigos legales del esquema NBB) y el 630 por la nota: `Admin/paises/be.md`, «Pipeline de Bélgica».
   Escalón "de los cuales": una fila que empieza con "Waarvan:", "dont", "davon", "of which", "de los cuales"... (DE_LOS_CUALES
   de `tools/vocabulario.mjs`) es una parte de la de arriba. Si ninguna lectura cerró, se prueban la 4 y la 5 sin esas filas; compuerta,
   cierre EXACTO. Caso: el 76A belga debajo de la Brutomarge (Lierse SK y Patro Eisden 2025), que antes pedía un ajuste `fila` en 0.
@@ -572,11 +554,7 @@ Mitigaciones:
 
 ### 8 Cargar
 
-**Año belga sin ingresos (ok de Guido).** Un estado belga abreviado cuyo escalón de códigos NBB cerró exacto con la Brutomarge 9900 negativa
-cargada como gasto no tiene ninguna fila de ingresos. Si además el resultado del ejercicio cierra y el total de ingresos de la verificación es 0, `cargar.mjs` ya no
-frena con "ninguna fila de ingresos con categoría aceptable": el total oficial de ingresos es 0, con un aviso, y no se buscan televisión ni estadio en 0. Casos:
-Lierse SK 2020 y 2021, Patro Eisden 2021 (Lierse SK 2019 sigue frenado por su período de 12 meses distinto). Medido en `prueba-completa` (703 documentos, `medir-cargar`):
-solo esos 4 cambian, 0 filas a la cola, 0 categorías distintas.
+**Año belga sin ingresos:** `Admin/paises/be.md`, «Pipeline de Bélgica».
 
 - a) `cargar.mjs --desde-verificacion`: carga solo lo que la etapa 6 dejó en "ok". Tipo de cambio, liga y fuente con página. Si el
   documento no está `listo-para-jev` en el registro, el freno dice por qué (sin `.verificacion.json`, la etapa 6 no cerró, la validación es
@@ -853,23 +831,6 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 
 ---
 
-## Rusia (GIR BO): otro camino de entrada
-
-Rusia no sale de PDFs. Para cada club hay un JSON oficial del fisco ruso (`Clubes/Rusia/<Club>/bfo-AAAA-datos.json`), así que el camino
-reemplaza las etapas 2 a 7 y comparte la 8 (cargar) y la 9 (un commit por año, sin push). El proceso completo, con ejemplos, está en la
-sección Rusia de `Admin/COMO-CORRE-EL-PROYECTO.html`; el detalle de cada escalón, en la cabecera de cada script.
-
-- Escalón 1, `tools/bfo-rusia.mjs` (gratis, sin IA): el formulario 2 ruso con un mapa fijo de código a categoría. Compuerta: la suma de
-  los renglones da el 2300 impreso. Si no cierra, el año no se carga.
-- Escalón 2, `tools/bfo-rusia-notas.mjs` (IA barata, la corre Guido con `--ejecutar`): abre los renglones del formulario 2 con las tablas de
-  las notas explicativas. Compuerta aritmética sin IA: las filas suman el código del formulario 2. Si no suma, el año queda con el renglón
-  entero del escalón 1.
-- Formulario 6, también en `tools/bfo-rusia.mjs`: para los clubes que reciben aportes (sin fines de lucro o con aportes del dueño o del
-  gobierno regional). Compuerta del propio formulario: 6100 + 6200 − 6300 = 6400.
-- Ensayo por defecto: `node tools/bfo-rusia.mjs [--club <Club>]` no escribe el sitio. `--escribir` carga (con la misma función
-  `escribir()` de `cargar.mjs`, que audita y revierte si da P0/P1) y `--reemplazar` reescribe los años ya cargados que tienen tablas de
-  notas o formulario 6.
-
 ## Dinamarca: los informes en XHTML (ESEF / iXBRL)
 
 `Clubes/Dinamarca/` trae informes `aarsrapport-AAAA-MM-DD.xhtml`. El registro, `lote.mjs` y `cargar.mjs` trabajan sobre PDFs, así que `tools/xhtml-aarsrapport.mjs` (gratis, determinista, sin IA ni OCR) deja cada XHTML en la forma que el pipeline ya usa: un `.md` fiel (texto visible, tablas `| celda |`, cifras tal cual se imprimen, sin soft hyphens ni lo oculto) y un `.pdf` al lado, que es el mismo XHTML impreso con Chrome sin ventana. El PDF sirve de ancla del registro y del «página N del visor»; NO es el documento oficial, y la validación `numeros-vs-texto-pdf` controla al conversor, no es una segunda lectura independiente. Por eso el motor queda como «xhtml-ixbrl (determinista)» (`Admin/registros/api/xhtml-ixbrl.jsonl`, que lee `inventario-transcripciones.mjs`) y en la primera línea del `.md`.
@@ -881,16 +842,11 @@ sección Rusia de `Admin/COMO-CORRE-EL-PROYECTO.html`; el detalle de cada escal�
 - Lo ya etiquetado no se paga con IA: `lote.mjs --ejecutar` no corre si la lista tiene un documento de motor `xhtml-ixbrl (determinista)` (frena el lote entero, antes de escribir nada) salvo con `--pagar-ia-xhtml "<motivo>"` (queda en `Admin/registros/pagar-ia-xhtml.jsonl`). El ensayo pone «se frenaría (determinista)» al lado del costo de cada uno y separa el total entre lo que corre (los demás documentos) y lo que se frena. `audit.js` da P1 `pago-ia-sobre-determinista` si un log de API registra una llamada paga sobre uno de esos documentos sin la bandera.
 - Después el documento es un PDF más: `lote.mjs` lo localiza, extrae, verifica y carga con las etapas de siempre; las compuertas aritméticas son las de siempre. Ensayo: `node tools/xhtml-aarsrapport.mjs "<xhtml>|<carpeta>"`; `--escribir` escribe el `.md` y el `.pdf` (no pisa los que existen; `--rehacer` sí).
 
-## Colombia: los estados de SIIS (`tools/siis-estado.mjs`)
+## Lo que solo vale para un país
 
-Para un club colombiano que deposita en SIIS (Supersociedades) el estado de resultados y el balance están como DATOS en la API pública del portal (índices `siis_resultadointegral` y `siis_sitfinan`; consulta en `Admin/sourcing/Colombia/_notas-generales.md`). La regla (SIIS es el estado primario oficial, los cuatro casos y qué pasa con las notas) está en `Admin/paises/co.md`, «Colombia, el estado de resultados…». El camino es el de Dinamarca: la tool deja el documento en la forma que el pipeline ya usa, y después es un PDF más.
-- `node tools/siis-estado.mjs --club "<Club>" --todos --escribir` (NIT de cada carpeta en `tools/siis-clubes.json`; gratis, sin IA): por año deja en `Clubes/Colombia/<Club>/` `siis-estado-2025.md` (el de 2025 es el ejemplo; fiel, motor «siis-api (determinista)», tracked), `.json` (la respuesta tal cual) y `.pdf` (impresión del `.md`, ancla del registro y del visor), los dos últimos sin trackear como cualquier PDF. Registra el motor en `Admin/registros/api/siis-api.jsonl` (lo lee `inventario-transcripciones.mjs`).
-- Compuertas, con una que falle no se escribe nada del año: ingresos − costo de ventas = ganancia bruta; ganancia bruta − gastos ± otros ± financieros − deterioro = ganancia antes de impuestos; menos impuesto, más operaciones discontinuadas = ganancia; ingresos y ganancia iguales a `siis_empresas`; activos = pasivos + patrimonio. Aviso sin frenar: el año siguiente repite este año con otra cifra (reexpresión).
-- Las filas no las lee ninguna IA: la tool arma la especificación del estado (cada rubro con su tipo y lado, `CLASE` en el script) y llama a `armar-a-mano.mjs --escribir`, que valida cada fila contra el `.md`, deja el `.ubicacion.json` y el `.filas.json` y agrega el ajuste `filas-a-mano`. Por eso localizar y extraer cuestan US$ 0; la categorización (Jev, Claude) y el resto de las etapas son las de siempre, y un club nuevo pasa por `alta-club.mjs`.
-- Las notas abren los rubros (`tools/siis-notas.mjs`, caso 2 de la regla): si la carpeta tiene el `estados-financieros-AAAA.md` del año, la tool busca la tabla de las notas cuyas filas (sin subtotales) suman EXACTO un rubro de SIIS y la copia al final del `siis-estado-AAAA.md` (sin «$» ni negritas; el encabezado dice de qué archivo y líneas). Esas filas entran como `notas_ingresos` / `notas_gastos` con `detalla_a` = el rubro, y `verificar.mjs` las cierra como cualquier nota. Una tabla que no suma, o dos distintas que suman, no abren el rubro (el ensayo imprime el motivo y la tabla más cercana). `--sin-notas` lo apaga. Un año ya cargado se rehace con `siis-estado --rehacer --escribir`, `verificar --lista --rubros`, `jev-categorizar`, `categorizar-claude` y `cargar --desde-verificacion --reemplazar --escribir` (cadena de `Admin/CONTRATO-ETAPAS.md`).
-- El camino de un club, en orden: `node tools/club-siis.mjs "<Club>"` (solo lee) dice por año qué está hecho (estado de SIIS, verificación, cola, liga, estadio y sponsor, carga, línea del auditor, si las notas abren) y lo que falta con su comando y los subagentes a lanzar (cola con la regla de Colombia, estadio y sponsor con el brief de `club-sourcing` 0.5, líneas del auditor); `--crear-lista` arma la lista del lote y `--rehacer-anio AAAA` da la cadena para un año ya publicado. `--evaluar` dice si el club vale la pena: solo se descarta una sociedad sin actividad (ingresos 0 en todos los años); la liga NO descarta (se cargan clubes amateurs) y unos ingresos chicos (menos de 500 M de pesos al año) piden revisar. `--avanzar` corre en orden lo mecánico (estados, alta, dictámenes, «Costo de ventas» de más de la mitad de los gastos, lista, inventario) y para en lo que pide juicio: nombre legal y color tras el alta, liga, subagentes y cola; `--ejecutar` corre el lote y `--cargar` carga y publica si no falta nada. Los subagentes (estadio y sponsor, gestiones) son independientes entre sí y del lote: se lanzan JUNTOS, en un solo mensaje con una llamada a Agent cada uno, apenas están el alta y los estados (`--brief <nombre>` imprime cada brief completo; plantillas en `Admin/briefs-subagentes-siis.md`); el del auditor va después de la carga. `node tools/dictamenes-md.mjs "<Club>" --escribir` transcribe los dictámenes de texto nativo y marca duplicados, escaneos y firmas que faltan.
-- `node tools/siis-estado.mjs --inventario --escribir` genera `Admin/sourcing/Colombia/siis-inventario.md`: por NIT los años que SIIS tiene contra los bajados, y los NIT sin carpeta. Es lo que mira sourcing antes de buscar documentos de Colombia.
-- Las listas de prueba tienen la familia «Colombia · siis» (`familias-docs.mjs`) y el medidor `siis` de `pipeline-tools.json` corre las compuertas en ensayo.
+- Colombia, los estados de SIIS (`tools/siis-estado.mjs`, `tools/club-siis.mjs`): `Admin/paises/co.md`, «Pipeline de Colombia: los estados de SIIS».
+- Bélgica, el esquema NBB (escalón «códigos NBB» de la etapa 6, año sin ingresos, caja sin vecino): `Admin/paises/be.md`, «Pipeline de Bélgica».
+- Rusia, otro camino de entrada (`tools/bfo-rusia.mjs`): `Admin/paises/ru.md`.
 
 ## Categoría nueva: recategorizar lo cargado (`tools/recategorizar-etiquetas.mjs`)
 
@@ -917,9 +873,7 @@ busca por PDF y AÑO. Si un PDF alimenta dos años del club (el del documento y 
 geschaeftsbericht-2024-25), el ajuste lleva `--anio AAAA` y vale solo para ese año; uno sin año vale solo si el PDF alimenta un único año.
 Sin ajuste de ese año, el escalón 0 no decide y el año sigue por la escalera.
 
-Caja de un año SIN VECINO en el esquema NBB belga: la escalera no decide (su compuerta pide un vecino), así que la caja sale del
-código 54/58 (la celda que sigue al código) si el balance del propio documento cuadra (20/58 = 10/49). Solo la caja: la deuda por códigos
-(170/4, 42, 43) no coincide con el criterio con que se cargó Bélgica (`cajaNBB` en `tools/caja-deuda.mjs`).
+Caja de un año SIN VECINO en el esquema NBB belga: `Admin/paises/be.md`, «Pipeline de Bélgica».
 
 Caja de un año SIN VECINO en cualquier país (ok de Guido; `cajaSinVecinoAceptable`): si la escalera propone una caja y la
 compuerta solo falla por "ningún año vecino", se acepta cuando tres votos coinciden: (1) la fila está en una tabla del balance cuyo total del
