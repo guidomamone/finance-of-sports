@@ -51,3 +51,9 @@ try { r = publicarCambios(snap, [], escritos); }
 catch (e) { const rv = revertir(snap, []); console.error(`${e.message}\nSe revirtió lo que cambió (${rv.restaurados} restaurados, ${rv.borrados} borrados).`); process.exit(1); }
 if (!r.ok) { console.error(`NO publicado: ${r.motivo}`); process.exit(1); }
 console.log(`Publicado. ${escritos.join('; ') || 'ASSET_V ya estaba subido'}. Auditoría: ${r.audit}.\nAhora commiteá en OTRA llamada de Bash: el hook de commit audita antes de ejecutar el comando entero, así que \`node tools/publicar.mjs\` y \`git commit\` juntos fallan por asset-v-sin-subir.`);
+if (process.argv.includes('--correcciones')) {
+  // el registro y el sitio regenerados van en un commit propio (sin trailer Corrige:: el cambio de datos ya lo llevó el commit anterior)
+  let asunto = '';
+  try { asunto = execFileSync('git', ['log', '-1', '--format=%s'], { cwd: ROOT, encoding: 'utf8' }).trim().replace(/["`$\\]/g, '').slice(0, 90); } catch { /* sin HEAD */ }
+  console.log(`Los dos comandos, cada uno en su llamada de Bash:\n  git add -A\n  git commit -q -m "Registro de correcciones y sitio regenerado tras: ${asunto}"`);
+}

@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1212 — publicar.mjs --correcciones imprime los dos comandos del commit siguiente [publicar.mjs, audit-acciones.json]
+- `tools/publicar.mjs --correcciones` termina imprimiendo el `git add -A` y el `git commit -q -m "Registro de correcciones y sitio regenerado tras: <asunto del último commit>"` exactos (cada uno en su llamada de Bash); `correcciones-desfasado` en `audit-acciones.json` lo dice igual. Sin cambio de lógica.
+- Medición: idéntico (`audit`, `escribir`). Sin revisión independiente de la Auditora.
+
 ## Versión 1211 — Tigres FC 2016 y 2017: «Costo de ventas» queda en otros gastos [463 · tigresfc-co]
 - Decisión por la regla de Colombia (`Admin/paises/co.md`): el rubro pesa 43 % (2016) y 41 % (2017) de los gastos y el comparativo del año siguiente lo repite como «Costo de ventas» con «Gastos de ventas» en 0, así que no entra en la excepción de la actividad deportiva (a diferencia de 2018). No se tocó ningún dato; el motivo del aviso silenciado `siis-entre-anios` de Tigres 2018→2019 lo dice. Sale del 463 el punto (i).
 - Medición: idéntico (sin cambio de datos ni de tools).

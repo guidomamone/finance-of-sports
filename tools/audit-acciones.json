@@ -146,7 +146,7 @@
   "donde": "skill start-session-finance-of-sports-project, sección 5"
  },
  "correcciones-desfasado": {
-  "hacer": "node tools/publicar.mjs --correcciones (regenera el registro, y si cambió data/ publica); commitear el registro",
+  "hacer": "node tools/publicar.mjs --correcciones (regenera el registro, y si cambió data/ publica; al final imprime el git add -A y el git commit exactos, cada uno en su llamada de Bash)",
   "quien": "script",
   "donde": "Admin/CONVENCIONES.md, trailer Corrige:"
  },
