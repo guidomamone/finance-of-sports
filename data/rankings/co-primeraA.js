@@ -68,7 +68,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2024: {
     leagueSize: 20,
-    sinDato: ["jaguares-co"],
     wiki: {"t":"2024 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:38.155, reportType:"official_balance_sheet",
@@ -111,6 +110,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"fortalezaceif-co", revenue:2.768, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-estados-financieros-2024",
         mix:[["Comercial / Sponsors",0.589],["Estadio",1.012],["Televisión",0.34],["Premios por competencias",0.141],["Venta de Jugadores",0.342],["Otras actividades (educación y otros deportes)",0.03],["Otros ingresos",0.314]] },
+      { id:"jaguares-co", revenue:2.413, reportType:"official_balance_sheet",
+        sourceId:"jaguares-co-siis-estado-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.367],["Otros ingresos",0.046]] },
       { id:"boyacachico-co", revenue:1.874, reportType:"official_balance_sheet",
         sourceId:"boyacachico-co-estados-financieros-2024",
         mix:[["Comercial / Sponsors",0.358],["Estadio",0.156],["Televisión",1.722],["Otros ingresos",-0.36]] },
