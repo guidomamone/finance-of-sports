@@ -12,6 +12,7 @@
 // USO: node tools/fos.mjs cerrar <id> [--cerrar] [--verificado "qué se miró y dónde quedó"] [--forzar] [--sin-doc "motivo"]     (un «Verificar: manual» pide --verificado y deja la constancia en el CHANGELOG; SIN --cerrar solo revisa: no toca el TODO ni regenera el índice; con --cerrar borra el punto del TODO y regenera el índice;
 //      --forzar: cierra aunque su «Verificar:» no se cumpla; --sin-doc: ESTADO.md y PIPELINE.md se miraron y siguen siendo ciertos)
 //      Por defecto no se cierra porque un cierre sin querer borra un punto con trabajo pendiente (pasó con el 407).
+import { argumentoDesconocido } from './args-desconocidos.mjs';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { readFileSync, readdirSync, mkdirSync, writeFileSync, unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -20,6 +21,7 @@ const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
 const id = A.find((a) => /^\d+$/.test(a));
 if (!id) { console.error('Uso: node tools/fos.mjs cerrar <id del punto> [--cerrar] [--forzar] [--sin-doc "motivo"]   (sin --cerrar solo revisa; con --cerrar borra el punto del TODO)'); process.exit(1); }
+{ const raro = argumentoDesconocido(A, ['--cerrar', '--forzar', '--verificado', '--sin-doc'], { '--escribir': '--cerrar', '--ejecutar': '--cerrar' }); if (raro) { console.error(raro); process.exit(1); } } // un flag mal escrito no corre en ensayo sin decirlo
 const ENSAYO = !A.includes('--cerrar');
 const node = (args) => spawnSync('node', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28 });
 const git = (...a) => execFileSync('git', a, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28 });

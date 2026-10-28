@@ -26,6 +26,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1244 — fos cerrar: un flag desconocido frena con 1 [478 · cerrar.mjs, args-desconocidos.mjs, probar-cerrar.mjs]
+- `node tools/fos.mjs cerrar 401 --escribir` ya no corre en ensayo sin decirlo: sale con 1 y «Argumento desconocido: --escribir (¿--cerrar?)». Módulo `args-desconocidos.mjs` (el mismo aviso que `medir-pipeline.mjs`) y `probar-cerrar.mjs`.
+- Medición: tool de «orden» (no del pipeline): no pide medición; `probar-cerrar.mjs` ok.
+
+---
+
 ## Versión 1243 — lookup-club-league pasa a .mjs: sin el aviso MODULE_TYPELESS_PACKAGE_JSON [478 · lookup-club-league.mjs, alta-club-escribir.mjs, fetch-club-league-reference.mjs, con-worktree.mjs, probar-lookup-club-league.mjs]
 - `tools/lookup-club-league.js` → `.mjs` (la salida ya no trae el aviso de Node); los llamadores (`club-siis`, `alta-club-escribir`, `fetch-club-league-reference`, `prepare-onboarding`, eslint, `audit-acciones.json`) y los documentos vivos apuntan al nombre nuevo; el aviso de «NO EXACTA» ya no nombra un club. `con-worktree.mjs` borra de la copia las tools que ya no existen en este árbol (la copia conservaba la `.js` vieja de HEAD y `prueba-escribir` fallaba por `tool-sin-clasificar`). Prueba nueva `probar-lookup-club-league.mjs`.
 - Medición: lote completo idéntico (alta, cargar, lote-ensayo); veredicto GENERAL; sin revisión independiente. Defecto visto: `medir-pipeline.mjs` aborta con un renombre en el índice de git (`R a -> b`); hay que dejarlo sin marcar.
