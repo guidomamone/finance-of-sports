@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1232 — La Equidad: la línea «Gastos de administración» sin desglose, que `prueba-escribir` había detectado [476 · sin-desglose-tipo.mjs · laequidad-co]
+- `sin-desglose-tipo.mjs --pais co --escribir` en los datos reales agregó a `data/co/laequidad-co.json` una entrada de `no_breakdown` («Gastos de administración», 24.415,721, `other`) que faltaba; ensayo antes y después (0 por completar). El resto del JSON no cambió salvo `exported_at`. `publicar` subió `ASSET_V` 2110 a 2111 y regeneró las páginas.
+- Medición: la regla la comprobó `audit.js` (P0 0 · P1 0 · P2 0 · P3 9, igual que antes); la tool no cambió (sin medición de tools).
+
 ## Versión 1231 — 401: la prueba de escritura cubre las últimas cuatro tools y el punto se cierra [401 · prueba-escribir.mjs]
 - `prueba-escribir.mjs` suma `siis-estado --club --escribir` (baja Tolima 2025 de SIIS, imprime el PDF con Chrome y deja json, md y filas iguales a los de HEAD salvo las fechas; de paso ejercita `armar-a-mano`), `texto-propio-a-md --escribir` (rearma la página 8 de SønderjyskE 2024; el `.md` anterior tiene que quedar guardado idéntico) y `catalogo-liga --escribir` (se saca `cy-seconddivision` de la copia y la tool tiene que volver a escribir la misma línea). Las tres con red; sin ella lo dicen y siguen.
 - `bfo-rusia-notas --ejecutar` llama a la API de pago: va detrás de `node tools/prueba-escribir.mjs --con-api` (~US$ 0,10 por corrida, tope de US$ 1 en la prueba; copia la clave a la copia descartable, que se borra). Las 4 tablas de Krasnodar 2025 salen con las mismas sumas que las de HEAD. `escriben_sin_prueba` queda vacío y `bfo-rusia-notas` mide con `escribir`.

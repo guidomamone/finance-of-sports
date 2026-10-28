@@ -50,7 +50,6 @@ Lo que falta de los clubes colombianos ya cargados. Cada pendiente se hace o se 
 - [ ] Dictámenes del revisor fiscal sin transcribir (sourcing; `club-siis "<Club>"` los lista): Tigres 2016 a 2019 y 2023, Atlético FC 2016 a 2019 y 2021, Cortulua 2020, y 2016 a 2019 de Huila, Orsomarso, Barranquilla FC y Bogotá FC. Huecos que solo el club puede dar: La Equidad 2016, 2018 y 2019; Águilas Doradas 2016 y 2018; Bucaramanga 2017, 2018 y 2021 (mail solo si Guido lo pide).
 - [ ] Skills (un commit por skill, Guido ve el diff): `club-sourcing` (`paises/Colombia.md` y `_notas-generales.md`: «NOTAS EF» no es «el paquete COMPLETO»; `siis_resultadointegral` es dato oficial de cada año) y `club-or-year-onboarding` (el camino SIIS).
 - [ ] Cositas chicas del 461: la nota de ingreso negativo a 375 px y con teclado; imágenes `og/` y tabla de los otros seis clubes de margen bruto; nota en español de la vista de varios años; 414 (la carga manda a la cola una «ganancia en inmovilizado» que pese poco); `fos liga-segunda-fuente-local --escribir`.
-- [ ] `node tools/sin-desglose-tipo.mjs --pais co --escribir` agrega 1 línea a La Equidad (la vio `prueba-escribir` sobre los datos de HEAD): correrlo en los datos reales, medir que no cambia nada más y commitear.
 Terminado cuando: cada pendiente de arriba está hecho o descartado con su motivo escrito acá.
 
 Verificar: manual
