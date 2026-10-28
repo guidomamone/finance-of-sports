@@ -207,9 +207,11 @@ window.RANKINGS["co-primeraA"] = {
   },
   2021: {
     leagueSize: 21,
-    sinDato: ["atlnacional-co"],
     wiki: {"t":"2021 Liga DIMAYOR","lang":"en","at":"2026-10-02","n":21},
     clubs: [
+      { id:"atlnacional-co", revenue:23.294, reportType:"official_balance_sheet",
+        sourceId:"atlnacional-co-siis-estado-2021",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",22.931],["Otros ingresos",0.363]] },
       { id:"americadecali-co", revenue:13.105, reportType:"official_balance_sheet",
         sourceId:"americadecali-co-siis-estado-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",12.186],["Otros ingresos",0.919]] },
