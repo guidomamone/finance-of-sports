@@ -33,3 +33,5 @@ Estados financieros en disco ahora: 10 ejercicios (2016-2025), cada uno con cert
 - Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2024 desde `Clubes/Colombia/Real Santander/siis-estado-2024.pdf` (sourceId `realsantander-co-siis-estado-2024`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2025 desde `Clubes/Colombia/Real Santander/siis-estado-2025.pdf` (sourceId `realsantander-co-siis-estado-2025`).
+
+- Color de marca: Real Santander `#0CB7F2` (celeste y blanco, predomina el celeste; infobox de es.wikipedia «Real Santander»; Gemini: sin cambios de color desde 2006, tampoco como Real San Andrés 2019 y 2020). `lookup-brand-color` no lo trae (club no cacheado).

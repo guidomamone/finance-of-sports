@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1261 — Jaguares y Real Santander (2016 a 2025) desde SIIS: 20 club-años y 20 hallazgos de las tools [463, 479 · club-siis.mjs · jaguares-co, realsantander-co]
+- Dos clubes nuevos cargados con el camino de `club-siis` (estados, alta, dictámenes, tres subagentes, lote): 20 años verificados, 0 frenados, sin preguntas de categoría; 11 líneas del auditor (todas sin salvedades); colores `#38B8F5` y `#0CB7F2`; liga 2019 y 2020 de Real Santander como «Real San Andrés» (Primera B). Gestiones `confirmada:false` y sponsor `sin-fuente` (punto 463).
+- Los hallazgos (falsos errores, salidas que faltan, defectos y nueve propuestas, ninguna sobre datos) están en `Admin/mediciones/463-hallazgos-20-club-anios.md` y en el punto nuevo 479.
+- Medición: ninguna tool cambió; `audit` en P0 a P2 = 0.
+
+---
+
 ## Versión 1260 — 476, pantallas: «n/d*» coherente en la vista multi-año e «Intereses netos» e «Impuestos» fijos [476 · finanzas-multi.js, finanzas-render.js]
 - Con el mockup aprobado por Guido (`Prototyping/Pantallas/mockup-476.html`): en la vista de varios años, las celdas `incluidoEn` (que mostraban «—» con bocadillo) llevan la marca «n/d*» con el mismo bocadillo, así Bucaramanga 2021 y 2022 ya no mezclan «n/d*» y «—»; y los años cargados con estado completo (ingresos financieros, costos financieros, impuestos) se agrupan en «Intereses netos» e «Impuestos» como los simplificados (Tolima 2016 a 2024: de cinco filas con huecos a dos). La etiqueta «Solo SIIS» no se hace (Guido: ya está en Fuentes).
 - Verificado: Bucaramanga y Tolima coinciden con el mockup cifra por cifra, 375 px sin scroll horizontal, sin errores en consola, `audit` P0 a P2 en 0; ASSET_V 2138 a 2139. No se probó en inglés y español lado a lado más allá de los textos existentes (no hay textos nuevos).

@@ -1473,6 +1473,68 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "jaguares-co": {
+  "2020": {
+   "auditor": {
+    "nombre": "Edinson Jiménez González",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Jaguares/dictamen-revisor-fiscal-2020.md",
+    "linea": 37
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Edinson Jiménez González",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Jaguares/dictamen-revisor-fiscal-2022.md",
+    "linea": 64
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Edinson Jiménez González",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Jaguares/dictamen-revisor-fiscal-2023.md",
+    "linea": 64
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Edinson Jiménez González",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Jaguares/dictamen-revisor-fiscal-2024.md",
+    "linea": 64
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Edinson Jiménez González",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Jaguares/dictamen-revisor-fiscal-2025.md",
+    "linea": 60
+   }
+  }
+ },
  "junior-co": {
   "2025": {
    "auditor": {
@@ -1967,6 +2029,80 @@ Object.assign(window.CLUB_AUDITORIA, {
    "continuidad": false,
    "fuente": {
     "md": "Clubes/Colombia/Real Cartagena/dictamen-revisor-fiscal-2025.md",
+    "linea": 94
+   }
+  }
+ },
+ "realsantander-co": {
+  "2020": {
+   "auditor": {
+    "nombre": "Consultoría & Revisoría S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Real Santander/dictamen-revisor-fiscal-2020.md",
+    "linea": 112
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Consultoría & Revisoría S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Real Santander/dictamen-revisor-fiscal-2021.md",
+    "linea": 112
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Consultoría & Revisoría S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Real Santander/dictamen-revisor-fiscal-2022.md",
+    "linea": 75
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Consultoría & Revisoría S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Real Santander/dictamen-revisor-fiscal-2023.md",
+    "linea": 82
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Consultoría & Revisoría S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Real Santander/dictamen-revisor-fiscal-2024.md",
+    "linea": 94
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Consultoría & Revisoría S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Real Santander/dictamen-revisor-fiscal-2025.md",
     "linea": 94
    }
   }

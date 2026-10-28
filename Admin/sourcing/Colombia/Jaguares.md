@@ -33,3 +33,5 @@ Estados financieros en disco ahora: 7 ejercicios (2017, 2019-2020, 2022-2025), c
 - Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2024 desde `Clubes/Colombia/Jaguares/siis-estado-2024.pdf` (sourceId `jaguares-co-siis-estado-2024`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2025 desde `Clubes/Colombia/Jaguares/siis-estado-2025.pdf` (sourceId `jaguares-co-siis-estado-2025`).
+
+- Color de marca: Jaguares `#38B8F5` (celeste; hex de la plantilla de la camiseta local de es.wikipedia «Jaguares de Córdoba»; Gemini con búsqueda: camiseta local celeste, blanco y verde, predomina el celeste, fuentes larazon.co y todosobrecamisetas.com).
