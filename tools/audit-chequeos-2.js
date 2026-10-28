@@ -505,6 +505,8 @@ const GENERADORES = [
   ['generar-data.mjs',          'los data/<país>/<id>-data.js (se generan de su JSON: nunca a mano)', 'json-js-desfasado'], // el JSON es la fuente
   ['validar-esquema-json.mjs',  'el JSON de algún club (no valida contra data/schema/club-v2.json)', 'json-no-valida'],
   ['generar-correcciones.mjs',  'data/correcciones/ (el registro público de correcciones, to-do 247)', 'correcciones-desfasado'],
+  ['generar-ultimas-cargas.mjs','data/ultimas-cargas.js (el card Últimas cargas de Inicio, to-do 480)', 'ultimas-cargas-desfasado'],
+  ['generar-proximas-cargas.mjs','data/proximas-cargas.js (el card Próximas cargas de Inicio, to-do 480)', 'proximas-cargas-desfasado'],
   ['generar-manifiesto.mjs',    'data/manifiesto.js (la versión de cada archivo de data/)', 'manifiesto-desfasado'],
 ];
 // Los `--check` de esta función son independientes y solo leen: execJuntos (audit-base.js) los lanza todos a la vez; mismo resultado y mismos mensajes que correrlos de a uno.

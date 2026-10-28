@@ -206,7 +206,7 @@ ${tr}
   // rompería --check, ver el comentario de generate-fuentes-page.js).
   const fuentes = fs.existsSync(path.join(ROOT, 'fuentes')) ? fs.readdirSync(path.join(ROOT, 'fuentes')).filter((f) => f.endsWith('.html')).sort() : [];
   const todasLigas = Object.keys(api.rankings).filter((l) => api.LEAGUES[l]).sort();
-  out.urls = ['index.html', 'fuentes.html', 'metodologia.html', 'correcciones.html', ...fuentes.map((f) => `fuentes/${f}`), ...todosClubs.map((id) => `club/${id}`), ...todasLigas.map((l) => `liga/${l}`)];
+  out.urls = ['index.html', 'fuentes.html', 'metodologia.html', 'correcciones.html', 'ultimas-cargas.html', ...fuentes.map((f) => `fuentes/${f}`), ...todosClubs.map((id) => `club/${id}`), ...todasLigas.map((l) => `liga/${l}`)];
   out.sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <!-- GENERADO por tools/generate-club-pages.js. No editar a mano. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

@@ -155,5 +155,17 @@
   },
   "recategorizar-etiquetas.mjs": {
     "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "audit-chequeos-2.js": {
+    "sinDocumentos": "chequeos de la auditoría sobre el sitio y los generadores; no lee documentos"
+  },
+  "generate-club-pages.js": {
+    "sinDocumentos": "genera las páginas de club, de liga y el sitemap desde los datos; no lee documentos de Clubes/"
+  },
+  "generar-ultimas-cargas.mjs": {
+    "sinDocumentos": "arma data/ultimas-cargas.js desde el historial de git; no lee documentos"
+  },
+  "generar-proximas-cargas.mjs": {
+    "sinDocumentos": "arma data/proximas-cargas.js desde el registro de transcripciones; no lee documentos"
   }
 }

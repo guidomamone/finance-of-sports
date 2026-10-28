@@ -166,6 +166,14 @@ for (const p of plan) {
   }
   if (p.alta && !escritos) { revertirAlta(p.alta.clubId); console.log(`  ${nombre}: ningún año se escribió; alta de ${p.alta.clubId} revertida`); }
 }
+// ÚLTIMAS Y PRÓXIMAS CARGAS: data/ultimas-cargas.js sale del historial de los commits de arriba, así que cada carga lo deja un año atrás (su propio commit
+// todavía no existía cuando cargar.mjs generó). Se regenera acá, con el manifiesto que lo hashea, y va en su propio commit para no dejar data/ sucio (el
+// próximo lote lo frenaría). Su asunto no dice «por el pipeline»: no cuenta como carga.
+if (commits) {
+  node('tools/generar-ultimas-cargas.mjs', []); node('tools/generar-proximas-cargas.mjs', []); node('tools/generar-manifiesto.mjs', []);
+  git('add', '--', 'data/ultimas-cargas.js', 'data/proximas-cargas.js', 'data/manifiesto.js');
+  if (String(git('diff', '--cached', '--name-only').stdout).trim()) git('commit', '-q', '-m', `Últimas cargas y manifiesto al cierre de ${LISTA}`);
+}
 console.log(`\nEscritos en el sitio: ${commits === 1 ? '1 año' : `${commits} años`}${commits ? ` (${escritosTodos.join(', ')})` : ''}${commits ? ', un commit cada uno' : ''}. No se pusheó nada.`);
 if (noEscritos.length) { console.log(`No escritos ${noEscritos.length}:`); for (const x of noEscritos) console.log(`   ${x.pdf.split('/').slice(2).join('/')}: ${x.motivo}`); }
 // QUIÉN AUDITA: NO FRENA LA CARGA, PERO AVISA. Los años que se acaban de escribir y todavía no tienen su línea en Admin/registros/auditoria.jsonl

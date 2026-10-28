@@ -128,7 +128,7 @@ try {
     const r = spawnSync('node', [join(W, 'tools/cargar-lote.mjs'), '--lista', 'lista-lote.txt', '--escribir'], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28, timeout: 400_000 });
     const out = (r.stdout || '') + (r.stderr || '');
     if (r.status !== 0 || ERROR_DE_CODIGO.test(out) || !/escrito y commiteado/.test(out)) throw new Error(`cargar-lote --escribir ${r.status == null ? 'no terminó' : `salió con ${r.status}`} y ${/escrito y commiteado/.test(out) ? 'escribió' : 'no escribió'}: ${out.trim().split('\n').slice(-5).join(' | ')}`);
-    if (!/SønderjyskE 2025/.test(gitW('log', '-1', '--format=%s'))) throw new Error('cargar-lote --escribir no dejó el commit del año');
+    if (!/SønderjyskE 2025/.test(gitW('log', '-2', '--format=%s'))) throw new Error('cargar-lote --escribir no dejó el commit del año');
     const ahora = JSON.parse(readFileSync(jf, 'utf8')).years.find((x) => x.fiscal_year === ANIO2);
     if (!ahora || canon(ahora) !== esperado) throw new Error(`cargar-lote --escribir cargó SønderjyskE ${ANIO2} distinto del que HEAD tenía (mismo documento, mismo camino):\n  esperado ${esperado.slice(0, 300)}\n  ahora    ${ahora ? canon(ahora).slice(0, 300) : '(sin el año)'}`);
     console.log(`  ok cargar-lote --escribir (SønderjyskE ${ANIO2} vuelve a cargarse, con su commit, idéntico al de HEAD)`);
