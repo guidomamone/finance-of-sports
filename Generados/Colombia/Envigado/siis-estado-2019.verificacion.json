@@ -1,0 +1,425 @@
+{
+ "pdf": "Clubes/Colombia/Envigado/siis-estado-2019.pdf",
+ "md": "Clubes/Colombia/Envigado/siis-estado-2019.md",
+ "generado": "2026-10-28T00:21:41.157Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "envigado-co",
+ "year": 2019,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Envigado/siis-estado-2019.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-28 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2019.md L11-L144",
+   "autor": "Claude",
+   "fecha": "2026-10-28"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 0.00015099999654921703
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2019: 24767.056849 en este documento y 24383.890984 en siis-estado-2020.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2018",
+   "ok": true,
+   "detalle": "ingresos de 2018: 16830.396528 en siis-estado-2018.pdf y 16830.396525 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "línea 110: 502,775,580 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 111: 342,707,800 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 112: 25,259,100 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 113: 13,743,861,792 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 114: 721,685,081 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 115: 701,922,349 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 116: 4,000,000 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 117: 176,500,800 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 118: 676,402,428 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 119: 3,305,719,076 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 120: 72,033,500 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 121: 313,647,379 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 122: 661,656,000 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 123: 662,282,876 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 124: 102,606,223 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 125: 2,000,000,000 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 125: 2,000,000,000 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 134: 108,558,369 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 135: 274,607,190 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 138: 1,000,000 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 139: 316,968,921 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 141: 52,860,925 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 24767.056849,
+  "gastos": 16668.398,
+  "financiero": 963.298,
+  "impuesto": 2232.431,
+  "resultadoImpreso": 4902.93,
+  "resultadoParaCargar": 4902.93,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Escuelas de fútbol",
+   "lado": "ingreso",
+   "M": 502.77558,
+   "pagina": 1,
+   "linea": 110,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Taquilla",
+   "lado": "ingreso",
+   "M": 342.7078,
+   "pagina": 1,
+   "linea": 111,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Abonados",
+   "lado": "ingreso",
+   "M": 25.2591,
+   "pagina": 1,
+   "linea": 112,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Venta de derechos deportivos (1)",
+   "lado": "ingreso",
+   "M": 13743.861792,
+   "pagina": 1,
+   "linea": 113,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Préstamo de derechos deportivo (2)",
+   "lado": "ingreso",
+   "M": 721.685081,
+   "pagina": 1,
+   "linea": 114,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Contribución de solidaridad (3)",
+   "lado": "ingreso",
+   "M": 701.922349,
+   "pagina": 1,
+   "linea": 115,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Publicidad y propaganda",
+   "lado": "ingreso",
+   "M": 4,
+   "pagina": 1,
+   "linea": 116,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Derechos televisión internacional (4)",
+   "lado": "ingreso",
+   "M": 176.5008,
+   "pagina": 1,
+   "linea": 117,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Derechos televisión abierta RCN (4)",
+   "lado": "ingreso",
+   "M": 676.402428,
+   "pagina": 1,
+   "linea": 118,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Derechos televisión cerrada Win Sports (4)",
+   "lado": "ingreso",
+   "M": 3305.719076,
+   "pagina": 1,
+   "linea": 119,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Arbitraje",
+   "lado": "ingreso",
+   "M": 72.0335,
+   "pagina": 1,
+   "linea": 120,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Federación colombiana de fútbol",
+   "lado": "ingreso",
+   "M": 313.647379,
+   "pagina": 1,
+   "linea": 121,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Patrocinio",
+   "lado": "ingreso",
+   "M": 661.656,
+   "pagina": 1,
+   "linea": 122,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Cuotas de sostenimiento (5)",
+   "lado": "ingreso",
+   "M": 662.282876,
+   "pagina": 1,
+   "linea": 123,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Venta de mercancías",
+   "lado": "ingreso",
+   "M": 102.606223,
+   "pagina": 1,
+   "linea": 124,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Entretenimiento y esparcimiento",
+   "lado": "ingreso",
+   "M": 2000,
+   "pagina": 1,
+   "linea": 125,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Intereses",
+   "lado": "ingreso",
+   "M": 108.558369,
+   "pagina": 1,
+   "linea": 134,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Diferencia En Cambio",
+   "lado": "ingreso",
+   "M": 274.60719,
+   "pagina": 1,
+   "linea": 135,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Utilidad En Venta De Propiedad",
+   "lado": "ingreso",
+   "M": 1,
+   "pagina": 1,
+   "linea": 138,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Reclamos A.R.L.",
+   "lado": "ingreso",
+   "M": 316.968921,
+   "pagina": 1,
+   "linea": 139,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Reintegro De Costos Y Gastos",
+   "lado": "ingreso",
+   "M": 52.860925,
+   "pagina": 1,
+   "linea": 141,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Aprovechamientos",
+   "lado": "ingreso",
+   "M": 0.000521,
+   "pagina": 1,
+   "linea": 142,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Ajuste Al Peso",
+   "lado": "ingreso",
+   "M": 0.000939,
+   "pagina": 1,
+   "linea": 143,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Costo de ventas",
+   "lado": "gasto",
+   "M": 73.612,
+   "pagina": 1,
+   "linea": 12,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de ventas",
+   "lado": "gasto",
+   "M": 13661.545,
+   "pagina": 1,
+   "linea": 14,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de administración",
+   "lado": "gasto",
+   "M": 2520.684,
+   "pagina": 1,
+   "linea": 15,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros gastos",
+   "lado": "gasto",
+   "M": 412.557,
+   "pagina": 1,
+   "linea": 17,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Costos financieros",
+   "M": -963.298,
+   "linea": 19
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "M": -2232.431,
+   "linea": 21
+  }
+ ],
+ "confirmadosPorSumas": [
+  {
+   "linea": 110,
+   "numero": "502,775,580"
+  },
+  {
+   "linea": 111,
+   "numero": "342,707,800"
+  },
+  {
+   "linea": 112,
+   "numero": "25,259,100"
+  },
+  {
+   "linea": 113,
+   "numero": "13,743,861,792"
+  },
+  {
+   "linea": 114,
+   "numero": "721,685,081"
+  },
+  {
+   "linea": 115,
+   "numero": "701,922,349"
+  },
+  {
+   "linea": 116,
+   "numero": "4,000,000"
+  },
+  {
+   "linea": 117,
+   "numero": "176,500,800"
+  },
+  {
+   "linea": 118,
+   "numero": "676,402,428"
+  },
+  {
+   "linea": 119,
+   "numero": "3,305,719,076"
+  },
+  {
+   "linea": 120,
+   "numero": "72,033,500"
+  },
+  {
+   "linea": 121,
+   "numero": "313,647,379"
+  },
+  {
+   "linea": 122,
+   "numero": "661,656,000"
+  },
+  {
+   "linea": 123,
+   "numero": "662,282,876"
+  },
+  {
+   "linea": 124,
+   "numero": "102,606,223"
+  },
+  {
+   "linea": 125,
+   "numero": "2,000,000,000"
+  },
+  {
+   "linea": 125,
+   "numero": "2,000,000,000"
+  },
+  {
+   "linea": 134,
+   "numero": "108,558,369"
+  },
+  {
+   "linea": 135,
+   "numero": "274,607,190"
+  },
+  {
+   "linea": 138,
+   "numero": "1,000,000"
+  },
+  {
+   "linea": 139,
+   "numero": "316,968,921"
+  },
+  {
+   "linea": 141,
+   "numero": "52,860,925"
+  }
+ ]
+}

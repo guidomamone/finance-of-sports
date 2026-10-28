@@ -1,0 +1,620 @@
+{
+  "md": "Clubes/Colombia/Envigado/siis-estado-2020.md",
+  "pdf": "Clubes/Colombia/Envigado/siis-estado-2020.pdf",
+  "club": "envigado-co",
+  "year": 2020,
+  "generatedAt": "2026-10-28T00:21:41.196Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Matriculas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        20.3303
+      ],
+      "glosa": "Matriculas"
+    },
+    {
+      "label": "Mensualidades",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        357.38628
+      ],
+      "glosa": "Mensualidades"
+    },
+    {
+      "label": "Taquilla (1)",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        22.464
+      ],
+      "glosa": "Taquilla (1)"
+    },
+    {
+      "label": "Abonados",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        16.966
+      ],
+      "glosa": "Abonados"
+    },
+    {
+      "label": "Venta de derechos deportivos (2)",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        6067.265
+      ],
+      "glosa": "Venta de derechos deportivos (2)"
+    },
+    {
+      "label": "Préstamo de derechos deportivo",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        38.636
+      ],
+      "glosa": "Préstamo de derechos deportivo"
+    },
+    {
+      "label": "Contribución de solidaridad (3)",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        2700.231542
+      ],
+      "glosa": "Contribución de solidaridad (3)"
+    },
+    {
+      "label": "Publicidad y propaganda",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        502.10084
+      ],
+      "glosa": "Publicidad y propaganda"
+    },
+    {
+      "label": "Dimayor (4)",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        2476.836605
+      ],
+      "glosa": "Dimayor (4)"
+    },
+    {
+      "label": "Federación colombiana de futbol",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        370.135
+      ],
+      "glosa": "Federación colombiana de futbol"
+    },
+    {
+      "label": "Patrocinio",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        766.656
+      ],
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "Cuotas de sostenimiento",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        334.313822
+      ],
+      "glosa": "Cuotas de sostenimiento"
+    },
+    {
+      "label": "Venta de mercancías",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        127.475004
+      ],
+      "glosa": "Venta de mercancías"
+    },
+    {
+      "label": "Otras actividades de servicios (5)",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        463.82084
+      ],
+      "glosa": "Otras actividades de servicios (5)"
+    },
+    {
+      "label": "Devoluciones rebajas y descuentos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        -60.410953
+      ],
+      "glosa": "Devoluciones rebajas y descuentos"
+    },
+    {
+      "label": "Recuperaciones",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Otros ingresos\"",
+      "values": [
+        233.28543
+      ],
+      "glosa": "Recuperaciones"
+    },
+    {
+      "label": "Aprovechamientos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Otros ingresos\"",
+      "values": [
+        137.052479
+      ],
+      "glosa": "Aprovechamientos"
+    },
+    {
+      "label": "Subvenciones donaciones (1)",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Otros ingresos\"",
+      "values": [
+        168.664
+      ],
+      "glosa": "Subvenciones donaciones (1)"
+    },
+    {
+      "label": "Ajuste al peso (Otros ingresos)",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Otros ingresos\"",
+      "values": [
+        0.00305
+      ],
+      "glosa": "Ajuste al peso (Otros ingresos)"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        104.32
+      ],
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        8723.106
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Vienen…",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        1653.458227
+      ],
+      "glosa": "Vienen…"
+    },
+    {
+      "label": "Aseo y vigilancia",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        1.559213
+      ],
+      "glosa": "Aseo y vigilancia"
+    },
+    {
+      "label": "Asistencia técnica",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        0.20706
+      ],
+      "glosa": "Asistencia técnica"
+    },
+    {
+      "label": "Acueducto y alcantarillado",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        0.833621
+      ],
+      "glosa": "Acueducto y alcantarillado"
+    },
+    {
+      "label": "Energía eléctrica",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        5.662586
+      ],
+      "glosa": "Energía eléctrica"
+    },
+    {
+      "label": "Teléfono",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        14.567664
+      ],
+      "glosa": "Teléfono"
+    },
+    {
+      "label": "Correo portes y telegramas",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        0.34104
+      ],
+      "glosa": "Correo portes y telegramas"
+    },
+    {
+      "label": "Transporte fletes y acarreos",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        3.10605
+      ],
+      "glosa": "Transporte fletes y acarreos"
+    },
+    {
+      "label": "Gas",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        0.13621
+      ],
+      "glosa": "Gas"
+    },
+    {
+      "label": "Notariales",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        12.014746
+      ],
+      "glosa": "Notariales"
+    },
+    {
+      "label": "Registro mercantil",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        2.3487
+      ],
+      "glosa": "Registro mercantil"
+    },
+    {
+      "label": "Tramites y licencias",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        9.481287
+      ],
+      "glosa": "Tramites y licencias"
+    },
+    {
+      "label": "Construcciones y edificaciones",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        16.981373
+      ],
+      "glosa": "Construcciones y edificaciones"
+    },
+    {
+      "label": "Maquinaria y equipo (Gastos de administración)",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        0.713268
+      ],
+      "glosa": "Maquinaria y equipo (Gastos de administración)"
+    },
+    {
+      "label": "Equipo de oficina (Gastos de administración)",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        0.252101
+      ],
+      "glosa": "Equipo de oficina (Gastos de administración)"
+    },
+    {
+      "label": "Equipo de computación y comuna",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        8.996122
+      ],
+      "glosa": "Equipo de computación y comuna"
+    },
+    {
+      "label": "Instalaciones eléctricas",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        10.6435
+      ],
+      "glosa": "Instalaciones eléctricas"
+    },
+    {
+      "label": "Reparaciones locativas",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        0.7149
+      ],
+      "glosa": "Reparaciones locativas"
+    },
+    {
+      "label": "Alojamiento y manutención",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        5.817196
+      ],
+      "glosa": "Alojamiento y manutención"
+    },
+    {
+      "label": "Pasajes aéreos",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        2.87194
+      ],
+      "glosa": "Pasajes aéreos"
+    },
+    {
+      "label": "Maquinaria y equipo (Gastos de administración)",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        66.810039
+      ],
+      "glosa": "Maquinaria y equipo (Gastos de administración)"
+    },
+    {
+      "label": "Equipo de oficina (Gastos de administración)",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        17.586611
+      ],
+      "glosa": "Equipo de oficina (Gastos de administración)"
+    },
+    {
+      "label": "Equipo de computación",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        38.895511
+      ],
+      "glosa": "Equipo de computación"
+    },
+    {
+      "label": "Flota y equipo de transporte",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        66.999996
+      ],
+      "glosa": "Flota y equipo de transporte"
+    },
+    {
+      "label": "Mejoras en propiedades ajenas",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        273.76918
+      ],
+      "glosa": "Mejoras en propiedades ajenas"
+    },
+    {
+      "label": "Cargos diferidos",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        48.344407
+      ],
+      "glosa": "Cargos diferidos"
+    },
+    {
+      "label": "Gastos de representación",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        30.343932
+      ],
+      "glosa": "Gastos de representación"
+    },
+    {
+      "label": "Elementos de aseo y cafetería",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        2.301868
+      ],
+      "glosa": "Elementos de aseo y cafetería"
+    },
+    {
+      "label": "Útiles papelería y fotocopias",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        4.47221
+      ],
+      "glosa": "Útiles papelería y fotocopias"
+    },
+    {
+      "label": "Combustibles y lubricantes",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        0.115962
+      ],
+      "glosa": "Combustibles y lubricantes"
+    },
+    {
+      "label": "Taxis y buses",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        0.0487
+      ],
+      "glosa": "Taxis y buses"
+    },
+    {
+      "label": "Estampillas",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        0.45
+      ],
+      "glosa": "Estampillas"
+    },
+    {
+      "label": "Casino y restaurante",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        1.392761
+      ],
+      "glosa": "Casino y restaurante"
+    },
+    {
+      "label": "Parqueaderos y peajes",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        0.1679
+      ],
+      "glosa": "Parqueaderos y peajes"
+    },
+    {
+      "label": "Gastos no deducibles",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        0.005297
+      ],
+      "glosa": "Gastos no deducibles"
+    },
+    {
+      "label": "Provisión cartera",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Gastos de administración\"",
+      "values": [
+        35.05819
+      ],
+      "glosa": "Provisión cartera"
+    },
+    {
+      "label": "Costos y gastos de ejercicios",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Otros gastos\"",
+      "values": [
+        0.397109
+      ],
+      "glosa": "Costos y gastos de ejercicios"
+    },
+    {
+      "label": "Impuestos asumidos",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Otros gastos\"",
+      "values": [
+        5.453634
+      ],
+      "glosa": "Impuestos asumidos"
+    },
+    {
+      "label": "Multas sanciones y litigios",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Otros gastos\"",
+      "values": [
+        24.509137
+      ],
+      "glosa": "Multas sanciones y litigios"
+    },
+    {
+      "label": "Ajuste al peso (Otros gastos)",
+      "lado": "expense",
+      "page": 1,
+      "section": "nota que desglosa \"Otros gastos\"",
+      "values": [
+        0.189848
+      ],
+      "glosa": "Ajuste al peso (Otros gastos)"
+    }
+  ]
+}

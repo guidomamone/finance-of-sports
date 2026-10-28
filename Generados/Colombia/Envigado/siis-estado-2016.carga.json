@@ -1,0 +1,896 @@
+{
+ "pdf": "Clubes/Colombia/Envigado/siis-estado-2016.pdf",
+ "generado": "2026-10-28T00:23:16.619Z",
+ "frena": [
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"417040 ENTRENENIMIENTO Y ESPARCIMIENTO\" -> other_income 0.6"
+  }
+ ],
+ "avisos": [
+  "materialidad: \"OTRAS VENTAS\" va como other_income con 0.75 (0.00% de ingresos; acumulado sin preguntar 0.00%)",
+  "materialidad: \"PARTICIPACION PARTIDOS DE EQUI\" va como competition_bonus con 0.55 (0.01% de ingresos; acumulado sin preguntar 0.01%)",
+  "materialidad: \"41053005 ARBITRAJE\" va como competition_bonus con 0.7 (0.07% de ingresos; acumulado sin preguntar 0.08%)",
+  "gestión: ningún presidente confirmado cubre 2016 (cierre 2016-12-31); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "envigado-co",
+  "year": 2016,
+  "cierre": "2016-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "41050601 TAQUILLA",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 278.665,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "41050602 ABONADOS",
+    "normalizedCategory": "season_tickets",
+    "amountNative": 12.99,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "410510 ESCUELAS DE FUTBOL",
+    "normalizedCategory": "youth_football",
+    "amountNative": 142.795,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "410515 VENTA DE DERECHOS DEPORTIVOS",
+    "normalizedCategory": "player_sales",
+    "amountNative": 10883.642964,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "410520 PRESTAMO DE DERECHOS DEPORTIVO",
+    "normalizedCategory": "player_sales",
+    "amountNative": 180,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "410522 CONTRIBUCION DE SOLIDARIDAD",
+    "normalizedCategory": "player_sales",
+    "amountNative": 398.302523,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "41053001 DERECHOS TELEVISION ABIERTA",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 765.331358,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "41053002 DERECHOS TELEVISION INTERNACIONAL",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 126.386469,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "41053003 DERECHOS TELEVISION ABIERT RCN",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 186.858556,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "41053004 DERECHOS TELEVISION CERRADA",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 1751.555136,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "41053005 ARBITRAJE",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 11.103,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": "materialidad",
+    "_conf": 0.7,
+    "_fuenteCat": "categorias.json · escalón de materialidad: 0.07% de su lado, acumulado 0.08% (tope 1%) y confianza 0.7"
+   },
+   {
+    "rawLabel": "410535 FEDERACION COLOMBIANA DE FUTBOL",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 10.992963,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "410550 CUOTAS DE SOSTENIMIENTO",
+    "normalizedCategory": "member_dues",
+    "amountNative": 64.550042,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "410555 PARTICIPACION EN EVENTOS NACIONALES",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 40.259271,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "410560 VENTA DE ARTICULOS DEPORTIVOS",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 13.509277,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "417040 ENTRENENIMIENTO Y ESPARCIMIENTO",
+    "normalizedCategory": "other_income",
+    "amountNative": 1599.85,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "OTRAS VENTAS",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.035,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": "materialidad",
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json · escalón de materialidad: 0.00% de su lado, acumulado 0.00% (tope 1%) y confianza 0.75"
+   },
+   {
+    "rawLabel": "DESCTOS COMERCIALES CONDICIONA",
+    "normalizedCategory": "other_income",
+    "amountNative": 5.850336,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "REINTEGRO DE OTROS COSTOS Y GA",
+    "normalizedCategory": "other_income",
+    "amountNative": 16.184936,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "POR INCUMPLIMIENTO DE CONTRATO",
+    "normalizedCategory": "other_income",
+    "amountNative": 232.1,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "PARTICIPACION PARTIDOS DE EQUI",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 2.031454,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": "materialidad",
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json · escalón de materialidad: 0.01% de su lado, acumulado 0.01% (tope 1%) y confianza 0.55"
+   },
+   {
+    "rawLabel": "RECONOCIMIENTOS I.S.S.",
+    "normalizedCategory": "other_income",
+    "amountNative": 39.383777,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.94,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "AJUSTE AL PESO",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.000602,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Costo de ventas",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -7.115,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Gastos de ventas",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -6257.726,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Gastos de administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3179.368,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "COP",
+   "fxRef": "COP@2016-12-31",
+   "sourceId": "envigado-co-siis-estado-2016",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -11.807,
+   "tax": -2374.316,
+   "extraRows": [
+    {
+     "label": "Ingresos financieros",
+     "value": 495.328
+    },
+    {
+     "label": "Costos financieros",
+     "value": -507.135
+    },
+    {
+     "label": "Ingreso (gasto) por impuestos",
+     "value": -2374.316
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Costo de ventas",
+     "lado": "expense",
+     "importe": 7.115,
+     "motivo": "Costo de ventas es 84% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+     "tipo": "cost_of_sales"
+    },
+    {
+     "renglon": "Gastos de ventas",
+     "lado": "expense",
+     "importe": 6257.726,
+     "motivo": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+     "tipo": "other"
+    }
+   ],
+   "baseIngreso": "full",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 16762.377664,
+   "officialTotalExpenses": 9444.209,
+   "officialPAT": 4932.046
+  },
+  "source": {
+   "id": "envigado-co-siis-estado-2016",
+   "clubId": "envigado-co",
+   "title": "Envigado Fútbol Club S.A. — siis-estado-2016 (ejercicio 2016)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Colombia/Envigado/siis-estado-2016.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Envigado/siis-estado-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Colombia/Envigado/siis-estado-2016.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2016-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "envigado-co",
+ "year": 2016,
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Envigado/siis-estado-2016.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-28 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2016.md L11-L171",
+   "autor": "Claude",
+   "fecha": "2026-10-28"
+  }
+ ],
+ "seleccion": {
+  "filas": 29,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "41050601 TAQUILLA",
+   "page": 1,
+   "native": 278.665,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 278.665,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 278.665
+  },
+  {
+   "label": "41050602 ABONADOS",
+   "page": 1,
+   "native": 12.99,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 12.99,
+   "cat": "season_tickets",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 12.99
+  },
+  {
+   "label": "410510 ESCUELAS DE FUTBOL",
+   "page": 1,
+   "native": 142.795,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 142.795,
+   "cat": "youth_football",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 142.795
+  },
+  {
+   "label": "410515 VENTA DE DERECHOS DEPORTIVOS",
+   "page": 1,
+   "native": 10883.642964,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 10883.642964,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 10883.642964
+  },
+  {
+   "label": "410520 PRESTAMO DE DERECHOS DEPORTIVO",
+   "page": 1,
+   "native": 180,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 180,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 180
+  },
+  {
+   "label": "410522 CONTRIBUCION DE SOLIDARIDAD",
+   "page": 1,
+   "native": 398.302523,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 398.302523,
+   "cat": "player_sales",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 398.302523
+  },
+  {
+   "label": "41053001 DERECHOS TELEVISION ABIERTA",
+   "page": 1,
+   "native": 765.331358,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 765.331358,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 765.331358
+  },
+  {
+   "label": "41053002 DERECHOS TELEVISION INTERNACIONAL",
+   "page": 1,
+   "native": 126.386469,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 126.386469,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 126.386469
+  },
+  {
+   "label": "41053003 DERECHOS TELEVISION ABIERT RCN",
+   "page": 1,
+   "native": 186.858556,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 186.858556,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 186.858556
+  },
+  {
+   "label": "41053004 DERECHOS TELEVISION CERRADA",
+   "page": 1,
+   "native": 1751.555136,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 1751.555136,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1751.555136
+  },
+  {
+   "label": "41053005 ARBITRAJE",
+   "page": 1,
+   "native": 11.103,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 11.103,
+   "cat": "competition_bonus",
+   "conf": 0.7,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: 0.07% de su lado, acumulado 0.08% (tope 1%) y confianza 0.7",
+   "enLista": true,
+   "enCola": false,
+   "destino": "revenue",
+   "amountNative": 11.103
+  },
+  {
+   "label": "410535 FEDERACION COLOMBIANA DE FUTBOL",
+   "page": 1,
+   "native": 10.992963,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 10.992963,
+   "cat": "competition_bonus",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 10.992963
+  },
+  {
+   "label": "410550 CUOTAS DE SOSTENIMIENTO",
+   "page": 1,
+   "native": 64.550042,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 64.550042,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 64.550042
+  },
+  {
+   "label": "410555 PARTICIPACION EN EVENTOS NACIONALES",
+   "page": 1,
+   "native": 40.259271,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 40.259271,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 40.259271
+  },
+  {
+   "label": "410560 VENTA DE ARTICULOS DEPORTIVOS",
+   "page": 1,
+   "native": 13.509277,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 13.509277,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 13.509277
+  },
+  {
+   "label": "417040 ENTRENENIMIENTO Y ESPARCIMIENTO",
+   "page": 1,
+   "native": 1599.85,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 1599.85,
+   "cat": "other_income",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 1599.85
+  },
+  {
+   "label": "OTRAS VENTAS",
+   "page": 1,
+   "native": 0.035,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Otros ingresos\")",
+   "signoFijo": 0.035,
+   "cat": "other_income",
+   "conf": 0.75,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: 0.00% de su lado, acumulado 0.00% (tope 1%) y confianza 0.75",
+   "enLista": true,
+   "enCola": false,
+   "destino": "revenue",
+   "amountNative": 0.035
+  },
+  {
+   "label": "DESCTOS COMERCIALES CONDICIONA",
+   "page": 1,
+   "native": 5.850336,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Otros ingresos\")",
+   "signoFijo": 5.850336,
+   "cat": "other_income",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.850336
+  },
+  {
+   "label": "REINTEGRO DE OTROS COSTOS Y GA",
+   "page": 1,
+   "native": 16.184936,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Otros ingresos\")",
+   "signoFijo": 16.184936,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 16.184936
+  },
+  {
+   "label": "POR INCUMPLIMIENTO DE CONTRATO",
+   "page": 1,
+   "native": 232.1,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Otros ingresos\")",
+   "signoFijo": 232.1,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 232.1
+  },
+  {
+   "label": "PARTICIPACION PARTIDOS DE EQUI",
+   "page": 1,
+   "native": 2.031454,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Otros ingresos\")",
+   "signoFijo": 2.031454,
+   "cat": "competition_bonus",
+   "conf": 0.55,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: 0.01% de su lado, acumulado 0.01% (tope 1%) y confianza 0.55",
+   "enLista": true,
+   "enCola": false,
+   "destino": "revenue",
+   "amountNative": 2.031454
+  },
+  {
+   "label": "RECONOCIMIENTOS I.S.S.",
+   "page": 1,
+   "native": 39.383777,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Otros ingresos\")",
+   "signoFijo": 39.383777,
+   "cat": "other_income",
+   "conf": 0.94,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 39.383777
+  },
+  {
+   "label": "AJUSTE AL PESO",
+   "page": 1,
+   "native": 0.000602,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Otros ingresos\")",
+   "signoFijo": 0.000602,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.000602
+  },
+  {
+   "label": "Costo de ventas",
+   "page": 1,
+   "native": 7.115,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 7.115,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Costo de ventas es 84% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+   "destino": "expense",
+   "amountNative": -7.115
+  },
+  {
+   "label": "Gastos de ventas",
+   "page": 1,
+   "native": 6257.726,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6257.726,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+   "destino": "expense",
+   "amountNative": -6257.726
+  },
+  {
+   "label": "Gastos de administración",
+   "page": 1,
+   "native": 3179.368,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3179.368,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3179.368
+  },
+  {
+   "label": "Ingresos financieros",
+   "page": null,
+   "native": 495.328,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Costos financieros",
+   "page": null,
+   "native": -507.135,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Ingreso (gasto) por impuestos",
+   "page": null,
+   "native": -2374.316,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Otros ingresos\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 16762.377664,
+  "expSum": -9444.209,
+  "officialTotalRevenue": 16762.377664,
+  "officialTotalExpenses": 9444.209,
+  "officialPAT": 4932.046,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 4932.046,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 16762.377664
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 9444.209
+  }
+ },
+ "liga": {
+  "valor": "co-primeraA",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2016,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2016-12-31",
+   "fuente": "año del ejercicio + mes de cierre (los demás .md del club (9 de 9 documentos cierran en el mes 12); este documento no alcanza solo)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "COP",
+   "fuente": "moneda de curso legal de Colombia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "COP@2016-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene COP@2016-12-31 = 3000.71 (TRM oficial (Banco de la República / Superfinanciera de Colombia) al 2016-12-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "envigado-co-siis-estado-2016",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "co-primeraA",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 23,
+  "lineasGasto": 3,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

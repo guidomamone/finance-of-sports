@@ -1,0 +1,892 @@
+{
+ "pdf": "Clubes/Colombia/Envigado/siis-estado-2020.pdf",
+ "md": "Clubes/Colombia/Envigado/siis-estado-2020.md",
+ "generado": "2026-10-28T00:21:41.196Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "ok",
+ "clubId": "envigado-co",
+ "year": 2020,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Envigado/siis-estado-2020.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-28 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2020.md L11-L213",
+   "autor": "Claude",
+   "fecha": "2026-10-28"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 0.00014299999702416244
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2020: 14743.211239 en este documento y 14743.21 en siis-estado-2021.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2019: 24767.056849 en siis-estado-2019.pdf y 24383.890984 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "línea 113: 20,330,300 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 114: 357,386,280 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 115: 22,464,000 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 116: 16,966,000 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 117: 6,067,265,000 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 118: 38,636,000 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 119: 2,700,231,542 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 120: 502,100,840 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 121: 2,476,836,605 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 122: 370,135,000 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 123: 766,656,000 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 124: 334,313,822 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 125: 127,475,004 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 126: 463,820,840 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 127: 60,410,953 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 195: 233,285,430 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 196: 137,052,479 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 197: 168,664,000 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 198: 3,050 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 136: 1,653,458,227 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 137: 1,559,213 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 138: 207,060 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 139: 833,621 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 140: 5,662,586 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 141: 14,567,664 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 142: 341,040 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 143: 3,106,050 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 144: 136,210 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 147: 12,014,746 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 148: 2,348,700 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 149: 9,481,287 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 151: 16,981,373 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 152: 713,268 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 153: 252,101 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 154: 8,996,122 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 156: 10,643,500 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 157: 714,900 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 160: 5,817,196 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 161: 2,871,940 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 164: 66,810,039 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 165: 17,586,611 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 166: 38,895,511 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 167: 66,999,996 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 167: 66,999,996 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 168: 273,769,180 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 170: 48,344,407 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 173: 30,343,932 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 174: 2,301,868 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 175: 4,472,210 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 176: 115,962 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 178: 48,700 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 179: 450,000 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 180: 1,392,761 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 181: 167,900 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 182: 5,297 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 184: 35,058,190 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 207: 397,109 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 208: 5,453,634 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 210: 24,509,137 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)",
+  "línea 212: 189,848 no está en el texto del PDF; las sumas lo confirman (sin segunda lectura parecida, y el resultado cierra exacto con él)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 14743.211239,
+  "gastos": 11195.445096,
+  "financiero": 1283.309,
+  "impuesto": 1419.851,
+  "resultadoImpreso": 2599.39,
+  "resultadoParaCargar": 2599.39,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Matriculas",
+   "lado": "ingreso",
+   "M": 20.3303,
+   "pagina": 1,
+   "linea": 113,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Mensualidades",
+   "lado": "ingreso",
+   "M": 357.38628,
+   "pagina": 1,
+   "linea": 114,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Taquilla (1)",
+   "lado": "ingreso",
+   "M": 22.464,
+   "pagina": 1,
+   "linea": 115,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Abonados",
+   "lado": "ingreso",
+   "M": 16.966,
+   "pagina": 1,
+   "linea": 116,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Venta de derechos deportivos (2)",
+   "lado": "ingreso",
+   "M": 6067.265,
+   "pagina": 1,
+   "linea": 117,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Préstamo de derechos deportivo",
+   "lado": "ingreso",
+   "M": 38.636,
+   "pagina": 1,
+   "linea": 118,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Contribución de solidaridad (3)",
+   "lado": "ingreso",
+   "M": 2700.231542,
+   "pagina": 1,
+   "linea": 119,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Publicidad y propaganda",
+   "lado": "ingreso",
+   "M": 502.10084,
+   "pagina": 1,
+   "linea": 120,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Dimayor (4)",
+   "lado": "ingreso",
+   "M": 2476.836605,
+   "pagina": 1,
+   "linea": 121,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Federación colombiana de futbol",
+   "lado": "ingreso",
+   "M": 370.135,
+   "pagina": 1,
+   "linea": 122,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Patrocinio",
+   "lado": "ingreso",
+   "M": 766.656,
+   "pagina": 1,
+   "linea": 123,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Cuotas de sostenimiento",
+   "lado": "ingreso",
+   "M": 334.313822,
+   "pagina": 1,
+   "linea": 124,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Venta de mercancías",
+   "lado": "ingreso",
+   "M": 127.475004,
+   "pagina": 1,
+   "linea": 125,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Otras actividades de servicios (5)",
+   "lado": "ingreso",
+   "M": 463.82084,
+   "pagina": 1,
+   "linea": 126,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Devoluciones rebajas y descuentos",
+   "lado": "ingreso",
+   "M": -60.410953,
+   "pagina": 1,
+   "linea": 127,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Recuperaciones",
+   "lado": "ingreso",
+   "M": 233.28543,
+   "pagina": 1,
+   "linea": 195,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Aprovechamientos",
+   "lado": "ingreso",
+   "M": 137.052479,
+   "pagina": 1,
+   "linea": 196,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Subvenciones donaciones (1)",
+   "lado": "ingreso",
+   "M": 168.664,
+   "pagina": 1,
+   "linea": 197,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Ajuste al peso (Otros ingresos)",
+   "lado": "ingreso",
+   "M": 0.00305,
+   "pagina": 1,
+   "linea": 198,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Costo de ventas",
+   "lado": "gasto",
+   "M": 104.32,
+   "pagina": 1,
+   "linea": 12,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de ventas",
+   "lado": "gasto",
+   "M": 8723.106,
+   "pagina": 1,
+   "linea": 14,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Vienen…",
+   "lado": "gasto",
+   "M": 1653.458227,
+   "pagina": 1,
+   "linea": 136,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Aseo y vigilancia",
+   "lado": "gasto",
+   "M": 1.559213,
+   "pagina": 1,
+   "linea": 137,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Asistencia técnica",
+   "lado": "gasto",
+   "M": 0.20706,
+   "pagina": 1,
+   "linea": 138,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Acueducto y alcantarillado",
+   "lado": "gasto",
+   "M": 0.833621,
+   "pagina": 1,
+   "linea": 139,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Energía eléctrica",
+   "lado": "gasto",
+   "M": 5.662586,
+   "pagina": 1,
+   "linea": 140,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Teléfono",
+   "lado": "gasto",
+   "M": 14.567664,
+   "pagina": 1,
+   "linea": 141,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Correo portes y telegramas",
+   "lado": "gasto",
+   "M": 0.34104,
+   "pagina": 1,
+   "linea": 142,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Transporte fletes y acarreos",
+   "lado": "gasto",
+   "M": 3.10605,
+   "pagina": 1,
+   "linea": 143,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Gas",
+   "lado": "gasto",
+   "M": 0.13621,
+   "pagina": 1,
+   "linea": 144,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Notariales",
+   "lado": "gasto",
+   "M": 12.014746,
+   "pagina": 1,
+   "linea": 147,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Registro mercantil",
+   "lado": "gasto",
+   "M": 2.3487,
+   "pagina": 1,
+   "linea": 148,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Tramites y licencias",
+   "lado": "gasto",
+   "M": 9.481287,
+   "pagina": 1,
+   "linea": 149,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Construcciones y edificaciones",
+   "lado": "gasto",
+   "M": 16.981373,
+   "pagina": 1,
+   "linea": 151,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Maquinaria y equipo (Gastos de administración)",
+   "lado": "gasto",
+   "M": 0.713268,
+   "pagina": 1,
+   "linea": 152,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Equipo de oficina (Gastos de administración)",
+   "lado": "gasto",
+   "M": 0.252101,
+   "pagina": 1,
+   "linea": 153,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Equipo de computación y comuna",
+   "lado": "gasto",
+   "M": 8.996122,
+   "pagina": 1,
+   "linea": 154,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Instalaciones eléctricas",
+   "lado": "gasto",
+   "M": 10.6435,
+   "pagina": 1,
+   "linea": 156,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Reparaciones locativas",
+   "lado": "gasto",
+   "M": 0.7149,
+   "pagina": 1,
+   "linea": 157,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Alojamiento y manutención",
+   "lado": "gasto",
+   "M": 5.817196,
+   "pagina": 1,
+   "linea": 160,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Pasajes aéreos",
+   "lado": "gasto",
+   "M": 2.87194,
+   "pagina": 1,
+   "linea": 161,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Maquinaria y equipo (Gastos de administración)",
+   "lado": "gasto",
+   "M": 66.810039,
+   "pagina": 1,
+   "linea": 164,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Equipo de oficina (Gastos de administración)",
+   "lado": "gasto",
+   "M": 17.586611,
+   "pagina": 1,
+   "linea": 165,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Equipo de computación",
+   "lado": "gasto",
+   "M": 38.895511,
+   "pagina": 1,
+   "linea": 166,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Flota y equipo de transporte",
+   "lado": "gasto",
+   "M": 66.999996,
+   "pagina": 1,
+   "linea": 167,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Mejoras en propiedades ajenas",
+   "lado": "gasto",
+   "M": 273.76918,
+   "pagina": 1,
+   "linea": 168,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Cargos diferidos",
+   "lado": "gasto",
+   "M": 48.344407,
+   "pagina": 1,
+   "linea": 170,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Gastos de representación",
+   "lado": "gasto",
+   "M": 30.343932,
+   "pagina": 1,
+   "linea": 173,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Elementos de aseo y cafetería",
+   "lado": "gasto",
+   "M": 2.301868,
+   "pagina": 1,
+   "linea": 174,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Útiles papelería y fotocopias",
+   "lado": "gasto",
+   "M": 4.47221,
+   "pagina": 1,
+   "linea": 175,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Combustibles y lubricantes",
+   "lado": "gasto",
+   "M": 0.115962,
+   "pagina": 1,
+   "linea": 176,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Taxis y buses",
+   "lado": "gasto",
+   "M": 0.0487,
+   "pagina": 1,
+   "linea": 178,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Estampillas",
+   "lado": "gasto",
+   "M": 0.45,
+   "pagina": 1,
+   "linea": 179,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Casino y restaurante",
+   "lado": "gasto",
+   "M": 1.392761,
+   "pagina": 1,
+   "linea": 180,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Parqueaderos y peajes",
+   "lado": "gasto",
+   "M": 0.1679,
+   "pagina": 1,
+   "linea": 181,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Gastos no deducibles",
+   "lado": "gasto",
+   "M": 0.005297,
+   "pagina": 1,
+   "linea": 182,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Provisión cartera",
+   "lado": "gasto",
+   "M": 35.05819,
+   "pagina": 1,
+   "linea": 184,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Costos y gastos de ejercicios",
+   "lado": "gasto",
+   "M": 0.397109,
+   "pagina": 1,
+   "linea": 207,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Impuestos asumidos",
+   "lado": "gasto",
+   "M": 5.453634,
+   "pagina": 1,
+   "linea": 208,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Multas sanciones y litigios",
+   "lado": "gasto",
+   "M": 24.509137,
+   "pagina": 1,
+   "linea": 210,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Ajuste al peso (Otros gastos)",
+   "lado": "gasto",
+   "M": 0.189848,
+   "pagina": 1,
+   "linea": 212,
+   "origen": "nota que desglosa \"Otros gastos\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Ingresos financieros",
+   "M": 877.392,
+   "linea": 19
+  },
+  {
+   "etiqueta": "Costos financieros",
+   "M": -405.917,
+   "linea": 20
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "M": -1419.851,
+   "linea": 22
+  }
+ ],
+ "confirmadosPorSumas": [
+  {
+   "linea": 113,
+   "numero": "20,330,300"
+  },
+  {
+   "linea": 114,
+   "numero": "357,386,280"
+  },
+  {
+   "linea": 115,
+   "numero": "22,464,000"
+  },
+  {
+   "linea": 116,
+   "numero": "16,966,000"
+  },
+  {
+   "linea": 117,
+   "numero": "6,067,265,000"
+  },
+  {
+   "linea": 118,
+   "numero": "38,636,000"
+  },
+  {
+   "linea": 119,
+   "numero": "2,700,231,542"
+  },
+  {
+   "linea": 120,
+   "numero": "502,100,840"
+  },
+  {
+   "linea": 121,
+   "numero": "2,476,836,605"
+  },
+  {
+   "linea": 122,
+   "numero": "370,135,000"
+  },
+  {
+   "linea": 123,
+   "numero": "766,656,000"
+  },
+  {
+   "linea": 124,
+   "numero": "334,313,822"
+  },
+  {
+   "linea": 125,
+   "numero": "127,475,004"
+  },
+  {
+   "linea": 126,
+   "numero": "463,820,840"
+  },
+  {
+   "linea": 127,
+   "numero": "60,410,953"
+  },
+  {
+   "linea": 195,
+   "numero": "233,285,430"
+  },
+  {
+   "linea": 196,
+   "numero": "137,052,479"
+  },
+  {
+   "linea": 197,
+   "numero": "168,664,000"
+  },
+  {
+   "linea": 198,
+   "numero": "3,050"
+  },
+  {
+   "linea": 136,
+   "numero": "1,653,458,227"
+  },
+  {
+   "linea": 137,
+   "numero": "1,559,213"
+  },
+  {
+   "linea": 138,
+   "numero": "207,060"
+  },
+  {
+   "linea": 139,
+   "numero": "833,621"
+  },
+  {
+   "linea": 140,
+   "numero": "5,662,586"
+  },
+  {
+   "linea": 141,
+   "numero": "14,567,664"
+  },
+  {
+   "linea": 142,
+   "numero": "341,040"
+  },
+  {
+   "linea": 143,
+   "numero": "3,106,050"
+  },
+  {
+   "linea": 144,
+   "numero": "136,210"
+  },
+  {
+   "linea": 147,
+   "numero": "12,014,746"
+  },
+  {
+   "linea": 148,
+   "numero": "2,348,700"
+  },
+  {
+   "linea": 149,
+   "numero": "9,481,287"
+  },
+  {
+   "linea": 151,
+   "numero": "16,981,373"
+  },
+  {
+   "linea": 152,
+   "numero": "713,268"
+  },
+  {
+   "linea": 153,
+   "numero": "252,101"
+  },
+  {
+   "linea": 154,
+   "numero": "8,996,122"
+  },
+  {
+   "linea": 156,
+   "numero": "10,643,500"
+  },
+  {
+   "linea": 157,
+   "numero": "714,900"
+  },
+  {
+   "linea": 160,
+   "numero": "5,817,196"
+  },
+  {
+   "linea": 161,
+   "numero": "2,871,940"
+  },
+  {
+   "linea": 164,
+   "numero": "66,810,039"
+  },
+  {
+   "linea": 165,
+   "numero": "17,586,611"
+  },
+  {
+   "linea": 166,
+   "numero": "38,895,511"
+  },
+  {
+   "linea": 167,
+   "numero": "66,999,996"
+  },
+  {
+   "linea": 167,
+   "numero": "66,999,996"
+  },
+  {
+   "linea": 168,
+   "numero": "273,769,180"
+  },
+  {
+   "linea": 170,
+   "numero": "48,344,407"
+  },
+  {
+   "linea": 173,
+   "numero": "30,343,932"
+  },
+  {
+   "linea": 174,
+   "numero": "2,301,868"
+  },
+  {
+   "linea": 175,
+   "numero": "4,472,210"
+  },
+  {
+   "linea": 176,
+   "numero": "115,962"
+  },
+  {
+   "linea": 178,
+   "numero": "48,700"
+  },
+  {
+   "linea": 179,
+   "numero": "450,000"
+  },
+  {
+   "linea": 180,
+   "numero": "1,392,761"
+  },
+  {
+   "linea": 181,
+   "numero": "167,900"
+  },
+  {
+   "linea": 182,
+   "numero": "5,297"
+  },
+  {
+   "linea": 184,
+   "numero": "35,058,190"
+  },
+  {
+   "linea": 207,
+   "numero": "397,109"
+  },
+  {
+   "linea": 208,
+   "numero": "5,453,634"
+  },
+  {
+   "linea": 210,
+   "numero": "24,509,137"
+  },
+  {
+   "linea": 212,
+   "numero": "189,848"
+  }
+ ]
+}

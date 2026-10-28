@@ -1,0 +1,77 @@
+{
+ "md": "Clubes/Colombia/Envigado/siis-estado-2021.md",
+ "club": "envigado-co",
+ "year": 2021,
+ "generatedAt": "2026-10-28T00:23:16.169Z",
+ "rubrosHuella": "1421a48f39caa7c92ff2accc1b7ea6243f1c6646",
+ "jevHuella": "4f0c64295e5b638d01502457d577fca3c1a7d758",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.96,
+   "categoria": "lump_football_operations",
+   "confianza": 0.96
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:familia",
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Costo de ventas",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:familia",
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:familia",
+   "categoria": "other_expenses",
+   "confianza": 1
+  }
+ ]
+}

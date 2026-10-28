@@ -1,0 +1,230 @@
+{
+  "md": "Clubes/Colombia/Envigado/siis-estado-2022.md",
+  "pdf": "Clubes/Colombia/Envigado/siis-estado-2022.pdf",
+  "club": "envigado-co",
+  "year": 2022,
+  "generatedAt": "2026-10-28T00:21:41.256Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Matrículas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        41.925
+      ],
+      "glosa": "Matrículas"
+    },
+    {
+      "label": "Mensualidades",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        770.0847
+      ],
+      "glosa": "Mensualidades"
+    },
+    {
+      "label": "Taquilla",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        580.13
+      ],
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "Abonados",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        66.395
+      ],
+      "glosa": "Abonados"
+    },
+    {
+      "label": "Venta de derechos deportivos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        11998.5595
+      ],
+      "glosa": "Venta de derechos deportivos"
+    },
+    {
+      "label": "Préstamo de derechos deportivo",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        90.639845
+      ],
+      "glosa": "Préstamo de derechos deportivo"
+    },
+    {
+      "label": "Contribución de solidaridad",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        526.560367
+      ],
+      "glosa": "Contribución de solidaridad"
+    },
+    {
+      "label": "Publicidad y propaganda",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        717.003
+      ],
+      "glosa": "Publicidad y propaganda"
+    },
+    {
+      "label": "Dimayor",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        5030.059283
+      ],
+      "glosa": "Dimayor"
+    },
+    {
+      "label": "Federación colombiana de futbol",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        484.545
+      ],
+      "glosa": "Federación colombiana de futbol"
+    },
+    {
+      "label": "Donaciones",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        11.933028
+      ],
+      "glosa": "Donaciones"
+    },
+    {
+      "label": "Patrocinio",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        1517.246545
+      ],
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "Cuotas de sostenimiento",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        1392.643507
+      ],
+      "glosa": "Cuotas de sostenimiento"
+    },
+    {
+      "label": "Arrendamientos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        75
+      ],
+      "glosa": "Arrendamientos"
+    },
+    {
+      "label": "Venta de mercancías",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        303.491055
+      ],
+      "glosa": "Venta de mercancías"
+    },
+    {
+      "label": "Otras actividades de servicios",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        1932.04
+      ],
+      "glosa": "Otras actividades de servicios"
+    },
+    {
+      "label": "Devoluciones rebajas y descuentos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        -21.49983
+      ],
+      "glosa": "Devoluciones rebajas y descuentos"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        359.858
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        228.699
+      ],
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        13983.457
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2246.526
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        160.817
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}
