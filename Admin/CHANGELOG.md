@@ -26,6 +26,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1248 — criterio del sponsor del frente: una ficha de FKA de la camiseta local alcanza [478]
+- Decidido por Guido (que delegó la decisión): una ficha de Football Kit Archive de la camiseta LOCAL de la temporada con el campo Sponsor lleno alcanza sola como respaldo del frente (FKA no escribe «frente»); una nota de prensa que diga «principal» se suma si aparece, sin exigirla. Queda en `liga-y-sponsor.md` 0.5 (commit aparte) y el brief de estadio-sponsor lo repite, sin la promesa «ningún sponsor queda débil», y pide separar los años respaldados SOLO por FKA.
+- Medición: solo texto; no cambia ninguna tool.
+
+---
+
 ## Versión 1247 — cola.mjs --ids: la misma respuesta a varios casos [478 · cola.mjs, probar-registros.mjs]
 - `node tools/cola.mjs --ids a,b,c aceptar --nota "…" --evidencia … --seguridad … --causa …` guarda una respuesta con esquema por caso (cada uno pasa por las compuertas de `--responder`). Todo o nada: antes de escribir valida que cada id exista y que estén las tres opciones; sin ellas no guarda ninguna. Absorbe `Prototyping/defectos-463/responder-nacional.mjs` (borrado). Tres casos nuevos en `probar-registros.mjs`.
 - Medición: lote completo idéntico (cargar, cargar-cola-vacia, audit, escribir, verificar, lote-ensayo, alta); veredicto GENERAL; sin revisión independiente.
