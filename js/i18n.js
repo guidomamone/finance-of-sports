@@ -2,6 +2,8 @@
 // como archivo, sin <base> ni rutas con "/". `fosUrl('data/x.js')` es la ruta de cualquier archivo del sitio para una carga o un link armados en JS.
 window.FOS_RAIZ = window.FOS_RAIZ || (document.currentScript ? new URL('../', document.currentScript.src).href : '');
 window.fosUrl = window.fosUrl || function (ruta) { return window.FOS_RAIZ ? new URL(ruta, window.FOS_RAIZ).href : ruta; };
+// `fosV('data/x.js')` es el `?v=…` de un archivo de data/: su hash en data/manifiesto.js (window.DATA_VERS, TODO 473); sin entrada, ASSET_V (la versión del código).
+window.fosV = window.fosV || function (ruta) { var m = window.DATA_VERS, v = (m && m[ruta]) || window.ASSET_V; return v ? '?v=' + v : ''; };
 // ============================================================================
 // js/i18n.js - Motor de traducción del sitio, que escala a N idiomas sin reescribir el sitio.
 //
@@ -115,7 +117,7 @@ window.fosUrl = window.fosUrl || function (ruta) { return window.FOS_RAIZ ? new 
     var base = window.I18N_BASE != null ? window.I18N_BASE : window.FOS_RAIZ;
     I18N._loading[code] = new Promise(function (resolve) {
       var s = document.createElement('script');
-      s.src = base + 'data/lang/' + code + '.js' + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+      s.src = base + 'data/lang/' + code + '.js' + fosV('data/lang/' + code + '.js');
       s.onload = function () { resolve(); };
       s.onerror = function () {
         // Un idioma que no carga no puede romper el sitio: se queda en castellano.

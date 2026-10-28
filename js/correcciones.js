@@ -12,7 +12,7 @@ const FOS_CORRECCIONES = (function(){
   const K = () => typeof clubs !== 'undefined' ? clubs : {};
 
   function cargar(archivo){
-    if(!pedidos[archivo]) pedidos[archivo] = fetch(fosUrl('data/correcciones/' + archivo + '.json') + (window.ASSET_V ? '?v=' + window.ASSET_V : ''))
+    if(!pedidos[archivo]) pedidos[archivo] = fetch(fosUrl('data/correcciones/' + archivo + '.json') + fosV('data/correcciones/' + archivo + '.json'))
       .then(r => r.ok ? r.json() : null).catch(() => null);
     return pedidos[archivo];
   }

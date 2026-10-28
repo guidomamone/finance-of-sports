@@ -84,7 +84,7 @@ window.LIGA_VIEW = (function(){
   function loadRanking(leagueId){
     if((window.RANKINGS || {})[leagueId]) return Promise.resolve(true);
     if(pend[leagueId]) return pend[leagueId];
-    var src = fosUrl('data/rankings/' + leagueId + '.js') + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+    var src = fosUrl('data/rankings/' + leagueId + '.js') + fosV('data/rankings/' + leagueId + '.js');
     pend[leagueId] = new Promise(function(resolve){
       var s = document.createElement('script');
       s.src = src;
@@ -108,7 +108,7 @@ window.LIGA_VIEW = (function(){
     if(pendEst[leagueId]) return pendEst[leagueId];
     pendEst[leagueId] = new Promise(function(resolve){
       var s = document.createElement('script');
-      s.src = fosUrl('data/estimados/' + leagueId + '.js') + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+      s.src = fosUrl('data/estimados/' + leagueId + '.js') + fosV('data/estimados/' + leagueId + '.js');
       s.onload = function(){ delete pendEst[leagueId]; resolve(true); };
       s.onerror = function(){ delete pendEst[leagueId]; resolve(false); };
       document.head.appendChild(s);

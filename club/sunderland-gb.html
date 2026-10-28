@@ -24,7 +24,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsTeam","name":"Sunderland","sport":"Soccer","url":"https://financeofsports.com/club/sunderland-gb","location":{"@type":"Country","name":"Inglaterra"},"memberOf":{"@type":"SportsOrganization","name":"EFL Championship"}}</script>
 <style>#pagina-estatica{max-width:900px;margin:24px auto;padding:0 16px;font:16px/1.5 system-ui,sans-serif}#pagina-estatica table{border-collapse:collapse;width:100%}#pagina-estatica th,#pagina-estatica td{border-bottom:1px solid #8884;padding:6px 8px;text-align:left}#pagina-estatica td.n,#pagina-estatica th.n{text-align:right}.js #pagina-estatica{display:none}</style>
 <script>window.FOS_RUTA = {"tab":"finanzas","club":"sunderland-gb"}; document.documentElement.classList.add('js');</script>
-<link rel="stylesheet" href="css/styles.css?v=2136">
+<link rel="stylesheet" href="css/styles.css?v=2137">
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3deae274c6f346eab1a19f78e41ac035"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -774,59 +774,62 @@
   (function (f, b) { if (!b.__SV) { var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) { function g(a, d) { var b = d.split("."); 2 == b.length && ((a = a[b[0]]), (d = b[1])); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))); }; } var a = b; "undefined" !== typeof c ? (a = b[c] = []) : (c = "mixpanel"); a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d; }; a.people.toString = function () { return a.toString(1) + ".people (stub)"; }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split( " "); for (h = 0; h < i.length; h++) g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]); }; } for ( var d = {}, e = ["get_group"].concat( Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++) b(j[c]); return d; }; b._i.push([e, f, c]); }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g); } })(document, window.mixpanel || []);
 </script>
 <!-- ASSET_V: versión de los assets propios, para invalidar el cache del navegador en cada deploy (si no, un visitante se queda
-     con un js/*.js viejo mientras el HTML es nuevo). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o `data/`. Lo leen
-     también los cargadores dinámicos (loadClubData, I18N.load, loadRanking). -->
-<script>window.ASSET_V = '2136';</script>
-<script src="data/lang/langs.js?v=2136"></script>
-<script src="js/i18n.js?v=2136"></script>
-<script src="data/clubs.js?v=2136"></script>
-<script src="js/nombres.js?v=2136"></script>
+     con un js/*.js viejo mientras el HTML es nuevo). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o `css/` (el código). Los de `data/` llevan su propia versión
+     en data/manifiesto.js y NO lo suben. -->
+<script>window.ASSET_V = '2137';</script>
+<!-- data/manifiesto.js: la versión (hash) de cada archivo de data/, generado por tools/generar-manifiesto.mjs. Va SIN ?v= (se revalida en cada visita). Los archivos de data/ se piden con fosDataTag, que le pone su hash: así una carga de datos no sube ASSET_V ni reescribe las páginas generadas (TODO 473). -->
+<script src="data/manifiesto.js"></script>
+<script>window.fosDataTag = function (r) { var m = window.DATA_VERS, v = (m && m[r]) || window.ASSET_V; document.write('<script src="' + r + (v ? '?v=' + v : '') + '"><\/script>'); };</script>
+<script>fosDataTag('data/lang/langs.js')</script>
+<script src="js/i18n.js?v=2137"></script>
+<script>fosDataTag('data/clubs.js')</script>
+<script src="js/nombres.js?v=2137"></script>
 <!-- data/club-aliases.js: los ids viejos de club (sin país) y a cuál apuntan hoy, para que un link o una búsqueda guardada con el id viejo siga abriendo. -->
-<script src="data/club-aliases.js?v=2136"></script>
+<script>fosDataTag('data/club-aliases.js')</script>
 <!-- data/club-index.js: el índice liviano de TODOS los clubes (nombre, país, calidad del dato, ejercicios), GENERADO por
      tools/generate-club-index.js. Lo que hay que mostrar de un club ANTES de entrar a él vive adentro de data/<país>/<club>-data.js, que
      no se carga hasta que el visitante lo elige. -->
-<script src="data/club-index.js?v=2136"></script>
+<script>fosDataTag('data/club-index.js')</script>
 <!-- data/leagues.js: el CATÁLOGO de la taxonomía del selector (deportes, regiones, países, ligas). NO tiene membresía: qué club
      jugó en qué liga es (club, ejercicio) y vive en data/club-leagues.js. Ver la cabecera de data/leagues.js ("no existe ninguna
      arista club → liga sin año"). -->
-<script src="data/leagues.js?v=2136"></script>
-<script src="data/club-leagues.js?v=2136"></script>
-<script src="data/category-map.js?v=2136"></script>
-<script src="data/site-labels.js?v=2136"></script>
-<script src="data/glosas-indice.js?v=2136"></script>
-<script src="data/currency-map.js?v=2136"></script>
-<script src="data/sources-view.js?v=2136"></script>
+<script>fosDataTag('data/leagues.js')</script>
+<script>fosDataTag('data/club-leagues.js')</script>
+<script>fosDataTag('data/category-map.js')</script>
+<script>fosDataTag('data/site-labels.js')</script>
+<script>fosDataTag('data/glosas-indice.js')</script>
+<script>fosDataTag('data/currency-map.js')</script>
+<script>fosDataTag('data/sources-view.js')</script>
 <!-- Ningún data file de club se carga acá: el sitio abre en la portada sin club, y CUALQUIER club entra por loadClubData() cuando
      el visitante lo elige. -->
-<script src="js/info-tip.js?v=2136"></script>
-<script src="data/deflactores.js?v=2136"></script>
-<script src="js/finanzas-calc.js?v=2136"></script>
-<script src="js/finanzas-render.js?v=2136"></script>
-<script src="js/finanzas-anios.js?v=2136"></script>
-<script src="js/finanzas-multi.js?v=2136"></script>
+<script src="js/info-tip.js?v=2137"></script>
+<script>fosDataTag('data/deflactores.js')</script>
+<script src="js/finanzas-calc.js?v=2137"></script>
+<script src="js/finanzas-render.js?v=2137"></script>
+<script src="js/finanzas-anios.js?v=2137"></script>
+<script src="js/finanzas-multi.js?v=2137"></script>
 <!-- Estructura del club: el índice de grupos multiclub (chico, lo usa también el buscador) y la tarjeta de Finanzas. -->
-<script src="data/entidades/_grupos.js?v=2136"></script>
-<script src="js/finanzas-estructura.js?v=2136"></script>
-<script src="js/grupo.js?v=2136"></script>
+<script>fosDataTag('data/entidades/_grupos.js')</script>
+<script src="js/finanzas-estructura.js?v=2137"></script>
+<script src="js/grupo.js?v=2137"></script>
 <!-- Quién auditó cada balance: qué países tienen dato (chico) y la tarjeta de Finanzas, que baja el país al elegir un club. -->
-<script src="data/auditoria/_paises.js?v=2136"></script>
-<script src="data/auditoria/_ligas.js?v=2136"></script>
-<script src="js/auditoria.js?v=2136"></script>
-<script src="js/correcciones.js?v=2136"></script>
-<script src="js/citar.js?v=2136"></script>
-<script src="js/contexto.js?v=2136"></script>
-<script src="js/sponsor.js?v=2136"></script>
+<script>fosDataTag('data/auditoria/_paises.js')</script>
+<script>fosDataTag('data/auditoria/_ligas.js')</script>
+<script src="js/auditoria.js?v=2137"></script>
+<script src="js/correcciones.js?v=2137"></script>
+<script src="js/citar.js?v=2137"></script>
+<script src="js/contexto.js?v=2137"></script>
+<script src="js/sponsor.js?v=2137"></script>
 <!-- js/selector.js: el selector de club. Se alimenta solo de clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja todos
      los clubes sin bajar un solo data/<país>/<club>-data.js. -->
-<script src="js/selector.js?v=2136"></script>
-<script src="data/destacados.js?v=2136"></script>
-<script src="data/informes.js?v=2136"></script>
-<script src="js/liga.js?v=2136"></script>
+<script src="js/selector.js?v=2137"></script>
+<script>fosDataTag('data/destacados.js')</script>
+<script>fosDataTag('data/informes.js')</script>
+<script src="js/liga.js?v=2137"></script>
 <!-- js/cuenta.js: login con Google vía Supabase + guardado automático de búsquedas. No sabe cómo se renderiza el resto del sitio:
      recibe `reopen` por CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
-<script src="js/cuenta.js?v=2136"></script>
-<script src="js/principal.js?v=2136"></script>
+<script src="js/cuenta.js?v=2137"></script>
+<script src="js/principal.js?v=2137"></script>
 
 </body>
 </html>

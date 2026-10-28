@@ -15,7 +15,7 @@ const FIN_AUDITORIA = (function(){
     if(!(window.AUDITORIA_PAISES || []).includes(pais)) return Promise.resolve();
     if(!pedidos[pais]) pedidos[pais] = new Promise(res => {
       const s = document.createElement('script');
-      s.src = fosUrl('data/auditoria/' + pais + '.js') + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+      s.src = fosUrl('data/auditoria/' + pais + '.js') + fosV('data/auditoria/' + pais + '.js');
       s.onload = res; s.onerror = () => { console.error('[auditoria] no cargó data/auditoria/' + pais + '.js'); res(); };
       document.head.appendChild(s);
     });

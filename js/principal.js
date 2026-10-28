@@ -27,13 +27,13 @@
   function loadClubData(clubId){
     if(clubDataLoaded[clubId] || !clubs[clubId]) return Promise.resolve();
     if(clubDataPending[clubId]) return clubDataPending[clubId];
-    // `?v=`: mismo ASSET_V que los <script src> estáticos. Sin esto, un visitante con un data file viejo cacheado seguiría viendo
+    // `?v=`: el hash del archivo en data/manifiesto.js (fosV). Sin esto, un visitante con un data file viejo cacheado seguiría viendo
     // números viejos después de un deploy que los corrigió.
     const base = CLUB_DATA_SCRIPT_OVERRIDE[clubId] || ('data/' + clubs[clubId].country.toLowerCase() + '/' + clubId + '-data.js');
-    const src = fosUrl(base) + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+    const src = fosUrl(base) + fosV(base);
     // Las glosas de las etiquetas del club (data/<país>/<clubId>-glosas.js, solo si el índice dice que existen): si no llegan, la pantalla muestra el original.
     const glosas = (window.GLOSAS_CLUBES || {})[clubId]
-      ? new Promise(res => { const g = document.createElement('script'); g.src = src.replace('-data.js', '-glosas.js'); g.onload = g.onerror = () => res(); document.head.appendChild(g); })
+      ? new Promise(res => { const g = document.createElement('script'); g.src = fosUrl(base.replace('-data.js', '-glosas.js')) + fosV(base.replace('-data.js', '-glosas.js')); g.onload = g.onerror = () => res(); document.head.appendChild(g); })
       : Promise.resolve();
     clubDataPending[clubId] = new Promise((resolve, reject) => {
       const script = document.createElement('script');

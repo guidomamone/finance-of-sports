@@ -16,7 +16,7 @@ const GRUPO_VIEW = (function(){
     if(window.GRUPOS) return Promise.resolve();
     if(!pedido) pedido = new Promise(res => {
       const s = document.createElement('script');
-      s.src = fosUrl('data/entidades/_grupos-detalle.js') + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+      s.src = fosUrl('data/entidades/_grupos-detalle.js') + fosV('data/entidades/_grupos-detalle.js');
       s.onload = res; s.onerror = () => { console.error('[grupo] no cargó data/entidades/_grupos-detalle.js'); res(); };
       document.head.appendChild(s);
     });

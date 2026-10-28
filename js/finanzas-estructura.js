@@ -17,7 +17,7 @@ const FIN_ESTRUCTURA = (function(){
     if(!(window.ENTIDADES_PAISES || []).includes(pais)) return Promise.resolve();
     if(!pedidos[pais]) pedidos[pais] = new Promise(res => {
       const s = document.createElement('script');
-      s.src = fosUrl('data/entidades/' + pais + '.js') + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+      s.src = fosUrl('data/entidades/' + pais + '.js') + fosV('data/entidades/' + pais + '.js');
       s.onload = res; s.onerror = () => { console.error('[estructura] no cargó data/entidades/' + pais + '.js'); res(); };
       document.head.appendChild(s);
     });

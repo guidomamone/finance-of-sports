@@ -178,7 +178,7 @@ const FIN_GESTION = (function(){
     if(!PAISES.includes(pais)) return Promise.resolve();
     if(!pedidos[pais]) pedidos[pais] = new Promise(res => {
       const s = document.createElement('script');
-      s.src = fosUrl('data/gestiones/' + pais + '.js') + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+      s.src = fosUrl('data/gestiones/' + pais + '.js') + fosV('data/gestiones/' + pais + '.js');
       s.onload = res; s.onerror = () => { console.error('[gestiones] no cargó data/gestiones/' + pais + '.js'); res(); };
       document.head.appendChild(s);
     });
