@@ -9,6 +9,7 @@ import { derivado } from './rutas.mjs';
 import { norm as normNum } from './verify-numbers.mjs';
 import { ajusteDe, ajustesDe, ajustePerimetroDe } from './ajustes.mjs';
 import { parseNumber, EURO_FIJO, r6, cerca } from './verificar.mjs';
+import { filaQueExplica } from './diferencia-de-fila.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 
@@ -121,6 +122,7 @@ export function faseAnioAnterior(ctx) {
     if (sinColumna) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok: null, detalle: `no se puede comparar: ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} no trae la columna del año anterior` }); continue; }
     if (codigosNBB) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok, detalle: `códigos NBB del año ${dy === 1 ? year : year - 1} iguales en este documento y en ${otro.pdf.split('/').pop()} (${codigosNBB.join(', ')}); los ingresos se presentan distinto (${r6(dy === 1 ? mio : suyo)} y ${r6(dy === 1 ? suyo : mio)})` }); continue; }
     chequeos.push({ nombre: `documento del año ${year + dy}`, ok, detalle: `${paridad ? `en euros, con la paridad fija de ${paridad} (1 EUR = ${EURO_FIJO[paridad]}): ` : ''}ingresos de ${dy === 1 ? year : year - 1}: ${r6(dy === 1 ? mio : suyo)} en ${dy === 1 ? 'este documento' : otro.pdf.split('/').pop()} y ${r6(dy === 1 ? suyo : mio)} en ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} (columna del año anterior)` });
+    // (diferencia-de-fila.mjs decide: una fila de gasto de cualquiera de los dos, o una fila de lado `otro` con el mismo importe en los dos: Atlético Nacional, «Otras ganancias (pérdidas)».)
     // PRESENTACIÓN DISTINTA: la diferencia es exactamente UNA fila de GASTO (no un total) de
     // uno de los dos documentos: uno la presenta y el otro la netea. Casos: Olympiacos 2020 (82,46 M bruto) contra la columna anterior de 2021
     // (74,81 M neto): "Δαπάνες πώλησης/λύσεις συμβολαίων ποδοσφαιριστών" 7.645.064,67; Cuiabá 2022 y 2023, "(-) Deduções das receitas" (bruto
@@ -128,11 +130,11 @@ export function faseAnioAnterior(ctx) {
     // (UC 2009, Juventus 2005 x2) por coincidir con una fila de TOTAL. Se lee como en la medición: las cifras tal cual de los dos .filas.json, en
     // unidades, miles o millones.
     if (ok === false) {
-      const dif = Math.abs(mio - suyo); const TOT = /^\s*(?:total|totale|σύνολο|συνολο|subtotal|sub-total|ingresos de actividades|receita l)/i;
+      const dif = Math.abs(mio - suyo);
       const filasDoc = (m) => { try { return JSON.parse(readFileSync(resolve(ROOT, derivado(m, '.filas.json', { crear: false })), 'utf8')).filas || []; } catch { return []; } };
-      const neteada = dif > 0 && [...filasDoc(md), ...filasDoc(otro.md)].filter((f) => f.lado === 'gasto' && !TOT.test(f.etiqueta || ''))
-        .flatMap((f) => [f.actual, f.anterior].map((x) => ({ f, v: Math.abs(parseNumber(x) ?? 0) }))).find(({ v }) => v && [1e6, 1e3, 1].some((e) => Math.abs(v / e - dif) <= Math.max(2e-6, dif * 1e-7)));
-      if (neteada) { chequeos[chequeos.length - 1] = { ...chequeos[chequeos.length - 1], ok: null, detalle: `presentación distinta: ingresos de ${dy === 1 ? year : year - 1} ${r6(mio)} y ${r6(suyo)}; la diferencia es exactamente "${neteada.f.etiqueta}" (${neteada.f.lado}, ${neteada.f.actual}), que uno de los dos documentos netea` }; vecinos[vecinos.length - 1] = null; continue; }
+      // la columna de cada documento que trae el año comparado: el de este año tiene `actual` si el vecino es el siguiente (dy 1), `anterior` si es el anterior
+      const neteada = dif > 0 ? filaQueExplica({ dif, filasA: filasDoc(md), filasB: filasDoc(otro.md), colA: dy === 1 ? 'actual' : 'anterior', colB: dy === 1 ? 'anterior' : 'actual', parse: parseNumber }) : null;
+      if (neteada) { chequeos[chequeos.length - 1] = { ...chequeos[chequeos.length - 1], ok: null, detalle: `presentación distinta: ingresos de ${dy === 1 ? year : year - 1} ${r6(mio)} y ${r6(suyo)}; la diferencia es exactamente "${neteada.f.etiqueta}" (${neteada.f.lado}, ${neteada.f.actual}), que ${neteada.otroLado ? 'una comparación cuenta como ingreso y la otra no' : 'uno de los dos documentos netea'}` }; vecinos[vecinos.length - 1] = null; continue; }
     }
     // PERÍMETROS DISTINTOS: si no coinciden y los dos documentos tienen perímetro fijado (ajuste del
     // documento o del club) distinto, la columna del año anterior es de otro perímetro: no se puede comparar (como `otroRegimen`). Solo

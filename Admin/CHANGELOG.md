@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1236 — verificar: una fila de lado otro idéntica en dos documentos vecinos es «presentación distinta» [478 · verificar-cierre.mjs, diferencia-de-fila.mjs, probar-diferencia-de-fila.mjs]
+- La decisión «la diferencia de ingresos es exactamente una fila» pasa a `diferencia-de-fila.mjs`: además de una fila de gasto, vale una fila de lado `otro` con la misma etiqueta y el mismo importe del año comparado en los dos documentos (Atlético Nacional, «Otras ganancias (pérdidas)»). Una reexpresión real (la diferencia no es una fila) sigue abriendo la pregunta. En copias con la cola sin los casos de Nacional: 2024/2025 pasa a «presentación distinta», los dos casos reabiertos se cierran y 2015/2016 sigue abriéndose.
+- Medición: lote completo idéntico (verificar); veredicto GENERAL (62 documentos de 23 clubes); sin revisión independiente (condición nueva en verificar).
+
+---
+
 ## Versión 1235 — siis-estado y lote: un año de SIIS sin filas se avisa y no se cotiza [478 · lote-leer.mjs, siis-estado.mjs, siis-filas.mjs, probar-siis-filas.mjs]
 - `siis-estado.mjs` lista los años que quedaron con el `.md` escrito pero sin `.filas.json` («N escritos: M con filas, K sin filas (2016, …)») y sale con 1; `lote.mjs` (lote-leer) no localiza, extrae ni cotiza un `siis-estado-AAAA.pdf` sin filas: dice el comando que las arma, costo 0. Módulo nuevo `siis-filas.mjs` con su prueba (`probar-siis-filas.mjs`). Replicado en una copia con `difImporteLibros` fuera de CLASE: sale con 1 y lista 2016.
 - Medición: lote completo idéntico (lote-ensayo y verificar); sin revisión independiente (condición nueva: aviso y salida distinta de 0).
