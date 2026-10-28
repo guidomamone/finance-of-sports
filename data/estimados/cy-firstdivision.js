@@ -1,5 +1,5 @@
 // GENERADO por tools/estimar.mjs: no editar a mano. ESTIMACIONES, no datos reales: ingreso en millones de USD del año, rango del 80% (lo-hi) y error mediano medido (%).
 window.ESTIMADOS = window.ESTIMADOS || {};
 window.ESTIMADOS["cy-firstdivision"] = {
-  2025: [{"id":"omonia29maiou-cy","revenue":0.765,"lo":0.424,"hi":1.435,"caso":"afuera","error":29,"de":[2024]}],
+  2025: [{"id":"omonia29maiou-cy","revenue":0.765,"lo":0.423,"hi":1.442,"caso":"afuera","error":29,"de":[2024]}],
 };

@@ -20,6 +20,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Real Santander/siis-estado-2016.pdf"
+    },
+    {
+      "id": "realsantander-co-siis-estado-2017",
+      "club_id": "realsantander-co",
+      "title": "Club Deportivo Real Santander S.A. — siis-estado-2017 (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Real Santander/siis-estado-2017.pdf"
     }
   ],
   "members": null,
@@ -51,6 +59,36 @@
       "adjustments": {
         "extra_rows": [{"label":"Costos financieros","amount":-30.089},{"label":"Ingreso (gasto) por impuestos","amount":-4.685}],
         "no_breakdown": [{"line":"Ingresos de actividades ordinarias","side":"revenue","amount":1663.367,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-12-31",
+      "currency": "COP",
+      "source_id": "realsantander-co-siis-estado-2017",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2017-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 3955.323,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2497.205,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-35.424,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-78.171,"tax":-107.462,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":3955.323,"expenses":2532.629,"net_result":1237.061},
+      "adjustments": {
+        "extra_rows": [{"label":"Costos financieros","amount":-78.171},{"label":"Ingreso (gasto) por impuestos","amount":-107.462}],
+        "no_breakdown": [{"line":"Ingresos de actividades ordinarias","side":"revenue","amount":3955.323,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "revenue_basis": "full"
       }
     }
