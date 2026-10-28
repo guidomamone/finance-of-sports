@@ -8,6 +8,10 @@ const jaguaresCoRevenueLinesByYear = {
     {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":3343.318,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":0,"disclosureLevel":"aggregated"},
   ],
+  2018: [
+    {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":6897.025,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":1288.227,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const jaguaresCoExpenseLinesByYear = {
@@ -23,11 +27,16 @@ const jaguaresCoExpenseLinesByYear = {
     {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-25.962,"disclosureLevel":"aggregated"},
     {"rawLabel":"Ganancia (pérdida) procedente de operaciones discontinuadas","normalizedCategory":"exceptional_items","amountNative":-26.9,"disclosureLevel":"aggregated"},
   ],
+  2018: [
+    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-5853.429,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-338.381,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const jaguaresCoFiscalYearMeta = {
   2016: {"currency":"COP","sourceId":"jaguares-co-siis-estado-2016","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2016-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-3.434,"tax":-30.062,"grossDebt":null,"cash":null,"officialTotalRevenue":2268.37,"officialTotalExpenses":2194.821,"officialPAT":36.048,"extraRows":[{"label":"Ingresos financieros","value":0.346},{"label":"Costos financieros","value":-3.78},{"label":"Ingreso (gasto) por impuestos","value":-30.062}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":2264.919,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":13.709,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
   2017: {"currency":"COP","sourceId":"jaguares-co-siis-estado-2017","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2017-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-58.082,"tax":-143.531,"grossDebt":null,"cash":null,"officialTotalRevenue":3343.318,"officialTotalExpenses":2872.701,"officialPAT":242.104,"extraRows":[{"label":"Ingresos financieros","value":0.124},{"label":"Costos financieros","value":-58.206},{"label":"Ingreso (gasto) por impuestos","value":-143.531}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":3343.318,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
+  2018: {"currency":"COP","sourceId":"jaguares-co-siis-estado-2018","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2018-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-109.868,"tax":-418.74,"grossDebt":null,"cash":null,"officialTotalRevenue":8185.252,"officialTotalExpenses":6191.81,"officialPAT":1464.834,"extraRows":[{"label":"Costos financieros","value":-109.868},{"label":"Ingreso (gasto) por impuestos","value":-418.74}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":6897.025,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
 };
 
 const jaguaresCoPresupuestoOverlayByYear = {};
@@ -44,6 +53,6 @@ window.CLUB_GENERIC_DATA["jaguares-co"] = {
   presupuestoOverlayByYear: jaguaresCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"jaguares-co-siis-estado-2016":{"id":"jaguares-co-siis-estado-2016","clubId":"jaguares-co","title":"Jaguares Fútbol Club S.A. — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Jaguares/siis-estado-2016.pdf"},"jaguares-co-siis-estado-2017":{"id":"jaguares-co-siis-estado-2017","clubId":"jaguares-co","title":"Jaguares Fútbol Club S.A. — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Jaguares/siis-estado-2017.pdf"}});
+Object.assign(sources, {"jaguares-co-siis-estado-2016":{"id":"jaguares-co-siis-estado-2016","clubId":"jaguares-co","title":"Jaguares Fútbol Club S.A. — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Jaguares/siis-estado-2016.pdf"},"jaguares-co-siis-estado-2017":{"id":"jaguares-co-siis-estado-2017","clubId":"jaguares-co","title":"Jaguares Fútbol Club S.A. — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Jaguares/siis-estado-2017.pdf"},"jaguares-co-siis-estado-2018":{"id":"jaguares-co-siis-estado-2018","clubId":"jaguares-co","title":"Jaguares Fútbol Club S.A. — siis-estado-2018 (ejercicio 2018)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Jaguares/siis-estado-2018.pdf"}});
 
 memberCountByClub["jaguares-co"] = null;
