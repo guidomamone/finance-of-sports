@@ -23,6 +23,7 @@ que dice `ESTADO.md` era verdad ese día.
 ## Versión 1259 — 476, segunda tanda: gestión de Nacional 2018 a 2021 confirmada, asterisco de nota táctil, cositas del 461 verificadas [476 · club-sourcing]
 - Gestión de Pérez Ortiz en Nacional confirmada con Blu Radio del 9-2-2018 (asume el lunes 12-2); los 11 cierres de Nacional quedan cubiertos. El dictamen de Nacional 2018 y 2019 y el de Envigado 2024 no están en ningún documento nuestro (la carta, el informe de control interno y las notas no traen la opinión): sigue `falta_transcripcion`, a sourcing.
 - `.pl-sd-n a` con `@media (pointer:coarse)`: objetivo táctil de 21×43 a 43×45 px sin cambiar la altura de fila ni la página (PAOK a 375 px). `og/` y nota en español de margen bruto verificadas en cuatro clubes. 414 (cola para una ganancia en inmovilizado chica) queda abierto: cambia la carga.
+- La «decisión de Guido» sobre Ramiro Ruiz (Envigado) ya estaba tomada: `c6e048bc93` (478.18) la pasó a `confirmada:true` y las 9 preguntas de gestión están cerradas; el punto del TODO estaba desactualizado y se borró.
 - Medición: solo CSS y datos; ninguna tool del pipeline cambió; ASSET_V 2137 a 2138.
 
 ---
