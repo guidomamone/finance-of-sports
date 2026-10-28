@@ -20,6 +20,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1263 — Inicio: cards «Últimas cargas» y «Próximas cargas», página ultimas-cargas.html y reglas del pie con sus links [480 · audit-chequeos-2.js, cargar-lote.mjs, generadores.mjs, generate-club-pages.js, prueba-escribir.mjs, generar-proximas-cargas.mjs, generar-ultimas-cargas.mjs]
+- Dos cards al fondo de Inicio (5 filas: bandera, club, ejercicios y fecha) con «Ver más →» a `ultimas-cargas.html` (lista entera, 50 por vez; en el sitemap). Una fila por club y tanda (lo que un club cargó el mismo día), mockup variante B aprobada.
+- `generar-ultimas-cargas.mjs` (del historial de commits de carga) y `generar-proximas-cargas.mjs` (documentos `listo` del inventario de transcripciones sin su ejercicio en el JSON): `--check` en `audit.js` (`ultimas-cargas-desfasado`, `proximas-cargas-desfasado`), en `generadores.mjs`, y `cargar-lote.mjs` los regenera y los commitea al cerrar el lote.
+- Inicio: sin «Proyecto personal» ni «Cada cifra dice de qué documento sale»; «Ver todas las fuentes» pasa al bloque 1 y «Aprender sobre la metodología» al 2, cada link en su renglón; el bloque 3 sin link.
+- Medición: lote completo, 2 diferencias, todas explicadas; veredicto GENERAL, sin revisión independiente de la Auditora; una prueba de `prueba-escribir.mjs` se ajustó (el commit del año puede ser el penúltimo).
+
+---
+
 ## Versión 1262 — Las salidas de las tools de SIIS dicen lo que antes había que investigar; brief de subagentes con cierre; TODO con documento por punto [479, 480, 481 · club-siis.mjs, estadio-sponsor.mjs, sponsor-fka.mjs, gestion-exa.mjs, auditoria.mjs, alta-club-lectura.mjs, lookup-brand-color.js, todo.mjs, validar-contexto.mjs, brief-tool.mjs]
 - Los 20 hallazgos del 479 arreglados por seis subagentes y revisados: «SIIS no lo tiene» contra «por bajar», comandos entrecomillados, `--todos`, briefs con la regla de gestiones y el informe-anual, ensayo de estadio-sponsor con código 0, `--informe-anual`, `validar-contexto`, fichas ajenas en sponsor-fka, nombra/cargo/fecha en gestion-exa, `--ejemplo`/`--agregar` en auditoria, nombre legal normalizado y `lookup-brand-color` por país.
 - Proceso: `brief-tool` y su hook (el cierre de todo subagente que edita tools/), `Documento:` opcional por punto en `todo.mjs`, doce puntos del TODO reescritos al formato actual por subagentes; puntos nuevos 480, 481, 482, 483 y 484.

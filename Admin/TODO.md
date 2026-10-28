@@ -24,25 +24,7 @@ Lo que falta hacer. **Esta es la única lista oficial de próximos pasos del pro
 
 ## A. En marcha
 
-### 1. 480 · (Pantallas, con Contenido, prioridad alta): Inicio: card «Últimas cargas» con los últimos club-años cargados y «Ver más» a una página
-
-Pedido de Guido: en Inicio, un card «Últimas cargas» con los últimos club-años cargados (10) y un «Ver más» que lleva a una página con la lista completa. Es chico y va primero. El diseño y la fuente de datos están en el documento del punto.
-- [ ] Fuente pública: `tools/generar-ultimas-cargas.mjs` arma data/ultimas-cargas.js (club, ejercicio, fecha de carga, solo cargas reales, no estimados) desde los commits de carga que deja `cargar-lote.mjs` (como `generar-correcciones.mjs` con el historial de git); `--check` en la auditoría, como los otros generados. `Admin/registros/cargar-ultimo.jsonl` es interno y no se publica.
-- [ ] Mockup del card y de la página en Prototyping/Pantallas/mockup-480.html con números reales (skill `producto-y-pantalla`): el ok de Guido antes del código.
-- [ ] Card en Inicio con los 10 últimos (escudo o iniciales del club, ejercicio, fecha) y enlace a cada club en ese ejercicio; botón «Ver más».
-- [ ] Página ultimas-cargas.html generada (lista completa con más cargas por página, enlace desde el card, en `sitemap.xml` y servida en `/ultimas-cargas`).
-- [ ] Verificar en celular (375 px), español e inglés, sin errores en consola y con `node tools/audit.js` en 0 P0 y P1.
-- [ ] Que se genere solo y no dependa de acordarse: `publicar.mjs` y la lista de generadores (`tools/generadores.mjs`) corren `tools/generar-ultimas-cargas.mjs` junto con los demás; `cargar-lote.mjs` lo corre al terminar cada carga (después del commit del año) y deja los archivos para el commit de páginas; un chequeo de `audit.js` (`ultimas-cargas-desfasado`, P1, igual que `manifiesto-desfasado`) frena el commit si data/ultimas-cargas.js no es lo que sale del historial; `node tools/fos.mjs que-pide` lo lista.
-Terminado cuando: Inicio muestra el card con los 10 últimos club-años, «Ver más» abre ultimas-cargas.html con el resto, la lista se regenera sola con cada carga y una carga nueva sin regenerarla no se puede commitear.
-
-Documento: Admin/propuestas/480-inicio-card-ultimas-cargas-con-los-ultimos-club-an.md
-Verificar: existe tools/generar-ultimas-cargas.mjs
-Verificar: existe ultimas-cargas.html
-Verificar: contiene js/principal.js | ultimas-cargas
-
-Verificar: audit ultimas-cargas-desfasado = 0
-
-### 2. 463 · (Onboarding, con Pipeline y Auditora): SIIS de Colombia: cargar los clubes con años pendientes
+### 1. 463 · (Onboarding, con Pipeline y Auditora): SIIS de Colombia: cargar los clubes con años pendientes
 
 Cargar con SIIS los años de los clubes colombianos que todavía no están. Cómo se carga un club: `Admin/paises/co.md`, «Pipeline de Colombia: los estados de SIIS», y `node tools/club-siis.mjs "<Club>"` (dice qué falta y con qué comando; después `--preparar`, los tres subagentes y `--avanzar --ejecutar --cargar --en-segundo-plano`). Qué está cargado y qué falta de cada club: `node tools/club-siis.mjs` sin nombre.
 Decisiones vigentes: el estado de resultados y el balance de SIIS son el estado primario oficial de un club colombiano; un año que SIIS tiene y no tiene PDF útil se carga igual (rubros grandes y resultado); la tool, los chequeos (`tools/audit-chequeos-siis.js`, dentro de `audit.js`) y la regla viven en el pipeline. Lo que quedó pendiente de los clubes ya cargados y los hallazgos de las tools: Admin/mediciones/463-hallazgos-20-club-anios.md y el punto 479.
@@ -68,7 +50,7 @@ Terminado cuando: cada club de la lista está cargado o descartado con su motivo
 Verificar: existe tools/siis-estado.mjs
 Verificar: audit siis-faltante = 0
 
-### 3. 481 · (Pipeline, prioridad 3): Acelerar medir-pipeline sin perder lo que mide
+### 2. 481 · (Pipeline, prioridad 3): Acelerar medir-pipeline sin perder lo que mide
 
 `node tools/fos.mjs cerrar-tool` tardó 24 min 16 s en el último cambio (ocho tools; seis medidores; lotes chico, mediano y completo, cada uno «antes» y «después»), y un cambio solo de texto paga el mismo lote completo que uno de lógica. Se quiere bajar ese tiempo sin que la medición deje de encontrar lo que hoy encuentra. Lo que no se negocia: una medición acelerada tiene que dar el mismo veredicto que la lenta sobre los cambios ya medidos (`Admin/registros/mediciones-pipeline.jsonl`).
 - [ ] Medir dónde se va el tiempo: `node tools/duraciones-mediciones.mjs` (por medidor y nivel) y un perfil de una corrida real (qué parte es el «antes», cuál el «después», cuánto cuesta cada medidor por documento).
@@ -81,7 +63,7 @@ Terminado cuando: una medición de un cambio como el último baja de 24 min a me
 Documento: Admin/mediciones/481-acelerar-medir-pipeline-sin-perder-lo-que-mide.md
 Verificar: manual
 
-### 4. 484 · (Pipeline, hermano del 481): Por qué medir un cambio en cola.mjs tarda unos 50 minutos y cómo bajarlo
+### 3. 484 · (Pipeline, hermano del 481): Por qué medir un cambio en cola.mjs tarda unos 50 minutos y cómo bajarlo
 
 Medir un cambio de `cola.mjs` estima unos 50 minutos (15 pasos de medidores, lotes chico, mediano y completo, cada uno antes y después): ver el plan con `node tools/medir-pipeline.mjs --ensayo` y el avance con `node tools/fos.mjs progreso`. Lo usan todas las etapas, así que ningún medidor se salva; el cambio que lo mostró era solo de lo que `cola.mjs` imprime al listar (un resumen al final) y ningún medidor ejecuta ese tramo. Es el caso chico del 481: acá se estudia qué hace que un cambio de una tool compartida pague todo el plan.
 - [ ] Medir el plan real de `cola.mjs`: qué medidores y qué lote elige `tools/pipeline-tools.json` para ella y cuánto tarda cada uno (`node tools/duraciones-mediciones.mjs`).
@@ -94,7 +76,7 @@ Terminado cuando: un cambio solo de listado en `cola.mjs` se mide en minutos con
 Documento: Admin/mediciones/484-por-que-medir-un-cambio-en-cola-mjs-tarda-unos-50-.md
 Verificar: manual
 
-### 5. 479 · (Pipeline, con Onboarding): SIIS de Colombia: lo que las tools no imprimen y cada subagente reconstruye (hallazgos de cargar 20 club-años, 463)
+### 4. 479 · (Pipeline, con Onboarding): SIIS de Colombia: lo que las tools no imprimen y cada subagente reconstruye (hallazgos de cargar 20 club-años, 463)
 
 Cargar Jaguares y Real Santander (20 club-años, 28-10-2026) dejó 20 hallazgos de las tools y nueve propuestas de proceso, todas de salida, nombre legal o texto de briefs (ninguna toca un dato publicado ni una compuerta): `Admin/mediciones/463-hallazgos-20-club-anios.md`. Un cambio a una tool del pipeline se mide antes y después (`cerrar-tool`).
 - [x] Hecho y medido: P1 nombre legal del alta normalizado; P4 `--ejemplo`, `--agregar` y `--pendientes --club` del auditor; P5 salida honesta de los ensayos; P6 alias y pista de liga en `club-siis`; P7 `--informe-anual` y `validar-contexto`; P8 y P9 (briefs y `lookup-brand-color`); el brief de subagentes con cierre obligatorio (`brief-tool`).
@@ -113,7 +95,7 @@ Terminado cuando: cada propuesta está hecha (con su medición) o descartada con
 
 Verificar: manual
 
-### 6. 466 · (Onboarding, con Pantallas): mapa visual del onboarding de un club (sin sourcing), con sus dos caminos
+### 5. 466 · (Onboarding, con Pantallas): mapa visual del onboarding de un club (sin sourcing), con sus dos caminos
 
 Guido pidió un mapa visual, con forma de workflow, del onboarding de un club sin el sourcing: desde que el PDF o el estado de SIIS está en la carpeta hasta el año publicado con su línea del auditor. Que se vea de un vistazo qué corre cada paso y qué lo cuida, para que una sesión no tarde una hora en cargar un solo club por no tenerlo a la vista. Dos caminos en el mismo mapa: el PDF (etapas de `Admin/PIPELINE.md`) y el de SIIS (`tools/club-siis.mjs`). Se hace con el widget de diagramas o con un Artifact (la skill `producto-y-pantalla-finance-of-sports` no aplica: no es del sitio).
 - [ ] Mapa del camino PDF: por paso, el comando (`node tools/fos.mjs`), la tool, qué archivo lee y a cuál escribe (`Admin/CONTRATO-ETAPAS.md`).
@@ -126,7 +108,7 @@ Terminado cuando: existe el mapa, muestra los dos caminos con comando, tool, hoo
 Verificar: manual
 Verificar: contiene Admin/PIPELINE.md | mapa del onboarding
 
-### 7. 459 · (Deploy, con Guido, prioridad alta): Supabase se pausó otra vez; el Worker `fos-supabase-ping` no lo mantuvo despierto
+### 6. 459 · (Deploy, con Guido, prioridad alta): Supabase se pausó otra vez; el Worker `fos-supabase-ping` no lo mantuvo despierto
 
 MI CUENTA usa Supabase en plan gratis, que pausa el proyecto tras 7 días sin uso. Lo debería mantener despierto el Worker `fos-supabase-ping` (cron cada 3 días que llama a `ping()`; código en `tools/supabase/ping-worker.mjs`, SQL en `tools/supabase/ping.sql`; `Admin/ESTADO.md`, «MI CUENTA»). Guido (2026-10-25): se pausó igual, así que el Worker no corrió o falló. Mientras esté pausado, la pestaña MI CUENTA dice «no disponible».
 - [ ] Guido: reactivar el proyecto en el panel de Supabase.
@@ -139,7 +121,7 @@ Terminado cuando: Supabase está activo, el Worker corre su cron y deja una corr
 
 Verificar: manual
 
-### 8. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
+### 7. 362 · (Pipeline, con la Auditora): el freno de documentos de grupo
 
 Un consolidado de grupo con negocios ajenos al club (caso Fleetwood/Jaymel) vale como documento del club solo si cumple la regla de `Admin/CONVENCIONES-DATOS.md`, «Un consolidado de grupo con negocios ajenos al club» (votada 3 a 0): el club está en el grupo el ejercicio entero y lo ajeno pesa a lo sumo el 10 % del turnover impreso. Hoy esa regla la aplica una sesión a mano; ninguna tool la frena. Un cambio a una tool del pipeline se mide antes y después (`cerrar-tool`).
 - [ ] Antes de codear: recorrer la sección 7 de la skill `auditoria-finance-of-sports` (condición nueva en una tool) y anotar en CHANGELOG «sin revisión independiente».
@@ -150,7 +132,7 @@ Terminado cuando: el freno está activo, medido con el veredicto de `cerrar-tool
 
 Verificar: manual
 
-### 9. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
+### 8. 363 · (Pipeline): lo aprobado de Pipeline 15 que no se aplicó
 
 Lo aprobado por la Auditora 5 y 6 (`Admin/registros/auditoria-proceso.jsonl`; detalle en `Admin/Archive/sesion-pipeline-2026-10-21.md`, «Pipeline 15», «Qué queda») que quedó sin commitear. Un cambio a una tool del pipeline se mide antes y después (`cerrar-tool`). Los avisos de recorte ya están (`avisarRecorte`); falta lo de abajo.
 - [ ] (a1) `jevDe` (`tools/caja-deuda-propuestas.mjs`) manda a Jev todas las filas del balance, no las primeras 120. Condición de la Auditora 6, antes de commitear: volver a pedirle a Jev los documentos que hoy cortan (`caja-deuda.mjs` avisa «AVISO (recorte)»); los años cuya caja o deuda cambia van como corrección con cita y trailer `Corrige:`, o se revierte.
@@ -171,7 +153,7 @@ Verificar: contiene .claude/skills/auditoria-finance-of-sports/SKILL.md | rareza
 
 ## D. Orden de la casa
 
-### 10. 445 · (Auditora, con Guido): SønderjyskE 2022 a 2024 en formato completo: ¿se le pide el desglose al club?
+### 9. 445 · (Auditora, con Guido): SønderjyskE 2022 a 2024 en formato completo: ¿se le pide el desglose al club?
 
 Guido prefiere ver a SønderjyskE en formato completo. Hoy 2025 está completo y 2022, 2023 y 2024 están resumidos («Bruttofortjeneste», margen bruto, balance resumido por la § 32), que es como el club los publicó. Decisión de Guido: no se usa el 2024 del informe 2025, porque ese comparativo está reexpresado (35,30 M contra 37,43 M publicados) y la regla vigente no lo permite si el PDF del año es legible (`Admin/CONVENCIONES-DATOS.md`, «UN COMPARATIVO REEXPRESADO NO ES LA TRANSCRIPCIÓN DEL AÑO»). El porqué y los 3 a 0 de 2025: `Admin/mediciones/413-votacion-formato-completo-vs-reducido.md`. Los informes publicados de 2022 y 2023 no traen el desglose, así que completar los tres años exige pedírselo al club. Lo que mide «completo»: ingresos y gastos brutos (el resultado no cambia); sirve para el tamaño real y la relación sueldos/ingresos.
 - [x] Decidido: 2024 queda como el club lo publicó (resumido); no se usa el comparativo del informe 2025.
@@ -183,7 +165,7 @@ Terminado cuando: Guido decidió si se le pide el desglose al club y lo decidido
 
 Verificar: manual
 
-### 11. 338 · (Auditora): correr todas las auditorías del proyecto, una por una (al final de A)
+### 10. 338 · (Auditora): correr todas las auditorías del proyecto, una por una (al final de A)
 
 Pedido de Guido: correr cada auditoría que existe y mirar qué queda en P2 y P3 para decidir qué se arregla. Cada ítem es una auditoría distinta; se tilda cuando se corrió y se anotó el resultado. Lo que salga P0 o P1 se arregla antes de seguir. Las decisiones sobre P2 y P3 se registran con `node tools/decision.mjs` (una por código, ver `auditoria-finance-of-sports`, «Lo que queda en P2 y P3»). Las que pagan API o piden criterio de Guido lo dicen.
 
@@ -226,7 +208,7 @@ Terminado cuando: cada ítem de arriba está tildado con su salida esperada, y c
 Verificar: audit todo-cumplido = 0
 Verificar: manual
 
-### 12. 258 · (Pantallas): índice partido por país o liga, cuando lo que se baja siempre pase 150 KB comprimidos
+### 11. 258 · (Pantallas): índice partido por país o liga, cuando lo que se baja siempre pase 150 KB comprimidos
 
 `data/clubs.js` y `data/club-index.js` crecen por club y los baja todo visitante antes de elegir uno. Partirlos por país o liga no vale la pena todavía; se reabre cuando lo que se baja siempre pase 150 KB comprimidos o esos dos archivos pasen 1 MB crudos. Un cambio de código se mide antes y después (`cerrar-tool`); una condición nueva en `audit.js` pasa por la sección 7 de `auditoria-finance-of-sports`.
 - [x] Medido que todavía no llega: `gzip -9c data/clubs.js | wc -c` y `gzip -9c data/club-index.js | wc -c` (suma muy por debajo de 150 KB; `wc -c` de los dos, por debajo de 1 MB).
@@ -239,7 +221,7 @@ Terminado cuando: el chequeo `payload-eager` está activo y medido, y el comando
 Verificar: contiene tools/audit-chequeos-4.js | payload-eager
 Verificar: no-contiene .claude/skills/escala-finance-of-sports/SKILL.md | src="data/
 
-### 13. 364 · (Pantallas): el registro de correcciones: curar los eventos sin motivo y sumarlo al Data Package
+### 12. 364 · (Pantallas): el registro de correcciones: curar los eventos sin motivo y sumarlo al Data Package
 
 `correcciones.html` y el bloque de Finanzas leen `data/correcciones/` (lo genera `tools/generar-correcciones.mjs` desde el historial de git). El motivo sale del trailer `Corrige:` del commit o de `Admin/registros/correcciones.jsonl`; sin ninguno dice «Motivo no registrado» (nunca se inventa). Los eventos nuevos ya traen trailer; los viejos, de antes del registro, no. Cuántos eventos hay y cuántos tienen motivo: `node tools/generar-correcciones.mjs` (reescribe `data/correcciones/`; sin escribir, `--check`).
 
@@ -260,7 +242,7 @@ Verificar: existe Admin/registros/correcciones.jsonl
 Verificar: contiene tools/exportar-paquete.mjs | correcciones
 Verificar: manual
 
-### 14. 298 · (Pipeline): lo que dejó el onboarding de Estonia y Bélgica en las tools: que el alta tome la liga de la revisión
+### 13. 298 · (Pipeline): lo que dejó el onboarding de Estonia y Bélgica en las tools: que el alta tome la liga de la revisión
 
 Lo que sigue abierto de las mejoras de tool del onboarding de Estonia y Bélgica. El detalle de cada letra: `Admin/Archive/sesion-onboarding-2026-10-18-4.md` (a a q) y `-5.md` (s a v); lo descartado con motivo, `Admin/HALLAZGOS-pipeline.md`. Un cambio a una tool del pipeline se mide antes y después (`cerrar-tool`).
 
@@ -273,7 +255,7 @@ Terminado cuando: k está hecha y medida, y u2 y g2 están hechas o descartadas 
 
 Verificar: manual
 
-### 15. 482 · (Onboarding): Bélgica: cargar Anderlecht 2011, Sint-Truiden 2013 y Zulte Waregem 2012 (ejercicios de más de 12 meses)
+### 14. 482 · (Onboarding): Bélgica: cargar Anderlecht 2011, Sint-Truiden 2013 y Zulte Waregem 2012 (ejercicios de más de 12 meses)
 
 Tres ejercicios de transición de más de 12 meses que el diseño ya acepta (se cargan como el año del cierre, con los importes tal cual y `publicNote`; `Admin/CONVENCIONES-DATOS.md`, regla de los ejercicios largos). Los clubes tienen hoy solo 2025 en `data/be/`; los PDF y `.md` de los tres años están en `Clubes/Bélgica/<club>/`.
 
@@ -289,7 +271,7 @@ Verificar: contiene data/be/sinttruiden-be.json | "fiscal_year": 2013
 Verificar: contiene data/be/zultewaregem-be.json | "fiscal_year": 2012
 Verificar: no-contiene Admin/CONVENCIONES-DATOS.md | Anderlecht 2011 (16 meses) ya cargado
 
-### 16. 483 · (Auditora, con Guido): Decisiones belgas y de gasto que quedaron de la 298 (ajustes con error chico, Gales e Irlanda del Norte, Mistral)
+### 15. 483 · (Auditora, con Guido): Decisiones belgas y de gasto que quedaron de la 298 (ajustes con error chico, Gales e Irlanda del Norte, Mistral)
 
 - [ ] t2 (no verificada): los años belgas con ajustes `fila` y el escalón NBB sin correr cerraron por tolerancia con errores chicos: Patro Eisden 2025 (ingresos +1.810, gastos +4.012), Lommel SK 2025 (gastos +172) y Lommel SK 2018 (−182 de financiero). Decidir si se corrigen (escalón: correr el NBB también con ajustes si el resultado sigue exacto) o se aceptan con motivo.
 - [ ] Gales e Irlanda del Norte en el selector (decisión de pantalla): `data/leagues.js` solo comenta cómo se haría `WAL`. No hay clubes galeses ni norirlandeses cargados; se retoma con el primero.
@@ -299,7 +281,7 @@ Terminado cuando: cada ítem está decidido (hacer, descartar con motivo en `Adm
 
 Verificar: manual
 
-### 17. 365 · (Auditora, con Onboarding): Lierse Kempenzonen 2022: cargarlo o descartarlo, y cerrar el silenciamiento
+### 16. 365 · (Auditora, con Onboarding): Lierse Kempenzonen 2022: cargarlo o descartarlo, y cerrar el silenciamiento
 
 Lierse son dos clubes: la vzw (`liersekempenzonen-be`, con 2018 a 2021 cargados) y la NV sucesora (`liersesk-be`, con `predecessor_id`). Falta decidir el ejercicio 2022 de la vzw.
 
@@ -312,7 +294,7 @@ Terminado cuando: 2022 está cargado o descartado con motivo, y el motivo del si
 
 Verificar: no-contiene tools/audit-ignore.json | lo decide el 365, que sigue abierto
 
-### 18. 452 · (Pantallas, con Contenido): particularidades contables clave en `metodologia.html` (balance resumido, cierre, perímetro, sin socios, tipo de cambio), sin curso de contabilidad
+### 17. 452 · (Pantallas, con Contenido): particularidades contables clave en `metodologia.html` (balance resumido, cierre, perímetro, sin socios, tipo de cambio), sin curso de contabilidad
 
 Pedido de Guido: que un lector entienda qué está leyendo con un puñado de particularidades contables cortas, cada una con su caso real del sitio. Son cosas que solo se ven con ejercicios de muchos países. Lo escribe Contenido con el criterio de `contenido-y-difusion`. Guido tiene ideas y NO se cierra hasta que lo autorice explícitamente.
 - [x] Nota por ejercicio en «Notas sobre este club» (debajo del Estado de resultados) para ingresos en una sola línea o margen: `renderNotasClub` en `js/finanzas-render.js`, plantillas `pl.sd.tip.*` y `pl.notas.*` en `data/lang/en.js` (el español va como texto por defecto en el código).
@@ -328,7 +310,7 @@ Terminado cuando: `metodologia.html` tiene una sección corta con las particular
 
 Verificar: manual
 
-### 19. 372 · (Auditora, prioridad baja): decidir si lo que reparte la federación o la liga con nombre de «subsidio» entra a Subsidios y donaciones
+### 18. 372 · (Auditora, prioridad baja): decidir si lo que reparte la federación o la liga con nombre de «subsidio» entra a Subsidios y donaciones
 
 Las etiquetas de subsidios que quedaron excluidas de `grants_donations` en `tools/subsidios-etiquetas.json` las dejaron afuera reglas objetivas, no una confianza baja de Jev: mezcladas con otro concepto, solidaridad de la federación o la liga (`competition_bonus`), subvención de capital imputada, impuestos y deducciones. `node tools/fos.mjs etiquetas --categoria grants_donations --listar --todas` las muestra con su motivo. Guido no las revisa una por una: el proceso es `node tools/fos.mjs etiquetas`.
 - [x] Lista corta de 24 etiquetas decididas por Guido (13 a Subsidios y donaciones, 11 quedan en Otros ingresos): commit `cf38f19df9`.
@@ -339,7 +321,7 @@ Terminado cuando: las etiquetas excluidas por la regla de la federación o la li
 
 Verificar: contiene Admin/CONVENCIONES-DATOS.md | REGLA: lo que reparte la federación o la liga
 
-### 20. 377 · (Onboarding, con Pipeline): Alemania: años cargados sin verificación (RB Leipzig, Hamburger SV, DFL) que las listas de prueba no cubren
+### 19. 377 · (Onboarding, con Pipeline): Alemania: años cargados sin verificación (RB Leipzig, Hamburger SV, DFL) que las listas de prueba no cubren
 
 Las listas que arma `tools/lotes-prueba.mjs` salen de lo que tiene `Generados/<País>/<Club>/<doc>.verificacion.json`; un club cargado sin ese archivo no entra y un cambio a una tool no se mide sobre él. En Alemania solo Borussia Mönchengladbach (2021 y 2022) tiene verificación; RB Leipzig (2015, 2017, 2018-19), Hamburger SV (2021-22) y `_DFL-Finanzkennzahlen` tienen `.categorias.json` y `.rubros.json` pero ningún `.filas.json` ni `.verificacion.json` (cargados por el camino legado: tienen `.previo-legado.md`). Averiguar el motivo por documento antes de decidir, sin asumir; según la causa: rehacer las etapas 3 a 6 donde corresponde (`tools/verificar.mjs`), o declarar el año como legado sin verificación en `Admin/paises/de.md` y dejar que `node tools/lotes-prueba.mjs --check` lo acepte.
 - [x] Rusia: su camino no pasa por verificación (JSON del fisco, `Admin/paises/ru.md`), tiene medidor propio (`escribir` en `tools/pipeline-tools.json`: `bfo-rusia.mjs` y `bfo-rusia-notas.mjs`; prueba con Krasnodar 2025, `Admin/PIPELINE.md`, «La escritura de las tools que escriben…»).
@@ -354,7 +336,7 @@ Verificar: audit lote-prueba-desfasado = 0
 
 ## E. Después de A a D (Guido, 2026-10-20)
 
-### 21. 464 · (Onboarding, con Pantallas y Contrato de datos): abrir con SIIS los clubes de baloncesto y béisbol de Colombia
+### 20. 464 · (Onboarding, con Pantallas y Contrato de datos): abrir con SIIS los clubes de baloncesto y béisbol de Colombia
 
 SIIS tiene el estado de resultados de clubes de baloncesto y béisbol colombianos; no se cargan hasta que Guido active cada deporte (`Admin/PIPELINE.md`, «Un deporte nuevo»). Hoy `SPORTS` en `data/leagues.js` tiene `basquet` inactivo y no tiene béisbol. Lista de clubes, NIT y años: `Admin/sourcing/Colombia/siis-inventario.md` (generado; ahí están por razón social los de R9312 y R9319).
 
@@ -369,7 +351,7 @@ Terminado cuando: Guido decidió qué deportes se activan con SIIS y los clubes 
 
 Verificar: manual
 
-### 22. 357 · (Pantallas, con Auditora y Contrato de datos): mostrar las inyecciones de capital de los dueños
+### 21. 357 · (Pantallas, con Auditora y Contrato de datos): mostrar las inyecciones de capital de los dueños
 
 El aporte, aumento de capital o préstamo de dueños o socios va al patrimonio o a la deuda, no al resultado, y el sitio hoy no lo muestra. `Admin/CONVENCIONES-DATOS.md` («subsidios, donaciones y aportes») ya deja afuera de `grants_donations` el aporte que el documento lleva al patrimonio neto.
 
@@ -381,7 +363,7 @@ Terminado cuando: hay una medición por país de dónde se imprime la inyección
 
 Verificar: manual
 
-### 23. 420 · (Onboarding, con la Auditora): cargar los británicos en iXBRL: lote 143 y Hibernian, los años pagables, Falkirk, las altas
+### 22. 420 · (Onboarding, con la Auditora): cargar los británicos en iXBRL: lote 143 y Hibernian, los años pagables, Falkirk, las altas
 
 El lote 143 (`Admin/lotes/lote-143.txt`, 13 documentos de Inglaterra, el año más reciente de cada club) pasó la lectura, las 13 sumas verifican y sus colas de sumas, perfil y categorías están contestadas, pero ninguna de las 13 altas está hecha. Pagar la IA sobre XHTML exige `--pagar-ia-xhtml "<motivo>"`: sin ese flag `lote.mjs` frena el lote entero porque el motor `xhtml-ixbrl` no tiene escalón determinista. Gasto de API a la fecha: `node tools/gasto.mjs`.
 - [x] Los 55 `.md` de Hibernian, Bolton, Bristol Rovers, Cambridge, Crewe, Northampton, Oxford, Peterborough, Plymouth, Rotherham, Salford, Tranmere, Blackpool y Reading reconvertidos con tablas (los Hibernian están en `Clubes/Escocia/Hibernian/`).
@@ -404,7 +386,7 @@ Verificar: contiene data/leagues.js | Scottish Championship
 Verificar: contiene Admin/paises/gb.md | Trust
 Verificar: manual
 
-### 24. 337 · (Onboarding, con Guido): las 5 grandes ligas, Brasil y Argentina bien cargadas, antes de difundir (313)
+### 23. 337 · (Onboarding, con Guido): las 5 grandes ligas, Brasil y Argentina bien cargadas, antes de difundir (313)
 
 Antes de difundir (313) hay que tener bien cargadas Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Brasileirão Série A y la Primera argentina. Mistral es el motor de transcripción (`Admin/PIPELINE.md`, «Documentos fuente»); en estas ligas se transcribe lo que falte.
 - [x] Medir qué falta por liga: `node tools/faltantes-liga.mjs --print` (por liga y año) y `Admin/ESTADO-clubes.md` (por club).
@@ -417,7 +399,7 @@ Terminado cuando: cada una de las siete ligas llega al umbral que Guido decida, 
 
 Verificar: manual
 
-### 25. 313 · (Contenido, con Pantallas): difusión: X, Instagram y material para periodistas y sponsors (después del 337)
+### 24. 313 · (Contenido, con Pantallas): difusión: X, Instagram y material para periodistas y sponsors (después del 337)
 
 Promocionar el sitio con publicaciones propias. Nada sale antes del 337 (las siete ligas bien cargadas). Cada idea se diseña de a una, con el ok de Guido.
 - [x] Skill de contenido y difusión: `.claude/skills/contenido-y-difusion-finance-of-sports/SKILL.md` (un año cargado, hilo o post con el dato verificado y el link a la fuente).
@@ -429,7 +411,7 @@ Promocionar el sitio con publicaciones propias. Nada sale antes del 337 (las sie
 Terminado cuando: el 337 está cerrado y Guido aprobó y se publicó al menos una pieza de cada línea que decida seguir (dato del día, tarjeta, deck), con su dato verificado.
 
 Verificar: manual
-### 26. 335 · (Sourcing, con Guido): mails a clubes
+### 25. 335 · (Sourcing, con Guido): mails a clubes
 
 Todo lo que implique escribirle a un club vive acá. Nadie redacta ni manda un mail sin que Guido lo pida con sus palabras.
 - [x] Etapa 1 lista y probada de punta a punta: Resend, `outreach.financeofsports.com`, cola en `Admin/outreach/cola/`, envío desde la terminal de Guido con `tools/outreach-send.js`. El flujo: skill `club-outreach`; cuándo amerita un mail: `club-sourcing`, sección 0.3.
@@ -440,7 +422,7 @@ Terminado cuando: Guido decidió sobre la Etapa 2 y el check-in está archivado;
 
 Verificar: manual
 
-### 27. 460 · (Contenido, con Pantallas, prioridad baja): una página de blog que suma nuestros datos a lo que dicen los informes de UEFA, Deloitte y similares
+### 26. 460 · (Contenido, con Pantallas, prioridad baja): una página de blog que suma nuestros datos a lo que dicen los informes de UEFA, Deloitte y similares
 
 Pedido de Guido (2026-10-26): una página de blog (la ruta la decide Pantallas) que tome lo que dicen informes como el de UEFA o la Money League de Deloitte y le agregue lo que dicen NUESTROS datos. Es contenido: ninguna cifra de esos informes se carga en el sitio ni se usa como control de calidad de nuestros clubes. Va antes de la API (249).
 - [x] Informe de UEFA 2025 guardado y transcripto: `Admin/informes-externos/uefa/ecfil-2025.md`; su `Admin/informes-externos/README.md` dice qué trae (KPI por liga y país, no ingresos por club).
@@ -454,7 +436,7 @@ Terminado cuando: existe la página de blog con al menos un artículo que cita e
 Verificar: contiene Admin/fuentes-externas.md | UEFA
 Verificar: manual
 
-### 28. 249 · API en dominio propio
+### 27. 249 · API en dominio propio
 
 La API, si se hace, va en `api.financeofsports.com` desde el primer día y es paga para todos (`Admin/ESTADO.md`, «Objetivo del proyecto»). No se construye ahora. El Worker actual vive en una cuenta personal (`square-sky-ca25.guidomamone91.workers.dev`, usado por `js/selector.js`); no se amplía para esto.
 Un ejercicio convertido con una cotización de BCRA, SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en la moneda del club o se pide permiso: `Admin/fuentes-externas.md`, «Consecuencias» (`node tools/audit.js --fx` dice de dónde sale cada cotización).
