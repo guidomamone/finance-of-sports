@@ -164,9 +164,11 @@ window.RANKINGS["co-primeraA"] = {
   },
   2022: {
     leagueSize: 20,
-    sinDato: ["atlnacional-co"],
     wiki: {"t":"2022 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
+      { id:"atlnacional-co", revenue:18.436, reportType:"official_balance_sheet",
+        sourceId:"atlnacional-co-siis-estado-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",18.436]] },
       { id:"independientemedellin-co", revenue:12.989, reportType:"official_balance_sheet",
         sourceId:"independientemedellin-co-siis-estado-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",12.828],["Otros ingresos",0.161]] },

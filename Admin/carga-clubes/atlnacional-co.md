@@ -130,6 +130,39 @@ _antes de Sebastián Arango Botero (data/gestiones/co.js):_
 Cargo: Presidente (representante legal). El dueño es la Organización Ardila Lulle, una sociedad sin dueño persona: no se carga como gestión.
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-28) desde Clubes/Colombia/Atletico Nacional/siis-estado-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Atletico Nacional/siis-estado-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ingresos de actividades ordinarias | pág. 1, Jev 0.97 |
+| 2 | Otros ingresos | pág. 1, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costo de ventas | pág. 1, precedente |
+| 2 | Gastos de ventas | pág. 1, precedente |
+| 3 | Gastos de administración | pág. 1, precedente |
+| 4 | Otros gastos | pág. 1, Jev 0.99 |
+| 5 | Deterioro de valor de ganancias y reversión de pérdidas por deterioro de valor (pérdidas por deterioro de valor) determinado de acuerdo con la NIIF 9 | pág. 1, ? 0.75 |
+| 6 | Otras ganancias (pérdidas) | pág. 1, Jev 0.99 |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-28): filas-a-mano. Claude 2026-10-28 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+tools/cargar.mjs (2026-10-28). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
 ## 2021
 
 ### Ingresos
@@ -411,4 +444,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Atletico Nacional/siis-estado-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### atlnacional-co-siis-estado-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Atletico Nacional/siis-estado-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
