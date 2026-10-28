@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 // tools/probar-club-siis.mjs — la prueba de los avisos y pasos de club-siis.mjs que salieron del punto 478 (cada ítem suma sus casos). Corre en una copia descartable (con-worktree.mjs): nunca toca los datos reales.
 //   5. el paso «Liga de cada año» dice que después va publicar.mjs y commitear en OTRA llamada
+//   16. --brief X --texto imprime solo el brief
+//   14. --crear-lista imprime la ruta de la lista y el comando del lote con ella
 //   8. --avanzar sin --escribir es un ensayo (el árbol queda igual) y --ejecutar sin --escribir se niega
 //   6. --liga: decidirLigas escribe solo si todos los años tienen liga exacta; y en una copia sin las líneas de Envigado y Nacional las vuelve a escribir con el mismo contenido que HEAD (la posición en el archivo cambia: va al final)
 // Uso: node tools/probar-club-siis.mjs    (~30 s por el worktree; sale con 1 si algún caso falla)
@@ -42,6 +44,18 @@ await conWorktree(async ({ W }) => {
   caso('8. --avanzar sin --escribir dice que es un ensayo y no cambia el árbol', /ENSAYO/.test(av) && git('status', '--porcelain', '--', 'Admin', 'data', 'Generados', 'Clubes') === estadoAntes, av.slice(0, 300));
   const ej = spawnSync('node', [join(W, 'tools/club-siis.mjs'), 'Atletico Nacional', '--avanzar', '--ejecutar'], { cwd: W, encoding: 'utf8' });
   caso('8. --avanzar --ejecutar sin --escribir se niega (sale con 1)', ej.status === 1 && /--escribir/.test(ej.stderr), `${ej.status} ${ej.stderr}`);
+  // 14. --crear-lista imprime la ruta de la lista y el comando del lote con esa ruta (a Nacional se le saca 2025 del JSON: queda por cargar)
+  const jf = join(W, 'data/co/atlnacional-co.json'); const j = JSON.parse(readFileSync(jf, 'utf8'));
+  j.years = j.years.filter((y) => y.fiscal_year !== 2025); writeFileSync(jf, JSON.stringify(j, null, 2) + '\n');
+  const cl = correr('Atletico Nacional', '--crear-lista'); const ruta = (cl.match(/^Lista: (Admin\/lotes\/lote-\d+\.txt)/m) || [])[1];
+  caso('14. --crear-lista imprime «Lista: Admin/lotes/lote-NNN.txt»', !!ruta, cl.slice(-400));
+  caso('14. imprime el comando del lote con esa misma ruta', !!ruta && cl.includes(`node tools/lote.mjs --lista ${ruta} --ejecutar`), cl.slice(-400));
+  caso('14. y la lista existe y nombra el año por cargar', !!ruta && readFileSync(join(W, ruta), 'utf8').includes('siis-estado-2025.pdf'));
+  caso('14. el estado del club (sin flags) usa esa ruta en lugar de <lista>', !!ruta && correr('Atletico Nacional').includes(`--lista ${ruta} --ejecutar`));
+  // 16. --brief X --texto imprime solo el brief (sin el encabezado «Reglas de datos de CO…»)
+  const conEnc = correr('Envigado', '--brief', 'estadio-sponsor'), solo = correr('Envigado', '--brief', 'estadio-sponsor', '--texto');
+  caso('16. sin --texto el brief trae el encabezado de reglas (como siempre)', /^Reglas de datos de CO/.test(conEnc));
+  caso('16. con --texto sale solo el brief: sin el encabezado, y el resto igual', !/Reglas de datos de CO/.test(solo.split('\n')[0]) && conEnc.endsWith(solo) && solo.trim().length > 200, solo.slice(0, 200));
 }, 'prueba-club-siis');
 
 const D = decidirLigas(['2016', '2017'], { 2016: 'co-primeraA', 2017: 'co-primeraA' });

@@ -26,6 +26,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1242 — club-siis: la ruta de la lista y --brief --texto [478 · club-siis.mjs, probar-club-siis.mjs]
+- 14: `--crear-lista` y `--avanzar` imprimen «Lista: Admin/lotes/lote-NNN.txt» y el comando del lote con esa ruta; el estado del club usa la ruta de su lista en lugar de `<lista>`. 16: `--brief X --texto` imprime solo el brief (sin el encabezado de reglas del país), listo para pasarlo a un subagente; el aviso «LANZÁ JUNTOS» ya lo nombra. Las dos van en un commit porque tocan las mismas líneas de `club-siis.mjs`.
+- Medición: tool de «orden» (no del pipeline): no pide medición; `probar-club-siis.mjs` ok (los dos casos nuevos en una copia descartable).
+
+---
+
 ## Versión 1241 — club-siis --avanzar: ensayo por defecto, --escribir lo aplica [478 · club-siis.mjs, club-siis-preparar.mjs, probar-club-siis.mjs]
 - `--avanzar` sin `--escribir` solo dice qué haría (el árbol queda igual; antes fijaba categorías en la cola, creaba la lista del lote y corría el inventario aunque pareciera un ensayo); `--escribir` lo aplica y `--ejecutar` sin `--escribir` se niega (sale con 1). `--ensayo` sigue valiendo. Mensajes y `Admin/paises/co.md` dicen lo mismo; ninguna skill ni `PIPELINE.md` nombra `--avanzar`.
 - Medición: tool de «orden» (no del pipeline): no pide medición; `probar-club-siis.mjs` ok (el escenario con años por cargar no se pudo armar: todo Nacional está cargado, la prueba comprueba el modo y el árbol intacto).

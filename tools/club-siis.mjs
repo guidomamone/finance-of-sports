@@ -11,7 +11,7 @@
 //   node tools/club-siis.mjs "<Club>" --crear-lista         además crea la lista de lote (Admin/lotes/lote-NN.txt) con los siis-estado-AAAA.pdf que todavía no están cargados
 //   node tools/club-siis.mjs "<Club>" --evaluar            ¿vale la pena? CARGAR / REVISAR / DESCARTAR con el motivo (solo lee). Solo se descarta la sociedad sin actividad (ingresos 0 todos los años); la liga no descarta (se cargan amateurs); ingresos chicos (< 500 M al año) se revisan
 //   node tools/club-siis.mjs "<Club>" --avanzar [--escribir [--ejecutar [--cargar]]]   sin --escribir solo dice qué haría (no escribe nada); con --escribir corre los pasos mecánicos en orden (estados de SIIS, alta, dictámenes, «Costo de ventas» > 50 %, lista, inventario) y para en lo que pide juicio; --ejecutar corre el lote (API, ~US$ 0,03 por documento); --cargar además carga y publica si no falta nada de juicio
-//   node tools/club-siis.mjs "<Club>" --brief <estadio-sponsor|gestiones|auditor>   el brief de ese subagente con el club y los años ya completos (plantilla: Admin/briefs-subagentes-siis.md)
+//   node tools/club-siis.mjs "<Club>" --brief <estadio-sponsor|gestiones|auditor> [--texto]   el brief de ese subagente (--texto: solo el brief, sin el encabezado de reglas, listo para pasar tal cual a un Agent) con el club y los años ya completos (plantilla: Admin/briefs-subagentes-siis.md)
 // LOS SUBAGENTES VAN JUNTOS: estadio-sponsor y gestiones son independientes entre sí y del lote (escriben cada uno un archivo suyo): se lanzan a la vez, en UN solo mensaje con varias llamadas a Agent, apenas están el alta y los estados. El lote
 // puede correr en ensayo mientras tanto; su `--cargar` exige `data/` limpio, así que espera a que terminen y se commitee lo suyo. El del auditor va después de la carga.
 //   node tools/club-siis.mjs                                 los clubes de tools/siis-clubes.json con lo que les falta, una línea cada uno
@@ -84,8 +84,10 @@ function estadoDe(carpeta) {
   return { carpeta, c, dir, filas, cola, ligaDe, idEf, hayGestion, audAdel };
 }
 const cmd = (s) => `    ${s}`;
+// la lista de lote del club: la última de Admin/lotes que nombra sus siis-estado-AAAA.pdf (null si no hay); los pasos imprimen su ruta en lugar de «<lista>»
+const listaDelClub = () => { const marca = `Clubes/${cfg.pais}/${club}/siis-estado-`; const x = readdirSync(join(ROOT, 'Admin/lotes')).filter((n) => /^lote-\d+\.txt$/.test(n)).sort().reverse().find((n) => readFileSync(join(ROOT, 'Admin/lotes', n), 'utf8').includes(marca)); return x ? `Admin/lotes/${x}` : null; };
 
-console.log(punteroReglasPais(`x-${iso}`)); // las reglas de Colombia: al empezar, sin depender de que alguien se acuerde
+if (!(A.includes('--brief') && A.includes('--texto'))) console.log(punteroReglasPais(`x-${iso}`)); // (con --brief --texto sale solo el brief) las reglas de Colombia: al empezar, sin depender de que alguien se acuerde
 if (!club) {
   // una línea por club, con el veredicto de --evaluar (solo para los que tienen años por cargar), de menos a más años por cargar: arranca por el que menos le falta
   const filasLista = [];
@@ -241,7 +243,7 @@ if (A.includes('--avanzar')) {
     const { readdirSync: ls } = await import('node:fs'); const listas = ls(join(ROOT, 'Admin/lotes')).filter((x) => /^lote-\d+\.txt$/.test(x)).sort(); const marca = `Clubes/${cfg.pais}/${club}/siis-estado-`;
     let lista = listas.reverse().find((x) => readFileSync(join(ROOT, 'Admin/lotes', x), 'utf8').includes(marca)); lista = lista && `Admin/lotes/${lista}`;
     if (!lista && ENSAYO) { lista = '<lista nueva>'; console.log('\n(ensayo) se crearía una lista de lote con los siis-estado-AAAA.pdf por cargar'); }
-    else if (!lista) { const salida = execFileSync('node', [join(ROOT, 'tools', 'lote-nuevo.mjs'), `${club} SIIS`], { cwd: ROOT, encoding: 'utf8' }); lista = (salida.match(/Admin\/lotes\/[\w.-]+\.txt/) || [])[0]; const { appendFileSync } = await import('node:fs'); appendFileSync(join(ROOT, lista), sinCargar.map((a) => `${marca}${a}.pdf`).join('\n') + '\n'); console.log(`\nLista creada: ${lista}`); } else console.log(`\nLista: ${lista}`);
+    else if (!lista) { const salida = execFileSync('node', [join(ROOT, 'tools', 'lote-nuevo.mjs'), `${club} SIIS`], { cwd: ROOT, encoding: 'utf8' }); lista = (salida.match(/Admin\/lotes\/[\w.-]+\.txt/) || [])[0]; const { appendFileSync } = await import('node:fs'); appendFileSync(join(ROOT, lista), sinCargar.map((a) => `${marca}${a}.pdf`).join('\n') + '\n'); console.log(`\nLista: ${lista}   (creada)\n  Lote: node tools/lote.mjs --lista ${lista} --ejecutar`); } else console.log(`\nLista: ${lista}`);
     run(['tools/inventario-transcripciones.mjs', '--solo', `Clubes/${cfg.pais}/${club}`]);
     const g = !!s.c.clubId && new RegExp(`'${s.c.clubId}'\\s*:`).test(readFileSync(join(ROOT, `data/gestiones/${iso}.js`), 'utf8'));
     const juicioFaltante = () => { // lo que todavía pide a una persona o a un subagente, con el estado de ahora
@@ -294,10 +296,10 @@ if (c.clubId && sinLiga.length) paso(`Liga de cada año (${sinLiga.join(', ')}):
 if (c.clubId && sinAnioCtx.length) subagentes.push(`estadio-sponsor (${sinAnioCtx.join(', ')}; escribe tools/contexto-manual.json)`);
 if (c.clubId && cierresSinGest.length) subagentes.push(`gestiones (cierres sin una gestión confirmada: ${cierresSinGest.map((x) => x.slice(0, 4)).join(', ')}; escribe data/gestiones/co.js; sin ella la cola pregunta quién presidió en cada año)`);
 if (dictSinMd.length) paso(`Transcribir los dictámenes del revisor fiscal (${dictSinMd.join(', ')}; es mecánico, gratis; los escaneos van por Mistral)`, `node tools/dictamenes-md.mjs ${q} --escribir`);
-if (subagentes.length) { console.log(`   >> LANZÁ JUNTOS, en UN solo mensaje con una llamada a Agent cada uno (modelo sonnet; el brief: node tools/club-siis.mjs ${q} --brief <nombre>): ${subagentes.map((s) => s.split(' ')[0]).join(' · ')}.\n      ${subagentes.join('\n      ')}\n      Mientras corren, el lote en ensayo (sin --cargar); el --cargar espera a que terminen y a commitear lo suyo (exige data/ limpio).`); }
-if (sinVerif.length) paso(`Lote de categorización de ${sinVerif.join(', ')} (unos US$ 0,03 por documento; localizar y extraer cuestan 0)`, `node tools/club-siis.mjs ${q} --crear-lista   (crea la lista del lote con los siis-estado-AAAA.pdf)`, `node tools/inventario-transcripciones.mjs --solo "Clubes/${cfg.pais}/${club}"   (sin esto el lote dice «sin .md»)`, `node tools/lote.mjs --lista <lista> --ejecutar`);
+if (subagentes.length) { console.log(`   >> LANZÁ JUNTOS, en UN solo mensaje con una llamada a Agent cada uno (modelo sonnet; el brief: node tools/club-siis.mjs ${q} --brief <nombre> --texto): ${subagentes.map((s) => s.split(' ')[0]).join(' · ')}.\n      ${subagentes.join('\n      ')}\n      Mientras corren, el lote en ensayo (sin --cargar); el --cargar espera a que terminen y a commitear lo suyo (exige data/ limpio).`); }
+if (sinVerif.length) paso(`Lote de categorización de ${sinVerif.join(', ')} (unos US$ 0,03 por documento; localizar y extraer cuestan 0)`, `node tools/club-siis.mjs ${q} --crear-lista   (crea la lista del lote con los siis-estado-AAAA.pdf)`, `node tools/inventario-transcripciones.mjs --solo "Clubes/${cfg.pais}/${club}"   (sin esto el lote dice «sin .md»)`, `node tools/lote.mjs --lista ${listaDelClub() || '<lista>'} --ejecutar`);
 if (colaN.length) paso(`Contestar la cola (${colaN.length} casos): con la regla de Colombia (Admin/paises/co.md); lo de perfil (socios, otros deportes) se contesta mirando la nota de ingresos; --responder pide --evidencia «ruta.md:línea» o «ninguna», --seguridad y --causa. «Costo de ventas» que pesa más de la mitad de los gastos: cola.mjs --corregir-categoria "<pdf>" "Costo de ventas" lump_football_operations_expense`, 'node tools/cola.mjs');
-if (sinCarga.length) paso(`Cargar ${sinCarga.join(', ')} (un commit por año; antes, lo de los subagentes commiteado)`, 'node tools/lote.mjs --lista <lista> --ejecutar --cargar', 'node tools/publicar.mjs');
+if (sinCarga.length) paso(`Cargar ${sinCarga.join(', ')} (un commit por año; antes, lo de los subagentes commiteado)`, `node tools/lote.mjs --lista ${listaDelClub() || '<lista>'} --ejecutar --cargar`, 'node tools/publicar.mjs');
 if (sinDict.length && !dictSinMd.length) console.log(`   (sin dictamen del revisor fiscal: ${sinDict.join(', ')}; es de sourcing, Admin/sourcing/${cfg.pais}/_notas-generales.md)`);
 if (sinAud.length) paso(`Líneas del auditor de ${sinAud.join(', ')} (con la carga hecha y los dictámenes en git)`, `SUBAGENTE auditor (brief: node tools/club-siis.mjs ${q} --brief auditor; escribe Admin/registros/auditoria.jsonl)`, 'node tools/auditoria.mjs');
 const mudables = filas.filter((f) => f.cargado && e.audAdel.has(f.a)).map((f) => f.a);
@@ -308,5 +310,5 @@ console.log('\nUn año ya publicado que hay que rehacer: node tools/club-siis.mj
 
 if (A.includes('--crear-lista') && sinCarga.length) {
   const salida = execFileSync('node', [join(ROOT, 'tools', 'lote-nuevo.mjs'), `${club} SIIS`], { cwd: ROOT, encoding: 'utf8' }).trim(); const ruta = (salida.match(/Admin\/lotes\/[\w.-]+\.txt/) || [])[0];
-  if (ruta) { const { appendFileSync } = await import('node:fs'); appendFileSync(join(ROOT, ruta), sinCarga.map((a) => `Clubes/${cfg.pais}/${club}/siis-estado-${a}.pdf`).join('\n') + '\n'); console.log(`\nLista creada: ${ruta}`); }
+  if (ruta) { const { appendFileSync } = await import('node:fs'); appendFileSync(join(ROOT, ruta), sinCarga.map((a) => `Clubes/${cfg.pais}/${club}/siis-estado-${a}.pdf`).join('\n') + '\n'); console.log(`\nLista: ${ruta}   (creada)\n  Lote: node tools/lote.mjs --lista ${ruta} --ejecutar`); }
 }
