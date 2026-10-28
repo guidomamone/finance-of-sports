@@ -253,9 +253,11 @@ window.RANKINGS["co-primeraA"] = {
   },
   2020: {
     leagueSize: 20,
-    sinDato: ["atlnacional-co"],
     wiki: {"t":"2020 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
+      { id:"atlnacional-co", revenue:17.608, reportType:"official_balance_sheet",
+        sourceId:"atlnacional-co-siis-estado-2020",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",15.964],["Otros ingresos",1.643]] },
       { id:"independientemedellin-co", revenue:9.92, reportType:"official_balance_sheet",
         sourceId:"independientemedellin-co-siis-estado-2020",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",9.441],["Otros ingresos",0.479]] },
