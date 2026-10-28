@@ -196,7 +196,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2021: {
     leagueSize: 21,
-    sinDato: ["atlnacional-co","envigado-co"],
+    sinDato: ["atlnacional-co"],
     wiki: {"t":"2021 Liga DIMAYOR","lang":"en","at":"2026-10-02","n":21},
     clubs: [
       { id:"americadecali-co", revenue:13.105, reportType:"official_balance_sheet",
@@ -208,6 +208,10 @@ window.RANKINGS["co-primeraA"] = {
       { id:"independientemedellin-co", revenue:6.661, reportType:"official_balance_sheet",
         sourceId:"independientemedellin-co-siis-estado-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.388],["Otros ingresos",0.274]] },
+      { id:"envigado-co", revenue:6.316, reportType:"official_balance_sheet",
+        sourceId:"envigado-co-siis-estado-2021",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",6.127],["Otros ingresos",0.189]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras actividades (educación y otros deportes)","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"laequidad-co", revenue:5.894, reportType:"official_balance_sheet",
         sourceId:"laequidad-co-siis-estado-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.475],["Otros ingresos",0.419]],
