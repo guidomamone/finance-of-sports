@@ -266,7 +266,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2018: {
     leagueSize: 16,
-    sinDato: ["realsantander-co"],
     wiki: {"t":"2018 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"cucutadeportivo-co", revenue:2.336, reportType:"official_balance_sheet",
@@ -291,6 +290,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"bogotafc-co", revenue:0.712, reportType:"official_balance_sheet",
         sourceId:"bogotafc-co-siis-estado-2018",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.712]] },
+      { id:"realsantander-co", revenue:0.676, reportType:"official_balance_sheet",
+        sourceId:"realsantander-co-siis-estado-2018",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.668],["Otros ingresos",0.009]] },
       { id:"tigresfc-co", revenue:0.659, reportType:"official_balance_sheet",
         sourceId:"tigresfc-co-siis-estado-2018",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.646],["Otros ingresos",0.013]] },

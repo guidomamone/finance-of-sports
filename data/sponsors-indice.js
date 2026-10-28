@@ -2586,6 +2586,7 @@ window.SPONSORS_INDICE = [
   ["treadtracker-com-pleasure-beach-resort","TreadTracker.com Pleasure Beach Resort",["c"]],
   ["trentino","Trentino",["c"]],
   ["trf","TRF",["c"]],
+  ["triangulo-deportivo","Triángulo Deportivo",["m"]],
   ["tricorp","Tricorp",["c"]],
   ["trofa-saude","Trofa Saúde",["c"]],
   ["tronadon","Tronadon",["m"]],

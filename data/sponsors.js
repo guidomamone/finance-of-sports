@@ -2590,6 +2590,7 @@ window.SPONSORS = {
     "treadtracker-com-pleasure-beach-resort": {"n":"TreadTracker.com Pleasure Beach Resort","roles":["c"],"e":[["gb-leagueone",2027,"Blackpool",null,"c"]]},
     "trentino": {"n":"Trentino","roles":["c"],"e":[["it-seriec",2027,"Trento",null,"c"]]},
     "trf": {"n":"TRF","roles":["c"],"e":[["ar-primera",2023,"Platense",null,"c"]]},
+    "triangulo-deportivo": {"n":"Triángulo Deportivo","roles":["m"],"e":[["co-primeraB",2018,"Real Santander","realsantander-co","m","marca: tabla de indumentaria de https://es.wikipedia.org/wiki/Real_San_Andr%C3%A9s (Triángulo Deportivo 2018-2023); la ficha de Football Kit Archive https://www.footballkitarchive.com/real-santander-2018-home-kit/421233/ dice attle (discrepancia, una sola fuente cada una)"]]},
     "tricorp": {"n":"Tricorp","roles":["c"],"e":[["nl-eredivisie",2015,"Willem II","willemii-nl","c"]]},
     "trofa-saude": {"n":"Trofa Saúde","roles":["c"],"e":[["pt-ligaportugal2",2013,"Trofense",null,"c"],["pt-ligaportugal2",2012,"Trofense",null,"c"]]},
     "tronadon": {"n":"Tronadon","roles":["m"],"e":[["br-serieB",2013,"ASA",null,"m"]]},
