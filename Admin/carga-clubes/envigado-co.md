@@ -136,6 +136,59 @@ _investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-d
 Duda: La fuente no dice a quién reemplazó (Ramiro Ruiz figuraba como presidente en 2024); Wikipedia en inglés aún lista a Manuel Valero. Fecha de posesión real sin confirmar.
 ```
 
+## 2018
+
+### Ingresos
+
+```text
+2018: cargado por tools/cargar.mjs (2026-10-28) desde Clubes/Colombia/Envigado/siis-estado-2018.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Envigado/siis-estado-2018.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Escuelas de fútbol | pág. 1, Jev 1 |
+| 2 | Taquilla | pág. 1, precedente |
+| 3 | Abonados | pág. 1, precedente |
+| 4 | Venta de derechos deportivos | pág. 1, precedente |
+| 5 | Préstamo de derechos deportivo | pág. 1, precedente |
+| 6 | Contribución de solidaridad | pág. 1, precedente |
+| 7 | Publicidad y propaganda | pág. 1, precedente |
+| 8 | Derechos televisión internacional | pág. 1, Jev 1 |
+| 9 | Derechos televisión abierta RCN | pág. 1, Jev 1 |
+| 10 | Derechos televisión cerrada Win Sports | pág. 1, Jev 1 |
+| 11 | Arbitraje | pág. 1, ? 0.7 |
+| 12 | Federación colombiana de fútbol | pág. 1, precedente |
+| 13 | Patrocinio | pág. 1, precedente |
+| 14 | Cuotas de sostenimiento | pág. 1, precedente |
+| 15 | Venta de artículos deportivos | pág. 1, Jev 1 |
+| 16 | Entretenimiento y esparcimiento | pág. 1, precedente |
+| 17 | Intereses | pág. 1, Jev 1 |
+| 18 | Diferencia en cambio | pág. 1, Jev 1 |
+| 19 | Descuentos comerciales condicionales | pág. 1, Jev 0.95 |
+| 20 | Arrendamientos | pág. 1, precedente |
+| 21 | Recuperación gastos bancarios | pág. 1, Jev 1 |
+| 22 | Reintegro de otros costos y gastos | pág. 1, Jev 1 |
+| 23 | Por incapacidades | pág. 1, Jev 0.99 |
+| 24 | Ajuste al peso | pág. 1, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costo de ventas | pág. 1, precedente |
+| 2 | Gastos de ventas | pág. 1, precedente |
+| 3 | Gastos de administración | pág. 1, precedente |
+| 4 | Otros gastos | pág. 1, precedente |
+
+### Meta
+
+```text
+2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-28): filas-a-mano. Claude 2026-10-28 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+tools/cargar.mjs (2026-10-28). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
 ## 2017
 
 ### Ingresos
@@ -263,6 +316,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Envigado/siis-estado-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### envigado-co-siis-estado-2018
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Envigado/siis-estado-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

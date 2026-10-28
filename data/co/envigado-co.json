@@ -36,6 +36,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Envigado/siis-estado-2017.pdf"
+    },
+    {
+      "id": "envigado-co-siis-estado-2018",
+      "club_id": "envigado-co",
+      "title": "Envigado Fútbol Club S.A. — siis-estado-2018 (ejercicio 2018)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Envigado/siis-estado-2018.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2025,"last_year":2025}],
@@ -213,6 +221,75 @@
             "line": "Gastos de ventas",
             "side": "expense",
             "amount": 13994.184,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
+          }
+        ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2018,
+      "period_end": "2018-12-31",
+      "currency": "COP",
+      "source_id": "envigado-co-siis-estado-2018",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2018-12-31"},
+      "revenue": [
+        {"label":"Escuelas de fútbol","category":"other_sporting_sections","subcategory":"youth_football","amount":310.168446,"disclosure":"aggregated"},
+        {"label":"Taquilla","category":"matchday","subcategory":"matchday_competition","amount":382.6165,"disclosure":"aggregated"},
+        {"label":"Abonados","category":"season_tickets","subcategory":"season_tickets","amount":15.0577,"disclosure":"aggregated"},
+        {"label":"Venta de derechos deportivos","category":"player_transfers","subcategory":"player_sales","amount":4394.284702,"disclosure":"aggregated"},
+        {"label":"Préstamo de derechos deportivo","category":"player_transfers","subcategory":"player_sales","amount":974.925,"disclosure":"aggregated"},
+        {"label":"Contribución de solidaridad","category":"player_transfers","subcategory":"player_sales","amount":391.641939,"disclosure":"aggregated"},
+        {"label":"Publicidad y propaganda","category":"commercial","subcategory":"sponsorship_commercial","amount":8.91663,"disclosure":"aggregated"},
+        {"label":"Derechos televisión internacional","category":"media_rights","subcategory":"broadcasting","amount":155.633,"disclosure":"aggregated"},
+        {"label":"Derechos televisión abierta RCN","category":"media_rights","subcategory":"broadcasting","amount":638.655765,"disclosure":"aggregated"},
+        {
+          "label": "Derechos televisión cerrada Win Sports",
+          "category": "media_rights",
+          "subcategory": "broadcasting",
+          "amount": 2353.613376,
+          "disclosure": "aggregated"
+        },
+        {"label":"Arbitraje","category":"prize_money","subcategory":"competition_bonus","amount":80.9946,"disclosure":"aggregated"},
+        {"label":"Federación colombiana de fútbol","category":"prize_money","subcategory":"competition_bonus","amount":285.6,"disclosure":"aggregated"},
+        {"label":"Patrocinio","category":"commercial","subcategory":"sponsorship_commercial","amount":155.552,"disclosure":"aggregated"},
+        {"label":"Cuotas de sostenimiento","category":"membership","subcategory":"member_dues","amount":3717.831564,"disclosure":"aggregated"},
+        {"label":"Venta de artículos deportivos","category":"commercial","subcategory":"sponsorship_commercial","amount":37.785976,"disclosure":"aggregated"},
+        {"label":"Entretenimiento y esparcimiento","category":"other_revenue","subcategory":"other_income","amount":2000.000002,"disclosure":"aggregated"},
+        {"label":"Intereses","category":"other_revenue","subcategory":"other_income","amount":247.952813,"disclosure":"aggregated"},
+        {"label":"Diferencia en cambio","category":"other_revenue","subcategory":"other_income","amount":317.205594,"disclosure":"aggregated"},
+        {"label":"Descuentos comerciales condicionales","category":"other_revenue","subcategory":"other_income","amount":12.960004,"disclosure":"aggregated"},
+        {"label":"Arrendamientos","category":"other_revenue","subcategory":"other_income","amount":0.6847,"disclosure":"aggregated"},
+        {"label":"Recuperación gastos bancarios","category":"other_revenue","subcategory":"other_income","amount":0.38108,"disclosure":"aggregated"},
+        {"label":"Reintegro de otros costos y gastos","category":"other_revenue","subcategory":"other_income","amount":314.011724,"disclosure":"aggregated"},
+        {"label":"Por incapacidades","category":"other_revenue","subcategory":"other_income","amount":33.917336,"disclosure":"aggregated"},
+        {"label":"Ajuste al peso","category":"other_revenue","subcategory":"other_income","amount":0.006077,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-21.994,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-8487.092,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-1857.291,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1090.984,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-630.101,"tax":-2567.518,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":16830.396528,"expenses":11457.361,"net_result":2175.416},
+      "adjustments": {
+        "extra_rows": [{"label":"Costos financieros","amount":-630.101},{"label":"Ingreso (gasto) por impuestos","amount":-2567.518}],
+        "no_breakdown": [
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 21.994,
+            "reason": "Costo de ventas es 84% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 8487.092,
             "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
             "kind": "other"
           }
