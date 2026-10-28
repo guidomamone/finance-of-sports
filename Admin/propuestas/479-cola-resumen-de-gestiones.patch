@@ -1,0 +1,18 @@
+diff --git a/tools/cola.mjs b/tools/cola.mjs
+index 8dc4235771..3fd5a3d9fa 100644
+--- a/tools/cola.mjs
++++ b/tools/cola.mjs
+@@ -430,5 +430,13 @@ if (import.meta.url === `file://${process.argv[1]}`) {
+     }
+     console.log('');
+   }
++  // Las preguntas de gestión son una por ejercicio sin presidente confirmado y no frenan: un renglón por club con los ids para contestarlas juntas (`--ids`), o se cierran solas al confirmar la gestión.
++  const gest = lista.filter((c) => c.motivo === 'gestion' && !resp.get(c.id));
++  if (gest.length > 1) {
++    const porClub = new Map(); for (const c of gest) { const k = String(c.detalle || '?').split(':')[0]; if (!porClub.has(k)) porClub.set(k, []); porClub.get(k).push(c.id); }
++    console.log(`Gestiones sin cubrir (no frenan; se cierran solas cuando data/gestiones confirma al presidente de ese cierre): ${gest.length} caso(s) de ${porClub.size} club(es):`);
++    for (const [k, ids] of porClub) console.log(`  ${k}: ${ids.length} caso(s) · en bloque: node tools/cola.mjs --ids ${ids.join(',')} aceptar|descartar --nota "…" --evidencia … --seguridad … --causa …`);
++    console.log('');
++  }
+   console.log('Responder: node tools/cola.mjs --responder <id> aceptar | corregir --valor "..." | descartar | preguntar-club   [--nota "..."] --evidencia "ruta.md:12-30"|ninguna --seguridad alta|media|baja --causa <causa> (los tres, obligatorios)');
+ }

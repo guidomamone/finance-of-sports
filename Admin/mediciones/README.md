@@ -42,3 +42,6 @@ Los archivos que una tool, una skill o un documento de criterio ya nombran no fi
 | `350-categorias-en-vano.md`, `350-subsidios-en-otros-ingresos.mjs` | relevamiento de categorías sin uso y barrido de etiquetas de subsidios en Otros ingresos | alimentó el 372 (revisión de etiquetas de subsidios); archivables |
 | `test-altas-claude.md` | registro de altas y Claude por API para las preguntas del alta (tres cambios en `alta-club.mjs`) | aplicado (`Admin/PIPELINE.md`, alta de un club); archivable |
 | `test-jev-resultados_lado_ej_otrosclubes.md` | backtest de la confiabilidad de Jev contra 3.975 rubros ya cargados (`jev-categorizar.mjs --backtest`) | lo usan la propuesta de categorías y `fos cola-historial categoria`; vigente |
+| `463-hallazgos-20-club-anios.md` | defectos, falsos errores y propuestas de las tools de SIIS al cargar 20 club-años | punto 479 del TODO |
+| `481-acelerar-medir-pipeline-sin-perder-lo-que-mide.md` | de dónde sale el tiempo de `medir-pipeline` | punto 481 del TODO |
+| `484-por-que-medir-un-cambio-en-cola-mjs-tarda-unos-50-.md` | por qué un cambio de `cola.mjs` mide unos 50 minutos | punto 484 del TODO |
