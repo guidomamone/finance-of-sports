@@ -49,6 +49,35 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
 alta-club.mjs (2026-10-28): co-primeraB, verificado contra roster cacheado de "2025 Torneo DIMAYOR" (tools/club-league-reference/co.json), coincidencia exacta "Real Santander".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-28) desde Clubes/Colombia/Real Santander/siis-estado-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Real Santander/siis-estado-2024.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ingresos de actividades ordinarias | pág. 1, Jev 0.98 |
+| 2 | Otros ingresos | pág. 1, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gastos de administración | pág. 1, Jev 1 |
+| 2 | Otros gastos | pág. 1, Jev 1 |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-28): filas-a-mano. Claude 2026-10-28 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+tools/cargar.mjs (2026-10-28). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
 ## 2023
 
 ### Ingresos
@@ -345,4 +374,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Real Santander/siis-estado-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### realsantander-co-siis-estado-2024
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Real Santander/siis-estado-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

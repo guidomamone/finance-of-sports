@@ -40,7 +40,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2024: {
     leagueSize: 16,
-    sinDato: ["realsantander-co"],
     wiki: {"t":"2024 Torneo DIMAYOR","lang":"en","at":"2026-10-26","n":16},
     clubs: [
       { id:"realcartagena-co", revenue:3.367, reportType:"official_balance_sheet",
@@ -68,6 +67,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"orsomarso-co", revenue:1.599, reportType:"official_balance_sheet",
         sourceId:"orsomarso-co-siis-estado-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.567],["Otros ingresos",1.032]] },
+      { id:"realsantander-co", revenue:0.909, reportType:"official_balance_sheet",
+        sourceId:"realsantander-co-siis-estado-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.853],["Otros ingresos",0.056]] },
       { id:"bogotafc-co", revenue:0.882, reportType:"official_balance_sheet",
         sourceId:"bogotafc-co-siis-estado-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.882]] },
