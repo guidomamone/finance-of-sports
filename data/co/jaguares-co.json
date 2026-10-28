@@ -44,6 +44,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Jaguares/siis-estado-2019.pdf"
+    },
+    {
+      "id": "jaguares-co-siis-estado-2020",
+      "club_id": "jaguares-co",
+      "title": "Jaguares Fútbol Club S.A. — siis-estado-2020 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Jaguares/siis-estado-2020.pdf"
     }
   ],
   "members": null,
@@ -198,6 +206,36 @@
       "adjustments": {
         "extra_rows": [{"label":"Costos financieros","amount":-165.276},{"label":"Ingreso (gasto) por impuestos","amount":-305.005}],
         "no_breakdown": [{"line":"Ingresos de actividades ordinarias","side":"revenue","amount":6769.961,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-12-31",
+      "currency": "COP",
+      "source_id": "jaguares-co-siis-estado-2020",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2020-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 4733.908,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":141.43,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-4360.621,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-87.769,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-101.293,"tax":-150.94,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":4875.338,"expenses":4448.39,"net_result":174.715},
+      "adjustments": {
+        "extra_rows": [{"label":"Costos financieros","amount":-101.293},{"label":"Ingreso (gasto) por impuestos","amount":-150.94}],
+        "no_breakdown": [{"line":"Ingresos de actividades ordinarias","side":"revenue","amount":4733.908,"reason":"el documento no desglosa este renglón","kind":"net_sales"}],
         "revenue_basis": "full"
       }
     }

@@ -265,7 +265,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2020: {
     leagueSize: 20,
-    sinDato: ["jaguares-co"],
     wiki: {"t":"2020 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:17.608, reportType:"official_balance_sheet",
@@ -297,6 +296,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"atleticobucaramanga-co", revenue:1.576, reportType:"official_balance_sheet",
         sourceId:"atleticobucaramanga-co-estados-financieros-2020",
         mix:[["Comercial / Sponsors",0.539],["Estadio",0.083],["Televisión",0.668],["Premios por competencias",0.272],["Otras actividades (educación y otros deportes)",0.012],["Otros ingresos",0.002]] },
+      { id:"jaguares-co", revenue:1.42, reportType:"official_balance_sheet",
+        sourceId:"jaguares-co-siis-estado-2020",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.379],["Otros ingresos",0.041]] },
       { id:"boyacachico-co", revenue:1.225, reportType:"official_balance_sheet",
         sourceId:"boyacachico-co-siis-estado-2020",
         mix:[["Subsidios y donaciones",0.019],["Fútbol profesional (sin desglosar por la fuente)",1.206],["Otros ingresos",0]],
