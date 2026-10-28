@@ -51,3 +51,5 @@ Estados financieros en disco ahora: 11 ejercicios (2015-2025), cada uno con cert
 - Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2021 desde `Clubes/Colombia/Atletico Nacional/siis-estado-2021.pdf` (sourceId `atlnacional-co-siis-estado-2021`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2022 desde `Clubes/Colombia/Atletico Nacional/siis-estado-2022.pdf` (sourceId `atlnacional-co-siis-estado-2022`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2023 desde `Clubes/Colombia/Atletico Nacional/siis-estado-2023.pdf` (sourceId `atlnacional-co-siis-estado-2023`).
