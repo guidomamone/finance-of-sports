@@ -29,6 +29,8 @@ El sponsor de camiseta (el del frente) de un ejercicio sale primero de Wikipedia
 
 **Si algún intento da el sponsor:** el sponsor va a `tools/contexto-manual.json` con `fuente` (la URL o el documento con página y línea) y no hace falta más registro. Verificá que sea del FRENTE y de ESA temporada: un sponsor de manga, de espalda o de otra temporada no es el dato.
 
+**Qué cuenta como respaldo del sponsor del frente (criterio de Guido).** Una ficha de `base-camisetas` (Football Kit Archive) de la camiseta LOCAL de esa temporada, con el campo Sponsor lleno, alcanza sola: FKA no escribe «frente», pero su campo Sponsor es el de la camiseta. Se registra con `node tools/sponsor-fka.mjs --registrar` y el año deja de ser «débil». Una nota de prensa o del club que diga «principal» o «frente» se suma si aparece (y entonces `fuente` la cita primero), pero no se exige. Un año cuya ficha no trae el campo, o que no tiene ficha, no queda respaldado por FKA: sigue la escalera de abajo (`sin-fuente`). Quien busca informa aparte los años respaldados SOLO por FKA, para que se vea.
+
 **Si ninguno lo da:** el registro de intentos va en `sin-fuente.sponsor` (formato abajo) y el año se carga con el sponsor en `null`. Quien busca es un subagente Sonnet con Exa (0.1b); el registro lo escribe quien lo corrió, con su nombre y la fecha.
 
 **Un sponsor por club, no por año, cuando el acuerdo es plurianual:** una sola búsqueda puede cubrir varios ejercicios si la fuente dice el período; el registro se copia a cada año con la misma evidencia.
