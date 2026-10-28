@@ -20,6 +20,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1234 — Envigado (2016 a 2024) y Atlético Nacional (2015 a 2024) desde SIIS: 19 club-años [463 · envigado-co, atlnacional-co]
+- Estados de SIIS, liga (Primera A todos los años), estadio, marca y sponsor (subagentes Sonnet; Exa/FKA), dictámenes de Nacional (5 escaneos por Mistral, US$ 0,07), lote de categorización (US$ ~0,55) y carga: un commit por año, `audit.js` P0/P1 en 0 al escribir cada uno y al final (P3 9, como antes). Envigado gestión de Ruiz y sponsor 2018 a 2022 (solo FKA) quedan débiles; ver el TODO 463.
+- La cola, contestada con el motivo de cada fila: «Entretenimiento y esparcimiento» a `other_income` (importe redondo anual, sin que el documento diga qué es), «Flota y equipo de transporte» a `admin_general_expense` (4 respuestas del país); 14 casos de `verificar` de Nacional aceptados: cuatro pares (2019 a 2025) difieren exactamente por la fila «Otras ganancias (pérdidas)», idéntica en los dos estados, y dos (2015/2016, 2018/2019) son reexpresiones de SIIS sin cambio del resultado. «Costo de ventas» (76 a 83 % de los gastos) y «Gastos de ventas» de Nacional a `lump_football_operations_expense` por la regla escrita de Colombia.
+- Medición: la tool cambió una sola vez (CHANGELOG 1233, idéntico); el resto es carga de datos. Sin revisión independiente de la Auditora.
+
 ## Versión 1233 — siis-estado: dos partidas de otro resultado integral en 0 ya no frenan el armado de filas [463 · siis-estado.mjs · atlnacional-co]
 - `siis-estado.mjs` dejaba un año sin filas armadas («rubros de SIIS sin clase en CLASE: gananciaPerdidaAcumulada, difImporteLibros») cuando SIIS lista esas dos partidas, que Atlético Nacional informa en 0 en 2016, 2021, 2022 y 2023; el resumen decía «Escritos N año(s)» igual. Ahora entran como fila `otro` (precedente: `gananciasPerdidasDifCostoAmortizado`): si valieran distinto de 0 no están en ninguna compuerta y el .md las muestra para la verificación.
 - Medición: idéntico (`siis` y `verificar`, lotes chico y mediano). Sin revisión independiente de la Auditora.
