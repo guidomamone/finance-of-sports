@@ -105,7 +105,7 @@ liga, así que no aparece en ningún ranking aunque el generador haya corrido. L
 la cuenta (`liga-sin-verificar`, P3). Sigue siendo a mano y verificado, pero antes de salir a buscar
 en qué liga jugó un club-año, probar la caché de lo ya buscado (no reemplaza la verificación):
 
-1. `node tools/lookup-club-league.js "<club>" --pais <iso2>`: si esa liga-temporada ya está
+1. `node tools/lookup-club-league.mjs "<club>" --pais <iso2>`: si esa liga-temporada ya está
    cacheada, ahí está la respuesta.
 2. Si no, `node tools/resolve-wikipedia-season-page.mjs "<liga>" <año>` encuentra el título EXACTO
    de la página de esa temporada en Wikipedia (la convención de título varía por liga, sin fórmula
