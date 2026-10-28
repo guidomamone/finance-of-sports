@@ -54,6 +54,11 @@
   "ok": true,
   "segundos": 2
  },
+ "tools/probar-estadio-sponsor-anios.mjs": {
+  "fecha": "2026-10-28",
+  "ok": true,
+  "segundos": 1
+ },
  "tools/probar-gestion-cubre.mjs": {
   "fecha": "2026-10-28",
   "ok": true,
@@ -137,6 +142,6 @@
  "tools/prueba-escribir.mjs": {
   "fecha": "2026-10-28",
   "ok": true,
-  "segundos": 179
+  "segundos": 168
  }
 }

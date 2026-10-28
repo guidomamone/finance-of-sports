@@ -29,6 +29,8 @@ import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from 
 import { resolve } from 'node:path';
 import { createRequire } from 'node:module';
 import vm from 'node:vm';
+import { execFileSync } from 'node:child_process';
+import { parseAnios, tablaAnios } from './estadio-sponsor-anios.mjs';
 import { pega, cargar, pagina, leerPagina, temporadaDe, delClub, LOCAL, paginaLocal, LANG_PAIS, fichaDe, api, enlaceDelClub, camisetasDePagina, valorDelEjercicio, CTX_DIR } from './estadio-sponsor-wikipedia.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -65,6 +67,14 @@ ${orden}
 }
 
 async function main() {
+  // --anios 2016-2022 (con --ensayo y --club): una fila por año con los cuatro porcentajes; cada fila es la llamada suelta de ese año (--anio), así que es igual a las siete llamadas del brief
+  if (process.argv.includes('--anios')) {
+    const i = process.argv.indexOf('--anios'); const resto = process.argv.slice(2).filter((a, k, v) => a !== '--anios' && v[k - 1] !== '--anios');
+    if (!process.argv.includes('--ensayo') || !process.argv.includes('--club')) { console.error('Uso: node tools/estadio-sponsor.mjs --ensayo --club <id> --anios AAAA-AAAA [--liga <ligaId>] [--cierre MM-DD]'); process.exit(1); }
+    const anios = parseAnios(process.argv[i + 1]);
+    for (const l of tablaAnios(anios, (a) => { try { return execFileSync('node', [process.argv[1], ...resto, '--anio', String(a)], { encoding: 'utf8', maxBuffer: 1 << 26 }); } catch (e) { return String(e.stdout || ''); } })) console.log(l);
+    return;
+  }
   const { CI, CL, CLUBS, LEAGUES, cache, alias } = cargar();
   // LIGA AMATEUR: un año en una liga amateur (la del catálogo nombra "amateur": las tres divisiones
   // amateur belgas) pasa la compuerta sin sponsor, con el estadio cargado; en esas ligas no hay fuente que diga el sponsor por temporada

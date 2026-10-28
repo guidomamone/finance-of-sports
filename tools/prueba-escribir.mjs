@@ -230,7 +230,8 @@ try {
     writeFileSync(LF, txt.split('\n').filter((l) => !l.includes(`'${ID}'`)).join('\n'));
     writeFileSync(AF, readFileSync(AF, 'utf8').replace(/\n*$/, '\n') + JSON.stringify({ sesion: 'auditora-prueba', fecha: '2026-10-27', veredicto: 'APROBADO', cambio: `${ID} (prueba-escribir, worktree descartable)` }) + '\n');
     const ref = readFileSync(AF, 'utf8').split('\n').filter(Boolean).length;
-    const r = spawnSync('node', [join(W, 'tools/catalogo-liga.mjs'), '--liga', ID, '--pagina', '2023–24 Cypriot Second Division', '--tier', '2', '--pais', 'CY', '--escribir', '--full', 'Second Division de Chipre', '--name', 'Second Division', '--aprobado-ref', String(ref)], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28, timeout: 120_000 });
+    const lanzar = () => spawnSync('node', [join(W, 'tools/catalogo-liga.mjs'), '--liga', ID, '--pagina', '2023–24 Cypriot Second Division', '--tier', '2', '--pais', 'CY', '--escribir', '--full', 'Second Division de Chipre', '--name', 'Second Division', '--aprobado-ref', String(ref)], { cwd: W, encoding: 'utf8', maxBuffer: 1 << 28, timeout: 120_000 });
+    let r = lanzar(); for (let intento = 1; intento < 3 && r.status === 1 && /preguntas sin responder|faltan deporte o escalón/.test(`${r.stdout}${r.stderr}`); intento++) r = lanzar(); // la propuesta sale de Wikipedia: si vuelve incompleta se repite (hasta 3 intentos; cuando frena no escribe nada)
     const out = (r.stdout || '') + (r.stderr || '');
     if (r.status !== 0 && /fetch failed|ENOTFOUND|EAI_AGAIN|ECONNREFUSED|ETIMEDOUT|respondió (403|429|5\d\d)/i.test(out)) console.log('  -- catalogo-liga --escribir: sin red o Wikipedia no respondió, no se pudo probar');
     else {
