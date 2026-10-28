@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1262 — Las salidas de las tools de SIIS dicen lo que antes había que investigar; brief de subagentes con cierre; TODO con documento por punto [479, 480, 481 · club-siis.mjs, estadio-sponsor.mjs, sponsor-fka.mjs, gestion-exa.mjs, auditoria.mjs, alta-club-lectura.mjs, lookup-brand-color.js, todo.mjs, validar-contexto.mjs, brief-tool.mjs]
+- Los 20 hallazgos del 479 (falsos errores, salidas que faltan, defectos) arreglados por seis subagentes y revisados: «SIIS no lo tiene» contra «por bajar», comandos entrecomillados, `--todos`, briefs con la regla de gestiones y el informe-anual, ensayo de estadio-sponsor con código 0 y «sin-fuente válido», `--informe-anual`, `validar-contexto`, fichas ajenas marcadas en sponsor-fka, nombra/cargo/fecha en gestion-exa, `--ejemplo`/`--agregar`/`--pendientes --club` en auditoria, nombre legal normalizado (S.A. y acentos de data/clubs.js) y `lookup-brand-color` por país. El aviso de categorías en 0 aclara que puede ser esperado.
+- Proceso: `Admin/briefs-subagentes-tools.md` y `node tools/fos.mjs brief-tool` (el cierre de todo subagente que edita tools/, con un hook que lo exige); `todo.mjs` con `Documento:` opcional por punto (`--nuevo --doc`, `--doc-de`, marca «[doc]»); los puntos 362, 363, 372, 377, 420 y 452 reescritos por subagentes al formato actual; puntos nuevos 480 (card «Últimas cargas») y 481 (acelerar `medir-pipeline`).
+- Medición: lote completo, 3 diferencias, todas explicadas (una cabecera larga que se achicó y dos líneas nuevas del ensayo de contexto); veredicto GENERAL, sin revisión independiente de la Auditora; `cerrar-tool` tardó 24 min 16 s.
+
+---
+
 ## Versión 1261 — Jaguares y Real Santander (2016 a 2025) desde SIIS: 20 club-años y 20 hallazgos de las tools [463, 479 · club-siis.mjs · jaguares-co, realsantander-co]
 - Dos clubes nuevos cargados con el camino de `club-siis` (estados, alta, dictámenes, tres subagentes, lote): 20 años verificados, 0 frenados, sin preguntas de categoría; 11 líneas del auditor (todas sin salvedades); colores `#38B8F5` y `#0CB7F2`; liga 2019 y 2020 de Real Santander como «Real San Andrés» (Primera B). Gestiones `confirmada:false` y sponsor `sin-fuente` (punto 463).
 - Los hallazgos (falsos errores, salidas que faltan, defectos y nueve propuestas, ninguna sobre datos) están en `Admin/mediciones/463-hallazgos-20-club-anios.md` y en el punto nuevo 479.
