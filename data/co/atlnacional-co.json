@@ -35,6 +35,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Atletico Nacional/siis-estado-2016.pdf"
+    },
+    {
+      "id": "atlnacional-co-siis-estado-2017",
+      "club_id": "atlnacional-co",
+      "title": "Atlético Nacional S.A. — siis-estado-2017 (ejercicio 2017)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Atletico Nacional/siis-estado-2017.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Sebastián Arango Botero (Representante Legal)","first_year":2025,"last_year":2025}],
@@ -144,6 +152,58 @@
             "line": "Gastos de ventas",
             "side": "expense",
             "amount": 115737.97,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
+          }
+        ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2017,
+      "period_end": "2017-12-31",
+      "currency": "COP",
+      "source_id": "atlnacional-co-siis-estado-2017",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2017-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 135568.384,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":0,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-7530.401,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-103238.608,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-4406.829,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-11379.211,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":609.652,"tax":-1130.165,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":135568.384,"expenses":126555.049,"net_result":8492.822},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":2002.974},
+          {"label":"Costos financieros","amount":-1393.322},
+          {"label":"Ingreso (gasto) por impuestos","amount":-1130.165}
+        ],
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":135568.384,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 7530.401,
+            "reason": "Costo de ventas es 76% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 103238.608,
             "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
             "kind": "other"
           }
