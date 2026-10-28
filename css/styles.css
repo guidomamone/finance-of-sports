@@ -236,6 +236,7 @@
   .pl-sd{cursor:help;border-bottom:1px dotted currentColor;color:var(--muted);}
   .pl-neg{cursor:help;border-bottom:1px dotted currentColor;}
   .pl-sd-n a{color:var(--accent,#1f4fd8);text-decoration:none;font-size:11px;margin-left:1px;}
+  @media (pointer:coarse){.pl-sd-n a{display:inline-block;padding:16px 19px;margin:-16px -19px -16px -18px;}}
   .pl-notas{margin-top:18px;padding-top:14px;border-top:1px solid var(--border,#e5e5e5);font-size:14px;line-height:1.6;}
   .pl-notas-flash{background:var(--accent-soft,#eef3ff);transition:background .3s;}
   .pl-notas h3{margin:0 0 6px;font-size:15px;}

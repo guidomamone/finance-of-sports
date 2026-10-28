@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1259 — 476, segunda tanda: gestión de Nacional 2018 a 2021 confirmada, asterisco de nota táctil, cositas del 461 verificadas [476 · club-sourcing]
+- Gestión de Pérez Ortiz en Nacional confirmada con Blu Radio del 9-2-2018 (asume el lunes 12-2); los 11 cierres de Nacional quedan cubiertos. El dictamen de Nacional 2018 y 2019 y el de Envigado 2024 no están en ningún documento nuestro (la carta, el informe de control interno y las notas no traen la opinión): sigue `falta_transcripcion`, a sourcing.
+- `.pl-sd-n a` con `@media (pointer:coarse)`: objetivo táctil de 21×43 a 43×45 px sin cambiar la altura de fila ni la página (PAOK a 375 px). `og/` y nota en español de margen bruto verificadas en cuatro clubes. 414 (cola para una ganancia en inmovilizado chica) queda abierto: cambia la carga.
+- Medición: solo CSS y datos; ninguna tool del pipeline cambió; ASSET_V 2137 a 2138.
+
+---
+
 ## Versión 1258 — 476, primera tanda: caja y deuda de SIIS, auditor y gestiones de Envigado y Nacional, descartes con motivo [476 · caja-deuda.mjs, segunda-fuente-wikipedia-local.mjs · envigado-co, atlnacional-co, atleticobucaramanga-co, barranquillafc-co, llaneros-co, realcartagena-co]
 - Caja y deuda: `caja-deuda --club <id> --escribir` (sin IA) cargó lo que SIIS o el documento siguiente resuelven en Nacional (18), Envigado (13), Bucaramanga (4), Barranquilla FC (2), Llaneros (1) y Real Cartagena (1). Auditor: 8 líneas de Envigado y 10 de Nacional (`falta_transcripcion` en Envigado 2024 y Nacional 2018 y 2019: el PDF es solo la carta o el informe de control interno). Gestiones de Nacional 2015 a 2025 (Pérez Ortiz 2018 a 2021 `confirmada:false`). Liga 2025 de Barranquilla FC con segunda fuente (es.wikipedia). «NOTAS EF» ya no figura como el paquete completo en `club-sourcing` ni en las notas de sourcing.
 - Descartado con motivo en el TODO 476: gestiones sin nota fechada (Medellín, Cortulua, Orsomarso), sponsors sin fuente nueva (la búsqueda de FKA y la web no traen campo «frente»), capacidad de Huila 2016, y los años de caja y deuda que el siguiente documento reexpresó. Quedan abiertos: pantallas, dictámenes sin transcribir, cositas del 461 y la decisión de Guido sobre Ramiro Ruiz.
