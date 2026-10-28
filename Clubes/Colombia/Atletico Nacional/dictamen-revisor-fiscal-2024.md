@@ -1,0 +1,232 @@
+# Atletico Nacional — Dictamen del revisor fiscal, ejercicio 2024
+
+Transcripción completa de `dictamen-revisor-fiscal-2024.pdf` (texto nativo, extraído con `pdftotext -layout`). Fiel al original, sin redondear ni reclasificar — ver CLAUDE.md.
+
+--- pág. 1 ---
+
+INFORME DEL REVISOR FISCAL
+
+I-0019-2025
+Señores Accionistas
+Atlético Nacional S.A.
+
+Informe sobre la auditoría de los estados financieros
+
+Opinión
+
+He auditado los estados financieros de ATLETICO NACIONAL S.A. en adelante (la Sociedad),
+los cuales comprenden el estado de situación financiera al 31 de diciembre de 2024 y los
+estados de resultados y otro resultado integral, de cambios en el patrimonio y de flujos de
+efectivo por el año que terminó en esa fecha y sus respectivas notas, que incluyen las políticas
+contables significativas y otra información explicativa.
+
+En mi opinión, los estados financieros que se mencionan, tomados fielmente de los libros y
+adjuntos a este informe, presentan razonablemente, en todos los aspectos de importancia
+material, la situación financiera de la Sociedad, al 31 de diciembre de 2024, los resultados de
+sus operaciones y sus flujos de efectivo por el año que terminó en esa fecha, de acuerdo con
+Normas de Contabilidad y de Información Financiera aceptadas en Colombia, aplicadas de
+manera uniforme con el año anterior.
+
+Bases para la opinión
+
+Efectué mi auditoría de conformidad con Normas Internacionales de Auditoría aceptadas en
+Colombia (NIAs). Mis responsabilidades de acuerdo con esas normas son descritas en la
+sección “Responsabilidades del revisor fiscal en relación con la auditoría de los estados
+financieros” de mi informe. Soy independiente con respecto a la Sociedad, de acuerdo con el
+Código de Ética para profesionales de la Contabilidad emitido por el Consejo de Normas
+Internacionales de Ética para Contadores (Código IESBA - International Ethics Standards Board
+for Accountants, por sus siglas en inglés) incluido en las Normas de Aseguramiento de la
+Información aceptadas en Colombia que son relevantes para mi auditoría de los estados
+financieros y he cumplido con las demás responsabilidades éticas de acuerdo con estos
+requerimientos legales. Considero que la evidencia de auditoría que he obtenido es suficiente y
+apropiada para fundamentar mi opinión.
+
+Asuntos clave de auditoría
+
+Asuntos clave de auditoría son aquellos que, según mi juicio profesional, fueron de la mayor
+importancia en mi auditoría de los estados financieros del año 2024. Estos asuntos fueron
+abordados en el contexto de mi auditoría de los estados financieros como un todo y al formarme
+mi opinión al respecto, y no proporciono una opinión separada sobre estos asuntos.
+
+--- pág. 2 ---
+
+                                                 2
+
+
+
+
+                       Evaluación de intangibles distinto a la plusvalía
+                            (ver nota 12 a los estados financieros)
+
+        Asunto clave de Auditoría                    Cómo fue abordado en la auditoría
+La Sociedad tiene registrado, en el activo    Mis procedimientos de auditoría incluyeron:
+no corriente de su balance de situación
+financiera al 31 de diciembre de 2024,        • Entendimiento del proceso de clasificación como
+inmovilizado intangible deportivo por         inmovilizado intangible.
+$1.778 millones, que corresponde a los
+costos de adquisición de derechos que         • Verificación de los criterios de amortización y de
+son objeto de amortización y valoración       generación de deterioro por cada uno de los
+de las perdidas por deterioro, al ser         activos
+previsto que los mismos sigan vinculados
+contractualmente durante los próximos         • Valuación de la razonabilidad de la hipótesis y
+ejercicios.                                   fuentes de información utilizada para las
+                                              conclusiones generadas
+Por lo cual lo considero como un asunto
+clave de auditoria debido al elevado
+grado de juicio que debe aplicar la
+dirección de la sociedad a la hora de
+identificar, de acuerdo con las
+circunstancias de cada activo, su
+adecuada clasificación como inmovilizado
+intangible y las posibles evidencias de
+deterioro al cierre del ejercicio
+
+
+
+Otros asuntos
+
+Los estados financieros al y por el año terminado el 31 de diciembre de 2023 se presentan
+exclusivamente para fines de comparación, fueron auditados por mí y en mi informe de fecha 29
+de febrero de 2024, expresé una opinión sin salvedades sobre los mismos.
+
+Responsabilidad de la administración y de los encargados del gobierno corporativo de
+en relación con los estados financieros
+
+La administración es responsable por la preparación y presentación razonable de estos estados
+financieros de acuerdo con Normas de Contabilidad y de Información Financiera aceptadas en
+Colombia. Esta responsabilidad incluye: diseñar, implementar y mantener el control interno que
+la administración considere necesario para permitir la preparación de estados financieros libres
+de errores de importancia material, bien sea por fraude o error; seleccionar y aplicar las políticas
+contables apropiadas, así como establecer los estimados contables razonables en las
+circunstancias.
+
+--- pág. 3 ---
+
+                                                3
+
+
+
+
+En la preparación de los estados financieros, la administración es responsable por la evaluación
+de la habilidad de la sociedad para continuar como negocio en marcha, de revelar, según sea
+aplicable, asuntos relacionados con la continuidad de la misma y de usar la base contable de
+negocio en marcha a menos que la administración pretenda liquidar La sociedad o cesar sus
+operaciones, o bien no exista otra alternativa más realista que proceder de una de estas formas.
+
+Los encargados del gobierno corporativo son responsables por la supervisión del proceso de
+reportes de información financiera de la sociedad
+
+Responsabilidades del revisor fiscal en relación con la auditoría de los estados
+financieros
+
+Mi responsabilidad es obtener una seguridad razonable sobre si los estados financieros
+considerados como un todo, están libres de errores de importancia material bien sea por fraude
+o error, y emitir un informe de auditoría que incluya mi opinión. Una seguridad razonable es un
+alto grado de aseguramiento, pero no es una garantía de que una auditoría efectuada de
+acuerdo con NIAs siempre detectará un error material, cuando este exista. Los errores pueden
+surgir debido a fraude o error y son considerados materiales si, individualmente o en agregado,
+se podría razonablemente esperar que influyan en las decisiones económicas de los usuarios
+tomadas sobre la base de estos estados financieros.
+
+Como parte de una auditoría efectuada de acuerdo con NIAs:
+
+    -   Ejercí mi juicio profesional y mantuve escepticismo profesional durante la auditoría.
+
+    -   Identifique y evalúe los riesgos de error material en los estados financieros, bien sea por
+        fraude o error, diseñe y realicé procedimientos de auditoría en respuesta a estos
+        riesgos y obtuve evidencia de auditoría que fue suficiente y apropiada para fundamentar
+        mi opinión. El riesgo de no detectar un error material resultante de fraude es mayor que
+        aquel que surge de un error, debido a que el fraude puede involucrar colusión,
+        falsificación, omisiones intencionales, representaciones engañosas o la anulación o
+        sobrepaso del control interno.
+
+    -   Obtuve un entendimiento del control interno relevante para la auditoría con el objetivo
+        de diseñar procedimientos de auditoría que sean apropiados en las circunstancias.
+
+    -   Evalúe lo apropiado de las políticas contables utilizadas y la razonabilidad de los
+        estimados contables y de las revelaciones relacionadas, realizadas por la
+        administración.
+
+    -   Concluí sobre lo adecuado del uso de la hipótesis de negocio en marcha por parte de la
+        administración y, basado en la evidencia de auditoría obtenida, sobre si existe o no una
+        incertidumbre material relacionada con eventos o condiciones que puedan indicar
+        dudas significativas sobre la habilidad de la sociedad para continuar como negocio en
+        marcha. Mis conclusiones están basadas en la evidencia de auditoría obtenida hasta la
+
+--- pág. 4 ---
+
+                                                 4
+
+
+
+
+         fecha de mi informe. No obstante, eventos o condiciones futuras pueden causar que la
+         sociedad deje de operar como un negocio en marcha.
+
+     -   Evalúe la presentación general, estructura y contenido de los estados financieros,
+         incluyendo las revelaciones, y si los estados financieros presentan las transacciones y
+         eventos subyacentes para lograr una presentación razonable.
+
+Comunique a los encargados del gobierno de la sociedad, entre otros asuntos, el alcance
+planeado y la oportunidad para la auditoría, así como los hallazgos de auditoría significativos,
+incluyendo cualquier deficiencia significativa en el control interno que identifique durante mi
+auditoría.
+
+A partir de los asuntos comunicados con los encargados del gobierno corporativo, determine los
+asuntos que fueron de la mayor importancia en la auditoría de los estados financieros del
+período actual y, por lo tanto, son los asuntos clave de auditoría; descritos estos en este informe
+a menos que la ley o regulación impida la divulgación pública sobre el asunto o cuando, en
+circunstancias extremadamente excepcionales, determino que un asunto no debe ser
+comunicado en mi informe porque las consecuencias adversas de hacerlo serían
+razonablemente mayores que los beneficios al interés público de tal comunicación.
+
+Informe sobre otros requerimientos legales y regulatorios
+
+Con base en el resultado de mis pruebas, en mi concepto durante 2024:
+
+a)   La contabilidad de la sociedad ha sido llevada conforme a las normas legales y a la técnica
+     contable.
+
+b) Las operaciones registradas en los libros se ajustan a los estatutos y a las decisiones de la
+   Asamblea de Accionista.
+
+c)   La correspondencia, los comprobantes de las cuentas y los libros de actas se llevan y se
+     conservan debidamente.
+
+d) Existe concordancia entre los estados financieros que se acompañan y el informe de
+   gestión preparado por los administradores, el cual incluye la constancia por parte de la
+   administración sobre la libre circulación de las facturas emitidas por los vendedores o
+   proveedores.
+
+e)   La información contenida en las declaraciones de autoliquidación de aportes al sistema de
+     seguridad social integral, en particular la relativa a los afiliados y a sus ingresos base de
+     cotización, ha sido tomada de los registros y soportes contables. La sociedad no se
+     encuentra en mora por concepto de aportes al sistema de seguridad social integral.
+
+f)   Se ha dado cumplimiento a lo establecido en Ley 2195 de 2022, en relación con la
+     implementación del Programa de Transparencia y Ética Empresarial.
+
+--- pág. 5 ---
+
+                                                5
+
+
+
+
+Para dar cumplimiento a lo requerido en los artículos 1.2.1.2. y 1.2.1.5. del Decreto Único
+Reglamentario 2420 de 2015, en desarrollo de las responsabilidades del Revisor Fiscal
+contenidas en los numerales 1º y 3º del artículo 209 del Código de Comercio, relacionadas con
+la evaluación de si los actos de los administradores de la Sociedad se ajustan a los estatutos y
+a las órdenes o instrucciones de la Asamblea de Accionistas y si hay y son adecuadas las
+medidas de control interno, de conservación y custodia de los bienes de la Sociedad o de
+terceros que estén en su poder, emití un informe separado de fecha 28 de febrero de 2025.
+
+
+
+
+Carlos Fernando Torres Ramírez
+Revisor Fiscal de Atlético Nacional S.A.
+T.P. 88317- T
+Designado por: Baker Tilly Colombia Ltda.
+
+28 de febrero de 2025

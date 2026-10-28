@@ -397,6 +397,99 @@
       }
     }
   },
+  "envigado-co": {
+    "2016": {
+      "estadio": "Estadio Polideportivo Sur",
+      "capacidad": 11000,
+      "marca": "Kaxon",
+      "fuente": "estadio y capacidad: https://en.wikipedia.org/wiki/Estadio_Polideportivo_Sur (unos 11.000 espectadores; Envigado FC de local; otras fuentes difieren: Wikidata 12.000 y es.wikipedia 14.000); marca: https://casacaslucholass.com/clubs/colombia/envigado/ (Kaxon 2016-2018) y Football Kit Archive https://www.footballkitarchive.com/envigado-fc-2016-home-kit/174504 (Brand Kaxon; leída por el resumen de la búsqueda, la página dio 403)",
+      "sin-fuente": {
+        "sponsor": {
+          "buscado": "2026-10-28",
+          "por": "Claude (subagente Sonnet)",
+          "intentos": [
+            {
+              "clase": "informe-anual",
+              "donde": "Clubes/Colombia/Envigado/*.md, grep -i patroc|sponsor (solo partidas contables de Patrocinio, sin nombre ni lugar en la camiseta)",
+              "resultado": "sin-dato"
+            },
+            {
+              "clase": "prensa",
+              "donde": "https://telemedellin.tv/?p=70098 (25-sep-2020) y https://www.minuto30.com/amp/envigado-fc-anuncio-este-jueves-la-llegada-de-un-nuevo-patrocinador/1133228/ (24-sep-2020): ninguna nombra el sponsor del frente; búsqueda «Envigado FC camiseta patrocinador principal»: sin dato",
+              "resultado": "sin-dato"
+            },
+            {
+              "clase": "base-camisetas",
+              "donde": "https://www.footballkitarchive.com/envigado-fc-2016-home-kit/174504/ (ficha de la camiseta local, leída con Exa: sin campo Sponsor)",
+              "resultado": "sin-dato"
+            },
+            {
+              "clase": "archivo-web",
+              "donde": "https://web.archive.org/web/2019/http://www.envigadofc.com.co/ (bloqueada para la herramienta de fetch)",
+              "resultado": "inaccesible"
+            }
+          ]
+        }
+      }
+    },
+    "2017": {
+      "marca": "Kaxon",
+      "fuente": "marca: https://casacaslucholass.com/clubs/colombia/envigado/ (Kaxon 2016-2018) y Football Kit Archive https://www.footballkitarchive.com/envigado-fc-2016-home-kit/174504 (Brand Kaxon; leída por el resumen de la búsqueda, la página dio 403)",
+      "sin-fuente": {
+        "sponsor": {
+          "buscado": "2026-10-28",
+          "por": "Claude (subagente Sonnet)",
+          "intentos": [
+            {
+              "clase": "informe-anual",
+              "donde": "Clubes/Colombia/Envigado/*.md, grep -i patroc|sponsor (solo partidas contables de Patrocinio, sin nombre ni lugar en la camiseta)",
+              "resultado": "sin-dato"
+            },
+            {
+              "clase": "prensa",
+              "donde": "https://telemedellin.tv/?p=70098 (25-sep-2020) y https://www.minuto30.com/amp/envigado-fc-anuncio-este-jueves-la-llegada-de-un-nuevo-patrocinador/1133228/ (24-sep-2020): ninguna nombra el sponsor del frente; búsqueda «Envigado FC camiseta patrocinador principal»: sin dato",
+              "resultado": "sin-dato"
+            },
+            {
+              "clase": "base-camisetas",
+              "donde": "https://www.footballkitarchive.com/envigado-fc-2017-home-kit/306754/ (ficha de la camiseta local, leída con Exa: sin campo Sponsor)",
+              "resultado": "sin-dato"
+            },
+            {
+              "clase": "archivo-web",
+              "donde": "https://web.archive.org/web/2019/http://www.envigadofc.com.co/ (bloqueada para la herramienta de fetch)",
+              "resultado": "inaccesible"
+            }
+          ]
+        }
+      }
+    },
+    "2018": {
+      "marca": "Kaxon",
+      "fuente": "marca: https://casacaslucholass.com/clubs/colombia/envigado/ (Kaxon 2016-2018) y Football Kit Archive https://www.footballkitarchive.com/envigado-fc-2016-home-kit/174504 (Brand Kaxon; leída por el resumen de la búsqueda, la página dio 403); sponsor: ficha de Football Kit Archive https://www.footballkitarchive.com/envigado-fc-2018-home-kit/175515/ (campo Sponsor «Pool», Categoría Primera A; base de aficionados, una sola fuente, leída con Exa; no dice explícitamente 'frente'; débil)",
+      "sponsor": "Pool"
+    },
+    "2019": {
+      "marca": "Novo Sport",
+      "fuente": "marca: https://casacaslucholass.com/clubs/colombia/envigado/ (Novo Sport 2019-2023); sponsor: ficha de Football Kit Archive https://www.footballkitarchive.com/envigado-fc-2019-home-kit/145651/ (campo Sponsor «Pool», Categoría Primera A; base de aficionados, una sola fuente, leída con Exa; no dice explícitamente 'frente'; débil)",
+      "sponsor": "Pool"
+    },
+    "2020": {
+      "marca": "Novo Sport",
+      "fuente": "marca: https://casacaslucholass.com/clubs/colombia/envigado/ (Novo Sport 2019-2023); sponsor: ficha de Football Kit Archive https://www.footballkitarchive.com/envigado-fc-2020-away-kit/145654/ (campo Sponsor «Pool», Categoría Primera A; base de aficionados, una sola fuente, leída con Exa; no dice explícitamente 'frente'; débil)",
+      "sponsor": "Pool"
+    },
+    "2021": {
+      "marca": "Novo Sport",
+      "fuente": "marca: https://casacaslucholass.com/clubs/colombia/envigado/ (Novo Sport 2019-2023); sponsor: ficha de Football Kit Archive https://www.footballkitarchive.com/envigado-fc-2021-away-kit/145652/ (campo Sponsor «Pool», Categoría Primera A; base de aficionados, una sola fuente, leída con Exa; no dice explícitamente 'frente'; débil)",
+      "sponsor": "Pool"
+    },
+    "2022": {
+      "marca": "Novo Sport",
+      "fuente": "marca: https://casacaslucholass.com/clubs/colombia/envigado/ (Novo Sport 2019-2023); sponsor: ficha de Football Kit Archive https://www.footballkitarchive.com/envigado-fc-2022-home-kit/51068/ (campo Sponsor «Pool», Categoría Primera A; base de aficionados, una sola fuente, leída con Exa; no dice explícitamente 'frente'; débil)",
+      "sponsor": "Pool"
+    }
+  },
   "bogotafc-co": {
     "2016": {"estadio":"Estadio Metropolitano de Techo","capacidad":10000,"marca":"GoGo","fuente":"estadio y capacidad: https://es.wikipedia.org/wiki/Bogot%C3%A1_F%C3%BAtbol_Club (desde la segunda mitad de 2012 el club juega en el Estadio Metropolitano de Techo) y https://en.wikipedia.org/wiki/Bogot%C3%A1_F.C. (Techo, capacidad 10.000); marca: historial de Football Kit Archive https://www.footballkitarchive.com/bogota-fc-kits-t11066/ (GoGo desde 2013; base de aficionados, una sola fuente; leída por el resumen de la búsqueda, la página dio 403; débil); sponsor: ficha de la camiseta local 2016 de Football Kit Archive https://www.footballkitarchive.com/bogota-fc-2016-home-kit/338555/ (campo Sponsor «Dynamic Underwear», marca GoGo, Categoría Primera B; base de aficionados, una sola fuente, leída con Exa; no dice explícitamente 'frente'; débil)","sponsor":"Dynamic Underwear"},
     "2017": {"estadio":"Estadio Metropolitano de Techo","capacidad":10000,"marca":"GoGo","fuente":"estadio y capacidad: https://es.wikipedia.org/wiki/Bogot%C3%A1_F%C3%BAtbol_Club (desde la segunda mitad de 2012 el club juega en el Estadio Metropolitano de Techo) y https://en.wikipedia.org/wiki/Bogot%C3%A1_F.C. (Techo, capacidad 10.000); marca: historial de Football Kit Archive https://www.footballkitarchive.com/bogota-fc-kits-t11066/ (GoGo desde 2013; base de aficionados, una sola fuente; leída por el resumen de la búsqueda, la página dio 403; débil); sponsor (Dynamic Underwear desde 2016): historial de sponsors de Football Kit Archive https://www.footballkitarchive.com/bogota-fc-kits-t11066/ (base de aficionados, una sola fuente; leída por el resumen de la búsqueda, la página dio 403; Exa no trae la ficha de 2017; no dice explícitamente 'frente'; débil)","sponsor":"Dynamic Underwear"},

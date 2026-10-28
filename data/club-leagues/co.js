@@ -4,7 +4,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'envigado-co': { 2016: 'co-primeraA', 2017: 'co-primeraA', 2018: 'co-primeraA', 2019: 'co-primeraA', 2020: 'co-primeraA', 2021: 'co-primeraA', 2022: 'co-primeraA', 2023: 'co-primeraA', 2024: 'co-primeraA', 2025: 'co-primeraA' },
   'oncecaldas-co': { 2016: 'co-primeraA', 2017: 'co-primeraA', 2019: 'co-primeraA', 2020: 'co-primeraA', 2021: 'co-primeraA', 2022: 'co-primeraA', 2023: 'co-primeraA', 2024: 'co-primeraA', 2025: 'co-primeraA', 2018: 'co-primeraA' },
   'americadecali-co': { 2016: 'co-primeraB', 2017: 'co-primeraA', 2018: 'co-primeraA', 2019: 'co-primeraA', 2020: 'co-primeraA', 2021: 'co-primeraA', 2022: 'co-primeraA', 2023: 'co-primeraA', 2024: 'co-primeraA', 2025: 'co-primeraA' },
-  'atlnacional-co': { 2025: 'co-primeraA' },
+  'atlnacional-co': { 2015: 'co-primeraA', 2016: 'co-primeraA', 2017: 'co-primeraA', 2018: 'co-primeraA', 2019: 'co-primeraA', 2020: 'co-primeraA', 2021: 'co-primeraA', 2022: 'co-primeraA', 2023: 'co-primeraA', 2024: 'co-primeraA', 2025: 'co-primeraA' },
   'depcali-co': { 2025: 'co-primeraA' },
   'santafe-co': { 2025: 'co-primeraA' },
   'junior-co': { 2025: 'co-primeraA' },
