@@ -391,7 +391,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2016: {
     leagueSize: 20,
-    sinDato: ["atlnacional-co","envigado-co"],
+    sinDato: ["atlnacional-co"],
     wiki: {"t":"2016 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:16.41, reportType:"official_balance_sheet",
@@ -404,6 +404,9 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"oncecaldas-co-siis-estado-2016",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.928],["Otros ingresos",0.259]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"envigado-co", revenue:5.586, reportType:"official_balance_sheet",
+        sourceId:"envigado-co-siis-estado-2016",
+        mix:[["Cuotas Sociales",0.022],["Comercial / Sponsors",0.005],["Estadio",0.097],["Televisión",0.943],["Premios por competencias",0.021],["Venta de Jugadores",3.82],["Otras actividades (educación y otros deportes)",0.048],["Otros ingresos",0.631]] },
       { id:"laequidad-co", revenue:5.145, reportType:"official_balance_sheet",
         sourceId:"laequidad-co-siis-estado-2016",
         mix:[["Comercial / Sponsors",1.457],["Estadio",0.185],["Televisión",1.418],["Premios por competencias",0.036],["Venta de Jugadores",1.14],["Otras actividades (educación y otros deportes)",0.839],["Otros ingresos",0.071]] },

@@ -1,5 +1,30 @@
 // GENERADO desde data/co/envigado-co.json por tools/generar-data.mjs: no editar a mano (se edita el JSON).
 const envigadoCoRevenueLinesByYear = {
+  2016: [
+    {"rawLabel":"41050601 TAQUILLA","normalizedCategory":"matchday_competition","amountNative":278.665,"disclosureLevel":"aggregated"},
+    {"rawLabel":"41050602 ABONADOS","normalizedCategory":"season_tickets","amountNative":12.99,"disclosureLevel":"aggregated"},
+    {"rawLabel":"410510 ESCUELAS DE FUTBOL","normalizedCategory":"youth_football","amountNative":142.795,"disclosureLevel":"aggregated"},
+    {"rawLabel":"410515 VENTA DE DERECHOS DEPORTIVOS","normalizedCategory":"player_sales","amountNative":10883.642964,"disclosureLevel":"aggregated"},
+    {"rawLabel":"410520 PRESTAMO DE DERECHOS DEPORTIVO","normalizedCategory":"player_sales","amountNative":180,"disclosureLevel":"aggregated"},
+    {"rawLabel":"410522 CONTRIBUCION DE SOLIDARIDAD","normalizedCategory":"player_sales","amountNative":398.302523,"disclosureLevel":"aggregated"},
+    {"rawLabel":"41053001 DERECHOS TELEVISION ABIERTA","normalizedCategory":"broadcasting","amountNative":765.331358,"disclosureLevel":"aggregated"},
+    {"rawLabel":"41053002 DERECHOS TELEVISION INTERNACIONAL","normalizedCategory":"broadcasting","amountNative":126.386469,"disclosureLevel":"aggregated"},
+    {"rawLabel":"41053003 DERECHOS TELEVISION ABIERT RCN","normalizedCategory":"broadcasting","amountNative":186.858556,"disclosureLevel":"aggregated"},
+    {"rawLabel":"41053004 DERECHOS TELEVISION CERRADA","normalizedCategory":"broadcasting","amountNative":1751.555136,"disclosureLevel":"aggregated"},
+    {"rawLabel":"41053005 ARBITRAJE","normalizedCategory":"competition_bonus","amountNative":11.103,"disclosureLevel":"aggregated"},
+    {"rawLabel":"410535 FEDERACION COLOMBIANA DE FUTBOL","normalizedCategory":"competition_bonus","amountNative":10.992963,"disclosureLevel":"aggregated"},
+    {"rawLabel":"410550 CUOTAS DE SOSTENIMIENTO","normalizedCategory":"member_dues","amountNative":64.550042,"disclosureLevel":"aggregated"},
+    {"rawLabel":"410555 PARTICIPACION EN EVENTOS NACIONALES","normalizedCategory":"competition_bonus","amountNative":40.259271,"disclosureLevel":"aggregated"},
+    {"rawLabel":"410560 VENTA DE ARTICULOS DEPORTIVOS","normalizedCategory":"sponsorship_commercial","amountNative":13.509277,"disclosureLevel":"aggregated"},
+    {"rawLabel":"417040 ENTRENENIMIENTO Y ESPARCIMIENTO","normalizedCategory":"other_income","amountNative":1599.85,"disclosureLevel":"aggregated"},
+    {"rawLabel":"OTRAS VENTAS","normalizedCategory":"other_income","amountNative":0.035,"disclosureLevel":"aggregated"},
+    {"rawLabel":"DESCTOS COMERCIALES CONDICIONA","normalizedCategory":"other_income","amountNative":5.850336,"disclosureLevel":"aggregated"},
+    {"rawLabel":"REINTEGRO DE OTROS COSTOS Y GA","normalizedCategory":"other_income","amountNative":16.184936,"disclosureLevel":"aggregated"},
+    {"rawLabel":"POR INCUMPLIMIENTO DE CONTRATO","normalizedCategory":"other_income","amountNative":232.1,"disclosureLevel":"aggregated"},
+    {"rawLabel":"PARTICIPACION PARTIDOS DE EQUI","normalizedCategory":"competition_bonus","amountNative":2.031454,"disclosureLevel":"aggregated"},
+    {"rawLabel":"RECONOCIMIENTOS I.S.S.","normalizedCategory":"other_income","amountNative":39.383777,"disclosureLevel":"aggregated"},
+    {"rawLabel":"AJUSTE AL PESO","normalizedCategory":"other_income","amountNative":0.000602,"disclosureLevel":"aggregated"},
+  ],
   2025: [
     {"rawLabel":"Matrículas","normalizedCategory":"youth_football","amountNative":110.99385,"disclosureLevel":"detailed"},
     {"rawLabel":"Mensualidades","normalizedCategory":"youth_football","amountNative":1182.347006,"disclosureLevel":"detailed"},
@@ -24,6 +49,11 @@ const envigadoCoRevenueLinesByYear = {
 };
 
 const envigadoCoExpenseLinesByYear = {
+  2016: [
+    {"rawLabel":"Costo de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-7.115,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-6257.726,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-3179.368,"disclosureLevel":"aggregated"},
+  ],
   2025: [
     {"rawLabel":"Costo de ventas","normalizedCategory":"other_expenses","amountNative":-703.506292,"disclosureLevel":"detailed"},
     {"rawLabel":"Gasto equipo de fútbol: Gastos de personal (plantel)","normalizedCategory":"wages_squad","amountNative":-8559.779486,"disclosureLevel":"detailed"},
@@ -39,6 +69,7 @@ const envigadoCoExpenseLinesByYear = {
 };
 
 const envigadoCoFiscalYearMeta = {
+  2016: {"currency":"COP","sourceId":"envigado-co-siis-estado-2016","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2016-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-11.807,"tax":-2374.316,"grossDebt":null,"cash":null,"officialTotalRevenue":16762.377664,"officialTotalExpenses":9444.209,"officialPAT":4932.046,"extraRows":[{"label":"Ingresos financieros","value":495.328},{"label":"Costos financieros","value":-507.135},{"label":"Ingreso (gasto) por impuestos","value":-2374.316}],"sinDesglose":[{"renglon":"Costo de ventas","lado":"expense","importe":7.115,"motivo":"Costo de ventas es 84% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)","tipo":"cost_of_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":6257.726,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
   2025: {"currency":"COP","sourceId":"envigado-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2317.382801,"tax":-4522.817729,"grossDebt":3236.656641,"cash":9181.759716,"officialTotalRevenue":37680.236183,"officialTotalExpenses":23204.812017,"officialPAT":7635.223636,"baseIngreso":"full"},
 };
 
@@ -56,7 +87,7 @@ window.CLUB_GENERIC_DATA["envigado-co"] = {
   presupuestoOverlayByYear: envigadoCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"envigado-co-estados-financieros-2025":{"id":"envigado-co-estados-financieros-2025","clubId":"envigado-co","title":"Estados Financieros Individuales (auditados, Grant Thornton), al 31 de diciembre de 2025 y 2024","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Envigado/estados-financieros-2025.pdf"}});
+Object.assign(sources, {"envigado-co-estados-financieros-2025":{"id":"envigado-co-estados-financieros-2025","clubId":"envigado-co","title":"Estados Financieros Individuales (auditados, Grant Thornton), al 31 de diciembre de 2025 y 2024","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Envigado/estados-financieros-2025.pdf"},"envigado-co-siis-estado-2016":{"id":"envigado-co-siis-estado-2016","clubId":"envigado-co","title":"Envigado Fútbol Club S.A. — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Envigado/siis-estado-2016.pdf"}});
 
 gestionesByClub["envigado-co"] = {"actual":{"nombre":"Gestión actual","firstYear":2025,"lastYear":2025}};
 

@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-27';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-28';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["pt-primeiraliga"] = {
   2000: {"size":18,"cargados":1,"faltan":[{"n":"Alverca","id":"alverca-pt","e":"buscado"},{"n":"Belenenses","id":"belenenses-pt","e":"buscado"},{"n":"Benfica","id":"benfica-pt","e":"buscado"},{"n":"Boavista","id":"boavista-pt","e":"buscado"},{"n":"Braga","id":"braga-pt","e":"buscado"},{"n":"Campomaiorense","e":"sin-buscar"},{"n":"Estrela da Amadora","id":"estreladaamadora-pt","e":"buscado"},{"n":"Farense","e":"sin-buscar"},{"n":"Gil Vicente","id":"gilvicente-pt","e":"buscado"},{"n":"Leiria","id":"uniaodeleiria-pt","e":"buscado"},{"n":"Marítimo","id":"maritimo-pt","e":"buscado"},{"n":"Porto","id":"porto-pt","e":"buscado"},{"n":"Rio Ave","id":"rioave-pt","e":"buscado"},{"n":"Salgueiros","e":"sin-buscar"},{"n":"Santa Clara","id":"santaclara-pt","e":"buscado"},{"n":"Vitória de Guimarães","id":"vitoriaguimaraes-pt","e":"buscado"},{"n":"Vitória de Setúbal","e":"sin-buscar"}]},

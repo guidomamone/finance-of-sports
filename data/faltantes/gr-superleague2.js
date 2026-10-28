@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-27';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-28';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["gr-superleague2"] = {
   2016: {"size":18,"cargados":2,"faltan":[{"n":"Acharnaikos","e":"sin-buscar"},{"n":"Agrotikos Asteras","e":"sin-buscar"},{"n":"Anagennisi Karditsa","e":"sin-buscar"},{"n":"Apollon Smyrnis","e":"sin-buscar"},{"n":"Chania","e":"sin-buscar"},{"n":"Ergotelis","e":"sin-buscar"},{"n":"Kallithea","e":"buscado"},{"n":"Kerkyra","e":"sin-buscar"},{"n":"Kissamikos","e":"sin-buscar"},{"n":"Lamia","e":"sin-buscar"},{"n":"Panachaiki","e":"sin-buscar"},{"n":"Panegialios","e":"sin-buscar"},{"n":"Panelefsiniakos","e":"sin-buscar"},{"n":"Panserraikos","id":"panserraikos-gr","e":"buscado"},{"n":"Trikala","e":"sin-buscar"},{"n":"Zakynthos","e":"sin-buscar"}]},

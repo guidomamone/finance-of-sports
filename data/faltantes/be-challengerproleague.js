@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-27';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-28';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["be-challengerproleague"] = {
   2013: {"size":18,"cargados":0,"faltan":[{"n":"Oostende","e":"sin-buscar"},{"n":"Mouscron-Péruwelz","e":"sin-buscar"},{"n":"Westerlo","id":"westerlo-be","e":"en-mano"},{"n":"Sint-Truiden","id":"sinttruiden-be","e":"en-mano"},{"n":"Borinage","e":"sin-buscar"},{"n":"Lommel","id":"lommelsk-be","e":"buscado"},{"n":"Woluwe","e":"sin-buscar"},{"n":"Eupen","e":"sin-buscar"},{"n":"Tubize","e":"sin-buscar"},{"n":"Antwerp","id":"antwerp-be","e":"en-mano"},{"n":"Roeselare","e":"sin-buscar"},{"n":"Dessel","e":"sin-buscar"},{"n":"Aalst","e":"sin-buscar"},{"n":"Brussels","e":"sin-buscar"},{"n":"Visé","e":"sin-buscar"},{"n":"Heist","e":"sin-buscar"},{"n":"Oudenaarde","e":"sin-buscar"},{"n":"Sint-Niklaas","e":"sin-buscar"}]},

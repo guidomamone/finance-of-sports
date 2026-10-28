@@ -136,6 +136,57 @@ _investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-d
 Duda: La fuente no dice a quién reemplazó (Ramiro Ruiz figuraba como presidente en 2024); Wikipedia en inglés aún lista a Manuel Valero. Fecha de posesión real sin confirmar.
 ```
 
+## 2016
+
+### Ingresos
+
+```text
+2016: cargado por tools/cargar.mjs (2026-10-28) desde Clubes/Colombia/Envigado/siis-estado-2016.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Envigado/siis-estado-2016.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | 41050601 TAQUILLA | pág. 1, Jev 1 |
+| 2 | 41050602 ABONADOS | pág. 1, Jev 1 |
+| 3 | 410510 ESCUELAS DE FUTBOL | pág. 1, Jev 0.99 |
+| 4 | 410515 VENTA DE DERECHOS DEPORTIVOS | pág. 1, Jev 1 |
+| 5 | 410520 PRESTAMO DE DERECHOS DEPORTIVO | pág. 1, Jev 1 |
+| 6 | 410522 CONTRIBUCION DE SOLIDARIDAD | pág. 1, Jev 0.98 |
+| 7 | 41053001 DERECHOS TELEVISION ABIERTA | pág. 1, Jev 1 |
+| 8 | 41053002 DERECHOS TELEVISION INTERNACIONAL | pág. 1, Jev 1 |
+| 9 | 41053003 DERECHOS TELEVISION ABIERT RCN | pág. 1, Jev 1 |
+| 10 | 41053004 DERECHOS TELEVISION CERRADA | pág. 1, Jev 1 |
+| 11 | 41053005 ARBITRAJE | pág. 1, ? 0.7 |
+| 12 | 410535 FEDERACION COLOMBIANA DE FUTBOL | pág. 1, Jev 0.99 |
+| 13 | 410550 CUOTAS DE SOSTENIMIENTO | pág. 1, Jev 1 |
+| 14 | 410555 PARTICIPACION EN EVENTOS NACIONALES | pág. 1, Jev 1 |
+| 15 | 410560 VENTA DE ARTICULOS DEPORTIVOS | pág. 1, Jev 1 |
+| 16 | 417040 ENTRENENIMIENTO Y ESPARCIMIENTO | pág. 1, precedente |
+| 17 | OTRAS VENTAS | pág. 1, ? 0.75 |
+| 18 | DESCTOS COMERCIALES CONDICIONA | pág. 1, Claude 0.85 |
+| 19 | REINTEGRO DE OTROS COSTOS Y GA | pág. 1, Jev 1 |
+| 20 | POR INCUMPLIMIENTO DE CONTRATO | pág. 1, Jev 0.98 |
+| 21 | PARTICIPACION PARTIDOS DE EQUI | pág. 1, ? 0.55 |
+| 22 | RECONOCIMIENTOS I.S.S. | pág. 1, Jev 0.94 |
+| 23 | AJUSTE AL PESO | pág. 1, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costo de ventas | pág. 1, precedente |
+| 2 | Gastos de ventas | pág. 1, precedente |
+| 3 | Gastos de administración | pág. 1, precedente |
+
+### Meta
+
+```text
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-28): filas-a-mano. Claude 2026-10-28 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+tools/cargar.mjs (2026-10-28). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
 ## Fuentes
 
 ### envigado-co-estados-financieros-2025
@@ -144,6 +195,14 @@ _note (data/):_
 
 ```text
 Descargado vía SIIS (siis.ia.supersociedades.gov.co, NIT 900.470.848). PDF escaneado sin capa de texto, transcripto vía OCR (Tesseract). Incluye el Estado de Resultado Integral primario completo (no solo notas) — cada línea reconcilia exacta, sin ningún residuo. SIIS tiene 10 ejercicios consecutivos (2016-2025) disponibles para este club; a propósito solo se cargó 2025 esta sesión (pedido explícito: ampliar clubes, no profundizar uno). Transcripción completa en Clubes/Colombia/Envigado/estados-financieros-2025.md.
+```
+
+### envigado-co-siis-estado-2016
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Envigado/siis-estado-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Envigado/siis-estado-2016.pdf",
- "generado": "2026-10-28T00:23:16.619Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"417040 ENTRENENIMIENTO Y ESPARCIMIENTO\" -> other_income 0.6"
-  }
- ],
+ "generado": "2026-10-28T00:39:17.275Z",
+ "frena": [],
  "avisos": [
   "materialidad: \"OTRAS VENTAS\" va como other_income con 0.75 (0.00% de ingresos; acumulado sin preguntar 0.00%)",
   "materialidad: \"PARTICIPACION PARTIDOS DE EQUI\" va como competition_bonus con 0.55 (0.01% de ingresos; acumulado sin preguntar 0.01%)",
@@ -175,9 +170,9 @@
     "amountNative": 1599.85,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "OTRAS VENTAS",
@@ -604,11 +599,11 @@
    "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
    "signoFijo": 1599.85,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Entretenimiento y esparcimiento: importe redondo anual dentro de la nota de ingresos ordinarios, sin que el documento diga que es; other_income no afirma mas de lo que dice",
    "destino": "revenue",
    "amountNative": 1599.85
   },
@@ -886,8 +881,8 @@
  },
  "ancla": null,
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 23,
   "lineasGasto": 3,
   "metaFilas": 3,

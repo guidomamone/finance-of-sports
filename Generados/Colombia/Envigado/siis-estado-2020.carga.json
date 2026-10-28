@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Envigado/siis-estado-2020.pdf",
- "generado": "2026-10-28T00:23:17.410Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Flota y equipo de transporte\" -> admin_general_expense 0.6"
-  }
- ],
+ "generado": "2026-10-28T00:39:17.923Z",
+ "frena": [],
  "avisos": [
   "materialidad: \"Parqueaderos y peajes\" va como admin_general_expense con 0.75 (0.00% de gastos; acumulado sin preguntar 0.00%)",
   "materialidad: \"Equipo de oficina (Gastos de administración)\" va como admin_general_expense con 0.65 (0.00% de gastos; acumulado sin preguntar 0.00%)",
@@ -472,9 +467,9 @@
     "amountNative": -66.999996,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Mejoras en propiedades ajenas",
@@ -1399,11 +1394,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos de administración\")",
    "signoFijo": 66.999996,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Flota y equipo de transporte: 4 respuestas del pais (Fortaleza CEIF 2020, 2023, 2024) en admin_general_expense; 0,6 % de los gastos",
    "destino": "expense",
    "amountNative": -66.999996
   },
@@ -1768,8 +1763,8 @@
  },
  "ancla": null,
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 19,
   "lineasGasto": 42,
   "metaFilas": 3,

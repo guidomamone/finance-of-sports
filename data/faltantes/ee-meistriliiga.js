@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-27';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-28';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["ee-meistriliiga"] = {
   2019: {"size":10,"cargados":8,"faltan":[{"n":"Maardu Linnameeskond","e":"sin-buscar"},{"n":"Tulevik","e":"sin-buscar"}]},

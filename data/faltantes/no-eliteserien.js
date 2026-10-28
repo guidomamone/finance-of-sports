@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-27';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-28';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["no-eliteserien"] = {
   2008: {"size":14,"cargados":1,"faltan":[{"n":"Aalesund","id":"aalesund-no","e":"en-mano"},{"n":"Bodø/Glimt","id":"bodoglimt-no","e":"en-mano"},{"n":"Brann","e":"en-mano"},{"n":"Fredrikstad","id":"fredrikstad-no","e":"en-mano"},{"n":"HamKam","e":"buscado"},{"n":"Lillestrøm","e":"en-mano"},{"n":"Lyn","e":"buscado"},{"n":"Rosenborg","e":"en-mano"},{"n":"Stabæk","e":"en-mano"},{"n":"Strømsgodset","e":"en-mano"},{"n":"Tromsø","e":"en-mano"},{"n":"Vålerenga","id":"valerenga-no","e":"en-mano"},{"n":"Viking","id":"viking-no","e":"en-mano"}]},

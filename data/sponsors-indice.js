@@ -1384,6 +1384,7 @@ window.SPONSORS_INDICE = [
   ["karnten-orf","Kärnten ORF",["c"]],
   ["karnten-sport","Kärnten Sport",["c"]],
   ["kas-mpasa-90th-year","Kasımpaşa 90th Year",["c"]],
+  ["kaxon","Kaxon",["m"]],
   ["kazan-orgsintez","Kazan Orgsintez",["c"]],
   ["kb88","KB88",["c"]],
   ["kbs-byg","KBS Byg",["c"]],

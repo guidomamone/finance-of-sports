@@ -47,3 +47,5 @@
 **Ángulos**: regulador/país (SIIS): agotado — se bajaron todos los ejercicios con documentos (API; ver `_notas-generales.md`) · barrido: 2 (Sonnet) — 2026-10-08
 
 Estados financieros en disco ahora: 10 ejercicios (2016-2025), cada uno con certificación y dictamen del revisor fiscal cuando SIIS los tiene. Los años que faltan son registros de SIIS sin documentos depositados.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2016 desde `Clubes/Colombia/Envigado/siis-estado-2016.pdf` (sourceId `envigado-co-siis-estado-2016`).

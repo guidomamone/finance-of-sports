@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-27';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-28';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["it-serieb"] = {
   2007: {"size":22,"cargados":1,"faltan":[{"n":"AlbinoLeffe","e":"buscado"},{"n":"Arezzo","e":"buscado"},{"n":"Bari","e":"buscado"},{"n":"Bologna","id":"bologna-it","e":"buscado"},{"n":"Brescia","e":"buscado"},{"n":"Cesena","e":"buscado"},{"n":"Crotone","e":"buscado"},{"n":"Frosinone","e":"buscado"},{"n":"Genoa","id":"genoa-it","e":"buscado"},{"n":"Hellas Verona","id":"hellasverona-it","e":"buscado"},{"n":"Lecce","e":"buscado"},{"n":"Mantova 1911","e":"buscado"},{"n":"Modena","e":"buscado"},{"n":"Napoli","id":"napoli-it","e":"buscado"},{"n":"Pescara","e":"buscado"},{"n":"Piacenza","e":"buscado"},{"n":"Rimini","e":"buscado"},{"n":"Spezia","e":"buscado"},{"n":"Treviso","e":"buscado"},{"n":"Triestina","e":"buscado"},{"n":"Vicenza","e":"buscado"}]},

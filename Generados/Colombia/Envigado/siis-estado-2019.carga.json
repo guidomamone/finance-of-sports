@@ -1,15 +1,9 @@
 {
  "pdf": "Clubes/Colombia/Envigado/siis-estado-2019.pdf",
- "generado": "2026-10-28T00:23:17.284Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Entretenimiento y esparcimiento\" -> other_income 0.6"
-  }
- ],
+ "generado": "2026-10-28T00:39:17.825Z",
+ "frena": [],
  "avisos": [
   "materialidad: \"Arbitraje\" va como competition_bonus con 0.7 (0.29% de ingresos; acumulado sin preguntar 0.29%)",
-  "pregunta ya abierta (frena igual): \"Entretenimiento y esparcimiento\" -> other_income está en la cola por siis-estado-2017.pdf (886c6fe); su respuesta vale para este año",
   "gestión: ningún presidente confirmado cubre 2019 (cierre 2019-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -174,9 +168,9 @@
     "amountNative": 2000,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Intereses",
@@ -609,11 +603,11 @@
    "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
    "signoFijo": 2000,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Mismo rotulo que 2016 (importe redondo anual en la nota de ingresos ordinarios); other_income",
    "destino": "revenue",
    "amountNative": 2000
   },
@@ -893,8 +887,8 @@
  },
  "ancla": null,
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 23,
   "lineasGasto": 4,
   "metaFilas": 2,

@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-27';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-28';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["ar-primerab"] = {
   2020: {"size":18,"cargados":1,"faltan":[{"n":"Acassuso","e":"buscado"},{"n":"Almirante Brown","e":"buscado"},{"n":"Argentino de Quilmes","e":"sin-buscar"},{"n":"Colegiales","e":"buscado"},{"n":"Comunicaciones","e":"sin-buscar"},{"n":"Defensores Unidos","e":"sin-buscar"},{"n":"Deportivo Armenio","e":"sin-buscar"},{"n":"Fénix","e":"sin-buscar"},{"n":"Flandria","e":"sin-buscar"},{"n":"J. J. de Urquiza","e":"sin-buscar"},{"n":"Sacachispas","e":"sin-buscar"},{"n":"San Miguel","e":"buscado"},{"n":"San Telmo","e":"buscado"},{"n":"Talleres","id":"talleres-ar","e":"buscado"},{"n":"Tristán Suárez","e":"buscado"},{"n":"UAI Urquiza","e":"sin-buscar"},{"n":"Villa San Carlos","e":"sin-buscar"}]},

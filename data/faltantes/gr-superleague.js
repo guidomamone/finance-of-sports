@@ -1,5 +1,5 @@
 // GENERADO por tools/faltantes-liga.mjs: no editar a mano (el formato, en la cabecera de la tool).
-window.LEAGUE_GAPS_CALCULADO = '2026-10-27';
+window.LEAGUE_GAPS_CALCULADO = '2026-10-28';
 window.LEAGUE_GAPS = window.LEAGUE_GAPS || {};
 window.LEAGUE_GAPS["gr-superleague"] = {
   2016: {"size":16,"cargados":3,"faltan":[{"n":"AEL Kalloni","e":"sin-buscar"},{"n":"Asteras Tripolis","id":"asterastripolis-gr","e":"buscado"},{"n":"Iraklis","e":"sin-buscar"},{"n":"Levadiakos","id":"levadiakos-gr","e":"buscado"},{"n":"Panathinaikos","id":"panathinaikos-gr","e":"en-mano"},{"n":"Panetolikos","id":"panetolikos-gr","e":"en-mano"},{"n":"Panionios","e":"sin-buscar"},{"n":"Panthrakikos","e":"sin-buscar"},{"n":"PAOK","id":"paok-gr","e":"buscado"},{"n":"PAS Giannina","e":"sin-buscar"},{"n":"Platanias","e":"sin-buscar"},{"n":"Skoda Xanthi","e":"sin-buscar"},{"n":"Veria","e":"sin-buscar"}]},
