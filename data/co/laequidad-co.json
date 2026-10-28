@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-27",
+  "exported_at": "2026-10-28",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "laequidad-co",
@@ -845,7 +845,8 @@
             "reason": "Línea única de ingresos sin abrir: lump_football_operations (regla de Colombia, 463, 2026-10-26)",
             "kind": "net_sales"
           },
-          {"line":"Gastos de ventas","side":"expense","amount":2471.578,"reason":"el documento no desglosa este renglón","kind":"other"}
+          {"line":"Gastos de ventas","side":"expense","amount":2471.578,"reason":"el documento no desglosa este renglón","kind":"other"},
+          {"line":"Gastos de administración","side":"expense","amount":24415.721,"reason":"el documento no desglosa este renglón","kind":"other"}
         ],
         "included_in": {
           "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
