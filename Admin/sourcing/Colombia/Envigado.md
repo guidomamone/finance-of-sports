@@ -53,3 +53,5 @@ Estados financieros en disco ahora: 10 ejercicios (2016-2025), cada uno con cert
 - Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2017 desde `Clubes/Colombia/Envigado/siis-estado-2017.pdf` (sourceId `envigado-co-siis-estado-2017`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2018 desde `Clubes/Colombia/Envigado/siis-estado-2018.pdf` (sourceId `envigado-co-siis-estado-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2019 desde `Clubes/Colombia/Envigado/siis-estado-2019.pdf` (sourceId `envigado-co-siis-estado-2019`).

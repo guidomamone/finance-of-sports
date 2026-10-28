@@ -272,7 +272,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2019: {
     leagueSize: 20,
-    sinDato: ["atlnacional-co","envigado-co"],
+    sinDato: ["atlnacional-co"],
     wiki: {"t":"2019 Categoría Primera A season","lang":"en","at":"2026-10-02","n":20},
     clubs: [
       { id:"americadecali-co", revenue:13.029, reportType:"official_balance_sheet",
@@ -284,6 +284,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"independientemedellin-co", revenue:9.577, reportType:"official_balance_sheet",
         sourceId:"independientemedellin-co-siis-estado-2019",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",9.437],["Otros ingresos",0.14]] },
+      { id:"envigado-co", revenue:7.558, reportType:"official_balance_sheet",
+        sourceId:"envigado-co-siis-estado-2019",
+        mix:[["Cuotas Sociales",0.202],["Comercial / Sponsors",0.234],["Estadio",0.112],["Televisión",1.269],["Premios por competencias",0.118],["Venta de Jugadores",4.628],["Otras actividades (educación y otros deportes)",0.153],["Otros ingresos",0.84]] },
       { id:"laequidad-co", revenue:6.924, reportType:"official_balance_sheet",
         sourceId:"laequidad-co-siis-estado-2019",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.826],["Otros ingresos",0.098]],
