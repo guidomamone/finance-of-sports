@@ -9,6 +9,7 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Costos financieros":{"en":"Finance costs"},
 "Derechos deportivos (transferencias de jugadores a otros clubes)":{"en":"Sporting rights (player transfers to other clubs)"},
 "Derechos deportivos de formación":{"en":"Sporting training rights"},
+"Deterioro de valor de ganancias y reversión de pérdidas por deterioro de valor (pérdidas por deterioro de valor) determinado de acuerdo con la NIIF 9":{"en":"Impairment gains and reversals of impairment losses (impairment losses) determined in accordance with IFRS 9"},
 "Donaciones":{"en":"Donations"},
 "Escuela":{"en":"Academy"},
 "Gastos boletería y control estadio":{"en":"Ticketing and stadium control expenses"},

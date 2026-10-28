@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 345 clubes, 1555 ejercicios, 24 países.
+TOTAL: 345 clubes, 1556 ejercicios, 24 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -139,7 +139,7 @@ COLOMBIA (29)
   Atletico Bucaramanga    10 ejercicios (2016 a 2025), balance, COP
   Atlético FC             10 ejercicios (2016 a 2025), balance, COP
   Atletico Huila          10 ejercicios (2016 a 2025), balance, COP
-  Atlético Nacional       2 ejercicios (2015, 2025), balance, COP
+  Atlético Nacional       3 ejercicios (2015, 2016, 2025), balance, COP
   Barranquilla FC         10 ejercicios (2016 a 2025), balance, COP
   Bogota FC               10 ejercicios (2016 a 2025), balance, COP
   Boyacá Chicó            10 ejercicios (2016 a 2025), balance, COP
