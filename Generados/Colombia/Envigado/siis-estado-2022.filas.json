@@ -1,0 +1,351 @@
+{
+ "pdf": "Clubes/Colombia/Envigado/siis-estado-2022.pdf",
+ "md": "Clubes/Colombia/Envigado/siis-estado-2022.md",
+ "mdSha1": "f49eef81c37aefc88d5bdc0b62e6393f37301ac4",
+ "ubicacionSha1": "f7268b052f2179397c29bc4ccaedd57ed3da870f",
+ "modelo": "a mano (Claude Code, sesión 2026-10-28)",
+ "generado": "2026-10-28T00:14:07.887Z",
+ "salida": "a mano",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [
+   "b10"
+  ],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "miles",
+   "evidencia": "L1: Cifras en miles de pesos colombianos"
+  },
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "L102: Cifras de esta tabla en pesos colombianos"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 11,
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "actual": "25.516.756",
+   "anterior": "24.393.273",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 12,
+   "etiqueta": "Costo de ventas",
+   "actual": "228.699",
+   "anterior": "104.733",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "Ganancia bruta",
+   "actual": "25.288.057",
+   "anterior": "24.288.540",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Gastos de ventas",
+   "actual": "13.983.457",
+   "anterior": "11.678.095",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Gastos de administración",
+   "actual": "2.246.526",
+   "anterior": "2.261.910",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Otros ingresos",
+   "actual": "359.858",
+   "anterior": "750.732",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Otros gastos",
+   "actual": "160.817",
+   "anterior": "101.889",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "Ganancia (pérdida) por actividades de operación",
+   "actual": "9.257.115",
+   "anterior": "10.997.378",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Ingresos financieros",
+   "actual": "2.756.661",
+   "anterior": "1.767.640",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Ganancia (pérdida), antes de impuestos",
+   "actual": "12.013.776",
+   "anterior": "12.765.018",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "actual": "4.445.255",
+   "anterior": "4.081.867",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 22,
+   "etiqueta": "Ganancia (pérdida) procedente de operaciones continuadas",
+   "actual": "7.568.521",
+   "anterior": "8.683.151",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "Ganancia (pérdida)",
+   "actual": "7.568.521",
+   "anterior": "8.683.151",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 106,
+   "etiqueta": "Matrículas",
+   "actual": "41,925,000",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 107,
+   "etiqueta": "Mensualidades",
+   "actual": "770,084,700",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 108,
+   "etiqueta": "Taquilla",
+   "actual": "580,130,000",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 109,
+   "etiqueta": "Abonados",
+   "actual": "66,395,000",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 110,
+   "etiqueta": "Venta de derechos deportivos",
+   "actual": "11,998,559,500",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 111,
+   "etiqueta": "Préstamo de derechos deportivo",
+   "actual": "90,639,845",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 112,
+   "etiqueta": "Contribución de solidaridad",
+   "actual": "526,560,367",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 113,
+   "etiqueta": "Publicidad y propaganda",
+   "actual": "717,003,000",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 114,
+   "etiqueta": "Dimayor",
+   "actual": "5,030,059,283",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 115,
+   "etiqueta": "Federación colombiana de futbol",
+   "actual": "484,545,000",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 116,
+   "etiqueta": "Donaciones",
+   "actual": "11,933,028",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 117,
+   "etiqueta": "Patrocinio",
+   "actual": "1,517,246,545",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 118,
+   "etiqueta": "Cuotas de sostenimiento",
+   "actual": "1,392,643,507",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 119,
+   "etiqueta": "Arrendamientos",
+   "actual": "75,000,000",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 120,
+   "etiqueta": "Venta de mercancías",
+   "actual": "303,491,055",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 121,
+   "etiqueta": "Otras actividades de servicios",
+   "actual": "1,932,040,000",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 122,
+   "etiqueta": "Devoluciones rebajas y descuentos",
+   "actual": "-21,499,830",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 123,
+   "etiqueta": "Total",
+   "actual": "25,516,756,000",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 23,
+  "actual": "7.568.521",
+  "anterior": "8.683.151"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
+}

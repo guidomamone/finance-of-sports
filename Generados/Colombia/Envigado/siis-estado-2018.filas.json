@@ -1,0 +1,447 @@
+{
+ "pdf": "Clubes/Colombia/Envigado/siis-estado-2018.pdf",
+ "md": "Clubes/Colombia/Envigado/siis-estado-2018.md",
+ "mdSha1": "45f3ffd0247104e1209eea223fee24182150cdb9",
+ "ubicacionSha1": "0c7e9c3f2c1cccf05cab882854c2bcfbcd649198",
+ "modelo": "a mano (Claude Code, sesión 2026-10-28)",
+ "generado": "2026-10-28T00:14:04.622Z",
+ "salida": "a mano",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [
+   "b10",
+   "b11"
+  ],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "miles",
+   "evidencia": "L1: Cifras en miles de pesos colombianos"
+  },
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "L104: Cifras de esta tabla en pesos colombianos"
+  },
+  {
+   "bloque": "b11",
+   "escala": "unidades",
+   "evidencia": "L129: Cifras de esta tabla en pesos colombianos"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 11,
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "actual": "15.903.277",
+   "anterior": "23.535.426",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 12,
+   "etiqueta": "Costo de ventas",
+   "actual": "21.994",
+   "anterior": "13.086",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "Ganancia bruta",
+   "actual": "15.881.283",
+   "anterior": "23.522.340",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Gastos de ventas",
+   "actual": "8.487.092",
+   "anterior": "13.994.185",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Gastos de administración",
+   "actual": "1.857.291",
+   "anterior": "3.034.038",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Otros ingresos",
+   "actual": "927.119",
+   "anterior": "2.428.479",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Otros gastos",
+   "actual": "1.090.984",
+   "anterior": "276.557",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "Ganancia (pérdida) por actividades de operación",
+   "actual": "5.373.035",
+   "anterior": "8.646.039",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Costos financieros",
+   "actual": "630.101",
+   "anterior": "42.896",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "Ganancia (pérdida), antes de impuestos",
+   "actual": "4.742.934",
+   "anterior": "8.603.143",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "actual": "2.567.518",
+   "anterior": "3.365.797",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 22,
+   "etiqueta": "Ganancia (pérdida) procedente de operaciones continuadas",
+   "actual": "2.175.416",
+   "anterior": "5.237.346",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "Ganancia (pérdida)",
+   "actual": "2.175.416",
+   "anterior": "5.237.346",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 108,
+   "etiqueta": "Escuelas de fútbol",
+   "actual": "310,168,446",
+   "anterior": "144,201,500",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 109,
+   "etiqueta": "Taquilla",
+   "actual": "382,616,500",
+   "anterior": "349,294,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 110,
+   "etiqueta": "Abonados",
+   "actual": "15,057,700",
+   "anterior": "12,560,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 111,
+   "etiqueta": "Venta de derechos deportivos",
+   "actual": "4,394,284,702",
+   "anterior": "14,481,089,310",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 112,
+   "etiqueta": "Préstamo de derechos deportivo",
+   "actual": "974,925,000",
+   "anterior": "9,200,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 113,
+   "etiqueta": "Contribución de solidaridad",
+   "actual": "391,641,939",
+   "anterior": "2,898,326,950",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 114,
+   "etiqueta": "Publicidad y propaganda",
+   "actual": "8,916,630",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 115,
+   "etiqueta": "Derechos televisión internacional(1)",
+   "actual": "155,633,000",
+   "anterior": "140,194,444",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 116,
+   "etiqueta": "Derechos televisión abierta RCN(1)",
+   "actual": "638,655,765",
+   "anterior": "850,623,629",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 117,
+   "etiqueta": "Derechos televisión cerrada Win Sports(1)",
+   "actual": "2,353,613,376",
+   "anterior": "2,045,760,168",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 118,
+   "etiqueta": "Arbitraje",
+   "actual": "80,994,600",
+   "anterior": "18,258,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 119,
+   "etiqueta": "Federación colombiana de fútbol",
+   "actual": "285,600,000",
+   "anterior": "30,305,819",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 120,
+   "etiqueta": "Patrocinio",
+   "actual": "155,552,000",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 121,
+   "etiqueta": "Cuotas de sostenimiento",
+   "actual": "3,717,831,564",
+   "anterior": "465,228,445",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 122,
+   "etiqueta": "Participación en eventos nacionales",
+   "actual": "0",
+   "anterior": "46,174,548",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 123,
+   "etiqueta": "Venta de artículos deportivos",
+   "actual": "37,785,976",
+   "anterior": "44,209,071",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 124,
+   "etiqueta": "Entretenimiento y esparcimiento",
+   "actual": "2,000,000,002",
+   "anterior": "2,000,000,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b10",
+   "linea": 125,
+   "etiqueta": "Total Ingresos por actividades ordinarias",
+   "actual": "15,903,277,200",
+   "anterior": "23,535,425,884",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b11",
+   "linea": 133,
+   "etiqueta": "Intereses",
+   "actual": "247,952,813",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 134,
+   "etiqueta": "Diferencia en cambio",
+   "actual": "317,205,594",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 135,
+   "etiqueta": "Descuentos comerciales condicionales",
+   "actual": "12,960,004",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 136,
+   "etiqueta": "Arrendamientos",
+   "actual": "684,700",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 137,
+   "etiqueta": "Recuperación gastos bancarios",
+   "actual": "381,080",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 138,
+   "etiqueta": "Reintegro de otros costos y gastos",
+   "actual": "314,011,724",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 140,
+   "etiqueta": "Por incapacidades",
+   "actual": "33,917,336",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 142,
+   "etiqueta": "Ajuste al peso",
+   "actual": "6,077",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b11",
+   "linea": 143,
+   "etiqueta": "Total otros Ingresos",
+   "actual": "927,119,327",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 23,
+  "actual": "2.175.416",
+  "anterior": "5.237.346"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
+}

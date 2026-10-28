@@ -1,0 +1,70 @@
+{
+ "pdf": "Clubes/Colombia/Envigado/siis-estado-2020.pdf",
+ "md": "Clubes/Colombia/Envigado/siis-estado-2020.md",
+ "mdSha1": "663eef8c18f33f5e5aa0cbe24ec8cea8213c40aa",
+ "modelo": "a mano (Claude Code, sesión 2026-10-28)",
+ "generado": "2026-10-28T00:14:06.290Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    25
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 1,
+   "lineas": [
+    111,
+    128
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 1,
+   "lineas": [
+    192,
+    199
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 1,
+   "lineas": [
+    134,
+    186
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 1,
+   "lineas": [
+    205,
+    213
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b10",
+  "b12"
+ ],
+ "notas_gastos": [
+  "b11",
+  "b13"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
+ "moneda": "COP",
+ "columna_ejercicio": "2020",
+ "columna_anterior": "2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
+}

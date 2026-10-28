@@ -1,0 +1,51 @@
+{
+ "pdf": "Clubes/Colombia/Envigado/siis-estado-2019.pdf",
+ "md": "Clubes/Colombia/Envigado/siis-estado-2019.md",
+ "mdSha1": "ad1318a5c46574bbabbfe2546c3def740122a819",
+ "modelo": "a mano (Claude Code, sesión 2026-10-28)",
+ "generado": "2026-10-28T00:14:05.442Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    23
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 1,
+   "lineas": [
+    108,
+    126
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 1,
+   "lineas": [
+    132,
+    144
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b10",
+  "b11"
+ ],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "L1: Cifras en miles de pesos colombianos",
+ "moneda": "COP",
+ "columna_ejercicio": "2019",
+ "columna_anterior": "2018",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados de SIIS (Supersociedades): datos que el club cargó en el formulario, generados por tools/siis-estado.mjs; el detalle de los rubros que las notas del club abren y suman exacto se copió al final (siis-notas.mjs)."
+}
