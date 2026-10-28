@@ -37,6 +37,7 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
 | cargar sin API, con tokens de sesión (3c) | `carga-con-tokens.md` |
 | un club nuevo: color, escudo, liga de cada temporada (7) | `club-nuevo.md` |
 | algo frenó, una trampa rara, o un club, liga o deporte nuevo (6 y 7) | `trampas.md` |
+| un club colombiano que deposita en SIIS (estado de resultados y balance como datos, no PDF) | `node tools/club-siis.mjs "<Club>"` (dice qué falta y con qué comando) y `Admin/paises/co.md`, «Pipeline de Colombia: los estados de SIIS»; SIIS es el estado primario oficial y las «NOTAS EF» son solo las notas |
 | correr UNA tool que ya existe (un ensayo, un script de datos) | nada de esto: la cabecera de la tool y la etapa de `Admin/PIPELINE.md` |
 
 Sesión de tipo c) (cargar con tokens): si Guido pide cargar «con tokens», el procedimiento está en `carga-con-tokens.md`. La sesión no edita `tools/`: lo que falte va a
