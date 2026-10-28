@@ -136,6 +136,58 @@ _investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-d
 Duda: La fuente no dice a quién reemplazó (Ramiro Ruiz figuraba como presidente en 2024); Wikipedia en inglés aún lista a Manuel Valero. Fecha de posesión real sin confirmar.
 ```
 
+## 2017
+
+### Ingresos
+
+```text
+2017: cargado por tools/cargar.mjs (2026-10-28) desde Clubes/Colombia/Envigado/siis-estado-2017.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Envigado/siis-estado-2017.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | TAQUILLA | pág. 1, precedente |
+| 2 | ABONADOS | pág. 1, precedente |
+| 3 | ESCUELAS DE FUTBOL | pág. 1, Jev 1 |
+| 4 | VENTA DE DERECHOS DEPORTIVOS - | pág. 1, precedente |
+| 5 | PRESTAMO DE DERECHOS DEPORTIVO | pág. 1, precedente |
+| 6 | CONTRIBUCION DE SOLIDARIDAD | pág. 1, precedente |
+| 7 | DERECHOS TELEVISION ABIERTA | pág. 1, Jev 1 |
+| 8 | DERECHOS TELEVISION INTERNACIONAL | pág. 1, Jev 1 |
+| 9 | DERECHOS TELEVISION ABIERT RCN | pág. 1, Jev 1 |
+| 10 | DERECHOS TELEVISION CERRADA | pág. 1, Jev 1 |
+| 11 | DERECHOS TELEVISION WIN SPORTS | pág. 1, Jev 1 |
+| 12 | ARBITRAJE | pág. 1, ? 0.7 |
+| 13 | FEDERACION COLOMBIANA DE FUTBOL | pág. 1, precedente |
+| 14 | CUOTAS DE SOSTENIMIENTO | pág. 1, precedente |
+| 15 | PARTICIPACION EN EVENTOS NACIONALES | pág. 1, Jev 1 |
+| 16 | VENTA DE ARTICULOS DEPORTIVOS | pág. 1, Jev 1 |
+| 17 | ENTRETENIMIENTO Y ESPARCIMIENTO | pág. 1, precedente |
+| 18 | INTERES | pág. 1, Jev 1 |
+| 19 | DESCTOS COMERCIALES CONDICIONA | pág. 1, Claude 0.85 |
+| 20 | REINTEGRO DE OTROS COSTOS Y GASTOS | pág. 1, Jev 1 |
+| 21 | POR INCUMPLIMIENTO DE CONTRATO | pág. 1, Jev 0.98 |
+| 22 | POR INCAPACIDADES I.S.S. | pág. 1, Jev 0.98 |
+| 23 | APROVECHAMIENTOS | pág. 1, Jev 0.94 |
+| 24 | AJUSTE AL PESO | pág. 1, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costo de ventas | pág. 1, precedente |
+| 2 | Gastos de ventas | pág. 1, precedente |
+| 3 | Gastos de administración | pág. 1, precedente |
+
+### Meta
+
+```text
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-28): filas-a-mano. Claude 2026-10-28 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+tools/cargar.mjs (2026-10-28). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
 ## 2016
 
 ### Ingresos
@@ -203,6 +255,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Envigado/siis-estado-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### envigado-co-siis-estado-2017
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Envigado/siis-estado-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

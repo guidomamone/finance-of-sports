@@ -353,7 +353,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2017: {
     leagueSize: 20,
-    sinDato: ["atlnacional-co","envigado-co"],
+    sinDato: ["atlnacional-co"],
     wiki: {"t":"2017 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:15.531, reportType:"official_balance_sheet",
@@ -362,6 +362,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"americadecali-co", revenue:11.685, reportType:"official_balance_sheet",
         sourceId:"americadecali-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",11.195],["Otros ingresos",0.49]] },
+      { id:"envigado-co", revenue:8.701, reportType:"official_balance_sheet",
+        sourceId:"envigado-co-siis-estado-2017",
+        mix:[["Cuotas Sociales",0.156],["Comercial / Sponsors",0.015],["Estadio",0.121],["Televisión",1.018],["Premios por competencias",0.032],["Venta de Jugadores",5.827],["Otras actividades (educación y otros deportes)",0.048],["Otros ingresos",1.484]] },
       { id:"oncecaldas-co", revenue:5.918, reportType:"official_balance_sheet",
         sourceId:"oncecaldas-co-siis-estado-2017",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",5.587],["Otros ingresos",0.331]],
