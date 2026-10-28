@@ -333,9 +333,11 @@ window.RANKINGS["co-primeraA"] = {
   },
   2018: {
     leagueSize: 20,
-    sinDato: ["atlnacional-co"],
     wiki: {"t":"2018 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
+      { id:"atlnacional-co", revenue:22.146, reportType:"official_balance_sheet",
+        sourceId:"atlnacional-co-siis-estado-2018",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",17.917],["Otros ingresos",4.228]] },
       { id:"independientemedellin-co", revenue:12.493, reportType:"official_balance_sheet",
         sourceId:"independientemedellin-co-siis-estado-2018",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",12.056],["Otros ingresos",0.438]] },
