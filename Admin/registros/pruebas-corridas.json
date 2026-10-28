@@ -84,6 +84,11 @@
   "ok": true,
   "segundos": 7
  },
+ "tools/probar-pagina-wikipedia.mjs": {
+  "fecha": "2026-10-28",
+  "ok": true,
+  "segundos": 0
+ },
  "tools/probar-partir-fases.mjs": {
   "fecha": "2026-10-27",
   "ok": true,
@@ -95,6 +100,11 @@
   "segundos": 1
  },
  "tools/probar-patrones-tools.mjs": {
+  "fecha": "2026-10-28",
+  "ok": true,
+  "segundos": 0
+ },
+ "tools/probar-prueba-fallo.mjs": {
   "fecha": "2026-10-28",
   "ok": true,
   "segundos": 0
@@ -147,6 +157,6 @@
  "tools/prueba-escribir.mjs": {
   "fecha": "2026-10-28",
   "ok": true,
-  "segundos": 168
+  "segundos": 157
  }
 }

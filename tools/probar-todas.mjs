@@ -8,6 +8,7 @@
 import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { resolve, join } from 'node:path';
+import { resumenFallo } from './prueba-fallo.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const REGISTRO = join(ROOT, 'Admin', 'registros', 'pruebas-corridas.json');
@@ -19,7 +20,7 @@ for (const p of pruebas) {
   const t0 = Date.now(); const r = spawnSync('node', [p], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 27, timeout: 600_000 });
   const ok = r.status === 0; if (!ok) mal++;
   reg[p] = { fecha: new Date().toISOString().slice(0, 10), ok, segundos: Math.round((Date.now() - t0) / 1000) };
-  console.log(`${ok ? 'ok ' : 'MAL'} ${p} (${reg[p].segundos} s)${ok ? '' : `\n${(r.stdout || '').split('\n').filter((l) => /^MAL/.test(l)).slice(0, 3).join('\n')}${r.status == null ? '\n(no terminó: tiempo agotado)' : ''}`}`);
+  console.log(`${ok ? 'ok ' : 'MAL'} ${p} (${reg[p].segundos} s)${ok ? '' : `\n${resumenFallo(r, { max: 12 }).join('\n')}`}`); // qué dijo la prueba al fallar (no solo las líneas «MAL»)
   writeFileSync(REGISTRO, `${JSON.stringify(Object.fromEntries(Object.entries(reg).sort()), null, 1)}\n`);
 }
 console.log(mal ? `\n${mal} prueba(s) fallan` : `\n${pruebas.length} pruebas, todas ok`);
