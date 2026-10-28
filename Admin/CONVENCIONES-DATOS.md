@@ -483,6 +483,8 @@ Criterio de Guido, también en el encabezado de `tools/auditoria.mjs`. El vocabu
 
 - Un párrafo de énfasis sobre la continuidad sin "incertidumbre material" no es duda sobre la continuidad (`continuidad: false`).
 - Alcanza el título del párrafo para clasificar; manda el párrafo de opinión sobre el título de la base.
+- Un dictamen firmado por una persona «en representación de» una firma va con la firma como auditor (`tipo: firma`) y la persona en la `nota`
+  (Baker Tilly en Atlético Nacional, Consultoría & Revisoría S.A.S. en Real Santander); un revisor persona natural sin firma va como `persona`.
 - Una abstención parcial es `abstencion`.
 - Un club-año sin línea es "no sabemos", no "sin informe"; un informe que existe pero no está transcripto (`falta_transcripcion`) no se
   publica y cuenta como pendiente. Un auditor persona va con su nombre como lo imprime el documento.
