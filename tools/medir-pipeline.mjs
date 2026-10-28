@@ -253,10 +253,18 @@ function correr(m, nivel) {
   const t0 = Date.now();
   const r = spawnSync('node', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 30 });
   writeFileSync(join(dir, 'stdout.txt'), r.stdout || ''); writeFileSync(join(dir, 'stderr.txt'), r.stderr || '');
-  limpiarEfectos(m);
+  if (!med.precalentar) limpiarEfectos(m); // con precalentar se revierte al terminar el después (ver el bucle de niveles)
   if (r.error) { console.error(`   el medidor ${m} no pudo correr: ${r.error.message}`); process.exit(1); }
   writeFileSync(join(dir, 'listo'), JSON.stringify({ estado: r.status, segundos: Math.round((Date.now() - t0) / 1000) }));
   return { dir, salida, reutilizado: false, estado: r.status };
+}
+
+// Un medidor con `precalentar` baja de la red lo que falte (con la tool editada) UNA vez, antes de las dos corridas: el antes y el después leen la misma caché y la diferencia es la del cambio, no la de que una descarga fallara en una y no en la otra. Lo bajado se revierte al terminar el después.
+function precalentar(m) {
+  const r = spawnSync('node', T.medidores[m].precalentar, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 30 });
+  if (r.error) { console.error(`   el precalentado de ${m} no pudo correr: ${r.error.message}`); process.exit(1); }
+  const sin = ((r.stdout || '') + (r.stderr || '')).split('\n').filter((l) => /SIN PODER BAJAR/.test(l));
+  if (sin.length) console.log(`   aviso: tras el precalentado de ${m} quedan páginas sin bajar (el antes y el después las vuelven a intentar por su cuenta):\n${sin.map((l) => '     ' + l.trim()).join('\n')}`);
 }
 
 // Un medidor que no imprime nada ni escribe un archivo de salida no midió nada: «idéntico» sería falso (el del xhtml midió cero archivos durante semanas con la salida vacía antes y después).
@@ -361,8 +369,10 @@ for (let k = 0; k < niveles.length; k++) {
     if (T.medidores[m].usaLista && tramoDe(nivel).n === 0) continue; // un nivel que no suma documentos no corre nada
     const idx = pasosDe(niveles).findIndex((p) => p.nivel === nivel && p.m === m) + 1; const w = pesoDe(m, nivel);
     Object.assign(pasoActual, { nivel, nivelNumero: k + 1, nivelesTotal: niveles.length, medidor: m, medidorNumero: idx, pasosTotal: pasosDe(niveles).length, documentosDelTramo: hayLista && T.medidores[m].usaLista ? tramoDe(nivel).n : null });
+    if (T.medidores[m].precalentar) { pasoActual.fase = 'precalentado'; anotarProgreso(); precalentar(m); }
     pasoActual.fase = 'antes'; anotarProgreso(); instalarBase(); const antes = correr(m, nivel); volver(); pesoHecho += w;
     pasoActual.fase = 'después'; anotarProgreso(); const despues = correr(m, nivel); pesoHecho += w; anotarProgreso();
+    if (T.medidores[m].precalentar) limpiarEfectos(m);
     const { n, lineas, textos } = comparar(m, antes, despues);
     const res = n && T.medidores[m].resumir && RESUMIDORES[T.medidores[m].resumir] ? RESUMIDORES[T.medidores[m].resumir](lineas, textos || []) : null;
     // con resumen, solo lo que pide atención cuenta como diferencia sin explicar; el resto queda explicado por el resumen

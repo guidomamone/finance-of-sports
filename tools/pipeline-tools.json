@@ -64,8 +64,9 @@
    "resumir": "audit-codigos"
   },
   "contexto": {
-   "que": "estadio, capacidad y sponsor de cada ejercicio (el ensayo baja de Wikipedia las páginas que falten en la caché; medir-pipeline revierte esa caché después de cada corrida)",
+   "que": "estadio, capacidad y sponsor de cada ejercicio (el ensayo baja de Wikipedia las páginas que falten en la caché; medir-pipeline las baja una vez antes del antes y del después, para que las dos corridas lean lo mismo, y revierte esa caché al terminar)",
    "usaLista": false,
+   "precalentar": ["tools/estadio-sponsor.mjs", "--ensayo", "--detalle"],
    "correr": ["tools/estadio-sponsor.mjs", "--ensayo", "--detalle"],
    "comparar": "texto"
   },

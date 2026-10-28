@@ -24,10 +24,10 @@ for (const d of ['tools', 'Admin/lotes', 'Admin/registros']) mkdirSync(join(T, d
 for (const f of ['medir-pipeline.mjs', 'familias-docs.mjs', 'clasificar-tools.mjs', 'patron.mjs', 'comparar-sin-comentarios.js', 'registro-esquema.js', 'esquemas-registros.json', 'duraciones-lib.mjs', 'patrones-tools.mjs']) copyFileSync(join(ROOT, 'tools', f), join(T, 'tools', f));
 const w = (rel, txt) => writeFileSync(join(T, rel), txt);
 const leer = (rel) => readFileSync(join(T, rel), 'utf8');
-const NP = Object.fromEntries(['medir-pipeline.mjs', 'familias-docs.mjs', 'clasificar-tools.mjs', 'patron.mjs', 'comparar-sin-comentarios.js', 'registro-esquema.js', 'fake-medidor.mjs'].map((f) => [f, 'prueba']));
+const NP = Object.fromEntries(['medir-pipeline.mjs', 'familias-docs.mjs', 'clasificar-tools.mjs', 'patron.mjs', 'comparar-sin-comentarios.js', 'registro-esquema.js', 'fake-medidor.mjs', 'fake-tibio.mjs'].map((f) => [f, 'prueba']));
 w('tools/pipeline-tools.json', JSON.stringify({
   lotes: { chico: 'Admin/lotes/prueba-rapida.txt', mediano: 'Admin/lotes/prueba-mediana.txt', completo: 'Admin/lotes/prueba-completa.txt' },
-  medidores: { salida: { que: 'prueba', usaLista: false, correr: ['tools/fake-medidor.mjs'], comparar: 'texto' } },
+  medidores: { salida: { que: 'prueba', usaLista: false, correr: ['tools/fake-medidor.mjs'], comparar: 'texto' }, tibio: { que: 'prueba: baja algo una vez antes de las dos corridas', usaLista: false, precalentar: ['tools/fake-tibio.mjs', '--precalentar'], correr: ['tools/fake-tibio.mjs'], comparar: 'texto' } },
   tools: { 'fake-tool.mjs': { alcance: 'etapa', medidores: ['salida'] } }, no_pipeline: NP,
 }, null, 1));
 for (const n of ['rapida', 'mediana', 'completa']) w(`Admin/lotes/prueba-${n}.txt`, 'Clubes/Pais/Club/doc.pdf\n');
@@ -45,6 +45,16 @@ w('tools/fake-medidor.mjs', [
   "const e = JSON.parse(readFileSync(`${dir}/escribe.json`, 'utf8')); writeFileSync(`${dir}/escribe.json`, JSON.stringify({ n: e.n + 1 }) + '\\n'); // efecto al costado a propósito",
   "if (d === 'VACIO') process.exit(0); // un medidor que no imprime nada",
   "console.log(`valor=${VALOR} dato=${d}`);", ''].join('\n'));
+// el medidor «tibio»: lo que baja (tools/cache-tibio.json, trackeado) tarda; si no está bajado, cada corrida ve algo distinto (como una página de Wikipedia que unas veces baja y otras no)
+w('tools/cache-tibio.json', '{"listo":false}\n');
+w('tools/fake-tibio.mjs', [
+  "import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';",
+  "const dir = import.meta.dirname; const cuenta = `${dir}/../Admin/mediciones/pipeline/_cuenta-tibio`;",
+  "mkdirSync(`${dir}/../Admin/mediciones/pipeline`, { recursive: true });",
+  "const n = (existsSync(cuenta) ? Number(readFileSync(cuenta, 'utf8')) : 0) + 1; writeFileSync(cuenta, String(n));",
+  "if (process.argv.includes('--precalentar')) { writeFileSync(`${dir}/cache-tibio.json`, '{\"listo\":true}\\n'); process.exit(0); }",
+  "const { listo } = JSON.parse(readFileSync(`${dir}/cache-tibio.json`, 'utf8'));",
+  "console.log(listo ? 'cache=lista' : `cache=sin-bajar corrida ${n}`);", ''].join('\n'));
 const g = (...a) => spawnSync('git', ['-c', 'user.email=prueba@prueba', '-c', 'user.name=prueba', ...a], { cwd: T, encoding: 'utf8' });
 g('init', '-q'); g('add', '-A'); g('commit', '-q', '-m', 'base');
 const volver = () => { g('checkout', '--', '.'); g('clean', '-fdq', '--', 'tools', 'Admin/registros'); rmSync(join(T, 'Admin/mediciones/pipeline'), { recursive: true, force: true }); };
@@ -117,6 +127,16 @@ r = medir();
 caso('con un respaldo de una corrida muerta, la siguiente se niega y dice cómo', r.status === 1 && /--restaurar/.test(r.out), r.out.slice(-200));
 r = medir('--restaurar');
 caso('--restaurar devuelve las tools desde el respaldo', leer('tools/fake-tool.mjs').includes('VALOR = 99') && !existsSync(join(T, 'Admin/mediciones/pipeline/_respaldo/fake-tool.mjs')), leer('tools/fake-tool.mjs'));
+volver();
+
+// 5b. un medidor con `precalentar` baja lo que falte UNA vez antes del antes y del después: las dos corridas ven lo mismo y lo bajado se revierte
+w('tools/fake-tool.mjs', 'export const VALOR = 1; export const OTRO = 11;\n');
+rmSync(join(T, 'Admin/mediciones/pipeline/_cuenta-tibio'), { force: true });
+{ const tabla = JSON.parse(leer('tools/pipeline-tools.json')); tabla.tools['fake-tool.mjs'].medidores = ['tibio']; w('tools/pipeline-tools.json', JSON.stringify(tabla, null, 1)); }
+r = medir();
+caso('con precalentar las dos corridas ven lo mismo: idéntico y sale con 0', r.status === 0 && /idéntico/.test(registro().at(-1)?.resultado || ''), r.out.slice(-400));
+caso('lo que bajó el precalentado se revierte al terminar', g('status', '--porcelain', 'tools/cache-tibio.json').stdout === '', g('status', '--porcelain').stdout);
+caso('el precalentado corre una sola vez (más las dos corridas)', existsSync(join(T, 'Admin/mediciones/pipeline/_cuenta-tibio')) && leer('Admin/mediciones/pipeline/_cuenta-tibio') === '3', existsSync(join(T, 'Admin/mediciones/pipeline/_cuenta-tibio')) ? leer('Admin/mediciones/pipeline/_cuenta-tibio') : 'no corrió');
 volver();
 
 // 6. nada cambió
