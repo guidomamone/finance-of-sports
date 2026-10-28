@@ -86,6 +86,10 @@ Generados/Colombia/Llaneros/estados-financieros-2025.categorias.json (escalón d
 tools/cargar.mjs (2026-10-20). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-28): cash escalón 1 (compuerta: balance del documento): "Efectivo y Equivalentes de Efectivo" pág. 17
+```
+
 ### Liga
 
 ```text

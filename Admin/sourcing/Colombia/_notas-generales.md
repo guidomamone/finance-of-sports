@@ -13,9 +13,8 @@ browser interactivo: buscando cada club por NIT (la búsqueda por nombre complet
 devuelve miles de resultados irrelevantes o ninguno; hace falta el NIT exacto, googleable como
 "[club] S.A. NIT"), la ficha de resultados trae un resumen de Activos/Ingresos/Utilidad Neta del
 ejercicio más reciente, y el botón "VISTA 360" de cada resultado → "VER OTROS DOCUMENTOS
-ADICIONALES" revela una tabla de radicados con 3 PDFs reales por ejercicio: "NOTAS EF" (que a pesar
-del nombre es el paquete COMPLETO — situación financiera + resultado integral + cambios en
-patrimonio + flujo de efectivo + notas, 30-60 páginas), "CERTIFICACION EF" (certificación corta del
+ADICIONALES" revela una tabla de radicados con 3 PDFs reales por ejercicio: "NOTAS EF" (las notas a los
+estados; no siempre trae el estado de resultados por rubro: ese es el dato oficial de `siis_resultadointegral`, más abajo), "CERTIFICACION EF" (certificación corta del
 representante legal/contador) y "DICTAMEN DEL REVISOR FISCAL" (opinión de auditoría). Cada link
 "Ver" de esa tabla abre un visor (`servicios.supersociedades.gov.co/bpmformularios/...`) cuya
 petición de red real apunta a un PDF descargable directo en

@@ -499,6 +499,109 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "atlnacional-co": {
+  "2015": {
+   "auditor": {
+    "nombre": "Lucía Amparo Cano Hernández",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico Nacional/dictamen-revisor-fiscal-2015.md",
+    "linea": 37
+   }
+  },
+  "2016": {
+   "auditor": {
+    "nombre": "KPMG",
+    "tipo": "firma",
+    "legal": "KPMG S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico Nacional/dictamen-revisor-fiscal-2016.md",
+    "linea": 55
+   }
+  },
+  "2017": {
+   "auditor": {
+    "nombre": "KPMG",
+    "tipo": "firma",
+    "legal": "KPMG S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico Nacional/dictamen-revisor-fiscal-2017.md",
+    "linea": 55
+   }
+  },
+  "2020": {
+   "auditor": {
+    "nombre": "KPMG",
+    "tipo": "firma",
+    "legal": "KPMG S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico Nacional/dictamen-revisor-fiscal-2020.md",
+    "linea": 33
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "KPMG",
+    "tipo": "firma",
+    "legal": "KPMG S.A.S."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico Nacional/dictamen-revisor-fiscal-2021.md",
+    "linea": 32
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Baker Tilly",
+    "tipo": "firma",
+    "legal": "Baker Tilly Colombia Ltda."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico Nacional/dictamen-revisor-fiscal-2022.md",
+    "linea": 33
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Baker Tilly",
+    "tipo": "firma",
+    "legal": "Baker Tilly Colombia Ltda."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico Nacional/dictamen-revisor-fiscal-2023.md",
+    "linea": 36
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Baker Tilly",
+    "tipo": "firma",
+    "legal": "Baker Tilly Colombia Ltda."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Atletico Nacional/dictamen-revisor-fiscal-2024.md",
+    "linea": 24
+   }
+  },
   "2025": {
    "auditor": {
     "nombre": "Baker Tilly",
@@ -1058,6 +1161,93 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "envigado-co": {
+  "2016": {
+   "auditor": {
+    "nombre": "Jorge Armando García Torres",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2016.md",
+    "linea": 35
+   }
+  },
+  "2017": {
+   "auditor": {
+    "nombre": "Mónica Rengifo Polanco",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2017.md",
+    "linea": 29
+   }
+  },
+  "2018": {
+   "auditor": {
+    "nombre": "Moore Stephens SCAI S.A. (Luis Enrique Olaya Muñoz, suplente)",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2018.md",
+    "linea": 35
+   }
+  },
+  "2019": {
+   "auditor": {
+    "nombre": "Moore Assurance S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2019.md",
+    "linea": 29
+   }
+  },
+  "2020": {
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Servicios de Auditoría y Consultoría de Negocios S.A.S. (Grant Thornton)"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2020.md",
+    "linea": 26
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Servicios de Auditoría y Consultoría de Negocios S.A.S. (Grant Thornton)"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2021.md",
+    "linea": 24
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Servicios de Auditoría y Consultoría de Negocios S.A.S. (Grant Thornton)"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2023.md",
+    "linea": 32
+   }
+  },
   "2025": {
    "auditor": {
     "nombre": "Grant Thornton",

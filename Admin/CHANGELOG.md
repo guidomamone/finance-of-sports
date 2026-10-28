@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1258 — 476, primera tanda: caja y deuda de SIIS, auditor y gestiones de Envigado y Nacional, descartes con motivo [476 · caja-deuda.mjs, segunda-fuente-wikipedia-local.mjs · envigado-co, atlnacional-co, atleticobucaramanga-co, barranquillafc-co, llaneros-co, realcartagena-co]
+- Caja y deuda: `caja-deuda --club <id> --escribir` (sin IA) cargó lo que SIIS o el documento siguiente resuelven en Nacional (18), Envigado (13), Bucaramanga (4), Barranquilla FC (2), Llaneros (1) y Real Cartagena (1). Auditor: 8 líneas de Envigado y 10 de Nacional (`falta_transcripcion` en Envigado 2024 y Nacional 2018 y 2019: el PDF es solo la carta o el informe de control interno). Gestiones de Nacional 2015 a 2025 (Pérez Ortiz 2018 a 2021 `confirmada:false`). Liga 2025 de Barranquilla FC con segunda fuente (es.wikipedia). «NOTAS EF» ya no figura como el paquete completo en `club-sourcing` ni en las notas de sourcing.
+- Descartado con motivo en el TODO 476: gestiones sin nota fechada (Medellín, Cortulua, Orsomarso), sponsors sin fuente nueva (la búsqueda de FKA y la web no traen campo «frente»), capacidad de Huila 2016, y los años de caja y deuda que el siguiente documento reexpresó. Quedan abiertos: pantallas, dictámenes sin transcribir, cositas del 461 y la decisión de Guido sobre Ramiro Ruiz.
+- Medición: ninguna tool del pipeline cambió (se corrieron `caja-deuda` y `segunda-fuente-wikipedia-local`); `audit` en P0 0 · P1 0 · P2 0, `generar-data --check` al día.
+
+---
+
 ## Versión 1257 — ASSET_V solo del código; la versión de los datos va en data/manifiesto.js [473 · generar-manifiesto.mjs, codigo-cambiado.mjs, cargar-escribir.mjs, alta-club-escribir.mjs, ejercicios-nuevos.mjs, generadores.mjs, generate-fuentes-page.js, audit-chequeos-2.js, audit-chequeos-5.js]
 - (a, b y c juntas, por pedido de Guido) `ASSET_V` sube solo con `js/` y `css/` (`asset-v-sin-subir` mira solo eso; las tools de carga lo suben con `codigoCambiado()`). Cada archivo de `data/` que una página pide lleva su hash en `data/manifiesto.js` (1.016 archivos, 44 KB, sin `?v=`; `fosV()` en los cargadores y `fosDataTag()` en index.html y fuentes/). Chequeo nuevo `manifiesto-desfasado` (P1); el generador va último en `generadores.mjs`.
 - Probado: un cambio solo de `data/contexto/ar.js` deja dos archivos modificados (ese y el manifiesto), sin `asset-v-sin-subir`; el club abre en vista previa con cada archivo pidiendo su hash. Mi limpieza sacó un import usado de `alta-club-escribir.mjs` y `prueba-escribir.mjs` lo atrapó.

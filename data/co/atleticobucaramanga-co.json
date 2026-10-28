@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "exported_at": "2026-10-27",
+  "exported_at": "2026-10-28",
   "unit": {"scale":1000000,"label":"millions of currency"},
   "club": {
     "id": "atleticobucaramanga-co",
@@ -204,7 +204,7 @@
         },
         {"label":"Impuestos asumidos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-5.869,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.807,"tax":-255.115,"gross_debt":null,"cash":1299.494},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-2.807,"tax":-255.115,"gross_debt":0,"cash":1299.494},
       "official_totals": {"revenue":8243.039,"expenses":7593.016,"net_result":392.102},
       "adjustments": {
         "extra_rows": [{"label":"Costos financieros","amount":-2.807},{"label":"Ingreso (gasto) por impuestos","amount":-255.115}],
@@ -549,7 +549,7 @@
         },
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-4.395,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-52.215,"tax":-361.862,"gross_debt":null,"cash":1229.008},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-52.215,"tax":-361.862,"gross_debt":0,"cash":1229.008},
       "official_totals": {"revenue":13047.875,"expenses":13367.695,"net_result":-733.89},
       "adjustments": {
         "extra_rows": [
@@ -767,7 +767,7 @@
         },
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-1.238,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-39.694,"tax":0,"gross_debt":null,"cash":null},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-39.694,"tax":0,"gross_debt":null,"cash":921.059},
       "official_totals": {"revenue":5408.984,"expenses":5793.337,"net_result":-424.049},
       "adjustments": {
         "extra_rows": [
@@ -1023,7 +1023,7 @@
         {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2513.565,"disclosure":"aggregated"},
         {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-532.724,"disclosure":"aggregated"}
       ],
-      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":81.276,"tax":-1542.648,"gross_debt":null,"cash":2703.445},
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":81.276,"tax":-1542.648,"gross_debt":0,"cash":2703.445},
       "official_totals": {"revenue":46194.784,"expenses":42794.389,"net_result":1939.023},
       "adjustments": {
         "extra_rows": [

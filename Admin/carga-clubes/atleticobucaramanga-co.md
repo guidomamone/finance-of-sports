@@ -79,6 +79,10 @@ tools/dentro-de-otro.mjs (2026-10-27): posiblemente dentro de otro rubro, por pr
 tools/caja-deuda.mjs (2026-10-27): cash escalón S (compuerta: balance de SIIS cuadra): balance de SIIS (siis-estado-2025.json, miles de COP): efectivo y equivalentes = 2703445
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-28): grossDebt escalón 1 (compuerta: año anterior): vocabulario: ninguna fila de deuda financiera (balance completo) = 0
+```
+
 ### Liga
 
 ```text
@@ -392,6 +396,10 @@ Generados/Colombia/Atletico Bucaramanga/estados-financieros-2020.categorias.json
 tools/cargar.mjs (2026-10-27). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-28): cash escalón 0 (compuerta: año anterior): "Efectivo y equivalentes del efectivo" pág. 8
+```
+
 ## 2019
 
 ### Ingresos
@@ -524,6 +532,10 @@ tools/cargar.mjs (2026-10-27). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-27): cash escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2019.json, miles de COP): efectivo y equivalentes = 1229008
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-28): grossDebt escalón 1 (compuerta: año anterior): vocabulario: ninguna fila de deuda financiera (balance completo) = 0
+```
+
 ### Liga
 
 ```text
@@ -644,6 +656,10 @@ tools/dentro-de-otro.mjs (2026-10-27): posiblemente dentro de otro rubro, por pr
 
 ```text
 tools/caja-deuda.mjs (2026-10-27): cash escalón S (compuerta: balance de SIIS cuadra y la comparativa del año siguiente de SIIS coincide): balance de SIIS (siis-estado-2017.json, miles de COP): efectivo y equivalentes = 1299494
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-28): grossDebt escalón 1 (compuerta: año anterior): vocabulario: ninguna fila de deuda financiera (balance completo) = 0
 ```
 
 ## 2016
