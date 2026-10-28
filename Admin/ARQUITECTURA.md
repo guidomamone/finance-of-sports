@@ -667,6 +667,11 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   - `desde`: fecha en que ASUMIÓ (no la de la elección), AAAA-MM-DD; `hasta`: fecha en que dejó el cargo, o null si
     sigue; `fuente`: de dónde salen las fechas (una URL); `confirmada`: true solo con fuente (una gestión sin
     confirmar no se muestra en el sitio).
+  - Una fecha SOLO DE MES (la fuente dice «asumió en octubre de 2013»): `desde` = día 01 de ese mes (para un `hasta`, el
+    último día del mes). `confirmada:true` si la fuente nombra ese mes Y ningún cierre del club (el 31/12 de cada ejercicio)
+    cae dentro de ese mes: el día exacto no cambia qué gestión cubre ningún cierre. Si un cierre cae en ese mes,
+    `confirmada:false` y se pregunta. Caso: Ramiro Ruiz (Envigado), desde octubre de 2013: sus cierres 2016 a 2024 están a años
+    de distancia, queda confirmada y se muestra; antes quedaba sin confirmar y dejaba 9 preguntas abiertas.
   - LOS EJERCICIOS DE CADA GESTIÓN NO SE ESCRIBEN: se derivan. Un ejercicio es de quien estaba en el cargo el día de
     su CIERRE (30/6 para un club que arranca el 1/7). La regla es "de quien firmó el balance"; las dos coinciden salvo
     cuando el cambio cae entre el cierre y la aprobación del balance. Para esos casos existe `firmo` (lista de
