@@ -184,6 +184,7 @@
   "probar-gestion-cubre.mjs": "prueba: gestion-cubre.mjs (qué cierres no caen en una gestión confirmada) y su uso en club-siis.mjs",
   "probar-sponsor-fka.mjs": "prueba: sponsor-fka.mjs (qué años busca --buscar), sin red",
   "liga-decidir.mjs": "orden: la decisión de club-siis --liga (se escribe la línea de liga solo si cada año tiene liga exacta); no lee nada",
+  "probar-lookup-club-league.mjs": "prueba: lookup-club-league.mjs sin el aviso MODULE_TYPELESS y sin llamadores al nombre viejo",
   "probar-club-siis.mjs": "prueba: los avisos y pasos de club-siis.mjs, en una copia descartable",
   "probar-siis-filas.mjs": "prueba: siis-filas.mjs (el resumen de siis-estado y el aviso del lote por un siis-estado sin .filas.json)",
   "probar-todo-contexto.mjs": "prueba: el contexto de un punto de todo.mjs en un repo de juguete",

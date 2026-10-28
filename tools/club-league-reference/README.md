@@ -40,7 +40,7 @@ parsea con wikitext crudo de la API de Wikipedia (mecánico, no un LLM resumiend
    Eso necesitaría un parser de esa plantilla aparte, no es un ajuste de heurística — queda
    documentado como algo a confirmar siempre a mano para Argentina, no un bug pendiente de arreglar
    acá.
-3. **`tools/lookup-club-league.js "<club>" --pais <iso2>`** — busca por nombre (normalizado, como
+3. **`tools/lookup-club-league.mjs "<club>" --pais <iso2>`** — busca por nombre (normalizado, como
    `lookup-brand-color.js`) contra los rosters ya cacheados. Si no hay coincidencia, lo anota en
    `misses.jsonl` y dice que hace falta bajar esa liga-temporada con el paso 2.
 

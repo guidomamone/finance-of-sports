@@ -1,16 +1,16 @@
 {
  "tools/hooks/probar-post-tool.mjs": {
-  "fecha": "2026-10-27",
+  "fecha": "2026-10-28",
   "ok": true,
   "segundos": 1
  },
  "tools/hooks/probar-pre-tool.mjs": {
-  "fecha": "2026-10-27",
+  "fecha": "2026-10-28",
   "ok": true,
   "segundos": 4
  },
  "tools/hooks/probar-session-start.mjs": {
-  "fecha": "2026-10-27",
+  "fecha": "2026-10-28",
   "ok": true,
   "segundos": 0
  },
@@ -40,11 +40,16 @@
   "segundos": 0
  },
  "tools/probar-eslint.mjs": {
-  "fecha": "2026-10-27",
+  "fecha": "2026-10-28",
   "ok": true,
   "segundos": 2
  },
  "tools/probar-gestion-cubre.mjs": {
+  "fecha": "2026-10-28",
+  "ok": true,
+  "segundos": 0
+ },
+ "tools/probar-lookup-club-league.mjs": {
   "fecha": "2026-10-28",
   "ok": true,
   "segundos": 0
@@ -55,7 +60,7 @@
   "segundos": 4
  },
  "tools/probar-mover-bloque.mjs": {
-  "fecha": "2026-10-27",
+  "fecha": "2026-10-28",
   "ok": true,
   "segundos": 7
  },
@@ -70,7 +75,7 @@
   "segundos": 1
  },
  "tools/probar-pruebas-de-tool.mjs": {
-  "fecha": "2026-10-27",
+  "fecha": "2026-10-28",
   "ok": true,
   "segundos": 0
  },
@@ -112,6 +117,6 @@
  "tools/prueba-escribir.mjs": {
   "fecha": "2026-10-28",
   "ok": true,
-  "segundos": 176
+  "segundos": 173
  }
 }

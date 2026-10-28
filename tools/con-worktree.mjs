@@ -2,7 +2,7 @@
 // POR QUÉ. Probar que una tool ESCRIBE de verdad pide un árbol entero que se pueda ensuciar sin riesgo; cada prueba armaba el suyo. Con esto una prueba nueva es solo el
 // escenario. La ruta es la REAL de la carpeta temporal (con /var → /private/var el `import.meta.url === file://argv[1]` de las tools no se cumple y salen en silencio con 0).
 import { execFileSync } from 'node:child_process';
-import { copyFileSync, readdirSync, realpathSync } from 'node:fs';
+import { copyFileSync, readdirSync, realpathSync, existsSync, rmSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { tmpdir } from 'node:os';
 
@@ -15,6 +15,7 @@ export async function conWorktree(fn, nombre = 'prueba') {
   git(['worktree', 'add', '--detach', W, 'HEAD']);
   try {
     for (const f of readdirSync(join(ROOT, 'tools'))) if (/\.(mjs|js|json)$/.test(f)) copyFileSync(join(ROOT, 'tools', f), join(W, 'tools', f));
+    for (const f of readdirSync(join(W, 'tools'))) if (/\.(mjs|js|json)$/.test(f) && !existsSync(join(ROOT, 'tools', f))) rmSync(join(W, 'tools', f)); // una tool renombrada o borrada en este árbol no sigue en la copia (la de HEAD quedaba sin clasificar)
     return await fn({ W, ROOT, principal });
   } finally {
     try { git(['worktree', 'remove', '--force', W]); } catch { /* ya no estaba */ }

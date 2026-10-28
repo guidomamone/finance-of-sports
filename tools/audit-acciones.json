@@ -131,7 +131,7 @@
   "donde": ""
  },
  "liga-sin-verificar": {
-  "hacer": "Verificar la liga de esas filas contra la página de temporada (node tools/lookup-club-league.js) y escribirla en data/club-leagues/.",
+  "hacer": "Verificar la liga de esas filas contra la página de temporada (node tools/lookup-club-league.mjs) y escribirla en data/club-leagues/.",
   "quien": "sesion",
   "donde": "skill club-or-year-onboarding, club-nuevo.md"
  },

@@ -121,7 +121,7 @@ export function proponerLiga(clubId, nombre, pais, anio, sitio, cierre = null) {
   if (fila !== undefined && fila !== null) return campo('liga', fila, `data/club-leagues/${pais.iso2.toLowerCase()}.js ya tiene la fila`);
   const iso = pais.iso2.toLowerCase();
   const cachePath = resolve(ROOT, 'tools/club-league-reference', `${iso}.json`);
-  if (ANOTAR_MISSES) runNode('tools/lookup-club-league.js', [nombre, '--pais', iso, '--anio', String(anio), '--json']);
+  if (ANOTAR_MISSES) runNode('tools/lookup-club-league.mjs', [nombre, '--pais', iso, '--anio', String(anio), '--json']);
   if (!existsSync(cachePath)) return campo('liga', null, `sin caché de rosters para ${iso} (tools/club-league-reference/${iso}.json)`, 'pendiente', { nota: 'la fila se escribe en null (= nadie lo verificó, P3 liga-sin-verificar); para resolverla: resolve-wikipedia-season-page.mjs + fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))' });
   const data = JSON.parse(readFileSync(cachePath, 'utf8'));
   const q = norm(nombre).replace(/[^a-z0-9]+/g, ' ').trim();

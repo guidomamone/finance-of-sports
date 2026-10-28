@@ -11,5 +11,5 @@ export default [
   { files: ['**/*.mjs'], languageOptions: { ecmaVersion: 'latest', sourceType: 'module', globals: { ...globals.node } }, rules: reglas },
   { files: ['**/*.js'], languageOptions: { ecmaVersion: 'latest', sourceType: 'commonjs', globals: { ...globals.node } }, rules: reglas },
   // tres .js que usan import/export (se cargan como módulo)
-  { files: ['**/lookup-brand-color.js', '**/lookup-club-league.js', '**/lookup-fx-close.js'], languageOptions: { ecmaVersion: 'latest', sourceType: 'module', globals: { ...globals.node } }, rules: reglas },
+  { files: ['**/lookup-brand-color.js', '**/lookup-club-league.mjs', '**/lookup-fx-close.js'], languageOptions: { ecmaVersion: 'latest', sourceType: 'module', globals: { ...globals.node } }, rules: reglas },
 ];

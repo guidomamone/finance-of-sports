@@ -26,6 +26,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1243 — lookup-club-league pasa a .mjs: sin el aviso MODULE_TYPELESS_PACKAGE_JSON [478 · lookup-club-league.mjs, alta-club-escribir.mjs, fetch-club-league-reference.mjs, con-worktree.mjs, probar-lookup-club-league.mjs]
+- `tools/lookup-club-league.js` → `.mjs` (la salida ya no trae el aviso de Node); los llamadores (`club-siis`, `alta-club-escribir`, `fetch-club-league-reference`, `prepare-onboarding`, eslint, `audit-acciones.json`) y los documentos vivos apuntan al nombre nuevo; el aviso de «NO EXACTA» ya no nombra un club. `con-worktree.mjs` borra de la copia las tools que ya no existen en este árbol (la copia conservaba la `.js` vieja de HEAD y `prueba-escribir` fallaba por `tool-sin-clasificar`). Prueba nueva `probar-lookup-club-league.mjs`.
+- Medición: lote completo idéntico (alta, cargar, lote-ensayo); veredicto GENERAL; sin revisión independiente. Defecto visto: `medir-pipeline.mjs` aborta con un renombre en el índice de git (`R a -> b`); hay que dejarlo sin marcar.
+
+---
+
 ## Versión 1242 — club-siis: la ruta de la lista y --brief --texto [478 · club-siis.mjs, probar-club-siis.mjs]
 - 14: `--crear-lista` y `--avanzar` imprimen «Lista: Admin/lotes/lote-NNN.txt» y el comando del lote con esa ruta; el estado del club usa la ruta de su lista en lugar de `<lista>`. 16: `--brief X --texto` imprime solo el brief (sin el encabezado de reglas del país), listo para pasarlo a un subagente; el aviso «LANZÁ JUNTOS» ya lo nombra. Las dos van en un commit porque tocan las mismas líneas de `club-siis.mjs`.
 - Medición: tool de «orden» (no del pipeline): no pide medición; `probar-club-siis.mjs` ok (los dos casos nuevos en una copia descartable).

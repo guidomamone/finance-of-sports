@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/lookup-club-league.js — arquitectura, ver
+// tools/lookup-club-league.mjs — arquitectura, ver
 // tools/club-league-reference/README.md para el porqué. Busca por NOMBRE
 // (no por clubId: la mayoría de los clubes que esto cubre todavía no están
 // onboardeados, así que no tienen clubId todavía) contra los rosters de
@@ -11,12 +11,12 @@
 // data/club-leagues/<iso2>.js.
 //
 // USO:
-//   node tools/lookup-club-league.js "Boyacá Chicó" --pais co
-//   node tools/lookup-club-league.js "Boyacá Chicó" --pais co --anio 2016
-//   node tools/lookup-club-league.js "Lillestrøm" --pais no --json
-//   node tools/lookup-club-league.js "La Louvière" --pais be --club raallalouviere-be
-//   node tools/lookup-club-league.js --list-cache --pais co
-//   node tools/lookup-club-league.js --misses
+//   node tools/lookup-club-league.mjs "Boyacá Chicó" --pais co
+//   node tools/lookup-club-league.mjs "Boyacá Chicó" --pais co --anio 2016
+//   node tools/lookup-club-league.mjs "Lillestrøm" --pais no --json
+//   node tools/lookup-club-league.mjs "La Louvière" --pais be --club raallalouviere-be
+//   node tools/lookup-club-league.mjs --list-cache --pais co
+//   node tools/lookup-club-league.mjs --misses
 //
 // CADA COINCIDENCIA DICE SI ES EXACTA. La búsqueda es por subcadena (para no perder un nombre con sponsor o con sigla), así que trae homónimos:
 // "La Louvière" encuentra "La Louvière" (RAAL, Division 2) y "La Louvière Centre" (UR La Louvière Centre, otra sociedad, National Division 1),
@@ -70,7 +70,7 @@ function main() {
   const anio = anioFlag >= 0 ? args[anioFlag + 1] : null;
 
   if (!pais) {
-    console.error('Uso: node tools/lookup-club-league.js "<nombre del club>" --pais <iso2> [--anio <año>] [--json]\n   o: node tools/lookup-club-league.js --list-cache --pais <iso2>\n   o: node tools/lookup-club-league.js --misses');
+    console.error('Uso: node tools/lookup-club-league.mjs "<nombre del club>" --pais <iso2> [--anio <año>] [--json]\n   o: node tools/lookup-club-league.mjs --list-cache --pais <iso2>\n   o: node tools/lookup-club-league.mjs --misses');
     process.exit(1);
   }
 
@@ -117,7 +117,7 @@ function main() {
   }
   matches.forEach((m) => console.log(`${m.leagueId} ${m.year}: "${m.matchedName}" (${m.wikipediaPage}; ${m.fuentes} fuente${m.fuentes === 1 ? '' : 's'})${m.alias ? ` · alias de ${m.alias} (alias.json)` : m.exacta ? '' : ' · NO EXACTA'}`));
   const noExactas = matches.filter((m) => !m.exacta);
-  if (noExactas.length) console.log(`\nAVISO: ${noExactas.length} coincidencia(s) NO EXACTA(S) (${[...new Set(noExactas.map((m) => `"${m.matchedName}"`))].join(', ')}): el nombre de la lista no es "${query}" ni un alias${club ? ` de ${club}` : ''} en alias.json. Puede ser otro club con un nombre parecido (caso: "La Louvière Centre" no es RAAL La Louvière). Confirmalo en la página del club antes de usarla.`);
+  if (noExactas.length) console.log(`\nAVISO: ${noExactas.length} coincidencia(s) NO EXACTA(S) (${[...new Set(noExactas.map((m) => `"${m.matchedName}"`))].join(', ')}): el nombre de la lista no es "${query}" ni un alias${club ? ` de ${club}` : ''} en alias.json. Puede ser otro club con un nombre parecido (otra sociedad con casi el mismo nombre). Confirmalo en la página del club antes de usarla.`);
   console.log('\nOJO: esto es una caché de un roster ya bajado, no la fuente de verdad. Confirmar igual antes de cargar el dato en data/club-leagues/<iso2>.js.');
 }
 

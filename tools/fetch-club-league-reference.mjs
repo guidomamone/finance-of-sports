@@ -18,7 +18,7 @@
 //
 // Cachea por RÁSTER de nombres (NO por clubId): la mayoría de los clubes que
 // esto tiene que cubrir todavía no tienen clubId (están sourceados, no
-// onboardeados — Boyacá Chicó). `tools/lookup-club-league.js`
+// onboardeados — Boyacá Chicó). `tools/lookup-club-league.mjs`
 // busca por nombre normalizado, como `lookup-brand-color.js`.
 //
 // USO:

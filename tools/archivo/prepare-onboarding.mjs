@@ -25,7 +25,7 @@
 //      cada rawLabel de una tabla marcada relevante (solo si el club YA
 //      tiene data/<país>/<clubId>-data.js; si es un club nuevo, no hay precedente
 //      posible y se lo dice en vez de fallar)
-//   4. tools/lookup-club-league.js    -- liga cacheada para ese club-año, SI
+//   4. tools/lookup-club-league.mjs    -- liga cacheada para ese club-año, SI
 //      el club ya tiene entrada en data/clubs.js (país + nombre)
 //
 // Lo que NO hace, a propósito, porque no es mecanizable con confianza:
@@ -266,7 +266,7 @@ function suggestCategories(clubId, tables) {
 }
 
 // ----------------------------------------------------------------------------
-// Paso 4: liga cacheada (tools/lookup-club-league.js), solo si el club ya
+// Paso 4: liga cacheada (tools/lookup-club-league.mjs), solo si el club ya
 // tiene entrada en data/clubs.js (de ahí sale el país y el nombre a buscar).
 // NUNCA baja una liga-temporada nueva -- eso necesita confirmar el título
 // exacto de Wikipedia a mano (ver tools/club-league-reference/README.md).
@@ -285,7 +285,7 @@ function lookupLeague(clubId, year) {
   const pais = String(club.country || '').toLowerCase();
   if (!pais) return { skipped: true, reason: `data/clubs.js no tiene "country" para "${clubId}".` };
   const query = club.displayName || club.name;
-  const res = runNode('tools/lookup-club-league.js', [query, '--pais', pais, '--anio', String(year), '--json']);
+  const res = runNode('tools/lookup-club-league.mjs', [query, '--pais', pais, '--anio', String(year), '--json']);
   let matches = [];
   try { matches = JSON.parse(res.stdout || '[]'); } catch { /* cae a [] */ }
   return { pais, query, matches, cached: matches.length > 0 };

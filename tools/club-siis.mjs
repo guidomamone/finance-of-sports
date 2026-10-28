@@ -40,12 +40,12 @@ function wikipediaCubre(clubId, a, liga) {
   if (!liga) return false;
   try { const out = execFileSync('node', [join(ROOT, 'tools/estadio-sponsor.mjs'), '--ensayo', '--club', clubId, '--anio', a, '--liga', liga, '--cierre', '12-31'], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }); return /estadio \d+ \(100%\)/.test(out) && /sponsor \d+ \(100%\)/.test(out); } catch { return false; }
 }
-// La liga de cada año, del roster cacheado de Wikipedia (lookup-club-league.js), SOLO donde el nombre de la lista es exactamente el del club: una coincidencia «NO EXACTA» (Fortaleza) puede ser otro club y la confirma una persona.
+// La liga de cada año, del roster cacheado de Wikipedia (lookup-club-league.mjs), SOLO donde el nombre de la lista es exactamente el del club: una coincidencia «NO EXACTA» (Fortaleza) puede ser otro club y la confirma una persona.
 // También por los nombres que tools/club-league-reference/alias.json le da al club (Alianza FC fue «Alianza Petrolera» en Wikipedia hasta 2022): una consulta por nombre, con --club para que valga el alias.
 function ligasExactas(nombre, anios, clubId) {
   const alias = leer('tools/club-league-reference/alias.json')?.co || {}; const m = {};
   for (const n of [nombre, ...Object.entries(alias).filter(([, a]) => a.clubId === clubId).map(([k]) => k)]) {
-    let out = ''; try { out = execFileSync('node', [join(ROOT, 'tools/lookup-club-league.js'), n, '--pais', 'CO', '--sin-anotar', ...(clubId ? ['--club', clubId] : [])], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }); } catch { continue; }
+    let out = ''; try { out = execFileSync('node', [join(ROOT, 'tools/lookup-club-league.mjs'), n, '--pais', 'CO', '--sin-anotar', ...(clubId ? ['--club', clubId] : [])], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }); } catch { continue; }
     for (const l of out.split('\n')) { const x = l.match(/^(co-\w+) (\d{4}): /); if (x && anios.includes(x[2]) && !/NO EXACTA/.test(l) && !m[x[2]]) m[x[2]] = x[1]; }
   }
   return m;
@@ -107,7 +107,7 @@ const { c, filas } = e; const q = JSON.stringify(club);
 if (A.includes('--liga')) {
   if (!c.clubId) { console.error(`${club} todavía no tiene clubId (el alta va primero).`); process.exit(1); }
   const sinLigaAnios = filas.filter((f) => !f.liga).map((f) => f.a); const D = decidirLigas(sinLigaAnios, sinLigaAnios.length ? ligasExactas(club, sinLigaAnios, c.clubId) : {});
-  if (!D.escribir) { console.log(`${club}: no se escribe la liga — ${D.motivo}.${sinLigaAnios.length ? `\n  Mirá el roster: node tools/lookup-club-league.js ${q} --pais CO` : ''}`); process.exit(D.sin.length ? 1 : 0); }
+  if (!D.escribir) { console.log(`${club}: no se escribe la liga — ${D.motivo}.${sinLigaAnios.length ? `\n  Mirá el roster: node tools/lookup-club-league.mjs ${q} --pais CO` : ''}`); process.exit(D.sin.length ? 1 : 0); }
   if (!ENSAYO) escribirLigas(c.clubId, D.mapa);
   console.log(`${ENSAYO ? '(ensayo, no se escribe) ' : ''}Liga escrita en data/club-leagues/${iso}.js (${c.clubId}, roster de Wikipedia, nombre exacto): ${Object.entries(D.mapa).map(([a, l]) => `${a} ${l}`).join(', ')}.\n  Después: node tools/publicar.mjs (regenera rankings y ASSET_V) y recién ahí commitear, en OTRA llamada.`);
   process.exit(0);
@@ -151,7 +151,7 @@ function evaluar() {
   else if (!max) { veredicto = 'DESCARTAR'; motivos.push('ingresos 0 en todos los años: sociedad sin actividad (Real Sincelejo 2017)'); }
   else if (max < UMBRAL_CHICO) { veredicto = 'REVISAR'; motivos.push(`ingresos chicos todos los años (el máximo, ${miles(max)}; el umbral, ${miles(UMBRAL_CHICO)}): ¿es un club o una sociedad con otra actividad? Si es de otro deporte, punto 464`); }
   if (sinIng.length && max) motivos.push(`años con ingresos 0 (${sinIng.join(', ')}): se cargan igual, mirar si es inactividad`);
-  let ligas = []; try { ligas = [...execFileSync('node', [join(ROOT, 'tools/lookup-club-league.js'), club, '--pais', 'CO', '--sin-anotar'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).matchAll(/^(co-\w+) (\d{4}):/gm)].map((x) => `${x[2]} ${x[1]}`); } catch { /* sin caché */ }
+  let ligas = []; try { ligas = [...execFileSync('node', [join(ROOT, 'tools/lookup-club-league.mjs'), club, '--pais', 'CO', '--sin-anotar'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).matchAll(/^(co-\w+) (\d{4}):/gm)].map((x) => `${x[2]} ${x[1]}`); } catch { /* sin caché */ }
   const pesos = filas.filter((f) => f.siis).map((f) => ({ a: f.a, ...pesoCosto(f.a) })).filter((p) => p.pct);
   return { anios, veredicto, motivos, ligas, pesos };
 }
@@ -292,7 +292,7 @@ let n = 0; const paso = (t, ...l) => { console.log(`${++n}. ${t}`); l.forEach((x
 const subagentes = [];
 if (!c.clubId) paso('Alta del club (necesita el estado de SIIS del último año: el paso siguiente si todavía no está)', `node tools/siis-estado.mjs --club ${q} --todos --escribir     (el estado de SIIS de cada año; gratis, con las notas que abren si el club las tiene)`, `node tools/alta-club.mjs "Clubes/${cfg.pais}/${club}/siis-estado-<último año>.pdf" --escribir     (después, su clubId en tools/siis-clubes.json y la sociedad como «name» en data/clubs.js y el JSON del club)`, `Color de marca: node tools/lookup-brand-color.js ${q}, la camiseta en es.wikipedia (lista ordenada: gana el primero) y brandColor en data/clubs.js; la nota «Color de marca: …» en Admin/sourcing/${cfg.pais}/${club}.md (club-or-year-onboarding/club-nuevo.md)`);
 else if (sinSiis.length) paso(`Bajar los estados de SIIS (${sinSiis.join(', ')}; gratis, con las notas que abren si el club las tiene)`, `node tools/siis-estado.mjs --club ${q} --todos --escribir`);
-if (c.clubId && sinLiga.length) paso(`Liga de cada año (${sinLiga.join(', ')}): data/club-leagues/${iso}.js (el roster cacheado: node tools/lookup-club-league.js "<club>" --pais CO)`, `'${c.clubId}': { ${sinLiga[0]}: 'co-primeraA', … }`, 'Después de tocar una liga: node tools/publicar.mjs (regenera rankings y ASSET_V) y recién ahí commitear, en OTRA llamada; si no, el hook frena el commit (rankings-desfasado, asset-v-sin-subir).');
+if (c.clubId && sinLiga.length) paso(`Liga de cada año (${sinLiga.join(', ')}): data/club-leagues/${iso}.js (el roster cacheado: node tools/lookup-club-league.mjs "<club>" --pais CO)`, `'${c.clubId}': { ${sinLiga[0]}: 'co-primeraA', … }`, 'Después de tocar una liga: node tools/publicar.mjs (regenera rankings y ASSET_V) y recién ahí commitear, en OTRA llamada; si no, el hook frena el commit (rankings-desfasado, asset-v-sin-subir).');
 if (c.clubId && sinAnioCtx.length) subagentes.push(`estadio-sponsor (${sinAnioCtx.join(', ')}; escribe tools/contexto-manual.json)`);
 if (c.clubId && cierresSinGest.length) subagentes.push(`gestiones (cierres sin una gestión confirmada: ${cierresSinGest.map((x) => x.slice(0, 4)).join(', ')}; escribe data/gestiones/co.js; sin ella la cola pregunta quién presidió en cada año)`);
 if (dictSinMd.length) paso(`Transcribir los dictámenes del revisor fiscal (${dictSinMd.join(', ')}; es mecánico, gratis; los escaneos van por Mistral)`, `node tools/dictamenes-md.mjs ${q} --escribir`);

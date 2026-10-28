@@ -224,7 +224,7 @@ anio / cierre    año de CIERRE (convención del sitio) sacado del nombre del
                  coinciden, `pregunta`.
 liga             `data/club-leagues/<iso2>.js` si el club ya tiene fila; si no,
                  la caché de rosters de `tools/club-league-reference/<iso2>.json`
-                 (la misma que lee `tools/lookup-club-league.js`). Coincidencia
+                 (la misma que lee `tools/lookup-club-league.mjs`). Coincidencia
                  EXACTA del nombre normalizado, única, y con la liga en el
                  catálogo -> `ok`. Coincidencia parcial ("OFI Crete" / "OFI") o liga
                  fuera del catálogo -> `pendiente` con la duda en `nota` (hasta el
