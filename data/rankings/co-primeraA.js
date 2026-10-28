@@ -442,7 +442,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2016: {
     leagueSize: 20,
-    sinDato: ["jaguares-co"],
     wiki: {"t":"2016 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:53.892, reportType:"official_balance_sheet",
@@ -479,6 +478,9 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"boyacachico-co-siis-estado-2016",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.613],["Otros ingresos",0.016]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"jaguares-co", revenue:0.756, reportType:"official_balance_sheet",
+        sourceId:"jaguares-co-siis-estado-2016",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.755],["Otros ingresos",0.001]] },
       { id:"fortalezaceif-co", revenue:0.553, reportType:"official_balance_sheet",
         sourceId:"fortalezaceif-co-siis-estado-2016",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.549],["Otros ingresos",0.004]],

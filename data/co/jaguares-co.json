@@ -12,9 +12,71 @@
     "sport": "football",
     "taxonomy": "football-1"
   },
-  "sources": [],
+  "sources": [
+    {
+      "id": "jaguares-co-siis-estado-2016",
+      "club_id": "jaguares-co",
+      "title": "Jaguares Fútbol Club S.A. — siis-estado-2016 (ejercicio 2016)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Jaguares/siis-estado-2016.pdf"
+    }
+  ],
   "members": null,
-  "years": [],
+  "years": [
+    {
+      "fiscal_year": 2016,
+      "period_end": "2016-12-31",
+      "currency": "COP",
+      "source_id": "jaguares-co-siis-estado-2016",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2016-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 2264.919,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":3.451,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"other_operating_expenses","subcategory":"other_expenses","amount":0,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-13.709,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2177.516,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-3.596,"disclosure":"aggregated"},
+        {
+          "label": "Ganancia (pérdida) procedente de operaciones discontinuadas",
+          "category": "exceptional",
+          "subcategory": "exceptional_items",
+          "amount": -4.005,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-3.434,"tax":-30.062,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":2268.37,"expenses":2194.821,"net_result":36.048},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":0.346},
+          {"label":"Costos financieros","amount":-3.78},
+          {"label":"Ingreso (gasto) por impuestos","amount":-30.062}
+        ],
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":2264.919,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 13.709,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
+          }
+        ],
+        "revenue_basis": "full"
+      }
+    }
+  ],
   "budget_overlay": {},
   "squad_transfers": [],
   "results": {},
