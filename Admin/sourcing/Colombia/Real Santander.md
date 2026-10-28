@@ -31,3 +31,5 @@ Estados financieros en disco ahora: 10 ejercicios (2016-2025), cada uno con cert
 - Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2023 desde `Clubes/Colombia/Real Santander/siis-estado-2023.pdf` (sourceId `realsantander-co-siis-estado-2023`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2024 desde `Clubes/Colombia/Real Santander/siis-estado-2024.pdf` (sourceId `realsantander-co-siis-estado-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2025 desde `Clubes/Colombia/Real Santander/siis-estado-2025.pdf` (sourceId `realsantander-co-siis-estado-2025`).
