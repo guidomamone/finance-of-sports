@@ -22,6 +22,7 @@ import { execFileSync } from 'node:child_process';
 import { pendientes } from './cola.mjs';
 import { pasoFka } from './sponsor-fka.mjs';
 import { punteroReglasPais } from './docs-reglas.mjs';
+import { cierresSinGestion } from './gestion-cubre.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
@@ -109,7 +110,8 @@ if (flag('--rehacer-anio')) {
 }
 
 const primerMd = filas.find((f) => f.siis); const sociedad = (primerMd ? (readFileSync(join(e.dir, `siis-estado-${primerMd.a}.md`), 'utf8').match(/^# (.+?) — NIT/m) || [, club])[1] : club);
-const conGestion = e.hayGestion;
+// el subagente de gestiones va si algún cierre (31/12) de los años por cargar no cae en exactamente una gestión CONFIRMADA de data/gestiones/<iso>.js (gestion-cubre.mjs); una clave con la gestión sin confirmar no alcanza
+const cierresSinGest = cierresSinGestion(readFileSync(join(ROOT, `data/gestiones/${iso}.js`), 'utf8'), e.idEf, filas.filter((f) => !f.cargado).map((f) => `${f.a}-12-31`));
 const sinAnioCtx = filas.filter((f) => !f.ctx && !f.cargado).map((f) => f.a);
 const dictSinMd = readdirSync(e.dir).filter((x) => /^dictamen-revisor-fiscal-\d{4}\.pdf$/.test(x) && !existsSync(join(e.dir, x.replace(/\.pdf$/, '.md')))).map((x) => x.match(/\d{4}/)[0]);
 const BRIEFS = { 'estadio-sponsor': { anios: sinAnioCtx, hace: 'estadio y sponsor' }, gestiones: { anios: filas.map((f) => f.a), hace: 'quién condujo el club' }, auditor: { anios: filas.filter((f) => !f.aud && f.dictamen).map((f) => f.a), hace: 'la línea del auditor' } };
@@ -278,7 +280,7 @@ if (!c.clubId) paso('Alta del club (necesita el estado de SIIS del último año:
 else if (sinSiis.length) paso(`Bajar los estados de SIIS (${sinSiis.join(', ')}; gratis, con las notas que abren si el club las tiene)`, `node tools/siis-estado.mjs --club ${q} --todos --escribir`);
 if (c.clubId && sinLiga.length) paso(`Liga de cada año (${sinLiga.join(', ')}): data/club-leagues/${iso}.js (el roster cacheado: node tools/lookup-club-league.js "<club>" --pais CO)`, `'${c.clubId}': { ${sinLiga[0]}: 'co-primeraA', … }`);
 if (c.clubId && sinAnioCtx.length) subagentes.push(`estadio-sponsor (${sinAnioCtx.join(', ')}; escribe tools/contexto-manual.json)`);
-if (c.clubId && !conGestion) subagentes.push('gestiones (escribe data/gestiones/co.js; sin ella la cola pregunta quién presidió en cada año)');
+if (c.clubId && cierresSinGest.length) subagentes.push(`gestiones (cierres sin una gestión confirmada: ${cierresSinGest.map((x) => x.slice(0, 4)).join(', ')}; escribe data/gestiones/co.js; sin ella la cola pregunta quién presidió en cada año)`);
 if (dictSinMd.length) paso(`Transcribir los dictámenes del revisor fiscal (${dictSinMd.join(', ')}; es mecánico, gratis; los escaneos van por Mistral)`, `node tools/dictamenes-md.mjs ${q} --escribir`);
 if (subagentes.length) { console.log(`   >> LANZÁ JUNTOS, en UN solo mensaje con una llamada a Agent cada uno (modelo sonnet; el brief: node tools/club-siis.mjs ${q} --brief <nombre>): ${subagentes.map((s) => s.split(' ')[0]).join(' · ')}.\n      ${subagentes.join('\n      ')}\n      Mientras corren, el lote en ensayo (sin --cargar); el --cargar espera a que terminen y a commitear lo suyo (exige data/ limpio).`); }
 if (sinVerif.length) paso(`Lote de categorización de ${sinVerif.join(', ')} (unos US$ 0,03 por documento; localizar y extraer cuestan 0)`, `node tools/club-siis.mjs ${q} --crear-lista   (crea la lista del lote con los siis-estado-AAAA.pdf)`, `node tools/inventario-transcripciones.mjs --solo "Clubes/${cfg.pais}/${club}"   (sin esto el lote dice «sin .md»)`, `node tools/lote.mjs --lista <lista> --ejecutar`);

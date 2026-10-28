@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1237 — club-siis: el subagente de gestiones se lista al principio si un cierre no tiene gestión confirmada [478 · club-siis.mjs, gestion-cubre.mjs, probar-gestion-cubre.mjs]
+- «LANZÁ JUNTOS» incluye `gestiones` si algún cierre 31/12 de los años por cargar no cae en exactamente una gestión confirmada de `data/gestiones/<iso>.js` (la misma regla de `cargar.mjs`) y dice qué años; antes bastaba con que existiera la clave del club (Envigado tenía la de Ruiz sin confirmar y las 9 preguntas aparecieron con el lote ya corrido). Con todos los años cargados no lista nada, como antes. Módulo `gestion-cubre.mjs` con su prueba.
+- Medición: tool de «orden» (no del pipeline, solo lee): no pide medición; pruebas de lo que cambió ok.
+
+---
+
 ## Versión 1236 — verificar: una fila de lado otro idéntica en dos documentos vecinos es «presentación distinta» [478 · verificar-cierre.mjs, diferencia-de-fila.mjs, probar-diferencia-de-fila.mjs]
 - La decisión «la diferencia de ingresos es exactamente una fila» pasa a `diferencia-de-fila.mjs`: además de una fila de gasto, vale una fila de lado `otro` con la misma etiqueta y el mismo importe del año comparado en los dos documentos (Atlético Nacional, «Otras ganancias (pérdidas)»). Una reexpresión real (la diferencia no es una fila) sigue abriendo la pregunta. En copias con la cola sin los casos de Nacional: 2024/2025 pasa a «presentación distinta», los dos casos reabiertos se cierran y 2015/2016 sigue abriéndose.
 - Medición: lote completo idéntico (verificar); veredicto GENERAL (62 documentos de 23 clubes); sin revisión independiente (condición nueva en verificar).

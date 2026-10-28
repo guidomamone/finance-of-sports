@@ -180,6 +180,8 @@
   "probar-sello-audit.mjs": "prueba: el sello de la última auditoría (tools/sello-audit.js) en un repo temporal",
   "probar-patron.mjs":"prueba: patron.mjs en un repo de juguete",
   "probar-diferencia-de-fila.mjs": "prueba: diferencia-de-fila.mjs (cuándo la diferencia de ingresos entre dos documentos es una fila de gasto o de lado otro)",
+  "gestion-cubre.mjs": "orden: qué cierres no caen en exactamente una gestión confirmada de data/gestiones (lo usa club-siis para listar el subagente de gestiones); solo lee",
+  "probar-gestion-cubre.mjs": "prueba: gestion-cubre.mjs (qué cierres no caen en una gestión confirmada) y su uso en club-siis.mjs",
   "probar-siis-filas.mjs": "prueba: siis-filas.mjs (el resumen de siis-estado y el aviso del lote por un siis-estado sin .filas.json)",
   "probar-todo-contexto.mjs": "prueba: el contexto de un punto de todo.mjs en un repo de juguete",
   "ingresos-en-una-linea.mjs": "orden: lista los ejercicios cargados cuyos ingresos son una sola línea sin desglosar, con su rótulo e importe (solo lee data/)",
