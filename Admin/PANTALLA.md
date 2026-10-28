@@ -947,7 +947,7 @@ Texto movido sin cambios.
   que salen textuales de la fuente o son nombres propios (los rubros de "Formato del club"
   van con glosa, más arriba).
 - CACHE DE ASSETS: todos los `<script src>` propios llevan `?v=`. SUBIR ESE
-  NÚMERO al cambiar cualquier archivo de `js/` o `data/`, si no un visitante que
+  NÚMERO al cambiar cualquier archivo de `js/` o `css/` (el código; los de `data/` llevan su hash en `data/manifiesto.js`, `window.fosV(ruta)`, y no lo suben), si no un visitante que
   ya entró antes se puede quedar con el JS viejo cacheado y el HTML nuevo.
   OJO, SE SUBE EN DOS LUGARES: `window.ASSET_V` es una constante
   inline, pero los `?v=` de los `<script src>` estáticos son LITERALES y no salen
