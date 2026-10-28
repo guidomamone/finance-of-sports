@@ -26,6 +26,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1249 — gestiones: una fecha de inicio solo de mes; Ruiz (Envigado) confirmado [478]
+- Decidido por Guido (que delegó la decisión): inicio solo de mes = día 01 y `confirmada:true` si la fuente nombra el mes y ningún cierre cae dentro de ese mes (el día no cambia qué gestión cubre un cierre); si uno cae, `confirmada:false` y se pregunta. Escrito en `Admin/ARQUITECTURA.md` («Gestiones», con el caso) y en el brief de gestiones (commits de texto aparte). Ramiro Ruiz (desde octubre de 2013, cierres 2016 a 2024) pasa a confirmado en `data/gestiones/co.js`; `gestiones-tanda --armar --escribir` cerró las 9 preguntas (cada cierre cae en exactamente una gestión) y `publicar` regeneró el sitio (ASSET_V 2135). Ojo: 2017, 2019 y 2021 a 2023 siguen siendo continuidad sin nota fechada propia (la nota de su salida dice «llevaba varios años al frente» y ninguna fuente nombra otro presidente); queda escrito en la `fuente` por si Guido prefiere revertir.
+- Medición: datos y texto; no cambia ninguna tool.
+
+---
+
 ## Versión 1248 — criterio del sponsor del frente: una ficha de FKA de la camiseta local alcanza [478]
 - Decidido por Guido (que delegó la decisión): una ficha de Football Kit Archive de la camiseta LOCAL de la temporada con el campo Sponsor lleno alcanza sola como respaldo del frente (FKA no escribe «frente»); una nota de prensa que diga «principal» se suma si aparece, sin exigirla. Queda en `liga-y-sponsor.md` 0.5 (commit aparte) y el brief de estadio-sponsor lo repite, sin la promesa «ningún sponsor queda débil», y pide separar los años respaldados SOLO por FKA.
 - Medición: solo texto; no cambia ninguna tool.
