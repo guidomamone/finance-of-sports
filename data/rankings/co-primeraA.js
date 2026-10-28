@@ -170,7 +170,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2022: {
     leagueSize: 20,
-    sinDato: ["jaguares-co"],
     wiki: {"t":"2022 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:18.436, reportType:"official_balance_sheet",
@@ -209,6 +208,9 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"unionmagdalena-co-siis-estado-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.809],["Otros ingresos",0.286]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"jaguares-co", revenue:2.08, reportType:"official_balance_sheet",
+        sourceId:"jaguares-co-siis-estado-2022",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.072],["Otros ingresos",0.009]] },
       { id:"cortulua-co", revenue:1.909, reportType:"official_balance_sheet",
         sourceId:"cortulua-co-siis-estado-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.444],["Otros ingresos",0.464]] },
