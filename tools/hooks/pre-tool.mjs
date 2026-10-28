@@ -43,6 +43,7 @@
 //   merge-en-worktree [varias]  (deny) `git merge` / `git pull` dentro de un worktree (menos `merge-tree`, `merge-base` y `--abort`): lo hace la principal (C-4).
 //   plan-en-worktree [varias]  (deny) `EnterPlanMode` dentro de un worktree (el Exit pasa, para no atrapar una sesión que ya está en modo plan) (C-3).
 //   subagente-con-regla     (deny) un Agent cuyo prompt no diga que Bash va «sin variables» (C-2).
+//   subagente-tools-con-cierre  (deny) un Agent al que se le manda editar tools/ y cuyo prompt no lleva el cierre obligatorio (`node tools/fos.mjs brief-tool`; Admin/briefs-subagentes-tools.md).
 //   rsync-sin-no-links [varias]  (deny) `rsync -a` sin `--no-links` (C-6). `pdfs-con-ok` ahora también cubre `mv` sobre Clubes/ (ask).
 //   medicion-antes-del-commit  (deny) un `git commit` con una tool de tools/pipeline-tools.json sin una línea en Admin/registros/mediciones-pipeline.jsonl
 //                            con la huella de esa versión y resultado idéntico o explicado (TODO 371). `[sin-medicion]` en el mensaje lo saltea:
@@ -516,6 +517,19 @@ function subagenteConReglaDeComandos() {
     + 'con la ruta completa entre comillas, sin variables, sin cd, sin ; ni &&." Sin ella, cada comando del subagente le pide permiso a Guido.');
 }
 
+// Un subagente al que se le manda editar archivos de tools/ lleva el cierre obligatorio de Admin/briefs-subagentes-tools.md (`node tools/fos.mjs brief-tool` lo imprime):
+// sin él, lo que no deja listo (el chequeo del código general, la tool nueva sin clasificar, los registros ensuciados por sus pruebas) vuelve a la sesión como retrabajo.
+function subagenteQueEditaToolsConCierre() {
+  if (herramienta !== 'Agent' && herramienta !== 'Task') return;
+  const prompt = String(params.prompt || '');
+  const archivo = 'tools\\/[\\w.-]+\\.(?:mjs|js|json)';
+  const editaTools = new RegExp(`\\b(?:vas a|tenés que|tu tarea es|hay que)\\s+(?:arreglar|mejorar|crear|editar|modificar|reescribir|tocar|sumar|agregar)\\b[^.\\n]{0,160}${archivo}`, 'i').test(prompt)
+    || new RegExp(`\\b(?:editá|arreglá|modificá|creá|reescribí)\\b[^.\\n]{0,100}${archivo}`, 'i').test(prompt);
+  if (!editaTools || /medir-pipeline\.mjs --ensayo/.test(prompt)) return;
+  decidir('deny', 'Al prompt del subagente que edita tools/ le falta el cierre obligatorio (Admin/briefs-subagentes-tools.md). Pegá al final de su prompt lo que imprime `node tools/fos.mjs brief-tool` '
+    + '(incluye `node tools/medir-pipeline.mjs --ensayo`, registrar la tool nueva y revertir lo que ensuciaron sus pruebas): sin eso vuelve a la sesión como retrabajo.');
+}
+
 // directorio-no-es-la-raiz (deny): un `cd` de una llamada anterior deja la shell en una subcarpeta del proyecto y los comandos siguientes corren desde ahí (rutas relativas que no existen, o peor, que existen en otro lado). El hook mira el cwd
 // que trae la entrada contra la raíz del proyecto (CLAUDE_PROJECT_DIR o FOS_RAIZ): si está adentro y no es la raíz, frena y dice cómo volver. Un `cd <raíz>` solo pasa. Una carpeta fuera del proyecto no se toca (puede ser a propósito).
 function directorioNoEsLaRaiz(cmd) {
@@ -531,6 +545,7 @@ if (herramienta === 'Bash') { comandosSimples(cmd); noImportarTools(cmd); if (VA
 if (VARIAS) planEnWorktree();
 if (herramienta === 'Bash' && VARIAS) rsyncSinNoLinks(cmd);
 subagenteConReglaDeComandos();
+subagenteQueEditaToolsConCierre();
 if (VARIAS) { archivarConOk(); modeloOpusConOk(); worktreeSinPermissionMode(); }
 memoriaNoEsRegla();
 await reglaDePaisEnDocGeneral();

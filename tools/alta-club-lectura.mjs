@@ -7,6 +7,7 @@ import { resolve } from 'node:path';
 import { ajusteDe } from './ajustes.mjs';
 import { agregarCaso, casoYRespuesta } from './cola.mjs';
 import { MONEDAS, MESES, MES_ALT, norm, ultimoDia, pad2, campo } from './alta-club.mjs';
+import { normalizarPropuesta, isoDeCarpeta } from './alta-club-nombre-pais.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const FX_PALABRAS = ['tipo de cambio', 'tipos de cambio', 'cotizacion', 'taxa de cambio', 'taxas de cambio', 'ptax', 'cotacao', 'exchange rate', 'rate of exchange', 'rates of exchange', 'tasso di cambio', 'tassi di cambio', 'taux de change', 'wechselkurs', 'devisenkurs', 'stichtagskurs', 'wisselkoers', 'valutakurs', 'kurs ', 'kurz', 'tecaj', 'doviz kuru', 'kuru', 'курс', 'ισοτιμ', '환율', '汇率', 'trm', 'tasa representativa'];
@@ -363,8 +364,12 @@ export function decidirNombre(md, displayName, carpeta, pdf, { escribirCola = tr
   const corte = totalLineas > 4000 ? ` (AVISO (recorte): lo más frecuente se contó en las primeras 4000 de ${totalLineas} líneas; el resto no se miró)` : '';
   if (port && frec && claveN(port) === claveN(frec)) return campo('name', nombreBienEscrito(port, md), `la portada y lo más frecuente del .md coinciden (${nl.veces} veces)${corte}`);
   if (port || frec) {
-    const prop = nombreBienEscrito(port || frec, md);
-    const pregunta = `¿Cuál es el nombre legal de "${displayName}"? La portada dice ${port ? `"${port}"` : 'nada'} y lo más frecuente del documento es ${frec ? `"${frec}" (${nl.veces} veces)` : 'nada'}${nl?.otros?.length ? ` (otras formas: ${nl.otros.join('; ')})` : ''}. Propuesta: "${prop}".`;
+    // la propuesta, normalizada por país (Colombia: sufijo S.A./S.A.S. y acentos que ya usa data/clubs.js; tools/alta-club-nombre-pais.mjs).
+    // No contesta nada: la pregunta va a la cola igual.
+    const { nombre: prop, notas } = normalizarPropuesta(nombreBienEscrito(port || frec, md), { iso2: isoDeCarpeta(carpeta), crudo: port || frec });
+    // sin candidato de una de las dos fuentes, la cláusula se omite (antes decía «lo más frecuente del documento es nada»)
+    const fuentes = [port ? `La portada dice "${port}"` : null, frec ? `lo más frecuente del documento es "${frec}" (${nl.veces} veces)` : null].filter(Boolean).join(' y ');
+    const pregunta = `¿Cuál es el nombre legal de "${displayName}"? ${fuentes.charAt(0).toUpperCase() + fuentes.slice(1)}${nl?.otros?.length ? ` (otras formas: ${nl.otros.join('; ')})` : ''}. Propuesta${notas.length ? ` (normalizada: ${notas.join('; ')})` : ''}: "${prop}".`;
     if (escribirCola) agregarCaso({ pdf: carpeta, md: pdf ? pdf.replace(/\.pdf$/i, '.md') : null, etapa: 'alta', motivo: 'name', detalle: carpeta, nombrePropuesto: prop, que: pregunta, propuesta: `"${prop}" (responder aceptar si está bien; si no, corregir --valor "<nombre legal>")` });
     return campo('name', null, `la portada y lo más frecuente no coinciden: pregunta en la cola (node tools/cola.mjs)${corte}`, 'pregunta', { pregunta });
   }

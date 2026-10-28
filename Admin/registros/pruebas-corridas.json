@@ -37,7 +37,7 @@
  "tools/probar-club-siis.mjs": {
   "fecha": "2026-10-28",
   "ok": true,
-  "segundos": 6
+  "segundos": 5
  },
  "tools/probar-dictamenes-mistral.mjs": {
   "fecha": "2026-10-28",
@@ -150,7 +150,7 @@
   "segundos": 0
  },
  "tools/probar-todo-contexto.mjs": {
-  "fecha": "2026-10-27",
+  "fecha": "2026-10-28",
   "ok": true,
   "segundos": 0
  },
@@ -162,6 +162,6 @@
  "tools/prueba-escribir.mjs": {
   "fecha": "2026-10-28",
   "ok": true,
-  "segundos": 176
+  "segundos": 172
  }
 }

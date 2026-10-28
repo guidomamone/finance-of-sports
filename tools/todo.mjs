@@ -15,9 +15,13 @@
 //   node tools/todo.mjs --nuevo --pos <n> --rol "Orden, prioridad alta" --titulo "…"   un punto nuevo con el id siguiente al más alto, en el lugar <n> (1..último+1);
 //                                       renumera los de abajo y deja «Terminado cuando:» y «Verificar: manual» para completar. Rechaza una posición fuera de rango; avisa de un título repetido
 //   node tools/todo.mjs --mover 357 --antes 337       cambia el lugar de un punto (--antes o --despues de otro; queda en el grupo del otro) y renumera el orden
-// Las condiciones y cómo se escriben: tools/todo-verificar.js. No toca nada más que Admin/TODO.md.
+//   DOCUMENTO DEL PUNTO (opcional): un .md aparte (una medición, una propuesta, los hallazgos de una corrida) se enlaza con una línea `Documento: <ruta>` en el cuerpo.
+//   node tools/todo.mjs --nuevo … --doc mediciones|propuestas   además crea Admin/<carpeta>/<id>-<título>.md (abre con «Conclusión:» y «Destino:») y lo enlaza
+//   node tools/todo.mjs --doc-de 479 Admin/mediciones/x.md      enlaza un .md que ya existe con el punto
+//   La lista marca «[doc]» los puntos con documento; `todo.mjs <id>` lo muestra arriba con su primera línea (✗ si la ruta ya no existe); `--verificar` avisa de una ruta rota; `--cerrar` recuerda su Conclusión y Destino.
+// Las condiciones y cómo se escriben: tools/todo-verificar.js. No toca nada más que Admin/TODO.md (y, con --doc, el .md nuevo).
 // ============================================================================
-import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createRequire } from 'node:module';
 import { execFileSync } from 'node:child_process';
@@ -49,9 +53,16 @@ const resumen = (p) => { const it = items(p); if (!it.length) return ''; const c
   const h = it.filter((x) => x.hecho), t = it.filter((x) => !x.hecho);
   return `HECHO (${h.length}): ${h.length ? '' : 'nada todavía'}\n${h.map((x) => `  ✓ ${corto(x.texto)}`).join('\n')}${h.length ? '\n' : ''}PENDIENTE (${t.length}): ${t.length ? '' : 'nada: cerrar el punto'}\n${t.map((x) => `  · ${corto(x.texto)}`).join('\n')}\n\n`; };
 
+// DOCUMENTO DEL PUNTO (opcional): una línea `Documento: <ruta>` en el cuerpo apunta a un .md aparte (una medición, una propuesta, los hallazgos de una corrida). La lista lo marca con «[doc]»,
+// el punto lo muestra arriba con su primera línea y `--verificar` avisa si la ruta ya no existe.
+const DOC = /^Documento: (.+?)\s*$/;
+const docsDe = (p) => p ? L.slice(p.i + 1, p.fin).map((l) => DOC.exec(l)).filter(Boolean).map((m) => m[1]) : [];
+const primeraLinea = (ruta) => { try { const t = readFileSync(resolve(ROOT, ruta), 'utf8').replace(/<!--[\s\S]*?-->/g, ''); return (t.split('\n').find((x) => x.trim() && !/^#/.test(x)) || t.split('\n').find((x) => x.trim()) || '').replace(/\s+/g, ' ').trim().slice(0, 140); } catch { return null; } };
+const encabezadoDocs = (p) => { const ds = docsDe(p); return ds.length ? `DOCUMENTO${ds.length > 1 ? 'S' : ''} DEL PUNTO (se lee entero si el punto se toca):\n${ds.map((d) => { const l = primeraLinea(d); return l === null ? `  ✗ ${d} — NO EXISTE` : `  ${d} — ${l}`; }).join('\n')}\n\n` : ''; };
+
 if (!A.length) {
   let grupo = '';
-  for (const l of L) { if (/^## [A-Z]\. /.test(l) && l !== grupo) { grupo = l; console.log(`\n${l.slice(3)}`); } const m = TITULO.exec(l); if (m) console.log(`${m[1].padStart(2)}. ${m[2]} · ${m[3].slice(0, 150)}${progreso(puntos.find((x) => x.id === m[2]))}`); }
+  for (const l of L) { if (/^## [A-Z]\. /.test(l) && l !== grupo) { grupo = l; console.log(`\n${l.slice(3)}`); } const m = TITULO.exec(l); if (m) { const pp = puntos.find((x) => x.id === m[2]); console.log(`${m[1].padStart(2)}. ${m[2]} · ${m[3].slice(0, 150)}${progreso(pp)}${docsDe(pp).length ? '  [doc]' : ''}`); } }
   process.exit(0);
 }
 
@@ -71,7 +82,8 @@ if (A[0] === '--verificar') {
   for (const p of puntos.filter((x) => !solo || x.id === solo)) {
     const e = estadoDe(p, hs);
     const marca = e.sinCondicion ? '? sin «Verificar:»' : e.cumple ? '✓ CUMPLE: cerrarlo' : e.manual ? '· manual' : e.falta ? '✗ falta' : '· manual';
-    console.log(`${String(p.orden).padStart(2)}. ${p.id} · ${marca}${e.rs.filter((r) => r.ok !== null).map((r) => `\n      ${r.ok ? '✓' : '✗'} ${r.detalle}`).join('')}`);
+    const docsRotos = docsDe(p).filter((d) => primeraLinea(d) === null).map((d) => `\n      ✗ Documento: ${d} no existe`).join('');
+    console.log(`${String(p.orden).padStart(2)}. ${p.id} · ${marca}${e.rs.filter((r) => r.ok !== null).map((r) => `\n      ${r.ok ? '✓' : '✗'} ${r.detalle}`).join('')}${docsRotos}`);
   }
   process.exit(0);
 }
@@ -87,7 +99,17 @@ if (A[0] === '--nuevo') {
   const citados = [resolve(ROOT, 'Admin', 'CHANGELOG.md'), ...['CHANGELOG-v300-v672.md', 'CHANGELOG-v010-v299.md'].map((f) => resolve(ROOT, 'Admin', 'Archive', f))]
     .flatMap((f) => { try { return [...readFileSync(f, 'utf8').matchAll(/^## .*\[(\d{3}[^\]]*)\]\s*$/gm)].flatMap((m) => m[1].match(/\b\d{3}\b/g) || []); } catch { return []; } }).map(Number);
   const id = String(Math.max(...puntos.map((x) => Number(x.id)), ...citados) + 1);
-  const bloque = [`### ${pos}. ${id} · (${rol}): ${titulo}`, '', '…', 'Terminado cuando: …', '', 'Verificar: manual', ''];
+  // --doc mediciones|propuestas: crea el .md aparte del punto (abre con «Conclusión:» y «Destino:», la convención de Admin/mediciones/README.md) y lo enlaza con «Documento:»
+  const docDir = v('--doc');
+  let docRuta = null;
+  if (docDir !== undefined) {
+    if (!['mediciones', 'propuestas'].includes(docDir)) { console.error('--doc va con mediciones o propuestas.'); process.exit(1); }
+    const slug = titulo.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 50);
+    docRuta = `Admin/${docDir}/${id}-${slug}.md`;
+    if (existsSync(resolve(ROOT, docRuta))) { console.error(`${docRuta} ya existe.`); process.exit(1); }
+    writeFileSync(resolve(ROOT, docRuta), `<!-- md: ${titulo} | leer: al trabajar el punto ${id} del TODO -->\n# ${id} · ${titulo}\n\nConclusión: (se completa al cerrar el punto)\nDestino: (la regla, el archivo o la línea de HALLAZGOS donde queda)\n\n`, 'utf8');
+  }
+  const bloque = [`### ${pos}. ${id} · (${rol}): ${titulo}`, '', '…', ...(docRuta ? [`Documento: ${docRuta}`] : []), 'Terminado cuando: …', '', 'Verificar: manual', ''];
   // antes del punto que hoy ocupa ese lugar; al final, después del cuerpo del último
   let en = pos <= puntos.length ? puntos[pos - 1].i : puntos[puntos.length - 1].fin;
   while (en > 0 && L[en - 1].trim() === '' && pos > puntos.length) en--;
@@ -96,7 +118,20 @@ if (A[0] === '--nuevo') {
   let n = 0;
   for (let i = 0; i < L.length; i++) { const m = TITULO.exec(L[i]); if (m) L[i] = `### ${++n}. ${m[2]} · ${m[3]}`; }
   writeFileSync(RUTA, L.join('\n').replace(/\n{3,}/g, '\n\n'), 'utf8');
-  console.log(`Punto ${id} creado en el lugar ${pos}. Completá el cuerpo, «Terminado cuando:» y «Verificar:».`);
+  console.log(`Punto ${id} creado en el lugar ${pos}. Completá el cuerpo, «Terminado cuando:» y «Verificar:».${docRuta ? ` Documento del punto: ${docRuta}` : ''}`);
+  process.exit(0);
+}
+
+if (A[0] === '--doc-de') { // --doc-de <id> <ruta>: enlaza un .md que ya existe con el punto (opcional)
+  const p = puntos.find((x) => x.id === A[1]), ruta = A[2];
+  if (!p || !ruta) { console.error('Uso: --doc-de <id> <ruta del .md>'); process.exit(1); }
+  if (!existsSync(resolve(ROOT, ruta))) { console.error(`${ruta} no existe.`); process.exit(1); }
+  if (docsDe(p).includes(ruta)) { console.log(`El punto ${p.id} ya enlaza ${ruta}.`); process.exit(0); }
+  let en = L.slice(p.i, p.fin).findIndex((l) => /^Terminado cuando:/.test(l));
+  en = en < 0 ? p.fin - (L[p.fin - 1]?.trim() === '' ? 1 : 0) : p.i + en;
+  L.splice(en, 0, `Documento: ${ruta}`);
+  writeFileSync(RUTA, L.join('\n'), 'utf8');
+  console.log(`Punto ${p.id}: Documento: ${ruta}`);
   process.exit(0);
 }
 
@@ -158,13 +193,14 @@ function contexto(id) {
   return sec.length ? `\n\nContexto de este punto (rutas; se lee lo que haga falta):\n${sec.join('\n')}` : '\n\nContexto de este punto: nada lo cita todavía.';
 }
 
-if (!cerrar) { console.log((A.includes('--sin-resumen') ? '' : resumen(p)) + L.slice(p.i, p.fin).join('\n').trimEnd() + (A.includes('--sin-contexto') ? '' : contexto(p.id))); process.exit(0); }
+if (!cerrar) { console.log(encabezadoDocs(p) + (A.includes('--sin-resumen') ? '' : resumen(p)) + L.slice(p.i, p.fin).join('\n').trimEnd() + (A.includes('--sin-contexto') ? '' : contexto(p.id))); process.exit(0); }
 
 if (!A.includes('--forzar')) {
   const e = estadoDe(p, hallazgos());
   if (e.falta) { console.error(`No se cierra ${id}: su «Verificar:» no se cumple.\n${e.rs.filter((r) => r.ok === false).map((r) => `  ✗ ${r.detalle}`).join('\n')}\n(--forzar lo cierra igual, si el punto se descartó en vez de cumplirse)`); process.exit(1); }
   if (e.manual) console.log('Su «Verificar:» es manual: confirmá contra «Terminado cuando:» del punto que está hecho.');
 }
+const docsCierre = docsDe(p);
 L.splice(p.i, p.fin - p.i);
 let n = 0;
 for (let i = 0; i < L.length; i++) {
@@ -172,4 +208,5 @@ for (let i = 0; i < L.length; i++) {
   if (m) L[i] = `### ${++n}. ${m[2]} · ${m[3]}`;
 }
 writeFileSync(RUTA, L.join('\n').replace(/\n{3,}/g, '\n\n'), 'utf8');
+if (docsCierre.length) console.log(`Documento(s) del punto: ${docsCierre.join(', ')}. Su «Conclusión:» y «Destino:» tienen que estar escritos; un documento que ya cumplió se archiva (Admin/Archive/) o queda listado en Admin/mediciones/README.md.`);
 console.log(`Cerrado ${id}. Quedan ${n} puntos. Falta la entrada en Admin/CHANGELOG.md.`);

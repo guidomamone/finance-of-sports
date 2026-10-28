@@ -11,7 +11,16 @@
 // USO:
 //   node tools/auditoria.mjs                         verifica y escribe data/auditoria/
 //   node tools/auditoria.mjs --check                 verifica y compara sin escribir (lo corre audit.js)
-//   node tools/auditoria.mjs --pendientes            lista los club-años con balance y sin línea, con sus .md
+//   node tools/auditoria.mjs --pendientes [--club id] lista los club-años con balance y sin línea, con sus .md; con --club, por año
+//                                                    «sin línea» o «falta_transcripcion» de ese club
+//   node tools/auditoria.mjs --ejemplo [--club id]   imprime líneas modelo válidas tomadas del registro (sin_salvedades de persona,
+//                                                    con_salvedades, continuidad true, falta_transcripcion), con qué es cada campo
+//   node tools/auditoria.mjs --agregar <x.jsonl> [--ensayo]
+//                                                    valida cada línea de x.jsonl con las mismas reglas y, si TODAS dan ok, las escribe
+//                                                    (la de un club y año que ya tenía línea la reemplaza en su lugar; el resto del
+//                                                    archivo queda igual) y regenera data/auditoria/; con --ensayo solo valida
+//   --archivo <ruta>                                 (con cualquier modo) usa esa copia del registro en vez de Admin/registros/auditoria.jsonl;
+//                                                    data/auditoria/ entonces solo se compara (como --check), no se escribe
 //   node tools/auditoria.mjs --extractos [--solo id:anio,id:anio] [--max N]
 //                                                    escribe en Generados/auditoria/<clubId>-<anio>.txt las partes de sus .md que
 //                                                    importan (informe del auditor, opinión, firma), con número de línea, para el
@@ -29,12 +38,18 @@ import { rarezasDe, describir } from './rarezas.mjs';
 import vm from 'node:vm';
 
 const ROOT = resolve(import.meta.dirname, '..');
-const REGISTRO = 'Admin/registros/auditoria.jsonl';
+const REGISTRO_REAL = 'Admin/registros/auditoria.jsonl';
 const OUT = join(ROOT, 'data/auditoria');
 const GEN = join(ROOT, 'Generados/auditoria');
 const args = process.argv.slice(2);
 const flag = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : null; };
-const CHECK = args.includes('--check');
+// --archivo: una copia del registro para probar (--agregar sobre una copia); con ella data/auditoria/ solo se compara, nunca se escribe desde una copia
+const ALTERNATIVO = !!flag('--archivo');
+const REGISTRO = flag('--archivo') || REGISTRO_REAL;
+const REGISTRO_ABS = resolve(ROOT, REGISTRO);
+const CHECK = args.includes('--check') || ALTERNATIVO;
+const AGREGAR = flag('--agregar');
+const CLUB = flag('--club');
 
 const DICTAMENES = new Set(['sin_salvedades', 'con_salvedades', 'adverso', 'abstencion', 'sin_informe', 'falta_transcripcion']);
 const TIPOS = new Set(['firma', 'persona', 'organismo']);
@@ -46,7 +61,8 @@ const REDES = [[/deloitte/i, 'Deloitte'], [/pricewaterhouse|\bpwc\b/i, 'PwC'], [
 
 const { generic, clubs } = loadSite();
 const errores = [];
-const err = (n, m) => errores.push(`${REGISTRO}:${n}: ${m}`);
+const errN = new Map(); // número de línea -> motivos (para el «ok» o el motivo por línea de --agregar y para elegir ejemplos válidos)
+const err = (n, m) => { errores.push(`${REGISTRO}:${n}: ${m}`); if (!errN.has(n)) errN.set(n, []); errN.get(n).push(m); };
 
 // --- los .md de cada club-año con balance ---------------------------------------------------------------------------------------------
 // Un documento descartado como FUENTE DE CARGA sigue siendo fuente de la auditoría si es un informe del auditor (Guido: cada club deja su informe del auditor):
@@ -91,7 +107,27 @@ function chequearCita(n, c, clubId, anio, que, sinAnio = false) {
   const q = quien(join(ROOT, c.md.replace(/\.md$/, '.pdf')), clubId);
   if (q.error || q.year !== anio) err(n, `cita de ${que}: ${c.md} es del ejercicio ${q.year ?? '?'}, no del ${anio}`);
 }
-const lineas = existsSync(join(ROOT, REGISTRO)) ? readFileSync(join(ROOT, REGISTRO), 'utf8').split('\n') : [];
+const lineas = existsSync(REGISTRO_ABS) ? readFileSync(REGISTRO_ABS, 'utf8').split('\n') : [];
+// --agregar: las líneas nuevas entran al registro EN MEMORIA antes de validar, así pasan por la misma validación que todas (y la de una línea
+// existente que quedó mal también frena). La de un club y año que ya tenía línea (por ejemplo falta_transcripcion) la reemplaza en su lugar;
+// las demás van al final, antes del salto de línea final. Lo demás queda byte a byte.
+const claveDe = (o) => (o.ligaId ? `liga:${o.ligaId}|${o.anio}` : `${o.clubId}|${o.anio}`);
+const nuevas = []; // { nIn: línea en x.jsonl, n: línea en el registro combinado, k, accion }
+if (AGREGAR) {
+  const indice = new Map();
+  lineas.forEach((l, i) => { try { const o = JSON.parse(l); if (o && typeof o === 'object') indice.set(claveDe(o), i); } catch {} });
+  const fin = lineas.length && lineas[lineas.length - 1] === '' ? lineas.length - 1 : lineas.length;
+  const alFinal = [];
+  readFileSync(resolve(AGREGAR), 'utf8').split('\n').forEach((raw, i) => {
+    const t = raw.replace(/\r$/, '').trim();
+    if (!t) return;
+    let o = null; try { o = JSON.parse(t); } catch {}
+    const k = o && typeof o === 'object' ? claveDe(o) : null;
+    if (k && indice.has(k) && !nuevas.some((x) => x.k === k)) { const p = indice.get(k); lineas[p] = t; nuevas.push({ nIn: i + 1, n: p + 1, k, accion: 'reemplaza' }); }
+    else { alFinal.push(t); nuevas.push({ nIn: i + 1, n: fin + alFinal.length, k, accion: 'agrega' }); } // un JSON roto o un club-año repetido en x.jsonl: lo marca la validación
+  });
+  lineas.splice(fin, 0, ...alFinal);
+}
 // Las ligas del sitio, para las líneas de la entidad que organiza una liga (`ligaId` en vez de `clubId`).
 const ligas = (() => { const ctx = vm.createContext({ window: {} }); vm.runInContext(readFileSync(join(ROOT, 'data/leagues.js'), 'utf8') + ';window.L=LEAGUES;', ctx); return ctx.window.L || {}; })();
 const registro = new Map(), registroLigas = new Map();
@@ -126,6 +162,55 @@ lineas.forEach((l, i) => {
   }
   (esLiga ? registroLigas : registro).set(k, o);
 });
+
+// --- --agregar: todo o nada --------------------------------------------------------------------------------------------------------------
+if (AGREGAR) {
+  if (!nuevas.length) { console.error(`${AGREGAR}: sin líneas.`); process.exit(1); }
+  for (const x of nuevas) console.log(`${AGREGAR}:${x.nIn}  ${x.k || '?'}  (${x.accion === 'reemplaza' ? `reemplaza la línea ${x.n}` : `línea nueva ${x.n}`}): ${errN.has(x.n) ? errN.get(x.n).join('; ') : 'ok'}`);
+  const malas = nuevas.filter((x) => errN.has(x.n)).length;
+  const otras = [...errN.keys()].filter((n) => !nuevas.some((x) => x.n === n));
+  if (otras.length) console.error(`Errores en líneas que ya estaban en ${REGISTRO}:\n` + otras.map((n) => `  ${REGISTRO}:${n}: ${errN.get(n).join('; ')}`).join('\n'));
+  if (malas || otras.length) { console.error(`\n${malas} de ${nuevas.length} línea(s) nuevas con error${otras.length ? ` y ${otras.length} línea(s) previas con error` : ''}: no se escribe ninguna (todo o nada).`); process.exit(1); }
+  if (args.includes('--ensayo')) { console.log(`\nEnsayo: las ${nuevas.length} línea(s) son válidas. No se escribió nada (sin --ensayo se escriben y se regenera data/auditoria/).`); process.exit(0); }
+  writeFileSync(REGISTRO_ABS, lineas.join('\n'));
+  console.log(`\n${REGISTRO}: ${nuevas.filter((x) => x.accion === 'reemplaza').length} reemplazada(s), ${nuevas.filter((x) => x.accion === 'agrega').length} agregada(s).`);
+  // sigue abajo: la regeneración de data/auditoria/ de la corrida normal (con --archivo, solo la comparación)
+}
+
+// --- --ejemplo: líneas modelo, tomadas del registro y ya válidas ---------------------------------------------------------------------------
+if (args.includes('--ejemplo')) {
+  const validas = [];
+  lineas.forEach((l, i) => { if (!l.trim() || errN.has(i + 1)) return; try { const o = JSON.parse(l); if (!o.ligaId) validas.push({ o, l }); } catch {} });
+  const tipos = [
+    ['sin_salvedades, auditor persona', [(o) => o.dictamen === 'sin_salvedades' && o.auditor?.tipo === 'persona' && !o.continuidad]],
+    ['con_salvedades', [(o) => o.dictamen === 'con_salvedades' && !o.continuidad, (o) => o.dictamen === 'con_salvedades']],
+    ['continuidad true (incertidumbre sobre empresa en funcionamiento)', [(o) => o.continuidad === true && o.dictamen === 'sin_salvedades', (o) => o.continuidad === true]],
+    ['falta_transcripcion', [(o) => o.dictamen === 'falta_transcripcion']],
+  ];
+  const buscar = (fs, de) => { for (const f of fs) { const v = de.find((x) => f(x.o)); if (v) return v; } return null; }; // la primera condición es la que se prefiere
+  for (const [nombre, fs] of tipos) {
+    const delClub = CLUB ? buscar(fs, validas.filter((v) => v.o.clubId === CLUB)) : null;
+    const v = delClub || buscar(fs, validas);
+    console.log(`# ${nombre}${CLUB && !delClub ? ` (${CLUB} no tiene ninguna: de otro club)` : ''}`);
+    console.log(v ? v.l : '(ninguna en el registro)');
+    console.log('');
+  }
+  console.log(`Campos (una línea JSON por club y ejercicio con balance, en ${REGISTRO_REAL}):
+  clubId       el id del club en el sitio (<slug>-<iso2>)
+  anio         el ejercicio, número de cuatro cifras, el mismo año del balance cargado
+  auditor      { nombre, tipo }: nombre de la persona o la firma tal como firma (null solo con una nota que diga por qué no consta);
+               tipo persona | firma | organismo. No va con sin_informe ni con falta_transcripcion
+  dictamen     sin_salvedades | con_salvedades | adverso | abstencion | sin_informe | falta_transcripcion
+  continuidad  true si el informe señala una incertidumbre sobre la empresa en funcionamiento; false si no (siempre booleano)
+  citas        { auditor, dictamen, continuidad }: cada una { md, linea, texto }. auditor y dictamen van siempre que hay auditor;
+               continuidad solo si continuidad es true
+  nota         texto libre: obligatoria con falta_transcripcion (qué falta), con auditor.nombre null y con alcance
+  alcance      opcional: revision_limitada | procedimientos_acordados | proposito_especial | grupo | federacion (con nota)
+Regla de citas: md es el .md (trackeado) del MISMO ejercicio, no el del año siguiente aunque traiga el comparativo; linea es el número
+de línea en ese .md; texto es un fragmento exacto y literal de esa línea (se compara contra la línea ±3, sin distinguir mayúsculas,
+comillas ni espacios). Validar antes de escribir: node tools/auditoria.mjs --agregar <x.jsonl> --ensayo`);
+  process.exit(0);
+}
 
 // --- extractos para el subagente -------------------------------------------------------------------------------------------------------
 // Encabezados y frases del informe del auditor en los idiomas de los documentos del sitio, más los nombres de las redes grandes.
@@ -164,6 +249,22 @@ for (const [id, c] of Object.entries(generic)) for (const y of Object.keys(c.fis
   if (conBalance(id, y) && !registro.has(`${id}|${y}`)) pendientes.push({ id, y, mds: mdsDe[`${id}|${y}`] || [] });
 const faltan = [...registro.values()].filter(o => o.dictamen === 'falta_transcripcion');
 
+if (args.includes('--pendientes') && CLUB) {
+  if (!clubs[CLUB]) { console.error(`--club ${CLUB}: no es un club del sitio.`); process.exit(1); }
+  const filas = [...pendientes.filter((p) => p.id === CLUB).map((p) => ({ y: p.y, que: 'sin línea', mds: p.mds })),
+    ...faltan.filter((o) => o.clubId === CLUB).map((o) => ({ y: o.anio, que: `falta_transcripcion (${o.nota})`, mds: mdsDe[`${CLUB}|${o.anio}`] || [] }))].sort((a, b) => a.y - b.y);
+  // En Colombia, si en la carpeta no está el dictamen-revisor-fiscal del año: SIIS no se consulta acá (es un GET por año), se dice cómo.
+  const esCo = clubs[CLUB].country?.toLowerCase() === 'co';
+  for (const f of filas) {
+    const carpeta = f.mds[0] ? f.mds[0].split('/').slice(0, -1).join('/') : null;
+    const sinDictamen = esCo && carpeta && !existsSync(join(ROOT, carpeta, `dictamen-revisor-fiscal-${f.y}.pdf`));
+    console.log(`${CLUB}:${f.y}\t${f.que}\t${f.mds.length ? f.mds.join(' | ') : '(sin .md)'}${sinDictamen ? '\tsin dictamen-revisor-fiscal en la carpeta' : ''}`);
+  }
+  const sinDic = filas.find((f) => esCo && f.mds[0] && !existsSync(join(ROOT, f.mds[0].split('/').slice(0, -1).join('/'), `dictamen-revisor-fiscal-${f.y}.pdf`)));
+  if (sinDic) console.error(`Si SIIS tiene el dictamen de esos años: node tools/siis-adicionales.mjs "${sinDic.mds[0].split('/').slice(-2, -1)[0]}" (consulta SIIS, un GET por año).`);
+  console.error(`${CLUB}: ${filas.filter((f) => f.que === 'sin línea').length} sin línea y ${filas.filter((f) => f.que !== 'sin línea').length} falta_transcripcion.`);
+  process.exit(0);
+}
 if (args.includes('--pendientes')) {
   for (const p of pendientes) console.log(`${p.id}:${p.y}\t${p.mds.length ? p.mds.join(' | ') : '(sin .md)'}`);
   for (const o of faltan) console.log(`${o.clubId}:${o.anio}\tFALTA EN LA TRANSCRIPCIÓN: ${o.nota}`);
@@ -208,11 +309,31 @@ for (const o of [...registroLigas.values()].filter(o => o.dictamen !== 'falta_tr
 archivos['_ligas.js'] = `${CAB}window.LIGA_AUDITORIA = ${JSON.stringify(porLiga, null, 1)};\n`;
 archivos['_paises.js'] = `${CAB}window.AUDITORIA_PAISES = ${JSON.stringify(Object.keys(porPais).sort())};\n`;
 
-if (pendientes.length || faltan.length) console.error(`Aviso: ${pendientes.length} balances sin línea y ${faltan.length} con el informe sin transcribir (node tools/auditoria.mjs --pendientes).`);
+// Los clubes tocados hoy: su data/<país>/<id>.json o un Clubes/…/dictamen-revisor-fiscal-*.md cambió en el árbol de trabajo, en el último commit o en un commit de hoy.
+function clubesTocados() {
+  const git = (c) => { try { return execSync(c, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 26, stdio: ['ignore', 'pipe', 'ignore'] }); } catch { return ''; } };
+  const rutas = [...git('git -c core.quotepath=off status --porcelain -uall').split('\n').map((l) => l.slice(3).split(' -> ').pop()),
+    ...git('git -c core.quotepath=off diff --name-only HEAD~1').split('\n'),
+    ...git('git -c core.quotepath=off log --since=midnight --name-only --format=').split('\n')] // los commits de hoy: una carga por el pipeline deja un commit por año.map((s) => s.trim().replace(/^"|"$/g, '')).filter(Boolean);
+  const ids = new Set();
+  for (const f of new Set(rutas)) {
+    const m = f.match(/^data\/[a-z]+\/([^/]+)\.json$/);
+    if (m && clubs[m[1]]) ids.add(m[1]);
+    else if (/^Clubes\/.*\/dictamen-revisor-fiscal-[^/]*\.md$/.test(f)) { const q = quien(join(ROOT, f.replace(/\.md$/, '.pdf'))); if (!q.error && clubs[q.clubId]) ids.add(q.clubId); }
+  }
+  return ids;
+}
+if (pendientes.length || faltan.length) {
+  const tocados = clubesTocados(), cuenta = {};
+  for (const id of [...pendientes.map((p) => p.id), ...faltan.map((o) => o.clubId)]) if (tocados.has(id)) cuenta[id] = (cuenta[id] || 0) + 1;
+  const hoy = Object.entries(cuenta).map(([id, n]) => `${id} ${n}`).join(', ');
+  console.error(`Aviso: ${pendientes.length} balances sin línea y ${faltan.length} con el informe sin transcribir (node tools/auditoria.mjs --pendientes).` +
+    (hoy ? ` De los clubes tocados hoy: ${hoy} (node tools/auditoria.mjs --pendientes --club <id>).` : ''));
+}
 const actuales = existsSync(OUT) ? readdirSync(OUT).filter(f => f.endsWith('.js')) : [];
 if (CHECK) {
   const viejos = [...Object.keys(archivos).filter(f => !existsSync(join(OUT, f)) || readFileSync(join(OUT, f), 'utf8') !== archivos[f]), ...actuales.filter(f => !archivos[f])];
-  if (viejos.length) { console.error(`data/auditoria/ desactualizado: ${viejos.join(', ')}`); process.exit(1); }
+  if (viejos.length) { console.error(`data/auditoria/ desactualizado: ${viejos.join(', ')}${ALTERNATIVO ? ` (con --archivo ${REGISTRO} no se escribe: es lo que cambiaría)` : ''}`); process.exit(ALTERNATIVO && AGREGAR ? 0 : 1); }
   console.log(`data/auditoria/ al día (${registro.size} balances).`);
 } else {
   mkdirSync(OUT, { recursive: true });

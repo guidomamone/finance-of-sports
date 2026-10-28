@@ -12,11 +12,20 @@
 // hoy. Se marca `kitsSoloActual` y se cuenta aparte.
 //
 // USO:
-//   node tools/estadio-sponsor.mjs --ensayo            mide la cobertura (no escribe nada)
+//   node tools/estadio-sponsor.mjs --ensayo            mide la cobertura (no escribe nada); sale con 0 aunque falten datos (lo que
+//                                                      falta va en el texto); --estricto: sale con 1 si falta algo, como la compuerta
 //   node tools/estadio-sponsor.mjs --ensayo --detalle  además, una línea por ejercicio
+//   node tools/estadio-sponsor.mjs --ensayo --club <id> [--anio <año> | --anios AAAA-AAAA]
+//                                                      por ejercicio: estadio, capacidad y fuente que quedaron, y el sponsor (con valor,
+//                                                      «sin-fuente válido» con sus intentos, o FALTA); la línea «compuerta:» dice si pasa
+//   node tools/estadio-sponsor.mjs --informe-anual <clubId>
+//                                                      el paso «informe-anual» de la búsqueda del sponsor: busca patroc|sponsor|auspici|
+//                                                      publicidad en los .md de Clubes/<País>/<Club>/ e imprime el intento listo para pegar
+//                                                      en sin-fuente.sponsor.intentos (tools/contexto-manual.json)
 //   node tools/estadio-sponsor.mjs --escribir          escribe data/contexto/<iso>.js; lo ya guardado no se vuelve a bajar (--refrescar sí)
 //   node tools/estadio-sponsor.mjs --escribir --club <id> [--anio <año>]
-//                                                      COMPUERTA del pipeline: guarda ese club y sale con 1 si a un ejercicio le falta
+//                                                      COMPUERTA del pipeline (cargar-escribir.mjs depende del 1 para frenar): guarda
+//                                                      ese club y sale con 1 si a un ejercicio le falta
 //                                                      estadio o sponsor (se completa en tools/contexto-manual.json, con fuente);
 //                                                      para un año que todavía no está cargado: --liga <ligaId> --cierre <MM-DD>
 //   node tools/estadio-sponsor.mjs --ensayo --todas    llena la caché por liga-año con TODAS las ligas de las listas (para el índice
@@ -25,8 +34,8 @@
 //   ... --local                                        además, la Wikipedia del país para los huecos (con compuerta; queda en la caché)
 //   ... --liga <ligaId>                                  solo esa liga (para probar)
 // ============================================================================
-import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync, statSync } from 'node:fs';
+import { resolve, relative } from 'node:path';
 import { createRequire } from 'node:module';
 import vm from 'node:vm';
 import { execFileSync } from 'node:child_process';
@@ -66,13 +75,70 @@ ${orden}
 `, 'utf8');
 }
 
+// --informe-anual <clubId>: el intento «informe-anual» del registro de búsqueda del sponsor (tools/sponsor-busqueda.js). La carpeta del club
+// en Clubes/<País>/ sale, en orden: de tools/siis-clubes.json (la clave es el nombre de la carpeta), de la evidencia de carga
+// (Admin/carga-clubes/<id>.md, la carpeta más citada, como ejercicios-nuevos.mjs) o del nombre del club en data/clubs.js. Solo .md (los
+// .json de SIIS repiten los rubros y no son transcripciones); en JS y no con grep: en zsh `--include=*.md` sin comillas falla.
+const PATRON_SPONSOR = /patroc|sponsor|auspici|publicidad/i;
+const DIR_DOCS = 'Clubes'; // la carpeta de los documentos de cada club
+const norm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+function carpetaDelClub(id, CLUBS) {
+  const CLU = resolve(ROOT, 'Clubes'); if (!existsSync(CLU)) return null;
+  const carpetas = readdirSync(CLU).flatMap((p) => { try { return readdirSync(resolve(CLU, p)).filter((c) => statSync(resolve(CLU, p, c)).isDirectory()).map((c) => `${p}/${c}`); } catch { return []; } });
+  const SIIS = resolve(ROOT, 'tools', 'siis-clubes.json');
+  if (existsSync(SIIS)) {
+    const S = JSON.parse(readFileSync(SIIS, 'utf8')); // { pais, clubes: { "<carpeta>": { clubId } } }
+    const nombres = Object.entries(S.clubes || {}).filter(([, v]) => v?.clubId === id).map(([k]) => `${S.pais}/${k}`);
+    const hit = carpetas.filter((c) => nombres.includes(c)); if (hit.length === 1) return { carpeta: hit[0], por: 'tools/siis-clubes.json' };
+  }
+  const ev = resolve(ROOT, 'Admin', 'carga-clubes', `${id}.md`);
+  if (existsSync(ev)) {
+    const n = {}; for (const m of readFileSync(ev, 'utf8').matchAll(/Clubes\/([^/\n]+)\/([^/\n]+)\//g)) n[`${m[1]}/${m[2]}`] = (n[`${m[1]}/${m[2]}`] || 0) + 1;
+    const top = Object.entries(n).sort((a, b) => b[1] - a[1]).map(([c]) => c).find((c) => carpetas.includes(c)); if (top) return { carpeta: top, por: `Admin/carga-clubes/${id}.md` };
+  }
+  const C = CLUBS[id] || {}; const quiero = new Set([C.displayName, C.name, C.shortName].map(norm).filter(Boolean));
+  const hit = carpetas.filter((c) => quiero.has(norm(c.split('/')[1]))); if (hit.length === 1) return { carpeta: hit[0], por: 'el nombre en data/clubs.js' };
+  return null;
+}
+function mdsDe(dir) { const out = []; for (const f of readdirSync(dir)) { const p = resolve(dir, f); const s = statSync(p); if (s.isDirectory()) out.push(...mdsDe(p)); else if (/\.md$/i.test(f)) out.push(p); } return out.sort(); }
+function informeAnual(id) {
+  const { CLUBS } = cargar();
+  if (!CLUBS[id]) { console.error(`--informe-anual: «${id}» no está en data/clubs.js`); process.exit(1); }
+  const r = carpetaDelClub(id, CLUBS);
+  if (!r) { console.error(`--informe-anual: no encontré la carpeta de ${id} en ${DIR_DOCS}/ (ni en tools/siis-clubes.json, ni en Admin/carga-clubes/${id}.md, ni por el nombre)`); process.exit(1); }
+  const archivos = mdsDe(resolve(ROOT, 'Clubes', r.carpeta));
+  console.log(`${id}: ${DIR_DOCS}/${r.carpeta}/ (por ${r.por}); ${archivos.length} transcripciones .md; patrón ${PATRON_SPONSOR.source} (sin distinguir mayúsculas)`);
+  let total = 0; const conHits = [];
+  for (const f of archivos) {
+    const lineas = readFileSync(f, 'utf8').split('\n'); const hits = [];
+    lineas.forEach((l, i) => { if (PATRON_SPONSOR.test(l)) hits.push(i + 1); });
+    if (!hits.length) continue;
+    total += hits.length; conHits.push(`${relative(resolve(ROOT, 'Clubes', r.carpeta), f)} (${hits.length})`);
+    console.log(`\n  ${relative(ROOT, f)}: ${hits.length} coincidencia(s)`);
+    for (const n of hits.slice(0, 3)) console.log(`    l.${n}: ${lineas[n - 1].trim().replace(/\s+/g, ' ').slice(0, 200)}`);
+    if (hits.length > 3) console.log(`    … ${hits.length - 3} más`);
+  }
+  console.log(`\n${total} coincidencia(s) en ${conHits.length} de ${archivos.length} archivo(s).`);
+  const intento = { clase: 'informe-anual', donde: `${DIR_DOCS}/${r.carpeta}/*.md, patrón ${PATRON_SPONSOR.source} (sin mayúsculas): ${total ? `${total} coincidencia(s) en ${conHits.join(', ')}` : `0 coincidencias en ${archivos.length} archivo(s)`}`, resultado: total ? 'hallado' : 'sin-dato' };
+  if (total) console.log('«hallado» = el patrón aparece: leé las líneas. Si nombran al sponsor del FRENTE de ese año, se escribe el sponsor (no sin-fuente); si es un rubro genérico (ingresos por publicidad sin nombre), el intento va con "resultado":"sin-dato" y en «donde» la línea que lo muestra.');
+  console.log('\nintento para sin-fuente.sponsor.intentos (tools/contexto-manual.json):');
+  console.log(JSON.stringify(intento));
+}
+
 async function main() {
+  if (process.argv.includes('--informe-anual')) {
+    const id = process.argv[process.argv.indexOf('--informe-anual') + 1];
+    if (!id || id.startsWith('--')) { console.error('Uso: node tools/estadio-sponsor.mjs --informe-anual <clubId>'); process.exit(1); }
+    return informeAnual(id);
+  }
   // --anios 2016-2022 (con --ensayo y --club): una fila por año con los cuatro porcentajes; cada fila es la llamada suelta de ese año (--anio), así que es igual a las siete llamadas del brief
   if (process.argv.includes('--anios')) {
     const i = process.argv.indexOf('--anios'); const resto = process.argv.slice(2).filter((a, k, v) => a !== '--anios' && v[k - 1] !== '--anios');
     if (!process.argv.includes('--ensayo') || !process.argv.includes('--club')) { console.error('Uso: node tools/estadio-sponsor.mjs --ensayo --club <id> --anios AAAA-AAAA [--liga <ligaId>] [--cierre MM-DD]'); process.exit(1); }
     const anios = parseAnios(process.argv[i + 1]);
-    for (const l of tablaAnios(anios, (a) => { try { return execFileSync('node', [process.argv[1], ...resto, '--anio', String(a)], { encoding: 'utf8', maxBuffer: 1 << 26 }); } catch (e) { return String(e.stdout || ''); } })) console.log(l);
+    const tabla = tablaAnios(anios, (a) => { try { return execFileSync('node', [process.argv[1], ...resto, '--anio', String(a)], { encoding: 'utf8', maxBuffer: 1 << 26 }); } catch (e) { return String(e.stdout || ''); } });
+    for (const l of tabla) console.log(l);
+    if (process.argv.includes('--estricto') && tabla.some((l) => /falta completar|sin datos/.test(l))) process.exit(1);
     return;
   }
   const { CI, CL, CLUBS, LEAGUES, cache, alias } = cargar();
@@ -91,7 +157,8 @@ async function main() {
   const soloLiga = arg('--liga'), soloClub = arg('--club'), soloAnio = arg('--anio');
   const refrescar = args.includes('--refrescar');
   if (!escribir && !args.includes('--ensayo')) { console.error('Uso: --ensayo | --escribir [--club <id> [--anio <año>]] [--refrescar] [--liga <ligaId>] [--detalle]'); process.exit(1); }
-  const manual = existsSync(MANUAL) ? JSON.parse(readFileSync(MANUAL, 'utf8')) : {};
+  let manual = {}; try { if (existsSync(MANUAL)) manual = JSON.parse(readFileSync(MANUAL, 'utf8')); } catch (e) { console.error(`tools/contexto-manual.json ilegible (${e.message}): node tools/validar-contexto.mjs`); process.exit(1); }
+  const estricto = args.includes('--estricto');
   const ALIAS_EST = resolve(ROOT, 'tools', 'estadio-alias.json'); const aliasEst = existsSync(ALIAS_EST) ? JSON.parse(readFileSync(ALIAS_EST, 'utf8')) : {};
   const previoPais = guardado(); const previo = Object.assign({}, ...Object.values(previoPais));
 
@@ -229,6 +296,13 @@ async function main() {
     return out;
   };
 
+  // por ejercicio (con --club): qué estadio quedó y de qué fuente, y en qué estado está el sponsor; `nSf` cuenta los campos en null con
+  // `sin-fuente` válido (la compuerta los da por resueltos, pero no suman al porcentaje «con valor»); `faltaCampos` lo que frena
+  const porEjercicio = []; const nSf = {}; const faltaCampos = new Set();
+  const corta = (u) => String(u || '').replace(/^https?:\/\//, '').replace(/^(\w+)\.wikipedia\.org\/w\/index\.php\?oldid=(\d+)$/, '$1.wikipedia oldid=$2').slice(0, 110);
+  // la fuente manual suele ser un texto con un tramo por campo («estadio y capacidad: <url> (...); sponsor: <url> ...»): se muestra el del campo
+  const tramo = (txt, k) => { const re = k === 'sponsor' ? /(?:^|;\s*)(sponsor[^:;]*:\s*[^;]*)/i : k === 'marca' ? /(?:^|;\s*)(marca[^:;]*:\s*[^;]*)/i : /(?:^|;\s*)((?:estadio|capacidad)[^:;]*:\s*[^;]*)/i; return (String(txt || '').match(re) || [])[1] || txt; };
+  const fuenteDe = (d, k) => !d ? null : d.fuentesManual?.[k] ? `manual: ${corta(d.fuentesManual[k])}` : d.manual?.includes(k) ? `manual: ${corta(tramo(d.fuenteManual, k))}` : d.local?.includes(k) ? `Wikipedia del país: ${corta(d.fuenteLocal)}` : d.club?.[k] ? `página del club: ${corta(d.club[k])}` : d.fuente ? `${corta(d.fuente)}${d.temporada ? ` («${d.temporada}»)` : ''}` : null;
   const n = { est: 0, cap: 0, sp: 0, kit: 0, soloActualViejo: 0, club: 0 }; const muestraClub = []; const motivosClub = {}; const porLiga = {}; const salida = {}; const faltan = [];
   for (const e of ejercicios) {
     const L = (porLiga[e.liga || '(sin liga)'] ??= { n: 0, est: 0, sp: 0 }); L.n++;
@@ -289,6 +363,18 @@ async function main() {
     for (const k of Object.keys(sf)) if (!tiene(k)) { d ??= {}; (d.sinFuente ??= {})[k] = sf[k]; }
     if (tiene('estadio')) { n.est++; L.est++; } if (tiene('capacidad')) n.cap++; if (tiene('sponsor')) { n.sp++; L.sp++; } if (tiene('marca')) n.kit++;
     if (!resuelto('estadio') || (!resuelto('sponsor') && !amateur(e.liga))) faltan.push(`${e.id} ${e.y}${e.liga ? ` (${e.liga}${e.s ? ' ' + e.s : ', sin lista'})` : ' (sin liga en club-leagues)'}: falta ${[!resuelto('estadio') && 'estadio', !resuelto('sponsor') && 'sponsor'].filter(Boolean).join(' y ')}${!resuelto('sponsor') && sfMotivo.sponsor ? ` (${e.id} ${e.y} sin-fuente.sponsor no vale: ${sfMotivo.sponsor})` : ''}`);
+    for (const k of Object.keys(sf)) if (!tiene(k)) nSf[k] = (nSf[k] || 0) + 1;
+    if (!resuelto('estadio')) faltaCampos.add('estadio'); if (!resuelto('sponsor') && !amateur(e.liga)) faltaCampos.add('sponsor');
+    if (soloClub) {
+      const rawSp = m?.['sin-fuente']?.sponsor; const intentos = Array.isArray(rawSp?.intentos) ? rawSp.intentos : [];
+      const sp = tiene('sponsor') ? `sponsor ${d.sponsor} (${fuenteDe(d, 'sponsor') || 'sin fuente'})`
+        : sf.sponsor ? `sponsor sin-fuente válido (${rawSp?.legacy ? `legacy: ${String(sf.sponsor).slice(0, 80)}` : `${intentos.length} intentos: ${intentos.map((x) => `${x.clase} ${x.resultado}`).join(', ')}`})`
+        : amateur(e.liga) ? 'sponsor no hace falta (liga en la que alcanza el estadio)'
+        : `sponsor FALTA${sfMotivo.sponsor ? ` (sin-fuente.sponsor no vale: ${sfMotivo.sponsor})` : ''}`;
+      const est = tiene('estadio') ? `estadio ${d.estadio}, capacidad ${tiene('capacidad') ? d.capacidad : sf.capacidad ? 'sin-fuente válido' : 'FALTA (no frena)'} · fuente ${fuenteDe(d, 'estadio') || '-'}` : sf.estadio ? `estadio sin-fuente válido (${String(sf.estadio).slice(0, 80)})` : 'estadio FALTA';
+      const avisoWd = tiene('estadio') && /wikidata/i.test(fuenteDe(d, 'estadio') || '') ? `\n           Wikidata da el nombre ACTUAL: verificar el de ${e.y}: buscar en la Wikipedia del club o en prensa de ${e.y} el estadio local (la ficha infobox de es.wikipedia suele traer estadios anteriores)` : '';
+      porEjercicio.push(`  ${e.id} ${e.y}: ${est}${avisoWd}\n           ${sp}${tiene('marca') ? ` · marca ${d.marca}` : sf.marca ? ' · marca sin-fuente válido' : ' · marca - (no frena)'}`);
+    }
     if (d) { const limpio = Object.fromEntries(Object.entries(d).filter(([, v]) => v != null && v !== '')); if (Object.keys(limpio).length > 1) ((salida[e.iso] ??= {})[e.id] ??= {})[e.y] = limpio; }
     if (detalle) console.log(`${e.id} ${e.y} (${e.liga || '-'} ${e.s || '-'}): estadio ${d?.estadio || '-'} | cap ${d?.capacidad || '-'} | sponsor ${d?.sponsor || '-'} | marca ${d?.marca || '-'}`);
   }
@@ -304,7 +390,16 @@ async function main() {
     console.log(`escrito: ${[...isos].map((i) => `data/contexto/${i}.js`).join(', ') || 'nada'}`);
   }
   const tot = ejercicios.length || 1; const pc = (x) => `${x} (${Math.round((100 * x) / tot)}%)`;
+  if (porEjercicio.length) { console.log('\npor ejercicio (lo que quedó y de qué fuente):'); for (const l of porEjercicio) console.log(l); }
+  // la línea de porcentajes la leen estadio-sponsor-anios.mjs (filaDe) y club-siis.mjs: su forma no cambia; los % cuentan solo lo que tiene valor
   console.log(`\nde ${ejercicios.length} ejercicios: estadio ${pc(n.est)} · capacidad ${pc(n.cap)} · sponsor ${pc(n.sp)} · marca ${pc(n.kit)}`);
+  // un campo en null con sin-fuente válido no suma al % pero la compuerta lo acepta: se dice aparte (con un solo ejercicio, con sus intentos)
+  if (Object.keys(nSf).length) {
+    const unoSp = ejercicios.length === 1 && manual[ejercicios[0].id]?.[ejercicios[0].y]?.['sin-fuente']?.sponsor;
+    console.log(`sin-fuente válido (la compuerta lo acepta, no suma al %): ${Object.entries(nSf).map(([k, x]) => k === 'sponsor' && unoSp && Array.isArray(unoSp.intentos) ? `sponsor (${unoSp.intentos.length} intentos)` : `${k} ${x} ejercicio(s)`).join(' · ')}`);
+    if (nSf.sponsor) console.log(`  → sponsor ${Math.round((100 * n.sp) / tot)} % con fuente, ${nSf.sponsor} ejercicio(s) con sin-fuente válido`);
+  }
+  if (soloClub) console.log(faltaCampos.size ? `compuerta: falta ${[...faltaCampos].join(' y ')} (${faltan.length} ejercicio(s))` : 'compuerta: completo');
   if (n.club) { console.log(`completados con la página del club: ${n.club} ejercicios`); for (const x of muestraClub) console.log(`  ${x}`); }
   if (Object.keys(motivosClub).length) { console.log('página del club, lo que no dio:'); for (const [m, k] of Object.entries(motivosClub).sort((a, b) => b[1] - a[1])) console.log(`  ${k} · ${m}`); }
   if (n.soloActualViejo) console.log(`descartados por tabla de kits "solo la actual" en una temporada vieja: ${n.soloActualViejo}`);
@@ -312,7 +407,8 @@ async function main() {
     console.log('\npor liga (ejercicios · con estadio · con sponsor):');
     for (const [l, x] of Object.entries(porLiga).sort((a, b) => b[1].n - a[1].n)) console.log(`  ${l.padEnd(22)} ${x.n} · ${x.est} · ${x.sp}`);
   }
-  // COMPUERTA: con --club, sale con 1 si a algún ejercicio le falta estadio o sponsor; lo usa el pipeline antes de cargar
+  // COMPUERTA: con --escribir --club, sale con 1 si a algún ejercicio le falta estadio o sponsor (cargar-escribir.mjs, compuertaContexto,
+  // frena con ese 1). El --ensayo informa lo que falta en el texto y sale con 0 (un 1 lo mostraba como error); --estricto lo vuelve 1
   if (faltan.length) {
     console.log(`\n${faltan.length} ejercicios sin estadio o sin sponsor${soloClub ? '' : ' (los primeros 40)'}:`);
     for (const f of faltan.slice(0, soloClub ? Infinity : 40)) console.log(`  ${f}`);
@@ -323,19 +419,20 @@ async function main() {
     // casos; el resto es el MISMO estadio con otro nombre (Wikidata da el actual: SMH Group Stadium era Proact; Swissporarena era thermoplan arena). Por eso NO se escribe solo: el candidato dice
     // qué estadio es y la sesión (o el agente de `dato-publico.mjs --prompt estadio`) verifica el nombre que tenía ESE año.
     if (soloClub && faltan.some((f) => /falta[^:]*estadio|falta estadio/i.test(f))) {
+      const COMO_VERIFICAR = (y) => `buscar en la Wikipedia del club o en prensa de ${y} el estadio local (la ficha infobox de es.wikipedia suele traer estadios anteriores)`;
       try {
         const { datoPublico } = await import('./dato-publico.mjs'); const C = cargar().CLUBS[soloClub];
         for (const f of faltan.filter((x) => /estadio/.test(x.split('falta')[1] || '')).slice(0, 8)) {
           const y = Number((f.match(/^\S+ (\d{4})/) || [])[1]); if (!y || !C) continue;
           const r = await datoPublico([C.displayName, C.name].filter(Boolean), { pais: C.country, anio: y });
           const da = r.delAnio;
-          console.log(r.error ? `  Wikidata ${y}: ${r.error}` : `  Wikidata ${y}: ${da?.error || `${da.estadio}, capacidad ${da.capacidadDecidida?.valor ? `${da.capacidadDecidida.valor} (${da.capacidadDecidida.regla})` : `sin decidir (${da.capacidadDecidida?.motivo || 'sin dato'}; dato-publico.mjs --prompt capacidad)`}`} · fuente ${da?.fuenteEstadio || r.fuente} · ${da?.confirmadoPorWikipedia ? `la ficha del club lo nombra (${da.confirmadoPorWikipedia}); verificar el NOMBRE que tenía en ${y} (Wikidata da el actual)` : 'SOLO Wikidata: buscar una segunda fuente (la página del club) antes de pegarlo'}`);
+          console.log(r.error ? `  Wikidata ${y}: ${r.error}` : `  Wikidata ${y}: ${da?.error || `${da.estadio}, capacidad ${da.capacidadDecidida?.valor ? `${da.capacidadDecidida.valor} (${da.capacidadDecidida.regla})` : `sin decidir (${da.capacidadDecidida?.motivo || 'sin dato'}; dato-publico.mjs --prompt capacidad)`}`} · fuente ${da?.fuenteEstadio || r.fuente} · ${da?.confirmadoPorWikipedia ? `la ficha del club lo nombra (${da.confirmadoPorWikipedia}); verificar el NOMBRE que tenía en ${y} (Wikidata da el actual): ${COMO_VERIFICAR(y)}` : `SOLO Wikidata: buscar una segunda fuente antes de pegarlo; ${COMO_VERIFICAR(y)}`}`);
         }
         console.log(`Sin candidato o con duda: node tools/dato-publico.mjs --club ${soloClub} --anio <año> --prompt estadio  (prompt fijo para un agente Sonnet)`);
       } catch (e) { /* sin red o sin entidad: queda el paso a mano */ }
     }
     console.log('Se completan a mano en tools/contexto-manual.json: { "<clubId>": { "<año>": { "estadio": "...", "capacidad": 0, "sponsor": "...", "marca": "...", "fuente": "<url>" } } }');
-    if (soloClub) process.exit(1);
+    if (soloClub && (escribir || estricto)) process.exit(1);
   }
 }
 main().catch((e) => { console.error(e.message); process.exit(1); });

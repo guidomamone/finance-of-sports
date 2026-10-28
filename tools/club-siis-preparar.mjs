@@ -45,12 +45,15 @@ export async function preparar({ club, cfg, ROOT, estadoDe, evaluar, ENSAYO }) {
   const q = JSON.stringify(club); const ev = evaluar();
   console.log(`=== --preparar ${club} · ${ev.veredicto}${ENSAYO ? ' · ENSAYO (no se escribe nada)' : ''} ===`);
   if (ev.veredicto === 'DESCARTAR') { console.log(`${ev.motivos.join('; ')}. No se prepara.`); return; }
-  const corre = (args) => { console.log(`$ node ${args.join(' ')}`); if (ENSAYO) return ''; try { return execFileSync('node', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1e8, stdio: ['ignore', 'pipe', 'pipe'] }); } catch (err) { console.log(`SE FRENÓ: ${String(err.stdout || '').trim().split('\n').slice(-6).join('\n')}${String(err.stderr || '').trim()}`); process.exit(1); } };
+  const shq = (x) => (/[\s"'$`\\]/.test(String(x)) ? JSON.stringify(String(x)) : String(x)); // un argumento con espacios sale entre comillas: el comando se pega tal cual
+  const corre = (args) => { console.log(`$ node ${args.map(shq).join(' ')}`); if (ENSAYO) return ''; try { return execFileSync('node', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1e8, stdio: ['ignore', 'pipe', 'pipe'] }); } catch (err) { console.log(`SE FRENÓ: ${String(err.stdout || '').trim().split('\n').slice(-6).join('\n')}${String(err.stderr || '').trim()}`); process.exit(1); } };
 
   let s = estadoDe(club);
   const sinEstado = s.filas.filter((f) => !f.siis && !f.cargado).map((f) => f.a);
   console.log(`\n1. Estados de SIIS: ${sinEstado.length ? `faltan ${sinEstado.join(', ')}` : 'todos bajados'}`);
-  for (const a of sinEstado) corre(['tools/siis-estado.mjs', '--club', club, '--anio', a, '--escribir']);
+  // faltan todos (y ningún año frenado): UN comando con --todos, que baja exactamente esos años (antes salían diez --anio sueltos); si faltan algunos, uno por año (siis-estado no tiene --anios)
+  if (sinEstado.length && sinEstado.length === s.filas.length && !(s.c.frenados || []).length) corre(['tools/siis-estado.mjs', '--club', club, '--todos', '--escribir']);
+  else for (const a of sinEstado) corre(['tools/siis-estado.mjs', '--club', club, '--anio', a, '--escribir']);
   if (!ENSAYO) s = estadoDe(club);
 
   const dir = s.dir; const sinMd = () => (existsSync(dir) ? readdirSync(dir) : []).filter((x) => /^dictamen-revisor-fiscal-\d{4}\.pdf$/.test(x) && !existsSync(join(dir, x.replace(/\.pdf$/, '.md'))));

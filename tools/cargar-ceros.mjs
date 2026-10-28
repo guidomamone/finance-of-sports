@@ -133,7 +133,7 @@ export function faseCeros(ctx) {
       const CATS_TAQUILLA = ['matchday_competition', 'season_tickets'];
       for (const c of [...ceros]) if ((CATS_CERO[c.categoria.toLowerCase()] || []).some((x) => CATS_TAQUILLA.includes(x))) { ceros.splice(ceros.indexOf(c), 1); P.avisos.push(`"${c.categoria}" en 0 con cierre ${cierreCovid || `en ${year}`}, dentro de la ventana COVID: real (partidos suspendidos, a puertas cerradas o con aforo limitado)`); }
     }
-    if (ceros.length && aMano) P.avisos.push(`categorías en 0 en un documento con filas armadas a mano (el reintento con IA no puede cambiarlas; se carga así): ${ceros.map((c) => c.categoria).join(', ')}`);
+    if (ceros.length && aMano) P.avisos.push(`categorías en 0 en un documento con filas armadas a mano (el reintento con IA no puede cambiarlas; se carga así): ${ceros.map((c) => c.categoria).join(', ')}. Puede ser esperado: el documento (por ejemplo el estado de SIIS, o filas armadas a mano de un PDF) no trae el detalle de ese rubro; si el club no abre sueldos u otros rubros, queda en 0 y la nota «n/d» lo explica`);
     else if (ceros.length && !yaReintentado) { P.reintentar = ceros; frena('reintento', `categorías en 0 que deberían tener número: ${ceros.map((c) => c.categoria).join(', ')}. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar`); }
     else if (ceros.length) P.avisos.push(`categorías en 0 aun después del reintento (se carga así): ${ceros.map((c) => c.categoria).join(', ')}`);
   }
