@@ -191,6 +191,7 @@
   "probar-dictamenes-mistral.mjs": "prueba: dictamenes-mistral.mjs con un runner falso, sin gastar",
   "reexpresion.mjs": "orden: por par de años vecinos de un club de SIIS, qué rubros difieren, si el resultado coincide y si es reexpresión o una fila de lado otro; solo lee",
   "probar-reexpresion.mjs": "prueba: reexpresion.mjs (casos de juguete y Atlético Nacional)",
+  "probar-listas-lote-resumen.mjs": "prueba: listas-lote-resumen.mjs (el resumen de listas-lote --lote cuenta solo los liga-años del lote)",
   "probar-club-siis.mjs": "prueba: los avisos y pasos de club-siis.mjs, en una copia descartable",
   "probar-siis-filas.mjs": "prueba: siis-filas.mjs (el resumen de siis-estado y el aviso del lote por un siis-estado sin .filas.json)",
   "probar-todo-contexto.mjs": "prueba: el contexto de un punto de todo.mjs en un repo de juguete",

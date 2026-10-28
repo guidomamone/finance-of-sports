@@ -22,6 +22,7 @@ import { resolve } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { createRequire } from 'node:module';
 import vm from 'node:vm';
+import { lineasResumen } from './listas-lote-resumen.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const REF = resolve(ROOT, 'tools', 'club-league-reference');
@@ -150,7 +151,7 @@ async function main() {
       for (const liga of Object.keys(NOMBRES).filter((l) => l.startsWith(`${iso}-`))) {
         const anio = NOMBRES[liga][1] && mes >= 9 ? y + 1 : y;
         if (cache[iso]?.leagues?.[liga]?.[anio]) continue;
-        obj[`${liga}|${anio}`] ??= { liga, anio, iso, ids: new Set() };
+        obj[`${liga}|${anio}`] ??= { liga, anio, iso, ids: new Set(), delLote: true }; // (delLote: viene de un documento de la lista; el resumen cuenta solo estos)
       }
     }
   }
@@ -163,7 +164,7 @@ async function main() {
     const iso = liga.slice(0, 2); if (cache[iso]?.leagues?.[liga]?.[anio]) continue;
     (obj[`${liga}|${anio}`] ??= { liga, anio, iso, ids: new Set() }).ids.add(id);
   }
-  const ensayo = process.argv.includes('--ensayo'); let ok = 0; const fallan = [];
+  const ensayo = process.argv.includes('--ensayo'); const ok = []; const fallan = [];
   for (const o of Object.values(obj).sort((a, b) => a.liga.localeCompare(b.liga) || a.anio - b.anio)) {
     const [nombre, partida] = NOMBRES[o.liga];
     const yy = (n) => String(n).slice(2);
@@ -198,13 +199,12 @@ async function main() {
       if (prueba(t, r, extra)) break;
     }
     if (!hecho) {
-      fallan.push(`${o.liga} ${o.anio}${tam ? ` (tamaño conocido ${tam})` : ''}: ${mejor ? `mejor "${mejor.t}" con ${mejor.n} equipos, no encuentra ${mejor.faltan.join(', ') || '(están todos: falla el tamaño)'}${process.argv.includes('--detalle') ? ` | lista: ${mejor.teams.join(', ')}` : ''}` : `ningún título con la temporada y la liga (probados: ${[...probados].join(' / ')})`}`);
+      fallan.push({ delLote: !!o.delLote, txt: `${o.liga} ${o.anio}${tam ? ` (tamaño conocido ${tam})` : ''}: ${mejor ? `mejor "${mejor.t}" con ${mejor.n} equipos, no encuentra ${mejor.faltan.join(', ') || '(están todos: falla el tamaño)'}${process.argv.includes('--detalle') ? ` | lista: ${mejor.teams.join(', ')}` : ''}` : `ningún título con la temporada y la liga (probados: ${[...probados].join(' / ')})`}` });
       continue;
     }
-    ok++; console.log(`OK ${o.liga} ${o.anio}: "${hecho.t}" -> ${hecho.r.teams.length} equipos (${hecho.r.seccion})`);
+    ok.push({ delLote: !!o.delLote }); console.log(`OK ${o.liga} ${o.anio}: "${hecho.t}" -> ${hecho.r.teams.length} equipos (${hecho.r.seccion})`);
     if (!ensayo) execFileSync('node', [FETCH, hecho.t, o.liga, String(o.anio), '--pais', o.iso, ...hecho.extra], { cwd: ROOT, stdio: 'ignore' });
   }
-  console.log(`\nlistas-lote: ${ok} de ${ok + fallan.length} liga-años pasaron la compuerta${ensayo ? ' (ensayo: no se escribió nada)' : ''}.`);
-  for (const f of fallan) console.log(`  NO: ${f}`);
+  for (const l of lineasResumen({ esLote: iLote >= 0, ok, fallan, ensayo })) console.log(l);
 }
 main().catch((e) => { console.error(e.message); process.exit(1); });
