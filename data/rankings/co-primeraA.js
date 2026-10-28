@@ -68,7 +68,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2024: {
     leagueSize: 20,
-    sinDato: ["atlnacional-co","envigado-co"],
+    sinDato: ["atlnacional-co"],
     wiki: {"t":"2024 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:18.183, reportType:"official_balance_sheet",
@@ -97,6 +97,10 @@ window.RANKINGS["co-primeraA"] = {
       { id:"oncecaldas-co", revenue:6.117, reportType:"official_balance_sheet",
         sourceId:"oncecaldas-co-estados-financieros-2024",
         mix:[["Comercial / Sponsors",1.106],["Estadio",2.73],["Televisión",1.609],["Premios por competencias",0.154],["Venta de Jugadores",0.419],["Otros ingresos",0.099]] },
+      { id:"envigado-co", revenue:5.793, reportType:"official_balance_sheet",
+        sourceId:"envigado-co-siis-estado-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",5.074],["Otros ingresos",0.719]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras actividades (educación y otros deportes)","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"alianzafc-co", revenue:4.686, reportType:"official_balance_sheet",
         sourceId:"alianzafc-co-siis-estado-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",4.35],["Otros ingresos",0.336]],
