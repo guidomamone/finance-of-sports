@@ -341,7 +341,6 @@ window.RANKINGS["co-primeraB"] = {
   },
   2016: {
     leagueSize: 16,
-    sinDato: ["realsantander-co"],
     wiki: {"t":"2016 Categoría Primera B season","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"americadecali-co", revenue:5.917, reportType:"official_balance_sheet",
@@ -366,6 +365,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"orsomarso-co", revenue:0.581, reportType:"official_balance_sheet",
         sourceId:"orsomarso-co-siis-estado-2016",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.553],["Otros ingresos",0.028]] },
+      { id:"realsantander-co", revenue:0.554, reportType:"official_balance_sheet",
+        sourceId:"realsantander-co-siis-estado-2016",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.554]] },
       { id:"tigresfc-co", revenue:0.42, reportType:"official_balance_sheet",
         sourceId:"tigresfc-co-siis-estado-2016",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.396],["Otros ingresos",0.024]] },

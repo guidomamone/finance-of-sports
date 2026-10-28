@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Colombia/Real Santander/siis-estado-2025.md",
+  "pdf": "Clubes/Colombia/Real Santander/siis-estado-2025.pdf",
+  "club": "realsantander-co",
+  "year": 2025,
+  "generatedAt": "2026-10-28T13:17:08.023Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        4257.836
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        138.739
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3990.859
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        63.98
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

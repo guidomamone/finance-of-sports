@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Colombia/Real Santander/siis-estado-2020.md",
+  "pdf": "Clubes/Colombia/Real Santander/siis-estado-2020.pdf",
+  "club": "realsantander-co",
+  "year": 2020,
+  "generatedAt": "2026-10-28T13:17:07.872Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1643.611
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        154.334
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2322.567
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        39.939
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

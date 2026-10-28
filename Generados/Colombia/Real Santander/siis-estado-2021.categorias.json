@@ -1,0 +1,64 @@
+{
+ "md": "Clubes/Colombia/Real Santander/siis-estado-2021.md",
+ "club": "realsantander-co",
+ "year": 2021,
+ "generatedAt": "2026-10-28T13:18:32.326Z",
+ "rubrosHuella": "5b39287ef0bf981a85c7586c4ecfe53088aa9599",
+ "jevHuella": "8e94b0814f9b7eda24f4570a980dcc497e67f0e7",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "lump_football_operations",
+   "confianza": 0.98
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_income",
+   "confianza": 0.99
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "other_expenses",
+   "confianza": 1
+  }
+ ]
+}
