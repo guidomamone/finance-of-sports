@@ -27,6 +27,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1255 — Caché de Wikipedia: las 19 páginas que faltaban (Austria, Dinamarca, Escocia, Noruega, Bélgica) y `sponsors.js` regenerado
+- `tools/club-league-reference/contexto/{at,dk,gb,no,be}.json` con las 19 páginas de liga-año que `estadio-sponsor` bajaba en cada corrida sin guardarlas. `generate-sponsors.js` regenerado: 261 entradas sponsor-equipo-año nuevas (at-bundesliga 104, dk-1division 91, gb-scottishpremiership 66) y 31 sponsors nuevos; ASSET_V 2136.
+- Comparado con el `sponsors.js` anterior: ninguna entrada existente se pierde ni cambia (0 de 0); solo se agregan. La de `be` trae una página de tercera división amateur sin estadios ni camisetas.
+- Medición: sin tools cambiadas; auditoría P0 0 · P1 0 tras `publicar`.
+
+---
+
 ## Versión 1254 — medir-pipeline: un medidor con `precalentar` baja lo que falte una vez antes del antes y del después [medir-pipeline.mjs, pipeline-tools.json, probar-medir-pipeline.mjs]
 - Un medidor con `precalentar` en `pipeline-tools.json` corre ese comando una vez (con la tool editada) antes de las dos corridas; el antes y el después leen la misma caché y lo bajado se revierte al terminar el después. Avisa si quedan páginas «SIN PODER BAJAR». El medidor `contexto` lo usa: antes cada corrida bajaba por su cuenta y una descarga fallida en una sola daba diferencias falsas.
 - Medición: `medir-pipeline.mjs` no es del pipeline (es el medidor): no pide medición; `probar-medir-pipeline.mjs` ok con 3 casos nuevos (idéntico con red inestable simulada, lo bajado se revierte, el precalentado corre una vez). No corrí el medidor `contexto` real con esto (baja de Wikipedia).
