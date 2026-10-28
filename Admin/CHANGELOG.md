@@ -27,6 +27,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1253 — estadio-sponsor: una falla de red ya no queda como «la página no existe»; probar-todas dice por qué falló una prueba [estadio-sponsor.mjs, estadio-sponsor-wikipedia.mjs, wikipedia-pagina.mjs, probar-todas.mjs, prueba-fallo.mjs, probar-pagina-wikipedia.mjs, probar-prueba-fallo.mjs]
+- `pagina()` (ahora en `wikipedia-pagina.mjs`) devuelve la página, `null` solo si Wikipedia dice que no existe, o `{ falloRed }` si no pudo saberlo (HTML o 503 por límite de pedidos, corte): antes los dos últimos eran `null` y la falla se guardaba en el caché como página inexistente, sin reintento y con estadio y capacidad vacíos sin error. Una falla no se guarda; el ensayo imprime «N bajadas; M SIN PODER BAJAR (motivo)» y `--escribir` se niega mientras queden páginas sin bajar. `probar-todas.mjs` muestra, al fallar una prueba sin líneas `MAL`, la cola de su salida y el código (`prueba-fallo.mjs`). Pruebas nuevas.
+- Medición: lote completo con 11 diferencias explicadas (medidor contexto: páginas que una corrida u otra no pudo bajar; sobre el mismo caché completo, `HEAD` y la versión nueva dan la misma salida en los 1564 ejercicios). Dato para decidir aparte: el caché versionado no tiene 19 páginas (at, dk, gb, no) y bajarlas cambiaría `data/sponsors.js`; no se commitearon.
+
+---
+
 ## Versión 1252 — patrones-tools.json: toda tool del pipeline con su entrada, y un chequeo [478 · patrones-tools.mjs, patrones-tools.json, clasificar-tools.mjs, cerrar-tool.mjs, patron.mjs, probar-patrones-tools.mjs]
 - Las 40 tools del pipeline que no tenían entrada en `tools/patrones-tools.json` la tienen: 11 con `sinDocumentos` (siis-estado, audit.js, gestiones-tanda, etc.) y el resto con `porCambio` (lee documentos: el patrón se pasa con cada cambio; no se inventaron regex). `clasificar-tools.mjs --check` (el que corre `audit.js`) avisa una tool del pipeline sin entrada; `cerrar-tool` y `patron` distinguen «sin entrada» de «leen documentos» en su mensaje. `probar-patrones-tools.mjs` nueva; `probar-patron.mjs` espera el mensaje nuevo.
 - Medición: lote chico idéntico (medidor audit); veredicto GENERAL; sin revisión independiente (chequeo nuevo en audit.js).

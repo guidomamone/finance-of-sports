@@ -31,7 +31,7 @@ import { createRequire } from 'node:module';
 import vm from 'node:vm';
 import { execFileSync } from 'node:child_process';
 import { parseAnios, tablaAnios } from './estadio-sponsor-anios.mjs';
-import { pega, cargar, pagina, leerPagina, temporadaDe, delClub, LOCAL, paginaLocal, LANG_PAIS, fichaDe, api, enlaceDelClub, camisetasDePagina, valorDelEjercicio, CTX_DIR } from './estadio-sponsor-wikipedia.mjs';
+import { pega, cargar, pagina, entradaDeCache, leerPagina, temporadaDe, delClub, LOCAL, paginaLocal, LANG_PAIS, fichaDe, api, enlaceDelClub, camisetasDePagina, valorDelEjercicio, CTX_DIR } from './estadio-sponsor-wikipedia.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const REF = resolve(ROOT, 'tools', 'club-league-reference');
@@ -137,13 +137,18 @@ async function main() {
   const ctx = {}; const tocados = new Set(); const faltaBajar = [];
   for (const [k, x] of necesarias) { const c = (ctx[x.iso] ??= cacheCtx(x.iso)); if (refrescar || !c[x.liga]?.[x.s] || c[x.liga][x.s].pagina === undefined) faltaBajar.push(x); }
   console.log(`${ejercicios.length} ejercicios (${sinLiga} sin liga en club-leagues, ${sinLista} sin lista); ${necesarias.size} liga-años, ${faltaBajar.length} páginas para bajar`);
+  let bajadas = 0; const sinBajar = [];
   for (const [i, x] of faltaBajar.entries()) {
     const p = await pagina(x.page, x.lang);
-    // una página que no existe (la temporada en curso de una liga sin página todavía) queda anotada para no pedirla en cada corrida
-    (ctx[x.iso][x.liga] ??= {})[x.s] = p ? { pagina: p.titulo, lang: x.lang, revid: p.revid, ...leerPagina(p.wikitext) } : { pagina: null, pedida: x.page, estadios: [], kits: [] };
+    // una página que no existe (la temporada en curso de una liga sin página todavía) queda anotada para no pedirla en cada corrida; una que NO se pudo bajar (red) no se anota: se vuelve a pedir en la próxima corrida
+    const entrada = entradaDeCache(x, p, leerPagina);
+    if (!entrada) { sinBajar.push(`${x.liga} ${x.s} (${p.motivo})`); continue; }
+    (ctx[x.iso][x.liga] ??= {})[x.s] = entrada; bajadas++;
     tocados.add(x.iso);
     if ((i + 1) % 25 === 0) { console.error(`  ${i + 1}/${faltaBajar.length} páginas`); if (escribir || args.includes('--todas')) for (const iso of tocados) guardarCtx(iso, ctx[iso]); }
   }
+  if (faltaBajar.length) console.log(`páginas de Wikipedia: ${bajadas} bajadas de la red${sinBajar.length ? `; ${sinBajar.length} SIN PODER BAJAR (no se guardan, el estadio y la capacidad de esos años salen vacíos hasta la próxima corrida): ${sinBajar.join(' · ')}` : ''}`);
+  if (escribir && sinBajar.length) { for (const iso of tocados) guardarCtx(iso, ctx[iso]); console.error('--escribir se niega: con páginas que no se pudieron bajar escribiría estadio y capacidad vacíos. Se guardó lo bajado; volvé a correr.'); process.exit(1); }
   // la caché se guarda también en --ensayo: es lo bajado de Wikipedia, no un dato del sitio
   for (const iso of tocados) guardarCtx(iso, ctx[iso]);
   const leida = (e) => ctx[e.iso]?.[e.liga]?.[e.s] || null;
@@ -177,13 +182,13 @@ async function main() {
     const faltaKit = (e) => { const p = leida(e); if (!p) return true; const r = delClub(p, nombresDe(e)); if (r.soloActual && !e.ultima) return true; return !r.sponsor || !r.marca; };
     const pedir = [...new Set(ejercicios.filter((e) => e.page && faltaKit(e)).map((e) => e.id))].filter((id) => refrescar || !clubesCache[id]);
     console.log(`páginas de club: ${pedir.length} clubes para buscar`);
-    const temporadas = new Map(); // "lang|título" -> wikitext
+    const temporadas = new Map(); let sinPaginaClub = 0; // "lang|título" -> wikitext
     for (const [i, id] of pedir.entries()) {
-      const r = { enlace: null, en: null, local: null };
+      const r = { enlace: null, en: null, local: null }; let falloClub = false;
       // el enlace, desde la página de temporada de alguno de sus ejercicios (la más nueva primero)
       for (const e of ejercicios.filter((x) => x.id === id && leida(x)?.pagina).sort((a, b) => b.y - a.y)) {
         const p = leida(e); const k = `${p.lang}|${p.pagina}`;
-        if (!temporadas.has(k)) temporadas.set(k, (await pagina(p.pagina, p.lang))?.wikitext || '');
+        if (!temporadas.has(k)) { const t = await pagina(p.pagina, p.lang); if (t?.falloRed) { falloClub = true; continue; } temporadas.set(k, t?.wikitext || ''); } // (falla de red: se salta, no se anota)
         const dest = enlaceDelClub(temporadas.get(k), nombresDe(e));
         if (dest) { r.enlace = { lang: p.lang, titulo: dest }; break; }
       }
@@ -196,14 +201,17 @@ async function main() {
           for (const [clave, lang] of [['en', 'en'], ['local', local]]) {
             if (!lang || !titulos[lang] || (clave === 'local' && lang === 'en')) continue;
             const art = await pagina(titulos[lang], lang);
+            if (art?.falloRed) { falloClub = true; continue; } // falla de red: no se anota «sin ficha», se vuelve a pedir
             if (!art || !fichaDe(id).test(art.wikitext)) { r[clave] = { pagina: titulos[lang], lang, sinFicha: true }; continue; }
             r[clave] = { pagina: art.titulo, lang, revid: art.revid, ...camisetasDePagina(art.wikitext) };
           }
         }
       }
+      if (falloClub) { sinPaginaClub++; continue; } // alguna página no se pudo bajar (red): el club no se anota, se vuelve a pedir en la próxima corrida
       clubesCache[id] = r;
       if ((i + 1) % 10 === 0) { console.error(`  ${i + 1}/${pedir.length}`); writeFileSync(CLUBES_F, JSON.stringify(clubesCache, null, 1) + '\n', 'utf8'); }
     }
+    if (sinPaginaClub) console.log(`páginas de club: ${sinPaginaClub} club(es) SIN PODER BAJAR (red): no se guardan, se vuelven a pedir en la próxima corrida`);
     mkdirSync(CTX_DIR, { recursive: true }); writeFileSync(CLUBES_F, JSON.stringify(clubesCache, null, 1) + '\n', 'utf8');
   }
   // lo que la página del club da para un ejercicio: { sponsor, marca, fuente, motivo } (motivo: por qué no dio, para el ensayo)

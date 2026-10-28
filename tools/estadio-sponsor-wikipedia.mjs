@@ -27,17 +27,9 @@ export function cargar() {
 }
 
 const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
-export async function pagina(title, lang) {
-  for (let i = 0; i < 4; i++) {
-    await dormir(1500 * (i ? 4 * i : 1));
-    try {
-      const r = await fetch(`https://${lang}.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=wikitext|revid&format=json&redirects=1`, { headers: { 'User-Agent': 'finance-of-sports/1.0 (https://financeofsports.com; research, pocas consultas)' } });
-      const j = JSON.parse(await r.text()); if (j.error) return null;
-      return { wikitext: j.parse.wikitext['*'], revid: j.parse.revid, titulo: j.parse.title };
-    } catch { /* corte por exceso: reintenta */ }
-  }
-  return null;
-}
+// pagina() y entradaDeCache() viven en wikipedia-pagina.mjs (sin imports: se prueban sin red ni el ciclo con estadio-sponsor.mjs); acá se re-exportan para los llamadores de siempre.
+export { pagina, entradaDeCache } from './wikipedia-pagina.mjs';
+import { pagina } from './wikipedia-pagina.mjs';
 
 // ---- tablas wikitable a grilla, con rowspan ----
 const sinRefs = (s) => s.replace(/<ref[^>]*\/>/g, '').replace(/<ref[^>]*>[\s\S]*?<\/ref>/g, '').replace(/<!--[\s\S]*?-->/g, '');
@@ -210,7 +202,7 @@ export async function paginaLocal(iso, liga, anio, partida, equiposEn) {
   const formas = formasTemporada(anio, partida);
   const titulos = await buscarLocal(cfg.lang, `${nombre} ${formas[partida ? 0 : 0]}`);
   for (const t of titulos.filter((t) => formas.some((f) => t.includes(f)) && !(partida ? false : new RegExp(`${anio}[–/-]|[–/-]${anio}`).test(t)))) {
-    const p = await pagina(t, cfg.lang); if (!p) continue;
+    const p = await pagina(t, cfg.lang); if (!p || p.falloRed) continue;
     const r = leerPagina(p.wikitext);
     const nombresPag = [...r.estadios.flat(), ...r.kits.flatMap((k) => k.filas)].map((x) => x.club);
     const cubre = equiposEn.filter((eq) => nombresPag.some((n) => pega(n, eq))).length;
