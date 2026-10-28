@@ -68,6 +68,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Envigado/siis-estado-2021.pdf"
+    },
+    {
+      "id": "envigado-co-siis-estado-2022",
+      "club_id": "envigado-co",
+      "title": "Envigado Fútbol Club S.A. — siis-estado-2022 (ejercicio 2022)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Envigado/siis-estado-2022.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2025,"last_year":2025}],
@@ -616,6 +624,63 @@
           "womens_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
           "education": {"in":"lump_football_operations","possible":true,"by":"precedente"}
         },
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "currency": "COP",
+      "source_id": "envigado-co-siis-estado-2022",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2022-12-31"},
+      "revenue": [
+        {"label":"Matrículas","category":"other_sporting_sections","subcategory":"youth_football","amount":41.925,"disclosure":"aggregated"},
+        {"label":"Mensualidades","category":"other_sporting_sections","subcategory":"youth_football","amount":770.0847,"disclosure":"aggregated"},
+        {"label":"Taquilla","category":"matchday","subcategory":"matchday_competition","amount":580.13,"disclosure":"aggregated"},
+        {"label":"Abonados","category":"season_tickets","subcategory":"season_tickets","amount":66.395,"disclosure":"aggregated"},
+        {"label":"Venta de derechos deportivos","category":"player_transfers","subcategory":"player_sales","amount":11998.5595,"disclosure":"aggregated"},
+        {"label":"Préstamo de derechos deportivo","category":"player_transfers","subcategory":"player_sales","amount":90.639845,"disclosure":"aggregated"},
+        {"label":"Contribución de solidaridad","category":"player_transfers","subcategory":"player_sales","amount":526.560367,"disclosure":"aggregated"},
+        {"label":"Publicidad y propaganda","category":"commercial","subcategory":"sponsorship_commercial","amount":717.003,"disclosure":"aggregated"},
+        {"label":"Dimayor","category":"media_rights","subcategory":"broadcasting","amount":5030.059283,"disclosure":"aggregated"},
+        {"label":"Federación colombiana de futbol","category":"prize_money","subcategory":"competition_bonus","amount":484.545,"disclosure":"aggregated"},
+        {"label":"Donaciones","category":"grants_donations","subcategory":"grants_donations","amount":11.933028,"disclosure":"aggregated"},
+        {"label":"Patrocinio","category":"commercial","subcategory":"sponsorship_commercial","amount":1517.246545,"disclosure":"aggregated"},
+        {"label":"Cuotas de sostenimiento","category":"membership","subcategory":"member_dues","amount":1392.643507,"disclosure":"aggregated"},
+        {"label":"Arrendamientos","category":"other_revenue","subcategory":"other_income","amount":75,"disclosure":"aggregated"},
+        {"label":"Venta de mercancías","category":"commercial","subcategory":"sponsorship_commercial","amount":303.491055,"disclosure":"aggregated"},
+        {"label":"Otras actividades de servicios","category":"other_revenue","subcategory":"other_income","amount":1932.04,"disclosure":"aggregated"},
+        {"label":"Devoluciones rebajas y descuentos","category":"other_revenue","subcategory":"other_income","amount":-21.49983,"disclosure":"aggregated"},
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":359.858,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-228.699,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-13983.457,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2246.526,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-160.817,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":2756.661,"tax":-4445.255,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":25876.614,"expenses":16619.499,"net_result":7568.521},
+      "adjustments": {
+        "extra_rows": [{"label":"Ingresos financieros","amount":2756.661},{"label":"Ingreso (gasto) por impuestos","amount":-4445.255}],
+        "no_breakdown": [
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 228.699,
+            "reason": "Costo de ventas es 84% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 13983.457,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
+          }
+        ],
         "revenue_basis": "full"
       }
     },

@@ -156,7 +156,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2022: {
     leagueSize: 20,
-    sinDato: ["atlnacional-co","envigado-co"],
+    sinDato: ["atlnacional-co"],
     wiki: {"t":"2022 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:12.989, reportType:"official_balance_sheet",
@@ -171,6 +171,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"deportestolima-co", revenue:9.545, reportType:"official_balance_sheet",
         sourceId:"deportestolima-co-siis-estado-2022",
         mix:[["Comercial / Sponsors",1.586],["Estadio",1.97],["Televisión",1.39],["Premios por competencias",3.356],["Venta de Jugadores",0.303],["Otros ingresos",0.94]] },
+      { id:"envigado-co", revenue:5.38, reportType:"official_balance_sheet",
+        sourceId:"envigado-co-siis-estado-2022",
+        mix:[["Cuotas Sociales",0.29],["Comercial / Sponsors",0.528],["Estadio",0.134],["Televisión",1.046],["Premios por competencias",0.101],["Venta de Jugadores",2.623],["Otras actividades (educación y otros deportes)",0.169],["Subsidios y donaciones",0.002],["Otros ingresos",0.488]] },
       { id:"laequidad-co", revenue:4.349, reportType:"official_balance_sheet",
         sourceId:"laequidad-co-siis-estado-2022",
         mix:[["Cuotas Sociales",0.011],["Comercial / Sponsors",1.278],["Estadio",0.293],["Televisión",1.15],["Premios por competencias",0.273],["Venta de Jugadores",0.791],["Otras actividades (educación y otros deportes)",0.238],["Subsidios y donaciones",0.007],["Otros ingresos",0.309]] },
