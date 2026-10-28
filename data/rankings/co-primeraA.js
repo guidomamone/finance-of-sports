@@ -68,9 +68,11 @@ window.RANKINGS["co-primeraA"] = {
   },
   2024: {
     leagueSize: 20,
-    sinDato: ["atlnacional-co"],
     wiki: {"t":"2024 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
+      { id:"atlnacional-co", revenue:38.155, reportType:"official_balance_sheet",
+        sourceId:"atlnacional-co-siis-estado-2024",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",36.944],["Otros ingresos",1.212]] },
       { id:"independientemedellin-co", revenue:18.183, reportType:"official_balance_sheet",
         sourceId:"independientemedellin-co-siis-estado-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",17.837],["Otros ingresos",0.347]] },
