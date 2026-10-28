@@ -3,7 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraB"] = {
   2025: {
     leagueSize: 16,
-    sinDato: ["jaguares-co","realsantander-co"],
+    sinDato: ["realsantander-co"],
     wiki: {"t":"2025 Torneo DIMAYOR","lang":"en","at":"2026-10-17","n":16},
     clubs: [
       { id:"cortulua-co", revenue:3.675, reportType:"official_balance_sheet",
@@ -18,6 +18,9 @@ window.RANKINGS["co-primeraB"] = {
       { id:"realcartagena-co", revenue:3.023, reportType:"official_balance_sheet",
         sourceId:"realcartagena-co-siis-estado-2025",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.681],["Otros ingresos",0.341]] },
+      { id:"jaguares-co", revenue:2.753, reportType:"official_balance_sheet",
+        sourceId:"jaguares-co-siis-estado-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.731],["Otros ingresos",0.021]] },
       { id:"leonesfc-co", revenue:1.9, reportType:"official_balance_sheet",
         sourceId:"leonesfc-co-siis-estado-2025",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.879],["Otros ingresos",0.021]] },

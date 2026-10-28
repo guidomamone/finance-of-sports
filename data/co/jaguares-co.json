@@ -84,6 +84,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Jaguares/siis-estado-2024.pdf"
+    },
+    {
+      "id": "jaguares-co-siis-estado-2025",
+      "club_id": "jaguares-co",
+      "title": "Jaguares Fútbol Club S.A. — siis-estado-2025 (ejercicio 2025)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Jaguares/siis-estado-2025.pdf"
     }
   ],
   "members": null,
@@ -395,6 +403,50 @@
         ],
         "no_breakdown": [
           {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":10435.455,"reason":"el documento no desglosa este renglón","kind":"net_sales"}
+        ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "currency": "COP",
+      "source_id": "jaguares-co-siis-estado-2025",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2025-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 10261.854,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":80.676,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-4417.012,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-4764.101,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-311.145,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-63.632,"tax":-418.668,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":10342.53,"expenses":9492.258,"net_result":367.972},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":9.466},
+          {"label":"Costos financieros","amount":-73.098},
+          {"label":"Ingreso (gasto) por impuestos","amount":-418.668}
+        ],
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":10261.854,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 4417.012,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
+          }
         ],
         "revenue_basis": "full"
       }
