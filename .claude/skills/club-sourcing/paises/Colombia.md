@@ -52,8 +52,9 @@ corporación). Ver el archivo de cada club.
 3. Elegir el resultado con punto de entrada "Individuales" (o el del ejercicio más reciente si hay
    varios) y click "VER DETALLES" o directo "VISTA 360".
 4. En Vista 360, click "Ver otros documentos adicionales" — si aparece una tabla con radicados, esos
-   son los PDFs reales: "NOTAS EF" (a pesar del nombre, es el paquete COMPLETO: situación financiera
-   + resultado integral + cambios en patrimonio + flujo de efectivo + notas, 30-60 páginas),
+   son los PDFs reales: "NOTAS EF" (son las notas a los estados; los estados mismos pueden no venir,
+   y en varios clubes no traen el estado de resultados por rubro: ese sale de SIIS, índice
+   `siis_resultadointegral`, que es el dato oficial de cada año; ver `Admin/paises/co.md`),
    "CERTIFICACION EF" y "DICTAMEN DEL REVISOR FISCAL".
 5. Cada link "Ver" de esa tabla abre un visor (`servicios.supersociedades.gov.co/bpmformularios/...`)
    cuya petición de red real apunta a un PDF descargable directo en
