@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Colombia/Atletico Nacional/siis-estado-2023.pdf",
  "md": "Clubes/Colombia/Atletico Nacional/siis-estado-2023.md",
- "generado": "2026-10-28T00:35:27.766Z",
+ "generado": "2026-10-28T00:43:29.166Z",
  "scriptHuella": "f1d4dee41de6",
- "estado": "cola",
+ "estado": "ok",
  "clubId": "atlnacional-co",
  "year": 2023,
  "escala": {
@@ -25,10 +25,7 @@
    "fecha": "2026-10-28"
   }
  ],
- "cola": [
-  "48c9fd9",
-  "baf0128"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -53,8 +50,8 @@
   },
   {
    "nombre": "documento del año 2024",
-   "ok": false,
-   "detalle": "ingresos de 2023: 136219.814 en este documento y 131056.739 en siis-estado-2024.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2023: 136219.814 en este documento y 136219.814 en siis-estado-2024.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2022",

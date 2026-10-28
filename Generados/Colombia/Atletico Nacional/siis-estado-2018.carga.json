@@ -1,22 +1,143 @@
 {
  "pdf": "Clubes/Colombia/Atletico Nacional/siis-estado-2018.pdf",
- "generado": "2026-10-28T00:36:27.399Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
+ "generado": "2026-10-28T00:43:31.669Z",
+ "frena": [],
+ "avisos": [
+  "gestión: ningún presidente confirmado cubre 2018 (cierre 2018-12-31); pregunta en la cola (no frena)"
  ],
- "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "atlnacional-co",
+  "year": 2018,
+  "cierre": "2018-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Ingresos de actividades ordinarias",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 58226.401,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros ingresos",
+    "normalizedCategory": "other_income",
+    "amountNative": 13741.103,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Costo de ventas",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -5745.125,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Gastos de ventas",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -96835.801,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Gastos de administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -4559.395,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros gastos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "COP",
+   "fxRef": "COP@2018-12-31",
+   "sourceId": "atlnacional-co-siis-estado-2018",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -271.604,
+   "tax": -1702.741,
+   "extraRows": [
+    {
+     "label": "Ingresos financieros",
+     "value": 1739.073
+    },
+    {
+     "label": "Costos financieros",
+     "value": -2010.677
+    },
+    {
+     "label": "Ingreso (gasto) por impuestos",
+     "value": -1702.741
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Ingresos de actividades ordinarias",
+     "lado": "revenue",
+     "importe": 58226.401,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "net_sales"
+    },
+    {
+     "renglon": "Costo de ventas",
+     "lado": "expense",
+     "importe": 5745.125,
+     "motivo": "Costo de ventas es 76% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+     "tipo": "cost_of_sales"
+    },
+    {
+     "renglon": "Gastos de ventas",
+     "lado": "expense",
+     "importe": 96835.801,
+     "motivo": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+     "tipo": "other"
+    }
+   ],
+   "baseIngreso": "full",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 71967.504,
+   "officialTotalExpenses": 107140.321,
+   "officialPAT": -37147.162
+  },
+  "source": {
+   "id": "atlnacional-co-siis-estado-2018",
+   "clubId": "atlnacional-co",
+   "title": "Atlético Nacional S.A. — siis-estado-2018 (ejercicio 2018)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Colombia/Atletico Nacional/siis-estado-2018.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Atletico Nacional/siis-estado-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Colombia/Atletico Nacional/siis-estado-2018.md",
  "reemplaza": false,
  "periodo": {
@@ -29,5 +150,240 @@
  },
  "clubId": "atlnacional-co",
  "year": 2018,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Atletico Nacional/siis-estado-2018.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-28 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2018.md L11-L24",
+   "autor": "Claude",
+   "fecha": "2026-10-28"
+  }
+ ],
+ "seleccion": {
+  "filas": 9,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "native": 58226.401,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 58226.401,
+   "cat": "lump_football_operations",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 58226.401
+  },
+  {
+   "label": "Otros ingresos",
+   "page": 1,
+   "native": 13741.103,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 13741.103,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 13741.103
+  },
+  {
+   "label": "Costo de ventas",
+   "page": 1,
+   "native": 5745.125,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5745.125,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Costo de ventas es 76% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+   "destino": "expense",
+   "amountNative": -5745.125
+  },
+  {
+   "label": "Gastos de ventas",
+   "page": 1,
+   "native": 96835.801,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 96835.801,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+   "destino": "expense",
+   "amountNative": -96835.801
+  },
+  {
+   "label": "Gastos de administración",
+   "page": 1,
+   "native": 4559.395,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4559.395,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4559.395
+  },
+  {
+   "label": "Otros gastos",
+   "page": 1,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Ingresos financieros",
+   "page": null,
+   "native": 1739.073,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Costos financieros",
+   "page": null,
+   "native": -2010.677,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Ingreso (gasto) por impuestos",
+   "page": null,
+   "native": -1702.741,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 71967.504,
+  "expSum": -107140.321,
+  "officialTotalRevenue": 71967.504,
+  "officialTotalExpenses": 107140.321,
+  "officialPAT": -37147.162,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -37147.162,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 71967.504
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 107140.321
+  }
+ },
+ "liga": {
+  "valor": "co-primeraA",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2018,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2018-12-31",
+   "fuente": "año del ejercicio + mes de cierre (los demás .md del club (1 de 1 documentos cierran en el mes 12); este documento no alcanza solo)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "COP",
+   "fuente": "moneda de curso legal de Colombia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "COP@2018-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene COP@2018-12-31 = 3249.75 (TRM oficial (Superintendencia Financiera de Colombia / Banco de la República) al 31/12/2018)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "atlnacional-co-siis-estado-2018",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "co-primeraA",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 2,
+  "lineasGasto": 4,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

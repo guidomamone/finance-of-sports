@@ -278,6 +278,7 @@ const FX_CLOSE = {
   'HRK@2022-12-31': { fx: 7.064035, source: 'market_close', label: 'Tipo medio de la Hrvatska narodna banka al 2022-12-31' },
   'NOK@2024-02-29': { fx: 10.6152, source: 'market_close', label: 'Tipo medio de referencia de Norges Bank al 2024-02-29' },
   'COP@2016-12-31': { fx: 3000.71, source: 'market_close', label: 'TRM oficial (Banco de la República / Superfinanciera de Colombia) al 2016-12-31' },
+  'COP@2015-12-31': { fx: 3149.47, source: 'market_close', label: 'TRM oficial (Banco de la República / Superfinanciera de Colombia) al 2015-12-31' },
 };
 
 // fxMetaFor(meta): el tipo de cambio de un ejercicio (o de un overlay) como {fx, source, label, ref}. Es el ÚNICO lugar que resuelve

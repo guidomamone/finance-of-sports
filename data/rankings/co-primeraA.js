@@ -458,4 +458,13 @@ window.RANKINGS["co-primeraA"] = {
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
+  2015: {
+    leagueSize: 20,
+    wiki: {"t":"2015 Categoría Primera A season","lang":"en","at":"2026-10-02","n":20},
+    clubs: [
+      { id:"atlnacional-co", revenue:23.84, reportType:"official_balance_sheet",
+        sourceId:"atlnacional-co-siis-estado-2015",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",22.905],["Otros ingresos",0.935]] },
+    ],
+  },
 };

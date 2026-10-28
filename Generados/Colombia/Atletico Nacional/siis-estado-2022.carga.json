@@ -1,11 +1,9 @@
 {
  "pdf": "Clubes/Colombia/Atletico Nacional/siis-estado-2022.pdf",
- "generado": "2026-10-28T00:36:27.732Z",
+ "generado": "2026-10-28T00:43:32.082Z",
  "frena": [],
  "avisos": [
-  "materialidad: \"Deterioro de valor de ganancias y reversión de pérdidas por deterioro de valor (pérdidas por deterioro de valor) determinado de acuerdo con la NIIF 9\" va como other_expenses con 0.75 (0.00% de gastos; acumulado sin preguntar 0.00%)",
-  "categorías en 0 en un documento con filas armadas a mano (el reintento con IA no puede cambiarlas; se carga así): Salarios del plantel",
-  "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-12-31); pregunta en la cola (no frena)"
+  "materialidad: \"Deterioro de valor de ganancias y reversión de pérdidas por deterioro de valor (pérdidas por deterioro de valor) determinado de acuerdo con la NIIF 9\" va como other_expenses con 0.75 (0.00% de gastos; acumulado sin preguntar 0.00%)"
  ],
  "ejercicio": {
   "clubId": "atlnacional-co",
@@ -37,23 +35,23 @@
   "expenseLines": [
    {
     "rawLabel": "Costo de ventas",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "lump_football_operations_expense",
     "amountNative": -71591.454,
     "disclosureLevel": "aggregated",
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos de ventas",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "lump_football_operations_expense",
     "amountNative": -15127.557,
     "disclosureLevel": "aggregated",
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos de administración",
@@ -127,6 +125,20 @@
      "importe": 88681.994,
      "motivo": "el documento no desglosa este renglón",
      "tipo": "net_sales"
+    },
+    {
+     "renglon": "Costo de ventas",
+     "lado": "expense",
+     "importe": 71591.454,
+     "motivo": "Costo de ventas es 77% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+     "tipo": "cost_of_sales"
+    },
+    {
+     "renglon": "Gastos de ventas",
+     "lado": "expense",
+     "importe": 15127.557,
+     "motivo": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+     "tipo": "other"
     }
    ],
    "baseIngreso": "full",
@@ -214,11 +226,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 71591.454,
-   "cat": "other_expenses",
+   "cat": "lump_football_operations_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "categorias.json",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Costo de ventas es 77% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
    "destino": "expense",
    "amountNative": -71591.454
   },
@@ -229,11 +242,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 15127.557,
-   "cat": "admin_general_expense",
+   "cat": "lump_football_operations_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "categorias.json",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
    "destino": "expense",
    "amountNative": -15127.557
   },

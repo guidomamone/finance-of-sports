@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Colombia/Atletico Nacional/siis-estado-2019.pdf",
  "md": "Clubes/Colombia/Atletico Nacional/siis-estado-2019.md",
- "generado": "2026-10-28T00:35:27.589Z",
+ "generado": "2026-10-28T00:43:29.044Z",
  "scriptHuella": "f1d4dee41de6",
- "estado": "cola",
+ "estado": "ok",
  "clubId": "atlnacional-co",
  "year": 2019,
  "escala": {
@@ -25,10 +25,7 @@
    "fecha": "2026-10-28"
   }
  ],
- "cola": [
-  "7918aca",
-  "908faee"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -53,8 +50,8 @@
   },
   {
    "nombre": "documento del año 2020",
-   "ok": false,
-   "detalle": "ingresos de 2019: 109522.774 en este documento y 94619.857 en siis-estado-2020.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2019: 109522.774 en este documento y 109522.774 en siis-estado-2020.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2018",

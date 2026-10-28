@@ -1,22 +1,143 @@
 {
  "pdf": "Clubes/Colombia/Atletico Nacional/siis-estado-2015.pdf",
- "generado": "2026-10-28T00:36:26.935Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
+ "generado": "2026-10-28T00:43:31.134Z",
+ "frena": [],
+ "avisos": [
+  "gestión: ningún presidente confirmado cubre 2015 (cierre 2015-12-31); pregunta en la cola (no frena)"
  ],
- "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "atlnacional-co",
+  "year": 2015,
+  "cierre": "2015-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Ingresos de actividades ordinarias",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 72138.152,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros ingresos",
+    "normalizedCategory": "other_income",
+    "amountNative": 2944.225,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Costo de ventas",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -6176.094,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Gastos de ventas",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -63935.069,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Gastos de administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2506.421,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros gastos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -690.367,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "COP",
+   "fxRef": "COP@2015-12-31",
+   "sourceId": "atlnacional-co-siis-estado-2015",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -1129.694,
+   "tax": -2401.624,
+   "extraRows": [
+    {
+     "label": "Ingresos financieros",
+     "value": 1077.536
+    },
+    {
+     "label": "Costos financieros",
+     "value": -2207.23
+    },
+    {
+     "label": "Ingreso (gasto) por impuestos",
+     "value": -2401.624
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Ingresos de actividades ordinarias",
+     "lado": "revenue",
+     "importe": 72138.152,
+     "motivo": "el documento no desglosa este renglón",
+     "tipo": "net_sales"
+    },
+    {
+     "renglon": "Costo de ventas",
+     "lado": "expense",
+     "importe": 6176.094,
+     "motivo": "Costo de ventas es 76% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+     "tipo": "cost_of_sales"
+    },
+    {
+     "renglon": "Gastos de ventas",
+     "lado": "expense",
+     "importe": 63935.069,
+     "motivo": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+     "tipo": "other"
+    }
+   ],
+   "baseIngreso": "full",
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 75082.377,
+   "officialTotalExpenses": 73307.951,
+   "officialPAT": -1756.892
+  },
+  "source": {
+   "id": "atlnacional-co-siis-estado-2015",
+   "clubId": "atlnacional-co",
+   "title": "Atlético Nacional S.A. — siis-estado-2015 (ejercicio 2015)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "documento": "Clubes/Colombia/Atletico Nacional/siis-estado-2015.pdf",
+   "note": "Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Atletico Nacional/siis-estado-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Colombia/Atletico Nacional/siis-estado-2015.md",
  "reemplaza": false,
  "periodo": {
@@ -29,5 +150,246 @@
  },
  "clubId": "atlnacional-co",
  "year": 2015,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Atletico Nacional/siis-estado-2015.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-28 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2015.md L11-L24",
+   "autor": "Claude",
+   "fecha": "2026-10-28"
+  }
+ ],
+ "seleccion": {
+  "filas": 9,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "page": 1,
+   "native": 72138.152,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 72138.152,
+   "cat": "lump_football_operations",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 72138.152
+  },
+  {
+   "label": "Otros ingresos",
+   "page": 1,
+   "native": 2944.225,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2944.225,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2944.225
+  },
+  {
+   "label": "Costo de ventas",
+   "page": 1,
+   "native": 6176.094,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6176.094,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Costo de ventas es 76% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+   "destino": "expense",
+   "amountNative": -6176.094
+  },
+  {
+   "label": "Gastos de ventas",
+   "page": 1,
+   "native": 63935.069,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 63935.069,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+   "destino": "expense",
+   "amountNative": -63935.069
+  },
+  {
+   "label": "Gastos de administración",
+   "page": 1,
+   "native": 2506.421,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2506.421,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2506.421
+  },
+  {
+   "label": "Otros gastos",
+   "page": 1,
+   "native": 690.367,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 690.367,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -690.367
+  },
+  {
+   "label": "Ingresos financieros",
+   "page": null,
+   "native": 1077.536,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Costos financieros",
+   "page": null,
+   "native": -2207.23,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Ingreso (gasto) por impuestos",
+   "page": null,
+   "native": -2401.624,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 75082.377,
+  "expSum": -73307.951,
+  "officialTotalRevenue": 75082.377,
+  "officialTotalExpenses": 73307.951,
+  "officialPAT": -1756.892,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -1756.892,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 75082.377
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 73307.951
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "COP@2015-12-31",
+  "fx": 3149.47,
+  "source": "market_close",
+  "label": "TRM oficial (Banco de la República / Superfinanciera de Colombia) al 2015-12-31"
+ },
+ "liga": {
+  "valor": "co-primeraA",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2015,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2015-12-31",
+   "fuente": "año del ejercicio + mes de cierre (los demás .md del club (1 de 1 documentos cierran en el mes 12); este documento no alcanza solo)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "COP",
+   "fuente": "moneda de curso legal de Colombia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "COP@2015-12-31",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 3149.47. --escribir agrega 'COP@2015-12-31' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "atlnacional-co-siis-estado-2015",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "co-primeraA",
+   "fuente": "data/club-leagues/co.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "ancla": null,
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 2,
+  "lineasGasto": 4,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

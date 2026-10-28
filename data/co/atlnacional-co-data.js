@@ -1,5 +1,9 @@
 // GENERADO desde data/co/atlnacional-co.json por tools/generar-data.mjs: no editar a mano (se edita el JSON).
 const atlnacionalCoRevenueLinesByYear = {
+  2015: [
+    {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":72138.152,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":2944.225,"disclosureLevel":"aggregated"},
+  ],
   2025: [
     {"rawLabel":"Taquillas nacionales","normalizedCategory":"matchday_competition","amountNative":59883.937,"disclosureLevel":"detailed"},
     {"rawLabel":"Tiendas Verdes","normalizedCategory":"sponsorship_commercial","amountNative":26743.576,"disclosureLevel":"detailed"},
@@ -15,6 +19,12 @@ const atlnacionalCoRevenueLinesByYear = {
 };
 
 const atlnacionalCoExpenseLinesByYear = {
+  2015: [
+    {"rawLabel":"Costo de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-6176.094,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de ventas","normalizedCategory":"lump_football_operations_expense","amountNative":-63935.069,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-2506.421,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-690.367,"disclosureLevel":"aggregated"},
+  ],
   2025: [
     {"rawLabel":"Costo de ventas (artículos deportivos no producidos en la Sociedad)","normalizedCategory":"other_expenses","amountNative":-16759.263,"disclosureLevel":"detailed"},
     {"rawLabel":"Costo de servicios: Gastos por beneficios a empleados","normalizedCategory":"wages_squad","amountNative":-62879.804,"disclosureLevel":"detailed"},
@@ -31,6 +41,7 @@ const atlnacionalCoExpenseLinesByYear = {
 };
 
 const atlnacionalCoFiscalYearMeta = {
+  2015: {"currency":"COP","sourceId":"atlnacional-co-siis-estado-2015","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2015-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-1129.694,"tax":-2401.624,"grossDebt":null,"cash":null,"officialTotalRevenue":75082.377,"officialTotalExpenses":73307.951,"officialPAT":-1756.892,"extraRows":[{"label":"Ingresos financieros","value":1077.536},{"label":"Costos financieros","value":-2207.23},{"label":"Ingreso (gasto) por impuestos","value":-2401.624}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":72138.152,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"},{"renglon":"Costo de ventas","lado":"expense","importe":6176.094,"motivo":"Costo de ventas es 76% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)","tipo":"cost_of_sales"},{"renglon":"Gastos de ventas","lado":"expense","importe":63935.069,"motivo":"Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)","tipo":"other"}],"baseIngreso":"full"},
   2025: {"currency":"COP","sourceId":"atlnacional-co-estados-financieros-2025","reportType":"official_balance_sheet","gestionId":"actual","fxRef":"COP@2025-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-2306.129,"tax":-186.91,"grossDebt":15948.285,"cash":17130.558,"officialTotalRevenue":196884.03,"officialTotalExpenses":187415.294,"officialPAT":6975.695,"baseIngreso":"full"},
 };
 
@@ -48,7 +59,7 @@ window.CLUB_GENERIC_DATA["atlnacional-co"] = {
   presupuestoOverlayByYear: atlnacionalCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"atlnacional-co-estados-financieros-2025":{"id":"atlnacional-co-estados-financieros-2025","clubId":"atlnacional-co","title":"Notas a los Estados Financieros, 31 de diciembre de 2025 y 2024 (auditado por Baker Tilly Colombia)","type":"official_balance_sheet","reliability":"primary"}});
+Object.assign(sources, {"atlnacional-co-estados-financieros-2025":{"id":"atlnacional-co-estados-financieros-2025","clubId":"atlnacional-co","title":"Notas a los Estados Financieros, 31 de diciembre de 2025 y 2024 (auditado por Baker Tilly Colombia)","type":"official_balance_sheet","reliability":"primary"},"atlnacional-co-siis-estado-2015":{"id":"atlnacional-co-siis-estado-2015","clubId":"atlnacional-co","title":"Atlético Nacional S.A. — siis-estado-2015 (ejercicio 2015)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Atletico Nacional/siis-estado-2015.pdf"}});
 
 gestionesByClub["atlnacional-co"] = {"actual":{"nombre":"Sebastián Arango Botero (Representante Legal)","firstYear":2025,"lastYear":2025}};
 

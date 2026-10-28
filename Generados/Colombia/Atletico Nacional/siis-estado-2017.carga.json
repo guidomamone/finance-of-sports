@@ -1,11 +1,8 @@
 {
  "pdf": "Clubes/Colombia/Atletico Nacional/siis-estado-2017.pdf",
- "generado": "2026-10-28T00:36:27.144Z",
+ "generado": "2026-10-28T00:43:31.560Z",
  "frena": [],
- "avisos": [
-  "categorías en 0 en un documento con filas armadas a mano (el reintento con IA no puede cambiarlas; se carga así): Salarios del plantel",
-  "gestión: ningún presidente confirmado cubre 2017 (cierre 2017-12-31); pregunta en la cola (no frena)"
- ],
+ "avisos": [],
  "ejercicio": {
   "clubId": "atlnacional-co",
   "year": 2017,
@@ -36,23 +33,23 @@
   "expenseLines": [
    {
     "rawLabel": "Costo de ventas",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "lump_football_operations_expense",
     "amountNative": -7530.401,
     "disclosureLevel": "aggregated",
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos de ventas",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "lump_football_operations_expense",
     "amountNative": -103238.608,
     "disclosureLevel": "aggregated",
     "_pag": 1,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "categorias.json"
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos de administración",
@@ -106,6 +103,20 @@
      "importe": 135568.384,
      "motivo": "el documento no desglosa este renglón",
      "tipo": "net_sales"
+    },
+    {
+     "renglon": "Costo de ventas",
+     "lado": "expense",
+     "importe": 7530.401,
+     "motivo": "Costo de ventas es 76% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+     "tipo": "cost_of_sales"
+    },
+    {
+     "renglon": "Gastos de ventas",
+     "lado": "expense",
+     "importe": 103238.608,
+     "motivo": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+     "tipo": "other"
     }
    ],
    "baseIngreso": "full",
@@ -193,11 +204,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 7530.401,
-   "cat": "other_expenses",
+   "cat": "lump_football_operations_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "categorias.json",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Costo de ventas es 76% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
    "destino": "expense",
    "amountNative": -7530.401
   },
@@ -208,11 +220,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 103238.608,
-   "cat": "admin_general_expense",
+   "cat": "lump_football_operations_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "categorias.json",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
    "destino": "expense",
    "amountNative": -103238.608
   },

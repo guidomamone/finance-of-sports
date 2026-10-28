@@ -1,0 +1,61 @@
+{
+ "md": "Clubes/Colombia/Atletico Nacional/siis-estado-2018.md",
+ "generatedAt": "2026-10-28T00:43:30.080Z",
+ "rubrosHuella": "d5eb6a9fd8e2219a94990870320f5bee56b59eb3",
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  }
+ ]
+}

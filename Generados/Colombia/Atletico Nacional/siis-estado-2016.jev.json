@@ -1,0 +1,70 @@
+{
+ "md": "Clubes/Colombia/Atletico Nacional/siis-estado-2016.md",
+ "generatedAt": "2026-10-28T00:43:30.080Z",
+ "rubrosHuella": "60ba3ad1276814e50d866e5f312672013526e178",
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Deterioro de valor de ganancias y reversión de pérdidas por deterioro de valor (pérdidas por deterioro de valor) determinado de acuerdo con la NIIF 9",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "desdeCache": true
+  }
+ ]
+}
