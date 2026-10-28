@@ -26,6 +26,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1241 — club-siis --avanzar: ensayo por defecto, --escribir lo aplica [478 · club-siis.mjs, club-siis-preparar.mjs, probar-club-siis.mjs]
+- `--avanzar` sin `--escribir` solo dice qué haría (el árbol queda igual; antes fijaba categorías en la cola, creaba la lista del lote y corría el inventario aunque pareciera un ensayo); `--escribir` lo aplica y `--ejecutar` sin `--escribir` se niega (sale con 1). `--ensayo` sigue valiendo. Mensajes y `Admin/paises/co.md` dicen lo mismo; ninguna skill ni `PIPELINE.md` nombra `--avanzar`.
+- Medición: tool de «orden» (no del pipeline): no pide medición; `probar-club-siis.mjs` ok (el escenario con años por cargar no se pudo armar: todo Nacional está cargado, la prueba comprueba el modo y el árbol intacto).
+
+---
+
 ## Versión 1240 — club-siis --liga: escribe la línea de liga de un club [478 · club-siis.mjs, liga-decidir.mjs, probar-club-siis.mjs]
 - `node tools/club-siis.mjs "<Club>" --liga` completa en `data/club-leagues/<iso>.js` los años sin liga con la del roster cacheado de Wikipedia, solo si TODOS tienen coincidencia exacta (las «NO EXACTA» se descartan, p. ej. «Atlético» de la Primera B no es Atlético Nacional); con un año dudoso no escribe ninguno y dice cuáles; `--ensayo` no escribe. Imprime que después va `publicar.mjs` y el commit en otra llamada. En una copia sin las líneas de Envigado y Nacional las reescribe con el mismo contenido que HEAD (cambia solo la posición en el archivo: queda al final).
 - Medición: tool de «orden» (no del pipeline): no pide medición; `probar-club-siis.mjs` ok (8 casos).

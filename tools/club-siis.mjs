@@ -10,7 +10,7 @@
 //   node tools/club-siis.mjs "<Club>" --rehacer-anio AAAA   la cadena para rehacer un año YA publicado (el lote lo saltea a propósito); los datos solo se escriben con las tools medidas
 //   node tools/club-siis.mjs "<Club>" --crear-lista         además crea la lista de lote (Admin/lotes/lote-NN.txt) con los siis-estado-AAAA.pdf que todavía no están cargados
 //   node tools/club-siis.mjs "<Club>" --evaluar            ¿vale la pena? CARGAR / REVISAR / DESCARTAR con el motivo (solo lee). Solo se descarta la sociedad sin actividad (ingresos 0 todos los años); la liga no descarta (se cargan amateurs); ingresos chicos (< 500 M al año) se revisan
-//   node tools/club-siis.mjs "<Club>" --avanzar [--ejecutar [--cargar]]   corre los pasos mecánicos en orden (estados de SIIS, alta, dictámenes, «Costo de ventas» > 50 %, lista, inventario) y para en lo que pide juicio; --ejecutar corre el lote (API, ~US$ 0,03 por documento); --cargar además carga y publica si no falta nada de juicio
+//   node tools/club-siis.mjs "<Club>" --avanzar [--escribir [--ejecutar [--cargar]]]   sin --escribir solo dice qué haría (no escribe nada); con --escribir corre los pasos mecánicos en orden (estados de SIIS, alta, dictámenes, «Costo de ventas» > 50 %, lista, inventario) y para en lo que pide juicio; --ejecutar corre el lote (API, ~US$ 0,03 por documento); --cargar además carga y publica si no falta nada de juicio
 //   node tools/club-siis.mjs "<Club>" --brief <estadio-sponsor|gestiones|auditor>   el brief de ese subagente con el club y los años ya completos (plantilla: Admin/briefs-subagentes-siis.md)
 // LOS SUBAGENTES VAN JUNTOS: estadio-sponsor y gestiones son independientes entre sí y del lote (escriben cada uno un archivo suyo): se lanzan a la vez, en UN solo mensaje con varias llamadas a Agent, apenas están el alta y los estados. El lote
 // puede correr en ensayo mientras tanto; su `--cargar` exige `data/` limpio, así que espera a que terminen y se commitee lo suyo. El del auditor va después de la carga.
@@ -32,7 +32,7 @@ const club = A.find((a, i) => !a.startsWith('--') && !['--rehacer-anio', '--brie
 const leer = (rel) => { try { return JSON.parse(readFileSync(join(ROOT, rel), 'utf8')); } catch { return null; } };
 const cfg = leer('tools/siis-clubes.json'); const resumen = leer(`Admin/sourcing/${cfg.pais}/siis-resumen.json`);
 const iso = 'co';
-const ENSAYO = A.includes('--ensayo'); // con --avanzar o --preparar: dice qué haría y no escribe nada
+const ENSAYO = A.includes('--ensayo') || (A.includes('--avanzar') && !A.includes('--escribir')); // dice qué haría y no escribe nada: con --preparar, si se pasa --ensayo; con --avanzar es el modo por defecto y --escribir lo aplica
 const slugClub = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ''); // el clubId que da el alta a un club nuevo: slug de la carpeta + «-co» (alta-club.mjs)
 
 // ¿Wikipedia ya trae estadio y sponsor de ese año? (el ensayo de estadio-sponsor.mjs, sin escribir): entonces no hace falta el subagente ni una entrada en contexto-manual.json
@@ -180,10 +180,11 @@ if (A.includes('--avanzar')) {
   const ev = evaluar(); console.log(`=== --avanzar ${club} · ${ev.veredicto} ===`);
   if (ev.veredicto === 'DESCARTAR') { console.log(`${ev.motivos.join('; ')}. No se avanza (node tools/club-siis.mjs ${q} --evaluar).`); process.exit(0); }
   if (ev.veredicto === 'REVISAR') console.log(`REVISAR: ${ev.motivos[0]}\n(se sigue; si no es un club, frená acá)`);
-  console.log(ENSAYO ? '(ENSAYO: dice qué correría, no escribe nada)' : 'OJO: --avanzar ESCRIBE (estados de SIIS, alta, dictámenes, categorías de la cola, lista del lote); con --ensayo solo dice qué haría.');
+  if (A.includes('--ejecutar') && !A.includes('--escribir')) { console.error('--ejecutar corre el lote (API) y escribe: va con --escribir (sin él, --avanzar solo dice qué haría).'); process.exit(1); }
+  console.log(ENSAYO ? '(ENSAYO: dice qué correría, no escribe nada; --escribir lo aplica)' : 'OJO: --escribir: --avanzar ESCRIBE (estados de SIIS, alta, dictámenes, categorías de la cola, lista del lote).');
   const run = (args) => { console.log(`\n$ node ${args.join(' ')}${ENSAYO ? '   (ensayo: no se corre)' : ''}`); if (ENSAYO) return ''; try { const out = execFileSync('node', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1e8, stdio: ['ignore', 'pipe', 'pipe'] }); console.log(out.trim().split('\n').slice(-6).join('\n')); return out; } catch (err) { console.log(`${String(err.stdout || '').trim().split('\n').slice(-8).join('\n')}\n${String(err.stderr || '').trim()}`); console.log(`\nSE FRENÓ en: node ${args.join(' ')}`);
     const casos = pendientes().filter((p) => p.pdf.startsWith(`Clubes/${cfg.pais}/${club}`)); // el alta frena con una pregunta del nombre legal (SIIS a veces lo imprime con errores): va a la cola
-    if (casos.length) console.log(`\nPregunta(s) en la cola del club: ${casos.map((p) => p.id).join(', ')}. Contestala con el nombre bien escrito y volvé a correr --avanzar:\n  node tools/cola.mjs --responder <id> corregir --valor "<nombre legal>" --nota "…" --evidencia "Clubes/${cfg.pais}/${club}/siis-estado-AAAA.md:3" --seguridad alta --causa lectura-del-documento`);
+    if (casos.length) console.log(`\nPregunta(s) en la cola del club: ${casos.map((p) => p.id).join(', ')}. Contestala con el nombre bien escrito y volvé a correr --avanzar --escribir:\n  node tools/cola.mjs --responder <id> corregir --valor "<nombre legal>" --nota "…" --evidencia "Clubes/${cfg.pais}/${club}/siis-estado-AAAA.md:3" --seguridad alta --causa lectura-del-documento`);
     process.exit(1); } };
   // Reexpresión de comparativo de SIIS: el estado de un año imprime el año anterior con otra cifra (un renglón reclasificado). Las preguntas de verificación (anio-vecino y no-cierra) se contestan solas SOLO si el resultado
   // neto de ese año es idéntico en su propio estado y en el comparativo del siguiente (se movió plata entre renglones, no cambió el resultado); cada año se carga como lo imprimió su propio estado (regla de Colombia).
@@ -252,7 +253,7 @@ if (A.includes('--avanzar')) {
     };
     const lote = ['tools/lote.mjs', '--lista', lista, '--ejecutar'];
     contestarReexpresiones();
-    if (!EJECUTAR) console.log(`\nNo se gastó API. El lote de categorización (unos US$ 0,03 por documento): node ${lote.join(' ')}   (--avanzar --ejecutar lo corre)`);
+    if (!EJECUTAR) console.log(`\nNo se gastó API. El lote de categorización (unos US$ 0,03 por documento): node ${lote.join(' ')}   (--avanzar --escribir --ejecutar lo corre)`);
     else {
       run(lote); if (contestarReexpresiones()) run(lote); // las preguntas de verificación nacen en el lote: se contestan y se repite para que el año no quede frenado
       const faltaJuicio = juicioFaltante();

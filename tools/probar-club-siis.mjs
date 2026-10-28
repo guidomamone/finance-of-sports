@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // tools/probar-club-siis.mjs — la prueba de los avisos y pasos de club-siis.mjs que salieron del punto 478 (cada ítem suma sus casos). Corre en una copia descartable (con-worktree.mjs): nunca toca los datos reales.
 //   5. el paso «Liga de cada año» dice que después va publicar.mjs y commitear en OTRA llamada
+//   8. --avanzar sin --escribir es un ensayo (el árbol queda igual) y --ejecutar sin --escribir se niega
 //   6. --liga: decidirLigas escribe solo si todos los años tienen liga exacta; y en una copia sin las líneas de Envigado y Nacional las vuelve a escribir con el mismo contenido que HEAD (la posición en el archivo cambia: va al final)
 // Uso: node tools/probar-club-siis.mjs    (~30 s por el worktree; sale con 1 si algún caso falla)
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -33,6 +34,14 @@ await conWorktree(async ({ W }) => {
   caso('6. --liga no toca las líneas de los otros clubes', intacto);
   const antes = readFileSync(f, 'utf8'); correr('Envigado', '--liga');
   caso('6. --liga de un club que ya tiene liga no escribe nada', readFileSync(f, 'utf8') === antes);
+  // 8. --avanzar sin --escribir es un ensayo: el árbol queda igual; --ejecutar sin --escribir se niega
+  const git = (...a) => spawnSync('git', a, { cwd: W, encoding: 'utf8' }).stdout;
+  spawnSync('git', ['checkout', '--', 'Admin', 'data', 'Generados', 'Clubes'], { cwd: W }); // (las tools copiadas de este árbol no se tocan)
+  const estadoAntes = git('status', '--porcelain', '--', 'Admin', 'data', 'Generados', 'Clubes');
+  const av = correr('Atletico Nacional', '--avanzar');
+  caso('8. --avanzar sin --escribir dice que es un ensayo y no cambia el árbol', /ENSAYO/.test(av) && git('status', '--porcelain', '--', 'Admin', 'data', 'Generados', 'Clubes') === estadoAntes, av.slice(0, 300));
+  const ej = spawnSync('node', [join(W, 'tools/club-siis.mjs'), 'Atletico Nacional', '--avanzar', '--ejecutar'], { cwd: W, encoding: 'utf8' });
+  caso('8. --avanzar --ejecutar sin --escribir se niega (sale con 1)', ej.status === 1 && /--escribir/.test(ej.stderr), `${ej.status} ${ej.stderr}`);
 }, 'prueba-club-siis');
 
 const D = decidirLigas(['2016', '2017'], { 2016: 'co-primeraA', 2017: 'co-primeraA' });
