@@ -20,6 +20,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1260 — 476, pantallas: «n/d*» coherente en la vista multi-año e «Intereses netos» e «Impuestos» fijos [476 · finanzas-multi.js, finanzas-render.js]
+- Con el mockup aprobado por Guido (`Prototyping/Pantallas/mockup-476.html`): en la vista de varios años, las celdas `incluidoEn` (que mostraban «—» con bocadillo) llevan la marca «n/d*» con el mismo bocadillo, así Bucaramanga 2021 y 2022 ya no mezclan «n/d*» y «—»; y los años cargados con estado completo (ingresos financieros, costos financieros, impuestos) se agrupan en «Intereses netos» e «Impuestos» como los simplificados (Tolima 2016 a 2024: de cinco filas con huecos a dos). La etiqueta «Solo SIIS» no se hace (Guido: ya está en Fuentes).
+- Verificado: Bucaramanga y Tolima coinciden con el mockup cifra por cifra, 375 px sin scroll horizontal, sin errores en consola, `audit` P0 a P2 en 0; ASSET_V 2138 a 2139. No se probó en inglés y español lado a lado más allá de los textos existentes (no hay textos nuevos).
+- Verificado a mano (476): Bucaramanga 2020 a 2022 y Tolima 2016 a 2024 en la vista previa contra el mockup, 375 px, consola, audit
+- Medición: solo `js/`; ninguna tool del pipeline cambió.
+
+---
+
 ## Versión 1259 — 476, segunda tanda: gestión de Nacional 2018 a 2021 confirmada, asterisco de nota táctil, cositas del 461 verificadas [476 · club-sourcing]
 - Gestión de Pérez Ortiz en Nacional confirmada con Blu Radio del 9-2-2018 (asume el lunes 12-2); los 11 cierres de Nacional quedan cubiertos. El dictamen de Nacional 2018 y 2019 y el de Envigado 2024 no están en ningún documento nuestro (la carta, el informe de control interno y las notas no traen la opinión): sigue `falta_transcripcion`, a sourcing.
 - `.pl-sd-n a` con `@media (pointer:coarse)`: objetivo táctil de 21×43 a 43×45 px sin cambiar la altura de fila ni la página (PAOK a 375 px). `og/` y nota en español de margen bruto verificadas en cuatro clubes. 414 (cola para una ganancia en inmovilizado chica) queda abierto: cambia la carga.
