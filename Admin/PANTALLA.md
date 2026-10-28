@@ -803,11 +803,13 @@ Texto movido sin cambios.
   clubes y no el más reciente, porque los balances tardan en publicarse; y el "N de M" solo se escribe si `leagueSizeAt()` lo sabe.
   Las banderas (no los códigos de país) son las de `COUNTRIES[...].flag`, también en las tarjetas de Inicio.
   Las tarjetas de ranking de Inicio no llevan cuántos clubes hay cargados ni US$ por club (pedido de Guido): nombre, barra y el ejercicio.
-  «Últimas cargas» va al FONDO de Inicio (después de las ligas): 10 filas, una por club y tanda (lo que un club cargó el mismo día: «Ejercicios 2016 a 2025»; los años salteados
-  se cortan: «2016 a 2018, 2020 a 2025»), con el círculo de iniciales en el color del club, la fecha de carga y «Ver más» a `ultimas-cargas.html` (la lista entera, 50 por vez,
-  con la fecha completa). Cada fila es un link a Finanzas de ese club en el último ejercicio de la tanda. Sale de `data/ultimas-cargas.js` (`tools/generar-ultimas-cargas.mjs`,
-  del historial de los commits `<Club> <año> por el pipeline`); `cargar-lote.mjs` lo regenera y commitea al cerrar cada lote, y `audit.js` frena con `ultimas-cargas-desfasado`.
-  Mockup aprobado: `Prototyping/Pantallas/mockup-480.html` (variante B).
+  «Qué se está cargando» va al FONDO de Inicio (después de las ligas): dos cards de la grilla de los rankings, «Últimas cargas» y «Próximas cargas», de 5 filas cada una. Una fila = bandera, club,
+  ejercicios y, en las últimas, la fecha de carga; una fila por club y tanda (lo que un club cargó el mismo día: «Ejercicios 2016 a 2025»; los años salteados se cortan: «2016 a 2018, 2020 a 2025»;
+  con más de dos tramos: «9 ejercicios (2015 a 2026)»). En celular los ejercicios bajan a una segunda línea. Cada fila es un link a Finanzas de ese club en el último ejercicio. «Ver más →» (chico, arriba a la
+  derecha de «Últimas cargas») abre `ultimas-cargas.html`: la lista entera, 50 por vez, con la fecha completa. Las últimas salen de `data/ultimas-cargas.js` (`tools/generar-ultimas-cargas.mjs`, del
+  historial de los commits `<Club> <año> por el pipeline`); las próximas, de `data/proximas-cargas.js` (`tools/generar-proximas-cargas.mjs`, documentos `listo` del inventario de transcripciones cuyo
+  ejercicio no está en el JSON del club). `cargar-lote.mjs` regenera las dos al cerrar cada lote y `audit.js` frena con `ultimas-cargas-desfasado` y `proximas-cargas-desfasado`.
+  Mockup aprobado: `Prototyping/Pantallas/mockup-480.html` (variante B, después ajustada por Guido: dos cards, 5 filas, bandera).
 - SIMULAR CLUBES (O LIGAS ENTERAS) EN UNA LIGA QUE NO ES LA SUYA — por
   ingresos, no predicción deportiva. DOS caminos, misma vista de resultado: (a) desde Finanzas, el card
   "<club> en otra liga", con el balance más nuevo elegido; (b) desde CUALQUIER liga, un buscador ("Sumar un
