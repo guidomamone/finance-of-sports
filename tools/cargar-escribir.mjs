@@ -11,6 +11,7 @@ import { rutaData } from './data-clubes.js';
 import { modificarClub, rutaJson } from './club-json.mjs';
 import { TOCA_UNA_CARGA } from './rutas.mjs';
 import { GENERADORES, queFalla } from './generadores.mjs';
+import { codigoCambiado } from './codigo-cambiado.mjs';
 import { derivado, marcarClub, HOY, norm, r6, cargarSitio } from './cargar.mjs';
 
 const EV = await import('./evidencia-club.mjs'); // la evidencia de carga va a Admin/carga-clubes/<clubId>.md, no a data/
@@ -90,7 +91,7 @@ export function publicarCambios(snap, extra, escritos) {
   const actual = (idx.match(/window\.ASSET_V\s*=\s*'([^']+)'/) || [])[1];
   let enHead = null;
   try { enHead = (execFileSync('git', ['show', 'HEAD:index.html'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] }).match(/window\.ASSET_V\s*=\s*'([^']+)'/) || [])[1]; } catch { enHead = null; }
-  if (actual && (enHead === null || enHead === actual)) {
+  if (actual && codigoCambiado() && (enHead === null || enHead === actual)) { // ASSET_V es solo del código (js/, css/): data/ lleva su versión en data/manifiesto.js
     const nuevo = /^\d+$/.test(actual) ? String(Number(actual) + 1) : `${actual}a`;
     const esc = actual.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     writeFileSync(idxPath, idx.replace(`window.ASSET_V = '${actual}'`, `window.ASSET_V = '${nuevo}'`).replace(new RegExp(`\\?v=${esc}(?=["'])`, 'g'), `?v=${nuevo}`));

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/prueba-escribir.mjs — PRUEBA DE REGRESIÓN DE LA ESCRITURA DE cargar.mjs: un ensayo que pasa y una escritura que revierte no tienen que volver a separarse.
+// tools/prueba-escribir.mjs — PRUEBA DE REGRESIÓN DE LA ESCRITURA DE cargar.mjs (y de cargar-escribir.mjs, que es lo que cargar.mjs --escribir ejecuta):un ensayo que pasa y una escritura que revierte no tienen que volver a separarse.
 //
 // POR QUÉ. El ensayo de cargar.mjs (sin --escribir) no ejecuta `escribir(P)`: un identificador que no existe ahí (la nota «Informe oficial en formato XHTML» usaba `e.md` y `e` no existe en escribir(P)) pasaba todos
 // los ensayos y rompía toda carga real con «REVERTIDO: e is not defined» (Goiás 2018, RAAL 2020). Esta prueba ESCRIBE de verdad, pero en un git worktree descartable en la carpeta temporal (nunca en el repo ni en

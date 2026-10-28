@@ -9,6 +9,7 @@ import * as EV from './evidencia-club.mjs';
 import { rutaData } from './data-clubes.js';
 import { crearClub } from './club-json.mjs';
 import { GENERADORES, queFalla } from './generadores.mjs';
+import { codigoCambiado } from './codigo-cambiado.mjs';
 import { fxDeclarado, fechaDeColumna, fechaDeBloque, FUENTE_SERIE, fxDeSerie } from './alta-club-lectura.mjs';
 import { NOMBRE_PAIS_ES, MONEDAS, MONEDAS_A_LA_PAR } from './alta-club-tablas.mjs';
 import { ANOTAR_MISSES, norm, campo, runNode } from './alta-club.mjs';
@@ -341,7 +342,7 @@ ${filaLiga}});
     const actual = (idx.match(/window\.ASSET_V\s*=\s*'([^']+)'/) || [])[1];
     let enHead = null;
     try { enHead = (execFileSync('git', ['show', 'HEAD:index.html'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] }).match(/window\.ASSET_V\s*=\s*'([^']+)'/) || [])[1]; } catch { enHead = null; }
-    if (actual && (enHead === null || enHead === actual)) {
+    if (actual && codigoCambiado() && (enHead === null || enHead === actual)) { // solo el código (js/, css/) versiona ASSET_V; data/ va en data/manifiesto.js
       const nuevo = /^\d+$/.test(actual) ? String(Number(actual) + 1) : `${actual}a`;
       const esc = actual.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       const idxNuevo = idx.replace(`window.ASSET_V = '${actual}'`, `window.ASSET_V = '${nuevo}'`).replace(new RegExp(`\\?v=${esc}(?=["'])`, 'g'), `?v=${nuevo}`);

@@ -185,7 +185,8 @@ ${cuerpo}
      dos archivos por idioma se multiplican por cada idioma nuevo.
      OJO: el TÍTULO de cada documento NO se traduce, sale textual de la fuente. Lo que se
      traduce es el chrome y las etiquetas de tipo/nivel, que son nuestras. -->
-<script src="${prefijo}data/lang/langs.js?v=${assetV}"></script>
+<script src="${prefijo}data/manifiesto.js"></script>
+<script>(function () { var r = 'data/lang/langs.js', m = window.DATA_VERS, v = (m && m[r]) || '${assetV}'; document.write('<script src="${prefijo}' + r + '?v=' + v + '"><\\/script>'); })();</script>
 <script src="${prefijo}js/i18n.js?v=${assetV}"></script>
 <script>window.ASSET_V = '${assetV}'; window.I18N_BASE = '${prefijo}'; I18N.init();</script>
 </body>

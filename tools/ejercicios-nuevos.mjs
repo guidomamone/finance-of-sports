@@ -32,6 +32,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 
 import { resolve, basename } from 'node:path';
 import { createRequire } from 'node:module';
 import vm from 'node:vm';
+import { codigoCambiado } from './codigo-cambiado.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const { cierreDelClub } = createRequire(import.meta.url)('./cierre-ejercicio.js');
@@ -290,7 +291,7 @@ async function main() {
       const { execFileSync } = await import('node:child_process');
       execFileSync('node', [resolve(ROOT, 'tools', 'faltantes-liga.mjs')], { cwd: ROOT, stdio: 'ignore' });
       const idx = resolve(ROOT, 'index.html'); const html = readFileSync(idx, 'utf8'); const v = (html.match(/window\.ASSET_V = '(\d+)'/) || [])[1];
-      if (v) { const n = String(+v + 1); writeFileSync(idx, html.replace(`window.ASSET_V = '${v}'`, `window.ASSET_V = '${n}'`).replaceAll(`?v=${v}`, `?v=${n}`), 'utf8'); }
+      if (v && codigoCambiado()) { const n = String(+v + 1); writeFileSync(idx, html.replace(`window.ASSET_V = '${v}'`, `window.ASSET_V = '${n}'`).replaceAll(`?v=${v}`, `?v=${n}`), 'utf8'); }
       execFileSync('node', [resolve(ROOT, 'tools', 'generate-fuentes-page.js')], { cwd: ROOT, stdio: 'ignore' });
     }
     mkdirSync(resolve(ROOT, 'Admin', 'registros'), { recursive: true }); writeFileSync(REGISTRO, JSON.stringify(registro, null, 1) + '\n', 'utf8');

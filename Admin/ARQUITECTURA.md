@@ -28,7 +28,10 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
 - data/<país>/<clubId>-data.js: GENERADO desde ese JSON (no se edita), un archivo por club, en la carpeta de su país (código ISO de `clubs[clubId].country` en
   minúscula, igual que `data/club-leagues/` y `data/gestiones/`). El sitio arma la ruta en `loadClubData()`; las tools, SOLO con
   `tools/data-clubes.js` (`rutaData(clubId)`, `archivosData()`, `idDeArchivo()`): ninguna tool arma esa ruta a mano.
-- ASSET_V: la versión de los
+- Versión de los datos: cada archivo de `data/` que una página pide lleva su hash en `data/manifiesto.js`
+  (`tools/generar-manifiesto.mjs`, último de `tools/generadores.mjs`; `manifiesto-desfasado` P1). Los cargadores usan `fosV(ruta)` y el
+  index.html, `fosDataTag(ruta)`; una carga cambia el club, su `club/`, su `fuentes/` y el manifiesto, no todas las páginas.
+- ASSET_V (solo `js/` y `css/`, el código): la versión de los
   assets propios, para invalidar el caché del navegador en cada deploy. La regla de subirlo
   (la constante Y cada `?v=`, que son literales) y el bug que la motivó están una sola vez, en
   `Admin/PANTALLA.md`, "CACHE DE ASSETS". Lo de arquitectura: solo 2 cargadores DINÁMICOS leen la

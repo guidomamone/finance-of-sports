@@ -1,4 +1,4 @@
-// GENERADO por tools/generar-manifiesto.mjs: no editar a mano (TODO 473). La versión (hash del contenido) de cada archivo de data/ que una página pide; ASSET_V es solo del código.
+// GENERADO por tools/generar-manifiesto.mjs: no editar a mano. La versión (hash del contenido) de cada archivo de data/ que una página pide; ASSET_V es solo del código.
 window.DATA_VERS = {
 "data/ar/almagro-ar-data.js":"01b3a486",
 "data/ar/almagro-ar-glosas.js":"3b9fe7da",

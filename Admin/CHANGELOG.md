@@ -20,6 +20,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1257 — ASSET_V solo del código; la versión de los datos va en data/manifiesto.js [473 · generar-manifiesto.mjs, codigo-cambiado.mjs, cargar-escribir.mjs, alta-club-escribir.mjs, ejercicios-nuevos.mjs, generadores.mjs, generate-fuentes-page.js, audit-chequeos-2.js, audit-chequeos-5.js]
+- (a, b y c juntas, por pedido de Guido) `ASSET_V` sube solo con `js/` y `css/` (`asset-v-sin-subir` mira solo eso; las tools de carga lo suben con `codigoCambiado()`). Cada archivo de `data/` que una página pide lleva su hash en `data/manifiesto.js` (1.016 archivos, 44 KB, sin `?v=`; `fosV()` en los cargadores y `fosDataTag()` en index.html y fuentes/). Chequeo nuevo `manifiesto-desfasado` (P1); el generador va último en `generadores.mjs`.
+- Probado: un cambio solo de `data/contexto/ar.js` deja dos archivos modificados (ese y el manifiesto), sin `asset-v-sin-subir`; el club abre en vista previa con cada archivo pidiendo su hash. Mi limpieza sacó un import usado de `alta-club-escribir.mjs` y `prueba-escribir.mjs` lo atrapó.
+- Medición: lote completo, 6 diferencias de `audit` todas explicadas (se van `fuentes-desfasada` y `codigo-sin-accion`, por ya no moverse ASSET_V con los datos); cargar, cargar-cola-vacia y escribir idénticos. Veredicto GENERAL; sin revisión independiente de la Auditora.
+
+---
+
 ## Versión 1238 — sponsor-fka --buscar: --anios y --todos [478 · sponsor-fka.mjs, probar-sponsor-fka.mjs]
 - `--buscar` acepta `--anios 2015-2022` (o `2015,2017-2019`) y `--todos`: busca esos años en FKA con Exa también si ya tienen entrada sólida, sin escribir `contexto-manual.json` (el subagente tenía que ponerle «una sola fuente por año» para que corriera). Sin opción sigue buscando los débiles. El brief de estadio-sponsor (`Admin/briefs-subagentes-siis.md`) usa `--todos`.
 - Verificado a mano (478): Los 19 ítems hechos con su prueba y su entrada de CHANGELOG (1235 a 1252): cada uno replicado en copia descartable o con su prueba probar-*; mediciones de pipeline idénticas o explicadas (el 15: 2 diferencias de Wikipedia en un club, A/B de HEAD igual); 17 y 18 decididos por Guido (delegó) y escritos en liga-y-sponsor.md 0.5, ARQUITECTURA.md y los briefs; los tres scripts de Prototyping/defectos-463/ absorbidos y borrados; audit P0 0 P1 0 P2 0 (P3 10 como en el commit de partida)

@@ -14,11 +14,12 @@ function checkHigiene(api) {
     const st = execSync('git status --porcelain', { cwd: ROOT, stdio: ['ignore', 'pipe', 'ignore'] })
       .toString().split('\n').filter(Boolean)
       .map(l => l.slice(3).trim());
-    // data/schema/ (el JSON Schema del 245) no lo carga ninguna página: no hay caché del navegador que invalidar
-    const tocaCodigo = st.some(f => f.startsWith('js/') || (f.startsWith('data/') && !f.startsWith('data/schema/')));
+    // ASSET_V versiona SOLO el código (js/, css/). Los archivos de data/ llevan su versión (hash) en data/manifiesto.js (tools/generar-manifiesto.mjs, `manifiesto-desfasado`): una carga de datos no
+    // reescribe las ~740 páginas generadas.
+    const tocaCodigo = st.some(f => f.startsWith('js/') || f.startsWith('css/'));
     const tocaIndex = st.some(f => f === 'index.html');
     if (tocaCodigo && !tocaIndex) {
-      add('P1', 'asset-v-sin-subir', `Hay cambios sin commitear en js/ o data/ pero index.html no se tocó: ASSET_V quedó igual y el visitante recurrente se queda con el archivo viejo cacheado`);
+      add('P1', 'asset-v-sin-subir', `Hay cambios sin commitear en js/ o css/ pero index.html no se tocó: ASSET_V quedó igual y el visitante recurrente se queda con el archivo viejo cacheado`);
     }
   } catch { /* sin git, no es un error de datos */ }
 
