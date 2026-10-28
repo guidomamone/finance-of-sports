@@ -777,7 +777,7 @@ window.DATA_VERS = {
 "data/jp/visselkobe-jp-glosas.js":"794d12fa",
 "data/jp/yokohamafmarinos-jp-data.js":"80e4a178",
 "data/jp/yokohamafmarinos-jp-glosas.js":"794d12fa",
-"data/lang/en.js":"a8dedc86",
+"data/lang/en.js":"b3a24f45",
 "data/lang/langs.js":"4ba079e7",
 "data/leagues.js":"26bc1c0c",
 "data/mx/clubamerica-mx-data.js":"8bc1cf73",
