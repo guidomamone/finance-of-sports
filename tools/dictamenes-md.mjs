@@ -8,6 +8,7 @@
 //
 // USO:
 //   node tools/dictamenes-md.mjs "<Club>"              ensayo: una línea por año (huella, duplicado, texto nativo o escaneo, .md, firma)
+//   node tools/dictamenes-md.mjs "<Club>" --mistral    pasa por Mistral OCR (~US$ 0,004 por página, gasta API) los escaneos que no tienen .md, imprime el costo total y vuelve a revisar la firma
 //   node tools/dictamenes-md.mjs "<Club>" --escribir   además escribe los .md de texto nativo que no existen (nunca pisa uno existente)
 //   node tools/dictamenes-md.mjs --firma <archivo.md>  solo el escalón de firma de UN .md (1 ok, 2 firma-imagen que falta, 3 otro formato)
 //   Carpeta: Clubes/<País>/<Club>/ con el país de tools/siis-clubes.json (Colombia).
@@ -37,7 +38,7 @@ function firma(md) {
   return INDICIO.test(cerca) || INDICIO.test(final) ? { escalon: 1 } : { escalon: 2, linea: ultima + 1, texto: L[ultima].trim() };
 }
 if (A[0] === '--firma') { const f = firma(readFileSync(resolve(A[1]), 'utf8')); console.log(`escalón ${f.escalon}${f.linea ? ` (línea ${f.linea}: ${f.texto})` : ''}`); process.exit(0); } // prueba de la heurística sobre UN .md
-if (!club) { console.error('Uso: node tools/dictamenes-md.mjs "<Club>" [--escribir]   |   --firma <archivo.md>'); process.exit(1); }
+if (!club) { console.error('Uso: node tools/dictamenes-md.mjs "<Club>" [--escribir] [--mistral]   |   --firma <archivo.md>'); process.exit(1); }
 const cfg = JSON.parse(readFileSync(join(ROOT, 'tools/siis-clubes.json'), 'utf8'));
 const dir = join(ROOT, 'Clubes', cfg.pais, club);
 if (!existsSync(dir)) { console.error(`No existe ${dir}`); process.exit(1); }
@@ -70,5 +71,12 @@ for (const f of pdfs) {
   if (paginas.length && paginas.length <= 4 && !/opini[oó]n/i.test(t)) notas.push('sin palabra «opinión»: puede ser solo el informe legal o de control interno; si no trae la opinión sobre los estados, el año es `falta_transcripcion`');
   console.log(`${a}  ${huella}  ${paginas.length ? `${paginas.length} pág. de texto` : 'sin texto'}  ${estado}${notas.length ? '\n      · ' + notas.join('\n      · ') : ''}`);
 }
-if (escaneos.length) console.log(`\nEscaneos (${escaneos.join(', ')}): pasalos por Mistral y volvé a correr esto para ver la firma.`);
+if (escaneos.length && !A.includes('--mistral')) console.log(`\nEscaneos (${escaneos.join(', ')}): pasalos por Mistral (~US$ ${(escaneos.length * 0.014).toFixed(2)} en total; gasta API) con --mistral y se vuelve a revisar la firma.`);
+if (escaneos.length && A.includes('--mistral')) { // gasta: solo con el flag. Después vuelve a correr esto (sin --mistral) para revisar la firma de lo recién transcripto
+  const { pasarEscaneos } = await import('./dictamenes-mistral.mjs');
+  const { resultados, costo } = pasarEscaneos(escaneos.map((a) => join(dir, `dictamen-revisor-fiscal-${a}.pdf`)), (pdf) => execFileSync('node', [join(ROOT, 'tools/mistral-ocr-transcribe.mjs'), pdf], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1e8 }));
+  for (const x of resultados) console.log(`  Mistral ${x.ok ? 'OK ' : 'FALLÓ'} ${x.pdf.slice(ROOT.length + 1)} (US$ ${x.costo.toFixed(3)})`);
+  console.log(`Costo total de Mistral: US$ ${costo.toFixed(3)} (${resultados.filter((x) => x.ok).length} de ${resultados.length} transcriptos). Revisión de la firma:\n`);
+  console.log(execFileSync('node', [join(ROOT, 'tools/dictamenes-md.mjs'), club], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1e8 }));
+}
 if (!ESCRIBIR && pdfs.length) console.log('\nEnsayo: no se escribió nada (--escribir).');

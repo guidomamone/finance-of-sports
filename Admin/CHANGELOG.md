@@ -26,6 +26,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1245 — dictamenes-md --mistral: los escaneos por Mistral en un comando [478 · dictamenes-md.mjs, dictamenes-mistral.mjs, probar-dictamenes-mistral.mjs]
+- `dictamenes-md.mjs "<Club>" --mistral` pasa por Mistral OCR los dictámenes escaneados (sin texto nativo y sin `.md`), imprime el costo de cada uno y el total, y vuelve a correr la revisión de la firma. Sin el flag solo avisa cuántos son y cuánto costaría (~US$ 0,014 cada uno): no gasta. `probar-dictamenes-mistral.mjs` usa un runner falso; la llamada real a Mistral no se corrió.
+- Medición: tool de «orden» (no del pipeline): no pide medición; la prueba ok.
+
+---
+
 ## Versión 1244 — fos cerrar: un flag desconocido frena con 1 [478 · cerrar.mjs, args-desconocidos.mjs, probar-cerrar.mjs]
 - `node tools/fos.mjs cerrar 401 --escribir` ya no corre en ensayo sin decirlo: sale con 1 y «Argumento desconocido: --escribir (¿--cerrar?)». Módulo `args-desconocidos.mjs` (el mismo aviso que `medir-pipeline.mjs`) y `probar-cerrar.mjs`.
 - Medición: tool de «orden» (no del pipeline): no pide medición; `probar-cerrar.mjs` ok.
