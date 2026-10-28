@@ -349,6 +349,8 @@ const clubs = {
   'atleticohuila-co': { id:'atleticohuila-co', name:'Atletico Huila', displayName:'Atletico Huila', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFF200' },
   'barranquillafc-co': { id:'barranquillafc-co', name:'Barranquilla Futbol Club S.A.', displayName:'Barranquilla FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#ED1C24' },
   'bogotafc-co': { id:'bogotafc-co', name:'Bogota Futbol Club S.A.', displayName:'Bogota FC', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FFE217' },
+  'jaguares-co': { id:'jaguares-co', name:'Jaguares Fútbol Club S.A.', displayName:'Jaguares', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
+  'realsantander-co': { id:'realsantander-co', name:'Club Deportivo Real Santander S.A.', displayName:'Real Santander', country:'CO', reportingCurrency:'COP', fiscalYearStart:'01-01', sport:'futbol' },
 };
 
 // Source: de dónde sale cada número; `reliability` es lo que distingue dato oficial, de prensa o placeholder.

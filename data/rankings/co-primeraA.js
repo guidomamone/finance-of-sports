@@ -68,6 +68,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2024: {
     leagueSize: 20,
+    sinDato: ["jaguares-co"],
     wiki: {"t":"2024 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:38.155, reportType:"official_balance_sheet",
@@ -117,6 +118,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2023: {
     leagueSize: 20,
+    sinDato: ["jaguares-co"],
     wiki: {"t":"2023 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:35.641, reportType:"official_balance_sheet",
@@ -168,6 +170,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2022: {
     leagueSize: 20,
+    sinDato: ["jaguares-co"],
     wiki: {"t":"2022 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:18.436, reportType:"official_balance_sheet",
@@ -213,6 +216,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2021: {
     leagueSize: 21,
+    sinDato: ["jaguares-co"],
     wiki: {"t":"2021 Liga DIMAYOR","lang":"en","at":"2026-10-02","n":21},
     clubs: [
       { id:"atlnacional-co", revenue:23.294, reportType:"official_balance_sheet",
@@ -261,6 +265,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2020: {
     leagueSize: 20,
+    sinDato: ["jaguares-co"],
     wiki: {"t":"2020 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:17.608, reportType:"official_balance_sheet",
@@ -300,6 +305,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2019: {
     leagueSize: 20,
+    sinDato: ["jaguares-co"],
     wiki: {"t":"2019 Categoría Primera A season","lang":"en","at":"2026-10-02","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:33.42, reportType:"official_balance_sheet",
@@ -345,6 +351,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2018: {
     leagueSize: 20,
+    sinDato: ["jaguares-co"],
     wiki: {"t":"2018 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:22.146, reportType:"official_balance_sheet",
@@ -391,6 +398,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2017: {
     leagueSize: 20,
+    sinDato: ["jaguares-co"],
     wiki: {"t":"2017 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:45.432, reportType:"official_balance_sheet",
@@ -434,6 +442,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2016: {
     leagueSize: 20,
+    sinDato: ["jaguares-co"],
     wiki: {"t":"2016 Categoría Primera A season","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:53.892, reportType:"official_balance_sheet",

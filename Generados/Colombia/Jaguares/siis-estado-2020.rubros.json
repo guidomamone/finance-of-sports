@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Colombia/Jaguares/siis-estado-2020.md",
+  "pdf": "Clubes/Colombia/Jaguares/siis-estado-2020.pdf",
+  "club": "jaguares-co",
+  "year": 2020,
+  "generatedAt": "2026-10-28T13:06:03.356Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        4733.908
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        141.43
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        4360.621
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        87.769
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

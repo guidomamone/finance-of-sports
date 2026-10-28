@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Colombia/Jaguares/siis-estado-2017.md",
+  "pdf": "Clubes/Colombia/Jaguares/siis-estado-2017.pdf",
+  "club": "jaguares-co",
+  "year": 2017,
+  "generatedAt": "2026-10-28T13:06:03.261Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3343.318
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2846.739
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        25.962
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Ganancia (pérdida) procedente de operaciones discontinuadas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+      "values": [
+        26.9
+      ],
+      "glosa": "Ganancia (pérdida) procedente de operaciones discontinuadas"
+    }
+  ]
+}
