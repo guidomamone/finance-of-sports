@@ -19,3 +19,5 @@ Estados financieros en disco ahora: 7 ejercicios (2017, 2019-2020, 2022-2025), c
 - Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2017 desde `Clubes/Colombia/Jaguares/siis-estado-2017.pdf` (sourceId `jaguares-co-siis-estado-2017`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2018 desde `Clubes/Colombia/Jaguares/siis-estado-2018.pdf` (sourceId `jaguares-co-siis-estado-2018`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-28): ejercicio 2019 desde `Clubes/Colombia/Jaguares/siis-estado-2019.pdf` (sourceId `jaguares-co-siis-estado-2019`).

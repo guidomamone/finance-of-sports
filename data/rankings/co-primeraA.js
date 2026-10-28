@@ -305,7 +305,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2019: {
     leagueSize: 20,
-    sinDato: ["jaguares-co"],
     wiki: {"t":"2019 Categoría Primera A season","lang":"en","at":"2026-10-02","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:33.42, reportType:"official_balance_sheet",
@@ -347,6 +346,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"cucutadeportivo-co", revenue:3.029, reportType:"official_balance_sheet",
         sourceId:"cucutadeportivo-co-siis-estado-2019",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.958],["Otros ingresos",0.071]] },
+      { id:"jaguares-co", revenue:2.066, reportType:"official_balance_sheet",
+        sourceId:"jaguares-co-siis-estado-2019",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.066],["Otros ingresos",0]] },
     ],
   },
   2018: {
