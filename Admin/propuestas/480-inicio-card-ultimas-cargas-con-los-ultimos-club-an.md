@@ -1,7 +1,7 @@
 <!-- md: Inicio: card «Últimas cargas» con los últimos club-años cargados y «Ver más» a una página | leer: al trabajar el punto 480 del TODO -->
 # 480 · Inicio: card «Últimas cargas» con los últimos club-años cargados y «Ver más» a una página
 
-Conclusión: (se completa al cerrar el punto)
+Conclusión: hecho con la variante B del mockup (una fila por club y tanda, no una por club-año: las diez últimas cargas eran todas de Real Santander) y puesto al fondo de Inicio, pedido de Guido. La página es estática como `correcciones.html` y lee el mismo `data/ultimas-cargas.js`; `cargar-lote.mjs` regenera la lista al cerrar el lote y la commitea aparte (no deja `data/` sucio).
 Destino: `Admin/PANTALLA.md`, «Cómo funciona cada pantalla» (Inicio), y `tools/generar-ultimas-cargas.mjs`.
 
 ## Qué se pidió (Guido, 28-10-2026)

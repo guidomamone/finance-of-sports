@@ -1216,6 +1216,67 @@ window.LIGA_VIEW = (function(){
   }
   function fmtCard(v){ return 'US$ ' + Math.round(v).toLocaleString(document.documentElement.lang || 'es', { useGrouping:'always' }) + ' M'; }
 
+  // ÚLTIMAS CARGAS (al fondo de Inicio). Las tandas (un club, un día) de data/ultimas-cargas.js, que genera tools/generar-ultimas-cargas.mjs del
+  // historial de las cargas; el card muestra las 5 últimas y «Ver más» abre ultimas-cargas.html, que usa la misma lista entera.
+  var ULT_N = 5;
+  function ultEjercicios(a){
+    var runs = [], i = 0;
+    while(i < a.length){
+      var j = i;
+      while(j + 1 < a.length && a[j + 1] === a[j] + 1) j++;
+      runs.push(j > i ? a[i] + ' ' + t('uc.to', 'a') + ' ' + a[j] : String(a[i]));
+      i = j + 1;
+    }
+    if(runs.length > 2) return t('uc.nEj', '{n} ejercicios ({a} a {b})').replace('{n}', a.length).replace('{a}', a[0]).replace('{b}', a[a.length - 1]);
+    return (a.length === 1 ? t('uc.ej1', 'Ejercicio') : t('uc.ejN', 'Ejercicios')) + ' ' + runs.join(', ');
+  }
+  function ultFecha(f){
+    return new Date(f + 'T12:00:00').toLocaleDateString(document.documentElement.lang || 'es', { day:'numeric', month:'short' });
+  }
+  function ultFilas(card, lista, conFecha){
+    var ol = el('ol', 'vid-filas');
+    lista.forEach(function(c){
+      var li = el('li');
+      var a = el('a', 'uc-fila');
+      a.href = 'index.html?tab=finanzas&club=' + encodeURIComponent(c.id) + '&anios=' + c.anios[c.anios.length - 1];
+      var bandera = ((window.COUNTRIES || {})[window.nationOf(c.id)] || {}).flag;
+      a.appendChild(el('span', 'vid-pais', bandera || ''));
+      a.appendChild(el('span', 'uc-nom', nombreDe(c.id)));
+      a.appendChild(el('span', 'uc-ej', ultEjercicios(c.anios)));
+      if(conFecha) a.appendChild(el('span', 'uc-fecha', ultFecha(c.fecha)));
+      li.appendChild(a);
+      ol.appendChild(li);
+    });
+    card.appendChild(ol);
+  }
+  function ultTarjeta(titulo, sub, lista, conFecha, verMas){
+    var card = el('article', 'vid-card');
+    var head = el('div', 'vid-card-head');
+    var tit = el('div');
+    tit.appendChild(el('h3', 'vid-card-h', titulo));
+    tit.appendChild(el('div', 'vid-card-sub', sub));
+    head.appendChild(tit);
+    if(verMas){
+      var ver = el('a', 'vid-link', t('uc.more', 'Ver más') + ' →');
+      ver.href = 'ultimas-cargas.html';
+      head.appendChild(ver);
+    }
+    card.appendChild(head);
+    ultFilas(card, lista, conFecha);
+    return card;
+  }
+  function pintarUltimasCargas(sec){
+    var conClub = function(c){ return clubDe(c.id).displayName; };
+    var ult = (window.ULTIMAS_CARGAS || []).filter(conClub).slice(0, ULT_N);
+    if(!ult.length) return;
+    var prox = (window.PROXIMAS_CARGAS || []).filter(conClub).slice(0, ULT_N);
+    sec.appendChild(cabecera(t('uc.title', 'Qué se está cargando'), t('uc.sub', 'Los balances que se sumaron al sitio y los que vienen.')));
+    var grilla = el('div', 'vid-grilla');
+    grilla.appendChild(ultTarjeta(t('uc.last', 'Últimas cargas'), t('uc.last.sub', 'Lo más reciente que se sumó'), ult, true, true));
+    if(prox.length) grilla.appendChild(ultTarjeta(t('uc.next', 'Próximas cargas'), t('uc.next.sub', 'Con el documento en mano, todavía sin cargar'), prox, false, false));
+    sec.appendChild(grilla);
+  }
+
   function renderDestacados(){
     var caja = $('vidriera');
     if(!caja) return Promise.resolve();
@@ -1224,8 +1285,11 @@ window.LIGA_VIEW = (function(){
 
     var secReg = el('section', 'vid-sec');
     var secLig = el('section', 'vid-sec');
+    var secUlt = el('section', 'vid-sec');
     caja.appendChild(secReg);
     caja.appendChild(secLig);
+    caja.appendChild(secUlt);
+    pintarUltimasCargas(secUlt);
 
     var pReg = loadRegiones().then(function(){
       var R = window.RANKINGS_REGION || {};

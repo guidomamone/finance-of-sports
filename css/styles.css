@@ -441,6 +441,13 @@
   .vidriera{display:flex;flex-direction:column;gap:48px;}
   .vid-sec{display:flex;flex-direction:column;gap:20px;}
   .vid-sec:empty{display:none;}
+  /* Últimas y próximas cargas (al fondo de Inicio): las mismas tarjetas que los rankings; bandera, club y ejercicios en una línea. */
+  .uc-fila{display:grid;grid-template-columns:auto minmax(0,max-content) minmax(0,1fr) auto;align-items:baseline;gap:4px 8px;padding:5px 6px;margin:0 -6px;border-radius:6px;color:var(--text);text-decoration:none;font-size:14px;}
+  .uc-fila:hover{background:#f4f5f7;}
+  .uc-nom{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .uc-ej{color:var(--muted);font-size:13px;white-space:nowrap;}
+  .uc-fecha{color:var(--muted);font-size:12.5px;white-space:nowrap;min-width:46px;text-align:right;}
+  @media (max-width:560px){ .uc-fila{grid-template-columns:auto minmax(0,1fr) auto;} .uc-ej{grid-column:2 / 4;grid-row:2;white-space:normal;} .uc-fecha{grid-column:3;grid-row:1;} }
   .vid-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:8px;}
   .vid-h{margin:0 0 4px;font-size:24px;color:var(--azul);}
   .vid-sub{margin:0;font-size:14px;color:var(--muted);line-height:1.5;max-width:760px;}

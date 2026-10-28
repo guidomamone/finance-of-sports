@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mockup 480: card «Últimas cargas» en Inicio</title>
+<!--
+  TODO 480 (Pantallas). Para que Guido diga sí o no ANTES de construir. Datos reales de los commits de carga al 2026-10-28
+  (Real Santander 2016 a 2025 y Jaguares 2016 a 2025, cargados el mismo día): no son fuente de nada que se publique.
+  Decisión pendiente: A, una fila por club-año (las diez últimas son todas de Real Santander) o B, una fila por club y tanda («Real Santander, 2016 a 2025»).
+  Recomendación: B. Con A el card muestra un solo club y no dice nada del resto. Tokens de css/styles.css.
+-->
+<style>
+  :root{--azul:#0a2b5c;--oro:#f2b705;--bg:#f7f7f5;--card:#fff;--text:#1c1c1c;--muted:#6b6b6b;--border:#e3e3e0}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+  main{max-width:880px;margin:0 auto;padding:16px;display:grid;gap:24px}
+  h2{margin:0 0 4px;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+  .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+  .card h3{margin:0 0 8px;font-size:16px}
+  .fila{display:flex;align-items:center;gap:10px;padding:8px 0;border-top:1px solid var(--border);text-decoration:none;color:inherit}
+  .fila:first-of-type{border-top:0}
+  .ini{flex:none;width:32px;height:32px;border-radius:50%;background:var(--azul);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:700}
+  .nom{flex:1;min-width:0}
+  .nom b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .nom small{color:var(--muted)}
+  .cuando{font-size:12px;color:var(--muted);white-space:nowrap}
+  .mas{display:block;margin-top:8px;padding:10px;text-align:center;border:1px solid var(--azul);border-radius:8px;color:var(--azul);font-weight:600;text-decoration:none}
+  .nota{font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+  <p class="nota">Mockup 480. Dos variantes del card (con diez filas visibles) y la página «Ver más». Las diez cargas más recientes son todas de Real Santander (2016 a 2025), por eso A no sirve.</p>
+  <div class="cols">
+    <section>
+      <h2>A · una fila por club-año</h2>
+      <div class="card"><h3>Últimas cargas</h3>
+        <a class="fila" href="#"><span class="ini">RS</span><span class="nom"><b>Real Santander</b><small>Ejercicio 2025</small></span><span class="cuando">28 oct</span></a>
+        <a class="fila" href="#"><span class="ini">RS</span><span class="nom"><b>Real Santander</b><small>Ejercicio 2024</small></span><span class="cuando">28 oct</span></a>
+        <a class="fila" href="#"><span class="ini">RS</span><span class="nom"><b>Real Santander</b><small>Ejercicio 2023</small></span><span class="cuando">28 oct</span></a>
+        <a class="fila" href="#"><span class="ini">RS</span><span class="nom"><b>Real Santander</b><small>Ejercicio 2022</small></span><span class="cuando">28 oct</span></a>
+        <a class="fila" href="#"><span class="ini">RS</span><span class="nom"><b>Real Santander</b><small>Ejercicio 2021</small></span><span class="cuando">28 oct</span></a>
+        <a class="fila" href="#"><span class="ini">RS</span><span class="nom"><b>Real Santander</b><small>Ejercicio 2020</small></span><span class="cuando">28 oct</span></a>
+        <a class="fila" href="#"><span class="ini">RS</span><span class="nom"><b>Real Santander</b><small>Ejercicio 2019</small></span><span class="cuando">28 oct</span></a>
+        <a class="fila" href="#"><span class="ini">RS</span><span class="nom"><b>Real Santander</b><small>Ejercicio 2018</small></span><span class="cuando">28 oct</span></a>
+        <a class="fila" href="#"><span class="ini">RS</span><span class="nom"><b>Real Santander</b><small>Ejercicio 2017</small></span><span class="cuando">28 oct</span></a>
+        <a class="fila" href="#"><span class="ini">RS</span><span class="nom"><b>Real Santander</b><small>Ejercicio 2016</small></span><span class="cuando">28 oct</span></a>
+        <a class="mas" href="#">Ver más</a>
+      </div>
+    </section>
+    <section>
+      <h2>B · una fila por club y tanda (recomendada)</h2>
+      <div class="card"><h3>Últimas cargas</h3>
+        <a class="fila" href="#"><span class="ini">RS</span><span class="nom"><b>Real Santander</b><small>Ejercicios 2016 a 2025</small></span><span class="cuando">28 oct</span></a>
+        <a class="fila" href="#"><span class="ini">JA</span><span class="nom"><b>Jaguares</b><small>Ejercicios 2016 a 2025</small></span><span class="cuando">28 oct</span></a>
+        <a class="fila" href="#"><span class="ini">…</span><span class="nom"><b>(el club de la tanda anterior)</b><small>Ejercicio …</small></span><span class="cuando">…</span></a>
+        <a class="mas" href="#">Ver más</a>
+      </div>
+      <p class="nota">Cada fila abre el club en el último ejercicio de la tanda. Una tanda = cargas del mismo club el mismo día. Muestra los 10 últimos club-tandas.</p>
+    </section>
+  </div>
+  <section>
+    <h2>Página «Ver más» (/ultimas-cargas)</h2>
+    <div class="card"><h3>Últimas cargas</h3>
+      <p class="nota">La misma lista agrupada por tanda, 50 por página y «Cargar más» al final; una fila por club y fecha. Con la fecha completa (28 oct 2026) en lugar de «28 oct». Español e inglés por <code>t()</code>.</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>

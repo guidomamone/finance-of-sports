@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Últimas cargas | El deporte en Números</title>
+<meta name="description" content="Los balances de clubes que se sumaron más recientemente a financeofsports.com: club, ejercicios y fecha de carga.">
+<link rel="canonical" href="https://financeofsports.com/ultimas-cargas.html">
+<style>
+  :root{--azul:#0a2b5c;--oro:#f2b705;--bg:#f7f7f5;--card:#fff;--text:#1c1c1c;--muted:#6b6b6b;--border:#e3e3e0;}
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  header{background:var(--azul);color:#fff;padding:12px 16px;}
+  .header-inner{max-width:1040px;margin:0 auto;display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;}
+  .dot{width:10px;height:10px;background:var(--oro);border-radius:50%;}
+  header a{color:#fff;text-decoration:none;}
+  main{max-width:760px;margin:0 auto;padding:28px 16px 60px;}
+  h1{font-size:34px;letter-spacing:-.02em;color:var(--azul);margin:0 0 8px;}
+  .bajada{font-size:16px;color:#45474d;margin:0 0 18px;}
+  a{color:var(--azul);}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;}
+  .fila{display:grid;grid-template-columns:auto minmax(0,max-content) minmax(0,1fr) auto;align-items:baseline;gap:4px 8px;padding:8px 0;border-top:1px solid var(--border);color:inherit;text-decoration:none;}
+  .fila:first-child{border-top:0;padding-top:0;}
+  .fila:hover .nom{text-decoration:underline;}
+  .nom{font-weight:700;overflow-wrap:anywhere;}
+  .ej{color:var(--muted);font-size:13px;}
+  .fecha{font-size:12.5px;color:var(--muted);white-space:nowrap;}
+  @media (max-width:560px){ .fila{grid-template-columns:auto minmax(0,1fr) auto;} .ej{grid-column:2 / 4;grid-row:2;} .fecha{grid-column:3;grid-row:1;} }
+  .mas{display:block;margin:14px auto 0;min-height:44px;padding:0 22px;border:1px solid var(--azul);background:#fff;color:var(--azul);border-radius:10px;font:inherit;font-size:15px;font-weight:700;cursor:pointer;}
+  .nota{font-size:13px;color:var(--muted);margin:18px 0 0;}
+  .volver{display:inline-block;margin-top:24px;font-size:14px;}
+  footer{max-width:760px;margin:0 auto;padding:20px 16px;color:var(--muted);font-size:12.5px;}
+  @media (max-width:640px){ h1{font-size:28px;} }
+</style>
+</head>
+<body>
+<header><div class="header-inner"><span class="dot"></span><a href="index.html">El deporte en Números</a></div></header>
+<main>
+  <h1 data-i18n="uc.pag.title">Últimas cargas</h1>
+  <p class="bajada" data-i18n="uc.pag.lead">Los balances de clubes que se sumaron al sitio, del más reciente al más antiguo. Cada fila es un club y lo que se cargó de él en un mismo día.</p>
+  <div class="card" id="lista"></div>
+  <button type="button" class="mas" id="mas" hidden data-i18n="uc.more">Ver más</button>
+  <p class="nota" data-i18n="uc.pag.nota">La fecha es la de la carga en el sitio, no la del balance.</p>
+  <a class="volver" href="index.html" data-i18n="corr.pag.volver">‹ Volver al sitio</a>
+</main>
+<footer>financeofsports.com. Datos públicos de clubes de fútbol.</footer>
+<script>window.ASSET_V = '2139';</script>
+<script src="data/manifiesto.js"></script>
+<script>window.fosDataTag = function (r) { var m = window.DATA_VERS, v = (m && m[r]) || window.ASSET_V; document.write('<script src="' + r + (v ? '?v=' + v : '') + '"><\/script>'); };</script>
+<script>fosDataTag('data/lang/langs.js')</script>
+<script src="js/i18n.js?v=2139"></script>
+<script>fosDataTag('data/clubs.js')</script>
+<script>fosDataTag('data/leagues.js')</script>
+<script>fosDataTag('data/ultimas-cargas.js')</script>
+<script>
+(function(){
+  var t = function(k, es){ return I18N.t(k, es); };
+  var $ = function(id){ return document.getElementById(id); };
+  var PAGINA = 50, mostrados = PAGINA;
+  var K = function(){ return (typeof clubs !== 'undefined' && clubs) || {}; };
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+  function ejercicios(a){
+    var runs = [], i = 0;
+    while(i < a.length){ var j = i; while(j + 1 < a.length && a[j + 1] === a[j] + 1) j++; runs.push(j > i ? a[i] + ' ' + t('uc.to', 'a') + ' ' + a[j] : String(a[i])); i = j + 1; }
+    if(runs.length > 2) return t('uc.nEj', '{n} ejercicios ({a} a {b})').replace('{n}', a.length).replace('{a}', a[0]).replace('{b}', a[a.length - 1]);
+    return (a.length === 1 ? t('uc.ej1', 'Ejercicio') : t('uc.ejN', 'Ejercicios')) + ' ' + runs.join(', ');
+  }
+  function fecha(f){ return new Date(f + 'T12:00:00').toLocaleDateString(document.documentElement.lang || 'es', { day:'numeric', month:'short', year:'numeric' }); }
+  function pintar(){
+    var todas = (window.ULTIMAS_CARGAS || []).filter(function(c){ return (K()[c.id] || {}).displayName; });
+    $('lista').innerHTML = todas.slice(0, mostrados).map(function(c){
+      var bandera = ((window.COUNTRIES || {})[c.id.slice(-2).toUpperCase()] || {}).flag || '';
+      return '<a class="fila" href="index.html?tab=finanzas&amp;club=' + encodeURIComponent(c.id) + '&amp;anios=' + c.anios[c.anios.length - 1] + '"><span>' + bandera + '</span>'
+        + '<span class="nom">' + esc(K()[c.id].displayName) + '</span><span class="ej">' + esc(ejercicios(c.anios)) + '</span><span class="fecha">' + esc(fecha(c.fecha)) + '</span></a>';
+    }).join('');
+    $('mas').hidden = todas.length <= mostrados;
+  }
+  $('mas').onclick = function(){ mostrados += PAGINA; pintar(); };
+  I18N.init().then(pintar);
+  I18N.onChange(pintar);
+})();
+</script>
+</body>
+</html>
