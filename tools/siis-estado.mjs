@@ -124,6 +124,8 @@ const CLASE = {
   gananciasPerdidasDifCostoAmortizado: ['renglon', 'otro'], gananciaPerdidasCovertura: ['renglon', 'otro'], gananciaPerdidaXActividadesOperacion: ['resultado', 'resultado'], ingresosFinancieros: ['renglon', 'financiero'],
   costosFinancieros: ['renglon', 'financiero'], participacion_ganancias_subsidiarias: ['renglon', 'otro'], gananciaPerdidaAntesImpuestos: ['resultado', 'resultado'], ingresoGastoXImpuestos: ['renglon', 'impuesto'], gananciaPerdidaOperacionesContinuadas: ['resultado', 'resultado'],
   gananciaPerdidaOperacionesDiscontinuadas: ['renglon', 'otro'], gananciaPerd: ['resultado', 'resultado'],
+  // partidas de otro resultado integral que SIIS lista debajo de la ganancia y no entran en ninguna compuerta (Atlético Nacional las informa en 0): como una fila «otro»; con un valor distinto de 0 el .md las muestra y la verificación las ve
+  gananciaPerdidaAcumulada: ['renglon', 'otro'], difImporteLibros: ['renglon', 'otro'],
 };
 // La especificación de armar-a-mano.mjs: el estado de resultados de SIIS son las filas, cada una en su línea del .md. Devuelve null si algún rubro no tiene clase.
 function especificacion({ club, anio, md, filasRes, sal, ant, perimetro, notas }) {

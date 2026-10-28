@@ -20,6 +20,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1233 — siis-estado: dos partidas de otro resultado integral en 0 ya no frenan el armado de filas [463 · siis-estado.mjs · atlnacional-co]
+- `siis-estado.mjs` dejaba un año sin filas armadas («rubros de SIIS sin clase en CLASE: gananciaPerdidaAcumulada, difImporteLibros») cuando SIIS lista esas dos partidas, que Atlético Nacional informa en 0 en 2016, 2021, 2022 y 2023; el resumen decía «Escritos N año(s)» igual. Ahora entran como fila `otro` (precedente: `gananciasPerdidasDifCostoAmortizado`): si valieran distinto de 0 no están en ninguna compuerta y el .md las muestra para la verificación.
+- Medición: idéntico (`siis` y `verificar`, lotes chico y mediano). Sin revisión independiente de la Auditora.
+
 ## Versión 1232 — La Equidad: la línea «Gastos de administración» sin desglose, que `prueba-escribir` había detectado [476 · sin-desglose-tipo.mjs · laequidad-co]
 - `sin-desglose-tipo.mjs --pais co --escribir` en los datos reales agregó a `data/co/laequidad-co.json` una entrada de `no_breakdown` («Gastos de administración», 24.415,721, `other`) que faltaba; ensayo antes y después (0 por completar). El resto del JSON no cambió salvo `exported_at`. `publicar` subió `ASSET_V` 2110 a 2111 y regeneró las páginas.
 - Medición: la regla la comprobó `audit.js` (P0 0 · P1 0 · P2 0 · P3 9, igual que antes); la tool no cambió (sin medición de tools).
