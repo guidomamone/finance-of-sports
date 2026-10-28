@@ -99,7 +99,7 @@ Clubes/Suiza/Basel/geschaeftsbericht-2017.pdf
 Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2023.pdf
 # === AUTOMÁTICO: casos raros (un ajuste manual, un freno o una respuesta de la cola que no fue «aceptar»; el más viejo y el más nuevo de cada clase; no se edita) ===
 # clase: ajuste:filas-a-mano
-Clubes/Colombia/Deportes Tolima/siis-estado-2016.pdf
+Clubes/Colombia/Atletico Nacional/siis-estado-2015.pdf
 Clubes/Colombia/Cortulua/siis-estado-2025.pdf
 # clase: cola:cargar|categoria|corregir
 Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf
@@ -111,6 +111,8 @@ Clubes/Portugal/Sporting CP/relatorio-contas-1999.pdf
 # clase: ajuste:resultado-final
 Clubes/Brasil/Ferroviaria/balanco-2013-b.pdf
 Clubes/Brasil/Paysandu/dre-2025.pdf
+# clase: cola:cargar|tipo-linea|corregir
+Clubes/Colombia/Deportes Tolima/siis-estado-2016.pdf
 # clase: ajuste:anio
 Clubes/Italia/Lazio/Lazio-bilancio-1999-00.pdf
 Clubes/Portugal/Paços de Ferreira/contas_2425.pdf
@@ -165,7 +167,5 @@ Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2022-23.pdf
 # clase: freno:298 z2
 Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2019-20.pdf
 Clubes/Inglaterra/Newcastle United/newcastle-group-accounts-2020-21.pdf
-# clase: freno:compensación intragrupo (Entschädigung von/an Event AG) no se elimina en 2018-19 ni 2019-20 aunque el perímetro es consolidado (298 ai solo la saca si el importe repite año y año anterior)
-Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.pdf
 # === AUTOMÁTICO: ranura de la semana 2026-S44 (la familia Portugal · pdf; rota cada semana; no se edita) ===
 Clubes/Portugal/Sporting CP/relatorio-contas-2008-09.pdf
