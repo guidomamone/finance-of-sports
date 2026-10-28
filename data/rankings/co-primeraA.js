@@ -290,9 +290,11 @@ window.RANKINGS["co-primeraA"] = {
   },
   2019: {
     leagueSize: 20,
-    sinDato: ["atlnacional-co"],
     wiki: {"t":"2019 Categoría Primera A season","lang":"en","at":"2026-10-02","n":20},
     clubs: [
+      { id:"atlnacional-co", revenue:33.42, reportType:"official_balance_sheet",
+        sourceId:"atlnacional-co-siis-estado-2019",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",28.873],["Otros ingresos",4.548]] },
       { id:"americadecali-co", revenue:13.029, reportType:"official_balance_sheet",
         sourceId:"americadecali-co-siis-estado-2019",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",13.001],["Otros ingresos",0.028]] },

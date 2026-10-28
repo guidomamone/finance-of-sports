@@ -34,6 +34,7 @@ window.GLOSAS_ETIQUETAS = Object.assign(window.GLOSAS_ETIQUETAS || {}, {
 "Mecanismo de solidaridad":{"en":"Solidarity mechanism"},
 "Multas y sanciones":{"en":"Fines and penalties"},
 "Obligaciones disciplinarias a torneos":{"en":"Tournament disciplinary obligations"},
+"Otras ganancias (pérdidas)":{"en":"Other gains (losses)"},
 "Otros":{"en":"Other"},
 "Otros (reintegro de costos y gastos Dimayor)":{"en":"Other (Dimayor cost and expense reimbursement)"},
 "Otros egresos (multas y sanciones, donaciones, retenciones asumidas, pérdida en venta de equipo, impuestos asumidos, otros)":{"en":"Other expenses (fines and penalties, donations, assumed withholdings, loss on sale of equipment, assumed taxes, other)"},
