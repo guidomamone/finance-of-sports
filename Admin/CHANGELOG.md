@@ -26,6 +26,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1246 — fos reexpresion: por par de años de SIIS, reexpresión real o una fila [478 · reexpresion.mjs, probar-reexpresion.mjs, fos-comandos.json]
+- `node tools/fos.mjs reexpresion "<Club>" [desde hasta]` absorbe `Prototyping/defectos-463/reexpresion.mjs` y `diff-fila.mjs` (borrados): por par (Y, Y+1) lista los rubros que difieren entre el corte de Y y el «año anterior» de Y+1, si el resultado coincide y si el par es REEXPRESIÓN, una FILA de lado `otro` idéntica en los dos estados (con su etiqueta) o solo redondeo (hasta 5 miles). Sobre Atlético Nacional: 2015/2016 y 2018/2019 reexpresión; 2019/2020, 2020/2021, 2023/2024 y 2024/2025 la fila «Otras ganancias (pérdidas)»; también la marca en 2021/2022 y 2022/2023 (verificar no las abrió: ahí las cifras de SIIS son las mismas y las dos comparaciones la contaron igual).
+- Medición: tool de «orden» (no del pipeline, solo lee): no pide medición; `probar-reexpresion.mjs` ok.
+
+---
+
 ## Versión 1245 — dictamenes-md --mistral: los escaneos por Mistral en un comando [478 · dictamenes-md.mjs, dictamenes-mistral.mjs, probar-dictamenes-mistral.mjs]
 - `dictamenes-md.mjs "<Club>" --mistral` pasa por Mistral OCR los dictámenes escaneados (sin texto nativo y sin `.md`), imprime el costo de cada uno y el total, y vuelve a correr la revisión de la firma. Sin el flag solo avisa cuántos son y cuánto costaría (~US$ 0,014 cada uno): no gasta. `probar-dictamenes-mistral.mjs` usa un runner falso; la llamada real a Mistral no se corrió.
 - Medición: tool de «orden» (no del pipeline): no pide medición; la prueba ok.
