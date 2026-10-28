@@ -16,6 +16,10 @@ const realsantanderCoRevenueLinesByYear = {
     {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":3156.697,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":7.721,"disclosureLevel":"aggregated"},
   ],
+  2020: [
+    {"rawLabel":"Ingresos de actividades ordinarias","normalizedCategory":"lump_football_operations","amountNative":1643.611,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros ingresos","normalizedCategory":"other_income","amountNative":154.334,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const realsantanderCoExpenseLinesByYear = {
@@ -35,6 +39,10 @@ const realsantanderCoExpenseLinesByYear = {
     {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-2836.961,"disclosureLevel":"aggregated"},
     {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-59.288,"disclosureLevel":"aggregated"},
   ],
+  2020: [
+    {"rawLabel":"Gastos de administración","normalizedCategory":"admin_general_expense","amountNative":-2322.567,"disclosureLevel":"aggregated"},
+    {"rawLabel":"Otros gastos","normalizedCategory":"other_expenses","amountNative":-39.939,"disclosureLevel":"aggregated"},
+  ],
 };
 
 const realsantanderCoFiscalYearMeta = {
@@ -42,6 +50,7 @@ const realsantanderCoFiscalYearMeta = {
   2017: {"currency":"COP","sourceId":"realsantander-co-siis-estado-2017","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2017-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-78.171,"tax":-107.462,"grossDebt":null,"cash":null,"officialTotalRevenue":3955.323,"officialTotalExpenses":2532.629,"officialPAT":1237.061,"extraRows":[{"label":"Costos financieros","value":-78.171},{"label":"Ingreso (gasto) por impuestos","value":-107.462}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":3955.323,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
   2018: {"currency":"COP","sourceId":"realsantander-co-siis-estado-2018","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2018-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-94.526,"tax":-27.173,"grossDebt":null,"cash":null,"officialTotalRevenue":2197.77,"officialTotalExpenses":2809.628,"officialPAT":-733.557,"extraRows":[{"label":"Costos financieros","value":-94.526},{"label":"Ingreso (gasto) por impuestos","value":-27.173}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":2169.952,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
   2019: {"currency":"COP","sourceId":"realsantander-co-siis-estado-2019","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2019-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-163.615,"tax":-44.153,"grossDebt":null,"cash":null,"officialTotalRevenue":3164.418,"officialTotalExpenses":2896.249,"officialPAT":60.401,"extraRows":[{"label":"Costos financieros","value":-163.615},{"label":"Ingreso (gasto) por impuestos","value":-44.153}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":3156.697,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
+  2020: {"currency":"COP","sourceId":"realsantander-co-siis-estado-2020","reportType":"official_balance_sheet","gestionId":null,"fxRef":"COP@2020-12-31","profitOnPlayerSales":0,"assetSales":0,"netInterest":-96.02,"tax":-11.48,"grossDebt":null,"cash":null,"officialTotalRevenue":1797.945,"officialTotalExpenses":2362.506,"officialPAT":-672.061,"extraRows":[{"label":"Costos financieros","value":-96.02},{"label":"Ingreso (gasto) por impuestos","value":-11.48}],"sinDesglose":[{"renglon":"Ingresos de actividades ordinarias","lado":"revenue","importe":1643.611,"motivo":"el documento no desglosa este renglón","tipo":"net_sales"}],"baseIngreso":"full"},
 };
 
 const realsantanderCoPresupuestoOverlayByYear = {};
@@ -58,6 +67,6 @@ window.CLUB_GENERIC_DATA["realsantander-co"] = {
   presupuestoOverlayByYear: realsantanderCoPresupuestoOverlayByYear,
 };
 
-Object.assign(sources, {"realsantander-co-siis-estado-2016":{"id":"realsantander-co-siis-estado-2016","clubId":"realsantander-co","title":"Club Deportivo Real Santander S.A. — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Real Santander/siis-estado-2016.pdf"},"realsantander-co-siis-estado-2017":{"id":"realsantander-co-siis-estado-2017","clubId":"realsantander-co","title":"Club Deportivo Real Santander S.A. — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Real Santander/siis-estado-2017.pdf"},"realsantander-co-siis-estado-2018":{"id":"realsantander-co-siis-estado-2018","clubId":"realsantander-co","title":"Club Deportivo Real Santander S.A. — siis-estado-2018 (ejercicio 2018)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Real Santander/siis-estado-2018.pdf"},"realsantander-co-siis-estado-2019":{"id":"realsantander-co-siis-estado-2019","clubId":"realsantander-co","title":"Club Deportivo Real Santander S.A. — siis-estado-2019 (ejercicio 2019)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Real Santander/siis-estado-2019.pdf"}});
+Object.assign(sources, {"realsantander-co-siis-estado-2016":{"id":"realsantander-co-siis-estado-2016","clubId":"realsantander-co","title":"Club Deportivo Real Santander S.A. — siis-estado-2016 (ejercicio 2016)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Real Santander/siis-estado-2016.pdf"},"realsantander-co-siis-estado-2017":{"id":"realsantander-co-siis-estado-2017","clubId":"realsantander-co","title":"Club Deportivo Real Santander S.A. — siis-estado-2017 (ejercicio 2017)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Real Santander/siis-estado-2017.pdf"},"realsantander-co-siis-estado-2018":{"id":"realsantander-co-siis-estado-2018","clubId":"realsantander-co","title":"Club Deportivo Real Santander S.A. — siis-estado-2018 (ejercicio 2018)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Real Santander/siis-estado-2018.pdf"},"realsantander-co-siis-estado-2019":{"id":"realsantander-co-siis-estado-2019","clubId":"realsantander-co","title":"Club Deportivo Real Santander S.A. — siis-estado-2019 (ejercicio 2019)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Real Santander/siis-estado-2019.pdf"},"realsantander-co-siis-estado-2020":{"id":"realsantander-co-siis-estado-2020","clubId":"realsantander-co","title":"Club Deportivo Real Santander S.A. — siis-estado-2020 (ejercicio 2020)","type":"official_balance_sheet","reliability":"primary","documento":"Clubes/Colombia/Real Santander/siis-estado-2020.pdf"}});
 
 memberCountByClub["realsantander-co"] = null;
