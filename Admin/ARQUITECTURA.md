@@ -675,6 +675,11 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
     cae dentro de ese mes: el día exacto no cambia qué gestión cubre ningún cierre. Si un cierre cae en ese mes,
     `confirmada:false` y se pregunta. Caso: Ramiro Ruiz (Envigado), desde octubre de 2013: sus cierres 2016 a 2024 están a años
     de distancia, queda confirmada y se muestra; antes quedaba sin confirmar y dejaba 9 preguntas abiertas.
+  - SIN NOTA DE INICIO O DE SALIDA: una persona que las notas fechadas nombran presidente en años sueltos, sin una nota que diga cuándo
+    asumió o cuándo dejó (o un fundador cuyo inicio es la fecha de fundación), queda `confirmada:false` con el motivo en el
+    `Admin/carga-clubes/<club>.md`: las notas dicen que estaba, no desde cuándo ni hasta cuándo, y un cierre sin nota propia no se
+    infiere por descarte. Con un inicio fechado (aunque sea de mes) y un fin fechado, los cierres de en medio sí quedan cubiertos
+    (Ruiz). Casos: Jaguares (Soto Duque) y Real Santander (Rodríguez y Núñez).
   - LOS EJERCICIOS DE CADA GESTIÓN NO SE ESCRIBEN: se derivan. Un ejercicio es de quien estaba en el cargo el día de
     su CIERRE (30/6 para un club que arranca el 1/7). La regla es "de quien firmó el balance"; las dos coinciden salvo
     cuando el cambio cae entre el cierre y la aprobación del balance. Para esos casos existe `firmo` (lista de
