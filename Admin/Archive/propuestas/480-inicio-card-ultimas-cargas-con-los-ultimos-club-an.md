@@ -1,3 +1,5 @@
+> **ARCHIVADO el 2026-10-28** al cerrar el punto 480: lo que servía quedó en `Admin/PIPELINE.md`, `Admin/HALLAZGOS-pipeline.md` o el CHANGELOG. Las rutas y números son los de ese día.
+
 <!-- md: Inicio: card «Últimas cargas» con los últimos club-años cargados y «Ver más» a una página | leer: al trabajar el punto 480 del TODO -->
 # 480 · Inicio: card «Últimas cargas» con los últimos club-años cargados y «Ver más» a una página
 
