@@ -31,6 +31,7 @@
 //   node tools/cola.mjs --todas                          también los respondidos
 //   node tools/cola.mjs --lista Admin/lotes/lote-NN.txt  solo los de ese lote; también --dir "Clubes/<País>/<Club>" y --tipo gestion|categoria
 //   node tools/cola.mjs --responder <id> aceptar|corregir|preguntar-club [--valor "1.234.567"] [--nota "…"] --evidencia "ruta.md:12-30"|ninguna --seguridad alta|media|baja --causa lectura-del-documento|regla-escrita|otra|…
+//   node tools/cola.mjs --ids a,b,c aceptar|corregir|… [--valor …] [--nota …] --evidencia … --seguridad … --causa …   la MISMA respuesta a varios casos (todo o nada: valida los ids y las tres opciones antes de guardar; cada caso pasa por sus compuertas de --responder)
 //     (las tres últimas son obligatorias, sin ellas no se guarda; --evidencia es de un .md del club, «ninguna» si la fuente es una web u otro archivo; todas las causas: cola-respuesta.mjs)
 //   node tools/cola.mjs --corregir-categoria "<pdf>" "<etiqueta>" <categoría> --nota "..."   (fija la categoría de una fila, ver abajo)
 //   node tools/cola.mjs --historial <texto> [motivo]     la historia de un club: cada caso y cada respuesta, en orden
@@ -303,6 +304,24 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   negarSiSeMide('cola.mjs', { si: A.includes('--responder') || A.includes('--corregir-categoria') }); // escriben la cola: no mientras medir pipeline mide
   // --corregir-categoria: fija la categoría de UNA fila de un documento (cola-corregir-categoria.mjs)
   if (A.includes('--corregir-categoria')) { const { corregirCategoria } = await import('./cola-corregir-categoria.mjs'); await corregirCategoria({ A, flag, ARCHIVO, agregarCaso }); process.exit(0); }
+  // --ids a,b,c <decisión> …: la misma respuesta (nota, evidencia, seguridad y causa) a VARIOS casos, uno por uno con --responder (cada uno con sus propias compuertas). Todo o nada: se valida ANTES de escribir
+  // que cada id exista y que las tres opciones estén; con una sola que falle no se guarda ninguna. (Contestar 14 casos de Nacional eran 14 comandos con las mismas tres opciones.)
+  if (A.includes('--ids')) {
+    const lista = String(flag('--ids') || '').split(',').map((x) => x.trim()).filter(Boolean); const decision = A[A.indexOf('--ids') + 2];
+    const { casos } = leer(); const faltan = lista.filter((x) => !casos.has(x));
+    if (!lista.length) { console.error('--ids pide los ids separados por coma: --ids a,b,c aceptar --nota "…" --evidencia … --seguridad … --causa …'); process.exit(1); }
+    if (faltan.length) { console.error(`No hay ningún caso ${faltan.join(', ')} (node tools/cola.mjs para verlos). No se guardó ninguna respuesta.`); process.exit(1); }
+    if (!DECISIONES.includes(decision)) { console.error(`La decisión tiene que ser una de: ${DECISIONES.join(', ')}`); process.exit(1); }
+    const prueba = lineaDeRespuesta({ id: lista[0], decision, valor: flag('--valor'), nota: flag('--nota'), evidencia: flag('--evidencia'), seguridad: flag('--seguridad'), causa: flag('--causa'), precedentes: flag('--precedentes') });
+    if (prueba.errores.length) { console.error(`No guardé ninguna respuesta: ${prueba.errores.join('; ')}. --causa: ${CAUSAS.join('|')}`); process.exit(1); }
+    const opciones = ['--valor', '--nota', '--evidencia', '--seguridad', '--causa', '--precedentes'].flatMap((k) => (flag(k) != null ? [k, flag(k)] : [])).concat(A.includes('--igual') ? ['--igual'] : []);
+    let mal = 0;
+    for (const id of lista) {
+      const r = spawnSync('node', [process.argv[1], '--responder', id, decision, ...opciones], { cwd: ROOT, encoding: 'utf8', env: process.env, maxBuffer: 1 << 26 });
+      console.log(`${id}: ${r.status === 0 ? String(r.stdout).trim().split('\n')[0] : `NO se guardó: ${String(r.stderr || r.stdout).trim().split('\n')[0]}`}`); if (r.status !== 0) mal++;
+    }
+    console.log(`${lista.length - mal} de ${lista.length} respuesta(s) guardada(s).`); process.exit(mal ? 1 : 0);
+  }
   if (A.includes('--responder')) {
     const id = flag('--responder'); const decision = A[A.indexOf('--responder') + 2];
     const { casos } = leer();

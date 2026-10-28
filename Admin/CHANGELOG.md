@@ -26,6 +26,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1247 — cola.mjs --ids: la misma respuesta a varios casos [478 · cola.mjs, probar-registros.mjs]
+- `node tools/cola.mjs --ids a,b,c aceptar --nota "…" --evidencia … --seguridad … --causa …` guarda una respuesta con esquema por caso (cada uno pasa por las compuertas de `--responder`). Todo o nada: antes de escribir valida que cada id exista y que estén las tres opciones; sin ellas no guarda ninguna. Absorbe `Prototyping/defectos-463/responder-nacional.mjs` (borrado). Tres casos nuevos en `probar-registros.mjs`.
+- Medición: lote completo idéntico (cargar, cargar-cola-vacia, audit, escribir, verificar, lote-ensayo, alta); veredicto GENERAL; sin revisión independiente.
+
+---
+
 ## Versión 1246 — fos reexpresion: por par de años de SIIS, reexpresión real o una fila [478 · reexpresion.mjs, probar-reexpresion.mjs, fos-comandos.json]
 - `node tools/fos.mjs reexpresion "<Club>" [desde hasta]` absorbe `Prototyping/defectos-463/reexpresion.mjs` y `diff-fila.mjs` (borrados): por par (Y, Y+1) lista los rubros que difieren entre el corte de Y y el «año anterior» de Y+1, si el resultado coincide y si el par es REEXPRESIÓN, una FILA de lado `otro` idéntica en los dos estados (con su etiqueta) o solo redondeo (hasta 5 miles). Sobre Atlético Nacional: 2015/2016 y 2018/2019 reexpresión; 2019/2020, 2020/2021, 2023/2024 y 2024/2025 la fila «Otras ganancias (pérdidas)»; también la marca en 2021/2022 y 2022/2023 (verificar no las abrió: ahí las cifras de SIIS son las mismas y las dos comparaciones la contaron igual).
 - Medición: tool de «orden» (no del pipeline, solo lee): no pide medición; `probar-reexpresion.mjs` ok.

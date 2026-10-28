@@ -53,6 +53,20 @@ caso('cola --responder sin las tres no guarda nada y dice qué falta', x.status 
 x = responder('descartar', '--evidencia', 'ninguna', '--seguridad', 'baja');
 caso('cola --responder sin --causa no guarda (ninguna decisión sale del esquema)', x.status === 1 && /causa/.test(x.out) && ultima().seguridad === 'media', x.out);
 
+// ---- cola.mjs --ids: varios casos con una nota, evidencia, seguridad y causa compartidas (ítem 13 del punto 478)
+const caso3 = (id) => JSON.stringify({ tipo: 'caso', id, ts: '2026-10-25T00:00:00.000Z', clave: `k-${id}`, pdf: 'Clubes/X/y.pdf', md: 'Clubes/X/y.md', etapa: 'verificar', motivo: 'anio-vecino', detalle: id, que: 'q' });
+const cola3 = join(T, 'cola3.jsonl'); writeFileSync(cola3, ['c1', 'c2', 'c3'].map(caso3).join('\n') + '\n');
+const lineas3 = () => readFileSync(cola3, 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+const ids = (...a) => { const x = spawnSync('node', ['tools/cola.mjs', '--ids', ...a], { cwd: ROOT, encoding: 'utf8', env: { ...process.env, COLA_ARCHIVO: cola3 } }); return { status: x.status, out: (x.stdout || '') + (x.stderr || '') }; };
+x = ids('c1,c2,c3', 'aceptar', '--nota', 'la misma fila en los tres', '--evidencia', 'Clubes/X/y.md:3-9', '--seguridad', 'alta', '--causa', 'lectura-del-documento');
+const resp3 = lineas3().filter((l) => l.tipo === 'respuesta' || l.decision);
+caso('cola --ids guarda una respuesta con esquema por caso (3 casos, las mismas opciones)', x.status === 0 && resp3.length === 3 && resp3.every((r) => r.esquema === 1 && r.nota === 'la misma fila en los tres' && validar('cola-respuesta', r).length === 0) && resp3.map((r) => r.id).join() === 'c1,c2,c3', x.out + JSON.stringify(resp3));
+writeFileSync(cola3, ['c1', 'c2', 'c3'].map(caso3).join('\n') + '\n');
+x = ids('c1,c2', 'aceptar', '--seguridad', 'alta');
+caso('cola --ids sin las tres opciones no guarda nada y dice qué falta', x.status === 1 && /evidencia/.test(x.out) && /causa/.test(x.out) && lineas3().length === 3, x.out);
+x = ids('c1,zz9', 'aceptar', '--evidencia', 'ninguna', '--seguridad', 'alta', '--causa', 'otra');
+caso('cola --ids con un id que no existe no guarda ninguno (todo o nada)', x.status === 1 && /zz9/.test(x.out) && lineas3().length === 3, x.out);
+
 // ---- decision.mjs en un repo de juguete
 const D = join(T, 'repo'); mkdirSync(join(D, 'tools'), { recursive: true }); mkdirSync(join(D, 'Admin', 'registros'), { recursive: true });
 for (const f of ['decision.mjs', 'registro-esquema.js', 'esquemas-registros.json']) copyFileSync(join(ROOT, 'tools', f), join(D, 'tools', f));

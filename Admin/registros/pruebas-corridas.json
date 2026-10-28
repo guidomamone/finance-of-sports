@@ -30,14 +30,14 @@
   "segundos": 0
  },
  "tools/probar-cierre.mjs": {
-  "fecha": "2026-10-27",
+  "fecha": "2026-10-28",
   "ok": true,
   "segundos": 1
  },
  "tools/probar-club-siis.mjs": {
   "fecha": "2026-10-28",
   "ok": true,
-  "segundos": 5
+  "segundos": 6
  },
  "tools/probar-dictamenes-mistral.mjs": {
   "fecha": "2026-10-28",
@@ -100,9 +100,9 @@
   "segundos": 0
  },
  "tools/probar-registros.mjs": {
-  "fecha": "2026-10-27",
+  "fecha": "2026-10-28",
   "ok": true,
-  "segundos": 0
+  "segundos": 1
  },
  "tools/probar-sello-audit.mjs": {
   "fecha": "2026-10-27",
@@ -132,6 +132,6 @@
  "tools/prueba-escribir.mjs": {
   "fecha": "2026-10-28",
   "ok": true,
-  "segundos": 173
+  "segundos": 179
  }
 }
