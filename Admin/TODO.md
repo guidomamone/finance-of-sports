@@ -147,48 +147,37 @@ Verificar: audit raya-larga-visible = 0
 Verificar: audit i18n-incompleto = 0
 Verificar: manual
 
-### 11. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica; revisar qué letras siguen vivas
+### 11. 298 · (Pipeline): las mejoras de script que dejó el onboarding de Estonia y Bélgica: lo que sigue abierto
 
-2026-10-24 (Orden): no es un punto chico. Verificadas contra el código y sacadas del texto por estar hechas: aa (`worktree.mjs` ya lleva `data/sponsors.js` y `sponsors-indice.js` en OTROS_GENERADOS), i (`alta-club-tablas.mjs` resuelve un país fuera de PAISES con la tabla de referencia ISO) y o (`lote-preparar.mjs`: «la versión corregida reemplaza al original»). Quedan unas 12 letras sin verificar (g2, k, l a q, s, z, t2, u2, v…), cada una un escalón del pipeline con medición completa y varias con diseño de Guido (z: cómo se muestra un año de más de 12 meses; t2: si se corrigen los 3 años belgas con errores chicos; Escocia/Gales/Irlanda del Norte en el selector). Falta, primero, recorrer las letras contra el código y borrar del texto las que ya estén hechas (ej.: la `aa` de `worktree.mjs mergear` puede haber desaparecido con el modo de una sola sesión); lo que quede, de a una, con Pipeline.
-MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
-Terminado cuando: cada letra pendiente se hizo, se descartó con su motivo en `Admin/HALLAZGOS-pipeline.md` o se confirmó ya resuelta en
-el código. El texto de abajo quedó cortado en un cierre y se recuperó del historial (`git show 7ef1eb6874:Admin/TODO.md`): antes de
-trabajar una letra, verificarla contra el código, porque varias pueden estar hechas.
-vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
-absoluto y da "cierra" con una fila del lado o signo equivocado (Lierse Kempenzonen 2022 habría cargado un gasto como ingreso): lo más
-grave. b) Esquema NBB belga en verificar.mjs y cargar.mjs: costos financieros 65/66B positivos, renglones "(+)/(-)" por valor absoluto,
-el 76A sumado aparte, y verificar y la propuesta que no leen igual el signo; una regla por código NBB.
-Aviso para la próxima corrida grande: 368 documentos viejos sin tablas (221 en "revisar", 102 en "pendiente-segunda-voz", 38 en
-"sin-tablas") se rehacen con Mistral (~US$ 83 más la validación) apenas pasen por resolver-inventario; el ensayo ya lo cotiza.
-RWDM 2019: el registro
-tiene el cierre 2019-11-30 y el balance va del 30/11/2018 al 30/06/2019 (como la f). Escocia, Gales e Irlanda del Norte se ven como GB
-("Inglaterra") en el selector: decisión de pantalla pendiente. g2) partir en la cola cualquier fila según su nota (otros países, el 66A de Lommel SK
-2025): solo si aparece otra fila mixta sin códigos; el 630 belga ya sale solo. l) a p) más casos de onboarding (reportType por año de un club existente, perímetro de la carga, año vecino con
-perímetros distintos, ceros reales y perfil que se repreguntan). q) el ensayo de lote.mjs cobra la categorización de todos los documentos de
-la lista, también los ya cargados o categorizados. El detalle
-de l a q, en `Admin/Archive/sesion-onboarding-2026-10-18-4.md`. s) el cierre de Beerschot 2019 -correction ya lo arregló la f: falta ver si localizar sigue
-eligiendo la columna "Vorig boekjaar" vacía con el cierre bueno. z) cargar los primeros ejercicios de más de 12 meses (Guido: "son
-parciales, pero corresponde cargarlos"): Anderlecht 2011 (16 meses), RAAL La Louvière 2018 (14), Sint-Truiden 2013 (15) y Zulte Waregem
-2012 (17); diseño a decidir: cómo se muestra un año de más de 12 meses y cómo compara con los vecinos. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
-ellos: Patro Eisden 2025 (ingresos +1.810 por el waarvan 76A, gastos +4.012 por el 631/4), Lommel SK 2025 (gastos +172, el 609) y Lommel SK
-2018 (−182 de financiero) cerraron por tolerancia con errores chicos: decidir con Guido si se corrigen (escalón: correr el NBB también
-con ajustes si el resultado sigue exacto). PRIMERO: u2) lo que la u no decide: listas de un solo grupo (Third Division antes de 2016, Second
-Amateur Division: Lokeren-Temse 2021-2022, Patro Eisden 2013-2014 y 2019) y la First Division B 2017-18 y 2018-19, que baja con 7 de 8
-(la tool pierde a Beerschot Wilrijk; OH Leuven 2017-2019, Beerschot 2019).  v) el final
-de lote.mjs lista como frenados los originales que salteó por su -correction. El detalle de s a v, con líneas y montos, en
-`Admin/Archive/sesion-onboarding-2026-10-18-5.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
-`altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
+Revisado el 2026-10-28 contra el código, `Admin/HALLAZGOS-pipeline.md` y `Admin/registros/auditoria-proceso.jsonl`. El detalle de cada letra: `Admin/Archive/sesion-onboarding-2026-10-18-4.md` (a a q) y `-5.md` (s a v). Cada letra pendiente es un escalón del pipeline con medición completa (`fos cerrar-tool`); varias llevan una decisión de Guido.
 
-Verificar: manual
+- [x] Hechas antes (mergeadas el 2026-10-18): a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2, y3 y aa.
+- [x] Hechas con otro mecanismo (verificadas el 2026-10-28): l (`reportType` se deduce del `.md` en tres escalones, `Admin/PIPELINE.md:596`; 72 frenos bajaron a 4), n (`verificar-cierre.mjs:145`: perímetros distintos no se comparan), p (298 p1 y p2: el perfil vale por ventana de 5 años y un `cero-real` de otro documento del club vale), q (`lote-final.mjs:14`: el ensayo solo cobra lo que llega a categorizar), RWDM 2019 (en `documentos-parciales.txt`, con la aclaración de Guido).
+- [x] Descartadas con motivo (`Admin/HALLAZGOS-pipeline.md`): m («medido, no entra»: el ajuste `perimetro` del club es el escalón 0), s (con la f, `periodo.mjs` da el cierre bueno y Beerschot 2019 está cargado), v (los cinco originales ya están en `documentos-descartados.txt`).
+- [x] u2, lo principal: la 298 af sumó a `data/club-leagues/be.js` Patro Eisden 2013-2015 y Lokeren-Temse 2021-2022; Patro 2019, Beerschot 2019 y OH Leuven 2019 ya estaban.
+- [x] Escocia en el selector: `SCT` existe en `data/leagues.js` (la Premiership y Celtic).
+- [x] z, el diseño: ejercicios de más de 12 meses sin tope, con el año del cierre, los importes tal cual y `publicNote` (298 w2 y z2, `Admin/CONVENCIONES-DATOS.md`, votación 2 a 1). RAAL La Louvière 2018 (14 meses) está cargado.
+- [ ] k: `alta-club.mjs` y `cargar-lote.mjs` no usan las `ligas` que trae `Admin/registros/altas-revision.jsonl` (`cargar-lote.mjs:69` solo toma `brandColor`); el alta saca la liga de la caché `tools/club-league-reference/<iso>.json`, así que un club sin caché queda con liga null. Escalón chico: que el alta tome la liga de la revisión cuando no hay caché.
+- [ ] z, las tres cargas que faltan: Anderlecht 2011 (16 meses), Sint-Truiden 2013 (15) y Zulte Waregem 2012 (17). Sus clubes solo tienen 2025. Los PDF y `.md` de Anderlecht 2011 están en `Clubes/Bélgica/Anderlecht/`. Ojo: `CONVENCIONES-DATOS.md:260` dice «Anderlecht 2011 ya cargado», y hoy no lo está: corregir esa frase al cargar.
+- [ ] t2 (no verificada el 2026-10-28; es de Guido): los años 2025 belgas con ajustes `fila` y el escalón NBB sin correr: Patro Eisden 2025 (ingresos +1.810, gastos +4.012), Lommel SK 2025 (gastos +172) y Lommel SK 2018 (−182 de financiero) cerraron por tolerancia con errores chicos. Decidir si se corrigen (escalón: correr el NBB también con ajustes si el resultado sigue exacto).
+- [ ] u2, el resto (no verificado): si la tool que arma las listas de ligas sigue perdiendo a Beerschot Wilrijk en la First Division B 2017-18 y 2018-19 (baja 7 de 8; aparece en `tools/club-league-reference/be.json`). OH Leuven 2017-2018 no están cargados, así que no hay dato que etiquetar.
+- [ ] g2 (condicional): partir en la cola cualquier fila mixta según su nota, solo si aparece otra sin códigos (el 66A de Lommel SK 2025 ya se resolvió a mano). Si no aparece otra, se descarta con motivo.
+- [ ] Gales e Irlanda del Norte en el selector (decisión de pantalla, de Guido): `data/leagues.js:60` solo comenta cómo se haría `WAL`. Hoy no hay clubes galeses ni norirlandeses cargados, así que no se ve; se retoma con el primero.
+- [ ] Aviso «368 documentos viejos sin tablas se rehacen con Mistral (~US$ 83)»: la tanda `Admin/lotes/sin-tablas-298e.txt` (239 documentos) ya se corrió (el ensayo daba US$ 7,26 y costó US$ 40,60 a 43,09). No se verificó cuántos quedan; correr `node tools/pipeline.mjs` para contarlos y, si quedan, decidir el gasto con Guido.
+Terminado cuando: cada letra pendiente se hizo o se descartó con su motivo en `Admin/HALLAZGOS-pipeline.md`, y quedan cargados Anderlecht 2011, Sint-Truiden 2013 y Zulte Waregem 2012.
+
+Verificar: contiene data/be/anderlecht-be.json | "fiscal_year": 2011
+Verificar: contiene data/be/sinttruiden-be.json | "fiscal_year": 2013
+Verificar: contiene data/be/zultewaregem-be.json | "fiscal_year": 2012
 
 ### 12. 365 · Lierse Kempenzonen 2022 y los años sin depósito (Auditora y Onboarding)
 
-LIERSE KEMPENZONEN (vzw) DESPUÉS DE 2021 (sale del 355). La vzw sigue sin cargar 2022 (el balance está en `Clubes/Bélgica/Lierse Kempenzonen/`, abreviado,
-con un margen bruto de −2.369 EUR: casi sin actividad, porque la NV ocupó su plaza) y 2023-2025 no tienen depósito en la BNB (chequeo 2026-10-21).
-Terminado cuando: la Auditora decide si 2022 se carga (y con qué liga: la de la NV en esa temporada es `be-challengerproleague`) o se descarta con motivo, y
-`ejercicio-sin-rastro` de `liersekempenzonen-be` queda en 0 (2023-2025 silenciados en `tools/audit-ignore.json` con la cita de la nota de sourcing).
+- [x] Lierse son dos clubes: la vzw (`liersekempenzonen-be`, 2018 a 2021 cargados) y la NV sucesora (`liersesk-be`, con `predecessor_id`).
+- [x] 2023-2025 de la vzw: sin depósito en la BNB (chequeo 2026-10-21); el aviso `ejercicio-sin-rastro` está silenciado en `tools/audit-ignore.json` con la cita de la nota de sourcing.
+- [ ] Decidir 2022 (la Auditora, con Guido): el balance abreviado de la vzw está en `Clubes/Bélgica/Lierse Kempenzonen/` (`jaarrekening-2022-06-30-individual.md`), con un margen bruto de −2.369 EUR, casi sin actividad porque la NV ocupó su plaza. Opciones: cargarlo (como se cargaron 2018 a 2021; la liga de la NV esa temporada es `be-challengerproleague`, y hay que decidir si la vzw la hereda) o descartarlo con motivo en `Admin/sourcing/Bélgica/Lierse Kempenzonen.md`.
+- [ ] Al decidir: actualizar el motivo de `tools/audit-ignore.json` (hoy dice «lo decide el 365, que sigue abierto») y dejar `ejercicio-sin-rastro` de `liersekempenzonen-be` en 0.
+Terminado cuando: 2022 está cargado o descartado con motivo, y el motivo del silenciamiento ya no dice que el 365 sigue abierto.
 
-HOY (2026-10-23): el aviso `ejercicio-sin-rastro` de este club está silenciado en `tools/audit-ignore.json` (2023-2025 sin depósito; 2022 con el balance en mano) para llevar el P3 a cero; lo que falta es la decisión de 2022, así que la línea de verificación pasó a manual.
 Verificar: manual
 
 ### 13. 452 · (Pantallas, con Contenido): mostrarle al lector las particularidades contables clave de lo que está leyendo (balance resumido, cierre, perímetro), sin curso de contabilidad
