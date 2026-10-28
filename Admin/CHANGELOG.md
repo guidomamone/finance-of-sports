@@ -27,6 +27,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1256 — generate-sponsors.js: dice qué cambió respecto del sponsors.js anterior [generate-sponsors.js, sponsors-diferencia.js, probar-sponsors-diferencia.mjs]
+- Al regenerar imprime las entradas nuevas por liga, los sponsors nuevos (con nombre) y, con `ATENCIÓN`, lo que se PIERDE o cambia de fuente y los sponsors que desaparecen enteros. Antes había que comparar a mano un diff de líneas de mil caracteres. No cambia lo que escribe: `--check` y los archivos son los mismos.
+- Medición: `audit` idéntico (lote chico); `probar-sponsors-diferencia.mjs` 11 casos ok. Con el `sponsors.js` anterior al caché completo imprime +261 entradas (at 104, dk 91, gb 66) y +31 sponsors, igual que la comparación a mano; sobre el actual, «sin cambios».
+
+---
+
 ## Versión 1255 — Caché de Wikipedia: las 19 páginas que faltaban (Austria, Dinamarca, Escocia, Noruega, Bélgica) y `sponsors.js` regenerado
 - `tools/club-league-reference/contexto/{at,dk,gb,no,be}.json` con las 19 páginas de liga-año que `estadio-sponsor` bajaba en cada corrida sin guardarlas. `generate-sponsors.js` regenerado: 261 entradas sponsor-equipo-año nuevas (at-bundesliga 104, dk-1division 91, gb-scottishpremiership 66) y 31 sponsors nuevos; ASSET_V 2136.
 - Comparado con el `sponsors.js` anterior: ninguna entrada existente se pierde ni cambia (0 de 0); solo se agregan. La de `be` trae una página de tercera división amateur sin estadios ni camisetas.

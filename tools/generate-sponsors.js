@@ -31,6 +31,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const { cierreDelClub } = require('./cierre-ejercicio.js');
+const { leerLista, diferencia, resumen } = require('./sponsors-diferencia.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const REF = path.join(ROOT, 'tools', 'club-league-reference');
@@ -187,6 +188,8 @@ if (process.argv.includes('--check')) {
   if (viejo !== t || viejoI !== ti) { console.log('data/sponsors.js o data/sponsors-indice.js quedó viejo: node tools/generate-sponsors.js'); process.exit(1); }
   console.log('data/sponsors.js y data/sponsors-indice.js al día.'); process.exit(0);
 }
+const anterior = leerLista(fs.existsSync(OUT) ? fs.readFileSync(OUT, 'utf8') : '');
 fs.writeFileSync(OUT, t, 'utf8'); fs.writeFileSync(OUT_INDICE, ti, 'utf8');
 const conClub = Object.values(d.lista).filter((s) => s.e.some((e) => e[3])).length;
 console.log(`data/sponsors.js: ${Object.keys(d.lista).length} sponsors y marcas (${conClub} con algún club del sitio), ${Object.keys(d.fuentes).length} liga-años, ${Object.keys(d.actuales).length} ligas con temporada actual; ${(t.length / 1024).toFixed(0)} KB`);
+console.log(resumen(diferencia(anterior, d.lista)));

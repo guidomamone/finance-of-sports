@@ -3,6 +3,12 @@
   "publicar.mjs": {
     "sinDocumentos": "genera las páginas y sube ASSET_V; no lee ningún documento"
   },
+  "generate-sponsors.js": {
+    "sinDocumentos": "genera data/sponsors.js desde la caché de Wikipedia; no lee ningún documento de Clubes/"
+  },
+  "sponsors-diferencia.js": {
+    "sinDocumentos": "compara dos versiones de data/sponsors.js; no lee ningún documento"
+  },
   "medir-pipeline.mjs": {
     "sinDocumentos": "mide los cambios a las tools; no lee ningún documento"
   },
