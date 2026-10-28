@@ -26,6 +26,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1240 — club-siis --liga: escribe la línea de liga de un club [478 · club-siis.mjs, liga-decidir.mjs, probar-club-siis.mjs]
+- `node tools/club-siis.mjs "<Club>" --liga` completa en `data/club-leagues/<iso>.js` los años sin liga con la del roster cacheado de Wikipedia, solo si TODOS tienen coincidencia exacta (las «NO EXACTA» se descartan, p. ej. «Atlético» de la Primera B no es Atlético Nacional); con un año dudoso no escribe ninguno y dice cuáles; `--ensayo` no escribe. Imprime que después va `publicar.mjs` y el commit en otra llamada. En una copia sin las líneas de Envigado y Nacional las reescribe con el mismo contenido que HEAD (cambia solo la posición en el archivo: queda al final).
+- Medición: tool de «orden» (no del pipeline): no pide medición; `probar-club-siis.mjs` ok (8 casos).
+
+---
+
 ## Versión 1239 — club-siis: el paso de la liga avisa que falta publicar antes de commitear [478 · club-siis.mjs, probar-club-siis.mjs]
 - El paso «Liga de cada año» dice que después de tocar una liga va `node tools/publicar.mjs` y el commit en OTRA llamada (el hook frenaba por `rankings-desfasado` y `asset-v-sin-subir`). `probar-club-siis.mjs` (copia descartable) lo comprueba; cada ítem siguiente del 478 que toque `club-siis.mjs` suma su caso ahí.
 - Medición: tool de «orden» (no del pipeline): no pide medición; pruebas de lo que cambió ok.

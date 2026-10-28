@@ -23,6 +23,7 @@ import { pendientes } from './cola.mjs';
 import { pasoFka } from './sponsor-fka.mjs';
 import { punteroReglasPais } from './docs-reglas.mjs';
 import { cierresSinGestion } from './gestion-cubre.mjs';
+import { decidirLigas } from './liga-decidir.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const A = process.argv.slice(2);
@@ -99,6 +100,16 @@ if (!club) {
 }
 const e = estadoDe(club); if (e.error) { console.error(e.error); process.exit(1); }
 const { c, filas } = e; const q = JSON.stringify(club);
+
+// --liga: escribe la línea de liga del club en data/club-leagues/<iso>.js (los años sin liga, de la lista exacta del roster de Wikipedia; --ensayo no escribe). Con un año dudoso no escribe ninguno.
+if (A.includes('--liga')) {
+  if (!c.clubId) { console.error(`${club} todavía no tiene clubId (el alta va primero).`); process.exit(1); }
+  const sinLigaAnios = filas.filter((f) => !f.liga).map((f) => f.a); const D = decidirLigas(sinLigaAnios, sinLigaAnios.length ? ligasExactas(club, sinLigaAnios, c.clubId) : {});
+  if (!D.escribir) { console.log(`${club}: no se escribe la liga — ${D.motivo}.${sinLigaAnios.length ? `\n  Mirá el roster: node tools/lookup-club-league.js ${q} --pais CO` : ''}`); process.exit(D.sin.length ? 1 : 0); }
+  if (!ENSAYO) escribirLigas(c.clubId, D.mapa);
+  console.log(`${ENSAYO ? '(ensayo, no se escribe) ' : ''}Liga escrita en data/club-leagues/${iso}.js (${c.clubId}, roster de Wikipedia, nombre exacto): ${Object.entries(D.mapa).map(([a, l]) => `${a} ${l}`).join(', ')}.\n  Después: node tools/publicar.mjs (regenera rankings y ASSET_V) y recién ahí commitear, en OTRA llamada.`);
+  process.exit(0);
+}
 
 if (flag('--rehacer-anio')) {
   const a = flag('--rehacer-anio'); const pdf = `Clubes/${cfg.pais}/${club}/siis-estado-${a}.pdf`;
