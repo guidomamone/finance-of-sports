@@ -193,7 +193,7 @@ const FIN_MULTI_PL = (function(){
         const lSD = key === 'gastos' ? 'expense' : 'revenue';
         if(!row && c.src === 'main' && sinDesgloseDe(d.meta, lSD)){ h += `<td${cls(c)}>${marcaSD(d.meta, lSD)}</td>`; return; }
         if(!row){ h += `<td${cls(c)} title="${esc(t('pl.multi.noRow', 'Este rubro no aparece en el documento de este ejercicio'))}">—</td>`; return; }
-        if(row.incluidoEn){ h += `<td${cls(c)}><span class="pl-incluido" tabindex="0" data-info-tip="${esc(window.FINANZAS_DENTRO_TIP(row.incluidoEn, row.incluidoPosible))}">—</span></td>`; return; }
+        if(row.incluidoEn){ h += `<td${cls(c)}>${c.src === 'main' ? marcaSD(d.meta, lSD, window.FINANZAS_DENTRO_TIP(row.incluidoEn, row.incluidoPosible)) : '—'}</td>`; return; }
         if(row.unknown){ h += `<td${cls(c)}>${c.src === 'main' ? marcaSD(d.meta, lSD) : '—'}</td>`; return; }
         const v = val(d, c.src, row.value);
         h += `<td${cls(c)}>${pct ? fmtPct(comoPct(v, totalDe(d, c.src, totK))) : (key === 'ingresos' && c.src === 'main' && v < 0 ? marcaNeg(fmtDisplay(v)) : fmtDisplay(v))}</td>`;
@@ -230,11 +230,20 @@ const FIN_MULTI_PL = (function(){
 
     // Filas de abajo (Intereses netos, Impuestos…): la unión; "Intereses netos" siempre, las demás si algún año tiene un valor
     // distinto de cero (misma regla que la tabla de un año).
+    // Un año cargado con el estado completo trae ingresos financieros, costos financieros e impuestos por separado; uno simplificado, «Intereses netos» e «Impuestos»:
+    // acá van siempre en las dos filas de los simplificados (el detalle sigue en la tabla de un año).
+    const grupoExtra = label => (label === 'Ingresos financieros' || label === 'Costos financieros') ? 'Intereses netos' : label === 'Ingreso (gasto) por impuestos' ? 'Impuestos' : label;
+    const extraDe_ = d => {
+      const g = {};
+      (d.rep.extraRows || []).forEach(e => { const k = grupoExtra(e.label); g[k] = { label: k, value: ((g[k] && g[k].value) || 0) + e.value }; });
+      return Object.keys(g).map(k => g[k]);
+    };
+    const extraAnio = datos.map(extraDe_);
     const extraLabels = [];
-    datos.forEach(d => (d.rep.extraRows || []).forEach(e => { if(!extraLabels.includes(e.label)) extraLabels.push(e.label); }));
+    extraAnio.forEach(rows => rows.forEach(e => { if(!extraLabels.includes(e.label)) extraLabels.push(e.label); }));
     let extraHtml = '';
     extraLabels.forEach(label => {
-      const filas = datos.map(d => filaDe(d.rep.extraRows, label));
+      const filas = extraAnio.map(rows => filaDe(rows, label));
       if(!filas.some((r, i) => r && val(datos[i], 'main', r.value) !== 0) && label !== 'Intereses netos') return;
       let h = `<tr><td>${tLabelH(label)}</td>`;
       cols.forEach(c => {

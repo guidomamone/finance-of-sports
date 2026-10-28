@@ -24,7 +24,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsTeam","name":"Inter de Palmira","alternateName":["Cortuluá"],"sport":"Soccer","url":"https://financeofsports.com/club/cortulua-co","location":{"@type":"Country","name":"Colombia"},"memberOf":{"@type":"SportsOrganization","name":"Categoría Primera B"}}</script>
 <style>#pagina-estatica{max-width:900px;margin:24px auto;padding:0 16px;font:16px/1.5 system-ui,sans-serif}#pagina-estatica table{border-collapse:collapse;width:100%}#pagina-estatica th,#pagina-estatica td{border-bottom:1px solid #8884;padding:6px 8px;text-align:left}#pagina-estatica td.n,#pagina-estatica th.n{text-align:right}.js #pagina-estatica{display:none}</style>
 <script>window.FOS_RUTA = {"tab":"finanzas","club":"cortulua-co"}; document.documentElement.classList.add('js');</script>
-<link rel="stylesheet" href="css/styles.css?v=2138">
+<link rel="stylesheet" href="css/styles.css?v=2139">
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3deae274c6f346eab1a19f78e41ac035"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -775,14 +775,14 @@
 <!-- ASSET_V: versión de los assets propios, para invalidar el cache del navegador en cada deploy (si no, un visitante se queda
      con un js/*.js viejo mientras el HTML es nuevo). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o `css/` (el código). Los de `data/` llevan su propia versión
      en data/manifiesto.js y NO lo suben. -->
-<script>window.ASSET_V = '2138';</script>
+<script>window.ASSET_V = '2139';</script>
 <!-- data/manifiesto.js: la versión (hash) de cada archivo de data/, generado por tools/generar-manifiesto.mjs. Va SIN ?v= (se revalida en cada visita). Los archivos de data/ se piden con fosDataTag, que le pone su hash: así una carga de datos no sube ASSET_V ni reescribe las páginas generadas (TODO 473). -->
 <script src="data/manifiesto.js"></script>
 <script>window.fosDataTag = function (r) { var m = window.DATA_VERS, v = (m && m[r]) || window.ASSET_V; document.write('<script src="' + r + (v ? '?v=' + v : '') + '"><\/script>'); };</script>
 <script>fosDataTag('data/lang/langs.js')</script>
-<script src="js/i18n.js?v=2138"></script>
+<script src="js/i18n.js?v=2139"></script>
 <script>fosDataTag('data/clubs.js')</script>
-<script src="js/nombres.js?v=2138"></script>
+<script src="js/nombres.js?v=2139"></script>
 <!-- data/club-aliases.js: los ids viejos de club (sin país) y a cuál apuntan hoy, para que un link o una búsqueda guardada con el id viejo siga abriendo. -->
 <script>fosDataTag('data/club-aliases.js')</script>
 <!-- data/club-index.js: el índice liviano de TODOS los clubes (nombre, país, calidad del dato, ejercicios), GENERADO por
@@ -801,34 +801,34 @@
 <script>fosDataTag('data/sources-view.js')</script>
 <!-- Ningún data file de club se carga acá: el sitio abre en la portada sin club, y CUALQUIER club entra por loadClubData() cuando
      el visitante lo elige. -->
-<script src="js/info-tip.js?v=2138"></script>
+<script src="js/info-tip.js?v=2139"></script>
 <script>fosDataTag('data/deflactores.js')</script>
-<script src="js/finanzas-calc.js?v=2138"></script>
-<script src="js/finanzas-render.js?v=2138"></script>
-<script src="js/finanzas-anios.js?v=2138"></script>
-<script src="js/finanzas-multi.js?v=2138"></script>
+<script src="js/finanzas-calc.js?v=2139"></script>
+<script src="js/finanzas-render.js?v=2139"></script>
+<script src="js/finanzas-anios.js?v=2139"></script>
+<script src="js/finanzas-multi.js?v=2139"></script>
 <!-- Estructura del club: el índice de grupos multiclub (chico, lo usa también el buscador) y la tarjeta de Finanzas. -->
 <script>fosDataTag('data/entidades/_grupos.js')</script>
-<script src="js/finanzas-estructura.js?v=2138"></script>
-<script src="js/grupo.js?v=2138"></script>
+<script src="js/finanzas-estructura.js?v=2139"></script>
+<script src="js/grupo.js?v=2139"></script>
 <!-- Quién auditó cada balance: qué países tienen dato (chico) y la tarjeta de Finanzas, que baja el país al elegir un club. -->
 <script>fosDataTag('data/auditoria/_paises.js')</script>
 <script>fosDataTag('data/auditoria/_ligas.js')</script>
-<script src="js/auditoria.js?v=2138"></script>
-<script src="js/correcciones.js?v=2138"></script>
-<script src="js/citar.js?v=2138"></script>
-<script src="js/contexto.js?v=2138"></script>
-<script src="js/sponsor.js?v=2138"></script>
+<script src="js/auditoria.js?v=2139"></script>
+<script src="js/correcciones.js?v=2139"></script>
+<script src="js/citar.js?v=2139"></script>
+<script src="js/contexto.js?v=2139"></script>
+<script src="js/sponsor.js?v=2139"></script>
 <!-- js/selector.js: el selector de club. Se alimenta solo de clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja todos
      los clubes sin bajar un solo data/<país>/<club>-data.js. -->
-<script src="js/selector.js?v=2138"></script>
+<script src="js/selector.js?v=2139"></script>
 <script>fosDataTag('data/destacados.js')</script>
 <script>fosDataTag('data/informes.js')</script>
-<script src="js/liga.js?v=2138"></script>
+<script src="js/liga.js?v=2139"></script>
 <!-- js/cuenta.js: login con Google vía Supabase + guardado automático de búsquedas. No sabe cómo se renderiza el resto del sitio:
      recibe `reopen` por CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
-<script src="js/cuenta.js?v=2138"></script>
-<script src="js/principal.js?v=2138"></script>
+<script src="js/cuenta.js?v=2139"></script>
+<script src="js/principal.js?v=2139"></script>
 
 </body>
 </html>

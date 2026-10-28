@@ -894,9 +894,9 @@
     box.classList.add('pl-notas-flash'); setTimeout(() => box.classList.remove('pl-notas-flash'), 1800);
   });
   // La marca de la celda: «s/d» con su bocadillo (js/info-tip.js: hover en escritorio, toque en el celular) y un asterisco que lleva a «Notas sobre este club».
-  function marcaSD(meta, lado){
+  function marcaSD(meta, lado, tip){
     const e = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
-    return `<span class="pl-sd" tabindex="0" data-info-tip="${e(textoSD(meta, lado))}">${e(t('pl.sd', 's/d'))}</span><sup class="pl-sd-n"><a href="#finNotasClub" role="button" aria-label="${e(t('pl.notas.title', 'Notas sobre este club'))}">*</a></sup>`;
+    return `<span class="pl-sd" tabindex="0" data-info-tip="${e(tip || textoSD(meta, lado))}">${e(t('pl.sd', 's/d'))}</span><sup class="pl-sd-n"><a href="#finNotasClub" role="button" aria-label="${e(t('pl.notas.title', 'Notas sobre este club'))}">*</a></sup>`;
   }
   // Un ingreso negativo (el documento lo resta de los ingresos brutos): el número con su bocadillo y el asterisco que lleva a «Notas sobre este club».
   function marcaNeg(valorHtml){
