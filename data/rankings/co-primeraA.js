@@ -118,7 +118,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2023: {
     leagueSize: 20,
-    sinDato: ["jaguares-co"],
     wiki: {"t":"2023 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:35.641, reportType:"official_balance_sheet",
@@ -158,6 +157,9 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"atleticobucaramanga-co-siis-estado-2023",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.661],["Otros ingresos",0.749]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"jaguares-co", revenue:3.263, reportType:"official_balance_sheet",
+        sourceId:"jaguares-co-siis-estado-2023",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.743],["Otros ingresos",0.521]] },
       { id:"unionmagdalena-co", revenue:3.166, reportType:"official_balance_sheet",
         sourceId:"unionmagdalena-co-siis-estado-2023",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.843],["Otros ingresos",0.323]],
