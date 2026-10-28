@@ -777,7 +777,7 @@ window.DATA_VERS = {
 "data/jp/visselkobe-jp-glosas.js":"794d12fa",
 "data/jp/yokohamafmarinos-jp-data.js":"80e4a178",
 "data/jp/yokohamafmarinos-jp-glosas.js":"794d12fa",
-"data/lang/en.js":"52d26b6b",
+"data/lang/en.js":"f161d47d",
 "data/lang/langs.js":"4ba079e7",
 "data/leagues.js":"26bc1c0c",
 "data/mx/clubamerica-mx-data.js":"8bc1cf73",
@@ -859,6 +859,7 @@ window.DATA_VERS = {
 "data/no/viking-no-glosas.js":"ef503c30",
 "data/pe/alianzalima-pe-data.js":"8247e3b4",
 "data/pe/alianzalima-pe-glosas.js":"36c44cae",
+"data/proximas-cargas.js":"991f1e05",
 "data/pt/academica-pt-data.js":"62597be6",
 "data/pt/academica-pt-glosas.js":"6127fef8",
 "data/pt/academicoviseu-pt-data.js":"61dc450d",
@@ -1019,5 +1020,6 @@ window.DATA_VERS = {
 "data/sponsors-indice.js":"383125da",
 "data/sponsors.js":"54e5a84c",
 "data/tr/besiktas-tr-data.js":"37f2347a",
-"data/tr/besiktas-tr-glosas.js":"327b12ad"
+"data/tr/besiktas-tr-glosas.js":"327b12ad",
+"data/ultimas-cargas.js":"7cd4f832"
 };
