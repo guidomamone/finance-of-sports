@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Colombia/Atletico Nacional/siis-estado-2019.md",
+  "pdf": "Clubes/Colombia/Atletico Nacional/siis-estado-2019.pdf",
+  "club": "atlnacional-co",
+  "year": 2019,
+  "generatedAt": "2026-10-28T00:35:27.590Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        94619.857
+      ],
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otras ganancias (pérdidas)",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        14902.917
+      ],
+      "glosa": "Otras ganancias (pérdidas)"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        87687.427
+      ],
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gastos de ventas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        15389.54
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        4257.553
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+ "pdf": "Clubes/Colombia/Atletico Nacional/siis-estado-2015.pdf",
+ "md": "Clubes/Colombia/Atletico Nacional/siis-estado-2015.md",
+ "generado": "2026-10-28T00:35:32.200Z",
+ "scriptHuella": "f1d4dee41de6",
+ "estado": "cola",
+ "clubId": "atlnacional-co",
+ "year": 2015,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "esquema": 1,
+   "pdf": "Clubes/Colombia/Atletico Nacional/siis-estado-2015.pdf",
+   "campo": "filas-a-mano",
+   "valor": null,
+   "linea": null,
+   "motivo": "Claude 2026-10-28 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs",
+   "evidencia": "siis-estado-2015.md L11-L24",
+   "autor": "Claude",
+   "fecha": "2026-10-28"
+  }
+ ],
+ "cola": [
+  "a7776f5",
+  "9524c04"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 6.59383658785373e-12
+  },
+  {
+   "nombre": "documento del año 2016",
+   "ok": false,
+   "detalle": "ingresos de 2015: 75082.377 en este documento y 72453.712 en siis-estado-2016.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2014: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 75082.377,
+  "gastos": 73307.951,
+  "financiero": 3284.766,
+  "impuesto": 2401.624,
+  "resultadoImpreso": -1756.892,
+  "resultadoParaCargar": -1756.892,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "lado": "ingreso",
+   "M": 72138.152,
+   "pagina": 1,
+   "linea": 11,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros ingresos",
+   "lado": "ingreso",
+   "M": 2944.225,
+   "pagina": 1,
+   "linea": 16,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Costo de ventas",
+   "lado": "gasto",
+   "M": 6176.094,
+   "pagina": 1,
+   "linea": 12,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de ventas",
+   "lado": "gasto",
+   "M": 63935.069,
+   "pagina": 1,
+   "linea": 14,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos de administración",
+   "lado": "gasto",
+   "M": 2506.421,
+   "pagina": 1,
+   "linea": 15,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros gastos",
+   "lado": "gasto",
+   "M": 690.367,
+   "pagina": 1,
+   "linea": 17,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Ingresos financieros",
+   "M": 1077.536,
+   "linea": 19
+  },
+  {
+   "etiqueta": "Costos financieros",
+   "M": -2207.23,
+   "linea": 20
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Ingreso (gasto) por impuestos",
+   "M": -2401.624,
+   "linea": 22
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "8238e50931f1fb7db01c869e5a48c8db1e83e501",
+  "rango": [
+   8,
+   27
+  ],
+  "lineasCargadas": [
+   11,
+   16,
+   12,
+   14,
+   15,
+   17,
+   19,
+   20,
+   22
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 8 a 27 del .md):\nL9: | Concepto | 2015 | 2014 |\nL10: | --- | ---: | ---: |\nL11: | Ingresos de actividades ordinarias | 72.138.152 | 57.245.183 |\nL12: | Costo de ventas | 6.176.094 | 3.894.764 |\nL13: | Ganancia bruta | 65.962.058 | 53.350.419 |\nL14: | Gastos de ventas | 63.935.069 | 49.073.757 |\nL15: | Gastos de administración | 2.506.421 | 1.876.764 |\nL16: | Otros ingresos | 2.944.225 | 1.628.759 |\nL17: | Otros gastos | 690.367 | 1.238.716 |\nL18: | Ganancia (pérdida) por actividades de operación | 1.774.426 | 2.789.941 |\nL19: | Ingresos financieros | 1.077.536 | 1.632.949 |\nL20: | Costos financieros | 2.207.230 | 2.321.233 |\nL21: | Ganancia (pérdida) antes de impuestos | 644.732 | 2.101.657 |\nL22: | Ingreso (gasto) por impuestos | 2.401.624 | (18.919) |\nL23: | Ganancia (pérdida) procedente de operaciones continuadas | (1.756.892) | 2.120.576 |\nL24: | Ganancia (pérdida) | (1.756.892) | 2.120.576 |\nL26: ## Estado de situación financiera\n\nLO QUE SE CARGA:\n- ingreso · \"Ingresos de actividades ordinarias\" · 72138.152 · L11\n- ingreso · \"Otros ingresos\" · 2944.225 · L16\n- gasto · \"Costo de ventas\" · 6176.094 · L12\n- gasto · \"Gastos de ventas\" · 63935.069 · L14\n- gasto · \"Gastos de administración\" · 2506.421 · L15\n- gasto · \"Otros gastos\" · 690.367 · L17\n- financiero · \"Ingresos financieros\" · 1077.536 · L19\n- financiero · \"Costos financieros\" · -2207.23 · L20\n- impuesto · \"Ingreso (gasto) por impuestos\" · -2401.624 · L22"
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Colombia/Atletico Nacional/siis-estado-2015.md",
+ "clave": "8238e50931f1fb7db01c869e5a48c8db1e83e501",
+ "generado": "2026-10-28T00:35:32.148Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Todos los renglones del ejercicio 2015 están cargados una sola vez y del lado correcto. Los subtotales (L13, L18, L21, L23, L24) no se cargan. El impuesto de L22 (2.401.624) se carga como gasto, lo que es consistente con el paso de 644.732 antes de impuestos a una pérdida de (1.756.892)."
+ }
+}
