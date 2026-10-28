@@ -46,7 +46,7 @@ Cómo se trabaja con Guido: `CLAUDE.md`, «Modo de trabajo».
 ## 3. Levantar el sitio local
 
 El sitio es estático (HTML + CSS + JS, sin build ni backend). `preview_start` con la config de `.claude/launch.json`, nunca un server por
-Bash. Si tocás `js/` o `data/` y el navegador muestra lo viejo: subí `ASSET_V` (la constante y cada `?v=`) y navegá con `?cb=<algo nuevo>`
+Bash. Si tocás `js/` o `css/` y el navegador muestra lo viejo: subí `ASSET_V` (la constante y cada `?v=`); lo de `data/` lleva su hash en `data/manifiesto.js` (`node tools/generar-manifiesto.mjs`, lo corre `publicar`) y navegá con `?cb=<algo nuevo>`
 (`Admin/PANTALLA.md`, «CACHE DE ASSETS» y «Trampas del navegador de preview»).
 
 ## 4. Verificar antes de dar algo por bueno
