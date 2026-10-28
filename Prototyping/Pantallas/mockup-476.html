@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mockup 476: filas n/d y «—», impuestos e intereses, marca «solo SIIS»</title>
+<!--
+  TODO 476 (Pantallas). Tres cambios a la tabla «Estado de resultados» de Finanzas multi-año, para que Guido diga sí o no ANTES de construir.
+  Los números son reales del motor al 2026-10-28 (Bucaramanga 2020 a 2022 y Tolima 2016 a 2024, en millones de dólares): no son fuente de nada que se publique.
+  A. «n/d*» y «—» mezcladas en un mismo año (Bucaramanga 2021 y 2022): una regla por columna.
+  B. Impuestos e intereses (Tolima): dos filas fijas en todos los años, en vez de cinco filas con huecos.
+  C. Un año cargado solo desde SIIS (Bucaramanga 2021): una etiqueta chica pegada al año.
+  Tokens de css/styles.css; etiqueta chica como `.stat-tag`; globo como `data-info-tip`.
+-->
+<style>
+  :root{--azul:#0a2b5c;--oro:#f2b705;--bg:#f7f7f5;--card:#fff;--text:#1c1c1c;--muted:#6b6b6b;--border:#e3e3e0;--red:#b5372b;--green:#1b7a3d}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+  main{max-width:880px;margin:0 auto;padding:16px}
+  h1{font-size:20px;color:var(--azul);margin:8px 0 4px}
+  h2{font-size:16px;color:var(--azul);margin:28px 0 4px}
+  p.lead,p.q{color:var(--muted);margin:4px 0 12px;font-size:14px}
+  p.q{color:var(--text);background:#fff;border:1px solid var(--border);border-radius:10px;padding:10px 12px}
+  .par{display:grid;grid-template-columns:1fr;gap:12px}
+  @media(min-width:760px){.par{grid-template-columns:1fr 1fr}}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:12px;overflow-x:auto}
+  .card h3{margin:0 0 8px;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
+  th,td{text-align:right;padding:6px 8px;border-bottom:1px solid var(--border);white-space:nowrap}
+  th:first-child,td:first-child{text-align:left;white-space:normal}
+  th{font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);font-weight:600;vertical-align:bottom}
+  tr.tot td{font-weight:700}
+  tr.sec td{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--azul);font-weight:700;border-bottom:none;padding-top:12px}
+  .nd{color:var(--muted);border-bottom:1px dotted currentColor}
+  .nd sup{color:var(--azul);font-size:11px}
+  .dash{color:var(--muted)}
+  .neg{color:var(--red)}
+  .tag{display:inline-block;margin-top:3px;padding:1px 5px;border-radius:4px;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--azul);background:#eef3fa;border:1px solid #c9d7ec}
+  .cambia td{background:#fdf8e7}
+  .nota{font-size:12.5px;color:var(--muted);margin:8px 0 0}
+</style>
+</head>
+<body>
+<main>
+<h1>476 · Tres cambios a la tabla de resultados</h1>
+<p class="lead">A la izquierda, lo que sale hoy. A la derecha, lo propuesto (el fondo ámbar claro marca lo que cambia). Cifras en millones de dólares; la tabla es la de Finanzas multi-año.</p>
+
+<h2>A. «n/d*» y «—» mezcladas en un mismo año (Atlético Bucaramanga)</h2>
+<p class="lead">En 2021 y 2022 el documento informa los ingresos en una sola línea («Fútbol profesional, sin desglosar»). Hoy cinco categorías muestran «n/d*» y tres muestran «—», aunque a todas les pasa lo mismo.</p>
+<div class="par">
+  <div class="card"><h3>Hoy</h3>
+    <table>
+      <tr><th>Ingresos</th><th>2020</th><th>2021</th><th>2022</th></tr>
+      <tr><td>Cuotas de socios</td><td>0,0</td><td class="nd">n/d<sup>*</sup></td><td class="nd">n/d<sup>*</sup></td></tr>
+      <tr><td>Comercial / sponsors</td><td>0,5</td><td class="dash">—</td><td class="dash">—</td></tr>
+      <tr><td>Estadio</td><td>0,1</td><td class="dash">—</td><td class="dash">—</td></tr>
+      <tr><td>Derechos de TV</td><td>0,7</td><td class="dash">—</td><td class="dash">—</td></tr>
+      <tr><td>Premios de competencia</td><td>0,3</td><td class="nd">n/d<sup>*</sup></td><td class="nd">n/d<sup>*</sup></td></tr>
+      <tr><td>Venta de jugadores</td><td>0,0</td><td class="nd">n/d<sup>*</sup></td><td class="nd">n/d<sup>*</sup></td></tr>
+      <tr><td>Otros ingresos</td><td>0,0</td><td>0,0</td><td>0,1</td></tr>
+      <tr><td>Fútbol profesional (sin desglosar)</td><td class="dash">—</td><td>2,1</td><td>2,5</td></tr>
+      <tr class="tot"><td>Total ingresos</td><td>1,6</td><td>2,1</td><td>2,7</td></tr>
+      <tr class="sec"><td colspan="4">Costos</td></tr>
+      <tr><td>Fichajes</td><td>0,0</td><td class="nd">n/d<sup>*</sup></td><td class="nd">n/d<sup>*</sup></td></tr>
+      <tr><td>Sueldos y premios</td><td class="neg">(1,2)</td><td class="dash">—</td><td class="dash">—</td></tr>
+      <tr><td>Capex (amort. y deprec.)</td><td class="neg">(0,0)</td><td class="dash">—</td><td class="dash">—</td></tr>
+      <tr><td>Fútbol profesional (sin desglosar)</td><td class="dash">—</td><td class="neg">(1,9)</td><td class="neg">(2,1)</td></tr>
+    </table>
+  </div>
+  <div class="card"><h3>Propuesto</h3>
+    <table>
+      <tr><th>Ingresos</th><th>2020</th><th>2021</th><th>2022</th></tr>
+      <tr><td>Cuotas de socios</td><td>0,0</td><td class="nd">n/d<sup>*</sup></td><td class="nd">n/d<sup>*</sup></td></tr>
+      <tr class="cambia"><td>Comercial / sponsors</td><td>0,5</td><td class="nd">n/d<sup>*</sup></td><td class="nd">n/d<sup>*</sup></td></tr>
+      <tr class="cambia"><td>Estadio</td><td>0,1</td><td class="nd">n/d<sup>*</sup></td><td class="nd">n/d<sup>*</sup></td></tr>
+      <tr class="cambia"><td>Derechos de TV</td><td>0,7</td><td class="nd">n/d<sup>*</sup></td><td class="nd">n/d<sup>*</sup></td></tr>
+      <tr><td>Premios de competencia</td><td>0,3</td><td class="nd">n/d<sup>*</sup></td><td class="nd">n/d<sup>*</sup></td></tr>
+      <tr><td>Venta de jugadores</td><td>0,0</td><td class="nd">n/d<sup>*</sup></td><td class="nd">n/d<sup>*</sup></td></tr>
+      <tr><td>Otros ingresos</td><td>0,0</td><td>0,0</td><td>0,1</td></tr>
+      <tr><td>Fútbol profesional (sin desglosar)</td><td class="dash">—</td><td>2,1</td><td>2,5</td></tr>
+      <tr class="tot"><td>Total ingresos</td><td>1,6</td><td>2,1</td><td>2,7</td></tr>
+      <tr class="sec"><td colspan="4">Costos</td></tr>
+      <tr><td>Fichajes</td><td>0,0</td><td class="nd">n/d<sup>*</sup></td><td class="nd">n/d<sup>*</sup></td></tr>
+      <tr class="cambia"><td>Sueldos y premios</td><td class="neg">(1,2)</td><td class="nd">n/d<sup>*</sup></td><td class="nd">n/d<sup>*</sup></td></tr>
+      <tr class="cambia"><td>Capex (amort. y deprec.)</td><td class="neg">(0,0)</td><td class="nd">n/d<sup>*</sup></td><td class="nd">n/d<sup>*</sup></td></tr>
+      <tr><td>Fútbol profesional (sin desglosar)</td><td class="dash">—</td><td class="neg">(1,9)</td><td class="neg">(2,1)</td></tr>
+    </table>
+  </div>
+</div>
+<p class="nota">Regla propuesta: <b>n/d*</b> = el documento de ese año no abre este rubro (no es cero); <b>—</b> = el rubro no aplica ese año (la línea sin desglosar de 2020, por ejemplo). La leyenda de «Notas sobre este club» ya dice lo primero; habría que ajustar lo segundo («cero real o sin dato» hoy mezcla las dos cosas).</p>
+
+<h2>B. Impuestos e intereses en filas distintas según el año (Deportes Tolima)</h2>
+<p class="lead">Los años cargados desde el estado de resultados completo traen tres filas (ingreso financiero, costo financiero, impuesto); los años cargados desde el estado resumido traen dos («Intereses netos», «Impuestos»). En la vista de varios años salen cinco filas con huecos.</p>
+<div class="par">
+  <div class="card"><h3>Hoy</h3>
+    <table>
+      <tr><th></th><th>2016</th><th>2018</th><th>2020</th><th>2022</th><th>2024</th></tr>
+      <tr><td>Ingresos financieros</td><td>0,2</td><td>0,8</td><td>0,0</td><td class="dash">—</td><td class="dash">—</td></tr>
+      <tr><td>Costos financieros</td><td class="neg">(0,3)</td><td class="neg">(0,6)</td><td>0,0</td><td class="dash">—</td><td class="dash">—</td></tr>
+      <tr><td>Impuestos</td><td class="neg">(0,3)</td><td class="neg">(0,2)</td><td class="neg">(0,0)</td><td class="dash">—</td><td class="dash">—</td></tr>
+      <tr><td>Intereses netos</td><td class="dash">—</td><td class="dash">—</td><td class="dash">—</td><td>0,0</td><td>0,0</td></tr>
+      <tr><td>Impuestos</td><td class="dash">—</td><td class="dash">—</td><td class="dash">—</td><td class="neg">(0,2)</td><td class="neg">(0,2)</td></tr>
+      <tr class="tot"><td>Resultado neto</td><td>0,8</td><td>1,9</td><td class="neg">(0,5)</td><td>0,9</td><td>0,2</td></tr>
+    </table>
+  </div>
+  <div class="card"><h3>Propuesto</h3>
+    <table>
+      <tr><th></th><th>2016</th><th>2018</th><th>2020</th><th>2022</th><th>2024</th></tr>
+      <tr class="cambia"><td>Intereses netos</td><td class="neg">(0,1)</td><td>0,2</td><td>0,0</td><td>0,0</td><td>0,0</td></tr>
+      <tr class="cambia"><td>Impuestos</td><td class="neg">(0,3)</td><td class="neg">(0,2)</td><td class="neg">(0,0)</td><td class="neg">(0,2)</td><td class="neg">(0,2)</td></tr>
+      <tr class="tot"><td>Resultado neto</td><td>0,8</td><td>1,9</td><td class="neg">(0,5)</td><td>0,9</td><td>0,2</td></tr>
+    </table>
+    <p class="nota">Dos filas fijas en todos los años. «Intereses netos» = ingresos financieros − costos financieros del año completo (2016: 0,2 − 0,3). El detalle de ingresos y costos financieros sigue en la vista de un solo año, donde sí está, y en el JSON abierto.</p>
+  </div>
+</div>
+
+<h2>C. Un año cargado solo desde SIIS (Atlético Bucaramanga 2021)</h2>
+<p class="lead">Cuando no hay PDF del informe del club y el año sale del formulario que el club depositó en SIIS (Supersociedades), hoy nada lo dice en la columna; solo el link de «Documentos fuente» lo nombra.</p>
+<div class="par">
+  <div class="card"><h3>Hoy</h3>
+    <table>
+      <tr><th></th><th>2020<br><span style="font-weight:400;text-transform:none;letter-spacing:0">Balance</span></th><th>2021<br><span style="font-weight:400;text-transform:none;letter-spacing:0">Balance</span></th><th>2022<br><span style="font-weight:400;text-transform:none;letter-spacing:0">Balance</span></th></tr>
+      <tr class="tot"><td>Total ingresos</td><td>1,6</td><td>2,1</td><td>2,7</td></tr>
+    </table>
+  </div>
+  <div class="card"><h3>Propuesto</h3>
+    <table>
+      <tr><th></th><th>2020<br><span style="font-weight:400;text-transform:none;letter-spacing:0">Balance</span></th><th>2021<br><span style="font-weight:400;text-transform:none;letter-spacing:0">Balance</span><br><span class="tag" tabindex="0" title="El año sale del estado que el club depositó en SIIS (Supersociedades); no hay informe anual en PDF." aria-label="Solo SIIS: el año sale del estado que el club depositó en SIIS (Supersociedades); no hay informe anual en PDF.">Solo SIIS</span></th><th>2022<br><span style="font-weight:400;text-transform:none;letter-spacing:0">Balance</span></th></tr>
+      <tr class="tot"><td>Total ingresos</td><td>1,6</td><td>2,1</td><td>2,7</td></tr>
+    </table>
+    <p class="nota">Etiqueta azul del sitio (la de los períodos informativos, como COVID), pegada al año, con el mismo texto en el globo y en el <code>aria-label</code>. Una sola vez por columna, no por cifra. Solo aparece en los años sin PDF.</p>
+  </div>
+</div>
+
+<h2>Lo que necesito que decidas</h2>
+<p class="q">1. ¿Aprobás la regla de A (n/d* para todo rubro que el documento no abre; «—» para lo que no aplica ese año)?<br>
+2. ¿Aprobás fusionar en B el ingreso y el costo financiero en «Intereses netos» en la vista de varios años (se pierde el detalle ahí, no en la de un año)?<br>
+3. ¿Aprobás la etiqueta «Solo SIIS» de C?</p>
+</main>
+</body>
+</html>
