@@ -7,7 +7,7 @@
 // muestra una fila por tanda («Real Santander, 2016 a 2025»), no una por año. Solo cuentan los ejercicios que siguen en el JSON del club en el HEAD actual
 // (un año retirado después no figura) y solo cargas del pipeline: un año estimado o recalculado no es una carga.
 //
-// Escribe data/ultimas-cargas.js: `window.ULTIMAS_CARGAS = [{id, anios:[…], fecha:'YYYY-MM-DD'}, …]`, la más reciente primero (todas las tandas; el card toma 10).
+// Escribe data/ultimas-cargas.js: `window.ULTIMAS_CARGAS = [{id, anios:[…], fecha:'YYYY-MM-DD'}, …]`, la más reciente primero (todas las tandas; el card toma 5).
 // `--check` sale con 1 si quedó viejo; lo corre audit.js (`ultimas-cargas-desfasado`, P1) y lo escribe tools/generadores.mjs.
 // Admin/registros/cargar-ultimo.jsonl es interno y no se lee acá.
 // ============================================================================
