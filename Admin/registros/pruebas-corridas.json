@@ -75,7 +75,7 @@
   "segundos": 0
  },
  "tools/probar-medir-pipeline.mjs": {
-  "fecha": "2026-10-27",
+  "fecha": "2026-10-28",
   "ok": true,
   "segundos": 4
  },
@@ -90,9 +90,14 @@
   "segundos": 0
  },
  "tools/probar-patron.mjs": {
-  "fecha": "2026-10-27",
+  "fecha": "2026-10-28",
   "ok": true,
   "segundos": 1
+ },
+ "tools/probar-patrones-tools.mjs": {
+  "fecha": "2026-10-28",
+  "ok": true,
+  "segundos": 0
  },
  "tools/probar-pruebas-de-tool.mjs": {
   "fecha": "2026-10-28",

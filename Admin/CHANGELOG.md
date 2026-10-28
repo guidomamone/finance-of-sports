@@ -26,6 +26,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1252 — patrones-tools.json: toda tool del pipeline con su entrada, y un chequeo [478 · patrones-tools.mjs, patrones-tools.json, clasificar-tools.mjs, cerrar-tool.mjs, patron.mjs, probar-patrones-tools.mjs]
+- Las 40 tools del pipeline que no tenían entrada en `tools/patrones-tools.json` la tienen: 11 con `sinDocumentos` (siis-estado, audit.js, gestiones-tanda, etc.) y el resto con `porCambio` (lee documentos: el patrón se pasa con cada cambio; no se inventaron regex). `clasificar-tools.mjs --check` (el que corre `audit.js`) avisa una tool del pipeline sin entrada; `cerrar-tool` y `patron` distinguen «sin entrada» de «leen documentos» en su mensaje. `probar-patrones-tools.mjs` nueva; `probar-patron.mjs` espera el mensaje nuevo.
+- Medición: lote chico idéntico (medidor audit); veredicto GENERAL; sin revisión independiente (chequeo nuevo en audit.js).
+
+---
+
 ## Versión 1251 — estadio-sponsor --ensayo --anios: una tabla año por año [478 · estadio-sponsor.mjs, estadio-sponsor-anios.mjs, probar-estadio-sponsor-anios.mjs, prueba-escribir.mjs]
 - `node tools/estadio-sponsor.mjs --ensayo --club <id> --anios AAAA-AAAA` (o `2016,2018-2020`) imprime una fila por año con estadio, capacidad, sponsor y marca, marca el año con algo en 0 % y cada fila es la llamada suelta de ese año (`--anio`): igual a las siete llamadas del brief. El brief de estadio-sponsor (commit de texto aparte) usa una sola llamada. `prueba-escribir.mjs` reintenta hasta 3 veces el paso de `catalogo-liga` cuando su propuesta (que sale de Wikipedia) vuelve incompleta: fallaba al azar dentro de `cerrar-tool`.
 - Medición: lote completo con 2 diferencias explicadas (medidor contexto: `rapidwien-at` 2013, 2015, 2016 y 2023 traían capacidad y marca de Wikipedia en el «antes» y no en el «después»; el ensayo dice «1 páginas para bajar»; en una copia la versión de HEAD y la nueva dan lo mismo para ese club; el cambio solo agrega `--anios`, que sale antes de leer nada); veredicto GENERAL.

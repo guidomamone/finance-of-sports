@@ -20,6 +20,7 @@
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
+const sinEntrada = (nombres, t) => nombres.filter((n) => !t[n]); // (la misma de patrones-tools.mjs; acá local para que audit.js, que usa esto, no arrastre a patrones-tools.mjs a la tabla del pipeline)
 
 const RAIZ = resolve(import.meta.dirname, '..');
 
@@ -59,6 +60,10 @@ export function clasificar(raiz = RAIZ) {
   if (inexistentes.length) problemas.push(`nombradas en pipeline-tools.json pero no existen: ${inexistentes.join(', ')}`);
   const contradichas = Object.keys(noPipeline).filter((f) => modulos.has(f) || enTabla.includes(f));
   if (contradichas.length) problemas.push(`declaradas de afuera del pipeline pero las usa una tool de la tabla (${contradichas.map((f) => `${f} <- ${modulos.get(f)?.usadoPor[0] || 'la tabla'}`).join(', ')}): sacarlas de «no_pipeline»`);
+  // cada tool del pipeline tiene una entrada en patrones-tools.json (patron, sinDocumentos o porCambio): sin ella cerrar-tool frenaba recién al cerrar (siis-estado, audit-chequeos-4)
+  const rutaPatrones = resolve(raiz, 'tools/patrones-tools.json');
+  const sinPatron = existsSync(rutaPatrones) ? sinEntrada(Object.keys(T.tools || {}), JSON.parse(readFileSync(rutaPatrones, 'utf8'))) : [];
+  if (sinPatron.length) problemas.push(`tools del pipeline sin entrada en tools/patrones-tools.json (patron, sinDocumentos o porCambio): ${sinPatron.join(', ')}`);
   return { archivos, clase, modulos, imp, problemas, tabla: T };
 }
 

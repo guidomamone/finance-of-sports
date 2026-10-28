@@ -44,7 +44,7 @@ if (sinMedir && !pruebas.length) parar('ninguna tool del pipeline cambió: no ha
 if (!sinMedir && !patron && !sinDoc) { // sin --patron ni --sin-documentos: el de la lista corta, y se frena ahora (en segundos, antes de las pruebas y de la medición) si a una tool le falta
   const nombres = tools ? tools.split(',') : ((seco.stdout || '').match(/^Tools: (.+)$/m)?.[1] || '').split(', ').filter(Boolean);
   const p = patronDe(nombres);
-  if (p.falta) parar(`sin --patron ni --sin-documentos y sin entrada en tools/patrones-tools.json para: ${p.falta.join(', ')}. Pasá --patron "<regex sobre los .md>" o --sin-documentos "<motivo>", o sumá la tool a esa lista.`);
+  if (p.falta) parar(`sin --patron ni --sin-documentos para: ${p.falta.join(', ')}. ${p.sinEntrada.length ? `Sin entrada en tools/patrones-tools.json: ${p.sinEntrada.join(', ')} (sumala: patron, sinDocumentos o porCambio). ` : ''}Pasá --patron "<regex sobre los .md>" (lo que el cambio deja ver en los documentos) o --sin-documentos "<motivo>" si este cambio no los lee.`);
   patron = p.patron; sinDoc = p.sinDocumentos; console.log(`\nVeredicto con ${patron ? `el patrón /${patron}/` : `«${sinDoc}»`} (tools/patrones-tools.json).`);
 }
 

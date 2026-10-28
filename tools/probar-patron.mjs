@@ -58,7 +58,7 @@ caso('sin --cambio se rechaza con código 1', r.status === 1 && /pide el motivo/
 w('tools/fake-tool.mjs', 'export const VALOR = 1;\nexport const OTRO = 2;\n');
 medido('idéntico');
 r = patron('--cambio', 'otro valor');
-caso('sin --patron ni --sin-documentos, una tool que no está en patrones-tools.json frena con código 1 y la nombra', r.status === 1 && /sin entrada en tools\/patrones-tools\.json para: fake-tool\.mjs/.test(r.out), r.out.slice(-300));
+caso('sin --patron ni --sin-documentos, una tool que no está en patrones-tools.json frena con código 1 y la nombra', r.status === 1 && /Sin entrada en tools\/patrones-tools\.json: fake-tool\.mjs/.test(r.out), r.out.slice(-300));
 
 // --en-xhtml: el patrón se cuenta sobre los .xhtml (caso del 413: top/left en em), no sobre los .md
 const doc = (rel, txt) => { mkdirSync(join(T, rel, '..'), { recursive: true }); w(rel, txt); };

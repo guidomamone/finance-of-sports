@@ -166,7 +166,7 @@ function principal() {
   }
   if (!patron && sinDoc === undefined && cambio && nombres.length) { // ni --patron ni --sin-documentos: el de la lista corta tools/patrones-tools.json
     const p = patronDe(nombres);
-    if (p.falta) { console.error(`Sin --patron ni --sin-documentos y sin entrada en tools/patrones-tools.json para: ${p.falta.join(', ')}.`); process.exit(1); }
+    if (p.falta) { console.error(`Sin --patron ni --sin-documentos para: ${p.falta.join(', ')}.${p.sinEntrada.length ? ` Sin entrada en tools/patrones-tools.json: ${p.sinEntrada.join(', ')} (sumala: patron, sinDocumentos o porCambio).` : ' Leen documentos: pasá --patron con lo que el cambio deja ver en los .md, o --sin-documentos si este cambio no los lee.'}`); process.exit(1); }
     patron = p.patron ?? undefined; sinDoc = p.sinDocumentos ?? undefined; console.log(`(de tools/patrones-tools.json: ${patron ? `/${patron}/` : sinDoc})`);
   }
   const dif = nombres.length ? cambioDeCodigo(nombres, { base, destino }) : { agregado: [], quitado: [], hayCodigo: false };

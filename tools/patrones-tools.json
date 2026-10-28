@@ -1,13 +1,153 @@
 {
- "_comentario": "El patrón del veredicto (`fos patron`, `fos cerrar-tool`) por tool, para no inventar la regex cada vez: lo que el cambio a esa tool se ve en los .md de Clubes/. `patron` es una regex JS (flags im) y `sinDocumentos` el motivo de una tool que no lee documentos. Si no pasás --patron ni --sin-documentos, patron.mjs toma esto de las tools cambiadas (varias: los patrones se unen con |). Una tool sin entrada frena y dice cuál sumar. Es una lista corta: se suma una tool la primera vez que hace falta, con una palabra que sus documentos traigan siempre.",
- "publicar.mjs": { "sinDocumentos": "genera las páginas y sube ASSET_V; no lee ningún documento" },
- "medir-pipeline.mjs": { "sinDocumentos": "mide los cambios a las tools; no lee ningún documento" },
- "cola-historial.mjs": { "sinDocumentos": "las cifras e historia de la cola de revisión; solo lee el registro de la cola, no lee ningún documento" },
- "cola.mjs": { "sinDocumentos": "la cola de revisión: guarda casos y respuestas y ahora imprime su historia; no lee ningún documento" },
- "cargar.mjs": { "patron": "ingresos|revenue|omzet|umsatz|ricavi|chiffre d'affaires" },
- "cargar-ejercicio.mjs": { "patron": "presidente|president|chairman|voorzitter" },
- "cargar-categorias.mjs": { "patron": "ingresos|revenue|omzet|umsatz|ricavi|chiffre d'affaires" },
- "auditoria.mjs": { "patron": "informe del auditor|independent auditor|dictamen|revisor fiscal" },
- "caja-deuda.mjs": { "patron": "caja|efectivo|cash|deuda|debt|borrowings" },
- "estadio-sponsor.mjs": { "patron": "estadio|stadium|sponsor|patrocin" }
+  "_comentario": "El patrón del veredicto (`fos patron`, `fos cerrar-tool`) por tool, para no inventar la regex cada vez: lo que el cambio a esa tool se ve en los .md de Clubes/. `patron` es una regex JS (flags im) y `sinDocumentos` el motivo de una tool que no lee documentos. Si no pasás --patron ni --sin-documentos, patron.mjs toma esto de las tools cambiadas (varias: los patrones se unen con |). Una tool sin entrada frena y dice cuál sumar. Es una lista corta: se suma una tool la primera vez que hace falta, con una palabra que sus documentos traigan siempre.",
+  "publicar.mjs": {
+    "sinDocumentos": "genera las páginas y sube ASSET_V; no lee ningún documento"
+  },
+  "medir-pipeline.mjs": {
+    "sinDocumentos": "mide los cambios a las tools; no lee ningún documento"
+  },
+  "cola-historial.mjs": {
+    "sinDocumentos": "las cifras e historia de la cola de revisión; solo lee el registro de la cola, no lee ningún documento"
+  },
+  "cola.mjs": {
+    "sinDocumentos": "la cola de revisión: guarda casos y respuestas y ahora imprime su historia; no lee ningún documento"
+  },
+  "cargar.mjs": {
+    "patron": "ingresos|revenue|omzet|umsatz|ricavi|chiffre d'affaires"
+  },
+  "cargar-ejercicio.mjs": {
+    "patron": "presidente|president|chairman|voorzitter"
+  },
+  "cargar-categorias.mjs": {
+    "patron": "ingresos|revenue|omzet|umsatz|ricavi|chiffre d'affaires"
+  },
+  "auditoria.mjs": {
+    "patron": "informe del auditor|independent auditor|dictamen|revisor fiscal"
+  },
+  "caja-deuda.mjs": {
+    "patron": "caja|efectivo|cash|deuda|debt|borrowings"
+  },
+  "estadio-sponsor.mjs": {
+    "patron": "estadio|stadium|sponsor|patrocin"
+  },
+  "cargar-lote.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "categorizar-claude.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "jev-categorizar.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "reglas-categoria.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "memoria-categorias.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "suggest-category-precedent.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "cuadro-sobrante.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "dentro-de-otro.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "verificar.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "perimetro-senales.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "periodo.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "cierre-ejercicio.js": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "cierre-vecinos.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "extract-table-rows.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "localizar.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "extraer.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "lote.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "alta-club.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "xhtml-aarsrapport.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "siis-estado.mjs": {
+    "sinDocumentos": "baja de la API de SIIS (Supersociedades) y arma el .md; no lee documentos del club"
+  },
+  "siis-notas.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "ixbrl-resultado.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "bfo-rusia.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "nbb.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "dato-publico.mjs": {
+    "sinDocumentos": "consulta Wikidata; no lee documentos"
+  },
+  "segunda-fuente-liga.mjs": {
+    "sinDocumentos": "compara listas de equipos de Wikipedia; no lee documentos"
+  },
+  "segunda-fuente-wikipedia-local.mjs": {
+    "sinDocumentos": "compara con páginas de Wikipedia guardadas; no lee documentos"
+  },
+  "fuente-url-xhtml.mjs": {
+    "sinDocumentos": "completa la url de las fuentes de los datos; no lee documentos"
+  },
+  "lotes-prueba.mjs": {
+    "sinDocumentos": "arma las listas de los lotes de prueba desde los registros; no lee documentos"
+  },
+  "generadores.mjs": {
+    "sinDocumentos": "corre los generadores del sitio; no lee documentos"
+  },
+  "audit.js": {
+    "sinDocumentos": "audita lo ya cargado en data/; no lee documentos"
+  },
+  "imports-sin-export.mjs": {
+    "sinDocumentos": "revisa imports del código; no lee documentos"
+  },
+  "dictamen-fechas.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "reglas-pais.mjs": {
+    "sinDocumentos": "mueve reglas entre .md de Admin/; no lee documentos de Clubes/"
+  },
+  "pipeline.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "lote-batch.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "extraer-etiquetas.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "bfo-rusia-notas.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  },
+  "gestiones-tanda.mjs": {
+    "sinDocumentos": "arma y carga las gestiones desde la cola; no lee documentos"
+  },
+  "recategorizar-etiquetas.mjs": {
+    "porCambio": "lee documentos (los .md de Clubes/): lo que el cambio deja ver cambia con cada cambio, el patrón se pasa con --patron"
+  }
 }
