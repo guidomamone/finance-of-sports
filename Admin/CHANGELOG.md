@@ -20,6 +20,18 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1238 — sponsor-fka --buscar: --anios y --todos [478 · sponsor-fka.mjs, probar-sponsor-fka.mjs]
+- `--buscar` acepta `--anios 2015-2022` (o `2015,2017-2019`) y `--todos`: busca esos años en FKA con Exa también si ya tienen entrada sólida, sin escribir `contexto-manual.json` (el subagente tenía que ponerle «una sola fuente por año» para que corriera). Sin opción sigue buscando los débiles. El brief de estadio-sponsor (`Admin/briefs-subagentes-siis.md`) usa `--todos`.
+- Medición: tool de «orden» (no del pipeline, no lee documentos): no pide medición; `probar-sponsor-fka.mjs` ok. La búsqueda real con Exa no se corrió (gasta).
+
+---
+
+## Versión 1239 — club-siis: el paso de la liga avisa que falta publicar antes de commitear [478 · club-siis.mjs, probar-club-siis.mjs]
+- El paso «Liga de cada año» dice que después de tocar una liga va `node tools/publicar.mjs` y el commit en OTRA llamada (el hook frenaba por `rankings-desfasado` y `asset-v-sin-subir`). `probar-club-siis.mjs` (copia descartable) lo comprueba; cada ítem siguiente del 478 que toque `club-siis.mjs` suma su caso ahí.
+- Medición: tool de «orden» (no del pipeline): no pide medición; pruebas de lo que cambió ok.
+
+---
+
 ## Versión 1237 — club-siis: el subagente de gestiones se lista al principio si un cierre no tiene gestión confirmada [478 · club-siis.mjs, gestion-cubre.mjs, probar-gestion-cubre.mjs]
 - «LANZÁ JUNTOS» incluye `gestiones` si algún cierre 31/12 de los años por cargar no cae en exactamente una gestión confirmada de `data/gestiones/<iso>.js` (la misma regla de `cargar.mjs`) y dice qué años; antes bastaba con que existiera la clave del club (Envigado tenía la de Ruiz sin confirmar y las 9 preguntas aparecieron con el lote ya corrido). Con todos los años cargados no lista nada, como antes. Módulo `gestion-cubre.mjs` con su prueba.
 - Medición: tool de «orden» (no del pipeline, solo lee): no pide medición; pruebas de lo que cambió ok.
