@@ -20,6 +20,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 1235 — siis-estado y lote: un año de SIIS sin filas se avisa y no se cotiza [478 · lote-leer.mjs, siis-estado.mjs, siis-filas.mjs, probar-siis-filas.mjs]
+- `siis-estado.mjs` lista los años que quedaron con el `.md` escrito pero sin `.filas.json` («N escritos: M con filas, K sin filas (2016, …)») y sale con 1; `lote.mjs` (lote-leer) no localiza, extrae ni cotiza un `siis-estado-AAAA.pdf` sin filas: dice el comando que las arma, costo 0. Módulo nuevo `siis-filas.mjs` con su prueba (`probar-siis-filas.mjs`). Replicado en una copia con `difImporteLibros` fuera de CLASE: sale con 1 y lista 2016.
+- Medición: lote completo idéntico (lote-ensayo y verificar); sin revisión independiente (condición nueva: aviso y salida distinta de 0).
+
+---
+
 ## Versión 1234 — Envigado (2016 a 2024) y Atlético Nacional (2015 a 2024) desde SIIS: 19 club-años [463 · envigado-co, atlnacional-co]
 - Estados de SIIS, liga (Primera A todos los años), estadio, marca y sponsor (subagentes Sonnet; Exa/FKA), dictámenes de Nacional (5 escaneos por Mistral, US$ 0,07), lote de categorización (US$ ~0,55) y carga: un commit por año, `audit.js` P0/P1 en 0 al escribir cada uno y al final (P3 9, como antes). Envigado gestión de Ruiz y sponsor 2018 a 2022 (solo FKA) quedan débiles; ver el TODO 463.
 - La cola, contestada con el motivo de cada fila: «Entretenimiento y esparcimiento» a `other_income` (importe redondo anual, sin que el documento diga qué es), «Flota y equipo de transporte» a `admin_general_expense` (4 respuestas del país); 14 casos de `verificar` de Nacional aceptados: cuatro pares (2019 a 2025) difieren exactamente por la fila «Otras ganancias (pérdidas)», idéntica en los dos estados, y dos (2015/2016, 2018/2019) son reexpresiones de SIIS sin cambio del resultado. «Costo de ventas» (76 a 83 % de los gastos) y «Gastos de ventas» de Nacional a `lump_football_operations_expense` por la regla escrita de Colombia.

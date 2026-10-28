@@ -74,6 +74,11 @@
   "ok": true,
   "segundos": 0
  },
+ "tools/probar-siis-filas.mjs": {
+  "fecha": "2026-10-28",
+  "ok": true,
+  "segundos": 0
+ },
  "tools/probar-todo-contexto.mjs": {
   "fecha": "2026-10-27",
   "ok": true,
@@ -87,6 +92,6 @@
  "tools/prueba-escribir.mjs": {
   "fecha": "2026-10-28",
   "ok": true,
-  "segundos": 181
+  "segundos": 176
  }
 }

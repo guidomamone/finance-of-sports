@@ -9,6 +9,7 @@ import { validar } from './validar-bloques.mjs';
 import { extraer, estimarExtraerSinBloques } from './extraer.mjs';
 import { respuestaPosterior } from './cola.mjs';
 import { derivado } from './rutas.mjs';
+import { faltaFilasSiis } from './siis-filas.mjs';
 import { paginasARearmar, rearmar } from './texto-propio-a-md.mjs';
 import { verificarLista, ajusteDe, ajustePerimetroDe, faltaAntesDeLocalizar, cacheAlDia, validacionAlDia, ubicacionAlDia } from './lote.mjs';
 
@@ -26,6 +27,9 @@ export async function faseLeer(ctx) {
     if (!REINTENTAR && !testigos.has(pdf) && (e.cargado || propuestaEnSitio(e))) {
       estado[pdf] = 'ya en el sitio'; console.log(`  ${pdf}: ya en el sitio (no se verifica, categoriza ni propone de nuevo)`); continue;
     }
+    // SIIS SIN FILAS: un siis-estado-AAAA.pdf cuyo .filas.json no se armó (siis-estado.mjs lo avisa) NO pasa por localizar ni extraer: SIIS es gratis y sus filas salen de siis-estado.mjs; estimarlo como un documento cualquiera cotizaba ~US$ 0,2-0,4 de más por año.
+    const FS = faltaFilasSiis(pdf);
+    if (FS) { estado[pdf] = FS.aviso; console.log(`  ${pdf}: ${FS.aviso} (US$ 0)`); continue; }
     // ETAPA 2, ESCALÓN 1a: si el inventario dice "revisar", primero las VOCES (tools/resolver-inventario.mjs): compara cada página del .md con el texto del PDF, ignora las dudas en prosa y manda a Claude solo las páginas con cifras que no coinciden.
     // COMPUERTA: se regenera el inventario y el documento queda "listo" -> sigue; si no, el escalón 1b de abajo (rearmar con el texto propio). Se llama como comando aparte: una sola versión de la lógica.
     // ETAPA 2, ESCALÓN 1a, "SIN VERIFICAR": el .md cambió después de su última validación. Antes de localizar (que se paga) va la validación GRATIS del inventario, solo para la carpeta del club: si queda "listo", sigue; si queda "revisar", el

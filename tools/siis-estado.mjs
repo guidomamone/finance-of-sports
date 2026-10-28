@@ -32,6 +32,7 @@ import { indiceBloques } from './indice-bloques.mjs';
 import { negarSiSeMide } from './candado-medicion.mjs';
 import { abrirConNotas, anexarNotas } from './siis-notas.mjs';
 import { exigirMedida } from './exigir-medida.mjs';
+import { resumenSiis } from './siis-filas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const BASE = 'https://siis.ia.supersociedades.gov.co/siis_backend/api/v1/qr';
@@ -171,7 +172,7 @@ async function estadosDe(club, anios, { escribir, rehacer, sinNotas }) {
   const q =delNit(cfg.nit); const [emps, ress, bals] = [await q.empresas(), await q.resultado(), await q.balance()];
   const E = porAnio(emps, (s) => s.fechaCorte, cfg.perimetro), R = porAnio(ress, (s) => s.resultado.fechaCorte, cfg.perimetro), B = porAnio(bals, (s) => s.infoEmpresa.corte, cfg.perimetro);
   const lista = (anios === 'todos' ? [...R.keys()].filter((a) => !(cfg.frenados || []).includes(a) && (rehacer || !existsSync(join(dir, `siis-estado-${a}.md`)))) : [String(anios)]).sort();
-  const hoy = new Date().toISOString().slice(0, 10); let escritos = 0, frenados = 0;
+  const hoy = new Date().toISOString().slice(0, 10); let escritos = 0, frenados = 0; const sinFilas = [];
   for (const a of lista) {
     const res = R.get(a)?._source; if (!res) { console.log(`${club} ${a}: SIIS no tiene estado de resultados`); continue; }
     const bal = B.get(a)?._source || null; const emp = E.get(a)?._source || null;
@@ -200,12 +201,12 @@ async function estadosDe(club, anios, { escribir, rehacer, sinNotas }) {
     appendFileSync(resolve(ROOT, 'Admin/registros/api/siis-api.jsonl'), JSON.stringify({ ts: new Date().toISOString(), md: rutaClub(club, `siis-estado-${a}.md`), model: MOTOR, costUsd: 0, nit: cfg.nit, radicado: res.infoEmpresa.num_radicado }) + '\n'); // el motor que lee inventario-transcripciones.mjs
     // las filas, sin leer con IA: la especificación del estado de resultados y armar-a-mano.mjs (valida cada fila contra el .md y deja el .ubicacion.json y el .filas.json con sus huellas)
     const { spec, error } = especificacion({ club, anio: a, md, filasRes, sal, ant, perimetro: esConsolidado(res.infoEmpresa.puntoEntrada) ? 'consolidado' : 'individual', notas });
-    if (error) { console.log(`  ${club} ${a}: el .md quedó escrito pero las filas no se armaron solas: ${error}`); continue; }
+    if (error) { sinFilas.push(a); console.log(`  ${club} ${a}: el .md quedó escrito pero las filas no se armaron solas: ${error}`); continue; }
     const carpetaSpec = resolve(ROOT, 'Generados', PAIS, club); mkdirSync(carpetaSpec, { recursive: true });
     const specAbs = join(carpetaSpec, `siis-estado-${a}.spec.json`); writeFileSync(specAbs, JSON.stringify(spec, null, 1) + '\n');
-    try { const out = execFileSync('node', [resolve(ROOT, 'tools/armar-a-mano.mjs'), specAbs, '--escribir'], { cwd: ROOT, encoding: 'utf8' }); console.log(`  filas armadas: ${out.trim().split('\n').pop()}`); } catch (e) { console.log(`  ${club} ${a}: armar-a-mano frenó: ${String(e.stdout || e.message).trim().split('\n').slice(-3).join(' | ')}`); }
+    try { const out = execFileSync('node', [resolve(ROOT, 'tools/armar-a-mano.mjs'), specAbs, '--escribir'], { cwd: ROOT, encoding: 'utf8' }); console.log(`  filas armadas: ${out.trim().split('\n').pop()}`); } catch (e) { sinFilas.push(a); console.log(`  ${club} ${a}: armar-a-mano frenó: ${String(e.stdout || e.message).trim().split('\n').slice(-3).join(' | ')}`); }
   }
-  return { escritos, frenados };
+  return { escritos, frenados, sinFilas };
 }
 
 // el inventario: por NIT, los años que SIIS tiene (siis_empresas, tres CIIU deportivos) contra los siis-estado-AAAA.md y los estados-financieros-AAAA.pdf de la carpeta
@@ -257,7 +258,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   }
   const club = flag('--club'); const anio = flag('--anio'); const todos = A.includes('--todos');
   if (!club || (!anio && !todos)) { console.error('Uso: node tools/siis-estado.mjs --club "<Club>" (--anio AAAA | --todos) [--escribir] [--rehacer]   ·   --inventario [--escribir]   ·   --faltantes'); process.exit(1); }
-  const clubes = club === 'todos' ? Object.keys(CLUBES) : [club]; let escritos = 0, frenados = 0;
-  for (const c of clubes) { const r = await estadosDe(c, todos ? 'todos' : anio, { escribir: A.includes('--escribir'), rehacer: A.includes('--rehacer'), sinNotas: A.includes('--sin-notas') }); escritos += r.escritos; frenados += r.frenados; }
-  console.log(`${A.includes('--escribir') ? `Escritos ${escritos} año(s)` : 'Ensayo: no se escribió nada (--escribir)'}${frenados ? `; ${frenados} año(s) frenado(s) por una compuerta` : ''}.`);
+  const clubes = club === 'todos' ? Object.keys(CLUBES) : [club]; let escritos = 0, frenados = 0; const sinFilas = [];
+  for (const c of clubes) { const r = await estadosDe(c, todos ? 'todos' : anio, { escribir: A.includes('--escribir'), rehacer: A.includes('--rehacer'), sinNotas: A.includes('--sin-notas') }); escritos += r.escritos; frenados += r.frenados; sinFilas.push(...r.sinFilas.map((a) => (clubes.length > 1 ? `${c} ${a}` : a))); }
+  const fin = resumenSiis({ escribir: A.includes('--escribir'), escritos, frenados, sinFilas }); console.log(fin.texto); if (fin.codigo) process.exitCode = fin.codigo;
 }

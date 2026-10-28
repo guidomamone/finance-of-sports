@@ -179,6 +179,7 @@
   "reemplazar.mjs": "orden: reemplazos en varios archivos (el mismo texto, o una lista de cambios exactos por línea), con ensayo por defecto",
   "probar-sello-audit.mjs": "prueba: el sello de la última auditoría (tools/sello-audit.js) en un repo temporal",
   "probar-patron.mjs":"prueba: patron.mjs en un repo de juguete",
+  "probar-siis-filas.mjs": "prueba: siis-filas.mjs (el resumen de siis-estado y el aviso del lote por un siis-estado sin .filas.json)",
   "probar-todo-contexto.mjs": "prueba: el contexto de un punto de todo.mjs en un repo de juguete",
   "ingresos-en-una-linea.mjs": "orden: lista los ejercicios cargados cuyos ingresos son una sola línea sin desglosar, con su rótulo e importe (solo lee data/)",
   "produccion.mjs": "orden: compara el ASSET_V publicado en financeofsports.com con el de index.html (un GET a la home pública)",
