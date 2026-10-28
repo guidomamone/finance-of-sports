@@ -111,7 +111,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2023: {
     leagueSize: 20,
-    sinDato: ["atlnacional-co","envigado-co"],
+    sinDato: ["atlnacional-co"],
     wiki: {"t":"2023 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:23.786, reportType:"official_balance_sheet",
@@ -120,6 +120,10 @@ window.RANKINGS["co-primeraA"] = {
       { id:"americadecali-co", revenue:15.86, reportType:"official_balance_sheet",
         sourceId:"americadecali-co-siis-estado-2023",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",15.777],["Otros ingresos",0.083]] },
+      { id:"envigado-co", revenue:15.684, reportType:"official_balance_sheet",
+        sourceId:"envigado-co-siis-estado-2023",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",15.646],["Otros ingresos",0.038]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1],["Venta de Jugadores","Fútbol profesional (sin desglosar por la fuente)",1],["Otras actividades (educación y otros deportes)","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"deportestolima-co", revenue:9.529, reportType:"official_balance_sheet",
         sourceId:"deportestolima-co-siis-estado-2023",
         mix:[["Comercial / Sponsors",2.204],["Estadio",1.82],["Televisión",2.23],["Premios por competencias",1.769],["Venta de Jugadores",0.689],["Otros ingresos",0.816]] },

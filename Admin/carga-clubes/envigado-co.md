@@ -136,6 +136,41 @@ _investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-d
 Duda: La fuente no dice a quién reemplazó (Ramiro Ruiz figuraba como presidente en 2024); Wikipedia en inglés aún lista a Manuel Valero. Fecha de posesión real sin confirmar.
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-28) desde Clubes/Colombia/Envigado/siis-estado-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Envigado/siis-estado-2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ingresos de actividades ordinarias | pág. 1, Jev 0.96 |
+| 2 | Otros ingresos | pág. 1, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costo de ventas | pág. 1, precedente |
+| 2 | Gastos de ventas | pág. 1, precedente |
+| 3 | Gastos de administración | pág. 1, precedente |
+| 4 | Otros gastos | pág. 1, precedente |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-28): filas-a-mano. Claude 2026-10-28 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+tools/cargar.mjs (2026-10-28). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-28): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2016, 2017, 2018, 2019, 2020, 2022, 2025)
+```
+
 ## 2022
 
 ### Ingresos
@@ -575,6 +610,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Envigado/siis-estado-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### envigado-co-siis-estado-2023
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Envigado/siis-estado-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

@@ -76,6 +76,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Envigado/siis-estado-2022.pdf"
+    },
+    {
+      "id": "envigado-co-siis-estado-2023",
+      "club_id": "envigado-co",
+      "title": "Envigado Fútbol Club S.A. — siis-estado-2023 (ejercicio 2023)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Envigado/siis-estado-2023.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2025,"last_year":2025}],
@@ -681,6 +689,72 @@
             "kind": "other"
           }
         ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "currency": "COP",
+      "source_id": "envigado-co-siis-estado-2023",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2023-12-31"},
+      "revenue": [
+        {
+          "label": "Ingresos de actividades ordinarias",
+          "category": "undisclosed",
+          "subcategory": "lump_football_operations",
+          "amount": 59799.522,
+          "disclosure": "aggregated"
+        },
+        {"label":"Otros ingresos","category":"other_revenue","subcategory":"other_income","amount":143.672,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-229.612,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-25327.034,"disclosure":"aggregated"},
+        {"label":"Gastos de administración","category":"admin_general","subcategory":"admin_general_expense","amount":-2177.41,"disclosure":"aggregated"},
+        {"label":"Otros gastos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-127.372,"disclosure":"aggregated"}
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":-6923.275,"tax":-8919.698,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":59943.194,"expenses":27861.428,"net_result":16238.793},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":2920.559},
+          {"label":"Costos financieros","amount":-9843.834},
+          {"label":"Ingreso (gasto) por impuestos","amount":-8919.698}
+        ],
+        "no_breakdown": [
+          {"line":"Ingresos de actividades ordinarias","side":"revenue","amount":59799.522,"reason":"el documento no desglosa este renglón","kind":"net_sales"},
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 229.612,
+            "reason": "Costo de ventas es 84% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 25327.034,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
+          }
+        ],
+        "included_in": {
+          "member_dues": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "sponsorship_commercial": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "matchday_competition": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "season_tickets": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "stadium_other": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "broadcasting": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "competition_bonus": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "player_sales": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "other_sports": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "youth_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "womens_football": {"in":"lump_football_operations","possible":true,"by":"precedente"},
+          "education": {"in":"lump_football_operations","possible":true,"by":"precedente"}
+        },
         "revenue_basis": "full"
       }
     },
