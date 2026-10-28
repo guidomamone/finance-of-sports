@@ -216,7 +216,6 @@ window.RANKINGS["co-primeraA"] = {
   },
   2021: {
     leagueSize: 21,
-    sinDato: ["jaguares-co"],
     wiki: {"t":"2021 Liga DIMAYOR","lang":"en","at":"2026-10-02","n":21},
     clubs: [
       { id:"atlnacional-co", revenue:23.294, reportType:"official_balance_sheet",
@@ -254,6 +253,9 @@ window.RANKINGS["co-primeraA"] = {
         sourceId:"atleticobucaramanga-co-siis-estado-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.063],["Otros ingresos",0.038]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"jaguares-co", revenue:1.957, reportType:"official_balance_sheet",
+        sourceId:"jaguares-co-siis-estado-2021",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.947],["Otros ingresos",0.01]] },
       { id:"atleticohuila-co", revenue:1.937, reportType:"official_balance_sheet",
         sourceId:"atleticohuila-co-siis-estado-2021",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.922],["Otros ingresos",0.016]] },
