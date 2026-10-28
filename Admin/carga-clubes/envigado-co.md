@@ -136,6 +136,92 @@ _investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-d
 Duda: La fuente no dice a quién reemplazó (Ramiro Ruiz figuraba como presidente en 2024); Wikipedia en inglés aún lista a Manuel Valero. Fecha de posesión real sin confirmar.
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-28) desde Clubes/Colombia/Envigado/siis-estado-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Colombia/Envigado/siis-estado-2020.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Matriculas | pág. 1, precedente |
+| 2 | Mensualidades | pág. 1, precedente |
+| 3 | Taquilla | pág. 1, precedente |
+| 4 | Abonados | pág. 1, precedente |
+| 5 | Venta de derechos deportivos | pág. 1, precedente |
+| 6 | Préstamo de derechos deportivo | pág. 1, precedente |
+| 7 | Contribución de solidaridad | pág. 1, precedente |
+| 8 | Publicidad y propaganda | pág. 1, precedente |
+| 9 | Dimayor | pág. 1, precedente |
+| 10 | Federación colombiana de futbol | pág. 1, precedente |
+| 11 | Patrocinio | pág. 1, precedente |
+| 12 | Cuotas de sostenimiento | pág. 1, precedente |
+| 13 | Venta de mercancías | pág. 1, precedente |
+| 14 | Otras actividades de servicios | pág. 1, precedente |
+| 15 | Devoluciones rebajas y descuentos | pág. 1, precedente |
+| 16 | Recuperaciones | pág. 1, Jev 1 |
+| 17 | Aprovechamientos | pág. 1, Jev 0.94 |
+| 18 | Subvenciones donaciones | pág. 1, Jev 0.99 |
+| 19 | Ajuste al peso (Otros ingresos) | pág. 1, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Costo de ventas | pág. 1, precedente |
+| 2 | Gastos de ventas | pág. 1, precedente |
+| 3 | Vienen… | pág. 1, Jev 0.98 |
+| 4 | Aseo y vigilancia | pág. 1, Jev 1 |
+| 5 | Asistencia técnica | pág. 1, Jev 0.92 |
+| 6 | Acueducto y alcantarillado | pág. 1, Jev 1 |
+| 7 | Energía eléctrica | pág. 1, Jev 1 |
+| 8 | Teléfono | pág. 1, Jev 1 |
+| 9 | Correo portes y telegramas | pág. 1, Jev 1 |
+| 10 | Transporte fletes y acarreos | pág. 1, Jev 0.97 |
+| 11 | Gas | pág. 1, Jev 1 |
+| 12 | Notariales | pág. 1, Jev 1 |
+| 13 | Registro mercantil | pág. 1, Jev 1 |
+| 14 | Tramites y licencias | pág. 1, Jev 0.99 |
+| 15 | Construcciones y edificaciones | pág. 1, ? 0.6 |
+| 16 | Maquinaria y equipo (Gastos de administración) | pág. 1, Jev 0.95 |
+| 17 | Equipo de oficina (Gastos de administración) | pág. 1, ? 0.65 |
+| 18 | Equipo de computación y comuna | pág. 1, ? 0.65 |
+| 19 | Instalaciones eléctricas | pág. 1, Jev 0.98 |
+| 20 | Reparaciones locativas | pág. 1, Jev 1 |
+| 21 | Alojamiento y manutención | pág. 1, Jev 0.97 |
+| 22 | Pasajes aéreos | pág. 1, Jev 0.9 |
+| 23 | Maquinaria y equipo (Gastos de administración) | pág. 1, Jev 0.95 |
+| 24 | Equipo de oficina (Gastos de administración) | pág. 1, ? 0.65 |
+| 25 | Equipo de computación | pág. 1, Jev 0.96 |
+| 26 | Flota y equipo de transporte | pág. 1, precedente |
+| 27 | Mejoras en propiedades ajenas | pág. 1, Jev 0.96 |
+| 28 | Cargos diferidos | pág. 1, ? 0.55 |
+| 29 | Gastos de representación | pág. 1, Jev 0.97 |
+| 30 | Elementos de aseo y cafetería | pág. 1, Jev 1 |
+| 31 | Útiles papelería y fotocopias | pág. 1, Jev 1 |
+| 32 | Combustibles y lubricantes | pág. 1, Jev 0.99 |
+| 33 | Taxis y buses | pág. 1, Jev 0.99 |
+| 34 | Estampillas | pág. 1, Jev 1 |
+| 35 | Casino y restaurante | pág. 1, Jev 0.98 |
+| 36 | Parqueaderos y peajes | pág. 1, ? 0.75 |
+| 37 | Gastos no deducibles | pág. 1, Jev 0.98 |
+| 38 | Provisión cartera | pág. 1, Jev 0.96 |
+| 39 | Costos y gastos de ejercicios | pág. 1, ? 0.75 |
+| 40 | Impuestos asumidos | pág. 1, precedente |
+| 41 | Multas sanciones y litigios | pág. 1, Claude 0.85 |
+| 42 | Ajuste al peso (Otros gastos) | pág. 1, Jev 0.93 |
+
+### Meta
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-28): filas-a-mano. Claude 2026-10-28 (tokens de sesión): ubicación y filas armadas a mano desde el .md con tools/armar-a-mano.mjs
+tools/cargar.mjs (2026-10-28). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"), con su tipo; la página marca «s/d» en las categorías que esa línea esconde y explica el caso en «Notas sobre este club».
+```
+
 ## 2019
 
 ### Ingresos
@@ -384,6 +470,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Envigado/siis-estado-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### envigado-co-siis-estado-2020
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-28) desde la transcripción Clubes/Colombia/Envigado/siis-estado-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

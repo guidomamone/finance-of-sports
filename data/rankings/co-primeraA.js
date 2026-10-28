@@ -238,7 +238,7 @@ window.RANKINGS["co-primeraA"] = {
   },
   2020: {
     leagueSize: 20,
-    sinDato: ["atlnacional-co","envigado-co"],
+    sinDato: ["atlnacional-co"],
     wiki: {"t":"2020 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"independientemedellin-co", revenue:9.92, reportType:"official_balance_sheet",
@@ -253,6 +253,9 @@ window.RANKINGS["co-primeraA"] = {
       { id:"laequidad-co", revenue:4.469, reportType:"official_balance_sheet",
         sourceId:"laequidad-co-siis-estado-2020",
         mix:[["Cuotas Sociales",0.064],["Comercial / Sponsors",1.565],["Estadio",0.195],["Televisión",0.963],["Premios por competencias",0.079],["Venta de Jugadores",0.491],["Otras actividades (educación y otros deportes)",0.194],["Subsidios y donaciones",0.645],["Otros ingresos",0.273]] },
+      { id:"envigado-co", revenue:4.295, reportType:"official_balance_sheet",
+        sourceId:"envigado-co-siis-estado-2020",
+        mix:[["Cuotas Sociales",0.097],["Comercial / Sponsors",0.407],["Estadio",0.011],["Televisión",0.722],["Premios por competencias",0.108],["Venta de Jugadores",2.566],["Otras actividades (educación y otros deportes)",0.11],["Subsidios y donaciones",0.049],["Otros ingresos",0.225]] },
       { id:"alianzafc-co", revenue:2.815, reportType:"official_balance_sheet",
         sourceId:"alianzafc-co-siis-estado-2020",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.489],["Otros ingresos",0.326]],

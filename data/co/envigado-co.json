@@ -52,6 +52,14 @@
       "type": "official_balance_sheet",
       "reliability": "primary",
       "document": "Clubes/Colombia/Envigado/siis-estado-2019.pdf"
+    },
+    {
+      "id": "envigado-co-siis-estado-2020",
+      "club_id": "envigado-co",
+      "title": "Envigado Fútbol Club S.A. — siis-estado-2020 (ejercicio 2020)",
+      "type": "official_balance_sheet",
+      "reliability": "primary",
+      "document": "Clubes/Colombia/Envigado/siis-estado-2020.pdf"
     }
   ],
   "management": [{"id":"actual","name":"Gestión actual","first_year":2025,"last_year":2025}],
@@ -366,6 +374,178 @@
             "line": "Gastos de ventas",
             "side": "expense",
             "amount": 13661.545,
+            "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
+            "kind": "other"
+          }
+        ],
+        "revenue_basis": "full"
+      }
+    },
+    {
+      "fiscal_year": 2020,
+      "period_end": "2020-12-31",
+      "currency": "COP",
+      "source_id": "envigado-co-siis-estado-2020",
+      "report_type": "official_balance_sheet",
+      "management_id": null,
+      "fx": {"ref":"COP@2020-12-31"},
+      "revenue": [
+        {"label":"Matriculas","category":"other_sporting_sections","subcategory":"youth_football","amount":20.3303,"disclosure":"aggregated"},
+        {"label":"Mensualidades","category":"other_sporting_sections","subcategory":"youth_football","amount":357.38628,"disclosure":"aggregated"},
+        {"label":"Taquilla","category":"matchday","subcategory":"matchday_competition","amount":22.464,"disclosure":"aggregated"},
+        {"label":"Abonados","category":"season_tickets","subcategory":"season_tickets","amount":16.966,"disclosure":"aggregated"},
+        {"label":"Venta de derechos deportivos","category":"player_transfers","subcategory":"player_sales","amount":6067.265,"disclosure":"aggregated"},
+        {"label":"Préstamo de derechos deportivo","category":"player_transfers","subcategory":"player_sales","amount":38.636,"disclosure":"aggregated"},
+        {"label":"Contribución de solidaridad","category":"player_transfers","subcategory":"player_sales","amount":2700.231542,"disclosure":"aggregated"},
+        {"label":"Publicidad y propaganda","category":"commercial","subcategory":"sponsorship_commercial","amount":502.10084,"disclosure":"aggregated"},
+        {"label":"Dimayor","category":"media_rights","subcategory":"broadcasting","amount":2476.836605,"disclosure":"aggregated"},
+        {"label":"Federación colombiana de futbol","category":"prize_money","subcategory":"competition_bonus","amount":370.135,"disclosure":"aggregated"},
+        {"label":"Patrocinio","category":"commercial","subcategory":"sponsorship_commercial","amount":766.656,"disclosure":"aggregated"},
+        {"label":"Cuotas de sostenimiento","category":"membership","subcategory":"member_dues","amount":334.313822,"disclosure":"aggregated"},
+        {"label":"Venta de mercancías","category":"commercial","subcategory":"sponsorship_commercial","amount":127.475004,"disclosure":"aggregated"},
+        {"label":"Otras actividades de servicios","category":"other_revenue","subcategory":"other_income","amount":463.82084,"disclosure":"aggregated"},
+        {"label":"Devoluciones rebajas y descuentos","category":"other_revenue","subcategory":"other_income","amount":-60.410953,"disclosure":"aggregated"},
+        {"label":"Recuperaciones","category":"other_revenue","subcategory":"other_income","amount":233.28543,"disclosure":"aggregated"},
+        {"label":"Aprovechamientos","category":"other_revenue","subcategory":"other_income","amount":137.052479,"disclosure":"aggregated"},
+        {"label":"Subvenciones donaciones","category":"grants_donations","subcategory":"grants_donations","amount":168.664,"disclosure":"aggregated"},
+        {"label":"Ajuste al peso (Otros ingresos)","category":"other_revenue","subcategory":"other_income","amount":0.00305,"disclosure":"aggregated"}
+      ],
+      "expenses": [
+        {"label":"Costo de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-104.32,"disclosure":"aggregated"},
+        {"label":"Gastos de ventas","category":"undisclosed","subcategory":"lump_football_operations_expense","amount":-8723.106,"disclosure":"aggregated"},
+        {"label":"Vienen…","category":"admin_general","subcategory":"admin_general_expense","amount":-1653.458227,"disclosure":"aggregated"},
+        {"label":"Aseo y vigilancia","category":"admin_general","subcategory":"admin_general_expense","amount":-1.559213,"disclosure":"aggregated"},
+        {"label":"Asistencia técnica","category":"admin_general","subcategory":"admin_general_expense","amount":-0.20706,"disclosure":"aggregated"},
+        {"label":"Acueducto y alcantarillado","category":"admin_general","subcategory":"admin_general_expense","amount":-0.833621,"disclosure":"aggregated"},
+        {"label":"Energía eléctrica","category":"admin_general","subcategory":"admin_general_expense","amount":-5.662586,"disclosure":"aggregated"},
+        {"label":"Teléfono","category":"admin_general","subcategory":"admin_general_expense","amount":-14.567664,"disclosure":"aggregated"},
+        {"label":"Correo portes y telegramas","category":"admin_general","subcategory":"admin_general_expense","amount":-0.34104,"disclosure":"aggregated"},
+        {"label":"Transporte fletes y acarreos","category":"admin_general","subcategory":"admin_general_expense","amount":-3.10605,"disclosure":"aggregated"},
+        {"label":"Gas","category":"admin_general","subcategory":"admin_general_expense","amount":-0.13621,"disclosure":"aggregated"},
+        {"label":"Notariales","category":"admin_general","subcategory":"admin_general_expense","amount":-12.014746,"disclosure":"aggregated"},
+        {"label":"Registro mercantil","category":"admin_general","subcategory":"admin_general_expense","amount":-2.3487,"disclosure":"aggregated"},
+        {"label":"Tramites y licencias","category":"admin_general","subcategory":"admin_general_expense","amount":-9.481287,"disclosure":"aggregated"},
+        {
+          "label": "Construcciones y edificaciones",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -16.981373,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Maquinaria y equipo (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.713268,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Equipo de oficina (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -0.252101,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Equipo de computación y comuna",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -8.996122,
+          "disclosure": "aggregated"
+        },
+        {"label":"Instalaciones eléctricas","category":"admin_general","subcategory":"admin_general_expense","amount":-10.6435,"disclosure":"aggregated"},
+        {"label":"Reparaciones locativas","category":"admin_general","subcategory":"admin_general_expense","amount":-0.7149,"disclosure":"aggregated"},
+        {
+          "label": "Alojamiento y manutención",
+          "category": "match_operations",
+          "subcategory": "match_organisation_expense",
+          "amount": -5.817196,
+          "disclosure": "aggregated"
+        },
+        {"label":"Pasajes aéreos","category":"match_operations","subcategory":"match_organisation_expense","amount":-2.87194,"disclosure":"aggregated"},
+        {
+          "label": "Maquinaria y equipo (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -66.810039,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Equipo de oficina (Gastos de administración)",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -17.586611,
+          "disclosure": "aggregated"
+        },
+        {"label":"Equipo de computación","category":"admin_general","subcategory":"admin_general_expense","amount":-38.895511,"disclosure":"aggregated"},
+        {
+          "label": "Flota y equipo de transporte",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -66.999996,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Mejoras en propiedades ajenas",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -273.76918,
+          "disclosure": "aggregated"
+        },
+        {"label":"Cargos diferidos","category":"other_amortisation","subcategory":"other_amortisation","amount":-48.344407,"disclosure":"aggregated"},
+        {"label":"Gastos de representación","category":"admin_general","subcategory":"admin_general_expense","amount":-30.343932,"disclosure":"aggregated"},
+        {
+          "label": "Elementos de aseo y cafetería",
+          "category": "admin_general",
+          "subcategory": "admin_general_expense",
+          "amount": -2.301868,
+          "disclosure": "aggregated"
+        },
+        {"label":"Útiles papelería y fotocopias","category":"admin_general","subcategory":"admin_general_expense","amount":-4.47221,"disclosure":"aggregated"},
+        {"label":"Combustibles y lubricantes","category":"admin_general","subcategory":"admin_general_expense","amount":-0.115962,"disclosure":"aggregated"},
+        {"label":"Taxis y buses","category":"admin_general","subcategory":"admin_general_expense","amount":-0.0487,"disclosure":"aggregated"},
+        {"label":"Estampillas","category":"admin_general","subcategory":"admin_general_expense","amount":-0.45,"disclosure":"aggregated"},
+        {"label":"Casino y restaurante","category":"admin_general","subcategory":"admin_general_expense","amount":-1.392761,"disclosure":"aggregated"},
+        {"label":"Parqueaderos y peajes","category":"admin_general","subcategory":"admin_general_expense","amount":-0.1679,"disclosure":"aggregated"},
+        {"label":"Gastos no deducibles","category":"other_operating_expenses","subcategory":"other_expenses","amount":-0.005297,"disclosure":"aggregated"},
+        {"label":"Provisión cartera","category":"other_operating_expenses","subcategory":"other_expenses","amount":-35.05819,"disclosure":"aggregated"},
+        {"label":"Costos y gastos de ejercicios","category":"exceptional","subcategory":"exceptional_items","amount":-0.397109,"disclosure":"aggregated"},
+        {"label":"Impuestos asumidos","category":"other_operating_expenses","subcategory":"other_expenses","amount":-5.453634,"disclosure":"aggregated"},
+        {
+          "label": "Multas sanciones y litigios",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -24.509137,
+          "disclosure": "aggregated"
+        },
+        {
+          "label": "Ajuste al peso (Otros gastos)",
+          "category": "other_operating_expenses",
+          "subcategory": "other_expenses",
+          "amount": -0.189848,
+          "disclosure": "aggregated"
+        }
+      ],
+      "financial": {"profit_on_player_sales":0,"asset_sales":0,"net_interest":471.475,"tax":-1419.851,"gross_debt":null,"cash":null},
+      "official_totals": {"revenue":14743.211239,"expenses":11195.047987,"net_result":2599.39},
+      "adjustments": {
+        "extra_rows": [
+          {"label":"Ingresos financieros","amount":877.392},
+          {"label":"Costos financieros","amount":-405.917},
+          {"label":"Ingreso (gasto) por impuestos","amount":-1419.851}
+        ],
+        "no_breakdown": [
+          {
+            "line": "Costo de ventas",
+            "side": "expense",
+            "amount": 104.32,
+            "reason": "Costo de ventas es 84% de los gastos: actividad deportiva (excepción por contenido de la regla de Colombia)",
+            "kind": "cost_of_sales"
+          },
+          {
+            "line": "Gastos de ventas",
+            "side": "expense",
+            "amount": 8723.106,
             "reason": "Gastos de ventas sin abrir: la actividad deportiva del club (regla de Colombia, CONVENCIONES-DATOS.md)",
             "kind": "other"
           }
